@@ -1,0 +1,104 @@
+
+.ie-fix
+{
+    behavior: url('../scripts/pie/PIE.php');
+}
+
+.box-shadow(@xoffset, @yoffset, @blur, @color)
+{
+    @x: ~"@{xoffset}px";
+    @y: ~"@{yoffset}px";
+    @b: ~"@{blur}px";
+    -webkit-box-shadow: @x @y @b @color;
+    -moz-box-shadow: @x @y @b @color;
+    box-shadow: @x @y @b @color;
+    .ie-fix;
+
+    //@angle: ~`Math.atan2(@{yoffset}, @{xoffset}) / Math.PI * 360`;
+    //filter: progid:DXImageTransform.Microsoft.Shadow(color=@color, Direction=@angle, Strength=@blur);
+}
+
+.border-radius(@radius)
+{
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+    border-radius: @radius;
+    .ie-fix;
+}
+
+.border-radius(@topright, @bottomright, @bottomleft, @topleft)
+{
+    -webkit-border-radius: @topleft @topright @bottomright @bottomleft;
+    -moz-border-radius: @topleft @topright @bottomright @bottomleft;
+    -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+    border-radius: @topleft @topright @bottomright @bottomleft;
+    .ie-fix;
+}
+
+.opacity(@opacity)
+{
+    @percent: @opacity * 100;
+
+    -moz-opacity: @opacity;
+    -khtml-opacity: @opacity;
+    -webkit-opacity: @opacity;
+    filter: alpha(opacity=@percent);
+    opacity: @opacity;
+}
+
+.gradient(@top, @bottom)
+{
+    .gradient(@top, @bottom, 50%);
+}
+
+.gradient(@top, @bottom, @image)
+{
+    .gradient(@top, @bottom, 50%, @image);
+}
+
+.gradient(@top, @bottom, @percent)
+{
+    @middle: mix(@top, @bottom, 50);
+
+    background-repeat: no-repeat;
+    background-color: mix(@top, @bottom, 50);
+
+    background-image: -webkit-linear-gradient(top, @top 0%, @middle @percent, @bottom 100%);
+    background-image:    -moz-linear-gradient(top, @top 0%, @middle @percent, @bottom 100%);
+    background-image:      -o-linear-gradient(top, @top 0%, @middle @percent, @bottom 100%);
+    background-image:     -ms-linear-gradient(top, @top 0%, @middle @percent, @bottom 100%);
+    background-image:         linear-gradient(top, @top 0%, @middle @percent, @bottom 100%);
+    -pie-background:          linear-gradient(top, @top 0%, @middle @percent, @bottom 100%);
+    .ie-fix;
+}
+
+.gradient(@top, @bottom, @percent, @image)
+{
+    @middle: mix(@top, @bottom, 50);
+
+    background-repeat: no-repeat;
+    background-color: mix(@top, @bottom, 50);
+
+    background:       @image, -webkit-linear-gradient(top, @top 0%, @middle @percent, @bottom 100%);
+    background:       @image,    -moz-linear-gradient(top, @top 0%, @middle @percent, @bottom 100%);
+    background:       @image,      -o-linear-gradient(top, @top 0%, @middle @percent, @bottom 100%);
+    background:       @image,     -ms-linear-gradient(top, @top 0%, @middle @percent, @bottom 100%);
+    background:       @image,         linear-gradient(top, @top 0%, @middle @percent, @bottom 100%);
+    -pie-background:  @image,         linear-gradient(top, @top 0%, @middle @percent, @bottom 100%);
+    .ie-fix;
+}
+
+.stripes(@color1, @color2, @angle, @size)
+{
+    background-color: mix(@color1, @color2, 50);
+    background-size: @size @size;
+
+    background-image: -webkit-linear-gradient(@angle, @color2 25%, @color1 25%, @color1 50%, @color2 50%, @color2 75%, @color1 75%, @color1);
+    background-image:    -moz-linear-gradient(@angle, @color2 25%, @color1 25%, @color1 50%, @color2 50%, @color2 75%, @color1 75%, @color1);
+    background-image:     -ms-linear-gradient(@angle, @color2 25%, @color1 25%, @color1 50%, @color2 50%, @color2 75%, @color1 75%, @color1);
+    background-image:      -o-linear-gradient(@angle, @color2 25%, @color1 25%, @color1 50%, @color2 50%, @color2 75%, @color1 75%, @color1);
+    background-image:         linear-gradient(@angle, @color2 25%, @color1 25%, @color1 50%, @color2 50%, @color2 75%, @color1 75%, @color1);
+    -pie-background:          linear-gradient(@angle, @color2 25%, @color1 25%, @color1 50%, @color2 50%, @color2 75%, @color1 75%, @color1);
+    .ie-fix;
+}
