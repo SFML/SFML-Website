@@ -2,7 +2,7 @@
     $doxygen = true;
     $breadcrumbs = array
     (
-        'Resources' => 'resources.php',
+        'Learn' => 'learn.php',
         $version . ' documentation'  => 'documentation/' . $version,
         $pagetitle => substr($_SERVER['REQUEST_URI'], 1) // remove the starting '/'
     );

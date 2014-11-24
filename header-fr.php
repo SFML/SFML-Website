@@ -63,12 +63,10 @@
                 <div id="banner">
                     <a href="<?php echo home(); ?>"><img id="logo" src="<?php echo image('logo.png') ?>" alt="SFML logo"/></a>
                     <ul id="menu">
-                        <li><a href="<?php echo page('resources-fr.php') ?>">Ressources</a></li>
-                        <li><a href="<?php echo page('license-fr.php') ?>">Licence</a></li>
+                        <li><a href="<?php echo page('learn-fr.php') ?>">Apprendre</a></li>
                         <li><a href="<?php echo page('download-fr.php') ?>">Télécharger</a></li>
-                        <li><a href="//fr.sfml-dev.org/forums/">Forum</a></li>
-                        <li><a href="https://github.com/LaurentGomila/SFML/wiki">Wiki</a></li>
-                        <li><a href="https://github.com/LaurentGomila/SFML/issues">Bugs</a></li>
+                        <li><a href="<?php echo page('community-fr.php') ?>">Collectivité</a></li>
+                        <li><a href="<?php echo page('development-fr.php') ?>">Développement</a></li>
                     </ul>
                 </div>
             </div>

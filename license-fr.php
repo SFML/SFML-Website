@@ -1,6 +1,7 @@
 <?php
     $breadcrumbs = array
     (
+        'Apprendre' => 'learn-fr.php',
         'Licence' => 'license-fr.php'
     );
     include('header-fr.php');
