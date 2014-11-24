@@ -1,0 +1,8 @@
+User-agent: * 
+Disallow: /forum/*PHPSESSID
+Disallow: /forum/*wap
+Disallow: /forum/*wap2
+Disallow: /forum/*board=*wap
+Disallow: /forum/*board=*wap2
+Disallow: /forum/*topic=*wap
+Disallow: /forum/*topic=*wap2

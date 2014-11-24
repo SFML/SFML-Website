@@ -1,0 +1,32 @@
+# Use PHP 5
+SetEnv PHP_VER 5
+
+# Prevent from listing directories content
+Options -Indexes
+
+# Setup custom error pages
+ErrorDocument 403 http://www.sfml-dev.org/error-403.php
+ErrorDocument 404 http://www.sfml-dev.org/error-404.php
+
+# We need some rewriting to properly handle the sub-domains/forums
+RewriteEngine On
+
+# Redirect https:// to http://
+RewriteCond %{HTTPS} on
+RewriteRule .* http://%{HTTP_HOST}%{REQUEST_URI}
+
+# Disallow everything but /forums on en.sfml-dev.org
+RewriteCond %{HTTP_HOST} ^en.sfml-dev.org$
+RewriteCond %{REQUEST_URI} !^/forums
+RewriteRule (.*) / [R=404,L]
+
+# Disallow everything but /forums on fr.sfml-dev.org
+RewriteCond %{HTTP_HOST} ^fr.sfml-dev.org$
+RewriteCond %{REQUEST_URI} !^/forums
+RewriteRule (.*) / [R=404,L]
+
+# Redirect the old tutorials.php and documentation.php to resources.php
+RewriteRule tutorials.php /resources.php [R=301,L]
+RewriteRule tutorials-fr.php /resources-fr.php [R=301,L]
+RewriteRule documentation.php /resources.php [R=301,L]
+RewriteRule documentation-fr.php /resources-fr.php [R=301,L]
