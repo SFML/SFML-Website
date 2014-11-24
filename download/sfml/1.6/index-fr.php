@@ -9,7 +9,7 @@
     function download_link($compiler, $arch, $size, $link)
     {
         $counter_script = "_gaq.push(['_trackEvent', 'Download', 'SFML 1.6']);";
-        echo '<span class="description">' . $compiler . ' - ' . $arch . '</span><a href="' . $link . '" onclick="' . $counter_script . '">Télécharger<span class="size">' . $size . ' Mo</span></a>';
+        echo '<span class="description">' . $compiler . ' - ' . $arch . '</span><a href="http://downloads.sourceforge.net/sfml/' . $link . '" onclick="' . $counter_script . '">Télécharger<span class="size">' . $size . ' Mo</span></a>';
     }
 ?>
 

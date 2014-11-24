@@ -1,7 +1,7 @@
 <?php
 
     $breadcrumbs = array(
-        'Resources' => 'resources.php',
+        'Learn' => 'learn.php',
         '2.0 tutorials' => 'tutorials/2.0/index-fr.php'
     );
 

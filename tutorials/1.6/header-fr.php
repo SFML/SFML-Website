@@ -9,7 +9,7 @@
     }
 
     $breadcrumbs = array(
-        'Ressources' => 'resources-fr.php',
+        'Apprendre' => 'learn-fr.php',
         'Tutoriels 1.6' => 'tutorials/1.6/index-fr.php',
         $title => 'tutorials/1.6/' . $page
     );

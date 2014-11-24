@@ -20,7 +20,7 @@
     }
 
     $breadcrumbs = array(
-        'Ressources' => 'resources-fr.php',
+        'Apprendre' => 'learn-fr.php',
         'Tutoriels 2.1' => 'tutorials/2.1/index-fr.php',
         $title => 'tutorials/2.1/' . $page
     );
