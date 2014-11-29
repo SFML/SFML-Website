@@ -65,7 +65,7 @@
                     <ul id="menu">
                         <li><a href="<?php echo page('learn-fr.php') ?>">Apprendre</a></li>
                         <li><a href="<?php echo page('download-fr.php') ?>">Télécharger</a></li>
-                        <li><a href="<?php echo page('community-fr.php') ?>">Collectivité</a></li>
+                        <li><a href="<?php echo page('community-fr.php') ?>">Communauté</a></li>
                         <li><a href="<?php echo page('development-fr.php') ?>">Développement</a></li>
                     </ul>
                 </div>
