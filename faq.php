@@ -279,7 +279,7 @@
 
  <h3><a name="build-environment" href="#build-environment">How do I setup my development environment to work with SFML?</a></h3>
  <p>This is covered quite thoroughly in the tutorials section for some of the most popular IDEs.</p>
- <p>Check out the Getting Started sections of the <a href="http://sfml-dev.org/resources.php">tutorials</a>.</p>
+ <p>Check out the Getting Started sections of the <a href="http://sfml-dev.org/learn.php">tutorials</a>.</p>
 
  <h3><a name="build-link" href="#build-link">What and how do I link to use SFML?</a></h3>
  <p>When you want to use SFML, you need to link to the library files that provide the functionality you make use of in your application.</p>
