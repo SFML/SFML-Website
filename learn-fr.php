@@ -59,7 +59,7 @@
 
 <h2 id="livres">Livres</h2>
 <div class="book">
-    <img src="images/books/sfml-game-development.jpg" alt="Couverture du livre SFML Game Development" />
+    <a class="link" href="http://www.packtpub.com/sfml-game-development/book" title="Page web du livre SFML Game Development"><img src="images/books/sfml-game-development.jpg" alt="Couverture du livre SFML Game Development" /></a>
     <div class="description">
         <p class="title">SFML Game Development</p>
         <a class="link" href="http://www.packtpub.com/sfml-game-development/book" title="Page web du livre SFML Game Development">

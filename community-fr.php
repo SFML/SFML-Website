@@ -19,16 +19,16 @@
         </p>
     </div>
     <div class="column">
-        <img src="<?php echo image('community/forum.png') ?>" alt="Forum" />
+        <a href="http://fr.sfml-dev.org/forums/" title="Aller au forum"><img src="<?php echo image('community/forum.png') ?>" alt="Forum" /></a>
     </div>
 </div>
 
 <div class="home-section">
     <div class="column">
-        <img src="<?php echo image('community/wiki.png') ?>" alt="Wiki" />
+        <a href="https://github.com/LaurentGomila/SFML/wiki" title="Aller au Wiki"><img src="<?php echo image('community/wiki.png') ?>" alt="Wiki" /></a>
     </div>
     <div class="column">
-        <div class="title">&raquo; <a href="https://github.com/LaurentGomila/SFML/wiki" title="Go to the wiki">Wiki</a></div>
+        <div class="title">&raquo; <a href="https://github.com/LaurentGomila/SFML/wiki" title="Aller au Wiki">Wiki</a></div>
         <p>
             Le wiki de la communauté SFML contient des extraits de code, des tutoriels et d'autres contenus fruits de la collaboration de la communauté.
         </p>
