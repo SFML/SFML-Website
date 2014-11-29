@@ -17,7 +17,7 @@
             compose de cinq modules : système, fenêtrage, graphisme, audio et réseau.
         </p>
         <p>
-            Découvrez plus en détail leurs fonctionnalités, dans <a href="resources-fr.php" title="Aller à la page des tutoriels et de la documentation">les tutoriels et
+            Découvrez plus en détail leurs fonctionnalités, dans <a href="learn-fr.php" title="Aller à la page des tutoriels et de la documentation">les tutoriels et
             la documentation de l'API</a>.
         </p>
     </div>

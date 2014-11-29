@@ -17,7 +17,7 @@
             five modules: system, window, graphics, audio and network.
         </p>
         <p>
-            Discover their features more in detail in <a href="resources.php" title="Go to the tutorials and documentation page">the tutorials and
+            Discover their features more in detail in <a href="learn.php" title="Go to the tutorials and documentation page">the tutorials and
             the API documentation</a>.
         </p>
     </div>
