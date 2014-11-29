@@ -44,18 +44,17 @@
     <div class="title">SFML 1.6</div>
 </a>
 
-<h2 id="tutorials">FAQ <small>(Frequently Asked Questions)</small></h2>
+<h2 id="tutorials">FAQ <small>(Foire Aux Questions)</small></h2>
 <p>
-    The tutorials and documentation above covers a lot of ground regarding common mistakes and problems, but before you post on the forum make sure to read through the official FAQ.
-    Here you should find an answer to about anything related to SFML.
+    En plus des tutoriels et de la documentation, la FAQ officielle couvre une bonne partie des erreurs et problèmes courants liés à SFML. Avant d'écrire sur le forum, prennez bien le temps de la parcourir.
 </p>
 <a class="box" href="faq.php">
-    <div class="title">Official SFML FAQ</div>
+    <div class="title">Official SFML FAQ (English)</div>
 </a>
 
 <h2 id="tutorials">License</h2>
 <p>
-    SFML is licensed under the terms and condition of the zlib license. Read the full license text <a href="license.php">here</a>.
+    SFML est distribuées sous licence zlib/png. Le texte complet se trouve <a href="license-fr.php">ici</a>.
 </p>
 
 <h2 id="livres">Livres</h2>
