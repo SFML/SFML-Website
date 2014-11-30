@@ -241,7 +241,10 @@
   <li>Optimization techniques, compiler optimization opportunities</li>
   <li>Coding conventions</li>
   <li>Refactoring techniques</li>
-  <li>Library writing</li>
+  <li>Code organization: abstraction, modularity, separation of responsibilities</li>
+  <li><a href="https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms">Idioms</a>: RAII, Pimpl, Erase-Remove, Copy & Swap</li>
+  <li>Advanced data structures and algorithms</li>
+  <li>Library writing, API design</li>
   <li>Cross-platform build tools</li>
   <li>SCM such as git, SVN or Hg</li>
  </ul>
@@ -251,6 +254,7 @@
   <li>Networking, TCP, UDP</li>
   <li>Audio knowledge, sample rate, attenuation, wave characteristics</li>
   <li>Operating system knowledge (not only for a single operating system)</li>
+  <li>Computer hardware: CPU, instructions and pipelining, RAM, caching, paging</li>
  </ul>
 
  <h3><a name="grl-questions" href="#grl-questions">Where can I ask questions?</a></h3>
@@ -623,13 +627,18 @@ std::size_t pos = cpp_string.find( sfml_string );</code></pre>
  <p>Usage of global variables is considered as bad programming practice. They might seem like an easy solution to your initial problem but they will become a headache later on when the project gets bigger or you are unaware of the implications of declaring something in global scope.</p>
  <p>One of the most dangerous things of declaring non-POD (<a href="http://en.wikipedia.org/wiki/Plain_old_data_structure">plain old data</a>) objects in global scope is that you can never be sure when they are actually constructed and when they will be destroyed. This means that if they need to own resources you need to make sure they are available before the object is created, which can be tricky to do if that takes place before your main() code gets executed. Analogous to that, the object might get destroyed after your main() returns thus leaving resource destruction up to some self-clean-up mechanism or in the worst case to a resource manager that already got destroyed before main() returned. This leads to leaks and is very bad practice. Furthermore the initialization order and destruction order is not well-defined. It is only defined <em>within one translation unit</em> as being dependant on the order of declaration, however you can't count on global variables from different translation units being constructed or destroyed in a specific order, it is pure luck here.</p>
  <p>Another problem with global variables is that sooner or later you are going to have so many of them that they will clog up your namespace. Unless you declare them in a separate namespace they will all be in the same giant one: the global one. If you happen to declare a local variable in one of your functions that happens to have the same name as the global one you are actually referring to, you will not notice the global variable get shadowed unless you have certain warnings switched on. Some people suggest using Hungarian notation to solve this problem but the modern demeanour tends to avoid Hungarian notation as well.</p>
- <p>There really isn't any reason to use global variables. Code using global variables can always be written without them and will never perform worse, most of the time performing better as a result of better memory usage.</p>
+ <p>Furthermore, global variables work against code modularity. Global variables can be accessed from anywhere and thus bypass well-defined interfaces between modules. This introduces hidden dependencies in the code, which is not only an additional maintenance burden, but can lead to very difficult-to-track bugs. Simply because you are not able to control the access to global variables, as they can be changed anywhere, at any time.</p>
+ <p>As if this were not enough, global variables also play very badly in multi-threaded environments. Access to global variables from different threads must be protected by mutexes. This requires additional care by the developer accessing the variable and often leads much more synchronization overhead than necessary, because variables are protected prematurely. On the other hand, unprotected global variables can silently introduce bugs if an application starts to use multiple threads.</p>
+ <p>There really isn't any reason to use global variables. Code using global variables can always be written without them and will never perform worse, most of the time performing better as a result of better memory usage. Keep in mind that the same reasoning applies to static variables, the only difference is their visibility (class/function scope) and in the case of function-static variables, their construction time (at first call instead of program start). Don't use `static` to "optimize" the construction of function-local variables.</p>
 
  <h3><a name="prog-insteadof-global" href="#prog-insteadof-global">What should I use then instead of global variables?</a></h3>
  <p>You should try to confine variables to the scope(s) where they are used. Construct and hold them in the object which is supposed to own them as well as manage their lifetime and pass them to other objects/functions using references/pointers. Avoid passing by value. Often you cannot copy objects and are thus not allowed to pass by value, other times copying the object can take much more time because temporary memory has to be allocated just for the call and freed after the function returns.</p>
  <p>If you happen to use a C++11 compliant compiler then you can be sure that many Standard Library objects you pass around will have move constructors defined which makes it less painful to "pass by value" since if certain conditions are met, the compiler will use the Rvalue reference version of certain functions to speed up execution by a substantial amount.</p>
 
  <h3><a name="prog-singleton" href="#prog-singleton">Why is the singleton pattern not a good one?</a></h3>
+ <p>In short, singleton classes are global variables, they just hide it better. As a result, they share almost all of the related problems (construction/destruction time, implicit dependencies, multithreading). The fact that singletons are referred to as an OOP design pattern makes people think "it's OOP, so it must be good", which is not only a generally questionable conclusion, but particularly in this case. Having a class around it doesn't make code object-oriented; on the contrary, core OOP principles such as modularity or encapsulation are broken in the case of singletons.</p>
+ <p>A frequent misconception is the idea that things that are only instantiated once should become singletons. The purpose is to technically enforce that no two instances of a class can coexist. While this on its own sounds reasonable, the singleton technique mixes the solution to this problem with an unrelated aspect: providing a global access point for that one and only instance. And this often introduces far more problems than it promises to solve.</p>
+ <p>There are indeed use cases for classes of which only one object should exist, e.g. management-related tasks like rendering, resource handling, configuration, etc. As simple as it may sound, the most straightforward way to have only one instance at runtime is to create only one. The problematic of accidentally creating more is largely overstated, there is usually a clear place where instantiation should happen. And even if that problem should pose a serious threat, it can be trivially mitigated through assertions. That alone is rarely a good reason to pay the high price of having global variables.</p>
 
  <h2><a name="trouble" href="#trouble">Troubleshooting</a></h2>
 
