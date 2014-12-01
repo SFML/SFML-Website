@@ -34,7 +34,7 @@
 <p>
     SFML is available in two formats on Mac OS X. You have the <em>dylib</em> libraries on the one hand or the <em>framework</em> bundles on the other.
     Both of them are provided as <a href="http://en.wikipedia.org/wiki/Universal_binary" title="Go to Wikipedia's article about universal binary">universal binaries</a>
-    so they can be used on 32 bits or 64 bits Intel systems without any special consideration.
+    so they can be used on 32-bit or 64-bit Intel systems without any special consideration.
 </p>
 <p>
     Dylib stands for dynamic library; this format is like <em>.so</em> libraries on Linux. You can find more details in

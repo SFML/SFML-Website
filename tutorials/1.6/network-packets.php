@@ -19,14 +19,14 @@
     the bytes of a primitive type. There are two main families of platform : big-endian (most significant
     byte first - MSB), and little endian (least significant byte first - LSB). Some exotic platforms
     may also use bi-endian or mixed-endian, two other forms of byte storage.<br/>
-    To come back to network data transfer, let's imagine that you send a 16 bits integer as little-endian
+    To come back to network data transfer, let's imagine that you send a 16-bit integer as little-endian
     (your processor is an Intel x86 for example), and the server receives it and interprets it as big-endian
     (its processor is an Apple PowerPC for example) ; if you send 48 (00000000 00110000) the server will actually
     see 768 (00000011 00000000).
 </p>
 <p>
     Another problem is primitive types sizes. Different platforms can have different sizes for the
-    same type. If the size of a <code>long int</code> is 32 bits on your platform, maybe it will be 64 bits
+    same type. If the size of a <code>long int</code> is 32-bit on your platform, maybe it will be 64-bit
     on the server, and again, the received data won't be interpreted properly.
 </p>
 <p>

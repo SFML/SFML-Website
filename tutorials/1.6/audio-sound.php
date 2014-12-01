@@ -16,7 +16,7 @@
 
 <?php h2('The sound buffer') ?>
 <p>
-    In audio programming, a sound data is defined by an array of samples. A sample is a numeric value, usually a 16 bits
+    In audio programming, a sound data is defined by an array of samples. A sample is a numeric value, usually a 16-bit
     signed integer, representing the sound amplitude at a given time. The sound is then restituted by playing these samples
     at a high rate (CD use a rate of 44100 samples per second). The higher the sample rate, the better the sound quality.
     A sound is also defined by a number of channels. One channel is a mono sound, two channels is a stereo sound.
@@ -40,7 +40,7 @@ if (!Buffer.LoadFromSamples(Samples, 5000, 2, 44100))
 }
 </code></pre>
 <p>
-    The first parameter is a pointer to the sample array in memory. Elements must be 16 bits signed integers. The second
+    The first parameter is a pointer to the sample array in memory. Elements must be 16-bit signed integers. The second
     parameter, 5000, is the number of samples. The third one is the number of channels (here we have a stereo sound), and
     the last one is the sample rate.
 </p>

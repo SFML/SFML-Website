@@ -15,7 +15,7 @@
     It also explains how to compile SFML libraries, for advanced users.
 </p>
 <p>
-    Note that the 32 bits version of SFML is compatible with any Mac Intel or PPC using at least Mac OS X 10.4. The 64 bits
+    Note that the 32-bit version of SFML is compatible with any Mac Intel or PPC using at least Mac OS X 10.4. The 64-bit
     version works requires at least Mac OS X 10.5.
 </p>
 
@@ -23,15 +23,15 @@
 <p>
     First, you have to download the SFML development files. You can get the minimal package (libraries + headers), but
     it is advised to get the full SDK, which contains on top of that the samples and the documentation. If you use Mac OS X 10.6
-    or greater, use the 64 bits version; otherwise use the 32 bits version.<br/>
+    or greater, use the 64-bit version; otherwise use the 32-bit version.<br/>
     All these packages can be found on the
     <a class="internal" href="../../download.php" title="Go to the download page">download page</a>.
 </p>
 <p>
     Once you've downloaded and installed the files on your hard drive, copy the contents of the
-    SFML-x.y/lib directory (or lib64 if you use the 64 bits version) into the /Library/Frameworks directory. Then go to the
-    SFML-x.y/extlibs/bin directory. For the 32 bits version, copy the OpenAL.framework and libsndfile.framework directories
-    to /Library/Frameworks. For the 64 bits version, only copy the contents of the x86_64 directory. The minimal installation is finished.
+    SFML-x.y/lib directory (or lib64 if you use the 64-bit version) into the /Library/Frameworks directory. Then go to the
+    SFML-x.y/extlibs/bin directory. For the 32-bit version, copy the OpenAL.framework and libsndfile.framework directories
+    to /Library/Frameworks. For the 64-bit version, only copy the contents of the x86_64 directory. The minimal installation is finished.
 </p>
 <p>
     However, in order to make using SFML easier, we also provide project templates for Xcode. To use them, copy
@@ -108,7 +108,7 @@
 <p>
     Note : none of the SFML modules requires a library which is not already installed by default on Mac OS X,
     except the Audio module which requires the OpenAL and libsndfile libraries. So you'll have to provide them
-    together with your applications (see the extlibs/bin directory of the downloaded disk image). If you use the 64 bits version
+    together with your applications (see the extlibs/bin directory of the downloaded disk image). If you use the 64-bit version
     of SFML, you don't have to provide the OpenAL framework. Note that you can find the
     OpenAL framework in the system's folders, however the version delivered with Mac OS X 10.4 is not working well,
     that's why we provide a recompiled version with SFML.
@@ -123,8 +123,8 @@
     Go to the SFML-x.y/build/xcode directory and open the SFML.xcodeproj project (compatible with Xcode 2.4 and +).
     According to what you need, choose the target (Debug or Release), and launch the compile process. It can last
     a few minutes, depending on the power of your PC. You will then find the built frameworks in the
-    SFML-x.y/lib directory (or SFML-x.y/lib64 if you chose to compile SFML for 64 bits processors with the
-    "SFML with Intel 64 bits.xcodeproj" project).
+    SFML-x.y/lib directory (or SFML-x.y/lib64 if you chose to compile SFML for 64-bit processors with the
+    "SFML with Intel 64-bit.xcodeproj" project).
 </p>
 <p>
     Similarly, if you want to create the raw dynamic libraries, you can use the SFML-bare.xcodeproj project.

@@ -238,7 +238,7 @@
             <td><code>CMAKE_OSX_ARCHITECTURES<br/>(Mac OS X only)</code></td>
             <td>
                 This setting specifies for which architectures SFML should be compiled. The recommended value is "i386;x86_64" to generate universal binaries for both
-                32 and 64 bits systems.
+                32 and 64-bit systems.
             </td>
         </tr>
         <tr class="two">

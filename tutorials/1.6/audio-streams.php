@@ -74,7 +74,7 @@
 <p>
     <code>OnGetData</code> gives you a <code>Chunk</code> instance to fill, with a pointer to the new audio data to play
     (<code>Data.Samples</code>) and the number of samples to play (<code>Data.NbSamples</code>). Audio samples, like
-    anywhere in the SFML audio package, must be 16 bits signed integers.
+    anywhere in the SFML audio package, must be 16-bit signed integers.
 </p>
 <p>
     There is one more step to make your custom stream work : you must provide it with the sound parameters, ie. the
