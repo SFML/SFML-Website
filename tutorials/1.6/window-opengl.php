@@ -40,7 +40,7 @@
     is <code>WindowSettings</code> :
 </p>
 <pre><code class="cpp">sf::WindowSettings Settings;
-Settings.DepthBits         = 24; // Request a 24 bits depth buffer
+Settings.DepthBits         = 24; // Request a 24-bit depth buffer
 Settings.StencilBits       = 8;  // Request a 8 bits stencil buffer
 Settings.AntialiasingLevel = 2;  // Request 2 levels of antialiasing
 sf::Window App(sf::VideoMode(800, 600, 32), "SFML OpenGL", sf::Style::Close, Settings);

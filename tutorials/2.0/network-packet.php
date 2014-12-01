@@ -43,7 +43,7 @@
 </p>
 <p>
     SFML only provides fixed-size <em>integer</em> types. Floating-point types should normally have their fixed-size equivalent too, but in practice this is not needed
-    (at least on platforms where SFML runs), <code>float</code> and <code>double</code> types always have the same size (resp. 32 and 64 bits).
+    (at least on platforms where SFML runs), <code>float</code> and <code>double</code> types always have the same size (resp. 32 and 64-bit).
 </p>
 
 <?php h2('Packets') ?>

@@ -52,8 +52,8 @@
     <tbody>
         <tr>
             <td class="os" rowspan="2">All</td>
-            <td><?php download_link('2.1', 'All compilers', '32 bits', '2.63', 'SFML.Net-2.1-32bits.zip') ?></td>
-            <td><?php download_link('2.1', 'All compilers', '64 bits', '2.66', 'SFML.Net-2.1-64bits.zip') ?></td>
+            <td><?php download_link('2.1', 'All compilers', '32-bit', '2.63', 'SFML.Net-2.1-32bits.zip') ?></td>
+            <td><?php download_link('2.1', 'All compilers', '64-bit', '2.66', 'SFML.Net-2.1-64bits.zip') ?></td>
         </tr>
         <tr>
             <td colspan="2"><span class="description">Source code</span><a href="SFML.Net-2.1-sources.zip">Download<span class="size">2.70 MB</span></a></td>
@@ -66,8 +66,8 @@
     <tbody>
         <tr>
             <td class="os" rowspan="2">All</td>
-            <td><?php download_link('2.0', 'All compilers', '32 bits', '2.43', 'SFML.Net-2.0-32bits.zip') ?></td>
-            <td><?php download_link('2.0', 'All compilers', '64 bits', '2.62', 'SFML.Net-2.0-64bits.zip') ?></td>
+            <td><?php download_link('2.0', 'All compilers', '32-bit', '2.43', 'SFML.Net-2.0-32bits.zip') ?></td>
+            <td><?php download_link('2.0', 'All compilers', '64-bit', '2.62', 'SFML.Net-2.0-64bits.zip') ?></td>
         </tr>
         <tr>
             <td colspan="2"><span class="description">Source code</span><a href="SFML.Net-2.0-sources.zip">Download<span class="size">2.69 MB</span></a></td>

@@ -90,7 +90,7 @@ window.draw(text);
 </code></pre>
 <p>
     Yep, this simple "L" prefix in front of the string makes it work, by telling the compiler to produce a wide string. Wide strings are a strange beast
-    in C++: the standard doesn't say anything about their size (16 bits? 32 bits?), nor about the encoding that they use (UTF-16? UTF-32?). However
+    in C++: the standard doesn't say anything about their size (16-bit? 32-bit?), nor about the encoding that they use (UTF-16? UTF-32?). However
     we know that on most platforms, if not all, they'll produce Unicode strings, and SFML knows how to handle them correctly.
 </p>
 <p>

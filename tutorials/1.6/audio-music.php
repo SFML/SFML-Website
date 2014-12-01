@@ -12,7 +12,7 @@
 <p>
     You may ask, "what's the difference between a music and a sound ?". Well, a music is just a longer sound. But it makes
     a big difference in audio programming. The same difference that requires MP3 or OGG compression for your musics.
-    As we've learnt in the previous tutorial, uncompressed sound data is made of samples, which are (in SFML) 16 bits signed
+    As we've learnt in the previous tutorial, uncompressed sound data is made of samples, which are (in SFML) 16-bit signed
     integers. Take the standard sampling rate for CD quality (44100 samples per second), two channels, and you end up
     with 50 Mb in memory for no more than 5 minutes of music.
 </p>
