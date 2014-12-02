@@ -23,16 +23,16 @@
 </div>
 
 <div class="link-box two-columns-left">
-    <a class="contribute" href="contribute.php">
-        <div class="title">Contribution Guidelines</div>
-        <div class="description">How to help developing SFML</div>
+    <a class="changelog" href="changelog.php">
+        <div class="title">Changelog</div>
+        <div class="description">What has changed?</div>
     </a>
 </div>
 
 <div class="link-box two-columns-right">
-    <a class="workflow" href="workflow.php">
-        <div class="title">Our Workflow</div>
-        <div class="description">How we utilize Git</div>
+    <a class="contribute" href="contribute.php">
+        <div class="title">Contribution Guidelines</div>
+        <div class="description">How to help developing SFML</div>
     </a>
 </div>
 
@@ -44,9 +44,9 @@
 </div>
 
 <div class="link-box two-columns-right">
-    <a class="license" href="license.php">
-        <div class="title">License</div>
-        <div class="description">SFML's license</div>
+    <a class="workflow" href="workflow.php">
+        <div class="title">Our Workflow</div>
+        <div class="description">How we utilize Git</div>
     </a>
 </div>
 
