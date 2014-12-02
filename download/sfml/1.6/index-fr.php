@@ -1,7 +1,7 @@
 <?php
     $breadcrumbs = array
     (
-        'Télécharger' => 'download-fr.php',
+        'TÃ©lÃ©charger' => 'download-fr.php',
         'SFML 1.6' => 'download/sfml/1.6/index-fr.php'
     );
     include('../../../header-fr.php');
@@ -9,11 +9,11 @@
     function download_link($compiler, $arch, $size, $link)
     {
         $counter_script = "_gaq.push(['_trackEvent', 'Download', 'SFML 1.6']);";
-        echo '<span class="description">' . $compiler . ' - ' . $arch . '</span><a href="http://downloads.sourceforge.net/sfml/' . $link . '" onclick="' . $counter_script . '">Télécharger<span class="size">' . $size . ' Mo</span></a>';
+        echo '<span class="description">' . $compiler . ' - ' . $arch . '</span><a href="' . $link . '" onclick="' . $counter_script . '">TÃ©lÃ©charger<span class="size">' . $size . ' Mo</span></a>';
     }
 ?>
 
-<h1>Télécharger SFML 1.6</h1>
+<h1>TÃ©lÃ©charger SFML 1.6</h1>
 
 <table class="styled download">
     <tbody>

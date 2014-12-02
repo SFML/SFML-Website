@@ -1,5 +1,5 @@
 <?php
 
-    header('Location: workflow-fr.php');
+    header('Location: workflow.php');
 
 ?>
