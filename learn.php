@@ -8,6 +8,11 @@
 
 <h1>Learn</h1>
 
+<h2 id="tutorials">License</h2>
+<p>
+    SFML is licensed under the terms and condition of the <strong>zlib/png license</strong>. Read the full license text <a href="license.php" title="Go to the license text"><strong>here</strong></a>.
+</p>
+
 <h2 id="tutorials">Tutorials</h2>
 <p>
     The official tutorials are the starting point if you want to learn how to use SFML. They explain step by step the important concepts and classes of each module.
@@ -51,11 +56,6 @@
 <a class="box" href="faq.php">
     <div class="title">Official SFML FAQ</div>
 </a>
-
-<h2 id="tutorials">License</h2>
-<p>
-    SFML is licensed under the terms and condition of the zlib license. Read the full license text <a href="license.php">here</a>.
-</p>
 
 <h2 id="books">Books</h2>
 <div class="book">

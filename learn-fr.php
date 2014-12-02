@@ -8,9 +8,14 @@
 
 <h1>Apprendre</h1>
 
+<h2 id="tutorials">License</h2>
+<p>
+    SFML est distribuÃ©es sous <strong>licence zlib/png</strong>. Le texte complet se trouve <a href="license-fr.php" title="Page du text licence"><strong>ici</strong></a>.
+</p>
+
 <h2 id="tutoriels">Tutoriels</h2>
 <p>
-    Les tutoriels officiels sont le point de départ si vous souhaitez apprendre à utiliser SFML. Ils expliquent pas à pas les classes et concepts importants de chaque module.
+    Les tutoriels officiels sont le point de dÃ©part si vous souhaitez apprendre Ã  utiliser SFML. Ils expliquent pas Ã  pas les classes et concepts importants de chaque module.
 </p>
 <a class="box" href="tutorials/2.2/index-fr.php">
     <div class="title">SFML 2.2</div>
@@ -27,7 +32,7 @@
 
 <h2 id="documentation">Documentation de l'API</h2>
 <p>
-    Voici la documentation de référence de l'API SFML. Elle contient une description détaillée de chaque classe et fonction de SFML. Elle est générée directement à
+    Voici la documentation de rÃ©fÃ©rence de l'API SFML. Elle contient une description dÃ©taillÃ©e de chaque classe et fonction de SFML. Elle est gÃ©nÃ©rÃ©e directement Ã 
     partir du code source, avec <a href="http://www.stack.nl/~dimitri/doxygen/" title="Aller sur le site web de Doxygen">Doxygen</a> -- elle est donc uniquement
     disponible en anglais.
 </p>
@@ -46,16 +51,11 @@
 
 <h2 id="tutorials">FAQ <small>(Foire Aux Questions)</small></h2>
 <p>
-    En plus des tutoriels et de la documentation, la FAQ officielle couvre une bonne partie des erreurs et problèmes courants liés à SFML. Avant d'écrire sur le forum, prennez bien le temps de la parcourir.
+    En plus des tutoriels et de la documentation, la FAQ officielle couvre une bonne partie des erreurs et problÃ¨mes courants liÃ©s Ã  SFML. Avant d'Ã©crire sur le forum, prennez bien le temps de la parcourir.
 </p>
 <a class="box" href="faq.php">
     <div class="title">Official SFML FAQ (English)</div>
 </a>
-
-<h2 id="tutorials">License</h2>
-<p>
-    SFML est distribuées sous licence zlib/png. Le texte complet se trouve <a href="license-fr.php">ici</a>.
-</p>
 
 <h2 id="livres">Livres</h2>
 <div class="book">
