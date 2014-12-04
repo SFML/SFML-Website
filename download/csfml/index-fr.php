@@ -46,20 +46,20 @@
     <tbody>
         <tr>
             <td class="os">Windows</td>
-            <td><?php download_link('2.1', 'Visual C++ / GCC', '32 bits', '4.04', 'CSFML-2.1-windows-32bits.zip') ?></td>
-            <td><?php download_link('2.1', 'Visual C++ / GCC', '64 bits', '10.0', 'CSFML-2.1-windows-64bits.zip') ?></td>
+            <td><?php download_link('2.1', 'Visual C++ / GCC', '32-bit', '4.04', 'CSFML-2.1-windows-32bits.zip') ?></td>
+            <td><?php download_link('2.1', 'Visual C++ / GCC', '64-bit', '10.0', 'CSFML-2.1-windows-64bits.zip') ?></td>
         </tr>
         <tr>
             <td class="os">Linux</td>
-            <td><?php download_link('2.1', 'GCC', '32 bits', '0.41', 'CSFML-2.1-linux-gcc-32bits.tar.bz2') ?></td>
-            <td><?php download_link('2.1', 'GCC', '64 bits', '0.39', 'CSFML-2.1-linux-gcc-64bits.tar.bz2') ?></td>
+            <td><?php download_link('2.1', 'GCC', '32-bit', '0.41', 'CSFML-2.1-linux-gcc-32bits.tar.bz2') ?></td>
+            <td><?php download_link('2.1', 'GCC', '64-bit', '0.39', 'CSFML-2.1-linux-gcc-64bits.tar.bz2') ?></td>
         </tr>
         <tr>
             <td class="os" rowspan="2">Mac OS X</td>
-            <td colspan="2"><?php download_link('2.1', 'GCC', 'universel 32+64 bits (OS X 10.5+)', '0.99', 'CSFML-2.1-osx-gcc-universal.tar.gz') ?></td>
+            <td colspan="2"><?php download_link('2.1', 'GCC', 'universel 32+64-bit (OS X 10.5+)', '0.99', 'CSFML-2.1-osx-gcc-universal.tar.gz') ?></td>
         </tr>
         <tr>
-            <td colspan="2"><?php download_link('2.1', 'Clang', 'universel 32+64 bits (OS X 10.8+, compatible C++11 et libc++)', '0.65', 'CSFML-2.1-osx-clang-universal.tar.gz') ?></td>
+            <td colspan="2"><?php download_link('2.1', 'Clang', 'universel 32+64-bit (OS X 10.8+, compatible C++11 et libc++)', '0.65', 'CSFML-2.1-osx-clang-universal.tar.gz') ?></td>
         </tr>
         <tr>
             <td class="os">Tous OS</td>
@@ -73,20 +73,20 @@
     <tbody>
         <tr>
             <td class="os">Windows</td>
-            <td><?php download_link('2.0', 'Visual C++ / GCC', '32 bits', '4.21', 'CSFML-2.0-windows-32bits.zip') ?></td>
-            <td><?php download_link('2.0', 'Visual C++ / GCC', '64 bits', '10.2', 'CSFML-2.0-windows-64bits.zip') ?></td>
+            <td><?php download_link('2.0', 'Visual C++ / GCC', '32-bit', '4.21', 'CSFML-2.0-windows-32bits.zip') ?></td>
+            <td><?php download_link('2.0', 'Visual C++ / GCC', '64-bit', '10.2', 'CSFML-2.0-windows-64bits.zip') ?></td>
         </tr>
         <tr>
             <td class="os">Linux</td>
-            <td><?php download_link('2.0', 'GCC', '32 bits', '0.51', 'CSFML-2.0-linux-gcc-32bits.tar.bz2') ?></td>
-            <td><?php download_link('2.0', 'GCC', '64 bits', '0.48', 'CSFML-2.0-linux-gcc-64bits.tar.bz2') ?></td>
+            <td><?php download_link('2.0', 'GCC', '32-bit', '0.51', 'CSFML-2.0-linux-gcc-32bits.tar.bz2') ?></td>
+            <td><?php download_link('2.0', 'GCC', '64-bit', '0.48', 'CSFML-2.0-linux-gcc-64bits.tar.bz2') ?></td>
         </tr>
         <tr>
             <td class="os" rowspan="2">Mac OS X</td>
-            <td colspan="2"><?php download_link('2.0', 'GCC', 'universel 32+64 bits (OS X 10.5+)', '0.62', 'CSFML-2.0-osx-gcc-universal.zip') ?></td>
+            <td colspan="2"><?php download_link('2.0', 'GCC', 'universel 32+64-bit (OS X 10.5+)', '0.62', 'CSFML-2.0-osx-gcc-universal.zip') ?></td>
         </tr>
         <tr>
-            <td colspan="2"><?php download_link('2.0', 'Clang', 'universel 32+64 bits (OS X 10.8+, compatible C++11 et libc++)', '0.64', 'CSFML-2.0-osx-clang-universal.zip') ?></td>
+            <td colspan="2"><?php download_link('2.0', 'Clang', 'universel 32+64-bit (OS X 10.8+, compatible C++11 et libc++)', '0.64', 'CSFML-2.0-osx-clang-universal.zip') ?></td>
         </tr>
         <tr>
             <td class="os">Tous OS</td>
