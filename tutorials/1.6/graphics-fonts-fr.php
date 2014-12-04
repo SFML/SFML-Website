@@ -10,57 +10,57 @@
 
 <?php h2('Introduction') ?>
 <p>
-    Dans ce tutoriel, nous allons couvrir le rendu de texte à l'aide des classes <?php class_link("Font")?> et
+    Dans ce tutoriel, nous allons couvrir le rendu de texte Ã  l'aide des classes <?php class_link("Font")?> et
     <?php class_link("String")?>.
 </p>
 
 <?php h2('Charger une police') ?>
 <p>
-    Avant d'afficher du texte, il faut tout d'abord une police de caractères pour écrire celui-ci.
-    Une police, dans SFML, est définie par la classe
+    Avant d'afficher du texte, il faut tout d'abord une police de caractÃ¨res pour Ã©crire celui-ci.
+    Une police, dans SFML, est dÃ©finie par la classe
     <?php class_link("Font")?>.
-    Etant donné qu'il n'y a habituellement rien d'autre à faire avec une police que la charger et l'utiliser,
-    cette classe ne définit en fait que deux fonctions importantes, <code>LoadFromFile</code> et <code>LoadFromMemory</code>.
+    Etant donnÃ© qu'il n'y a habituellement rien d'autre Ã  faire avec une police que la charger et l'utiliser,
+    cette classe ne dÃ©finit en fait que deux fonctions importantes, <code>LoadFromFile</code> et <code>LoadFromMemory</code>.
 </p>
 <pre><code class="cpp">sf::Font MyFont;
 
-// Chargement à partir d'un fichier sur le disque
+// Chargement Ã  partir d'un fichier sur le disque
 if (!MyFont.LoadFromFile("arial.ttf"))
 {
     // Erreur...
 }
 
-// Chargement à partir d'un fichier en mémoire
+// Chargement Ã  partir d'un fichier en mÃ©moire
 if (!MyFont.LoadFromMemory(PointerToFileData, SizeOfFileData))
 {
     // Erreur...
 }
 </code></pre>
 <p>
-    Comme vous pouvez le voir, toutes deux renvoient <code>true</code> après un chargement réussi, et <code>false</code>
+    Comme vous pouvez le voir, toutes deux renvoient <code>true</code> aprÃ¨s un chargement rÃ©ussi, et <code>false</code>
     si au contraire une erreur est survenue.
 </p>
 <p>
-    Vous pouvez également passer deux paramètres additionnels à ces fonctions : la taille des caractères, ainsi que
-    le jeu de caractères à générer. Une taille de caractères plus élevée signifiera une qualité meilleure, mais soyez
-    prudent car cela augmentera également la mémoire vidéo utilisée. La taille par défaut est 30.
+    Vous pouvez Ã©galement passer deux paramÃ¨tres additionnels Ã  ces fonctions : la taille des caractÃ¨res, ainsi que
+    le jeu de caractÃ¨res Ã  gÃ©nÃ©rer. Une taille de caractÃ¨res plus Ã©levÃ©e signifiera une qualitÃ© meilleure, mais soyez
+    prudent car cela augmentera Ã©galement la mÃ©moire vidÃ©o utilisÃ©e. La taille par dÃ©faut est 30.
 </p>
 <p>
-    Passer votre propre jeu de caractères peut être nécessaire si vous avez l'intention d'utiliser des caractères
-    non-ASCII ; dans ce cas, passez simplement la liste des caractères que vous comptez utiliser. Vous pouvez passer
-    n'importe quel type / encodage de chaîne, y compris des chaînes Unicode, ce qui signifie que vous pouvez tout
-    aussi bien utiliser des caractères accentués européens, des caractères chinois ou encore arabes.<br/>
-    Le jeu de caractères par défaut est défini comme étant tous les caractères affichables de ISO-8859-1.
-    ISO-8859-1 est un jeu de caractères qui contient tous les caractères ASCII, plus la plupart des caractères européens
-    accentués; et il se trouve également que ce jeu représente les 256 premiers caractères du standard Unicode.
-    Ainsi, ce jeu de caractères par défaut devrait être suffisant pour une utilisation courante (anglais ou français
+    Passer votre propre jeu de caractÃ¨res peut Ãªtre nÃ©cessaire si vous avez l'intention d'utiliser des caractÃ¨res
+    non-ASCII ; dans ce cas, passez simplement la liste des caractÃ¨res que vous comptez utiliser. Vous pouvez passer
+    n'importe quel type / encodage de chaÃ®ne, y compris des chaÃ®nes Unicode, ce qui signifie que vous pouvez tout
+    aussi bien utiliser des caractÃ¨res accentuÃ©s europÃ©ens, des caractÃ¨res chinois ou encore arabes.<br/>
+    Le jeu de caractÃ¨res par dÃ©faut est dÃ©fini comme Ã©tant tous les caractÃ¨res affichables de ISO-8859-1.
+    ISO-8859-1 est un jeu de caractÃ¨res qui contient tous les caractÃ¨res ASCII, plus la plupart des caractÃ¨res europÃ©ens
+    accentuÃ©s; et il se trouve Ã©galement que ce jeu reprÃ©sente les 256 premiers caractÃ¨res du standard Unicode.
+    Ainsi, ce jeu de caractÃ¨res par dÃ©faut devrait Ãªtre suffisant pour une utilisation courante (anglais ou franÃ§ais
     par exemple).
 </p>
 <p>
-    Voici un exemple d'utilisation avec la taille et le jeu de caractères explicitement donnés :
+    Voici un exemple d'utilisation avec la taille et le jeu de caractÃ¨res explicitement donnÃ©s :
 </p>
 <pre><code class="cpp">sf::Font   MyFont;
-sf::Uint32 MyCharset[] = {0x4E16, 0x754C, 0x60A8, 0x597D, 0x0}; // un ensemble de caractères chinois
+sf::Uint32 MyCharset[] = {0x4E16, 0x754C, 0x60A8, 0x597D, 0x0}; // un ensemble de caractÃ¨res chinois
 if (!MyFont.LoadFromFile("arial.ttf", 50, MyCharset))
 {
     // Error...
@@ -68,31 +68,31 @@ if (!MyFont.LoadFromFile("arial.ttf", 50, MyCharset))
 </code></pre>
 <p>
     <?php class_link("Font")?>
-    peut charger de nombreux types de fichiers de polices, des TTF standards aux PCF de X11. Vous pouvez vous référer à la
-    <a class="external" href="http://www.freetype.org/freetype2/index.html#features" title="Page des fonctionnalités de FreeType's">Page des fonctionnalités du projet FreeType</a>
-    pour avoir la liste complète (il s'agit de la bibliothèque utilisée en interne par SFML).
+    peut charger de nombreux types de fichiers de polices, des TTF standards aux PCF de X11. Vous pouvez vous rÃ©fÃ©rer Ã  la
+    <a class="external" href="http://www.freetype.org/freetype2/index.html#features" title="Page des fonctionnalitÃ©s de FreeType's">Page des fonctionnalitÃ©s du projet FreeType</a>
+    pour avoir la liste complÃ¨te (il s'agit de la bibliothÃ¨que utilisÃ©e en interne par SFML).
 </p>
 <p>
-    <?php class_link("Font")?> donne également accès aux glyphes pré-rendues (une glyphe est un caractère visuel), mais vous
-    n'aurez pas besoin d'utiliser ces fonctions à moins que vous n'ayiez des besoins très spécifiques.
+    <?php class_link("Font")?> donne Ã©galement accÃ¨s aux glyphes prÃ©-rendues (une glyphe est un caractÃ¨re visuel), mais vous
+    n'aurez pas besoin d'utiliser ces fonctions Ã  moins que vous n'ayiez des besoins trÃ¨s spÃ©cifiques.
 </p>
 
-<?php h2('Créer une chaîne') ?>
+<?php h2('CrÃ©er une chaÃ®ne') ?>
 <p>
-    Pour créer une chaîne affichable à l'écran, vous devez créer une instance de le classe
-    <?php class_link("String")?>. Une telle instance possède trois paramètres : le texte à afficher,
-    la police de caractères utilisée, et la taille des caractères. Notez bien
-    que <?php class_link("String")?> n'est pas une classe de chaînes de caractères dans le sens de <code>std::string</code>,
-    c'est-à-dire qu'elle ne fournit aucune fonction ayant un rapport avec la manipulation de la chaîne en elle-même
+    Pour crÃ©er une chaÃ®ne affichable Ã  l'Ã©cran, vous devez crÃ©er une instance de le classe
+    <?php class_link("String")?>. Une telle instance possÃ¨de trois paramÃ¨tres : le texte Ã  afficher,
+    la police de caractÃ¨res utilisÃ©e, et la taille des caractÃ¨res. Notez bien
+    que <?php class_link("String")?> n'est pas une classe de chaÃ®nes de caractÃ¨res dans le sens de <code>std::string</code>,
+    c'est-Ã -dire qu'elle ne fournit aucune fonction ayant un rapport avec la manipulation de la chaÃ®ne en elle-mÃªme
     comme par exemple <em>find</em>, <em>append</em>, <em>substring</em>, etc. Elle focalise uniquement sur
-    la partie graphique, et laisse la manipulation de la chaîne à <code>std::string</code> (ou n'importe quelle
-    autre classe que vous préférez utiliser).
+    la partie graphique, et laisse la manipulation de la chaÃ®ne Ã  <code>std::string</code> (ou n'importe quelle
+    autre classe que vous prÃ©fÃ©rez utiliser).
 </p>
 <p>
-    Donc, voici comme nous définirions une chaîne contenant le texte "Hello", utilisant la police "arial.ttf", et
-    avec une taille de caractères de 50 :
+    Donc, voici comme nous dÃ©finirions une chaÃ®ne contenant le texte "Hello", utilisant la police "arial.ttf", et
+    avec une taille de caractÃ¨res de 50 :
 </p>
-<pre><code class="cpp">// Chargement de la police à partir d'un fichier
+<pre><code class="cpp">// Chargement de la police Ã  partir d'un fichier
 sf::Font MyFont;
 if (!MyFont.LoadFromFile("arial.ttf", 50))
 {
@@ -101,7 +101,7 @@ if (!MyFont.LoadFromFile("arial.ttf", 50))
 
 sf::String Text("Hello", MyFont, 50);
 
-// Ou, si vous souhaitez le faire après la construction :
+// Ou, si vous souhaitez le faire aprÃ¨s la construction :
 
 sf::String Text;
 Text.SetText("Hello");
@@ -109,39 +109,39 @@ Text.SetFont(MyFont);
 Text.SetSize(50);
 </code></pre>
 <p>
-    Vous pouvez également utiliser des chaînes de caractères larges, si vous comptez utiliser du texte unicode :
+    Vous pouvez Ã©galement utiliser des chaÃ®nes de caractÃ¨res larges, si vous comptez utiliser du texte unicode :
 </p>
-<pre><code class="cpp">Text.SetText(L"Voilà");
+<pre><code class="cpp">Text.SetText(L"VoilÃ ");
 </code></pre>
 <p>
-    Tout autre type de chaîne SFML est également automatiquement accepté.
+    Tout autre type de chaÃ®ne SFML est Ã©galement automatiquement acceptÃ©.
 </p>
 <p>
-    Une petite astuce : si vous voulez obtenir la meilleure qualité visuelle possible, essayer de charger vos polices
-    avec une taille au moins aussi élevée que celle qu'utiliseront vos chaînes. Sinon, les caractères seront redimensionnés
-    et pourront apparaître légèrement flous sur les contours. De la même manière, essayez d'utiliser des tailles faibles
-    lorsque vous comptez afficher des textes très petits, sinon les caractères pourront une fois de plus être
-    trop redimensionnés et dégrader la qualité visuelle globale.
+    Une petite astuce : si vous voulez obtenir la meilleure qualitÃ© visuelle possible, essayer de charger vos polices
+    avec une taille au moins aussi Ã©levÃ©e que celle qu'utiliseront vos chaÃ®nes. Sinon, les caractÃ¨res seront redimensionnÃ©s
+    et pourront apparaÃ®tre lÃ©gÃ¨rement flous sur les contours. De la mÃªme maniÃ¨re, essayez d'utiliser des tailles faibles
+    lorsque vous comptez afficher des textes trÃ¨s petits, sinon les caractÃ¨res pourront une fois de plus Ãªtre
+    trop redimensionnÃ©s et dÃ©grader la qualitÃ© visuelle globale.
 </p>
 <p>
-    Notez que vous pouvez en fait utiliser une chaîne sans avoir chargé une seule police : SFML fournit une police
-    par défaut, qui est la police Arial avec une taille de caractères de 30.
+    Notez que vous pouvez en fait utiliser une chaÃ®ne sans avoir chargÃ© une seule police : SFML fournit une police
+    par dÃ©faut, qui est la police Arial avec une taille de caractÃ¨res de 30.
 </p>
 <pre><code class="cpp">Text.SetFont(sf::Font::GetDefaultFont());
 </code></pre>
 <p>
-    Les chaînes peuvent également utiliser différents styles : normal (par défaut), ou n'importe quelle combinaison
-    de gras (<em>bold</em>), italique (<em>italic</em>) et souligné (<em>underlined</em>).
+    Les chaÃ®nes peuvent Ã©galement utiliser diffÃ©rents styles : normal (par dÃ©faut), ou n'importe quelle combinaison
+    de gras (<em>bold</em>), italique (<em>italic</em>) et soulignÃ© (<em>underlined</em>).
 </p>
 <pre><code class="cpp">sf::String Text = "I like donuts";
 Text.SetStyle(sf::String::Bold | sf::String::Italic | sf::String::Underlined);
 Text.SetStyle(sf::String::Regular);
 </code></pre>
 
-<?php h2('Afficher une chaîne') ?>
+<?php h2('Afficher une chaÃ®ne') ?>
 <p>
-    <?php class_link("String")?> est une classe affichable standard, ce qui signifie qu'elle hérite de <?php class_link("Drawable")?>
-    et reçoit tous des attributs et fonctions, tout comme <?php class_link("Sprite")?>.<br/>
+    <?php class_link("String")?> est une classe affichable standard, ce qui signifie qu'elle hÃ©rite de <?php class_link("Drawable")?>
+    et reÃ§oit tous des attributs et fonctions, tout comme <?php class_link("Sprite")?>.<br/>
     Ainsi vous pouvez modifier sa position, sa taille, son orientation, sa couleur, etc. :
 </p>
 <pre><code class="cpp">Text.SetColor(sf::Color(128, 128, 0));
@@ -150,46 +150,46 @@ Text.SetScale(2.f, 2.f);
 Text.Move(100.f, 200.f);
 </code></pre>
 <p>
-    Puis, pour afficher la chaîne dans une fenêtre donnée, vous n'avez qu'à utiliser la fonction <code>Draw</code> :
+    Puis, pour afficher la chaÃ®ne dans une fenÃªtre donnÃ©e, vous n'avez qu'Ã  utiliser la fonction <code>Draw</code> :
 </p>
 <pre><code class="cpp">sf::RenderWindow Window;
 ...
 Window.Draw(Text);
 </code></pre>
 
-<?php h2('Et les positions des caractères dans tout ça ?') ?>
+<?php h2('Et les positions des caractÃ¨res dans tout Ã§a ?') ?>
 <p>
-    Au cas où vous auriez besoin de traiter avec les caractères d'une chaîne individuellement, comme par exemple pour
-    afficher un curseur après le n-ème caractère, <?php class_link("String")?> fournit une fonction pour obtenir la position
-    de n'importe quel caractère dans la chaîne.
+    Au cas oÃ¹ vous auriez besoin de traiter avec les caractÃ¨res d'une chaÃ®ne individuellement, comme par exemple pour
+    afficher un curseur aprÃ¨s le n-Ã¨me caractÃ¨re, <?php class_link("String")?> fournit une fonction pour obtenir la position
+    de n'importe quel caractÃ¨re dans la chaÃ®ne.
 </p>
 <pre><code class="cpp">sf::Vector2f Position = Text.GetCharacterPos(4);
 </code></pre>
 <p>
-    La position renvoyée est définie en coordonnées locales, vous aurez donc besoin d'appeler
-    <code>TransformToGlobal</code> afin d'obtenir les coordonnées globales réelles du caractère.
+    La position renvoyÃ©e est dÃ©finie en coordonnÃ©es locales, vous aurez donc besoin d'appeler
+    <code>TransformToGlobal</code> afin d'obtenir les coordonnÃ©es globales rÃ©elles du caractÃ¨re.
 </p>
 
-<?php h2('Gestion des polices et des chaînes') ?>
+<?php h2('Gestion des polices et des chaÃ®nes') ?>
 <p>
-    Vous devez être particulièrement prudent lorsque vous manipulez des polices de caractères. Une instance de
+    Vous devez Ãªtre particuliÃ¨rement prudent lorsque vous manipulez des polices de caractÃ¨res. Une instance de
     <?php class_link("Font")?>
-    est une ressource qui est lente à charger, lourde à copier et qui utilise beaucoup de mémoire.
+    est une ressource qui est lente Ã  charger, lourde Ã  copier et qui utilise beaucoup de mÃ©moire.
 </p>
 <p>
-    Pour une bonne discussion à propos de la gestion des ressources, je vous renvoie au paragraphe
+    Pour une bonne discussion Ã  propos de la gestion des ressources, je vous renvoie au paragraphe
     <strong>"Gestion des images et des sprites"</strong> du
     <a class="internal" href="./graphics-sprite-fr.php" title="Tutoriel sur les sprites">tutoriel sur les sprites</a>,
-    en remplaçant simplement le mot "Image" par "Police" et "Sprite" par "Chaîne".
+    en remplaÃ§ant simplement le mot "Image" par "Police" et "Sprite" par "ChaÃ®ne".
 </p>
 
 <?php h2('Conclusion') ?>
 <p>
-    C'est tout ce qu'il y a à dire à propos des chaînes SFML. Vous pouvez maintenant afficher du texte avec différentes
-    polices, tailles et styles, plus toutes les fonctionnalités graphiques des objets affichables de la SFML.<br/>
+    C'est tout ce qu'il y a Ã  dire Ã  propos des chaÃ®nes SFML. Vous pouvez maintenant afficher du texte avec diffÃ©rentes
+    polices, tailles et styles, plus toutes les fonctionnalitÃ©s graphiques des objets affichables de la SFML.<br/>
     Vous pouvez maintenant vous rendre au tutoriel suivant, qui vous montrera comment ajouter des
     <a class="internal" href="./graphics-postfx-fr.php" title="Aller au tutoriel suivant">post-effects</a>
-    temps réel à vos graphiques.
+    temps rÃ©el Ã  vos graphiques.
 </p>
 
 <?php

@@ -86,7 +86,7 @@ window.draw(text);
     of the various encodings involved in the process of interpreting and drawing your text. To avoid having to bother with these encodings, there's
     a simple solution: Use <em>wide literal strings</em>.
 </p>
-<pre><code class="cpp">text.setString(L"ιθΰη");
+<pre><code class="cpp">text.setString(L"Χ™ΧΧΧ—");
 </code></pre>
 <p>
     It is this simple "L" prefix in front of the string that makes it work by telling the compiler to produce a wide string. Wide strings are a strange beast

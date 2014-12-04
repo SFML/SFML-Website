@@ -1,7 +1,7 @@
 <?php
     $breadcrumbs = array
     (
-        'Télécharger' => 'download-fr.php',
+        'TÃ©lÃ©charger' => 'download-fr.php',
         'Goodies' => 'download/goodies/index-fr.php'
     );
     include('../../header-fr.php');
@@ -31,7 +31,7 @@
 
 <div class="link-box three-columns-right">
     <a class="download" href="sfml-logo.svg">
-        <div class="title">Vectorisé</div>
+        <div class="title">VectorisÃ©</div>
         <div class="description">SVG</div>
     </a>
 </div>

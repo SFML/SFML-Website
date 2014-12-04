@@ -17,46 +17,46 @@
 
 <?php h2('Installer SFML') ?>
 <p>
-    Différentes approches sont possibles pour installer SFML sous Linux :
+    DiffÃ©rentes approches sont possibles pour installer SFML sous Linux :
 </p>
 <ul>
-    <li>L'installer directement depuis les dépôts de votre distrib Linux</li>
-    <li>Télécharger le SDK et copier les fichiers manuellement</li>
-    <li>La compiler directement à partir des sources</li>
+    <li>L'installer directement depuis les dÃ©pÃ´ts de votre distrib Linux</li>
+    <li>TÃ©lÃ©charger le SDK et copier les fichiers manuellement</li>
+    <li>La compiler directement Ã  partir des sources</li>
 </ul>
 <p>
-    L'option 1 est de loin celle à préférer; si la version de SFML que vous souhaitez installer est disponible dans les dépôts officiels, alors
+    L'option 1 est de loin celle Ã  prÃ©fÃ©rer; si la version de SFML que vous souhaitez installer est disponible dans les dÃ©pÃ´ts officiels, alors
     installez la simplement avec votre gestionnaire de paquets. Par exemple, sous Debian vous feriez :
 </p>
 <pre><code class="no-highlight">sudo apt-get install libsfml-dev</code></pre>
 <p>
-    L'option 3 nécessite plus de travail : vous devez installer les fichiers de développement de toutes les dépendances de SFML, installer CMake, et
-    exécuter quelques commandes à la main. Mais le résultat sera un package parfait, qui prend en compte toutes les spécificités de votre système.<br />
-    Si vous allez dans cette direction, il y a un tutoriel dédié à
+    L'option 3 nÃ©cessite plus de travail : vous devez installer les fichiers de dÃ©veloppement de toutes les dÃ©pendances de SFML, installer CMake, et
+    exÃ©cuter quelques commandes Ã  la main. Mais le rÃ©sultat sera un package parfait, qui prend en compte toutes les spÃ©cificitÃ©s de votre systÃ¨me.<br />
+    Si vous allez dans cette direction, il y a un tutoriel dÃ©diÃ© Ã 
     <a class="internal" href="./compile-with-cmake-fr.php" title="Comment compiler SFML">la compilation de SFML</a>.
 </p>
 <p>
-    Enfin, l'option 2 est un bon compromis pour une installation rapide si SFML n'est pas disponible en tant que package officiel. Téléchargez le SDK
-    depuis la <a class="internal" href="../../download-fr.php" title="Aller à la page des téléchargements">page des téléchargements</a>, décompressez-le
-    et copier les fichiers vers votre endroit préféré : soit un chemin à part dans votre dossier personnel (comme <em>/home/moi/sfml</em>), ou bien un
+    Enfin, l'option 2 est un bon compromis pour une installation rapide si SFML n'est pas disponible en tant que package officiel. TÃ©lÃ©chargez le SDK
+    depuis la <a class="internal" href="../../download-fr.php" title="Aller Ã  la page des tÃ©lÃ©chargements">page des tÃ©lÃ©chargements</a>, dÃ©compressez-le
+    et copier les fichiers vers votre endroit prÃ©fÃ©rÃ© : soit un chemin Ã  part dans votre dossier personnel (comme <em>/home/moi/sfml</em>), ou bien un
     chemin standard (comme <em>/usr/local</em>).
 </p>
 <p>
-    Si vous avez déjà une ancienne version de SFML installée, assurez-vous qu'elle n'entre pas en conflit avec la nouvelle version !
+    Si vous avez dÃ©jÃ  une ancienne version de SFML installÃ©e, assurez-vous qu'elle n'entre pas en conflit avec la nouvelle version !
 </p>
 
 <?php h2('Compiler un programme SFML') ?>
 <p>
-    Dans ce tutoriel nous n'allons pas parler des EDIs tels que Code::Blocks ou Eclipse. Nous détaillerons simplement les commandes requises pour
-    compiler et lier un exécutable SFML, mais écrire un makefile complet ou configurer un projet dans un EDI sort du cadre de ce tutoriel -- il existe
-    de meilleurs tutoriels spécifique pour ces choses.<br />
+    Dans ce tutoriel nous n'allons pas parler des EDIs tels que Code::Blocks ou Eclipse. Nous dÃ©taillerons simplement les commandes requises pour
+    compiler et lier un exÃ©cutable SFML, mais Ã©crire un makefile complet ou configurer un projet dans un EDI sort du cadre de ce tutoriel -- il existe
+    de meilleurs tutoriels spÃ©cifique pour ces choses.<br />
     Si vous utilisez Code::Blocks, vous pouvez aller jeter un oeil au
-    <a class="internal" href="./start-cb-fr.php" title="SFML et Code::Blocks">tutoriel pour Code::Blocks sous Windows</a>; les instructions devraient être
-    similaires, sauf que si vous avez installé SFML dans un chemin standard du système vous n'aurez pas à définir les chemins de recherche du compilateur
-    et de l'éditeur de liens.
+    <a class="internal" href="./start-cb-fr.php" title="SFML et Code::Blocks">tutoriel pour Code::Blocks sous Windows</a>; les instructions devraient Ãªtre
+    similaires, sauf que si vous avez installÃ© SFML dans un chemin standard du systÃ¨me vous n'aurez pas Ã  dÃ©finir les chemins de recherche du compilateur
+    et de l'Ã©diteur de liens.
 </p>
 <p>
-    Pour commencer, créez un fichier source, nommé "main.cpp", contenant ce petit programme SFML :
+    Pour commencer, crÃ©ez un fichier source, nommÃ© "main.cpp", contenant ce petit programme SFML :
 </p>
 <pre><code class="cpp">#include &lt;SFML/Graphics.hpp&gt;
 
@@ -88,35 +88,35 @@ int main()
 </p>
 <pre><code class="no-highlight">g++ -c main.cpp</code></pre>
 <p>
-    Si vous avez installé SFML dans un chemin non-standard, vous devez indiquer au compilateur où trouver les en-têtes SFML (les fichiers .hpp) :
+    Si vous avez installÃ© SFML dans un chemin non-standard, vous devez indiquer au compilateur oÃ¹ trouver les en-tÃªtes SFML (les fichiers .hpp) :
 </p>
 <pre><code class="no-highlight">g++ -c main.cpp -I<em>&lt;installation-de-sfml&gt;</em>/include</code></pre>
 <p>
-    Ici, <em>&lt;installation-de-sfml&gt;</em> est le répertoire dans lequel vous avez copié SFML, par exemple <em>/home/moi/sfml</em>.
+    Ici, <em>&lt;installation-de-sfml&gt;</em> est le rÃ©pertoire dans lequel vous avez copiÃ© SFML, par exemple <em>/home/moi/sfml</em>.
 </p>
 <p>
-    Puis, vous devez lier le fichier compilé aux bibliothèques SFML afin de produire l'exécutable final. SFML est composée de 5 modules (système,
-    fenêtrage, graphique, réseau et audio), et il y a une bibliothèque pour chacun.<br />
-    Pour lier une bibliothèque SFML, vous devez ajouter "-lsfml-xxx" à votre ligne de commande, par exemple "-lsfml-graphics" pour le module graphique
-    (par rapport au nom du fichier correspondant, le préfixe "lib" et l'extension ".so" doivent être omis).
+    Puis, vous devez lier le fichier compilÃ© aux bibliothÃ¨ques SFML afin de produire l'exÃ©cutable final. SFML est composÃ©e de 5 modules (systÃ¨me,
+    fenÃªtrage, graphique, rÃ©seau et audio), et il y a une bibliothÃ¨que pour chacun.<br />
+    Pour lier une bibliothÃ¨que SFML, vous devez ajouter "-lsfml-xxx" Ã  votre ligne de commande, par exemple "-lsfml-graphics" pour le module graphique
+    (par rapport au nom du fichier correspondant, le prÃ©fixe "lib" et l'extension ".so" doivent Ãªtre omis).
 </p>
 <pre><code class="no-highlight">g++ main.o -o sfml-app -lsfml-graphics -lsfml-window -lsfml-system</code></pre>
 <p>
-    Si vous avez installé SFML dans un chemin non-standard, vous devrez indiquer à l'éditeur de liens où trouver les bibliothèques SFML (fichiers .so) :
+    Si vous avez installÃ© SFML dans un chemin non-standard, vous devrez indiquer Ã  l'Ã©diteur de liens oÃ¹ trouver les bibliothÃ¨ques SFML (fichiers .so) :
 </p>
 <pre><code class="no-highlight">g++ main.o -o sfml-app -L<em>&lt;installation-de-sfml&gt;</em>/lib -lsfml-graphics -lsfml-window -lsfml-system</code></pre>
 <p>
-    Nous sommes maintenant prêts à exécuter le programme compilé :
+    Nous sommes maintenant prÃªts Ã  exÃ©cuter le programme compilÃ© :
 </p>
 <pre><code class="no-highlight">./sfml-app</code></pre>
 <p>
-    Si SFML n'est pas installée dans un chemin standard, vous devrez d'abord dire au chargeur de bibliothèques où trouver les bibliothèques de SFML :
+    Si SFML n'est pas installÃ©e dans un chemin standard, vous devrez d'abord dire au chargeur de bibliothÃ¨ques oÃ¹ trouver les bibliothÃ¨ques de SFML :
 </p>
 <pre><code class="no-highlight">export LD_LIBRARY_PATH=<em>&lt;installation-de-sfml&gt;</em>/lib &amp;&amp; ./sfml-app</code></pre>
 <p>
-    Si tout s'est bien passé, vous devriez voir ceci dans une nouvelle fenêtre :
+    Si tout s'est bien passÃ©, vous devriez voir ceci dans une nouvelle fenÃªtre :
 </p>
-<img class="screenshot" src="./images/start-linux-app.png" alt="Capture d'écran de l'application Hello SFML" title="Capture d'écran de l'application Hello SFML" />
+<img class="screenshot" src="./images/start-linux-app.png" alt="Capture d'Ã©cran de l'application Hello SFML" title="Capture d'Ã©cran de l'application Hello SFML" />
 
 <?php
 

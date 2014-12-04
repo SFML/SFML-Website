@@ -1,23 +1,23 @@
 <?php
 
-    $title = "Intégrer à une interface X11";
+    $title = "IntÃ©grer Ã  une interface X11";
     $page = "graphics-x11-fr.php";
 
     require("header-fr.php");
 ?>
 
-<h1>Intégrer à une interface X11</h1>
+<h1>IntÃ©grer Ã  une interface X11</h1>
 
 <?php h2('Introduction') ?>
 <p>
-    Dans ce nouveau tutoriel, nous nous intéresserons à l'intégration de la SFML à une interface X11. Si vous
-    n'êtes pas familiers avec la programmation avec Xlib vous pouvez commencer par lire un tutoriel sur le sujet, car nous
-    ne détaillerons dans ce tutoriel que la manière dont SFML s'intègre à une fenêtre X11.
+    Dans ce nouveau tutoriel, nous nous intÃ©resserons Ã  l'intÃ©gration de la SFML Ã  une interface X11. Si vous
+    n'Ãªtes pas familiers avec la programmation avec Xlib vous pouvez commencer par lire un tutoriel sur le sujet, car nous
+    ne dÃ©taillerons dans ce tutoriel que la maniÃ¨re dont SFML s'intÃ¨gre Ã  une fenÃªtre X11.
 </p>
 
-<?php h2('Création de la fenêtre X11') ?>
+<?php h2('CrÃ©ation de la fenÃªtre X11') ?>
 <p>
-    Premièrement, nous devons créer une interface X11. Nous créerons une fenêtre principale, et une sous-fenêtre dans laquelle
+    PremiÃ¨rement, nous devons crÃ©er une interface X11. Nous crÃ©erons une fenÃªtre principale, et une sous-fenÃªtre dans laquelle
     nous allons afficher un rendu SFML. Le bout de code suivant est du code X11 classique, aucune fonction SFML
     n'entre encore en jeu :
 </p>
@@ -26,10 +26,10 @@ Display* Disp = XOpenDisplay(NULL);
 if (!Disp)
     return EXIT_FAILURE;
 
-// On récupère le numéro de l'écran par défaut
+// On rÃ©cupÃ¨re le numÃ©ro de l'Ã©cran par dÃ©faut
 int Screen = DefaultScreen(Disp);
 
-// On crée la fenêtre principale
+// On crÃ©e la fenÃªtre principale
 XSetWindowAttributes Attributes;
 Attributes.background_pixel = BlackPixel(Disp, Screen);
 Attributes.event_mask       = KeyPressMask;
@@ -45,7 +45,7 @@ if (!Win)
 // On change son titre
 XStoreName(Disp, Win, "SFML Window");
 
-// On crée la sous-fenêtre qui servira à héberger notre vue SFML
+// On crÃ©e la sous-fenÃªtre qui servira Ã  hÃ©berger notre vue SFML
 Window View = XCreateWindow(Disp, Win,
                              10, 10, 310, 310, 0,
                              DefaultDepth(Disp, Screen),
@@ -53,38 +53,38 @@ Window View = XCreateWindow(Disp, Win,
                              DefaultVisual(Disp, Screen),
                              0, NULL);
 
-// Et enfin on affiche nos fenêtres fraîchement créées
+// Et enfin on affiche nos fenÃªtres fraÃ®chement crÃ©Ã©es
 XMapWindow(Disp, Win);
 XMapWindow(Disp, View);
 XFlush(Disp);
 </code></pre>
 
-<?php h2('Définition d\'une vue SFML') ?>
+<?php h2('DÃ©finition d\'une vue SFML') ?>
 <p>
-    Une fois que tous les composants de l'interface ont été créés, nous pouvons définir notre vue SFML. Pour ce faire,
-    nous avons juste à construire une instance de <?php class_link("RenderWindows")?> et à lui passer l'identificateur de
-    la fenêtre X11 :
+    Une fois que tous les composants de l'interface ont Ã©tÃ© crÃ©Ã©s, nous pouvons dÃ©finir notre vue SFML. Pour ce faire,
+    nous avons juste Ã  construire une instance de <?php class_link("RenderWindows")?> et Ã  lui passer l'identificateur de
+    la fenÃªtre X11 :
 </p>
 <pre><code class="cpp">sf::RenderWindow SFMLView(View);
 
-// Ou, si vous souhaitez le faire après la construction :
+// Ou, si vous souhaitez le faire aprÃ¨s la construction :
 
 SFMLView.Create(View);
 </code></pre>
 <p>
-    Et voilà, vous avez une fenêtre de rendu SFML intégrée à votre interface X11.
+    Et voilÃ , vous avez une fenÃªtre de rendu SFML intÃ©grÃ©e Ã  votre interface X11.
 </p>
 
 <?php h2('La boucle principale') ?>
 <p>
-    La boucle d'évènements est une boucle X11 classique :
+    La boucle d'Ã©vÃ¨nements est une boucle X11 classique :
 </p>
 <pre><code class="cpp">bool IsRunning = true;
 while (IsRunning)
 {
     while (XPending(Disp))
     {
-        // On traite le prochain évènement en attente
+        // On traite le prochain Ã©vÃ¨nement en attente
         XEvent Event;
         XNextEvent(Disp, &amp;Event);
         switch (Event.type)
@@ -100,7 +100,7 @@ while (IsRunning)
 }
 </code></pre>
 <p>
-    Puis nous pouvons insérer notre code SFML :
+    Puis nous pouvons insÃ©rer notre code SFML :
 </p>
 <pre><code class="cpp">// On efface la vue
 SFMLView.Clear();
@@ -108,11 +108,11 @@ SFMLView.Clear();
 // On affiche un sprite
 SFMLView.Draw(Sprite);
 
-// On rafraîchit la vue à l'écran
+// On rafraÃ®chit la vue Ã  l'Ã©cran
 SFMLView.Display();
 </code></pre>
 <p>
-    N'oubliez pas de libérer vos ressources X11 avant de quitter l'application :
+    N'oubliez pas de libÃ©rer vos ressources X11 avant de quitter l'application :
 </p>
 <pre><code class="cpp">// On ferme la connection avec le serveur X
 XCloseDisplay(Disp);
@@ -120,9 +120,9 @@ XCloseDisplay(Disp);
 
 <?php h2('Conclusion') ?>
 <p>
-    Intégrer la SFML à une interface X11 n'est pas très compliqué, et si vous avec l'habitude de la programmation
+    IntÃ©grer la SFML Ã  une interface X11 n'est pas trÃ¨s compliquÃ©, et si vous avec l'habitude de la programmation
     avec Xlib cela ne vous demandera pas plus d'efforts que n'importe quelle autre application SFML.<br/>
-    Voyons maintenant comment réaliser l'intégration dans des
+    Voyons maintenant comment rÃ©aliser l'intÃ©gration dans des
     <a class="internal" href="./graphics-wxwidgets-fr.php" title="Aller au tutoriel suivant">interfaces wxWidgets</a>.
 </p>
 

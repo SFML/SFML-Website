@@ -1,22 +1,22 @@
 <?php
 
-    $title = "Requêtes web avec HTTP";
+    $title = "RequÃªtes web avec HTTP";
     $page = "network-http-fr.php";
 
     require("header-fr.php");
 
 ?>
 
-<h1>Requêtes web avec HTTP</h1>
+<h1>RequÃªtes web avec HTTP</h1>
 
 <?php h2('Introduction') ?>
 <p>
-    SFML fournit une classe de client HTTP simple, pour vous permettre de communiquer avec des serveurs web. "Simple" signifie qu'elle supporte uniquement les fonctionnalités
-    les plus basiques de HTTP : les requêtes POST, GET et HEAD, l'accès aux champs d'en-tête, et la lecture/écriture du corps des pages.
+    SFML fournit une classe de client HTTP simple, pour vous permettre de communiquer avec des serveurs web. "Simple" signifie qu'elle supporte uniquement les fonctionnalitÃ©s
+    les plus basiques de HTTP : les requÃªtes POST, GET et HEAD, l'accÃ¨s aux champs d'en-tÃªte, et la lecture/Ã©criture du corps des pages.
 </p>
 <p>
-    S'il vous faut des fonctionnalités plus complexes, comme par exemple le support de HTTP sécurisé (HTTPS), vous devriez plutôt chercher une bibliothèque complètement
-    dédiée à HTTP, comme libcurl ou cpp-netlib.
+    S'il vous faut des fonctionnalitÃ©s plus complexes, comme par exemple le support de HTTP sÃ©curisÃ© (HTTPS), vous devriez plutÃ´t chercher une bibliothÃ¨que complÃ¨tement
+    dÃ©diÃ©e Ã  HTTP, comme libcurl ou cpp-netlib.
 </p>
 <p>
     Mais pour une interaction simple entre un programme et un serveur web, ce sera largement suffisant.
@@ -35,27 +35,27 @@ http.setHost("http://www.some-server.org/");
 sf::Http http("http://www.some-server.org/");
 </code></pre>
 <p>
-    Notez bien que le fait de renseigner l'hôte ne déclenche pas de connection : une connection temporaire avec le serveur sera faite plus tard pour chaque requête.
+    Notez bien que le fait de renseigner l'hÃ´te ne dÃ©clenche pas de connection : une connection temporaire avec le serveur sera faite plus tard pour chaque requÃªte.
 </p>
 <p>
-    Il n'y a plus qu'une autre fonction à voir dans la classe <?php class_link("Http") ?>, et c'est la plus importante car elle envoie les requêtes. Et... c'est en gros tout
+    Il n'y a plus qu'une autre fonction Ã  voir dans la classe <?php class_link("Http") ?>, et c'est la plus importante car elle envoie les requÃªtes. Et... c'est en gros tout
     ce que contient cette classe.
 </p>
 <pre><code class="cpp">sf::Http::Request request;
-// paramétrage de la requête...
+// paramÃ©trage de la requÃªte...
 sf::Http::Response response = http.sendRequest(request);
 </code></pre>
 
-<?php h2('Les requêtes') ?>
+<?php h2('Les requÃªtes') ?>
 <p>
-    Une requête HTTP, représentée par la classe <?php class_link("Http::Request") ?>, contient les information suivantes :
+    Une requÃªte HTTP, reprÃ©sentÃ©e par la classe <?php class_link("Http::Request") ?>, contient les information suivantes :
 </p>
 <ul>
-    <li>La méthode : POST (envoyer du contenu), GET (récupérer une ressource), HEAD (récupérer l'en-tête d'une ressource, sans son corps)</li>
-    <li>L'URI : l'adresse de la ressource (page, image, ...) à récupérer/envoyer, relative à l'adresse de l'hôte</li>
-    <li>La version HTTP (elle est à 1.0 par défaut mais vous pouvez en choisir une différente si vous utilisez des fonctionnalités spécifiques)</li>
-    <li>L'en-tête : une suite de champs définis par une clé et une valeur</li>
-    <li>Le corps de la page (utilisé uniquement avec la méthode POST)</li>
+    <li>La mÃ©thode : POST (envoyer du contenu), GET (rÃ©cupÃ©rer une ressource), HEAD (rÃ©cupÃ©rer l'en-tÃªte d'une ressource, sans son corps)</li>
+    <li>L'URI : l'adresse de la ressource (page, image, ...) Ã  rÃ©cupÃ©rer/envoyer, relative Ã  l'adresse de l'hÃ´te</li>
+    <li>La version HTTP (elle est Ã  1.0 par dÃ©faut mais vous pouvez en choisir une diffÃ©rente si vous utilisez des fonctionnalitÃ©s spÃ©cifiques)</li>
+    <li>L'en-tÃªte : une suite de champs dÃ©finis par une clÃ© et une valeur</li>
+    <li>Le corps de la page (utilisÃ© uniquement avec la mÃ©thode POST)</li>
 </ul>
 <pre><code class="cpp">sf::Http::Request request;
 request.setMethod(sf::Http::Request::Post);
@@ -68,20 +68,20 @@ request.setBody("para1=value1&amp;param2=value2");
 sf::Http::Response response = http.sendRequest(request);
 </code></pre>
 <p>
-    SFML définit automatiquement les champs d'en-tête obligatoires, comme par exemple "Host" ou "Content-Length". Vous pouvez donc envoyer vos requêtes sans vous soucier de
+    SFML dÃ©finit automatiquement les champs d'en-tÃªte obligatoires, comme par exemple "Host" ou "Content-Length". Vous pouvez donc envoyer vos requÃªtes sans vous soucier de
     cela, SFML fera toujours de son mieux pour les rendre valides.
 </p>
 
-<?php h2('Les réponses') ?>
+<?php h2('Les rÃ©ponses') ?>
 <p>
-    Si la classe <?php class_link("Http") ?> a pu se connecter à l'hôte et envoyer la requête, alors une réponse est renvoyée par le serveur et retournée à l'utilisateur,
-    encapsulée dans une instance de <?php class_link("Http::Response") ?>. Les réponses contiennent les membres suivants :
+    Si la classe <?php class_link("Http") ?> a pu se connecter Ã  l'hÃ´te et envoyer la requÃªte, alors une rÃ©ponse est renvoyÃ©e par le serveur et retournÃ©e Ã  l'utilisateur,
+    encapsulÃ©e dans une instance de <?php class_link("Http::Response") ?>. Les rÃ©ponses contiennent les membres suivants :
 </p>
 <ul>
-    <li>Un code de statut, qui indique précisément comment le serveur a traité la requête (ok, redirigé, non trouvé, etc.)</li>
+    <li>Un code de statut, qui indique prÃ©cisÃ©ment comment le serveur a traitÃ© la requÃªte (ok, redirigÃ©, non trouvÃ©, etc.)</li>
     <li>La version HTTP du serveur</li>
-    <li>L'en-tête : une suite de champs définis par une clé et une valeur</li>
-    <li>Le corps de la réponse</li>
+    <li>L'en-tÃªte : une suite de champs dÃ©finis par une clÃ© et une valeur</li>
+    <li>Le corps de la rÃ©ponse</li>
 </ul>
 <pre><code class="cpp">sf::Http::Response response = http.sendRequest(request);
 std::cout &lt;&lt; "status: " &lt;&lt; response.getStatus() &lt;&lt; std::endl;
@@ -90,36 +90,36 @@ std::cout &lt;&lt; "Content-Type header:" &lt;&lt; response.getField("Content-Ty
 std::cout &lt;&lt; "body: " &lt;&lt; response.getStatus() &lt;&lt; std::endl;
 </code></pre>
 <p>
-    Le code de statut peut être utilisé pour vérifier si la requête a été traitée avec succès ou non : les codes 2xx informent que tout s'est bien passé, les codes 3xx
-    informent d'une redirection, les codes 4xx représentent des erreurs côté client, les codes 5xx sont des erreurs du serveur, et enfin les codes 10xx sont des erreurs
-    spécifiques à SFML, qui ne font pas partie du standard HTTP.
+    Le code de statut peut Ãªtre utilisÃ© pour vÃ©rifier si la requÃªte a Ã©tÃ© traitÃ©e avec succÃ¨s ou non : les codes 2xx informent que tout s'est bien passÃ©, les codes 3xx
+    informent d'une redirection, les codes 4xx reprÃ©sentent des erreurs cÃ´tÃ© client, les codes 5xx sont des erreurs du serveur, et enfin les codes 10xx sont des erreurs
+    spÃ©cifiques Ã  SFML, qui ne font pas partie du standard HTTP.
 </p>
 
-<?php h2('Exemple : envoyer des scores à une base de donnée en ligne') ?>
+<?php h2('Exemple : envoyer des scores Ã  une base de donnÃ©e en ligne') ?>
 <p>
-    Voici un petit exemple qui montre comment réaliser une tâche assez courante : envoyer un score à une base de donnée en ligne.
+    Voici un petit exemple qui montre comment rÃ©aliser une tÃ¢che assez courante : envoyer un score Ã  une base de donnÃ©e en ligne.
 </p>
 <pre><code class="cpp">#include &lt;SFML/Network.hpp&gt;
 #include &lt;sstream&gt;
 
 void sendScore(int score, const std::string&amp; name)
 {
-    // préparation de la requête
+    // prÃ©paration de la requÃªte
     sf::Http::Request request("/send-score.php", sf::Http::Request::Post);
 
-    // encodage des paramètres dans le corps de la requête
+    // encodage des paramÃ¨tres dans le corps de la requÃªte
     std::ostringstream stream;
     stream &lt;&lt; "name=" &lt;&lt; name &lt;&lt; "&amp;score=" &lt;&lt; score;
     request.setBody(stream.str());
 
-    // envoi de la requête au serveur
+    // envoi de la requÃªte au serveur
     sf::Http http("http://www.myserver.com/");
     sf::Http::Response response = http.sendRequest(request);
 
-    // vérification du statut
+    // vÃ©rification du statut
     if (response.getStatus() == sf::Http::Response::Ok)
     {
-        // affichage de la réponse du serveur
+        // affichage de la rÃ©ponse du serveur
         std::cout &lt;&lt; response.getBody() &lt;&lt; std::endl;
     }
     else
@@ -129,12 +129,12 @@ void sendScore(int score, const std::string&amp; name)
 }
 </code></pre>
 <p>
-    Bien entendu, ceci est une façon très simple de gérer des scores en ligne. Il n'y a aucune protection : n'importe qui pourrait envoyer un faux score facilement. Une
-    approche plus robuste impliquerait certainement d'utiliser en paramètre supplémentaire un code de hachage, qui permettrait au serveur de s'assurer que le score
-    provient bien du logiciel qui est censé l'envoyer, plutôt que d'une requête d'un petit malin. Mais ceci dépasse le cadre de ce tutoriel.
+    Bien entendu, ceci est une faÃ§on trÃ¨s simple de gÃ©rer des scores en ligne. Il n'y a aucune protection : n'importe qui pourrait envoyer un faux score facilement. Une
+    approche plus robuste impliquerait certainement d'utiliser en paramÃ¨tre supplÃ©mentaire un code de hachage, qui permettrait au serveur de s'assurer que le score
+    provient bien du logiciel qui est censÃ© l'envoyer, plutÃ´t que d'une requÃªte d'un petit malin. Mais ceci dÃ©passe le cadre de ce tutoriel.
 </p>
 <p>
-    Et, enfin, voici une version très simpliste de ce à quoi pourrait ressembler la page PHP côté serveur.
+    Et, enfin, voici une version trÃ¨s simpliste de ce Ã  quoi pourrait ressembler la page PHP cÃ´tÃ© serveur.
 </p>
 <pre><code class="php">&lt;?php
     $name = $_POST['name'];

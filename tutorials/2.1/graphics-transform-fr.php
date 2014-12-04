@@ -1,115 +1,115 @@
 <?php
 
-    $title = "Position, rotation, échelle : transformer des entités";
+    $title = "Position, rotation, Ã©chelle : transformer des entitÃ©s";
     $page = "graphics-transform-fr.php";
 
     require("header-fr.php");
 
 ?>
 
-<h1>Position, rotation, échelle : transformer des entités</h1>
+<h1>Position, rotation, Ã©chelle : transformer des entitÃ©s</h1>
 
-<?php h2('Transformer des entités SFML') ?>
+<?php h2('Transformer des entitÃ©s SFML') ?>
 <p>
-    Toutes les classes de SFML (sprites, texte, formes) utilisent la même interface pour les transformations : <?php class_link('Transformable') ?>. Cette classe de base
-    définit une API simple pour positionner, tourner et redimensionner vos entités. Elle n'offre pas une flexibilité maximale, mais définit plutôt une interface qui soit
-    facile à comprendre et à utiliser, et qui couvre 99% des cas d'utilisation -- pour les 1% restant, voyez les derniers chapitres.
+    Toutes les classes de SFML (sprites, texte, formes) utilisent la mÃªme interface pour les transformations : <?php class_link('Transformable') ?>. Cette classe de base
+    dÃ©finit une API simple pour positionner, tourner et redimensionner vos entitÃ©s. Elle n'offre pas une flexibilitÃ© maximale, mais dÃ©finit plutÃ´t une interface qui soit
+    facile Ã  comprendre et Ã  utiliser, et qui couvre 99% des cas d'utilisation -- pour les 1% restant, voyez les derniers chapitres.
 </p>
 <p>
-    <?php class_link('Transformable') ?> (et toutes ses classes dérivées) définit quatre propriétés : <strong>position</strong>, <strong>rotation</strong>,
-    <strong>échelle</strong> et <strong>origine</strong> ; elles ont toutes leur <em>getter</em> et leur <em>setter</em>. Ces composantes de transformation sont toutes
-    indépendantes les unes des autres : si vous voulez modifier l'orientation de l'entité, vous avez juste à changer sa propriété 'rotation' sans vous préoccuper de
-    la position ou de l'échelle courante.
+    <?php class_link('Transformable') ?> (et toutes ses classes dÃ©rivÃ©es) dÃ©finit quatre propriÃ©tÃ©s : <strong>position</strong>, <strong>rotation</strong>,
+    <strong>Ã©chelle</strong> et <strong>origine</strong> ; elles ont toutes leur <em>getter</em> et leur <em>setter</em>. Ces composantes de transformation sont toutes
+    indÃ©pendantes les unes des autres : si vous voulez modifier l'orientation de l'entitÃ©, vous avez juste Ã  changer sa propriÃ©tÃ© 'rotation' sans vous prÃ©occuper de
+    la position ou de l'Ã©chelle courante.
 </p>
 <h3>Position</h3>
 <p>
-    La position est la... position de l'entité dans le monde 2D. Je ne pense pas que cela mérite plus d'explications :)
+    La position est la... position de l'entitÃ© dans le monde 2D. Je ne pense pas que cela mÃ©rite plus d'explications :)
 </p>
-<pre><code class="cpp">// 'entity' peut être un sf::Sprite, un sf::Text, un sf::Shape ou n'importe quelle autre classe transformable
+<pre><code class="cpp">// 'entity' peut Ãªtre un sf::Sprite, un sf::Text, un sf::Shape ou n'importe quelle autre classe transformable
 
-// change la position absolue de l'entité
+// change la position absolue de l'entitÃ©
 entity.setPosition(10, 50);
 
-// déplace l'entité relativement à sa position actuelle
+// dÃ©place l'entitÃ© relativement Ã  sa position actuelle
 entity.move(5, 5);
 
-// récupère la position absolue de l'entité
+// rÃ©cupÃ¨re la position absolue de l'entitÃ©
 sf::Vector2f position = entity.getPosition(); // = (15, 55)
 </code></pre>
-<img class="screenshot" src="images/graphics-transform-position.png" alt="Une entité positionnée"/>
+<img class="screenshot" src="images/graphics-transform-position.png" alt="Une entitÃ© positionnÃ©e"/>
 <p>
-    Par défaut, les entités sont positionnées par rapport à leur coin haut-gauche ; nous verrons plus tard comment changer cela avec la propriété 'origine'.
+    Par dÃ©faut, les entitÃ©s sont positionnÃ©es par rapport Ã  leur coin haut-gauche ; nous verrons plus tard comment changer cela avec la propriÃ©tÃ© 'origine'.
 </p>
 
 <h3>Rotation</h3>
 <p>
-    La rotation est l'orientation de l'entité dans le monde 2D. Elle est définie en <em>degrés</em>, dans le sens des aiguilles d'une montre (car l'axe Y pointe vers le
+    La rotation est l'orientation de l'entitÃ© dans le monde 2D. Elle est dÃ©finie en <em>degrÃ©s</em>, dans le sens des aiguilles d'une montre (car l'axe Y pointe vers le
     bas avec SFML).
 </p>
-<pre><code class="cpp">// 'entity' peut être un sf::Sprite, un sf::Text, un sf::Shape ou n'importe quelle autre classe transformable
+<pre><code class="cpp">// 'entity' peut Ãªtre un sf::Sprite, un sf::Text, un sf::Shape ou n'importe quelle autre classe transformable
 
-// change la rotation absolue de l'entité
+// change la rotation absolue de l'entitÃ©
 entity.setRotation(45);
 
-// tourne l'entité relativement à son orientation actuelle
+// tourne l'entitÃ© relativement Ã  son orientation actuelle
 entity.rotate(10);
 
-// récupère la rotation absolue de l'entité
+// rÃ©cupÃ¨re la rotation absolue de l'entitÃ©
 float rotation = entity.getRotation(); // = 55
 </code></pre>
-<img class="screenshot" src="images/graphics-transform-rotation.png" alt="Une entité tournée"/>
+<img class="screenshot" src="images/graphics-transform-rotation.png" alt="Une entitÃ© tournÃ©e"/>
 <p>
     Notez que SFML renvoie toujours un angle entre 0 et 360 lorsque vous appelez <code>getRotation</code>.
 </p>
 <p>
-    De même que pour la position, la rotation s'effectue par défaut autour du coin haut-gauche, mais cela peut être changé avec l'origine.
+    De mÃªme que pour la position, la rotation s'effectue par dÃ©faut autour du coin haut-gauche, mais cela peut Ãªtre changÃ© avec l'origine.
 </p>
 
 <h3>Echelle</h3>
 <p>
-    Le facteur d'échelle permet de redimensionner l'entité. L'échelle par défaut est 1, plus que 1 agrandit l'entité, moins que 1 la réduit. Les facteurs d'échelle
-    négatifs sont autorisés, ce qui permet de faire des symétries des entités.
+    Le facteur d'Ã©chelle permet de redimensionner l'entitÃ©. L'Ã©chelle par dÃ©faut est 1, plus que 1 agrandit l'entitÃ©, moins que 1 la rÃ©duit. Les facteurs d'Ã©chelle
+    nÃ©gatifs sont autorisÃ©s, ce qui permet de faire des symÃ©tries des entitÃ©s.
 </p>
-<pre><code class="cpp">// 'entity' peut être un sf::Sprite, un sf::Text, un sf::Shape ou n'importe quelle autre classe transformable
+<pre><code class="cpp">// 'entity' peut Ãªtre un sf::Sprite, un sf::Text, un sf::Shape ou n'importe quelle autre classe transformable
 
-// change l'échelle absolue de l'entité
+// change l'Ã©chelle absolue de l'entitÃ©
 entity.setScale(4.0f, 1.6f);
 
-// redimensionne l'entité relativement à son échelle actuelle
+// redimensionne l'entitÃ© relativement Ã  son Ã©chelle actuelle
 entity.scale(0.5f, 0.5f);
 
-// récupère l'échelle absolue de l'entité
+// rÃ©cupÃ¨re l'Ã©chelle absolue de l'entitÃ©
 sf::Vector2f scale = entity.getScale(); // = (2, 0.8)
 </code></pre>
-<img class="screenshot" src="images/graphics-transform-scale.png" alt="Une entité redimensionnée"/>
+<img class="screenshot" src="images/graphics-transform-scale.png" alt="Une entitÃ© redimensionnÃ©e"/>
 
 <h3>Origine</h3>
 <p>
-    L'origine est le centre des trois autres transformations. La position est la position de l'origine, la rotation est effectuée autour de l'origine, et l'échelle
-    est appliquée autour de l'origine également. Par défaut, l'origine est le coin haut-gauche de l'entité (son point (0, 0)), mais vous pouvez la modifier de sorte qu'elle
+    L'origine est le centre des trois autres transformations. La position est la position de l'origine, la rotation est effectuÃ©e autour de l'origine, et l'Ã©chelle
+    est appliquÃ©e autour de l'origine Ã©galement. Par dÃ©faut, l'origine est le coin haut-gauche de l'entitÃ© (son point (0, 0)), mais vous pouvez la modifier de sorte qu'elle
     soit le centre ou un autre coin, par exemple.
 </p>
 <p>
     Afin que l'API reste simple, il n'y a qu'une origine pour les trois composantes de transformation. Ce qui signifie que vous ne pouvez pas, par exemple, positionner une
-    entité relativement à son coin haut-gauche tout en la tournant autour de son centre. Si vous avez réellement besoin de faire ce genre de choses, jetez un oeil aux chapitres
+    entitÃ© relativement Ã  son coin haut-gauche tout en la tournant autour de son centre. Si vous avez rÃ©ellement besoin de faire ce genre de choses, jetez un oeil aux chapitres
     suivants.
 </p>
-<pre><code class="cpp">// 'entity' peut être un sf::Sprite, un sf::Text, un sf::Shape ou n'importe quelle autre classe transformable
+<pre><code class="cpp">// 'entity' peut Ãªtre un sf::Sprite, un sf::Text, un sf::Shape ou n'importe quelle autre classe transformable
 
-// change l'origine de l'entité
+// change l'origine de l'entitÃ©
 entity.setOrigin(10, 20);
 
-// récupère l'origine de l'entité
+// rÃ©cupÃ¨re l'origine de l'entitÃ©
 sf::Vector2f origin = entity.getOrigin(); // = (10, 20)
 </code></pre>
 <p>
-    Notez que le fait de changer l'origine modifie également la position de l'entité à l'écran, bien que sa propriété 'position' soit toujours la même. Si vous ne comprenez
+    Notez que le fait de changer l'origine modifie Ã©galement la position de l'entitÃ© Ã  l'Ã©cran, bien que sa propriÃ©tÃ© 'position' soit toujours la mÃªme. Si vous ne comprenez
     pas pourquoi, relisez ce tutoriel !
 </p>
 
 <?php h2('Transformez vos propres classes') ?>
 <p>
-    <?php class_link('Transformable') ?> n'est pas seulement faite pour les classes SFML, elle peut aussi servir de base (ou de membre) à vos propres classes.
+    <?php class_link('Transformable') ?> n'est pas seulement faite pour les classes SFML, elle peut aussi servir de base (ou de membre) Ã  vos propres classes.
 </p>
 <pre><code class="cpp">class MyGraphicalEntity : public sf::Transformable
 {
@@ -122,34 +122,34 @@ entity.setRotation(110);
 entity.setScale(0.5f, 0.2f);
 </code></pre>
 <p>
-    Pour utiliser la transformation finale de l'entité (par exemple pour la dessiner), il faut appeler la fonction <code>getTransform</code>. Celle-ci renvoie un
-    <?php class_link('Transform') ?> ; voyez le prochain chapitre pour plus d'explications concernant cette classe, et comment l'utiliser pour transformer une entité SFML.
+    Pour utiliser la transformation finale de l'entitÃ© (par exemple pour la dessiner), il faut appeler la fonction <code>getTransform</code>. Celle-ci renvoie un
+    <?php class_link('Transform') ?> ; voyez le prochain chapitre pour plus d'explications concernant cette classe, et comment l'utiliser pour transformer une entitÃ© SFML.
 </p>
 <p>
-    Si vous n'avez pas besoin de la totalité des fonctions fournies par <?php class_link('Transformable') ?>, ou bien n'en voulez pas pour fournir votre propre
-    interface publique, n'hésitez pas à l'utiliser en tant que membre, et à fournir vos propres fonctions par dessus les siennes. Elle n'est pas abstraite donc il n'y a aucun
-    problème à l'instancier plutôt que de l'utiliser en tant que classe de base.
+    Si vous n'avez pas besoin de la totalitÃ© des fonctions fournies par <?php class_link('Transformable') ?>, ou bien n'en voulez pas pour fournir votre propre
+    interface publique, n'hÃ©sitez pas Ã  l'utiliser en tant que membre, et Ã  fournir vos propres fonctions par dessus les siennes. Elle n'est pas abstraite donc il n'y a aucun
+    problÃ¨me Ã  l'instancier plutÃ´t que de l'utiliser en tant que classe de base.
 </p>
 
 <?php h2('Les transformations quelconques') ?>
 <p>
-    La classe <?php class_link('Transformable') ?> est facile à utiliser, mais elle est également limitée. Certains utilisateurs auront besoin de plus de flexibilité, ils
-    voudront définir une transformation finale comme étant une combinaison quelconque de transformations de base. Pour cette catégorie d'utilisateurs, une classe de plus
-    bas niveau est disponible : <?php class_link('Transform') ?>. Elle n'est rien de plus qu'une matrice 3x3 encapsulée, elle peut donc représenter n'importe quelle
+    La classe <?php class_link('Transformable') ?> est facile Ã  utiliser, mais elle est Ã©galement limitÃ©e. Certains utilisateurs auront besoin de plus de flexibilitÃ©, ils
+    voudront dÃ©finir une transformation finale comme Ã©tant une combinaison quelconque de transformations de base. Pour cette catÃ©gorie d'utilisateurs, une classe de plus
+    bas niveau est disponible : <?php class_link('Transform') ?>. Elle n'est rien de plus qu'une matrice 3x3 encapsulÃ©e, elle peut donc reprÃ©senter n'importe quelle
     transformation 2D.
 </p>
 <p>
-    Il y a plusieurs façons de construire un <?php class_link('Transform') ?> :
+    Il y a plusieurs faÃ§ons de construire un <?php class_link('Transform') ?> :
 </p>
 <ul>
-    <li>en utilisant les fonctions prédéfinies pour les transformations les plus communes (translation, rotation, échelle)</li>
+    <li>en utilisant les fonctions prÃ©dÃ©finies pour les transformations les plus communes (translation, rotation, Ã©chelle)</li>
     <li>en combinant deux <?php class_link('Transform') ?></li>
     <li>en donnant ses 9 composantes directement</li>
 </ul>
 <p>
     Voici quelques exemples :
 </p>
-<pre><code class="cpp">// la transformation identité (ne fait rien)
+<pre><code class="cpp">// la transformation identitÃ© (ne fait rien)
 sf::Transform t1 = sf::Transform::Identity;
 
 // une rotation
@@ -165,7 +165,7 @@ sf::Transform t3(2, 0, 20,
 sf::Transform t4 = t1 * t2 * t3;
 </code></pre>
 <p>
-    Vous pouvez bien entendu appliquer plusieurs transformations de base au même <?php class_link('Transform') ?>, celles-ci seront toutes combinées séquentiellement :
+    Vous pouvez bien entendu appliquer plusieurs transformations de base au mÃªme <?php class_link('Transform') ?>, celles-ci seront toutes combinÃ©es sÃ©quentiellement :
 </p>
 <pre><code class="cpp">sf::Transform t;
 t.translate(10, 100);
@@ -174,7 +174,7 @@ t.translate(-10, 50);
 t.scale(0.5f, 0.75f);
 </code></pre>
 <p>
-    Mais revenons à nos moutons : comment une telle transformation peut-elle être appliquée à une entité graphique ? C'est facile : passez-la à la fonction <code>draw</code>.
+    Mais revenons Ã  nos moutons : comment une telle transformation peut-elle Ãªtre appliquÃ©e Ã  une entitÃ© graphique ? C'est facile : passez-la Ã  la fonction <code>draw</code>.
 </p>
 <pre><code class="cpp">window.draw(entity, transform);
 </code></pre>
@@ -186,24 +186,24 @@ states.transform = transform;
 window.draw(entity, states);
 </code></pre>
 <p>
-    Si votre entité est un <?php class_link('Transformable') ?> (sprite, texte, forme), avec sa propre transformation interne, alors les deux sont combinées pour produire
+    Si votre entitÃ© est un <?php class_link('Transformable') ?> (sprite, texte, forme), avec sa propre transformation interne, alors les deux sont combinÃ©es pour produire
     la transformation finale.
 </p>
 
-<?php h2('Boîtes englobantes') ?>
+<?php h2('BoÃ®tes englobantes') ?>
 <p>
-    Après avoir transformé et dessiné vos entités, vous voudrez certainement effectuer certains calculs avec elles, comme par exemple détecter les collisions.
+    AprÃ¨s avoir transformÃ© et dessinÃ© vos entitÃ©s, vous voudrez certainement effectuer certains calculs avec elles, comme par exemple dÃ©tecter les collisions.
 </p>
 <p>
-    Les entités SFML peuvent vous donner leur boîte englobante. La boîte englobante est le rectangle minimal qui contient l'entité, et dont les côtés sont alignés sur
+    Les entitÃ©s SFML peuvent vous donner leur boÃ®te englobante. La boÃ®te englobante est le rectangle minimal qui contient l'entitÃ©, et dont les cÃ´tÃ©s sont alignÃ©s sur
     les axes X et Y.
 </p>
-<img class="screenshot" src="images/graphics-transform-bounds.png" alt="Boîte englobante d'entités"/>
+<img class="screenshot" src="images/graphics-transform-bounds.png" alt="BoÃ®te englobante d'entitÃ©s"/>
 <p>
-    La boîte englobante est très pratique pour implémenter la détection de collisions : elle peut être rapidement testée avec un point ou avec une autre boîte englobante,
-    et elle représente une assez bonne approximation de l'entité réelle.
+    La boÃ®te englobante est trÃ¨s pratique pour implÃ©menter la dÃ©tection de collisions : elle peut Ãªtre rapidement testÃ©e avec un point ou avec une autre boÃ®te englobante,
+    et elle reprÃ©sente une assez bonne approximation de l'entitÃ© rÃ©elle.
 </p>
-<pre><code class="cpp">// récupération de la boîte englobante de l'entité
+<pre><code class="cpp">// rÃ©cupÃ©ration de la boÃ®te englobante de l'entitÃ©
 sf::FloatRect boundingBox = entity.getGlobalBounds();
 
 // test de collision avec un point
@@ -213,7 +213,7 @@ if (boundingBox.contains(point))
     // collision!
 }
 
-// test de collision avec un autre rectangle (comme par exemple la boîte englobante d'une autre entité)
+// test de collision avec un autre rectangle (comme par exemple la boÃ®te englobante d'une autre entitÃ©)
 sf::FloatRect otherBox = ...;
 if (boundingBox.intersects(otherBox))
 {
@@ -221,20 +221,20 @@ if (boundingBox.intersects(otherBox))
 }
 </code></pre>
 <p>
-    La fonction est nommée <code>getGlobalBounds</code> car elle renvoie la boîte englobante de l'entité dans le système de coordonnées global, c'est-à-dire avec toutes
-    ses transformations (position, rotation, échelle) appliquées.
+    La fonction est nommÃ©e <code>getGlobalBounds</code> car elle renvoie la boÃ®te englobante de l'entitÃ© dans le systÃ¨me de coordonnÃ©es global, c'est-Ã -dire avec toutes
+    ses transformations (position, rotation, Ã©chelle) appliquÃ©es.
 </p>
 <p>
-    Il existe une autre fonction, qui renvoie la boîte englobante de l'entité dans son système de coordonnées <em>local</em> (sans les transformations) :
-    <code>getLocalBounds</code>. Cette fonction peut être utilisée pour récupérer la taille initiale de l'entité, par exemple, ou bien pour effectuer des calculs
-    plus spécifiques.
+    Il existe une autre fonction, qui renvoie la boÃ®te englobante de l'entitÃ© dans son systÃ¨me de coordonnÃ©es <em>local</em> (sans les transformations) :
+    <code>getLocalBounds</code>. Cette fonction peut Ãªtre utilisÃ©e pour rÃ©cupÃ©rer la taille initiale de l'entitÃ©, par exemple, ou bien pour effectuer des calculs
+    plus spÃ©cifiques.
 </p>
 
-<?php h2('Les hiérarchies d\'objets (scenegraph)') ?>
+<?php h2('Les hiÃ©rarchies d\'objets (scenegraph)') ?>
 <p>
-    Avec les transformations persos vues précédemment, il est maintenant facile d'implémenter une hiérarchie d'objets, où les enfants sont transformés relativement à leur
-    parent. Tout ce que vous avez à faire est de passer la transformation combinée du parent aux enfants lorsque vous les dessinez, jusqu'à ce que vous atteignez les
-    entités dessinables finales (sprites, textes, formes, vertex arrays ou bien vos propres 'drawables').
+    Avec les transformations persos vues prÃ©cÃ©demment, il est maintenant facile d'implÃ©menter une hiÃ©rarchie d'objets, oÃ¹ les enfants sont transformÃ©s relativement Ã  leur
+    parent. Tout ce que vous avez Ã  faire est de passer la transformation combinÃ©e du parent aux enfants lorsque vous les dessinez, jusqu'Ã  ce que vous atteignez les
+    entitÃ©s dessinables finales (sprites, textes, formes, vertex arrays ou bien vos propres 'drawables').
 </p>
 <pre><code class="cpp">// la classe de base abstraite
 class Node
@@ -243,7 +243,7 @@ public:
 
     // ... fonctions pour transformer le noeud
 
-    // ... fonction pour gérer les enfants du noeud
+    // ... fonction pour gÃ©rer les enfants du noeud
 
     void draw(sf::RenderTarget&amp; target, const sf::Transform&amp; parentTransform) const
     {
@@ -266,12 +266,12 @@ private:
     std::vector&lt;Node*&gt; m_children;
 };
 
-// une classe dérivée simple : un noeud qui dessine un sprite
+// une classe dÃ©rivÃ©e simple : un noeud qui dessine un sprite
 class SpriteNode : public Node
 {
 public:
 
-    // .. fonctions pour paramétrer le sprite
+    // .. fonctions pour paramÃ©trer le sprite
 
 private:
 

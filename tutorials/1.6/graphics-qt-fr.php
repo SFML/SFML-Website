@@ -1,24 +1,24 @@
 <?php
 
-    $title = "Intégrer à une interface Qt";
+    $title = "IntÃ©grer Ã  une interface Qt";
     $page = "graphics-qt-fr.php";
 
     require("header-fr.php");
 ?>
 
-<h1>Intégrer à une interface Qt</h1>
+<h1>IntÃ©grer Ã  une interface Qt</h1>
 
 <?php h2('Introduction') ?>
 <p>
-    Dans ce tutoriel, nous allons voir comment intégrer une vue SFML à une interface Qt. La façon habituelle d'ajouter une
-    nouvelle fonctionnalité à une interface Qt est d'écrire un widget (composant) personnalisé ; c'est ce que nous allons
+    Dans ce tutoriel, nous allons voir comment intÃ©grer une vue SFML Ã  une interface Qt. La faÃ§on habituelle d'ajouter une
+    nouvelle fonctionnalitÃ© Ã  une interface Qt est d'Ã©crire un widget (composant) personnalisÃ© ; c'est ce que nous allons
     faire ici.
 </p>
 
-<?php h2('Création du composant SFML personnalisé') ?>
+<?php h2('CrÃ©ation du composant SFML personnalisÃ©') ?>
 <p>
-    Afin de créer notre widget SFML perso, nous devons dériver de la classe de base <code>QWidget</code>. Et comme nous
-    voulons que notre widget soit également une fenêtre de rendu SFML, nous héritons également de
+    Afin de crÃ©er notre widget SFML perso, nous devons dÃ©river de la classe de base <code>QWidget</code>. Et comme nous
+    voulons que notre widget soit Ã©galement une fenÃªtre de rendu SFML, nous hÃ©ritons Ã©galement de
     <?php class_link("RenderWindow")?>.
 </p>
 <pre><code class="cpp">#include &lt;SFML/Graphics.hpp&gt;
@@ -30,24 +30,24 @@ class QSFMLCanvas : public QWidget, public sf::RenderWindow
 };
 </code></pre>
 <p>
-    Puis, de quoi cette classe aura besoin pour fonctionner ? Premièrement, d'un constructeur standard définissant
-    les proriétés usuelles des widgets : parent, position, taille. Nous ajoutons à cela un dernier paramètre, qui est
-    la durée d'une frame (l'inverse du taux de rafraîchissement) ; comme Qt ne fournit pas d'évènement <em>idle</em>
-    (qui serait généré à chaque fois que la file d'évènements est vide), nous devons gérer manuellement le rafraîchissement
-    du widget. Le meilleur moyen de le faire est de démarrer un timer, et le connecter à une fonction qui va rafraîchir
-    le widget à la fréquence spécifiée. La valeur par défaut de 0 fait en sorte que le timer génère un rafraîchissement
-    dès qu'il n'y a aucun autre évènement à traiter, ce qui est exactement ce qu'un évènement <em>idle</em> ferait.
+    Puis, de quoi cette classe aura besoin pour fonctionner ? PremiÃ¨rement, d'un constructeur standard dÃ©finissant
+    les proriÃ©tÃ©s usuelles des widgets : parent, position, taille. Nous ajoutons Ã  cela un dernier paramÃ¨tre, qui est
+    la durÃ©e d'une frame (l'inverse du taux de rafraÃ®chissement) ; comme Qt ne fournit pas d'Ã©vÃ¨nement <em>idle</em>
+    (qui serait gÃ©nÃ©rÃ© Ã  chaque fois que la file d'Ã©vÃ¨nements est vide), nous devons gÃ©rer manuellement le rafraÃ®chissement
+    du widget. Le meilleur moyen de le faire est de dÃ©marrer un timer, et le connecter Ã  une fonction qui va rafraÃ®chir
+    le widget Ã  la frÃ©quence spÃ©cifiÃ©e. La valeur par dÃ©faut de 0 fait en sorte que le timer gÃ©nÃ¨re un rafraÃ®chissement
+    dÃ¨s qu'il n'y a aucun autre Ã©vÃ¨nement Ã  traiter, ce qui est exactement ce qu'un Ã©vÃ¨nement <em>idle</em> ferait.
 </p>
 <p>
-    Ensuite, nous devons surdéfinir l'évènement <em>show</em> : ce sera un bon endroit pour initialiser notre fenêtre
-    SFML. Nous ne pouvons pas le faire dans le constructeur, car à ce moment le widget n'a pas encore sa position et
-    sa taille définitives.<br/>
-    Nous surdéfinissons également l'évènement <em>paint</em>, afin d'y rafraîchir notre vue SFML.
+    Ensuite, nous devons surdÃ©finir l'Ã©vÃ¨nement <em>show</em> : ce sera un bon endroit pour initialiser notre fenÃªtre
+    SFML. Nous ne pouvons pas le faire dans le constructeur, car Ã  ce moment le widget n'a pas encore sa position et
+    sa taille dÃ©finitives.<br/>
+    Nous surdÃ©finissons Ã©galement l'Ã©vÃ¨nement <em>paint</em>, afin d'y rafraÃ®chir notre vue SFML.
 </p>
 <p>
-    Nous allons aussi définir deux fonctions à l'attention des classes dérivées : <code>OnInit()</code>, qui sera
-    appelée dès que la vue SFML sera initialisée, et <code>OnUpdate()</code>, qui sera appelée avant chaque rafraîchissement
-    afin de laisser la classe dérivée dessiner des choses dans le widget.
+    Nous allons aussi dÃ©finir deux fonctions Ã  l'attention des classes dÃ©rivÃ©es : <code>OnInit()</code>, qui sera
+    appelÃ©e dÃ¨s que la vue SFML sera initialisÃ©e, et <code>OnUpdate()</code>, qui sera appelÃ©e avant chaque rafraÃ®chissement
+    afin de laisser la classe dÃ©rivÃ©e dessiner des choses dans le widget.
 </p>
 <pre><code class="cpp">#include &lt;SFML/Graphics.hpp&gt;
 #include &lt;Qt/qwidget.h&gt;
@@ -78,7 +78,7 @@ private :
 };
 </code></pre>
 <p>
-    Jetons maintenant un oeil à l'implémentation.
+    Jetons maintenant un oeil Ã  l'implÃ©mentation.
 </p>
 <pre><code class="cpp">QSFMLCanvas::QSFMLCanvas(QWidget* Parent, const QPoint&amp; Position, const QSize&amp; Size, unsigned int FrameTime) :
 QWidget       (Parent),
@@ -89,26 +89,26 @@ myInitialized (false)
     setAttribute(Qt::WA_OpaquePaintEvent);
     setAttribute(Qt::WA_NoSystemBackground);
 
-    // Changement de la police de focus, pour autoriser notre widget à capter les évènements clavier
+    // Changement de la police de focus, pour autoriser notre widget Ã  capter les Ã©vÃ¨nements clavier
     setFocusPolicy(Qt::StrongFocus);
 
-    // Définition de la position et de la taille du widget
+    // DÃ©finition de la position et de la taille du widget
     move(Position);
     resize(Size);
 
-    // Préparation du timer
+    // PrÃ©paration du timer
     myTimer.setInterval(FrameTime);
 }
 </code></pre>
 <p>
     Pour commencer, le constructeur initialise deux options pour autoriser l'affichage direct dans le widget.
     <code>WA_PaintOnScreen</code> informe Qt que nous n'utiliserons pas ses fonctions de dessin, et que nous
-    dessinerons directement dans le widget. <code>WA_NoSystemBackground</code> empêche l'affichage du fond du widget,
-    qui causerait un scintillement désagréable et inutile.<br/>
-    On change également la police de focus à <code>Qt::StrongFocus</code>, afin d'autoriser notre widget à recevoir
-    les évènements clavier.<br/>
-    Puis, on initialise la position et la taille du widget, et on paramètre l'intervalle du timer pour coller à
-    la fréquence de rafraîchissement désirée.
+    dessinerons directement dans le widget. <code>WA_NoSystemBackground</code> empÃªche l'affichage du fond du widget,
+    qui causerait un scintillement dÃ©sagrÃ©able et inutile.<br/>
+    On change Ã©galement la police de focus Ã  <code>Qt::StrongFocus</code>, afin d'autoriser notre widget Ã  recevoir
+    les Ã©vÃ¨nements clavier.<br/>
+    Puis, on initialise la position et la taille du widget, et on paramÃ¨tre l'intervalle du timer pour coller Ã 
+    la frÃ©quence de rafraÃ®chissement dÃ©sirÃ©e.
 </p>
 <pre><code class="cpp">#ifdef Q_WS_X11
     #include &lt;Qt/qx11info_x11.h&gt;
@@ -119,19 +119,19 @@ void QSFMLCanvas::showEvent(QShowEvent*)
 {
     if (!myInitialized)
     {
-        // Sous X11, il faut valider les commandes qui ont été envoyées au serveur
-        // afin de s'assurer que SFML aura une vision à jour de la fenêtre
+        // Sous X11, il faut valider les commandes qui ont Ã©tÃ© envoyÃ©es au serveur
+        // afin de s'assurer que SFML aura une vision Ã  jour de la fenÃªtre
         #ifdef Q_WS_X11
             XFlush(QX11Info::display());
         #endif
 
-        // On crée la fenêtre SFML avec l'identificateur du widget
+        // On crÃ©e la fenÃªtre SFML avec l'identificateur du widget
         Create(winId());
 
-        // On laisse la classe dérivée s'initialiser si besoin
+        // On laisse la classe dÃ©rivÃ©e s'initialiser si besoin
         OnInit();
 
-        // On paramètre le timer de sorte qu'il génère un rafraîchissement à la fréquence souhaitée
+        // On paramÃ¨tre le timer de sorte qu'il gÃ©nÃ¨re un rafraÃ®chissement Ã  la frÃ©quence souhaitÃ©e
         connect(&amp;myTimer, SIGNAL(timeout()), this, SLOT(repaint()));
         myTimer.start();
 
@@ -140,15 +140,15 @@ void QSFMLCanvas::showEvent(QShowEvent*)
 }
 </code></pre>
 <p>
-    Dans la fonction <code>showEvent</code>, qui est appelée lorsque le widget est affiché, nous créons la fenêtre SFML.
-    Ceci se fait très simplement en appelant la fonction <code>Create</code> avec l'identificateur interne de la
-    fenêtre, qui est donné par la fonction <code>winId</code>. Sous X11 (Unix), nous devons placer un appel système pour
+    Dans la fonction <code>showEvent</code>, qui est appelÃ©e lorsque le widget est affichÃ©, nous crÃ©ons la fenÃªtre SFML.
+    Ceci se fait trÃ¨s simplement en appelant la fonction <code>Create</code> avec l'identificateur interne de la
+    fenÃªtre, qui est donnÃ© par la fonction <code>winId</code>. Sous X11 (Unix), nous devons placer un appel systÃ¨me pour
     vider la file de messages qui seraient encore en attente, afin de s'assurer que la SFML va bien voir
-    notre fenêtre.<br/>
-    Une fois la fenêtre SFML initialisée, nous pouvons informer la classe dérivée en appelant la fonction virtuelle
+    notre fenÃªtre.<br/>
+    Une fois la fenÃªtre SFML initialisÃ©e, nous pouvons informer la classe dÃ©rivÃ©e en appelant la fonction virtuelle
     <code>OnInit</code>.<br/>
-    Enfin, on connecte le timer à la fonction <code>repaint</code>, qui va rafraîchir le widget et générer un évènement
-    <em>paint</em>. Et bien entendu, on le démarre.
+    Enfin, on connecte le timer Ã  la fonction <code>repaint</code>, qui va rafraÃ®chir le widget et gÃ©nÃ©rer un Ã©vÃ¨nement
+    <em>paint</em>. Et bien entendu, on le dÃ©marre.
 </p>
 <pre><code class="cpp">QPaintEngine* QSFMLCanvas::paintEngine() const
 {
@@ -157,28 +157,28 @@ void QSFMLCanvas::showEvent(QShowEvent*)
 </code></pre>
 <p>
     Nous faisons en sorte que la fonction <code>paintEngine</code> renvoie un moteur de rendu nul.
-    Cette fonction va de paire avec l'option <code>WA_PaintOnScreen</code>, pour dire à Qt que nous n'utilisons aucun
+    Cette fonction va de paire avec l'option <code>WA_PaintOnScreen</code>, pour dire Ã  Qt que nous n'utilisons aucun
     de ses moteurs de rendu.
 </p>
 <pre><code class="cpp">void QSFMLCanvas::paintEvent(QPaintEvent*)
 {
-    // On laisse la classe dérivée faire sa tambouille
+    // On laisse la classe dÃ©rivÃ©e faire sa tambouille
     OnUpdate();
 
-    // On rafraîchit le widget
+    // On rafraÃ®chit le widget
     Display();
 }
 </code></pre>
 <p>
-    La fonction <code>paintEvent</code> est assez simple : on notifie la classe dérivée qu'un rafraîchissement est
-    sur le point d'être effectué, et on appelle <code>Display</code> pour mettre à jour notre widget avec la frame
+    La fonction <code>paintEvent</code> est assez simple : on notifie la classe dÃ©rivÃ©e qu'un rafraÃ®chissement est
+    sur le point d'Ãªtre effectuÃ©, et on appelle <code>Display</code> pour mettre Ã  jour notre widget avec la frame
     rendue.
 </p>
 
 <?php h2('Utilisation de notre widget Qt-SFML') ?>
 <p>
-    Le <code>QSFMLCanvas</code> que nous venons d'écrire n'est pas utilisable directement, il doit être dérivé.
-    Créons donc un widget dérivé qui va dessiner quelque chose de sympa :
+    Le <code>QSFMLCanvas</code> que nous venons d'Ã©crire n'est pas utilisable directement, il doit Ãªtre dÃ©rivÃ©.
+    CrÃ©ons donc un widget dÃ©rivÃ© qui va dessiner quelque chose de sympa :
 </p>
 <pre><code class="cpp">class MyCanvas : public QSFMLCanvas
 {
@@ -197,14 +197,14 @@ private :
         // On charge une image
         myImage.LoadFromFile("datas/qt/sfml.png");
 
-        // On paramètre le sprite
+        // On paramÃ¨tre le sprite
         mySprite.SetImage(myImage);
         mySprite.SetCenter(mySprite.GetSize() / 2.f);
     }
 
     void OnUpdate()
     {
-        // On efface l'écran
+        // On efface l'Ã©cran
         Clear(sf::Color(0, 128, 0));
 
         // Une petite rotation du sprite
@@ -219,23 +219,23 @@ private :
 };
 </code></pre>
 <p>
-    Rien de très compliqué ici : on surdéfinit <code>OnInit</code> pour charger et initialiser nos ressources
+    Rien de trÃ¨s compliquÃ© ici : on surdÃ©finit <code>OnInit</code> pour charger et initialiser nos ressources
     graphiques, et <code>OnUpdate</code> pour les afficher.
 </p>
 <p>
-    Nous pouvons maintenant créer une fenêtre Qt classique, et y placer une instance de notre widget perso :
+    Nous pouvons maintenant crÃ©er une fenÃªtre Qt classique, et y placer une instance de notre widget perso :
 </p>
 <pre><code class="cpp">int main(int argc, char **argv)
 {
     QApplication App(argc, argv);
 
-    // On crée la fenêtre principale
+    // On crÃ©e la fenÃªtre principale
     QFrame* MainFrame = new QFrame;
     MainFrame->setWindowTitle("Qt SFML");
     MainFrame->resize(400, 400);
     MainFrame->show();
 
-    //On crée une vue SFML dans la fenêtre principale
+    //On crÃ©e une vue SFML dans la fenÃªtre principale
     MyCanvas* SFMLView = new MyCanvas(MainFrame, QPoint(20, 20), QSize(360, 360));
     SFMLView->show();
 
@@ -245,9 +245,9 @@ private :
 
 <?php h2('Conclusion') ?>
 <p>
-    L'intégration de la SFML dans une interface Qt est simplifiée avec le widget personnalisé que nous venons d'écrire,
-    n'hésitez pas à l'utiliser et à l'améliorer.<br/>
-    Si vous voulez voir comment la SFML s'intègre à une
+    L'intÃ©gration de la SFML dans une interface Qt est simplifiÃ©e avec le widget personnalisÃ© que nous venons d'Ã©crire,
+    n'hÃ©sitez pas Ã  l'utiliser et Ã  l'amÃ©liorer.<br/>
+    Si vous voulez voir comment la SFML s'intÃ¨gre Ã  une
     <a class="internal" href="./graphics-wxwidgets-fr.php" title="Aller au tutoriel suivant">interface wxWidgets</a>,
     vous pouvez vous rendre au prochain tutoriel.
 </p>

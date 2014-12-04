@@ -10,33 +10,33 @@
 
 <?php h2('Introduction') ?>
 <p>
-    Parfois, il arrive que les données audio ne puissent pas être chargées intégralement en mémoire. Par exemple,
-    un son peut être transmis par le réseau, ou lu à la volée à partir d'un fichier volumineux. Dans de tels cas, vous devez être
-    capables de jouer le son tout en le chargeant au fur et à mesure, et toujours donner l'illusion que vous le
+    Parfois, il arrive que les donnÃ©es audio ne puissent pas Ãªtre chargÃ©es intÃ©gralement en mÃ©moire. Par exemple,
+    un son peut Ãªtre transmis par le rÃ©seau, ou lu Ã  la volÃ©e Ã  partir d'un fichier volumineux. Dans de tels cas, vous devez Ãªtre
+    capables de jouer le son tout en le chargeant au fur et Ã  mesure, et toujours donner l'illusion que vous le
     jouez en un bloc. C'est ce que l'on appelle la lecture en flux, ou lecture en continu (<em>streaming</em>).
 </p>
 <p>
-    La SFML fournit une classe de base pour implémenter la lecture en continu à partir de sources quelconques :
-    <?php class_link("SoundStream")?>. Celle-ci gère tout, la seule tâche qu'il vous reste à effectuer est de fournir de nouvelles
-    données audio lorsqu'elle en a besoin.
+    La SFML fournit une classe de base pour implÃ©menter la lecture en continu Ã  partir de sources quelconques :
+    <?php class_link("SoundStream")?>. Celle-ci gÃ¨re tout, la seule tÃ¢che qu'il vous reste Ã  effectuer est de fournir de nouvelles
+    donnÃ©es audio lorsqu'elle en a besoin.
 </p>
 
 <?php h2('Utilisation de base') ?>
 <p>
     <?php class_link("SoundStream")?>, tout comme <?php class_link("Sound")?> et <?php class_link("Music")?>, est toujours un son ; ainsi
-    elle définit les accesseurs habituels pour le volume, le pitch, le taux d'échantillonnage, etc. Elle définit
-    également les trois fonctions de contrôle : jouer (<code>Play</code>), mettre en pause (<code>Pause</code>)
-    et stopper (<code>Stop</code>). Il y a par contre quelques fonctionnalités qu'un flux ne peut fournir par rapport
-    à un son ou une musique : il ne peut pas vous donner la durée totale (qui n'est connue que lorsque le son
-    a été entièrement joué), il ne peut pas boucler tout seul, et ne peut pas vous donner la position de lecture
-    courante. Par contre, si votre source le permet, rien ne vous empêche d'ajouter ces fonctionnalités manquantes
-    dans votre spécialisation de <?php class_link("SoundStream")?>.
+    elle dÃ©finit les accesseurs habituels pour le volume, le pitch, le taux d'Ã©chantillonnage, etc. Elle dÃ©finit
+    Ã©galement les trois fonctions de contrÃ´le : jouer (<code>Play</code>), mettre en pause (<code>Pause</code>)
+    et stopper (<code>Stop</code>). Il y a par contre quelques fonctionnalitÃ©s qu'un flux ne peut fournir par rapport
+    Ã  un son ou une musique : il ne peut pas vous donner la durÃ©e totale (qui n'est connue que lorsque le son
+    a Ã©tÃ© entiÃ¨rement jouÃ©), il ne peut pas boucler tout seul, et ne peut pas vous donner la position de lecture
+    courante. Par contre, si votre source le permet, rien ne vous empÃªche d'ajouter ces fonctionnalitÃ©s manquantes
+    dans votre spÃ©cialisation de <?php class_link("SoundStream")?>.
 </p>
 
-<?php h2('Définir un flux personnalisé') ?>
+<?php h2('DÃ©finir un flux personnalisÃ©') ?>
 <p>
-    <?php class_link("SoundStream")?> est conçue pour être utilisée en tant que classe de base abstraite. Ainsi, pour créer
-    vos propres flux, vous devez tout d'abord créer une classe dérivée :
+    <?php class_link("SoundStream")?> est conÃ§ue pour Ãªtre utilisÃ©e en tant que classe de base abstraite. Ainsi, pour crÃ©er
+    vos propres flux, vous devez tout d'abord crÃ©er une classe dÃ©rivÃ©e :
 </p>
 <pre><code class="cpp">class MyCustomStream : public sf::SoundStream
 {
@@ -44,13 +44,13 @@
 };
 </code></pre>
 <p>
-    Puis, pour personnaliser le comportement de votre flux, vous avez deux fonctions virtuelles à redéfinir :
+    Puis, pour personnaliser le comportement de votre flux, vous avez deux fonctions virtuelles Ã  redÃ©finir :
 </p>
 <ul>
-    <li><code>OnStart</code>, qui est appelée à chaque fois que le flux redémarre ; elle est optionnelle, ne la
-    redéfinissez que si vous avez besoin d'effectuer des traitements spécifiques à l'initialisation</li>
-    <li><code>OnGetData</code>, qui sera appelée à chaque fois que le flux aura besoin d'un nouveau bloc
-    de données audio à lire</li>
+    <li><code>OnStart</code>, qui est appelÃ©e Ã  chaque fois que le flux redÃ©marre ; elle est optionnelle, ne la
+    redÃ©finissez que si vous avez besoin d'effectuer des traitements spÃ©cifiques Ã  l'initialisation</li>
+    <li><code>OnGetData</code>, qui sera appelÃ©e Ã  chaque fois que le flux aura besoin d'un nouveau bloc
+    de donnÃ©es audio Ã  lire</li>
 </ul>
 <pre><code class="cpp">class MyCustomStream : public sf::SoundStream
 {
@@ -73,19 +73,19 @@
 };
 </code></pre>
 <p>
-    Ces deux fonction retournent un booléen, qui signifie "est-ce que tout est toujours ok ?". Ainsi si une erreur survient,
-    ou s'il n'y a plus de données audio à jouer, vous pouvez renvoyer <code>false</code>. Renvoyer <code>false</code>
-    stoppera immédiatement la lecture du flux.
+    Ces deux fonction retournent un boolÃ©en, qui signifie "est-ce que tout est toujours ok ?". Ainsi si une erreur survient,
+    ou s'il n'y a plus de donnÃ©es audio Ã  jouer, vous pouvez renvoyer <code>false</code>. Renvoyer <code>false</code>
+    stoppera immÃ©diatement la lecture du flux.
 </p>
 <p>
-    <code>OnGetData</code> vous donne une instance de <code>Chunk</code> à remplir, avec un pointeur vers les nouvelles
-    données audio à jouer (<code>Data.Samples</code>) et le nombre d'échantillons à jouer (<code>Data.NbSamples</code>).
-    Les échantillons audio, comme n'importe où dans le module audio de la SFML, doivent être des entiers 16 bits signés.
+    <code>OnGetData</code> vous donne une instance de <code>Chunk</code> Ã  remplir, avec un pointeur vers les nouvelles
+    donnÃ©es audio Ã  jouer (<code>Data.Samples</code>) et le nombre d'Ã©chantillons Ã  jouer (<code>Data.NbSamples</code>).
+    Les Ã©chantillons audio, comme n'importe oÃ¹ dans le module audio de la SFML, doivent Ãªtre des entiers 16 bits signÃ©s.
 </p>
 <p>
-    Il reste une étape à réaliser avant que votre flux ne soit fonctionnel : vous devez lui fournir les paramètres
-    du son, c'est-à-dire le nombre de canaux et le taux d'échantillonnage. Pour se faire, appelez simplement
-    la fonction <code>Initialize</code> dès que vous connaissez ces paramètres.
+    Il reste une Ã©tape Ã  rÃ©aliser avant que votre flux ne soit fonctionnel : vous devez lui fournir les paramÃ¨tres
+    du son, c'est-Ã -dire le nombre de canaux et le taux d'Ã©chantillonnage. Pour se faire, appelez simplement
+    la fonction <code>Initialize</code> dÃ¨s que vous connaissez ces paramÃ¨tres.
 </p>
 <pre><code class="cpp">class MyCustomStream : public sf::SoundStream
 {
@@ -101,11 +101,11 @@ public :
 };
 </code></pre>
 <p>
-    A partir du moment où la fonction <code>Initialize</code> a été appelée, le flux est prêt à être lu.
+    A partir du moment oÃ¹ la fonction <code>Initialize</code> a Ã©tÃ© appelÃ©e, le flux est prÃªt Ã  Ãªtre lu.
 </p>
 <p>
-    Voici un exemple qui illustre l'utilisation de <?php class_link("SoundStream")?> : une classe personnalisée qui
-    effectue une lecture en continu depuis un tampon sonore chargé à partir d'un fichier. Oui, c'est complétement inutile,
+    Voici un exemple qui illustre l'utilisation de <?php class_link("SoundStream")?> : une classe personnalisÃ©e qui
+    effectue une lecture en continu depuis un tampon sonore chargÃ© Ã  partir d'un fichier. Oui, c'est complÃ©tement inutile,
     mais cela vous donnera une vue plus claire de la classe <?php class_link("SoundStream")?>.
 </p>
 <pre><code class="cpp">class MyCustomStream : public sf::SoundStream
@@ -123,18 +123,18 @@ public :
     }
 
     ////////////////////////////////////////////////////////////
-    /// Charge les données audio à partir d'un fichier
+    /// Charge les donnÃ©es audio Ã  partir d'un fichier
     ////////////////////////////////////////////////////////////
     bool Open(const std::string&amp; Filename)
     {
-        // Charge les données audio dans un tampon sonore
+        // Charge les donnÃ©es audio dans un tampon sonore
         sf::SoundBuffer SoundData;
         if (SoundData.LoadFromFile(Filename))
         {
-            // Initialise le flux avec les paramètres du son
+            // Initialise le flux avec les paramÃ¨tres du son
             Initialize(SoundData.GetChannelsCount(), SoundData.GetSampleRate());
 
-            // Copie les échantillons audio dans notre tampon interne
+            // Copie les Ã©chantillons audio dans notre tampon interne
             const sf::Int16* Data = SoundData.GetSamples();
             myBuffer.assign(Data, Data + SoundData.GetSamplesCount());
 
@@ -151,7 +151,7 @@ private :
     ////////////////////////////////////////////////////////////
     virtual bool OnStart()
     {
-        // Remet à zéro la position de lecture
+        // Remet Ã  zÃ©ro la position de lecture
         myOffset = 0;
 
         return true;
@@ -162,60 +162,60 @@ private :
     ////////////////////////////////////////////////////////////
     virtual bool OnGetData(sf::SoundStream::Chunk&amp; Data)
     {
-        // Vérifie qu'il y a suffisamment de données à lire
+        // VÃ©rifie qu'il y a suffisamment de donnÃ©es Ã  lire
         if (myOffset + myBufferSize >= myBuffer.size())
         {
             // Renvoyer false signifie que nous voulons stopper la lecture du flux
             return false;
         }
 
-        // Remplit le bloc avec un pointeur vers les données audio et le nombre d'échantillons à lire
+        // Remplit le bloc avec un pointeur vers les donnÃ©es audio et le nombre d'Ã©chantillons Ã  lire
         Data.Samples   = &amp;myBuffer[myOffset];
         Data.NbSamples = myBufferSize;
 
-        // Met à jour la position de lecture
+        // Met Ã  jour la position de lecture
         myOffset += myBufferSize;
 
         return true;
     }
 
     ////////////////////////////////////////////////////////////
-    // Données membres
+    // DonnÃ©es membres
     ////////////////////////////////////////////////////////////
-    std::vector&lt;sf::Int16&gt; myBuffer;     ///&lt; Tampon interne qui contient les données audio
+    std::vector&lt;sf::Int16&gt; myBuffer;     ///&lt; Tampon interne qui contient les donnÃ©es audio
     std::size_t            myOffset;     ///&lt; Position de lecture courante dans le tampon interne
-    std::size_t            myBufferSize; ///&lt; Taille des données audio à envoyer
+    std::size_t            myBufferSize; ///&lt; Taille des donnÃ©es audio Ã  envoyer
 };
 </code></pre>
 
 <?php h2('Multi-threading') ?>
 <p>
-    Afin d'éviter de bloquer l'application, les flux audio utilisent un nouveau thread lorsque vous les jouez.
-    Etant donné que <code>OnGetData</code> va être appelée à partir de ce nouveau thread, cela signifie que le
-    code que vous allez y mettre sera exécuté en parallèle du thread principal. Il est important de garder ceci en tête,
-    car vous pourriez avoir à gérer des problèmes de synchronisation si vous partagez des variables entre les deux
+    Afin d'Ã©viter de bloquer l'application, les flux audio utilisent un nouveau thread lorsque vous les jouez.
+    Etant donnÃ© que <code>OnGetData</code> va Ãªtre appelÃ©e Ã  partir de ce nouveau thread, cela signifie que le
+    code que vous allez y mettre sera exÃ©cutÃ© en parallÃ¨le du thread principal. Il est important de garder ceci en tÃªte,
+    car vous pourriez avoir Ã  gÃ©rer des problÃ¨mes de synchronisation si vous partagez des variables entre les deux
     threads.
 </p>
 <p>
-    Imaginez que votre flux audio lise un son reçu depuis le réseau. Les échantillons audio vont être joués pendant
-    que les suivants seront en train d'être reçus. Ainsi, le thread principal va remplir le tableau d'échantillons avec
-    les données provenant du réseau, pendant que le thread secondaire va lire depuis le tableau d'échantillons
-    pour alimenter le flux. Comme la lecture et l'écriture dans le tableau d'échantillons s'exécutent dans deux threads
-    différents, elles peuvent arriver au même moment, ce qui conduirait à des comportements indéfinis.
-    Dans ce cas précis, nous pouvons facilement protéger le tableau avec un mutex, et ainsi éviter les accès concurrents.<br/>
-    Pour en savoir plus à propos des threads et des mutexs, vous pouvez jeter un oeil au
+    Imaginez que votre flux audio lise un son reÃ§u depuis le rÃ©seau. Les Ã©chantillons audio vont Ãªtre jouÃ©s pendant
+    que les suivants seront en train d'Ãªtre reÃ§us. Ainsi, le thread principal va remplir le tableau d'Ã©chantillons avec
+    les donnÃ©es provenant du rÃ©seau, pendant que le thread secondaire va lire depuis le tableau d'Ã©chantillons
+    pour alimenter le flux. Comme la lecture et l'Ã©criture dans le tableau d'Ã©chantillons s'exÃ©cutent dans deux threads
+    diffÃ©rents, elles peuvent arriver au mÃªme moment, ce qui conduirait Ã  des comportements indÃ©finis.
+    Dans ce cas prÃ©cis, nous pouvons facilement protÃ©ger le tableau avec un mutex, et ainsi Ã©viter les accÃ¨s concurrents.<br/>
+    Pour en savoir plus Ã  propos des threads et des mutexs, vous pouvez jeter un oeil au
     <a class="internal" href="./system-threads-fr.php" title="Tutoriel sur les threads et mutexs">tutoriel correspondant</a>.
 </p>
 
 <?php h2('Conclusion') ?>
 <p>
-    <?php class_link("SoundStream")?> fournit une interface simple pour réaliser des lectures en continu à partir de n'importe
-    quelles sources. Gardez toujours en tête qu'un flux tournera dans un nouveau thread, et préoccupez-vous des problèmes
+    <?php class_link("SoundStream")?> fournit une interface simple pour rÃ©aliser des lectures en continu Ã  partir de n'importe
+    quelles sources. Gardez toujours en tÃªte qu'un flux tournera dans un nouveau thread, et prÃ©occupez-vous des problÃ¨mes
     de synchronisation.
 </p>
 <p>
     Le prochain tutoriel vous montrera comment
-    <a class="internal" href="./audio-capture-fr.php" title="Aller au tutoriel suivant">réaliser des captures audio</a>.
+    <a class="internal" href="./audio-capture-fr.php" title="Aller au tutoriel suivant">rÃ©aliser des captures audio</a>.
 </p>
 
 <?php

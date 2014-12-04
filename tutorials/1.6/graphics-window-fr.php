@@ -1,68 +1,68 @@
 <?php
 
-    $title = "Utiliser les fenêtres de rendu";
+    $title = "Utiliser les fenÃªtres de rendu";
     $page = "graphics-window-fr.php";
 
     require("header-fr.php");
 ?>
 
-<h1>Utiliser les fenêtres de rendu</h1>
+<h1>Utiliser les fenÃªtres de rendu</h1>
 
 <?php h2('Introduction') ?>
 <p>
-    Le module de fenêtrage fournit un système complet pour gérer les fenêtres et les évènements, et peut
+    Le module de fenÃªtrage fournit un systÃ¨me complet pour gÃ©rer les fenÃªtres et les Ã©vÃ¨nements, et peut
     s'interfacer avec OpenGL. Mais que se passe-t-il si nous ne voulons pas utiliser OpenGL ? SFML
-    fournit un module dédié à l'affichage de graphiques en 2D, le module graphique.
+    fournit un module dÃ©diÃ© Ã  l'affichage de graphiques en 2D, le module graphique.
 </p>
 
 <?php h2('Mise en place') ?>
 <p>
-    Pour travailler avec le module graphique, vous devez inclure le bon en-tête :
+    Pour travailler avec le module graphique, vous devez inclure le bon en-tÃªte :
 </p>
 <pre><code class="cpp">#include &lt;SFML/Graphics.hpp&gt;
 </code></pre>
 <p>
-    SFML/Window.hpp n'est plus requis : il sera déjà inclus par le module graphique.
+    SFML/Window.hpp n'est plus requis : il sera dÃ©jÃ  inclus par le module graphique.
 </p>
 
-<?php h2('La fenêtre de rendu') ?>
+<?php h2('La fenÃªtre de rendu') ?>
 <p>
-    La fenêtre de base en SFML, <?php class_link("Window")?>, est suffisante pour obtenir
-    une fenêtre et ses évènements, mais n'a aucune idée de la manière de dessiner quelque chose. En fait,
+    La fenÃªtre de base en SFML, <?php class_link("Window")?>, est suffisante pour obtenir
+    une fenÃªtre et ses Ã©vÃ¨nements, mais n'a aucune idÃ©e de la maniÃ¨re de dessiner quelque chose. En fait,
     il sera impossible de dessiner quoique ce soit du module graphique directement dans une
     <?php class_link("Window")?>. C'est pourquoi le module graphique fournit une classe de
-    fenêtre offrant plus de fonctionnalités et effectuant plus de travail redondant à votre place :
-    <?php class_link("RenderWindow")?>. Comme <?php class_link("RenderWindow")?> hérite de
-    <?php class_link("Window")?>, elle contient déjà toutes les fonctionnalités de cette dernière et
-    agit exactement de la même façon pour la création, la récupération des évènements, etc. Tout ce que
-    fait <?php class_link("RenderWindow")?> c'est ajouter des fonctionnalités pour afficher simplement
+    fenÃªtre offrant plus de fonctionnalitÃ©s et effectuant plus de travail redondant Ã  votre place :
+    <?php class_link("RenderWindow")?>. Comme <?php class_link("RenderWindow")?> hÃ©rite de
+    <?php class_link("Window")?>, elle contient dÃ©jÃ  toutes les fonctionnalitÃ©s de cette derniÃ¨re et
+    agit exactement de la mÃªme faÃ§on pour la crÃ©ation, la rÃ©cupÃ©ration des Ã©vÃ¨nements, etc. Tout ce que
+    fait <?php class_link("RenderWindow")?> c'est ajouter des fonctionnalitÃ©s pour afficher simplement
     des graphiques.
 </p>
 <p>
-    En fait, une application minimale utilisant le module graphique sera exactement la même qu'une
-    application qui n'utilise que le module de fenêtrage, excepté le type de la fenêtre :
+    En fait, une application minimale utilisant le module graphique sera exactement la mÃªme qu'une
+    application qui n'utilise que le module de fenÃªtrage, exceptÃ© le type de la fenÃªtre :
 </p>
 <pre><code class="cpp">int main()
 {
-    // Création de la fenêtre de rendu
+    // CrÃ©ation de la fenÃªtre de rendu
     sf::RenderWindow App(sf::VideoMode(800, 600, 32), "SFML Graphics");
 
-    // Exécution de la boucle principale
+    // ExÃ©cution de la boucle principale
     while (App.IsOpened())
     {
-        // Traitement des évènements
+        // Traitement des Ã©vÃ¨nements
         sf::Event Event;
         while (App.GetEvent(Event))
         {
-            // Fenêtre fermée : on quitte
+            // FenÃªtre fermÃ©e : on quitte
             if (Event.Type == sf::Event::Closed)
                 App.Close();
         }
 
-        // Efface l'écran (remplissage avec du noir)
+        // Efface l'Ã©cran (remplissage avec du noir)
         App.Clear();
 
-        // Affichage du contenu de la fenêtre à l'écran
+        // Affichage du contenu de la fenÃªtre Ã  l'Ã©cran
         App.Display();
     }
 
@@ -70,41 +70,41 @@
 }
 </code></pre>
 <p>
-    La seule différence est qu'ici nous avons ajouté un appel à <code>Clear</code>, de sorte que l'écran soit rempli
-    en noir plutôt que de rester avec des pixel aléatoires.
+    La seule diffÃ©rence est qu'ici nous avons ajoutÃ© un appel Ã  <code>Clear</code>, de sorte que l'Ã©cran soit rempli
+    en noir plutÃ´t que de rester avec des pixel alÃ©atoires.
 </p>
 <p>
-    Si vous souhaitez effacer l'écran avec une couleur différente, vous pouvez passer celle-ci en paramètre :
+    Si vous souhaitez effacer l'Ã©cran avec une couleur diffÃ©rente, vous pouvez passer celle-ci en paramÃ¨tre :
 </p>
 <pre><code class="cpp">App.Clear(sf::Color(200, 0, 0));
 </code></pre>
 <p>
-    Le module graphique de SFML fournit une classe très utile pour manipuler les couleurs :
+    Le module graphique de SFML fournit une classe trÃ¨s utile pour manipuler les couleurs :
     <?php class_link("Color")?>. Toutes les couleurs que vous croiserez dans la SFML seront
     des <?php class_link("Color")?>, vous pouvez oublier les entiers 32-bits ou les tableaux de
     flottants.<br/>
     <?php class_link("Color")?> contient basiquement quatre composantes 8-bits :
     <code>r</code> (rouge), <code>g</code> (vert),
     <code>b</code> (bleu),
-    et <code>a</code> (alpha -- la transparence) ; leurs valeurs vont de 0 à 255.<br/>
-    <?php class_link("Color")?> fournit des fonctions, des opérateurs et des constructeurs utiles, celui qui nous
-    intéresse ici est celui qui prend les 4 composantes en paramètre (la quatrième, alpha, a une valeur
-    par défaut fixée à 255). Ainsi dans le code ci-dessus, nous construisons une instance de
-    <?php class_link("Color")?> avec une composante rouge à 200, et des composantes verte et bleue
-    à 0. Donc... nous obtenons un fond rouge pour notre fenêtre.
+    et <code>a</code> (alpha -- la transparence) ; leurs valeurs vont de 0 Ã  255.<br/>
+    <?php class_link("Color")?> fournit des fonctions, des opÃ©rateurs et des constructeurs utiles, celui qui nous
+    intÃ©resse ici est celui qui prend les 4 composantes en paramÃ¨tre (la quatriÃ¨me, alpha, a une valeur
+    par dÃ©faut fixÃ©e Ã  255). Ainsi dans le code ci-dessus, nous construisons une instance de
+    <?php class_link("Color")?> avec une composante rouge Ã  200, et des composantes verte et bleue
+    Ã  0. Donc... nous obtenons un fond rouge pour notre fenÃªtre.
 </p>
 <p>
-    Notez bien qu'effacer la fenêtre n'est pas nécessaire si ce que vous avez à afficher va recouvrir l'écran
-    entièrement ; ne le faites que si vous avez des pixels qui resteraient non dessinés.
+    Notez bien qu'effacer la fenÃªtre n'est pas nÃ©cessaire si ce que vous avez Ã  afficher va recouvrir l'Ã©cran
+    entiÃ¨rement ; ne le faites que si vous avez des pixels qui resteraient non dessinÃ©s.
 </p>
 
-<?php h2('Prendre des captures d\'écran') ?>
+<?php h2('Prendre des captures d\'Ã©cran') ?>
 <p>
-    Ce n'est probablement pas la chose la plus importante, mais cela peut s'avérer utile.
+    Ce n'est probablement pas la chose la plus importante, mais cela peut s'avÃ©rer utile.
     <?php class_link("RenderWindow")?> fournit une fonction pour sauvegarder son contenu dans une image :
-    <code>Capture</code>. Vous pouvez ensuite sauvegarder l'image dans un fichier facilement à l'aide de la fonction
+    <code>Capture</code>. Vous pouvez ensuite sauvegarder l'image dans un fichier facilement Ã  l'aide de la fonction
     <code>SaveToFile</code>, ou faire n'importe quoi d'autre.<br/>
-    Donc, par exemple, nous pouvons prendre une capture de l'écran lorsque l'utilisateur appuie sur la touche F1 :
+    Donc, par exemple, nous pouvons prendre une capture de l'Ã©cran lorsque l'utilisateur appuie sur la touche F1 :
 </p>
 <pre><code class="cpp">if (Event.Key.Code == sf::Key::F1)
 {
@@ -113,8 +113,8 @@
 }
 </code></pre>
 <p>
-    Bien entendu, selon la position de cette ligne de code dans votre boucle principale, l'image capturée ne sera pas
-    la même. Cela va enregistrer le contenu actuel de l'écran au moment de l'appel à <code>Capture</code>.
+    Bien entendu, selon la position de cette ligne de code dans votre boucle principale, l'image capturÃ©e ne sera pas
+    la mÃªme. Cela va enregistrer le contenu actuel de l'Ã©cran au moment de l'appel Ã  <code>Capture</code>.
 </p>
 
 <?php h2('Mixer avec OpenGL') ?>
@@ -123,24 +123,24 @@
     <?php class_link("RenderWindow")?>,
     comme vous le feriez avec
     <?php class_link("Window")?>.
-    Vous pouvez même mixer des commandes de dessin de SFML avec votre code OpenGL. Cependant, SFML ne préserve pas les
-    états OpenGL par défaut. Si SFML met le bazar dans vos états OpenGL et que vous voulez qu'il prenne soin de les
-    sauver / réinitialiser / restaurer, vous devez appeler la fonction <code>PreserveOpenGLStates</code> :
+    Vous pouvez mÃªme mixer des commandes de dessin de SFML avec votre code OpenGL. Cependant, SFML ne prÃ©serve pas les
+    Ã©tats OpenGL par dÃ©faut. Si SFML met le bazar dans vos Ã©tats OpenGL et que vous voulez qu'il prenne soin de les
+    sauver / rÃ©initialiser / restaurer, vous devez appeler la fonction <code>PreserveOpenGLStates</code> :
 </p>
 <pre><code class="cpp">App.PreserveOpenGLStates(true);
 </code></pre>
 <p>
-    Préserver les états OpenGL est très lourd au niveau du CPU et va degrader les performances, n'utilisez cette option que
-    si vous en avez réellement besoin. Vous pouvez également penser à gérer cela avec votre propre code, cela sera
-    nécessairement plus optimisé que le code générique de SFML qui sauvegarde tous les états, y compris ceux dont
+    PrÃ©server les Ã©tats OpenGL est trÃ¨s lourd au niveau du CPU et va degrader les performances, n'utilisez cette option que
+    si vous en avez rÃ©ellement besoin. Vous pouvez Ã©galement penser Ã  gÃ©rer cela avec votre propre code, cela sera
+    nÃ©cessairement plus optimisÃ© que le code gÃ©nÃ©rique de SFML qui sauvegarde tous les Ã©tats, y compris ceux dont
     vous n'avez pas besoin.
 </p>
 
 <?php h2('Conclusion') ?>
 <p>
-    Il n'y a pas beaucoup plus à dire sur les fenêtres de rendu. Elles fonctionnent comme les fenêtres de
-    base, en ajoutant quelques fonctionnalités pour faciliter le rendu 2D. Plus de ces fonctionnalités
-    seront expliquées dans les prochains tutoriels, à commencer par
+    Il n'y a pas beaucoup plus Ã  dire sur les fenÃªtres de rendu. Elles fonctionnent comme les fenÃªtres de
+    base, en ajoutant quelques fonctionnalitÃ©s pour faciliter le rendu 2D. Plus de ces fonctionnalitÃ©s
+    seront expliquÃ©es dans les prochains tutoriels, Ã  commencer par
     <a class="internal" href="./graphics-sprite-fr.php" title="Aller au prochain tutoriel">l'affichage de sprites</a>.
 </p>
 

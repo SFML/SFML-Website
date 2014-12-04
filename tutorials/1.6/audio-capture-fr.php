@@ -1,30 +1,30 @@
 <?php
 
-    $title = "Capturer des données audio";
+    $title = "Capturer des donnÃ©es audio";
     $page = "audio-capture-fr.php";
 
     require("header-fr.php");
 ?>
 
-<h1>Capturer des données audio</h1>
+<h1>Capturer des donnÃ©es audio</h1>
 
 <?php h2('Introduction') ?>
 <p>
-    Ce tutoriel va vous montrer comment capturer facilement des données audio en provenance de votre microphone,
-    et leur appliquer des traitements personnalisés, comme par exemple les sauver dans un tampon sonore, ou les
-    envoyer directement sur le réseau.
+    Ce tutoriel va vous montrer comment capturer facilement des donnÃ©es audio en provenance de votre microphone,
+    et leur appliquer des traitements personnalisÃ©s, comme par exemple les sauver dans un tampon sonore, ou les
+    envoyer directement sur le rÃ©seau.
 </p>
 
-<?php h2('Créer un enregistreur personnalisé') ?>
+<?php h2('CrÃ©er un enregistreur personnalisÃ©') ?>
 <p>
-    La classe qui définit l'interface de capture dans la SFML est <?php class_link("SoundRecorder")?>.
-    Etant donné qu'elle ne sait pas quoi faire des échantillons audio capturés (et elle n'a pas à le savoir),
+    La classe qui dÃ©finit l'interface de capture dans la SFML est <?php class_link("SoundRecorder")?>.
+    Etant donnÃ© qu'elle ne sait pas quoi faire des Ã©chantillons audio capturÃ©s (et elle n'a pas Ã  le savoir),
     ce n'est qu'une classe de base pour votre propres enregistreurs persos. <?php class_link("SoundRecorder")?> vous
-    fournit les échantillons enregistrés, tout ce que vous avez ensuite à faire est... ce que vous voulez : les envoyer
-    via le réseau, les copier dans un tampon sonore, etc.
+    fournit les Ã©chantillons enregistrÃ©s, tout ce que vous avez ensuite Ã  faire est... ce que vous voulez : les envoyer
+    via le rÃ©seau, les copier dans un tampon sonore, etc.
 </p>
 <p>
-    Voici les fonctions à redéfinir dans un enregistreur dérivé de <?php class_link("SoundRecorder")?> :
+    Voici les fonctions Ã  redÃ©finir dans un enregistreur dÃ©rivÃ© de <?php class_link("SoundRecorder")?> :
 </p>
 <pre><code class="cpp">class MyCustomSoundRecorder : public sf::SoundRecorder
 {
@@ -49,40 +49,40 @@
 };
 </code></pre>
 <p>
-    <code>OnStart</code> est appelée une fois à chaque nouvelle capture (appel à <code>Start</code>).
-    Cette fonction est optionnelle, et ne fera rien si vous ne la redéfinissez pas. Si vous le faites, la valeur de retour
-    est un booléen qui doit être <code>true</code> pour démarrer la capture, ou <code>false</code> pour l'annuler
-    (par exemple après une erreur).
+    <code>OnStart</code> est appelÃ©e une fois Ã  chaque nouvelle capture (appel Ã  <code>Start</code>).
+    Cette fonction est optionnelle, et ne fera rien si vous ne la redÃ©finissez pas. Si vous le faites, la valeur de retour
+    est un boolÃ©en qui doit Ãªtre <code>true</code> pour dÃ©marrer la capture, ou <code>false</code> pour l'annuler
+    (par exemple aprÃ¨s une erreur).
 </p>
 <p>
-    <code>OnProcessSamples</code> est appelée à chaque fois que l'enregistreur a capturé suffisamment de données audio; donc
-    régulièrement tout au long de l'enregistrement. Cette fonction est obligatoire (un enregistreur sans fonction pour
-    traiter les données audio n'aurait aucun sens), vous devez donc la redéfinir dans vos enregistreurs persos. Tout comme
+    <code>OnProcessSamples</code> est appelÃ©e Ã  chaque fois que l'enregistreur a capturÃ© suffisamment de donnÃ©es audio; donc
+    rÃ©guliÃ¨rement tout au long de l'enregistrement. Cette fonction est obligatoire (un enregistreur sans fonction pour
+    traiter les donnÃ©es audio n'aurait aucun sens), vous devez donc la redÃ©finir dans vos enregistreurs persos. Tout comme
     <code>OnStart</code>, la valeur de retour signifie "est-ce qu'on peut continuer la capture ?".<br/>
-    Le paramètre <code>Samples</code> est un pointeur vers le tableau des échantillons sonores capturés, et
-    <code>SamplesCount</code> est le nombre d'échantillons dans ce tableau.
+    Le paramÃ¨tre <code>Samples</code> est un pointeur vers le tableau des Ã©chantillons sonores capturÃ©s, et
+    <code>SamplesCount</code> est le nombre d'Ã©chantillons dans ce tableau.
 
 </p>
 <p>
-    <code>OnStop</code> est appelée à chaque fois que la capture en cours est arrêtée. De manière similaire à
-    <code>OnStart</code>, elle est optionnelle et ne fera rien de particulier si vous ne la redéfinissez pas.
+    <code>OnStop</code> est appelÃ©e Ã  chaque fois que la capture en cours est arrÃªtÃ©e. De maniÃ¨re similaire Ã 
+    <code>OnStart</code>, elle est optionnelle et ne fera rien de particulier si vous ne la redÃ©finissez pas.
 </p>
 
 <?php h2('Utilisation') ?>
 <p>
-    L'interface de <?php class_link("SoundRecorder")?> est assez simple. Tout d'abord, vous devez vérifier que votre système
-    supporte bien la capture audio. Cela peut être fait via la fonction statique <code>CanCapture</code> :
+    L'interface de <?php class_link("SoundRecorder")?> est assez simple. Tout d'abord, vous devez vÃ©rifier que votre systÃ¨me
+    supporte bien la capture audio. Cela peut Ãªtre fait via la fonction statique <code>CanCapture</code> :
 </p>
 <pre><code class="cpp">if (!sf::SoundRecorder::CanCapture())
 {
-    // N'essayez même pas d'utiliser la capture audio...
+    // N'essayez mÃªme pas d'utiliser la capture audio...
 }
 </code></pre>
 <p>
-    Pour bien faire, vous devriez le vérifier avant chaque utilisation de <?php class_link("SoundRecorder")?>.
+    Pour bien faire, vous devriez le vÃ©rifier avant chaque utilisation de <?php class_link("SoundRecorder")?>.
 </p>
 <p>
-    Puis, pour démarrer la capture appelez <code>Start</code>, et pour la stopper appelez <code>Stop</code>.
+    Puis, pour dÃ©marrer la capture appelez <code>Start</code>, et pour la stopper appelez <code>Stop</code>.
 </p>
 <pre><code class="cpp">MyCustomSoundRecorder Recorder;
 
@@ -93,19 +93,19 @@ Recorder.Start(96000);
 Recorder.Stop();
 </code></pre>
 <p>
-    Lorsque vous appelez <code>Start</code>, vous pouvez passer en paramètre le taux d'échantillonnage qui sera utilisé
-    pour la capture. En l'absence de paramètre, c'est 44100 sera utilisé (qualité CD). Si vous avez besoin de récupérer
-    ce taux d'échantillonnage plus tard, vous pouvez appeler la fonction <code>GetSampleRate</code>.
+    Lorsque vous appelez <code>Start</code>, vous pouvez passer en paramÃ¨tre le taux d'Ã©chantillonnage qui sera utilisÃ©
+    pour la capture. En l'absence de paramÃ¨tre, c'est 44100 sera utilisÃ© (qualitÃ© CD). Si vous avez besoin de rÃ©cupÃ©rer
+    ce taux d'Ã©chantillonnage plus tard, vous pouvez appeler la fonction <code>GetSampleRate</code>.
 </p>
 <pre><code class="cpp">unsigned int SampleRate = Recorder.GetSampleRate();
 </code></pre>
 
-<?php h2('Enregistrer des données dans un tampon sonore') ?>
+<?php h2('Enregistrer des donnÃ©es dans un tampon sonore') ?>
 <p>
-    L'utilisation la plus fréquente est probablement de sauvegarder les données audio dans un tampon sonore,
-    de manière à pouvoir les sauvegarder dans un fichier ou encore les lire immédiatement. La SFML possède une
-    spécialisation de <?php class_link("SoundRecorder")?> prédéfinie pour cela : <?php class_link("SoundBufferRecorder")?>. Elle copie
-    les échantillons audio capturés dans un <?php class_link("SoundBuffer")?>, que vous pouvez récupérer via la fonction
+    L'utilisation la plus frÃ©quente est probablement de sauvegarder les donnÃ©es audio dans un tampon sonore,
+    de maniÃ¨re Ã  pouvoir les sauvegarder dans un fichier ou encore les lire immÃ©diatement. La SFML possÃ¨de une
+    spÃ©cialisation de <?php class_link("SoundRecorder")?> prÃ©dÃ©finie pour cela : <?php class_link("SoundBufferRecorder")?>. Elle copie
+    les Ã©chantillons audio capturÃ©s dans un <?php class_link("SoundBuffer")?>, que vous pouvez rÃ©cupÃ©rer via la fonction
     <code>GetBuffer</code> :
 </p>
 <pre><code class="cpp">sf::SoundBufferRecorder Recorder;
@@ -121,19 +121,19 @@ sf::SoundBuffer Buffer = Recorder.GetBuffer();
 
 <?php h2('Multi-threading') ?>
 <p>
-    Pour les mêmes raisons que <?php class_link("SoundStream")?>, <?php class_link("SoundRecorder")?> exécute la capture dans un
-    nouveau thread, ainsi le thread principal n'est pas bloqué. Ainsi, une fois de plus, vous devez faire attention
-    aux éventuels problèmes de synchronisation qui peuvent survenir si vous partagez des données entre les deux
+    Pour les mÃªmes raisons que <?php class_link("SoundStream")?>, <?php class_link("SoundRecorder")?> exÃ©cute la capture dans un
+    nouveau thread, ainsi le thread principal n'est pas bloquÃ©. Ainsi, une fois de plus, vous devez faire attention
+    aux Ã©ventuels problÃ¨mes de synchronisation qui peuvent survenir si vous partagez des donnÃ©es entre les deux
     threads.<br/>
-    Pour des explications plus détaillées, vous pouvez jeter un oeil, si ce n'est déjà fait, au
+    Pour des explications plus dÃ©taillÃ©es, vous pouvez jeter un oeil, si ce n'est dÃ©jÃ  fait, au
     <a class="internal" href="./audio-streams-fr.php" title="Aller au tutoriel sur les flux">tutoriel sur les flux</a>.
 </p>
 
 <?php h2('Conclusion') ?>
 <p>
     Vous en avez fini avec les bases du module audio. Vous pouvez jouer des sons et des musiques, effectuer des lectures
-    en continue à partir de n'importe quelle source, et enregistrer des sons à partir de votre microphone.<br/>
-    Intéressons-nous mainternant à un sujet plus avancé :
+    en continue Ã  partir de n'importe quelle source, et enregistrer des sons Ã  partir de votre microphone.<br/>
+    IntÃ©ressons-nous mainternant Ã  un sujet plus avancÃ© :
     <a class="internal" href="./audio-spatialization-fr.php" title="Passer au tutoriel suivant">la spatialisation des sons</a>.
 </p>
 

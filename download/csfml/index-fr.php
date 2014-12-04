@@ -1,7 +1,7 @@
 <?php
     $breadcrumbs = array
     (
-        'Téléchargement' => 'download-fr.php',
+        'TÃ©lÃ©chargement' => 'download-fr.php',
         'Bindings' => 'download/bindings-fr.php',
         'CSFML' => 'download/csfml/index-fr.php'
     );
@@ -10,7 +10,7 @@
     function download_link($version, $compiler, $arch, $size, $link)
     {
         $counter_script = "_gaq.push(['_trackEvent', 'Download', 'CSFML '" . $version . "']);";
-        echo '<span class="description">' . $compiler . ' - ' . $arch . '</span><a href="' . $link . '" onclick="' . $counter_script . '">Télécharger<span class="size">' . $size . ' Mo</span></a>';
+        echo '<span class="description">' . $compiler . ' - ' . $arch . '</span><a href="' . $link . '" onclick="' . $counter_script . '">TÃ©lÃ©charger<span class="size">' . $size . ' Mo</span></a>';
     }
 ?>
 
@@ -19,26 +19,26 @@
 <h2>Description</h2>
 <p>
     CSFML est le binding officiel de SFML pour le langage C. Son API est aussi proche que possible que l'API C++ (mais dans le style C, bien entendu), ce qui en fait un
-    candidat parfait pour construire des bindings SFML pour d'autres langages qui ne supportent pas directement les bibliothèques C++.
+    candidat parfait pour construire des bindings SFML pour d'autres langages qui ne supportent pas directement les bibliothÃ¨ques C++.
 </p>
 <p>
-    Etant donné que l'API de CSFML est similaire à celle de SFML, il n'y a pas de tutoriels ; mais vous pouvez consulter les tutoriels C++ disponibles sur ce site, et les
-    adapter facilement à l'API C. La documentation de l'API, générée à partir du code source, est quant à elle disponible et incluse dans les archives téléchargeables ci-dessous.
+    Etant donnÃ© que l'API de CSFML est similaire Ã  celle de SFML, il n'y a pas de tutoriels ; mais vous pouvez consulter les tutoriels C++ disponibles sur ce site, et les
+    adapter facilement Ã  l'API C. La documentation de l'API, gÃ©nÃ©rÃ©e Ã  partir du code source, est quant Ã  elle disponible et incluse dans les archives tÃ©lÃ©chargeables ci-dessous.
 </p>
 
-<h2>Téléchargements</h2>
+<h2>TÃ©lÃ©chargements</h2>
 <p>
-    Les archives ci-dessous contiennent tout ce qu'il faut pour développer avec CSFML : fichiers d'en-tête, bibliothèques, dépendances, et documentation.
+    Les archives ci-dessous contiennent tout ce qu'il faut pour dÃ©velopper avec CSFML : fichiers d'en-tÃªte, bibliothÃ¨ques, dÃ©pendances, et documentation.
 </p>
 <p>
-    Puisque c'est une bibliothèque C, il n'y a qu'une archive par OS/architecture, qui fonctionne avec n'importe quel compilateur. L'archive Windows contient les bibliothèques
+    Puisque c'est une bibliothÃ¨que C, il n'y a qu'une archive par OS/architecture, qui fonctionne avec n'importe quel compilateur. L'archive Windows contient les bibliothÃ¨ques
     d'importation pour Visual C++ et MinGW (gcc) ; celles-ci sont compatibles avec toutes les versions du compilateur correspondant.
 </p>
 
 <h3>Sources actuelles</h3>
 <p>
-    Le dépôt de CSFML se trouve sur <a href="https://github.com/LaurentGomila/CSFML" title="Dépôt de CSFML sur github">github.com</a>. Depuis ce dépôt, vous pouvez
-    télécharger un instantané des toutes dernières sources. Vous pouvez aussi consulter les tâches ou bugs en cours sur le tracker, ainsi qu'en ajouter de nouveaux.
+    Le dÃ©pÃ´t de CSFML se trouve sur <a href="https://github.com/LaurentGomila/CSFML" title="DÃ©pÃ´t de CSFML sur github">github.com</a>. Depuis ce dÃ©pÃ´t, vous pouvez
+    tÃ©lÃ©charger un instantanÃ© des toutes derniÃ¨res sources. Vous pouvez aussi consulter les tÃ¢ches ou bugs en cours sur le tracker, ainsi qu'en ajouter de nouveaux.
 </p>
 
 <h3>CSFML 2.1</h3>
@@ -63,7 +63,7 @@
         </tr>
         <tr>
             <td class="os">Tous OS</td>
-            <td colspan="2"><span class="description">Code source</span><a href="CSFML-2.1-sources.zip">Télécharger<span class="size">0.25 Mo</span></a></td>
+            <td colspan="2"><span class="description">Code source</span><a href="CSFML-2.1-sources.zip">TÃ©lÃ©charger<span class="size">0.25 Mo</span></a></td>
         </tr>
     </tbody>
 </table>
@@ -90,7 +90,7 @@
         </tr>
         <tr>
             <td class="os">Tous OS</td>
-            <td colspan="2"><span class="description">Code source</span><a href="CSFML-2.0-sources.zip">Télécharger<span class="size">0.25 Mo</span></a></td>
+            <td colspan="2"><span class="description">Code source</span><a href="CSFML-2.0-sources.zip">TÃ©lÃ©charger<span class="size">0.25 Mo</span></a></td>
         </tr>
     </tbody>
 </table>

@@ -53,7 +53,7 @@
     which will also be the name of your program.
 </p>
 <p>
-    To test the program, click on the "Build and Go" button of the toolbar in the project's window. Voil‡,
+    To test the program, click on the "Build and Go" button of the toolbar in the project's window. Voil√†,
     your application has been created!
 </p>
 <p>

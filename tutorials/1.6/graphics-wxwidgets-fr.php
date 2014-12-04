@@ -1,25 +1,25 @@
 <?php
 
-    $title = "Intégrer à une interface wxWidgets";
+    $title = "IntÃ©grer Ã  une interface wxWidgets";
     $page = "graphics-wxwidgets-fr.php";
 
     require("header-fr.php");
 ?>
 
-<h1>Intégrer à une interface wxWidgets</h1>
+<h1>IntÃ©grer Ã  une interface wxWidgets</h1>
 
 <?php h2('Introduction') ?>
 <p>
-    La meilleure façon d'intégrer des graphismes SFML à une interface wxWidgets est de créer un type
-    de contrôle spécialisé. Dans ce tutoriel, nous allons définir une classe <code>wxSFMLCanvas</code>
-    qui servira de classe de base pour créer vos contrôles de rendu personnalisés.
+    La meilleure faÃ§on d'intÃ©grer des graphismes SFML Ã  une interface wxWidgets est de crÃ©er un type
+    de contrÃ´le spÃ©cialisÃ©. Dans ce tutoriel, nous allons dÃ©finir une classe <code>wxSFMLCanvas</code>
+    qui servira de classe de base pour crÃ©er vos contrÃ´les de rendu personnalisÃ©s.
 </p>
 
-<?php h2('Création d\'un contrôle personnalisé') ?>
+<?php h2('CrÃ©ation d\'un contrÃ´le personnalisÃ©') ?>
 <p>
-    De quoi avons-nous besoin pour définir un contrôle wx/SFML ? Afin de créer un contrôle wxWidgets personnalisé,
-    nous devons dériver de la classe de base <code>wxControl</code>. Et, pour permettre à notre contrôle d'être une vue
-    SFML, nous dérivons également de <?php class_link("RenderWindow")?>.
+    De quoi avons-nous besoin pour dÃ©finir un contrÃ´le wx/SFML ? Afin de crÃ©er un contrÃ´le wxWidgets personnalisÃ©,
+    nous devons dÃ©river de la classe de base <code>wxControl</code>. Et, pour permettre Ã  notre contrÃ´le d'Ãªtre une vue
+    SFML, nous dÃ©rivons Ã©galement de <?php class_link("RenderWindow")?>.
 </p>
 <pre><code class="cpp">#include &lt;SFML/Graphics.hpp&gt;
 #include &lt;wx/wx.h&gt;
@@ -30,34 +30,34 @@ class wxSFMLCanvas : public wxControl, public sf::RenderWindow
 };
 </code></pre>
 <p>
-    Qu'allons-nous mettre dans cette classe ? Et bien, pas grand chose au niveau de l'interface publique, étant donné
+    Qu'allons-nous mettre dans cette classe ? Et bien, pas grand chose au niveau de l'interface publique, Ã©tant donnÃ©
     que toutes les fonctions utiles seront fournies par <code>wxControl</code> et <?php class_link("RenderWindow")?>.
-    En fait, du point de vue de wxWidgets <code>wxSFMLCanvas</code> sera comme n'importe quel contrôle, et du point
-    de vue de la SFML il sera considéré comme n'importe quelle autre fenêtre de rendu. C'est ça la puissance de
-    l'héritage.
+    En fait, du point de vue de wxWidgets <code>wxSFMLCanvas</code> sera comme n'importe quel contrÃ´le, et du point
+    de vue de la SFML il sera considÃ©rÃ© comme n'importe quelle autre fenÃªtre de rendu. C'est Ã§a la puissance de
+    l'hÃ©ritage.
 </p>
 <p>
-    Donc, dans l'interface publique nous avons simplement besoin d'un constructeur standard, qui prendra les paramètres
-    habituels qui définissent un contrôle wxWidgets (parent, identificateur, position, taille, style), et un
-    destructeur qui sera vide mais qui doit être virtuel, car <code>wxSFMLCanvas</code> sera utilisée en tant que
+    Donc, dans l'interface publique nous avons simplement besoin d'un constructeur standard, qui prendra les paramÃ¨tres
+    habituels qui dÃ©finissent un contrÃ´le wxWidgets (parent, identificateur, position, taille, style), et un
+    destructeur qui sera vide mais qui doit Ãªtre virtuel, car <code>wxSFMLCanvas</code> sera utilisÃ©e en tant que
     classe de base.
 </p>
 <p>
-    Ensuite, dans la partie privée de la classe, nous avons besoin de définir quelques fonctions qui seront
-    rattachées à des évènements utiles. Nous devons intercepter l'évènement <em>idle</em>, qui est l'évènement
-    qui est généré lorsqu'il n'y a aucun autre évènement à traiter, l'évènement <em>paint</em>, et l'évènement
-    <em>erase-background</em>. L'évènement <em>idle</em> va se révéler utile pour mettre à jour notre contrôle aussi
-    souvent que possible. L'évènement <em>paint</em> sera appelé à chaque fois que le contrôle nécessitera un
-    rafraîchissement, donc nous pourrons y placer notre code de rendu SFML. Enfin, nous laisserons l'évènement
-    <em>erase-background</em> vide, nous ne le définissons que pour empêcher wxWidgets de dessiner le fond
-    du contrôle avant chaque rafraîchissement, ce qui causerait des artefacts visuels indésirables.
+    Ensuite, dans la partie privÃ©e de la classe, nous avons besoin de dÃ©finir quelques fonctions qui seront
+    rattachÃ©es Ã  des Ã©vÃ¨nements utiles. Nous devons intercepter l'Ã©vÃ¨nement <em>idle</em>, qui est l'Ã©vÃ¨nement
+    qui est gÃ©nÃ©rÃ© lorsqu'il n'y a aucun autre Ã©vÃ¨nement Ã  traiter, l'Ã©vÃ¨nement <em>paint</em>, et l'Ã©vÃ¨nement
+    <em>erase-background</em>. L'Ã©vÃ¨nement <em>idle</em> va se rÃ©vÃ©ler utile pour mettre Ã  jour notre contrÃ´le aussi
+    souvent que possible. L'Ã©vÃ¨nement <em>paint</em> sera appelÃ© Ã  chaque fois que le contrÃ´le nÃ©cessitera un
+    rafraÃ®chissement, donc nous pourrons y placer notre code de rendu SFML. Enfin, nous laisserons l'Ã©vÃ¨nement
+    <em>erase-background</em> vide, nous ne le dÃ©finissons que pour empÃªcher wxWidgets de dessiner le fond
+    du contrÃ´le avant chaque rafraÃ®chissement, ce qui causerait des artefacts visuels indÃ©sirables.
 </p>
 <p>
-    Nous définissons également une fonction virtuelle, afin de de donner la main à la classe dérivée juste avant de
-    rafraîchir la vue.
+    Nous dÃ©finissons Ã©galement une fonction virtuelle, afin de de donner la main Ã  la classe dÃ©rivÃ©e juste avant de
+    rafraÃ®chir la vue.
 </p>
 <p>
-    Assemblons tout ceci et regardons à quoi va ressembler notre classe :
+    Assemblons tout ceci et regardons Ã  quoi va ressembler notre classe :
 </p>
 <pre><code class="cpp">#include &lt;SFML/Graphics.hpp&gt;
 #include &lt;wx/wx.h&gt;
@@ -86,47 +86,47 @@ private :
 </code></pre>
 
 <p>
-    Presque toutes les fonctions seront vides, seules trois d'entre elles nécessiteront quelques explications :
+    Presque toutes les fonctions seront vides, seules trois d'entre elles nÃ©cessiteront quelques explications :
     <code>OnIdle</code>, <code>OnPaint</code> et le constructeur. Ce dernier contiendra toute la
-    partie spécifique-à-la-plateforme-et-difficile-à-capter, nous le laissons donc pour la fin.
+    partie spÃ©cifique-Ã -la-plateforme-et-difficile-Ã -capter, nous le laissons donc pour la fin.
 </p>
 <p>
-    Commençons par regarder la fonction <code>OnIdle</code>, correspondant donc à l'évènement <em>idle</em> :
+    CommenÃ§ons par regarder la fonction <code>OnIdle</code>, correspondant donc Ã  l'Ã©vÃ¨nement <em>idle</em> :
 </p>
 <pre><code class="cpp">void wxSFMLCanvas::OnIdle(wxIdleEvent&amp;)
 {
-    // On génère un rafraîchissement du contrôle, afin d'assurer un framerate maximum
+    // On gÃ©nÃ¨re un rafraÃ®chissement du contrÃ´le, afin d'assurer un framerate maximum
     Refresh();
 }
 </code></pre>
 <p>
-    C'était plutôt facile non ? La fonction <code>Refresh</code> est définie dans <code>wxControl</code>, et
-    génère (entre autres) un évènement <em>paint</em> pour rafraîchir le contrôle. En l'appelant dans l'évènement
-    <em>idle</em>, on s'assure d'avoir un taux de rafraîchissement maximum pour notre vue SFML.
+    C'Ã©tait plutÃ´t facile non ? La fonction <code>Refresh</code> est dÃ©finie dans <code>wxControl</code>, et
+    gÃ©nÃ¨re (entre autres) un Ã©vÃ¨nement <em>paint</em> pour rafraÃ®chir le contrÃ´le. En l'appelant dans l'Ã©vÃ¨nement
+    <em>idle</em>, on s'assure d'avoir un taux de rafraÃ®chissement maximum pour notre vue SFML.
 </p>
 <p>
-    L'évènement <em>paint</em> n'est guère plus compliqué :
+    L'Ã©vÃ¨nement <em>paint</em> n'est guÃ¨re plus compliquÃ© :
 </p>
 <pre><code class="cpp">void wxSFMLCanvas::OnPaint(wxPaintEvent&amp;)
 {
-    // On prépare le contrôle à être dessiné
+    // On prÃ©pare le contrÃ´le Ã  Ãªtre dessinÃ©
     wxPaintDC Dc(this);
 
-    // On laisse la classe dérivée se mettre à jour et dessiner dans le contrôle
+    // On laisse la classe dÃ©rivÃ©e se mettre Ã  jour et dessiner dans le contrÃ´le
     OnUpdate();
 
-    // On affiche tout ça à l'écran
+    // On affiche tout Ã§a Ã  l'Ã©cran
     Display();
 }
 </code></pre>
 <p>
-    La première chose à faire dans la fonction de dessin est de créer un objet <code>wxPaintDC</code>, et lui passer
-    un pointeur vers notre contrôle. Cela va "verrouiller" la zone graphique associée au contrôle, et assurer que
-    nous pourrons dessiner dedans. L'oubli de cette instruction pourrait produire des résultats bizarres.
+    La premiÃ¨re chose Ã  faire dans la fonction de dessin est de crÃ©er un objet <code>wxPaintDC</code>, et lui passer
+    un pointeur vers notre contrÃ´le. Cela va "verrouiller" la zone graphique associÃ©e au contrÃ´le, et assurer que
+    nous pourrons dessiner dedans. L'oubli de cette instruction pourrait produire des rÃ©sultats bizarres.
 </p>
 <p>
-    Regardons maintenant comment lier notre contrôle wxWidgets a une fenêtre de rendu SFML. Cette partie dépend fortement
-    de l'implémentation sous-jacente de wxWidgets, donc ne vous focalisez pas trop dessus.
+    Regardons maintenant comment lier notre contrÃ´le wxWidgets a une fenÃªtre de rendu SFML. Cette partie dÃ©pend fortement
+    de l'implÃ©mentation sous-jacente de wxWidgets, donc ne vous focalisez pas trop dessus.
 </p>
 <pre><code class="cpp">#ifdef __WXGTK__
     #include &lt;gdk/gdkx.h&gt;
@@ -139,8 +139,8 @@ wxControl(Parent, Id, Position, Size, Style)
 {
     #ifdef __WXGTK__
 
-        // La version GTK requiert d'aller plus profondément pour trouver
-        // l'identificateur X11 du contrôle
+        // La version GTK requiert d'aller plus profondÃ©ment pour trouver
+        // l'identificateur X11 du contrÃ´le
         gtk_widget_realize(m_wxwindow);
         gtk_widget_set_double_buffered(m_wxwindow, false);
         GdkWindow* Win = GTK_PIZZA(m_wxwindow)->bin_window;
@@ -149,29 +149,29 @@ wxControl(Parent, Id, Position, Size, Style)
 
     #else
 
-        // Testé sous Windows XP seulement (devrait fonctionner sous X11 et
-        // les autres versions de Windows - aucune idée concernant MacOS)
+        // TestÃ© sous Windows XP seulement (devrait fonctionner sous X11 et
+        // les autres versions de Windows - aucune idÃ©e concernant MacOS)
         sf::RenderWindow::Create(GetHandle());
 
     #endif
 }
 </code></pre>
 <p>
-    Comme vous pouvez le voir, l'implémentation qui requiert le plus d'attention est celle utilisant GTK. Comme GTK
-    n'est pas une bibliothèque bas niveau, nous devons creuser plus profond pour obtenir l'identificateur interne de
-    la fenêtre. Nous devons également "réaliser" le widget (afin de s'assurer qu'il est effectivement créé), et
-    désactiver le double-tampon fourni par GTK, étant donné que nous avons déjà le nôtre.<br/>
-    Et... oui, GTK_PIZZA est un nom très bizarre, je n'ai toujours pas saisi sa signification.
+    Comme vous pouvez le voir, l'implÃ©mentation qui requiert le plus d'attention est celle utilisant GTK. Comme GTK
+    n'est pas une bibliothÃ¨que bas niveau, nous devons creuser plus profond pour obtenir l'identificateur interne de
+    la fenÃªtre. Nous devons Ã©galement "rÃ©aliser" le widget (afin de s'assurer qu'il est effectivement crÃ©Ã©), et
+    dÃ©sactiver le double-tampon fourni par GTK, Ã©tant donnÃ© que nous avons dÃ©jÃ  le nÃ´tre.<br/>
+    Et... oui, GTK_PIZZA est un nom trÃ¨s bizarre, je n'ai toujours pas saisi sa signification.
 </p>
 <p>
-    Pour les autres implémentations (WXMSW, WXX11), donner directement l'identificateur renvoyé par <code>GetHandle</code>
+    Pour les autres implÃ©mentations (WXMSW, WXX11), donner directement l'identificateur renvoyÃ© par <code>GetHandle</code>
     sera suffisant.
 </p>
 
-<?php h2('Création d\'une interface wxWidgets et utilisation de notre contrôle') ?>
+<?php h2('CrÃ©ation d\'une interface wxWidgets et utilisation de notre contrÃ´le') ?>
 <p>
-    Maintenant que nous avons un composant SFML / wxWidgets générique, créons-en une spécialisation qui va faire
-    quelque chose d'"utile". Ici nous allons définir un contrôle qui affiche un sprite.
+    Maintenant que nous avons un composant SFML / wxWidgets gÃ©nÃ©rique, crÃ©ons-en une spÃ©cialisation qui va faire
+    quelque chose d'"utile". Ici nous allons dÃ©finir un contrÃ´le qui affiche un sprite.
 </p>
 <pre><code class="cpp">class MyCanvas : public wxSFMLCanvas
 {
@@ -184,7 +184,7 @@ public :
              long       Style = 0) :
     wxSFMLCanvas(Parent, Id, Position, Size, Style)
     {
-        // On charge une image et on l'affecte à notre sprite
+        // On charge une image et on l'affecte Ã  notre sprite
         myImage.LoadFromFile("sprite.png");
         mySprite.SetImage(myImage);
     }
@@ -205,8 +205,8 @@ private :
 };
 </code></pre>
 <p>
-    Puis nous créons la fenêtre principale de l'application, dans laquelle nous allons insérer une vue SFML avec notre
-    composant spécialisé :
+    Puis nous crÃ©ons la fenÃªtre principale de l'application, dans laquelle nous allons insÃ©rer une vue SFML avec notre
+    composant spÃ©cialisÃ© :
 </p>
 <pre><code class="cpp">class MyFrame : public wxFrame
 {
@@ -228,7 +228,7 @@ private :
 
     virtual bool OnInit()
     {
-        // On crée la fenêtre principale
+        // On crÃ©e la fenÃªtre principale
         MyFrame* MainFrame = new MyFrame;
         MainFrame->Show();
 
@@ -241,9 +241,9 @@ IMPLEMENT_APP(MyApplication);
 
 <?php h2('Conclusion') ?>
 <p>
-    Avec ce composant, vous pouvez intégrer la SFML à vos interfaces wxWidgets très facilement. N'hésitez
-    pas à l'utiliser !<br/>
-    Ceci était le dernier tutoriel concernant le module graphique. Vous pouvez désormais aller créer vos
+    Avec ce composant, vous pouvez intÃ©grer la SFML Ã  vos interfaces wxWidgets trÃ¨s facilement. N'hÃ©sitez
+    pas Ã  l'utiliser !<br/>
+    Ceci Ã©tait le dernier tutoriel concernant le module graphique. Vous pouvez dÃ©sormais aller crÃ©er vos
     propres applications graphiques, ou bien vous pouvez sauter vers une
     <a class="internal" href="./index-fr.php" title="Retour au sommaire des tutoriels">autre section</a>
     et apprendre un nouveau module.

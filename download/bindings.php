@@ -61,7 +61,7 @@
     binding('GoSFML2', null, 'Go', array('krepa098' => null), true, 'https://bitbucket.org/krepa098/gosfml2');
     binding('nimrod-sfml', null, 'Nimrod', array('fowl' => null), true, 'https://github.com/fowlmouth/nimrod-sfml');
     binding('EuSFML2', null, 'Euphoria', array('Andy Patterson' => null), true, 'http://www.rapideuphoria.com/eusfml.zip');
-    binding('rust-sfml', null, 'Rust', array('Jérémy Letang' => 'letang.jeremy@gmail.com'), true, 'https://github.com/JeremyLetang/rust-sfml');
+    binding('rust-sfml', null, 'Rust', array('JÃ©rÃ©my Letang' => 'letang.jeremy@gmail.com'), true, 'https://github.com/JeremyLetang/rust-sfml');
 
 ?>
 

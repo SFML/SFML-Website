@@ -6,10 +6,10 @@
     include('header-fr.php');
 ?>
 
-<h1>Don annulé</h1>
+<h1>Don annulÃ©</h1>
 
 <p>
-    Votre don a été annulé.
+    Votre don a Ã©tÃ© annulÃ©.
 </p>
 
 <?php
