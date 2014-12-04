@@ -9,7 +9,7 @@
 
 <h1>Goodies</h1>
 
-<h2>SFML logo</h2>
+<h2 id="logo"><a class="h2-link" href="#logo">SFML Logo</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 <p>
     The official SFML logo is in the public domain, you can do whatever you want with it.
 </p>
