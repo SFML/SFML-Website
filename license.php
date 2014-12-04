@@ -9,7 +9,7 @@
 
 <h1>License</h1>
 
-<h2>SFML libraries</h2>
+<h2 id="sfml"><a class="h2-link" href="#sfml">SFML Libraries</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 <p>
     The SFML libraries and source code are distributed under the
     <a class="external" href="http://opensource.org/licenses/Zlib" title="Terms of the zlib/png license">zlib/png license</a>.
@@ -40,7 +40,7 @@ freely, subject to the following restrictions:
     You can even omit to mention that you use SFML -- although it would be appreciated.
 </p>
 
-<h2>External libraries used by SFML</h2>
+<h2 id="extlibs"><a class="h2-link" href="#extlibs">External Libraries used by SFML</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 <ul>
     <li>
         <strong><a class="external" href="http://glew.sourceforge.net" title="GLEW website">GLEW</a></strong>

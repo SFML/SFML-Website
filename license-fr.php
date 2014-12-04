@@ -9,7 +9,7 @@
 
 <h1>Licence</h1>
 
-<h2>Bibliothèques SFML</h2>
+<h2 id="sfml"><a class="h2-link" href="#sfml">Bibliothèques SFML</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 <p>
     Les bibliothèques et le code source de SFML sont distribués sous
     <a class="external" href="http://opensource.org/licenses/Zlib" title="Termes de la licence zlib/png">licence zlib/png</a>.
@@ -40,7 +40,7 @@ freely, subject to the following restrictions:
     restriction. Vous pouvez même ne pas mentionner que vous utilisez SFML -- bien que ce soit tout de même apprécié.
 </p>
 
-<h2>Bibliothèques externes utilisées par SFML</h2>
+<h2 id="extlibs"><a class="h2-link" href="#extlibs">Bibliothèques externes utilisées par SFML</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 <ul>
     <li>
         <strong><a class="external" href="http://glew.sourceforge.net" title="Site de GLEW">GLEW</a></strong>

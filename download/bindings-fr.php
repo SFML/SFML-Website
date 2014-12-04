@@ -12,7 +12,7 @@
         $statusClass = $active ? 'active' : 'inactive';
         $id = trim(str_replace(' ', '-', preg_replace('/[^a-z0-9 -]+/', '', strtolower($name))), '-');
 
-        echo '<h2 id="' . $id . '">' . $name . '</h2>' . "\n";
+        echo '<h2 id="' . $id . '"><a class="h2-link" href="#' . $id . '">' . $name . '</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>' . "\n";
         echo '<table class="styled binding">' . "\n";
         if (isset($logo))
             echo '<tr><td class="header" colspan="2"><img src="../images/bindings/' . $logo .'"/></td></tr>' . "\n";

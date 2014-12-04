@@ -228,6 +228,16 @@ body
         text-align: center;
         font-size: 26pt;
         font-weight: normal;
+        
+        a.h1-link
+        {
+            color: #000;
+            text-decoration: none;
+
+            &:hover  {color: #000;}
+            &:active {color: #000;}
+            &:link   {color: #000;}
+        }
     }
 
     h2
@@ -269,6 +279,30 @@ body
         color: #000;
         font-size: 16pt;
         font-weight: normal;
+        
+        a.h3-link
+        {
+            color: #000;
+            text-decoration: none;
+
+            &:hover  {color: #000;}
+            &:active {color: #000;}
+            &:link   {color: #000;}
+        }
+
+        a.back-to-top
+        {
+            float: right;
+            width: 16px;
+            height: 16px;
+            margin-top: 5px;
+            background: url('../images/icons/back-to-top.png') right bottom no-repeat;
+
+            &:hover
+            {
+                background-image: url('../images/icons/back-to-top-hover.png');
+            }
+        }
     }
 
     p
