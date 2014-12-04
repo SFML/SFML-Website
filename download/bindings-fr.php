@@ -1,7 +1,7 @@
 <?php
     $breadcrumbs = array
     (
-        'Télécharger' => 'download-fr.php',
+        'TÃ©lÃ©charger' => 'download-fr.php',
         'Bindings' => 'download/bindings-fr.php'
     );
     include('../header-fr.php');
@@ -39,11 +39,11 @@
 <h1>Bindings SFML</h1>
 
 <p>
-    Voici une liste de tous les bindings SFML connus. Notez bien que, excepté CSFML et SFML.Net, ils ne sont pas officiels : ils sont développés par des utilisateurs de SFML,
-    et certains peuvent ne pas être à jour, voire abandonnés.
+    Voici une liste de tous les bindings SFML connus. Notez bien que, exceptÃ© CSFML et SFML.Net, ils ne sont pas officiels : ils sont dÃ©veloppÃ©s par des utilisateurs de SFML,
+    et certains peuvent ne pas Ãªtre Ã  jour, voire abandonnÃ©s.
 </p>
 <p>
-    N'hésitez pas à <a href="mailto:laurent@sfml-dev.org" title="Contacter le webmaster">me contacter</a> si vous souhaitez mettre à jour, ajouter ou retirer des informations
+    N'hÃ©sitez pas Ã  <a href="mailto:laurent@sfml-dev.org" title="Contacter le webmaster">me contacter</a> si vous souhaitez mettre Ã  jour, ajouter ou retirer des informations
     concernant un binding SFML.
 </p>
 
@@ -62,7 +62,7 @@
     binding('GoSFML2', null, 'Go', array('krepa098' => null), true, 'https://bitbucket.org/krepa098/gosfml2');
     binding('nimrod-sfml', null, 'Nimrod', array('fowl' => null), true, 'https://github.com/fowlmouth/nimrod-sfml');
     binding('EuSFML2', null, 'Euphoria', array('Andy Patterson' => null), true, 'http://www.rapideuphoria.com/eusfml.zip');
-    binding('rust-sfml', null, 'Rust', array('Jérémy Letang' => 'letang.jeremy@gmail.com'), true, 'https://github.com/JeremyLetang/rust-sfml');
+    binding('rust-sfml', null, 'Rust', array('JÃ©rÃ©my Letang' => 'letang.jeremy@gmail.com'), true, 'https://github.com/JeremyLetang/rust-sfml');
 
 ?>
 

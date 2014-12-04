@@ -11,27 +11,27 @@
 <?php h2('Introduction') ?>
 <p>
     Ce tutoriel est le premier que vous devriez lire si vous utilisez SFML sous Linux avec le compilateur GCC. Il va vous expliquer
-    comment installer SFML, paramétrer votre compilateur, et compiler un programme SFML.<br/>
-    La compilation des bibliothèques SFML sera également expliquée, pour les utilisateurs avancés (bien que ce soit relativement simple).
+    comment installer SFML, paramÃ©trer votre compilateur, et compiler un programme SFML.<br/>
+    La compilation des bibliothÃ¨ques SFML sera Ã©galement expliquÃ©e, pour les utilisateurs avancÃ©s (bien que ce soit relativement simple).
 </p>
 
 <?php h2('Installer SFML') ?>
 <p>
-    Premièrement, vous devez télécharger les fichiers de développement SFML. Il est recommandé de télécharger le SDK
+    PremiÃ¨rement, vous devez tÃ©lÃ©charger les fichiers de dÃ©veloppement SFML. Il est recommandÃ© de tÃ©lÃ©charger le SDK
     complet, qui contient le code source et les binaires, ainsi que les exemples et la documentation.<br/>
-    Cette archive peut être trouvée sur la
-    <a class="internal" href="../../download-fr.php" title="Aller sur la page des téléchargements">page des téléchargements</a>.
+    Cette archive peut Ãªtre trouvÃ©e sur la
+    <a class="internal" href="../../download-fr.php" title="Aller sur la page des tÃ©lÃ©chargements">page des tÃ©lÃ©chargements</a>.
 </p>
 <p>
-    Une fois que vous avez téléchargé et extrait les fichiers sur votre disque dur, vous devez installer les
-    en-têtes et bibliothèques SFML à l'endroit approprié. Pour ce faire, allez dans le répertoire SFML-x.y et tapez
+    Une fois que vous avez tÃ©lÃ©chargÃ© et extrait les fichiers sur votre disque dur, vous devez installer les
+    en-tÃªtes et bibliothÃ¨ques SFML Ã  l'endroit appropriÃ©. Pour ce faire, allez dans le rÃ©pertoire SFML-x.y et tapez
     "sudo make install".
 </p>
 
 <?php h2('Compiler votre premier programme SFML') ?>
 <p>
-    Créez un nouveau fichier texte, et écrivez un programme SFML. Par exemple, vous pouvez essayer la classe
-    <?php class_link("Clock")?> du module système :
+    CrÃ©ez un nouveau fichier texte, et Ã©crivez un programme SFML. Par exemple, vous pouvez essayer la classe
+    <?php class_link("Clock")?> du module systÃ¨me :
 </p>
 <pre><code class="cpp">#include &lt;SFML/System.hpp&gt;
 #include &lt;iostream&gt;
@@ -52,47 +52,47 @@ int main()
     N'oubliez pas que toutes les classes et fonctions SFML se trouvent dans l'espace de nommage <code>sf</code>.
 </p>
 <p>
-    Puis compilez ceci comme n'importe quel programme C++, et liez avec les bibiothèques SFML que vous utilisez avec la
+    Puis compilez ceci comme n'importe quel programme C++, et liez avec les bibiothÃ¨ques SFML que vous utilisez avec la
     directive "-l" :
 </p>
 <pre><code class="no-highlight">g++ -c clock.cpp
 g++ -o clock clock.o -lsfml-system
 </code></pre>
 <p>
-    Lorsque vous liez avec plusieurs bibliothèques SFML, assurez-vous de toujours les lier dans le bon ordre, c'est
-    important pour gcc. La règle est la suivante : si la bibliothèque XXX dépend de (utilise) la bibliothèque YYY,
-    spécifiez XXX en premier puis YYY. Un exemple avec SFML : sfml-graphics dépend de sfml-window, qui lui-même dépend
-    de sfml-system. La ligne de commande d'édition de lien serait donc la suivante :
+    Lorsque vous liez avec plusieurs bibliothÃ¨ques SFML, assurez-vous de toujours les lier dans le bon ordre, c'est
+    important pour gcc. La rÃ¨gle est la suivante : si la bibliothÃ¨que XXX dÃ©pend de (utilise) la bibliothÃ¨que YYY,
+    spÃ©cifiez XXX en premier puis YYY. Un exemple avec SFML : sfml-graphics dÃ©pend de sfml-window, qui lui-mÃªme dÃ©pend
+    de sfml-system. La ligne de commande d'Ã©dition de lien serait donc la suivante :
 </p>
 <pre><code class="no-highlight">g++ -o ... -lsfml-graphics -lsfml-window -lsfml-system
 </code></pre>
 <p>
-    En gros, toute bibliothèque SFML dépend de sfml-system, et sfml-graphics dépend en plus de sfml-window. Voilà pour
-    ce qui est des dépendances.
+    En gros, toute bibliothÃ¨que SFML dÃ©pend de sfml-system, et sfml-graphics dÃ©pend en plus de sfml-window. VoilÃ  pour
+    ce qui est des dÃ©pendances.
 </p>
 <p>
-    Si vous utilisez les modules Graphics ou Audio, vous devez d'abord installer les bibliothèques externes
-    utilisées par chaque module.<br/>
+    Si vous utilisez les modules Graphics ou Audio, vous devez d'abord installer les bibliothÃ¨ques externes
+    utilisÃ©es par chaque module.<br/>
     Le module Graphics requiert freetype.<br/>
     Le module Audio requiert libsndfile et openal.<br/>
-    Toutes ces bibiothèques peuvent être installées en utilisant le gestionnaire de paquets standard de votre
-    distribution, ou téléchargées depuis leurs sites officiels.<br/>
-    Si vous rencontrez des problèmes avec votre version d'OpenAL (ce qui arrive souvent étant donné que l'implémentation
+    Toutes ces bibiothÃ¨ques peuvent Ãªtre installÃ©es en utilisant le gestionnaire de paquets standard de votre
+    distribution, ou tÃ©lÃ©chargÃ©es depuis leurs sites officiels.<br/>
+    Si vous rencontrez des problÃ¨mes avec votre version d'OpenAL (ce qui arrive souvent Ã©tant donnÃ© que l'implÃ©mentation
     Linux est peu stable), vous pouvez la remplacer par
-    <a class="external" href="http://kcat.strangesoft.net/openal.html" title="Site officiel d'OpenAL-Soft">l'implémentation OpenAL-Soft</a>.
-    Les binaires sont complétement compatibles, vous n'aurez donc pas à recompiler SFML ni vos programmes l'utilisant.
+    <a class="external" href="http://kcat.strangesoft.net/openal.html" title="Site officiel d'OpenAL-Soft">l'implÃ©mentation OpenAL-Soft</a>.
+    Les binaires sont complÃ©tement compatibles, vous n'aurez donc pas Ã  recompiler SFML ni vos programmes l'utilisant.
 </p>
 
-<?php h2('Compiler SFML (pour les utilisateurs avancés)') ?>
+<?php h2('Compiler SFML (pour les utilisateurs avancÃ©s)') ?>
 <p>
-    Si les bibliothèques précompilées de SFML n'existent pas pour votre système, vous pouvez les compiler assez facilement.
-    Dans de tels cas, aucun test n'a été effectué et nous vous encourageons donc à rapporter tout échec ou succès rencontré
-    durant le processus de compilation. Si vous réussissez à compiler SFML pour une nouvelle plateforme, nous vous invitons
-    à contacter l'équipe de développement afin que nous puissions partager les fichiers avec la communauté.
+    Si les bibliothÃ¨ques prÃ©compilÃ©es de SFML n'existent pas pour votre systÃ¨me, vous pouvez les compiler assez facilement.
+    Dans de tels cas, aucun test n'a Ã©tÃ© effectuÃ© et nous vous encourageons donc Ã  rapporter tout Ã©chec ou succÃ¨s rencontrÃ©
+    durant le processus de compilation. Si vous rÃ©ussissez Ã  compiler SFML pour une nouvelle plateforme, nous vous invitons
+    Ã  contacter l'Ã©quipe de dÃ©veloppement afin que nous puissions partager les fichiers avec la communautÃ©.
 </p>
 <p>
-    Vous devez tout d'abord installer les paquets de développement des bibliothèques externes utilisées par SFML.
-    Voici la liste complète :
+    Vous devez tout d'abord installer les paquets de dÃ©veloppement des bibliothÃ¨ques externes utilisÃ©es par SFML.
+    Voici la liste complÃ¨te :
 </p>
 <ul>
     <li>build-essential</li>
@@ -106,30 +106,30 @@ g++ -o clock clock.o -lsfml-system
     <li>libsndfile1-dev</li>
 </ul>
 <p>
-    Vous pouvez également les obtenir automatiquement si SFML se trouve dans les dépôts de paquets de votre distribution,
+    Vous pouvez Ã©galement les obtenir automatiquement si SFML se trouve dans les dÃ©pÃ´ts de paquets de votre distribution,
     avec la commande suivante :
 </p>
 <pre><code class="no-highlight">apt-get build-dep libsfml
 </code></pre>
 <p>
-    Puis, pour compiler les bibliothèques et exemples de SFML, vous devez télécharger et installer le SDK complet.
-    Allez dans le répertoire SFML-x.y, et entrez les commandes suivantes :
+    Puis, pour compiler les bibliothÃ¨ques et exemples de SFML, vous devez tÃ©lÃ©charger et installer le SDK complet.
+    Allez dans le rÃ©pertoire SFML-x.y, et entrez les commandes suivantes :
 </p>
-<pre><code class="no-highlight">make                # compile les bibliothèques SFML
-sudo make install   # installe les bibliothèques compilées
+<pre><code class="no-highlight">make                # compile les bibliothÃ¨ques SFML
+sudo make install   # installe les bibliothÃ¨ques compilÃ©es
 make sfml-samples   # compile les exemples SFML
 </code></pre>
 <p>
-    Note : si Qt et/ou wxWidgets ne sont pas installés sur votre système, vous obtiendrez certainement des erreurs lors de
+    Note : si Qt et/ou wxWidgets ne sont pas installÃ©s sur votre systÃ¨me, vous obtiendrez certainement des erreurs lors de
     la compilation des exemples correspondant ; ignorez-les simplement.
 </p>
 <p>
-    Les options suivantes sont disponibles pour personnaliser la construction des bibliothèques :
+    Les options suivantes sont disponibles pour personnaliser la construction des bibliothÃ¨ques :
 </p>
 <ul>
-    <li><strong>DESTDIR=xxx</strong> : installe SFML dans le répertoire xxx au lieu de celui par défaut (qui est /usr/lib)</li>
-    <li><strong>DEBUGBUILD=yes/no</strong> : construit les bibliothèques de débogage ou optimisées ("no" par défaut - optimisées)</li>
-    <li><strong>STATIC=yes/no</strong> :construit les bibliothèques statiques ou dynamiques ("no" par défaut - dynamiques)</li>
+    <li><strong>DESTDIR=xxx</strong> : installe SFML dans le rÃ©pertoire xxx au lieu de celui par dÃ©faut (qui est /usr/lib)</li>
+    <li><strong>DEBUGBUILD=yes/no</strong> : construit les bibliothÃ¨ques de dÃ©bogage ou optimisÃ©es ("no" par dÃ©faut - optimisÃ©es)</li>
+    <li><strong>STATIC=yes/no</strong> :construit les bibliothÃ¨ques statiques ou dynamiques ("no" par dÃ©faut - dynamiques)</li>
 </ul>
 
 <?php

@@ -11,23 +11,23 @@
 
 <?php h2('Effectuer une capture dans un buffer') ?>
 <p>
-    Le destin le plus probable pour des données audio capturées, est d'être sauvegardées dans un buffer (<?php class_link("SoundBuffer") ?>) de sorte
-    qu'elles puissent être jouées ou bien sauvegardées dans un fichier.
+    Le destin le plus probable pour des donnÃ©es audio capturÃ©es, est d'Ãªtre sauvegardÃ©es dans un buffer (<?php class_link("SoundBuffer") ?>) de sorte
+    qu'elles puissent Ãªtre jouÃ©es ou bien sauvegardÃ©es dans un fichier.
 </p>
 <p>
-    Ce type de capture peut être effectué via l'interface très simple de la classe <?php class_link("SoundBufferRecorder") ?> :
+    Ce type de capture peut Ãªtre effectuÃ© via l'interface trÃ¨s simple de la classe <?php class_link("SoundBufferRecorder") ?> :
 </p>
-<pre><code class="cpp">// tout d'abord on vérifie si la capture est supportée par le système
+<pre><code class="cpp">// tout d'abord on vÃ©rifie si la capture est supportÃ©e par le systÃ¨me
 if (!SoundBufferRecorder::isAvailable())
 {
-    // erreur : la capture audio n'est pas supportée
+    // erreur : la capture audio n'est pas supportÃ©e
     ...
 }
 
-// création de l'enregistreur
+// crÃ©ation de l'enregistreur
 SoundBufferRecorder recorder;
 
-// démarrage de l'enregistrement
+// dÃ©marrage de l'enregistrement
 recorder.start();
 
 // on attend...
@@ -35,20 +35,20 @@ recorder.start();
 // fin de l'enregistrement
 recorder.stop();
 
-// récupération du buffer qui contient les données audio enregistrées
+// rÃ©cupÃ©ration du buffer qui contient les donnÃ©es audio enregistrÃ©es
 const sf::SoundBuffer&amp; buffer = recorder.getBuffer();
 </code></pre>
 <p>
-    La fonction statique <code>SoundBufferRecorder::isAvailable</code> vérifie si la capture audio est supportée par le système. Si elle renvoie
+    La fonction statique <code>SoundBufferRecorder::isAvailable</code> vÃ©rifie si la capture audio est supportÃ©e par le systÃ¨me. Si elle renvoie
     <code>false</code>, vous ne pourrez pas utiliser la classe <?php class_link("SoundBufferRecorder") ?>.
 </p>
 <p>
     Les fonctions <code>start</code> et <code>stop</code> sont assez explicites. La capture tourne dans son propre thread, ce qui signifie que vous
-    pouvez faire tout ce qui vous chante entre le début et la fin de l'enregistrement. Après la fin de la capture, les données audio sont disponibles
-    dans un buffer que vous pouvez récupérer avec la fonction <code>getBuffer</code>.
+    pouvez faire tout ce qui vous chante entre le dÃ©but et la fin de l'enregistrement. AprÃ¨s la fin de la capture, les donnÃ©es audio sont disponibles
+    dans un buffer que vous pouvez rÃ©cupÃ©rer avec la fonction <code>getBuffer</code>.
 </p>
 <p>
-    Avec les données enregistrées, vous pouvez ensuite :
+    Avec les donnÃ©es enregistrÃ©es, vous pouvez ensuite :
 </p>
 <ul>
     <li>Les sauvegarder dans un fichier
@@ -61,7 +61,7 @@ sound.play();
 </code></pre>
     </li>
     <li>
-        Accéder aux données brutes et les analyser, transformer, etc.
+        AccÃ©der aux donnÃ©es brutes et les analyser, transformer, etc.
 <pre><code class="cpp">const sf::Int16* samples = buffer.getSamples();
 std::size_t count = buffer.getSampleCount();
 doSomething(samples, count);    
@@ -69,50 +69,50 @@ doSomething(samples, count);
     </li>
 </ul>
 <p class="important">
-    Si vous comptez utiliser les données capturées après que l'enregistreur ait été détruit ou redémarré, n'oubliez pas de faire une <em>copie</em>
+    Si vous comptez utiliser les donnÃ©es capturÃ©es aprÃ¨s que l'enregistreur ait Ã©tÃ© dÃ©truit ou redÃ©marrÃ©, n'oubliez pas de faire une <em>copie</em>
     du buffer.
 </p>
 
-<?php h2('Enregistrement personnalisé') ?>
+<?php h2('Enregistrement personnalisÃ©') ?>
 <p>
-    Si stocker les données enregistrées dans un buffer audio n'est pas ce que vous voulez, vous pouvez tout aussi bien écrire votre propre enregistreur.
-    Cela vous permettra de traiter les données audio pendant qu'elles sont en train d'être capturées, (presque) directement dès qu'elles arrivent du
-    périphérique d'enregistrement. De cette façon vous pouvez, par exemple, <em>streamer</em> les données capturées sur le réseau, en effectuer une
-    analyse temps-réel, etc.
+    Si stocker les donnÃ©es enregistrÃ©es dans un buffer audio n'est pas ce que vous voulez, vous pouvez tout aussi bien Ã©crire votre propre enregistreur.
+    Cela vous permettra de traiter les donnÃ©es audio pendant qu'elles sont en train d'Ãªtre capturÃ©es, (presque) directement dÃ¨s qu'elles arrivent du
+    pÃ©riphÃ©rique d'enregistrement. De cette faÃ§on vous pouvez, par exemple, <em>streamer</em> les donnÃ©es capturÃ©es sur le rÃ©seau, en effectuer une
+    analyse temps-rÃ©el, etc.
 </p>
 <p>
-    Pour écrire votre propre enregistreur, vous devez hériter de la classe abstraite <?php class_link("SoundRecorder") ?>. En fait,
-    <?php class_link("SoundBufferRecorder") ?> est juste une spécialisation de cette classe, directement intégrée à SFML.
+    Pour Ã©crire votre propre enregistreur, vous devez hÃ©riter de la classe abstraite <?php class_link("SoundRecorder") ?>. En fait,
+    <?php class_link("SoundBufferRecorder") ?> est juste une spÃ©cialisation de cette classe, directement intÃ©grÃ©e Ã  SFML.
 </p>
 <p>
-    Vous n'avez qu'une fonction virtuelle à redéfinir dans votre classe dérivée : <code>onProcessSamples</code>. Elle est appelée à chaque fois qu'un
-    nouveau lot d'échantillons audio ont été capturés, c'est donc là que vous devez implémenter votre traitement perso.
+    Vous n'avez qu'une fonction virtuelle Ã  redÃ©finir dans votre classe dÃ©rivÃ©e : <code>onProcessSamples</code>. Elle est appelÃ©e Ã  chaque fois qu'un
+    nouveau lot d'Ã©chantillons audio ont Ã©tÃ© capturÃ©s, c'est donc lÃ  que vous devez implÃ©menter votre traitement perso.
 </p>
 <p class="important">
-    Des échantillons audio sont passés à la fonction <code>onProcessSamples</code> toutes les 100 ms. Cette valeur est fixée dans le code de SFML et
-    vous ne pouvez pas la changer (à moins de modifier SFML directement). Ceci sera probablement amélioré dans une prochaine version.
+    Des Ã©chantillons audio sont passÃ©s Ã  la fonction <code>onProcessSamples</code> toutes les 100 ms. Cette valeur est fixÃ©e dans le code de SFML et
+    vous ne pouvez pas la changer (Ã  moins de modifier SFML directement). Ceci sera probablement amÃ©liorÃ© dans une prochaine version.
 </p>
 <p>
-    Il existe deux autres fonctions virtuelles que vous pouvez redéfinir si vous le souhaitez : <code>onStart</code> et <code>onStop</code>. Elles sont
-    appelées respectivement lorsque la capture démarre/est arrêtée. Elles peuvent être utiles pour les tâches d'initialisation et de nettoyage.
+    Il existe deux autres fonctions virtuelles que vous pouvez redÃ©finir si vous le souhaitez : <code>onStart</code> et <code>onStop</code>. Elles sont
+    appelÃ©es respectivement lorsque la capture dÃ©marre/est arrÃªtÃ©e. Elles peuvent Ãªtre utiles pour les tÃ¢ches d'initialisation et de nettoyage.
 </p>
 <p>
-    Voici le squelette d'une classe dérivée complète :
+    Voici le squelette d'une classe dÃ©rivÃ©e complÃ¨te :
 </p>
 <pre><code class="cpp">class MyRecorder : public sf::SoundRecorder
 {
     virtual bool onStart() // optionnelle
     {
-        // initialisez ce qui doit l'être avant que la capture démarre
+        // initialisez ce qui doit l'Ãªtre avant que la capture dÃ©marre
         ...
 
-        // renvoyez true pour démarrer la capture, ou false pour l'annuler
+        // renvoyez true pour dÃ©marrer la capture, ou false pour l'annuler
         return true;
     }
 
     virtual bool onProcessSamples(const Int16* samples, std::size_t sampleCount)
     {
-        // faites ce que vous voulez des échantillons audio
+        // faites ce que vous voulez des Ã©chantillons audio
         ...
 
         // renvoyez true pour continuer la capture, ou false pour la stopper
@@ -121,15 +121,15 @@ doSomething(samples, count);
 
     virtual void onStop() // optionnelle
     {
-        // nettoyez ce qui doit l'être après la fin de la capture
+        // nettoyez ce qui doit l'Ãªtre aprÃ¨s la fin de la capture
         ...
     }
 }
 </code></pre>
 <p>
-    Les fonctions <code>isAvailable</code>/<code>start</code>/<code>stop</code> sont définies dans la classe de base, <?php class_link("SoundRecorder") ?>,
-    et donc par conséquent dans toutes les classes dérivées. Cela signifie que vous pouvez utiliser n'importe quelle enregistreur exactement de la même
-    manière que la classe <?php class_link("SoundBufferRecorder") ?> ci-dessus.
+    Les fonctions <code>isAvailable</code>/<code>start</code>/<code>stop</code> sont dÃ©finies dans la classe de base, <?php class_link("SoundRecorder") ?>,
+    et donc par consÃ©quent dans toutes les classes dÃ©rivÃ©es. Cela signifie que vous pouvez utiliser n'importe quelle enregistreur exactement de la mÃªme
+    maniÃ¨re que la classe <?php class_link("SoundBufferRecorder") ?> ci-dessus.
 </p>
 <pre><code class="cpp">if (!MyRecorder::isAvailable())
 {
@@ -144,19 +144,19 @@ recorder.stop();
 
 <?php h2('Attention aux threads') ?>
 <p>
-    Comme la capture est effectuée dans un thread, il est important de savoir ce qui se passe exactement, et où.
+    Comme la capture est effectuÃ©e dans un thread, il est important de savoir ce qui se passe exactement, et oÃ¹.
 </p>
 <p>
-    <code>onStart</code> sera appelée directement par la fonction <code>start</code>, donc elle sera exécutée dans le thread qui l'a appelée. Par contre,
-    <code>onProcessSample</code> et <code>onStop</code> seront toujours appelées depuis le thread de capture interne que SFML crée.
+    <code>onStart</code> sera appelÃ©e directement par la fonction <code>start</code>, donc elle sera exÃ©cutÃ©e dans le thread qui l'a appelÃ©e. Par contre,
+    <code>onProcessSample</code> et <code>onStop</code> seront toujours appelÃ©es depuis le thread de capture interne que SFML crÃ©e.
 </p>
 <p>
-    Donc, si votre enregistreur utilise des données qui peuvent être accédées de manière <em>concurrente</em> (c'est-à-dire en même temps) à la fois par
-    le thread appelant et par le thread d'enregistrement, il faudra les protéger (avec un mutex ou autre) afin d'éviter les accès concurrents, qui
-    pourraient entraîner des comportements indéterminés -- données audio corrompues, crashs, etc.
+    Donc, si votre enregistreur utilise des donnÃ©es qui peuvent Ãªtre accÃ©dÃ©es de maniÃ¨re <em>concurrente</em> (c'est-Ã -dire en mÃªme temps) Ã  la fois par
+    le thread appelant et par le thread d'enregistrement, il faudra les protÃ©ger (avec un mutex ou autre) afin d'Ã©viter les accÃ¨s concurrents, qui
+    pourraient entraÃ®ner des comportements indÃ©terminÃ©s -- donnÃ©es audio corrompues, crashs, etc.
 </p>
 <p>
-    Si vous n'êtes pas suffisamment à l'aise avec les problèmes liés aux threads, vous pouvez faire un saut par le
+    Si vous n'Ãªtes pas suffisamment Ã  l'aise avec les problÃ¨mes liÃ©s aux threads, vous pouvez faire un saut par le
     <a class="internal" href="./system-thread-fr.php" title="Tutoriel sur les threads">tutoriel correspondant</a>.
 </p>
 

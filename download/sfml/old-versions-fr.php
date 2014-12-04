@@ -1,13 +1,13 @@
 <?php
     $breadcrumbs = array
     (
-        'Téléchargement' => 'download-fr.php',
+        'TÃ©lÃ©chargement' => 'download-fr.php',
         'Anciennes versions' => 'download/sfml/old-versions-fr.php'
     );
     include('../../header-fr.php');
 ?>
 
-<h1>Télécharger d'anciennes versions de SFML</h1>
+<h1>TÃ©lÃ©charger d'anciennes versions de SFML</h1>
 
 <div class="link-box one-column">
     <a class="download-old" href="2.1/index-fr.php">

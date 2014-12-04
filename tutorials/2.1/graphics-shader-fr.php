@@ -1,46 +1,46 @@
 <?php
 
-    $title = "Effets spéciaux avec les shaders";
+    $title = "Effets spÃ©ciaux avec les shaders";
     $page = "graphics-shaders-fr.php";
 
     require("header-fr.php");
 
 ?>
 
-<h1>Effets spéciaux avec les shaders</h1>
+<h1>Effets spÃ©ciaux avec les shaders</h1>
 
 <?php h2('Introduction') ?>
 <p>
-    Un shader est un petit programme qui s'exécute directement sur la carte graphique, et qui permet au programmeur de décrire les étapes de rendu de manière
-    plus simple et surtout plus flexible que d'utiliser les états et opérations figés qu'OpenGL fournit. Cette flexibilité permet aux shaders d'implémenter
-    des effets qui seraient compliqués, sinon impossibles, à décrire avec les fonctions OpenGL standards : éclairage par pixel, ombres, etc. Les cartes
-    graphiques actuelles, ainsi que les dernières versions d'OpenGL, sont même complètement basées sur les shaders, et les vieux états et fonctions
-    (ce qu'on appelle le "<em>fixed pipeline</em>") que vous avez l'habitude d'utiliser sont voués à disparaître.
+    Un shader est un petit programme qui s'exÃ©cute directement sur la carte graphique, et qui permet au programmeur de dÃ©crire les Ã©tapes de rendu de maniÃ¨re
+    plus simple et surtout plus flexible que d'utiliser les Ã©tats et opÃ©rations figÃ©s qu'OpenGL fournit. Cette flexibilitÃ© permet aux shaders d'implÃ©menter
+    des effets qui seraient compliquÃ©s, sinon impossibles, Ã  dÃ©crire avec les fonctions OpenGL standards : Ã©clairage par pixel, ombres, etc. Les cartes
+    graphiques actuelles, ainsi que les derniÃ¨res versions d'OpenGL, sont mÃªme complÃ¨tement basÃ©es sur les shaders, et les vieux Ã©tats et fonctions
+    (ce qu'on appelle le "<em>fixed pipeline</em>") que vous avez l'habitude d'utiliser sont vouÃ©s Ã  disparaÃ®tre.
 </p>
 <p>
-    Les shaders sont écrits en GLSL (<em>OpenGL Shading Language</em>), très similaire au langage C.
+    Les shaders sont Ã©crits en GLSL (<em>OpenGL Shading Language</em>), trÃ¨s similaire au langage C.
 </p>
 <p>
-    Il existe deux types de shaders : les vertex shaders et les fragment (ou pixel) shaders. Les vertex shaders transforment la géometrie, alors que les fragment
-    shaders s'occupent des pixels. Selon le type d'effet que vous voulez implémenter, vous pouvez définir uniquement l'un ou l'autre, ou bien les deux.
+    Il existe deux types de shaders : les vertex shaders et les fragment (ou pixel) shaders. Les vertex shaders transforment la gÃ©ometrie, alors que les fragment
+    shaders s'occupent des pixels. Selon le type d'effet que vous voulez implÃ©menter, vous pouvez dÃ©finir uniquement l'un ou l'autre, ou bien les deux.
 </p>
 <p>
-    Pour comprendre ce que les shaders font, et comment les utiliser efficacement, il est important de connaître les bases du pipeline de rendu graphique. Vous devrez
-    également apprendre à écrire des programmes GLSL, et trouver de bons tutoriels et exemples pour démarrer. Vous pouvez aussi jeter un oeil à l'exemple "Shader" qui
+    Pour comprendre ce que les shaders font, et comment les utiliser efficacement, il est important de connaÃ®tre les bases du pipeline de rendu graphique. Vous devrez
+    Ã©galement apprendre Ã  Ã©crire des programmes GLSL, et trouver de bons tutoriels et exemples pour dÃ©marrer. Vous pouvez aussi jeter un oeil Ã  l'exemple "Shader" qui
     est fourni avec le SDK de SFML.
 </p>
 <p>
-    Ce tutoriel va uniquement se concentrer sur les parties spécifiques à SFML : comment charger et appliquer des shaders -- pas comment les écrire.
+    Ce tutoriel va uniquement se concentrer sur les parties spÃ©cifiques Ã  SFML : comment charger et appliquer des shaders -- pas comment les Ã©crire.
 </p>
 
 <?php h2('Charger des shaders') ?>
 <p>
-    Dans SFML, les shaders sont représentés par la classe <?php class_link("Shader") ?>. Elle gère à la fois les vertex et fragment shaders : un <?php class_link("Shader") ?>
-    est une combinaison des deux (ou bien un seul, si l'autre n'est pas nécessaire).
+    Dans SFML, les shaders sont reprÃ©sentÃ©s par la classe <?php class_link("Shader") ?>. Elle gÃ¨re Ã  la fois les vertex et fragment shaders : un <?php class_link("Shader") ?>
+    est une combinaison des deux (ou bien un seul, si l'autre n'est pas nÃ©cessaire).
 </p>
 <p>
-    Même si les shaders sont maintenant très répandus, il existe toujours des cartes graphiques suffisamment vieilles qui ne les supportent pas. La première chose à faire
-    dans votre programme est donc de vérifier si les shaders sont disponibles :
+    MÃªme si les shaders sont maintenant trÃ¨s rÃ©pandus, il existe toujours des cartes graphiques suffisamment vieilles qui ne les supportent pas. La premiÃ¨re chose Ã  faire
+    dans votre programme est donc de vÃ©rifier si les shaders sont disponibles :
 </p>
 <pre><code class="cpp">if (!sf::Shader::isAvailable())
 {
@@ -48,7 +48,7 @@
 }
 </code></pre>
 <p>
-    Toute tentative d'utiliser la classe <?php class_link("Shader") ?> échouera si la fonction <code>sf::Shader::isAvailable()</code> renvoie <code>false</code>.
+    Toute tentative d'utiliser la classe <?php class_link("Shader") ?> Ã©chouera si la fonction <code>sf::Shader::isAvailable()</code> renvoie <code>false</code>.
 </p>
 <p>
     Le moyen le plus commun de charger un shader est depuis un fichier sur le disque, ce qui s'effectue avec la fonction <code>loadFromFile</code>.
@@ -74,18 +74,18 @@ if (!shader.loadFromFile("vertex_shader.vert", "fragment_shader.frag"))
 }
 </code></pre>
 <p>
-    Les shaders sont de simples fichiers texte (comme votre code C++), leur extension n'a donc pas grande importance, ça peut être n'importe quoi. ".vert" et ".frag"
+    Les shaders sont de simples fichiers texte (comme votre code C++), leur extension n'a donc pas grande importance, Ã§a peut Ãªtre n'importe quoi. ".vert" et ".frag"
     sont juste des conventions.
 </p>
 <p class="important">
-    La fonction <code>loadFromFile</code> échoue parfois sans raison évidente. Premièrement, vérifiez le message d'erreur affiché par SFML sur la sortie standard
-    (vérifiez la console). Si le message est <q>unable to open file</q>, assurez-vous que le <em>chemin de travail</em> (le chemin relativement auquel seront
-    interprétés tous les chemins de fichiers de votre programme) est celui que vous pensez : lorsque vous lancez l'application depuis l'explorateur, le chemin de travail
-    est le répertoire de l'exécutable, mais si vous lancez votre programme depuis votre EDI (Visual Studio, Code::Blocks, ...) alors le chemin de travail peut être
-    le répertoire du <em>projet</em>. Ca peut normalement être changé facilement dans les options de votre projet.
+    La fonction <code>loadFromFile</code> Ã©choue parfois sans raison Ã©vidente. PremiÃ¨rement, vÃ©rifiez le message d'erreur affichÃ© par SFML sur la sortie standard
+    (vÃ©rifiez la console). Si le message est <q>unable to open file</q>, assurez-vous que le <em>chemin de travail</em> (le chemin relativement auquel seront
+    interprÃ©tÃ©s tous les chemins de fichiers de votre programme) est celui que vous pensez : lorsque vous lancez l'application depuis l'explorateur, le chemin de travail
+    est le rÃ©pertoire de l'exÃ©cutable, mais si vous lancez votre programme depuis votre EDI (Visual Studio, Code::Blocks, ...) alors le chemin de travail peut Ãªtre
+    le rÃ©pertoire du <em>projet</em>. Ca peut normalement Ãªtre changÃ© facilement dans les options de votre projet.
 </p>
 <p>
-    Les shaders peuvent aussi être chargés directement depuis une chaîne de caractères, avec la fonction <code>loadFromMemory</code>. Ca peut être utile si vous voulez
+    Les shaders peuvent aussi Ãªtre chargÃ©s directement depuis une chaÃ®ne de caractÃ¨res, avec la fonction <code>loadFromMemory</code>. Ca peut Ãªtre utile si vous voulez
     embarquer les sources de vos shaders directement dans votre programme.
 </p>
 <pre><code class="cpp">const std::string vertexShader = \
@@ -119,24 +119,24 @@ if (!shader.loadFromMemory(vertexShader, fragmentShader))
 }
 </code></pre>
 <p>
-    Enfin, comme toutes les autres ressources SFML, les shaders peuvent être chargés depuis un
-    <a href="./system-stream-fr.php" title="Tutoriel sur les flux de données">flux de données personnalisé</a> avec la fonction <code>loadFromStream</code>.
+    Enfin, comme toutes les autres ressources SFML, les shaders peuvent Ãªtre chargÃ©s depuis un
+    <a href="./system-stream-fr.php" title="Tutoriel sur les flux de donnÃ©es">flux de donnÃ©es personnalisÃ©</a> avec la fonction <code>loadFromStream</code>.
 </p>
 <p>
-    Si le chargement échoue, n'oubliez pas de vérifier la sortie standard (la console) pour voir le rapport détaillé du compilateur GLSL.
+    Si le chargement Ã©choue, n'oubliez pas de vÃ©rifier la sortie standard (la console) pour voir le rapport dÃ©taillÃ© du compilateur GLSL.
 </p>
 
 <?php h2('Utiliser un shader') ?>
 <p>
-    Utiliser un shader est facile : passez-le comme paramètre supplémentaire à la fonction <code>draw</code>.
+    Utiliser un shader est facile : passez-le comme paramÃ¨tre supplÃ©mentaire Ã  la fonction <code>draw</code>.
 </p>
 <pre><code class="cpp">window.draw(whatever, &amp;shader);
 </code></pre>
 
-<?php h2('Passer des variables à un shader') ?>
+<?php h2('Passer des variables Ã  un shader') ?>
 <p>
-    Comme tout programme, un shader peut recevoir des paramètres de manière à se comporter différemment d'une exécution à l'autre, selon le contexte. Ces paramètres
-    sont déclarés en tant que variables globales dans le shader, appelées variables <em>uniformes</em>.
+    Comme tout programme, un shader peut recevoir des paramÃ¨tres de maniÃ¨re Ã  se comporter diffÃ©remment d'une exÃ©cution Ã  l'autre, selon le contexte. Ces paramÃ¨tres
+    sont dÃ©clarÃ©s en tant que variables globales dans le shader, appelÃ©es variables <em>uniformes</em>.
 </p>
 <pre><code class="glsl">uniform float myvar;
 
@@ -146,7 +146,7 @@ void main()
 }
 </code></pre>
 <p>
-    Les variables uniformes peuvent être modifiées depuis le programme C++, en utilisant les diverses surcharges de la fonction <code>setParameter</code> de la classe
+    Les variables uniformes peuvent Ãªtre modifiÃ©es depuis le programme C++, en utilisant les diverses surcharges de la fonction <code>setParameter</code> de la classe
     <?php class_link("Shader") ?>.
 </p>
 <pre><code class="cpp">shader.setParameter("myvar", 5.f);
@@ -164,28 +164,28 @@ void main()
     <li><code>sf::Texture</code> (type GLSL <code>sampler2D</code>)</li>
 </ul>
 <p class="important">
-    Lors de son processus d'optimisation, le compilateur GLSL vire les variables inutilisées (ici, "inutilisée" signifie "n'intervenant pas dans le calcul du vertex/pixel final").
+    Lors de son processus d'optimisation, le compilateur GLSL vire les variables inutilisÃ©es (ici, "inutilisÃ©e" signifie "n'intervenant pas dans le calcul du vertex/pixel final").
     Ne soyez donc pas surpris si vous obtenez des erreurs telles que <q>Failed to find variable "xxx" in shader</q> lorsque vous appelez <code>setParameter</code>, durant
     vos tests.
 </p>
 
 <?php h2('Shaders minimaux') ?>
 <p>
-    Vous n'apprendrez pas ici à écrire des shaders GLSL, mais vous devez au moins savoir ce que SFML envoie en entrée de vos shaders, et ce que vous êtes supposé en faire.
+    Vous n'apprendrez pas ici Ã  Ã©crire des shaders GLSL, mais vous devez au moins savoir ce que SFML envoie en entrÃ©e de vos shaders, et ce que vous Ãªtes supposÃ© en faire.
 </p>
 
 <h3>Vertex shader</h3>
 <p>
-    SFML définit un format figé de vertex, décrit par la structure <?php class_link("Vertex") ?>. Un vertex SFML possède une position 2D, une couleur, et des coordonnées
-    de texture 2D. Et c'est exactement ce qu'un vertex shader va recevoir en entrée, respectivement dans les variables prédéfinies <code>gl_Vertex</code>,
-    <code>gl_MultiTexCoord0</code> et <code>gl_Color</code> (vous n'avez pas besoin de les déclarer).
+    SFML dÃ©finit un format figÃ© de vertex, dÃ©crit par la structure <?php class_link("Vertex") ?>. Un vertex SFML possÃ¨de une position 2D, une couleur, et des coordonnÃ©es
+    de texture 2D. Et c'est exactement ce qu'un vertex shader va recevoir en entrÃ©e, respectivement dans les variables prÃ©dÃ©finies <code>gl_Vertex</code>,
+    <code>gl_MultiTexCoord0</code> et <code>gl_Color</code> (vous n'avez pas besoin de les dÃ©clarer).
 </p>
 <pre><code class="glsl">void main()
 {
     // transforme la position du vertex
     gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;
 
-    // transforme les coordonnées de texture
+    // transforme les coordonnÃ©es de texture
     gl_TexCoord[0] = gl_TextureMatrix[0] * gl_MultiTexCoord0;
 
     // transmet la couleur
@@ -193,22 +193,22 @@ void main()
 }
 </code></pre>
 <p>
-    La position doit être transformée par la matrice de modèle-vue, qui contient la transformation de l'entité combinée à la vue courante. Les coordonnées de texture doivent
-    être transformées par la matrice de texture (cette texture ne signifie rien pour vous, c'est un détail d'implémentation de SFML). Et enfin, la couleur doit juste être
-    transmise telle quelle. Bien entendu, vous pouvez omettre le traitement des coordonnées de texture ou bien de la couleur si vous n'en avez pas besoin.<br/>
-    Toutes ces variables sont ensuite interpolées au pixel par la carte graphique, puis transmises au fragment shader.
+    La position doit Ãªtre transformÃ©e par la matrice de modÃ¨le-vue, qui contient la transformation de l'entitÃ© combinÃ©e Ã  la vue courante. Les coordonnÃ©es de texture doivent
+    Ãªtre transformÃ©es par la matrice de texture (cette texture ne signifie rien pour vous, c'est un dÃ©tail d'implÃ©mentation de SFML). Et enfin, la couleur doit juste Ãªtre
+    transmise telle quelle. Bien entendu, vous pouvez omettre le traitement des coordonnÃ©es de texture ou bien de la couleur si vous n'en avez pas besoin.<br/>
+    Toutes ces variables sont ensuite interpolÃ©es au pixel par la carte graphique, puis transmises au fragment shader.
 </p>
 
 <h3>Fragment shader</h3>
 <p>
-    Le fragment shader est assez similaire : il reçoit les coordonnées de texture et la couleur du pixel courant. Il n'y a plus de position, à ce point du rendu la
-    carte graphique a déjà calculé la position finale du pixel. Cependant, si vous traitez des entités texturées, vous aurez aussi besoin d'accéder à leur texture.
+    Le fragment shader est assez similaire : il reÃ§oit les coordonnÃ©es de texture et la couleur du pixel courant. Il n'y a plus de position, Ã  ce point du rendu la
+    carte graphique a dÃ©jÃ  calculÃ© la position finale du pixel. Cependant, si vous traitez des entitÃ©s texturÃ©es, vous aurez aussi besoin d'accÃ©der Ã  leur texture.
 </p>
 <pre><code class="glsl">uniform sampler2D texture;
 
 void main()
 {
-    // récupère le pixel dans la texture
+    // rÃ©cupÃ¨re le pixel dans la texture
     vec4 pixel = texture2D(texture, gl_TexCoord[0].xy);
 
     // et multiplication avec la couleur pour obtenir le pixel final
@@ -216,15 +216,15 @@ void main()
 }
 </code></pre>
 <p>
-    La gestion de la texture n'est pas automatique : vous devez la gérer comme une variable uniforme standard, et donc la passer explicitement depuis votre programme C++.
-    Etant donné que chaque entité peut avoir une texture différente, et pire, qu'il ne peut y avoir aucun moyen pour vous de la récupérer et la passer au shader, SFML
-    fournit une surcharge spéciale de la fonction <code>setParameter</code> qui fait tout ça pour vous.
+    La gestion de la texture n'est pas automatique : vous devez la gÃ©rer comme une variable uniforme standard, et donc la passer explicitement depuis votre programme C++.
+    Etant donnÃ© que chaque entitÃ© peut avoir une texture diffÃ©rente, et pire, qu'il ne peut y avoir aucun moyen pour vous de la rÃ©cupÃ©rer et la passer au shader, SFML
+    fournit une surcharge spÃ©ciale de la fonction <code>setParameter</code> qui fait tout Ã§a pour vous.
 </p>
 <pre><code class="cpp">shader.setParameter("texture", sf::Shader::CurrentTexture);
 </code></pre>
 <p>
-    Ce paramètre un peu spécial affecte la texture de l'entité en cours de dessin à la variable de shader donnée. A chaque fois qu'une nouvelle entité est dessinée,
-    SFML met à jour la variable correspondante dans le shader.
+    Ce paramÃ¨tre un peu spÃ©cial affecte la texture de l'entitÃ© en cours de dessin Ã  la variable de shader donnÃ©e. A chaque fois qu'une nouvelle entitÃ© est dessinÃ©e,
+    SFML met Ã  jour la variable correspondante dans le shader.
 </p>
 <p>
     Si vous voulez voir des shaders sympas en action, vous pouvez regarder l'exemple "Shader" du SDK de SFML.
@@ -232,11 +232,11 @@ void main()
 
 <?php h2('Utiliser sf::Shader avec du code OpenGL') ?>
 <p>
-    Si vous utilisez OpenGL plutôt que les entités graphiques de SFML, vous pouvez toujours utiliser la classe <?php class_link("Shader") ?> comme wrapper de shader
-    OpenGL, et la faire intéragir avec vos entités OpenGL.
+    Si vous utilisez OpenGL plutÃ´t que les entitÃ©s graphiques de SFML, vous pouvez toujours utiliser la classe <?php class_link("Shader") ?> comme wrapper de shader
+    OpenGL, et la faire intÃ©ragir avec vos entitÃ©s OpenGL.
 </p>
 <p>
-    Pour activer un <?php class_link("Shader") ?> (l'équivalent de <code>glUseProgram</code>), vous devez appeler la fonction statique <code>bind</code> :
+    Pour activer un <?php class_link("Shader") ?> (l'Ã©quivalent de <code>glUseProgram</code>), vous devez appeler la fonction statique <code>bind</code> :
 </p>
 <pre><code class="cpp">sf::Shader shader;
 ...
@@ -244,7 +244,7 @@ void main()
 // active le shader
 sf::Shader::bind(&amp;shader);
 
-// dessinez vos entités OpenGL ici...
+// dessinez vos entitÃ©s OpenGL ici...
 
 // n'active aucun shader
 sf::Shader::bind(NULL);

@@ -1,49 +1,49 @@
 <?php
 
-    $title = "Les flux de données (<em>input streams</em>)";
+    $title = "Les flux de donnÃ©es (<em>input streams</em>)";
     $page = "system-stream-fr.php";
 
     require("header-fr.php");
 
 ?>
 
-<h1>Les flux de données (<em>input streams</em>)</h1>
+<h1>Les flux de donnÃ©es (<em>input streams</em>)</h1>
 
 <?php h2('Introduction') ?>
 <p>
-    SFML possède de nombreuses classes de ressources : images, polices, sons, etc. Dans la plupart des programmes, ces ressources vont être chargées
-    depuis des fichiers, à l'aide de leur fonction <code>loadFromFile</code>. Dans quelques autres cas, les ressources seront directement intégrées à
-    l'exécutable ou bien dans un gros fichier de données, et chargées depuis la mémoire avec <code>loadFromMemory</code>. Ces fonctions couvrent
+    SFML possÃ¨de de nombreuses classes de ressources : images, polices, sons, etc. Dans la plupart des programmes, ces ressources vont Ãªtre chargÃ©es
+    depuis des fichiers, Ã  l'aide de leur fonction <code>loadFromFile</code>. Dans quelques autres cas, les ressources seront directement intÃ©grÃ©es Ã 
+    l'exÃ©cutable ou bien dans un gros fichier de donnÃ©es, et chargÃ©es depuis la mÃ©moire avec <code>loadFromMemory</code>. Ces fonctions couvrent
     <em>pratiquement</em> toutes les situations imaginables -- mais pas toutes.
 </p>
 <p>
-    Parfois vous avez besoin de charger des fichiers depuis des endroits inhabituels, tels qu'une archive compressée/chiffrée, ou un emplacement
-    réseau distant par exemple. Pour ces situations spéciales, SFML fournit une troisième fonction de chargement : <code>loadFromStream</code>.
-    Cette fonction lit les données depuis une classe abstraite <?php class_link("InputStream") ?>, qui vous permet de définir vos propres
-    implémentations.
+    Parfois vous avez besoin de charger des fichiers depuis des endroits inhabituels, tels qu'une archive compressÃ©e/chiffrÃ©e, ou un emplacement
+    rÃ©seau distant par exemple. Pour ces situations spÃ©ciales, SFML fournit une troisiÃ¨me fonction de chargement : <code>loadFromStream</code>.
+    Cette fonction lit les donnÃ©es depuis une classe abstraite <?php class_link("InputStream") ?>, qui vous permet de dÃ©finir vos propres
+    implÃ©mentations.
 </p>
 <p>
-    Dans ce tutoriel, vous apprendrez à écrire et utiliser votre propre flux de données.
+    Dans ce tutoriel, vous apprendrez Ã  Ã©crire et utiliser votre propre flux de donnÃ©es.
 </p>
 
 <?php h2('Et les flux standards ?') ?>
 <p>
-    Comme beaucoup d'autres langages, le C++ possède déjà une classe pour les flux de données (entrant) : <code>std::istream</code>. En fait il en
-    possède deux : <code>std::istream</code> n'est que la façade, l'interface abstraite vers les données est <code>std::streambuf</code>.
+    Comme beaucoup d'autres langages, le C++ possÃ¨de dÃ©jÃ  une classe pour les flux de donnÃ©es (entrant) : <code>std::istream</code>. En fait il en
+    possÃ¨de deux : <code>std::istream</code> n'est que la faÃ§ade, l'interface abstraite vers les donnÃ©es est <code>std::streambuf</code>.
 </p>
 <p>
-    Malheureusement, ces classes ne sont pas très accessibles et peuvent devenir carrément compliquées à gérer si vous voulez implémenter des
-    comportements non triviaux. La bibliothèque
+    Malheureusement, ces classes ne sont pas trÃ¨s accessibles et peuvent devenir carrÃ©ment compliquÃ©es Ã  gÃ©rer si vous voulez implÃ©menter des
+    comportements non triviaux. La bibliothÃ¨que
     <a class="external" href="http://www.boost.org/doc/libs/1_49_0/libs/iostreams/doc/index.html" title="Boost.Iostreams">Boost.Iostreams</a> tente
-    de fournir une interface plus accessible pour les flux standards, mais Boost est une grosse dépendance et SFML ne peut pas en dépendre.
+    de fournir une interface plus accessible pour les flux standards, mais Boost est une grosse dÃ©pendance et SFML ne peut pas en dÃ©pendre.
 </p>
 <p>
-    C'est pourquoi SFML fournit sa propre interface de flux de données, qui est je l'espère beaucoup plus <em>simple and fast</em>.
+    C'est pourquoi SFML fournit sa propre interface de flux de donnÃ©es, qui est je l'espÃ¨re beaucoup plus <em>simple and fast</em>.
 </p>
 
 <?php h2('InputStream') ?>
 <p>
-    La classe <?php class_link("InputStream") ?> déclare quatre fonctions virtuelles :
+    La classe <?php class_link("InputStream") ?> dÃ©clare quatre fonctions virtuelles :
 </p>
 <pre><code class="cpp">class InputStream
 {
@@ -60,32 +60,32 @@ public :
     virtual Int64 getSize() = 0;
 };</code></pre>
 <p>
-    <strong>read</strong> doit extraire <em>size</em> octets de données du flux, et les copier vers l'adresse <em>data</em> qui est fournie ; elle renvoie
+    <strong>read</strong> doit extraire <em>size</em> octets de donnÃ©es du flux, et les copier vers l'adresse <em>data</em> qui est fournie ; elle renvoie
     le nombre d'octets lus, ou -1 si une erreur s'est produite.
 </p>
 <p>
-    <strong>seek</strong> doit changer la position de lecture courante dans le flux ; le paramètre <em>position</em> est la nouvelle position absolue
-    en octets (elle est donc relative au début des données, pas à la position courante) ; elle renvoie la nouvelle position, ou -1 si une erreur
+    <strong>seek</strong> doit changer la position de lecture courante dans le flux ; le paramÃ¨tre <em>position</em> est la nouvelle position absolue
+    en octets (elle est donc relative au dÃ©but des donnÃ©es, pas Ã  la position courante) ; elle renvoie la nouvelle position, ou -1 si une erreur
     s'est produite.
 </p>
 <p>
     <strong>tell</strong> doit renvoyer la position de lecture actuelle (en octets) dans le flux, ou -1 si une erreur s'est produite.
 </p>
 <p>
-    <strong>getSize</strong> doit renvoyer la taille totale (en octets) des données contenues dans le flux, ou -1 si une erreur s'est produite.
+    <strong>getSize</strong> doit renvoyer la taille totale (en octets) des donnÃ©es contenues dans le flux, ou -1 si une erreur s'est produite.
 </p>
 <p>
-    Pour créer un nouveau flux fonctionnel, vous devez implémenter ces quatres fonctions en respectant leur définition.
+    Pour crÃ©er un nouveau flux fonctionnel, vous devez implÃ©menter ces quatres fonctions en respectant leur dÃ©finition.
 </p>
 
 <?php h2('Un exemple') ?>
 <p>
-    Voici un exemple d'une implémentation complète et fonctionnelle d'un flux de données perso. Celui-ci n'est pas très utile : nous allons écrire un
-    flux qui lit ses données depuis un fichier, <code>FileStream</code>. Mais il est suffisamment simple pour que vous puissiez vous concentrer sur
-    la manière dont fonctionne le code, et ne pas vous perdre dans les détails d'implémentation.
+    Voici un exemple d'une implÃ©mentation complÃ¨te et fonctionnelle d'un flux de donnÃ©es perso. Celui-ci n'est pas trÃ¨s utile : nous allons Ã©crire un
+    flux qui lit ses donnÃ©es depuis un fichier, <code>FileStream</code>. Mais il est suffisamment simple pour que vous puissiez vous concentrer sur
+    la maniÃ¨re dont fonctionne le code, et ne pas vous perdre dans les dÃ©tails d'implÃ©mentation.
 </p>
 <p>
-    Tout d'abord, voyons la déclaration de la classe :
+    Tout d'abord, voyons la dÃ©claration de la classe :
 </p>
 <pre><code class="cpp">#include &lt;SFML/System.hpp&gt;
 #include &lt;string&gt;
@@ -116,10 +116,10 @@ private :
 </code></pre>
 <p>
     Dans cet exemple nous allons utiliser la bonne vieille API C des fichiers, nous avons donc un membre <code>std::FILE*</code>. Nous avons aussi un
-    constructeur par défaut, un destructeur, et une fonction pour ouvrir le fichier.
+    constructeur par dÃ©faut, un destructeur, et une fonction pour ouvrir le fichier.
 </p>
 <p>
-    Voici l'implémentation :
+    Voici l'implÃ©mentation :
 </p>
 <pre><code class="cpp">FileStream::FileStream() :
 m_file(NULL)
@@ -187,17 +187,17 @@ sf::Int64 FileStream::getSize()
     }
 }</code></pre>
 <p>
-    Notez que, comme expliqué ci-dessus, toutes les fonctions renvoient -1 si une erreur s'est produite.
+    Notez que, comme expliquÃ© ci-dessus, toutes les fonctions renvoient -1 si une erreur s'est produite.
 </p>
 <p>
-    N'oubliez pas de consulter le forum et le wiki, il y a de fortes chances pour qu'un autre utilisateur ait déjà écrit un <?php class_link("InputStream") ?>
-    qui corresponde à ce que vous cherchez à faire. Et si vous écrivez une nouvelle implémentation et pensez qu'elle pourrait être utile en dehors
-    de votre projet, n'hésitez pas à la partager !
+    N'oubliez pas de consulter le forum et le wiki, il y a de fortes chances pour qu'un autre utilisateur ait dÃ©jÃ  Ã©crit un <?php class_link("InputStream") ?>
+    qui corresponde Ã  ce que vous cherchez Ã  faire. Et si vous Ã©crivez une nouvelle implÃ©mentation et pensez qu'elle pourrait Ãªtre utile en dehors
+    de votre projet, n'hÃ©sitez pas Ã  la partager !
 </p>
 
 <?php h2('Utilisation du flux') ?>
 <p>
-    Utiliser une classe de flux est très simple : instanciez-la, et passez-la à la fonction <code>loadFromStream</code> (ou <code>openFromStream</code>)
+    Utiliser une classe de flux est trÃ¨s simple : instanciez-la, et passez-la Ã  la fonction <code>loadFromStream</code> (ou <code>openFromStream</code>)
     de l'objet que vous voulez charger.
 </p>
 <pre><code class="cpp">FileStream stream;
@@ -207,27 +207,27 @@ sf::Texture texture;
 texture.loadFromStream(stream);
 </code></pre>
 
-<?php h2('Les erreurs à éviter') ?>
+<?php h2('Les erreurs Ã  Ã©viter') ?>
 <p>
-    Certaines classes de ressources ne sont pas chargées complètement après que <code>loadFromStream</code> a été appelé. Au lieu de cela, elles
-    continuent à utiliser leur source de données aussi longtemps qu'elles sont utilisées. C'est le cas pour <?php class_link("Music") ?>,
-    qui lit les échantillons audio au fur et à mesure qu'ils sont joués, et pour <?php class_link("Font") ?>, qui charge les glyphes à la volée
+    Certaines classes de ressources ne sont pas chargÃ©es complÃ¨tement aprÃ¨s que <code>loadFromStream</code> a Ã©tÃ© appelÃ©. Au lieu de cela, elles
+    continuent Ã  utiliser leur source de donnÃ©es aussi longtemps qu'elles sont utilisÃ©es. C'est le cas pour <?php class_link("Music") ?>,
+    qui lit les Ã©chantillons audio au fur et Ã  mesure qu'ils sont jouÃ©s, et pour <?php class_link("Font") ?>, qui charge les glyphes Ã  la volÃ©e
     en fonction du contenu des textes.
 <p>
-    En conséquence, le flux qui est utilisé pour charger une musique ou une police, ainsi que sa source de données, doit rester en vie
-    aussi longtemps que la ressource l'utilise. S'il est détruit alors qu'il est toujours utilisé, le comportement sera indéterminé (cela
-    pourra causer un plantage, une corruption de données, ou rien de visible).
+    En consÃ©quence, le flux qui est utilisÃ© pour charger une musique ou une police, ainsi que sa source de donnÃ©es, doit rester en vie
+    aussi longtemps que la ressource l'utilise. S'il est dÃ©truit alors qu'il est toujours utilisÃ©, le comportement sera indÃ©terminÃ© (cela
+    pourra causer un plantage, une corruption de donnÃ©es, ou rien de visible).
 </p>
 <p>
-    Une autre erreur courante est de renvoyer directement ce que les fonctions utilisées dans le flux renvoient, mais parfois cela ne correspond pas
-    à ce que SFML attend. Par exemple, dans l'exemple FileStream ci-dessus, on pourrait être tenté d'écrire la fonction <code>seek</code> comme ceci :
+    Une autre erreur courante est de renvoyer directement ce que les fonctions utilisÃ©es dans le flux renvoient, mais parfois cela ne correspond pas
+    Ã  ce que SFML attend. Par exemple, dans l'exemple FileStream ci-dessus, on pourrait Ãªtre tentÃ© d'Ã©crire la fonction <code>seek</code> comme ceci :
 </p>
 <pre><code class="cpp">sf::Int64 FileStream::seek(sf::Int64 position)
 {
     return std::fseek(m_file, position, SEEK_SET);
 }</code></pre>
 <p>
-    Et ce serait faux, car <code>std::fseek</code> renvoie zéro si elle réussit, alors que SFML attend plutôt la nouvelle position.
+    Et ce serait faux, car <code>std::fseek</code> renvoie zÃ©ro si elle rÃ©ussit, alors que SFML attend plutÃ´t la nouvelle position.
 </p>
 
 <?php

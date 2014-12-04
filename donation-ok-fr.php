@@ -6,10 +6,10 @@
     include('header-fr.php');
 ?>
 
-<h1>Don validé</h1>
+<h1>Don validÃ©</h1>
 
 <p>
-    L'équipe vous remercie chaleureusement de votre soutien à SFML :)
+    L'Ã©quipe vous remercie chaleureusement de votre soutien Ã  SFML :)
 </p>
 
 <?php

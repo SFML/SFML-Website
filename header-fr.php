@@ -32,7 +32,7 @@
 
     function h2($title)
     {
-        $id = trim(str_replace(' ', '-', preg_replace('/[^a-z0-9 -]+/', '', strtr(strtolower($title), 'àéèêëîïôöùûüç', 'aeeeeiioouuuc'))), '-');
+        $id = trim(str_replace(' ', '-', preg_replace('/[^a-z0-9 -]+/', '', strtr(strtolower($title), 'Ã Ã©Ã¨ÃªÃ«Ã®Ã¯Ã´Ã¶Ã¹Ã»Ã¼Ã§', 'aeeeeiioouuuc'))), '-');
         echo '<h2 id="' . $id . '"><a class="h2-link" href="#' . $id . '">' . $title . '<a class="back-to-top" href="#top" title="Haut de la page"></a></h2>';
     }
 ?>
@@ -41,7 +41,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title><?php echo $page_title ?></title>
-        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+        <meta http-equiv="Content-Type" content="text/html"/>
+        <meta charset="utf-8"/>
         <link rel="icon" type="image/ico" href="<?php echo image('favicon.ico') ?>"/>
         <?php if (isset($doxygen))
         {
@@ -64,9 +65,9 @@
                     <a href="<?php echo home(); ?>"><img id="logo" src="<?php echo image('logo.png') ?>" alt="SFML logo"/></a>
                     <ul id="menu">
                         <li><a href="<?php echo page('learn-fr.php') ?>">Apprendre</a></li>
-                        <li><a href="<?php echo page('download-fr.php') ?>">Télécharger</a></li>
-                        <li><a href="<?php echo page('community-fr.php') ?>">Communauté</a></li>
-                        <li><a href="<?php echo page('development-fr.php') ?>">Développement</a></li>
+                        <li><a href="<?php echo page('download-fr.php') ?>">TÃ©lÃ©charger</a></li>
+                        <li><a href="<?php echo page('community-fr.php') ?>">CommunautÃ©</a></li>
+                        <li><a href="<?php echo page('development-fr.php') ?>">DÃ©veloppement</a></li>
                     </ul>
                 </div>
             </div>

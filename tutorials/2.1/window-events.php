@@ -116,7 +116,7 @@ if (event.type == sf::Event::GainedFocus)
 <p>
     The <code>sf::Event::TextEntered</code> event is triggered when a character is typed. This must not be confused with the <code>KeyPressed</code>
     event: <code>TextEntered</code> interprets the user input and produces the appropriate printable character. For example, pressing '^' then 'e'
-    on a French keyboard will produce two <code>KeyPressed</code> events, but a single <code>TextEntered</code> event containing the 'ê' character.
+    on a French keyboard will produce two <code>KeyPressed</code> events, but a single <code>TextEntered</code> event containing the 'Ãª' character.
     It works with all the input methods provided by the operating system, even the most specific or complex ones.
 </p>
 <p>

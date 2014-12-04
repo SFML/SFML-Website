@@ -105,7 +105,7 @@ Text.SetSize(50);
 <p>
     You can also use wide characters strings, if you want to put a unicode text :
 </p>
-<pre><code class="cpp">Text.SetText(L"Voil‡");
+<pre><code class="cpp">Text.SetText(L"Voil√†");
 </code></pre>
 <p>
     Any other SFML string type is automatically accepted as well.

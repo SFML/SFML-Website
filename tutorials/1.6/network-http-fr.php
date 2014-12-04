@@ -10,41 +10,41 @@
 
 <?php h2('Introduction') ?>
 <p>
-    HTTP (<em>HyperText Transfer Protocol</em>) est le protocole utilisé pour transférer des fichiers sur internet :
-    pages web, images, etc. Il consiste en une architecture client-serveur où le client envoie des requêtes, et le serveur
-    renvoie des réponses contenant les ressources demandées par le client.
+    HTTP (<em>HyperText Transfer Protocol</em>) est le protocole utilisÃ© pour transfÃ©rer des fichiers sur internet :
+    pages web, images, etc. Il consiste en une architecture client-serveur oÃ¹ le client envoie des requÃªtes, et le serveur
+    renvoie des rÃ©ponses contenant les ressources demandÃ©es par le client.
 
 </p>
 <p>
-    SFML fournit une class qui implémente un client HTTP : <?php class_link("Http")?>.
+    SFML fournit une class qui implÃ©mente un client HTTP : <?php class_link("Http")?>.
 </p>
 
-<?php h2('Requêtes') ?>
+<?php h2('RequÃªtes') ?>
 <p>
-    Une requête HTTP dans SFML est représentée par la classe <?php class_link("Http::Request", "Http_1_1Request")?>.
+    Une requÃªte HTTP dans SFML est reprÃ©sentÃ©e par la classe <?php class_link("Http::Request", "Http_1_1Request")?>.
     Celle-ci contient cinq membres :
 </p>
 <ul>
-    <li>Une méthode, qui est l'action à exécuter; elle peut être l'une des valeurs suivantes:
+    <li>Une mÃ©thode, qui est l'action Ã  exÃ©cuter; elle peut Ãªtre l'une des valeurs suivantes:
         <ul>
-            <li><code>sf::Http::Request::Get</code>: récupère la ressource demandée (page, image, etc.)</li>
+            <li><code>sf::Http::Request::Get</code>: rÃ©cupÃ¨re la ressource demandÃ©e (page, image, etc.)</li>
             <li><code>sf::Http::Request::Post</code>: envoie du contenu au serveur</li>
-            <li><code>sf::Http::Request::Head</code>: récupére uniquement l'en-tête de la ressource demandée, sans son contenu</li>
+            <li><code>sf::Http::Request::Head</code>: rÃ©cupÃ©re uniquement l'en-tÃªte de la ressource demandÃ©e, sans son contenu</li>
         </ul>
     </li>
-    <li>Une URI, qui est l'adresse de la ressource à récupérer sir la méthode est <code>Get</code> ou <code>Head</code>,
-    ou la page à laquelle envoyer du contenu si la méthode est <code>Post</code>; cette URI est relative
-    à l'adresse du serveur (voir plus bas)</li>
-    <li>Un corps, qui est le contenu à envoyer si la méthode est <code>Post</code>; ce membre est ignoré si la méthode
+    <li>Une URI, qui est l'adresse de la ressource Ã  rÃ©cupÃ©rer sir la mÃ©thode est <code>Get</code> ou <code>Head</code>,
+    ou la page Ã  laquelle envoyer du contenu si la mÃ©thode est <code>Post</code>; cette URI est relative
+    Ã  l'adresse du serveur (voir plus bas)</li>
+    <li>Un corps, qui est le contenu Ã  envoyer si la mÃ©thode est <code>Post</code>; ce membre est ignorÃ© si la mÃ©thode
     est <code>Get</code> ou <code>Head</code></li>
-    <li>Une version HTTP, qui est utilisée par le serveur pour identifier quelle version du protocole le client utiliser;
-    cette version est 1.0 si vous ne la spécifiez pas explicitement (ce qui fonctionnera dans la plupart des situations)</li>
-    <li>Une liste de paires &lt;nom, valeur&gt;, qui sont des options à passer au serveur; certaines de ces options sont
+    <li>Une version HTTP, qui est utilisÃ©e par le serveur pour identifier quelle version du protocole le client utiliser;
+    cette version est 1.0 si vous ne la spÃ©cifiez pas explicitement (ce qui fonctionnera dans la plupart des situations)</li>
+    <li>Une liste de paires &lt;nom, valeur&gt;, qui sont des options Ã  passer au serveur; certaines de ces options sont
     obligatoires (comme par exemple "Host", "From", ou "Content-Length") mais SFML s'occupe de les remplir correctement
     si vous ne le faites pas</li>
 </ul>
 <p>
-    Chacun de ces cinq membres peut être modifié via les accesseurs de la classe
+    Chacun de ces cinq membres peut Ãªtre modifiÃ© via les accesseurs de la classe
     <?php class_link("Http::Request", "Http_1_1Request")?>:
 </p>
 <pre><code class="cpp">sf::Http::Request Request;
@@ -55,34 +55,34 @@ Request.SetHttpVersion(1, 0);
 Request.SetField("From", "my_email@gmail.com");
 </code></pre>
 <p>
-    Notez que tous ces membres ont une valeur par défaut correcte; SFML s'assure que vos requêtes sont toujours bien valides
-    quoique vous fassiez, ainsi vous pouvez vous concentrer sur les paramètres importants (comme l'URI à récupérer)
-    et laisser de côté les détails ennuyeux du protocole HTTP.<br/>
-    Cette requête pourrait donc être simplifiée au morceau de code suivant :
+    Notez que tous ces membres ont une valeur par dÃ©faut correcte; SFML s'assure que vos requÃªtes sont toujours bien valides
+    quoique vous fassiez, ainsi vous pouvez vous concentrer sur les paramÃ¨tres importants (comme l'URI Ã  rÃ©cupÃ©rer)
+    et laisser de cÃ´tÃ© les dÃ©tails ennuyeux du protocole HTTP.<br/>
+    Cette requÃªte pourrait donc Ãªtre simplifiÃ©e au morceau de code suivant :
 </p>
 <pre><code class="cpp">sf::Http::Request Request;
 Request.SetURI("/");
 </code></pre>
 
-<?php h2('Réponses') ?>
+<?php h2('RÃ©ponses') ?>
 <p>
-    Après avoir envoyé une requête (ce que nous verrons dans le chapitre suivant), vous recevez une réponse du serveur.
-    Cette réponse est représentée par la classe <?php class_link("Http::Response", "Http_1_1Response")?>.
+    AprÃ¨s avoir envoyÃ© une requÃªte (ce que nous verrons dans le chapitre suivant), vous recevez une rÃ©ponse du serveur.
+    Cette rÃ©ponse est reprÃ©sentÃ©e par la classe <?php class_link("Http::Response", "Http_1_1Response")?>.
 </p>
 <p>
-    Une réponse consiste en quatre membres :
+    Une rÃ©ponse consiste en quatre membres :
 </p>
 <ul>
-    <li>Un code d'état qui informe quant au succès ou à l'échec de la requête</li>
-    <li>Un corps, qui est le contenu de la ressource demandée; si cette ressource est une page web, le corps contient
-    le code HTML de la page. Il peut aussi être vide ou contenir le code HTML d'une page d'erreur, si la requête a
-    echoué</li>
-    <li>Une version HTTP, qui est celle utilisée par le serveur</li>
-    <li>Une liste de paires &lt;nom, valeur&gt;, qui représente diverses informations sur le serveur qui sont transmises
+    <li>Un code d'Ã©tat qui informe quant au succÃ¨s ou Ã  l'Ã©chec de la requÃªte</li>
+    <li>Un corps, qui est le contenu de la ressource demandÃ©e; si cette ressource est une page web, le corps contient
+    le code HTML de la page. Il peut aussi Ãªtre vide ou contenir le code HTML d'une page d'erreur, si la requÃªte a
+    echouÃ©</li>
+    <li>Une version HTTP, qui est celle utilisÃ©e par le serveur</li>
+    <li>Une liste de paires &lt;nom, valeur&gt;, qui reprÃ©sente diverses informations sur le serveur qui sont transmises
     au client</li>
 </ul>
 <p>
-    Tous ces membres peuvent être lus via les accesseurs de la classe
+    Tous ces membres peuvent Ãªtre lus via les accesseurs de la classe
     <?php class_link("Http::Response", "Http_1_1Response")?> :
 </p>
 <pre><code class="cpp">sf::Http::Response Response;
@@ -94,51 +94,51 @@ std::string Body = Response.GetBody();
 std::string Type = Response.GetField("Content-Type");
 </code></pre>
 <p>
-    Les codes d'état sont décrits dans l'énumeration <code>sf::Http::Response::Status</code>. Il existe plusieurs
-    codes de succès, mais le principal est <code>sf::Http::Response::Ok</code>.
+    Les codes d'Ã©tat sont dÃ©crits dans l'Ã©numeration <code>sf::Http::Response::Status</code>. Il existe plusieurs
+    codes de succÃ¨s, mais le principal est <code>sf::Http::Response::Ok</code>.
 </p>
 
-<?php h2('Assembler tout ça') ?>
+<?php h2('Assembler tout Ã§a') ?>
 <p>
-    Maintenant que vous savez écrire des requêtes et lire des réponses, il ne vous manque que deux choses : se connecter
-    à un serveur HTTP, et envoyer les requêtes.
+    Maintenant que vous savez Ã©crire des requÃªtes et lire des rÃ©ponses, il ne vous manque que deux choses : se connecter
+    Ã  un serveur HTTP, et envoyer les requÃªtes.
 </p>
 <p>
-    La connection à un serveur est effectuée via la fonction <code>SetHost</code> :
+    La connection Ã  un serveur est effectuÃ©e via la fonction <code>SetHost</code> :
 </p>
 <pre><code class="cpp">sf::Http Http;
 Http.SetHost("www.whatismyip.org");
 </code></pre>
 <p>
-    En fait, cette fonction ne fait rien d'autre que mémoriser le nom de l'hôte, la connexion ne s'effectue réellement
-    qu'avant requête, puis est refermée juste après avoir reçu la réponse. C'est pourquoi cette fonction est nommée
-    <code>SetHost</code> plutôt que <code>Connect</code>.
+    En fait, cette fonction ne fait rien d'autre que mÃ©moriser le nom de l'hÃ´te, la connexion ne s'effectue rÃ©ellement
+    qu'avant requÃªte, puis est refermÃ©e juste aprÃ¨s avoir reÃ§u la rÃ©ponse. C'est pourquoi cette fonction est nommÃ©e
+    <code>SetHost</code> plutÃ´t que <code>Connect</code>.
 </p>
 <p>
-    Cette fonction peut accepter un paramètre additionnel : le port réseau à utiliser pour la connexion. Si vous
-    ne le spécifiez pas explicitement, SFML utilisera simplement le port par défaut associé au protocole utilisé :
+    Cette fonction peut accepter un paramÃ¨tre additionnel : le port rÃ©seau Ã  utiliser pour la connexion. Si vous
+    ne le spÃ©cifiez pas explicitement, SFML utilisera simplement le port par dÃ©faut associÃ© au protocole utilisÃ© :
     80 pour HTTP, 443 pour HTTPS.
 </p>
 <p>
-    Une fois le serveur défini, vous pouvez envoyer des requêtes avec la fonction <code>SendRequest</code> :
+    Une fois le serveur dÃ©fini, vous pouvez envoyer des requÃªtes avec la fonction <code>SendRequest</code> :
 </p>
 <pre><code class="cpp">sf::Http::Response Response = Http.SendRequest(Request);
 </code></pre>
 <p>
-    Cette fonction prend en paramètre un <?php class_link("Http::Request", "Http_1_1Request")?>, et retourne
+    Cette fonction prend en paramÃ¨tre un <?php class_link("Http::Request", "Http_1_1Request")?>, et retourne
     une instance de <?php class_link("Http::Response", "Http_1_1Response")?>.
 </p>
 <p>
     C'est tout pour ce qui est de l'interface de la classe <?php class_link("Http")?>, seulement deux fonctions !
-    Il n'y a même pas besoin de se déconnecter du serveur, étant donné que c'est fait automatiquement après chaque
-    appel à <code>SendRequest</code>.
+    Il n'y a mÃªme pas besoin de se dÃ©connecter du serveur, Ã©tant donnÃ© que c'est fait automatiquement aprÃ¨s chaque
+    appel Ã  <code>SendRequest</code>.
 </p>
 
 <?php h2('Conclusion') ?>
 <p>
-    La classe <?php class_link("Http")?> est un outil puissant pour manipuler le protocole HTTP, et accéder à des pages web
-    ou à des fichiers via internet.<br/>
-    Jetons maintenant un oeil à son frère, le
+    La classe <?php class_link("Http")?> est un outil puissant pour manipuler le protocole HTTP, et accÃ©der Ã  des pages web
+    ou Ã  des fichiers via internet.<br/>
+    Jetons maintenant un oeil Ã  son frÃ¨re, le
     <a class="internal" href="./network-ftp-fr.php" title="Aller au tutoriel suivant">protocole FTP</a>.
 
 </p>

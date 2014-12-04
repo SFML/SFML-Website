@@ -11,85 +11,85 @@
 
 <?php h2('Introduction') ?>
 <p>
-    SFML fournit un ensemble de classes représentant des formes simples. Chaque forme possède sa propre classe, mais toutes dérivent de la même classe de base de sorte
-    qu'elles partagent un ensemble de fonctionnalités communes. Chaque classe ajoute ensuite ses propres spécificités : un rayon pour la classe de cercles,
+    SFML fournit un ensemble de classes reprÃ©sentant des formes simples. Chaque forme possÃ¨de sa propre classe, mais toutes dÃ©rivent de la mÃªme classe de base de sorte
+    qu'elles partagent un ensemble de fonctionnalitÃ©s communes. Chaque classe ajoute ensuite ses propres spÃ©cificitÃ©s : un rayon pour la classe de cercles,
     une taille pour la classe de rectangles, des points pour la classe des polygones, etc.
 </p>
 
-<?php h2('Les propriétés communes des formes') ?>
+<?php h2('Les propriÃ©tÃ©s communes des formes') ?>
 
-<h3>Transformation (position, rotation, échelle)</h3>
+<h3>Transformation (position, rotation, Ã©chelle)</h3>
 <p>
-    Ces propriétés étant communes à toutes les classes graphiques de SFML, elles sont détaillées dans un
-    <a href="graphics-transform-fr.php" title="Tutoriel sur les transformations">tutoriel dédié</a>.
+    Ces propriÃ©tÃ©s Ã©tant communes Ã  toutes les classes graphiques de SFML, elles sont dÃ©taillÃ©es dans un
+    <a href="graphics-transform-fr.php" title="Tutoriel sur les transformations">tutoriel dÃ©diÃ©</a>.
 </p>
 
 <h3>Couleur</h3>
 <p>
-    L'une des propriétés les plus basiques d'une forme est sa couleur, que vous pouvez modifier via la fonction <code>setFillColor</code>.
+    L'une des propriÃ©tÃ©s les plus basiques d'une forme est sa couleur, que vous pouvez modifier via la fonction <code>setFillColor</code>.
 </p>
 <pre><code class="cpp">sf::CircleShape shape(50);
 
 // change la couleur de la forme pour du vert
 shape.setFillColor(sf::Color(100, 250, 50));
 </code></pre>
-<img class="screenshot" src="./images/graphics-shape-color.png" alt="Une forme colorée"/>
+<img class="screenshot" src="./images/graphics-shape-color.png" alt="Une forme colorÃ©e"/>
 
 <h3>Contour</h3>
 <p>
-    Les formes peuvent avoir un contour. Vous pouvez choisir l'épaisseur et la couleur de celui-ci avec les fonctions <code>setOutlineThickness</code> et
+    Les formes peuvent avoir un contour. Vous pouvez choisir l'Ã©paisseur et la couleur de celui-ci avec les fonctions <code>setOutlineThickness</code> et
     <code>setOutlineColor</code>.
 </p>
 <pre><code class="cpp">sf::CircleShape shape(50);
 shape.setFillColor(sf::Color(150, 50, 250));
 
-// définit un contour orange de 10 pixels d'épaisseur
+// dÃ©finit un contour orange de 10 pixels d'Ã©paisseur
 shape.setOutlineThickness(10);
 shape.setOutlineColor(sf::Color(250, 150, 100));
 </code></pre>
 <img class="screenshot" src="./images/graphics-shape-outline.png" alt="Une forme avec contour"/>
 <p>
-    Par défaut, le contour s'étend à l'extérieur de la forme (si vous avez un cercle avec un rayon de 10 et un contour de 5, le rayon total du cercle sera 15). Vous pouvez
-    le faire s'étendre vers l'intérieur si vous le souhaitez, en spécifiant une épaisseur négative.
+    Par dÃ©faut, le contour s'Ã©tend Ã  l'extÃ©rieur de la forme (si vous avez un cercle avec un rayon de 10 et un contour de 5, le rayon total du cercle sera 15). Vous pouvez
+    le faire s'Ã©tendre vers l'intÃ©rieur si vous le souhaitez, en spÃ©cifiant une Ã©paisseur nÃ©gative.
 </p>
 <p>
-    Pour désactiver le contour, mettez son épaisseur à 0. Si au contraire vous voulez voir uniquement le contour, vous pouvez mettre la couleur intérieure
-    (<code>setFillColor</code>) à <code>sf::Color::Transparent</code>.
+    Pour dÃ©sactiver le contour, mettez son Ã©paisseur Ã  0. Si au contraire vous voulez voir uniquement le contour, vous pouvez mettre la couleur intÃ©rieure
+    (<code>setFillColor</code>) Ã  <code>sf::Color::Transparent</code>.
 </p>
 
 <h3>Texture</h3>
 <p>
-    Les formes peuvent également être texturées, comme les sprites. Pour indiquer quelle partie de la texture doit être collée sur la forme, vous devez utiliser la fonction
-    <code>setTexture</code>. Celle-ci prend en paramètre le rectangle de la texture à coller sur le rectangle englobant de la forme. Cette méthode offre une flexibilité
-    limitée, mais elle est bien plus simple à utiliser que d'avoir à attribuer explicitement des coordonnées de texture à chaque point de la forme.
+    Les formes peuvent Ã©galement Ãªtre texturÃ©es, comme les sprites. Pour indiquer quelle partie de la texture doit Ãªtre collÃ©e sur la forme, vous devez utiliser la fonction
+    <code>setTexture</code>. Celle-ci prend en paramÃ¨tre le rectangle de la texture Ã  coller sur le rectangle englobant de la forme. Cette mÃ©thode offre une flexibilitÃ©
+    limitÃ©e, mais elle est bien plus simple Ã  utiliser que d'avoir Ã  attribuer explicitement des coordonnÃ©es de texture Ã  chaque point de la forme.
 </p>
 <pre><code class="cpp">sf::CircleShape shape(50);
 
-// colle un rectangle texturé de 100x100 sur la forme
+// colle un rectangle texturÃ© de 100x100 sur la forme
 shape.setTexture(&amp;texture); // texture est un sf::Texture
 shape.setTextureRect(sf::IntRect(10, 10, 100, 100));
 </code></pre>
-<img class="screenshot" src="./images/graphics-shape-texture.png" alt="Une forme texturée"/>
+<img class="screenshot" src="./images/graphics-shape-texture.png" alt="Une forme texturÃ©e"/>
 <p>
-    Notez que le contour n'est pas texturé.<br/>
-    Au cas où la forme a également une couleur, la texture est modulée (multipliée) avec elle.<br/>
-    Pour désactiver le texturage, appelez <code>setTexture(NULL)</code>.
+    Notez que le contour n'est pas texturÃ©.<br/>
+    Au cas oÃ¹ la forme a Ã©galement une couleur, la texture est modulÃ©e (multipliÃ©e) avec elle.<br/>
+    Pour dÃ©sactiver le texturage, appelez <code>setTexture(NULL)</code>.
 </p>
 
 <?php h2('Dessiner une forme') ?>
 <p>
-    Dessiner une forme est aussi simple que de dessiner n'importe quelle autre entité SFML :
+    Dessiner une forme est aussi simple que de dessiner n'importe quelle autre entitÃ© SFML :
 </p>
 <pre><code class="cpp">window.draw(shape);
 </code></pre>
 
-<?php h2('Les types de formes prédéfinis') ?>
+<?php h2('Les types de formes prÃ©dÃ©finis') ?>
 
 <h3>Rectangles</h3>
 <p>
-    Pour dessiner des rectangles, vous devez utiliser la classe <?php class_link('RectangleShape') ?>. Celle-ci ne possède qu'un attribut : la taille du rectangle.
+    Pour dessiner des rectangles, vous devez utiliser la classe <?php class_link('RectangleShape') ?>. Celle-ci ne possÃ¨de qu'un attribut : la taille du rectangle.
 </p>
-<pre><code class="cpp">// définit un rectangle de 120x50
+<pre><code class="cpp">// dÃ©finit un rectangle de 120x50
 sf::RectangleShape rectangle(sf::Vector2f(120, 50));
 
 // change sa taille en 100x100
@@ -99,55 +99,55 @@ rectangle.setSize(sf::Vector2f(100, 100));
 
 <h3>Cercles</h3>
 <p>
-    Les cercles sont représentés par la classe <?php class_link('CircleShape') ?>. Elle possède deux attributs : le rayon et le nombre de côtés. Le nombre de côtés est
-    un attribut optionnel, qui permet d'ajuster la "qualité" du cercle : les cercles doivent en effet être simulés par des polygones avec beaucoup de côtés (la carte graphique
-    est incapable de dessiner des cercles parfaits directement), et cet attribut définit combien de côtés le cercle possède. Si vous dessinez de petits cercles, vous n'aurez
-    probablement pas besoin de beaucoup de côtés. Si au contraire vous dessinez de gros cercles, ou bien zoomez sur des cercles, vous devrez utiliser plus de côtés si
+    Les cercles sont reprÃ©sentÃ©s par la classe <?php class_link('CircleShape') ?>. Elle possÃ¨de deux attributs : le rayon et le nombre de cÃ´tÃ©s. Le nombre de cÃ´tÃ©s est
+    un attribut optionnel, qui permet d'ajuster la "qualitÃ©" du cercle : les cercles doivent en effet Ãªtre simulÃ©s par des polygones avec beaucoup de cÃ´tÃ©s (la carte graphique
+    est incapable de dessiner des cercles parfaits directement), et cet attribut dÃ©finit combien de cÃ´tÃ©s le cercle possÃ¨de. Si vous dessinez de petits cercles, vous n'aurez
+    probablement pas besoin de beaucoup de cÃ´tÃ©s. Si au contraire vous dessinez de gros cercles, ou bien zoomez sur des cercles, vous devrez utiliser plus de cÃ´tÃ©s si
     vous voulez que ceux-ci restent imperceptibles.
 </p>
-<pre><code class="cpp">// définit un cercle de rayon 200
+<pre><code class="cpp">// dÃ©finit un cercle de rayon 200
 sf::CircleShape circle(200);
 
-// change le rayon à 40
+// change le rayon Ã  40
 circle.setRadius(40);
 
-// change le nombre de points (côtés) du cercle
+// change le nombre de points (cÃ´tÃ©s) du cercle
 circle.setPointCount(100);
 </code></pre>
 <img class="screenshot" src="./images/graphics-shape-circle.png" alt="Un cercle"/>
 
-<h3>Polygones réguliers</h3>
+<h3>Polygones rÃ©guliers</h3>
 <p>
-    Il n'y a pas de classe dédiée pour les polygones réguliers. En fait vous pouvez obtenir un polygone régulier de n'importe quel nombre de côtés avec la classe
-    <?php class_link('CircleShape') ?> : en effet, puisque les cercles sont simulés par des polygones avec beaucoup de côtés, vous avez juste à jouer sur le nombre de côtés
-    pour obtenir le polygone voulu. Un <?php class_link('CircleShape') ?> avec 3 points est un triangle, avec 4 points c'est un carré, etc.
+    Il n'y a pas de classe dÃ©diÃ©e pour les polygones rÃ©guliers. En fait vous pouvez obtenir un polygone rÃ©gulier de n'importe quel nombre de cÃ´tÃ©s avec la classe
+    <?php class_link('CircleShape') ?> : en effet, puisque les cercles sont simulÃ©s par des polygones avec beaucoup de cÃ´tÃ©s, vous avez juste Ã  jouer sur le nombre de cÃ´tÃ©s
+    pour obtenir le polygone voulu. Un <?php class_link('CircleShape') ?> avec 3 points est un triangle, avec 4 points c'est un carrÃ©, etc.
 </p>
-<pre><code class="cpp">// définit un triangle
+<pre><code class="cpp">// dÃ©finit un triangle
 sf::CircleShape triangle(80, 3);
 
-// définit un carré
+// dÃ©finit un carrÃ©
 sf::CircleShape square(80, 4);
 
-// définit un octogone
+// dÃ©finit un octogone
 sf::CircleShape octagon(80, 8);
 </code></pre>
-<img class="screenshot" src="./images/graphics-shape-regular.png" alt="Des polygones réguliers"/>
+<img class="screenshot" src="./images/graphics-shape-regular.png" alt="Des polygones rÃ©guliers"/>
 
 <h3>Formes convexes</h3>
 <p>
-    La classe <?php class_link('ConvexShape') ?> est la classe de forme ultime : elle permet de définir une forme quelconque, pour peu qu'elle reste convexe. En effet, SFML
-    ne peut pas dessiner de formes concaves ; si vous devez vraiment en dessiner, vous devrez la découper en plusieurs formes convexes (si possible).
+    La classe <?php class_link('ConvexShape') ?> est la classe de forme ultime : elle permet de dÃ©finir une forme quelconque, pour peu qu'elle reste convexe. En effet, SFML
+    ne peut pas dessiner de formes concaves ; si vous devez vraiment en dessiner, vous devrez la dÃ©couper en plusieurs formes convexes (si possible).
 </p>
 <p>
-    Pour créer une forme convexe, vous devez tout d'abord définir le nombre total de points, puis définir ceux-ci.
+    Pour crÃ©er une forme convexe, vous devez tout d'abord dÃ©finir le nombre total de points, puis dÃ©finir ceux-ci.
 </p>
-<pre><code class="cpp">// crée une forme vide
+<pre><code class="cpp">// crÃ©e une forme vide
 sf::ConvexShape convex;
 
-// définit le nombre de points (5)
+// dÃ©finit le nombre de points (5)
 convex.setPointCount(5);
 
-// définit les points
+// dÃ©finit les points
 convex.setPoint(0, sf::Vector2f(0, 0));
 convex.setPoint(1, sf::Vector2f(150, 10));
 convex.setPoint(2, sf::Vector2f(120, 90));
@@ -155,30 +155,30 @@ convex.setPoint(3, sf::Vector2f(30, 100));
 convex.setPoint(4, sf::Vector2f(0, 50));
 </code></pre>
 <p class="important">
-    Il est très important de définir les points d'une forme convexe dans le sens des aiguilles d'une montre (ou inverse). Si vous les définissez dans un ordre quelconque,
-    le résultat sera indéterminé.
+    Il est trÃ¨s important de dÃ©finir les points d'une forme convexe dans le sens des aiguilles d'une montre (ou inverse). Si vous les dÃ©finissez dans un ordre quelconque,
+    le rÃ©sultat sera indÃ©terminÃ©.
 </p>
 <img class="screenshot" src="./images/graphics-shape-convex.png" alt="Une forme convexe"/>
 <p>
-    Officiellement, <?php class_link('ConvexShape') ?> peut seulement créer des formes convexes. Mais en réalité cette contrainte est légèrement exagérée. En fait,
-    d'un point de vue strictement technique, la contrainte exacte que votre forme doit suivre est que si vous tracez un segment allant de son <em>centre de gravité</em>
-    à n'importe lequel de ses points, vous ne devez croiser aucun côté. Avec cette définition un peu plus flexible, vous pouvez par exemple dessiner des étoiles.
+    Officiellement, <?php class_link('ConvexShape') ?> peut seulement crÃ©er des formes convexes. Mais en rÃ©alitÃ© cette contrainte est lÃ©gÃ¨rement exagÃ©rÃ©e. En fait,
+    d'un point de vue strictement technique, la contrainte exacte que votre forme doit suivre est que si vous tracez un segment allant de son <em>centre de gravitÃ©</em>
+    Ã  n'importe lequel de ses points, vous ne devez croiser aucun cÃ´tÃ©. Avec cette dÃ©finition un peu plus flexible, vous pouvez par exemple dessiner des Ã©toiles.
 </p>
 
 <h3>Lignes</h3>
 <p>
-    Il n'existe aucune classe pour les lignes. La raison est simple : si votre ligne possède une épaisseur alors c'est un rectangle ; sinon, elle peut être dessinée avec une
+    Il n'existe aucune classe pour les lignes. La raison est simple : si votre ligne possÃ¨de une Ã©paisseur alors c'est un rectangle ; sinon, elle peut Ãªtre dessinÃ©e avec une
     primitive de type ligne.
 </p>
 <p>
-    Ligne avec épaisseur :
+    Ligne avec Ã©paisseur :
 </p>
 <pre><code class="cpp">sf::RectangleShape line(sf::Vector2f(150, 5));
 line.rotate(45);
 </code></pre>
-<img class="screenshot" src="./images/graphics-shape-line-rectangle.png" alt="Une ligne avec épaisseur"/>
+<img class="screenshot" src="./images/graphics-shape-line-rectangle.png" alt="Une ligne avec Ã©paisseur"/>
 <p>
-    Ligne sans épaisseur :
+    Ligne sans Ã©paisseur :
 </p>
 <pre><code class="cpp">sf::Vertex line[] =
 {
@@ -188,11 +188,11 @@ line.rotate(45);
 
 window.draw(line, 2, sf::Lines);
 </code></pre>
-<img class="screenshot" src="./images/graphics-shape-line-primitive.png" alt="Une ligne sans épaisseur"/>
+<img class="screenshot" src="./images/graphics-shape-line-primitive.png" alt="Une ligne sans Ã©paisseur"/>
 
-<?php h2('Formes personnalisées') ?>
+<?php h2('Formes personnalisÃ©es') ?>
 <p>
-    Vous pouvez étendre l'ensemble des classes de formes avec vos propres types de formes. Pour ce faire, vous devez dériver de <?php class_link('Shape') ?> et redéfinir
+    Vous pouvez Ã©tendre l'ensemble des classes de formes avec vos propres types de formes. Pour ce faire, vous devez dÃ©river de <?php class_link('Shape') ?> et redÃ©finir
     deux fonctions :
 </p>
 <ul>
@@ -200,11 +200,11 @@ window.draw(line, 2, sf::Lines);
     <li><code>getPoint</code>: renvoie un point de la forme</li>
 </ul>
 <p>
-    Vous devez également appeler la fonction protégée <code>update()</code> à chaque fois que les points de la forme changent, de sorte que la classe de base en soit informée
+    Vous devez Ã©galement appeler la fonction protÃ©gÃ©e <code>update()</code> Ã  chaque fois que les points de la forme changent, de sorte que la classe de base en soit informÃ©e
     et puisse recalculer ce dont elle a besoin.
 </p>
 <p>
-    Voici un exemple complet de classe de forme personnalisée : EllipseShape.
+    Voici un exemple complet de classe de forme personnalisÃ©e : EllipseShape.
 </p>
 <pre><code class="cpp">class EllipseShape : public sf::Shape
 {
@@ -229,7 +229,7 @@ public :
 
     virtual unsigned int getPointCount() const
     {
-        return 30; // fixé, mais ça pourrait tout aussi bien être un attribut de la classe
+        return 30; // fixÃ©, mais Ã§a pourrait tout aussi bien Ãªtre un attribut de la classe
     }
 
     virtual sf::Vector2f getPoint(unsigned int index) const
@@ -250,19 +250,19 @@ private :
 </code></pre>
 <img class="screenshot" src="./images/graphics-shape-ellipse.png" alt="Une ellipse"/>
 
-<?php h2('Formes anticrénelées') ?>
+<?php h2('Formes anticrÃ©nelÃ©es') ?>
 <p>
-    Il n'y a pas d'option pour activer l'anticrénelage pour une forme en particulier. Si vous voulez des formes anticrénelées (ie. avec des bords lissés), vous devez
-    activer l'anticrénelage de manière globale lorsque vous créez la fenêtre, avec l'attribut correspondant de la structure <?php struct_link('ContextSettings') ?>.
+    Il n'y a pas d'option pour activer l'anticrÃ©nelage pour une forme en particulier. Si vous voulez des formes anticrÃ©nelÃ©es (ie. avec des bords lissÃ©s), vous devez
+    activer l'anticrÃ©nelage de maniÃ¨re globale lorsque vous crÃ©ez la fenÃªtre, avec l'attribut correspondant de la structure <?php struct_link('ContextSettings') ?>.
 </p>
 <pre><code class="cpp">sf::ContextSettings settings;
 settings.antialiasingLevel = 8;
 
 sf::RenderWindow window(sf::VideoMode(800, 600), "SFML shapes", sf::Style::Default, settings);
 </code></pre>
-<img class="screenshot" src="./images/graphics-shape-antialiasing.png" alt="Crénelé vs anticrénelé"/>
+<img class="screenshot" src="./images/graphics-shape-antialiasing.png" alt="CrÃ©nelÃ© vs anticrÃ©nelÃ©"/>
 <p>
-    Souvenez-vous que l'anticrénelage dépend de la carte graphique : elle peut ne pas le supporter, ou forcer sa désactivation dans les paramètres du pilote graphique.
+    Souvenez-vous que l'anticrÃ©nelage dÃ©pend de la carte graphique : elle peut ne pas le supporter, ou forcer sa dÃ©sactivation dans les paramÃ¨tres du pilote graphique.
 </p>
 
 <?php

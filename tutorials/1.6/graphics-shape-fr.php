@@ -10,7 +10,7 @@
 
 <?php h2('Introduction') ?>
 <p>
-    Ce nouveau tutoriel va vous apprendre à dessiner des formes 2D simples telles que des lignes, des rectangles,
+    Ce nouveau tutoriel va vous apprendre Ã  dessiner des formes 2D simples telles que des lignes, des rectangles,
     des cercles ou encore des polygones avec SFML.
 </p>
 
@@ -19,15 +19,15 @@
     Pour construire une forme persos avec SFML, vous devez utiliser la classe
     <?php class_link("Shape")?>.<br/>
     Une forme est basiquement un polygone convexe, dans lequel chaque point a sa propre position et couleur.
-    Il est également possible d'ajouter une bordure automatique à une forme, chaque point pouvant avoir sa propre couleur
+    Il est Ã©galement possible d'ajouter une bordure automatique Ã  une forme, chaque point pouvant avoir sa propre couleur
     de bordure.</br>
-    Il est très important de définir les points d'une forme dans l'ordre (sens des aiguilles d'une montre ou inverse, peu importe),
-    sans quoi la forme pourrait être mal-formée. Il est également important de garder la forme convexe, sinon elle
-    pourrait ne pas être rendue correctement. Si vous devez afficher des formes concaves, essayez de les découper
+    Il est trÃ¨s important de dÃ©finir les points d'une forme dans l'ordre (sens des aiguilles d'une montre ou inverse, peu importe),
+    sans quoi la forme pourrait Ãªtre mal-formÃ©e. Il est Ã©galement important de garder la forme convexe, sinon elle
+    pourrait ne pas Ãªtre rendue correctement. Si vous devez afficher des formes concaves, essayez de les dÃ©couper
     en plusieurs sous-formes convexes.
 </p>
 <p>
-    Pour ajouter un point à une forme, utilisez la fonction <code>AddPoint</code> :
+    Pour ajouter un point Ã  une forme, utilisez la fonction <code>AddPoint</code> :
 </p>
 <pre><code class="cpp">sf::Shape Polygon;
 Polygon.AddPoint(0, -50,  sf::Color(255, 0, 0),     sf::Color(0, 128, 128));
@@ -38,43 +38,43 @@ Polygon.AddPoint(-50, 50, sf::Color(255, 170, 170), sf::Color(0, 128, 128));
 Polygon.AddPoint(-50, 0,  sf::Color(255, 85, 85),   sf::Color(0, 128, 128));
 </code></pre>
 <p>
-    Les paramètres sont les coordonnées X et Y du point, sa couleur et une couleur optionnelle pour la bordure.
-    Notez que vous pouvez également passer un <?php class_link("Vector2f")?> plutôt que deux floats pour la position du point.
+    Les paramÃ¨tres sont les coordonnÃ©es X et Y du point, sa couleur et une couleur optionnelle pour la bordure.
+    Notez que vous pouvez Ã©galement passer un <?php class_link("Vector2f")?> plutÃ´t que deux floats pour la position du point.
 </p>
 <p>
-    Une fois ajoutés à la forme, les attributs des points (position, couleur et bordure) peuvent être récupérées
-    ou changées individuellement à l'aide des accesseurs suivants :
+    Une fois ajoutÃ©s Ã  la forme, les attributs des points (position, couleur et bordure) peuvent Ãªtre rÃ©cupÃ©rÃ©es
+    ou changÃ©es individuellement Ã  l'aide des accesseurs suivants :
 </p>
-<pre><code class="cpp">// Récupère les attributs du troisième point
+<pre><code class="cpp">// RÃ©cupÃ¨re les attributs du troisiÃ¨me point
 sf::Vector2f Position     = Polygon.GetPointPosition(2);
 sf::Color    Color        = Polygon.GetPointColor(2);
 sf::Color    OutlineColor = Polygon.GetPointOutlineColor(2);
 
-// Change les attributs du deuxième point
+// Change les attributs du deuxiÃ¨me point
 Polygon.SetPointPosition(1, sf::Vector2f(50, 100));
 Polygon.SetPointColor(1, sf::Color::Black);
 Polygon.SetPointOutlineColor(1, sf::Color(0, 128, 128));
 </code></pre>
 <p>
-    Afin de contrôler l'épaisseur de la bordure de l'ensemble de la forme, vous pouvez utiliser la fonction <code>SetOutlineWidth</code> :
+    Afin de contrÃ´ler l'Ã©paisseur de la bordure de l'ensemble de la forme, vous pouvez utiliser la fonction <code>SetOutlineWidth</code> :
 </p>
-<pre><code class="cpp">// Définit une bordure d'épaisseur 10
+<pre><code class="cpp">// DÃ©finit une bordure d'Ã©paisseur 10
 Polygon.SetOutlineWidth(10);
 </code></pre>
 <p>
-    Ok parfait, nous avons désormais une forme avec une bordure. Mais que faire si nous voulons juste afficher la bordure
-    sans remplir la forme ? Ou supprimer cette bordure ? Il existe deux fonctions pour activer ou désactiver
+    Ok parfait, nous avons dÃ©sormais une forme avec une bordure. Mais que faire si nous voulons juste afficher la bordure
+    sans remplir la forme ? Ou supprimer cette bordure ? Il existe deux fonctions pour activer ou dÃ©sactiver
     le remplissage et la bordure :
 </p>
-<pre><code class="cpp">// Désactive le remplissage de la forme
+<pre><code class="cpp">// DÃ©sactive le remplissage de la forme
 Polygon.EnableFill(false);
 
 // Active l'affichage de sa bordure
 Polygon.EnableOutline(true);
 </code></pre>
 <p>
-    Comme tout objet affichable dans SFML, les formes héritent de toutes les fonctions habituelles pour définir leur
-    position, rotation, facteur d'échelle, couleur et mode de blending.
+    Comme tout objet affichable dans SFML, les formes hÃ©ritent de toutes les fonctions habituelles pour dÃ©finir leur
+    position, rotation, facteur d'Ã©chelle, couleur et mode de blending.
 </p>
 <pre><code class="cpp">Polygon.SetColor(sf::Color(255, 255, 255, 200));
 Polygon.Move(300, 300);
@@ -82,12 +82,12 @@ Polygon.Scale(3, 2);
 Polygon.Rotate(45);
 </code></pre>
 <p>
-    Enfin, afficher une forme se fait également de la même manière que tous les objets SFML :
+    Enfin, afficher une forme se fait Ã©galement de la mÃªme maniÃ¨re que tous les objets SFML :
 </p>
 <pre><code class="cpp">App.Draw(Polygon);
 </code></pre>
 
-<?php h2('Formes prédéfinies') ?>
+<?php h2('Formes prÃ©dÃ©finies') ?>
 <p>
     SFML fournit des fonctions statiques pour construire facilement des formes simples telles que des lignes,
     des rectangles et des cercles :
@@ -97,13 +97,13 @@ sf::Shape Circle = sf::Shape::Circle(X, Y, Rayon, Couleur, [Bordure], [CouleurBo
 sf::Shape Rect   = sf::Shape::Rectangle(X1, Y1, X2, Y2, Couleur, [Bordure], [CouleurBordure]);
 </code></pre>
 <p>
-    Les valeurs pour l'épaisseur et la couleur de bordure sont optionnelles ; la bordure est désactivée par défaut.
+    Les valeurs pour l'Ã©paisseur et la couleur de bordure sont optionnelles ; la bordure est dÃ©sactivÃ©e par dÃ©faut.
 </p>
 
 <?php h2('Conclusion') ?>
 <p>
-    Avec cette nouvelle classe vous êtes maintenant en mesure de dessiner des rectangles, cercles et polygones
-    quelconques facilement et sans avoir à utiliser une image et un sprite. Regardons maintenant quelque chose
+    Avec cette nouvelle classe vous Ãªtes maintenant en mesure de dessiner des rectangles, cercles et polygones
+    quelconques facilement et sans avoir Ã  utiliser une image et un sprite. Regardons maintenant quelque chose
     de plus excitant :
     <a class="internal" href="./graphics-views-fr.php" title="Aller au tutoriel suivant">les vues</a>.
 </p>

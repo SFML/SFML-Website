@@ -11,7 +11,7 @@
 
 <h1>Tutoriels pour SFML 1.6</h1>
 
-<?php h2('Démarrer') ?>
+<?php h2('DÃ©marrer') ?>
 <ul>
     <li><a href="./start-vc-fr.php"     title="SFML et Visual Studio">SFML et Visual Studio</a></li>
     <li><a href="./start-cb-fr.php"     title="SFML et Code::Blocks">SFML et Code::Blocks (MinGW)</a></li>
@@ -21,32 +21,32 @@
     <li><a href="./start-python-fr.php" title="SFML et Python">SFML et Python</a></li>
 </ul>
 
-<?php h2('Module système') ?>
+<?php h2('Module systÃ¨me') ?>
 <ul>
     <li><a href="./system-threads-fr.php" title="Utiliser les threads et les mutexs">Utiliser les threads et les mutexs</a></li>
-    <li><a href="./system-random-fr.php"  title="Générer des nombres aléatoires">Générer des nombres aléatoires</a></li>
+    <li><a href="./system-random-fr.php"  title="GÃ©nÃ©rer des nombres alÃ©atoires">GÃ©nÃ©rer des nombres alÃ©atoires</a></li>
 </ul>
 
-<?php h2('Module de fenêtrage') ?>
+<?php h2('Module de fenÃªtrage') ?>
 <ul>
-    <li><a href="./window-window-fr.php" title="Ouvrir une fenêtre">Ouvrir une fenêtre</a></li>
-    <li><a href="./window-events-fr.php" title="Gérer les évènements">Gérer les évènements</a></li>
-    <li><a href="./window-time-fr.php"   title="Gérer le temps">Gérer le temps</a></li>
+    <li><a href="./window-window-fr.php" title="Ouvrir une fenÃªtre">Ouvrir une fenÃªtre</a></li>
+    <li><a href="./window-events-fr.php" title="GÃ©rer les Ã©vÃ¨nements">GÃ©rer les Ã©vÃ¨nements</a></li>
+    <li><a href="./window-time-fr.php"   title="GÃ©rer le temps">GÃ©rer le temps</a></li>
     <li><a href="./window-opengl-fr.php" title="Utiliser OpenGL">Utiliser OpenGL</a></li>
 </ul>
 
 <?php h2('Module graphique') ?>
 <ul>
-    <li><a href="./graphics-window-fr.php"    title="Utiliser les fenêtres de rendu">Utiliser les fenêtres de rendu</a></li>
+    <li><a href="./graphics-window-fr.php"    title="Utiliser les fenÃªtres de rendu">Utiliser les fenÃªtres de rendu</a></li>
     <li><a href="./graphics-sprite-fr.php"    title="Afficher un sprite">Afficher un sprite</a></li>
     <li><a href="./graphics-shape-fr.php"     title="Dessiner des formes simples">Dessiner des formes simples</a></li>
     <li><a href="./graphics-views-fr.php"     title="Utiliser les vues">Utiliser les vues</a></li>
     <li><a href="./graphics-fonts-fr.php"     title="Afficher du texte">Afficher du texte</a></li>
     <li><a href="./graphics-postfx-fr.php"    title="Ajouter des post-effects">Ajouter des post-effects</a></li>
-    <li><a href="./graphics-win32-fr.php"     title="Intégrer à une interface Win32">Intégrer à une interface Win32</a></li>
-    <li><a href="./graphics-x11-fr.php"       title="Intégrer à une interface X11">Intégrer à une interface X11</a></li>
-    <li><a href="./graphics-qt-fr.php"        title="Intégrer à une interface Qt">Intégrer à une interface Qt</a></li>
-    <li><a href="./graphics-wxwidgets-fr.php" title="Intégrer à une interface wxWidgets">Intégrer à une interface wxWidgets</a></li>
+    <li><a href="./graphics-win32-fr.php"     title="IntÃ©grer Ã  une interface Win32">IntÃ©grer Ã  une interface Win32</a></li>
+    <li><a href="./graphics-x11-fr.php"       title="IntÃ©grer Ã  une interface X11">IntÃ©grer Ã  une interface X11</a></li>
+    <li><a href="./graphics-qt-fr.php"        title="IntÃ©grer Ã  une interface Qt">IntÃ©grer Ã  une interface Qt</a></li>
+    <li><a href="./graphics-wxwidgets-fr.php" title="IntÃ©grer Ã  une interface wxWidgets">IntÃ©grer Ã  une interface wxWidgets</a></li>
 </ul>
 
 <?php h2('Module audio') ?>
@@ -54,15 +54,15 @@
     <li><a href="./audio-sound-fr.php"          title="Jouer un son">Jouer un son</a></li>
     <li><a href="./audio-music-fr.php"          title="Jouer une musique">Jouer une musique</a></li>
     <li><a href="./audio-streams-fr.php"        title="Utiliser les flux">Utiliser les flux</a></li>
-    <li><a href="./audio-capture-fr.php"        title="Capturer des données audio">Capturer des données audio</a></li>
+    <li><a href="./audio-capture-fr.php"        title="Capturer des donnÃ©es audio">Capturer des donnÃ©es audio</a></li>
     <li><a href="./audio-spatialization-fr.php" title="Jouer avec la spatialisation des sons">Jouer avec la spatialisation des sons</a></li>
 </ul>
 
-<?php h2('Module réseau') ?>
+<?php h2('Module rÃ©seau') ?>
 <ul>
     <li><a href="./network-sockets-fr.php"  title="Utiliser les sockets">Utiliser les sockets</a></li>
-    <li><a href="./network-packets-fr.php"  title="Utiliser et étendre les paquets">Utiliser et étendre les paquets</a></li>
-    <li><a href="./network-selector-fr.php" title="Utiliser un sélecteur">Utiliser un sélecteur</a></li>
+    <li><a href="./network-packets-fr.php"  title="Utiliser et Ã©tendre les paquets">Utiliser et Ã©tendre les paquets</a></li>
+    <li><a href="./network-selector-fr.php" title="Utiliser un sÃ©lecteur">Utiliser un sÃ©lecteur</a></li>
     <li><a href="./network-http-fr.php"     title="Utiliser HTTP">Utiliser HTTP</a></li>
     <li><a href="./network-ftp-fr.php"      title="Utiliser FTP">Utiliser FTP</a></li>
 </ul>

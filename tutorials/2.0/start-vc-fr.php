@@ -17,67 +17,67 @@
 
 <?php h2('Installer SFML') ?>
 <p>
-    Tout d'abord, vous devez télécharger le SDK SFML depuis la
-    <a class="internal" href="../../download-fr.php" title="Aller à la page des téléchargements">page des téléchargements</a>.
+    Tout d'abord, vous devez tÃ©lÃ©charger le SDK SFML depuis la
+    <a class="internal" href="../../download-fr.php" title="Aller Ã  la page des tÃ©lÃ©chargements">page des tÃ©lÃ©chargements</a>.
 </p>
 <p class="important">
-    Vous devez télécharger le package qui correspond à cotre version de Visual C++. En effet, une bibliothèque compilée avec VC++ 9 (Visual Studio 2008)
-    ne sera pas compatible avec Visual C++ 10 (Visual Studio 2010) par exemple. S'il n'y a aucun package de SFML compilé pour votre version
+    Vous devez tÃ©lÃ©charger le package qui correspond Ã  cotre version de Visual C++. En effet, une bibliothÃ¨que compilÃ©e avec VC++ 9 (Visual Studio 2008)
+    ne sera pas compatible avec Visual C++ 10 (Visual Studio 2010) par exemple. S'il n'y a aucun package de SFML compilÃ© pour votre version
     de Visual C++, vous devrez <a class="internal" href="./compile-with-cmake-fr.php" title="Comment compiler SFML">recompiler SFML</a>.
 </p>
 <p>
-    Vous pouvez ensuite décompresser l'archive SFML où vous le souhaitez. Copier les en-têtes et les bibliothèques directement dans le répertoire
-    de votre installation de Visual Studio est déconseillé, il vaut mieux laisser les bibliothèques à part dans leur coin, tout particulièrement si
-    vous avez l'intention d'utiliser plusieurs versions de la même bibliothèque, ou plusieurs compilateurs.
+    Vous pouvez ensuite dÃ©compresser l'archive SFML oÃ¹ vous le souhaitez. Copier les en-tÃªtes et les bibliothÃ¨ques directement dans le rÃ©pertoire
+    de votre installation de Visual Studio est dÃ©conseillÃ©, il vaut mieux laisser les bibliothÃ¨ques Ã  part dans leur coin, tout particuliÃ¨rement si
+    vous avez l'intention d'utiliser plusieurs versions de la mÃªme bibliothÃ¨que, ou plusieurs compilateurs.
 </p>
 
-<?php h2('Créer et configurer un projet SFML') ?>
+<?php h2('CrÃ©er et configurer un projet SFML') ?>
 <p>
-    La première chose à faire est de choisir quel type de projet créer : vous devez sélectionner "Win32 application". L'assistant offre quelques options
+    La premiÃ¨re chose Ã  faire est de choisir quel type de projet crÃ©er : vous devez sÃ©lectionner "Win32 application". L'assistant offre quelques options
     pour personnaliser le projet : choisissez "Console application" si vous voulez la console, ou "Windows application" si vous n'en avez pas besoin.
-    Cochez la case "Empty project" si vous ne voulez pas être embêté avec du code généré automatiquement.<br />
-    Pour les besoins de ce tutoriel, vous devez également créer un fichier main.cpp et l'ajouter immédiatement au projet, de manière à avoir accès
+    Cochez la case "Empty project" si vous ne voulez pas Ãªtre embÃªtÃ© avec du code gÃ©nÃ©rÃ© automatiquement.<br />
+    Pour les besoins de ce tutoriel, vous devez Ã©galement crÃ©er un fichier main.cpp et l'ajouter immÃ©diatement au projet, de maniÃ¨re Ã  avoir accÃ¨s
     aux options C++ (sinon, Visual Studio ne sait pas quel langage vous allez utiliser dans le projet). Nous verrons plus tard quoi mettre dedans.
 </p>
 <p>
-    Maintenant, nous devons dire au compilateur où trouver les en-têtes SFML (fichiers .hpp), et à l'éditeur de liens où trouver les bibliothèques SFML
+    Maintenant, nous devons dire au compilateur oÃ¹ trouver les en-tÃªtes SFML (fichiers .hpp), et Ã  l'Ã©diteur de liens oÃ¹ trouver les bibliothÃ¨ques SFML
     (fichiers .lib).
 </p>
 <p>
-    Dans les propriétés du projet, ajoutez :
+    Dans les propriÃ©tÃ©s du projet, ajoutez :
 </p>
 <ul>
-    <li>Le chemin vers les en-têtes SFML (<em>&lt;installation-de-sfml&gt;/include</em>) à C/C++ &raquo; General &raquo; Additional Include Directories</li>
-    <li>Le chemin vers les bibliothèques SFML (<em>&lt;installation-de-sfml&gt;/lib</em>) à Linker &raquo; General &raquo; Additional Library Directories</li>
+    <li>Le chemin vers les en-tÃªtes SFML (<em>&lt;installation-de-sfml&gt;/include</em>) Ã  C/C++ &raquo; General &raquo; Additional Include Directories</li>
+    <li>Le chemin vers les bibliothÃ¨ques SFML (<em>&lt;installation-de-sfml&gt;/lib</em>) Ã  Linker &raquo; General &raquo; Additional Library Directories</li>
 </ul>
 <p>
-    Ces chemins sont les mêmes en configuration Debug et Release, vous pouvez donc les affecter globalement au projet ("All configurations").
+    Ces chemins sont les mÃªmes en configuration Debug et Release, vous pouvez donc les affecter globalement au projet ("All configurations").
 </p>
-<img class="screenshot" src="./images/start-vc-paths.png" alt="Capture d'écran de la boîte de dialogue pour configurer les chemins de recherche" title="Capture d'écran de la boîte de dialogue pour configurer les chemins de recherche" />
+<img class="screenshot" src="./images/start-vc-paths.png" alt="Capture d'Ã©cran de la boÃ®te de dialogue pour configurer les chemins de recherche" title="Capture d'Ã©cran de la boÃ®te de dialogue pour configurer les chemins de recherche" />
 <p>
-    L'étape suivante est de lier votre application aux bibliothèques SFML (fichiers .lib) dont votre code a besoin. SFML est composée de 5 modules
-    (système, fenêtrage, graphique, réseau et audio), et il y a une bibliothèque pour chacun.<br />
-    Les bibliothèques doivent être ajoutées dans les propriétés du projet, dans Linker &raquo; Input &raquo; Additional Dependencies. Ajoutez toutes les
-    bibliothèques SFML dont avez besoin, par exemple "sfml-graphics.lib", "sfml-window.lib" et "sfml-system.lib".
+    L'Ã©tape suivante est de lier votre application aux bibliothÃ¨ques SFML (fichiers .lib) dont votre code a besoin. SFML est composÃ©e de 5 modules
+    (systÃ¨me, fenÃªtrage, graphique, rÃ©seau et audio), et il y a une bibliothÃ¨que pour chacun.<br />
+    Les bibliothÃ¨ques doivent Ãªtre ajoutÃ©es dans les propriÃ©tÃ©s du projet, dans Linker &raquo; Input &raquo; Additional Dependencies. Ajoutez toutes les
+    bibliothÃ¨ques SFML dont avez besoin, par exemple "sfml-graphics.lib", "sfml-window.lib" et "sfml-system.lib".
 </p>
-<img class="screenshot" src="./images/start-vc-link-libs.png" alt="Capture d'écran de la boîte de dialogue pour configurer les bibliothèques du projet" title="Capture d'écran de la boîte de dialogue pour configurer les bibliothèques du projet" />
+<img class="screenshot" src="./images/start-vc-link-libs.png" alt="Capture d'Ã©cran de la boÃ®te de dialogue pour configurer les bibliothÃ¨ques du projet" title="Capture d'Ã©cran de la boÃ®te de dialogue pour configurer les bibliothÃ¨ques du projet" />
 <p class="important">
-    Il est important de lier les bibiothèques qui correspondent à la configuration : "sfml-xxx-d.lib" pour Debug, and "sfml-xxx.lib" pour Release.
-    Un mauvais mélange pourrait entraîner des crashs.
+    Il est important de lier les bibiothÃ¨ques qui correspondent Ã  la configuration : "sfml-xxx-d.lib" pour Debug, and "sfml-xxx.lib" pour Release.
+    Un mauvais mÃ©lange pourrait entraÃ®ner des crashs.
 </p>
 <p>
-    Les options montrées ici vont lier votre application à la version dynamique de SFML, celle qui requiert les fichiers DLLs. Si vous voulez
-    vous débarasser de ces DLLs et avoir SFML directement intégrée à votre exécutable, vous devez lier à la version statique. Les bibliothèques
+    Les options montrÃ©es ici vont lier votre application Ã  la version dynamique de SFML, celle qui requiert les fichiers DLLs. Si vous voulez
+    vous dÃ©barasser de ces DLLs et avoir SFML directement intÃ©grÃ©e Ã  votre exÃ©cutable, vous devez lier Ã  la version statique. Les bibliothÃ¨ques
     statiques de SFML ont le suffixe "-s" : "sfml-xxx-s-d.lib" pour Debug, et "sfml-xxx-s.lib" pour Release.<br />
-    Dans ce cas, vous devrez aussi définir la macro SFML_STATIC dans les options préprocesseur de votre projet.
+    Dans ce cas, vous devrez aussi dÃ©finir la macro SFML_STATIC dans les options prÃ©processeur de votre projet.
 </p>
-<img class="screenshot" src="./images/start-vc-static.png" alt="Capture d'écran de la boîte de dialogue pour définir la macro SFML_STATIC" title="Capture d'écran de la boîte de dialogue pour définir la macro SFML_STATIC" />
+<img class="screenshot" src="./images/start-vc-static.png" alt="Capture d'Ã©cran de la boÃ®te de dialogue pour dÃ©finir la macro SFML_STATIC" title="Capture d'Ã©cran de la boÃ®te de dialogue pour dÃ©finir la macro SFML_STATIC" />
 <p>
-    Si vous ne connaissez pas les différences entre les bibliothèques dynamiques (aussi appelées "partagées") et statiques, et ne savez pas lesquelles
+    Si vous ne connaissez pas les diffÃ©rences entre les bibliothÃ¨ques dynamiques (aussi appelÃ©es "partagÃ©es") et statiques, et ne savez pas lesquelles
     utiliser, vous pouvez faire une petite recherche sur Google, vous devriez trouver de bons articles/messages pour vous aider.
 </p>
 <p>
-    Votre projet est prêt, écrivons maintenant un peu de code pour voir si tout cela fonctionne. Copiez le code suivant dans le fichier main.cpp :
+    Votre projet est prÃªt, Ã©crivons maintenant un peu de code pour voir si tout cela fonctionne. Copiez le code suivant dans le fichier main.cpp :
 </p>
 <pre><code class="cpp">#include &lt;SFML/Graphics.hpp&gt;
 
@@ -105,21 +105,21 @@ int main()
 }
 </code></pre>
 <p>
-    Si vous avez choisi de créer un projet "Windows application", alors le point d'entrée de votre code devrait être la fonction "WinMain" au lieu de
-    "main". Etant donné que c'est spécifique à Windows, et que votre code ne compilerait donc pas sous Linux ou Mac OS X, SFML fournit un moyen de garder
-    un point d'entrée "main" standard dans ce cas : liez votre projet au module sfml-main ("sfml-main-d.lib" en Debug, "sfml-main.lib" en Release),
-    de la même manière que vous avez lié sfml-graphics, sfml-window et sfml-system.
+    Si vous avez choisi de crÃ©er un projet "Windows application", alors le point d'entrÃ©e de votre code devrait Ãªtre la fonction "WinMain" au lieu de
+    "main". Etant donnÃ© que c'est spÃ©cifique Ã  Windows, et que votre code ne compilerait donc pas sous Linux ou Mac OS X, SFML fournit un moyen de garder
+    un point d'entrÃ©e "main" standard dans ce cas : liez votre projet au module sfml-main ("sfml-main-d.lib" en Debug, "sfml-main.lib" en Release),
+    de la mÃªme maniÃ¨re que vous avez liÃ© sfml-graphics, sfml-window et sfml-system.
 </p>
 <p>
-    Maintenant compilez le projet, et si vous avez lié à la version dynamique de SFML, n'oubliez pas de copier les DLLs (elles se trouvent dans
-    <em>&lt;installation-de-sfml/bin&gt;</em>) dans le répertoire où se trouve votre exécutable compilé. Puis lancez-le, et si tout s'est bien passé
+    Maintenant compilez le projet, et si vous avez liÃ© Ã  la version dynamique de SFML, n'oubliez pas de copier les DLLs (elles se trouvent dans
+    <em>&lt;installation-de-sfml/bin&gt;</em>) dans le rÃ©pertoire oÃ¹ se trouve votre exÃ©cutable compilÃ©. Puis lancez-le, et si tout s'est bien passÃ©
     vous devriez voir ceci :
 </p>
-<img class="screenshot" src="./images/start-vc-app.png" alt="Capture d'écran de l'application Hello SFML" title="Capture d'écran de l'application Hello SFML" />
+<img class="screenshot" src="./images/start-vc-app.png" alt="Capture d'Ã©cran de l'application Hello SFML" title="Capture d'Ã©cran de l'application Hello SFML" />
 <p>
-    Si vous utilisez le module sfml-audio (que ce soit dynamiquement ou statiquement), vous devez aussi copier les DLLs des bibliothèques externes dont
-    il dépend, qui sont libsndfile-1.dll et OpenAL32.dll.<br/>
-    Ces fichiers se trouvent également dans <em>&lt;installation-de-sfml/bin&gt;</em>.
+    Si vous utilisez le module sfml-audio (que ce soit dynamiquement ou statiquement), vous devez aussi copier les DLLs des bibliothÃ¨ques externes dont
+    il dÃ©pend, qui sont libsndfile-1.dll et OpenAL32.dll.<br/>
+    Ces fichiers se trouvent Ã©galement dans <em>&lt;installation-de-sfml/bin&gt;</em>.
 </p>
 
 <?php

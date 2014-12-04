@@ -11,28 +11,28 @@
 
 <?php h2('Vocabulaire') ?>
 <p>
-    La plupart d'entre vous sont déjà familiers avec ces deux entités très communes, allons donc à l'essentiel.
+    La plupart d'entre vous sont dÃ©jÃ  familiers avec ces deux entitÃ©s trÃ¨s communes, allons donc Ã  l'essentiel.
 </p>
 <p>
-    Une texture est une image. Mais elle s'appelle "texture" car elle a un rôle bien précis : être "plaquée" sur une entité 2D.
+    Une texture est une image. Mais elle s'appelle "texture" car elle a un rÃ´le bien prÃ©cis : Ãªtre "plaquÃ©e" sur une entitÃ© 2D.
 </p>
 <p>
-    Un sprite quant à lui n'est rien de plus qu'un rectangle texturé.
+    Un sprite quant Ã  lui n'est rien de plus qu'un rectangle texturÃ©.
 </p>
-<img src="./images/graphics-sprites-definition.png" title="Entité rectangulaire + texture = sprite !" />
+<img src="./images/graphics-sprites-definition.png" title="EntitÃ© rectangulaire + texture = sprite !" />
 <p>
-    Ok, c'était plutôt court mais si vous ne comprenez vraiment pas ce que sont les sprites et les textures, alors vous en trouverez une bien meilleure description
+    Ok, c'Ã©tait plutÃ´t court mais si vous ne comprenez vraiment pas ce que sont les sprites et les textures, alors vous en trouverez une bien meilleure description
     sur Wikipedia.
 </p>
 
 <?php h2('Charger une texture') ?>
 <p>
-    Ainsi donc, avant de créer le moindre sprite, il faut une texture valide. La classe qui encapsule les textures dans SFML est, ô surprise,
-    <?php class_link("Texture") ?>. Comme le (seul) rôle d'une texture est d'être chargée puis plaquée sur des entités graphiques, presque toutes ses fonctions servent
-    à la charger ou mettre à jour son contenu.
+    Ainsi donc, avant de crÃ©er le moindre sprite, il faut une texture valide. La classe qui encapsule les textures dans SFML est, Ã´ surprise,
+    <?php class_link("Texture") ?>. Comme le (seul) rÃ´le d'une texture est d'Ãªtre chargÃ©e puis plaquÃ©e sur des entitÃ©s graphiques, presque toutes ses fonctions servent
+    Ã  la charger ou mettre Ã  jour son contenu.
 </p>
 <p>
-    La façon la plus commune de charger une texture est depuis une image sur le disque dur, ce qui se fait avec la fonction <code>loadFromFile</code>.
+    La faÃ§on la plus commune de charger une texture est depuis une image sur le disque dur, ce qui se fait avec la fonction <code>loadFromFile</code>.
 </p>
 <pre><code class="cpp">sf::Texture texture;
 if (!texture.loadFromFile("image.png"))
@@ -41,101 +41,101 @@ if (!texture.loadFromFile("image.png"))
 }
 </code></pre>
 <p class="important">
-    La fonction <code>loadFromFile</code> échoue parfois sans raison apparente. Première chose à faire, vérifiez le message d'erreur affiché par SFML dans la sortie
-    standard (la console). Si le message est <q>unable to open file</q>, assurez-vous que le <em>répertoire de travail</em> (qui est le répertoire relativement auquel
-    tout fichier sera interprété) est celui auquel vous vous attendez : lorsque vous lancez votre application depuis l'explorateur de fichiers, le répertoire de travail
-    est le répertoire de l'exécutable, pas de problème généralement dans ce cas ; mais si vous lancez votre programme depuis votre EDI (Visual Studio, Code::Blocks, ...)
-    alors le répertoire de travail est parfois le répertoire du <em>projet</em>. Pas de panique : cela peut normalement être modifié directement dans les options de
+    La fonction <code>loadFromFile</code> Ã©choue parfois sans raison apparente. PremiÃ¨re chose Ã  faire, vÃ©rifiez le message d'erreur affichÃ© par SFML dans la sortie
+    standard (la console). Si le message est <q>unable to open file</q>, assurez-vous que le <em>rÃ©pertoire de travail</em> (qui est le rÃ©pertoire relativement auquel
+    tout fichier sera interprÃ©tÃ©) est celui auquel vous vous attendez : lorsque vous lancez votre application depuis l'explorateur de fichiers, le rÃ©pertoire de travail
+    est le rÃ©pertoire de l'exÃ©cutable, pas de problÃ¨me gÃ©nÃ©ralement dans ce cas ; mais si vous lancez votre programme depuis votre EDI (Visual Studio, Code::Blocks, ...)
+    alors le rÃ©pertoire de travail est parfois le rÃ©pertoire du <em>projet</em>. Pas de panique : cela peut normalement Ãªtre modifiÃ© directement dans les options de
     votre projet.
 </p>
 <p>
-    Vous pouvez aussi charger une image depuis un fichier en mémoire (<code>loadFromMemory</code>), depuis un
-    <a href="./system-stream-fr.php" title="Tutoriels sur les flux d'entrée">flux d'entrée</a> (<code>loadFromStream</code>), ou encore depuis une image déjà chargée
-    (<code>loadFromImage</code>). Cette dernière fonction charge la texture depuis un <?php class_link("Image") ?>, qui est une classe utilitaire pour manipuler
-    des images (modifier des pixels, créer un masque de transparence, etc.) Les pixels d'un <?php class_link("Image") ?> restent en mémoire système, afin que les opérations
-    sur ceux-ci soient le plus rapide possible, alors que les pixels d'une texture sont stockés en mémoire graphique et sont donc très lents à récupérer ou à mettre à jour
-    -- mais extrêmement rapides à dessiner.
+    Vous pouvez aussi charger une image depuis un fichier en mÃ©moire (<code>loadFromMemory</code>), depuis un
+    <a href="./system-stream-fr.php" title="Tutoriels sur les flux d'entrÃ©e">flux d'entrÃ©e</a> (<code>loadFromStream</code>), ou encore depuis une image dÃ©jÃ  chargÃ©e
+    (<code>loadFromImage</code>). Cette derniÃ¨re fonction charge la texture depuis un <?php class_link("Image") ?>, qui est une classe utilitaire pour manipuler
+    des images (modifier des pixels, crÃ©er un masque de transparence, etc.) Les pixels d'un <?php class_link("Image") ?> restent en mÃ©moire systÃ¨me, afin que les opÃ©rations
+    sur ceux-ci soient le plus rapide possible, alors que les pixels d'une texture sont stockÃ©s en mÃ©moire graphique et sont donc trÃ¨s lents Ã  rÃ©cupÃ©rer ou Ã  mettre Ã  jour
+    -- mais extrÃªmement rapides Ã  dessiner.
 </p>
 <p>
-    SFML supporte les formats de fichiers les plus communs. La liste complète est disponible dans la documentation de l'API.
+    SFML supporte les formats de fichiers les plus communs. La liste complÃ¨te est disponible dans la documentation de l'API.
 </p>
 <p>
-    Toutes ces fonctions de chargement ont un paramètre optionnel, qui peut être utilisé si vous voulez charger uniquement une partie de l'image.
+    Toutes ces fonctions de chargement ont un paramÃ¨tre optionnel, qui peut Ãªtre utilisÃ© si vous voulez charger uniquement une partie de l'image.
 </p>
-<pre><code class="cpp">// chargement d'un sous-rectangle de 32x32 démarrant en (10, 10)
+<pre><code class="cpp">// chargement d'un sous-rectangle de 32x32 dÃ©marrant en (10, 10)
 if (!texture.loadFromFile("image.png", sf::IntRect(10, 10, 32, 32)))
 {
     // erreur...
 }
 </code></pre>
 <p>
-    <?php class_link("IntRect", "Rect") ?> est une classe utilitaire qui représente un rectangle. Son constructeur prend les coordonnées du coin
+    <?php class_link("IntRect", "Rect") ?> est une classe utilitaire qui reprÃ©sente un rectangle. Son constructeur prend les coordonnÃ©es du coin
     haut-gauche ainsi que la taille du rectangle.
 </p>
 <p>
-    Si vous ne voulez pas charger une texture depuis une image, mais plutôt la mettre à jour directement à partir d'un tableau de pixels, vous
-    pouvez la créer vide puis la remplir plus tard :
+    Si vous ne voulez pas charger une texture depuis une image, mais plutÃ´t la mettre Ã  jour directement Ã  partir d'un tableau de pixels, vous
+    pouvez la crÃ©er vide puis la remplir plus tard :
 </p>
-<pre><code class="cpp">// création d'une texture vide de 200x200
+<pre><code class="cpp">// crÃ©ation d'une texture vide de 200x200
 if (!texture.create(200, 200))
 {
     // erreur...
 }
 </code></pre>
 <p>
-    Notez que le contenu de la texture est complètement indéterminé à ce moment.
+    Notez que le contenu de la texture est complÃ¨tement indÃ©terminÃ© Ã  ce moment.
 </p>
 <p>
-    Pour mettre à jour les pixels d'une texture, il faut utiliser la fonction <code>update</code>. Elle possède des surcharges qui prennent en charge plusieurs sources
+    Pour mettre Ã  jour les pixels d'une texture, il faut utiliser la fonction <code>update</code>. Elle possÃ¨de des surcharges qui prennent en charge plusieurs sources
     possibles pour les pixels :
 </p>
-<pre><code class="cpp">// mise à jour d'une texture à partir d'un tableau de pixels
+<pre><code class="cpp">// mise Ã  jour d'une texture Ã  partir d'un tableau de pixels
 sf::Uint8* pixels = new sf::Uint8[width * height * 4]; // * 4 car les pixels ont 4 composantes (RGBA)
 ...
 texture.update(pixels);
 
-// mise à jour d'une texture à partir d'un sf::Image
+// mise Ã  jour d'une texture Ã  partir d'un sf::Image
 sf::Image image;
 ...
 texture.update(image);
 
-// mise à jour d'une texture à partir du contenu d'une fenêtre
+// mise Ã  jour d'une texture Ã  partir du contenu d'une fenÃªtre
 sf::RenderWindow window;
 ...
 texture.update(window);
 </code></pre>
 <p>
-    Ces exemples supposent tous que la source a la même taille que la texture. Si ce n'est pas le cas, i.e. si vous voulez mettre à jour uniquement une partie
-    de la texture, vous pouvez spécifier les coordonnées du sous-rectangle à mettre à jour. Vous pouvez vous référer à la documentation pour plus de détails.
+    Ces exemples supposent tous que la source a la mÃªme taille que la texture. Si ce n'est pas le cas, i.e. si vous voulez mettre Ã  jour uniquement une partie
+    de la texture, vous pouvez spÃ©cifier les coordonnÃ©es du sous-rectangle Ã  mettre Ã  jour. Vous pouvez vous rÃ©fÃ©rer Ã  la documentation pour plus de dÃ©tails.
 </p>
 <p>
-    En plus des fonctions de chargement et de mise à jour, une texture possède deux propriétés qui permettent de définir la façon dont elle est dessinée.
+    En plus des fonctions de chargement et de mise Ã  jour, une texture possÃ¨de deux propriÃ©tÃ©s qui permettent de dÃ©finir la faÃ§on dont elle est dessinÃ©e.
 </p>
 <p>
-    La première propriété permet de lisser la texture. Lisser une texture rend ses pixels moins visibles (mais un peu plus flous), ce qui peut être très important si
-    elle n'est pas dessinée à sa taille d'origine.
+    La premiÃ¨re propriÃ©tÃ© permet de lisser la texture. Lisser une texture rend ses pixels moins visibles (mais un peu plus flous), ce qui peut Ãªtre trÃ¨s important si
+    elle n'est pas dessinÃ©e Ã  sa taille d'origine.
 </p>
 <pre><code class="cpp">texture.setSmooth(true);
 </code></pre>
 <img src="./images/graphics-sprites-smooth.png" title="Illustration du lissage de texture" />
 <p class="important">
-    Comme le lissage fait une interpolation entre les pixels adjacents de la texture, cela peut avoir l'effet de bord non souhaité de faire apparaître des pixels qui se
-    trouvent en dehors de la région de la texture qui a été choisie. Cela peut notamment arriver lorsque votre sprite se trouve à des coordonnées non entières.
+    Comme le lissage fait une interpolation entre les pixels adjacents de la texture, cela peut avoir l'effet de bord non souhaitÃ© de faire apparaÃ®tre des pixels qui se
+    trouvent en dehors de la rÃ©gion de la texture qui a Ã©tÃ© choisie. Cela peut notamment arriver lorsque votre sprite se trouve Ã  des coordonnÃ©es non entiÃ¨res.
 </p>
 <p>
-    La seconde propriété permet de répéter une texture (dans les sprites qui sont correctement paramétrés).
+    La seconde propriÃ©tÃ© permet de rÃ©pÃ©ter une texture (dans les sprites qui sont correctement paramÃ©trÃ©s).
 </p>
 <pre><code class="cpp">texture.setRepeated(true);
 </code></pre>
-<img src="./images/graphics-sprites-repeated.png" title="Illustration de la répétition de texture" />
+<img src="./images/graphics-sprites-repeated.png" title="Illustration de la rÃ©pÃ©tition de texture" />
 <p>
-    Cela ne fonctionnera que si le sprite qui affiche la texture est paramétré pour afficher un rectangle plus grand que la texture. Dans le cas contraire, cette propriété
+    Cela ne fonctionnera que si le sprite qui affiche la texture est paramÃ©trÃ© pour afficher un rectangle plus grand que la texture. Dans le cas contraire, cette propriÃ©tÃ©
     n'a aucun effet.
 </p>
 
 <?php h2('Bon, je peux avoir mon sprite maintenant ?') ?>
 <p>
-    Oui, vous pouvez maintenant créer votre sprite.
+    Oui, vous pouvez maintenant crÃ©er votre sprite.
 </p>
 <pre><code class="cpp">sf::Sprite sprite;
 sprite.setTexture(texture);
@@ -147,57 +147,57 @@ sprite.setTexture(texture);
 window.draw(sprite);
 </code></pre>
 <p>
-    Si vous ne voulez pas que le sprite montre la totalité de la texture, vous pouvez changer son "rectangle de texture".
+    Si vous ne voulez pas que le sprite montre la totalitÃ© de la texture, vous pouvez changer son "rectangle de texture".
 </p>
 <pre><code class="cpp">sprite.setTextureRect(sf::IntRect(10, 10, 32, 32));
 </code></pre>
 <p>
-    Vous pouvez aussi changer la couleur d'un sprite. La couleur choisie est modulée (multipliée) avec la texture du sprite. Changer la couleur peut aussi servir à
+    Vous pouvez aussi changer la couleur d'un sprite. La couleur choisie est modulÃ©e (multipliÃ©e) avec la texture du sprite. Changer la couleur peut aussi servir Ã 
     changer la transparence globale du sprite.
 </p>
 <pre><code class="cpp">sprite.setColor(sf::Color(0, 255, 0)); // vert
-sprite.setColor(sf::Color(255, 255, 255, 128)); // à moitié transparent
+sprite.setColor(sf::Color(255, 255, 255, 128)); // Ã  moitiÃ© transparent
 </code></pre>
 <p>
-    Ces sprites utilisent tous la même texture, mais ont une couleur différente :
+    Ces sprites utilisent tous la mÃªme texture, mais ont une couleur diffÃ©rente :
 </p>
 <img src="./images/graphics-sprites-color.png" title="Colorier les sprites" />
 <p>
-    Les sprites peuvent aussi être transformés : ils ont une position, une orientation et une échelle.
+    Les sprites peuvent aussi Ãªtre transformÃ©s : ils ont une position, une orientation et une Ã©chelle.
 </p>
 <pre><code class="cpp">// position
 sprite.setPosition(sf::Vector2f(10, 50)); // position absolue
-sprite.move(sf::Vector2f(5, 10)); // décalage relatif à la position actuelle
+sprite.move(sf::Vector2f(5, 10)); // dÃ©calage relatif Ã  la position actuelle
 
 // rotation
 sprite.setRotation(90); // angle absolu
-sprite.rotate(15); // rotation par rapport à l'orientation actuelle
+sprite.rotate(15); // rotation par rapport Ã  l'orientation actuelle
 
 // scale
-sprite.setScale(sf::Vector2f(0.5f, 2.f)); // facteurs d'échelle absolus
-sprite.scale(sf::Vector2f(1.5f, 3.f)); // facters d'échelle relatifs à l'échelle actuelle
+sprite.setScale(sf::Vector2f(0.5f, 2.f)); // facteurs d'Ã©chelle absolus
+sprite.scale(sf::Vector2f(1.5f, 3.f)); // facters d'Ã©chelle relatifs Ã  l'Ã©chelle actuelle
 </code></pre>
 <p>
-    Par défaut, l'origine de ces trois transformations est le coin haut-gauche du sprite. Si vous souhaitez utiliser une origine différente (par exemple le centre
+    Par dÃ©faut, l'origine de ces trois transformations est le coin haut-gauche du sprite. Si vous souhaitez utiliser une origine diffÃ©rente (par exemple le centre
     du sprite, ou bien un autre coin), vous pouvez utiliser la fonction <code>setOrigin</code>.
 </p>
 <pre><code class="cpp">sprite.setOrigin(sf::Vector2f(25, 25));
 </code></pre>
 <p>
-    Les transformations étant communes à toutes les entités de SFML, elles sont expliquées plus en détail dans leur propre tutoriel :
-    <a href="./graphics-transform-fr.php" title="Tutoriel 'Transformer les entités'">Transformer les entités</a>.
+    Les transformations Ã©tant communes Ã  toutes les entitÃ©s de SFML, elles sont expliquÃ©es plus en dÃ©tail dans leur propre tutoriel :
+    <a href="./graphics-transform-fr.php" title="Tutoriel 'Transformer les entitÃ©s'">Transformer les entitÃ©s</a>.
 </p>
 
-<?php h2('Le problème du carré blanc') ?>
+<?php h2('Le problÃ¨me du carrÃ© blanc') ?>
 <p>
-    Vous avez correctement chargé une texture, défini un sprite l'utilisant, et... tout ce que vous voyez à l'écran est un carré blanc. Que se passe-t-il ?
+    Vous avez correctement chargÃ© une texture, dÃ©fini un sprite l'utilisant, et... tout ce que vous voyez Ã  l'Ã©cran est un carrÃ© blanc. Que se passe-t-il ?
 </p>
 <p>
-    C'est une erreur courante. Lorsque vous définissez la texture d'un sprite, tout ce que celui-ci fait est de garder un <em>pointeur</em> vers la texture. Par conséquent,
-    si celle-ci est détruite ou bien déplacée en mémoire par la suite, le sprite se retrouve avec un pointeur invalide, et ne peux plus être dessiné correctement.
+    C'est une erreur courante. Lorsque vous dÃ©finissez la texture d'un sprite, tout ce que celui-ci fait est de garder un <em>pointeur</em> vers la texture. Par consÃ©quent,
+    si celle-ci est dÃ©truite ou bien dÃ©placÃ©e en mÃ©moire par la suite, le sprite se retrouve avec un pointeur invalide, et ne peux plus Ãªtre dessinÃ© correctement.
 </p>
 <p>
-    Ce problème survient notamment lorsque vous écrivez ce genre de fonction :
+    Ce problÃ¨me survient notamment lorsque vous Ã©crivez ce genre de fonction :
 </p>
 <pre><code class="cpp">sf::Sprite loadSprite(std::string filename)
 {
@@ -205,34 +205,34 @@ sprite.scale(sf::Vector2f(1.5f, 3.f)); // facters d'échelle relatifs à l'échelle
     texture.loadFromFile(filename);
 
     return sf::Sprite(texture);
-} //erreur : la texture est détruite ici !
+} //erreur : la texture est dÃ©truite ici !
 </code></pre>
 <p>
-    Vous devez correctement gérer la durée de vie de vos textures, de sorte qu'elles restent en vie aussi longtemps qu'elles sont utilisées par des sprites.
+    Vous devez correctement gÃ©rer la durÃ©e de vie de vos textures, de sorte qu'elles restent en vie aussi longtemps qu'elles sont utilisÃ©es par des sprites.
 </p>
 
 <?php h2('L\'importance d\'utiliser aussi peu de textures que possible') ?>
 <p>
-    Utiliser un nombre réduit de textures est globalement une bonne stratégie, et la raison en est simple : changer la texture courante est une opération coûteuse pour la
-    carte graphique. Dessiner plusieurs sprites qui utilisent la même texture donnera des performances optimales.
+    Utiliser un nombre rÃ©duit de textures est globalement une bonne stratÃ©gie, et la raison en est simple : changer la texture courante est une opÃ©ration coÃ»teuse pour la
+    carte graphique. Dessiner plusieurs sprites qui utilisent la mÃªme texture donnera des performances optimales.
 </p>
 <p>
-    De plus, utiliser une unique texture vous permettra si nécessaire de regrouper toute la géometrie statique en une seule entité (vous ne pouvez en effet utiliser
-    qu'une seule texture par appel à la fonction <code>draw</code>), ce qui sera nettement plus performant que de dessiner un groupe de plusieurs entités.
-    Regrouper la géometrie statique implique d'autres classes et est donc hors sujet dans ce tutoriel, pour plus de détails vous pouvez aller voir le tutoriel sur 
+    De plus, utiliser une unique texture vous permettra si nÃ©cessaire de regrouper toute la gÃ©ometrie statique en une seule entitÃ© (vous ne pouvez en effet utiliser
+    qu'une seule texture par appel Ã  la fonction <code>draw</code>), ce qui sera nettement plus performant que de dessiner un groupe de plusieurs entitÃ©s.
+    Regrouper la gÃ©ometrie statique implique d'autres classes et est donc hors sujet dans ce tutoriel, pour plus de dÃ©tails vous pouvez aller voir le tutoriel sur 
     <a href="./graphics-vertex-array-fr.php" title="Tutoriel sur les tableaux de vertex">les tableaux de vertex</a>.
 </p>
 <p>
-    Gardez bien cela en tête lorsque vous créez vos textures d'animation ou de tuiles (<em>sprite sheets</em> et <em>tilesets</em>) : utilisez si possible une seule texture.
+    Gardez bien cela en tÃªte lorsque vous crÃ©ez vos textures d'animation ou de tuiles (<em>sprite sheets</em> et <em>tilesets</em>) : utilisez si possible une seule texture.
 </p>
 
 <?php h2('Utiliser sf::Texture dans du code OpenGL') ?>
 <p>
-    Si vous utilisez OpenGL plutôt que les entités graphiques de SFML, vous pouvez toujours utiliser <?php class_link("Texture") ?> comme encapsulation d'une texture OpenGL,
-    et la faire intéragir avec vos entités OpenGL.
+    Si vous utilisez OpenGL plutÃ´t que les entitÃ©s graphiques de SFML, vous pouvez toujours utiliser <?php class_link("Texture") ?> comme encapsulation d'une texture OpenGL,
+    et la faire intÃ©ragir avec vos entitÃ©s OpenGL.
 </p>
 <p>
-    Afin d'activer une <?php class_link("Texture") ?> pour le rendu (l'équivalent de <code>glBindTexture</code>), vous devez appeler la fonction statique
+    Afin d'activer une <?php class_link("Texture") ?> pour le rendu (l'Ã©quivalent de <code>glBindTexture</code>), vous devez appeler la fonction statique
     <code>bind</code> :
 </p>
 <pre><code class="cpp">sf::Texture texture;
@@ -241,7 +241,7 @@ sprite.scale(sf::Vector2f(1.5f, 3.f)); // facters d'échelle relatifs à l'échelle
 // activation de la texture
 sf::Texture::bind(&amp;texture);
 
-// dessinez votre géometrie OpenGL ici...
+// dessinez votre gÃ©ometrie OpenGL ici...
 
 // pas de texture
 sf::Texture::bind(NULL);

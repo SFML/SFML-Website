@@ -41,7 +41,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title><?php echo $page_title ?></title>
-        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+        <meta http-equiv="Content-Type" content="text/html"/>
+        <meta charset="utf-8"/>
         <link rel="icon" type="image/ico" href="<?php echo image('favicon.ico') ?>"/>
         <?php if (isset($doxygen))
         {
@@ -80,7 +81,7 @@
                     ?>
                     </ul>
                     <ul id="buttons">
-                        <li><a id="language-fr" href="<?php echo $translated_page ?>" title="Site en français">Français</a></li>
+                        <li><a id="language-fr" href="<?php echo $translated_page ?>" title="Site en franÃ§ais">FranÃ§ais</a></li>
                         <li><a id="donate" href="https://www.paypal.com/cgi-bin/webscr/?cmd=_s-xclick&hosted_button_id=TYJ2XQPG3SXPG&lc=US" title="Make a donation">Donate</a></li>
                         <li><a id="flattr" href="//flattr.com/thing/38063/SFML-multimedia-library" title="Flattr SFML">Flattr</a></li>
                     </ul>

@@ -1,99 +1,99 @@
 <?php
 
-    $title = "Ouvrir une fenêtre";
+    $title = "Ouvrir une fenÃªtre";
     $page = "window-window-fr.php";
 
     require("header-fr.php");
 ?>
 
-<h1>Ouvrir une fenêtre</h1>
+<h1>Ouvrir une fenÃªtre</h1>
 
 <?php h2('Introduction') ?>
 <p>
-    Dans ce tutoriel, nous allons apprendre à utiliser le module de fenêtrage de la SFML afin d'obtenir
-    un système de fenêtrage minimal, comme SDL ou GLUT permettent de le faire.
+    Dans ce tutoriel, nous allons apprendre Ã  utiliser le module de fenÃªtrage de la SFML afin d'obtenir
+    un systÃ¨me de fenÃªtrage minimal, comme SDL ou GLUT permettent de le faire.
 </p>
 
-<?php h2('Préparer le code') ?>
+<?php h2('PrÃ©parer le code') ?>
 <p>
-    Premièrement, vous devez inclure l'en-tête nécessaire à l'utilisation du module de fenêtrage :
+    PremiÃ¨rement, vous devez inclure l'en-tÃªte nÃ©cessaire Ã  l'utilisation du module de fenÃªtrage :
 </p>
 <pre><code class="cpp">#include &lt;SFML/Window.hpp&gt;
 </code></pre>
 <p>
-    Cet en-tête est le seul nécessaire, il se charge d'inclure tous les autres en-têtes du module de fenêtrage.
+    Cet en-tÃªte est le seul nÃ©cessaire, il se charge d'inclure tous les autres en-tÃªtes du module de fenÃªtrage.
     C'est d'ailleurs le cas pour les autres modules : si vous voulez utiliser le module xxx, il vous
-    suffit d'inclure l'en-tête &lt;SFML/xxx.hpp&gt;.
+    suffit d'inclure l'en-tÃªte &lt;SFML/xxx.hpp&gt;.
 </p>
 <p>
-    Il vous faut ensuite définir la célèbre fonction <code>main</code> :
+    Il vous faut ensuite dÃ©finir la cÃ©lÃ¨bre fonction <code>main</code> :
 </p>
 <pre><code class="cpp">int main()
 {
-    // Notre code sera placé ici
+    // Notre code sera placÃ© ici
 }
 </code></pre>
 <p>
-    Ou bien, si vous voulez récupérer les paramètres de la ligne de commande :
+    Ou bien, si vous voulez rÃ©cupÃ©rer les paramÃ¨tres de la ligne de commande :
 </p>
 <pre><code class="cpp">int main(int argc, char** argv)
 {
-    // Notre code sera placé ici
+    // Notre code sera placÃ© ici
 }
 </code></pre>
 <p>
-    Sous Windows, vous avez peut-être créé un projet "Application Windows", particulièrement si vous
-    ne souhaitez pas voir apparaître une console. Dans ce cas, plutôt que de remplacer
+    Sous Windows, vous avez peut-Ãªtre crÃ©Ã© un projet "Application Windows", particuliÃ¨rement si vous
+    ne souhaitez pas voir apparaÃ®tre une console. Dans ce cas, plutÃ´t que de remplacer
     <code>main</code> par <code>WinMain</code>, vous pouvez lier avec la
-    bibliothèque statique SFML_Main et ainsi garder un point d'entrée <code>main</code>
+    bibliothÃ¨que statique SFML_Main et ainsi garder un point d'entrÃ©e <code>main</code>
     portable et standard.
 </p>
 
-<?php h2('Créer la fenêtre') ?>
+<?php h2('CrÃ©er la fenÃªtre') ?>
 <p>
-    L'étape suivante est d'ouvrir une fenêtre. Les fenêtres SFML sont définies par la classe
-    <?php class_link("Window")?>. Cette classe fournit plusieurs constructeurs utiles pour créer
-    directement votre fenêtre. Celui qui nous intéresse ici est le suivant :
+    L'Ã©tape suivante est d'ouvrir une fenÃªtre. Les fenÃªtres SFML sont dÃ©finies par la classe
+    <?php class_link("Window")?>. Cette classe fournit plusieurs constructeurs utiles pour crÃ©er
+    directement votre fenÃªtre. Celui qui nous intÃ©resse ici est le suivant :
 </p>
 <pre><code class="cpp">sf::Window App(sf::VideoMode(800, 600, 32), "SFML Window");
 </code></pre>
 <p>
-    Ici nous créons une nouvelle variable nommée <code>App</code>, qui va représenter notre
-    nouvelle fenêtre. Passons en revue les paramètres :
+    Ici nous crÃ©ons une nouvelle variable nommÃ©e <code>App</code>, qui va reprÃ©senter notre
+    nouvelle fenÃªtre. Passons en revue les paramÃ¨tres :
 </p>
 <ul>
-    <li>Le premier paramètre est un <?php class_link("VideoMode")?>, qui représente le
-    mode vidéo choisi pour la fenêtre. Ici, il définit une taille de 800x600 pixels et une profondeur
-    de 32 bits par pixel. Notez bien que la taille spécifiée sera la taille interne de la fenêtre,
+    <li>Le premier paramÃ¨tre est un <?php class_link("VideoMode")?>, qui reprÃ©sente le
+    mode vidÃ©o choisi pour la fenÃªtre. Ici, il dÃ©finit une taille de 800x600 pixels et une profondeur
+    de 32 bits par pixel. Notez bien que la taille spÃ©cifiÃ©e sera la taille interne de la fenÃªtre,
     sans compter donc la barre de titre et les bordures.</li>
-    <li>Le second paramètre est le titre de la fenêtre, de type <code>std::string</code></li>
+    <li>Le second paramÃ¨tre est le titre de la fenÃªtre, de type <code>std::string</code></li>
 </ul>
 </p>
 <p>
-    Si vous voulez créer votre fenêtre plus tard ou bien la recréer avec des paramètres différents, vous
+    Si vous voulez crÃ©er votre fenÃªtre plus tard ou bien la recrÃ©er avec des paramÃ¨tres diffÃ©rents, vous
     pouvez utiliser sa fonction <code>Create</code> :
 </p>
 <pre><code class="cpp">App.Create(sf::VideoMode(800, 600, 32), "SFML Window");
 </code></pre>
 <p>
-    Les constructeurs et les fonctions <code>Create</code> acceptent également deux paramètres additionnels optionels, le
-    premier pour avoir plus de contrôle sur le style de la fenêtre, le second pour accéder à des
-    options graphiques plus avancées ; nous reviendrons sur ce dernier dans un prochain tutoriel, en tant que débutant
-    vous n'aurez pas à vous en soucier pour le moment.<br/>
-    Le paramètre de style peut être une combinaison des options <code>sf::Style</code>, à savoir
-    <code>None</code>, <code>Titlebar</code>, <code>Resize</code>, <code>Close</code> et <code>Fullscreen</code>. Le style par défaut est
+    Les constructeurs et les fonctions <code>Create</code> acceptent Ã©galement deux paramÃ¨tres additionnels optionels, le
+    premier pour avoir plus de contrÃ´le sur le style de la fenÃªtre, le second pour accÃ©der Ã  des
+    options graphiques plus avancÃ©es ; nous reviendrons sur ce dernier dans un prochain tutoriel, en tant que dÃ©butant
+    vous n'aurez pas Ã  vous en soucier pour le moment.<br/>
+    Le paramÃ¨tre de style peut Ãªtre une combinaison des options <code>sf::Style</code>, Ã  savoir
+    <code>None</code>, <code>Titlebar</code>, <code>Resize</code>, <code>Close</code> et <code>Fullscreen</code>. Le style par dÃ©faut est
     <code>Resize | Close</code>.
 </p>
-<pre><code class="cpp">// Ceci crée une fenêtre plein-écran
+<pre><code class="cpp">// Ceci crÃ©e une fenÃªtre plein-Ã©cran
 App.Create(sf::VideoMode(800, 600, 32), "SFML Window", sf::Style::Fullscreen);
 </code></pre>
 
-<?php h2('Les modes vidéo') ?>
+<?php h2('Les modes vidÃ©o') ?>
 <p>
-    Dans l'exemple ci-dessus, nous ne nous préoccupons pas du mode vidéo parce que notre application s'exécute
-    en mode fenêtré ; n'importe quelle taille fait l'affaire. Mais si nous voulions tourner en plein écran,
+    Dans l'exemple ci-dessus, nous ne nous prÃ©occupons pas du mode vidÃ©o parce que notre application s'exÃ©cute
+    en mode fenÃªtrÃ© ; n'importe quelle taille fait l'affaire. Mais si nous voulions tourner en plein Ã©cran,
     seuls quelques modes seraient disponibles. <?php class_link("VideoMode")?> fournit une interface
-    pour récupérer tous les modes vidéo supportés, avec les deux fonctions statiques
+    pour rÃ©cupÃ©rer tous les modes vidÃ©o supportÃ©s, avec les deux fonctions statiques
     <code>GetModesCount</code> et <code>GetMode</code> :
 </p>
 <pre><code class="cpp">unsigned int VideoModesCount = sf::VideoMode::GetModesCount();
@@ -101,22 +101,22 @@ for (unsigned int i = 0; i &lt; VideoModesCount; ++i)
 {
     sf::VideoMode Mode = sf::VideoMode::GetMode(i);
 
-    // Mode est un mode vidéo valide
+    // Mode est un mode vidÃ©o valide
 }
 </code></pre>
 <p>
-    Notez que les modes vidéo sont triés du plus haut au plus bas, ainsi
+    Notez que les modes vidÃ©o sont triÃ©s du plus haut au plus bas, ainsi
     <code>sf::VideoMode::GetMode(0)</code> renverra toujours le meilleur mode parmi ceux
-    supportés.
+    supportÃ©s.
 </p>
-<pre><code class="cpp">// Creation d'une fenêtre plein écran avec le meilleur mode vidéo
+<pre><code class="cpp">// Creation d'une fenÃªtre plein Ã©cran avec le meilleur mode vidÃ©o
 App.Create(sf::VideoMode::GetMode(0), "SFML Window", sf::Style::Fullscreen);
 </code></pre>
 <p>
-    Si vous récupérez les modes vidéo avec le code ci-dessus alors ils seront bien entendu tous valides,
-    mais il existe des cas où l'on récupère un mode vidéo par un autre moyen, à partir d'un fichier
-    de configuration par exemple. Dans de tels cas, il est possible de vérifier la validité d'un mode
-    à l'aide de sa fonction <code>IsValid()</code> :
+    Si vous rÃ©cupÃ©rez les modes vidÃ©o avec le code ci-dessus alors ils seront bien entendu tous valides,
+    mais il existe des cas oÃ¹ l'on rÃ©cupÃ¨re un mode vidÃ©o par un autre moyen, Ã  partir d'un fichier
+    de configuration par exemple. Dans de tels cas, il est possible de vÃ©rifier la validitÃ© d'un mode
+    Ã  l'aide de sa fonction <code>IsValid()</code> :
 </p>
 <pre><code class="cpp">sf::VideoMode Mode = ReadModeFromConfigFile();
 if (!Mode.IsValid())
@@ -125,7 +125,7 @@ if (!Mode.IsValid())
 }
 </code></pre>
 <p>
-    Vous pouvez également obtenir le mode vidéo du bureau, avec la fonction
+    Vous pouvez Ã©galement obtenir le mode vidÃ©o du bureau, avec la fonction
     <code>GetDesktopMode</code> :
 </p>
 <pre><code class="cpp">sf::VideoMode DesktopMode = sf::VideoMode::GetDesktopMode();
@@ -133,7 +133,7 @@ if (!Mode.IsValid())
 
 <?php h2('La boucle principale') ?>
 <p>
-    Une fois la fenêtre créée, nous pouvons entrer dans la boucle principale :
+    Une fois la fenÃªtre crÃ©Ã©e, nous pouvons entrer dans la boucle principale :
 </p>
 <pre><code class="cpp">bool Running = true;
 while (Running)
@@ -145,33 +145,33 @@ return EXIT_SUCCESS;
 </code></pre>
 <p>
     Pour terminer la boucle principale et quitter l'application, il suffira donc de passer la variable
-    <code>Running</code> à <code>false</code>. Cela se fait typiquement
-    lorsque la fenêtre est fermée, ou lorsque l'utilisateur appuie sur une touche spéciale comme echap ;
-    nous verrons comment intercepter ces évènements dans le prochain tutoriel.
+    <code>Running</code> Ã  <code>false</code>. Cela se fait typiquement
+    lorsque la fenÃªtre est fermÃ©e, ou lorsque l'utilisateur appuie sur une touche spÃ©ciale comme echap ;
+    nous verrons comment intercepter ces Ã©vÃ¨nements dans le prochain tutoriel.
 </p>
 <p>
-    Pour le moment, notre boucle principale ne fait qu'un appel à <code>App.Display()</code>.
-    C'est en fait le seul appel nécessaire pour afficher le contenu de notre fenêtre à l'écran.
-    L'appel à <code>Display</code> doit toujours être unique dans la boucle principale,
-    et être la dernière instruction, une fois que tout le reste a été mis à jour et affiché.<br/>
-    A ce point du code, vous devriez voir n'importe quoi à l'écran (peut-être un fond noir, peut-être pas)
-    puisque nous n'affichons rien dans notre fenêtre.
+    Pour le moment, notre boucle principale ne fait qu'un appel Ã  <code>App.Display()</code>.
+    C'est en fait le seul appel nÃ©cessaire pour afficher le contenu de notre fenÃªtre Ã  l'Ã©cran.
+    L'appel Ã  <code>Display</code> doit toujours Ãªtre unique dans la boucle principale,
+    et Ãªtre la derniÃ¨re instruction, une fois que tout le reste a Ã©tÃ© mis Ã  jour et affichÃ©.<br/>
+    A ce point du code, vous devriez voir n'importe quoi Ã  l'Ã©cran (peut-Ãªtre un fond noir, peut-Ãªtre pas)
+    puisque nous n'affichons rien dans notre fenÃªtre.
 </p>
 <p>
-    Comme vous pouvez le voir, il n'y a pas de code supplémentaire après la boucle principale :
-    notre fenêtre est correctement détruite de manière automatique lorsque la fonction
-    <code>main</code> se termine (le ménage est effectué dans le destructeur).<br/>
+    Comme vous pouvez le voir, il n'y a pas de code supplÃ©mentaire aprÃ¨s la boucle principale :
+    notre fenÃªtre est correctement dÃ©truite de maniÃ¨re automatique lorsque la fonction
+    <code>main</code> se termine (le mÃ©nage est effectuÃ© dans le destructeur).<br/>
     Pour ceux qui n'utilisent jamais <code>EXIT_SUCCESS</code>, il s'agit juste d'une constante
     valant 0. Pour renvoyer une erreur vous pouvez utiliser sa soeur <code>EXIT_FAILURE</code>
-    plutôt que -1.
+    plutÃ´t que -1.
 </p>
 
 <?php h2('Conclusion') ?>
 <p>
-    Et voilà, avec ce code vous avez un programme minimal mais complet qui ouvre une fenêtre SFML.
+    Et voilÃ , avec ce code vous avez un programme minimal mais complet qui ouvre une fenÃªtre SFML.
     Mais nous ne pouvons pas encore stopper le programme... Sautons donc au
-    <a class="internal" href="./window-events-fr.php" title="Prochain tutoriel : gérer les évènements">prochain tutoriel</a>,
-    pour voir comment intercepter les évènements !
+    <a class="internal" href="./window-events-fr.php" title="Prochain tutoriel : gÃ©rer les Ã©vÃ¨nements">prochain tutoriel</a>,
+    pour voir comment intercepter les Ã©vÃ¨nements !
 </p>
 
 <?php
