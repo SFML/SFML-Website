@@ -11,12 +11,12 @@
 
 <?php h2('Introduction') ?>
 <p>
-    This tutorial is not about OpenGL itself, but about how to use SFML as an interface to OpenGL, and how to mix them together.
+    This tutorial is not about OpenGL itself, but rather how to use SFML as an environment for OpenGL, and how to mix them together.
 </p>
 <p>
     As you know, one of the most important features of OpenGL is portability. But OpenGL alone won't be enough to create complete programs: you need
-    a window, a rendering context, user inputs, etc. And you have no choice but to write OS-specific code to handle this stuff.
-    That's where the sfml-window module comes into play; let's see how it allows you to play with OpenGL.
+    a window, a rendering context, user input, etc. You would have no choice but to write OS-specific code to handle this stuff on your own.
+    That's where the sfml-window module comes into play. Let's see how it allows you to play with OpenGL.
 </p>
 
 <?php h2('Including and linking OpenGL to your application') ?>
@@ -27,13 +27,13 @@
 </code></pre>
 <p>
     This header includes OpenGL and GLU functions, and nothing else. People sometimes think that SFML automatically includes GLEW (a library which manages
-    OpenGL extensions) because it uses it internally, but it's only an implementation detail. From the user's point of view, GLEW must be handled like
-    any other extra library.
+    OpenGL extensions) because SFML uses GLEW internally, but it's only an implementation detail. From the user's point of view, GLEW must be handled like
+    any other external library.
 </p>
 <p>
     You will then need to link your program to the OpenGL library. Unlike what it does with the headers, SFML can't provide a unified way of linking
-    OpenGL. Therefore, you need to know which library to link to according to what OS you're using ("opengl32" on Windows, "GL" on Linux, etc.).
-    Same thing for GLU, in case you use it too: "glu32" on Windows, "GLU" on Linux, etc.
+    OpenGL. Therefore, you need to know which library to link to according to what operating system you're using ("opengl32" on Windows, "GL" on Linux, etc.).
+    The same applies for GLU as well in case you plan on using it too: "glu32" on Windows, "GLU" on Linux, etc.
 </p>
 <p class="important">
     OpenGL functions start with the "gl" prefix, GLU functions start with the "glu" prefix. Remember this when you get linker errors, this will help you
@@ -52,14 +52,14 @@ glEnable(GL_TEXTURE_2D);
 </code></pre>
 <p>
     In case you think it is <em>too</em> automatic, <?php class_link("Window") ?>'s constructor has an extra argument that allows you to change the settings
-    of the underlying OpenGL context. This argument is an instance of the <?php struct_link("ContextSettings") ?> structure, it defines the following
+    of the underlying OpenGL context. This argument is an instance of the <?php struct_link("ContextSettings") ?> structure, it provides access to the following
     settings:
 </p>
 <ul>
     <li><code>depthBits</code> is the number of bits per pixel to use for the depth buffer (0 to disable it)</li>
     <li><code>stencilBits</code> is the number of bits per pixel to use for the stencil buffer (0 to disable it)</li>
     <li><code>antialiasingLevel</code> is the multisampling level</li>
-    <li><code>majorVersion</code> and <code>minorVersion</code> is the requested version of OpenGL</li>
+    <li><code>majorVersion</code> and <code>minorVersion</code> comprise the requested version of OpenGL</li>
 </ul>
 <pre><code class="cpp">sf::ContextSettings settings;
 settings.depthBits = 24;
@@ -71,9 +71,9 @@ settings.minorVersion = 0;
 sf::Window window(sf::VideoMode(800, 600), "OpenGL", sf::Style::Default, settings);
 </code></pre>
 <p>
-    If any of these settings is not supported by the graphics card, SFML tries to find the closest valid match. For example, if a x4 antialiasing level
-    is too high, it tries x2 and then falls back to 0.<br />
-    In this case, you can know what settings SFML actually used with the <code>getSettings</code> function:
+    If any of these settings is not supported by the graphics card, SFML tries to find the closest valid match. For example, if 4x anti-aliasing
+    is too high, it tries 2x and then falls back to 0.<br />
+    In any case, you can check what settings SFML actually used with the <code>getSettings</code> function:
 </p>
 <pre><code class="cpp">sf::ContextSettings settings = window.getSettings();
 
@@ -84,13 +84,13 @@ std::cout &lt;&lt; "version:" &lt;&lt; settings.majorVersion &lt;&lt; "." &lt;&l
 </code></pre>
 <p class="important">
     OpenGL versions above 3.0 are supported by SFML (as long as your graphics driver can handle them), but you can't set flags for now. This means that you
-    can't create debug or forward compatible contexts; in fact SFML automatically creates contexts with the "compatibility" flag, because it uses a few
+    can't create debug or forward compatible contexts; in fact SFML automatically creates contexts with the "compatibility" flag, because it uses
     deprecated functions internally. This should be improved soon, and flags will then be exposed in the public API.
 </p>
 
 <?php h2('A typical OpenGL-with-SFML program') ?>
 <p>
-    Here is what a complete OpenGL program should look like with SFML:
+    Here is what a complete OpenGL program would look like with SFML:
 </p>
 <pre><code class="cpp">#include &lt;SFML/Window.hpp&gt;
 #include &lt;SFML/OpenGL.hpp&gt;
@@ -143,7 +143,7 @@ int main()
 </p>
 <p>
     Don't hesitate to have a look at the "OpenGL" and "Window" examples in the SFML SDK if you have further problems, they are more complete and
-    most likely have a solution to your problems.
+    most likely contain solutions to your problems.
 </p>
 
 <?php h2('Managing multiple OpenGL windows') ?>
@@ -171,14 +171,14 @@ window2.setActive(true);
 <p>
     Another thing to know is that all the OpenGL contexts created by SFML share their resources. This means that you can create a texture or vertex
     buffer with any context active, and use it with any other. This also means that you don't have to reload all your OpenGL resources when you recreate
-    your window.
+    your window. Only shareable OpenGL resources can be shared among contexts. An example of an unshareable resource is a vertex array object.
 </p>
 
 <?php h2('OpenGL without a window') ?>
 <p>
-    It is sometimes required to call OpenGL functions where there's no window, and thus no OpenGL context. For example, when you load textures from
+    Sometimes it might be necessary to call OpenGL functions without an active window, and thus no OpenGL context. For example, when you load textures from
     a separate thread, or before the first window is created. SFML allows you to create window-less contexts with the <?php class_link("Context") ?>
-    class. All you have to do is to instanciate it to get a valid context.
+    class. All you have to do is instantiate it to get a valid context.
 </p>
 <pre><code class="cpp">int main()
 {
@@ -196,8 +196,8 @@ window2.setActive(true);
 
 <?php h2('Rendering from threads') ?>
 <p>
-    A typical configuration for a multithreaded program is to handle the window and its events in one thread (the main one), and rendering in another one.
-    If you do so, there's an important rule to keep in mind: you can't activate a context (window) if it's active in another thread. Which means that
+    A typical configuration for a multi-threaded program is to handle the window and its events in one thread (the main one), and rendering in another one.
+    If you do so, there's an important rule to keep in mind: you can't activate a context (window) if it's active in another thread. This means that
     you have to deactivate your window before launching the rendering thread.
 </p>
 <pre><code class="cpp">void renderingThread(sf::Window* window)
@@ -248,7 +248,7 @@ int main()
     <?php class_link("RenderWindow") ?>, which inherits all its functions and adds features to draw SFML specific entities.
 </p>
 <p>
-    The only way to avoid conflicts between SFML and your own OpenGL states, is to save/restore them everytime you switch from OpenGL to SFML.
+    The only way to avoid conflicts between SFML and your own OpenGL states, is to save/restore them every time you switch from OpenGL to SFML.
 </p>
 <pre><code class="cpp">- draw with OpenGL
 
@@ -276,11 +276,11 @@ window.popGLStates();
 glDraw...
 </code></pre>
 <p>
-    Since it has no knowledge about your OpenGL code, SFML can't optimize these steps and as a result it saves/restores all OpenGL states and matrices.
-    This is ok for small projects, but it may be too slow for bigger programs that need maximum performances. In this case, you can handle saving and
+    Since it has no knowledge about your OpenGL code, SFML can't optimize these steps and as a result it saves/restores all available OpenGL states and matrices.
+    This may be acceptable for small projects, but it might also be too slow for bigger programs that require maximum performance. In this case, you can handle saving and
     restoring the OpenGL states yourself, with <code>glPushAttrib</code>/<code>glPopAttrib</code>, <code>glPushMatrix</code>/<code>glPopMatrix</code>,
     etc.<br />
-    But you'll still need to restore SFML's own states before drawing, with the <code>resetGLStates</code> function.
+    If you do this, you'll still need to restore SFML's own states before drawing. This is done with the <code>resetGLStates</code> function.
 </p>
 <pre><code class="cpp">glDraw...
 
@@ -294,7 +294,7 @@ glPop...
 glDraw...
 </code></pre>
 <p>
-    By saving and restoring OpenGL states yourself, you can manage only those that you really need, and save a few unnecessary driver calls.
+    By saving and restoring OpenGL states yourself, you can manage only the ones that you really need which leads to reducing the number of unnecessary driver calls.
 </p>
 
 <?php

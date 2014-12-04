@@ -11,17 +11,17 @@
 
 <?php h2('Audio stream? What\'s that?') ?>
 <p>
-    An audio stream is similar to a music (remember the <?php class_link("Music") ?> class?). It has almost the same functions and behaves the same.
-    The only difference is that an audio stream won't play an audio file: it will rather play a custom audio source that <em>you</em> directly provide.
-    In other words, defining your own audio stream allows you to play anything else than a file: a sound streamed over the network, a music generated
-    by your program, a format that SFML doesn't support, etc.
+    An audio stream is similar to music (remember the <?php class_link("Music") ?> class?). It has almost the same functions and behaves the same.
+    The only difference is that an audio stream doesn't play an audio file: Instead, it plays a custom audio source that <em>you</em> directly provide.
+    In other words, defining your own audio stream allows you to play from more than just a file: A sound streamed over the network, music generated
+    by your program, an audio format that SFML doesn't support, etc.
 </p>
 <p>
     In fact, the <?php class_link("Music") ?> class is just a specialized audio stream that gets its audio samples from a file.
 </p>
 <p>
-    Since we're talking about <em>streaming</em>, we'll deal with audio data that cannot be loaded entirely in memory, and will rather be loaded in
-    small chunks while it is being played. If your sound can be loaded completely and can fit in memory, then audio streams won't help you: just load
+    Since we're talking about <em>streaming</em>, we'll deal with audio data that cannot be loaded entirely in memory, and will instead be loaded in
+    small chunks while it is being played. If your sound can be loaded completely and can fit in memory, then audio streams won't help you: Just load
     the audio data into a <?php class_link("SoundBuffer") ?> and use a regular <?php class_link("Sound") ?> to play it.
 </p>
 
@@ -49,7 +49,7 @@
 }
 </code></pre>
 <p>
-    You must return <code>true</code> when everything's ok, or <code>false</code> if playback must be stopped, either because of an error or because
+    You must return <code>true</code> when everything is all right, or <code>false</code> if playback must be stopped, either because an error has occurred or because
     there's simply no more audio data to play.
 </p>
 <p>
@@ -58,8 +58,8 @@
 </p>
 <p>
     The <code>onSeek</code> function is called when the <code>setPlayingOffset</code> public function is called. Its purpose is to change the current
-    playing position in the source data. The argument is a time value representing the new position, from the beginning of the sound (<em>not</em> from
-    the current position). This function is sometimes impossible to implement; in this case leave it empty, and tell users of your class that
+    playing position in the source data. The parameter is a time value representing the new position, from the beginning of the sound (<em>not</em> from
+    the current position). This function is sometimes impossible to implement. In those cases leave it empty, and tell the users of your class that
     changing the playing position is not supported.
 </p>
 <p>
@@ -80,12 +80,12 @@ initialize(channelCount, sampleRate);
 <p>
     <code>onSeek</code> is called directly by the <code>setPlayingOffset</code> function, so it is always executed in the caller thread. However, the
     <code>onGetData</code> function will be called repeatedly as long as the stream is being played, in a separate thread created by SFML.
-    So, if your stream uses data that may be accessed <em>concurrently</em> in both the caller thread and in the playing thread, you have to protect
-    them (with a mutex or whatever) in order to avoid concurrent access, which may cause undefined behaviors -- corrupt data being played, crashes, etc.
+    If your stream uses data that may be accessed <em>concurrently</em> in both the caller thread and in the playing thread, you have to protect
+    it (with a mutex for example) in order to avoid concurrent access, which may cause undefined behavior -- corrupt data being played, crashes, etc.
 </p>
 <p>
-    If you're not familiar enough with threading, you can first read the
-    <a class="internal" href="./system-thread.php" title="Threading tutorial">corresponding tutorial</a>.
+    If you're not familiar enough with threading, you can refer to the
+    <a class="internal" href="./system-thread.php" title="Threading tutorial">corresponding tutorial</a> for more information.
 </p>
 
 <?php h2('Using your audio stream') ?>
@@ -98,8 +98,8 @@ initialize(channelCount, sampleRate);
 
 <?php h2('A simple example') ?>
 <p>
-    Here is a very simple example of a custom audio stream class, which plays the data of a sound buffer. Such a class is of course totally useless,
-    the point here is to focus on how the data is streamed by the class, no matter where it comes from.
+    Here is a very simple example of a custom audio stream class which plays the data of a sound buffer. Such a class might seem totally useless,
+    but the point here is to focus on how the data is streamed by the class, regardless of where it comes from.
 </p>
 <pre><code class="cpp">#include &lt;SFML/Audio.hpp&gt;
 #include &lt;vector&gt;
@@ -126,7 +126,7 @@ private:
     virtual bool onGetData(Chunk&amp; data)
     {
         // number of samples to stream every time the function is called;
-        // in a more robust implementation, it would rather be a fixed
+        // in a more robust implementation, it should be a fixed
         // amount of time rather than an arbitrary number of samples
         const int samplesToStream = 50000;
 

@@ -11,28 +11,28 @@
 
 <?php h2('Problems that need to be solved') ?>
 <p>
-    Exchanging data on a network is more tricky than it seems. The reason is that different machines, with different OSes and processors, can be involved. And several problems
-    arise if you want to exchange data reliably between such different machines.
+    Exchanging data on a network is more tricky than it seems. The reason is that different machines, with different operating systems and processors, can be involved. Several problems
+    arise if you want to exchange data reliably between these different machines.
 </p>
 <p>
-    The first problem is the endianness. The endianness is the order in which a particular processor interprets the bytes of primitive types that use more than a single byte
+    The first problem is the endianness. The endianness is the order in which a particular processor interprets the bytes of primitive types that occupy more than a single byte
     (integers and floating point numbers).
     There are two main families: "big endian" processors, which store the most significant byte first, and "little endian" processors, which store the least significant byte
     first. There are other, more exotic byte orders, but you'll probably never have to deal with them.<br/>
-    So the problem is obvious: if you send a variable between two computers whose endianness doesn't match, they won't see the same value. For example, the 16-bit integer
+    The problem is obvious: If you send a variable between two computers whose endianness doesn't match, they won't see the same value. For example, the 16-bit integer
     "42" in big endian notation is 00000000 00101010, but if you send this to a little endian machine, it will be interpreted as "10752".
 </p>
 <p>
     The second problem is the size of primitive types. The C++ standard doesn't set the size of primitive types (char, short, int, long, float, double), so, again,
-    there can be differences between processors -- and there are. For example, the <code>long int</code> type can be a 32-bit type on some platforms, and 64-bit on others.
+    there can be differences between processors -- and there are. For example, the <code>long int</code> type can be a 32-bit type on some platforms, and a 64-bit type on others.
 </p>
 <p>
     The third problem is specific to how the TCP protocol works. Because it doesn't preserve message boundaries, and can split or combine chunks of data, receivers must
-    properly reconstruct incoming messages before interpreting them. Otherwise bad things may happen, like reading incomplete variables, or ignoring useful bytes.
+    properly reconstruct incoming messages before interpreting them. Otherwise bad things might happen, like reading incomplete variables, or ignoring useful bytes.
 </p>
 <p>
-    You may of course face other problems with network programming, but these are the lowest-level ones, that almost everybody will have to solve. That's why SFML provides
-    simple tools to avoid them.
+    You may of course face other problems with network programming, but these are the lowest-level ones, that almost everybody will have to solve. This is the reason why SFML provides
+    some simple tools to avoid them.
 </p>
 
 <?php h2('Fixed-size primitive types') ?>
@@ -43,13 +43,13 @@
 </p>
 <p>
     SFML only provides fixed-size <em>integer</em> types. Floating-point types should normally have their fixed-size equivalent too, but in practice this is not needed
-    (at least on platforms where SFML runs), <code>float</code> and <code>double</code> types always have the same size (resp. 32 and 64-bit).
+    (at least on platforms where SFML runs), <code>float</code> and <code>double</code> types always have the same size, 32 bits and 64 bits respectively.
 </p>
 
 <?php h2('Packets') ?>
 <p>
     The two other problems (endianness and message boundaries) are solved by using a specific class to pack your data: <?php class_link('Packet') ?>. As a bonus, it provides
-    a much nicer interface than the good old byte array.
+    a much nicer interface than plain old byte arrays.
 </p>
 <p>
     Packets have a programming interface similar to standard streams: you can insert data with the &lt;&lt; operator, and extract data with the &gt;&gt; operator.
@@ -70,8 +70,8 @@ double d;
 packet &gt;&gt; x &gt;&gt; s &gt;&gt; d;
 </code></pre>
 <p>
-    Unlike writing, reading from a packet can fail if you try to extract more bytes than the packet contains. If a reading operation fails, the packet is set to an error state.
-    To check the state of a packet, you can test it like a boolean (the same way you do with standard streams):
+    Unlike writing, reading from a packet can fail if you try to extract more bytes than the packet contains. If a reading operation fails, the packet error flag is set.
+    To check the error flag of a packet, you can test it like a boolean (the same way you do with standard streams):
 </p>
 <pre><code class="cpp">if (packet &gt;&gt; x)
 {
@@ -96,16 +96,16 @@ udpSocket.receive(packet, senderAddress, senderPort);
 </code></pre>
 <p>
     Packets solve the "message boundaries" problem, which means that when you send a packet on a TCP socket, you receive the exact same packet on the other end, it cannot
-    contain less bytes, or bytes from the next packet that you send. However, it has a drawback: to preserve message boundaries, <?php class_link('Packet') ?> has to send
-    extra bytes with your data, which implies that you can only receive them with a <?php class_link('Packet') ?> if you want them to be properly decoded. In other words,
-    you can't send a SFML packet to a custom recipient, it has to use a SFML packet too. Note that this applies to TCP only, UDP is fine since the protocol itself ensures
+    contain less bytes, or bytes from the next packet that you send. However, it has a slight drawback: To preserve message boundaries, <?php class_link('Packet') ?> has to send
+    some extra bytes along with your data, which implies that you can only receive them with a <?php class_link('Packet') ?> if you want them to be properly decoded. Simply put,
+    you can't send an SFML packet to a non-SFML packet recipient, it has to use an SFML packet for receiving too. Note that this applies to TCP only, UDP is fine since the protocol itself preserves
     message boundaries.
 </p>
 
 <?php h2('Extending packets to handle user types') ?>
 <p>
-    Packets have overloads of their operators for all the primitive types and the most common standard types, but what about your own classes? Like with standard streams,
-    you can make a type "compatible" with <?php class_link('Packet') ?> by creating an overload of the &lt;&lt; and &gt;&gt; operators.
+    Packets have overloads of their operators for all the primitive types and the most common standard types, but what about your own classes? As with standard streams,
+    you can make a type "compatible" with <?php class_link('Packet') ?> by providing an overload of the &lt;&lt; and &gt;&gt; operators.
 </p>
 <pre><code class="cpp">struct Character
 {
@@ -125,7 +125,7 @@ sf::Packet&amp; operator &gt;&gt;(sf::Packet&amp; packet, Character&amp; charact
 }
 </code></pre>
 <p>
-    Both operators return a reference to the packet: this allows to chain calls.
+    Both operators return a reference to the packet: This allows chaining insertion and extraction of data.
 </p>
 <p>
     Now that these operators are defined, you can insert/extract a <code>Character</code> instance to/from a packet like any other primitive type:
@@ -138,18 +138,18 @@ packet &gt;&gt; bob;
 
 <?php h2('Custom packets') ?>
 <p>
-    Packets provide nice features on top of your raw data, but what if you want to add your own features, like automatically compressing or encrypting the data? This can
-    easily be achieved, by deriving from <?php class_link('Packet') ?> and overriding the following functions:
+    Packets provide nice features on top of your raw data, but what if you want to add your own features such as automatically compressing or encrypting the data? This can
+    easily be done by deriving from <?php class_link('Packet') ?> and overriding the following functions:
 </p>
 <ul>
     <li><code>onSend</code>: called before the data is sent by the socket</li>
     <li><code>onReceive</code>: called after the data has been received by the socket</li>
 </ul>
 <p>
-    These functions provide a direct access to the data, so that you can transform them according to your needs.
+    These functions provide direct access to the data, so that you can transform them according to your needs.
 </p>
 <p>
-    Here is an (fake) example of a packet that does automatic compression/uncompression:
+    Here is a mock-up of a packet that performs automatic compression/decompression:
 </p>
 <pre><code class="cpp">class ZipPacket : public sf::Packet
 {
@@ -168,7 +168,7 @@ packet &gt;&gt; bob;
 };
 </code></pre>
 <p>
-    Such a packet class can be used exactly like <?php class_link('Packet') ?>. And your operator overloads still apply.
+    Such a packet class can be used exactly like <?php class_link('Packet') ?>. All your operator overloads will apply to them as well.
 </p>
 <pre><code class="cpp">ZipPacket packet;
 packet &lt;&lt; x &lt;&lt; bob;

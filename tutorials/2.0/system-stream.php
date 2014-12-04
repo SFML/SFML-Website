@@ -16,9 +16,9 @@
     loaded from memory with <code>loadFromMemory</code>. These functions cover <em>almost</em> all the possible use cases -- but not all.
 </p>
 <p>
-    Sometimes you want to load files from unusual places, such as a compressed/encrypted archive, or a remote network place for example. For these
-    special situations, SFML provides a third loading function: <code>loadFromStream</code>. This function reads data from an abstract
-    <?php class_link("InputStream") ?> class, which allows you to define your own implementations.
+    Sometimes you want to load files from unusual places, such as a compressed/encrypted archive, or a remote network location for example. For these
+    special situations, SFML provides a third loading function: <code>loadFromStream</code>. This function reads data using an abstract
+    <?php class_link("InputStream") ?> interface, which allows you to provide your own implementation of a stream class that works with SFML.
 </p>
 <p>
     In this tutorial you'll learn how to write and use your own derived input stream.
@@ -30,7 +30,7 @@
     is only the front-end, the abstract interface to the custom data is <code>std::streambuf</code>.
 </p>
 <p>
-    Unfortunately, these classes are not very user friendly, and can even become very complicated if you want to implement more than trivial stuff.
+    Unfortunately, these classes are not very user friendly, and can become very complicated if you want to implement non-trivial stuff.
     The <a class="external" href="http://www.boost.org/doc/libs/1_49_0/libs/iostreams/doc/index.html" title="Boost.Iostreams">Boost.Iostreams</a>
     library tries to provide a simpler interface to standard streams, but Boost is a big dependency and SFML cannot depend on it.
 </p>
@@ -57,12 +57,12 @@ public :
     virtual Int64 getSize() = 0;
 };</code></pre>
 <p>
-    <strong>read</strong> must extract <em>size</em> bytes of data from the stream, and copy them to the supplied <em>data</em> address; it returns
+    <strong>read</strong> must extract <em>size</em> bytes of data from the stream, and copy them to the supplied <em>data</em> address. It returns
     the number of bytes read, or -1 on error.
 </p>
 <p>
-    <strong>seek</strong> must change the current reading position in the stream; its <em>position</em> argument is the absolute byte offset to
-    jump to (so it is relative to the beginning of the data, not to the current position); it returns the new position, or -1 on error.
+    <strong>seek</strong> must change the current reading position in the stream. Its <em>position</em> argument is the absolute byte offset to
+    jump to (so it is relative to the beginning of the data, not to the current position). It returns the new position, or -1 on error.
 </p>
 <p>
     <strong>tell</strong> must return the current reading position (in bytes) in the stream, or -1 on error.
@@ -71,13 +71,13 @@ public :
     <strong>getSize</strong> must return the total size (in bytes) of the data which is contained in the stream, or -1 on error.
 </p>
 <p>
-    To create your own working stream, you must implement all these four functions according to their requirements.
+    To create your own working stream, you must implement every one of these four functions according to their requirements.
 </p>
 
 <?php h2('An example') ?>
 <p>
-    Here is a complete and working implementation of a custom input stream. It's not very useful: we'll write a stream that reads data from a file,
-    <code>FileStream</code>. But it is simple enough so that you can focus on how the code works, and not get lost in implementation details.
+    Here is a complete and working implementation of a custom input stream. It's not very useful: It is simply a stream that reads data from a file,
+    <code>FileStream</code>. It serves as a demonstration that helps you focus on how the code works, and not get lost in implementation details.
 </p>
 <p>
     First, let's see its declaration:
@@ -185,8 +185,8 @@ sf::Int64 FileStream::getSize()
     Note that, as explained above, all functions return -1 on error.
 </p>
 <p>
-    Don't forget to check the forum and wiki, chances are that another user already wrote a <?php class_link("InputStream") ?> class that matches your
-    needs. And if you write a new one and feel like it could be useful outside your project, don't hesitate to share!
+    Don't forget to check the forum and wiki. Chances are that another user already wrote a <?php class_link("InputStream") ?> class that suits your
+    needs. And if you write a new one and feel like it could be useful to other people as well, don't hesitate to share!
 </p>
 
 <?php h2('Using your stream') ?>
@@ -205,7 +205,7 @@ texture.loadFromStream(stream);
 <p>
     Some resource classes are not loaded completely after <code>loadFromStream</code> has been called. Instead, they continue to read from their
     data source as long as they are used. This is the case for <?php class_link("Music") ?>, which streams audio samples as they are played, and for
-    <?php class_link("Font") ?>, which loads glyphs on the fly depending on the texts content.
+    <?php class_link("Font") ?>, which loads glyphs on the fly depending on the text that is displayed.
 </p>
 <p>
     As a consequence, the stream instance that you used to load a music or a font, as well as its data source, must remain alive as long as the resource

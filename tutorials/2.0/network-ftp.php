@@ -14,8 +14,8 @@
     If you know what FTP is, and just want to know how to use the FTP class that SFML provides, you can skip this section.
 </p>
 <p>
-    FTP (<em>File Transfer Protocol</em>) is a simple protocol that allows to manipulate files and directories remotely. The protocol consists of commands such as "create
-    directory", "delete file", "download file", etc. You can't send commands to any remote computer, it needs to have a FTP server running which can understand and
+    FTP (<em>File Transfer Protocol</em>) is a simple protocol that allows manipulation of files and directories on a remote server. The protocol consists of commands such as "create
+    directory", "delete file", "download file", etc. You can't send FTP commands to any remote computer, it needs to have an FTP server running which can understand and
     execute the commands that clients send.
 </p>
 <p>
@@ -25,18 +25,18 @@
 </p>
 <p>
     If you want to know more about the FTP protocol, the
-    <a class ="external" href="http://en.wikipedia.org/wiki/File_Transfer_Protocol" title="FTP on wikipedia">wikipedia page</a> is of course much more detailed than this
+    <a class ="external" href="http://en.wikipedia.org/wiki/File_Transfer_Protocol" title="FTP on wikipedia">Wikipedia article</a> provides more detailed information than this
     short introduction.
 </p>
 
 <?php h2('The FTP client class') ?>
 <p>
-    The class provided by SFML is <?php class_link("Ftp") ?> (surprising, isn't it?). It's a client, which means that it can connect to a FTP server, send commands to it and upload or
+    The class provided by SFML is <?php class_link("Ftp") ?> (surprising, isn't it?). It's a client, which means that it can connect to an FTP server, send commands to it and upload or
     download files.
 </p>
 <p>
-    Every function of the <?php class_link("Ftp") ?> class wraps a FTP command, and return a standard FTP response. A FTP response contains a status code (similar
-    to HTTP status codes -- but not the sames), and a message that informs the user of what happened. FTP reponses are encapsulated in the <?php class_link("Ftp::Response") ?>
+    Every function of the <?php class_link("Ftp") ?> class wraps an FTP command, and returns a standard FTP response. An FTP response contains a status code (similar
+    to HTTP status codes but not identical), and a message that informs the user of what happened. FTP reponses are encapsulated in the <?php class_link("Ftp::Response") ?>
     class.
 </p>
 <p>
@@ -50,8 +50,8 @@ std::cout &lt;&lt; "Response status: " &lt;&lt; response.getStatus() &lt;&lt; st
 std::cout &lt;&lt; "Response message: " &lt;&lt; response.getMessage() &lt;&lt; std::endl;
 </code></pre>
 <p>
-    The status code can be used to check whether the command was successful or failed: codes lower than 400 are ok, others are errors. You can use the <code>isOk()</code>
-    function as a shortcut to test a status code.
+    The status code can be used to check whether the command was successful or failed: Codes lower than 400 represent success, all others represent errors. You can use the <code>isOk()</code>
+    function as a shortcut to test a status code for success.
 </p>
 <pre><code class="cpp">sf::Ftp::Response response = ftp.login();
 if (response.isOk())
@@ -64,7 +64,7 @@ else
 }
 </code></pre>
 <p>
-    If you don't care about the details of the response, you can do it even shorter:
+    If you don't care about the details of the response, you can check for success with even less code:
 </p>
 <pre><code class="cpp">if (ftp.login().isOk())
 {
@@ -76,30 +76,30 @@ else
 }
 </code></pre>
 <p>
-    For readability, these checks won't be written in the other examples of this tutorial. But don't forget to write them in your code!
+    For readability, these checks won't be performed in the following examples in this tutorial. Don't forget to perform them in your code!
 </p>
 <p>
-    Ok, now that you understand how the class works, let's have a look at what it can do.
+    Now that you understand how the class works, let's have a look at what it can do.
 </p>
 
 <?php h2('Connecting to the FTP server') ?>
 <p>
-    The first thing to do is to connect to the FTP server.
+    The first thing to do is connect to an FTP server.
 </p>
 <pre><code class="cpp">sf::Ftp ftp;
 ftp.connect("ftp.myserver.org");
 </code></pre>
 <p>
-    The server address can be any valid <?php class_link("IpAddress") ?>: a URL, an IP address, a network name, ...
+    The server address can be any valid <?php class_link("IpAddress") ?>: A URL, an IP address, a network name, ...
 </p>
 <p>
-    The standard port for FTP is 21. However, if for some reason your server uses a different port, you can specify it as an additional argument:
+    The standard port for FTP is 21. If, for some reason, your server uses a different port, you can specify it as an additional argument:
 </p>
 <pre><code class="cpp">sf::Ftp ftp;
 ftp.connect("ftp.myserver.org", 45000);
 </code></pre>
 <p>
-    You can also pass a third parameter, which is a timeout. This way you can avoid waiting forever (or at least a very long time) if the server doesn't respond.
+    You can also pass a third parameter, which is a time out value. This prevents you from having to wait forever (or at least a very long time) if the server doesn't respond.
 </p>
 <pre><code class="cpp">sf::Ftp ftp;
 ftp.connect("ftp.myserver.org", 21, sf::seconds(5));
@@ -116,8 +116,8 @@ ftp.login();
 
 <?php h2('FTP commands') ?>
 <p>
-    Here is a short description of all the commands available in the <?php class_link("Ftp") ?> class. Remember one thing: all these commands are performed relatively
-    to the <em>current working directory</em>, exactly as if you were executing file or directory commands inside a console of your OS.
+    Here is a short description of all the commands available in the <?php class_link("Ftp") ?> class. Remember one thing: All these commands are performed relative
+    to the <em>current working directory</em>, exactly as if you were executing file or directory commands in a console on your operating system.
 </p>
 <p>
     Getting the current working directory:
@@ -182,7 +182,7 @@ response = ftp.getDirectoryListing("subfolder");
 <pre><code class="cpp">ftp.download("remote_file_name.txt", "local/destination/path", sf::Ftp::Ascii);
 </code></pre>
 <p>
-    The last argument is the transfer mode. It can be either Ascii (for text files), Ebcdic (for text files using the EBCDIC character set -- is someone still using it?) or
+    The last argument is the transfer mode. It can be either Ascii (for text files), Ebcdic (for text files using the EBCDIC character set) or
     Binary (for non-text files). The Ascii and Ebcdic modes can transform the file (line endings, encoding) during the transfer to match the client environment. The Binary
     mode is a direct byte-for-byte transfer.
 </p>

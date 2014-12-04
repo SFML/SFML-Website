@@ -19,23 +19,23 @@
     There are different approaches to the installation of SFML on Linux:
 </p>
 <ul>
-    <li>Install it directly from your distro's repositories</li>
-    <li>Download the SDK and manually install the files</li>
-    <li>Compile it from sources</li>
+    <li>Install it directly from your distribution's package repository</li>
+    <li>Download the precompiled SDK and manually copy the files</li>
+    <li>Get the source code, build it and install it</li>
 </ul>
 <p>
-    Option 1 is the preferred one; if the version of SFML that you want to install is available in the official repositories then get it with your
+    Option 1 is the preferred one; if the version of SFML that you want to install is available in the official repository, then install it using your
     package manager. For example, on Debian you would do:
 </p>
 <pre><code class="no-highlight">sudo apt-get install libsfml-dev</code></pre>
 <p>
-    Option 3 requires more work: you need to install the development files of all the dependencies of SFML, to install CMake, and to manually
-    execute some commands. But then you'll get a perfect package, which takes in account all the specificities of your system.<br />
+    Option 3 requires more work: you need to ensure all of SFML's dependencies including their development headers are available, make sure CMake is installed, and manually
+    execute some commands. This will result in a package which is tailored to your system.<br />
     If you want to go this way, there's a dedicated tutorial on
-    <a class="internal" href="./compile-with-cmake.php" title="How to compile SFML">how to compile SFML</a>.
+    <a class="internal" href="./compile-with-cmake.php" title="How to compile SFML">building SFML yourself</a>.
 </p>
 <p>
-    Finally, option 2 is a good compromise for a quick installation if SFML is not available as an official package. Download the SDK
+    Finally, option 2 is a good choice for quick installation if SFML is not available as an official package. Download the SDK
     from the <a class="internal" href="../../download.php" title="Go to the download page">download page</a>, unpack it and copy the files to your
     preferred location: either a separate path in your personal folder (like <em>/home/me/sfml</em>), or a standard path (like <em>/usr/local</em>).
 </p>
@@ -46,14 +46,14 @@
 <?php h2('Compiling a SFML program') ?>
 <p>
     In this tutorial we're not going to talk about IDEs such as Code::Blocks or Eclipse. We'll focus on the commands required to compile and link an
-    SFML executable, but writing a complete makefile or configuring a project in an IDE is out of the scope of this tutorial -- there are better dedicated
+    SFML executable. Writing a complete makefile or configuring a project in an IDE is beyond the scope of this tutorial -- there are better dedicated
     tutorials for this.<br />
     If you're using Code::Blocks, you may refer to the
-    <a class="internal" href="./start-cb.php" title="SFML and Code::Blocks">Code::Blocks tutorial for Windows</a>; things should be similar, except that
-    you won't have to set the compiler and linkers search paths if you installed SFML to a standard path of your system.
+    <a class="internal" href="./start-cb.php" title="SFML and Code::Blocks">Code::Blocks tutorial for Windows</a>; many things should be similar.
+    You won't have to set the compiler and linker search paths if you installed SFML to one of your system's standard paths.
 </p>
 <p>
-    First, create a source file, let's name it "main.cpp", containing a sample SFML program:
+    First, create a source file. For this tutorial we'll name it "main.cpp". Put the following code inside the main.cpp file:
 </p>
 <pre><code class="cpp">#include &lt;SFML/Graphics.hpp&gt;
 
@@ -92,10 +92,10 @@ int main()
     Here, <em>&lt;sfml-install-path&gt;</em> is the directory where you copied SFML, for example <em>/home/me/sfml</em>.
 </p>
 <p>
-    Then, you must link the compiled file to the SFML libraries in order to get the final executable. SFML is made of 5 modules (system, window, graphics,
+    You must then link the compiled file to the SFML libraries in order to get the final executable. SFML is made of 5 modules (system, window, graphics,
     network and audio), and there's one library for each of them.<br />
-    To link a SFML library, you must add "-lsfml-xxx" to your command line, for example "-lsfml-graphics" for the graphics module (compared to the
-    name of the corresponding file, the "lib" prefix and the ".so" extension must be omitted).
+    To link an SFML library, you must add "-lsfml-xxx" to your command line, for example "-lsfml-graphics" for the graphics module
+    (the "lib" prefix and the ".so" extension of the library file name must be omitted).
 </p>
 <pre><code class="no-highlight">g++ main.o -o sfml-app -lsfml-graphics -lsfml-window -lsfml-system</code></pre>
 <p>
@@ -107,11 +107,11 @@ int main()
 </p>
 <pre><code class="no-highlight">./sfml-app</code></pre>
 <p>
-    If SFML is not installed in a standard path, you need to tell the library loader where to find the SFML libraries first:
+    If SFML is not installed in a standard path, you need to tell the dynamic linker where to find the SFML libraries first by specifying LD_LIBRARY_PATH:
 </p>
 <pre><code class="no-highlight">export LD_LIBRARY_PATH=<em>&lt;sfml-install-path&gt;</em>/lib &amp;&amp; ./sfml-app</code></pre>
 <p>
-    If everything was ok, you should see this in a new window:
+    If everything works, you should see this in a new window:
 </p>
 <img class="screenshot" src="./images/start-linux-app.png" alt="Screenshot of the Hello SFML application" title="Screenshot of the Hello SFML application" />
 
