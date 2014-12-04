@@ -1,13 +1,13 @@
 <?php
 
-    $title = "Playing sounds and musics";
+    $title = "Playing sounds and music";
     $page = "audio-sounds.php";
 
     require("header.php");
 
 ?>
 
-<h1>Playing sounds and musics</h1>
+<h1>Playing sounds and music</h1>
 
 <?php h2('Sound or music?') ?>
 <p>
@@ -16,18 +16,18 @@
 </p>
 <p>
     <?php class_link("Sound")?> is a lightweight object that plays loaded audio data from a <?php class_link("SoundBuffer")?>. It should be used for small
-    sounds that can fit in memory, and that should suffer no lag when they are played. Examples are gun shots, foot steps, etc.
+    sounds that can fit in memory and should suffer no lag when they are played. Examples are gun shots, foot steps, etc.
 </p>
 <p>
-    <?php class_link("Music")?> doesn't load all the audio data in memory, it rather streams it on the fly from the source file. It is typically used to
-    play compressed musics that last several minutes, and would otherwise take many seconds to load and eat hundreds of MB in memory.
+    <?php class_link("Music")?> doesn't load all the audio data into memory, instead it streams it on the fly from the source file. It is typically used to
+    play compressed music that lasts several minutes, and would otherwise take many seconds to load and eat hundreds of MB in memory.
 </p>
 
 <?php h2('Loading and playing a sound') ?>
 <p>
     As mentioned above, the sound data is not stored directly in <?php class_link("Sound")?> but in a separate class named <?php class_link("SoundBuffer")?>.
     This class encapsulates the audio data, which is basically an array of 16-bit signed integers (called "audio samples"). A sample is the amplitude of
-    the sound signal at a given point of time, and an array of samples therefore represents a full sound.
+    the sound signal at a given point in time, and an array of samples therefore represents a full sound.
 </p>
 
 <p class="important">
@@ -52,14 +52,14 @@ int main()
 }
 </code></pre>
 <p>
-    As usual, you can also load an audio file from memory (<code>loadFromMemory</code>) or from a
+    As with everything else, you can also load an audio file from memory (<code>loadFromMemory</code>) or from a
     <a class="internal" href="./system-stream.php" title="Input streams tutorial">custom input stream</a> (<code>loadFromStream</code>).
 </p>
 <p>
-    SFML supports the most common file formats. The full list is available in the API documentation.
+    SFML supports most common audio file formats. The full list is available in the API documentation.
 </p>
 <p>
-    You can also load a sound buffer directly from an array of samples, in case you get them from another source:
+    You can also load a sound buffer directly from an array of samples, in the case they originate from another source:
 </p>
 <pre><code class="cpp">std::vector&lt;sf::Int16&gt; samples = ...;
 buffer.loadFromSamples(&amp;samples[0], samples.size(), 2, 44100);
@@ -68,7 +68,7 @@ buffer.loadFromSamples(&amp;samples[0], samples.size(), 2, 44100);
     Since <code>loadFromSamples</code> loads a raw array of samples rather than an audio file, it requires additional arguments in order to have a complete
     description of the sound. The first one (third argument) is the number of channels; 1 channel defines a mono sound, 2 channels define a stereo sound,
     etc. The second additional attribute (fourth argument) is the sample rate; it defines how many samples must be played per second in order to
-    restitute the original sound.
+    reconstruct the original sound.
 </p>
 <p>
     Now that the audio data is loaded, we can play it with a <?php class_link("Sound")?> instance.
@@ -81,17 +81,17 @@ sound.setBuffer(buffer);
 sound.play();
 </code></pre>
 <p>
-    The cool thing is that you can assign the same sound buffer to multiple sounds if you want. You can even play them together, no problem.
+    The cool thing is that you can assign the same sound buffer to multiple sounds if you want. You can even play them together without any issues.
 </p>
 <p class="important">
-    Sounds (and musics) are played in a separate thread. This means that you can do what you want after calling <code>play()</code> (except destroying
-    the sound or its data, of course), the sound will continue to play until it's finished or stopped explicitly.
+    Sounds (and music) are played in a separate thread. This means that you are free to do whatever you want after calling <code>play()</code> (except destroying
+    the sound or its data, of course), the sound will continue to play until it's finished or explicitly stopped.
 </p>
 
 <?php h2('Playing a music') ?>
 <p>
-    Unlike <?php class_link("Sound")?>, <?php class_link("Music")?> doesn't preload the audio data, it rather streams it directly from the source. The
-    initialization of musics is thus more direct:
+    Unlike <?php class_link("Sound")?>, <?php class_link("Music")?> doesn't pre-load the audio data, instead it streams the data directly from the source. The
+    initialization of music is thus more direct:
 </p>
 <pre><code class="cpp">sf::Music music;
 if (!music.openFromFile("music.ogg"))
@@ -100,7 +100,7 @@ music.play();
 </code></pre>
 <p>
     It is important to note that, unlike all other SFML resources, the loading function is named <code>openFromFile</code> instead of <code>loadFromFile</code>.
-    This is because the music is not really loaded, what this function does is just to open it. The data are only loaded later, when the music is played.
+    This is because the music is not really loaded, this function merely opens it. The data is only loaded later, when the music is played.
     It also helps to keep in mind that the audio file has to remain available as long as it is played.<br />
     The other loading functions of <?php class_link("Music")?> follow the same convention: <code>openFromMemory</code>, <code>openFromStream</code>.
 </p>
@@ -140,10 +140,10 @@ sound.stop();
     The <code>getStatus</code> function returns the current status of a sound or music, you can use it to know whether it is stopped, playing or paused.
 </p>
 <p>
-    Sounds and musics also define a few attributes that can be changed at any moment.
+    Sound and music playback is also controlled by a few attributes which can be changed at any moment.
 </p>
-    The <em>pitch</em> is a factor that changes the perceived frequency of the sound: greater than 1 makes the sound more acute,
-    less than 1 makes the sound more grave, and 1 leaves it unchanged. Changing the pitch has a side effect: it also impacts the playing speed.
+    The <em>pitch</em> is a factor that changes the perceived frequency of the sound: greater than 1 plays the sound at a higher pitch,
+    less than 1 plays the sound at a lower pitch, and 1 leaves it unchanged. Changing the pitch has a side effect: it impacts the playing speed.
 </p>
 <pre><code class="cpp">sound.setPitch(1.2);
 </code></pre>
@@ -154,8 +154,8 @@ sound.stop();
 <pre><code class="cpp">sound.setVolume(50);
 </code></pre>
 </p>
-    The <em>loop</em> attribute controls whether the sound/music automatically loops or not. If it loops, it will restart from zero when it's finished,
-    again and again until you explicitly call <code>stop</code>. Otherwise, it will stop automatically when it's finished.
+    The <em>loop</em> attribute controls whether the sound/music automatically loops or not. If it loops, it will restart playing from the beginning when it's finished,
+    again and again until you explicitly call <code>stop</code>. If not set to loop, it will stop automatically when it's finished.
 </p>
 <pre><code class="cpp">sound.setLoop(true);
 </code></pre>
@@ -178,25 +178,25 @@ sound.stop();
 } // ... here
 
 sf::Sound sound = loadSound("s.wav");
-sound.play(); // ERROR: the sound's buffer doesn't exist anymore, the behavior is undefined
+sound.play(); // ERROR: the sound's buffer no longer exists, the behavior is undefined
 </code></pre>
 <p>
-    Remember that a sound only keeps a <em>pointer</em> to the sound buffer that you give to it, it doesn't make its own copy. You have to correctly
-    manage the lifetime of your sound buffers, so that they remain alive as long as they are used by sounds.
+    Remember that a sound only keeps a <em>pointer</em> to the sound buffer that you give to it, it doesn't contain its own copy. You have to correctly
+    manage the lifetime of your sound buffers so that they remain alive as long as they are used by sounds.
 </p>
 
 <h3>Too many sounds</h3>
 <p>
     Another source of error is when you try to create a huge number of sounds. SFML internally has a limit; it can vary depending on the OS, but
     you should never exceed 256. This limit is the number of <?php class_link("Sound")?> and <?php class_link("Music")?> instances that can exist
-    simultaneously. A good way to stay below the limit is to destroy (or recycle) unused sounds and not allowing terminated or unused sounds to live.
-    This only applies if you really have to manage a large amount of sounds and musics, of course.
+    simultaneously. A good way to stay below the limit is to destroy (or recycle) unused sounds when they are no longer needed.
+    This only applies if you have to manage a really large amount of sounds and music, of course.
 </p>
 
 <h3>Destroying the music source while it plays</h3>
 <p>
-    Remember that a music needs its source as long as it is played. Ok, a music file on your disk has very little chance to be
-    deleted or moved while your application plays it. But things get more complicated when you play a music from a file in memory, or from a
+    Remember that a music needs its source as long as it is played. A music file on your disk probably won't be
+    deleted or moved while your application plays it, however things get more complicated when you play a music from a file in memory, or from a
     custom input stream:
 </p>
 <pre><code class="cpp">// we start with a music file in memory (imagine that we extracted it from a zip archive)
@@ -207,10 +207,10 @@ sf::Music music;
 music.openFromMemory(&amp;fileData[0], fileData.size());
 music.play();
 
-// "ok, it seems that we don't need the source file anymore"
+// "ok, it seems that we don't need the source file any longer"
 fileData.clear();
 
-// ERROR: the music was still streaming the contents of fileData! the behavior is now undefined
+// ERROR: the music was still streaming the contents of fileData! The behavior is now undefined
 </code></pre>
 
 <h3>sf::Music is not copyable</h3>

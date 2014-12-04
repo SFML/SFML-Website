@@ -11,25 +11,25 @@
 
 <?php h2('Introduction') ?>
 <p>
-    SFML provides simple classes for the most common 2D entities. And while more complex entities can easily be created from these building blocks, it is not always the
-    most efficient solution. For example, you'll quickly reach your graphics card's limits if you draw many individual sprites. The reason is that the performances directly
-    depend on the number of calls to the <code>draw</code> function. Indeed, each call involves setting a set of OpenGL states, resetting matrices, changing textures, etc.
-    And all this stuff only to draw two triangles (a sprite). This is really not what your graphics card expects: today's GPUs are designed to process large batches of
-    triangles, typically several thousands or millions.
+    SFML provides simple classes for the most common 2D entities. And while more complex entities can easily be created from these building blocks, it isn't always the
+    most efficient solution. For example, you'll reach the limits of your graphics card very quickly if you draw a large number of sprites. The reason is that performance
+    depends in large part on the number of calls to the <code>draw</code> function. Indeed, each call involves setting a set of OpenGL states, resetting matrices, changing textures, etc.
+    All of this is required even when simply drawing two triangles (a sprite). This is far from optimal for your graphics card: Today's GPUs are designed to process large batches of
+    triangles, typically several thousand to millions.
 </p>
 <p>
-    To fill this gap, SFML provides a lower-level mechanism to draw things: vertex arrays. In fact, vertex arrays are used internally by all other SFML classes. They allow
-    a more flexible definition of 2D entities, containing as many triangles as you need. They even allow drawing points or lines.
+    To fill this gap, SFML provides a lower-level mechanism to draw things: Vertex arrays. As a matter of fact, vertex arrays are used internally by all other SFML classes. They allow
+    for a more flexible definition of 2D entities, containing as many triangles as you need. They even allow drawing points or lines.
 </p>
 
 <?php h2('What is a vertex, and why are they always in arrays?') ?>
 <p>
-     A vertex is the smallest graphical entity that you can manipulate. In short, it is a graphical point: it contains of course a 2D position (x, y), but also a color, and
-     a pair of texture coordinates. We'll see later the role of these attributes.
+    A vertex is the smallest graphical entity that you can manipulate. In short, it is a graphical point: Naturally, it has a 2D position (x, y), but also a color, and
+    a pair of texture coordinates. We'll go into the roles of these attributes later.
 </p>
 <p>
-    Vertices alone don't do much. They are always grouped in <em>primitives</em>: either points (1 vertex), lines (2 vertices), triangles (3 vertices) or quads (4 vertices).
-    Then, you put one or more primitives together to create the final geometry of the entity.
+    Vertices (plural of vertex) alone don't do much. They are always grouped into <em>primitives</em>: Points (1 vertex), lines (2 vertices), triangles (3 vertices) or quads (4 vertices).
+    You can then combine multiple primitives together to create the final geometry of the entity.
 </p>
 <p>
     Now you understand why we always talk about vertex arrays, and not vertices alone.
@@ -37,8 +37,8 @@
 
 <?php h2('A simple vertex array') ?>
 <p>
-    First, let's have a look at the <?php class_link('Vertex') ?> class. It's a simple container which contains three public members, and no function except constructors.
-    These constructors allow to create vertices with only the attributes that you need -- you don't always need to color or texture your entity.
+    Let's have a look at the <?php class_link('Vertex') ?> class now. It's simply a container which contains three public members and no functions besides its constructors.
+    These constructors allow you to construct vertices from the set of attributes you care about -- you don't always need to color or texture your entity.
 </p>
 <pre><code class="cpp">// create a new vertex
 sf::Vertex vertex;
@@ -58,8 +58,8 @@ vertex.texCoords = sf::Vector2f(100, 100);
 <pre><code class="cpp">sf::Vertex vertex(sf::Vector2f(10, 50), sf::Color::Red, sf::Vector2f(100, 100));
 </code></pre>
 <p>
-    Now, let's define a primitive. Remember, a primitive is made of several vertices, therefore we need a vertex array. SFML provides a simple wrapper for this:
-    <?php class_link('VertexArray') ?>. It provides the semantics of an array (similar to <code>std::vector</code>), and it also stores the primitive type directly.
+    Now, let's define a primitive. Remember, a primitive consists of several vertices, therefore we need a vertex array. SFML provides a simple wrapper for this:
+    <?php class_link('VertexArray') ?>. It provides the semantics of an array (similar to <code>std::vector</code>), and also stores the type of primitive its vertices define.
 </p>
 <pre><code class="cpp">// create an array of 3 vertices that define a triangle primitive
 sf::VertexArray triangle(sf::Triangles, 3);
@@ -77,17 +77,17 @@ triangle[2].color = sf::Color::Green;
 // no texture coordinates here, we'll see that later
 </code></pre>
 <p>
-    Your triangle is ready, you can now draw it. Drawing a vertex array is similar to drawing other SFML entities, with the <code>draw</code> function:
+    Your triangle is ready and you can now draw it. Drawing a vertex array can be done similar to drawing any other SFML entity, by using the <code>draw</code> function:
 </p>
 <pre><code class="cpp">window.draw(triangle);
 </code></pre>
 <img class="screenshot" src="./images/graphics-vertex-array-triangle.png" alt="A triangle made with vertices"/>
 <p>
-    You can see that the vertices' color is interpolated to fill the primitive; this is a nice way to create gradients.
+    You can see that the vertices' color is interpolated to fill the primitive. This is a nice way of creating gradients.
 </p>
 <p>
     Note that you don't have to use the <?php class_link('VertexArray') ?> class. It's just defined for convenience, it's nothing more than a
-    <code>std::vector&lt;sf::Vertex&gt;</code> with a <code>sf::PrimitiveType</code>. If you need more flexibility, or a static array, you can use your own
+    <code>std::vector&lt;sf::Vertex&gt;</code> along with a <code>sf::PrimitiveType</code>. If you need more flexibility, or a static array, you can use your own
     storage. You must then use the overload of the <code>draw</code> function which takes a pointer to the vertices, the vertex count and the primitive type.
 </p>
 <pre><code class="cpp">std::vector&lt;sf::Vertex&gt; vertices;
@@ -107,9 +107,9 @@ window.draw(vertices, 2, sf::Lines);
 
 <?php h2('Primitive types') ?>
 <p>
-    Let's stop for a while, and see which primitives you can create with vertices. As explained above, you can define the most basic 2D primitives: point, line, triangle
-    and quad (actually, this one exists for convenience, internally the graphics card breaks it into two triangles). There are also "chained" variants of these primitive types,
-    that allow to share vertices between two adjacent primitives -- which is really useful because primitives are often connected.
+    Let's pause for a while and see what kind of primitives you can create. As explained above, you can define the most basic 2D primitives: Point, line, triangle
+    and quad (quad exists merely as a convenience, internally the graphics card breaks it into two triangles). There are also "chained" variants of these primitive types
+    which allow for sharing of vertices among two consecutive primitives. This can be useful because consecutive primitives are often connected in some way.
 </p>
 <p>
     Let's have a look at the full list:
@@ -126,7 +126,7 @@ window.draw(vertices, 2, sf::Lines);
         <tr>
             <td><code>sf::Points</code></td>
             <td>
-                A set of unconnected points. These points have no thickness: they will always take one pixel, regardless of the current transform and view.
+                A set of unconnected points. These points have no thickness: They will always occupy a single pixel, regardless of the current transform and view.
             </td>
             <td>
                 <img src="./images/graphics-vertex-array-points.png" alt="The sf::Points primitive type"/>
@@ -135,7 +135,7 @@ window.draw(vertices, 2, sf::Lines);
         <tr>
             <td><code>sf::Lines</code></td>
             <td>
-                A set of unconnected lines. These lines have no thickness: they will always be one pixel wide, regardless of the current transform and view.
+                A set of unconnected lines. These lines have no thickness: They will always be one pixel wide, regardless of the current transform and view.
             </td>
             <td>
                 <img src="./images/graphics-vertex-array-lines.png" alt="The sf::Lines primitive type"/>
@@ -172,7 +172,7 @@ window.draw(vertices, 2, sf::Lines);
             <td><code>sf::TrianglesFan</code></td>
             <td>
                 A set of triangles connected to a central point. The first vertex is the center, then each new vertex defines a new triangle, using the center
-                and the next vertex.
+                and the previous vertex.
             </td>
             <td>
                 <img src="./images/graphics-vertex-array-triangles-fan.png" alt="The sf::TrianglesFan primitive type"/>
@@ -181,7 +181,7 @@ window.draw(vertices, 2, sf::Lines);
         <tr>
             <td><code>sf::Quads</code></td>
             <td>
-                A set of unconnected quads. The 4 points of each quad must be defined either in clockwise or counterclockwise order.
+                A set of unconnected quads. The 4 points of each quad must be defined consistently, either in clockwise or counter-clockwise order.
             </td>
             <td>
                 <img src="./images/graphics-vertex-array-quads.png" alt="The sf::Quads primitive type"/>
@@ -192,7 +192,7 @@ window.draw(vertices, 2, sf::Lines);
 
 <?php h2('Texturing') ?>
 <p>
-    Like other SFML entities, vertex arrays can be textured. To do so, you'll need to play with the <code>texCoords</code> attribute of the vertices. This attribute defines
+    Like other SFML entities, vertex arrays can also be textured. To do so, you'll need to manipulate the <code>texCoords</code> attribute of the vertices. This attribute defines
     which pixel of the texture is mapped to the vertex.
 </p>
 <pre><code class="cpp">// create a quad
@@ -212,7 +212,7 @@ quad[3].texCoords = sf::Vector2f(0, 50);
 </code></pre>
 <p class="important">
     Texture coordinates are defined in <em>pixels</em> (just like the <code>textureRect</code> of sprites and shapes). They are <em>not</em> normalized (between 0 and 1), as
-    people who are used to OpenGL programming would expect.
+    people who are used to OpenGL programming might expect.
 </p>
 <p>
     Vertex arrays are low-level entities, they only deal with geometry and do not store additional attributes like a texture. To draw a vertex array with a texture,
@@ -226,8 +226,8 @@ sf::Texture texture;
 window.draw(vertices, &amp;texture);
 </code></pre>
 <p>
-    This is the short version, if you need to pass other render states (like a blend mode or a transform), you can use the explicit version which uses a
-    <?php class_link('RenderStates') ?> instance:
+    This is the short version, if you need to pass other render states (like a blend mode or a transform), you can use the explicit version which takes a
+    <?php class_link('RenderStates') ?> object:
 </p>
 <pre><code class="cpp">sf::VertexArray vertices;
 sf::Texture texture;
@@ -265,19 +265,19 @@ states.transform = transform;
 window.draw(vertices, states);
 </code></pre>
 <p>
-    To know more about transformations and the <?php class_link('Transform') ?> class, you can read the
-    <a href="graphics-transform.php" title="Transforming entities tutorial">Transforming entities</a> tutorial.
+    To know more about transformations and the <?php class_link('Transform') ?> class, you can read the tutorial on
+    <a href="graphics-transform.php" title="Transforming entities tutorial">transforming entities</a>.
 </p>
 
-<?php h2('Creating a SFML-like entity') ?>
+<?php h2('Creating an SFML-like entity') ?>
 <p>
-    Now that you know how to define your own textured/colored/transformed entity, wouldn't it be nice to wrap it in a SFML-style class? Fortunately, SFML makes this easy for you, with
-    the <?php class_link('Drawable') ?> and <?php class_link('Transformable') ?> base classes. These two classes are the base of the built-in SFML entities --
+    Now that you know how to define your own textured/colored/transformed entity, wouldn't it be nice to wrap it in an SFML-style class? Fortunately, SFML makes this easy for you by providing
+    the <?php class_link('Drawable') ?> and <?php class_link('Transformable') ?> base classes. These two classes are the base of the built-in SFML entities
     <?php class_link('Sprite') ?>, <?php class_link('Text') ?> and <?php class_link('Shape') ?>.
 </p>
 <p>
-    <?php class_link('Drawable') ?> is an interface: it only declares one pure virtual function; no member nor concrete function. Inheriting from <?php class_link('Drawable') ?>
-    allows to draw instances of your class the same way as SFML classes:
+    <?php class_link('Drawable') ?> is an interface: It declares a single pure virtual function and has no members nor concrete functions. Inheriting from <?php class_link('Drawable') ?>
+    allows you to draw instances of your class the same way as SFML classes:
 </p>
 <pre><code class="cpp">class MyEntity : public sf::Drawable
 {
@@ -290,17 +290,17 @@ MyEntity entity;
 window.draw(entity); // internally calls entity.draw
 </code></pre>
 <p>
-    Note that doing this is not mandatory, you could just have a similar <code>draw</code> function in your class, and call it with <code>entity.draw(window)</code>.
-    But the other way, with <?php class_link('Drawable') ?> as a base class, is nicer and more consistent. And in case you need to store an array of drawable objects,
-    you can do it without extra work since all drawable objects (SFML's and yours) derive from the same class.
+    Note that doing this is not mandatory, you could also just have a similar <code>draw</code> function in your class and simply call it with <code>entity.draw(window)</code>.
+    But the other way, with <?php class_link('Drawable') ?> as a base class, is nicer and more consistent. This also means that if you plan on storing an array of drawable objects,
+    you can do it without any additional effort since all drawable objects (SFML's and yours) derive from the same class.
 </p>
 <p>
-    The other base class, <?php class_link('Transformable') ?>, has no virtual function. Inheriting from it automatically adds to your class the same transformation
-    functions as other SFML classes (<code>setPosition</code>, <code>setRotation</code>, <code>move</code>, <code>scale</code>, ...). You can learn more about this
-    class in the <a href="graphics-transform.php" title="Transforming entities tutorial">Transforming entities</a> tutorial.
+    The other base class, <?php class_link('Transformable') ?>, has no virtual function. Inheriting from it automatically adds the same transformation
+    functions to your class as other SFML classes (<code>setPosition</code>, <code>setRotation</code>, <code>move</code>, <code>scale</code>, ...). You can learn more about this
+    class in the tutorial on <a href="graphics-transform.php" title="Transforming entities tutorial">transforming entities</a>.
 </p>
 <p>
-    So, using these two base classes and a vertex array (in this example we'll also add a texture), here is what a typical SFML-like graphical class would look like:
+    Using these two base classes and a vertex array (in this example we'll also add a texture), here is what a typical SFML-like graphical class would look like:
 </p>
 <pre><code class="cpp">class MyEntity : public sf::Drawable, public sf::Transformable
 {
@@ -329,7 +329,7 @@ private:
 };
 </code></pre>
 <p>
-    You can then play with this class as if it was a built-in SFML class:
+    You can then use this class as if it were a built-in SFML class:
 </p>
 <pre><code class="cpp">MyEntity entity;
 
@@ -343,8 +343,8 @@ window.draw(entity);
 
 <?php h2('Example: tile map') ?>
 <p>
-    With what we've seen above, let's create a class that encapsulates a tilemap. The whole map will be contained in a single vertex array, therefore it will be
-    super fast to draw. Note that we can apply this strategy only if the whole tileset can fit into a single texture. Otherwise, we would have to use at least
+    With what we've seen above, let's create a class that encapsulates a tile map. The whole map will be contained in a single vertex array, therefore it will be
+    super fast to draw. Note that we can apply this strategy only if the whole tile set can fit into a single texture. Otherwise, we would have to use at least
     one vertex array per texture.
 </p>
 <pre><code class="cpp">class TileMap : public sf::Drawable, public sf::Transformable
@@ -459,7 +459,7 @@ private:
 
 <?php h2('Example: particle system') ?>
 <p>
-    This second example implements another common entity: the particle system. This one is a very simple one, with no texture and as few parameters as possible.
+    This second example implements another common entity: The particle system. This one is very simple, with no texture and as few parameters as possible.
     It demonstrates the use of the <code>sf::Points</code> primitive type with a dynamic vertex array which changes every frame.
 </p>
 <pre><code class="cpp">class ParticleSystem : public sf::Drawable, public sf::Transformable
@@ -541,7 +541,7 @@ private:
 };
 </code></pre>
 <p>
-    And the little demo that uses it:
+    And a little demo that uses it:
 </p>
 <pre><code class="cpp">int main()
 {

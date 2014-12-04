@@ -39,11 +39,11 @@
 <h1>SFML bindings</h1>
 
 <p>
-    Here is a list of all the known SFML bindings. Please note that, except CSFML and SFML.Net, they are not official: they are developed by SFML users and some of them
-    may be outdated, or even abandoned.
+    Here is a list of all the known SFML bindings. CSFML and SFML.Net are official bindings, the others are not: They are developed by SFML users.
+    Some bindings may be out of date, some might have even been abandoned.
 </p>
 <p>
-    Feel free to <a href="mailto:laurent@sfml-dev.org" title="Contact the webmaster">contact me</a> if you want to update, add or remove information about a SFML binding.
+    Feel free to <a href="mailto:laurent@sfml-dev.org" title="Contact the webmaster">contact me</a> if you want to update, add or remove information about an SFML binding.
 </p>
 
 <?php

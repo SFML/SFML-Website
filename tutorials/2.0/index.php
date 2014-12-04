@@ -28,7 +28,7 @@
 
 <?php h2('Window module') ?>
 <ul>
-    <li><a href="window-window.php" title="Opening and managing a SFML window">Opening and managing a SFML window</a></li>
+    <li><a href="window-window.php" title="Opening and managing an SFML window">Opening and managing an SFML window</a></li>
     <li><a href="window-events.php" title="Events">Events explained</a></li>
     <li><a href="window-inputs.php" title="Real-time inputs">Keyboard, mouse and joysticks</a></li>
     <li><a href="window-opengl.php" title="OpenGL">Using OpenGL in a SFML window</a></li>
@@ -48,15 +48,15 @@
 
 <?php h2('Audio module') ?>
 <ul>
-    <li><a href="audio-sounds.php" title="Playing sounds and musics">Playing sounds and musics</a></li>
+    <li><a href="audio-sounds.php" title="Playing sounds and music">Playing sounds and music</a></li>
     <li><a href="audio-recording.php" title="Recording audio">Recording audio</a></li>
     <li><a href="audio-streams.php" title="Custom audio streams">Custom audio streams</a></li>
-    <li><a href="audio-spatialization.php" title="Spatialization">Spatialization: sounds in 3D</a></li>
+    <li><a href="audio-spatialization.php" title="Spatialization">Spatialization: Sounds in 3D</a></li>
 </ul>
 
 <?php h2('Network module') ?>
 <ul>
-    <li><a href="network-socket.php" title="Communicating with sockets">Communicating with sockets</a></li>
+    <li><a href="network-socket.php" title="Communication using sockets">Communication using sockets</a></li>
     <li><a href="network-packet.php" title="Using and extending packets">Using and extending packets</a></li>
     <li><a href="network-http.php" title="Web requests with HTTP">Web requests with HTTP</a></li>
     <li><a href="network-ftp.php" title="File transfers with FTP">File transfers with FTP</a></li>

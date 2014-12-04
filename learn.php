@@ -15,7 +15,7 @@
 
 <h2 id="tutorials">Tutorials</h2>
 <p>
-    The official tutorials are the starting point if you want to learn how to use SFML. They explain step by step the important concepts and classes of each module.
+    The official tutorials are the starting point if you want to learn how to use SFML. They explain step-by-step the important concepts and classes of each module.
 </p>
 <a class="box" href="tutorials/2.2">
     <div class="title">SFML 2.2</div>
@@ -32,7 +32,7 @@
 
 <h2 id="documentation">API documentation</h2>
 <p>
-    Here is the reference documentation of the SFML API. It contains a detailed description of every class and every function of SFML. It is generated directly from the
+    This is the reference documentation of the SFML API. It contains a detailed description of every class and every function of SFML. It is generated directly from the
     source code, with <a href="http://www.stack.nl/~dimitri/doxygen/" title="Go to Doxygen website">Doxygen</a>.
 </p>
 <a class="box" href="documentation/2.2">
@@ -50,8 +50,8 @@
 
 <h2 id="tutorials">FAQ <small>(Frequently Asked Questions)</small></h2>
 <p>
-    The tutorials and documentation above covers a lot of ground regarding common mistakes and problems, but before you post on the forum make sure to read through the official FAQ.
-    Here you should find an answer to about anything related to SFML.
+    The tutorials and API documentation cover a lot of ground regarding common mistakes and problems you will encounter. Before seeking help on the forum, make sure to read through the official FAQ.
+    It contains answers to questions that have been frequently asked on the forum in the past along with plenty of other useful information related to SFML.
 </p>
 <a class="box" href="faq.php">
     <div class="title">Official SFML FAQ</div>

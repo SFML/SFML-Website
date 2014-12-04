@@ -21,12 +21,12 @@
 </p>
 <p class="important">
     There are multiple variants of GCC for Windows, which are incompatible with each other (different exception management,
-    threading model, etc.). Make sure that you pick up the right package according to the version that you use. If you don't know, check which of
-    the libgcc_s_sjlj-1.dll or libgcc_s_dw2-1.dll file you have in your MinGW/bin folder. If you're using the version of MinGW shipped with Code::Blocks,
-    you probably have a SJLJ version.
+    threading model, etc.). Make sure you select the package which corresponds to the version that you use. If you are unsure, check which of
+    the libgcc_s_sjlj-1.dll or libgcc_s_dw2-1.dll files is present in your MinGW/bin folder. If MinGW was installed along with Code::Blocks,
+    you probably have an SJLJ version.
     <br />
     If you feel like your version of GCC can't work with the precompiled SFML libraries, don't hesitate to
-    <a class="internal" href="./compile-with-cmake.php" title="How to compile SFML">recompile SFML</a>, it's not complicated.
+    <a class="internal" href="./compile-with-cmake.php" title="How to compile SFML">build SFML yourself</a>, it's not complicated.
 </p>
 <p>
     You can then unpack the SFML archive wherever you like. Copying headers and libraries to your installation of MinGW is not recommended, it's better
@@ -35,9 +35,9 @@
 
 <?php h2('Creating and configuring a SFML project') ?>
 <p>
-    The first thing to do is to choose what kind of project to create. Code::Blocks offers a wide variety of project types, one of them being
-    "SFML project". <strong>Don't use it!</strong> It seems like it's just not working. Instead, create an Empty project. If you want to get rid of the
-    console, in the project properties, "Build targets" tab, select "GUI application" in the combo box instead of "Console application".
+    The first thing to do is choose what kind of project to create. Code::Blocks offers a wide variety of project types, including an
+    "SFML project". <strong>Don't use it!</strong> It hasn't been updated in a long time and is likely incompatible with recent versions of SFML. Instead, create an Empty project. If you want to get rid of the
+    console, in the project properties, go to the "Build targets" tab and select "GUI application" in the combo box instead of "Console application".
 </p>
 <p>
     Now we need to tell the compiler where to find the SFML headers (.hpp files), and the linker where to find the SFML libraries (.a files).
@@ -56,7 +56,7 @@
 <p>
     The next step is to link your application to the SFML libraries (.a files) that your code will need. SFML is made of 5 modules (system, window, graphics,
     network and audio), and there's one library for each of them.<br />
-    Libraries must be added in the project's properties, "Linker settings" tab, "Link libraries" list. Add all the SFML libraries that you need, for
+    Libraries must be added to the "Link libraries" list in the project's build options, under the "Linker settings" tab. Add all the SFML libraries that you need, for
     example "sfml-graphics", "sfml-window" and "sfml-system" (the "lib" prefix and the ".a" extension must be omitted).
 </p>
 <img class="screenshot" src="./images/start-cb-link-libs.png" alt="Screenshot of the dialog box for setting up the project's libraries" title="Screenshot of the dialog box for setting up the project's libraries" />
@@ -72,17 +72,17 @@
 </p>
 <p>
     The settings shown here will result in your application being linked to the dynamic version of SFML, the one that needs the DLL files.
-    If you want to get rid of these DLLs and have SFML directly integrated to your executable, you must link to the static version. Static SFML
+    If you want to get rid of these DLLs and have SFML directly integrated into your executable, you must link to the static version. Static SFML
     libraries have the "-s" suffix: "sfml-xxx-s-d" for Debug, and "sfml-xxx-s" for Release.<br />
     In this case, you'll also need to define the SFML_STATIC macro in the preprocessor options of your project.
 </p>
 <img class="screenshot" src="./images/start-cb-static.png" alt="Screenshot of the dialog box for defining the SFML_STATIC macro" title="Screenshot of the dialog box for defining the SFML_STATIC macro" />
 <p>
-    If you don't know the differences between dynamic (also called shared) and static libraries, and don't know which one to use, you can ask Google,
-    there are good articles/blogs/posts about them.
+    If you don't know the differences between dynamic (also called shared) and static libraries, and don't know which one to use, you can search for more information on the internet.
+    There are many good articles/blogs/posts about them.
 </p>
 <p>
-    Your project is ready, let's now write some code to make sure that it works. Add a "main.cpp" file to your project, with the following code inside:
+    Your project is ready, let's write some code now to make sure that it works. Add a "main.cpp" file to your project, with the following code inside:
 </p>
 <pre><code class="cpp">#include &lt;SFML/Graphics.hpp&gt;
 
@@ -111,11 +111,11 @@ int main()
 </code></pre>
 <p>
     Compile it, and if you linked to the dynamic version of SFML, don't forget to copy the SFML DLLs (they are in <em>&lt;sfml-install-path/bin&gt;</em>)
-    to the directory where your compiled executable is. Then run it, and if everything is ok you should see this:
+    to the directory where your compiled executable is. Run it, and if everything works you should see this:
 </p>
 <img class="screenshot" src="./images/start-cb-app.png" alt="Screenshot of the Hello SFML application" title="Screenshot of the Hello SFML application" />
 <p>
-    If you are using the sfml-audio module (either statically or dynamically), you must also copy the DLLs of the external libraries needed by it,
+    If you are using the sfml-audio module (regardless whether statically or dynamically), you must also copy the DLLs of the external libraries needed by it,
     which are libsndfile-1.dll and OpenAL32.dll.<br/>
     These files can be found in <em>&lt;sfml-install-path/bin&gt;</em> too.
 </p>

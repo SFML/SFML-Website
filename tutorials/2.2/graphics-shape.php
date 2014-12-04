@@ -12,7 +12,7 @@
 <?php h2('Introduction') ?>
 <p>
     SFML provides a set of classes that represent simple shape entities. Each type of shape is a separate class, but they all derive from the same base class so that
-    they provide the same subset of common features. Each class then adds its own specificities: a radius property for the circle class, a size for the rectangle class,
+    they have access to the same subset of common features. Each class then adds its own specifics: a radius property for the circle class, a size for the rectangle class,
     points for the polygon class, etc.
 </p>
 
@@ -26,7 +26,7 @@
 
 <h3>Color</h3>
 <p>
-    One of the most basic property of a shape is its color, that you can change with the <code>setFillColor</code> function.
+    One of the basic properties of a shape is its color. You can change with the <code>setFillColor</code> function.
 </p>
 <pre><code class="cpp">sf::CircleShape shape(50);
 
@@ -37,7 +37,7 @@ shape.setFillColor(sf::Color(100, 250, 50));
 
 <h3>Outline</h3>
 <p>
-    Shapes can have an outline. You can select the thickness and color of the outline with the <code>setOutlineThickness</code> and <code>setOutlineColor</code> functions.
+    Shapes can have an outline. You can set the thickness and color of the outline with the <code>setOutlineThickness</code> and <code>setOutlineColor</code> functions.
 </p>
 <pre><code class="cpp">sf::CircleShape shape(50);
 shape.setFillColor(sf::Color(150, 50, 250));
@@ -48,16 +48,16 @@ shape.setOutlineColor(sf::Color(250, 150, 100));
 </code></pre>
 <img class="screenshot" src="./images/graphics-shape-outline.png" alt="An outlined shape"/>
 <p>
-    By default, the outline expands outside the shape (if you have a circle with a radius of 10 and an outline thickness of 5, the total radius of the circle will be 15).
-    You can make it expand towards the center of the shape instead, by giving a negative thickness.
+    By default, the outline is extruded outwards from the shape (e.g. if you have a circle with a radius of 10 and an outline thickness of 5, the total radius of the circle will be 15).
+    You can make it extrude towards the center of the shape instead, by setting a negative thickness.
 </p>
 <p>
-    To disable the outline, set its thickness to 0. If you want the outline only, you can set the fill color to <code>sf::Color::Transparent</code>.
+    To disable the outline, set its thickness to 0. If you only want the outline, you can set the fill color to <code>sf::Color::Transparent</code>.
 </p>
 
 <h3>Texture</h3>
 <p>
-    Shapes can also be textured, like sprites. To specify which part of the texture must be mapped to the shape, you must use the <code>setTextureRect</code> function.
+    Shapes can also be textured, just like sprites. To specify a part of the texture to be mapped to the shape, you must use the <code>setTextureRect</code> function.
     It takes the texture rectangle to map to the bounding rectangle of the shape. This method doesn't offer maximum flexibility, but it is much easier to use than
     individually setting the texture coordinates of each point of the shape.
 </p>
@@ -70,7 +70,7 @@ shape.setTextureRect(sf::IntRect(10, 10, 100, 100));
 <img class="screenshot" src="./images/graphics-shape-texture.png" alt="A textured shape"/>
 <p>
     Note that the outline is not textured.<br/>
-    In case the shape has a fill color, the texture is modulated (multiplied) with it.<br/>
+    It is important to know that the texture is modulated (multiplied) with the shape's fill color. If its fill color is sf::Color::White, the texture will appear unmodified.<br/>
     To disable texturing, call <code>setTexture(NULL)</code>.
 </p>
 
@@ -85,7 +85,7 @@ shape.setTextureRect(sf::IntRect(10, 10, 100, 100));
 
 <h3>Rectangles</h3>
 <p>
-    To draw rectangles, you must use the <?php class_link('RectangleShape') ?> class. It has only one attribute: the size of the rectangle.
+    To draw rectangles, you can use the <?php class_link('RectangleShape') ?> class. It has a single attribute: The size of the rectangle.
 </p>
 <pre><code class="cpp">// define a 120x50 rectangle
 sf::RectangleShape rectangle(sf::Vector2f(120, 50));
@@ -97,9 +97,9 @@ rectangle.setSize(sf::Vector2f(100, 100));
 
 <h3>Circles</h3>
 <p>
-    Circles are represented by the <?php class_link('CircleShape') ?> class. It has two attributes: the radius and the number of sides. The number of sides is an optional
-    attribute, it allows you to adjust the "quality" of the circle: circles have to be simulated by polygons with many sides (the graphics card is unable to draw a perfect
-    circle directly), and this attribute defines how many sides your circle will have. If you draw small circles, you'll probably need only a few sides. If you draw big
+    Circles are represented by the <?php class_link('CircleShape') ?> class. It has two attributes: The radius and the number of sides. The number of sides is an optional
+    attribute, it allows you to adjust the "quality" of the circle: Circles have to be approximated by polygons with many sides (the graphics card is unable to draw a perfect
+    circle directly), and this attribute defines how many sides your circle approximation will have. If you draw small circles, you'll probably only need a few sides. If you draw big
     circles, or zoom on regular circles, you'll most likely need more sides.
 </p>
 <pre><code class="cpp">// define a circle with radius = 200
@@ -115,8 +115,8 @@ circle.setPointCount(100);
 
 <h3>Regular polygons</h3>
 <p>
-    There's no dedicated class for regular polygons, in fact you can get a regular polygon of any number of sides with the <?php class_link('CircleShape') ?> class: indeed,
-    since circles are simulated by polygons with many sides, you just have to play with the number of sides to get the desired polygons. A <?php class_link('CircleShape') ?>
+    There's no dedicated class for regular polygons, in fact you can represent a regular polygon with any number of sides using the <?php class_link('CircleShape') ?> class:
+    Since circles are approximated by polygons with many sides, you just have to play with the number of sides to get the desired polygons. A <?php class_link('CircleShape') ?>
     with 3 points is a triangle, with 4 points it's a square, etc.
 </p>
 <pre><code class="cpp">// define a triangle
@@ -132,11 +132,11 @@ sf::CircleShape octagon(80, 8);
 
 <h3>Convex shapes</h3>
 <p>
-    The <?php class_link('ConvexShape') ?> class is the ultimate shape class: it allows you to define any shape, as long as it stays convex. Indeed, SFML is unable to draw
-    concave shapes; if you need to draw a concave shape, you'll have to split it into multiple convex polygons (if possible).
+    The <?php class_link('ConvexShape') ?> class is the ultimate shape class: It allows you to define any <em>convex</em> shape. SFML is unable to draw
+    concave shapes. If you need to draw a concave shape, you'll have to split it into multiple convex polygons.
 </p>
 <p>
-    To define a convex shape, you must first set the total number of points, and then define these points.
+    To construct a convex shape, you must first set the number of points it should have and then define the points.
 </p>
 <pre><code class="cpp">// create an empty shape
 sf::ConvexShape convex;
@@ -152,19 +152,21 @@ convex.setPoint(3, sf::Vector2f(30, 100));
 convex.setPoint(4, sf::Vector2f(0, 50));
 </code></pre>
 <p class="important">
-    It is very important to define the points of a convex shape either in clockwise or anticlockwise order. If you define them in a random order, the result will be
-    undefined.
+    The order in which you define the points is very important. They must <em>all</em> be defined either in clockwise or counter-clockwise order. If you
+    define them in an inconsistent order, the shape will be constructed incorrectly.
 </p>
 <img class="screenshot" src="./images/graphics-shape-convex.png" alt="A convex shape"/>
 <p>
-    Officially, <?php class_link('ConvexShape') ?> can only create convex shapes. But in fact, its requirements are a little more relaxed. In fact, the only technical
-    constraint that your shape must follow, is that if you draw a line from its <em>center of gravity</em> to any of its point, you mustn't cross an edge. With this
-    relaxed definition, you can for example draw stars.
+    Although the name of <?php class_link('ConvexShape') ?> implies that it should only be used to represent convex shapes, its requirements are a little more relaxed.
+    In fact, the only requirement that your shape must meet is that if you went ahead and drew lines from its <em>center of gravity</em> to all of its points, these lines
+    must be drawn in the same order. You are not allowed to "jump behind a previous line". Internally, convex shapes are automatically constructed using
+    <a href="http://en.wikipedia.org/wiki/Triangle_fan" title="Go to Wikipedia's article about triangle fans">triangle fans</a>, so if your shape is representable
+    by a triangle fan, you can use <?php class_link('ConvexShape') ?>. With this relaxed definition, you can draw stars using <?php class_link('ConvexShape') ?> for example.
 </p>
 
 <h3>Lines</h3>
 <p>
-    There's no shape class for lines. The reason is simple: if your line has a thickness, it is a rectangle; if it doesn't, it can be drawn with a line primitive.
+    There's no shape class for lines. The reason is simple: If your line has a thickness, it is a rectangle. If it doesn't, it can be drawn with a line primitive.
 </p>
 <p>
     Line with thickness:
@@ -186,8 +188,8 @@ window.draw(line, 2, sf::Lines);
 </code></pre>
 <img class="screenshot" src="./images/graphics-shape-line-primitive.png" alt="A line shape drawn as a primitive"/>
 <p>
-    To learn more about vertices and primitives, you can read the
-    <a href="./graphics-vertex-array.php" title="'Vertex arrays' tutorial">Vertex arrays</a> tutorial.
+    To learn more about vertices and primitives, you can read the tutorial on
+    <a href="./graphics-vertex-array.php" title="'Vertex arrays' tutorial">vertex arrays</a>.
 </p>
 
 <?php h2('Custom shape types') ?>
@@ -195,12 +197,12 @@ window.draw(line, 2, sf::Lines);
     You can extend the set of shape classes with your own shape types. To do so, you must derive from <?php class_link('Shape') ?> and override two functions:
 </p>
 <ul>
-    <li><code>getPointCount</code>: return the number of points of the shape</li>
+    <li><code>getPointCount</code>: return the number of points in the shape</li>
     <li><code>getPoint</code>: return a point of the shape</li>
 </ul>
 <p>
-    You must also call the <code>update()</code> protected function whenever the points of your shape change, so that the base class knows about it and can update
-    its internal state.
+    You must also call the <code>update()</code> protected function whenever any point in your shape changes, so that the base class is informed and can update
+    its internal geometry.
 </p>
 <p>
     Here is a complete example of a custom shape class: EllipseShape.
@@ -251,7 +253,7 @@ private :
 
 <?php h2('Antialiased shapes') ?>
 <p>
-    There's no option to antialias a single shape. If you want to get antialiased shapes (ie. shapes with smooth edges), you must enable antialiasing globally when you
+    There's no option to anti-alias a single shape. To get anti-aliased shapes (i.e. shapes with smoothed edges), you have to enable anti-aliasing globally when you
     create the window, with the corresponding attribute of the <?php struct_link('ContextSettings') ?> structure.
 </p>
 <pre><code class="cpp">sf::ContextSettings settings;
@@ -261,7 +263,7 @@ sf::RenderWindow window(sf::VideoMode(800, 600), "SFML shapes", sf::Style::Defau
 </code></pre>
 <img class="screenshot" src="./images/graphics-shape-antialiasing.png" alt="Aliased vs antialiased shape"/>
 <p>
-    Remember that antialiasing depends on the graphics card: it may either not support it, or have it forced to off in the driver settings.
+    Remember that anti-aliasing availability depends on the graphics card: It might not support it, or have it forced to disabled in the driver settings.
 </p>
 
 <?php

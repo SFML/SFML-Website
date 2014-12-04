@@ -11,21 +11,21 @@
 
 <?php h2('Introduction') ?>
 <p>
-    This tutorial is a detailed list of windows events. It describes them, and shows how to (and not to) use them.
+    This tutorial is a detailed list of window events. It describes them, and shows how to (and how not to) use them.
 </p>
 
 <?php h2('The sf::Event type') ?>
 <p>
     Before dealing with events, it is important to understand what the <?php class_link("Event") ?> type is, and how to correctly use it.
-    <?php class_link("Event") ?> is a <em>union</em>, which means that only one of its member is valid at a time (remember your C++ lesson: all the
+    <?php class_link("Event") ?> is a <em>union</em>, which means that only one of its members is valid at a time (remember your C++ lesson: all the
     members of a union share the same memory space). The valid member is the one that matches the event type, for example <code>event.key</code> for a
     <code>KeyPressed</code> event. Trying to read any other member will result in an undefined behaviour (most likely: random or invalid values).
-    So never try to use an event member that doesn't match its type.
+    It it important to never try to use an event member that doesn't match its type.
 </p>
 <p>
     <?php class_link("Event") ?> instances are filled by the <code>pollEvent</code> (or <code>waitEvent</code>) function of the <?php class_link("Window") ?>
-    class. Only these two functions can produce valid events, any attempt to use a <?php class_link("Event") ?> without first a successful call to
-    <code>pollEvent</code> (or <code>waitEvent</code>) will result in the same undefined behaviour that I mentioned above.
+    class. Only these two functions can produce valid events, any attempt to use an <?php class_link("Event") ?> which was not returned by successful call to
+    <code>pollEvent</code> (or <code>waitEvent</code>) will result in the same undefined behaviour that was mentioned above.
 </p>
 <p>
     To be clear, here is what a typical event loop looks like:
@@ -54,8 +54,8 @@ while (window.pollEvent(event))
     }
 }</code></pre>
 <p class="important">
-    Read the above paragraph once again and make sure that it's printed in your head, the <?php class_link("Event") ?> union causes too many problems to
-    inadvertent programmers.
+    Read the above paragraph once again and make sure that you fully understand it, the <?php class_link("Event") ?> union is the cause of many problems for
+    inexperienced programmers.
 </p>
 <p>
     Alright, now we can see what events SFML supports, what they mean and how to use them properly.
@@ -63,15 +63,15 @@ while (window.pollEvent(event))
 
 <?php h2('The Closed event') ?>
 <p>
-    The <code>sf::Event::Closed</code> event is triggered when the user wants to close the window, by all the possible ways that the OS provides
-    ("close" button, keyboard shortcut, etc.). This event only represents a close request, the window is not physically closed.
+    The <code>sf::Event::Closed</code> event is triggered when the user wants to close the window, through any of the possible methods the window manager provides
+    ("close" button, keyboard shortcut, etc.). This event only represents a close request, the window is not yet closed when the event is received.
 </p>
 <p>
-    A typical code will just call <code>window.close()</code> in reaction to this event, to actually close the window. But you may also want to do
-    something, like saving the current application state or asking the user what to do. If you don't do anything, the window remains open.
+    Typical code will just call <code>window.close()</code> in reaction to this event, to actually close the window. However, you may also want to do
+    something else first, like saving the current application state or asking the user what to do. If you don't do anything, the window remains open.
 </p>
 <p>
-    There's no member associated to this event in the <?php class_link("Event") ?> union.
+    There's no member associated with this event in the <?php class_link("Event") ?> union.
 </p>
 <pre><code class="cpp">if (event.type == sf::Event::Closed)
     window.close();
@@ -79,14 +79,14 @@ while (window.pollEvent(event))
 
 <?php h2('The Resized event') ?>
 <p>
-    The <code>sf::Event::Resized</code> event is triggered when the window is resized, either by a user action or programmatically by calling
+    The <code>sf::Event::Resized</code> event is triggered when the window is resized, either through user action or programmatically by calling
     <code>window.setSize</code>.
 </p>
 <p>
     You can use this event to adjust the rendering settings: the viewport if you use OpenGL directly, or the current view if you use sfml-graphics.
 </p>
 <p>
-    The member associated to this event is <code>event.size</code>, it contains the new size of the window.
+    The member associated with this event is <code>event.size</code>, it contains the new size of the window.
 </p>
 <pre><code class="cpp">if (event.type == sf::Event::Resized)
 {
@@ -96,14 +96,14 @@ while (window.pollEvent(event))
 
 <?php h2('The LostFocus and GainedFocus events') ?>
 <p>
-    The <code>sf::Event::LostFocus</code> and <code>sf::Event::GainedFocus</code> events are triggered when the window loses/gains the focus, which
-    happens when you switch the currently active window. When the window is out of focus, it doesn't receive keyboard events.
+    The <code>sf::Event::LostFocus</code> and <code>sf::Event::GainedFocus</code> events are triggered when the window loses/gains focus, which
+    happens when the user switches the currently active window. When the window is out of focus, it doesn't receive keyboard events.
 </p>
 <p>
-    This event can be used if you want to pause your game when the window is inactive.
+    This event can be used e.g. if you want to pause your game when the window is inactive.
 </p>
 <p>
-    There's no member associated to these events in the <?php class_link("Event") ?> union.
+    There's no member associated with these events in the <?php class_link("Event") ?> union.
 </p>
 <pre><code class="cpp">if (event.type == sf::Event::LostFocus)
     myGame.pause();
@@ -116,14 +116,14 @@ if (event.type == sf::Event::GainedFocus)
 <p>
     The <code>sf::Event::TextEntered</code> event is triggered when a character is typed. This must not be confused with the <code>KeyPressed</code>
     event: <code>TextEntered</code> interprets the user input and produces the appropriate printable character. For example, pressing '^' then 'e'
-    on a french keyboard will produce two <code>KeyPressed</code> events, but a single <code>TextEntered</code> event containing the 'ê' character.
-    It works with all the input methods provided by the OS, even the most specific or complex ones.
+    on a French keyboard will produce two <code>KeyPressed</code> events, but a single <code>TextEntered</code> event containing the 'ê' character.
+    It works with all the input methods provided by the operating system, even the most specific or complex ones.
 </p>
 <p>
     This event is typically used to catch user input in a text field.
 </p>
 <p>
-    The member associated to this event is <code>event.text</code>, it contains the Unicode value of the entered character. You can either put it
+    The member associated with this event is <code>event.text</code>, it contains the Unicode value of the entered character. You can either put it
     directly in a <?php class_link("String") ?>, or cast it to a <code>char</code> after making sure that it is in the ASCII range (0 - 127).
 </p>
 <pre><code class="cpp">if (event.type == sf::Event::TextEntered)
@@ -145,9 +145,9 @@ if (event.type == sf::Event::GainedFocus)
     The <code>sf::Event::KeyPressed</code> and <code>sf::Event::KeyReleased</code> events are triggered when a keyboard key is pressed/released.
 </p>
 <p>
-    If a key is held, multiple <code>KeyPressed</code> events will be generated, at the default OS delay (ie. the same delay that applies when you hold
+    If a key is held, multiple <code>KeyPressed</code> events will be generated, at the default operating system delay (ie. the same delay that applies when you hold
     a letter in a text editor). To disable repeated <code>KeyPressed</code> events, you can call <code>window.setKeyRepeatEnabled(false)</code>.
-    On the contrary, obviously, <code>KeyReleased</code> events can never be repeated.
+    On the flip side, it is obvious that <code>KeyReleased</code> events can never be repeated.
 </p>
 <p>
     This event is the one to use if you want to trigger an action exactly once when a key is pressed or released, like making a character jump with
@@ -161,8 +161,8 @@ if (event.type == sf::Event::GainedFocus)
     <a class="internal" href="./window-inputs.php" title="Real-time inputs tutorial">dedicated tutorial</a>).
 </p>
 <p>
-    The member associated to these events is <code>event.key</code>, it contains the code of the pressed/released key, as well as the current state of
-    modifier keys (alt, control, shift, system).
+    The member associated with these events is <code>event.key</code>, it contains the code of the pressed/released key, as well as the current state of
+    the modifier keys (alt, control, shift, system).
 </p>
 <pre><code class="cpp">if (event.type == sf::Event::KeyPressed)
 {
@@ -176,7 +176,7 @@ if (event.type == sf::Event::GainedFocus)
     }
 }</code></pre>
 <p>
-    Note that some keys have a special meaning for the OS, and will produce unexpected behaviours. An exemple is the F10 key on Windows, which "steals"
+    Note that some keys have a special meaning for the operating system, and will lead to unexpected behavior. An example is the F10 key on Windows, which "steals"
     the focus, or the F12 key which starts the debugger when using Visual Studio. This will probably be solved in a future version of SFML.
 </p>
 
@@ -185,7 +185,7 @@ if (event.type == sf::Event::GainedFocus)
     The <code>sf::Event::MouseWheelMoved</code> event is triggered when the mouse wheel moves up or down.
 </p>
 <p>
-    The member associated to this event is <code>event.mouseWheel</code>, it contains the amount of ticks the wheel has moved, as well as the current
+    The member associated with this event is <code>event.mouseWheel</code>, it contains the number of ticks the wheel has moved, as well as the current
     position of the mouse cursor.
 </p>
 <pre><code class="cpp">if (event.type == sf::Event::MouseWheelMoved)
@@ -204,7 +204,7 @@ if (event.type == sf::Event::GainedFocus)
     SFML supports 5 mouse buttons: left, right, middle (wheel), extra #1 and extra #2 (side buttons).
 </p>
 <p>
-    The member associated to these events is <code>event.mouseButton</code>, it contains the code of the pressed/released button, as well as the current
+    The member associated with these events is <code>event.mouseButton</code>, it contains the code of the pressed/released button, as well as the current
     position of the mouse cursor.
 </p>
 <pre><code class="cpp">if (event.type == sf::Event::MouseButtonPressed)
@@ -222,11 +222,11 @@ if (event.type == sf::Event::GainedFocus)
     The <code>sf::Event::MouseMoved</code> event is triggered when the mouse moves within the window.
 </p>
 <p>
-    This event is triggered even if the window doesn't have the focus. However, it is triggered only when the mouse moves within the inner area of the
-    window, not when it moves over the titlebar or borders.
+    This event is triggered even if the window isn't focused. However, it is triggered only when the mouse moves within the inner area of the
+    window, not when it moves over the title bar or borders.
 </p>
 <p>
-    The member associated to this event is <code>event.mouseMove</code>, it contains the current position of the mouse cursor relatively to the window.
+    The member associated with this event is <code>event.mouseMove</code>, it contains the current position of the mouse cursor relative to the window.
 </p>
 <pre><code class="cpp">if (event.type == sf::Event::MouseMoved)
 {
@@ -239,7 +239,7 @@ if (event.type == sf::Event::GainedFocus)
     The <code>sf::Event::MouseEntered</code> and <code>sf::Event::MouseLeft</code> events are triggered when the mouse cursor enters/leaves the window.
 </p>
 <p>
-    There's no member associated to these events in the <?php class_link("Event") ?> union.
+    There's no member associated with these events in the <?php class_link("Event") ?> union.
 </p>
 <pre><code class="cpp">if (event.type == sf::Event::MouseEntered)
     std::cout &lt;&lt; "the mouse cursor has entered the window" &lt;&lt; std::endl;
@@ -257,7 +257,7 @@ if (event.type == sf::Event::MouseLeft)
     SFML supports up to 8 joysticks and 32 buttons.
 </p>
 <p>
-    The member associated to these events is <code>event.joystickButton</code>, it contains the identifier of the joystick and the index of the
+    The member associated with these events is <code>event.joystickButton</code>, it contains the identifier of the joystick and the index of the
     pressed/released button.
 </p>
 <pre><code class="cpp">if (event.type == sf::Event::JoystickButtonPressed)
@@ -280,7 +280,7 @@ if (event.type == sf::Event::MouseLeft)
     SFML supports 8 joystick axes: X, Y, Z, R, U, V, POV X and POV Y. How they map to your joystick depends on its driver.
 </p>
 <p>
-    The member associated to this event is <code>event.joystickMove</code>, it contains the identifier of the joystick, the name of the axis, and its
+    The member associated with this event is <code>event.joystickMove</code>, it contains the identifier of the joystick, the name of the axis, and its
     current position (in the range [-100, 100]).
 </p>
 <pre><code class="cpp">if (event.type == sf::Event::JoystickMoved)
@@ -299,7 +299,7 @@ if (event.type == sf::Event::MouseLeft)
     connected/disconnected.
 </p>
 <p>
-    The member associated to this event is <code>event.joystickConnect</code>, it contains the identifier of the connected/disconnected joystick.
+    The member associated with this event is <code>event.joystickConnect</code>, it contains the identifier of the connected/disconnected joystick.
 </p>
 <pre><code class="cpp">if (event.type == sf::Event::JoystickConnected)
     std::cout &lt;&lt; "joystick connected: " &lt;&lt; event.joystickConnect.joystickId &lt;&lt; std::endl;

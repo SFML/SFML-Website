@@ -11,17 +11,17 @@
 
 <?php h2('What is a view?') ?>
 <p>
-    In a game, it is common that a level is bigger than the window, what you see is only a small part of it. This is the case for RPGs, platform games, and many more.
-    What developers tend to forget is that they define entities <em>in a 2D world</em>, not directly in the window. The window is just a view, it shows a specific area
-    of the whole world. You could perfectly draw several views of the same world in parallel, or draw the world to a texture rather than to a window; the world itself is
-    still the same, what changes is just the way it is seen.
+    In games, it is not uncommon to have levels which are much bigger than the window itself. You only see is a small part of them. This is typically the case in RPGs, platform games, and many other genres.
+    What developers might tend to forget is that they define entities <em>in a 2D world</em>, not directly in the window. The window is just a view, it shows a specific area
+    of the whole world. It is perfectly fine to draw several views of the same world in parallel, or draw the world to a texture rather than to a window. The world itself
+    remains unchanged, what changes is just the way it is seen.
 </p>
 <p>
-    Since the window only sees a small part of the entire 2D world, you need a way to specify which part of the world is shown in the window. Additionally, you may also
-    want to define where/how this area will be shown in the window. These are the two main features of SFML views.
+    Since what is seen in the window is just a small part of the entire 2D world, you need a way to specify which part of the world is shown in the window. Additionally, you may also
+    want to define where/how this area will be shown <em>within</em> the window. These are the two main features of SFML views.
 </p>
 <p>
-    To summarize, views are what you need if you want to scroll, rotate or zoom your world. They are also the key in creating split screens and mini-maps.
+    To summarize, views are what you need if you want to scroll, rotate or zoom your world. They are also the key to creating split screens and mini-maps.
 </p>
 
 <?php h2('Defining what the view views') ?>
@@ -35,11 +35,11 @@ sf::View view1(sf::FloatRect(200, 200, 300, 200));
 sf::View view2(sf::Vector2f(350, 300), sf::Vector2f(300, 200));
 </code></pre>
 <p>
-    These two definitions are equivalent: both views will show the same area of the 2D world, a 300x200 rectangle centered on the point (350, 300).
+    These two definitions are equivalent: Both views will show the same area of the 2D world, a 300x200 rectangle <em>centered</em> on the point (350, 300).
 </p>
 <img class="screenshot" src="images/graphics-view-initial.png" title="A view" />
 <p>
-    If you don't want to define the view upon construction, or if you want to modify it later, you can use the equivalent setters:
+    If you don't want to define the view upon construction or want to modify it later, you can use the equivalent setters:
 </p>
 <pre><code class="cpp">sf::View view1;
 view1.reset(sf::FloatRect(200, 200, 300, 200));
@@ -49,13 +49,13 @@ view2.setCenter(sf::Vector2f(350, 300));
 view2.setSize(sf::Vector2f(200, 200));
 </code></pre>
 <p>
-    Once your view is defined you can transform it, to make it show a translated/rotated/scaled version of your 2D world.
+    Once your view is defined, you can transform it to make it show a translated/rotated/scaled version of your 2D world.
 </p>
 
 <h3>Moving (scrolling) the view</h3>
 <p>
-    Unlike drawable entites such as sprites or shapes, whose position is defined by their top-left corner (and can be changed to any other point), views are
-    always manipulated by their center -- this is more convenient. That's why the function to change the position of a view is named <code>setCenter</code>, and not
+    Unlike drawable entites such as sprites or shapes, whose positions are defined by their top-left corner (and can be changed to any other point), views are
+    always manipulated by their center -- this is simply more convenient. That's why the function to change the position of a view is named <code>setCenter</code>, and not
     <code>setPosition</code>.
 </p>
 <pre><code class="cpp">// move the view at point (200, 200)
@@ -80,7 +80,7 @@ view.rotate(5);
 
 <h3>Zooming (scaling) the view</h3>
 <p>
-    Zooming (in or out) a view is equivalent to resizing it. So the function to use is <code>setSize</code>.
+    Zooming in (or out) a view is done through to resizing it, so the function to use is <code>setSize</code>.
 </p>
 <pre><code class="cpp">// resize the view to show a 1200x800 area (we see a bigger area, so this is a zoom out)
 view.setSize(1200, 800);
@@ -92,29 +92,29 @@ view.zoom(0.5f);
 
 <?php h2('Defining how the view is viewed') ?>
 <p>
-    Now that you've defined which part of the 2D world must be seen in the window, let's define <em>where</em> it is shown. By default, the viewed contents occupy
-    the full window. If the view has the same size as the window, everything is rendered 1:1. If the view is smaller or bigger, then everything is scaled to fit in the
+    Now that you've defined which part of the 2D world is seen in the window, let's define <em>where</em> it is shown. By default, the viewed contents occupy
+    the full window. If the view has the same size as the window, everything is rendered 1:1. If the view is smaller or larger than the window, everything is scaled to fit in the
     window.
 </p>
 <p>
-    This default behaviour is suitable in most situations, but it sometimes needs to be changed. For example, to split the screen in a multiplayer game, you may want to
-    use two views which occupy only half of the window. You can also implement a minimap, by drawing your entire world to a view which is rendered in a small area in the
-    corner of the window. The area where the contents of the view are shown is called the <em>viewport</em>.
+    This default behaviour is suitable for most situations, but it might need to be changed sometimes. For example, to split the screen in a multiplayer game, you may want to
+    use two views which each only occupy half of the window. You can also implement a minimap by drawing your entire world to a view which is rendered in a small area in a
+    corner of the window. The area in which the contents of the view is shown is called the <em>viewport</em>.
 </p>
 <p>
-    To define the viewport of a view, you must call the <code>setViewport</code> function.
+    To set the viewport of a view, you can use the <code>setViewport</code> function.
 </p>
 <pre><code class="cpp">// define a centered viewport, with half the size of the window
 view.setViewport(sf::FloatRect(0.25f, 0.25, 0.5f, 0.5f));
 </code></pre>
 <img class="screenshot" src="images/graphics-view-viewport.png" title="A viewport" />
 <p>
-    You probably noticed something very important: the viewport is not defined in pixels, but rather as a ratio of the window size. This is much more convenient: this way you
-    don't have to track resize events to update the size of the viewport. It is also more intuitive: you will most likely need to define your viewport as a fraction of
-    your window, not as a fixed-size rectangle.
+    You might have noticed something very important: The viewport is not defined in pixels, but instead as a ratio of the window size. This is more convenient: It allows you
+    to not have to track resize events in order to update the size of the viewport every time the size of the window changes. It is also more intuitive: You would probably define your viewport as a fraction of
+    the entire window area anyway, not as a fixed-size rectangle.
 </p>
 <p>
-    Using the viewport, it is straight-forward to split the screen for multiplayer games:
+    Using a viewport, it is straightforward to split the screen for multiplayer games:
 </p>
 <pre><code class="cpp">// player 1 (left side of the screen)
 player1View.setViewport(sf::FloatRect(0, 0, 0.5f, 1));
@@ -137,7 +137,7 @@ minimapView.setViewport(sf::FloatRect(0.75f, 0, 0.25f, 0.25f));
 
 <?php h2('Using a view') ?>
 <p>
-    To draw something using a view, you must draw it after calling the <code>setView</code> function of the target where you're drawing
+    To draw something using a view, you must draw it after calling the <code>setView</code> function of the target to which you are drawing
     (<?php class_link('RenderWindow') ?> or <?php class_link('RenderTexture') ?>).
 </p>
 <pre><code class="cpp">// let's define a view
@@ -168,9 +168,9 @@ window.setView(view);
 window.setView(window.getDefaultView());
 </code></pre>
 <p class="important">
-    When you call <code>setView</code>, the render-target keeps a <em>copy</em> of the view, not a pointer to the original one. So whenever you update your view, you need
+    When you call <code>setView</code>, the render-target makes a <em>copy</em> of the view, and doesn't store a pointer to the one that is passed. This means that whenever you update your view, you need
     to call <code>setView</code> again to apply the modifications.<br />
-    Don't be afraid to copy views or to create them on the fly, they are lightweight objects (they just hold a few floats).
+    Don't be afraid to copy views or create them on the fly, they aren't expensive objects (they just hold a few floats).
 </p>
 
 <?php h2('Showing more when the window is resized') ?>
@@ -179,8 +179,8 @@ window.setView(window.getDefaultView());
     to the new size.
 </p>
 <p>
-    If, instead of this default behaviour, you'd like to show more/less stuff according to the new size of the window, all you have to do is to synchronize the size of the
-    view to the size of the window.
+    If, instead of this default behaviour, you'd like to show more/less stuff depending on the new size of the window, all you have to do is update the size of the
+    view with the size of the window.
 </p>
 <pre><code class="cpp">// the event loop
 sf::Event event;
@@ -200,8 +200,8 @@ while (window.pollEvent(event))
 
 <?php h2('Coordinates conversions') ?>
 <p>
-    When you use a custom view, or when you resize the window without using the code above, pixels of the target no longer match units of the 2D world. For example,
-    clicking on pixel (10, 50) may hit the point (26.5, -84) of your world. You must use a conversion function to map your pixel coordinates to world coordinates:
+    When you use a custom view, or when you resize the window without using the code above, pixels displayed on the target no longer match units in the 2D world. For example,
+    clicking on pixel (10, 50) may hit the point (26.5, -84) of your world. You end up having to use a conversion function to map your pixel coordinates to world coordinates:
     <code>mapPixelToCoords</code>.
 </p>
 <pre><code class="cpp">// get the current mouse position in the window
@@ -215,7 +215,7 @@ sf::Vector2f worldPos = window.mapPixelToCoords(pixelPos);
     additional argument to the function.
 </p>
 <p>
-    The inverse, converting world coordinates to pixel coordinates, is also possible with the <code>mapCoordsToPixel</code> function.
+    The opposite, converting world coordinates to pixel coordinates, is also possible with the <code>mapCoordsToPixel</code> function.
 </p>
 
 <?php

@@ -16,8 +16,8 @@
     that manipulate time values use this class.
 </p>
 <p>
-    <?php class_link("Time") ?> wraps a relative time value (in other words, a time span). It is <em>not</em> a date-time class which would represent the
-    current year/month/day/hour/minute/second, it's just a value that represents a certain amount of time, and how to interpret it depends on the context
+    <?php class_link("Time") ?> represents a time period (in other words, the time that elapses between two events). It is <em>not</em> a date-time class which would represent the
+    current year/month/day/hour/minute/second as a timestamp, it's just a value that represents a certain amount of time, and how to interpret it depends on the context
     where it is used.
 </p>
 

@@ -11,7 +11,7 @@
 
 <?php h2('Recording to a sound buffer') ?>
 <p>
-    The most common scenario for captured audio data is to be saved to a sound buffer (<?php class_link("SoundBuffer") ?>) so that it can either be played
+    The most common use for captured audio data is for it to be saved to a sound buffer (<?php class_link("SoundBuffer") ?>) so that it can either be played
     or saved to a file.
 </p>
 <p>
@@ -61,7 +61,7 @@ sound.play();
 </code></pre>
     </li>
     <li>
-        Access the raw audio data and analyze it, transform it, or whatever
+        Access the raw audio data and analyze it, transform it, etc.
 <pre><code class="cpp">const sf::Int16* samples = buffer.getSamples();
 std::size_t count = buffer.getSampleCount();
 doSomething(samples, count);    
@@ -75,15 +75,15 @@ doSomething(samples, count);
 <?php h2('Custom recording') ?>
 <p>
     If storing the captured data in a sound buffer is not what you want, you can write your own recorder. Doing so will allow you to process the
-    audio data while it is captured, (almost) directly from the recording device. This way you can, for example, stream the captured audio to the
-    network, perform a real-time analysis on it, etc.
+    audio data while it is captured, (almost) directly from the recording device. This way you can, for example, stream the captured audio over the
+    network, perform real-time analysis on it, etc.
 </p>
 <p>
     To write your own recorder, you must inherit from the <?php class_link("SoundRecorder") ?> abstract base class. In fact,
     <?php class_link("SoundBufferRecorder") ?> is just a built-in specialization of this class.
 </p>
 <p>
-    You only have a single virtual function to override in your derived class: <code>onProcessSamples</code>. It is called everytime a new chunk
+    You only have a single virtual function to override in your derived class: <code>onProcessSamples</code>. It is called every time a new chunk
     of audio samples is captured, so this is where you implement your specific stuff.
 </p>
 <p class="important">
@@ -92,7 +92,7 @@ doSomething(samples, count);
 </p>
 <p>
     There are also two additional virtual functions that you can optionally override: <code>onStart</code> and <code>onStop</code>. They are
-    called respectively when the capture starts/stops. They are useful for initialization/cleanup tasks.
+    called when the capture starts/stops respectively. They are useful for initialization/cleanup tasks.
 </p>
 <p>
     Here is the skeleton of a complete derived class:
@@ -142,19 +142,19 @@ recorder.stop();
 
 <?php h2('Threading issues') ?>
 <p>
-    Since recording is done in a separate thread, it is important to know what happens exactly, and where.
+    Since recording is done in a separate thread, it is important to know what exactly happens, and where.
 </p>
 <p>
     <code>onStart</code> will be called directly by the <code>start</code> function, so it is executed in the same thread that called it. However,
     <code>onProcessSample</code> and <code>onStop</code> will always be called from the internal recording thread that SFML creates.
 </p>
 <p>
-    So, if your recorder uses data that may be accessed <em>concurrently</em> in both the caller thread and in the recording thread, you have to protect
-    them (with a mutex or whatever) in order to avoid concurrent access, which may cause undefined behaviors -- corrupt data being recorded, crashes, etc.
+    If your recorder uses data that may be accessed <em>concurrently</em> in both the caller thread and in the recording thread, you have to protect
+    it (with a mutex for example) in order to avoid concurrent access, which may cause undefined behavior -- corrupt data being recorded, crashes, etc.
 </p>
 <p>
-    If you're not familiar enough with threading, you can first read the
-    <a class="internal" href="./system-thread.php" title="Threading tutorial">corresponding tutorial</a>.
+    If you're not familiar enough with threading, you can refer to the
+    <a class="internal" href="./system-thread.php" title="Threading tutorial">corresponding tutorial</a> for more information.
 </p>
 
 <?php
