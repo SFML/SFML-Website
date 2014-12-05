@@ -94,6 +94,9 @@
             <td class="os" rowspan="2">All</td>
             <td><span class="description">Source code</span><a href="SFML-2.2-sources.zip">Download<span class="size">9.27 MB</span></a></td>
         </tr>
+        <tr>
+            <td><span class="description">HTML Documentation</span><a href="SFML-2.2-doc.zip">Download<span class="size">0.00 MB</span></a></td>
+        </tr>
     </tbody>
 </table>
 

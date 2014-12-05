@@ -96,6 +96,9 @@
             <td class="os" rowspan="2">Tous OS</td>
             <td><span class="description">Code source</span><a href="SFML-2.2-sources.zip">Télécharger<span class="size">9.27 Mo</span></a></td>
         </tr>
+        <tr>
+            <td><span class="description">HTML Documentation</span><a href="SFML-2.2-doc.zip">Télécharger<span class="size">0.00 MB</span></a></td>
+        </tr>
     </tbody>
 </table>
 
