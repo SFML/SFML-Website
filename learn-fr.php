@@ -13,7 +13,7 @@
     SFML est distribuées sous <strong>licence zlib/png</strong>. Le texte complet se trouve <a href="license-fr.php" title="Page du text licence"><strong>ici</strong></a>.
 </p>
 
-<h2 id="tutoriels">Tutoriels</h2>
+<h2 id="tutoriels"><a class="h2-link" href="#tutoriels">Tutoriels</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 <p>
     Les tutoriels officiels sont le point de départ si vous souhaitez apprendre à utiliser SFML. Ils expliquent pas à pas les classes et concepts importants de chaque module.
 </p>
