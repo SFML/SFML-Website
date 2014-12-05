@@ -18,25 +18,29 @@
 <table class="styled download">
     <tbody>
         <tr>
-            <td class="os" rowspan="5">Windows</td>
-            <td><?php download_link('Visual C++ 9 (2008)', '32-bit', '9.80', 'SFML-2.2-windows-vc9-32bits.zip') ?></td>
-            <td><?php download_link('Visual C++ 9 (2008)', '64-bit', '11.0', 'SFML-2.2-windows-vc9-64bits.zip') ?></td>
+            <td class="os" rowspan="6">Windows</td>
+            <td><?php download_link('Visual C++ 10 (2010)', '32-bit', '0.0', 'SFML-2.2-windows-vc10-32-bit.zip') ?></td>
+            <td><?php download_link('Visual C++ 10 (2010)', '64-bit', '0.0', 'SFML-2.2-windows-vc10-64-bit.zip') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('Visual C++ 10 (2010)', '32-bit', '10.3', 'SFML-2.2-windows-vc10-32bits.zip') ?></td>
-            <td><?php download_link('Visual C++ 10 (2010)', '64-bit', '11.5', 'SFML-2.2-windows-vc10-64bits.zip') ?></td>
+            <td><?php download_link('Visual C++ 11 (2012)', '32-bit', '0.0', 'SFML-2.2-windows-vc11-32-bit.zip') ?></td>
+            <td><?php download_link('Visual C++ 11 (2012)', '64-bit', '0.0', 'SFML-2.2-windows-vc11-64-bit.zip') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('Visual C++ 11 (2012)', '32-bit', '11.5', 'SFML-2.2-windows-vc11-32bits.zip') ?></td>
-            <td><?php download_link('Visual C++ 11 (2012)', '64-bit', '12.9', 'SFML-2.2-windows-vc11-64bits.zip') ?></td>
+            <td><?php download_link('Visual C++ 12 (2013)', '32-bit', '0.0', 'SFML-2.2-windows-vc12-32-bit.zip') ?></td>
+            <td><?php download_link('Visual C++ 12 (2013)', '64-bit', '0.0', 'SFML-2.2-windows-vc12-64-bit.zip') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('GCC 4.7 TDM (SJLJ)', '32-bit', '15.0', 'SFML-2.2-windows-gcc-4.7-tdm-32bits.zip') ?></td>
-            <td><?php download_link('GCC 4.7 TDM (SJLJ)', '64-bit', '41.0', 'SFML-2.2-windows-gcc-4.7-tdm-64bits.zip') ?></td>
+            <td><?php download_link('GCC 4.7.1 TDM (SJLJ)', '32-bit', '0.0', 'SFML-2.2-windows-gcc-4.7.1-tdm-32-bit.zip') ?></td>
+            <td><?php download_link('GCC 4.7.1 TDM (SJLJ)', '64-bit', '0.0', 'SFML-2.2-windows-gcc-4.7.1-tdm-64-bit.zip') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('GCC 4.7 MinGW (DW2)', '32-bit', '10.6', 'SFML-2.2-windows-gcc-4.7-mingw-32bits.zip') ?></td>
-            <td></td>
+            <td><?php download_link('GCC 4.8.1 TDM (SJLJ)', '32-bit', '0.0', 'SFML-2.2-windows-gcc-4.8.1-tdm-32-bit.zip') ?></td>
+            <td><?php download_link('GCC 4.8.1 TDM (SJLJ)', '64-bit', '0.0', 'SFML-2.2-windows-gcc-4.8.1-tdm-64-bit.zip') ?></td>
+        </tr>
+        <tr>
+            <td><?php download_link('GCC 4.9.2 MinGW (DW2)', '32-bit', '0.0', 'SFML-2.2-windows-gcc-4.9.2-mingw-32-bit.zip') ?></td>
+            <td><?php download_link('GCC 4.9.2 MinGW (SEH)', '64-bit', '0.0', 'SFML-2.2-windows-gcc-4.9.2-mingw-64-bit.zip') ?></td>
         </tr>
         <tr>
             <td class="notice" colspan="3">
