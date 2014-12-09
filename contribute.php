@@ -7,7 +7,7 @@
     include('header.php');
 ?>
 
-<h1 id="contribution-guidelines"><a class="h1-link" href="#contribution-guidelines">Contribution Guidelines</a></h1>
+<h1>Contribution Guidelines</h1>
 <p>You would like to see a feature implemented or a bug fixed in SFML? Great! Contributions to SFML are highly appreciated, be it in the form of general ideas, concrete suggestions or code patches. </p>
 <p>This document explains how you can contribute. By carefully reading it, you minimize the time it takes on your and on our side until a modification is implemented. Since we can't (and don't want to) implement everything, the following guidelines clarify what it takes for a contribution to be accepted.</p>
 
@@ -91,3 +91,7 @@
 </ul>
 <p>For smaller issues, a single commit should be attached to the pull request. If you implement a larger modification, you may split the commits, but please do so semantically ("implemented feature X, fixed bug Y") and not chronologically ("started X, continued Y, finished Z"). Keep in mind that you can not only add new commits, but also overwrite existing ones by force-pushing (<code>git push --force-with-lease</code>) to your repository branch.</p>
 <p>We may ask you to elaborate and improve certain parts of your code, sometimes we also edit it directly. We consider it important that you are listed as a contributor in the SFML commit history, so make sure that you choose credentials (author name and e-mail address) that you want to be published.</p>
+
+<?php
+    require("footer.php");
+?>

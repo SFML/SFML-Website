@@ -54,15 +54,14 @@
     binding('JSFML', 'jsfml.png', 'Java', array('Patrick Dinklage' => 'pdinklag@gmail.com'), true, 'http://jsfml.org');
     binding('DerelictSFML2', null, 'D', array('Mike Parker' => 'aldacron@gmail.com'), true, 'https://github.com/aldacron/Derelict3/');
     binding('DSFML', null, 'D', array('Jeremy DeHaan' => 'dehaan.jeremiah@gmail.com'), true, 'https://github.com/Jebbs/DSFML');
-    binding('SFML-D', null, 'D', array('krzat' => null), false, 'https://github.com/krzat/SFML-D');
     binding('pySFML', 'python-sfml.png', 'Python', array('Jonathan De Wachter' => 'dewachter.jonathan@gmail.com', 'Edwin Marshall' => null), true, 'http://www.python-sfml.org/');
-    binding('rbSFML', 'rbsfml.png', 'Ruby', array('Henrik Valter Vogelius Hansson' => 'groogy@groogy.se'), true, 'http://www.groogy.se');
+    binding('rbSFML', 'rbsfml.png', 'Ruby', array('Henrik Valter Vogelius Hansson' => 'groogy@groogy.se'), true, 'http://www.groogy.se/mainsite/rbsfml/');
     binding('Ocsfml', null, 'OCaml', array('Jun Maillard' => null, 'Kenji Maillard' => null), true, 'https://github.com/JoeDralliam/Ocsfml');
     binding('ocaml-sfml', null, 'OCaml', array('Florent Monnier' => null), true, 'http://ocaml-sfml.forge.ocamlcore.org/');
     binding('GoSFML2', null, 'Go', array('krepa098' => null), true, 'https://bitbucket.org/krepa098/gosfml2');
     binding('nimrod-sfml', null, 'Nimrod', array('fowl' => null), true, 'https://github.com/fowlmouth/nimrod-sfml');
     binding('EuSFML2', null, 'Euphoria', array('Andy Patterson' => null), true, 'http://www.rapideuphoria.com/eusfml.zip');
-    binding('rust-sfml', null, 'Rust', array('Jérémy Letang' => 'letang.jeremy@gmail.com'), true, 'https://github.com/JeremyLetang/rust-sfml');
+    binding('Rust-SFML', null, 'Rust', array('Jérémy Letang' => 'letang.jeremy@gmail.com'), true, 'http://www.rust-sfml.org/');
 
 ?>
 
