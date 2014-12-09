@@ -62,3 +62,7 @@ Let's say we have versions 2.x.0 (latest release of SFML 2) and 3.1.1, where the
  <li>Make release.</li>
  <li>Happiness!</li>
 </ol>
+
+<?php
+    require("footer.php");
+?>

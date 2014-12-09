@@ -9,13 +9,6 @@
 
 <h1 id="sfml-2.2"><a class="h1-link" href="#sfml-2.2">SFML 2.2</a></h1>
 
-<h2 id="2.2-highlights"><a class="h2-link" href="#2.2-highlights">Highlights</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
-<ul>
- <li>Experimental Android and iOS support.</li>
- <li>Improved blending mode system.</li>
- <li>Added functions to get a window's focus state and request focus for it.</li>
-</ul>
-
 <h2 id="2.2-general"><a class="h2-link" href="#2.2-general">General</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 <ul>
  <li>Support for iOS and Android platform (<a target="_blank" href="https://github.com/LaurentGomila/SFML/issues/410">#410</a>, <a target="_blank" href="https://github.com/LaurentGomila/SFML/issues/440">#440</a>)</li>
@@ -172,3 +165,7 @@ https://github.com/LaurentGomila/SFML/pull/712">#712</a>)</li>
 
 <h1 id="sfml-2.0"><a class="h1-link" href="#sfml-2.0">SFML 2.0</a></h1>
 <p>Please refer to the <a target="_blank" href="http://en.sfml-dev.org/forums/index.php?topic=76.msg78424#msg78424" title="Go to the release announcement">release announcement</a>.</p>
+
+<?php
+    require("footer.php");
+?>

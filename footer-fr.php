@@ -2,7 +2,7 @@
         </div>
         <div id="footer-container">
             <div id="footer">
-                SFML is licensed under the terms and conditions of the <a href="license-fr.php">zlib license</a>.<br>
+                Les bibliothèques et le code source de SFML sont distribués sous <a href="license-fr.php">licence zlib/png</a>.<br>
                 Copyright © <a href="mailto:laurent@sfml-dev.org" title="Contacter l'auteur">Laurent Gomila</a>
             </div>
         </div>
