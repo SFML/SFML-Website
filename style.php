@@ -8,7 +8,36 @@
 ?>
 
 <h1>Code Style Guide</h1>
-<p>First of all, the C++ part of SFML should be C++03 compliant.</p>
+
+<ul>
+    <li><a href="#general">General</a></li>
+    <li><a href="#header-files">Header files</a>
+        <ul>
+            <li><a href="#include-guards">Include guards</a></li>
+            <li><a href="#includes">Includes</a></li>
+            <li><a href="#class-definitions">Class definitions</a></li>
+            <li><a href="#comments-documentation">Comments and documentation</a></li>
+        </ul>
+    </li>
+    <li><a href="#syntactical-conventions">Syntactical conventions</a>
+        <ul>
+            <li><a href="#naming-conventions">Naming conventions</a></li>
+            <li><a href="#indentation-space-parenthesis-quarks">Indentation, space and quarks</a></li>
+            <li><a href="#parenthesis-braces">Parenthesis and braces</a></li>
+        </ul>
+    </li>
+    <li><a href="#semantics-idioms">Semantics and idioms</a>
+        <ul>
+            <li><a href="#pointers-references">Use of pointers and references</a></li>
+            <li><a href="#type-conversions">Type conversions</a></li>
+            <li><a href="#namespaces">Namespaces</a></li>
+            <li><a href="#structures-classes">Structures and classes</a></li>
+        </ul>
+    </li>
+</ul>
+
+<h2 id="general"><a class="h2-link" href="#general">General</a></h2>
+<p>C++ source code must be C++03-compliant.</p>
 
 <h2 id="header-files"><a class="h2-link" href="#header-files">Header Files</a></h2>
 <p>C++ header files have the extension <code>.hpp</code> and are structured as follows:</p>
@@ -86,7 +115,7 @@ SFML_..._API void doSomething();
 <p>Every header file has a unique include guard. Usually it is based on the filename unless the identifier is already used by another file (with the same name).</p>
 <p><strong>OS X implementation:</strong> There's a difference between <code>*.hpp</code> and <code>*.h</code> files. The <code>hpp</code> extension is used for C++ files and has include guards. The <code>h</code> files are Objective-C header files and should not be included in a C++ source file. Those files are "<code>#import</code>ed" and thus don't require include guards.</p>
 
-<h3>Example</h3>
+<h4>Example</h4>
 <p>For the file <code>Time.hpp</code>, the include guard would look like this:</p>
 <pre><code class="cpp">#ifndef SFML_TIME_HPP
 #define SFML_TIME_HPP
@@ -108,7 +137,7 @@ SFML_..._API void doSomething();
 <p>Before the includes, a comment with the label <em>Headers</em> is added.</p>
 <p><strong>OS X implementation:</strong> <code>#import</code>s come last. This block of inclusion is separated by an empty line and follows the same three rules.</p>
 
-<h3>Example</h3>
+<h4>Example</h4>
 <pre><code class="cpp">////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
@@ -134,8 +163,6 @@ SFML_..._API void doSomething();
  <li>Header inclusions are preceded by a "Headers" block comment, attributes by "Member data" and typedefs by "Types"</li>
  <li>Classes documentation are split in two modules: a first <code>\brief</code> comment is placed right before the class definition and a more elaborated documentation is placed at the bottom of the header file. This second block is optional for classes not exposed to the user (e.g. classes inside <code>sf::priv</code> namespace).</li>
 </ul>
-
-<h3>Examples</h3>
 
 <h4>Block Comments</h4>
 <pre><code class="cpp">////////////////////////////////////////////////////////////
@@ -178,11 +205,11 @@ Ok       = 200, ///&lt; Most common code returned when operation was successful
 Created  = 201, ///&lt; The resource has successfully been created
 Accepted = 202, ///&lt; The request has been accepted, but will be processed later by the server</code></pre>
 
- <h2 id="syntactical-conventions"><a class="h2-link" href="#syntactical-conventions">Syntactical Conventions</a></h2>
+<h2 id="syntactical-conventions"><a class="h2-link" href="#syntactical-conventions">Syntactical Conventions</a></h2>
 
 <h3 id="naming-conventions"><a class="h3-link" href="#naming-conventions">Naming Conventions</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
 <p>The following naming conventions are (usually) used:</p>
-<table>
+<table class="styled">
  <thead>
   <tr>
    <th>Type</td>
@@ -190,9 +217,6 @@ Accepted = 202, ///&lt; The request has been accepted, but will be processed lat
   </tr>
  </thead>
  <tbody>
-  <tr>
-   <td></td><td></td>
-  </tr>
   <tr>
    <td>file name</td>
    <td>PascalCase.hpp, PascalCase.cpp, PascalCase.inl (templates)</td>
@@ -239,10 +263,10 @@ Accepted = 202, ///&lt; The request has been accepted, but will be processed lat
 
 <h3 id="indentation-space-parenthesis-quarks"><a class="h3-link" href="#indentation-space-parenthesis-quarks">Indentation, Space, Parenthesis and Quarks</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
 
-<h3>Tabs vs. Spaces</h3>
+<h4>Tabs vs. Spaces</h4>
 <p>No tab should be used in SFML code. Indentation is managed by spaces only. A tabulator is equal to 4 spaces.</p>
 
-<h3>Spaces</h3>
+<h4>Spaces</h4>
 <p>The rules are as follows:</p>
 <ol>
  <li>A space precedes an open parenthesis.</li>
@@ -267,7 +291,7 @@ const T&amp;       cref;
 const T*       cptr;
       T* const ptrc;</code></pre>
 
-<h3>Lines</h3>
+<h4>Lines</h4>
 <ol>
  <li>An extra empty line ends every file.</li>
  <li>There is only one instruction per line, except for readability in some <code>switch</code>es.</li>
@@ -285,7 +309,7 @@ const T*       cptr;
                  Uint8(std::min(int(left.a) + right.a, 255)));
 }</code></pre>
 
-<h3>Parenthesis and Braces</h3>
+<h3 id="parenthesis-braces"><a class="h3-link" href="#parenthesis-braces">Parenthesis and Braces</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
 
 <h4>Blocks</h4>
 <p>Blocks are always indented by one extra level, except for namespaces when there is only one used in the file.</p>
