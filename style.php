@@ -36,10 +36,10 @@
     </li>
 </ul>
 
-<h2 id="general"><a class="h2-link" href="#general">General</a></h2>
+<h2 id="general"><a class="h2-link" href="#general">General</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 <p>C++ source code must be C++03-compliant.</p>
 
-<h2 id="header-files"><a class="h2-link" href="#header-files">Header Files</a></h2>
+<h2 id="header-files"><a class="h2-link" href="#header-files">Header Files</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 <p>C++ header files have the extension <code>.hpp</code> and are structured as follows:</p>
 <ol>
  <li>License block</li>
@@ -111,7 +111,7 @@ SFML_..._API void doSomething();
 //
 ////////////////////////////////////////////////////////////</code></pre>
 
-<h3 id="include-guards"><a class="h3-link" href="#include-guards">Include Guards</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
+<h3 id="include-guards"><a class="h3-link" href="#include-guards">Include Guards</a></h3>
 <p>Every header file has a unique include guard. Usually it is based on the filename unless the identifier is already used by another file (with the same name).</p>
 <p><strong>OS X implementation:</strong> There's a difference between <code>*.hpp</code> and <code>*.h</code> files. The <code>hpp</code> extension is used for C++ files and has include guards. The <code>h</code> files are Objective-C header files and should not be included in a C++ source file. Those files are "<code>#import</code>ed" and thus don't require include guards.</p>
 
@@ -122,7 +122,7 @@ SFML_..._API void doSomething();
 // Code...
 #endif // SFML_TIME_HPP</code></pre>
 
-<h3 id="includes"><a class="h3-link" href="#includes">Includes</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
+<h3 id="includes"><a class="h3-link" href="#includes">Includes</a></h3>
 <p>The inclusion order is as follows:</p>
 <ol>
  <li>SFML headers
@@ -146,10 +146,10 @@ SFML_..._API void doSomething();
 #include <X11/Xlib-xcb.h>
 #include <vector></code></pre>
 
-<h3 id="class-definitions"><a class="h3-link" href="#class-definitions">Class Definitions</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
+<h3 id="class-definitions"><a class="h3-link" href="#class-definitions">Class Definitions</a></h3>
 <p>In a class, the public interface comes first (with usually constructors and special member functions at the top), followed by protected members and then private data. In a given access-modifier group,  static members are grouped together.</p>
 
-<h3 id="comments-documentation"><a class="h3-link" href="#comments-documentation">Comments and Documentation</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
+<h3 id="comments-documentation"><a class="h3-link" href="#comments-documentation">Comments and Documentation</a></h3>
 <ul>
  <li>Doxygen documentation is used with backslash style (e.g. <code>\param</code>).</li>
  <li>Everything in the public API should be documented properly.</li>
@@ -205,9 +205,9 @@ Ok       = 200, ///&lt; Most common code returned when operation was successful
 Created  = 201, ///&lt; The resource has successfully been created
 Accepted = 202, ///&lt; The request has been accepted, but will be processed later by the server</code></pre>
 
-<h2 id="syntactical-conventions"><a class="h2-link" href="#syntactical-conventions">Syntactical Conventions</a></h2>
+<h2 id="syntactical-conventions"><a class="h2-link" href="#syntactical-conventions">Syntactical Conventions</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 
-<h3 id="naming-conventions"><a class="h3-link" href="#naming-conventions">Naming Conventions</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
+<h3 id="naming-conventions"><a class="h3-link" href="#naming-conventions">Naming Conventions</a></h3>
 <p>The following naming conventions are (usually) used:</p>
 <table class="styled">
  <thead>
@@ -261,7 +261,7 @@ Accepted = 202, ///&lt; The request has been accepted, but will be processed lat
 </table>
 <p>Note: with <code>PascalCase</code>, acronyms like <code>HTTP</code> are written <code>Http</code>.</p>
 
-<h3 id="indentation-space-parenthesis-quarks"><a class="h3-link" href="#indentation-space-parenthesis-quarks">Indentation, Space, Parenthesis and Quarks</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
+<h3 id="indentation-space-parenthesis-quarks"><a class="h3-link" href="#indentation-space-parenthesis-quarks">Indentation, Space, Parenthesis and Quarks</a></h3>
 
 <h4>Tabs vs. Spaces</h4>
 <p>No tab should be used in SFML code. Indentation is managed by spaces only. A tabulator is equal to 4 spaces.</p>
@@ -309,7 +309,7 @@ const T*       cptr;
                  Uint8(std::min(int(left.a) + right.a, 255)));
 }</code></pre>
 
-<h3 id="parenthesis-braces"><a class="h3-link" href="#parenthesis-braces">Parenthesis and Braces</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
+<h3 id="parenthesis-braces"><a class="h3-link" href="#parenthesis-braces">Parenthesis and Braces</a></h3>
 
 <h4>Blocks</h4>
 <p>Blocks are always indented by one extra level, except for namespaces when there is only one used in the file.</p>
@@ -342,9 +342,9 @@ func() &amp;&amp; (x &lt; y); // function call not parenthesized</code></pre>
 <p>If different binary operators are combined in the same statement, parenthesis are added <em>even if not necessary</em> to disambiguate the reading; e.g.:</p>
 <pre><code class="cpp">output = static_cast&lt;Uint32&gt;(((first - 0xD800) &lt;&lt; 10) + (second - 0xDC00) + 0x0010000);</code></pre>
 
-<h2 id="semantics-idioms"><a class="h2-link" href="#semantics-idioms">Semantics and Idioms</a></h2>
+<h2 id="semantics-idioms"><a class="h2-link" href="#semantics-idioms">Semantics and Idioms</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 
-<h3 id="pointers-references"><a class="h3-link" href="#pointers-references">Use of Pointers and References</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
+<h3 id="pointers-references"><a class="h3-link" href="#pointers-references">Use of Pointers and References</a></h3>
 <p>Pointers are used if either of the following conditions is true. In all other situations, references are used.</p>
 <ul>
  <li><code>NULL</code> is a valid value</li>
@@ -355,7 +355,7 @@ func() &amp;&amp; (x &lt; y); // function call not parenthesized</code></pre>
 <p>Null pointers are represented with the macro <code>NULL</code>.</p>
 <p>Pointers that own their memory and require manual memory management (<code>new</code> and <code>delete</code>) should be avoided, or at least encapsulated. Prefer the use of objects and RAII.</p>
 
-<h3 id="type-conversions"><a class="h3-link" href="#type-conversions">Type Conversions</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
+<h3 id="type-conversions"><a class="h3-link" href="#type-conversions">Type Conversions</a></h3>
 <p>Any explicit type conversion is done using the C++ cast operators <code>static_cast</code>, <code>const_cast</code>, <code>reinterpret_cast</code> and <code>dynamic_cast</code>. No C-style casts <code>(int)value</code> or function-style casts <code>int(value)</code> are used.</p>
 <p>Booleans and pointers are never explicitly checked against literals.</p>
 <pre><code class="cpp">T* ptr = ...;
@@ -376,12 +376,12 @@ bool x = var & FLAG;
 // bad:
 bool x = (var & FLAG) != 0;</code></pre>
 
-<h3 id="namespaces"><a class="h3-link" href="#namespaces">Namespaces</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
+<h3 id="namespaces"><a class="h3-link" href="#namespaces">Namespaces</a></h3>
 <p>The public API lives in the <code>sf</code> namespace. The <code>sf::priv</code> namespace is reserved for implementation details.</p>
 <p>Anonymous namespace are used when global variables are needed, or for function only needed in the current source file, in order to restrict their access to a specific compilation unit.</p>
 <p>No <code>using</code> directive should be used. Instead the full name is used everywhere.</p>
 
-<h3 id="structures-classes"><a class="h3-link" href="#structures-classes">Structures and Classes</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
+<h3 id="structures-classes"><a class="h3-link" href="#structures-classes">Structures and Classes</a></h3>
 <p><code>struct</code>s are used to wrap up one or more variables together but do not use encapsulation; they are generally used by <code>class</code>es that do protect their members with <code>protected</code> or <code>private</code> modifiers. <code>struct</code>s can have constructors but should not have methods. They do not use access specifiers or inheritance.</p>
 <p>In a class, the public interface comes first (with usually constructors at the top), followed by protected members and then private data. In a given access-modifier group <code>static</code> members are grouped together.</p>
  
