@@ -7,9 +7,17 @@
     include('header.php');
 ?>
 
-<h1 id="sfml-2.2"><a class="h1-link" href="#sfml-2.2">SFML 2.2</a></h1>
+<h1>Changelog</h1>
 
-<h2 id="2.2-general"><a class="h2-link" href="#2.2-general">General</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
+<ul>
+    <li><a href="#sfml-2.2">SFML 2.2</a></li>
+    <li><a href="#sfml-2.1">SFML 2.1</a></li>
+    <li><a href="#sfml-2.0">SFML 2.0</a></li>
+</ul>
+
+<h2 id="sfml-2.2"><a class="h2-link" href="#sfml-2.2">SFML 2.2</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
+
+<h3 id="2.2-general"><a class="h3-link" href="#2.2-general">General</a></h3>
 <ul>
  <li>Support for iOS and Android platform (<a target="_blank" href="https://github.com/LaurentGomila/SFML/issues/410">#410</a>, <a target="_blank" href="https://github.com/LaurentGomila/SFML/issues/440">#440</a>)</li>
  <li>Various documentation corrections (<a target="_blank" href="https://github.com/LaurentGomila/SFML/issues/438">#438</a>, <a target="_blank" href="https://github.com/LaurentGomila/SFML/pull/496">#496</a>, <a target="_blank" href="https://github.com/LaurentGomila/SFML/pull/497">#497</a>, <a target="_blank" href="https://github.com/LaurentGomila/SFML/pull/714">#714</a>)</li>
@@ -36,8 +44,8 @@ https://github.com/LaurentGomila/SFML/pull/712">#712</a>)</li>
  <li>[Windows] Removed the hack that copied external libraries into SFML static libraries (<a target="_blank" href="https://github.com/LaurentGomila/SFML/commit/dbf01a775b7545bf83fbee0e1464f3f323723187">dbf01a7</a>)</li>
 </ul>
 
-<h2 id="2.2-system"><a class="h2-link" href="#2.2-system">System</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
-<h3>Features</h3>
+<h3 id="2.2-system"><a class="h3-link" href="#2.2-system">System</a></h3>
+<h4>Features</h4>
 <ul>
  <li>Added substring and replace functions to <code>sf::String</code> (<a target="_blank" href="https://github.com/LaurentGomila/SFML/issues/21">#21</a>, <a target="_blank" href="https://github.com/LaurentGomila/SFML/pull/355">#355</a>)</li>
  <li>Added <code>toUtfX</code> to <code>sf::String</code> (<a target="_blank" href="https://github.com/LaurentGomila/SFML/issues/501">#501</a>)</li>
@@ -46,14 +54,14 @@ https://github.com/LaurentGomila/SFML/pull/712">#712</a>)</li>
  <li>Added division operator for <code>sf::Time</code> (<a target="_blank" href="https://github.com/LaurentGomila/SFML/pull/453">#453</a>)</li>
 </ul>
 
-<h3>Bugfixes</h3>
+<h4>Bugfixes</h4>
 <ul>
  <li>Ensured a high resolution for <code>sf::sleep</code> (<a target="_blank" href="https://github.com/LaurentGomila/SFML/issues/439">#439</a>, <a target="_blank" href="https://github.com/LaurentGomila/SFML/pull/475">#475</a>)</li>
  <li>[Windows] Fixed stack unalignment by two internal functions (<a target="_blank" href="https://github.com/LaurentGomila/SFML/issues/412">#412</a>)</li>
 </ul>
 
-<h2 id="2.2-window"><a class="h2-link" href="#2.2-window">Window</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
-<h3>Features</h3>
+<h3 id="2.2-window"><a class="h3-link" href="#2.2-window">Window</a></h3>
+<h4>Features</h4>
 <ul>
  <li>Added window methods to request and to check focus (<a target="_blank" href="https://github.com/LaurentGomila/SFML/issues/518">#518</a>, <a target="_blank" href="https://github.com/LaurentGomila/SFML/pull/525">#525</a>, <a target="_blank" href="https://github.com/LaurentGomila/SFML/pull/613">#613</a>, <a target="_blank" href="https://github.com/LaurentGomila/SFML/pull/723">#723</a>, <a target="_blank" href="https://github.com/LaurentGomila/SFML/pull/735">#735</a>)</li>
  <li>Provide name, manufacturer ID and product ID via <code>sf::Joystick</code> (<a target="_blank" href="https://github.com/LaurentGomila/SFML/issues/152">#152</a>, <a target="_blank" href="https://github.com/LaurentGomila/SFML/pull/528">#528</a>)</li>
@@ -66,7 +74,7 @@ https://github.com/LaurentGomila/SFML/pull/712">#712</a>)</li>
  <li>[Windows] Fixed typo in Windows keyboard implementation (<a target="_blank" href="https://github.com/LaurentGomila/SFML/issues/516">#516</a>)</li>
 </ul>
 
-<h3>Bugfixes</h3>
+<h4>Bugfixes</h4>
 <ul>
  <li><code>sf::Window::create()</code> now also resets framerate limit (<a target="_blank" href="https://github.com/LaurentGomila/SFML/issues/371">#371</a>)</li>
  <li>Fixed OpenGL context leak (<a target="_blank" href="https://github.com/LaurentGomila/SFML/pull/635">#635</a>, <a target="_blank" href="https://github.com/LaurentGomila/SFML/pull/705">#705</a>)</li>
@@ -90,8 +98,8 @@ https://github.com/LaurentGomila/SFML/pull/712">#712</a>)</li>
  <li>[Windows] Fixed <code>sf::Joystick</code> wrong registery usage (<a target="_blank" href="https://github.com/LaurentGomila/SFML/issues/701">#701</a>, <a target="_blank" href="https://github.com/LaurentGomila/SFML/pull/702">#702</a>, <a target="_blank" href="https://github.com/LaurentGomila/SFML/pull/706">#706</a>)</li>
 </ul>
 
-<h2 id="2.2-graphics"><a class="h2-link" href="#2.2-graphics">Graphics</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
-<h3>Features</h3>
+<h3 id="2.2-graphics"><a class="h3-link" href="#2.2-graphics">Graphics</a></h3>
+<h4>Features</h4>
 <ul>
  <li>Provide more information about the loaded font in <code>sf::Font</code> (<a target="_blank" href="https://github.com/LaurentGomila/SFML/issues/164">#164</a>)</li>
  <li>Implemented a more flexible blending system (<a target="_blank" href="https://github.com/LaurentGomila/SFML/issues/298">#298</a>)</li>
@@ -102,7 +110,7 @@ https://github.com/LaurentGomila/SFML/pull/712">#712</a>)</li>
  <li>Changed <code>sf::Font</code> measurements from <code>int</code> to <code>float</code> to allow better underline drawing (<a target="_blank" href="https://github.com/LaurentGomila/SFML/pull/693">#693</a>)</li>
 </ul>
 
-<h3>Bugfixes</h3>
+<h4>Bugfixes</h4>
 <ul>
  <li>Improved text quality for small and pixelated fonts (<a target="_blank" href="https://github.com/LaurentGomila/SFML/issues/228">#228</a>)</li>
  <li>Yet another fix for Intel GPUs with <code>sf::RenderTexture</code> (<a target="_blank" href="https://github.com/LaurentGomila/SFML/issues/418">#418</a>)</li>
@@ -126,15 +134,15 @@ https://github.com/LaurentGomila/SFML/pull/712">#712</a>)</li>
  <li>[Windows] Fixed DPI scaling causing strange window behavior (<a target="_blank" href="https://github.com/LaurentGomila/SFML/issues/679">#679</a>, <a target="_blank" href="https://github.com/LaurentGomila/SFML/pull/681">#681</a>, <a target="_blank" href="https://github.com/LaurentGomila/SFML/pull/688">#688</a>)</li>
 </ul>
 
-<h2 id="2.2-audio"><a class="h2-link" href="#2.2-audio">Audio</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
-<h3>Features</h3>
+<h3 id="2.2-audio"><a class="h3-link" href="#2.2-audio">Audio</a></h3>
+<h4>Features</h4>
 <ul>
  <li>Added support for selecting the audio capture device (<a target="_blank" href="https://github.com/LaurentGomila/SFML/issues/220">#220</a>, <a target="_blank" href="https://github.com/LaurentGomila/SFML/pull/470">#470</a>)</li>
  <li>Make <code>sf::SoundRecorder</code> processing frequency configurable (<a target="_blank" href="https://github.com/LaurentGomila/SFML/issues/333">#333</a>)</li>
  <li>Added up vector to <code>sf::Listener</code> (<a target="_blank" href="https://github.com/LaurentGomila/SFML/issues/545">#545</a>)</li>
 </ul>
 
-<h3>Bugfixes</h3>
+<h4>Bugfixes</h4>
 <ul>
  <li>Prevented <code>sf::SoundStream::setPlayingOffset()</code> from restarting playing even when paused (<a target="_blank" href="https://github.com/LaurentGomila/SFML/issues/203">#203</a>, <a target="_blank" href="https://github.com/LaurentGomila/SFML/issues/203">#592</a>)</li>
  <li>Fixed <code>sf::SoundBuffer</code> contents not being able to be updated when still attached to sounds (<a target="_blank" href="https://github.com/LaurentGomila/SFML/issues/354">#354</a>, <a target="_blank" href="https://github.com/LaurentGomila/SFML/pull/367">367</a>, <a target="_blank" href="https://github.com/LaurentGomila/SFML/pull/390">#390</a>, <a target="_blank" href="https://github.com/LaurentGomila/SFML/pull/589">#589</a>)</li>
@@ -143,8 +151,8 @@ https://github.com/LaurentGomila/SFML/pull/712">#712</a>)</li>
  <li>Optimized <code>sf::Listener</code> with a cache (<a target="_blank" href="https://github.com/LaurentGomila/SFML/commit/d97e5244af0138aa5de6076ea13fb5ce1b6ed309">d97e524</a>)</li>
 </ul>
 
-<h2 id="2.2-network"><a class="h2-link" href="#2.2-network">Network</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
-<h3>Features</h3>
+<h3 id="2.2-network"><a class="h3-link" href="#2.2-network">Network</a></h3>
+<h4>Features</h4>
 <ul>
  <li>Added support for PUT and DELETE in <code>sf::Http</code> (<a target="_blank" href="https://github.com/LaurentGomila/SFML/issues/257">#257</a>, <a target="_blank" href="https://github.com/LaurentGomila/SFML/pull/312">#312</a>, <a target="_blank" href="https://github.com/LaurentGomila/SFML/pull/607">#607</a>)</li>
  <li>Added support for chunked HTTP transfers (<a target="_blank" href="https://github.com/LaurentGomila/SFML/issues/296">#296</a>, <a target="_blank" href="https://github.com/LaurentGomila/SFML/pull/337">#337</a>)</li>
@@ -152,7 +160,7 @@ https://github.com/LaurentGomila/SFML/pull/712">#712</a>)</li>
  <li>Made <code>sf::Ftp::sendCommand()</code> public (<a target="_blank" href="https://github.com/LaurentGomila/SFML/commit/2c5cab5454658eb100b313ab031ed11ab73f311d">2c5cab5</a>)</li>
 </ul>
 
-<h3>Bugfixes</h3>
+<h4>Bugfixes</h4>
 <ul>
  <li>Checked socket descriptor limit (<a target="_blank" href="https://github.com/LaurentGomila/SFML/issues/153">#153</a>, <a target="_blank" href="https://github.com/LaurentGomila/SFML/pull/628">#628</a>, <a target="_blank" href="https://github.com/LaurentGomila/SFML/pull/683">#683</a>)</li>
  <li>Fixed <code>sf::TcpSocket::connect()</code>'s switching from blocking to non-blocking mode on immediate connection success (<a target="_blank" href="https://github.com/LaurentGomila/SFML/pull/221">#221</a>)</li>
@@ -160,10 +168,10 @@ https://github.com/LaurentGomila/SFML/pull/712">#712</a>)</li>
  <li>Fixes C++11 compiler warnings for <code>sf::Uint8</code> (<a target="_blank" href="https://github.com/LaurentGomila/SFML/issues/731">#731</a>, <a target="_blank" href="https://github.com/LaurentGomila/SFML/pull/732">#732</a>)</li>
 </ul>
 
-<h1 id="sfml-2.1"><a class="h1-link" href="#sfml-2.1">SFML 2.1</a></h1>
+<h2 id="sfml-2.1"><a class="h2-link" href="#sfml-2.1">SFML 2.1</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 <p>Please refer to the <a target="_blank" href="http://en.sfml-dev.org/forums/index.php?topic=76.msg86454#msg86454" title="Go to the release announcement">release announcement</a>.</p>
 
-<h1 id="sfml-2.0"><a class="h1-link" href="#sfml-2.0">SFML 2.0</a></h1>
+<h2 id="sfml-2.0"><a class="h2-link" href="#sfml-2.0">SFML 2.0</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 <p>Please refer to the <a target="_blank" href="http://en.sfml-dev.org/forums/index.php?topic=76.msg78424#msg78424" title="Go to the release announcement">release announcement</a>.</p>
 
 <?php
