@@ -433,10 +433,14 @@ div.contents ul li {
   color: #333;
   margin: 0 0 0.3em 0;
 }
+#content ul ul,
+div.contents ul ul {
+  margin-top: 0.3em;
+}
 #content ol,
 div.contents ol {
   list-style-position: outside;
-  margin: 0 0 0 1.5em;
+  margin: 0 0 0 2.5em;
   padding: 0;
 }
 #content ol li,
