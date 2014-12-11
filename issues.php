@@ -36,7 +36,6 @@
    </ul>
   </li>
  </ol>
- <a class="box" href="http://en.sfml-dev.org/forums/index.php#c3"><div class="title" title="Go to the forum.">New Thread</div></a>
  <a class="box" href="http://en.sfml-dev.org/forums/index.php#c3"><div class="title" title="Go to the forum.">Bug Report</div></a>
  <a class="box" href="https://github.com/LaurentGomila/SFML/issues?q="><div class="title" title="Go to the issue tracker.">Issue Tracker</div></a>
 </div>
