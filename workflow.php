@@ -2,14 +2,13 @@
     $breadcrumbs = array
     (
         'Development' => 'development.php',
-        'SFML\'s Workflow' => 'workflow.php'
+        'Git Workflow' => 'workflow.php'
     );
     include('header.php');
 ?>
 
-<h1>SFML's Workflow</h1>
-<p>This document gives an overview of the Git workflow that is being used by the SFML team.</p>
-<p>If you are not a team member and want to contribute code, see the <a href="contribute.php" title="Go to the contribution guidelines">Contribution Guidelines</a> instead.</p>
+<h1>Git Workflow</h1>
+<p>This document gives an overview of the Git workflow that is being used by the SFML team. If you are not a team member and want to contribute code, see the <a href="contribute.php" title="Go to the contribution guidelines">Contribution Guidelines</a> instead.</p>
 
 <h2 id="general"><a class="h2-link" href="#general">General Workflow</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 <ul>
