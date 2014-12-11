@@ -11,10 +11,10 @@
 <p>You would like to see a feature implemented or a bug fixed in SFML? Great! Contributions to SFML are highly appreciated, be it in the form of general ideas, concrete suggestions or code patches. </p>
 <p>This document explains how you can contribute. By carefully reading it, you minimize the time it takes on your and on our side until a modification is implemented. Since we can't (and don't want to) implement everything, the following guidelines clarify what it takes for a contribution to be accepted.</p>
 
-<h1 id="general-considerations"><a class="h1-link" href="#general-considerations">General Considerations</a></h1>
+<h2 id="general-considerations"><a class="h2-link" href="#general-considerations">General Considerations</a></h2>
 <p>In case of any questions or doubt (and after reading available resources), feel free to ask on the forum. Before opening GitHub issues and/or pull requests, also use the forum to discuss your matter.</p>
 
-<h2 id="scope"><a class="h2-link" href="#scope">Scope</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
+<h3 id="scope"><a class="h3-link" href="#scope">Scope</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
 <p>Contributions must fit into one of the following SFML modules:</p>
 <ul>
  <li>System</li>
@@ -34,10 +34,10 @@
 </ul>
 <p>The rule of thumb is: if a feature can easily be added on top of SFML without modifying the core library, it is probably not a good candidate to be integrated.</p>
 
-<h2 id="code-style"><a class="h2-link" href="#code-style">Code Style</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
+<h3 id="code-style"><a class="h3-link" href="#code-style">Code Style</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
 <p>Contributions in the form of code must follow our <a href="style.php" title="Go to the style guide"><strong>syntactical conventions</strong></a>. Before submitting a pull request, please make sure your commits really adhere to them. For design and semantics (e.g. "do I use a pointer or a reference", "what is the correct type here"), have a look at existing SFML source code.</p>
 
-<h2 id="philosophy"><a class="h2-link" href="#philosophy">Philosophy</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
+<h3 id="philosophy"><a class="h3-link" href="#philosophy">Philosophy</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
 <p>SFML has been developed under the following considerations; keep them in mind when contributing.</p>
 <ul>
  <li><strong>Simple.</strong> Features are easy to use. Even more complex functionality should be provided in the most simple way possible, using abstraction where necessary.</li>
@@ -47,8 +47,8 @@
  <li><strong>Pragmatic.</strong> SFML does not attempt to solve every possible problem, it rather tries to offer functionality that is useful for a wide variety of people.</li>
 </ul>
 
-<h1 id="contributing"><a class="h1-link" href="#contributing">Contributing</a></h1> 
-<h2 id="reporting-bugs"><a class="h2-link" href="#reporting-bugs">Reporting bugs</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
+<h2 id="contributing"><a class="h2-link" href="#contributing">Contributing</a></h2> 
+<h3 id="reporting-bugs"><a class="h3-link" href="#reporting-bugs">Reporting bugs</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
 <ol>
  <li>Make sure the bug is not already known. Check <a href="https://github.com/LaurentGomila/SFML/issues">the GitHub issues</a> and <a href="http://en.sfml-dev.org/forums/">the forum</a>.</li>
  <li>Install the <a href="https://github.com/LaurentGomila/SFML">latest source</a> from GitHub and check if the bug has not already been fixed. See the <a href="http://www.sfml-dev.org/learn.php"><em>Compiling SFML with CMake</em> tutorial</a> for assistance.</li>
@@ -63,15 +63,15 @@
  </li>
 </ol>
 
-<h2 id="requesting-features"><a class="h2-link" href="#requesting-features">Requesting features</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
+<h3 id="requesting-features"><a class="h3-link" href="#requesting-features">Requesting features</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
 <p>If you've got an idea for a new feature, and it's within SFML's scope (see above), create a proper thread on <a href="http://en.sfml-dev.org/forums/index.php?board=2.0">the dedicated sub-forum</a>.</p>
 <p>A feature request should always contain a rationale for the change. Whenever you suggest a feature, argue from a user perspective: in which way is SFML limited? What use cases does the feature allow? How can users beside you benefit from the change?</p>
 
-<h2 id="testing"><a class="h2-link" href="#testing">Testing</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
+<h3 id="testing"><a class="h3-link" href="#testing">Testing</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
 <p>Testing is a crucial part of integrating new changes – the more people who help us, the faster we can proceed with development, and the quicker we can find and eliminate bugs.</p>
 <p>Feel free to participate in forum discussions, GitHub issues or existing pull requests. Or try out the latest changes from the master Git branch and report back any issues that you may find in the forum.</p>
 
-<h2 id="patches-pr"><a class="h2-link" href="#patches-pr">Sending patches/pull requests</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
+<h3 id="patches-pr"><a class="h3-link" href="#patches-pr">Sending patches/pull requests</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
 <p>In general code is only accepted when a proper GitHub issue already exists (usually preceded by a forum discussion). Make sure that nobody else is already working on an issue, or simply offer help and wait for a response.</p>
 <p>Patches are accepted through GitHub pull requests. These are the steps required to send in such a request:</p>
 <ol>
