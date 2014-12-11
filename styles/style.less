@@ -589,34 +589,32 @@ body
             box-shadow: rgba(0, 0, 0, 0.2) 4px 4px 15px;
             .border-radius(5px);
 
-            &.download      {background-image: url('../images/icons/download.png');}
-            &.download-old  {background-image: url('../images/icons/download-old.png');}
-            &.repository    {background-image: url('../images/icons/repository.png');}
-            &.sources       {background-image: url('../images/icons/sources.png');}
-            &.bindings      {background-image: url('../images/icons/bindings.png');}
-            &.goodies       {background-image: url('../images/icons/goodies.png');}
-            &.issues        {background-image: url('../images/icons/issues.png');}
-            &.contribute    {background-image: url('../images/icons/contribute.png');}
-            &.workflow      {background-image: url('../images/icons/workflow.png');}
-            &.style         {background-image: url('../images/icons/style.png');}
-            &.changelog     {background-image: url('../images/icons/changelog.png');}
-
-            &:hover
+            .box-image(@image)
             {
-                text-decoration: none;
-                border-color: #555;
-                
-                .hover-image(@image)
+                background-image: @image;
+
+                &:hover
                 {
+                    text-decoration: none;
+                    border-color: #555;
                     .gradient(lighten(@main-color, 5%), darken(@main-color, 5%), @image 10px center no-repeat);
                 }
-                &.download      {.hover-image(url('../images/icons/download.png'));}
-                &.download-old  {.hover-image(url('../images/icons/download-old.png'));}
-                &.repository    {.hover-image(url('../images/icons/repository.png'));}
-                &.sources       {.hover-image(url('../images/icons/sources.png'));}
-                &.bindings      {.hover-image(url('../images/icons/bindings.png'));}
-                &.goodies       {.hover-image(url('../images/icons/goodies.png'));}
             }
+
+            &.download      {.box-image(url('../images/icons/download.png'));}
+            &.download-old  {.box-image(url('../images/icons/download-old.png'));}
+            &.repository    {.box-image(url('../images/icons/repository.png'));}
+            &.sources       {.box-image(url('../images/icons/sources.png'));}
+            &.bindings      {.box-image(url('../images/icons/bindings.png'));}
+            &.goodies       {.box-image(url('../images/icons/goodies.png'));}
+            &.issues        {.box-image(url('../images/icons/issues.png'));}
+            &.contribute    {.box-image(url('../images/icons/contribute.png'));}
+            &.workflow      {.box-image(url('../images/icons/workflow.png'));}
+            &.style         {.box-image(url('../images/icons/style.png'));}
+            &.changelog     {.box-image(url('../images/icons/changelog.png'));}
+            &.faq           {.box-image(url('../images/icons/tip.png'));}
+            &.apidocs       {.box-image(url('../images/icons/address_book.png'));}
+            &.license       {.box-image(url('../images/icons/user.png'));}
 
             .title
             {
@@ -626,7 +624,6 @@ body
 
             .description
             {
-                text-transform: lowercase;
                 font-size: 12pt;
                 color: #666;
                 margin-top: 0.4em;
