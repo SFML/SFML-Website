@@ -19,23 +19,23 @@
     <tbody>
         <tr>
             <td class="os" rowspan="5">Windows</td>
-            <td><?php download_link('Visual C++ 9 (2008)', '32-bit', '9.75', 'SFML-2.0-windows-vc9-32bits.zip') ?></td>
-            <td><?php download_link('Visual C++ 9 (2008)', '64-bit', '10.9', 'SFML-2.0-windows-vc9-64bits.zip') ?></td>
+            <td><?php download_link('Visual C++ 9 (2008)', '32-bit', '9.75', '../../../files/SFML-2.0-windows-vc9-32bits.zip') ?></td>
+            <td><?php download_link('Visual C++ 9 (2008)', '64-bit', '10.9', '../../../files/SFML-2.0-windows-vc9-64bits.zip') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('Visual C++ 10 (2010)', '32-bit', '10.3', 'SFML-2.0-windows-vc10-32bits.zip') ?></td>
-            <td><?php download_link('Visual C++ 10 (2010)', '64-bit', '11.4', 'SFML-2.0-windows-vc10-64bits.zip') ?></td>
+            <td><?php download_link('Visual C++ 10 (2010)', '32-bit', '10.3', '../../../files/SFML-2.0-windows-vc10-32bits.zip') ?></td>
+            <td><?php download_link('Visual C++ 10 (2010)', '64-bit', '11.4', '../../../files/SFML-2.0-windows-vc10-64bits.zip') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('Visual C++ 11 (2012)', '32-bit', '11.4', 'SFML-2.0-windows-vc11-32bits.zip') ?></td>
-            <td><?php download_link('Visual C++ 11 (2012)', '64-bit', '12.8', 'SFML-2.0-windows-vc11-64bits.zip') ?></td>
+            <td><?php download_link('Visual C++ 11 (2012)', '32-bit', '11.4', '../../../files/SFML-2.0-windows-vc11-32bits.zip') ?></td>
+            <td><?php download_link('Visual C++ 11 (2012)', '64-bit', '12.8', '../../../files/SFML-2.0-windows-vc11-64bits.zip') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('GCC 4.7 TDM (SJLJ)', '32-bit', '15.0', 'SFML-2.0-windows-gcc-4.7-tdm-32bits.zip') ?></td>
-            <td><?php download_link('GCC 4.7 TDM (SJLJ)', '64-bit', '40.9', 'SFML-2.0-windows-gcc-4.7-tdm-64bits.zip') ?></td>
+            <td><?php download_link('GCC 4.7 TDM (SJLJ)', '32-bit', '15.0', '../../../files/SFML-2.0-windows-gcc-4.7-tdm-32bits.zip') ?></td>
+            <td><?php download_link('GCC 4.7 TDM (SJLJ)', '64-bit', '40.9', '../../../files/SFML-2.0-windows-gcc-4.7-tdm-64bits.zip') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('GCC 4.7 MinGW (DW2)', '32-bit', '10.6', 'SFML-2.0-windows-gcc-4.7-mingw-32bits.zip') ?></td>
+            <td><?php download_link('GCC 4.7 MinGW (DW2)', '32-bit', '10.6', '../../../files/SFML-2.0-windows-gcc-4.7-mingw-32bits.zip') ?></td>
             <td></td>
         </tr>
         <tr>
@@ -52,8 +52,8 @@
     <tbody>
         <tr>
             <td class="os" rowspan="1">Linux</td>
-            <td><?php download_link('GCC', '32-bit', '1.34', 'SFML-2.0-linux-gcc-32bits.tar.bz2') ?></td>
-            <td><?php download_link('GCC', '64-bit', '1.34', 'SFML-2.0-linux-gcc-64bits.tar.bz2') ?></td>
+            <td><?php download_link('GCC', '32-bit', '1.34', '../../../files/SFML-2.0-linux-gcc-32bits.tar.bz2') ?></td>
+            <td><?php download_link('GCC', '64-bit', '1.34', '../../../files/SFML-2.0-linux-gcc-64bits.tar.bz2') ?></td>
         </tr>
         <tr>
             <td class="notice" colspan="3">
@@ -68,10 +68,10 @@
     <tbody>
         <tr>
             <td class="os" rowspan="2">Mac OS X</td>
-            <td><?php download_link('GCC', 'universal 32+64-bit (OS X 10.5+)', '5.90', 'SFML-2.0-osx-gcc-universal.zip') ?></td>
+            <td><?php download_link('GCC', 'universal 32+64-bit (OS X 10.5+)', '5.90', '../../../files/SFML-2.0-osx-gcc-universal.zip') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('Clang', 'universal 32+64-bit (OS X 10.8+, compatible with C++11 and libc++)', '6.05', 'SFML-2.0-osx-clang-universal.zip') ?></td>
+            <td><?php download_link('Clang', 'universal 32+64-bit (OS X 10.8+, compatible with C++11 and libc++)', '6.05', '../../../files/SFML-2.0-osx-clang-universal.zip') ?></td>
         </tr>
         <tr>
             <td class="notice" colspan="3">
@@ -85,7 +85,7 @@
     <tbody>
         <tr>
             <td class="os" rowspan="2">All</td>
-            <td><span class="description">Source code</span><a href="SFML-2.0-sources.zip">Download<span class="size">12.5 MB</span></a></td>
+            <td><span class="description">Source code</span><a href="../../../files/SFML-2.0-sources.zip">Download<span class="size">12.5 MB</span></a></td>
         </tr>
     </tbody>
 </table>

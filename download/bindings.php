@@ -29,12 +29,12 @@
     <tbody>
         <tr>
             <th rowspan="1">C</th>
-            <td><a href="http://www.sfml-dev.org/download/csfml" class="website">CSFML</a></td>
+            <td><a href="csfml" class="website">CSFML</a></td>
             <td><a href="mailto:laurent@sfml-dev.org">Laurent Gomila</a></td>
         </tr>
         <tr>
             <th rowspan="1">.Net (C#, VB.Net etc.)</th>
-            <td><a href="http://www.sfml-dev.org/download/sfml.net" class="website">SFML.Net</a></td>
+            <td><a href="sfml.net" class="website">SFML.Net</a></td>
             <td><a href="mailto:laurent@sfml-dev.org">Laurent Gomila</a></td>
         </tr>
         <tr>

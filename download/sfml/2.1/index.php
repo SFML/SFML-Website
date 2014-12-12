@@ -19,23 +19,23 @@
     <tbody>
         <tr>
             <td class="os" rowspan="5">Windows</td>
-            <td><?php download_link('Visual C++ 9 (2008)', '32-bit', '9.80', 'SFML-2.1-windows-vc9-32bits.zip') ?></td>
-            <td><?php download_link('Visual C++ 9 (2008)', '64-bit', '11.0', 'SFML-2.1-windows-vc9-64bits.zip') ?></td>
+            <td><?php download_link('Visual C++ 9 (2008)', '32-bit', '9.80', '../../../files/SFML-2.1-windows-vc9-32bits.zip') ?></td>
+            <td><?php download_link('Visual C++ 9 (2008)', '64-bit', '11.0', '../../../files/SFML-2.1-windows-vc9-64bits.zip') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('Visual C++ 10 (2010)', '32-bit', '10.3', 'SFML-2.1-windows-vc10-32bits.zip') ?></td>
-            <td><?php download_link('Visual C++ 10 (2010)', '64-bit', '11.5', 'SFML-2.1-windows-vc10-64bits.zip') ?></td>
+            <td><?php download_link('Visual C++ 10 (2010)', '32-bit', '10.3', '../../../files/SFML-2.1-windows-vc10-32bits.zip') ?></td>
+            <td><?php download_link('Visual C++ 10 (2010)', '64-bit', '11.5', '../../../files/SFML-2.1-windows-vc10-64bits.zip') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('Visual C++ 11 (2012)', '32-bit', '11.5', 'SFML-2.1-windows-vc11-32bits.zip') ?></td>
-            <td><?php download_link('Visual C++ 11 (2012)', '64-bit', '12.9', 'SFML-2.1-windows-vc11-64bits.zip') ?></td>
+            <td><?php download_link('Visual C++ 11 (2012)', '32-bit', '11.5', '../../../files/SFML-2.1-windows-vc11-32bits.zip') ?></td>
+            <td><?php download_link('Visual C++ 11 (2012)', '64-bit', '12.9', '../../../files/SFML-2.1-windows-vc11-64bits.zip') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('GCC 4.7 TDM (SJLJ)', '32-bit', '15.0', 'SFML-2.1-windows-gcc-4.7-tdm-32bits.zip') ?></td>
-            <td><?php download_link('GCC 4.7 TDM (SJLJ)', '64-bit', '41.0', 'SFML-2.1-windows-gcc-4.7-tdm-64bits.zip') ?></td>
+            <td><?php download_link('GCC 4.7 TDM (SJLJ)', '32-bit', '15.0', '../../../files/SFML-2.1-windows-gcc-4.7-tdm-32bits.zip') ?></td>
+            <td><?php download_link('GCC 4.7 TDM (SJLJ)', '64-bit', '41.0', '../../../files/SFML-2.1-windows-gcc-4.7-tdm-64bits.zip') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('GCC 4.7 MinGW (DW2)', '32-bit', '10.6', 'SFML-2.1-windows-gcc-4.7-mingw-32bits.zip') ?></td>
+            <td><?php download_link('GCC 4.7 MinGW (DW2)', '32-bit', '10.6', '../../../files/SFML-2.1-windows-gcc-4.7-mingw-32bits.zip') ?></td>
             <td></td>
         </tr>
         <tr>
@@ -52,8 +52,8 @@
     <tbody>
         <tr>
             <td class="os" rowspan="1">Linux</td>
-            <td><?php download_link('GCC', '32-bit', '1.35', 'SFML-2.1-linux-gcc-32bits.tar.bz2') ?></td>
-            <td><?php download_link('GCC', '64-bit', '1.34', 'SFML-2.1-linux-gcc-64bits.tar.bz2') ?></td>
+            <td><?php download_link('GCC', '32-bit', '1.35', '../../../files/SFML-2.1-linux-gcc-32bits.tar.bz2') ?></td>
+            <td><?php download_link('GCC', '64-bit', '1.34', '../../../files/SFML-2.1-linux-gcc-64bits.tar.bz2') ?></td>
         </tr>
         <tr>
             <td class="notice" colspan="3">
@@ -68,13 +68,13 @@
     <tbody>
         <tr>
             <td class="os" rowspan="3">Mac OS X</td>
-            <td><?php download_link('GCC', 'universal 32+64-bit (OS X 10.5+)', '5.63', 'SFML-2.1-osx-gcc-universal.tar.gz') ?></td>
+            <td><?php download_link('GCC', 'universal 32+64-bit (OS X 10.5+)', '5.63', '../../../files/SFML-2.1-osx-gcc-universal.tar.gz') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('Clang', 'universal 32+64-bit (OS X 10.8+, compatible with C++11 and libc++)', '5.93', 'SFML-2.1-osx-clang-universal.tar.gz') ?></td>
+            <td><?php download_link('Clang', 'universal 32+64-bit (OS X 10.8+, compatible with C++11 and libc++)', '5.93', '../../../files/SFML-2.1-osx-clang-universal.tar.gz') ?></td>
         </tr>
         <tr>
-            <td><span class="description">Templates for Xcode 5</span><a href="SFML-2.1-osx-xcode5-template.zip">Download<span class="size">1.16 MB</span></a></td>
+            <td><span class="description">Templates for Xcode 5</span><a href="../../../files/SFML-2.1-osx-xcode5-template.zip">Download<span class="size">1.16 MB</span></a></td>
         </tr>
         <tr>
             <td class="notice" colspan="3">
@@ -88,7 +88,7 @@
     <tbody>
         <tr>
             <td class="os" rowspan="2">All</td>
-            <td><span class="description">Source code</span><a href="SFML-2.1-sources.zip">Download<span class="size">9.27 MB</span></a></td>
+            <td><span class="description">Source code</span><a href="../../../files/SFML-2.1-sources.zip">Download<span class="size">9.27 MB</span></a></td>
         </tr>
     </tbody>
 </table>
