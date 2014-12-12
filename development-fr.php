@@ -46,7 +46,7 @@
 
  <div class="link-box two-columns-right">
   <a class="workflow" href="workflow-fr.php">
-   <div class="title">SFML's Workflow <img src="../images/icons/flag-en.png" alt="EN"></div>
+   <div class="title">Git Workflow <img src="../images/icons/flag-en.png" alt="EN"></div>
    <div class="description">How we utilize Git</div>
   </a>
  </div>
