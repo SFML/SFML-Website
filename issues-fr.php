@@ -9,7 +9,7 @@
 
 <div class="issues">
  <h1>Issues</a></h1>
- <p>If you run into an issue with SFML, but <strong>you're unsure what causes it</strong>, follow these steps:</p>
+ <h2>You have no idea what causes your issue</h2>
  <ol>
   <li>Create a <a href="http://en.sfml-dev.org/forums/index.php?topic=5559.msg36368#msg36368" target="_blank">minimal and complete code</a> which reproduces the issue.</li>
   <li>If while reducing your codebase the issue hasn't revealed itself to you:
@@ -22,7 +22,7 @@
   </li>
  </ol>
  
- <p>If you run into an issue with SFML and <strong>you think it's a bug within SFML</strong>, follow these steps:
+ <h2>You think you found a bug in SFML</h2>
  <ol>
   <li>Make sure the bug is not already known. Check <a href="https://github.com/LaurentGomila/SFML/issues?q=" target="_blank">the GitHub issues</a> and <a href="http://en.sfml-dev.org/forums/index.php?action=search" target="_blank">the forum</a>.</li>
   <li>Install the <a href="https://github.com/LaurentGomila/SFML" target="_blank">latest source</a> from GitHub and check if the bug has not already been fixed. See the <a href="tutorials/2.2/compile-with-cmake.php" target="_blank">official tutorial</a>.</li>
@@ -36,7 +36,6 @@
    </ul>
   </li>
  </ol>
- <a class="box" href="http://en.sfml-dev.org/forums/index.php#c3"><div class="title" title="Go to the forum.">New Thread</div></a>
  <a class="box" href="http://en.sfml-dev.org/forums/index.php#c3"><div class="title" title="Go to the forum.">Bug Report</div></a>
  <a class="box" href="https://github.com/LaurentGomila/SFML/issues?q="><div class="title" title="Go to the issue tracker.">Issue Tracker</div></a>
 </div>
