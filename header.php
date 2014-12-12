@@ -44,13 +44,15 @@
         <meta http-equiv="Content-Type" content="text/html"/>
         <meta charset="utf-8"/>
         <link rel="icon" type="image/ico" href="<?php echo image('favicon.ico') ?>"/>
-        <?php if (isset($doxygen))
-        {
-            echo '<link rel="stylesheet" type="text/css"  href="' . root() . '/styles/doxygen.css" title="default" media="screen,print" />' . "\n";
-        } ?>
         <link rel='stylesheet' type='text/css' href="//fonts.googleapis.com/css?family=Ubuntu:400,700,400italic"/>
         <link rel="stylesheet" type="text/css" href="<?php echo style('style.css') ?>" title="default" media="screen,print"/>
         <link rel="stylesheet" type="text/css" href="<?php echo script('highlight/styles/github.css') ?>"/>
+        <?php if (isset($doxygen))
+        {
+            echo '<link rel="stylesheet" type="text/css"  href="' . root() . '/styles/doxygen.css" title="default" media="screen,print" />' . "\n" .
+                 '<script type="text/javascript" src="jquery.js"></script>' . "\n" .
+                 '<script type="text/javascript" src="dynsections.js"></script>' . "\n";
+        } ?>
 <!--[if (gte IE 9)|!(IE)]>
 <!-->
         <script type="text/javascript" src="<?php echo script('highlight/highlight.pack.js') ?>"></script>
