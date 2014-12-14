@@ -43,7 +43,7 @@
 <p>C++ header files have the extension <code>.hpp</code> and are structured as follows:</p>
 <ol>
  <li>License block</li>
- <li>Opening header guards</li>
+ <li>Opening include guard</li>
  <li>Included headers</li>
  <li>Opening namespace <code>sf</code></li>
  <li>One or more of the following:
@@ -54,7 +54,7 @@
   </ul>
  </li>
  <li>Closing namespace <code>sf</code></li>
- <li>Closing header guards</li>
+ <li>Closing include guard</li>
  <li>Extended comment on the class</li>
 </ol>
 <pre><code class="cpp">////////////////////////////////////////////////////////////
@@ -131,7 +131,7 @@ SFML_..._API void doSomething();
    <li>Private headers, sorted alphabetically.</li>
   </ul>
  </li>
- <li>Dependencies headers, sorted alphabetically.</li>
+ <li>Dependency headers, sorted alphabetically.</li>
  <li>Standard library headers, sorted alphabetically.</li>
 </ol>
 <p>Before the includes, a comment with the label <em>Headers</em> is added.</p>
@@ -147,21 +147,21 @@ SFML_..._API void doSomething();
 #include <vector></code></pre>
 
 <h3 id="class-definitions"><a class="h3-link" href="#class-definitions">Class Definitions</a></h3>
-<p>In a class, the public interface comes first (with usually constructors and special member functions at the top), followed by protected members and then private data. In a given access-modifier group,  static members are grouped together.</p>
+<p>In a class, the public interface comes first (usually with constructors and special member functions at the top), followed by protected members and then private data. In a given access-modifier group,  static members are grouped together.</p>
 
 <h3 id="comments-documentation"><a class="h3-link" href="#comments-documentation">Comments and Documentation</a></h3>
 <ul>
- <li>Doxygen documentation is used with backslash style (e.g. <code>\param</code>).</li>
+ <li>Doxygen documentation is used with the backslash style (e.g. <code>\param</code>).</li>
  <li>Everything in the public API should be documented properly.</li>
  <li>The brief documentation phrase doesn't end with a dot.</li>
- <li>Documentation tags are grouped together by kind and groups are separated by an empty line.</li>
- <li>An example below illustrates how the brief and full descriptions, parameters and return values are disposed inside a documentation block.</li>
+ <li>Documentation tags are grouped together by kind, and groups are separated by an empty line.</li>
+ <li>An example below illustrates how the brief and full descriptions, parameters and return values are placed inside a documentation block.</li>
  <li>Single line commenting style only (i.e. <code>// comment</code>), i.e. no <code>/* comment */</code>.</li>
- <li>Important block comment (e.g. doc) have delimiting lines before and after composed of 60 slashes.</li>
- <li>Documentation comment use triple slashes <code>/// comment</code> and have an empty line at the end.</li>
+ <li>Important block comments (e.g. doc) have delimiting lines before and after, each composed of 60 slashes.</li>
+ <li>Documentation comments use triple slashes <code>/// comment</code> and have an empty line at the end.</li>
  <li>Documentation for attributes or enumeration values use the form <code>///&lt; comment</code>. These comments are vertically aligned.</li>
  <li>Header inclusions are preceded by a "Headers" block comment, attributes by "Member data" and typedefs by "Types"</li>
- <li>Classes documentation are split in two modules: a first <code>\brief</code> comment is placed right before the class definition and a more elaborated documentation is placed at the bottom of the header file. This second block is optional for classes not exposed to the user (e.g. classes inside <code>sf::priv</code> namespace).</li>
+ <li>Class documentation is split into two parts: a first <code>\brief</code> comment is placed right before the class definition and more elaborated documentation is placed at the bottom of the header file. The elaborated documentation block is optional for classes which are not exposed to the user (e.g. classes inside the <code>sf::priv</code> namespace).</li>
 </ul>
 
 <h4>Block Comments</h4>
@@ -264,20 +264,20 @@ Accepted = 202, ///&lt; The request has been accepted, but will be processed lat
 <h3 id="indentation-space-parenthesis-quarks"><a class="h3-link" href="#indentation-space-parenthesis-quarks">Indentation, Space, Parenthesis and Quarks</a></h3>
 
 <h4>Tabs vs. Spaces</h4>
-<p>No tab should be used in SFML code. Indentation is managed by spaces only. A tabulator is equal to 4 spaces.</p>
+<p>Tabs should not be used in SFML code. Indentation is produced by spaces only. A tabulator is equal to 4 spaces.</p>
 
 <h4>Spaces</h4>
 <p>The rules are as follows:</p>
 <ol>
- <li>A space precedes an open parenthesis.</li>
- <li>A space follows an close parenthesis.</li>
- <li>Rules 1. et 2. are not applied for function calls or declarations.</li>
- <li>A space precedes and follow binary operators or assignment operators.</li>
+ <li>A space precedes an opening parenthesis.</li>
+ <li>A space follows a closing parenthesis.</li>
+ <li>Rules 1. and 2. are not applied for function calls or declarations.</li>
+ <li>A space precedes and follows binary operators and assignment operators.</li>
  <li>A space follows a comma.</li>
  <li>There is no space between a type and its reference <code>&amp;</code> or pointer <code>*</code> specifier.</li>
  <li>A space follows the <code>operator</code> keyword.</li>
- <li>When colon is used for inheritance or with an access modifier it is surrounded by spaces.</li>
- <li>There is no extra space at the end of the line.</li>
+ <li>When colon is used for inheritance or with an access modifier it is surrounded by a space on both sides.</li>
+ <li>There are no extra spaces at the end of lines.</li>
 </ol>
 <p><strong>OS X implementation</strong>: messages are declared without unnecessary spaces; e.g. <code>-(void)setIconTo:(unsigned int)width by:(unsigned int)height with:(const sf::Uint8*)pixels;</code>.</p>
 
@@ -296,10 +296,10 @@ const T*       cptr;
  <li>An extra empty line ends every file.</li>
  <li>There is only one instruction per line, except for readability in some <code>switch</code>es.</li>
  <li>Every definition (<code>class</code>, functions, ...) is followed by an empty line.</li>
- <li>Braces are on new lines alone, except for <code>do ... while</code> loops.</li>
+ <li>Braces are placed on new lines by themselves, except for <code>do ... while</code> loops.</li>
  <li><code>template</code> parameters and the rest of the function signature are on two different lines.</li>
  <li>Every member constructed in the initializer list is on a new line.</li>
- <li>If a line is too long it is intelligently break up into a multi-line statement; e.g.:</li>
+ <li>If a line is too long it is intelligently broken up into a multi-line statement; e.g.:</li>
 </ol>
 <pre><code class="cpp">Color operator +(const Color&amp; left, const Color&amp; right)
 {
@@ -315,7 +315,7 @@ const T*       cptr;
 <p>Blocks are always indented by one extra level, except for namespaces when there is only one used in the file.</p>
 
 <h4><code>if/else/while</code> Statements</h4>
-<p>There are two forms of <code>if/else</code> statements: one-line or multi-line body. For an <code>if</code> statement that has only one instruction no braces are used. In any case a space always separates the keyword from the parenthesis. Every Brace is alone on the line – even if the <code>while</code> body is empty. E.g.:</p>
+<p>There are two forms of <code>if/else</code> statements: single-line or multi-line body. For an <code>if</code> statement that has only one instruction no braces are used. In any case a space always separates the keyword from the parenthesis. Every Brace is alone on the line – even if the <code>while</code> body is empty. E.g.:</p>
 <pre><code class="cpp">if (audioContext)
     alcDestroyContext(audioContext);</code></pre>
 <pre><code class="cpp">if (audioContext)
@@ -332,7 +332,7 @@ else
 }</code></pre>
 
 <h4>Logical Operators</h4>
-<p>If multiple <code>&amp;&amp;</code> or <code>||</code> operators are used in the same boolean expression, then each part is guarded by parenthesis, as soon as it consists of multiple sub-expressions itself.</p>
+<p>If multiple <code>&amp;&amp;</code> or <code>||</code> operators are used in the same boolean expression, then each part is guarded by parenthesis as soon as they consist of multiple sub-expressions themselves.</p>
 <pre><code class="cpp">x &lt; y              // no parenthesis
 (x &lt; y) &amp;&amp; (y &lt; z) // with parenthesis
 var &amp;&amp; (x &lt; y);    // variable not parenthesized
@@ -378,12 +378,12 @@ bool x = (var & FLAG) != 0;</code></pre>
 
 <h3 id="namespaces"><a class="h3-link" href="#namespaces">Namespaces</a></h3>
 <p>The public API lives in the <code>sf</code> namespace. The <code>sf::priv</code> namespace is reserved for implementation details.</p>
-<p>Anonymous namespace are used when global variables are needed, or for function only needed in the current source file, in order to restrict their access to a specific compilation unit.</p>
+<p>Anonymous namespaces are used when global variables are required, or for functions local to the current translation unit, in order to restrict their access to the translation unit.</p>
 <p>No <code>using</code> directive should be used. Instead the full name is used everywhere.</p>
 
 <h3 id="structures-classes"><a class="h3-link" href="#structures-classes">Structures and Classes</a></h3>
 <p><code>struct</code>s are used to wrap up one or more variables together but do not use encapsulation; they are generally used by <code>class</code>es that do protect their members with <code>protected</code> or <code>private</code> modifiers. <code>struct</code>s can have constructors but should not have methods. They do not use access specifiers or inheritance.</p>
-<p>In a class, the public interface comes first (with usually constructors at the top), followed by protected members and then private data. In a given access-modifier group <code>static</code> members are grouped together.</p>
+<p>In a class, the public interface comes first (usually with constructors at the top), followed by protected members and then private data. In a given access-modifier group <code>static</code> members are grouped together.</p>
  
 <?php
     require("footer.php");
