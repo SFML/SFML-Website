@@ -19,29 +19,29 @@
     <tbody>
         <tr>
             <td class="os" rowspan="6">Windows</td>
-            <td><?php download_link('Visual C++ 10 (2010)', '32-bit', '0.0', '../../../files/SFML-2.2-windows-vc10-32-bit.zip') ?></td>
-            <td><?php download_link('Visual C++ 10 (2010)', '64-bit', '0.0', '../../../files/SFML-2.2-windows-vc10-64-bit.zip') ?></td>
+            <td><?php download_link('Visual C++ 10 (2010)', '32-bit', '10.1', '../../../files/SFML-2.2-windows-vc10-32-bit.zip') ?></td>
+            <td><?php download_link('Visual C++ 10 (2010)', '64-bit', '9.7', '../../../files/SFML-2.2-windows-vc10-64-bit.zip') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('Visual C++ 11 (2012)', '32-bit', '0.0', '../../../files/SFML-2.2-windows-vc11-32-bit.zip') ?></td>
-            <td><?php download_link('Visual C++ 11 (2012)', '64-bit', '0.0', '../../../files/SFML-2.2-windows-vc11-64-bit.zip') ?></td>
+            <td><?php download_link('Visual C++ 11 (2012)', '32-bit', '11.4', '../../../files/SFML-2.2-windows-vc11-32-bit.zip') ?></td>
+            <td><?php download_link('Visual C++ 11 (2012)', '64-bit', '12.7', '../../../files/SFML-2.2-windows-vc11-64-bit.zip') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('Visual C++ 12 (2013)', '32-bit', '0.0', '../../../files/SFML-2.2-windows-vc12-32-bit.zip') ?></td>
-            <td><?php download_link('Visual C++ 12 (2013)', '64-bit', '0.0', '../../../files/SFML-2.2-windows-vc12-64-bit.zip') ?></td>
+            <td><?php download_link('Visual C++ 12 (2013)', '32-bit', '10.9', '../../../files/SFML-2.2-windows-vc12-32-bit.zip') ?></td>
+            <td><?php download_link('Visual C++ 12 (2013)', '64-bit', '12.1', '../../../files/SFML-2.2-windows-vc12-64-bit.zip') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('GCC 4.7.1 TDM (SJLJ)', '32-bit', '0.0', '../../../files/SFML-2.2-windows-gcc-4.7.1-tdm-32-bit.zip') ?></td>
-            <td><?php download_link('GCC 4.7.1 TDM (SJLJ)', '64-bit', '0.0', '../../../files/SFML-2.2-windows-gcc-4.7.1-tdm-64-bit.zip') ?></td>
+            <td><?php download_link('GCC 4.7.1 TDM (SJLJ)', '32-bit', '9.3', '../../../files/SFML-2.2-windows-gcc-4.7.1-tdm-32-bit.zip') ?></td>
+            <td><?php download_link('GCC 4.7.1 TDM (SJLJ)', '64-bit', '11.8', '../../../files/SFML-2.2-windows-gcc-4.7.1-tdm-64-bit.zip') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('GCC 4.8.1 TDM (SJLJ)', '32-bit', '0.0', '../../../files/SFML-2.2-windows-gcc-4.8.1-tdm-32-bit.zip') ?></td>
-            <td><?php download_link('GCC 4.8.1 TDM (SJLJ)', '64-bit', '0.0', '../../../files/SFML-2.2-windows-gcc-4.8.1-tdm-64-bit.zip') ?></td>
+            <td><?php download_link('GCC 4.8.1 TDM (SJLJ)', '32-bit', '9.2', '../../../files/SFML-2.2-windows-gcc-4.8.1-tdm-32-bit.zip') ?></td>
+            <td><?php download_link('GCC 4.8.1 TDM (SJLJ)', '64-bit', '10.5', '../../../files/SFML-2.2-windows-gcc-4.8.1-tdm-64-bit.zip') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('GCC 4.9.2 MinGW (DW2)', '32-bit', '0.0', '../../../files/SFML-2.2-windows-gcc-4.9.2-mingw-32-bit.zip') ?></td>
-            <td><?php download_link('GCC 4.9.2 MinGW (SEH)', '64-bit', '0.0', '../../../files/SFML-2.2-windows-gcc-4.9.2-mingw-64-bit.zip') ?></td>
-        </tr>
+            <td><?php download_link('GCC 4.9.2 MinGW (DW2)', '32-bit', '9.3', '../../../files/SFML-2.2-windows-gcc-4.9.2-mingw-32-bit.zip') ?></td>
+            <td><?php download_link('GCC 4.9.2 MinGW (SEH)', '64-bit', '10.0', '../../../files/SFML-2.2-windows-gcc-4.9.2-mingw-64-bit.zip') ?></td>
+        <tr>
         <tr>
             <td class="notice" colspan="3">
                 Sous Windows, choisir les bibliothèques 32 ou 64-bit doit se baser sur la plateforme pour laquelle vous voulez compiler, et non sur l'OS que vous avez.
@@ -56,8 +56,8 @@
     <tbody>
         <tr>
             <td class="os" rowspan="1">Linux</td>
-            <td><?php download_link('GCC', '32-bit', '1.35', '../../../files/SFML-2.2-linux-gcc-32bits.tar.bz2') ?></td>
-            <td><?php download_link('GCC', '64-bit', '1.34', '../../../files/SFML-2.2-linux-gcc-64bits.tar.bz2') ?></td>
+            <td><?php download_link('GCC', '32-bit', '0.00', '../../../files/SFML-2.2-linux-gcc-32bits.tar.bz2') ?></td>
+            <td><?php download_link('GCC', '64-bit', '0.00', '../../../files/SFML-2.2-linux-gcc-64bits.tar.bz2') ?></td>
         </tr>
         <tr>
             <td class="notice" colspan="3">
@@ -88,10 +88,10 @@
     <tbody>
         <tr>
             <td class="os" rowspan="2">Tous OS</td>
-            <td><span class="description">Code source</span><a href="../../../files/SFML-2.2-sources.zip">Télécharger<span class="size">18.1 Mo</span></a></td>
+            <td><span class="description">Code source</span><a href="../../../files/SFML-2.2-sources.zip">Télécharger<span class="size">16.52 Mo</span></a></td>
         </tr>
         <tr>
-            <td><span class="description">HTML Documentation</span><a href="../../../files/SFML-2.2-doc.zip">Télécharger<span class="size">0.00 MB</span></a></td>
+            <td><span class="description">HTML Documentation</span><a href="../../../files/SFML-2.2-doc.zip">Télécharger<span class="size">1.44 Mo</span></a></td>
         </tr>
     </tbody>
 </table>
