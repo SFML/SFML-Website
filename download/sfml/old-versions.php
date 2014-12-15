@@ -7,7 +7,7 @@
     include('../../header.php');
 ?>
 
-<h1>Download old versions of SFML</h1>
+<h1>Download older versions of SFML</h1>
 
 <div class="link-box one-column">
     <a class="download-old" href="2.1">
