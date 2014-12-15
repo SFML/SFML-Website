@@ -72,13 +72,7 @@
     <tbody>
         <tr>
             <td class="os" rowspan="3">Mac OS X</td>
-            <td><?php download_link('GCC', 'universal 32+64-bit (OS X 10.5+)', '5.63', '../../../files/SFML-2.2-osx-gcc-universal.tar.gz') ?></td>
-        </tr>
-        <tr>
-            <td><?php download_link('Clang', 'universal 32+64-bit (OS X 10.8+, compatible with C++11 and libc++)', '5.93', '../../../files/SFML-2.2-osx-clang-universal.tar.gz') ?></td>
-        </tr>
-        <tr>
-            <td><span class="description">Templates for Xcode 5</span><a href="../../../files/SFML-2.2-osx-xcode5-template.zip">Download<span class="size">1.16 MB</span></a></td>
+            <td><?php download_link('Clang', 'universal 32+64-bit (OS X 10.7+, compatible with C++11 and libc++)', '6.3', '../../../files/SFML-2.2-osx-clang-universal.tar.gz') ?></td>
         </tr>
         <tr>
             <td class="notice" colspan="3">
@@ -92,7 +86,7 @@
     <tbody>
         <tr>
             <td class="os" rowspan="2">All</td>
-            <td><span class="description">Source code</span><a href="../../../files/SFML-2.2-sources.zip">Download<span class="size">9.27 MB</span></a></td>
+            <td><span class="description">Source code</span><a href="../../../files/SFML-2.2-sources.zip">Download<span class="size">18.1 MB</span></a></td>
         </tr>
         <tr>
             <td><span class="description">HTML Documentation</span><a href="../../../files/SFML-2.2-doc.zip">Download<span class="size">0.00 MB</span></a></td>
