@@ -3,7 +3,7 @@
     $breadcrumbs = array
     (
         'Learn' => 'learn.php',
-        $version . ' documentation'  => 'documentation/' . $version,
+        $version . ' Documentation'  => 'documentation/' . $version,
         $pagetitle => substr($_SERVER['REQUEST_URI'], 1) // remove the starting '/'
     );
     require('../../header.php');
