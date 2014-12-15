@@ -2,7 +2,7 @@
 
     $breadcrumbs = array(
         'Learn' => 'learn.php',
-        '2.0 tutorials' => 'tutorials/2.0/index-fr.php'
+        '2.0 Tutorials' => 'tutorials/2.0/index-fr.php'
     );
 
     require("../../header.php");
