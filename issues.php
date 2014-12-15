@@ -21,7 +21,7 @@
    </ul>
   </li>
  </ol>
- 
+
  <h2>You think you found a bug in SFML</h2>
  <ol>
   <li>Make sure it is really a bug and not a misunderstanding of what SFML is supposed to do. Check the <a href="documentation/2.2/" target="_blank">documentation</a> again to be sure.</li>
@@ -31,7 +31,7 @@
    <ul>
     <li><a href="http://en.sfml-dev.org/forums/index.php?topic=5559.msg36368#msg36368" target="_blank">A minimal and complete code example</a> that reproduces the bug as you are experiencing it.</li>
     <li>Instructions for reproducing the bug if it isn't obvious when running the example.</li>
-    <li>Environment information (operating system, SFML version, compiler etc.).</li>
+    <li>Environment information (operating system, SFML version, compiler, etc.).</li>
     <li>Screenshots and/or videos, if necessary, to demonstrate certain behavior.</li>
     <li>Anything else that helps to identify the problem.</li>
    </ul>
