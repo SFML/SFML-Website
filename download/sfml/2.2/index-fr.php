@@ -88,7 +88,7 @@
     <tbody>
         <tr>
             <td class="os" rowspan="2">Tous OS</td>
-            <td><span class="description">Code source</span><a href="../../../files/SFML-2.2-sources.zip">Télécharger<span class="size">16.52 Mo</span></a></td>
+            <td><span class="description">Code source</span><a href="../../../files/SFML-2.2-sources.zip">Télécharger<span class="size">17.22 Mo</span></a></td>
         </tr>
         <tr>
             <td><span class="description">HTML Documentation</span><a href="../../../files/SFML-2.2-doc.zip">Télécharger<span class="size">1.44 Mo</span></a></td>
