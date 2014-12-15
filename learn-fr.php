@@ -10,29 +10,29 @@
 
 <div class="link-box two-columns-left">
     <a class="style" href="tutorials/2.2/index-fr.php">
-        <div class="title">Tutorials</div>
-        <div class="description">Learn how to use SFML</div>
+        <div class="title">Tutoriels</div>
+        <div class="description">Apprenez à utiliser SFML</div>
     </a>
 </div>
 
 <div class="link-box two-columns-right">
     <a class="apidocs" href="documentation/2.2-fr">
-        <div class="title">API Documentation</div>
-        <div class="description">Reference</div>
+        <div class="title">Documentation de l'API</div>
+        <div class="description">Référence</div>
     </a>
 </div>
 
 <div class="link-box two-columns-left">
-    <a class="faq" href="faq.php">
-        <div class="title">FAQ</div>
+    <a class="faq" href="faq-fr.php">
+        <div class="title">FAQ <img src="../images/icons/flag-en.png" alt="EN"></div>
         <div class="description">Frequently Asked Questions</div>
     </a>
 </div>
 
 <div class="link-box two-columns-right">
     <a class="license" href="license-fr.php">
-        <div class="title">License</div>
-        <div class="description">zlib/png license</div>
+        <div class="title">Licence</div>
+        <div class="description">Licence zlib/png</div>
     </a>
 </div>
 
@@ -47,12 +47,12 @@
     </div>
 </div>
 
-<h2 id="old-docs"><a class="h2-link" href="#old-docs">Documentation for old versions</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
+<h2 id="old-docs"><a class="h2-link" href="#old-docs">Documentation pour les anciennes versions</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 
 <ul>
-    <li><strong>SFML 2.1:</strong> <a href="tutorials/2.1/index-fr.php">Tutorials</a>, <a href="documentation/2.1-fr">API documentation</a></li>
-    <li><strong>SFML 2.0:</strong> <a href="tutorials/2.0/index-fr.php">Tutorials</a>, <a href="documentation/2.0-fr">API documentation</a></li>
-    <li><strong>SFML 1.6:</strong> <a href="tutorials/1.6/index-fr.php">Tutorials</a>, <a href="documentation/1.6-fr">API documentation</a></li>
+    <li><strong>SFML 2.1:</strong> <a href="tutorials/2.1/index-fr.php">Tutoriels</a>, <a href="documentation/2.1-fr">Documentation de l'API</a></li>
+    <li><strong>SFML 2.0:</strong> <a href="tutorials/2.0/index-fr.php">Tutoriels</a>, <a href="documentation/2.0-fr">Documentation de l'API</a></li>
+    <li><strong>SFML 1.6:</strong> <a href="tutorials/1.6/index-fr.php">Tutoriels</a>, <a href="documentation/1.6-fr">Documentation de l'API</a></li>
 </ul>
 
 <?php

@@ -18,8 +18,8 @@
 
  <div class="link-box two-columns-right">
   <a class="issues" href="issues-fr.php">
-   <div class="title">Issues</div>
-   <div class="description">What to do if you have an issue</div>
+   <div class="title">Problèmes</div>
+   <div class="description">Que faire en cas de problème</div>
   </a>
  </div>
 
