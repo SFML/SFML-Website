@@ -49,7 +49,7 @@
         <link rel="stylesheet" type="text/css" href="<?php echo script('highlight/styles/github.css') ?>"/>
         <?php if (isset($doxygen))
         {
-            echo '<link rel="stylesheet" type="text/css"  href="' . root() . '/styles/doxygen.css" title="default" media="screen,print" />' . "\n" .
+            echo '<link rel="stylesheet" type="text/css"  href="' . root() . '/' . $docpath . 'doxygen.css" title="default" media="screen,print" />' . "\n" .
                  '<script type="text/javascript" src="jquery.js"></script>' . "\n" .
                  '<script type="text/javascript" src="dynsections.js"></script>' . "\n";
         } ?>

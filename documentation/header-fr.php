@@ -1,5 +1,6 @@
 <?php
     $doxygen = true;
+    $docpath = 'documentation/' . $version . '-fr/';
     $breadcrumbs = array
     (
         'Apprendre' => 'learn-fr.php',
