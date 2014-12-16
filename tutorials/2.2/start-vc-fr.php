@@ -73,18 +73,16 @@
 </p>
 <img class="screenshot" src="./images/start-vc-static.png" alt="Capture d'écran de la boîte de dialogue pour définir la macro SFML_STATIC" title="Capture d'écran de la boîte de dialogue pour définir la macro SFML_STATIC" />
 <p class="important">
-    Starting from SFML 2.2, when static linking, you will have to link all of SFML's dependencies to your project as well. This means that if you are linking
-    sfml-window-s.lib or sfml-window-s-d.lib for example, you will also have to link opengl32.lib, winmm.lib and gdi32.lib. Some of these dependency libraries
-    might already be listed under "Inherited values", but adding them again yourself shouldn't cause any problems.
+    Depuis SFML 2.2, lors d'une liaison statique, il faut aussi lier toutes les dépendences de SFML. Par exemple: si vous liez à sfml-window-s.lib ou sfml-window-s-d.lib sur Windows, il faudra aussi lier à winmm.lib, gdi32.lib et opengl32.lib. Parfois, ces bibliothèques seront listées sous "Valeurs Héritées", mais il n'y a pas de mal à les ajouter tout-de-même.
 </p>
 <p>
-    Here are the dependencies of each module, append the -d as described above if you want to link the debug libraries:
+    Voici la liste des dépendances de chaque module, il faudra, c'est décrit ci-dessus, y ajouter -d pour obtenir les bibliothèques de déboguage.
 </p>
 <table class="styled">
     <thead>
         <tr>
             <th>Module</th>
-            <th>Dependencies</th>
+            <th>Dépendences</th>
         </tr>
     </thead>
     <tbody>
@@ -132,15 +130,11 @@
     </tbody>
 </table>
 <p>
-    You might have noticed from the table that SFML modules can also depend on one another, e.g. sfml-graphics-s.lib depends both on sfml-window-s.lib and sfml-system-s.lib.
-    If you static link to an SFML library, make sure to link to the dependencies of the library in question, as well as the dependencies of the dependencies
-    and so on. If anything along the dependency chain is missing, you <em>will</em> get linker errors.
+    Il est important de remarquer que les modules de SFML peuvent dépendre les uns des autres. Par exemple, sfml-graphics-s.lib dépends de sfml-window-s.lib et sfml-system-s.lib.
+    Si vous liez statiquement une bibliothèque SFML, soyez sur de lier les dépendences de cette bibliothèque, ainsi que les dépendences de ces dépendences etc. Si une partie de l'arbre de dépendences manque, il est <em>certain</em> que vous aurez des erreurs de liaison.
 </p>
 <p>
-    If you are slightly confused, don't worry, it is perfectly normal for beginners to be overwhelmed by all this information regarding static linking. If something
-    doesn't work for you the first time around, you can simply keep trying always bearing in mind what has been said above. If you still can't get static linking to
-    work, you can check the <a class="internal" href="../../faq.php#build-link-static" title="Go to the FAQ page">FAQ</a> and the
-    <a href="http://en.sfml-dev.org/forums/index.php?board=4.0" title="Go to the general help forum">forum</a> for threads about static linking.
+    Si vous restez confus, ne vous inquietez pas. Il est parfaitement normal qu'un débutant soit surchargé par toutes ces informations. Si quelque chose ne marche pas du premier coup, vous pouvez toujours essayer de vous rappeller de ce qu'il a été dit ci-dessus. Si ça ne marche toujours pas, vous pouvez vérifier le <a class=internal" href="../../faq.php#build-link-static" title="Visitez la page FAQ">FAQ</a> ou le <a href="http://fr.sfml-dev.org/forums/index.php?board=25.0">forum</a> pour trouver des astuces sur la liaison statique.
 </p>
 <p>
     Si vous ne connaissez pas les différences entre les bibliothèques dynamiques (aussi appelées "partagées") et statiques, et ne savez pas lesquelles
