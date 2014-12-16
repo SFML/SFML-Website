@@ -87,7 +87,7 @@ int main()
 </p>
 <p>
     SFML provides four kinds of drawable entities: three of them are ready to be used (<em>sprites</em>, <em>text</em> and <em>shapes</em>), the last
-    one is the building block that will help you to create your own drawable entities (<em>vertex arrays</em>).
+    one is the building block that will help you create your own drawable entities (<em>vertex arrays</em>).
 </p>
 <p>
     Although they share some common properties, each of these entities come with their own nuances and are therefore explained in dedicated tutorials:

@@ -131,7 +131,7 @@ window.draw(text);
 </p>
 <ul>
     <li><code>textureRect</code> contains the texture coordinates of the glyph within the texture</li>
-    <li><code>bounds</code> contains the bounding rectangle of the glyph, which helps to position it relative to the baseline of the text</li>
+    <li><code>bounds</code> contains the bounding rectangle of the glyph, which helps position it relative to the baseline of the text</li>
     <li><code>advance</code> is the horizontal offset to apply to get the starting position of the next glyph in the text</li>
 </ul>
 <p>

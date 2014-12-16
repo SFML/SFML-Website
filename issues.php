@@ -17,7 +17,7 @@
     <li>Have a look at the <a href="faq.php" target="_blank">Frequently Asked Questions</a>.</li>
     <li>Go through the <a href="tutorials/2.2/" target="_blank">official tutorials</a> again, and make sure to read and understand the text in red boxes.</li>
     <li><a href="http://en.sfml-dev.org/forums/index.php?action=search" target="_blank">Search the forum</a> for similar issues.</li>
-    <li>If and only if none of the above has helped you to resolve your issue: Create a new thread on the forum and make sure to follow the <a href="http://en.sfml-dev.org/forums/index.php?topic=5559.0" target="_blank">forum rules</a>.</li>
+    <li>If and only if none of the above has helped you resolve your issue: Create a new thread on the forum and make sure to follow the <a href="http://en.sfml-dev.org/forums/index.php?topic=5559.0" target="_blank">forum rules</a>.</li>
    </ul>
   </li>
  </ol>
@@ -33,7 +33,7 @@
     <li>Instructions for reproducing the bug if it isn't obvious when running the example.</li>
     <li>Environment information (operating system, SFML version, compiler, etc.).</li>
     <li>Screenshots and/or videos, if necessary, to demonstrate certain behavior.</li>
-    <li>Anything else that helps to identify the problem.</li>
+    <li>Anything else that helps identify the problem.</li>
    </ul>
   </li>
  </ol>

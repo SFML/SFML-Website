@@ -37,7 +37,7 @@
 </p>
 <p class="important">
     OpenGL functions start with the "gl" prefix, GLU functions start with the "glu" prefix. Remember this when you get linker errors, this will help you
-    to find which library you forgot to link.
+    find which library you forgot to link.
 </p>
 
 <?php h2('Creating an OpenGL window') ?>
