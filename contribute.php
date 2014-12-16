@@ -59,7 +59,7 @@
    <li>Instructions for reproducing the bug if it isn't obvious when running the example.</li>
    <li>Environment information (operating system, SFML version, compiler etc.).</li>
    <li>Screenshots and/or videos, if necessary, to demonstrate certain behavior.</li>
-   <li>Anything else that helps to identify the problem.</li>
+   <li>Anything else that helps identify the problem.</li>
   </ul>
  </li>
 </ol>

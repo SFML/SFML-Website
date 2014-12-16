@@ -50,7 +50,7 @@ if (!texture.loadFromFile("image.png"))
     You can also load an image file from memory (<code>loadFromMemory</code>), from a
     <a class="internal" href="./system-stream.php" title="Input streams tutorial">custom input stream</a> (<code>loadFromStream</code>), or from an
     image that has already been loaded (<code>loadFromImage</code>). The latter loads the texture from an <?php class_link("Image") ?>, which is a utility class that
-    helps to store and manipulate image data (modify pixels, create transparency channel, etc.). The pixels of an <?php class_link("Image") ?> stay in system memory,
+    helps store and manipulate image data (modify pixels, create transparency channel, etc.). The pixels of an <?php class_link("Image") ?> stay in system memory,
     which ensures that operations on them will be as fast as possible, in contrast to the pixels of a texture which reside in video memory and are
     therefore slow to retrieve or update but very fast to draw.
 </p>
