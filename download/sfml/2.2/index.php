@@ -56,8 +56,8 @@
     <tbody>
         <tr>
             <td class="os" rowspan="1">Linux</td>
-            <td><?php download_link('GCC', '32-bit', '0.00', '../../../files/SFML-2.2-linux-gcc-32bits.tar.bz2') ?></td>
-            <td><?php download_link('GCC', '64-bit', '0.00', '../../../files/SFML-2.2-linux-gcc-64bits.tar.bz2') ?></td>
+            <td><?php download_link('GCC', '32-bit', '1.75', '../../../files/SFML-2.2-linux-gcc-32-bit.tar.gz') ?></td>
+            <td><?php download_link('GCC', '64-bit', '1.90', '../../../files/SFML-2.2-linux-gcc-64-bit.tar.gz') ?></td>
         </tr>
         <tr>
             <td class="notice" colspan="3">
