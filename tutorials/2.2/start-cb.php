@@ -77,6 +77,80 @@
     In this case, you'll also need to define the SFML_STATIC macro in the preprocessor options of your project.
 </p>
 <img class="screenshot" src="./images/start-cb-static.png" alt="Screenshot of the dialog box for defining the SFML_STATIC macro" title="Screenshot of the dialog box for defining the SFML_STATIC macro" />
+<p class="important">
+    Starting from SFML 2.2, when static linking, you will have to link all of SFML's dependencies to your project as well. This means that if you are linking
+    sfml-window-s or sfml-window-s-d for example, you will also have to link opengl32, winmm and gdi32. Some of these dependency libraries
+    might already be listed under "Inherited values", but adding them again yourself shouldn't cause any problems.
+</p>
+<p>
+    Here are the dependencies of each module, append the -d as described above if you want to link the debug libraries:
+</p>
+<table class="styled">
+    <thead>
+        <tr>
+            <th>Module</th>
+            <th>Dependencies</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="one">
+            <td><code>sfml-system-s</code></td>
+            <td><ul>
+                <li>winmm</li>
+            </ul></td>
+        </tr>
+        <tr class="two">
+            <td><code>sfml-network-s</code></td>
+            <td><ul>
+                <li>ws2_32</li>
+                <li>sfml-system-s</li>
+            </ul></td>
+        </tr>
+        <tr class="one">
+            <td><code>sfml-audio-s</code></td>
+            <td><ul>
+                <li>openal32</li>
+                <li>sndfile</li>
+                <li>sfml-system-s</li>
+            </ul></td>
+        </tr>
+        <tr class="two">
+            <td><code>sfml-window-s</code></td>
+            <td><ul>
+                <li>opengl32</li>
+                <li>winmm</li>
+                <li>gdi32</li>
+                <li>sfml-system-s</li>
+            </ul></td>
+        </tr>
+        <tr class="one">
+            <td><code>sfml-graphics-s</code></td>
+            <td><ul>
+                <li>freetype</li>
+                <li>glew</li>
+                <li>jpeg</li>
+                <li>opengl32</li>
+                <li>sfml-window-s</li>
+                <li>sfml-system-s</li>
+            </ul></td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    You might have noticed from the table that SFML modules can also depend on one another, e.g. sfml-graphics-s depends both on sfml-window-s and sfml-system-s.
+    If you static link to an SFML library, make sure to link to the dependencies of the library in question, as well as the dependencies of the dependencies
+    and so on. If anything along the dependency chain is missing, you <em>will</em> get linker errors.
+</p>
+<p class="important">
+    Additionally, because Code::Blocks makes use of GCC, the linking order <em>does</em> matter. This means that libraries that depend on other libraries have to
+    be added to the library list <em>before</em> the libraries they depend on. If you don't follow this rule, you <em>will</em> get linker errors.
+</p>
+<p>
+    If you are slightly confused, don't worry, it is perfectly normal for beginners to be overwhelmed by all this information regarding static linking. If something
+    doesn't work for you the first time around, you can simply keep trying always bearing in mind what has been said above. If you still can't get static linking to
+    work, you can check the <a class="internal" href="../../faq.php#build-link-static" title="Go to the FAQ page">FAQ</a> and the
+    <a href="http://en.sfml-dev.org/forums/index.php?board=4.0" title="Go to the general help forum">forum</a> for threads about static linking.
+</p>
 <p>
     If you don't know the differences between dynamic (also called shared) and static libraries, and don't know which one to use, you can search for more information on the internet.
     There are many good articles/blogs/posts about them.
