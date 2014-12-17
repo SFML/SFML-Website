@@ -261,7 +261,7 @@
  <h3 id="grl-questions"><a class="h3-link" href="#grl-questions">Where can I ask questions?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>First make sure you've read the tutorials and the documentation, then check whether the question has already been asked before. If after that you still have a question <strong>regarding SFML</strong> in the <a href="http://en.sfml-dev.org/forums/">SFML forum</a>.</p>
  <p>Keep in mind that using SFML is not a very suitable way to <a href="#grl-learn">learn the bare basics of C++ programming</a>, and as such it is recommended that any questions regarding general C++ be asked in more adequate forums where people proficient in C++ can help you better.</p>
- <p>Additionally you also find people in the <a href="http://en.sfml-dev.org/forums/index.php?topic=2997.0">Official IRC chat</a>.</p>
+ <p>Additionally you also find people in the <a href="http://www.sfml-dev.org/community.php">Official IRC chat</a>.</p>
 
  <h2 id="buil-use"><a class="h2-link" href="#build-use">Building and Using SFML</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 
