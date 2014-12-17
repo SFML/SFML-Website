@@ -94,6 +94,7 @@
    <a href="#tr-grl">General</a>
    <ul>
     <li><a href="#tr-grl-trouble">I'm having trouble using SFML.</a></li>
+    <li><a href="#tr-grl-verbose-ide">How do I make my IDE output verbose build information?</a></li>
     <li><a href="#tr-grl-undefined-ref">I keep getting "undefined reference to &lt;some strange thing that looks like an SFML function&gt;"!</a></li>
     <li><a href="#tr-grl-64bit">Why can't I use SFML as a 64-bit library on my 64-bit system?</a></li>
     <li><a href="#tr-grl-crash">My computer crashes when I run my SFML program!</a></li>
@@ -651,6 +652,33 @@ std::size_t pos = cpp_string.find( sfml_string );</code></pre>
 
  <h3 id="tr-grl-undefined-ref"><a class="h3-link" href="#tr-grl-undefined-ref">I keep getting "undefined reference to &lt;some strange thing that looks like an SFML function&gt;" errors!</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>See <a href="#build-link">What and how do I link to use SFML?</a></p>
+ <p>If that doesn't help, see <a href="#tr-grl-verbose-ide">How do I make my IDE output verbose build information?</a></p>
+ <p>If that also doesn't help, feel free to ask for assistance on the forum.</p>
+ 
+ <h3 id="tr-grl-verbose-ide"><a class="h3-link" href="#tr-grl-verbose-ide">How do I make my IDE output verbose build information?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
+ <p>Often times, compiling/linking your project might fail for some reason. Even after re-checking all your project settings and comparing it to what is described in the tutorials you still don't know the cause. IDEs (Integrated Development Environments) are nothing but front-ends for the toolchain underneath of it. All that IDEs (such as Code::Blocks, Visual Studio, Eclipse etc.) do is automate and generally make it easier for you to work on your projects from within a single environment, hence their name. Without IDEs, you would have to resort to plain text editors to write your code and manually pass your source files to your compiler/linker on the command-line yourself.</p>
+ <p>One way an IDE makes your life simpler is by parsing the compiler/linker output and presenting it to you in a friendlier manner. Often, clicking on an error will take you to the offending line for example. What your IDE does "behind the scenes" when you click on the Build button or press your Build key is invoke a series of commands that you would also able to do yourself (but is simply tedious). It then relays the generated text output, including all warnings and errors back to you after the commands have been run. By default, most IDEs are set by default to not show the commands it runs behind the scenes to the user. However, it is exactly this information that is helpful when building fails. Thankfully, the IDEs let you specify whether you want to see these commands or not.</p>
+ <p>The commands are generated from your project configuration information that you set through the IDE user interface. You might think that you set everything right in your project settings, but the only way of knowing for sure is by inspecting the commands that are run. The command line will consist of a large number of flags and parameters. Refer to the compiler/linker documentation if you want to understand them. When asking for assistance in build-related matters on the forum, it is always recommended to provide the full build log (consisting of the commands and the raw output from the compiler/linker) to the other users. It is a very compact way of providing information about your project configuration without having to make several screenshots of your IDE user interface. Experienced users can very quickly spot from what you paste the mistake you made, if any. Don't be surprised if you are immediately asked for this information.</p>
+ <p><b>Code::Blocks - all versions, all operating systems</b></p>
+ <p>First, open up your compiler settings window.</p>
+ <img class="screenshot" src="/images/faq/cb-compiler-settings.png" alt="Screenshot of the Code::Blocks compiler settings menu entry" title="Screenshot of the Code::Blocks compiler settings menu entry" />
+ <p>Go to the "Other settings" tab and change the "Compiler logging:" entry to "Full command line".</p>
+ <img class="screenshot" src="/images/faq/cb-compiler-logging.png" alt="Screenshot of the Code::Blocks compiler logging setting" title="Screenshot of the Code::Blocks compiler logging setting" />
+ <p>Try to build your project and change to the "Build log" tab when it completes.</p>
+ <img class="screenshot" src="/images/faq/cb-build-log.png" alt="Screenshot of the Code::Blocks build log" title="Screenshot of the Code::Blocks build log" />
+ <p>Inspect the build log and see if it helps solve your problem. If you need further help, you can ask on the forum. In that case copy the output and paste it in your post.</p>
+ <p><b>Microsoft Visual Studio - 2008, 2010, 2012 and 2013, Microsoft Windows</b></p>
+ <p>First, open up your project properties window.</p>
+ <img class="screenshot" src="/images/faq/vs-project-properties.png" alt="Screenshot of the Visual Studio project properties menu entry" title="Screenshot of the Visual Studio project properties menu entry" />
+ <p>Make sure you selected the configuration you are trying to build. Open up the C/C++ -> General pane and change the "Suppress Startup Banner" entry to "No (/nologo-)".</p>
+ <img class="screenshot" src="/images/faq/vs-compiler-suppress-startup-banner.png" alt="Screenshot of the Visual Studio compiler suppress startup banner setting" title="Screenshot of the Visual Studio compiler suppress startup banner setting" />
+ <p>Open up the Linker -> General pane and change the "Suppress Startup Banner" entry to "No".</p>
+ <img class="screenshot" src="/images/faq/vs-linker-suppress-startup-banner.png" alt="Screenshot of the Visual Studio linker suppress startup banner setting" title="Screenshot of the Visual Studio linker suppress startup banner setting" />
+ <p>Try to build your project.</p>
+ <img class="screenshot" src="/images/faq/vs-build-log.png" alt="Screenshot of the Visual Studio build log" title="Screenshot of the Visual Studio build log" />
+ <p>Inspect the build log and see if it helps solve your problem. If you need further help, you can ask on the forum. In that case copy the output and paste it in your post.</p>
+ <p><b>Reminder</b></p>
+ <p>When posting on the forum, it is helpful to paste your log in <code>[code][/code]</code> tags to enable people to handle it easier. Not only does it avoid linebreaks, it is also displayed in a monospace font which makes it easier to read if it spans multiple lines.</p>
 
  <h3 id="tr-grl-64bit"><a class="h3-link" href="#tr-grl-64bit">Why can't I use SFML as a 64-bit library on my 64-bit system?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>First of all, you have to ask yourself: Do I really need to use SFML as a 64-bit library? There are some benefits to building 64-bit applications, but it is recommended that beginners do not try this until they are confident with the compile and linking process</p>
