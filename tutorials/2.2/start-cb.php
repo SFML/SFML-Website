@@ -85,11 +85,11 @@
 <p>
     Here are the dependencies of each module, append the -d as described above if you want to link the debug libraries:
 </p>
-<table class="styled">
+<table class="styled expanded">
     <thead>
         <tr>
-            <th>Module</th>
-            <th>Dependencies</th>
+            <th class="expand-left">Module</th>
+            <th class="expand-right">Dependencies</th>
         </tr>
     </thead>
     <tbody>
