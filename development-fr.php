@@ -26,28 +26,28 @@
  <div class="link-box two-columns-left">
   <a class="changelog" href="changelog-fr.php">
    <div class="title">Changelog <img src="../images/icons/flag-en.png" alt="EN"></div>
-   <div class="description">What has changed?</div>
+   <div class="description">Quoi de neuf?</div>
   </a>
  </div>
 
  <div class="link-box two-columns-right">
   <a class="contribute" href="contribute-fr.php">
-   <div class="title">Contribution Guidelines <img src="../images/icons/flag-en.png" alt="EN"></div>
-   <div class="description">How to help developing SFML</div>
+   <div class="title">Guide du contributeur <img src="../images/icons/flag-en.png" alt="EN"></div>
+   <div class="description">Comment aider à développer SFML</div>
   </a>
  </div>
 
  <div class="link-box two-columns-left">
   <a class="style" href="style-fr.php">
-   <div class="title">Code Style Guide <img src="../images/icons/flag-en.png" alt="EN"></div>
-   <div class="description">How to format your contributions</div>
+   <div class="title">Guide du codeur <img src="../images/icons/flag-en.png" alt="EN"></div>
+   <div class="description">Comment structurer vos contributions</div>
   </a>
  </div>
 
  <div class="link-box two-columns-right">
   <a class="workflow" href="workflow-fr.php">
-   <div class="title">Git Workflow <img src="../images/icons/flag-en.png" alt="EN"></div>
-   <div class="description">How we utilize Git</div>
+   <div class="title">Méthodologie Git <img src="../images/icons/flag-en.png" alt="EN"></div>
+   <div class="description">Comment nous utilisons Git</div>
   </a>
  </div>
 
