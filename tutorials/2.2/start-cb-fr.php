@@ -88,11 +88,11 @@
 <p>
     Voici la liste des dépendances de chaque module, il faudra, c'est décrit ci-dessus, y ajouter -d pour obtenir les bibliothèques de déboguage.
 </p>
-<table class="styled">
+<table class="styled expanded">
     <thead>
         <tr>
-            <th>Module</th>
-            <th>Dépendences</th>
+            <th class="expand-left">Module</th>
+            <th class="expand-right">Dépendences</th>
         </tr>
     </thead>
     <tbody>
