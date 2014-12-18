@@ -77,16 +77,16 @@
 </p>
 <p>
     Les options montrées ici vont lier votre application à la version dynamique de SFML, celle qui a besoin des fichiers DLL pour fonctionner.
-    Si vous voulez vous débarasser de ces DLLs et avoir SFML directement intégrée à votre exécutable, vous devez lier à la version statique. Les
+    Si vous voulez vous débarrasser de ces DLLs et avoir SFML directement intégrée à votre exécutable, vous devez lier à la version statique. Les
     bibliothèques statiques de SFML ont le suffixe "-s" : "sfml-xxx-s-d" en Debug et "sfml-xxx-s" en Release.<br />
     Dans ce cas, vous devrez aussi définir la macro SFML_STATIC dans les options préprocesseur de votre projet.
 </p>
 <img class="screenshot" src="./images/start-cb-static.png" alt="Capture d'écran de la boîte de dialogue pour définir la macro SFML_STATIC" title="Capture d'écran de la boîte de dialogue pour définir la macro SFML_STATIC" />
 <p class="important">
-    Depuis SFML 2.2, lors d'une liaison statique, il faut aussi lier toutes les dépendences de SFML. Par exemple: si vous liez à sfml-window-s ou sfml-window-s-d sur Windows, il faudra aussi lier à winmm, gdi32 et opengl32. Parfois, ces bibliothèques seront listées sous "Valeurs Héritées", mais il n'y a pas de mal à les ajouter tout-de-même.
+    Depuis SFML 2.2, lors d'une liaison statique, il faut aussi lier toutes les dépendances de SFML. Par exemple: si vous liez à sfml-window-s ou sfml-window-s-d sur Windows, il faudra aussi lier à winmm, gdi32 et opengl32. Parfois ces bibliothèques seront listées sous "Inherited values" mais les ajouter une fois de plus ne devrait pas poser de problème.
 </p>
 <p>
-    Voici la liste des dépendances de chaque module, il faudra, c'est décrit ci-dessus, y ajouter -d pour obtenir les bibliothèques de déboguage.
+    Voici la liste des dépendances de chaque module; il faudra y ajouter -d pour obtenir les bibliothèques de débogage.
 </p>
 <table class="styled expanded">
     <thead>
@@ -140,14 +140,14 @@
     </tbody>
 </table>
 <p>
-    Il est important de remarquer que les modules de SFML peuvent dépendre les uns des autres. Par exemple, sfml-graphics-s dépends de sfml-window-s et sfml-system-s.
-    Si vous liez statiquement une bibliothèque SFML, soyez sur de lier les dépendences de cette bibliothèque, ainsi que les dépendences de ces dépendences etc. Si une partie de l'arbre de dépendences manque, il est <em>certain</em> que vous aurez des erreurs de liaison.
+    Il est important de remarquer que les modules de SFML peuvent dépendre les uns des autres. Par exemple, sfml-graphics-s dépend de sfml-window-s et de sfml-system-s.
+    Si vous liez statiquement une bibliothèque SFML, soyez sûr de lier les dépendances de cette bibliothèque ainsi que les dépendances de ses dépendances. Si une partie de l'arbre de dépendances manque, il est <em>certain</em> que vous aurez des erreurs de liaison.
 </p>
 <p class="important">
-    De plus, puisque Code::Blocks utilise GCC, l'ordre de liaison est important. C'est à dire que les bibliothèques qui dépendent d'autres bibliothèques doivent être ajoutées <em>avant</em> les bibliothèques desquels elles dépendent. Si cette règle n'est pas respectée, il est <em>certain</em> que vous recevrez des erreurs de liaison.
+    De plus, puisque Code::Blocks utilise GCC, l'ordre de liaison est important. C'est à dire que les bibliothèques qui dépendent d'autres bibliothèques doivent être ajoutées <em>avant</em> les bibliothèques desquels elles dépendent. Si cette règle n'est pas respectée, il est <em>certain</em> que vous aurez des erreurs de liaison.
 </p>
 <p>
-    Si vous restez confus, ne vous inquietez pas. Il est parfaitement normal qu'un débutant soit surchargé par toutes ces informations. Si quelque chose ne marche pas du premier coup, vous pouvez toujours essayer de vous rappeller de ce qu'il a été dit ci-dessus. Si ça ne marche toujours pas, vous pouvez vérifier le <a class=internal" href="../../faq.php#build-link-static" title="Visitez la page FAQ">FAQ</a> ou le <a href="http://fr.sfml-dev.org/forums/index.php?board=25.0">forum</a> pour trouver des astuces sur la liaison statique.
+    Si vous êtes un peu perdu, ne vous inquiétez pas. Il est parfaitement normal pour un débutant d'être submergé par toutes ces informations. Si quelque chose ne marche pas du premier coup, vous pouvez toujours essayer de vous rappeler de ce qu'il a été dit ci-dessus. Si vous n'y parvenez toujours pas, vous pouvez consulter la <a class="internal" href="../../faq.php#build-link-static" title="Visitez la page FAQ">FAQ</a> ou le <a href="http://fr.sfml-dev.org/forums/index.php?board=25.0">forum</a> pour trouver des astuces sur l'édition des liens statiques.
 </p>
 <p>
     Si vous ne connaissez pas les différences entre les bibliothèques dynamiques (aussi appelées "partagées") et statiques, et ne savez pas lesquelles
