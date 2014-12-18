@@ -24,7 +24,7 @@
 
 <div class="link-box two-columns-right">
     <a class="repository" href="https://github.com/LaurentGomila/SFML/">
-        <div class="title">Git dépôt</div>
+        <div class="title">Dépôt Git</div>
         <div class="description">GitHub.com</div>
     </a>
 </div>

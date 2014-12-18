@@ -1,7 +1,7 @@
 <?php
     $breadcrumbs = array
     (
-        'Communauté' => 'community.php'
+        'Communauté' => 'community-fr.php'
     );
     include('header-fr.php');
 ?>
@@ -12,10 +12,10 @@
     <div class="column">
         <div class="title">&raquo; <a href="http://fr.sfml-dev.org/forums/" title="Aller au forum">Forum</a></div>
         <p>
-            Que vous ayez une question au sujet de l'<a href="learn-fr.php" title="Aller à la page des tutoriels et de la documentation">API</a> SFML, que vous rencontriez des comportements étranges avec SFML ou que vous ayez une suggestion de nouvelles fonctionnalités, vous trouverez de l'aide, des réponses ou un feedback sur le forum.
+            Que vous ayez une question concernant l'<a href="learn-fr.php" title="Aller à la page des tutoriels et de la documentation">API</a>, que vous rencontriez des comportements étranges avec SFML ou que vous ayez une suggestion de nouvelle fonctionnalité, vous trouverez de l'aide, des réponses et des conseils sur le forum.
         </p>
         <p>
-            Dans le sous-forum <a href="http://fr.sfml-dev.org/forums/index.php?board=24.0" title="Aller au sous-forum 'Projets SFML'">Projets SFML</a> vous trouvez de nombreux projets exitants.
+            Dans le sous-forum <a href="http://fr.sfml-dev.org/forums/index.php?board=24.0" title="Aller au sous-forum 'Projets SFML'">Projets SFML</a> vous trouvez de nombreux projets existant.
         </p>
     </div>
     <div class="column">
@@ -30,7 +30,7 @@
     <div class="column">
         <div class="title">&raquo; <a href="https://github.com/LaurentGomila/SFML/wiki" title="Aller au Wiki">Wiki</a></div>
         <p>
-            Le wiki de la communauté SFML contient des extraits de code, des tutoriels et d'autres contenus fruits de la collaboration de la communauté.
+            Le wiki de la communauté SFML contient des extraits de code, des tutoriels et d'autres contenus issus de la collaboration de la communauté.
         </p>
     </div>
 </div>
@@ -39,7 +39,7 @@
     <div class="column">
         <div class="title">&raquo; <a href="https://kiwiirc.com/client/irc.sfml-dev.org/sfml" target="_blank" title="Chat in the browser now">IRC</a></div>
         <p>
-            Pour une aide amicale et des discussions sur SFML (mais aussi des chats hors-sujet, avec un grand nombre d'utilisateurs), cliquez sur le bouton suivant pour discuter instantanément dans votre naviguateur, ou connectez vous avec votre client IRC favori au serveur décrit ci-dessous.
+            Pour une aide amicale et des discussions sur SFML (mais aussi des chats hors-sujet, avec un grand nombre d'utilisateurs), cliquez sur le bouton suivant pour discuter instantanément dans votre naviguateur, ou connectez-vous avec votre client IRC favori au serveur décrit ci-dessous.
         </p>
         <ul>
             <li>SSL: <a href="irc://irc.sfml-dev.org:6697/#sfml" title="Ouvrir un client IRC avec le port SSL">irc://irc.sfml-dev.org:6697/#sfml</a></li>
