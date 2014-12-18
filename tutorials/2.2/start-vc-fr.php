@@ -62,21 +62,21 @@
 </p>
 <img class="screenshot" src="./images/start-vc-link-libs.png" alt="Capture d'écran de la boîte de dialogue pour configurer les bibliothèques du projet" title="Capture d'écran de la boîte de dialogue pour configurer les bibliothèques du projet" />
 <p class="important">
-    Il est important de lier les bibiothèques qui correspondent à la configuration : "sfml-xxx-d.lib" pour Debug, and "sfml-xxx.lib" pour Release.
+    Il est important de lier les bibliothèques qui correspondent à la configuration : "sfml-xxx-d.lib" pour Debug, and "sfml-xxx.lib" pour Release.
     Un mauvais mélange pourrait entraîner des crashs.
 </p>
 <p>
     Les options montrées ici vont lier votre application à la version dynamique de SFML, celle qui requiert les fichiers DLLs. Si vous voulez
-    vous débarasser de ces DLLs et avoir SFML directement intégrée à votre exécutable, vous devez lier à la version statique. Les bibliothèques
+    vous débarrasser de ces DLLs et avoir SFML directement intégrée à votre exécutable, vous devez lier à la version statique. Les bibliothèques
     statiques de SFML ont le suffixe "-s" : "sfml-xxx-s-d.lib" pour Debug, et "sfml-xxx-s.lib" pour Release.<br />
     Dans ce cas, vous devrez aussi définir la macro SFML_STATIC dans les options préprocesseur de votre projet.
 </p>
 <img class="screenshot" src="./images/start-vc-static.png" alt="Capture d'écran de la boîte de dialogue pour définir la macro SFML_STATIC" title="Capture d'écran de la boîte de dialogue pour définir la macro SFML_STATIC" />
 <p class="important">
-    Depuis SFML 2.2, lors d'une liaison statique, il faut aussi lier toutes les dépendences de SFML. Par exemple: si vous liez à sfml-window-s.lib ou sfml-window-s-d.lib sur Windows, il faudra aussi lier à winmm.lib, gdi32.lib et opengl32.lib. Parfois, ces bibliothèques seront listées sous "Valeurs Héritées", mais il n'y a pas de mal à les ajouter tout-de-même.
+    Depuis SFML 2.2, lors d'une liaison statique, il faut aussi lier toutes les dépendances de SFML. Par exemple: si vous liez à sfml-window-s.lib ou sfml-window-s-d.lib sur Windows, il faudra aussi lier à winmm.lib, gdi32.lib et opengl32.lib. Parfois ces bibliothèques seront listées sous "Inherited values" mais les ajouter une fois de plus ne devrait pas poser de problème.
 </p>
 <p>
-    Voici la liste des dépendances de chaque module, il faudra, c'est décrit ci-dessus, y ajouter -d pour obtenir les bibliothèques de déboguage.
+    Voici la liste des dépendances de chaque module; il faudra y ajouter -d pour obtenir les bibliothèques de débogage.
 </p>
 <table class="styled expanded">
     <thead>
@@ -130,11 +130,11 @@
     </tbody>
 </table>
 <p>
-    Il est important de remarquer que les modules de SFML peuvent dépendre les uns des autres. Par exemple, sfml-graphics-s.lib dépends de sfml-window-s.lib et sfml-system-s.lib.
-    Si vous liez statiquement une bibliothèque SFML, soyez sur de lier les dépendences de cette bibliothèque, ainsi que les dépendences de ces dépendences etc. Si une partie de l'arbre de dépendences manque, il est <em>certain</em> que vous aurez des erreurs de liaison.
+    Il est important de remarquer que les modules de SFML peuvent dépendre les uns des autres. Par exemple, sfml-graphics-s.lib dépend de sfml-window-s.lib et de sfml-system-s.lib.
+    Si vous liez statiquement une bibliothèque SFML, soyez sûr de lier les dépendances de cette bibliothèque ainsi que les dépendances de ses dépendances. Si une partie de l'arbre de dépendances manque, il est <em>certain</em> que vous aurez des erreurs de liaison.
 </p>
 <p>
-    Si vous restez confus, ne vous inquietez pas. Il est parfaitement normal qu'un débutant soit surchargé par toutes ces informations. Si quelque chose ne marche pas du premier coup, vous pouvez toujours essayer de vous rappeller de ce qu'il a été dit ci-dessus. Si ça ne marche toujours pas, vous pouvez vérifier le <a class=internal" href="../../faq.php#build-link-static" title="Visitez la page FAQ">FAQ</a> ou le <a href="http://fr.sfml-dev.org/forums/index.php?board=25.0">forum</a> pour trouver des astuces sur la liaison statique.
+    Si vous êtes un peu perdu, ne vous inquiétez pas. Il est parfaitement normal pour un débutant d'être submergé par toutes ces informations. Si quelque chose ne marche pas du premier coup, vous pouvez toujours essayer de vous rappeler de ce qu'il a été dit ci-dessus. Si vous n'y parvenez toujours pas, vous pouvez consulter la <a class="internal" href="../../faq.php#build-link-static" title="Visitez la page FAQ">FAQ</a> ou le <a href="http://fr.sfml-dev.org/forums/index.php?board=25.0">forum</a> pour trouver des astuces sur l'édition des liens statiques.
 </p>
 <p>
     Si vous ne connaissez pas les différences entre les bibliothèques dynamiques (aussi appelées "partagées") et statiques, et ne savez pas lesquelles
@@ -170,7 +170,7 @@ int main()
 </code></pre>
 <p>
     Si vous avez choisi de créer un projet "Windows application", alors le point d'entrée de votre code devrait être la fonction "WinMain" au lieu de
-    "main". Etant donné que c'est spécifique à Windows, et que votre code ne compilerait donc pas sous Linux ou Mac OS X, SFML fournit un moyen de garder
+    "main". Étant donné que c'est spécifique à Windows, et que votre code ne compilerait donc pas sous Linux ou Mac OS X, SFML fournit un moyen de garder
     un point d'entrée "main" standard dans ce cas : liez votre projet au module sfml-main ("sfml-main-d.lib" en Debug, "sfml-main.lib" en Release),
     de la même manière que vous avez lié sfml-graphics, sfml-window et sfml-system.
 </p>
