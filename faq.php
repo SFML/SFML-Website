@@ -163,10 +163,10 @@
  <!--p>You can find a more specific presentation of its features on <a href="http://www.sfml-dev.org/features.php">this page</a>.</p//-->
 
  <h3 id="grl-platforms"><a class="h3-link" href="#grl-platforms">On which platforms is SFML currently available?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>SFML 2.1 is currently available and fully functional on Windows (8, 7, Vista, XP), Linux and Mac OS X. SFML works on both 32 and 64 bit systems. If older Windows versions need to be support, it should be possible to use SFML 2.0 instead (see <a href="https://github.com/LaurentGomila/SFML/commit/cd68d662043c2305990d1b6b559b0138bd77af14" target="_blank">the commit</a> for removal of Windows 9x and similar).</p>
+ <p>SFML 2.1 is currently available and fully functional on Windows (8, 7, Vista, XP), Linux and Mac OS X. SFML works on both 32 and 64 bit systems. If older Windows versions need to be support, it should be possible to use SFML 2.0 instead (see <a href="https://github.com/LaurentGomila/SFML/commit/cd68d662043c2305990d1b6b559b0138bd77af14">the commit</a> for removal of Windows 9x and similar).</p>
 
  <h3 id="grl-languages"><a class="h3-link" href="#grl-languages">Which programming languages are supported by SFML?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>SFML is implemented in C++. That said, several <a href="http://www.sfml-dev.org/download/bindings.php" target="_blank">bindings</a> have been created for other languages that allow SFML to be used from C, C#, C++/CLI, D, Ruby, OCaml, Java, Python and VB.NET.</p>
+ <p>SFML is implemented in C++. That said, several <a href="http://www.sfml-dev.org/download/bindings.php">bindings</a> have been created for other languages that allow SFML to be used from C, C#, C++/CLI, D, Ruby, OCaml, Java, Python and VB.NET.</p>
 
  <h3 id="grl-dependencies"><a class="h3-link" href="#grl-dependencies">What dependencies does SFML have?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>SFML depends on a few other libraries, so before starting to compile you must have their development files installed.</p>
@@ -191,14 +191,14 @@
  <p>Go for SFML 2.2, because you'll get a stable release with the latest features and bugfixes. As such it will save you a lot of headaches because other versions such as 1.6 are not maintained anymore, contain quite a few critical bugs and lack a lot of useful features.</p>
 
  <h3 id="grl-changes"><a class="h3-link" href="#grl-changes">Is there a complete list with all the changes from SFML 1.6 to SFML 2.x?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>This non-exhaustive list can be used as a starting point: <a href="http://en.sfml-dev.org/forums/index.php?topic=5343.0" target="_blank">SFML Forum</a><br>
+ <p>This non-exhaustive list can be used as a starting point: <a href="http://en.sfml-dev.org/forums/index.php?topic=5343.0">SFML Forum</a><br>
  It however does not contain all changes made between 1.6 and 2.0. It was written more than a year ago and since then a few major changes have been made including:</p>
  <ul>
   <li>Rewrite of the graphics API</li>
   <li>New <code>sf::Time</code> API</li>
   <li>Removal of the default built-in Arial font</li>
   <li>Replaced <code>getWidth()</code> and <code>getHeight()</code> with <code>getSize()</code></li>
-  <li>Naming convention change (further details and rationale <a href="http://en.sfml-dev.org/forums/index.php?topic=6709.0" target="_blank">here</a>)</li>
+  <li>Naming convention change (further details and rationale <a href="http://en.sfml-dev.org/forums/index.php?topic=6709.0">here</a>)</li>
  </ul>
 
  <h3 id="grl-3d"><a class="h3-link" href="#grl-3d">Will/does SFML support 3D?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
@@ -210,7 +210,7 @@
 
  <h3 id="grl-learn"><a class="h3-link" href="#grl-learn">Is using SFML a good way to learn to program (in C++)?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>In general, you can learn to program any way you want. The question is: what is the most <strong>effective</strong> way to learn to program? The unanimous answer to this question is, don't start with SFML if you are trying to grasp the basic language features of C++. SFML makes use of basic as well as advanced features of the C++ language. You might be able to achieve something in your first hours of C++ and SFML but whether it is usable and maintainable is another question. It is probable that you would have learned more and faster if you just stuck to the standard libraries C++ already provides. This allows you to focus on learning the language and not the SFML API at the same time. There are many good examples of text-based games made using just stdin and stdout.</p>
- <p>Where you learn to program (in C++) from is also totally up to you. However it is recommended to always take examples/tutorials available on the internet with a pinch of salt. They might contain bad habits of the writer which are not apparent to a newcomer. The safest way to learn to program is probably accompanied by a book written by a reputable author who is actively involved in the development of the language (see <a href="https://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list" target="_blank">this list</a>). This ensures that they grasp the important aspects of the language and can teach you to program effectively as well. Contrary to what many newcomers believe, C++ is still evolving and has done so even more over the last years with the standardization of C++11 and C++14. Learning from an older book or internet source might therefore not teach you all the aspects of the language there are and worse teach you old practices, which are no longer recommended. It is therefore recommended that you actively seek to learn about these new features on your own after you have grasped the basics.</p>
+ <p>Where you learn to program (in C++) from is also totally up to you. However it is recommended to always take examples/tutorials available on the internet with a pinch of salt. They might contain bad habits of the writer which are not apparent to a newcomer. The safest way to learn to program is probably accompanied by a book written by a reputable author who is actively involved in the development of the language (see <a href="https://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list">this list</a>). This ensures that they grasp the important aspects of the language and can teach you to program effectively as well. Contrary to what many newcomers believe, C++ is still evolving and has done so even more over the last years with the standardization of C++11 and C++14. Learning from an older book or internet source might therefore not teach you all the aspects of the language there are and worse teach you old practices, which are no longer recommended. It is therefore recommended that you actively seek to learn about these new features on your own after you have grasped the basics.</p>
  <p>If you are unsure when you might consider yourself ready for SFML, here is a checklist of language features that are highly recommended to know when using SFML.</p>
  <p>Basics, required to program with SFML:</p>
  <ul>
@@ -306,7 +306,7 @@
 
  <h3 id="build-link-static"><a class="h3-link" href="#build-link-static">How do I link SFML statically?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>In order to link SFML statically, you'll need to setup your build environment to link against the static libraries of SFML. Static libraries are the ones with a <code>-s</code> suffix, for example <code>sfml-graphics-s</code>. Next, you'll need to add <code>SFML_STATIC</code> to the preprocessor option and, as always, you'll need to make sure to link the debug libraries (<code>-d</code> suffix) in debug mode and the release libraries (no <code>-d</code> suffix) in release mode.</p>
- <p>In the past, SFML included on Windows all its dependencies into the SFML libraries. However, this was changed to eliminate multiple issues and get a commonly expected behavior (<a href="http://en.sfml-dev.org/forums/index.php?topic=9362.0" target="_blank">full discussion</a>). Now, SFML behaves the same on Linux as well as on Windows, which however means, that you need to link SFML's dependencies on your own when linking statically. Since the dependencies aren't obvious to everyone, here's a listing:</p>
+ <p>In the past, SFML included on Windows all its dependencies into the SFML libraries. However, this was changed to eliminate multiple issues and get a commonly expected behavior (<a href="http://en.sfml-dev.org/forums/index.php?topic=9362.0">full discussion</a>). Now, SFML behaves the same on Linux as well as on Windows, which however means, that you need to link SFML's dependencies on your own when linking statically. Since the dependencies aren't obvious to everyone, here's a listing:</p>
  <p><strong>Windows</strong></p>
  <ul>
   <li>
@@ -351,7 +351,7 @@
    </ul>
   </li>
  </ul>
- <p><em>Note:</em> For Windows all dependencies can be found in the <a href="https://github.com/LaurentGomila/SFML/tree/master/extlibs" target="_blank">extlibs</a> directory.</p>
+ <p><em>Note:</em> For Windows all dependencies can be found in the <a href="https://github.com/LaurentGomila/SFML/tree/master/extlibs">extlibs</a> directory.</p>
  <p><strong>Example</strong></p>
  <p>Here's a diagram showing how the static linking should look like.</p>
  <pre><code> sfml-window-s  sfml-system-s  opengl  winmm  gdi32
@@ -385,7 +385,7 @@ But keep in mind that not all variants of each format are supported.</p>
  <p>This may happen due to many reasons, some may depend on the code and circumstances, but a possible bottleneck is the amount of draw calls. When using a lot of <code>sf::Sprites</code> you need to make an equal amount of draw calls to make them show. </p>
  <p>As each draw call changes the render target, it can become slow to modify it in n-amount of loops and calls when it would be most efficient to do it in just one. The reason SFML doesn't work like this is, that it would limit what you can do with <code>sf::Sprite</code> and would force the usage of a single texture in cases where this might not be desirable or even possible due to GPU limitations.</p>
  <p>In order to raise FPS in this circumstance there is no choice other than using bare <code>sf::Vertex</code>/<code>sf::VertexArray</code> or finding another way to achieve the same effect. These on their own however won't be magical and a wrapper will most likely help do the desired render in a nice looking notation.</p>
- <p>In the <a href="https://github.com/LaurentGomila/SFML/wiki/Sources" target="_blank">SFML Wiki Source Codes</a> section you can find some classes used for fast rendering in some cases such as Tile-Map renderers or containers for transformable sprites that use the same texture.</p>
+ <p>In the <a href="https://github.com/LaurentGomila/SFML/wiki/Sources">SFML Wiki Source Codes</a> section you can find some classes used for fast rendering in some cases such as Tile-Map renderers or containers for transformable sprites that use the same texture.</p>
 
  <h3 id="graphics-vsync-framelimit"><a class="h3-link" href="#graphics-vsync-framelimit">Should I use VSync, window.setFramerateLimit or something else?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>It really depends on what you are trying to achieve. In a broader sense, both enabling vertical synchronization and limiting the framerate achieve the same results, however, the devil is in the details.</p>
@@ -521,7 +521,7 @@ while( window.isOpen() ) {
    </ul>
   </li>
   <li>Make sure that data transmission is not hindered by anything in the networking infrastructure (routers, firewalls etc.), if you are not sure about this, it most likely means that the port you are trying to use is either closed or not configured to be forwarded behind a NAT.</li>
-  <li>Make sure that data is really being sent and received by the hosts independent of your application. It might occur that you try to send data within your application, SFML doesn't report an error, but the operating system refuses to transmit it. To check if this problem exists, it is recommended that you install some form of packet capturing software such as <a href="http://www.wireshark.org" target="_blank">Wireshark</a> on both systems.</li>
+  <li>Make sure that data is really being sent and received by the hosts independent of your application. It might occur that you try to send data within your application, SFML doesn't report an error, but the operating system refuses to transmit it. To check if this problem exists, it is recommended that you install some form of packet capturing software such as <a href="http://www.wireshark.org">Wireshark</a> on both systems.</li>
   <li>Make sure that the data leaves the local network over the router. There is a possibility that the router blocks outgoing data as well.</li>
   <li>Make sure that the data arrives at the destination network router and is properly forwarded. If you are sure that the data leaves the origin network but never arrives at the destination network, try using a different port. Some ISPs have policies that block traffic from certain software and because they are not interested in using a better filtering mechanism, they decide to block the whole port instead of only traffic that really stems from the specific software. If you happen to use one of those ports, you are unlucky and should just try another.</li>
   <li>If you are sure that the port you use isn't blocked, in very very rare cases it might be an error somewhere on the way from the source the the destination within some ISPs network. If this is really the case, you are as good as out of luck and should just try again at another time or be prepared to make a lot of phone calls with a lot of uninterested people.</li>
@@ -555,7 +555,7 @@ while( window.isOpen() ) {
  <h3 id="system-string-convert"><a class="h3-link" href="#system-string-convert">How do I convert from sf::String to &lt;type&gt; and vice-versa?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>For conversions to <code>sf::String</code>, you can just construct the <code>sf::String</code> directly from whatever object you already have. </p>
  <pre><code>sf::String sfml_string( cpp_string );</code></pre>
- <p>There are enough constructors that take care of implicit conversion from all standard C++ string types. If you want to see what these look like, take a look in the <a href="http://sfml-dev.org/documentation/2.2/classsf_1_1String.php" target="_blank"><code>sf::String</code> documentation</a>. If you want to convert from a non-C++ string to <code>sf::String</code>, it is recommended to first convert to a C++ string and then to an <code>sf::String</code>. Since any library using custom string types should provide support for this, this shouldn't be problematic.</p>
+ <p>There are enough constructors that take care of implicit conversion from all standard C++ string types. If you want to see what these look like, take a look in the <a href="http://sfml-dev.org/documentation/2.2/classsf_1_1String.php"><code>sf::String</code> documentation</a>. If you want to convert from a non-C++ string to <code>sf::String</code>, it is recommended to first convert to a C++ string and then to an <code>sf::String</code>. Since any library using custom string types should provide support for this, this shouldn't be problematic.</p>
  <p>For conversions from <code>sf::String</code> to any other custom string type, it is also recommended to first convert to a C++ string then from C++ string to that type.</p>
  <p><code>sf::String</code> supports implicit conversion to <code>std::string</code> and <code>std::wstring</code>, so things like</p>
  <pre><code class="cpp">std::cout << sfml_string << std::endl;
@@ -857,7 +857,7 @@ int main() {
 
  <h3 id="libraries-thor"><a class="h3-link" href="#libraries-thor">What exactly is Thor?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>Thor is an open-source and cross-platform library written in the programming language C++. It is an extension to SFML and comes with high-level features that base on SFML and that are supposed to help in daily C++ routine, especially with respect to graphics and game programming.</p>
- <p>The git repository is also hosted on <a href="https://github.com/Bromeon/Thor" target="_blank">GitHub</a> and the official website can be found at: <a href="http://www.bromeon.ch/libraries/thor/" target="_blank">http://www.bromeon.ch/libraries/thor/</a></p>
+ <p>The git repository is also hosted on <a href="https://github.com/Bromeon/Thor">GitHub</a> and the official website can be found at: <a href="http://www.bromeon.ch/libraries/thor/">http://www.bromeon.ch/libraries/thor/</a></p>
 
  <h2 id="misc"><a class="h2-link" href="#misc">Miscellaneous</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 
