@@ -86,7 +86,7 @@
     Depuis SFML 2.2, lors d'une liaison statique, il faut aussi lier toutes les dépendances de SFML. Par exemple: si vous liez à sfml-window-s ou sfml-window-s-d sur Windows, il faudra aussi lier à winmm, gdi32 et opengl32. Parfois ces bibliothèques seront listées sous "Inherited values" mais les ajouter une fois de plus ne devrait pas poser de problème.
 </p>
 <p>
-    Voici la liste des dépendances de chaque module; il faudra y ajouter -d pour obtenir les bibliothèques de débogage.
+    Voici la liste des dépendances de chaque module; il faudra y ajouter -d pour lier les bibliothèques SFML de débogage.
 </p>
 <table class="styled expanded">
     <thead>
@@ -105,36 +105,36 @@
         <tr class="two">
             <td><code>sfml-network-s</code></td>
             <td><ul>
-                <li>ws2_32</li>
                 <li>sfml-system-s</li>
+                <li>ws2_32</li>
             </ul></td>
         </tr>
         <tr class="one">
             <td><code>sfml-audio-s</code></td>
             <td><ul>
-                <li>openal32</li>
-                <li>sndfile</li>
                 <li>sfml-system-s</li>
+                <li>sndfile</li>
+                <li>openal32</li>
             </ul></td>
         </tr>
         <tr class="two">
             <td><code>sfml-window-s</code></td>
             <td><ul>
-                <li>opengl32</li>
-                <li>winmm</li>
-                <li>gdi32</li>
                 <li>sfml-system-s</li>
+                <li>opengl32</li>
+                <li>gdi32</li>
+                <li>winmm</li>
             </ul></td>
         </tr>
         <tr class="one">
             <td><code>sfml-graphics-s</code></td>
             <td><ul>
-                <li>freetype</li>
-                <li>glew</li>
-                <li>jpeg</li>
-                <li>opengl32</li>
                 <li>sfml-window-s</li>
                 <li>sfml-system-s</li>
+                <li>glew</li>
+                <li>freetype</li>
+                <li>jpeg</li>
+                <li>opengl32</li>
             </ul></td>
         </tr>
     </tbody>

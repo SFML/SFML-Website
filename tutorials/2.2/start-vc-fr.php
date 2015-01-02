@@ -76,7 +76,7 @@
     Depuis SFML 2.2, lors d'une liaison statique, il faut aussi lier toutes les dépendances de SFML. Par exemple: si vous liez à sfml-window-s.lib ou sfml-window-s-d.lib sur Windows, il faudra aussi lier à winmm.lib, gdi32.lib et opengl32.lib. Parfois ces bibliothèques seront listées sous "Inherited values" mais les ajouter une fois de plus ne devrait pas poser de problème.
 </p>
 <p>
-    Voici la liste des dépendances de chaque module; il faudra y ajouter -d pour obtenir les bibliothèques de débogage.
+    Voici la liste des dépendances de chaque module; il faudra y ajouter -d pour lier les bibliothèques SFML de débogage.
 </p>
 <table class="styled expanded">
     <thead>
@@ -95,36 +95,36 @@
         <tr class="two">
             <td><code>sfml-network-s.lib</code></td>
             <td><ul>
-                <li>ws2_32.lib</li>
                 <li>sfml-system-s.lib</li>
+                <li>ws2_32.lib</li>
             </ul></td>
         </tr>
         <tr class="one">
             <td><code>sfml-audio-s.lib</code></td>
             <td><ul>
-                <li>openal32.lib</li>
-                <li>sndfile.lib</li>
                 <li>sfml-system-s.lib</li>
+                <li>sndfile.lib</li>
+                <li>openal32.lib</li>
             </ul></td>
         </tr>
         <tr class="two">
             <td><code>sfml-window-s.lib</code></td>
             <td><ul>
-                <li>opengl32.lib</li>
-                <li>winmm.lib</li>
-                <li>gdi32.lib</li>
                 <li>sfml-system-s.lib</li>
+                <li>opengl32.lib</li>
+                <li>gdi32.lib</li>
+                <li>winmm.lib</li>
             </ul></td>
         </tr>
         <tr class="one">
             <td><code>sfml-graphics-s.lib</code></td>
             <td><ul>
-                <li>freetype.lib</li>
-                <li>glew.lib</li>
-                <li>jpeg.lib</li>
-                <li>opengl32.lib</li>
                 <li>sfml-window-s.lib</li>
                 <li>sfml-system-s.lib</li>
+                <li>glew.lib</li>
+                <li>freetype.lib</li>
+                <li>jpeg.lib</li>
+                <li>opengl32.lib</li>
             </ul></td>
         </tr>
     </tbody>

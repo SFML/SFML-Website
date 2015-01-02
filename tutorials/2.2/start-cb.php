@@ -83,7 +83,7 @@
     might already be listed under "Inherited values", but adding them again yourself shouldn't cause any problems.
 </p>
 <p>
-    Here are the dependencies of each module, append the -d as described above if you want to link the debug libraries:
+    Here are the dependencies of each module, append the -d as described above if you want to link the SFML debug libraries:
 </p>
 <table class="styled expanded">
     <thead>
@@ -102,36 +102,36 @@
         <tr class="two">
             <td><code>sfml-network-s</code></td>
             <td><ul>
-                <li>ws2_32</li>
                 <li>sfml-system-s</li>
+                <li>ws2_32</li>
             </ul></td>
         </tr>
         <tr class="one">
             <td><code>sfml-audio-s</code></td>
             <td><ul>
-                <li>openal32</li>
-                <li>sndfile</li>
                 <li>sfml-system-s</li>
+                <li>sndfile</li>
+                <li>openal32</li>
             </ul></td>
         </tr>
         <tr class="two">
             <td><code>sfml-window-s</code></td>
             <td><ul>
-                <li>opengl32</li>
-                <li>winmm</li>
-                <li>gdi32</li>
                 <li>sfml-system-s</li>
+                <li>opengl32</li>
+                <li>gdi32</li>
+                <li>winmm</li>
             </ul></td>
         </tr>
         <tr class="one">
             <td><code>sfml-graphics-s</code></td>
             <td><ul>
-                <li>freetype</li>
-                <li>glew</li>
-                <li>jpeg</li>
-                <li>opengl32</li>
                 <li>sfml-window-s</li>
                 <li>sfml-system-s</li>
+                <li>glew</li>
+                <li>freetype</li>
+                <li>jpeg</li>
+                <li>opengl32</li>
             </ul></td>
         </tr>
     </tbody>

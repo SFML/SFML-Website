@@ -75,7 +75,7 @@
     might already be listed under "Inherited values", but adding them again yourself shouldn't cause any problems.
 </p>
 <p>
-    Here are the dependencies of each module, append the -d as described above if you want to link the debug libraries:
+    Here are the dependencies of each module, append the -d as described above if you want to link the SFML debug libraries:
 </p>
 <table class="styled expanded">
     <thead>
@@ -94,36 +94,36 @@
         <tr class="two">
             <td><code>sfml-network-s.lib</code></td>
             <td><ul>
-                <li>ws2_32.lib</li>
                 <li>sfml-system-s.lib</li>
+                <li>ws2_32.lib</li>
             </ul></td>
         </tr>
         <tr class="one">
             <td><code>sfml-audio-s.lib</code></td>
             <td><ul>
-                <li>openal32.lib</li>
-                <li>sndfile.lib</li>
                 <li>sfml-system-s.lib</li>
+                <li>sndfile.lib</li>
+                <li>openal32.lib</li>
             </ul></td>
         </tr>
         <tr class="two">
             <td><code>sfml-window-s.lib</code></td>
             <td><ul>
-                <li>opengl32.lib</li>
-                <li>winmm.lib</li>
-                <li>gdi32.lib</li>
                 <li>sfml-system-s.lib</li>
+                <li>opengl32.lib</li>
+                <li>gdi32.lib</li>
+                <li>winmm.lib</li>
             </ul></td>
         </tr>
         <tr class="one">
             <td><code>sfml-graphics-s.lib</code></td>
             <td><ul>
-                <li>freetype.lib</li>
-                <li>glew.lib</li>
-                <li>jpeg.lib</li>
-                <li>opengl32.lib</li>
                 <li>sfml-window-s.lib</li>
                 <li>sfml-system-s.lib</li>
+                <li>glew.lib</li>
+                <li>freetype.lib</li>
+                <li>jpeg.lib</li>
+                <li>opengl32.lib</li>
             </ul></td>
         </tr>
     </tbody>
