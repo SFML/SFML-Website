@@ -88,7 +88,7 @@
         <tr>
             <th rowspan="1">Rust</th>
             <td><a href="http://www.rust-sfml.org/" class="website">rust-sfml</a></td>
-            <td><a href="letang.jeremy@gmail.com">Jérémy Letang</a></td>
+            <td><a href="mailto:letang.jeremy@gmail.com">Jérémy Letang</a></td>
         </tr>
     </tbody>
 </table>

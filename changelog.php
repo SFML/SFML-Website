@@ -24,8 +24,7 @@
  <li>Fixed support for compilers on Debian FreeBSD (<a href="https://github.com/LaurentGomila/SFML/pull/380">#380</a>, <a href="https://github.com/LaurentGomila/SFML/pull/578">#578</a>)</li>
  <li>Added support for Visual Studio 2013 and proper support for the TDM builds (<a href="https://github.com/LaurentGomila/SFML/pull/482">#482</a>)</li>
  <li>Fixed CMake problems related to FindSFML and cached variables (<a href="https://github.com/LaurentGomila/SFML/issues/637">#637</a>, <a href="https://github.com/LaurentGomila/SFML/pull/684">#684</a>)</li>
- <li>Switched and enforced <code>LF</code> line endings (<a href="https://github.com/LaurentGomila/SFML/pull/708">#708</a>, <a href="
-https://github.com/LaurentGomila/SFML/pull/712">#712</a>)</li>
+ <li>Switched and enforced <code>LF</code> line endings (<a href="https://github.com/LaurentGomila/SFML/pull/708">#708</a>, <a href="https://github.com/LaurentGomila/SFML/pull/712">#712</a>)</li>
  <li>Updated OpenAL to version 1.15.1 (<a href="https://github.com/LaurentGomila/SFML/commit/d07721075057c7eac33124ff406eb0f5d629258b">d077210</a>)</li>
  <li>Made compiler and OS variable names much clearer in CMake files (<a href="https://github.com/LaurentGomila/SFML/commit/9b0ed300b5ced8f9bd49be42089b2988c4007947">9b0ed30</a>)</li>
  <li>Re-enabled RPATH feature (<a href="https://github.com/LaurentGomila/SFML/commit/e157e7a7a84d9d840c590df355d2681d0936971e">e157e7a</a>)</li>

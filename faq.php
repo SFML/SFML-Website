@@ -160,13 +160,13 @@
  
  <h3 id="grl-whatis"><a class="h3-link" href="#grl-whatis">What is SFML?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>SFML is a simple to use and portable API written in C++. You can think of it as an object oriented SDL. SFML is made of modules in order to be as useful as possible for everyone. You can use SFML as a minimalist window system in order to use OpenGL, or as a complete multimedia library full of features to build video games or multimedia softwares.</p>
- <!--p>You can find a more specific presentation of its features on <a href="http://www.sfml-dev.org/features.php">this page</a>.</p//-->
+ <!--p>You can find a more specific presentation of its features on <a href="features.php">this page</a>.</p//-->
 
  <h3 id="grl-platforms"><a class="h3-link" href="#grl-platforms">On which platforms is SFML currently available?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>SFML 2.1 is currently available and fully functional on Windows (8, 7, Vista, XP), Linux and Mac OS X. SFML works on both 32 and 64 bit systems. If older Windows versions need to be support, it should be possible to use SFML 2.0 instead (see <a href="https://github.com/LaurentGomila/SFML/commit/cd68d662043c2305990d1b6b559b0138bd77af14">the commit</a> for removal of Windows 9x and similar).</p>
+ <p>SFML 2.2 is currently available and fully functional on Windows (8, 7, Vista, XP), Linux and Mac OS X. SFML works on both 32 and 64 bit systems. If older Windows versions need to be support, it should be possible to use SFML 2.0 instead (see <a href="https://github.com/LaurentGomila/SFML/commit/cd68d662043c2305990d1b6b559b0138bd77af14">the commit</a> for removal of Windows 9x and similar). With SFML 2.2 there is also experimental support for iOS and Android.</p>
 
  <h3 id="grl-languages"><a class="h3-link" href="#grl-languages">Which programming languages are supported by SFML?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>SFML is implemented in C++. That said, several <a href="http://www.sfml-dev.org/download/bindings.php">bindings</a> have been created for other languages that allow SFML to be used from C, C#, C++/CLI, D, Ruby, OCaml, Java, Python and VB.NET.</p>
+ <p>SFML is implemented in C++. That said, several <a href="download/bindings.php">bindings</a> have been created for other languages that allow SFML to be used from C, C#, C++/CLI, D, Ruby, OCaml, Java, Python and VB.NET.</p>
 
  <h3 id="grl-dependencies"><a class="h3-link" href="#grl-dependencies">What dependencies does SFML have?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>SFML depends on a few other libraries, so before starting to compile you must have their development files installed.</p>
@@ -176,6 +176,7 @@
   <li>pthread</li>
   <li>opengl</li>
   <li>xlib</li>
+  <li>xcb</li>
   <li>xrandr</li>
   <li>udev</li>
   <li>freetype</li>
@@ -262,12 +263,12 @@
  <h3 id="grl-questions"><a class="h3-link" href="#grl-questions">Where can I ask questions?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>First make sure you've read the tutorials and the documentation, then check whether the question has already been asked before. If after that you still have a question <strong>regarding SFML</strong> in the <a href="http://en.sfml-dev.org/forums/">SFML forum</a>.</p>
  <p>Keep in mind that using SFML is not a very suitable way to <a href="#grl-learn">learn the bare basics of C++ programming</a>, and as such it is recommended that any questions regarding general C++ be asked in more adequate forums where people proficient in C++ can help you better.</p>
- <p>Additionally you also find people in the <a href="http://www.sfml-dev.org/community.php">Official IRC chat</a>.</p>
+ <p>Additionally you also find people in the <a href="community.php">Official IRC chat</a>.</p>
 
  <h2 id="buil-use"><a class="h2-link" href="#build-use">Building and Using SFML</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 
  <h3 id="build-build"><a class="h3-link" href="#build-build">How do I build SFML?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>Tutorials for each version of SFML can be found <a href="http://www.sfml-dev.org/tutorials/">here</a>. The first part of these tutorials is aimed at getting started, which includes building SFML with CMake and your build tool of choice, as well as setting up your IDE (if you use one) for use with SFML.</p>
+ <p>Tutorials for each version of SFML can be found <a href="tutorials/">here</a>. The first part of these tutorials is aimed at getting started, which includes building SFML with CMake and your build tool of choice, as well as setting up your IDE (if you use one) for use with SFML.</p>
 
  <h3 id="build-nightly"><a class="h3-link" href="#build-nightly">Are there any nightly builds?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>There are no official nightly builds, however there is a thread on the forum where unofficial nightly builds are provided for certain platforms.</p>
@@ -275,7 +276,7 @@
 
  <h3 id="build-environment"><a class="h3-link" href="#build-environment">How do I setup my development environment to work with SFML?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>This is covered quite thoroughly in the tutorials section for some of the most popular IDEs.</p>
- <p>Check out the Getting Started sections of the <a href="http://sfml-dev.org/learn.php">tutorials</a>.</p>
+ <p>Check out the Getting Started sections of the <a href="learn.php">tutorials</a>.</p>
 
  <h3 id="build-link"><a class="h3-link" href="#build-link">What and how do I link to use SFML?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>When you want to use SFML, you need to link to the library files that provide the functionality you make use of in your application.</p>
@@ -369,7 +370,7 @@
  <h3 id="graphics-image-formats"><a class="h3-link" href="#graphics-image-formats">What image formats does SFML support?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>SFML can load the following file formats: bmp, dds, jpg, png, tga, psd<br>
 But keep in mind that not all variants of each format are supported.</p>
- <p>Also see the official <a href="http://sfml-dev.org/documentation/2.2/classsf_1_1Image.php#a9e4f2aa8e36d0cabde5ed5a4ef80290b">documentation</a>.</p>
+ <p>Also see the official <a href="documentation/2.2/classsf_1_1Image.php#a9e4f2aa8e36d0cabde5ed5a4ef80290b">documentation</a>.</p>
 
  <h3 id="graphics-white-rect"><a class="h3-link" href="#graphics-white-rect">Why do I get a white/black rectangle instead of my texture?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>This is due to a premature destruction of the <code>sf::Texture</code>. An <code>sf::Sprite</code> only holds a reference to the <code>sf::Texture</code> bound to it. You have to keep the <code>sf::Texture</code> "alive" as long as the sprite uses it. It can also be that you never bound a texture to the sprite, hence you need to call <code>setTexture()</code> with the initial texture it is to use.</p>
@@ -443,7 +444,7 @@ But keep in mind that not all variants of each format are supported.</p>
  <p>The next step would be to translate that speed into movement every frame. We know that speed is distance traveled divided by time elapsed, so using simple mathematics we can translate 100 pixels per second and an elapsed time back into a distance traveled.</p>
  <p>distance traveled = speed * elapsed time</p>
  <p>This is considered as a simplification of integration in scientific contexts.</p>
- <p>We have our speed, but how do we get the amount of time elapsed? Simple, with an <code>sf::Clock</code>. If you don't know how to use an <code>sf::Clock</code>, it is suggested you refer to the <a href="http://sfml.local/learn.php" taget="_blank">SFML tutorials and documentation</a>.</p>
+ <p>We have our speed, but how do we get the amount of time elapsed? Simple, with an <code>sf::Clock</code>. If you don't know how to use an <code>sf::Clock</code>, it is suggested you refer to the <a href="learn.php" taget="_blank">SFML tutorials and documentation</a>.</p>
  <p>The first step of each new frame would be to determine how much time has passed since the same line of code was executed during the previous frame. This gives us a fairly accurate estimation of the true elapsed time which is more than enough for our intents. Using this time, we simply multiply with the speed of the sprite to get the value by which it moved during the frame.</p>
  <p>In code this would look like this:</p>
  <pre><code class="cpp">// Our speed in pixels per second
@@ -517,11 +518,11 @@ while( window.isOpen() ) {
    <ul>
     <li>By private address e.g. 192.168.1.1 (192.168.<em>.</em>, 10.<em>.</em>.* and 172.16.<em>.</em> to 172.31.<em>.</em> are all private networks)</li>
     <li>By public address e.g. 123.123.123.123</li>
-    <li>By FQDN (Fully-Qualified Domain Name) e.g. <a href="http://www.sfml-dev.org">www.sfml-dev.org</a> (www is the <em>hostname</em> and sfml-dev.org is the <em>domain name</em>)</li>
+    <li>By FQDN (Fully-Qualified Domain Name) e.g. <a href="http://www.sfml-dev.org/">www.sfml-dev.org</a> (www is the <em>hostname</em> and sfml-dev.org is the <em>domain name</em>)</li>
    </ul>
   </li>
   <li>Make sure that data transmission is not hindered by anything in the networking infrastructure (routers, firewalls etc.), if you are not sure about this, it most likely means that the port you are trying to use is either closed or not configured to be forwarded behind a NAT.</li>
-  <li>Make sure that data is really being sent and received by the hosts independent of your application. It might occur that you try to send data within your application, SFML doesn't report an error, but the operating system refuses to transmit it. To check if this problem exists, it is recommended that you install some form of packet capturing software such as <a href="http://www.wireshark.org">Wireshark</a> on both systems.</li>
+  <li>Make sure that data is really being sent and received by the hosts independent of your application. It might occur that you try to send data within your application, SFML doesn't report an error, but the operating system refuses to transmit it. To check if this problem exists, it is recommended that you install some form of packet capturing software such as <a href="http://www.wireshark.org/">Wireshark</a> on both systems.</li>
   <li>Make sure that the data leaves the local network over the router. There is a possibility that the router blocks outgoing data as well.</li>
   <li>Make sure that the data arrives at the destination network router and is properly forwarded. If you are sure that the data leaves the origin network but never arrives at the destination network, try using a different port. Some ISPs have policies that block traffic from certain software and because they are not interested in using a better filtering mechanism, they decide to block the whole port instead of only traffic that really stems from the specific software. If you happen to use one of those ports, you are unlucky and should just try another.</li>
   <li>If you are sure that the port you use isn't blocked, in very very rare cases it might be an error somewhere on the way from the source the the destination within some ISPs network. If this is really the case, you are as good as out of luck and should just try again at another time or be prepared to make a lot of phone calls with a lot of uninterested people.</li>
@@ -555,7 +556,7 @@ while( window.isOpen() ) {
  <h3 id="system-string-convert"><a class="h3-link" href="#system-string-convert">How do I convert from sf::String to &lt;type&gt; and vice-versa?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>For conversions to <code>sf::String</code>, you can just construct the <code>sf::String</code> directly from whatever object you already have. </p>
  <pre><code>sf::String sfml_string( cpp_string );</code></pre>
- <p>There are enough constructors that take care of implicit conversion from all standard C++ string types. If you want to see what these look like, take a look in the <a href="http://sfml-dev.org/documentation/2.2/classsf_1_1String.php"><code>sf::String</code> documentation</a>. If you want to convert from a non-C++ string to <code>sf::String</code>, it is recommended to first convert to a C++ string and then to an <code>sf::String</code>. Since any library using custom string types should provide support for this, this shouldn't be problematic.</p>
+ <p>There are enough constructors that take care of implicit conversion from all standard C++ string types. If you want to see what these look like, take a look in the <a href="documentation/2.2/classsf_1_1String.php"><code>sf::String</code> documentation</a>. If you want to convert from a non-C++ string to <code>sf::String</code>, it is recommended to first convert to a C++ string and then to an <code>sf::String</code>. Since any library using custom string types should provide support for this, this shouldn't be problematic.</p>
  <p>For conversions from <code>sf::String</code> to any other custom string type, it is also recommended to first convert to a C++ string then from C++ string to that type.</p>
  <p><code>sf::String</code> supports implicit conversion to <code>std::string</code> and <code>std::wstring</code>, so things like</p>
  <pre><code class="cpp">std::cout << sfml_string << std::endl;
@@ -581,7 +582,7 @@ std::size_t pos = cpp_string.find( sfml_string );</code></pre>
  <h3 id="system-mutex"><a class="h3-link" href="#system-mutex">How do I use sf::Mutex?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p><code>sf::Mutex</code> is used to lock (acquire) a resource for exclusive access and unlock (release) a resource when exclusive access is no longer necessary. If you try to lock a mutex that has already been locked by another thread, you will have no choice but to wait for the locking thread to release the lock in order for execution to proceed.</p>
  <p>It is good practice to not lock/unlock an <code>sf::Mutex</code> directly, but to rely on RAII <code>sf::Lock</code> objects to automatically unlock their owned mutex on destruction.</p>
- <p>For more information on <code>sf::Mutex</code> and <code>sf::Lock</code>, refer to the <a href="http://sfml-dev.org/tutorials/2.1/system-thread.php#protecting-shared-data">official documentation</a>.</p>
+ <p>For more information on <code>sf::Mutex</code> and <code>sf::Lock</code>, refer to the <a href="tutorials/2.1/system-thread.php#protecting-shared-data">official documentation</a>.</p>
 
  <h3 id="system-thread-container"><a class="h3-link" href="#system-thread-container">Why can't I store my sf::Thread in an STL container?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p><code>sf::Thread</code> inherits from <code>sf::NonCopyable</code> meaning you cannot copy or assign an <code>sf::Thread</code>. This is however a requirement to use a data type with an STL container.</p>
@@ -607,6 +608,7 @@ std::size_t pos = cpp_string.find( sfml_string );</code></pre>
  <p>To address this issue, RAII takes care of the fact that although not all code is executed when an exception is thrown, the destructors of an object are guaranteed to be called because all objects have to be destroyed when the corresponding scope is left.</p>
  <p>This can be used in any resource owning object or in places where certain functions have to be called to make sure the program stays in a clean running state. A good example of this is an sf::Texture. No matter what happens, if the sf::Texture object gets destroyed because it goes out of scope, the underlying OpenGL resources also get freed.</p>
  <p>From the example just mentioned, it should be apparent that the same can be said of dynamically allocated memory. It is also a resource that we need to free when we are done with it. Because of this, to promote RAII in modern C++, smart pointer facilities have made their way into the language, either as an extension or in C++11 as a part of the STL. Any memory governed by them is guaranteed to be released when they go out of scope (in the case of non-shared ownership e.g. scoped_ptr) due to RAII. This makes it much easier to use dynamically allocated objects, as you do not have to worry too much about memory management anymore.</p>
+ <p>For a more in-depth description with examples, read <a href="http://bromeon.ch/articles/raii.html">this article</a>.</p>
 
  <h3 id="prog-mmm"><a class="h3-link" href="#prog-mmm">Why shouldn't I manually manage my memory?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>Nobody forces you to use automatic memory management, however in practice, the larger and more complex a project gets, the harder it is to keep track of such things as well. Generally it is a good idea to use automatic memory management because it frees you to dedicate more time to more important parts of your project. Not only that, it will be easier to debug and leaks will be nearly impossible.</p>
@@ -638,7 +640,7 @@ std::size_t pos = cpp_string.find( sfml_string );</code></pre>
  <h3 id="tr-grl"><a class="h3-link" href="#tr-grl">General</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
 
  <h3 id="tr-grl-trouble"><a class="h3-link" href="#tr-grl-trouble">I'm having trouble using SFML.</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>First, make sure that you have followed the installation instructions in the <a href="http://www.sfml-dev.org/tutorials/">official tutorials</a>.</p>
+ <p>First, make sure that you have followed the installation instructions in the <a href="tutorials/">official tutorials</a>.</p>
  <p>Have you:</p>
  <ul>
   <li>Provided the path to the SFML headers to your compiler?</li>
@@ -792,7 +794,7 @@ int main() {
  <h3 id="tr-lnx"><a class="h3-link" href="#tr-lnx">Linux</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
 
  <h3 id="tr-lnx-compile"><a class="h3-link" href="#tr-lnx-compile">(Debian) I can't compile the source code.</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>Before anything else, make sure that you've followed the <a href="http://www.sfml-dev.org/tutorials/">official tutorial</a> and then check if the following packages have been installed:</p>
+ <p>Before anything else, make sure that you've followed the <a href="tutorials/">official tutorial</a> and then check if the following packages have been installed:</p>
  <ul>
   <li>libgl1-mesa-dev</li>
   <li>libglu1-mesa-dev</li>
@@ -843,7 +845,7 @@ int main() {
  <ul>
   <li><a href="http://sfgui.sfml-dev.de/">SFGUI</a></li>
   <li><a href="https://github.com/garrynewman/GWEN">GWEN</a></li>
-  <li><a href="http://tgui.weebly.com/">TGUI</a></li>
+  <li><a href="http://tgui.eu/">TGUI</a></li>
   <li><a href="http://www.cegui.org.uk/wiki/index.php/Main_Page">CEGUI</a></li>
   <li><a href="https://code.google.com/p/guichan/">Guichan</a></li>
   <li><a href="http://librocket.com/">libRocket</a></li>
