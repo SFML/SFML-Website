@@ -53,7 +53,7 @@
   <li><a href="#audio-sound-problem">Why can't I hear any sound?</a></li>
  </ul>
 
- <p><strong><a href="#network">SFML Networking</a></strong></p>
+ <p><strong><a href="#networking">SFML Networking</a></strong></p>
  <ul>
   <li><a href="#network-create-network-app">How do I create &lt;insert popular application type here&gt;?</a></li>
   <li><a href="#network-tcp-vs-udp">Should I use TCP or UDP sockets?</a></li>
@@ -140,21 +140,9 @@
   <li><a href="#lic-pay">Do I have to pay any license fees or royalties?</a></li>
  </ul>
 
- <p><strong><a href="#libraries">Libraries for SFML</a></strong></p>
- <ul>
-  <li><a href="#libraries-gui-package">Does SFML have a GUI package?</a></li>
-  <li><a href="#libraries-gui-lib">Can you interface SFML with a GUI library?</a></li>
-  <li><a href="#libraries-video">Can I read video files with SFML?</a></li>
-  <li><a href="#libraries-thor">What exactly is Thor?</a></li>
- </ul>
+ <p><strong><a href="https://github.com/LaurentGomila/SFML/wiki/Community-FAQ#libraries">Libraries for SFML</a> (Community FAQ)</strong></p>
 
- <p><strong><a href="#misc">Miscellaneous</a></strong></p>
- <ul>
-  <li><a href="#misc-projects">Are there any famous projects with SFML?</a></li>
-  <li><a href="#misc-distr">How can I distribute my game?</a></li>
-  <li><a href="#misc-upload">Where can I upload my game to?</a></li>
-  <li><a href="#misc-examples">Are there any example projects I can learn from?</a></li>
- </ul>
+ <p><strong><a href="https://github.com/LaurentGomila/SFML/wiki/Community-FAQ#misc">Miscellaneous</a> (Community FAQ)</strong></p>
 
  <h2 id="general"><a class="h2-link" href="#general">General</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
  
@@ -837,44 +825,6 @@ int main() {
 
  <h3 id="lic-pay"><a class="h3-link" href="#lic-pay">Do I have to pay any license fees or royalties?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>The zlib/png license is a permissive free software license which means it has no provisions to monetize the software it covers. As such SFML can be used for free with no requirement to pay any fees or royalties to its author.</p>
-
- <h2 id="libraries"><a class="h2-link" href="#libraries">Libraries for SFML</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
-
- <h3 id="libraries-gui-package"><a class="h3-link" href="#libraries-gui-package">Does SFML have a GUI package?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>No, SFML does not have a GUI package, but you can essentially use any OpenGL-based GUI library. Here's a obviously incomplete list:</p>
- <ul>
-  <li><a href="http://sfgui.sfml-dev.de/">SFGUI</a></li>
-  <li><a href="https://github.com/garrynewman/GWEN">GWEN</a></li>
-  <li><a href="http://tgui.eu/">TGUI</a></li>
-  <li><a href="http://www.cegui.org.uk/wiki/index.php/Main_Page">CEGUI</a></li>
-  <li><a href="https://code.google.com/p/guichan/">Guichan</a></li>
-  <li><a href="http://librocket.com/">libRocket</a></li>
- </ul>
-
- <h3 id="libraries-gui-lib"><a class="h3-link" href="#libraries-gui-lib">Can you interface SFML with a GUI library?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>Yes, you can! There have been quite a few examples floating around for Qt and wxWidgets, as well as the native Win32 and X11 APIs.</p>
-
- <h3 id="libraries-video"><a class="h3-link" href="#libraries-video">Can I read video files with SFML?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>SFML does not have a video playback module, but one can easily connect FFMPEG or similar libraries with SFML. There even exists a couple of maintained projects from some SFML users called <a href="http://lucas.soltic.etu.p.luminy.univ-amu.fr/sfeMovie/">sfeMovie</a> and <a href="http://en.sfml-dev.org/forums/index.php?topic=16221.0">Motion</a>.</p>
-
- <h3 id="libraries-thor"><a class="h3-link" href="#libraries-thor">What exactly is Thor?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>Thor is an open-source and cross-platform library written in the programming language C++. It is an extension to SFML and comes with high-level features that base on SFML and that are supposed to help in daily C++ routine, especially with respect to graphics and game programming.</p>
- <p>The git repository is also hosted on <a href="https://github.com/Bromeon/Thor">GitHub</a> and the official website can be found at: <a href="http://www.bromeon.ch/libraries/thor/">http://www.bromeon.ch/libraries/thor/</a></p>
-
- <h2 id="misc"><a class="h2-link" href="#misc">Miscellaneous</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
-
- <h3 id="misc-projects"><a class="h3-link" href="#misc-projects">Are there any famous projects with SFML?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>As SFML is open source and has a permissive free software license, game creators are not forced to specify that they've used SFML in their games, thus it might well be that SFML has been used in bigger commercial projects, we don't know of. As for the known projects, there's a <a href="Projects">dedicated page</a> on the SFML Wiki.</p>
-
- <!--h3 id="misc-distr"><a class="h3-link" href="#misc-distr">How can I distribute my game?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3//-->
-
- <h3 id="misc-upload"><a class="h3-link" href="#misc-upload">Where can I upload my game to?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>There are many possible places to share your game and game related data with the world wide web and their users. <a href="http://hashcookie.net/">HashCookie</a> is a simple and easy to use site. Another provider to consider is <a href="http://www.mediafire.com/">MediaFire</a>. Both are simple and fast file sharing hosts.</p>
- <p>Also <a href="http://sfmlprojects.org/">SFML Projects</a> is currently being developed as a place to put many of the projects made with SFML.</p>
-
- <h3 id="misc-examples"><a class="h3-link" href="#misc-examples">Are there any example projects I can learn from?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>Examples of the usage of each module are provided with SFML itself if you download the full SDK version. If you want full projects that make use of many features of SFML at the same time your best bet is to check out the <a href="http://en.sfml-dev.org/forums/index.php?board=10.0">projects forum</a>. People frequently showcase what they are working on there for the community to see. Often they might provide the source code as well, so if you feel brave enough you can look in there if you find a certain project interesting.</p>
-</div>
 
 <?php
     require("footer.php");
