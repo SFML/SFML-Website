@@ -29,7 +29,7 @@
     <li>avec <a href="http://developer.apple.com/xcode/" title="Télécharger Xcode">Xcode</a> (de préférence la quatrième, cinquième ou sixième version de l'EDI, qui est disponible sur l'<em>App Store</em>) et clang.</li>
 </ul>
 <p class="important">
-    Avec les versions récentes de Xcode vous devez aussi installer les <tt>Command Line Tools</tt> depuis <tt>Xcode &gt; Preferences &gt; Downloads &gt; Components</tt>.
+    Avec les versions récentes de Xcode vous devez aussi installer les <tt>Command Line Tools</tt> depuis <tt>Xcode &gt; Preferences &gt; Downloads &gt; Components</tt>. Si vous ne trouvez pas les CLT dans Xcode, utilisez <code>xcode-select --install</code> dans un Terminal et suivez les instructions à l'écran.
 </p>
 
 <h3>Les binaires : dylib contre framework</h3>
