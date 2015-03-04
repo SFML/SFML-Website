@@ -533,7 +533,7 @@ while( window.isOpen() ) {
   <li>More control over the precision required</li>
  </ul>
 
- <h3 id="window-set"><a class="h3-link" href="#window-set">Why doesn't setFramerateLimit() always set the frame rate to the specified limit?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
+ <h3 id="window-set"><a class="h3-link" href="#window-set-framerate-limit">Why doesn't setFramerateLimit() always set the frame rate to the specified limit?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p><code>setFramerateLimit()</code> is implemented using a call to <code>sf::sleep()</code> every frame. The intricacies of sf::sleep are explained <a href="#system-sleep">here</a>.</p>
 
  <h2 id="system"><a class="h2-link" href="#system">SFML System</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
