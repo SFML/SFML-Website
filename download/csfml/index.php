@@ -56,7 +56,7 @@
         </tr>
         <tr>
             <td class="os">Mac OS X</td>
-            <td colspan="2"><?php download_link('2.2', 'Clang', 'universal 32+64-bit (OS X 10.8+, compatible C++11 et libc++)', '0.20', '../../files/CSFML-2.2-osx-clang-universal.tar.gz') ?></td>
+            <td colspan="2"><?php download_link('2.2', 'Clang', 'universal 32+64-bit (OS X 10.7+, compatible C++11 et libc++)', '0.20', '../../files/CSFML-2.2-osx-clang-universal.tar.gz') ?></td>
         </tr>
         <tr>
             <td class="os">All</td>
