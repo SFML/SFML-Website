@@ -41,6 +41,30 @@
     the current source code. You can also watch the open issues on the task tracker, or add new ones.
 </p>
 
+<h3>CSFML 2.2</h3>
+<table class="styled download">
+    <tbody>
+        <tr>
+            <td class="os">Windows</td>
+            <td><?php download_link('2.2', 'Visual C++ / GCC', '32-bit', '3.33', '../../files/CSFML-2.2-windows-32-bit.zip') ?></td>
+            <td><?php download_link('2.2', 'Visual C++ / GCC', '64-bit', '3.40', '../../files/CSFML-2.2-windows-64-bit.zip') ?></td>
+        </tr>
+        <tr>
+            <td class="os">Linux</td>
+            <td><?php download_link('2.2', 'GCC', '32-bit', '1.48', '../../files/CSFML-2.2-linux-gcc-32-bit.tar.bz2') ?></td>
+            <td><?php download_link('2.2', 'GCC', '64-bit', '1.47', '../../files/CSFML-2.2-linux-gcc-64-bit.tar.bz2') ?></td>
+        </tr>
+        <tr>
+            <td class="os">Mac OS X</td>
+            <td colspan="2"><?php download_link('2.2', 'Clang', 'universal 32+64-bit (OS X 10.8+, compatible C++11 et libc++)', '0.20', '../../files/CSFML-2.2-osx-clang-universal.tar.gz') ?></td>
+        </tr>
+        <tr>
+            <td class="os">All</td>
+            <td colspan="2"><span class="description">Source code</span><a href="../../files/CSFML-2.2-sources.zip">Download<span class="size">0.25 MB</span></a></td>
+        </tr>
+    </tbody>
+</table>
+
 <h3>CSFML 2.1</h3>
 <table class="styled download">
     <tbody>

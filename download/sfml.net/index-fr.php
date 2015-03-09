@@ -51,6 +51,20 @@
     ainsi qu'en ajouter de nouveaux.
 </p>
 
+<h3>SFML.Net 2.2</h3>
+<table class="styled download">
+    <tbody>
+        <tr>
+            <td class="os" rowspan="2">Tous les OS</td>
+            <td><?php download_link('2.2', 'Tous compilateurs', '32-bit', '4.54', '../../files/SFML.Net-2.2-32-bit.zip') ?></td>
+            <td><?php download_link('2.2', 'Tous compilateurs', '64-bit', '4.64', '../../files/SFML.Net-2.2-64-bit.zip') ?></td>
+        </tr>
+        <tr>
+            <td colspan="2"><span class="description">Code source</span><a href="../../files/SFML.Net-2.2-sources.zip">Télécharger<span class="size">0.77 Mo</span></a></td>
+        </tr>
+    </tbody>
+</table>
+
 <h3>SFML.Net 2.1</h3>
 <table class="styled download">
     <tbody>
@@ -60,7 +74,7 @@
             <td><?php download_link('2.1', 'Tous compilateurs', '64-bit', '2.66', '../../files/SFML.Net-2.1-64bits.zip') ?></td>
         </tr>
         <tr>
-            <td colspan="2"><span class="description">Code source</span><a href="SFML.Net-2.1-sources.zip">Télécharger<span class="size">2.70 Mo</span></a></td>
+            <td colspan="2"><span class="description">Code source</span><a href="../../files/SFML.Net-2.1-sources.zip">Télécharger<span class="size">2.70 Mo</span></a></td>
         </tr>
     </tbody>
 </table>
@@ -74,7 +88,7 @@
             <td><?php download_link('2.0', 'Tous compilateurs', '64-bit', '2.62', '../../files/SFML.Net-2.0-64bits.zip') ?></td>
         </tr>
         <tr>
-            <td colspan="2"><span class="description">Code source</span><a href="SFML.Net-2.0-sources.zip">Télécharger<span class="size">2.69 Mo</span></a></td>
+            <td colspan="2"><span class="description">Code source</span><a href="../../files/SFML.Net-2.0-sources.zip">Télécharger<span class="size">2.69 Mo</span></a></td>
         </tr>
     </tbody>
 </table>

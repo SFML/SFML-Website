@@ -31,13 +31,13 @@
         <tr>
             <th rowspan="1">C</th>
             <td><a href="csfml" class="website">CSFML</a></td>
-            <td>2.1</td>
+            <td>2.2</td>
             <td><a href="mailto:laurent@sfml-dev.org">Laurent Gomila</a></td>
         </tr>
         <tr>
             <th rowspan="1">.Net (C#, VB.Net etc.)</th>
             <td><a href="sfml.net" class="website">SFML.Net</a></td>
-            <td>2.1</td>
+            <td>2.2</td>
             <td><a href="mailto:laurent@sfml-dev.org">Laurent Gomila</a></td>
         </tr>
         <tr>
