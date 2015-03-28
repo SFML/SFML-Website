@@ -39,11 +39,20 @@
 
 <h2 id="books"><a class="h2-link" href="#books">Books</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 <div class="book">
-    <a class="link" href="http://www.packtpub.com/sfml-game-development/book" title="SFML Game Development book web page"><img src="images/books/sfml-game-development.jpg" alt="SFML Game Development book cover" /></a>
+    <a class="link" href="https://www.packtpub.com/game-development/sfml-game-development" title="SFML Game Development book web page"><img src="images/books/sfml-game-development.png" alt="SFML Game Development book cover" /></a>
     <div class="description">
         <p class="title">SFML Game Development</p>
-        <a class="link" href="http://www.packtpub.com/sfml-game-development/book" title="SFML Game Development book web page">
-            http://www.packtpub.com/sfml-game-development/book
+        <a class="link" href="https://www.packtpub.com/game-development/sfml-game-development" title="SFML Game Development book web page">
+            https://www.packtpub.com/sfml-game-development/book
+        </a>
+    </div>
+</div>
+<div class="book">
+    <a class="link" href="https://www.packtpub.com/game-development/sfml-essentials" title="SFML Essentials book web page"><img src="images/books/sfml-essentials.png" alt="SFML Essentials book cover" /></a>
+    <div class="description">
+        <p class="title">SFML Essentials</p>
+        <a class="link" href="https://www.packtpub.com/game-development/sfml-essentials" title="SFML Essentials book web page">
+            https://www.packtpub.com/game-development/sfml-essentials
         </a>
     </div>
 </div>
