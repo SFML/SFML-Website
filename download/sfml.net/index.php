@@ -52,7 +52,7 @@
     <tbody>
         <tr>
             <td class="os" rowspan="2">All</td>
-            <td><?php download_link('2.2', 'All compilers', '32-bit', '4.56', '../../files/SFML.Net-2.2-32-bit.zip') ?></td>
+            <td><?php download_link('2.2', 'All compilers', '32-bit', '4.66', '../../files/SFML.Net-2.2-32-bit.zip') ?></td>
             <td><?php download_link('2.2', 'All compilers', '64-bit', '4.64', '../../files/SFML.Net-2.2-64-bit.zip') ?></td>
         </tr>
         <tr>

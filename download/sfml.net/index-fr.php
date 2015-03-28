@@ -56,7 +56,7 @@
     <tbody>
         <tr>
             <td class="os" rowspan="2">Tous les OS</td>
-            <td><?php download_link('2.2', 'Tous compilateurs', '32-bit', '4.54', '../../files/SFML.Net-2.2-32-bit.zip') ?></td>
+            <td><?php download_link('2.2', 'Tous compilateurs', '32-bit', '4.66', '../../files/SFML.Net-2.2-32-bit.zip') ?></td>
             <td><?php download_link('2.2', 'Tous compilateurs', '64-bit', '4.64', '../../files/SFML.Net-2.2-64-bit.zip') ?></td>
         </tr>
         <tr>
