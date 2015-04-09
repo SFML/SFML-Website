@@ -152,7 +152,7 @@ if (event.type == sf::Event::GainedFocus)
     Les évènements <code>sf::Event::KeyPressed</code> et <code>sf::Event::KeyReleased</code> sont déclenchés lorsqu'une touche du clavier est
     pressée/relâchée.
 </p>
-<p> 
+<p>
     Si une touche est maintenue, des évènements <code>KeyPressed</code> seront générés en continu, selon le délai par défaut de l'OS (ie. le même délai
     qui s'applique lorsque vous maintenez une lettre dans un éditeur de texte). Pour désactiver la répétition des évènements <code>KeyPressed</code>,
     vous pouvez appeler <code>window.setKeyRepeatEnabled(false)</code>. Par contre, de manière assez évidente, les évènements
@@ -168,7 +168,7 @@ if (event.type == sf::Event::GainedFocus)
     de répétition). Afin d'obtenir des mouvements fluides avec les évènements, vous devez utiliser un booléen mis à <code>true</code> lors de l'évènement
     <code>KeyPressed</code> et à <code>false</code> lors de l'évènement <code>KeyReleased</code> ; vous pouvez ensuite effectuer des déplacements (indépendamment des
     évènements) tant que le booléen est à <code>true</code>.<br />
-    L'autre solution (plus simple) pour produire des movements continus est d'utiliser les entrées temps réel avec <?php class_link("Keyboard") ?> (voir le
+    L'autre solution (plus simple) pour produire des mouvements continus est d'utiliser les entrées temps réel avec <?php class_link("Keyboard") ?> (voir le
     <a class="internal" href="./window-inputs-fr.php" title="Tutoriel sur les entrées temps-réel">tutoriel dédié</a>).
 </p>
 <p>
@@ -194,24 +194,30 @@ if (event.type == sf::Event::GainedFocus)
 
 <?php h2('L\'évènement MouseWheelMoved') ?>
 <p>
-    <strong>Insert Text</strong>
+    L’évènement <code>sf::Event::MouseWheelMoved</code> est <strong>déprécié</strong> depuis SFML 2.3, utilisez l'évènement MouseWheelScrolled à la place.
 </p>
 
-<?php h2('L\'évènement MouseWheelPreciseMoved') ?>
+<?php h2('L\'évènement MouseWheelScrolled') ?>
 <p>
-    <strong>Insert Text</strong>
+    L’évènement <code>sf::Event::MouseWheelScrolled</code> est déclenché lorsque la molette souris défile
+    vers le haut ou le bas, mais aussi latéralement si cette dernière le supporte.
 </p>
-<pre><code class="cpp">if (event.type == sf::Event::MouseWheelPreciseMoved)
+<p>
+    Le membre associé à cet évènement est <code>event.mouseWheelScroll</code>, il contient le il contient
+    le nombre de "ticks" duquel la molette a bougé, la position actuelle de la souris, ainsi que la
+    l'orientation du mouvement de la molette.
+</p>
+<pre><code class="cpp">if (event.type == sf::Event::MouseWheelScrolled)
 {
-    if (event.mouseWheelPrecise.wheel == sf::Mouse::VerticalWheel)
+    if (event.mouseWheelScroll.wheel == sf::Mouse::VerticalWheel)
         std::cout &lt;&lt; "wheel type: vertical" &lt;&lt; std::endl;
-    else if (event.mouseWheelPrecise.wheel == sf::Mouse::HorizontalWheel)
+    else if (event.mouseWheelScroll.wheel == sf::Mouse::HorizontalWheel)
         std::cout &lt;&lt; "wheel type: horizontal" &lt;&lt; std::endl;
     else
-        std::cout &lt;&lt; "wheel type: unkown" &lt;&lt; std::endl;
-    std::cout &lt;&lt; "wheel movement: " &lt;&lt; event.mouseWheelPrecise.delta &lt;&lt; std::endl;
-    std::cout &lt;&lt; "mouse x: " &lt;&lt; event.mouseWheelPrecise.x &lt;&lt; std::endl;
-    std::cout &lt;&lt; "mouse y: " &lt;&lt; event.mouseWheelPrecise.y &lt;&lt; std::endl;
+        std::cout &lt;&lt; "wheel type: unknown" &lt;&lt; std::endl;
+    std::cout &lt;&lt; "wheel movement: " &lt;&lt; event.mouseWheelScroll.delta &lt;&lt; std::endl;
+    std::cout &lt;&lt; "mouse x: " &lt;&lt; event.mouseWheelScroll.x &lt;&lt; std::endl;
+    std::cout &lt;&lt; "mouse y: " &lt;&lt; event.mouseWheelScroll.y &lt;&lt; std::endl;
 }</code></pre>
 
 <?php h2('Les évènements MouseButtonPressed et MouseButtonReleased') ?>
