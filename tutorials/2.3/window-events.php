@@ -182,28 +182,28 @@ if (event.type == sf::Event::GainedFocus)
 
 <?php h2('The MouseWheelMoved event') ?>
 <p>
-    The <code>sf::Event::MouseWheelMoved</code> event is <strong>deprecated</strong> since SFML 2.3, use the MouseWheelPreciseMoved event instead.
+    The <code>sf::Event::MouseWheelMoved</code> event is <strong>deprecated</strong> since SFML 2.3, use the MouseWheelScrolled event instead.
 </p>
 
-<?php h2('The MouseWheelPreciseMoved event') ?>
+<?php h2('The MouseWheelScrolled event') ?>
 <p>
-    The <code>sf::Event::MouseWheelPreciseMoved</code> event is triggered when a mouse wheel moves.
+    The <code>sf::Event::MouseWheelScrolled</code> event is triggered when a mouse wheel moves up or down, but also laterally if the mouse supports it.
 </p>
 <p>
-    The member associated with this event is <code>event.mouseWheelPrecise</code>, it contains the number of ticks the wheel has moved, what the orientation of the
+    The member associated with this event is <code>event.mouseWheelScroll</code>, it contains the number of ticks the wheel has moved, what the orientation of the
     wheel is and the current position of the mouse cursor.
 </p>
-<pre><code class="cpp">if (event.type == sf::Event::MouseWheelPreciseMoved)
+<pre><code class="cpp">if (event.type == sf::Event::MouseWheelScrolled)
 {
-    if (event.mouseWheelPrecise.wheel == sf::Mouse::VerticalWheel)
+    if (event.mouseWheelScroll.wheel == sf::Mouse::VerticalWheel)
         std::cout &lt;&lt; "wheel type: vertical" &lt;&lt; std::endl;
-    else if (event.mouseWheelPrecise.wheel == sf::Mouse::HorizontalWheel)
+    else if (event.mouseWheelScroll.wheel == sf::Mouse::HorizontalWheel)
         std::cout &lt;&lt; "wheel type: horizontal" &lt;&lt; std::endl;
     else
-        std::cout &lt;&lt; "wheel type: unkown" &lt;&lt; std::endl;
-    std::cout &lt;&lt; "wheel movement: " &lt;&lt; event.mouseWheelPrecise.delta &lt;&lt; std::endl;
-    std::cout &lt;&lt; "mouse x: " &lt;&lt; event.mouseWheelPrecise.x &lt;&lt; std::endl;
-    std::cout &lt;&lt; "mouse y: " &lt;&lt; event.mouseWheelPrecise.y &lt;&lt; std::endl;
+        std::cout &lt;&lt; "wheel type: unknown" &lt;&lt; std::endl;
+    std::cout &lt;&lt; "wheel movement: " &lt;&lt; event.mouseWheelScroll.delta &lt;&lt; std::endl;
+    std::cout &lt;&lt; "mouse x: " &lt;&lt; event.mouseWheelScroll.x &lt;&lt; std::endl;
+    std::cout &lt;&lt; "mouse y: " &lt;&lt; event.mouseWheelScroll.y &lt;&lt; std::endl;
 }</code></pre>
 
 <?php h2('The MouseButtonPressed and MouseButtonReleased events') ?>

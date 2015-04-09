@@ -78,7 +78,7 @@ public :
 <p>
     Starting with SFML 2.3 two new classes have been created to provide streams for the new internal audio management. <code>sf::FileInputStream</code>
     provides the read-only data stream of a file, while <code>sf::MemoryInputStream</code> serves the read-only stream from memory. Both are derived
-    fomr <code>sf::InputStream</code> and can thus be used polymorphic.
+    from <code>sf::InputStream</code> and can thus be used polymorphic.
 </p>
 
 <?php h2('Using an InputStream') ?>
@@ -92,7 +92,7 @@ stream.open("image.png");
 sf::Texture texture;
 texture.loadFromStream(stream);
 </code></pre>
-    
+
 <?php h2('Examples') ?>
 <p>
     If you need a demonstration that helps you focus on how the code works, and not get lost in implementation details, you could take a look at the

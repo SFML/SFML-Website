@@ -75,12 +75,15 @@ public :
     <strong>getSize</strong> doit renvoyer la taille totale (en octets) des données contenues dans le flux, ou -1 si une erreur s'est produite.
 </p>
 <p>
-    Pour créer un nouveau flux fonctionnel, vous devez implémenter ces quatres fonctions en respectant leur définition.
+    Pour créer un nouveau flux fonctionnel, vous devez implémenter ces quatre fonctions en respectant leur définition.
 </p>
 
 <?php h2('FileInputStream et MemoryInputStream') ?>
 <p>
-    <strong>Insert Text</strong>
+    Dès SFML 2.3, deux nouvelles classes ont été créées pour supporter les flux de données pour le nouveau gestionnaire audio interne.
+    Tandis que <code>sf::FileInputStream</code> s'occupe de fournir les données en lecture seule à partir d'un fichier,
+    <code>sf::MemoryInputStream</code> sert de flux directement depuis la mémoire, aussi en lecture seule.
+    Tous deux héritent de <code>sf::InputStream</code> et ainsi peuvent être utilisé de manière polymorphique.
 </p>
 
 <?php h2('Utilisation du flux') ?>
@@ -97,7 +100,13 @@ texture.loadFromStream(stream);
 
 <?php h2('Un exemple') ?>
 <p>
-    <strong>Insert Text</strong>
+    Si vous avez besoin d'une démonstration qui vous aide à comprendre comment le code fonctionne sans se perdre dans des détails
+    d'implémentation, vous pouvez jeter un oeil à l'implémentation de <code>sf::FileInputStream</code> ou de <code>sf::MemoryInputStream</code>.
+</p>
+<p>
+    N'oubliez pas de visiter le forum et le wiki. Il est bien possible que d'autres utilisateurs aient déjà écrit une classe
+    héritant de <?php class_link("InputStream") ?> qui convienne à vos besoins.
+    Et si vous en écrivez une nouvelle et pensez qu'elle puisse être utile à d'autres personnes, n'hésitez pas à la partager !
 </p>
 
 <?php h2('Les erreurs à éviter') ?>
