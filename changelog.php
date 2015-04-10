@@ -13,6 +13,12 @@
     <li><a href="#sfml-2.2">SFML 2.2</a></li>
     <li><a href="#sfml-2.1">SFML 2.1</a></li>
     <li><a href="#sfml-2.0">SFML 2.0</a></li>
+    <li><a href="#sfml-1.6">SFML 1.6</a></li>
+    <li><a href="#sfml-1.5">SFML 1.5</a></li>
+    <li><a href="#sfml-1.4">SFML 1.4</a></li>
+    <li><a href="#sfml-1.3">SFML 1.3</a></li>
+    <li><a href="#sfml-1.2">SFML 1.2</a></li>
+    <li><a href="#sfml-1.1">SFML 1.1</a></li>
 </ul>
 
 <h2 id="sfml-2.2"><a class="h2-link" href="#sfml-2.2">SFML 2.2</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
@@ -168,10 +174,560 @@
 </ul>
 
 <h2 id="sfml-2.1"><a class="h2-link" href="#sfml-2.1">SFML 2.1</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
-<p>Please refer to the <a href="http://en.sfml-dev.org/forums/index.php?topic=76.msg86454#msg86454" title="Go to the release announcement">release announcement</a>.</p>
+
+<h3 id="2.1-general"><a class="h3-link" href="#2.1-general">General</a></h3>
+<ul>
+ <li>Updated the Window and OpenGL examples (got rid of GLU and immediate mode)</li>
+</ul>
+
+<h3 id="2.1-window"><a class="h3-link" href="#2.1-window">Window</a></h3>
+<h4>Features</h4>
+<ul>
+ <li>Now using <code>inotify</code> on Linux to avoid constantly polling joystick connections (<a href="https://github.com/LaurentGomila/SFML/issues/96">#96</a>)</li>
+ <li>Add keypad return, equal and period keys support for OS X</li>
+ <li>Improved mouse events on OS X regarding fullscreen mode</li>
+ <li>Improved mouse events on OS X (<a href="https://github.com/LaurentGomila/SFML/issues/213">#213</a>, <a href="https://github.com/LaurentGomila/SFML/issues/277">#277</a>)</li>
+ <li>Improved reactivity of <code>setMousePosition</code> on OS X (<a href="https://github.com/LaurentGomila/SFML/issues/290">#290</a>)</li>
+ <li>Added support for right control key on OS X</li>
+ <li>Improved <code>TextEntered</code> for OS X (<a href="https://github.com/LaurentGomila/SFML/issues/377">#377</a>)</li>
+ <li>Improved the performances of <code>Window::getSize()</code> (the size is now cached)</li>
+ <li>Added the <code>WM_CLASS</code> property to SFML windows on Linux</li>
+ <li>Fake resize events are no longer sent when the window is moved, on Linux</li>
+ <li>Pressing ALT or F10 on Windows no longer steals the focus</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+ <li>Fixed <code>MouseMove</code> event sometimes not generated when holding left button on Windows (<a href="https://github.com/LaurentGomila/SFML/issues/225">#225</a>)</li>
+ <li>Fixed <code>ContextSettings</code> ignored when creating a 3.x/4.x OpenGL context on Linux (<a href="https://github.com/LaurentGomila/SFML/issues/258">#258</a>)</li>
+ <li>Fixed <code>ContextSettings</code> ignored on Linux when creating a window (<a href="https://github.com/LaurentGomila/SFML/issues/35">#35</a>)</li>
+ <li>Fixed windows bigger than the desktop not appearing on Windows (<a href="https://github.com/LaurentGomila/SFML/issues/215">#215</a>)</li>
+ <li>Fixed <code>KeyRelease</code> events sometimes not reported on Linux (<a href="https://github.com/LaurentGomila/SFML/issues/404">#404</a>)</li>
+ <li>Fixed mouse moved event on OS X when dragging the cursor (<a href="https://github.com/LaurentGomila/SFML/issues/277">#277</a>)</li>
+ <li>Fixed <code>KeyRelease</code> event with CMD key pressed (<a href="https://github.com/LaurentGomila/SFML/issues/381">#381</a>)</li>
+ <li>Fixed taskbar bugs on Windows (<a href="https://github.com/LaurentGomila/SFML/issues/328">#328</a>, <a href="https://github.com/LaurentGomila/SFML/issues/69">#69</a>)</li>
+ <li>Fixed <code>Window::getPosition()</code> on Linux (<a href="https://github.com/LaurentGomila/SFML/issues/346">#346</a>)</li>
+ <li>Unicode characters outside the BMP (> <code>0xFFFF</code>) are now correctly handled on Windows (<a href="https://github.com/LaurentGomila/SFML/issues/366">#366</a>)</li>
+</ul>
+
+<h3 id="2.1-graphics"><a class="h3-link" href="#2.1-graphics">Graphics</a></h3>
+<h4>Features</h4>
+<ul>
+ <li>Checking errors in <code>RenderTarget::pushGLStates()</code> to avoid generating false error messages when user leaves unchecked OpenGL errors (<a href="https://github.com/LaurentGomila/SFML/issues/340">#340</a>)</li>
+ <li>Optimized <code>Shader::setParameter</code> functions, by using a cache internally (<a href="https://github.com/LaurentGomila/SFML/issues/316">#316</a>, <a href="https://github.com/LaurentGomila/SFML/issues/358">#358</a>)</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+ <li>Fixed bounding rect of <code>sf::Text</code> ignoring whitespaces (<a href="https://github.com/LaurentGomila/SFML/issues/216">#216</a>)</li>
+ <li>Solved graphics resources not updated or corrupted when loaded in a thread (<a href="https://github.com/LaurentGomila/SFML/issues/411">#411</a>)</li>
+ <li>Fixed white pixel showing on first character of <code>sf::Text</code> (<a href="https://github.com/LaurentGomila/SFML/issues/414">#414</a>)</li>
+ <li><code>sf::Rect::contains</code> and <code>sf::Rect::intersects</code> now handle rectangles with negative dimensions correctly (<a href="https://github.com/LaurentGomila/SFML/issues/219">#219</a>)</li>
+ <li>Fixed <code>Shape::setTextureRect</code> not working when called before <code>setTexture</code></li>
+</ul>
+
+<h3 id="2.1-audio"><a class="h3-link" href="#2.1-audio">Audio</a></h3>
+<h4>Features</h4>
+<ul>
+ <li><code>loadFromStream</code> functions now explicitly reset the stream (<code>seek(0)</code>) before starting to read (<a href="https://github.com/LaurentGomila/SFML/issues/349">#349</a>)</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+ <li>Added a workaround for a bug in the OS X implementation of OpenAL (unsupported channel count no properly detected) (<a href="https://github.com/LaurentGomila/SFML/issues/201">#201</a>)</li>
+ <li>Fixed <code>SoundBuffer::loadFromStream</code> reading past the end of the stream (<a href="https://github.com/LaurentGomila/SFML/issues/214">#214</a>)</li>
+</ul>
+
+<h3 id="2.1-network"><a class="h3-link" href="#2.1-network">Network</a></h3>
+<h4>Features</h4>
+<ul>
+ <li>Replaced the deprecated <code>gethostbyname</code> with <code>getaddrinfo</code> (<a href="https://github.com/LaurentGomila/SFML/issues/47">#47</a>)</li>
+ <li>Minor improvements to <code>sf::Packet</code> operators (now using <code>strlen</code> and <code>wcslen</code> instead of explicit loops) (<a href="https://github.com/LaurentGomila/SFML/issues/118">#118</a>)</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+ <li>Fixed non-blocking connection with a <code>sf::TcpSocket</code> on Windows</li>
+ <li>Fixed TCP packet data corruption in non-blocking mode (<a href="https://github.com/LaurentGomila/SFML/issues/402">#402</a>, <a href="https://github.com/LaurentGomila/SFML/issues/119">#119</a>)</li>
+ <li>On Unix systems, a socket disconnection no longer stops the program with signal <code>SIGPIPE</code> (<a href="https://github.com/LaurentGomila/SFML/issues/72">#72</a>)</li>
+</ul>
 
 <h2 id="sfml-2.0"><a class="h2-link" href="#sfml-2.0">SFML 2.0</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
-<p>Please refer to the <a href="http://en.sfml-dev.org/forums/index.php?topic=76.msg78424#msg78424" title="Go to the release announcement">release announcement</a>.</p>
+<p>No changelog available. Everything changed.</p>
+
+<h2 id="sfml-1.6"><a class="h2-link" href="#sfml-1.6">SFML 1.6</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
+
+<h3 id="1.6-general"><a class="h3-link" href="#1.6-general">General</a></h3>
+<ul>
+ <li>SFML libraries are now be compiled with gcc 4.4.0 on Windows (MinGW)</li>
+ <li>Updated the Qt sample</li>
+ <li>Added a Cocoa sample</li>
+ <li>Added support for 64 bits on Mac OS X 10.5 and greater</li>
+</ul>
+
+<h3 id="1.6-system"><a class="h3-link" href="#1.6-system">System</a></h3>
+<h4>Bugfixes</h4>
+<ul>
+ <li>Fixed the initial seed of <code>sf::Randomizer</code> which is always the same on some configurations</li>
+</ul>
+
+<h3 id="1.6-window"><a class="h3-link" href="#1.6-window">Window</a></h3>
+<h4>Features</h4>
+<ul>
+ <li>Increased the number of supported joysticks to 4</li>
+ <li>Added return to the desktop resolution when the SFML fullscreen application is not active, on Mac OS X</li>
+ <li>Added support for importing Cocoa widgets (in addition to Cocoa windows), on Mac OS X</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+ <li>Fixed inconsistencies with the state of the left/right shift keys on Windows</li>
+ <li>Fixed joystick axes being sometimes ignored</li>
+ <li>Fixed <code>Event::TextEntered</code> ignoring the key repeat state</li>
+ <li>Fixed <code>KeyEvent.Alt</code>/<code>Control</code>/<code>Shift</code> members not working, in SFML.Net</li>
+ <li>Fixed a crash happening when closing an imported window, on Mac OS X</li>
+ <li>Fixed a bad behaviour when switching to fullscreen mode, on Mac OS X</li>
+ <li>Fixed bips produced when pressing function or escape keys, on Mac OS X</li>
+ <li>Fixed a conflict between SFML and Cocoa that may create memory leaks, on Mac OS X</li>
+ <li>Fixed possible conflict between the SFML objective-C classes and the user's ones (using a private prefix in SFML), on Mac OS X</li>
+ <li>Fixed wrong mouse coordinates when importing a Cocoa widget, on Mac OS X</li>
+</ul>
+
+<h3 id="1.6-graphics"><a class="h3-link" href="#1.6-graphics">Graphics</a></h3>
+<h4>Features</h4>
+<ul>
+ <li>Disabled implicit conversion from <code>sf::Image</code> to <code>sf::Sprite</code></li>
+ <li>Made image loading thread-safe</li>
+ <li>Improved accuracy of rendering</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+ <li>Fixed crash with the default font at global exit on Windows</li>
+ <li>Fixed current OpenGL matrix mode not properly saved when <code>PreserveOpenGLStates</code> is activated</li>
+ <li>Fixed a bug preventing image creation if no window was created, on Mac OS X</li>
+</ul>
+
+<h3 id="1.6-audio"><a class="h3-link" href="#1.6-audio">Audio</a></h3>
+<h4>Features</h4>
+<ul>
+ <li>Copied <code>Attenuation</code> and <code>MinDistance</code> members in <code>sf::Sound</code>'s copy constructor</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+ <li>Fixed crash when destroying a <code>SoundBuffer</code> used by a <code>Sound</code></li>
+ <li>Fixed tiny musics ignoring the "loop" flag</li>
+ <li>Fixed musics sometimes being stuck after looping twice</li>
+</ul>
+
+<h3 id="1.6-network"><a class="h3-link" href="#1.6-network">Network</a></h3>
+<h4>Features</h4>
+<ul>
+ <li><code>Http::Response::GetField</code> is now case insensitive</li>
+ <li>Added <code>"Connection: close"</code> by default for <code>HTTP 1.1</code> requests</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+ <li>Fixed crashes in <code>Ftp::Download</code> and <code>Ftp::Upload</code> with empty files</li>
+ <li>Fixed <code>SocketTCP::Connect</code> with timeout returning success when connection failed</li>
+ <li>Fixed <code>POST</code> requests not working with <code>sf::Http</code></li>
+</ul>
+
+<h2 id="sfml-1.5"><a class="h2-link" href="#sfml-1.5">SFML 1.5</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
+
+<h3 id="1.5-general"><a class="h3-link" href="#1.5-general">General</a></h3>
+<ul>
+ <li>Fixed the code to make SFML compile on FreeBSD</li>
+ <li>Added the OpenAL framework to the SDK on Mac OS X</li>
+ <li><code>libsndfile</code> is now linked dynamically on Mac OS X</li>
+ <li>Added the XCode project files for CSFML</li>
+ <li>Added Visual C++ project files for samples</li>
+</ul>
+
+<h3 id="1.5-system"><a class="h3-link" href="#1.5-system">System</a></h3>
+<h4>Bugfixes</h4>
+<ul>
+ <li>Fixed bug with <code>std::locale</code> on Mac OS X</li>
+ <li>The working directory is now initialized properly at startup on Mac OS X</li>
+</ul>
+
+<h3 id="1.5-window"><a class="h3-link" href="#1.5-window">Window</a></h3>
+<h4>Features</h4>
+<ul>
+ <li>Updated the Qt sample and tutorial to work with Qt 4.5</li>
+ <li>Added missing <code>VideoMode</code> functions to SFML.Net</li>
+ <li>Added support for creating a <code>sf::Window</code> from a Cocoa window on Mac OS X</li>
+ <li>Added support for composed characters on Mac OS X</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+ <li>Fixed application frozen if a USB joystick was plugged, on Windows</li>
+ <li>Fixed joysticks sometimes not working at all on Vista</li>
+ <li>Properly detect supported depths for video modes on Linux</li>
+ <li>Fixed undefined behaviour when creating two fullscreen windows</li>
+ <li>Fixed <code>Window::SetSize</code> not resizing to the requested size, on Windows</li>
+ <li>Fixed <code>KeyPressed</code> event sometimes returning a null key code on Windows</li>
+ <li>Fixed <code>EnableKeyRepeat</code> not working anymore after a second window has been created on Linux</li>
+ <li>Fixed bug when destroying / recreating a window on Mac OS X</li>
+ <li>Desktop resolution is properly restored when hiding the application on Mac OS X</li>
+ <li>Fixed accentuated characters not properly retrieved on Mac OS X</li>
+</ul>
+
+<h3 id="1.5-graphics"><a class="h3-link" href="#1.5-graphics">Graphics</a></h3>
+<h4>Features</h4>
+<ul>
+ <li>Modified the blending mode <code>Blend::Add</code> to use source alpha</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+ <li>Fixed 1-pixel offset in <code>Sprite::GetPixel</code> when <code>FlipX</code> or <code>FlipY</code> is set</li>
+ <li>Fixed undefined behaviour when rendering a sprite bound to an empty image</li>
+ <li>Fixed <code>sf::Image::Copy</code> to apply transparency of the source image</li>
+ <li>Fixed <code>RenderWindow.CurrentView</code> not initialized in SFML.Net</li>
+ <li>Fixed <code>Sprite.SubRect</code> and <code>String2D.GetRect</code> crash in SFML.Net</li>
+ <li>Fixed global colors not properly exported in CSFML</li>
+</ul>
+
+<h3 id="1.5-audio"><a class="h3-link" href="#1.5-audio">Audio</a></h3>
+<h4>Features</h4>
+<ul>
+ <li>Added a function to disable sound spatialization</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+ <li>Fixed <code>Listener</code> functions being private in SFML.Net</li>
+ <li>Fixed memory leaks when playing ogg audio files</li>
+ <li>Fixed OpenAL error on Mac OSX when calling <code>SoundStream::Stop</code></code></li>
+ <li>Fixed multi-threading issues in <code>sf::Music</code></code></li>
+ <li>Fixed <code>sf::SoundStream</code> (and <code>sf::Music</code>) not looping seamlessly</li>
+</ul>
+
+<h3 id="1.5-network"><a class="h3-link" href="#1.5-network">Network</a></h3>
+<h4>Features</h4>
+<ul>
+ <li>Got rid of <code>whatismyip.org</code> as the default server for public IP retrieval</li>
+ <li>Added a <code>timeout</code> parameter to <code>Http::SendRequest</code></li>
+</ul>
+
+<h2 id="sfml-1.4"><a class="h2-link" href="#sfml-1.4">SFML 1.4</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
+
+<h3 id="1.4-general"><a class="h3-link" href="#1.4-general">General</a></h3>
+<ul>
+ <li>Added debug symbols to debug builds in Code::Blocks</li>
+ <li>Added .Net binding</li>
+ <li>Improved management of dependant resources</li>
+ <li>Now using full unicode instead of <code>UCS-2</code> for all text-related events and strings</li>
+ <li>Added minor version number to libraries names under Linux</li>
+ <li>Added install path to Linux <code>makefile</code>s</li>
+</ul>
+
+<h3 id="1.4-system"><a class="h3-link" href="#1.4-system">System</a></h3>
+<h4>Features</h4>
+<ul>
+ <li>Improved unicode support</li>
+</ul>
+
+<h3 id="1.4-window"><a class="h3-link" href="#1.4-window">Window</a></h3>
+<h4>Features</h4>
+<ul>
+ <li>Now using signed integers for mouse coordinates to allow negative values</li>
+ <li>Added cursor position in mouse events</li>
+ <li>Added <code>sf::Window::SetIcon</code> function</li>
+ <li>Added mouse enter / mouse leave window events</li>
+ <li>Added <code>sf::Window::SetSize</code></li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+ <li>Fixed <code>sf::Window::EnableKeyRepeat</code> under Linux</li>
+ <li>Fixed X11 sample (broken rendering on the first window)</li>
+</ul>
+
+<h3 id="1.4-graphics"><a class="h3-link" href="#1.4-graphics">Graphics</a></h3>
+<h4>Features</h4>
+<ul>
+ <li>Added functions to copy images onto other images</li>
+ <li>Added an option to have <code>sf::Image</code> instances not storing their pixels in memory</li>
+ <li>Made SFML classes completely thread-safe regarding OpenGL calls</li>
+ <li>Added <code>sf::String::GetCharacterPos</code> to get visual position of a string's character</li>
+ <li>Added functions to convert from and to <code>drawable</code>s' local coordinates</li>
+ <li>Added more functions to access <code>sf::Font</code>'s contents</li>
+ <li>Added more accessors for <code>sf::Shape</code> points' attributes</li>
+ <li>Optimized font's textures</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+ <li>Fixed <code>sf::Sprite::GetPixel</code> not taking flip x/y in account</li>
+ <li>Fixed <code>sf::Matrix3</code> calculations</li>
+</ul>
+
+<h3 id="1.4-audio"><a class="h3-link" href="#1.4-audio">Audio</a></h3>
+<h4>Features</h4>
+<ul>
+ <li>Added <code>GetLoop</code>, <code>SetLoop</code> and <code>GetPlayingPosition</code> to sounds streams</li>
+ <li>Removed dependency to the Visual C++ CRT in OpenAL32.dll</li>
+ <li>Added seeking function to <code>sf::Sound</code></li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+ <li>Fixed <code>sf::SoundBufferRecorder</code> which couldn't be reused several times</li>
+ <li>Fixed music clics under Linux</li>
+</ul>
+
+<h3 id="1.4-network"><a class="h3-link" href="#1.4-network">Network</a></h3>
+<h4>Features</h4>
+<ul>
+ <li>Added a function to check end of packet</li>
+ <li>Disabled Nagle's algorithm (buffering) in TCP sockets</li>
+ <li>Added <code>HTTP</code> and <code>FTP</code> classes</li>
+ <li>Added conversions from and to integer for IP address</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+ <li>Fixed <code>sf::Packet::OnSend</code> called multiple times if packet was sent more than once</li>
+ <li>Fixed inconsistent socket initialization</li>
+ <li>Fixed crash when using empty strings with packets</li>
+</ul>
+
+<h2 id="sfml-1.3"><a class="h2-link" href="#sfml-1.3">SFML 1.3</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
+
+<h3 id="1.3-general"><a class="h3-link" href="#1.3-general">General</a></h3>
+<ul>
+ <li>Added static build on Linux</li>
+ <li>Fixed runtime errors with VC++ 2008 libraries</li>
+</ul>
+
+<h3 id="1.3-system"><a class="h3-link" href="#1.3-system">System</a></h3>
+<h4>Features</h4>
+<ul>
+ <li>Added vector classes (<code>Vector2</code> and <code>Vector3</code>)</li>
+</ul>
+
+<h3 id="1.3-window"><a class="h3-link" href="#1.3-window">Window</a></h3>
+<h4>Features</h4>
+<ul>
+ <li>Made event handling independant from display in <code>sf::Window</code></li>
+ <li>Replaced <code>sf::Window::SetCurrent</code> with <code>sf::Window::SetActive(bool)</code></li>
+ <li>Input states are now reseted in <code>sf::Input</code> when a window loses the focus</li>
+ <li>Implemented the <code>TextEntered</code> event in Linux</li>
+ <li>Added <code>sf::Window::Close</code> and <code>sf::Window::IsOpened</code></li>
+ <li>Added some missing key codes to the <code>sf::Key::Code</code> enumeration</li>
+ <li>Added the <code>sf::Style::None</code> window style, and replaced <code>sf::Style::NoStyle</code> with <code>sf::Style::Titlebar</code></li>
+ <li>Added a function to enable / disable automatic key-repeat for <code>keypress</code> events</li>
+ <li><code>sf::Window::SetCursorPosition</code> no longer generates a <code>MouseMoved</code> event</li>
+ <li>Added more options when creating a window (to have more control on OpenGL context settings)</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+ <li>Fixed bug when destroying a window and then creating a new one</li>
+ <li>Fixed windows not closed after their <code>sf::Window</code> instance was destroyed (in Linux)</li>
+ <li>Fixed a bug with joysticks in Windows</li>
+</ul>
+
+<h3 id="1.3-graphics"><a class="h3-link" href="#1.3-graphics">Graphics</a></h3>
+<h4>Features</h4>
+<ul>
+ <li>Changed the <code>sf::Drawable</code> center of rotation to be the center of translation and scaling as well</li>
+ <li>Improved the font interface / management (there's now a <code>sf::Font</code> class)</li>
+ <li>Added styles to <code>sf::String</code> (bold / italic / underline)</li>
+ <li>Added loading from memory for character fonts</li>
+ <li>Added a class to draw simple shapes (<code>sf::Shape</code>)</li>
+ <li><code>RenderWindow::Draw</code> can now be called in cascade to allow hierarchies of <code>Drawable</code> objects</li>
+ <li>Improved <code>sf::View</code> to make it more convenient and flexible</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+ <li>Fixed <code>sf::RenderWindow::Capture</code> returning a flipped image and/or crashing</li>
+ <li>Fixed viewport issue when using custom OpenGL calls</li>
+ <li>Fixed bug with <code>sf::String</code> scale and size</li>
+ <li>Fixed bug when checking the size of a new image</li>
+ <li>Fixed a bug with background color when running more than one <code>RenderWindow</code> at the same time</li>
+ <li>Fixed pixel accuracy with non-smoothed images</li>
+ <li>Fixed PNG loading failing on 64 bits systems</li>
+</ul>
+
+<h3 id="1.3-audio"><a class="h3-link" href="#1.3-audio">Audio</a></h3>
+<h4>Features</h4>
+<ul>
+ <li>SFML is now using OpenAL-Soft as the OpenAL implementation, which is more stable on Linux</li>
+ <li>Added <code>SetMinDistance</code> and <code>SetAttenuation</code> for <code>Sound</code> and <code>Music</code> classes</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+ <li>Fixed wrong duration with ogg sounds and other formats musics</li>
+ <li>Fixed failure to save a sound buffer to a file</li>
+</ul>
+
+<h3 id="1.3-network"><a class="h3-link" href="#1.3-network">Network</a></h3>
+<h4>Features</h4>
+<ul>
+ <li>Added handling of wide strings (<code>std::wstring</code>, <code>const wchar_t*</code>) to <code>sf::Packet</code></li>
+ <li>Improved the interface of <code>sf::Selector</code> (<code>GetSocketsReady</code> is now replaced with <code>Wait</code> + <code>GetSocketReady</code>)</li>
+ <li>Rewrote <code>sf::Selector</code> class to remove explicit dependency to <code>winsock</code> library on Windows</li>
+ <li>Made insertions into packets faster</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+ <li>Fixed sockets sometimes receiving too much packet data</li>
+ <li>Incomplete packets are now received properly in non-blocking mode</li>
+</ul>
+
+<h2 id="sfml-1.2"><a class="h2-link" href="#sfml-1.2">SFML 1.2</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
+
+<h3 id="1.2-general"><a class="h3-link" href="#1.2-general">General</a></h3>
+<ul>
+ <li>Added a Python binding (PySFML)</li>
+ <li>Added a C wrapper for SFML</li>
+ <li>SFML libraries are now compatible with Win 95/98/Me</li>
+ <li>Added Visual C++ 2008 project files and compiled binaries</li>
+ <li>Added functions to load images and sounds from files in memory</li>
+</ul>
+
+<h3 id="1.2-window"><a class="h3-link" href="#1.2-window">Window</a></h3>
+<h4>Features</h4>
+<ul>
+ <li>Removed the <code>KeyReleased</code> event auto-repeat in Linux</li>
+ <li>Added more axis and buttons for joysticks</li>
+ <li>Added handling of two more buttons for mouse</li>
+ <li>Improved flexibility of window styles</li>
+ <li>Added the <code>sf::Window::Show</code> function to show or hide a SFML window</li>
+ <li>Added the <code>sf::Window::SetCursorPosition</code> function to warp the mouse cursor to a given position</li>
+ <li>Added the control, shift and alt keys for the <code>KeyPressed</code> and <code>KeyReleased</code> events</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+ <li>Fixed windows not updating their size properly on Linux</li>
+ <li>Fixed a crash with the mouse wheel in Linux</li>
+ <li>Fixed GLU issues with MinGW</li>
+ <li>Fixed a bug with events in Linux, <code>sf::Window</code> instances can now be re-created correctly</li>
+</ul>
+
+<h3 id="1.2-graphics"><a class="h3-link" href="#1.2-graphics">Graphics</a></h3>
+<h4>Features</h4>
+<ul>
+ <li>Added checking of maximum texture size when creating a <code>sf::Image</code></li>
+ <li>Improved text rendering, especially small characters</li>
+ <li>Removed the looping error message when failed to load a font</li>
+ <li>Removed <code>sf::Image::Update</code>, images are now updated automatically when needed</li>
+ <li>Made color representations more consistent (all is RGBA, and no more <code>Uint32</code> manipulations)</li>
+ <li>Added <code>SetBlendMode</code> function to <code>sf::Drawable</code> classes (can choose <code>Alpha</code>, <code>Add</code>, <code>Multiply</code> or <code>None</code>)</li>
+ <li>Added <code>SetPosition</code>, <code>SetScaleX</code> and <code>SetScaleY</code> functions to <code>sf::Drawable</code> classes</li>
+ <li>Added the ability to flip sprites on X and Y axis</li>
+ <li>Added the ability to create flipped and/or mirrored views</li>
+ <li>Got rid of DevIL and <code>zlib</code></li>
+ <li>Improved the integration of OpenGL functions into SFML rendering</li>
+ <li>FreeType is now linked statically in Windows (no more need for the DLL)</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+ <li>Fixed memory leaks in font loading</li>
+</ul>
+
+<h3 id="1.2-audio"><a class="h3-link" href="#1.2-audio">Audio</a></h3>
+<h4>Features</h4>
+<ul>
+ <li>Added the <code>sf::Listener</code> class to control the audio listener properties</li>
+ <li>Got rid of <code>libvorbis</code>, <code>libvorbisfile</code> and <code>libogg</code></li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+ <li>Fixed a bug with wrong OGG musics duration</li>
+</ul>
+
+<h3 id="1.2-network"><a class="h3-link" href="#1.2-network">Network</a></h3>
+<h4>Features</h4>
+<ul>
+ <li>Added non-blocking mode for sockets</li>
+ <li>Improved safety of data reading from packets</li>
+ <li>Improved management of sockets state</li>
+ <li>Added <code>Bind</code> and <code>Unbind</code> functions to UDP sockets</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+ <li>Fixed crash when sending an empty packet</li>
+ <li>Fixed <code>sf::IPAddress::GetPublicAddress</code> which failed sometimes</li>
+</ul>
+
+<h2 id="sfml-1.1"><a class="h2-link" href="#sfml-1.1">SFML 1.1</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
+
+<h3 id="1.1-general"><a class="h3-link" href="#1.1-general">General</a></h3>
+<ul>
+ <li>Added the Mac OSX port from Brad Leffler</li>
+ <li>Added the Ruby binding from Sean O'Neil</li>
+ <li>Added namespaces (now the SFML classes and functions are inside the <code>sf</code> namespace)</li>
+ <li>Added a new sample (pong)</li>
+ <li>Fixed CMake files, Linux Makefiles and Code::Blocks project files</li>
+ <li>Removed an external dependency with GLEW in Linux</li>
+</ul>
+
+<h3 id="1.1-system"><a class="h3-link" href="#1.1-system">System</a></h3>
+<h4>Features</h4>
+<ul>
+ <li>Added unicode support for String</li>
+ <li>Added ability to get a <code>std::string</code> from a <code>String</code> object</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+ <li><code>String</code> doesn't crash anymore in MinGW</li>
+</ul>
+
+<h3 id="1.1-window"><a class="h3-link" href="#1.1-window">Window</a></h3>
+<h4>Features</h4>
+<ul>
+ <li>Added support for mouse wheel (<code>Event::MouseWheelMoved</code>)</li>
+ <li>Added support for antialiasing</li>
+ <li>Added <code>Window::SetPosition</code> and <code>RenderWindow::SetPosition</code></li>
+ <li>Added <code>Window::SetFramerateLimit</code> and <code>RenderWindow::SetFramerateLimit</code></li>
+ <li>Added a "<code>style</code>" parameter to replace the "<code>fullscreen</code>" one on window creation, to have more control over the window style</li>
+ <li>Added the <code>Key::Pause</code> key</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+ <li>Fixed the bad behaviors with the mouse cursor in Windows</li>
+ <li>Fixed <code>SFML/Window.hpp</code> now includes <code>OpenGLCaps.hpp</code> and <code>glew.h</code></li>
+ <li>Fixed the error loop when using the <code>Window</code> package in Linux</li>
+ <li>Fixed bugs with window <code>style</code>s in some Linux systems</li>
+</ul>
+
+<h3 id="1.1-graphics"><a class="h3-link" href="#1.1-graphics">Graphics</a></h3>
+<h4>Features</h4>
+<ul>
+ <li>Added more control over <code>drawables</code> size (added <code>Sprite::Resize</code> and made X and Y scales independant)</li>
+ <li>Added <code>GetDepthBits</code> and <code>GetStencilBits</code> functions into <code>RenderWindow</code></li>
+ <li>Added an optional target <code>alpha</code> value for <code>Image::CreateMaskFromColor</code></li>
+ <li>Improved the <code>PostFX</code> sample (now displays an error message if post-effects are not supported)</li>
+ <li>Added <code>+</code> and <code>*</code> operators to add and modulate <code>Color</code> instances</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+ <li><code>Image</code>s are no more flipped when saved to a file</li>
+ <li><code>Sprite::GetPixel</code> now takes the scale and the overall color into account</li>
+</ul>
+
+<h3 id="1.1-audio"><a class="h3-link" href="#1.1-audio">Audio</a></h3>
+<h4>Bugfixes</h4>
+<ul>
+ <li>Fixed crashes on audio samples exit</li>
+</ul>
 
 <?php
     require("footer.php");
