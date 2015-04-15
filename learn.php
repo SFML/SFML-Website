@@ -43,7 +43,7 @@
     <div class="description">
         <p class="title">SFML Game Development</p>
         <a class="link" href="https://www.packtpub.com/game-development/sfml-game-development" title="SFML Game Development book web page">
-            https://www.packtpub.com/sfml-game-development/book
+            https://www.packtpub.com/game-development/sfml-game-development
         </a>
     </div>
 </div>
