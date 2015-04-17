@@ -11,7 +11,7 @@
     </p>
     <p>
         If you followed an internal link, please
-        <a href="mailto:laurent@sfml-dev.org" title="Report a forbidden link to the team">contact the team</a> to report this error.
+        <a href="mailto:team@sfml-dev.org" title="Report a forbidden link to the team">contact the team</a> to report this error.
     </p>
 </div>
 
