@@ -200,7 +200,7 @@ class Sprite
 ////////////////////////////////////////////////////////////</code></pre>
 
 <h4>Documentation for Enumerations or Attributes</h4>
-<pre><code class="cpp">cpp
+<pre><code class="cpp">
 Ok       = 200, ///&lt; Most common code returned when operation was successful
 Created  = 201, ///&lt; The resource has successfully been created
 Accepted = 202, ///&lt; The request has been accepted, but will be processed later by the server</code></pre>
