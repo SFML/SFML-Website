@@ -345,7 +345,7 @@ func() &amp;&amp; (x &lt; y); // function call not parenthesized</code></pre>
 <h2 id="semantics-idioms"><a class="h2-link" href="#semantics-idioms">Semantics and Idioms</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 
 <h3 id="pointers-references"><a class="h3-link" href="#pointers-references">Use of Pointers and References</a></h3>
-<p>Pointers are used if either of the following conditions is true. In all other situations, references are used.</p>
+<p>Pointers are used if any of the following conditions is true. In all other situations, references are used.</p>
 <ul>
  <li><code>NULL</code> is a valid value</li>
  <li>the indirection is changed during its lifetime (i.e. the pointer points to something else)</li>
