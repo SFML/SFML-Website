@@ -47,14 +47,10 @@
     <li>jpeg</li>
     <li>x11</li>
     <li>xrandr</li>
-    <li>xcb1</li>
+    <li>xcb</li>
     <li>x11-xcb</li>
-    <li>xcb-icccm</li>
     <li>xcb-randr</li>
-    <li>xcb-util</li>
     <li>xcb-image</li>
-    <li>xcb-keysyms</li>
-    <li>xcb-ewmh</li>
     <li>opengl</li>
     <li>flac</li>
     <li>ogg</li>
@@ -232,12 +228,6 @@
             </td>
         </tr>
         <tr class="one">
-            <td><code>SFML_INSTALL_EXAMPLES</code></td>
-            <td>
-                Cette option booléenne détermine si vous voulez installer les exemples SFML ou non.
-            </td>
-        </tr>
-        <tr class="two">
             <td><code>SFML_BUILD_DOC</code></td>
             <td>
                 Cette option booléenne détermine si vous voulez générer la documentation de SFML ou non. Notez que l'outil
@@ -245,12 +235,6 @@
                 le fait d'activer cette option produira une erreur.<br/>
                 Sur Mac OS X, vous pouvez installer l'exécutable Unix-classique dans /usr/bin ou n'importe quel dossier
                 similaire, ou installer Doxygen.app dans n'importe quel dossier "Applications", par exemple ~/Applications.
-            </td>
-        </tr>
-        <tr class="one">
-            <td><code>SFML_INSTALL_DOC</code></td>
-            <td>
-                Cette option booléenne détermine si vous voulez installer la documentation SFML ou non.
             </td>
         </tr>
         <tr class="two">
