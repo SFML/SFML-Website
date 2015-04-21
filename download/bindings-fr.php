@@ -14,7 +14,7 @@
     et certains peuvent ne pas être à jour, voire abandonnés.
 </p>
 <p>
-    N'hésitez pas à <a href="mailto:laurent@sfml-dev.org" title="Contacter le webmaster">me contacter</a> si vous souhaitez mettre à jour, ajouter ou retirer des informations
+    N'hésitez pas à <a href="mailto:webmaster@sfml-dev.org" title="Contacter le webmaster">me contacter</a> si vous souhaitez mettre à jour, ajouter ou retirer des informations
     concernant un binding SFML.
 </p>
 

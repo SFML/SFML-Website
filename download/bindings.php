@@ -14,7 +14,7 @@
     Some bindings may be out of date, some might have even been abandoned.
 </p>
 <p>
-    Feel free to <a href="mailto:laurent@sfml-dev.org" title="Contact the webmaster">contact me</a> if you want to update, add or remove information about an SFML binding.
+    Feel free to <a href="mailto:webmaster@sfml-dev.org" title="Contact the webmaster">contact me</a> if you want to update, add or remove information about an SFML binding.
 </p>
 
 <table class="styled bindings" style="width: 100%;">
