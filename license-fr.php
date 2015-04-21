@@ -43,13 +43,6 @@ freely, subject to the following restrictions:
 <h2 id="extlibs"><a class="h2-link" href="#extlibs">Bibliothèques externes utilisées par SFML</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 <ul>
     <li>
-        <strong><a class="external" href="http://glew.sourceforge.net" title="Site de GLEW">GLEW</a></strong>
-        est distribuée sous
-        <a class="external" href="http://glew.sourceforge.net/glew.txt" title="Termes de la licence BSD modifiée">licence BSD modifiée</a>,
-        <a class="external" href="http://glew.sourceforge.net/mesa.txt" title="Termes de la licence Mesa 3-D">licence Mesa 3-D</a>
-        ou <a class="external" href="http://glew.sourceforge.net/khronos.txt" title="Termes de la licence Khronos">licence Khronos</a>
-    </li>
-    <li>
         <strong><a class="external" href="http://www.freetype.org" title="Site de FreeType">freetype</a></strong>
         est distribuée sous
         <a class="external" href="http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT" title="Termes de la licence FTL">licence FTL</a>
@@ -69,9 +62,19 @@ freely, subject to the following restrictions:
         <a class="external" href="http://www.gnu.org/copyleft/lesser.html" title="Termes de la licence LGPL">licence LGPL</a>
     </li>
     <li>
-        <strong><a class="external" href="http://www.mega-nerd.com/libsndfile/" title="Site de libsndfile">libsndfile</a></strong>
+        <strong><a class="external" href="http://www.vorbis.com/" title="Vorbis website">libogg</a></strong>
         est distribuée sous
-        <a class="external" href="http://www.gnu.org/copyleft/lesser.html" title="Termes de la licence LGPL">licence LGPL</a>
+        <a class="external" href="http://opensource.org/licenses/BSD-3-Clause" title="Termes de la licence BSD 3">licence BSD 3</a>
+    </li>
+    <li>
+        <strong><a class="external" href="http://www.vorbis.com/" title="Vorbis website">libvorbis</a></strong>
+        est distribuée sous
+        <a class="external" href="http://opensource.org/licenses/BSD-3-Clause" title="Termes de la licence BSD 3">licence BSD 3</a>
+    </li>
+    <li>
+        <strong><a class="external" href="https://xiph.org/flac/" title="FLAC website">libflac</a></strong>
+        est distribuée sous
+        <a class="external" href="http://opensource.org/licenses/BSD-3-Clause" title="Termes de la licence BSD 3">licence BSD 3</a>
     </li>
 </ul>
 

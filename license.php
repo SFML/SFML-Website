@@ -43,13 +43,6 @@ freely, subject to the following restrictions:
 <h2 id="extlibs"><a class="h2-link" href="#extlibs">External Libraries used by SFML</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 <ul>
     <li>
-        <strong><a class="external" href="http://glew.sourceforge.net" title="GLEW website">GLEW</a></strong>
-        is distributed under
-        the <a class="external" href="http://glew.sourceforge.net/glew.txt" title="Terms of the modified BSD license">modified BSD license</a>,
-        the <a class="external" href="http://glew.sourceforge.net/mesa.txt" title="Terms of the Mesa 3-D license">Mesa 3-D license</a>
-        or the <a class="external" href="http://glew.sourceforge.net/khronos.txt" title="Terms of the Khronos license">Khronos license</a>
-    </li>
-    <li>
         <strong><a class="external" href="http://www.freetype.org" title="FreeType website">freetype</a></strong>
         is distributed under
         the <a class="external" href="http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT" title="Terms of the FTL license">FTL license</a>
@@ -69,9 +62,19 @@ freely, subject to the following restrictions:
         the <a class="external" href="http://www.gnu.org/copyleft/lesser.html" title="Terms of the LGPL license">LGPL license</a>
     </li>
     <li>
-        <strong><a class="external" href="http://www.mega-nerd.com/libsndfile/" title="libsndfile website">libsndfile</a></strong>
+        <strong><a class="external" href="http://www.vorbis.com/" title="Vorbis website">libogg</a></strong>
         is distributed under
-        the <a class="external" href="http://www.gnu.org/copyleft/lesser.html" title="Terms of the LGPL license">LGPL license</a>
+        the <a class="external" href="http://opensource.org/licenses/BSD-3-Clause" title="Terms of the BSD 3 license">BSD 3 license</a>
+    </li>
+    <li>
+        <strong><a class="external" href="http://www.vorbis.com/" title="Vorbis website">libvorbis</a></strong>
+        is distributed under
+        the <a class="external" href="http://opensource.org/licenses/BSD-3-Clause" title="Terms of the BSD 3 license">BSD 3 license</a>
+    </li>
+    <li>
+        <strong><a class="external" href="https://xiph.org/flac/" title="FLAC website">libflac</a></strong>
+        is distributed under
+        the <a class="external" href="http://opensource.org/licenses/BSD-3-Clause" title="Terms of the BSD 3 license">BSD 3 license</a>
     </li>
 </ul>
 
