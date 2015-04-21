@@ -25,46 +25,40 @@
 <h2 id="sfml-2.3"><a class="h2-link" href="#sfml-2.3">SFML 2.3</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 
 <h3 id="2.3-general"><a class="h3-link" href="#2.3-general">General</a></h3>
-<li>Examples only link against sfml-main in release mode (<a href="https://github.com/LaurentGomila/SFML/issues/610">#610</a>, <a href="https://github.com/LaurentGomila/SFML/pull/766">#766</a>)</li>
-<li>Replaced unsigned int with std::size_t for array indices and sizes (<a href="https://github.com/LaurentGomila/SFML/pull/739">#739</a>)</li>
-<li>Fixed some issues with the Doxygen documentation (<a href="https://github.com/LaurentGomila/SFML/pull/750">#750</a>)</li>
-<li>Added support for EditorConfig (<a href="https://github.com/LaurentGomila/SFML/pull/751">#751</a>)</li>
-<li>Hide success message for CMake in quiet mode (<a href="https://github.com/LaurentGomila/SFML/pull/753">#753</a>)</li>
-<li>Improve documentation for statuses with sf::Ftp (<a href="https://github.com/LaurentGomila/SFML/pull/763">#763</a>)</li>
-<li>[OS X] Relaxed CMake installation rules regarding framework dependencies (<a href="https://github.com/LaurentGomila/SFML/pull/767">#767</a>)</li>
-<li>[Android] Updated toolchain file and dependencies (<a href="https://github.com/LaurentGomila/SFML/pull/791">#791</a>)</li>
-<li>[Linux] Fixed missing pthread dependency (<a href="https://github.com/LaurentGomila/SFML/pull/794">#794</a>)</li>
-<li>Moved stb_image into the extlibs directory (<a href="https://github.com/LaurentGomila/SFML/pull/795">#795</a>)</li>
-<li>Changed the SOVERSION to major.minor (<a href="https://github.com/LaurentGomila/SFML/pull/812">#812</a>)</li>
-
-<h3 id="2.3-system"><a class="h3-link" href="#2.3-system">System</a></h3>
-<h4>Features</h4>
 <ul>
- <li></li>
-</ul>
-
-<h4>Bugfixes</h4>
-<ul>
- <li></li>
+ <li>Examples only link against sfml-main in release mode (<a href="https://github.com/LaurentGomila/SFML/issues/610">#610</a>, <a href="https://github.com/LaurentGomila/SFML/pull/766">#766</a>)</li>
+ <li>Replaced unsigned int with std::size_t for array indices and sizes (<a href="https://github.com/LaurentGomila/SFML/pull/739">#739</a>)</li>
+ <li>Fixed some issues with the Doxygen documentation (<a href="https://github.com/LaurentGomila/SFML/pull/750">#750</a>)</li>
+ <li>Added support for EditorConfig (<a href="https://github.com/LaurentGomila/SFML/pull/751">#751</a>)</li>
+ <li>Hide success message for CMake in quiet mode (<a href="https://github.com/LaurentGomila/SFML/pull/753">#753</a>)</li>
+ <li>Improved documentation for statuses with sf::Ftp (<a href="https://github.com/LaurentGomila/SFML/pull/763">#763</a>)</li>
+ <li>Moved stb_image into the extlibs directory (<a href="https://github.com/LaurentGomila/SFML/pull/795">#795</a>)</li>
+ <li>Changed the SOVERSION to major.minor (<a href="https://github.com/LaurentGomila/SFML/pull/812">#812</a>)</li>
+ <li>Fixed warnings about switch-statements (<a href="https://github.com/LaurentGomila/SFML/pull/863">#863</a>)</li>
+ <li>Added missing includes in the general headers (<a href="https://github.com/LaurentGomila/SFML/pull/851">#851</a>)</li>
+ <li>[Android] Updated toolchain file and dependencies (<a href="https://github.com/LaurentGomila/SFML/pull/791">#791</a>)</li>
+ <li>[Linux] Fixed missing pthread dependency (<a href="https://github.com/LaurentGomila/SFML/pull/794">#794</a>)</li>
+ <li>[OS X] Relaxed CMake installation rules regarding framework dependencies (<a href="https://github.com/LaurentGomila/SFML/pull/767">#767</a>)</li>
 </ul>
 
 <h3 id="2.3-window"><a class="h3-link" href="#2.3-window">Window</a></h3>
 <h4>Features</h4>
 <ul>
  <li>Added new events for handling high-precision scrolling (<a href="https://github.com/LaurentGomila/SFML/issues/95">#95</a>, <a href="https://github.com/LaurentGomila/SFML/pull/810">#810</a>, <a href="https://github.com/LaurentGomila/SFML/pull/837">#837</a>)</li>
- <li>Switch from Xlib to XCB (<a href="https://github.com/LaurentGomila/SFML/issues/200">#200</a>, <a href="https://github.com/LaurentGomila/SFML/pull/319">#319</a>, <a href="https://github.com/LaurentGomila/SFML/pull/694">#694</a>, <a href="https://github.com/LaurentGomila/SFML/pull/780">#780</a>, <a href="https://github.com/LaurentGomila/SFML/pull/813">#813</a>, <a href="https://github.com/LaurentGomila/SFML/pull/825">#825</a>)</li>
+ <li>Switched from Xlib to XCB (<a href="https://github.com/LaurentGomila/SFML/issues/200">#200</a>, <a href="https://github.com/LaurentGomila/SFML/pull/319">#319</a>, <a href="https://github.com/LaurentGomila/SFML/pull/694">#694</a>, <a href="https://github.com/LaurentGomila/SFML/pull/780">#780</a>, <a href="https://github.com/LaurentGomila/SFML/pull/813">#813</a>, <a href="https://github.com/LaurentGomila/SFML/pull/825">#825</a>)</li>
  <li>Added support for OpenGL 3 core context creation (<a href="https://github.com/LaurentGomila/SFML/issues/654">#654</a>, <a href="https://github.com/LaurentGomila/SFML/pull/779">#779</a>)</li>
 </ul>
 
 <h4>Bugfixes</h4>
 <ul>
- <li>[Linux] Fixed Alt+F4 not getting triggered in window mode (<a href="https://github.com/LaurentGomila/SFML/issues/274">#274</a>)</li>
  <li>Fixed glXSwapIntervalSGI being broken for some driver implementations (<a href="https://github.com/LaurentGomila/SFML/issues/727">#727</a>, <a href="https://github.com/LaurentGomila/SFML/pull/779">#779</a>)</li>
- <li>[iOS] Fixed various issues including stencil bits, device orientation and retina support (<a href="https://github.com/LaurentGomila/SFML/pull/748">#748</a>)</li>
- <li>[OS X] Fixed typo in JoystickImpl.cpp to prevent a crash (<a href="https://github.com/LaurentGomila/SFML/issues/762">#762</a>, <a href="https://github.com/LaurentGomila/SFML/pull/765">#765</a>)</li>
  <li>Fixed simultaneous context operations causing crashes on some AMD hardware (<a href="https://github.com/LaurentGomila/SFML/issues/778">#778</a>, <a href="https://github.com/LaurentGomila/SFML/pull/779">#779</a>)</li>
- <li>[OS X] Fixed an issue in InputImpl::getSFOpenGLViewFromSFMLWindow (<a href="https://github.com/LaurentGomila/SFML/issues/782">#782</a>, <a href="https://github.com/LaurentGomila/SFML/pull/792">#792</a>)</li>
  <li>Fixed joystick identification (<a href="https://github.com/LaurentGomila/SFML/pull/809">#809</a>, <a href="https://github.com/LaurentGomila/SFML/pull/811">#811</a>)</li>
+ <li>[iOS] Fixed various issues including stencil bits, device orientation and retina support (<a href="https://github.com/LaurentGomila/SFML/pull/748">#748</a>)</li>
+ <li>[Linux] Fixed Alt+F4 not getting triggered in window mode (<a href="https://github.com/LaurentGomila/SFML/issues/274">#274</a>)</li>
+ <li>[Linux] Fixed Unix joystick stuff (<a href="https://github.com/LaurentGomila/SFML/pull/838">#838</a>)</li>
+ <li>[OS X] Fixed typo in JoystickImpl.cpp to prevent a crash (<a href="https://github.com/LaurentGomila/SFML/issues/762">#762</a>, <a href="https://github.com/LaurentGomila/SFML/pull/765">#765</a>)</li>
+ <li>[OS X] Fixed an issue in InputImpl::getSFOpenGLViewFromSFMLWindow (<a href="https://github.com/LaurentGomila/SFML/issues/782">#782</a>, <a href="https://github.com/LaurentGomila/SFML/pull/792">#792</a>)</li>
 </ul>
 
 <h3 id="2.3-graphics"><a class="h3-link" href="#2.3-graphics">Graphics</a></h3>
@@ -73,11 +67,14 @@
  <li>Added a new constructor to sf::Color that takes an sf::Uint32 (<a href="https://github.com/LaurentGomila/SFML/pull/722">#722</a>)</li>
  <li>Updated stb_image to v2.02 (<a href="https://github.com/LaurentGomila/SFML/pull/777">#777</a>)</li>
  <li>Updated FreeType to v2.5.5 (<a href="https://github.com/LaurentGomila/SFML/issues/799">#799</a>, <a href="https://github.com/LaurentGomila/SFML/pull/804">#804</a>)</li>
+ <li>Added checks for software OpenGL (<a href="https://github.com/LaurentGomila/SFML/pull/870">#870</a>)</li>
 </ul>
 
 <h4>Bugfixes</h4>
 <ul>
- <li></li>
+ <li>Fixed GL_ARB_compatibility not being detected (<a href="https://github.com/LaurentGomila/SFML/pull/859">#859</a>)</li>
+ <li>Fixed pixel format selection (<a href="https://github.com/LaurentGomila/SFML/pull/862">#862</a>)</li>
+ <li>Bumped back the OpenGL version requirement to 1.1 (<a href="https://github.com/LaurentGomila/SFML/pull/858">#858</a>)</li>
 </ul>
 
 <h3 id="2.3-audio"><a class="h3-link" href="#2.3-aduio">Audio</a></h3>
@@ -94,11 +91,6 @@
 </ul>
 
 <h3 id="2.3-network"><a class="h3-link" href="#2.3-network">Network</a></h3>
-<h4>Features</h4>
-<ul>
- <li></li>
-</ul>
-
 <h4>Bugfixes</h4>
 <ul>
  <li>Fixed sf::TcpSocket not handling partial sends properly (<a href="https://github.com/LaurentGomila/SFML/issues/749">#749</a>, <a href="https://github.com/LaurentGomila/SFML/pull/796">#796</a>)</li>
@@ -154,7 +146,7 @@
 <ul>
  <li>Added window methods to request and to check focus (<a href="https://github.com/LaurentGomila/SFML/issues/518">#518</a>, <a href="https://github.com/LaurentGomila/SFML/pull/525">#525</a>, <a href="https://github.com/LaurentGomila/SFML/pull/613">#613</a>, <a href="https://github.com/LaurentGomila/SFML/pull/723">#723</a>, <a href="https://github.com/LaurentGomila/SFML/pull/735">#735</a>)</li>
  <li>Provide name, manufacturer ID and product ID via <code>sf::Joystick</code> (<a href="https://github.com/LaurentGomila/SFML/issues/152">#152</a>, <a href="https://github.com/LaurentGomila/SFML/pull/528">#528</a>)</li>
- <li>[FreeBDS] Joystick support (<a href="https://github.com/LaurentGomila/SFML/issues/477">#477</a>)</li>
+ <li>[FreeBSD] Joystick support (<a href="https://github.com/LaurentGomila/SFML/issues/477">#477</a>)</li>
  <li>[OS X] Improved integration with menus and dock actions (<a href="https://github.com/LaurentGomila/SFML/issues/11">#11</a>)</li>
  <li>[OS X] Support for OpenGL 3.2 (<a href="https://github.com/LaurentGomila/SFML/issues/84">#84</a>)</li>
  <li>[OS X] Improved fullscreen support (<a href="https://github.com/LaurentGomila/SFML/issues/343">#343</a>)</li>
