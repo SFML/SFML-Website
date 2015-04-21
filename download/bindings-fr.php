@@ -41,6 +41,12 @@
             <td><a href="mailto:laurent@sfml-dev.org">Laurent Gomila</a></td>
         </tr>
         <tr>
+            <th rowspan="1">Crystal</th>
+            <td><a href="https://github.com/BlaXpirit/crsfml" class="website">CrSFML</a></td>
+            <td>2.2</td>
+            <td><a href="mailto:blaxpirit@gmail.com">Oleh Prypin</a></td>
+        </tr>
+        <tr>
             <th rowspan="2">D</th>
             <td><a href="https://github.com/DerelictOrg/DerelictSFML2" class="website">DerelictSFML2</a></td>
             <td>2.1</td>
