@@ -313,7 +313,7 @@ udpSocket.setBlocking(false);
 <p class="important">
     When using <code>sf::TcpSocket</code> in non-blocking mode, calls to <code>send</code> are not guaranteed to actually send all the data you pass to it, whether it be
     as a <code>sf::Packet</code> or as raw data. Starting from SFML 2.3, when sending raw data over a non-blocking <code>sf::TcpSocket</code>, always make sure to use the
-    <code>send(const void* data, std::size_t size, std::size_t& sent)</code> overload which returns the number of bytes actually sent in the <code>sent</code> reference
+    <code>send(const void* data, std::size_t size, std::size_t&amp; sent)</code> overload which returns the number of bytes actually sent in the <code>sent</code> reference
     parameter after the function returns. Regardless of whether you send <code>sf::Packet</code>s or raw data, if only a part of the data was sent in the call, the return
     status will be <code>sf::Socket::Partial</code> to indicate a partial send. <em>If <code>sf::Socket::Partial</code> is returned, you must make sure to handle the partial
     send properly or else data corruption will occur.</em> When sending raw data, you must reattempt sending the raw data at the byte offset where the previous <code>send</code>

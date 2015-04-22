@@ -326,6 +326,18 @@ udpSocket.setBlocking(false);
     Les sockets non-bloquantes sont la solution la plus simple à mettre en oeuvre si vous avez déjà une boucle de jeu qui tourne régulièrement. Vous pouvez de cette manière
     vérifier si quoique ce soit est arrivé sur vos sockets à chaque itération de la boucle principale, sans bloquer l'exécution du programme.
 </p>
+<p class="important">
+    Lorsque vous utilisez <code>sf::TcpSocket</code> en mode non-bloquant, rien ne garantit que les appels à <code>send</code> envoient la totalité des données que vous
+    leur passez, qu'il s'agisse de données brutes ou bien de <code>sf::Packet</code>. A partir de SFML 2.3, lorsque vous envoyez des données brutes via une <code>sf::TcpSocket</code>
+    non-bloquante, assurez-vous de toujours utiliser la surcharge <code>send(const void* data, std::size_t size, std::size_t&amp; sent)</code>, qui renvoie le nombre
+    d'octets réellement envoyés via le paramètre <code>sent</code>. Que ce soit un <code>sf::Packet</code> ou des données brutes, si uniquement une partie des données
+    a pu être envoyée lors de l'appel, le code de retour sera <code>sf::Socket::Partial</code> pour indiquer un envoi partiel. <em>Lorsque <code>sf::Socket::Partial</code>
+    est renvoyé, vous devez gérer vous-même correctement le reste de l'envoi, sans quoi les données seront susceptibles d'être corrompues.</em> Lorsque vous envoyez
+    des données brutes, vous devez essayer à nouveau d'envoyer les données à partir de l'octet auquel l'appel précédent à <code>send</code> s'est arrêté. Lorsque vous
+    envoyez un <code>sf::Packet</code>, la position est sauvegardée directement dans celui-ci ; dans ce cas, vous devez juste réessayer d'envoyer <em>exactement
+    le même paquet inchangé</em> encore et encore, jusqu'à ce qu'un autre code que <code>sf::Socket::Partial</code> soit renvoyé. Construire une nouvelle instance de
+    <code>sf::Packet</code> et la remplir avec les mêmes données ne fonctionnera pas, cela doit impérativement être la même instance qui avait été précédemment envoyée.
+</p>
 
 <?php
 
