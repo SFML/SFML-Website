@@ -37,7 +37,7 @@
 
 <h3>Sources actuelles</h3>
 <p>
-    Le dépôt de CSFML se trouve sur <a href="https://github.com/LaurentGomila/CSFML" title="Dépôt de CSFML sur github">github.com</a>. Depuis ce dépôt, vous pouvez
+    Le dépôt de CSFML se trouve sur <a href="https://github.com/SFML/CSFML" title="Dépôt de CSFML sur github">github.com</a>. Depuis ce dépôt, vous pouvez
     télécharger un instantané des toutes dernières sources. Vous pouvez aussi consulter les tâches ou bugs en cours sur le tracker, ainsi qu'en ajouter de nouveaux.
 </p>
 

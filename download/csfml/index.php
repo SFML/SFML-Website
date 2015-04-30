@@ -37,7 +37,7 @@
 
 <h3>Current sources</h3>
 <p>
-    The CSFML repository can be found at <a href="https://github.com/LaurentGomila/CSFML" title="CSFML repository on github">github.com</a>. From there, you can download
+    The CSFML repository can be found at <a href="https://github.com/SFML/CSFML" title="CSFML repository on github">github.com</a>. From there, you can download
     the current source code. You can also watch the open issues on the task tracker, or add new ones.
 </p>
 

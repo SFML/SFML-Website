@@ -43,7 +43,7 @@
 
 <h3>Current sources</h3>
 <p>
-    The SFML.Net repository can be found at <a href="https://github.com/LaurentGomila/SFML.Net" title="SFML.Net repository on github">github.com</a>. From there, you can download
+    The SFML.Net repository can be found at <a href="https://github.com/SFML/SFML.Net" title="SFML.Net repository on github">github.com</a>. From there, you can download
     the current source code (which contain the sources of the examples). You can also watch the open issues on the task tracker, or add new ones.
 </p>
 

@@ -46,7 +46,7 @@
 
 <h3>Sources actuelles</h3>
 <p>
-    Le dépôt de SFML.Net se trouve sur <a href="https://github.com/LaurentGomila/SFML.Net" title="Dépôt de SFML.Net sur github">github.com</a>. Depuis ce dépôt, vous pouvez
+    Le dépôt de SFML.Net se trouve sur <a href="https://github.com/SFML/SFML.Net" title="Dépôt de SFML.Net sur github">github.com</a>. Depuis ce dépôt, vous pouvez
     télécharger un instantané des toutes dernières sources (contenant notamment le code des exemples). Vous pouvez aussi consulter les tâches ou bugs en cours sur le tracker,
     ainsi qu'en ajouter de nouveaux.
 </p>
