@@ -25,10 +25,10 @@
 
 <div class="home-section">
     <div class="column">
-        <a href="https://github.com/LaurentGomila/SFML/wiki" title="Go to the wiki"><img src="<?php echo image('community/wiki.png') ?>" alt="Wiki" /></a>
+        <a href="https://github.com/SFML/SFML/wiki" title="Go to the wiki"><img src="<?php echo image('community/wiki.png') ?>" alt="Wiki" /></a>
     </div>
     <div class="column">
-        <div class="title">&raquo; <a href="https://github.com/LaurentGomila/SFML/wiki" title="Go to the wiki">Wiki</a></div>
+        <div class="title">&raquo; <a href="https://github.com/SFML/SFML/wiki" title="Go to the wiki">Wiki</a></div>
         <p>
             The SFML community wiki contains code snippets, tutorials and other community-contributed content.
         </p>

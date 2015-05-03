@@ -51,8 +51,8 @@
 <h3 id="reporting-bugs"><a class="h3-link" href="#reporting-bugs">Reporting bugs</a></h3>
 <ol>
  <li>Make sure it is really a bug and not a misunderstanding of what SFML is supposed to do. Check the <a href="documentation/2.2/">documentation</a> again to be sure.</li>
- <li>Make sure the bug has not already been reported. Check <a href="https://github.com/LaurentGomila/SFML/issues?q=">the GitHub issues</a> and <a href="http://en.sfml-dev.org/forums/index.php?action=search">the forum</a>.</li>
- <li>Use the <a href="https://github.com/LaurentGomila/SFML">latest revision</a> from GitHub and check if the bug has not already been fixed. Refer to the <a href="tutorials/2.2/compile-with-cmake.php">official tutorial</a> for information on how to build SFML yourself.</li>
+ <li>Make sure the bug has not already been reported. Check <a href="https://github.com/SFML/SFML/issues?q=">the GitHub issues</a> and <a href="http://en.sfml-dev.org/forums/index.php?action=search">the forum</a>.</li>
+ <li>Use the <a href="https://github.com/SFML/SFML">latest revision</a> from GitHub and check if the bug has not already been fixed. Refer to the <a href="tutorials/2.2/compile-with-cmake.php">official tutorial</a> for information on how to build SFML yourself.</li>
  <li>Open a new thread on the <a href="http://en.sfml-dev.org/forums/">forum</a> in the appropriate help board and give the following information:
   <ul>
    <li><a href="http://en.sfml-dev.org/forums/index.php?topic=5559.msg36368#msg36368">A minimal and complete code example</a> that reproduces the bug as you are experiencing it.</li>
@@ -76,7 +76,7 @@
 <p>In general code is only accepted when a proper GitHub issue already exists (usually preceded by a forum discussion). Make sure that nobody else is already working on an issue, or simply offer help and wait for a response.</p>
 <p>Patches are accepted through GitHub pull requests. These are the steps required to send in such a request:</p>
 <ol>
- <li><a href="https://github.com/LaurentGomila/SFML/fork">Fork SFML</a>.</li>
+ <li><a href="https://github.com/SFML/SFML/fork">Fork SFML</a>.</li>
  <li>Commit your changes and push them to your forked repository.</li>
  <li>Create a <a href="https://help.github.com/articles/creating-a-pull-request">pull request</a> that targets the <em>master</em> branch.</li>
 </ol>

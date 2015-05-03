@@ -24,8 +24,8 @@
 
  <h2>Vous pensez avoir trouvé un bug dans SFML</h2>
  <ol>
-  <li>Vérifiez que le bug ne soit pas déjà connu en consultant <a href="https://github.com/LaurentGomila/SFML/issues?q=">GitHub</a>, <a href="http://fr.sfml-dev.org/forums/index.php?action=search">le forum</a> et si possible <a href="http://en.sfml-dev.org/forums/index.php?action=search">sa version anglophone</a> aussi.</li>
-  <li>Installez les <a href="https://github.com/LaurentGomila/SFML">dernière sources</a> depuis GitHub et vérifiez que le problème ne soit pas déjà corrigé. Voir le <a href="tutorials/2.2/compile-with-cmake-fr.php">tutoriel officiel</a>.</li>
+  <li>Vérifiez que le bug ne soit pas déjà connu en consultant <a href="https://github.com/SFML/SFML/issues?q=">GitHub</a>, <a href="http://fr.sfml-dev.org/forums/index.php?action=search">le forum</a> et si possible <a href="http://en.sfml-dev.org/forums/index.php?action=search">sa version anglophone</a> aussi.</li>
+  <li>Installez les <a href="https://github.com/SFML/SFML">dernière sources</a> depuis GitHub et vérifiez que le problème ne soit pas déjà corrigé. Voir le <a href="tutorials/2.2/compile-with-cmake-fr.php">tutoriel officiel</a>.</li>
   <li>Ouvrez un nouveau fil de discussion sur le <a href="http://fr.sfml-dev.org/forums/">forum</a> dans la rubrique d'aide appropriée, et donnez les informations suivantes :
    <ul>
     <li><a href="http://en.sfml-dev.org/forums/index.php?topic=5559.msg36368#msg36368">Un code minimal et complet</a> qui fait apparaître le bug.</li>
@@ -37,7 +37,7 @@
   </li>
  </ol>
  <a class="box" href="http://fr.sfml-dev.org/forums/index.php#c7"><div class="title" title="Aller au forum.">Rapport de bug</div></a>
- <a class="box" href="https://github.com/LaurentGomila/SFML/issues?q="><div class="title" title="Aller à la liste de tâches / bugs.">Liste de tâches et de bugs <img src="../images/icons/flag-en.png" alt="EN"></div></a>
+ <a class="box" href="https://github.com/SFML/SFML/issues?q="><div class="title" title="Aller à la liste de tâches / bugs.">Liste de tâches et de bugs <img src="../images/icons/flag-en.png" alt="EN"></div></a>
 </div>
 
 <?php

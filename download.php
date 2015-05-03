@@ -23,7 +23,7 @@
 </div>
 
 <div class="link-box two-columns-right">
-    <a class="repository" href="https://github.com/LaurentGomila/SFML">
+    <a class="repository" href="https://github.com/SFML/SFML">
         <div class="title">Git repository</div>
         <div class="description">GitHub.com</div>
     </a>

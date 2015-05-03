@@ -140,9 +140,9 @@
   <li><a href="#lic-pay">Do I have to pay any license fees or royalties?</a></li>
  </ul>
 
- <p><strong><a href="https://github.com/LaurentGomila/SFML/wiki/Community-FAQ#libraries">Libraries for SFML</a> (Community FAQ)</strong></p>
+ <p><strong><a href="https://github.com/SFML/SFML/wiki/Community-FAQ#libraries">Libraries for SFML</a> (Community FAQ)</strong></p>
 
- <p><strong><a href="https://github.com/LaurentGomila/SFML/wiki/Community-FAQ#misc">Miscellaneous</a> (Community FAQ)</strong></p>
+ <p><strong><a href="https://github.com/SFML/SFML/wiki/Community-FAQ#misc">Miscellaneous</a> (Community FAQ)</strong></p>
 
  <h2 id="general"><a class="h2-link" href="#general">General</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
  
@@ -340,7 +340,7 @@
    </ul>
   </li>
  </ul>
- <p><em>Note:</em> For Windows all dependencies can be found in the <a href="https://github.com/LaurentGomila/SFML/tree/master/extlibs">extlibs</a> directory.</p>
+ <p><em>Note:</em> For Windows all dependencies can be found in the <a href="https://github.com/SFML/SFML/tree/master/extlibs">extlibs</a> directory.</p>
  <p><strong>Example</strong></p>
  <p>Here's a diagram showing how the static linking should look like.</p>
  <pre><code> sfml-window-s  sfml-system-s  opengl  winmm  gdi32
@@ -374,7 +374,7 @@ But keep in mind that not all variants of each format are supported.</p>
  <p>This may happen due to many reasons, some may depend on the code and circumstances, but a possible bottleneck is the amount of draw calls. When using a lot of <code>sf::Sprites</code> you need to make an equal amount of draw calls to make them show. </p>
  <p>As each draw call changes the render target, it can become slow to modify it in n-amount of loops and calls when it would be most efficient to do it in just one. The reason SFML doesn't work like this is, that it would limit what you can do with <code>sf::Sprite</code> and would force the usage of a single texture in cases where this might not be desirable or even possible due to GPU limitations.</p>
  <p>In order to raise FPS in this circumstance there is no choice other than using bare <code>sf::Vertex</code>/<code>sf::VertexArray</code> or finding another way to achieve the same effect. These on their own however won't be magical and a wrapper will most likely help do the desired render in a nice looking notation.</p>
- <p>In the <a href="https://github.com/LaurentGomila/SFML/wiki/Sources">SFML Wiki Source Codes</a> section you can find some classes used for fast rendering in some cases such as Tile-Map renderers or containers for transformable sprites that use the same texture.</p>
+ <p>In the <a href="https://github.com/SFML/SFML/wiki/Sources">SFML Wiki Source Codes</a> section you can find some classes used for fast rendering in some cases such as Tile-Map renderers or containers for transformable sprites that use the same texture.</p>
 
  <h3 id="graphics-vsync-framelimit"><a class="h3-link" href="#graphics-vsync-framelimit">Should I use VSync, window.setFramerateLimit or something else?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>It really depends on what you are trying to achieve. In a broader sense, both enabling vertical synchronization and limiting the framerate achieve the same results, however, the devil is in the details.</p>

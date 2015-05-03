@@ -25,8 +25,8 @@
  <h2>You think you found a bug in SFML</h2>
  <ol>
   <li>Make sure it is really a bug and not a misunderstanding of what SFML is supposed to do. Check the <a href="documentation/2.2/">documentation</a> again to be sure.</li>
-  <li>Make sure the bug has not already been reported. Check <a href="https://github.com/LaurentGomila/SFML/issues?q=">the GitHub issues</a> and <a href="http://en.sfml-dev.org/forums/index.php?action=search">the forum</a>.</li>
-  <li>Use the <a href="https://github.com/LaurentGomila/SFML">latest revision</a> from GitHub and check if the bug has not already been fixed. Refer to the <a href="tutorials/2.2/compile-with-cmake.php">official tutorial</a> for information on how to build SFML yourself.</li>
+  <li>Make sure the bug has not already been reported. Check <a href="https://github.com/SFML/SFML/issues?q=">the GitHub issues</a> and <a href="http://en.sfml-dev.org/forums/index.php?action=search">the forum</a>.</li>
+  <li>Use the <a href="https://github.com/SFML/SFML">latest revision</a> from GitHub and check if the bug has not already been fixed. Refer to the <a href="tutorials/2.2/compile-with-cmake.php">official tutorial</a> for information on how to build SFML yourself.</li>
   <li>Open a new thread on the <a href="http://en.sfml-dev.org/forums/">forum</a> in the appropriate help board and give the following information:
    <ul>
     <li><a href="http://en.sfml-dev.org/forums/index.php?topic=5559.msg36368#msg36368">A minimal and complete code example</a> that reproduces the bug as you are experiencing it.</li>
@@ -38,7 +38,7 @@
   </li>
  </ol>
  <a class="box" href="http://en.sfml-dev.org/forums/index.php#c3"><div class="title" title="Go to the forum.">Bug Report</div></a>
- <a class="box" href="https://github.com/LaurentGomila/SFML/issues?q="><div class="title" title="Go to the issue tracker.">Issue Tracker</div></a>
+ <a class="box" href="https://github.com/SFML/SFML/issues?q="><div class="title" title="Go to the issue tracker.">Issue Tracker</div></a>
 </div>
 
 <?php

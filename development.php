@@ -10,7 +10,7 @@
  <h1>Development</h1>
 
  <div class="link-box two-columns-left">
-  <a class="repository" href="https://github.com/LaurentGomila/SFML">
+  <a class="repository" href="https://github.com/SFML/SFML">
    <div class="title">Repository</div>
    <div class="description">Browse @ github.com</div>
   </a>
