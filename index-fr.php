@@ -5,9 +5,9 @@
 
 <h1>Simple and Fast Multimedia Library</h1>
 
-<!--<div class="news">
-    <strong>SFML 2.1</strong> est sortie</a>
-</div>-->
+<div class="news">
+    &nbsp;&nbsp;&nbsp;&nbsp;Utilisez le code <strong>sfgde50</strong> pour obtenir <strong>50%</strong> de réduction pour les <a href="learn-fr.php">e-books sur SFML</a> publiés par Packt
+</div>
 
 <div class="home-section">
     <div class="column">
