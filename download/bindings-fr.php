@@ -93,6 +93,12 @@
             <td>Florent Monnier</td>
         </tr>
         <tr>
+            <th rowspan="1">Pascal</th>
+            <td><a href="https://github.com/CWBudde/PasSfml" class="website">PasSfml</a></td>
+            <td>2.2</td>
+            <td>Christian-W. Budde</td>
+        </tr>
+        <tr>
             <th rowspan="1">Python</th>
             <td><a href="http://www.python-sfml.org/" class="website"><img src="../images/bindings/python-sfml.png" alt="pySFML"></a></td>
             <td>2.2</td>
