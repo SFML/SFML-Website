@@ -92,7 +92,7 @@
     </li>
     <li>
         SFML dependencies<br />
-        SFML only depends on two external libraries on Mac OS X. Copy <tt>freetype.framework</tt> from <tt>extlibs</tt> to <tt>/Library/Frameworks</tt>.
+        SFML only depends on two external libraries on Mac OS X. Copy the content of <tt>extlibs</tt> to <tt>/Library/Frameworks</tt>.
     </li>
     <li>
         Xcode templates<br />
