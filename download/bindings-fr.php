@@ -76,6 +76,12 @@
             <td><a href="mailto:pdinklag@gmail.com">Patrick Dinklage</a></td>
         </tr>
         <tr>
+            <th rowspan="1">Julia</th>
+            <td><a href="https://github.com/zyedidia/SFML.jl" class="website"><img src="../images/bindings/sfml.jl.png" alt="SFML.jl"/></a></td>
+            <td>2.2</td>
+            <td>Zachary Yedidia</td>
+        </tr>
+        <tr>
             <th rowspan="1">Nim</th>
             <td><a href="https://github.com/BlaXpirit/nim-csfml" class="website">nim-csfml</a></td>
             <td>2.2</td>
