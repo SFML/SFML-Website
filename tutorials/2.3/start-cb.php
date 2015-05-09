@@ -132,7 +132,6 @@
             <td><ul>
                 <li>sfml-window-s</li>
                 <li>sfml-system-s</li>
-                <li>glew</li>
                 <li>freetype</li>
                 <li>jpeg</li>
                 <li>opengl32</li>

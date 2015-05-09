@@ -124,7 +124,6 @@
             <td><ul>
                 <li>sfml-window-s.lib</li>
                 <li>sfml-system-s.lib</li>
-                <li>glew.lib</li>
                 <li>freetype.lib</li>
                 <li>jpeg.lib</li>
                 <li>opengl32.lib</li>
