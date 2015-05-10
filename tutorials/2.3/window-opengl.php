@@ -26,18 +26,15 @@
 <pre><code class="cpp">#include &lt;SFML/OpenGL.hpp&gt;
 </code></pre>
 <p>
-    This header includes OpenGL and GLU functions, and nothing else. People sometimes think that SFML automatically includes GLEW (a library which manages
-    OpenGL extensions) because SFML uses GLEW internally, but it's only an implementation detail. From the user's point of view, GLEW must be handled like
-    any other external library.
+    This header includes OpenGL functions, and nothing else. People sometimes think that SFML automatically includes OpenGL extension headers because SFML loads
+    extensions itself, but it's an implementation detail. From the user's point of view, OpenGL extension loading must be handled like any other external library.
 </p>
 <p>
     You will then need to link your program to the OpenGL library. Unlike what it does with the headers, SFML can't provide a unified way of linking
     OpenGL. Therefore, you need to know which library to link to according to what operating system you're using ("opengl32" on Windows, "GL" on Linux, etc.).
-    The same applies for GLU as well in case you plan on using it too: "glu32" on Windows, "GLU" on Linux, etc.
 </p>
 <p class="important">
-    OpenGL functions start with the "gl" prefix, GLU functions start with the "glu" prefix. Remember this when you get linker errors, this will help you
-    find which library you forgot to link.
+    OpenGL functions start with the "gl" prefix. Remember this when you get linker errors, it will help you find which library you forgot to link.
 </p>
 
 <?php h2('Creating an OpenGL window') ?>
@@ -83,14 +80,12 @@ std::cout &lt;&lt; "antialiasing level:" &lt;&lt; settings.antialiasingLevel &lt
 std::cout &lt;&lt; "version:" &lt;&lt; settings.majorVersion &lt;&lt; "." &lt;&lt; settings.minorVersion &lt;&lt; std::endl;
 </code></pre>
 <p class="important">
-    OpenGL versions above 3.0 are supported by SFML (as long as your graphics driver can handle them), but you can't set flags for now. This means that you
-    can't create debug or forward compatible contexts; in fact SFML automatically creates contexts with the "compatibility" flag, because it uses
-    deprecated functions internally. This should be improved soon, and flags will then be exposed in the public API.
-</p>
-
-<p class="important">
-    On OS X SFML supports creating OpenGL 3.2 contexts using the core profile. However, keep in mind that those contexts are not compatible with the graphics module of SFML.
-    If you want to use the graphics module you have to keep using the default context version which is 2.1.
+    OpenGL versions above 3.0 are supported by SFML (as long as your graphics driver can handle them). Support for selecting the profile of 3.2+
+    contexts and whether the context debug flag is set was added in SFML 2.3. The forward compatibility flag is not supported. By default, SFML
+    creates 3.2+ contexts using the compatibility profile because the graphics module makes use of legacy OpenGL functionality. If you intend on
+    using the graphics module, make sure to create your context without the core profile setting or the graphics module will not function correctly.
+    On OS X, SFML supports creating OpenGL 3.2+ contexts using the core profile only. If you want to use the graphics module on OS X, you are limited
+    to using a legacy context which implies OpenGL version 2.1.
 </p>
 
 <?php h2('A typical OpenGL-with-SFML program') ?>
