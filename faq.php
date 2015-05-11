@@ -151,7 +151,7 @@
  <!--p>You can find a more specific presentation of its features on <a href="features.php">this page</a>.</p//-->
 
  <h3 id="grl-platforms"><a class="h3-link" href="#grl-platforms">On which platforms is SFML currently available?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>SFML 2.2 is currently available and fully functional on Windows (8, 7, Vista, XP), Linux and Mac OS X. SFML works on both 32 and 64 bit systems. If older Windows versions need to be support, it should be possible to use SFML 2.0 instead (see <a href="https://github.com/SFML/SFML/commit/cd68d662043c2305990d1b6b559b0138bd77af14">the commit</a> for removal of Windows 9x and similar). With SFML 2.2 there is also experimental support for iOS and Android.</p>
+ <p>SFML 2.3 is currently available and fully functional on Windows (8, 7, Vista, XP), Linux and Mac OS X. SFML works on both 32 and 64 bit systems. If older Windows versions need to be supported, it should be possible to use SFML 2.0 instead (see <a href="https://github.com/SFML/SFML/commit/cd68d662043c2305990d1b6b559b0138bd77af14">the commit</a> for removal of Windows 9x and similar). Since SFML 2.2, there has also been experimental support for iOS and Android.</p>
 
  <h3 id="grl-languages"><a class="h3-link" href="#grl-languages">Which programming languages are supported by SFML?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>SFML is implemented in C++. That said, several <a href="download/bindings.php">bindings</a> have been created for other languages that allow SFML to be used from C, C#, C++/CLI, D, Ruby, OCaml, Java, Python and VB.NET.</p>
@@ -165,19 +165,22 @@
   <li>opengl</li>
   <li>xlib</li>
   <li>xcb</li>
+  <li>x11-xcb</li>
+  <li>xcb-randr</li>
+  <li>xcb-image</li>
   <li>xrandr</li>
   <li>udev</li>
   <li>freetype</li>
-  <li>glew</li>
   <li>jpeg</li>
-  <li>sndfile</li>
   <li>openal</li>
+  <li>flac</li>
+  <li>vorbis</li>
  </ul>
  <p>The exact name of the packages depend on each distribution. And don't forget to install the development version of these packages.</p>
  <p>SFML has also internal dependencies: Audio and Window depend on System, while Graphics depends on System and Window. In order to use the Graphics module, you must link with Graphics, Window, and System (the order of linkage matters with GCC).</p>
 
  <h3 id="grl-version"><a class="h3-link" href="#grl-version">What version of SFML should I use?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>Go for SFML 2.2, because you'll get a stable release with the latest features and bugfixes. As such it will save you a lot of headaches because other versions such as 1.6 are not maintained anymore, contain quite a few critical bugs and lack a lot of useful features.</p>
+ <p>Go for SFML 2.3, because you'll get a stable release with the latest features and bugfixes. As such it will save you a lot of headaches because other versions such as 1.6 are not maintained anymore, contain quite a few critical bugs and lack a lot of useful features.</p>
 
  <h3 id="grl-changes"><a class="h3-link" href="#grl-changes">Is there a complete list with all the changes from SFML 1.6 to SFML 2.x?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>This non-exhaustive list can be used as a starting point: <a href="http://en.sfml-dev.org/forums/index.php?topic=5343.0">SFML Forum</a><br>
@@ -315,7 +318,8 @@
    sfml-audio
    <ul>
     <li>openal32</li>
-    <li>sndfile</li>
+    <li>flac</li>
+    <li>vorbis</li>
     <li>sfml-system</li>
    </ul>
   </li>
@@ -332,7 +336,6 @@
    sfml-graphics
    <ul>
     <li>freetype</li>
-    <li>glew</li>
     <li>jpeg</li>
     <li>opengl32</li>
     <li>sfml-window</li>
@@ -462,7 +465,7 @@ while( window.isOpen() ) {
  <h2 id="audio"><a class="h2-link" href="#audio">SFML Audio</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 
  <h3 id="audio-formats"><a class="h3-link" href="#audio-formats">What audio formats does SFML support?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>In addition to the formats supported by <a href="http://www.mega-nerd.com/libsndfile/#Features">libsndfile</a> (wav, flac, aiff, au, raw, paf, svx, nist, voc, ircam, w64, mat4, mat5 pvf, htk, sds, avr, sd2, caf, wve, mpc2k, rf64) the Audio module is also capable of playing ogg files.<br>
+ <p>The Audio module is capable of playing wav, ogg/vorbis and flac files.<br>
  Unfortunately MP3 is covered by a license from Thompson Multimedia and thus support for it is not included in SFML. For more information regarding the MP3 license, see <a href="http://www.mp3licensing.com">http://www.mp3licensing.com</a>.</p>
 
  <h3 id="audio-sound-problem"><a class="h3-link" href="#audio-sound-problem">Why can't I hear any sound?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
@@ -692,7 +695,7 @@ std::size_t pos = cpp_string.find( sfml_string );</code></pre>
 
  <h3 id="tr-grl-i-found-a-bug"><a class="h3-link" href="#tr-grl-i-found-a-bug">I found a bug!</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>Most of the time any unexpected behavior is a result of misunderstanding how to use SFML. Out of many bug reports only few of them turn out to be real bugs <strong>which are caused by SFML itself and nothing else</strong>.</p>
- <p>If you think you have found a bug and are still using SFML 1.6, note that support for 1.6 had ceased long ago. It is highly recommended to upgrade to 2.0. Any bug reports made for SFML 1.6 will be ignored unless they were carried over to 2.0 as well, however this is very unlikely. If you are using 2.0, try using the latest <a href="http://en.sfml-dev.org/forums/index.php?topic=9513.0">nightly build</a>. There are many things that have already been fixed between the RC which is available on the site and the latest development version.</p>
+ <p>If you think you have found a bug and are still using SFML 1.6, note that support for 1.6 had ceased long ago. It is highly recommended to upgrade to 2.3. Any bug reports made for SFML 1.6 will be ignored unless they were carried over to 2.3 as well, however this is very unlikely. If you are using 2.3, try building the latest master revision available on GitHub. There are many things that might have already been fixed between the release which is available on the site and the latest development version.</p>
  <p>If the bug is still present in the latest SFML version, try to produce a <a href="#tr-grl-minimal">minimal compilable code example</a> that displays the bug and nothing else. That way the developers and others can focus on why it is occurring.</p>
  <p>If you can reproduce what you think is a bug, if you have another computer at your disposal, try to run it there as well. If the bug does not occur there, try to reconfigure the corresponding hardware/software settings on the first PC. A lot of strange behavior is a result of misconfigured/faulty software/drivers. <strong>WARNING: Trying to report a bug that is a result of the usage of beta drivers is not a good idea. The source of the problem does not lie within the responsibility of the SFML developers and as such they can't do much to fix it themselves.</strong></p>
  <p>When you are sure that the bug is a result of SFML internals and is platform independent, you can go ahead and post in the forum of the package in question, and don't forget to provide a precise description of your problem, the version of SFML you're using, your system configuration, and the compilable code, and if the situation requires, the logs of your compiler and/or linker. Also make sure that the bug hasn't already been reported (use the <a href="http://en.sfml-dev.org/forums/index.php?action=search">search function</a>), confirmed (look on the <a href="https://github.com/SFML/SFML/issues?page=1&amp;state=open">issue tracker</a>) or even resolved in the latest source (check also the <a href="https://github.com/SFML/SFML/issues?page=1&amp;state=closed">closed issues</a>).</p>
@@ -744,7 +747,7 @@ int main() {
 
  <h3 id="tr-cb-linker"><a class="h3-link" href="#tr-cb-linker">I'm getting linker errors.</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>With GCC based compilers such as MinGW you must link the libraries in a precise order: if libX depends on libY, libX MUST be linked before libY. For example, if you use the Graphics and Audio modules, the correct linking order would be the following: sfml-audio, sfml-graphics, sfml-window, sfml-system.</p>
- <p>If you use the dynamic versions of the SFML 1.6 libraries, you must also define the SFML_DYNAMIC symbol in the options for your project. If you use the static version of the SFML 2.0 libraries, you must also define the SFML_STATIC symbol in the options for your project. For more details, see the installation tutorial for Code::Blocks.</p>
+ <p>If you use the dynamic versions of the SFML 1.6 libraries, you must also define the SFML_DYNAMIC symbol in the options for your project. If you use the static version of the SFML 2.3 libraries, you must also define the SFML_STATIC symbol in the options for your project. <strong>Defining SFML_DYNAMIC no longer has any effect since SFML 2.0.</strong> For more details, see the installation tutorial for Code::Blocks.</p>
 
  <h3 id="tr-vs"><a class="h3-link" href="#tr-vs">Visual Studio</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
 
@@ -784,16 +787,18 @@ int main() {
  <h3 id="tr-lnx-compile"><a class="h3-link" href="#tr-lnx-compile">(Debian) I can't compile the source code.</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>Before anything else, make sure that you've followed the <a href="tutorials/">official tutorial</a> and then check if the following packages have been installed:</p>
  <ul>
-  <li>libgl1-mesa-dev</li>
-  <li>libglu1-mesa-dev</li>
-  <li>libopenal-dev</li>
-  <li>libopenal1-dbg</li>
-  <li>libsndfile1-dev</li>
   <li>libx11-dev</li>
-  <li>libx11-6-dbg</li>
+  <li>libxcb1-dev</li>
+  <li>libx11-xcb-dev</li>
+  <li>libxcb-randr0-dev</li>
+  <li>libxcb-image0-dev</li>
+  <li>libgl1-mesa-dev</li>
+  <li>libudev-dev</li>
   <li>libfreetype6-dev</li>
-  <li>libxrandr-dev</li>
-  <li>libxrandr2-dbg</li>
+  <li>libjpeg-dev</li>
+  <li>libopenal-dev</li>
+  <li>libflac-dev</li>
+  <li>libvorbis-dev</li>
  </ul>
  <p>Though the library names might vary, especially regarding the version number.</p>
 
