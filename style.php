@@ -73,7 +73,7 @@
 
 namespace sf
 {
-class ForwardDeclartions;
+class ForwardDeclarations;
 
 namespace priv
 {
@@ -83,7 +83,7 @@ namespace priv
 ////////////////////////////////////////////////////////////
 class PrivateClass
 {
-}
+};
 
 } // namespace priv
 
@@ -93,7 +93,7 @@ class PrivateClass
 ////////////////////////////////////////////////////////////
 class SFML_..._API PublicClass
 {
-}
+};
 
 ////////////////////////////////////////////////////////////
 /// \brief Short description...
