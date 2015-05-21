@@ -84,7 +84,7 @@
         <tr>
             <th rowspan="1">Nim</th>
             <td><a href="https://github.com/BlaXpirit/nim-csfml" class="website">nim-csfml</a></td>
-            <td>2.2</td>
+            <td>2.3</td>
             <td><a href="mailto:blaxpirit@gmail.com">Oleh Prypin</a></td>
         </tr>
         <tr>
