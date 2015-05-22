@@ -97,9 +97,34 @@
     </thead>
     <tbody>
         <tr class="one">
-            <td><code>sfml-system-s</code></td>
+            <td><code>sfml-graphics-s</code></td>
             <td><ul>
+                <li>sfml-window-s</li>
+                <li>sfml-system-s</li>
+                <li>opengl32</li>
+                <li>freetype</li>
+                <li>jpeg</li>
+            </ul></td>
+        </tr>
+        <tr class="two">
+            <td><code>sfml-window-s</code></td>
+            <td><ul>
+                <li>sfml-system-s</li>
+                <li>opengl32</li>
                 <li>winmm</li>
+                <li>gdi32</li>
+            </ul></td>
+        </tr>
+        <tr class="one">
+            <td><code>sfml-audio-s</code></td>
+            <td><ul>
+                <li>sfml-system-s</li>
+                <li>openal32</li>
+                <li>flac</li>
+                <li>vorbis</li>
+                <li>vorbisenc</li>
+                <li>vorbisfile</li>
+                <li>ogg</li>
             </ul></td>
         </tr>
         <tr class="two">
@@ -110,34 +135,9 @@
             </ul></td>
         </tr>
         <tr class="one">
-            <td><code>sfml-audio-s</code></td>
+            <td><code>sfml-system-s</code></td>
             <td><ul>
-                <li>sfml-system-s</li>
-                <li>flac</li>
-                <li>ogg</li>
-                <li>vorbis</li>
-                <li>vorbisenc</li>
-                <li>vorbisfile</li>
-                <li>openal32</li>
-            </ul></td>
-        </tr>
-        <tr class="two">
-            <td><code>sfml-window-s</code></td>
-            <td><ul>
-                <li>sfml-system-s</li>
-                <li>opengl32</li>
-                <li>gdi32</li>
                 <li>winmm</li>
-            </ul></td>
-        </tr>
-        <tr class="one">
-            <td><code>sfml-graphics-s</code></td>
-            <td><ul>
-                <li>sfml-window-s</li>
-                <li>sfml-system-s</li>
-                <li>freetype</li>
-                <li>jpeg</li>
-                <li>opengl32</li>
             </ul></td>
         </tr>
     </tbody>

@@ -97,16 +97,23 @@
     </thead>
     <tbody>
         <tr class="one">
-            <td><code>sfml-system-s</code></td>
+            <td><code>sfml-graphics-s</code></td>
             <td><ul>
-                <li>winmm</li>
+                <li>sfml-window-s</li>
+                <li>sfml-system-s</li>
+                <li>glew</li>
+                <li>opengl32</li>
+                <li>freetype</li>
+                <li>jpeg</li>
             </ul></td>
         </tr>
         <tr class="two">
-            <td><code>sfml-network-s</code></td>
+            <td><code>sfml-window-s</code></td>
             <td><ul>
                 <li>sfml-system-s</li>
-                <li>ws2_32</li>
+                <li>opengl32</li>
+                <li>winmm</li>
+                <li>gdi32</li>
             </ul></td>
         </tr>
         <tr class="one">
@@ -118,23 +125,16 @@
             </ul></td>
         </tr>
         <tr class="two">
-            <td><code>sfml-window-s</code></td>
+            <td><code>sfml-network-s</code></td>
             <td><ul>
                 <li>sfml-system-s</li>
-                <li>opengl32</li>
-                <li>gdi32</li>
-                <li>winmm</li>
+                <li>ws2_32</li>
             </ul></td>
         </tr>
         <tr class="one">
-            <td><code>sfml-graphics-s</code></td>
+            <td><code>sfml-system-s</code></td>
             <td><ul>
-                <li>sfml-window-s</li>
-                <li>sfml-system-s</li>
-                <li>glew</li>
-                <li>freetype</li>
-                <li>jpeg</li>
-                <li>opengl32</li>
+                <li>winmm</li>
             </ul></td>
         </tr>
     </tbody>

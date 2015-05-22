@@ -302,56 +302,59 @@
  <p><strong>Windows</strong></p>
  <ul>
   <li>
-   sfml-system
-   <ul>
-    <li>winmm</li>
-   </ul>
-  </li>
-  <li>
-   sfml-network
-   <ul>
-    <li>ws2_32</li>
-    <li>sfml-system</li>
-   </ul>
-  </li>
-  <li>
-   sfml-audio
-   <ul>
-    <li>openal32</li>
-    <li>flac</li>
-    <li>vorbis</li>
-    <li>sfml-system</li>
-   </ul>
-  </li>
-  <li>
    sfml-window
    <ul>
+    <li>sfml-system</li>
     <li>opengl32</li>
     <li>winmm</li>
     <li>gdi32</li>
-    <li>sfml-system</li>
    </ul>
   </li>
   <li>
    sfml-graphics
    <ul>
+    <li>sfml-system</li>
+    <li>sfml-window</li>
+    <li>opengl32</li>
     <li>freetype</li>
     <li>jpeg</li>
-    <li>opengl32</li>
-    <li>sfml-window</li>
+   </ul>
+  </li>
+  <li>
+   sfml-audio
+   <ul>
     <li>sfml-system</li>
+    <li>openal32</li>
+    <li>flac</li>
+    <li>vorbis</li>
+    <li>vorbisenc</li>
+    <li>vorbisfile</li>
+    <li>ogg</li>
+   </ul>
+  </li>
+  <li>
+   sfml-network
+   <ul>
+    <li>sfml-system</li>
+    <li>ws2_32</li>
+   </ul>
+  </li>
+  <li>
+   sfml-system
+   <ul>
+    <li>winmm</li>
    </ul>
   </li>
  </ul>
  <p><em>Note:</em> For Windows all dependencies can be found in the <a href="https://github.com/SFML/SFML/tree/master/extlibs">extlibs</a> directory.</p>
  <p><strong>Example</strong></p>
  <p>Here's a diagram showing how the static linking should look like.</p>
- <pre><code> sfml-window-s  sfml-system-s  opengl  winmm  gdi32
-         |         |            |       |      |
-         | +-------+            |       |      |
-         | | +------------------+       |      |
-         | | | +------------------------+      |
-         | | | | +-----------------------------+
+ <pre><code> sfml-window-s  sfml-system-s  opengl32  winmm  gdi32
+         |         |            |         |      |
+         | +-------+            |         |      |
+         | | +------------------+         |      |
+         | | | +--------------------------+      |
+         | | | | +-------------------------------+
          | | | | |
          v v v v v
         example.exe</code></pre>

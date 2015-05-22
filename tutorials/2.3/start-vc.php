@@ -86,9 +86,34 @@
     </thead>
     <tbody>
         <tr class="one">
-            <td><code>sfml-system-s.lib</code></td>
+            <td><code>sfml-graphics-s.lib</code></td>
             <td><ul>
+                <li>sfml-window-s.lib</li>
+                <li>sfml-system-s.lib</li>
+                <li>opengl32.lib</li>
+                <li>freetype.lib</li>
+                <li>jpeg.lib</li>
+            </ul></td>
+        </tr>
+        <tr class="two">
+            <td><code>sfml-window-s.lib</code></td>
+            <td><ul>
+                <li>sfml-system-s.lib</li>
+                <li>opengl32.lib</li>
                 <li>winmm.lib</li>
+                <li>gdi32.lib</li>
+            </ul></td>
+        </tr>
+        <tr class="one">
+            <td><code>sfml-audio-s.lib</code></td>
+            <td><ul>
+                <li>sfml-system-s.lib</li>
+                <li>openal32.lib</li>
+                <li>flac.lib</li>
+                <li>vorbis.lib</li>
+                <li>vorbisenc.lib</li>
+                <li>vorbisfile.lib</li>
+                <li>ogg.lib</li>
             </ul></td>
         </tr>
         <tr class="two">
@@ -99,34 +124,9 @@
             </ul></td>
         </tr>
         <tr class="one">
-            <td><code>sfml-audio-s.lib</code></td>
+            <td><code>sfml-system-s.lib</code></td>
             <td><ul>
-                <li>sfml-system-s.lib</li>
-                <li>flac.lib</li>
-                <li>ogg.lib</li>
-                <li>vorbis.lib</li>
-                <li>vorbisenc.lib</li>
-                <li>vorbisfile.lib</li>
-                <li>openal32.lib</li>
-            </ul></td>
-        </tr>
-        <tr class="two">
-            <td><code>sfml-window-s.lib</code></td>
-            <td><ul>
-                <li>sfml-system-s.lib</li>
-                <li>opengl32.lib</li>
-                <li>gdi32.lib</li>
                 <li>winmm.lib</li>
-            </ul></td>
-        </tr>
-        <tr class="one">
-            <td><code>sfml-graphics-s.lib</code></td>
-            <td><ul>
-                <li>sfml-window-s.lib</li>
-                <li>sfml-system-s.lib</li>
-                <li>freetype.lib</li>
-                <li>jpeg.lib</li>
-                <li>opengl32.lib</li>
             </ul></td>
         </tr>
     </tbody>
