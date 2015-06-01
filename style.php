@@ -69,7 +69,7 @@
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <...>
+#include &lt;...&gt;
 
 namespace sf
 {
@@ -141,10 +141,10 @@ SFML_..._API void doSomething();
 <pre><code class="cpp">////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Graphics.hpp>
+#include &lt;SFML/Graphics.hpp&gt;
 #include "Private.hpp"
-#include <X11/Xlib-xcb.h>
-#include <vector></code></pre>
+#include &lt;X11/Xlib-xcb.h&gt;
+#include &lt;vector&gt;</code></pre>
 
 <h3 id="class-definitions"><a class="h3-link" href="#class-definitions">Class Definitions</a></h3>
 <p>In a class, the public interface comes first (usually with constructors and special member functions at the top), followed by protected members and then private data. In a given access-modifier group,  static members are grouped together.</p>
