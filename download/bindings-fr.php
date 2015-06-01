@@ -59,8 +59,8 @@
         </tr>
         <tr>
             <th rowspan="1">Euphoria</th>
-            <td><a href="http://www.rapideuphoria.com/eusfml.zip" class="website">EuSFML2</a></td>
-            <td>2.0</td>
+            <td><a href="http://www.rapideuphoria.com/eusfml2.zip" class="website">EuSFML2</a></td>
+            <td>2.2</td>
             <td>Andy Patterson</td>
         </tr>
         <tr>
