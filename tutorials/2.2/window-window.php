@@ -143,7 +143,7 @@ int main()
     something before the window is closed, such as saving the current state of the application, or displaying a message.
 </p>
 <p class="important">
-    A mistake that people often make is forget the event loop, simply because they don't yet care about handling events (they use real-time inputs instead).
+    A mistake that people often make is to forget the event loop, simply because they don't yet care about handling events (they use real-time inputs instead).
     Without an event loop, the window will become unresponsive. It is important to note that the event loop has two roles: in addition to providing events to the user,
     it gives the window a chance to process its internal events too, which is required so that it can react to move or resize user actions.
 </p>
