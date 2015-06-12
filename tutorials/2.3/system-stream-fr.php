@@ -1,6 +1,6 @@
 <?php
 
-    $title = "Les flux de données (<em>input streams</em>)";
+    $title = "Les flux de données (input streams)";
     $page = "system-stream-fr.php";
 
     require("header-fr.php");
