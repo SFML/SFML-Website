@@ -86,7 +86,7 @@ public :
     Using a custom stream class is straight-forward: instantiate it, and pass it to the <code>loadFromStream</code> (or <code>openFromStream</code>)
     function of the object that you want to load.
 </p>
-<pre><code class="cpp">sf::FileFileStream stream;
+<pre><code class="cpp">sf::FileStream stream;
 stream.open("image.png");
 
 sf::Texture texture;
