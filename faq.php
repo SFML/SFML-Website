@@ -326,9 +326,9 @@
     <li>sfml-system</li>
     <li>openal32</li>
     <li>flac</li>
-    <li>vorbis</li>
     <li>vorbisenc</li>
     <li>vorbisfile</li>
+    <li>vorbis</li>
     <li>ogg</li>
    </ul>
   </li>

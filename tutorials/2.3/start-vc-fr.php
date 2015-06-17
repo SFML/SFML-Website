@@ -111,9 +111,9 @@
                 <li>sfml-system-s.lib</li>
                 <li>openal32.lib</li>
                 <li>flac.lib</li>
-                <li>vorbis.lib</li>
                 <li>vorbisenc.lib</li>
                 <li>vorbisfile.lib</li>
+                <li>vorbis.lib</li>
                 <li>ogg.lib</li>
             </ul></td>
         </tr>
