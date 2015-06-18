@@ -59,6 +59,15 @@
         </a>
     </div>
 </div>
+<div class="book">
+    <a class="link" href="https://www.packtpub.com/game-development/sfml-blueprints" title="Page web du livre SFML Blueprints"><img src="images/books/sfml-blueprints.png" alt="Couverture du livre SFML Blueprints" /></a>
+    <div class="description">
+        <p class="title">SFML Blueprints</p>
+        <a class="link" href="https://www.packtpub.com/game-development/sfml-blueprints" title="Page web du livre SFML Blueprints">
+            https://www.packtpub.com/game-development/sfml-blueprints
+        </a>
+    </div>
+</div>
 
 <h2 id="old-docs"><a class="h2-link" href="#old-docs">Documentation pour les anciennes versions</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 
