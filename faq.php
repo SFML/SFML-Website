@@ -644,7 +644,7 @@ std::size_t pos = cpp_string.find( sfml_string );</code></pre>
   <li>On Windows, have you copied the libsndfile-1.dll and openal32.dll files (you can find them in the complete SDK) into the folder for executable, along with the DLLs for the packages you're using (and all of their dependencies)?</li>
   <li>On Linux, have you installed the libraries (sudo make install in the SFML folder)?</li>
  </ul>
- <p>If you've checked all of those, and SFML still refuses to work, see <a href="#grl-bug">I found a bug!</a>.</p>
+ <p>If you've checked all of those, and SFML still refuses to work, see <a href="#tr-grl-i-found-a-bug">I found a bug!</a>.</p>
 
  <h3 id="tr-grl-undefined-ref"><a class="h3-link" href="#tr-grl-undefined-ref">I keep getting "undefined reference to &lt;some strange thing that looks like an SFML function&gt;" errors!</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>See <a href="#build-link">What and how do I link to use SFML?</a></p>
