@@ -10,16 +10,43 @@
 <h1>Changelog</h1>
 
 <ul>
-    <li><a href="#sfml-2.3">SFML 2.3</a></li>
-    <li><a href="#sfml-2.2">SFML 2.2</a></li>
-    <li><a href="#sfml-2.1">SFML 2.1</a></li>
-    <li><a href="#sfml-2.0">SFML 2.0</a></li>
-    <li><a href="#sfml-1.6">SFML 1.6</a></li>
-    <li><a href="#sfml-1.5">SFML 1.5</a></li>
-    <li><a href="#sfml-1.4">SFML 1.4</a></li>
-    <li><a href="#sfml-1.3">SFML 1.3</a></li>
-    <li><a href="#sfml-1.2">SFML 1.2</a></li>
-    <li><a href="#sfml-1.1">SFML 1.1</a></li>
+ <li><a href="#sfml-2.3.1">SFML 2.3.1</a></li>
+ <li><a href="#sfml-2.3">SFML 2.3</a></li>
+ <li><a href="#sfml-2.2">SFML 2.2</a></li>
+ <li><a href="#sfml-2.1">SFML 2.1</a></li>
+ <li><a href="#sfml-2.0">SFML 2.0</a></li>
+ <li><a href="#sfml-1.6">SFML 1.6</a></li>
+ <li><a href="#sfml-1.5">SFML 1.5</a></li>
+ <li><a href="#sfml-1.4">SFML 1.4</a></li>
+ <li><a href="#sfml-1.3">SFML 1.3</a></li>
+ <li><a href="#sfml-1.2">SFML 1.2</a></li>
+ <li><a href="#sfml-1.1">SFML 1.1</a></li>
+</ul>
+
+<h2 id="sfml-2.3.1"><a class="h2-link" href="#sfml-2.3.1">SFML 2.3.1</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
+
+<h3 id="2.3.1-window"><a class="h3-link" href="#2.3.1-window">Window</a></h3>
+<h4>Bugfixes</h4>
+<ul>
+ <li>[Android] Make sure a window still exists before trying to access its dimensions (<a href="https://github.com/SFML/SFML/pull/854">#854</a>)</li>
+ <li>[Android] Added Android API level checks (<a href="https://github.com/SFML/SFML/pull/856">#856</a>)</li>
+ <li>[Android] Updated the JNI/event handling code (<a href="https://github.com/SFML/SFML/pull/906">#906</a>)</li>
+ <li>[Linux] Resized events are only spawned when the window size actually changes (<a href="https://github.com/SFML/SFML/pull/878">#878</a>, <a href="https://github.com/SFML/SFML/issues/893">#893</a>)</li>
+ <li>[Linux] Whitelisted X SHAPE events (<a href="https://github.com/SFML/SFML/issues/879">#879</a>, <a href="https://github.com/SFML/SFML/pull/883">#883</a>)</li>
+ <li>[Linux] Remap Unix keyboard when user changes layout (<a href="https://github.com/SFML/SFML/issues/895">#895</a>, <a href="https://github.com/SFML/SFML/pull/897">#897</a>)</li>
+ <li>[Linux] Fix undefined behavior in ewmhSupported() (<a href="https://github.com/SFML/SFML/issues/892">#892</a>, <a href="https://github.com/SFML/SFML/pull/901">#901</a>)</li>
+</ul>
+
+<h3 id="2.3.1-graphics"><a class="h3-link" href="#2.3.1-graphics">Graphics</a></h3>
+<h4>Bugfixes</h4>
+<ul>
+ <li>Added support for GL_EXT_texture_edge_clamp for systems that don't expose GL_SGIS_texture_edge_clamp (<a href="https://github.com/SFML/SFML/issues/880">#880</a>, <a href="https://github.com/SFML/SFML/pull/882">#882</a>)</li>
+</ul>
+
+<h3 id="2.3.1-audio"><a class="h3-link" href="#2.3.1-audio">Audio</a></h3>
+<h4>Bugfixes</h4>
+<ul>
+ <li>[Android] Fixed audio files not loading (and possibly crashing) (<a href="https://github.com/SFML/SFML/issues/855">#855</a>, <a href="https://github.com/SFML/SFML/pull/887">#887</a>)</li>
 </ul>
 
 <h2 id="sfml-2.3"><a class="h2-link" href="#sfml-2.3">SFML 2.3</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
