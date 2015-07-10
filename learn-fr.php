@@ -37,9 +37,7 @@
 </div>
 
 <h2 id="livres"><a class="h2-link" href="#livres">Livres</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
-<div class="news">
-    &nbsp;&nbsp;&nbsp;&nbsp;Utilisez le code <strong>sfgde50</strong> pour obtenir <strong>50%</strong> de réduction pour les <a href="https://www.packtpub.com/all/?search=%22sfml%22">e-books sur SFML</a> publiés par Packt
-</div>
+<!--div class="news"></div-->
 <br>
 <div class="book">
     <a class="link" href="https://www.packtpub.com/game-development/sfml-game-development" title="Page web du livre SFML Game Development"><img src="images/books/sfml-game-development.png" alt="Couverture du livre SFML Game Development" /></a>

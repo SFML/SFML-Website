@@ -5,9 +5,7 @@
 
 <h1>Simple and Fast Multimedia Library</h1>
 
-<div class="news">
-    Use the code <strong>sfgde50</strong> to get <strong>50%</strong> discount on <a href="learn.php">SFML e-books</a> published by Packt
-</div>
+<!--div class="news"></div-->
 
 <div class="home-section">
     <div class="column">
