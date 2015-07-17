@@ -2,13 +2,13 @@
 
     $breadcrumbs = array(
         'Learn' => 'learn.php',
-        '2.3.x Tutorials' => 'tutorials/2.3'
+        '2.3 Tutorials' => 'tutorials/2.3'
     );
 
     require("../../header.php");
 ?>
 
-<h1>Tutorials for SFML 2.3.x</h1>
+<h1>Tutorials for SFML 2.3</h1>
 
 <?php h2('Getting started') ?>
 <ul>

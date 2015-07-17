@@ -21,7 +21,7 @@
 
     $breadcrumbs = array(
         'Apprendre' => 'learn-fr.php',
-        'Tutoriels 2.3.x' => 'tutorials/2.3/index-fr.php',
+        'Tutoriels 2.3' => 'tutorials/2.3/index-fr.php',
         $title => 'tutorials/2.3/' . $page
     );
 

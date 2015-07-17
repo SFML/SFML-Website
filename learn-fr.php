@@ -72,7 +72,6 @@
 <h2 id="old-docs"><a class="h2-link" href="#old-docs">Documentation pour les anciennes versions</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 
 <ul>
-    <li><strong>SFML 2.3:</strong> <a href="tutorials/2.3/index-fr.php">Tutoriels</a>, <a href="documentation/2.3-fr">Documentation de l'API</a></li>
     <li><strong>SFML 2.2:</strong> <a href="tutorials/2.2/index-fr.php">Tutoriels</a>, <a href="documentation/2.2-fr">Documentation de l'API</a></li>
     <li><strong>SFML 2.1:</strong> <a href="tutorials/2.1/index-fr.php">Tutoriels</a>, <a href="documentation/2.1-fr">Documentation de l'API</a></li>
     <li><strong>SFML 2.0:</strong> <a href="tutorials/2.0/index-fr.php">Tutoriels</a>, <a href="documentation/2.0-fr">Documentation de l'API</a></li>
