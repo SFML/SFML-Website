@@ -72,12 +72,11 @@
     <tbody>
         <tr>
             <td class="os" rowspan="3">Mac OS X</td>
-            <td>Due to hardware issues the release of the OS X package will be delayed.</td>
-            <!--td><?php download_link('Clang', 'universal 32+64-bit (OS X 10.7+, compatible with C++11 and libc++)', '6.04', '../../../files/SFML-2.3.1-osx-clang-universal.tar.gz') ?></td-->
+            <td><?php download_link('Clang', 'universal 32+64-bit (OS X 10.7+, compatible with C++11 and libc++)', '6.3', '../../../files/SFML-2.3.1-osx-clang-universal.tar.gz') ?></td>
         </tr>
         <tr>
             <td class="notice" colspan="3">
-                Mac OS X libraries are universal, they contain both the 32 and 64-bit versions of SFML and can therefore be used for both 32 and 64-bit builds.
+                Mac OS X libraries are universal: they contain both the 32 and 64-bit versions of SFML and can therefore be used for both 32 and 64-bit builds.
             </td>
         </tr>
     </tbody>
