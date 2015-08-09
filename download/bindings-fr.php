@@ -100,7 +100,7 @@
         </tr>
         <tr>
             <th rowspan="1">Pascal</th>
-            <td><a href="https://github.com/CWBudde/PasSfml" class="website">PasSfml</a></td>
+            <td><a href="https://github.com/CWBudde/PasSFML" class="website">PasSFML</a></td>
             <td>2.3</td>
             <td>Christian-W. Budde</td>
         </tr>
