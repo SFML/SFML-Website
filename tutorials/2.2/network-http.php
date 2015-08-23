@@ -85,7 +85,7 @@ sf::Http::Response response = http.sendRequest(request);
 std::cout &lt;&lt; "status: " &lt;&lt; response.getStatus() &lt;&lt; std::endl;
 std::cout &lt;&lt; "HTTP version: " &lt;&lt; response.getMajorHttpVersion() &lt;&lt; "." &lt;&lt; response.getMinorHttpVersion() &lt;&lt; std::endl;
 std::cout &lt;&lt; "Content-Type header:" &lt;&lt; response.getField("Content-Type") &lt;&lt; std::endl;
-std::cout &lt;&lt; "body: " &lt;&lt; response.getStatus() &lt;&lt; std::endl;
+std::cout &lt;&lt; "body: " &lt;&lt; response.getBody() &lt;&lt; std::endl;
 </code></pre>
 <p>
     The status code can be used to check whether the request was successfully processed or not: codes 2xx represent success, codes 3xx represent a redirection, codes 4xx represent client
