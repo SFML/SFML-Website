@@ -10,6 +10,7 @@
 <h1>Changelog</h1>
 
 <ul>
+ <li><a href="#sfml-2.3.2">SFML 2.3.2</a></li>
  <li><a href="#sfml-2.3.1">SFML 2.3.1</a></li>
  <li><a href="#sfml-2.3">SFML 2.3</a></li>
  <li><a href="#sfml-2.2">SFML 2.2</a></li>
@@ -21,6 +22,32 @@
  <li><a href="#sfml-1.3">SFML 1.3</a></li>
  <li><a href="#sfml-1.2">SFML 1.2</a></li>
  <li><a href="#sfml-1.1">SFML 1.1</a></li>
+</ul>
+
+<h2 id="sfml-2.3.2"><a class="h2-link" href="#sfml-2.3.2">SFML 2.3.2</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
+<h3 id="2.3.2-general"><a class="h3-link" href="#2.3.2-general">General</a></h3>
+<ul>
+ <li>Fixed an issue where FindSFML.cmake couldn't find older versions of SFML (<a href="https://github.com/SFML/SFML/pull/903">#903</a>)</li>
+ <li>Robust alCheck and glCheck macros (<a href="https://github.com/SFML/SFML/pull/917">#917</a>)</li>
+ <li>Fixed FindSFML.cmake to use the uppercase FLAC name (<a href="https://github.com/SFML/SFML/pull/923">#923</a>)</li>
+ <li>Added a CONTRIBUTING file so GitHub shows a message when creating a new issue (<a href="https://github.com/SFML/SFML/pull/932">#932</a>)</li>
+</ul>
+
+<h3 id="2.3.2-window"><a class="h3-link" href="#2.3.2-window">Window</a></h3>
+<h4>Bugfixes</h4>
+<ul>
+ <li>[Linux] Fixed an issue where the keypad's key weren't being detected (<a href="https://github.com/SFML/SFML/pull/910">#910</a>)</li>
+ <li>[Linux] Revert to Xlib event handling (<a href="https://github.com/SFML/SFML/pull/934">#934</a>)</li>
+ <li>[Linux] Fixed XK_* inconsistency in InpuImpl.cpp (<a href="https://github.com/SFML/SFML/pull/947">#947</a>)</li>
+ <li>[Linux] Fix _NET_WM_PING messages not being replied to properly (<a href="https://github.com/SFML/SFML/pull/947">#947</a>)</li>
+</ul>
+
+<h3 id="2.3.2-graphics"><a class="h3-link" href="#2.3.2-graphics">Graphics</a></h3>
+<h4>Bugfixes</h4>
+<ul>
+ <li>Fixed clear bug on RenderTextures (<a href="https://github.com/SFML/SFML/pull/915">#915</a>)</li>
+ <li>Fixed image file extension detection (<a href="https://github.com/SFML/SFML/issues/929">#929</a>, <a href="https://github.com/SFML/SFML/pull/930">#930</a>, <a href="https://github.com/SFML/SFML/pull/931">#931</a>)</li>
+ <li>Secure function against random data return (<a href="https://github.com/SFML/SFML/issues/935">#935</a>, <a href="https://github.com/SFML/SFML/pull/942">#942</a>)</li>
 </ul>
 
 <h2 id="sfml-2.3.1"><a class="h2-link" href="#sfml-2.3.1">SFML 2.3.1</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
@@ -106,7 +133,7 @@
  <li>Bumped back the OpenGL version requirement to 1.1 (<a href="https://github.com/SFML/SFML/pull/858">#858</a>)</li>
 </ul>
 
-<h3 id="2.3-audio"><a class="h3-link" href="#2.3-aduio">Audio</a></h3>
+<h3 id="2.3-audio"><a class="h3-link" href="#2.3-audio">Audio</a></h3>
 <h4>Features</h4>
 <ul>
  <li>Dropped libsndfile and started using Vorbis, FLAC and OGG directly (<a href="https://github.com/SFML/SFML/issues/604">#604</a>, <a href="https://github.com/SFML/SFML/pull/757">#757</a>)</li>
