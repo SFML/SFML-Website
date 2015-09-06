@@ -99,7 +99,7 @@
     </li>
     <li>
         Les dépendances de SFML<br />
-        SFML requiert seulement deux bibliothèques externes sous Mac OS X. Copiez le contenu de <tt>extlibs</tt>
+        SFML requiert seulement quelques bibliothèques externes sous Mac OS X. Copiez le contenu de <tt>extlibs</tt>
         dans <tt>/Library/Frameworks</tt>.
     </li>
     <li>

@@ -27,7 +27,7 @@
     <li><a href="http://developer.apple.com/xcode/" title="Download Xcode">Xcode</a> (preferably version 4 or later of the IDE which is available on the <em>App Store</em>) and clang.</li>
 </ul>
 <p class="important">
-    With recent versions of Xcode you also need to install the <tt>Command Line Tools</tt> from <tt>Xcode &gt; Preferences &gt; Downloads &gt; Components</tt>. If you can't find the CLT there use <code>xcode-select --install</code> in a Terminal and follow onscreen instructions.
+    With recent versions of Xcode you also need to install the <tt>Command Line Tools</tt> from <tt>Xcode &gt; Preferences &gt; Downloads &gt; Components</tt>. If you can't find the CLT there use <code>xcode-select --install</code> in a Terminal and follow on-screen instructions.
 </p>
 
 <h3>Binaries: dylib vs framework</h3>
@@ -92,7 +92,7 @@
     </li>
     <li>
         SFML dependencies<br />
-        SFML only depends on two external libraries on Mac OS X. Copy the content of <tt>extlibs</tt> to <tt>/Library/Frameworks</tt>.
+        SFML depends on a few external libraries on Mac OS X. Copy the content of <tt>extlibs</tt> to <tt>/Library/Frameworks</tt>.
     </li>
     <li>
         Xcode templates<br />
