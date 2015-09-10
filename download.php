@@ -8,6 +8,8 @@
 
 <h1>Download</h1>
 
+<?php include(dirname(__FILE__) . '/progressbar-osx.php'); ?>
+
 <div class="link-box one-column">
     <a class="download" href="download/sfml/2.3.2">
         <div class="title">SFML 2.3.2</div>
