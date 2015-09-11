@@ -84,8 +84,8 @@
                     </ul>
                     <ul id="buttons">
                         <li><a id="language-en" href="<?php echo $translated_page ?>" title="Website in english">English</a></li>
-                        <li><a id="donate" href="https://www.paypal.com/cgi-bin/webscr/?cmd=_s-xclick&hosted_button_id=TYJ2XQPG3SXPG" title="Faire un don">Faire un don</a></li>
-                        <li><a id="flattr" href="//flattr.com/thing/38063/SFML-multimedia-library" title="Flattrer SFML">Flattr</a></li>
+                        <li><a id="donate" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VH4J3GW5GUXR4&lc=FR" title="Faire un don">Faire un don</a></li>
+                        <li><a id="flattr" href="https://flattr.com/thing/38063/SFML-multimedia-library" title="Flattrer SFML">Flattr</a></li>
                     </ul>
                 </div>
             </div>
