@@ -49,7 +49,7 @@
         <tr>
             <th rowspan="2">D</th>
             <td><a href="https://github.com/DerelictOrg/DerelictSFML2" class="website">DerelictSFML2</a></td>
-            <td>2.1</td>
+            <td>2.3</td>
             <td><a href="mailto:aldacron@gmail.com">Mike Parker</a></td>
         </tr>
         <tr>
