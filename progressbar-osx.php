@@ -9,7 +9,7 @@
         include(dirname(__FILE__) . '/scripts/progressbar.php');
         @include(dirname(__FILE__) . '/progressbar-osx-values.php');
 
-        if(defined('OSX_VALUE') && defined('OSX_MAX'))
-            echo makeProgressbar(OSX_MAX, OSX_VALUE);
+        if(isset($OSX_VALUE) && isset($OSX_GOALS))
+            echo makeProgressbar($OSX_VALUE, $OSX_GOALS);
     ?>
 </div>
