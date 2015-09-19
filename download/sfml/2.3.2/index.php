@@ -18,7 +18,7 @@
 <table class="styled download">
     <tbody>
         <tr>
-            <td class="os" rowspan="7">Windows</td>
+            <td class="os" rowspan="6">Windows</td>
             <td><?php download_link('Visual C++ 10 (2010)', '32-bit', '11.9', '../../../files/SFML-2.3.2-windows-vc10-32-bit.zip') ?></td>
             <td><?php download_link('Visual C++ 10 (2010)', '64-bit', '13.2', '../../../files/SFML-2.3.2-windows-vc10-64-bit.zip') ?></td>
         </tr>
@@ -29,10 +29,6 @@
         <tr>
             <td><?php download_link('Visual C++ 12 (2013)', '32-bit', '12.8', '../../../files/SFML-2.3.2-windows-vc12-32-bit.zip') ?></td>
             <td><?php download_link('Visual C++ 12 (2013)', '64-bit', '14.3', '../../../files/SFML-2.3.2-windows-vc12-64-bit.zip') ?></td>
-        </tr>
-        <tr>
-            <td><?php download_link('Visual C++ 14 (2015)', '32-bit', '12.3', '../../../files/SFML-2.3.2-windows-vc14-32-bit.zip') ?></td>
-            <td><?php download_link('Visual C++ 14 (2015)', '64-bit', '13.7', '../../../files/SFML-2.3.2-windows-vc14-64-bit.zip') ?></td>
         </tr>
         <tr>
             <td><?php download_link('GCC 4.7.1 TDM (SJLJ)', '32-bit', '13.5', '../../../files/SFML-2.3.2-windows-gcc-4.7.1-tdm-32-bit.zip') ?></td>
