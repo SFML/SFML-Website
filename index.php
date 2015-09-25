@@ -7,8 +7,6 @@
 
 <!--div class="news"></div-->
 
-<?php include(dirname(__FILE__) . '/progressbar-osx.php'); ?>
-
 <div class="home-section">
     <div class="column">
         <div class="title">SFML is multi-media</div>

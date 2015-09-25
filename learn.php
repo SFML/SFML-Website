@@ -8,8 +8,6 @@
 
 <h1>Learn</h1>
 
-<?php include(dirname(__FILE__) . '/progressbar-osx.php'); ?>
-
 <div class="link-box two-columns-left">
     <a class="style" href="tutorials/2.3">
         <div class="title">Tutorials</div>

@@ -8,8 +8,6 @@
 
 <h1>Communauté</h1>
 
-<?php include(dirname(__FILE__) . '/progressbar-osx-fr.php'); ?>
-
 <div class="home-section">
     <div class="column">
         <div class="title">&raquo; <a href="http://fr.sfml-dev.org/forums/" title="Aller au forum">Forum</a></div>

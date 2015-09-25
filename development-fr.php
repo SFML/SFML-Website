@@ -9,8 +9,6 @@
 <div class="development">
  <h1>Développement</h1>
 
- <?php include(dirname(__FILE__) . '/progressbar-osx-fr.php'); ?>
-
  <div class="link-box two-columns-left">
   <a class="repository" href="https://github.com/SFML/SFML">
    <div class="title">Dépôt</div>
