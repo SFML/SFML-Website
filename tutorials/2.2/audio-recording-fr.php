@@ -18,14 +18,14 @@
     Ce type de capture peut être effectué via l'interface très simple de la classe <?php class_link("SoundBufferRecorder") ?> :
 </p>
 <pre><code class="cpp">// tout d'abord on vérifie si la capture est supportée par le système
-if (!SoundBufferRecorder::isAvailable())
+if (!sf::SoundBufferRecorder::isAvailable())
 {
     // erreur : la capture audio n'est pas supportée
     ...
 }
 
 // création de l'enregistreur
-SoundBufferRecorder recorder;
+sf::SoundBufferRecorder recorder;
 
 // démarrage de l'enregistrement
 recorder.start();
@@ -64,7 +64,7 @@ sound.play();
         Accéder aux données brutes et les analyser, transformer, etc.
 <pre><code class="cpp">const sf::Int16* samples = buffer.getSamples();
 std::size_t count = buffer.getSampleCount();
-doSomething(samples, count);    
+doSomething(samples, count);
 </code></pre>
     </li>
 </ul>
@@ -72,6 +72,41 @@ doSomething(samples, count);
     Si vous comptez utiliser les données capturées après que l'enregistreur a été détruit ou redémarré, n'oubliez pas de faire une <em>copie</em>
     du buffer.
 </p>
+
+<?php h2('Sélectionner le périphérique d\'entrée') ?>
+<p>
+    Si vous avez plusieurs périphériques d'entrées audio connectés à votre ordinateur (par exemple un microphone, une carte son externe ou
+    encore une webcam dotée d'un micro), vous pouvez spécifier le périphérique utilisé pour l'enregistrement. Un périphérique d'entrée audio
+    est identifié par son nom. <code>std::vector&lt;std::string&gt;</code> contenant le nom de tous les périphériques connectés est disponible
+    via à la fonction statique <code>SoundBufferRecorder::getAvailableDevices()</code>. Vous pouvez sélectionner un périphérique de la liste
+    pour l'enregistrement en passant le nom du périphérique désiré à la fonction membre <code>setDevice()</code>. Il est même possible de
+    changer de périphérique à la volée (i.e. pendant l'enregistrement).
+</p>
+<p>
+    Le nom du périphérique actuellement utilisé peut être obtenu en appelant <code>getDevice()</code>. Si vous ne choisissez pas de périphérique
+    explicitement vous-même, celui par défaut sera utilisé. Son nom peut être obtenu grace à la fonction statique <code>SoundBufferRecorder::getDefaultDevice()</code>.
+</p>
+<p>
+    Voici un petit exemple illustrant comment sélectionner un périphérique d'entrée audio :
+</p>
+<pre><code class="cpp">// récupération des noms des périphériques d'enregistrement
+std::vector&lt;std::string&gt; availableDevices = sf::SoundRecorder::getAvailableDevices();
+
+// choix d'un périphérique
+std::string inputDevice = availableDevices[0];
+
+// création d'un enregistreur
+sf::SoundBufferRecorder recorder;
+
+// sélection du périphérique
+if (!recorder.setDevice(inputDevice))
+{
+    // erreur : échec de sélection du périphérique
+    ...
+}
+
+// utilisation habituelle de l'enregistreur
+</code></pre>
 
 <?php h2('Enregistrement personnalisé') ?>
 <p>
@@ -88,9 +123,11 @@ doSomething(samples, count);
     Vous n'avez qu'une fonction virtuelle à redéfinir dans votre classe dérivée : <code>onProcessSamples</code>. Elle est appelée à chaque fois qu'un
     nouveau lot d'échantillons audio ont été capturés, c'est donc là que vous devez implémenter votre traitement perso.
 </p>
-<p class="important">
-    Des échantillons audio sont passés à la fonction <code>onProcessSamples</code> toutes les 100 ms. Cette valeur est fixée dans le code de SFML et
-    vous ne pouvez pas la changer (à moins de modifier SFML directement). Ceci sera probablement amélioré dans une prochaine version.
+<p>
+    Par défaut, les échantillons audio sont fournis à la fonction membre <code>onProcessSamples</code> toutes les 100 ms. Vous pouvez changer
+    l'intervalle en utilisant la fonction membre <code>setProcessingInterval</code>. Vous souhaiterez probablement utiliser un intervalle plus
+    petit si vous voulez manipuler les données enregistrées en temps réel, par exemple. Notez que ceci n'est qu'un indice et qu'il se peut que
+    l'intervalle utilisé en pratique varie, donc ne vous y fiez pas pour implémenter un timing précis.
 </p>
 <p>
     Il existe deux autres fonctions virtuelles que vous pouvez redéfinir si vous le souhaitez : <code>onStart</code> et <code>onStop</code>. Elles sont
@@ -110,7 +147,7 @@ doSomething(samples, count);
         return true;
     }
 
-    virtual bool onProcessSamples(const Int16* samples, std::size_t sampleCount)
+    virtual bool onProcessSamples(const sf::Int16* samples, std::size_t sampleCount)
     {
         // faites ce que vous voulez des échantillons audio
         ...

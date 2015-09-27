@@ -18,14 +18,14 @@
     This can be achieved with the very simple interface of the <?php class_link("SoundBufferRecorder") ?> class:
 </p>
 <pre><code class="cpp">// first check if an input audio device is available on the system
-if (!SoundBufferRecorder::isAvailable())
+if (!sf::SoundBufferRecorder::isAvailable())
 {
     // error: audio capture is not available on this system
     ...
 }
 
 // create the recorder
-SoundBufferRecorder recorder;
+sf::SoundBufferRecorder recorder;
 
 // start the capture
 recorder.start();
@@ -64,13 +64,47 @@ sound.play();
         Access the raw audio data and analyze it, transform it, etc.
 <pre><code class="cpp">const sf::Int16* samples = buffer.getSamples();
 std::size_t count = buffer.getSampleCount();
-doSomething(samples, count);    
+doSomething(samples, count);
 </code></pre>
     </li>
 </ul>
 <p class="important">
     If you want to use the captured audio data after the recorder is destroyed or restarted, don't forget to make a <em>copy</em> of the buffer.
 </p>
+
+<?php h2('Selecting the input device') ?>
+<p>
+    If you have multiple sound input devices connected to your computer (for example a microphone, a sound interface (external soundcard) or a
+    webcam microphone) you can specify the device that is used for recording. A sound input device is identified by its name.
+    A <code>std::vector&lt;std::string&gt;</code> containing the names of all connected devices is available through the static
+    <code>SoundBufferRecorder::getAvailableDevices()</code> function. You can then select a device from the list for recording, by passing the
+    chosen device name to the <code>setDevice()</code> method. It is even possible to change the device on the fly (i.e. while recording).
+</p>
+<p>
+    The name of the currently used device can be obtained by calling <code>getDevice()</code>. If you don't choose a device yourself, the default
+    device will be used. Its name can be obtained through the static <code>SoundBufferRecorder::getDefaultDevice()</code> function.
+</p>
+<p>
+    Here is a small example of how to set the input device:
+</p>
+<pre><code class="cpp">// get the available sound input device names
+std::vector&lt;std::string&gt; availableDevices = sf::SoundRecorder::getAvailableDevices();
+
+// choose a device
+std::string inputDevice = availableDevices[0];
+
+// create the recorder
+sf::SoundBufferRecorder recorder;
+
+// set the device
+if (!recorder.setDevice(inputDevice))
+{
+    // error: device selection failed
+    ...
+}
+
+// use recorder as usual
+</code></pre>
 
 <?php h2('Custom recording') ?>
 <p>
@@ -86,9 +120,10 @@ doSomething(samples, count);
     You only have a single virtual function to override in your derived class: <code>onProcessSamples</code>. It is called every time a new chunk
     of audio samples is captured, so this is where you implement your specific stuff.
 </p>
-<p class="important">
-    Audio samples are provided to the <code>onProcessSamples</code> function every 100 ms. This is currently hard-coded into SFML and you can't change
-    that (unless you modify SFML itself). This may change in the future.
+<p>
+    By default Audio samples are provided to the <code>onProcessSamples</code> method every 100 ms. You can change the interval by using the
+    <code>setProcessingInterval</code> method. You may want to use a smaller interval if you want to process the recorded data in real time, for example.
+    Note that this is only a hint and that the actual period may vary, so don't rely on it to implement precise timing.
 </p>
 <p>
     There are also two additional virtual functions that you can optionally override: <code>onStart</code> and <code>onStop</code>. They are
@@ -108,7 +143,7 @@ doSomething(samples, count);
         return true;
     }
 
-    virtual bool onProcessSamples(const Int16* samples, std::size_t sampleCount)
+    virtual bool onProcessSamples(const sf::Int16* samples, std::size_t sampleCount)
     {
         // do something useful with the new chunk of samples
         ...
