@@ -13,7 +13,7 @@
 <p>
     Le logo officiel de SFML est dans le domaine publique, vous pouvez en faire tout ce que vous voulez.
 </p>
-<img class="screenshot"src="sfml-logo-small.png" title="Logo SFML" />
+<img class="screenshot" src="sfml-logo-small.png" title="Logo SFML" />
 
 <div class="link-box three-columns-left">
     <a class="download" href="sfml-logo-small.png">
@@ -35,6 +35,30 @@
         <div class="description">SVG</div>
     </a>
 </div>
+
+<img class="screenshot" src="sfml-icon-mini.png" title="Icon SFML" />
+
+<div class="link-box three-columns-left">
+    <a class="download" href="sfml-icon-small.png">
+        <div class="title">Petit</div>
+        <div class="description">PNG, 256x256 px</div>
+    </a>
+</div>
+
+<div class="link-box three-columns-middle">
+    <a class="download" href="sfml-icon-big.png">
+        <div class="title">Grand</div>
+        <div class="description">PNG, 1024x1024</div>
+    </a>
+</div>
+
+<div class="link-box three-columns-right">
+    <a class="download" href="sfml-icon.svg">
+        <div class="title">Vectorisé</div>
+        <div class="description">SVG</div>
+    </a>
+</div>
+
 
 <?php
     require("../../footer-fr.php");
