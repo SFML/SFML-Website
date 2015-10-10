@@ -53,8 +53,8 @@
             <td><a href="mailto:aldacron@gmail.com">Mike Parker</a></td>
         </tr>
         <tr>
-            <td><a href="https://github.com/Jebbs/DSFML" class="website">DSFML</a></td>
-            <td>2.0</td>
+            <td><a href="http://www.dsfml.com/" class="website">DSFML</a></td>
+            <td>2.1</td>
             <td><a href="mailto:dehaan.jeremiah@gmail.com">Jeremy DeHaan</a></td>
         </tr>
         <tr>
