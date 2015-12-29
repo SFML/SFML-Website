@@ -70,6 +70,15 @@
             <td>krepa098</td>
         </tr>
         <tr>
+            <th rowspan="1">Haskell</th>
+            <td>
+                <a href="https://github.com/SFML-haskell/SFML" class="website"><img src="../images/bindings/hssfml.png" style="vertical-align:middle"></a>
+                (<a href="https://hackage.haskell.org/package/SFML">Hackage</a>)
+            </td>
+            <td>2.3</td>
+            <td><a href="mailto:jeannekamikaze@gmail.com">Marc Sunet</a>, <a href="mailto:alfredo.dinapoli@gmail.com">Alfredo Di Napoli</a></td>
+        </tr>
+        <tr>
             <th rowspan="1">Java</th>
             <td><a href="http://jsfml.org/" class="website"><img src="../images/bindings/jsfml.png" alt="JSFML"/></a></td>
             <td>2.2</td>
