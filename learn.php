@@ -68,6 +68,15 @@
         </a>
     </div>
 </div>
+<div class="book">
+    <a class="link" href="https://www.packtpub.com/game-development/sfml-game-development-example" title="SFML Game Development By Example book web page"><img src="images/books/sfml-game-development-by-example.png" alt="SFML Game Development By Example book cover" /></a>
+    <div class="description">
+        <p class="title">SFML Game Development By Example</p>
+        <a class="link" href="https://www.packtpub.com/game-development/sfml-game-development-example" title="SFML Game Development By Example book web page">
+            https://www.packtpub.com/game-development/sfml-game-development-example
+        </a>
+    </div>
+</div>
 
 <h2 id="old-docs"><a class="h2-link" href="#old-docs">Documentation for older versions</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 
