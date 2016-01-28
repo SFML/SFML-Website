@@ -176,7 +176,7 @@ void main()
 <h3>Vertex shader</h3>
 <p>
     SFML has a fixed vertex format which is described by the <?php class_link("Vertex") ?> structure. An SFML vertex contains a 2D position, a color, and 2D texture coordinates.
-    This is the exact input that you will get in the vertex shader, stored in the built-in <code>gl_Vertex</code>, <code>gl_MultiTexCoord0</code> and <code>gl_Color</code>
+    This is the exact input that you will get in the vertex shader, stored in the built-in <code>gl_Vertex</code>, <code>gl_Color</code> and <code>gl_MultiTexCoord0</code>
     variables (you don't need to declare them).
 </p>
 <pre><code class="glsl">void main()
