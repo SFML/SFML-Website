@@ -224,7 +224,7 @@ sprite.scale(sf::Vector2f(1.5f, 3.f)); // factor relative to the current scale
 <?php h2('Using sf::Texture with OpenGL code') ?>
 <p>
     If you're using OpenGL rather than the graphics entities of SFML, you can still use <?php class_link("Texture") ?> as a wrapper around an OpenGL texture object and use it
-    along with the rest if your OpenGL code.
+    along with the rest of your OpenGL code.
 </p>
 <p>
     To bind a <?php class_link("Texture") ?> for drawing (basically <code>glBindTexture</code>), you call the <code>bind</code> static function:
