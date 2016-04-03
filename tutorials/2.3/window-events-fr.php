@@ -203,8 +203,8 @@ if (event.type == sf::Event::GainedFocus)
     vers le haut ou le bas, mais aussi latéralement si cette dernière le supporte.
 </p>
 <p>
-    Le membre associé à cet évènement est <code>event.mouseWheelScroll</code>, il contient le il contient
-    le nombre de "ticks" duquel la molette a bougé, la position actuelle de la souris, ainsi que la
+    Le membre associé à cet évènement est <code>event.mouseWheelScroll</code>, il contient
+    le nombre de "ticks" duquel la molette a bougé, la position actuelle de la souris, ainsi que
     l'orientation du mouvement de la molette.
 </p>
 <pre><code class="cpp">if (event.type == sf::Event::MouseWheelScrolled)
