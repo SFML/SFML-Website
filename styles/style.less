@@ -708,6 +708,23 @@ body
             font-size: 10pt;
             color: #555;
             background-color: #eee;
+            
+            a
+            {
+                float: none;
+                vertical-align: none;
+                padding: 1px;
+                text-decoration: none;
+                color: darken(@main-color, 20%);
+                //color: #3070c0;
+                border-width: 0;
+                background: none;
+
+                &:hover
+                {
+                    text-decoration: underline;
+                }
+            }
         }
 
         span.description
