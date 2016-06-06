@@ -37,18 +37,18 @@
 
 <div class="home-section">
     <div class="column">
-        <div class="title">&raquo; <a href="https://kiwiirc.com/client/irc.sfml-dev.org/sfml" title="Chat in the browser now">IRC</a></div>
+        <div class="title">&raquo; <a href="http://chat.sfml-dev.org" title="Chat in the browser now">IRC</a></div>
         <p>
             Pour une aide amicale et des discussions sur SFML (mais aussi des chats hors-sujet, avec un grand nombre d'utilisateurs), cliquez sur le bouton suivant pour discuter instantanément dans votre naviguateur, ou connectez-vous avec votre client IRC favori au serveur décrit ci-dessous.
         </p>
         <ul>
             <li>SSL: <a href="irc://irc.sfml-dev.org:6697/#sfml" title="Ouvrir un client IRC avec le port SSL">irc://irc.sfml-dev.org:6697/#sfml</a></li>
             <li>Non SSL: <a href="irc://irc.sfml-dev.org:6667/#sfml" title="Ouvrir un client IRC avec le port non SSL">irc://irc.sfml-dev.org:6667/#sfml</a></li>
-            <li><a href="https://kiwiirc.com/client/irc.sfml-dev.org/sfml" title="Discutez dans votre naviguateur maintenant">Discutez dans votre naviguateur maintenant</a></li>
+            <li><a href="http://chat.sfml-dev.org" title="Discutez dans votre naviguateur maintenant">Discutez dans votre naviguateur maintenant</a></li>
         </ul>
     </div>
     <div class="column">
-        <a href="https://kiwiirc.com/client/irc.sfml-dev.org/sfml"><img src="<?php echo image('community/irc.png') ?>" alt="IRC" /></a>
+        <a href="http://chat.sfml-dev.org"><img src="<?php echo image('community/irc.png') ?>" alt="IRC" /></a>
     </div>
 </div>
 

@@ -37,17 +37,18 @@
 
 <div class="home-section">
     <div class="column">
-        <div class="title">&raquo; <a href="https://kiwiirc.com/client/irc.sfml-dev.org/sfml" title="Chat in the browser now">IRC</a></div>
+        <div class="title">&raquo; <a href="http://chat.sfml-dev.org" title="Chat in the browser now">IRC</a></div>
         <p>
             For friendly help and talk about SFML (as well as off-topic chat with a lot of other users), either click on the button to the right to instantly chat in your browser, or connect via an IRC client to the server below.
         </p>
         <ul>
             <li>SSL: <a href="irc://irc.sfml-dev.org:6697/#sfml" title="Open an IRC client with the SSL port">irc://irc.sfml-dev.org:6697/#sfml</a></li>
             <li>No SSL: <a href="irc://irc.sfml-dev.org:6667/#sfml" title="Open an IRC client with the none-SSL port">irc://irc.sfml-dev.org:6667/#sfml</a></li>
+            <li><a href="http://chat.sfml-dev.org" title="Chat in your browser now">Chat in your browser now</a></li>
         </ul>
     </div>
     <div class="column">
-        <a href="https://kiwiirc.com/client/irc.sfml-dev.org/sfml"><img src="<?php echo image('community/irc.png') ?>" alt="IRC" /></a>
+        <a href="http://chat.sfml-dev.org"><img src="<?php echo image('community/irc.png') ?>" alt="IRC" /></a>
     </div>
 </div>
 
