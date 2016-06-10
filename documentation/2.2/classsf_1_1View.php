@@ -107,8 +107,8 @@ Public Member Functions</h2></td></tr>
 <p><a class="el" href="classsf_1_1View.php" title="2D camera that defines what region is shown on screen ">sf::View</a> defines a camera in the 2D scene.</p>
 <p>This is a very powerful concept: you can scroll, rotate or zoom the entire scene without altering the way that your drawable objects are drawn.</p>
 <p>A view is composed of a source rectangle, which defines what part of the 2D scene is shown, and a target viewport, which defines where the contents of the source rectangle will be displayed on the render target (window or texture).</p>
-<p>The viewport allows to map the scene to a custom part of the render target, and can be used for split-screen or for displaying a minimap, for example. If the source rectangle has not the same size as the viewport, its contents will be stretched to fit in.</p>
-<p>To apply a view, you have to assign it to the render target. Then, every objects drawn in this render target will be affected by the view until you use another view.</p>
+<p>The viewport allows you to map the scene to a custom part of the render target, and can be used for split-screen or for displaying a minimap, for example. If the source rectangle does not have the same size as the viewport, its contents will be stretched to fit.</p>
+<p>To apply a view, you have to assign it to the render target. Then, every object drawn in this render target will be affected by the view until you use another view.</p>
 <p>Usage example: </p><div class="fragment"><div class="line"><a class="code" href="classsf_1_1RenderWindow.php">sf::RenderWindow</a> window;</div>
 <div class="line"><a class="code" href="classsf_1_1View.php">sf::View</a> view;</div>
 <div class="line"></div>
