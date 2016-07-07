@@ -1,5 +1,5 @@
 <?php
-    $latest = '2.3.2';
+    $latest = '2.4.0';
     $linklatest = '';
     $doxygen = true;
     $docpath = 'documentation/' . $version . '/';
@@ -10,7 +10,7 @@
         $pagetitle => substr($_SERVER['REQUEST_URI'], 1) // remove the starting '/'
     );
     require('../../header.php');
-    
+
     if($version != $latest)
     {
         $linklatest = '<a class="important" href="../' . $latest . '/' . str_replace('documentation/' . $version . '/', '', $breadcrumbs[$pagetitle]) . '"><strong>Warning:</strong> this page refers to an old version of SFML. Click here to switch to the latest version.</a>';

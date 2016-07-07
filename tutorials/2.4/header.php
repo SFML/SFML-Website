@@ -6,7 +6,7 @@
             $doc_class = $sfml_class;
 
         $doc_class = str_replace("::", "_1_1", $doc_class);
-        echo '<a href="../../documentation/2.3/'. $type . 'sf_1_1' . $doc_class . '.php" title="sf::' . $sfml_class . ' documentation"><code>sf::' . $sfml_class . '</code></a>';
+        echo '<a href="../../documentation/2.4.0/'. $type . 'sf_1_1' . $doc_class . '.php" title="sf::' . $sfml_class . ' documentation"><code>sf::' . $sfml_class . '</code></a>';
     }
 
     function class_link($sfml_class, $doc_class = null)
@@ -21,8 +21,8 @@
 
     $breadcrumbs = array(
         'Learn' => 'learn.php',
-        '2.3 Tutorials' => 'tutorials/2.3',
-        $title => 'tutorials/2.3/' . $page
+        '2.4 Tutorials' => 'tutorials/2.4',
+        $title => 'tutorials/2.4/' . $page
     );
 
     require("../../header.php");
