@@ -20,7 +20,7 @@
     your choice. It is similar to autoconf/automake or premake for those who are already familiar with these tools.
 </p>
 <p>
-    CMake is used by many projects including well-known ones such as Blender, Boost, KDE, and Ogre. You can read more about CMake on its
+    CMake is used by many projects including well-known ones such as Blender, CLion, KDE, Ogre, and many more. You can read more about CMake on its
     <a class="external" title="CMake official website" href="http://www.cmake.org/">official website</a> or in its
     <a class="external" title="Wikipedia page of CMake" href="http://en.wikipedia.org/wiki/CMake">Wikipedia article</a>.
 </p>
@@ -28,7 +28,7 @@
     As you might expect, this tutorial is divided into two main sections: Generating the build configuration with CMake, and building SFML with
     your toolchain using that build configuration.
 </p>
- 
+
 <?php h2('Installing dependencies') ?>
 <p>
     SFML depends on a few other libraries, so before starting to configure you must have their development files installed.
@@ -141,8 +141,10 @@
     To generate makefiles usable with NMake on the Visual Studio command line, select "NMake Makefiles". To create makefiles usable with MinGW (GCC), select "MinGW Makefiles". It
     is generally easier to build SFML using makefiles rather than IDE projects: you can build the entire library with a single command, or even batch together multiple
     builds in a single script. Since you only plan to build SFML and not edit its source files, IDE projects aren't as useful.<br>
-    More importantly, the installation process (described further down) may not work with the "Xcode" generator. It is therefore highly
-    recommended to use the "Makefile" generator when building on Mac OS X.
+</p>
+<p class="important">
+    The installation process (described further down) may not work with the "Xcode" generator.
+    It is therefore highly recommended to use the <em>Makefile</em> generator when building on Mac OS X.
 </p>
 <p>
     Always keep the "Use default native compilers" option enabled. The other three fields can be left alone.
@@ -209,7 +211,7 @@
                 <a class="external" title="go to Apple documentation about dynamic library" href="http://developer.apple.com/library/mac/#documentation/DeveloperTools/Conceptual/DynamicLibraries/000-Introduction/Introduction.html">dylib binaries</a>.
                 Building frameworks requires BUILD_SHARED_LIBS to be selected.<br>
                 It is recommended to use SFML as frameworks when publishing your applications. Note however,
-                that SFML cannot be built in the debug configuration as frameworks. In that case, use dylibs instead. 
+                that SFML cannot be built in the debug configuration as frameworks. In that case, use dylibs instead.
             </td>
         </tr>
         <tr class="two">
@@ -243,8 +245,7 @@
         <tr class="one">
             <td><code>CMAKE_OSX_ARCHITECTURES<br/>(Mac OS X only)</code></td>
             <td>
-                This setting specifies for which architectures SFML should be built. The recommended value is "i386;x86_64" to generate universal binaries for both
-                32 and 64-bit systems.
+                This setting specifies for which architectures SFML should be built. The recommended value is "x86_64" as 32-bit build are no longer supported.
             </td>
         </tr>
         <tr class="two">
@@ -273,7 +274,7 @@
     CMake creates a variable cache for every project. Therefore, if you decide to reconfigure something at a later time, you'll find
     that your settings have been saved from the previous configuration. Make the necessary changes, reconfigure and generate the updated makefiles/projects.
 </p>
- 
+
 <h3>C++11 and Mac OS X</h3>
 <p>
     If you want to use C++11 features in your application on Mac OS X, you have to use clang (Apple's official compiler) and libc++. Moreover, you will need to build SFML with

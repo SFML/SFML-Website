@@ -20,7 +20,7 @@
     compilateur de votre choix. C'est un outil similaire à autoconf/automake ou premake -- pour ceux qui connaissent.
 </p>
 <p>
-    CMake est largement utilisé, par des projets connus tels que Blender, Boost, KDE ou encore Ogre. Vous pourrez en apprendre plus concernant CMake
+    CMake est largement utilisé, par des projets connus tels que Blender, CLion, KDE, Ogre et bien d'autres. Vous pourrez en apprendre plus concernant CMake
     sur son <a class="external" title="site officiel de CMake" href="http://www.cmake.org/">site officiel</a> ou sur la
     <a class="external" title="page wikipedia de CMake" href="http://fr.wikipedia.org/wiki/CMake">page Wikipedia</a>.
 </p>
@@ -146,8 +146,10 @@
     plus pratique de générer des makefiles plutôt que des projets pour EDI : vous pouvez compiler avec une simple commande, ou même rassembler plusieurs
     compilations dans un simple script. Etant donné que vous ne ferez que compiler et non éditer les sources, les projets pour EDI sont généralement
     inutiles.<br>
-    De plus, le processus d'installation (décrit plus loin dans ce document) peut ne pas fonctionner avec Xcode;
-    c'est pourquoi il est fortement recommendé d'utiliser le générateur de Makefile sur Mac OS X.
+</p>
+<p class="important">
+    Le processus d'installation (décrit plus loin dans ce document) peut ne pas fonctionner avec Xcode;
+    c'est pourquoi il est fortement recommendé d'utiliser le générateur de <em>Makefile</em> sur Mac OS X.
 </p>
 <p>
     Gardez toujours l'option "Use default native compilers", vous n'avez pas à vous préoccuper des trois autres.
@@ -252,8 +254,8 @@
         <tr class="one">
             <td><code>CMAKE_OSX_ARCHITECTURES<br/>(Mac OS X uniquement)</code></td>
             <td>
-                Ce paramètre définit pour quelles architectures SFML doit être compilée. La valeur recommendée est "i386;x86_64" afin de générer des binaires universels
-                pour des systèmes 32 et 64 bits.
+                Ce paramètre définit pour quelles architectures SFML doit être compilée.
+                La valeur recommendée est "x86_64" because 32-bit build are no longer supported.
             </td>
         </tr>
         <tr class="two">

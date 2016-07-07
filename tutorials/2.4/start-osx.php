@@ -23,7 +23,7 @@
     All you need to create an SFML application is:
 </p>
 <ul>
-    <li>An Intel Mac with Lion or later (10.7+)</li>
+    <li>An 64-bit Intel Mac with Lion or later (10.7+)</li>
     <li><a href="http://developer.apple.com/xcode/" title="Download Xcode">Xcode</a> (preferably version 4 or later of the IDE which is available on the <em>App Store</em>) and clang.</li>
 </ul>
 <p class="important">
@@ -33,25 +33,27 @@
 <h3>Binaries: dylib vs framework</h3>
 <p>
     SFML is available in two formats on Mac OS X. You have the <em>dylib</em> libraries on the one hand and the <em>framework</em> bundles on the other.
-    Both of them are provided as <a href="http://en.wikipedia.org/wiki/Universal_binary" title="Go to Wikipedia's article about universal binary">universal binaries</a>
-    so they can be used on 32-bit or 64-bit Intel systems without any special consideration.
 </p>
-<p>
-    Dylib stands for dynamic library; this format is like <em>.so</em> libraries on Linux. You can find more details in
-    <a href="https://developer.apple.com/library/mac/#documentation/DeveloperTools/Conceptual/DynamicLibraries/" title="Go to Apple's documentation about dylib">this document</a>.
-    Frameworks are fundamentally the same as dylibs, except that they can encapsulate external resources. Here is
-    <a href="https://developer.apple.com/library/mac/#documentation/MacOSX/Conceptual/BPFrameworks/Frameworks.html" title="Go to Apple's documentation about framework">the in-depth documentation</a>.
-</p>
+<ul>
+    <li>
+      Dylib stands for dynamic library; this format is like <em>.so</em> libraries on Linux. You can find more details in
+      <a href="https://developer.apple.com/library/mac/#documentation/DeveloperTools/Conceptual/DynamicLibraries/" title="Go to Apple's documentation about dylib">this document</a>.
+    </li>
+    <li>
+      Frameworks are fundamentally the same as dylibs, except that they can encapsulate external resources. Here is
+      <a href="https://developer.apple.com/library/mac/#documentation/MacOSX/Conceptual/BPFrameworks/Frameworks.html" title="Go to Apple's documentation about framework">the in-depth documentation</a>.
+    </li>
+</ul>
 <p>
     There is only one slight difference between these two kinds of libraries that you should be aware of while developing SFML applications:
     if you build SFML yourself, you can get dylib in both <em>release</em> and <em>debug</em> configurations. However, frameworks are only available in the <em>release</em> configuration.
-    In either case, it wouldn't be an issue since you would use the <em>release</em> version of SFML when you release your application anyway. That's why the OS X binaries
+    In either case, it shouldn't be an issue since you should be using the <em>release</em> version of SFML when you release your application anyway. That's why the OS X binaries
     on the <a href="../../download.php" title="Go to the download page">download page</a> are only available in the <em>release</em> configuration.
 </p>
 
 <h3>Xcode templates</h3>
 <p>
-    SFML is provided with two templates for Xcode 4 and later which allow you to create new application projects very quickly and easily. These templates can create custom projects:
+    SFML is provided with two templates for Xcode 4+ which allow you to create new application projects very quickly and easily:
     you can select which modules your application requires, whether you want to use SFML as dylib or as frameworks and whether to
     create an application bundle containing all its resources (making the installation process of your applications as easy as a simple drag-and-drop) or a classic binary.
     See below for more details.
@@ -64,7 +66,7 @@
 
 <h3>C++11, libc++ and libstdc++</h3>
 <p>
-    Apple ships a custom version of <tt>clang</tt> and <tt>libc++</tt> with Xcode that partially supports C++11 (i.e. some new features are not yet implemented).
+    Apple ships a custom version of <tt>clang</tt> and <tt>libc++</tt> with Xcode that supports C++11.
     If you plan to use C++11's new features, you need to configure your project to use <tt>clang</tt> and <tt>libc++</tt>.
 </p>
 <p>
@@ -79,25 +81,27 @@
 </p>
 <ul>
     <li>
-        Header files and libraries<br />
-        SFML is available either as dylibs or as frameworks. Only one type of binary is required although both can be installed simultaneously on the same system. We recommend using the frameworks.
+        <strong>Header files and libraries</strong><br />
+        SFML is available either as dylibs or as frameworks.
+        Only one type of binary is required although both can be installed simultaneously on the same system.
+        We recommend using the frameworks.
         <ul>
-            <li>dylib<br />
-            Copy the content of <tt>lib</tt> to <tt>/usr/local/lib</tt> and copy the content of <tt>include</tt> to <tt>/usr/local/include</tt>.
-            </li>
-            <li>frameworks<br />
+            <li><em>frameworks</em><br />
             Copy the content of <tt>Frameworks</tt> to <tt>/Library/Frameworks</tt>.
+            </li>
+            <li><em>dylib</em><br />
+            Copy the content of <tt>lib</tt> to <tt>/usr/local/lib</tt> and copy the content of <tt>include</tt> to <tt>/usr/local/include</tt>.
             </li>
         </ul>
     </li>
     <li>
-        SFML dependencies<br />
+        <strong>SFML dependencies</strong><br />
         SFML depends on a few external libraries on Mac OS X. Copy the content of <tt>extlibs</tt> to <tt>/Library/Frameworks</tt>.
     </li>
     <li>
-        Xcode templates<br />
-        This feature is optional but we strongly recommend that you install it. Copy the <tt>SFML</tt> directory from <tt>templates</tt> to <tt>/Library/Developer/Xcode/Templates</tt>
-        (create the folders if they don't exist yet).
+        <strong>Xcode templates</strong><br />
+        This feature is optional but we strongly recommend that you install it.
+        Copy the <tt>SFML</tt> directory from <tt>templates</tt> to <tt>/Library/Developer/Xcode/Templates</tt> (create the folders if they don't exist yet).
     </li>
 </ul>
 
@@ -136,19 +140,19 @@
 </p>
 <ol>
     <li>
-        Header &amp; source files: the project comes with a basic example in <tt>main.cpp</tt> and the helper function <code>std::string resourcePath(void);</code> in
+        <strong>Header &amp; source files:</strong> the project comes with a basic example in <tt>main.cpp</tt> and the helper function <code>std::string resourcePath(void);</code> in
         <tt>ResourcePath.hpp</tt> and <tt>ResourcePath.mm</tt>. The purpose of this function, as illustrated in the provided example, is to provide a convenient way to access
         the <tt>Resources</tt> folder of your application bundle.<br />
         Please note that this function only works on Mac OS X. If you are planning to make your application work on other operating systems, you should implement your own version of this
         function on the operating systems in question.
     </li>
     <li>
-        Resource files: the resources of the basic example are put in this folder and are automatically copied to your application bundle when you compile it.<br />
+        <strong>Resource files:</strong> the resources of the basic example are put in this folder and are automatically copied to your application bundle when you compile it.<br />
         To add new resources to your project, simply drag and drop them into this folder and make sure that they are a member of your application target; i.e. the box under
         <tt>Target Membership</tt> in the utility area (<kbd>cmd+alt+1</kbd>) should be checked.
     </li>
     <li>
-        Products: your application. Simply press the <tt>Run</tt> button to test it.
+        <strong>Products:</strong> your application. Simply press the <tt>Run</tt> button to test it.
     </li>
 </ol>
 <p>

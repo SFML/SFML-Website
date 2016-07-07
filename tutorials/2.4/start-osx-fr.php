@@ -25,7 +25,7 @@
     Tout ce dont vous avez besoin pour créer une application SFML est :
 </p>
 <ul>
-    <li>un Mac Intel avec Lion ou ultérieur (10.7+)</li>
+    <li>un Mac Intel 64-bit avec Lion ou ultérieur (10.7+)</li>
     <li>avec <a href="http://developer.apple.com/xcode/" title="Télécharger Xcode">Xcode</a> (de préférence la quatrième, cinquième ou sixième version de l'EDI, qui est disponible sur l'<em>App Store</em>) et clang.</li>
 </ul>
 <p class="important">
@@ -34,28 +34,31 @@
 
 <h3>Les binaires : dylib contre framework</h3>
 <p>
-    SFML est disponible en deux formats sous Mac OS X. Vous avez les bibliothèques <em>dylib</em> d'un côté, et les bundles <em>framework</em> de l'autre. Tous deux sont
-    fournis en tant que <a href="http://en.wikipedia.org/wiki/Universal_binary" title="Consulter la page wikipedia sur les binaires universels">binaires universels</a>,
-    afin qu'ils puissent être utilisés à la fois sur des systèmes Intel 32 ou 64 bits sans que vous ayez à vous en préoccuper.
+    SFML est disponible en deux formats sous Mac OS X. Vous avez les bibliothèques <em>dylib</em> d'un côté, et les bundles <em>framework</em> de l'autre.
 </p>
-<p>
-    Dylib signifie "bibliothèque dynamique" ; ce format est similaire aux bibliothèques <em>.so</em> sous Linux. Vous pourrez trouver plus de détails dans
-    <a href="https://developer.apple.com/library/mac/#documentation/DeveloperTools/Conceptual/DynamicLibraries/" title="Consulter la documentation d'Apple sur les dylibs">ce
-    document</a>. Les frameworks sont fondamentalement similaires aux dylibs, excepté qu'ils peuvent intégrer des ressources externes. Voici
-    <a href="https://developer.apple.com/library/mac/#documentation/MacOSX/Conceptual/BPFrameworks/Frameworks.html" title="Consulter la documentation d'Apple sur les frameworks">
-    la documentation détaillée</a>.
-</p>
+<ul>
+    <li>
+      Dylib signifie "bibliothèque dynamique" ; ce format est similaire aux bibliothèques <em>.so</em> sous Linux. Vous pourrez trouver plus de détails dans
+      <a href="https://developer.apple.com/library/mac/#documentation/DeveloperTools/Conceptual/DynamicLibraries/" title="Consulter la documentation d'Apple sur les dylibs">ce
+      document</a>.
+    </li>
+    <li>
+      Les frameworks sont fondamentalement similaires aux dylibs, excepté qu'ils peuvent intégrer des ressources externes. Voici
+      <a href="https://developer.apple.com/library/mac/#documentation/MacOSX/Conceptual/BPFrameworks/Frameworks.html" title="Consulter la documentation d'Apple sur les frameworks">
+      la documentation détaillée</a>.
+    </li>
+</ul>
 <p>
     Il y a une seule différence importante entre ces deux types de bibliothèques à garder en tête lorsque vous développez des applications SFML : si vous compilez SFML
     vous-même, vous pouvez créer les dylibs en version <em>release</em> et <em>debug</em>. Par contre, les frameworks ne sont disponibles qu'en version <em>release</em>.
-    Ceci ne sera toutefois pas un problème car quand vous distribuerez votre application aux utilisateurs finaux car il est préférable d'utiliser la version <em>release</em>
+    Ceci ne sera toutefois pas un problème car quand vous distribuerez votre application aux utilisateurs finaux il est préférable d'utiliser la version <em>release</em>
     de SFML. C'est pourquoi les binaires pour OS X disponibles sur <a href="../../download-fr.php" title="Aller à la page des téléchargements">la page de téléchargements</a>
     sont uniquement en version <em>release</em>.
 </p>
 
 <h3>Les templates Xcode</h3>
 <p>
-    SFML est livrée avec deux templates pour Xcode 4/5/6 qui vous permettent de créer très rapidement et facilement de nouveaux projets d'applications. Ces templates peuvent
+    SFML est livrée avec deux templates pour Xcode 4+ qui vous permettent de créer très rapidement et facilement de nouveaux projets d'applications. Ces templates peuvent
     créer des projets personnalisés : vous pouvez selectionner les modules dont votre application a besoin, choisir d'utiliser SFML en tant que dylib ou framework
     et décider entre créer un bundle d'application contenant toutes ses ressources (rendant l'installation de votre application aussi simple qu'un
     glisser-déposer) ou bien un binaire classique. Voyez plus bas pour plus de détails.
@@ -68,8 +71,7 @@
 
 <h3>C++11, libc++ et libstdc++</h3>
 <p>
-    Apple fournit une version personnalisée de <tt>clang</tt> et <tt>libc++</tt> avec Xcode, qui supportent (une partie du) standard C++11 (i.e. les nouvelles fonctionnalités
-    de C++11 ne sont pas encore toutes implémentées).
+    Apple fournit une version personnalisée de <tt>clang</tt> et <tt>libc++</tt> avec Xcode, qui supportent standard C++11.
     Si vous avez prévu d'utiliser ces nouvelles fonctionnalités, vous devez configurer votre projet pour utiliser <tt>clang</tt> et <tt>libc++</tt>.
 </p>
 <p>
@@ -84,28 +86,26 @@
 </p>
 <ul>
     <li>
-        Les fichiers d'en-tête et les bibliothèques<br />
+        <strong>Les fichiers d'en-tête et les bibliothèques</strong><br />
         SFML est fournie en dylib ou en framework. Nous recommandons d'utiliser les frameworks mais les deux peuvent être installés sur un même système.
         <ul>
-            <li>
-                dylib<br />
-                Copiez le contenu de <tt>lib</tt> dans <tt>/usr/local/lib</tt> et copiez le contenu de <tt>include</tt> dans <tt>/usr/local/include</tt>.
-            </li>
-            <li>
-                frameworks<br />
+            <li><em>frameworks</em><br />
                 Copiez le contenu de <tt>Frameworks</tt> dans <tt>/Library/Frameworks</tt>.
+            </li>
+            <li><em>dylib</em><br />
+                Copiez le contenu de <tt>lib</tt> dans <tt>/usr/local/lib</tt> et copiez le contenu de <tt>include</tt> dans <tt>/usr/local/include</tt>.
             </li>
         </ul>
     </li>
     <li>
-        Les dépendances de SFML<br />
+        <strong>Les dépendances de SFML</strong><br />
         SFML requiert seulement quelques bibliothèques externes sous Mac OS X. Copiez le contenu de <tt>extlibs</tt>
         dans <tt>/Library/Frameworks</tt>.
     </li>
     <li>
-        Les templates Xcode<br />
-        Ce composant est optionnel mais il est fortement recommandé de l'installer. Copiez le dossier <tt>SFML</tt> de <tt>templates</tt> dans
-        <tt>/Library/Developer/Xcode/Templates</tt> (si besoin, créez d'abord l'arborescence de répertoires).
+        <strong>Les templates Xcode</strong><br />
+        Ce composant est optionnel mais il est fortement recommandé de l'installer.
+        Copiez le dossier <tt>SFML</tt> de <tt>templates</tt> dans <tt>/Library/Developer/Xcode/Templates</tt> (si besoin, créez d'abord l'arborescence de répertoires).
     </li>
 </ul>
 <p>
@@ -149,20 +149,20 @@
 </p>
 <ol>
     <li>
-        En-tête &amp; fichiers sources : le projet vient avec un exemple basique dans <tt>main.cpp</tt> et une fonction d'utilitaire :
+        <strong>En-tête &amp; fichiers sources :</strong> le projet vient avec un exemple basique dans <tt>main.cpp</tt> et une fonction d'utilitaire :
         <code>std::string resourcePath(void);</code> dans <tt>ResourcePath.hpp</tt> et <tt>ResourcePath.mm</tt>.
         Le but de cette fonction, comme illustré dans l'exemple, est de fournir un moyen pratique d'accéder au répertoire <tt>Resources</tt> du bundle d'application.<br />
         Notez bien que cette fonction ne marche que sous Mac OS X. Si vous prévoyez de porter votre application sur un autre OS, vous devrez faire une autre implémentation
         de cette fonction.
     </li>
     <li>
-        Fichiers ressources : les ressources de l'exemple de base sont mises dans ce répertoire et sont automatiquement copiées dans votre bundle d'application lorsque vous
+        <strong>Fichiers ressources :</strong> les ressources de l'exemple de base sont mises dans ce répertoire et sont automatiquement copiées dans votre bundle d'application lorsque vous
         le compilez.<br />
         Pour ajouter de nouvelles ressources à votre projet, glissez-les simplement dans ce répertoire et assurez-vous qu'elles font partie de la cible de l'application,
         i.e. la case sous <tt>Target Membership</tt> dans la zone utilitaire (<kbd>cmd+alt+1</kbd>) doit être cochée.
     </li>
     <li>
-        Produit: c'est votre application. Cliquez simplement sur le bouton <tt>Run</tt> pour la tester.
+        <strong>Produit :</strong> c'est votre application. Cliquez simplement sur le bouton <tt>Run</tt> pour la tester.
     </li>
 </ol>
 <p>
