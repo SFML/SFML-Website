@@ -36,8 +36,11 @@
    </ul>
   </li>
  </ol>
- <a class="box" href="http://fr.sfml-dev.org/forums/index.php#c7"><div class="title" title="Aller au forum.">Rapport de bug</div></a>
- <a class="box" href="https://github.com/SFML/SFML/issues?q="><div class="title" title="Aller à la liste de tâches / bugs.">Liste de tâches et de bugs <img src="../images/icons/flag-en.png" alt="EN"></div></a>
+
+ <div style="text-align:center">
+  <a class="box" href="http://fr.sfml-dev.org/forums/index.php#c7"><div class="title" title="Aller au forum.">Rapport de bug</div></a>
+  <a class="box" href="https://github.com/SFML/SFML/issues?q="><div class="title" title="Aller à la liste de tâches / bugs.">Liste de tâches et de bugs <img src="../images/icons/flag-en.png" alt="EN"></div></a>
+ </div>
 </div>
 
 <?php
