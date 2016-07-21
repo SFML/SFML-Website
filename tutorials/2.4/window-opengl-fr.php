@@ -32,7 +32,7 @@
 </p>
 <p>
     Vous aurez ensuite besoin de lier votre programme à OpenGL. Contrairement à ce qu'elle fait avec les en-têtes, SFML ne peut pas fournir de
-    moyen unifié de lier OpenGL. Ainsi, vous devrez savoir quelle bibliothèque lier selon l'OS que vous utilisez ("opengl" sous Windows, "GL" sous
+    moyen unifié de lier OpenGL. Ainsi, vous devrez savoir quelle bibliothèque lier selon l'OS que vous utilisez ("opengl32" sous Windows, "GL" sous
     Linux, etc.). Pareil pour GLU, au cas où vous l'utiliseriez également : "glu32" sous Windows, "GLU" sous Linux, etc.
 </p>
 <p class="important">
