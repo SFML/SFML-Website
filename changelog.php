@@ -10,6 +10,7 @@
 <h1>Changelog</h1>
 
 <ul>
+ <li><a href="#sfml-2.4.0">SFML 2.4.0</a></li>
  <li><a href="#sfml-2.3.2">SFML 2.3.2</a></li>
  <li><a href="#sfml-2.3.1">SFML 2.3.1</a></li>
  <li><a href="#sfml-2.3">SFML 2.3</a></li>
@@ -23,6 +24,99 @@
  <li><a href="#sfml-1.2">SFML 1.2</a></li>
  <li><a href="#sfml-1.1">SFML 1.1</a></li>
 </ul>
+
+<h2 id="sfml-2.4.0"><a class="h2-link" href="#sfml-2.4.0">SFML 2.4.0</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
+<h3 id="2.4.0-general"><a class="h3-link" href="#2.4.0-general">General</a></h3>
+<ul>
+  <li>Added deprecation macro (<a href="https://github.com/SFML/SFML/pull/969">#969</a>)</li>
+  <li>Fixed issues reported by Coverity Scan static analysis (<a href="https://github.com/SFML/SFML/pull/1064">#1064</a>)</li>
+  <li>Fixed some initialization issues reported by Cppcheck (<a href="https://github.com/SFML/SFML/pull/1008">#1008</a>)</li>
+  <li>Changed comment chars in FindSFML.cmake to # (<a href="https://github.com/SFML/SFML/pull/1090">#1090</a>)</li>
+  <li>Fixed some typos (<a href="https://github.com/SFML/SFML/pull/1098">#1098</a>, <a href="https://github.com/SFML/SFML/pull/993">#993</a>, <a href="https://github.com/SFML/SFML/pull/1099">#1099</a>, <a href="https://github.com/SFML/SFML/pull/956">#956</a>, <a href="https://github.com/SFML/SFML/pull/963">#963</a>, <a href="https://github.com/SFML/SFML/pull/979">#979</a>)</li>
+  <li>Updated/fixed string comparisons in Config.cmake (<a href="https://github.com/SFML/SFML/pull/1102">#1102</a>)</li>
+  <li>Added the missing -s postfix for the RelWithDebInfo config (<a href="https://github.com/SFML/SFML/pull/1014">#1014</a>)</li>
+  <li>[Android] Fixed current Android compilation issues (<a href="https://github.com/SFML/SFML/pull/1116">#1116</a>, <a href="https://github.com/SFML/SFML/pull/1111">#1111</a>, <a href="https://github.com/SFML/SFML/pull/1079">#1079</a>)</li>
+  <li>[OS X] Update Xcode template material (<a href="https://github.com/SFML/SFML/pull/976">#976</a>, <a href="https://github.com/SFML/SFML/pull/968">#968</a>)</li>
+  <li>[Windows] Added support for VS 2015 (<a href="https://github.com/SFML/SFML/pull/972">#972</a>)</li>
+  <li>[Windows] Create and install PDB debug symbols alongside binaries (<a href="https://github.com/SFML/SFML/pull/1037">#1037</a>)</li>
+</ul>
+
+<h3 id="2.4.0-system"><a class="h3-link" href="#2.4.0-system">System</a></h3>
+<h4>Features</h4>
+<ul>
+  <li>[Android] Added sf::getNativeActivity() (<a href="https://github.com/SFML/SFML/pull/1005">#1005</a>, <a href="https://github.com/SFML/SFML/pull/680">#680</a>)</li>
+</ul>
+<h4>Bugfixes</h4>
+<ul>
+  <li>Added missing <iterator> include in String.hpp (<a href="https://github.com/SFML/SFML/pull/1069">#1069</a>, <a href="https://github.com/SFML/SFML/pull/1068">#1068</a>)</li>
+  <li>Fixed encoding of UTF-16 (<a href="https://github.com/SFML/SFML/pull/997">#997</a>)</li>
+  <li>[Android] Fixed crash when trying to load a non-existing font file (<a href="https://github.com/SFML/SFML/pull/1058">#1058</a>)</li>
+</ul>
+
+<h3 id="2.4.0-window"><a class="h3-link" href="#2.4.0-window">Window</a></h3>
+<h4>Features</h4>
+<ul>
+  <li>Added ability to grab cursor (<a href="https://github.com/SFML/SFML/pull/614">#614</a>, <a href="https://github.com/SFML/SFML/pull/394">#394</a>, <a href="https://github.com/SFML/SFML/pull/1107">#1107</a>)</li>
+  <li>Added Multi-GPU preference (<a href="https://github.com/SFML/SFML/pull/869">#869</a>, <a href="https://github.com/SFML/SFML/pull/867">#867</a>)</li>
+  <li>Added support for sRGB capable framebuffers (<a href="https://github.com/SFML/SFML/pull/981">#981</a>, <a href="https://github.com/SFML/SFML/pull/175">#175</a>)</li>
+  <li>[Linux, Windows] Improved OpenGL context creation (<a href="https://github.com/SFML/SFML/pull/884">#884</a>)</li>
+  <li>[Linux, Windows] Added support for pbuffers on Windows and Unix (<a href="https://github.com/SFML/SFML/pull/885">#885</a>, <a href="https://github.com/SFML/SFML/pull/434">#434</a>)</li>
+</ul>
+<h4>Bugfixes</h4>
+<ul>
+  <li>Updated platform-specific handle documentation (<a href="https://github.com/SFML/SFML/pull/961">#961</a>)</li>
+  <li>[Android] Accept touch events from "multiple" devices (<a href="https://github.com/SFML/SFML/pull/954">#954</a>, <a href="https://github.com/SFML/SFML/pull/953">#953</a>)</li>
+  <li>[Android] Copy the selected EGL context's settings to SFML (<a href="https://github.com/SFML/SFML/pull/1039">#1039</a>)</li>
+  <li>[Linux] Fixed modifiers causing sf::Keyboard::Unknown being returned (<a href="https://github.com/SFML/SFML/pull/1022">#1022</a>, <a href="https://github.com/SFML/SFML/pull/1012">#1012</a>)</li>
+  <li>[OS X] Improved memory management on OS X (<a href="https://github.com/SFML/SFML/pull/962">#962</a>, <a href="https://github.com/SFML/SFML/pull/790">#790</a>)</li>
+  <li>[OS X] Fixed crash when resizing a window to a zero-height/width size (<a href="https://github.com/SFML/SFML/pull/986">#986</a>, <a href="https://github.com/SFML/SFML/pull/984">#984</a>)</li>
+  <li>[OS X] Use the mouse button constant instead of 0 to avoid a compiler error on OSX (<a href="https://github.com/SFML/SFML/pull/1035">#1035</a>)</li>
+  <li>[OS X] OS X improvement: warnings + bugfix + refactoring, the lot! (<a href="https://github.com/SFML/SFML/pull/1042">#1042</a>)</li>
+</ul>
+
+<h3 id="2.4.0-graphics"><a class="h3-link" href="#2.4.0-graphics">Graphics</a></h3>
+<h4>Features</h4>
+<ul>
+  <li>Added support for outlined text (<a href="https://github.com/SFML/SFML/pull/840">#840</a>)</li>
+  <li>Add support for geometry shaders (<a href="https://github.com/SFML/SFML/pull/886">#886</a>, <a href="https://github.com/SFML/SFML/pull/428">#428</a>)</li>
+  <li>Feature/blend mode reverse subtract (<a href="https://github.com/SFML/SFML/pull/945">#945</a>, <a href="https://github.com/SFML/SFML/pull/944">#944</a>)</li>
+  <li>Implemented support for mipmap generation (<a href="https://github.com/SFML/SFML/pull/973">#973</a>, <a href="https://github.com/SFML/SFML/pull/498">#498</a>, <a href="https://github.com/SFML/SFML/pull/123">#123</a>)</li>
+  <li>Added new API to set shader uniforms (<a href="https://github.com/SFML/SFML/pull/983">#983</a>, <a href="https://github.com/SFML/SFML/pull/538">#538</a>)</li>
+  <li>Rewrite RenderWindow::capture (<a href="https://github.com/SFML/SFML/pull/1001">#1001</a>)</li>
+</ul>
+<h4>Bugfixes</h4>
+<ul>
+  <li>Exporting some Glsl utility functions due to linking issues (<a href="https://github.com/SFML/SFML/pull/1044">#1044</a>, <a href="https://github.com/SFML/SFML/pull/1046">#1046</a>)</li>
+  <li>Fixed missing initialisation of Font::m_stroker (<a href="https://github.com/SFML/SFML/pull/1059">#1059</a>)</li>
+  <li>Changed primitive types to be grammatically correct (<a href="https://github.com/SFML/SFML/pull/1095">#1095</a>, <a href="https://github.com/SFML/SFML/pull/939">#939</a>)</li>
+</ul>
+
+<h3 id="2.4.0-audio"><a class="h3-link" href="#2.4.0-audio">Audio</a></h3>
+<h4>Features</h4>
+<ul>
+  <li>Implemented stereo audio recording (<a href="https://github.com/SFML/SFML/pull/1010">#1010</a>)</li>
+</ul>
+<h4>Bugfixes</h4>
+<ul>
+  <li>Added an assignment operator to SoundSource (<a href="https://github.com/SFML/SFML/pull/864">#864</a>)</li>
+  <li>[OS X] Updates OpenAL-soft for OS X to version 1.17.2 (<a href="https://github.com/SFML/SFML/pull/1057">#1057</a>, <a href="https://github.com/SFML/SFML/pull/900">#900</a>, <a href="https://github.com/SFML/SFML/pull/1000">#1000</a>)</li>
+  <li>Fixed a bug where vorbis can't handle large buffers (<a href="https://github.com/SFML/SFML/pull/1067">#1067</a>)</li>
+  <li>Added support for 24-bit .wav files (<a href="https://github.com/SFML/SFML/pull/958">#958</a>, <a href="https://github.com/SFML/SFML/pull/955">#955</a>)</li>
+  <li>Fixed threading issue in sf::SoundRecorder (<a href="https://github.com/SFML/SFML/pull/1011">#1011</a>)</li>
+  <li>Made WAV file reader no longer assume that data chunk goes till end of file to prevent reading trailing metadata as samples (<a href="https://github.com/SFML/SFML/pull/1018">#1018</a>)</li>
+  <li>Fixed seeking in multi channel FLAC files (<a href="https://github.com/SFML/SFML/pull/1041">#1041</a>, <a href="https://github.com/SFML/SFML/pull/1040">#1040</a>)</li>
+</ul>
+
+<h3 id="2.4.0-network"><a class="h3-link" href="#2.4.0-network">Network</a></h3>
+<h4>Features</h4>
+<ul>
+  <li>Added optional argument on which address to bind (socket). (<a href="https://github.com/SFML/SFML/pull/850">#850</a>, <a href="https://github.com/SFML/SFML/pull/678">#678</a>)</li>
+</ul>
+<h4>Bugfixes</h4>
+<ul>
+  <li>Fixed FTP directory listing blocking forever (<a href="https://github.com/SFML/SFML/pull/1086">#1086</a>, <a href="https://github.com/SFML/SFML/pull/1025">#1025</a>)</li>
+</ul>
+
 
 <h2 id="sfml-2.3.2"><a class="h2-link" href="#sfml-2.3.2">SFML 2.3.2</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 <h3 id="2.3.2-general"><a class="h3-link" href="#2.3.2-general">General</a></h3>
