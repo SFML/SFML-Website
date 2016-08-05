@@ -1,11 +1,7 @@
 <?php
-
-    $breadcrumbs = array(
-        'Learn' => 'learn.php',
-        '2.3 Tutorials' => 'tutorials/2.3'
-    );
-
-    require("../../header.php");
+    $page = 'index.php';
+    $title = '';
+    require("header.php");
 ?>
 
 <h1>Tutorials for SFML 2.3</h1>
