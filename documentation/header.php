@@ -13,7 +13,13 @@
 
     if($version != $latest)
     {
-        $linklatest = '<a class="important" href="../' . $latest . '/' . str_replace('documentation/' . $version . '/', '', $breadcrumbs[$pagetitle]) . '"><strong>Warning:</strong> this page refers to an old version of SFML. Click here to switch to the latest version.</a>';
+        $expected_page = str_replace($version, $latest, '/' . $breadcrumbs[$pagetitle]);
+        if (file_exists($_SERVER['DOCUMENT_ROOT'] . $expected_page))
+            $redirect = $expected_page;
+        else
+            $redirect = '/documentation/' . $latest;
+
+        $linklatest = '<a class="important" href="' . $redirect . '"><strong>Warning:</strong> this page refers to an old version of SFML. Click here to switch to the latest version.</a>';
     }
 ?>
 
