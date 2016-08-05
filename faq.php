@@ -9,7 +9,7 @@
 
 <div class="faq">
  <h1><a href="#frequently-asked-questions-faq">Frequently Asked Questions (FAQ)</a></h1>
- 
+
  <p><strong><a href="#general">General</a></strong></p>
  <ul>
   <li><a href="#grl-whatis">What is SFML?</a></li>
@@ -23,7 +23,7 @@
   <li><a href="#grl-learn">Is using SFML a good way to learn to program (in C++)?</a></li>
   <li><a href="#grl-questions">Where can I ask questions?</a></li>
  </ul>
-  
+
  <p><strong><a href="#build-use">Building and Using SFML</a></strong></p>
  <ul>
   <li><a href="#build-build">How do I build SFML?</a></li>
@@ -145,7 +145,7 @@
  <p><strong><a href="https://github.com/SFML/SFML/wiki/Community-FAQ#misc">Miscellaneous</a> (Community FAQ)</strong></p>
 
  <h2 id="general"><a class="h2-link" href="#general">General</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
- 
+
  <h3 id="grl-whatis"><a class="h3-link" href="#grl-whatis">What is SFML?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>SFML is a simple to use and portable API written in C++. You can think of it as an object oriented SDL. SFML is made of modules in order to be as useful as possible for everyone. You can use SFML as a minimalist window system in order to use OpenGL, or as a complete multimedia library full of features to build video games or multimedia softwares.</p>
  <!--p>You can find a more specific presentation of its features on <a href="features.php">this page</a>.</p//-->
@@ -180,7 +180,7 @@
  <p>SFML has also internal dependencies: Audio and Window depend on System, while Graphics depends on System and Window. In order to use the Graphics module, you must link with Graphics, Window, and System (the order of linkage matters with GCC).</p>
 
  <h3 id="grl-version"><a class="h3-link" href="#grl-version">What version of SFML should I use?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>Go for SFML 2.3, because you'll get a stable release with the latest features and bugfixes. As such it will save you a lot of headaches because other versions such as 1.6 are not maintained anymore, contain quite a few critical bugs and lack a lot of useful features.</p>
+ <p>Go for SFML 2.4, because you'll get a stable release with the latest features and bugfixes. As such it will save you a lot of headaches because other versions such as 1.6 are not maintained anymore, contain quite a few critical bugs and lack a lot of useful features.</p>
 
  <h3 id="grl-changes"><a class="h3-link" href="#grl-changes">Is there a complete list with all the changes from SFML 1.6 to SFML 2.x?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>This non-exhaustive list can be used as a starting point: <a href="http://en.sfml-dev.org/forums/index.php?topic=5343.0">SFML Forum</a><br>
@@ -650,7 +650,7 @@ std::size_t pos = cpp_string.find( sfml_string );</code></pre>
  <p>See <a href="#build-link">What and how do I link to use SFML?</a></p>
  <p>If that doesn't help, see <a href="#tr-grl-verbose-ide">How do I make my IDE output verbose build information?</a></p>
  <p>If that also doesn't help, feel free to ask for assistance on the forum.</p>
- 
+
  <h3 id="tr-grl-verbose-ide"><a class="h3-link" href="#tr-grl-verbose-ide">How do I make my IDE output verbose build information?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>Often times, compiling/linking your project might fail for some reason. Even after re-checking all your project settings and comparing it to what is described in the tutorials you still don't know the cause. IDEs (Integrated Development Environments) are nothing but front-ends for the toolchain underneath of it. All that IDEs (such as Code::Blocks, Visual Studio, Eclipse etc.) do is automate and generally make it easier for you to work on your projects from within a single environment, hence their name. Without IDEs, you would have to resort to plain text editors to write your code and manually pass your source files to your compiler/linker on the command-line yourself.</p>
  <p>One way an IDE makes your life simpler is by parsing the compiler/linker output and presenting it to you in a friendlier manner. Often, clicking on an error will take you to the offending line for example. What your IDE does "behind the scenes" when you click on the Build button or press your Build key is invoke a series of commands that you would also able to do yourself (but is simply tedious). It then relays the generated text output, including all warnings and errors back to you after the commands have been run. By default, most IDEs are set by default to not show the commands it runs behind the scenes to the user. However, it is exactly this information that is helpful when building fails. Thankfully, the IDEs let you specify whether you want to see these commands or not.</p>
@@ -815,7 +815,7 @@ int main() {
     else
       compiz --replace &
     fi</code></pre>
-    
+
  <h2 id="licensing"><a class="h2-link" href="#licensing">Licensing</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 
  <h3 id="lic-license"><a class="h3-link" href="#lic-license">What license does SFML have?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
