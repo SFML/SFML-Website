@@ -19,10 +19,6 @@
     <tbody>
         <tr>
             <td class="os" rowspan="7">Windows</td>
-            <td><?php download_link('Visual C++ 10 (2010)', '32-bit', 'TODO', '../../../files/SFML-2.4.0-windows-vc10-32-bit.zip') ?></td>
-            <td><?php download_link('Visual C++ 10 (2010)', '64-bit', 'TODO', '../../../files/SFML-2.4.0-windows-vc10-64-bit.zip') ?></td>
-        </tr>
-        <tr>
             <td><?php download_link('Visual C++ 11 (2012)', '32-bit', 'TODO', '../../../files/SFML-2.4.0-windows-vc11-32-bit.zip') ?></td>
             <td><?php download_link('Visual C++ 11 (2012)', '64-bit', 'TODO', '../../../files/SFML-2.4.0-windows-vc11-64-bit.zip') ?></td>
         </tr>
@@ -35,29 +31,23 @@
             <td><?php download_link('Visual C++ 14 (2015)', '64-bit', 'TODO', '../../../files/SFML-2.4.0-windows-vc14-64-bit.zip') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('GCC 4.7.1 TDM (SJLJ)', '32-bit', 'TODO', '../../../files/SFML-2.4.0-windows-gcc-4.7.1-tdm-32-bit.zip') ?></td>
-            <td><?php download_link('GCC 4.7.1 TDM (SJLJ)', '64-bit', 'TODO', '../../../files/SFML-2.4.0-windows-gcc-4.7.1-tdm-64-bit.zip') ?></td>
+            <td><?php download_link('GCC 4.9.2 TDM (SJLJ)', '32-bit', 'TODO', '../../../files/SFML-2.4.0-windows-gcc-4.9.2-tdm-32-bit.zip') ?></td>
+            <td><?php download_link('GCC 4.9.2 TDM (SJLJ)', '64-bit', 'TODO', '../../../files/SFML-2.4.0-windows-gcc-4.9.2-tdm-64-bit.zip') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('GCC 4.8.1 TDM (SJLJ)', '32-bit', 'TODO', '../../../files/SFML-2.4.0-windows-gcc-4.8.1-tdm-32-bit.zip') ?></td>
-            <td><?php download_link('GCC 4.8.1 TDM (SJLJ)', '64-bit', 'TODO', '../../../files/SFML-2.4.0-windows-gcc-4.8.1-tdm-64-bit.zip') ?></td>
+            <td><?php download_link('GCC 6.1.0 MinGW (DW2)', '32-bit', 'TODO', '../../../files/SFML-2.4.0-windows-gcc-6.1.0-mingw-32-bit.zip') ?></td>
+            <td><?php download_link('GCC 6.1.0 MinGW (SEH)', '64-bit', 'TODO', '../../../files/SFML-2.4.0-windows-gcc-6.1.0-mingw-64-bit.zip') ?></td>
         </tr>
-        <tr>
-            <td><?php download_link('GCC 4.9.2 MinGW (DW2)', '32-bit', 'TODO', '../../../files/SFML-2.4.0-windows-gcc-4.9.2-mingw-32-bit.zip') ?></td>
-            <td><?php download_link('GCC 4.9.2 MinGW (SEH)', '64-bit', 'TODO', '../../../files/SFML-2.4.0-windows-gcc-4.9.2-mingw-64-bit.zip') ?></td>
-        <tr>
         <tr>
             <td class="notice" colspan="3">
                 Sous Windows, choisir les bibliothèques 32 ou 64-bit doit se baser sur la plateforme pour laquelle vous voulez compiler, et non sur l'OS que vous avez.
                 En effet, un Windows 64-bit peut parfaitement compiler et faire tourner un programme 32-bit. Vous voudrez donc très certainement utiliser les
                 packages 32-bit, afin de cibler une audience la plus large possible. Choisissez les packages 64-bit uniquement si vous avez de bonnes raisons.<br>
                 <strong>La version du compilateur doit correspondre à 100% !</strong> Voici les liens vers les versions du compilateur MinGW qui ont été utilisées pour compiler les paquets fournis :<br>
-                <a href="https://sourceforge.net/projects/tdm-gcc/files/TDM-GCC%20Installer/Previous/1.1006.0/tdm-gcc-4.7.1.exe/download">TDM 4.7.1 (32 bits)</a>,
-                <a href="https://sourceforge.net/projects/tdm-gcc/files/TDM-GCC%20Installer/Previous/1.1006.0/tdm64-gcc-4.7.1.exe/download">TDM 4.7.1 (64 bits)</a>,
-                <a href="https://sourceforge.net/projects/tdm-gcc/files/TDM-GCC%20Installer/Previous/1.1309.0/tdm-gcc-4.8.1.exe/download">TDM 4.8.1 (32 bits)</a>,
-                <a href="https://sourceforge.net/projects/tdm-gcc/files/TDM-GCC%20Installer/Previous/1.1309.0/tdm64-gcc-4.8.1.exe/download">TDM 4.8.1 (64 bits)</a>,
-                <a href="https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/4.9.2/threads-posix/dwarf/i686-4.9.2-release-posix-dwarf-rt_v4-rev2.7z/download">MinGW Builds 4.9.2 (32 bits)</a>,
-                <a href="https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/4.9.2/threads-posix/seh/x86_64-4.9.2-release-posix-seh-rt_v4-rev2.7z/download">MinGW Builds 4.9.2 (64 bits)</a>
+                <a href="https://sourceforge.net/projects/tdm-gcc/files/TDM-GCC%20Installer/Previous/1.1309.0/tdm-gcc-4.9.2.exe/download">TDM 4.9.2 (32-bit)</a>,
+                <a href="https://sourceforge.net/projects/tdm-gcc/files/TDM-GCC%20Installer/Previous/1.1309.0/tdm64-gcc-4.9.2-3.exe/download">TDM 4.9.2 (64-bit)</a>,
+                <a href="https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/6.1.0/threads-posix/dwarf/i686-6.1.0-release-posix-dwarf-rt_v5-rev0.7z/download">MinGW Builds 6.1.0 (32-bit)</a>,
+                <a href="https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/6.1.0/threads-posix/seh/x86_64-6.1.0-release-posix-seh-rt_v5-rev0.7z/download">MinGW Builds 6.1.0 (64-bit)</a>
             </td>
         </tr>
     </tbody>
