@@ -41,6 +41,17 @@
   <li>[Windows] Create and install PDB debug symbols alongside binaries (<a href="https://github.com/SFML/SFML/pull/1037">#1037</a>)</li>
 </ul>
 
+<h3 id="2.4.0-deprecated"><a class="h3-link" href="#2.4.0-deprecated">Deprecated API</a></h3>
+<ul>
+ <li>sf::RenderWindow::capture(): Use a sf::Texture and its sf::Texture::update(const Window&) function and copy its contents into an sf::Image instead.</li>
+ <li>sf::Shader::setParameter(): Use setUniform() instead.</li>
+ <li>sf::Text::getColor(): There is now fill and outline colors instead of a single global color. Use getFillColor() or getOutlineColor() instead.</li>
+ <li>sf::Text::setColor(): There is now fill and outline colors instead of a single global color. Use setFillColor() or setOutlineColor() instead.</li>
+ <li>sf::LinesStrip: Use LineStrip instead.</li>
+ <li>sf::TrianglesFan: Use TriangleFan instead.</li>
+ <li>sf::TrianglesStrip: Use TriangleStrip instead.</li>
+</ul>
+
 <h3 id="2.4.0-system"><a class="h3-link" href="#2.4.0-system">System</a></h3>
 <h4>Features</h4>
 <ul>
@@ -187,6 +198,11 @@
  <li>[Android] Updated toolchain file and dependencies (<a href="https://github.com/SFML/SFML/pull/791">#791</a>)</li>
  <li>[Linux] Fixed missing pthread dependency (<a href="https://github.com/SFML/SFML/pull/794">#794</a>)</li>
  <li>[OS X] Relaxed CMake installation rules regarding framework dependencies (<a href="https://github.com/SFML/SFML/pull/767">#767</a>)</li>
+</ul>
+
+<h3 id="2.3-deprecated"><a class="h3-link" href="#2.3-deprecated">Deprecated API</a></h3>
+<ul>
+ <li>sf::Event::MouseWheelEvent: This event is deprecated and potentially inaccurate. Use MouseWheelScrollEvent instead.</li>
 </ul>
 
 <h3 id="2.3-window"><a class="h3-link" href="#2.3-window">Window</a></h3>
