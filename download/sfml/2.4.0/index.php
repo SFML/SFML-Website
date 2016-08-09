@@ -18,25 +18,25 @@
 <table class="styled download">
     <tbody>
         <tr>
-            <td class="os" rowspan="7">Windows</td>
-            <td><?php download_link('Visual C++ 11 (2012)', '32-bit', 'TODO', '../../../files/SFML-2.4.0-windows-vc11-32-bit.zip') ?></td>
-            <td><?php download_link('Visual C++ 11 (2012)', '64-bit', 'TODO', '../../../files/SFML-2.4.0-windows-vc11-64-bit.zip') ?></td>
+            <td class="os" rowspan="6">Windows</td>
+            <td><?php download_link('Visual C++ 11 (2012)', '32-bit', '17.6', '../../../files/SFML-2.4.0-windows-vc11-32-bit.zip') ?></td>
+            <td><?php download_link('Visual C++ 11 (2012)', '64-bit', '19.5', '../../../files/SFML-2.4.0-windows-vc11-64-bit.zip') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('Visual C++ 12 (2013)', '32-bit', 'TODO', '../../../files/SFML-2.4.0-windows-vc12-32-bit.zip') ?></td>
-            <td><?php download_link('Visual C++ 12 (2013)', '64-bit', 'TODO', '../../../files/SFML-2.4.0-windows-vc12-64-bit.zip') ?></td>
+            <td><?php download_link('Visual C++ 12 (2013)', '32-bit', '17.0', '../../../files/SFML-2.4.0-windows-vc12-32-bit.zip') ?></td>
+            <td><?php download_link('Visual C++ 12 (2013)', '64-bit', '18.8', '../../../files/SFML-2.4.0-windows-vc12-64-bit.zip') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('Visual C++ 14 (2015)', '32-bit', 'TODO', '../../../files/SFML-2.4.0-windows-vc14-32-bit.zip') ?></td>
-            <td><?php download_link('Visual C++ 14 (2015)', '64-bit', 'TODO', '../../../files/SFML-2.4.0-windows-vc14-64-bit.zip') ?></td>
+            <td><?php download_link('Visual C++ 14 (2015)', '32-bit', '16.9', '../../../files/SFML-2.4.0-windows-vc14-32-bit.zip') ?></td>
+            <td><?php download_link('Visual C++ 14 (2015)', '64-bit', '18.6', '../../../files/SFML-2.4.0-windows-vc14-64-bit.zip') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('GCC 4.9.2 TDM (SJLJ)', '32-bit', 'TODO', '../../../files/SFML-2.4.0-windows-gcc-4.9.2-tdm-32-bit.zip') ?></td>
-            <td><?php download_link('GCC 4.9.2 TDM (SJLJ)', '64-bit', 'TODO', '../../../files/SFML-2.4.0-windows-gcc-4.9.2-tdm-64-bit.zip') ?></td>
+            <td><?php download_link('GCC 4.9.2 TDM (SJLJ)', '32-bit', '14.5', '../../../files/SFML-2.4.0-windows-gcc-4.9.2-tdm-32-bit.zip') ?></td>
+            <td><?php download_link('GCC 4.9.2 TDM (SJLJ)', '64-bit', '16.7', '../../../files/SFML-2.4.0-windows-gcc-4.9.2-tdm-64-bit.zip') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('GCC 6.1.0 MinGW (DW2)', '32-bit', 'TODO', '../../../files/SFML-2.4.0-windows-gcc-6.1.0-mingw-32-bit.zip') ?></td>
-            <td><?php download_link('GCC 6.1.0 MinGW (SEH)', '64-bit', 'TODO', '../../../files/SFML-2.4.0-windows-gcc-6.1.0-mingw-64-bit.zip') ?></td>
+            <td><?php download_link('GCC 6.1.0 MinGW (DW2)', '32-bit', '16.1', '../../../files/SFML-2.4.0-windows-gcc-6.1.0-mingw-32-bit.zip') ?></td>
+            <td><?php download_link('GCC 6.1.0 MinGW (SEH)', '64-bit', '17.1', '../../../files/SFML-2.4.0-windows-gcc-6.1.0-mingw-64-bit.zip') ?></td>
         </tr>
         <tr>
             <td class="notice" colspan="3">
@@ -56,14 +56,14 @@
 <table class="styled download">
     <tbody>
         <tr>
-            <td class="os" rowspan="1">Linux</td>
-            <td><?php download_link('GCC', '32-bit', 'TODO', '../../../files/SFML-2.4.0-linux-gcc-32-bit.tar.gz') ?></td>
-            <td><?php download_link('GCC', '64-bit', 'TODO', '../../../files/SFML-2.4.0-linux-gcc-64-bit.tar.gz') ?></td>
+            <td class="os" rowspan="2">Linux</td>
+            <td><?php download_link('GCC', '64-bit', '13.4', '../../../files/SFML-2.4.0-linux-gcc-64-bit.tar.gz') ?></td>
         </tr>
         <tr>
             <td class="notice" colspan="3">
                 On Linux, if you have a 64-bit OS then you have the 64-bit toolchain installed by default. Compiling for 32-bit is possible, but you have to install
-                specific packages and/or use specific compiler options to do so. So downloading the 64-bit libraries is the easiest solution if you're on a 64-bit Linux.
+                specific packages and/or use specific compiler options to do so. So downloading the 64-bit libraries is the easiest solution if you're on a 64-bit Linux.<br />
+                If you require a 32-bit build of SFML you'll have to <a href="/tutorials/2.4/compile-with-cmake.php">build it yourself</a>.
             </td>
         </tr>
     </tbody>
@@ -72,8 +72,8 @@
 <table class="styled download">
     <tbody>
         <tr>
-            <td class="os" rowspan="3">Mac OS X</td>
-            <td><?php download_link('Clang', '64-bit (OS X 10.7+, compatible with C++11 and libc++)', 'TODO', '../../../files/SFML-2.4.0-osx-clang-universal.tar.gz') ?></td>
+            <td class="os" rowspan="2">Mac OS X</td>
+            <td><?php download_link('Clang', '64-bit (OS X 10.7+, compatible with C++11 and libc++)', '5.6', '../../../files/SFML-2.4.0-osx-clang.tar.gz') ?></td>
         </tr>
         <tr>
             <td class="notice" colspan="3">
@@ -87,10 +87,10 @@
     <tbody>
         <tr>
             <td class="os" rowspan="2">All</td>
-            <td><span class="description">Source code</span><a href="../../../files/SFML-2.4.0-sources.zip">Download<span class="size">TODO MB</span></a></td>
+            <td><span class="description">Source code</span><a href="../../../files/SFML-2.4.0-sources.zip">Download<span class="size">25 MB</span></a></td>
         </tr>
         <tr>
-            <td><span class="description">HTML Documentation</span><a href="../../../files/SFML-2.4.0-doc.zip">Download<span class="size">TODO MB</span></a></td>
+            <td><span class="description">HTML Documentation</span><a href="../../../files/SFML-2.4.0-doc.zip">Download<span class="size">1.4 MB</span></a></td>
         </tr>
     </tbody>
 </table>
