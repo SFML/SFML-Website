@@ -64,6 +64,12 @@
             <td>Andy Patterson</td>
         </tr>
         <tr>
+            <th rowspan="1">Free Pascal Compiler aka FPC</th>
+            <td><a href="https://github.com/DJMaster/csfml-fpc" class="website">csfml-fpc</a></td>
+            <td>2.4</td>
+            <td>DJMaster</td>
+        </tr>
+        <tr>
             <th rowspan="1">Go</th>
             <td><a href="https://bitbucket.org/krepa098/gosfml2" class="website"><img src="../images/bindings/gosfml2.png" alt="GoSFML2"></a></td>
             <td>2.0</td>
