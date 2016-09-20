@@ -86,7 +86,7 @@
         </tr>
         <tr>
             <th rowspan="1">Java</th>
-            <td><a href="http://jsfml.org/" class="website"><img src="../images/bindings/jsfml.png" alt="JSFML"/></a></td>
+            <td><a href="https://jsfml.sfmlprojects.org/" class="website"><img src="../images/bindings/jsfml.png" alt="JSFML"/></a></td>
             <td>2.2</td>
             <td><a href="mailto:pdinklag@gmail.com">Patrick Dinklage</a></td>
         </tr>
