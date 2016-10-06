@@ -101,6 +101,9 @@ int main()
     sf::Window window(sf::VideoMode(800, 600), "OpenGL", sf::Style::Default, sf::ContextSettings(32));
     window.setVerticalSyncEnabled(true);
 
+    // activate the window
+    window.setActive(true);
+
     // load resources, initialize the OpenGL states, ...
 
     // run the main loop
@@ -144,6 +147,57 @@ int main()
 <p>
     Don't hesitate to have a look at the "OpenGL" and "Window" examples in the SFML SDK if you have further problems, they are more complete and
     most likely contain solutions to your problems.
+</p>
+
+<?php h2('Managing OpenGL contexts') ?>
+<p>
+    Every window created in SFML automatically comes with an OpenGL context. When calling any OpenGL functions, they operate on the currently active
+    context. It is thus required that a context be active any time OpenGL functions are called. If a context is not active when an OpenGL function is
+    called, the function call will not result in the desired effects since there is no state for it to have an effect on.
+</p>
+<p>
+    In order to activate a window's context, use <code>window.setActive()</code> which is the same as <code>window.setActive(true)</code>. Activating
+    a context while another is currently active will result in the currently active one being implicitly deactivated before the new one is activated.
+    In order to explicitly deactivate a window's context, use <code>window.setActive(false)</code>. This is required if the context is to be activated
+    on another thread as explained later on. Generally however, it is recommended to simply deactivate the context every time you are done with a batch
+    of OpenGL operations. Following this advice, each batch of operations would be visibly wrapped between activation and deactivation calls. A RAII
+    helper class can be written for this purpose.
+</p>
+<pre><code class="cpp">// activate the window's context
+window.setActive(true);
+
+// set up OpenGL states
+// clear framebuffers
+// draw to the window
+
+// deactivate the window's context
+window.setActive(false);
+</code></pre>
+<p class="important">
+    When debugging issues with OpenGL in SFML, the first step is always to make sure a context is active when OpenGL functions are called. Do not
+    assume that SFML will implicitly activate a context or that SFML will preserve the currently active context when calling into the library. The
+    only guarantee provided is that the context active on the current thread will not change between calls to <code>window.setActive(true)</code> and
+    <code>window.setActive(false)</code> as long as no other calls are made into the library in between. In all other cases, it has to be assumed that
+    the current context might have changed, so explicitly reactivating the previously active context is required to guarantee the previously active
+    context is once again active. Also ensure that the right context is active when an OpenGL function is called. The active context not only provides an
+    execution environment for OpenGL operations, it also designates the destination framebuffer of any draw commands. Calling OpenGL draw functions while
+    a context without a visible framebuffer is active will result in those draw commands not producing any visible output. Splitting OpenGL operations
+    among multiple contexts will also result in the state changes being spread across the contexts. If any subsequent draw operation assumes that certain
+    states are set, it will not produce the correct results in this case.
+</p>
+<p class="important">
+    A highly recommended practice when writing OpenGL code is to always check if any OpenGL errors were produced after every OpenGL function call. This is
+    done via the <code>glGetError()</code> function. Checking for errors after every function call will help to narrow down where a possible error might have
+    occurred and improve debugging efficiency significantly.
+</p>
+<p>
+    Depending on the version and capabilities of the context available, care has to be taken to only call functions that are actually valid within the
+    current context. Doing otherwise will often result in the <code>GL_INVALID_OPERATION</code> or <code>GL_INVALID_ENUM</code> errors being generated.
+    To query the actual version and capabilities of a context created with a window or separately, use <code>window.getSettings()</code> or
+    <code>context.getSettings()</code> respectively. Be aware that these settings might differ from the settings passed during creation of the context
+    if the OpenGL implementation was not able to meet all the requirements. It is recommended to always check if the context created actually provides
+    the functionality required by the OpenGL code to be executed. This can become confusing when loading OpenGL extensions in a more capable context
+    and trying to use them in a less capable context or vice versa.
 </p>
 
 <?php h2('Managing multiple OpenGL windows') ?>
