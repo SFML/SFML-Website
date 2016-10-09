@@ -102,6 +102,9 @@ int main()
     sf::Window window(sf::VideoMode(800, 600), "OpenGL", sf::Style::Default, sf::ContextSettings(32));
     window.setVerticalSyncEnabled(true);
 
+    // activation de la fenêtreTranslated previous changes of the OpenGL tutorial
+    window.setActive(true);
+
     // chargement des ressources, initialisation des états OpenGL, ...
 
     // la boucle principale
@@ -146,6 +149,90 @@ int main()
 <p>
     N'hésitez pas à jeter un oeil aux exemples "OpenGL" et "Window" du SDK de SFML si vous avez des difficultés, ils sont plus complets et possèdent
     très probablement des réponses à vos questions.
+</p>
+
+<?php h2('Gestion des contextes OpenGL') ?>
+<p>
+    Chaque fenêtre créée dans SFML vient automatiquement avec un contexte
+    OpenGL. Quand une fonction OpenGL est appelée, cette dernière va opérer
+    sur le contexte actuellement actif. Il est donc requis qu'un contexte soit
+    actif à chaque fois qu'une fonction OpenGL est invoquée. Si aucun
+    contexte n'est activé à ce moment là, l'appel de fonction ne va pas
+    produire les effets escomptés car il n'y a pas d'état sur lequel la
+    fonction peut avoir un effet.
+</p>
+<p>
+    Pour faire en sorte d'activer le contexte d'une fenêtre, utilisez
+    <code>window.setActive()</code> qui est l'équivalent de
+    <code>window.setActive(true)</code>. Activer un contexte pendant qu'un
+    autre est actif a pour effet d'implicitement désactiver celui qui est
+    actuellement actif avant d'activer le nouveau contexte. Pour explicitement
+    désactiver le contexte d'une fenêtre, utiliez
+    <code>window.setActive(false)</code>. Comme expliqué plus loin, ceci est
+    requis si le contexte est à activer sur un autre <i>thread</i>. Cependant, de
+    manière générale il est recommandé de simplement désactiver un contexte à
+    chaque fois que vous avez fini d'effectuer lot d'opérations OpenGL. En
+    suivant ce conseil, chaque groupe de telles opérations peut être entouré
+    entre des appels d'activation et de désactivation. Une classe d'utilitaire
+    <i>RAII</i> peut être conçue pour facilité cet effet.
+</p>
+<pre><code class="cpp">// activation du contexte de la fenêtre
+window.setActive(true);
+
+// configuration des états OpenGL
+// nettoyage des framebuffers
+// affichage dans la fenêtre
+
+// désactivation du contexte de la fenêtre
+window.setActive(false);
+</code></pre>
+<p class="important">
+    Pour déboguer des problèmes avec OpenGL et SFML, la première étape est
+    toujours de vérifier qu'un contexte est activé lorsqu'une fonction OpenGL
+    est appelée. Ne partez pas du principe que SFML activera implicitement un
+    contexte ou que SFML va préserver le contexte actif lorsque vous invoquez
+    des fonctionnalités de la bibliothèque. La seule garantie est que le
+    contexte actif sur le <i>thread</i> courant ne changera pas entre les appels à
+    <code>window.setActive(true)</code> et <code>window.setActive(false)</code>
+    tant qu'aucun autre appel à la bibliothèque est fait entre deux. Dans tous
+    les autres cas, il faut partir du principe que le contexte peut avoir
+    changé. Il est donc requis d'explicitement réactiver le contexte pour
+    s'assurer que le même contexte soit de nouveau actif. De plus, il est
+    nécessaire que le bon contexte soit actif quand une fonction OpenGL est
+    appelée car les contextes servent à représenter l'environnement d'exécution
+    pour les opérations OpenGL ainsi que le <i>framebuffer</i> de destination
+    pour n'importe quelle commande de dessin. Il est à noter que, lorsqu'un
+    contexte sans <i>framebuffer</i> visible est actif, appeler une fonction
+    de dessin OpenGL ne produira aucun rendu visible. De même, répartir des
+    opérations OpenGL sur plusieurs contextes ne fera pas en sorte de propager
+    les changement d'états sur les différents contextes. Ainsi, si une
+    opération de dessin ultérieure nécessite certains états, elle ne produira
+    pas les résultats escomptés.
+</p>
+<p class="important">
+    Lorsque vous écrivez du code OpenGL, il est fortement recommandé de
+    toujours vérifier si une erreur OpenGL a été produite après tout appel à
+    une fonction OpenGL. Ceci peut être accomplis avec la fonction
+    <code>glGetError()</code>. Vérifier la présence d'erreur après chaque
+    invocation de fonction OpenGL vous aidera à cibler la source d'une possible erreur
+    et ainsi rendre le débogage significativement plus efficace.
+</p>
+<p>
+    En fonction de la version et des capacités du contexte disponible, il est
+    important de n'appeler que des fonctions qui soient compatibles avec ce
+    contexte. Ne pas respecter cette règle produira souvent des erreurs comme
+    <code>GL_INVALID_OPERATION</code> ou <code>GL_INVALID_ENUM</code>. Afin de
+    déterminer la version et capacité d'un contexte ayant été créé avec une
+    fenêtre ou séparément, <code>window.getSettings()</code> ou
+    <code>context.getSettings()</code> peuvent respectivement être utilisés.
+    Il se peut que les capacités et version d'un contexte diffèrent de celles
+    demandées lors de la création du contexte, notamment quand l'implémentation
+    d'OpenGL n'a pas été en mesure de répondre à toutes les exigences
+    demandées. Aussi, il est recommandé de toujours vérifier si le contexte
+    créé fournit bien les fonctionnalités requises pour exécuter le code
+    OpenGL. Ceci peut être particulièrement déroutant lorsqu'on charge des
+    extensions OpenGL dans un contexte, puis qu'on essaye de les utiliser dans
+    un autre contexte moins apte, ou inversement.
 </p>
 
 <?php h2('Gérer plusieurs fenêtres OpenGL') ?>
