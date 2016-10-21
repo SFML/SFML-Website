@@ -180,7 +180,7 @@
  <p>SFML has also internal dependencies: Audio and Window depend on System, while Graphics depends on System and Window. In order to use the Graphics module, you must link with Graphics, Window, and System (the order of linkage matters with GCC).</p>
 
  <h3 id="grl-version"><a class="h3-link" href="#grl-version">What version of SFML should I use?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>Go for SFML 2.4, because you'll get a stable release with the latest features and bugfixes. As such it will save you a lot of headaches because other versions such as 1.6 are not maintained anymore, contain quite a few critical bugs and lack a lot of useful features.</p>
+ <p>Go for SFML 2.4.1, because you'll get a stable release with the latest features and bugfixes. As such it will save you a lot of headaches because other versions such as 1.6 are not maintained anymore, contain quite a few critical bugs and lack a lot of useful features.</p>
 
  <h3 id="grl-changes"><a class="h3-link" href="#grl-changes">Is there a complete list with all the changes from SFML 1.6 to SFML 2.x?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>This non-exhaustive list can be used as a starting point: <a href="http://en.sfml-dev.org/forums/index.php?topic=5343.0">SFML Forum</a><br>
