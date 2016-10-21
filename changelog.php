@@ -10,6 +10,7 @@
 <h1>Changelog</h1>
 
 <ul>
+ <li><a href="#sfml-2.4.1">SFML 2.4.1</a></li>
  <li><a href="#sfml-2.4.0">SFML 2.4.0</a></li>
  <li><a href="#sfml-2.3.2">SFML 2.3.2</a></li>
  <li><a href="#sfml-2.3.1">SFML 2.3.1</a></li>
@@ -23,6 +24,43 @@
  <li><a href="#sfml-1.3">SFML 1.3</a></li>
  <li><a href="#sfml-1.2">SFML 1.2</a></li>
  <li><a href="#sfml-1.1">SFML 1.1</a></li>
+</ul>
+
+<h2 id="sfml-2.4.1"><a class="h2-link" href="#sfml-2.4.1">SFML 2.4.1</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
+<h3 id="2.4.1-general"><a class="h3-link" href="#2.4.1-general">General</a></h3>
+<h4>Bugfixes</h4>
+<ul>
+  <li>[kFreeBSD] Define SFML_OS_FREEBSD when compiling for kFreeBSD (<a href="https://github.com/SFML/SFML/pull/1129">#1129</a></li>
+  <li>[Window] Added some simple messaging when trying to build under Cygwin (<a href="https://github.com/SFML/SFML/pull/1153">#1153</a>)</li>
+</ul>
+
+<h3 id="2.4.1-window"><a class="h3-link" href="#2.4.1-window">Window</a></h3>
+<h4>Bugfixes</h4>
+<ul>
+  <li>Fixed stack overflow on GlContext creation with multiple threads (<a href="https://github.com/SFML/SFML/issues/989">#989</a>, <a href="https://github.com/SFML/SFML/pull/1002">#1002</a>)</li>
+  <li>Adjusted mouse cursor grab documentation (<a href="https://github.com/SFML/SFML/pull/1133">#1133</a>)</li>
+  <li>[iOS] Fixed orientation change not rescaling window size properly (<a href="https://github.com/SFML/SFML/issues/1049">#1049</a>, <a href="https://github.com/SFML/SFML/pull/1050">#1050</a>)</li>
+  <li>[Linux] Fixed fullscreen issue (<a href="https://github.com/SFML/SFML/issues/921">#921</a>, <a href="https://github.com/SFML/SFML/pull/1138">#1138</a>)</li>
+  <li>[Linux] Switched from XCB back to Xlib for windowing (<a href="https://github.com/SFML/SFML/pull/1138">#1138</a>)</li>
+  <li>[Linux] Fixed window icon not showing up on some distros (<a href="https://github.com/SFML/SFML/issues/1087">#1087</a>, <a href="https://github.com/SFML/SFML/pull/1088">#1088</a>)</li>
+  <li>[Linux] Fixed an issue where GNOME flags window unresponsive (<a href="https://github.com/SFML/SFML/issues/1089">#1089</a>, <a href="https://github.com/SFML/SFML/pull/1138">#1138</a>)</li>
+  <li>[Linux] Fixed leak of XVisualInfo objects during GlxContext creation (<a href="https://github.com/SFML/SFML/pull/1135">#1135</a>)</li>
+  <li>[Linux] Fixed possible hang when setting visibility if external window sources (<a href="https://github.com/SFML/SFML/pull/1136">#1136</a>)</li>
+  <li>[OS X] Fixed inconsistency between doc and impl on OS X for the grab feature (<a href="https://github.com/SFML/SFML/pull/1133">#1133</a>, <a href="https://github.com/SFML/SFML/issues/1148">#1148</a>, <a href="https://github.com/SFML/SFML/pull/1150">#1150</a>)</li>
+  <li>[Windows] Fixed context memory leaks (<a href="https://github.com/SFML/SFML/issues/1143">#1143</a>, <a href="https://github.com/SFML/SFML/pull/1002">#1002</a>)</li>
+</ul>
+
+<h3 id="2.4.1-graphics"><a class="h3-link" href="#2.4.1-graphics">Graphics</a></h3>
+<h4>Bugfixes</h4>
+<ul>
+  <li>Adjusted uniform error message (<a href="https://github.com/SFML/SFML/pull/1131">#1131</a>)</li>
+  <li>Clarify documentation on Rect::contains function bounds (<a href="https://github.com/SFML/SFML/pull/1151">#1151</a>)</li>
+</ul>
+
+<h3 id="2.4.1-network"><a class="h3-link" href="#2.4.1-network">Network</a></h3>
+<h4>Bugfixes</h4>
+<ul>
+  <li>Fixed a typo in comment for sf::UdpSocket::unbind() (<a href="https://github.com/SFML/SFML/pull/1121">#1121</a>)</li>
 </ul>
 
 <h2 id="sfml-2.4.0"><a class="h2-link" href="#sfml-2.4.0">SFML 2.4.0</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
