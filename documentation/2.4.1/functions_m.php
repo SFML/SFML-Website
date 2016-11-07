@@ -70,16 +70,16 @@
 
 <h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
 <li>M
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a89ed2bd48584b274cb2eefc132096901">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a9718de9940f723c956587dcb90450a0a">sf::Keyboard</a>
 </li>
 <li>m_source
 : <a class="el" href="classsf_1_1SoundSource.php#a0223cef4b1c587e6e1e17b4c92c4479c">sf::SoundSource</a>
 </li>
 <li>Magenta
-: <a class="el" href="classsf_1_1Color.php#a9ee8537b23a72bff51d8f20f4894519e">sf::Color</a>
+: <a class="el" href="classsf_1_1Color.php#a6fe70d90b65b2163dd066a84ac00426c">sf::Color</a>
 </li>
 <li>Magnetometer
-: <a class="el" href="classsf_1_1Sensor.php#a687375af3ab77b818fca73735bcaea84ae4386b358031ebd214c33475d55f93ab">sf::Sensor</a>
+: <a class="el" href="classsf_1_1Sensor.php#a687375af3ab77b818fca73735bcaea84ae706bb678bde8d3c370e246ffde6a63d">sf::Sensor</a>
 </li>
 <li>majorVersion
 : <a class="el" href="structsf_1_1ContextSettings.php#a99a680d5c15a7e34c935654155dd5166">sf::ContextSettings</a>
@@ -91,13 +91,13 @@
 : <a class="el" href="classsf_1_1RenderTarget.php#a2b0cab0e4c6af29d4efaba149d28116d">sf::RenderTarget</a>
 </li>
 <li>MaxDatagramSize
-: <a class="el" href="classsf_1_1UdpSocket.php#a4ff30d48bdd5e5e06391d42f7adff204a85c89bc58b797626b7211c06eb78e6b5">sf::UdpSocket</a>
+: <a class="el" href="classsf_1_1UdpSocket.php#a14c7b7816e33ed1ef1f2fdb2404c06b5a728a7d33027bee0d65f70f964dd9c9eb">sf::UdpSocket</a>
 </li>
 <li>MemoryInputStream()
 : <a class="el" href="classsf_1_1MemoryInputStream.php#a2d78851a69a8956a79872be41bcdfe0e">sf::MemoryInputStream</a>
 </li>
 <li>Menu
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a9bc484e613880a7b96e234f898d62959">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a4aac50ce7c4923f96323fe84d592b139">sf::Keyboard</a>
 </li>
 <li>Method
 : <a class="el" href="classsf_1_1Http_1_1Request.php#a620f8bff6f43e1378f321bf53fbf5598">sf::Http::Request</a>
@@ -106,7 +106,7 @@
 : <a class="el" href="classsf_1_1Time.php#a8a6ae28a1962198a69b92355649c6aa0">sf::Time</a>
 </li>
 <li>Middle
-: <a class="el" href="classsf_1_1Mouse.php#a4fb128be433f9aafe66bc0c605daaa90abb6be270c8c9398b9a0421258b057b76">sf::Mouse</a>
+: <a class="el" href="classsf_1_1Mouse.php#a4fb128be433f9aafe66bc0c605daaa90a2c353189c4b11cf216d7caddafcc609d">sf::Mouse</a>
 </li>
 <li>milliseconds()
 : <a class="el" href="classsf_1_1Time.php#a9231f886d925a24d181c8dcfa6448d87">sf::Time</a>
@@ -118,50 +118,50 @@
 : <a class="el" href="classsf_1_1Event.php#a20886a16ab7624de070b97145bb1dcac">sf::Event</a>
 </li>
 <li>MouseButtonPressed
-: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aa0d16fdcf7907ec64a9cfabac6e135d1b">sf::Event</a>
+: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aa55a3dcc8bf6c40e37f9ff2cdf606481f">sf::Event</a>
 </li>
 <li>MouseButtonReleased
-: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aafa0ebea6e6dd90e3fe49ca9b52977836">sf::Event</a>
+: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aa9be69ecc07e484467ebbb133182fe5c1">sf::Event</a>
 </li>
 <li>MouseEntered
-: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aa3d49ae0a508d337c5a3759e9e3752348">sf::Event</a>
+: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aa50d98590a953e74c7ccf3dabadb22067">sf::Event</a>
 </li>
 <li>MouseLeft
-: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aaedc7ba1176d5bfd5aac46f7c08457c32">sf::Event</a>
+: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aaa90b8526b328e0246d04b026de17c6e7">sf::Event</a>
 </li>
 <li>mouseMove
 : <a class="el" href="classsf_1_1Event.php#a786620ec4315d40c7c4cf4ddf3a1881f">sf::Event</a>
 </li>
 <li>MouseMoved
-: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aacc43824f451738c5afd00c7cd08e25b5">sf::Event</a>
+: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aa4ff4fc3b3dc857e3617a63feb54be209">sf::Event</a>
 </li>
 <li>mouseWheel
 : <a class="el" href="classsf_1_1Event.php#a8758c6d7998757978fd9146099a02a1e">sf::Event</a>
 </li>
 <li>MouseWheelMoved
-: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aad53fec9b30096b56d96ae0cc3680c717">sf::Event</a>
+: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aa5cc9d3941af2a36049f4f9922c934a80">sf::Event</a>
 </li>
 <li>mouseWheelScroll
 : <a class="el" href="classsf_1_1Event.php#a5fd91c82198a31a0cd3dc93c4d1ae4c6">sf::Event</a>
 </li>
 <li>MouseWheelScrolled
-: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aab9002e9cf83b792763b6dd8992c0b535">sf::Event</a>
+: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aa2fb6925eb3e7f3d468faf639dbd129ad">sf::Event</a>
 </li>
 <li>move()
 : <a class="el" href="classsf_1_1Transformable.php#a86b461d6a941ad390c2ad8b6a4a20391">sf::Transformable</a>
-, <a class="el" href="classsf_1_1View.php#a0c82144b837caf812f7cb25a43d80c41">sf::View</a>
+, <a class="el" href="classsf_1_1View.php#a4c98a6e04fed756dfaff8f629de50862">sf::View</a>
 </li>
 <li>MovedPermanently
-: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8a2c6399724f8878ff5bd60eb5376985de">sf::Http::Response</a>
+: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8a2f91651db3a09628faf68cbcefa0810a">sf::Http::Response</a>
 </li>
 <li>MovedTemporarily
-: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8aa34b55eca3991ba5c17f3449b9dbef56">sf::Http::Response</a>
+: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8a05c50d7b17c844e0b909e5802d5f1587">sf::Http::Response</a>
 </li>
 <li>MultipleChoices
-: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8a4f330c14bd9ba09893ae577cfe7e31b4">sf::Http::Response</a>
+: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8add95cbd8fa27516821f763488557f96b">sf::Http::Response</a>
 </li>
 <li>Multiply
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a201b5a5e797a30d8d86f5b280d4abe5c">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a10623ae71db8a6b5d97189fc21fb91ae">sf::Keyboard</a>
 </li>
 <li>Music()
 : <a class="el" href="classsf_1_1Music.php#a0bc787d8e022b3a9b89cf2c28befd42e">sf::Music</a>

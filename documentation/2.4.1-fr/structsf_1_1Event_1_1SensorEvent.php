@@ -39,7 +39,7 @@
 <p><a class="el" href="classsf_1_1Sensor.php" title="Give access to the real-time state of the sensors. ">Sensor</a> event parameters (SensorChanged)  
  <a href="structsf_1_1Event_1_1SensorEvent.php#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php">Event.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="Event_8hpp_source.php">Event.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -59,7 +59,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classsf_1_1Sensor.php" title="Give access to the real-time state of the sensors. ">Sensor</a> event parameters (SensorChanged) </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php#l00175">175</a> of file <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php">include/SFML/Window/Event.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Event_8hpp_source.php#l00175">175</a> of file <a class="el" href="Event_8hpp_source.php">Event.hpp</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="abee7d67bf0947fd1138e4466011e2436"></a>
 <div class="memitem">
@@ -73,7 +73,7 @@ Public Attributes</h2></td></tr>
 
 <p>Type of the sensor. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php#l00177">177</a> of file <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php">include/SFML/Window/Event.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Event_8hpp_source.php#l00177">177</a> of file <a class="el" href="Event_8hpp_source.php">Event.hpp</a>.</p>
 
 </div>
 </div>
@@ -89,7 +89,7 @@ Public Attributes</h2></td></tr>
 
 <p>Current value of the sensor on X axis. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php#l00178">178</a> of file <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php">include/SFML/Window/Event.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Event_8hpp_source.php#l00178">178</a> of file <a class="el" href="Event_8hpp_source.php">Event.hpp</a>.</p>
 
 </div>
 </div>
@@ -105,7 +105,7 @@ Public Attributes</h2></td></tr>
 
 <p>Current value of the sensor on Y axis. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php#l00179">179</a> of file <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php">include/SFML/Window/Event.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Event_8hpp_source.php#l00179">179</a> of file <a class="el" href="Event_8hpp_source.php">Event.hpp</a>.</p>
 
 </div>
 </div>
@@ -121,12 +121,12 @@ Public Attributes</h2></td></tr>
 
 <p>Current value of the sensor on Z axis. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php#l00180">180</a> of file <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php">include/SFML/Window/Event.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Event_8hpp_source.php#l00180">180</a> of file <a class="el" href="Event_8hpp_source.php">Event.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php">include/SFML/Window/Event.hpp</a></li>
+<li><a class="el" href="Event_8hpp_source.php">Event.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <?php

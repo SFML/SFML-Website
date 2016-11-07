@@ -39,7 +39,7 @@
 <p>Size events parameters (Resized)  
  <a href="structsf_1_1Event_1_1SizeEvent.php#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php">Event.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="Event_8hpp_source.php">Event.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -53,7 +53,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Size events parameters (Resized) </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php#l00052">52</a> of file <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php">include/SFML/Window/Event.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Event_8hpp_source.php#l00052">52</a> of file <a class="el" href="Event_8hpp_source.php">Event.hpp</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="af0f76a599d5f48189cb8d78d4e5facdb"></a>
 <div class="memitem">
@@ -67,7 +67,7 @@ Public Attributes</h2></td></tr>
 
 <p>New height, in pixels. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php#l00055">55</a> of file <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php">include/SFML/Window/Event.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Event_8hpp_source.php#l00055">55</a> of file <a class="el" href="Event_8hpp_source.php">Event.hpp</a>.</p>
 
 </div>
 </div>
@@ -83,12 +83,12 @@ Public Attributes</h2></td></tr>
 
 <p>New width, in pixels. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php#l00054">54</a> of file <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php">include/SFML/Window/Event.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Event_8hpp_source.php#l00054">54</a> of file <a class="el" href="Event_8hpp_source.php">Event.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php">include/SFML/Window/Event.hpp</a></li>
+<li><a class="el" href="Event_8hpp_source.php">Event.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <?php

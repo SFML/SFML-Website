@@ -37,8 +37,6 @@
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classsf_1_1GlResource.php#ae0efa7935241644608ca32ba47b22a33">ensureGlContext</a>()</td><td class="entry"><a class="el" href="classsf_1_1GlResource.php">sf::GlResource</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="classsf_1_1GlResource.php#ad8fb7a0674f0f77e530dacc2a3b0dc6a">GlResource</a>()</td><td class="entry"><a class="el" href="classsf_1_1GlResource.php">sf::GlResource</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classsf_1_1GlResource.php#ad8fb7a0674f0f77e530dacc2a3b0dc6a">GlResource</a>()</td><td class="entry"><a class="el" href="classsf_1_1GlResource.php">sf::GlResource</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classsf_1_1GlResource.php#ab99035b67052331d1e8cf67abd93de98">~GlResource</a>()</td><td class="entry"><a class="el" href="classsf_1_1GlResource.php">sf::GlResource</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classsf_1_1GlResource.php#ab99035b67052331d1e8cf67abd93de98">~GlResource</a>()</td><td class="entry"><a class="el" href="classsf_1_1GlResource.php">sf::GlResource</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
 </table></div><!-- contents -->
 <?php

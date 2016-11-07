@@ -36,11 +36,8 @@
 <p>This is the complete list of members for <a class="el" href="classsf_1_1Clock.php">sf::Clock</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classsf_1_1Clock.php#abbc959c7830ca7c3a4da133cb506d3fd">Clock</a>()</td><td class="entry"><a class="el" href="classsf_1_1Clock.php">sf::Clock</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classsf_1_1Clock.php#abbc959c7830ca7c3a4da133cb506d3fd">Clock</a>()</td><td class="entry"><a class="el" href="classsf_1_1Clock.php">sf::Clock</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classsf_1_1Clock.php#a799feb6acb099b57b58d8d20984fce11">getElapsedTime</a>() const </td><td class="entry"><a class="el" href="classsf_1_1Clock.php">sf::Clock</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classsf_1_1Clock.php#a799feb6acb099b57b58d8d20984fce11">getElapsedTime</a>() const </td><td class="entry"><a class="el" href="classsf_1_1Clock.php">sf::Clock</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classsf_1_1Clock.php#a123e2627f2943e5ecaa1db0c7df3231b">restart</a>()</td><td class="entry"><a class="el" href="classsf_1_1Clock.php">sf::Clock</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classsf_1_1Clock.php#a123e2627f2943e5ecaa1db0c7df3231b">restart</a>()</td><td class="entry"><a class="el" href="classsf_1_1Clock.php">sf::Clock</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <?php
     require("../footer-fr.php");

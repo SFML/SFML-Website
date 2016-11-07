@@ -39,7 +39,7 @@
 <p>Blocks concurrent access to shared resources from multiple threads.  
  <a href="classsf_1_1Mutex.php#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="include_2SFML_2System_2Mutex_8hpp_source.php">Mutex.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="Mutex_8hpp_source.php">Mutex.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for sf::Mutex:</div>
 <div class="dyncontent">
@@ -47,24 +47,11 @@ Inheritance diagram for sf::Mutex:</div>
   <img src="classsf_1_1Mutex.png" usemap="#sf::Mutex_map" alt=""/>
   <map id="sf::Mutex_map" name="sf::Mutex_map">
 <area href="classsf_1_1NonCopyable.php" title="Utility class that makes any derived class non-copyable. " alt="sf::NonCopyable" shape="rect" coords="0,0,105,24"/>
-<area href="classsf_1_1NonCopyable.php" title="Utility class that makes any derived class non-copyable. " alt="sf::NonCopyable" shape="rect" coords="115,0,220,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9bd52a48320fd7b6db8a78037aad276e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Mutex.php#a9bd52a48320fd7b6db8a78037aad276e">Mutex</a> ()</td></tr>
-<tr class="memdesc:a9bd52a48320fd7b6db8a78037aad276e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a9bd52a48320fd7b6db8a78037aad276e">More...</a><br /></td></tr>
-<tr class="separator:a9bd52a48320fd7b6db8a78037aad276e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f76a67b7b6d3918131a692179b4e3f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Mutex.php#a9f76a67b7b6d3918131a692179b4e3f2">~Mutex</a> ()</td></tr>
-<tr class="memdesc:a9f76a67b7b6d3918131a692179b4e3f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a9f76a67b7b6d3918131a692179b4e3f2">More...</a><br /></td></tr>
-<tr class="separator:a9f76a67b7b6d3918131a692179b4e3f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a16956a6bbea764480c1b80f2e45763"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Mutex.php#a1a16956a6bbea764480c1b80f2e45763">lock</a> ()</td></tr>
-<tr class="memdesc:a1a16956a6bbea764480c1b80f2e45763"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classsf_1_1Lock.php" title="Automatic wrapper for locking and unlocking mutexes. ">Lock</a> the mutex.  <a href="#a1a16956a6bbea764480c1b80f2e45763">More...</a><br /></td></tr>
-<tr class="separator:a1a16956a6bbea764480c1b80f2e45763"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade71268ffc5e80756652058b01c23c33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Mutex.php#ade71268ffc5e80756652058b01c23c33">unlock</a> ()</td></tr>
-<tr class="memdesc:ade71268ffc5e80756652058b01c23c33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock the mutex.  <a href="#ade71268ffc5e80756652058b01c23c33">More...</a><br /></td></tr>
-<tr class="separator:ade71268ffc5e80756652058b01c23c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bd52a48320fd7b6db8a78037aad276e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Mutex.php#a9bd52a48320fd7b6db8a78037aad276e">Mutex</a> ()</td></tr>
 <tr class="memdesc:a9bd52a48320fd7b6db8a78037aad276e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a9bd52a48320fd7b6db8a78037aad276e">More...</a><br /></td></tr>
 <tr class="separator:a9bd52a48320fd7b6db8a78037aad276e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -104,42 +91,8 @@ Public Member Functions</h2></td></tr>
 <p>SFML mutexes are recursive, which means that you can lock a mutex multiple times in the same thread without creating a deadlock. In this case, the first call to <a class="el" href="classsf_1_1Mutex.php#a1a16956a6bbea764480c1b80f2e45763" title="Lock the mutex. ">lock()</a> behaves as usual, and the following ones have no effect. However, you must call <a class="el" href="classsf_1_1Mutex.php#ade71268ffc5e80756652058b01c23c33" title="Unlock the mutex. ">unlock()</a> exactly as many times as you called <a class="el" href="classsf_1_1Mutex.php#a1a16956a6bbea764480c1b80f2e45763" title="Lock the mutex. ">lock()</a>. If you don't, the mutex won't be released.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Lock.php" title="Automatic wrapper for locking and unlocking mutexes. ">sf::Lock</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="include_2SFML_2System_2Mutex_8hpp_source.php#l00047">47</a> of file <a class="el" href="include_2SFML_2System_2Mutex_8hpp_source.php">include/SFML/System/Mutex.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Mutex_8hpp_source.php#l00047">47</a> of file <a class="el" href="Mutex_8hpp_source.php">Mutex.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a9bd52a48320fd7b6db8a78037aad276e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">sf::Mutex::Mutex </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Default constructor. </p>
-
-</div>
-</div>
-<a class="anchor" id="a9f76a67b7b6d3918131a692179b4e3f2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">sf::Mutex::~Mutex </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Destructor. </p>
-
-</div>
-</div>
 <a class="anchor" id="a9bd52a48320fd7b6db8a78037aad276e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -194,43 +147,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1a16956a6bbea764480c1b80f2e45763"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sf::Mutex::lock </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><a class="el" href="classsf_1_1Lock.php" title="Automatic wrapper for locking and unlocking mutexes. ">Lock</a> the mutex. </p>
-<p>If the mutex is already locked in another thread, this call will block the execution until the mutex is released.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Mutex.php#ade71268ffc5e80756652058b01c23c33" title="Unlock the mutex. ">unlock</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ade71268ffc5e80756652058b01c23c33"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sf::Mutex::unlock </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Unlock the mutex. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Mutex.php#a1a16956a6bbea764480c1b80f2e45763" title="Lock the mutex. ">lock</a> </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="ade71268ffc5e80756652058b01c23c33"></a>
 <div class="memitem">
 <div class="memproto">
@@ -250,7 +166,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="include_2SFML_2System_2Mutex_8hpp_source.php">include/SFML/System/Mutex.hpp</a></li>
+<li><a class="el" href="Mutex_8hpp_source.php">Mutex.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <?php

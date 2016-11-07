@@ -36,7 +36,6 @@
 <p>This is the complete list of members for <a class="el" href="classsf_1_1NonCopyable.php">sf::NonCopyable</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classsf_1_1NonCopyable.php#a2110add170580fdb946f887719da6860">NonCopyable</a>()</td><td class="entry"><a class="el" href="classsf_1_1NonCopyable.php">sf::NonCopyable</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classsf_1_1NonCopyable.php#a2110add170580fdb946f887719da6860">NonCopyable</a>()</td><td class="entry"><a class="el" href="classsf_1_1NonCopyable.php">sf::NonCopyable</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
 </table></div><!-- contents -->
 <?php
     require("../footer-fr.php");

@@ -70,10 +70,10 @@
 
 <h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
 <li>I
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a7cc1232562d553c4196212783262b7b2">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142abaef09665b4d94ebbed50345cab3981e">sf::Keyboard</a>
 </li>
 <li>Identity
-: <a class="el" href="classsf_1_1Transform.php#a854729912a691efeca9f213c54be4f59">sf::Transform</a>
+: <a class="el" href="classsf_1_1Transform.php#aa4eb1eecbcb9979d76e2543b337fdb13">sf::Transform</a>
 </li>
 <li>Image()
 : <a class="el" href="classsf_1_1Image.php#abb4caf3cb167b613345ebe36fc883f12">sf::Image</a>
@@ -86,32 +86,32 @@
 : <a class="el" href="classsf_1_1InputSoundFile.php#a3b95347de25d1d93a3230287cf47a077">sf::InputSoundFile</a>
 </li>
 <li>Insert
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142ae81ff663c820ba5e3e5e76610f392a7d">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a616c8cae362d229155c5c6e10b969943">sf::Keyboard</a>
 </li>
 <li>insert()
 : <a class="el" href="classsf_1_1String.php#ad0b1455deabf07af13ee79812e05fa02">sf::String</a>
 </li>
 <li>InsufficientStorageSpace
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3bac5e00c7cb975030504b2afb86e47fa68">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba5d9f3666222c808553c27e4e099c7c6d">sf::Ftp::Response</a>
 </li>
 <li>InternalServerError
-: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8a0386d3aef49049992f1de88aa2c74930">sf::Http::Response</a>
+: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8adae2b2a936414349d55b4ed8c583fed1">sf::Http::Response</a>
 </li>
 <li>intersects()
 : <a class="el" href="classsf_1_1Rect.php#a566740c8f58e01bb052266f47e7e1011">sf::Rect&lt; T &gt;</a>
 </li>
 <li>InvalidFile
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba94f4054b5814eb4fe0fc6d576376503a">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3baed2c74a9f335dee1463ca1a4f41c6478">sf::Ftp::Response</a>
 </li>
 <li>InvalidPos
-: <a class="el" href="classsf_1_1String.php#a7dd58138a3f2bd887e5711879fd83570">sf::String</a>
+: <a class="el" href="classsf_1_1String.php#abaadecaf12a6b41c54d725c75fd28527">sf::String</a>
 </li>
 <li>InvalidResponse
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba2832369b24738d47a832361b09fef964">sf::Ftp::Response</a>
-, <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8aba1107912f392482733af9be4f33803e">sf::Http::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba59e041e4ef186e8ae8d6035973fc46bd">sf::Ftp::Response</a>
+, <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8a0af0090420e60bf54da4860749345c95">sf::Http::Response</a>
 </li>
 <li>IpAddress()
-: <a class="el" href="classsf_1_1IpAddress.php#a1d289dcb9ce7a64c600c6f84cba88cc6">sf::IpAddress</a>
+: <a class="el" href="classsf_1_1IpAddress.php#af32a0574baa0f46e48deb2d83ca7658b">sf::IpAddress</a>
 </li>
 <li>isAvailable()
 : <a class="el" href="classsf_1_1Sensor.php#a7b7a2570218221781233bd495323abf0">sf::Sensor</a>
@@ -170,7 +170,7 @@
 : <a class="el" href="classsf_1_1VideoMode.php#aa64ff5420dde3b31c24b9c4e2be9cd9c">sf::VideoMode</a>
 </li>
 <li>Italic
-: <a class="el" href="classsf_1_1Text.php#aa8add4aef484c6e6b20faff07452bd82af3e10eb0fa68aa746fbbdfcecbf352c9">sf::Text</a>
+: <a class="el" href="classsf_1_1Text.php#aa8add4aef484c6e6b20faff07452bd82aee249eb803848723c542c2062ebe69d8">sf::Text</a>
 </li>
 <li>Iterator
 : <a class="el" href="classsf_1_1String.php#ac90f2b7b28f703020f8d027e98806235">sf::String</a>

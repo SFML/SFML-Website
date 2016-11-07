@@ -66,69 +66,21 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:ga8d7a3b8425c907a2872cb57e32cea5b8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="group__window.php#gga7b9b5c2a2b381d2a42283d745874cb71ac2b155f5f7b49b49c7fb99655f8da86e">sf::Style::None</a> = 0, 
-<a class="el" href="group__window.php#gga7b9b5c2a2b381d2a42283d745874cb71abf046c6fcae63075c651812c6774e389">sf::Style::Titlebar</a> = 1 &lt;&lt; 0, 
-<a class="el" href="group__window.php#gga7b9b5c2a2b381d2a42283d745874cb71aa7c6f765bd5c0cdd9f81b47871508f3e">sf::Style::Resize</a> = 1 &lt;&lt; 1, 
-<a class="el" href="group__window.php#gga7b9b5c2a2b381d2a42283d745874cb71a76bbd82b28e359cc0feec9e5ec123b40">sf::Style::Close</a> = 1 &lt;&lt; 2, 
+&#160;&#160;<a class="el" href="group__window.php#gga8d7a3b8425c907a2872cb57e32cea5b8a8c35a9c8507559e455387fc4a83ce422">sf::Style::None</a> = 0, 
+<a class="el" href="group__window.php#gga8d7a3b8425c907a2872cb57e32cea5b8ab4c8b32b05ed715928513787cb1e85b6">sf::Style::Titlebar</a> = 1 &lt;&lt; 0, 
+<a class="el" href="group__window.php#gga8d7a3b8425c907a2872cb57e32cea5b8accff967648ebcd5db2007eff7352b50f">sf::Style::Resize</a> = 1 &lt;&lt; 1, 
+<a class="el" href="group__window.php#gga8d7a3b8425c907a2872cb57e32cea5b8ae07a7d411d5acf28f4a9a4b76a3a9493">sf::Style::Close</a> = 1 &lt;&lt; 2, 
 <br />
-&#160;&#160;<a class="el" href="group__window.php#gga7b9b5c2a2b381d2a42283d745874cb71ac0b0bcb071d1ae40aefb7a1a7464f079">sf::Style::Fullscreen</a> = 1 &lt;&lt; 3, 
-<a class="el" href="group__window.php#gga7b9b5c2a2b381d2a42283d745874cb71aaf73ca9c9fa787f9da9c1d7527d42734">sf::Style::Default</a> = Titlebar | Resize | Close
+&#160;&#160;<a class="el" href="group__window.php#gga8d7a3b8425c907a2872cb57e32cea5b8a6288ec86830245cf957e2d234f79f50d">sf::Style::Fullscreen</a> = 1 &lt;&lt; 3, 
+<a class="el" href="group__window.php#gga8d7a3b8425c907a2872cb57e32cea5b8a5597cd420fc461807e4a201c92adea37">sf::Style::Default</a> = Titlebar | Resize | Close
 <br />
  }<tr class="memdesc:ga8d7a3b8425c907a2872cb57e32cea5b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of the window styles.  <a href="group__window.php#ga8d7a3b8425c907a2872cb57e32cea5b8">More...</a><br /></td></tr>
 <tr class="separator:ga8d7a3b8425c907a2872cb57e32cea5b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:ga7b9b5c2a2b381d2a42283d745874cb71"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="group__window.php#gga7b9b5c2a2b381d2a42283d745874cb71ac2b155f5f7b49b49c7fb99655f8da86e">sf::Style::None</a> = 0, 
-<a class="el" href="group__window.php#gga7b9b5c2a2b381d2a42283d745874cb71abf046c6fcae63075c651812c6774e389">sf::Style::Titlebar</a> = 1 &lt;&lt; 0, 
-<a class="el" href="group__window.php#gga7b9b5c2a2b381d2a42283d745874cb71aa7c6f765bd5c0cdd9f81b47871508f3e">sf::Style::Resize</a> = 1 &lt;&lt; 1, 
-<a class="el" href="group__window.php#gga7b9b5c2a2b381d2a42283d745874cb71a76bbd82b28e359cc0feec9e5ec123b40">sf::Style::Close</a> = 1 &lt;&lt; 2, 
-<br />
-&#160;&#160;<a class="el" href="group__window.php#gga7b9b5c2a2b381d2a42283d745874cb71ac0b0bcb071d1ae40aefb7a1a7464f079">sf::Style::Fullscreen</a> = 1 &lt;&lt; 3, 
-<a class="el" href="group__window.php#gga7b9b5c2a2b381d2a42283d745874cb71aaf73ca9c9fa787f9da9c1d7527d42734">sf::Style::Default</a> = Titlebar | Resize | Close
-<br />
- }<tr class="memdesc:ga7b9b5c2a2b381d2a42283d745874cb71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of the window styles.  <a href="group__window.php#ga7b9b5c2a2b381d2a42283d745874cb71">More...</a><br /></td></tr>
-<tr class="separator:ga7b9b5c2a2b381d2a42283d745874cb71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Provides OpenGL-based windows, and abstractions for events and input handling. </p>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="ga7b9b5c2a2b381d2a42283d745874cb71"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">anonymous enum</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Enumeration of the window styles. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga7b9b5c2a2b381d2a42283d745874cb71ac2b155f5f7b49b49c7fb99655f8da86e"></a>None&#160;</td><td class="fielddoc">
-<p>No border / title bar (this flag and all others are mutually exclusive) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga7b9b5c2a2b381d2a42283d745874cb71abf046c6fcae63075c651812c6774e389"></a>Titlebar&#160;</td><td class="fielddoc">
-<p>Title bar + fixed border. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga7b9b5c2a2b381d2a42283d745874cb71aa7c6f765bd5c0cdd9f81b47871508f3e"></a>Resize&#160;</td><td class="fielddoc">
-<p>Title bar + resizable border + maximize button. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga7b9b5c2a2b381d2a42283d745874cb71a76bbd82b28e359cc0feec9e5ec123b40"></a>Close&#160;</td><td class="fielddoc">
-<p>Title bar + close button. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga7b9b5c2a2b381d2a42283d745874cb71ac0b0bcb071d1ae40aefb7a1a7464f079"></a>Fullscreen&#160;</td><td class="fielddoc">
-<p>Fullscreen mode (this flag and all others are mutually exclusive) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga7b9b5c2a2b381d2a42283d745874cb71aaf73ca9c9fa787f9da9c1d7527d42734"></a>Default&#160;</td><td class="fielddoc">
-<p>Default window style. </p>
-</td></tr>
-</table>
-
-<p>Definition at line <a class="el" href="shared_2include_2SFML_2Window_2WindowStyle_8hpp_source.php#l00038">38</a> of file <a class="el" href="shared_2include_2SFML_2Window_2WindowStyle_8hpp_source.php">shared/include/SFML/Window/WindowStyle.hpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ga8d7a3b8425c907a2872cb57e32cea5b8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -141,27 +93,27 @@ Enumerations</h2></td></tr>
 
 <p>Enumeration of the window styles. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga7b9b5c2a2b381d2a42283d745874cb71ac2b155f5f7b49b49c7fb99655f8da86e"></a>None&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga8d7a3b8425c907a2872cb57e32cea5b8a8c35a9c8507559e455387fc4a83ce422"></a>None&#160;</td><td class="fielddoc">
 <p>No border / title bar (this flag and all others are mutually exclusive) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga7b9b5c2a2b381d2a42283d745874cb71abf046c6fcae63075c651812c6774e389"></a>Titlebar&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga8d7a3b8425c907a2872cb57e32cea5b8ab4c8b32b05ed715928513787cb1e85b6"></a>Titlebar&#160;</td><td class="fielddoc">
 <p>Title bar + fixed border. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga7b9b5c2a2b381d2a42283d745874cb71aa7c6f765bd5c0cdd9f81b47871508f3e"></a>Resize&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga8d7a3b8425c907a2872cb57e32cea5b8accff967648ebcd5db2007eff7352b50f"></a>Resize&#160;</td><td class="fielddoc">
 <p>Title bar + resizable border + maximize button. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga7b9b5c2a2b381d2a42283d745874cb71a76bbd82b28e359cc0feec9e5ec123b40"></a>Close&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga8d7a3b8425c907a2872cb57e32cea5b8ae07a7d411d5acf28f4a9a4b76a3a9493"></a>Close&#160;</td><td class="fielddoc">
 <p>Title bar + close button. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga7b9b5c2a2b381d2a42283d745874cb71ac0b0bcb071d1ae40aefb7a1a7464f079"></a>Fullscreen&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga8d7a3b8425c907a2872cb57e32cea5b8a6288ec86830245cf957e2d234f79f50d"></a>Fullscreen&#160;</td><td class="fielddoc">
 <p>Fullscreen mode (this flag and all others are mutually exclusive) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga7b9b5c2a2b381d2a42283d745874cb71aaf73ca9c9fa787f9da9c1d7527d42734"></a>Default&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga8d7a3b8425c907a2872cb57e32cea5b8a5597cd420fc461807e4a201c92adea37"></a>Default&#160;</td><td class="fielddoc">
 <p>Default window style. </p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2WindowStyle_8hpp_source.php#l00038">38</a> of file <a class="el" href="include_2SFML_2Window_2WindowStyle_8hpp_source.php">include/SFML/Window/WindowStyle.hpp</a>.</p>
+<p>Definition at line <a class="el" href="WindowStyle_8hpp_source.php#l00038">38</a> of file <a class="el" href="WindowStyle_8hpp_source.php">WindowStyle.hpp</a>.</p>
 
 </div>
 </div>

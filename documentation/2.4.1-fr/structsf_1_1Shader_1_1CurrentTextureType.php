@@ -36,14 +36,14 @@
 <p>Special type that can be passed to <a class="el" href="classsf_1_1Shader.php#abf78e3bea1e9b0bab850b6b0a0de29c7" title="Specify value for float uniform. ">setUniform()</a>, and that represents the texture of the object being drawn.  
  <a href="structsf_1_1Shader_1_1CurrentTextureType.php#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="include_2SFML_2Graphics_2Shader_8hpp_source.php">Shader.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="Shader_8hpp_source.php">Shader.hpp</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Special type that can be passed to <a class="el" href="classsf_1_1Shader.php#abf78e3bea1e9b0bab850b6b0a0de29c7" title="Specify value for float uniform. ">setUniform()</a>, and that represents the texture of the object being drawn. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Shader.php#ab18f531e1f726b88fec1cf5a1e6af26d" title="Specify current texture as sampler2D uniform. ">setUniform(const std::string&amp;, CurrentTextureType)</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2Shader_8hpp_source.php#l00074">74</a> of file <a class="el" href="include_2SFML_2Graphics_2Shader_8hpp_source.php">include/SFML/Graphics/Shader.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Shader_8hpp_source.php#l00074">74</a> of file <a class="el" href="Shader_8hpp_source.php">Shader.hpp</a>.</p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="include_2SFML_2Graphics_2Shader_8hpp_source.php">include/SFML/Graphics/Shader.hpp</a></li>
+<li><a class="el" href="Shader_8hpp_source.php">Shader.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <?php

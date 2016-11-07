@@ -39,7 +39,7 @@
 <p>Multiplexer that allows to read from multiple sockets.  
  <a href="classsf_1_1SocketSelector.php#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="include_2SFML_2Network_2SocketSelector_8hpp_source.php">SocketSelector.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="SocketSelector_8hpp_source.php">SocketSelector.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -61,34 +61,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a76e650acb0199d4be91e90a493fbc91a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1SocketSelector.php#a76e650acb0199d4be91e90a493fbc91a">clear</a> ()</td></tr>
 <tr class="memdesc:a76e650acb0199d4be91e90a493fbc91a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all the sockets stored in the selector.  <a href="#a76e650acb0199d4be91e90a493fbc91a">More...</a><br /></td></tr>
 <tr class="separator:a76e650acb0199d4be91e90a493fbc91a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cfda5475f17925e65889394d70af702"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1SocketSelector.php#a9cfda5475f17925e65889394d70af702">wait</a> (<a class="el" href="classsf_1_1Time.php">Time</a> timeout=<a class="el" href="classsf_1_1Time.php#aa343e67f43a940e7b3b51aa10a495f2f">Time::Zero</a>)</td></tr>
-<tr class="memdesc:a9cfda5475f17925e65889394d70af702"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait until one or more sockets are ready to receive.  <a href="#a9cfda5475f17925e65889394d70af702">More...</a><br /></td></tr>
-<tr class="separator:a9cfda5475f17925e65889394d70af702"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e67b463db05eadb4d356992c896833c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1SocketSelector.php#a8e67b463db05eadb4d356992c896833c">isReady</a> (<a class="el" href="classsf_1_1Socket.php">Socket</a> &amp;socket) const </td></tr>
-<tr class="memdesc:a8e67b463db05eadb4d356992c896833c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test a socket to know if it is ready to receive data.  <a href="#a8e67b463db05eadb4d356992c896833c">More...</a><br /></td></tr>
-<tr class="separator:a8e67b463db05eadb4d356992c896833c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6395c7a8d29a9ea14939cc5d1ba3a33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1SocketSelector.php">SocketSelector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1SocketSelector.php#ae6395c7a8d29a9ea14939cc5d1ba3a33">operator=</a> (const <a class="el" href="classsf_1_1SocketSelector.php">SocketSelector</a> &amp;right)</td></tr>
-<tr class="memdesc:ae6395c7a8d29a9ea14939cc5d1ba3a33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of assignment operator.  <a href="#ae6395c7a8d29a9ea14939cc5d1ba3a33">More...</a><br /></td></tr>
-<tr class="separator:ae6395c7a8d29a9ea14939cc5d1ba3a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a741959c5158aeb1e4457cad47d90f76b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1SocketSelector.php#a741959c5158aeb1e4457cad47d90f76b">SocketSelector</a> ()</td></tr>
-<tr class="memdesc:a741959c5158aeb1e4457cad47d90f76b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a741959c5158aeb1e4457cad47d90f76b">More...</a><br /></td></tr>
-<tr class="separator:a741959c5158aeb1e4457cad47d90f76b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50b1b955eb7ecb2e7c2764f3f4722fbf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1SocketSelector.php#a50b1b955eb7ecb2e7c2764f3f4722fbf">SocketSelector</a> (const <a class="el" href="classsf_1_1SocketSelector.php">SocketSelector</a> &amp;copy)</td></tr>
-<tr class="memdesc:a50b1b955eb7ecb2e7c2764f3f4722fbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="#a50b1b955eb7ecb2e7c2764f3f4722fbf">More...</a><br /></td></tr>
-<tr class="separator:a50b1b955eb7ecb2e7c2764f3f4722fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9069cd61208260b8ed9cf233afa1f73d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1SocketSelector.php#a9069cd61208260b8ed9cf233afa1f73d">~SocketSelector</a> ()</td></tr>
-<tr class="memdesc:a9069cd61208260b8ed9cf233afa1f73d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a9069cd61208260b8ed9cf233afa1f73d">More...</a><br /></td></tr>
-<tr class="separator:a9069cd61208260b8ed9cf233afa1f73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade952013232802ff7b9b33668f8d2096"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1SocketSelector.php#ade952013232802ff7b9b33668f8d2096">add</a> (<a class="el" href="classsf_1_1Socket.php">Socket</a> &amp;socket)</td></tr>
-<tr class="memdesc:ade952013232802ff7b9b33668f8d2096"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new socket to the selector.  <a href="#ade952013232802ff7b9b33668f8d2096">More...</a><br /></td></tr>
-<tr class="separator:ade952013232802ff7b9b33668f8d2096"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98b6ab693a65b82caa375639232357c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1SocketSelector.php#a98b6ab693a65b82caa375639232357c1">remove</a> (<a class="el" href="classsf_1_1Socket.php">Socket</a> &amp;socket)</td></tr>
-<tr class="memdesc:a98b6ab693a65b82caa375639232357c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a socket from the selector.  <a href="#a98b6ab693a65b82caa375639232357c1">More...</a><br /></td></tr>
-<tr class="separator:a98b6ab693a65b82caa375639232357c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76e650acb0199d4be91e90a493fbc91a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1SocketSelector.php#a76e650acb0199d4be91e90a493fbc91a">clear</a> ()</td></tr>
-<tr class="memdesc:a76e650acb0199d4be91e90a493fbc91a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all the sockets stored in the selector.  <a href="#a76e650acb0199d4be91e90a493fbc91a">More...</a><br /></td></tr>
-<tr class="separator:a76e650acb0199d4be91e90a493fbc91a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cfda5475f17925e65889394d70af702"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1SocketSelector.php#a9cfda5475f17925e65889394d70af702">wait</a> (<a class="el" href="classsf_1_1Time.php">Time</a> timeout=<a class="el" href="classsf_1_1Time.php#aa343e67f43a940e7b3b51aa10a495f2f">Time::Zero</a>)</td></tr>
+<tr class="memitem:a9cfda5475f17925e65889394d70af702"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1SocketSelector.php#a9cfda5475f17925e65889394d70af702">wait</a> (<a class="el" href="classsf_1_1Time.php">Time</a> timeout=<a class="el" href="classsf_1_1Time.php#a8db127b632fa8da21550e7282af11fa0">Time::Zero</a>)</td></tr>
 <tr class="memdesc:a9cfda5475f17925e65889394d70af702"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait until one or more sockets are ready to receive.  <a href="#a9cfda5475f17925e65889394d70af702">More...</a><br /></td></tr>
 <tr class="separator:a9cfda5475f17925e65889394d70af702"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e67b463db05eadb4d356992c896833c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1SocketSelector.php#a8e67b463db05eadb4d356992c896833c">isReady</a> (<a class="el" href="classsf_1_1Socket.php">Socket</a> &amp;socket) const </td></tr>
@@ -137,7 +110,7 @@ Public Member Functions</h2></td></tr>
 <div class="line">        {</div>
 <div class="line">            <span class="comment">// The listener is ready: there is a pending connection</span></div>
 <div class="line">            <a class="code" href="classsf_1_1TcpSocket.php">sf::TcpSocket</a>* client = <span class="keyword">new</span> <a class="code" href="classsf_1_1TcpSocket.php">sf::TcpSocket</a>;</div>
-<div class="line">            <span class="keywordflow">if</span> (listener.<a class="code" href="classsf_1_1TcpListener.php#ae2c83ce5a64d50b68180c46bef0a7346">accept</a>(*client) == <a class="code" href="classsf_1_1Socket.php#a51bf0fd51057b98a10fbb866246176dca6b3d5ba897b6df8ebda86c823b30348a">sf::Socket::Done</a>)</div>
+<div class="line">            <span class="keywordflow">if</span> (listener.<a class="code" href="classsf_1_1TcpListener.php#ae2c83ce5a64d50b68180c46bef0a7346">accept</a>(*client) == <a class="code" href="classsf_1_1Socket.php#a51bf0fd51057b98a10fbb866246176dca1de3a85bc56d3ae85b3d0f3cfd04ae90">sf::Socket::Done</a>)</div>
 <div class="line">            {</div>
 <div class="line">                <span class="comment">// Add the new client to the clients list</span></div>
 <div class="line">                clients.push_back(client);</div>
@@ -162,7 +135,7 @@ Public Member Functions</h2></td></tr>
 <div class="line">                {</div>
 <div class="line">                    <span class="comment">// The client has sent some data, we can receive it</span></div>
 <div class="line">                    <a class="code" href="classsf_1_1Packet.php">sf::Packet</a> packet;</div>
-<div class="line">                    <span class="keywordflow">if</span> (client.<a class="code" href="classsf_1_1TcpSocket.php#a90ce50811ea61d4f00efc62bb99ae1af">receive</a>(packet) == <a class="code" href="classsf_1_1Socket.php#a51bf0fd51057b98a10fbb866246176dca6b3d5ba897b6df8ebda86c823b30348a">sf::Socket::Done</a>)</div>
+<div class="line">                    <span class="keywordflow">if</span> (client.<a class="code" href="classsf_1_1TcpSocket.php#a90ce50811ea61d4f00efc62bb99ae1af">receive</a>(packet) == <a class="code" href="classsf_1_1Socket.php#a51bf0fd51057b98a10fbb866246176dca1de3a85bc56d3ae85b3d0f3cfd04ae90">sf::Socket::Done</a>)</div>
 <div class="line">                    {</div>
 <div class="line">                        ...</div>
 <div class="line">                    }</div>
@@ -173,66 +146,8 @@ Public Member Functions</h2></td></tr>
 <div class="line">}</div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Socket.php" title="Base class for all the socket types. ">sf::Socket</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Network_2SocketSelector_8hpp_source.php#l00043">43</a> of file <a class="el" href="include_2SFML_2Network_2SocketSelector_8hpp_source.php">include/SFML/Network/SocketSelector.hpp</a>.</p>
+<p>Definition at line <a class="el" href="SocketSelector_8hpp_source.php#l00043">43</a> of file <a class="el" href="SocketSelector_8hpp_source.php">SocketSelector.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a741959c5158aeb1e4457cad47d90f76b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">sf::SocketSelector::SocketSelector </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Default constructor. </p>
-
-</div>
-</div>
-<a class="anchor" id="a50b1b955eb7ecb2e7c2764f3f4722fbf"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">sf::SocketSelector::SocketSelector </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1SocketSelector.php">SocketSelector</a> &amp;&#160;</td>
-          <td class="paramname"><em>copy</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Copy constructor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">copy</td><td>Instance to copy </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a9069cd61208260b8ed9cf233afa1f73d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">sf::SocketSelector::~SocketSelector </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Destructor. </p>
-
-</div>
-</div>
 <a class="anchor" id="a741959c5158aeb1e4457cad47d90f76b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -318,32 +233,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ade952013232802ff7b9b33668f8d2096"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sf::SocketSelector::add </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classsf_1_1Socket.php">Socket</a> &amp;&#160;</td>
-          <td class="paramname"><em>socket</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Add a new socket to the selector. </p>
-<p>This function keeps a weak reference to the socket, so you have to make sure that the socket is not destroyed while it is stored in the selector. This function does nothing if the socket is not valid.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">socket</td><td>Reference to the socket to add</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1SocketSelector.php#a98b6ab693a65b82caa375639232357c1" title="Remove a socket from the selector. ">remove</a>, <a class="el" href="classsf_1_1SocketSelector.php#a76e650acb0199d4be91e90a493fbc91a" title="Remove all the sockets stored in the selector. ">clear</a> </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a76e650acb0199d4be91e90a493fbc91a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -360,52 +249,6 @@ Public Member Functions</h2></td></tr>
 <p>Remove all the sockets stored in the selector. </p>
 <p>This function doesn't destroy any instance, it simply removes all the references that the selector has to external sockets.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1SocketSelector.php#ade952013232802ff7b9b33668f8d2096" title="Add a new socket to the selector. ">add</a>, <a class="el" href="classsf_1_1SocketSelector.php#a98b6ab693a65b82caa375639232357c1" title="Remove a socket from the selector. ">remove</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a76e650acb0199d4be91e90a493fbc91a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sf::SocketSelector::clear </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Remove all the sockets stored in the selector. </p>
-<p>This function doesn't destroy any instance, it simply removes all the references that the selector has to external sockets.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1SocketSelector.php#ade952013232802ff7b9b33668f8d2096" title="Add a new socket to the selector. ">add</a>, <a class="el" href="classsf_1_1SocketSelector.php#a98b6ab693a65b82caa375639232357c1" title="Remove a socket from the selector. ">remove</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a8e67b463db05eadb4d356992c896833c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool sf::SocketSelector::isReady </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classsf_1_1Socket.php">Socket</a> &amp;&#160;</td>
-          <td class="paramname"><em>socket</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Test a socket to know if it is ready to receive data. </p>
-<p>This function must be used after a call to Wait, to know which sockets are ready to receive data. If a socket is ready, a call to receive will never block because we know that there is data available to read. Note that if this function returns true for a <a class="el" href="classsf_1_1TcpListener.php" title="Socket that listens to new TCP connections. ">TcpListener</a>, this means that it is ready to accept a new connection.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">socket</td><td><a class="el" href="classsf_1_1Socket.php" title="Base class for all the socket types. ">Socket</a> to test</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the socket is ready to read, false otherwise</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1SocketSelector.php#a8e67b463db05eadb4d356992c896833c" title="Test a socket to know if it is ready to receive data. ">isReady</a> </dd></dl>
 
 </div>
 </div>
@@ -461,57 +304,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae6395c7a8d29a9ea14939cc5d1ba3a33"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classsf_1_1SocketSelector.php">SocketSelector</a>&amp; sf::SocketSelector::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1SocketSelector.php">SocketSelector</a> &amp;&#160;</td>
-          <td class="paramname"><em>right</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Overload of assignment operator. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">right</td><td>Instance to assign</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Reference to self </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a98b6ab693a65b82caa375639232357c1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sf::SocketSelector::remove </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classsf_1_1Socket.php">Socket</a> &amp;&#160;</td>
-          <td class="paramname"><em>socket</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Remove a socket from the selector. </p>
-<p>This function doesn't destroy the socket, it simply removes the reference that the selector has to it.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">socket</td><td>Reference to the socket to remove</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1SocketSelector.php#ade952013232802ff7b9b33668f8d2096" title="Add a new socket to the selector. ">add</a>, <a class="el" href="classsf_1_1SocketSelector.php#a76e650acb0199d4be91e90a493fbc91a" title="Remove all the sockets stored in the selector. ">clear</a> </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a98b6ab693a65b82caa375639232357c1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -546,7 +338,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">bool sf::SocketSelector::wait </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classsf_1_1Time.php">Time</a>&#160;</td>
-          <td class="paramname"><em>timeout</em> = <code><a class="el" href="classsf_1_1Time.php#aa343e67f43a940e7b3b51aa10a495f2f">Time::Zero</a></code></td><td>)</td>
+          <td class="paramname"><em>timeout</em> = <code><a class="el" href="classsf_1_1Time.php#a8db127b632fa8da21550e7282af11fa0">Time::Zero</a></code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -556,34 +348,7 @@ Public Member Functions</h2></td></tr>
 <p>This function returns as soon as at least one socket has some data available to be received. To know which sockets are ready, use the isReady function. If you use a timeout and no socket is ready before the timeout is over, the function returns false.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">timeout</td><td>Maximum time to wait, (use <a class="el" href="classsf_1_1Time.php#aa343e67f43a940e7b3b51aa10a495f2f" title="Predefined &quot;zero&quot; time value. ">Time::Zero</a> for infinity)</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if there are sockets ready, false otherwise</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1SocketSelector.php#a8e67b463db05eadb4d356992c896833c" title="Test a socket to know if it is ready to receive data. ">isReady</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a9cfda5475f17925e65889394d70af702"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool sf::SocketSelector::wait </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classsf_1_1Time.php">Time</a>&#160;</td>
-          <td class="paramname"><em>timeout</em> = <code><a class="el" href="classsf_1_1Time.php#aa343e67f43a940e7b3b51aa10a495f2f">Time::Zero</a></code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Wait until one or more sockets are ready to receive. </p>
-<p>This function returns as soon as at least one socket has some data available to be received. To know which sockets are ready, use the isReady function. If you use a timeout and no socket is ready before the timeout is over, the function returns false.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">timeout</td><td>Maximum time to wait, (use <a class="el" href="classsf_1_1Time.php#aa343e67f43a940e7b3b51aa10a495f2f" title="Predefined &quot;zero&quot; time value. ">Time::Zero</a> for infinity)</td></tr>
+    <tr><td class="paramname">timeout</td><td>Maximum time to wait, (use <a class="el" href="classsf_1_1Time.php#a8db127b632fa8da21550e7282af11fa0" title="Predefined &quot;zero&quot; time value. ">Time::Zero</a> for infinity)</td></tr>
   </table>
   </dd>
 </dl>
@@ -593,7 +358,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="include_2SFML_2Network_2SocketSelector_8hpp_source.php">include/SFML/Network/SocketSelector.hpp</a></li>
+<li><a class="el" href="SocketSelector_8hpp_source.php">SocketSelector.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <?php

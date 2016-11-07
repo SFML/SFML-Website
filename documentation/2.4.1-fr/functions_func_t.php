@@ -150,7 +150,7 @@
 : <a class="el" href="classsf_1_1Transformable.php#ae71710de0fef423121bab1c684954a2e">sf::Transformable</a>
 </li>
 <li>transformPoint()
-: <a class="el" href="classsf_1_1Transform.php#ac322cd8f6d606598d1aacc4d1d160ad6">sf::Transform</a>
+: <a class="el" href="classsf_1_1Transform.php#af20913c6a27087c26192c116397ab40a">sf::Transform</a>
 </li>
 <li>transformRect()
 : <a class="el" href="classsf_1_1Transform.php#a345112559981d988e92b54b7976fca8a">sf::Transform</a>

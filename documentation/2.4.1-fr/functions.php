@@ -73,20 +73,20 @@
 : <a class="el" href="classsf_1_1Color.php#a56dbdb47d5f040d9b78ac6a0b8b3a831">sf::Color</a>
 </li>
 <li>A
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a183bddc3dce0d234d2de67822ef1a5c7">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a9d06fa7ac9af597034ea724fb08b991e">sf::Keyboard</a>
 </li>
 <li>Accelerometer
-: <a class="el" href="classsf_1_1Sensor.php#a687375af3ab77b818fca73735bcaea84a0f0a57d34c0d6a932c3088e7d6a16fde">sf::Sensor</a>
+: <a class="el" href="classsf_1_1Sensor.php#a687375af3ab77b818fca73735bcaea84a11bc58199593e217de23641755ecc867">sf::Sensor</a>
 </li>
 <li>accept()
 : <a class="el" href="classsf_1_1TcpListener.php#ae2c83ce5a64d50b68180c46bef0a7346">sf::TcpListener</a>
 </li>
 <li>Accepted
-: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8a9f0179fa235375694a0d6c1a71b6f1fe">sf::Http::Response</a>
+: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8ad328945457bd2f0d65107ba6b5ccd443">sf::Http::Response</a>
 </li>
 <li>Add
-: <a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32ada07390f79e829c0eeb83909d3b828dc">sf::BlendMode</a>
-, <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142aba6d1e0149ee7026abbdfcd9ce8d93fc">sf::Keyboard</a>
+: <a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32a50c081d8f36cf7b77632966e15d38966">sf::BlendMode</a>
+, <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a158c586cbe8609031d1a7932e1a8dba2">sf::Keyboard</a>
 </li>
 <li>add()
 : <a class="el" href="classsf_1_1SocketSelector.php#ade952013232802ff7b9b33668f8d2096">sf::SocketSelector</a>
@@ -113,17 +113,17 @@
 : <a class="el" href="structsf_1_1ContextSettings.php#ac4a097be18994dba38d73f36b0418bdc">sf::ContextSettings</a>
 </li>
 <li>Any
-: <a class="el" href="classsf_1_1IpAddress.php#a55b612b404531068e4823d44f3fef308">sf::IpAddress</a>
+: <a class="el" href="classsf_1_1IpAddress.php#a3dbc10b0dc6804cc69e29342f7406907">sf::IpAddress</a>
 </li>
 <li>AnyPort
-: <a class="el" href="classsf_1_1Socket.php#a6eac107739600c19d0c15b23afc349e5adee98ca77e6cde0b3d818eb1341e3db0">sf::Socket</a>
+: <a class="el" href="classsf_1_1Socket.php#a5deb2c955fd347259c3a20d27b2481aaa5a3c30fd128895403afc11076f461b19">sf::Socket</a>
 </li>
 <li>append()
 : <a class="el" href="classsf_1_1Packet.php#a7dd6e429b87520008326c4d71f1cf011">sf::Packet</a>
 , <a class="el" href="classsf_1_1VertexArray.php#a80c8f6865e53bd21fc6cb10fffa10035">sf::VertexArray</a>
 </li>
 <li>Ascii
-: <a class="el" href="classsf_1_1Ftp.php#a1cd6b89ad23253f6d97e6d4ca4d558cba8576756172e84a60a8b3410b95273557">sf::Ftp</a>
+: <a class="el" href="classsf_1_1Ftp.php#a1cd6b89ad23253f6d97e6d4ca4d558cbac9e544a22dce8ef3177449cb235d15c2">sf::Ftp</a>
 </li>
 <li>asMicroseconds()
 : <a class="el" href="classsf_1_1Time.php#ae41a7e0ca73ceea771b3c150c12abdd2">sf::Time</a>
@@ -147,7 +147,7 @@
 : <a class="el" href="classsf_1_1Joystick.php#a48db337092c2e263774f94de6d50baa7">sf::Joystick</a>
 </li>
 <li>AxisCount
-: <a class="el" href="classsf_1_1Joystick.php#a3cbd251ae1151f673398b12bb7926139a09f1cd81cc403e481e06a7cf15a18877">sf::Joystick</a>
+: <a class="el" href="classsf_1_1Joystick.php#a951a7c775921304a5f3443c6e2bb4d65accf3e487c9f6ee2f384351323626a42c">sf::Joystick</a>
 </li>
 </ul>
 </div><!-- contents -->

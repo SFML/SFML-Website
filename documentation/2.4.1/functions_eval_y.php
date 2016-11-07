@@ -69,8 +69,8 @@
 
 <h3><a class="anchor" id="index_y"></a>- y -</h3><ul>
 <li>Y
-: <a class="el" href="classsf_1_1Joystick.php#a48db337092c2e263774f94de6d50baa7ab93da03117a7dc92d19243e39c50bde0">sf::Joystick</a>
-, <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142ab72cdb1cf5d6f02055e05df773c48129">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Joystick.php#a48db337092c2e263774f94de6d50baa7a51ef1455f7511ad4a78ba241d66593ce">sf::Joystick</a>
+, <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a5d877e63d1353e0fc0a0757a87a7bd0e">sf::Keyboard</a>
 </li>
 </ul>
 </div><!-- contents -->

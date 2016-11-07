@@ -39,7 +39,7 @@
 <p><a class="el" href="classsf_1_1Text.php" title="Graphical text that can be drawn to a render target. ">Text</a> event parameters (TextEntered)  
  <a href="structsf_1_1Event_1_1TextEvent.php#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php">Event.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="Event_8hpp_source.php">Event.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -50,7 +50,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classsf_1_1Text.php" title="Graphical text that can be drawn to a render target. ">Text</a> event parameters (TextEntered) </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php#l00075">75</a> of file <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php">include/SFML/Window/Event.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Event_8hpp_source.php#l00075">75</a> of file <a class="el" href="Event_8hpp_source.php">Event.hpp</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a00d96b1a5328a1d7cbc276e161befcb0"></a>
 <div class="memitem">
@@ -64,12 +64,12 @@ Public Attributes</h2></td></tr>
 
 <p>UTF-32 Unicode value of the character. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php#l00077">77</a> of file <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php">include/SFML/Window/Event.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Event_8hpp_source.php#l00077">77</a> of file <a class="el" href="Event_8hpp_source.php">Event.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php">include/SFML/Window/Event.hpp</a></li>
+<li><a class="el" href="Event_8hpp_source.php">Event.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <?php

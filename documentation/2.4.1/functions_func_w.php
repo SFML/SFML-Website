@@ -73,7 +73,7 @@
 : <a class="el" href="classsf_1_1Window.php#aaf02ab64fbc1d374eef3696df54137bc">sf::Window</a>
 </li>
 <li>Window()
-: <a class="el" href="classsf_1_1Window.php#a1bee771baecbae6d357871929dc042a2">sf::Window</a>
+: <a class="el" href="classsf_1_1Window.php#a5359122166b4dc492c3d25caf08ccfc4">sf::Window</a>
 </li>
 <li>write()
 : <a class="el" href="classsf_1_1OutputSoundFile.php#adfcf525fced71121f336fa89faac3d67">sf::OutputSoundFile</a>

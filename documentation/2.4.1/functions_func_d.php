@@ -98,7 +98,7 @@
 </li>
 <li>draw()
 : <a class="el" href="classsf_1_1Drawable.php#a35fc1e68eb2b7eda0ec83b9f02a50caf">sf::Drawable</a>
-, <a class="el" href="classsf_1_1RenderTarget.php#a12417a3bcc245c41d957b29583556f39">sf::RenderTarget</a>
+, <a class="el" href="classsf_1_1RenderTarget.php#a976bc94057799eb9f8a18ac5fdfd9b73">sf::RenderTarget</a>
 </li>
 </ul>
 </div><!-- contents -->

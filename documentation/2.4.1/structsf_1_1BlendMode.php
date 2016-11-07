@@ -42,89 +42,30 @@
 <p>Blending modes for drawing.  
  <a href="structsf_1_1BlendMode.php#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="include_2SFML_2Graphics_2BlendMode_8hpp_source.php">BlendMode.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="BlendMode_8hpp_source.php">BlendMode.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:afb9852caf356b53bb0de460c58a9ebbb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbb">Factor</a> { <br />
-&#160;&#160;<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbba65485893f4abfbf2ae7702f371e003c1">Zero</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbba45992876072f707d1565f2d08d6b5ed6">One</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbae3d90dc633cbb883554339e4303f0355">SrcColor</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbafc9454075ca0b0613f23c9d7d614dca4">OneMinusSrcColor</a>, 
+&#160;&#160;<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbafda2d66c3c3da15cd3b42338fbf6d2ba">Zero</a>, 
+<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbaa2d3ba8b8bb2233c9d357cbb94bf4181">One</a>, 
+<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbad679bb0ecaf15c188d7f2e1fab572188">SrcColor</a>, 
+<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbba5971ffdbca63382058ccba76bfce219e">OneMinusSrcColor</a>, 
 <br />
-&#160;&#160;<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbabf55ba7b1fd4567def92e4fbfa40387a">DstColor</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbae000102101f7c9828e106c9162ddb69e">OneMinusDstColor</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbba8b0cabd5aa52557b385848b8055cb270">SrcAlpha</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbaf882a5496651c616d7f23cafc8eafe61">OneMinusSrcAlpha</a>, 
+&#160;&#160;<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbba3d85281c3eab7153f2bd9faae3e7523a">DstColor</a>, 
+<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbac8198db20d14506a841d1091ced1cae2">OneMinusDstColor</a>, 
+<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbaac0ae68df2930b4d616c3e7abeec7d41">SrcAlpha</a>, 
+<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbaab57e8616bf4c21d8ee923178acdf2c8">OneMinusSrcAlpha</a>, 
 <br />
-&#160;&#160;<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbba3344b2d94959aa49f66797bf8046b15b">DstAlpha</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbba6f0663bcd2a998b0bb03110fb691ff48">OneMinusDstAlpha</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbba65485893f4abfbf2ae7702f371e003c1">Zero</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbba45992876072f707d1565f2d08d6b5ed6">One</a>, 
-<br />
-&#160;&#160;<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbae3d90dc633cbb883554339e4303f0355">SrcColor</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbafc9454075ca0b0613f23c9d7d614dca4">OneMinusSrcColor</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbabf55ba7b1fd4567def92e4fbfa40387a">DstColor</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbae000102101f7c9828e106c9162ddb69e">OneMinusDstColor</a>, 
-<br />
-&#160;&#160;<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbba8b0cabd5aa52557b385848b8055cb270">SrcAlpha</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbaf882a5496651c616d7f23cafc8eafe61">OneMinusSrcAlpha</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbba3344b2d94959aa49f66797bf8046b15b">DstAlpha</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbba6f0663bcd2a998b0bb03110fb691ff48">OneMinusDstAlpha</a>
+&#160;&#160;<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbba5e3dc9a6f117aaa5f7433e1f4662a5f7">DstAlpha</a>, 
+<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbab4e5c63f189f26075e5939ad1a2ce4e4">OneMinusDstAlpha</a>
 <br />
  }<tr class="memdesc:afb9852caf356b53bb0de460c58a9ebbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of the blending factors.  <a href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbb">More...</a><br /></td></tr>
 <tr class="separator:afb9852caf356b53bb0de460c58a9ebbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
-<tr class="memitem:a7bce470e2e384c4f9c8d9595faef7c32"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32">Equation</a> { <br />
-&#160;&#160;<a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32ada07390f79e829c0eeb83909d3b828dc">Add</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32a1c1006d7453b982cb868d65ca439e75c">Subtract</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32aae64991689dfb87f2b607706a1b11835">ReverseSubtract</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32ada07390f79e829c0eeb83909d3b828dc">Add</a>, 
-<br />
-&#160;&#160;<a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32a1c1006d7453b982cb868d65ca439e75c">Subtract</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32aae64991689dfb87f2b607706a1b11835">ReverseSubtract</a>
-<br />
- }<tr class="memdesc:a7bce470e2e384c4f9c8d9595faef7c32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of the blending equations.  <a href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32">More...</a><br /></td></tr>
-<tr class="separator:a7bce470e2e384c4f9c8d9595faef7c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:afb9852caf356b53bb0de460c58a9ebbb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbb">Factor</a> { <br />
-&#160;&#160;<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbba65485893f4abfbf2ae7702f371e003c1">Zero</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbba45992876072f707d1565f2d08d6b5ed6">One</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbae3d90dc633cbb883554339e4303f0355">SrcColor</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbafc9454075ca0b0613f23c9d7d614dca4">OneMinusSrcColor</a>, 
-<br />
-&#160;&#160;<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbabf55ba7b1fd4567def92e4fbfa40387a">DstColor</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbae000102101f7c9828e106c9162ddb69e">OneMinusDstColor</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbba8b0cabd5aa52557b385848b8055cb270">SrcAlpha</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbaf882a5496651c616d7f23cafc8eafe61">OneMinusSrcAlpha</a>, 
-<br />
-&#160;&#160;<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbba3344b2d94959aa49f66797bf8046b15b">DstAlpha</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbba6f0663bcd2a998b0bb03110fb691ff48">OneMinusDstAlpha</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbba65485893f4abfbf2ae7702f371e003c1">Zero</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbba45992876072f707d1565f2d08d6b5ed6">One</a>, 
-<br />
-&#160;&#160;<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbae3d90dc633cbb883554339e4303f0355">SrcColor</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbafc9454075ca0b0613f23c9d7d614dca4">OneMinusSrcColor</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbabf55ba7b1fd4567def92e4fbfa40387a">DstColor</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbae000102101f7c9828e106c9162ddb69e">OneMinusDstColor</a>, 
-<br />
-&#160;&#160;<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbba8b0cabd5aa52557b385848b8055cb270">SrcAlpha</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbaf882a5496651c616d7f23cafc8eafe61">OneMinusSrcAlpha</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbba3344b2d94959aa49f66797bf8046b15b">DstAlpha</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbba6f0663bcd2a998b0bb03110fb691ff48">OneMinusDstAlpha</a>
-<br />
- }<tr class="memdesc:afb9852caf356b53bb0de460c58a9ebbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of the blending factors.  <a href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbb">More...</a><br /></td></tr>
-<tr class="separator:afb9852caf356b53bb0de460c58a9ebbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:a7bce470e2e384c4f9c8d9595faef7c32"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32">Equation</a> { <br />
-&#160;&#160;<a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32ada07390f79e829c0eeb83909d3b828dc">Add</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32a1c1006d7453b982cb868d65ca439e75c">Subtract</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32aae64991689dfb87f2b607706a1b11835">ReverseSubtract</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32ada07390f79e829c0eeb83909d3b828dc">Add</a>, 
-<br />
-&#160;&#160;<a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32a1c1006d7453b982cb868d65ca439e75c">Subtract</a>, 
-<a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32aae64991689dfb87f2b607706a1b11835">ReverseSubtract</a>
-<br />
+<tr class="memitem:a7bce470e2e384c4f9c8d9595faef7c32"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32">Equation</a> { <a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32a50c081d8f36cf7b77632966e15d38966">Add</a>, 
+<a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32a14c825be24f8412fc5ed5b49f19bc0d0">Subtract</a>, 
+<a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32a2d04acf59e91811128e7d0ef076f65f0">ReverseSubtract</a>
  }<tr class="memdesc:a7bce470e2e384c4f9c8d9595faef7c32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of the blending equations.  <a href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32">More...</a><br /></td></tr>
 <tr class="separator:a7bce470e2e384c4f9c8d9595faef7c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
@@ -134,16 +75,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7faef75eae1fb47bbe93f45f38e3d345"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1BlendMode.php#a7faef75eae1fb47bbe93f45f38e3d345">BlendMode</a> ()</td></tr>
 <tr class="memdesc:a7faef75eae1fb47bbe93f45f38e3d345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a7faef75eae1fb47bbe93f45f38e3d345">More...</a><br /></td></tr>
 <tr class="separator:a7faef75eae1fb47bbe93f45f38e3d345"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23c7452cc8e9eb943c3aea6234ce4297"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1BlendMode.php#a23c7452cc8e9eb943c3aea6234ce4297">BlendMode</a> (<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbb">Factor</a> sourceFactor, <a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbb">Factor</a> destinationFactor, <a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32">Equation</a> blendEquation=<a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32ada07390f79e829c0eeb83909d3b828dc">Add</a>)</td></tr>
-<tr class="memdesc:a23c7452cc8e9eb943c3aea6234ce4297"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the blend mode given the factors and equation.  <a href="#a23c7452cc8e9eb943c3aea6234ce4297">More...</a><br /></td></tr>
-<tr class="separator:a23c7452cc8e9eb943c3aea6234ce4297"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69a12c596114e77126616e7e0f7d798b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1BlendMode.php#a69a12c596114e77126616e7e0f7d798b">BlendMode</a> (<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbb">Factor</a> colorSourceFactor, <a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbb">Factor</a> colorDestinationFactor, <a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32">Equation</a> colorBlendEquation, <a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbb">Factor</a> alphaSourceFactor, <a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbb">Factor</a> alphaDestinationFactor, <a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32">Equation</a> alphaBlendEquation)</td></tr>
-<tr class="memdesc:a69a12c596114e77126616e7e0f7d798b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the blend mode given the factors and equation.  <a href="#a69a12c596114e77126616e7e0f7d798b">More...</a><br /></td></tr>
-<tr class="separator:a69a12c596114e77126616e7e0f7d798b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7faef75eae1fb47bbe93f45f38e3d345"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1BlendMode.php#a7faef75eae1fb47bbe93f45f38e3d345">BlendMode</a> ()</td></tr>
-<tr class="memdesc:a7faef75eae1fb47bbe93f45f38e3d345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a7faef75eae1fb47bbe93f45f38e3d345">More...</a><br /></td></tr>
-<tr class="separator:a7faef75eae1fb47bbe93f45f38e3d345"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23c7452cc8e9eb943c3aea6234ce4297"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1BlendMode.php#a23c7452cc8e9eb943c3aea6234ce4297">BlendMode</a> (<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbb">Factor</a> sourceFactor, <a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbb">Factor</a> destinationFactor, <a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32">Equation</a> blendEquation=<a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32ada07390f79e829c0eeb83909d3b828dc">Add</a>)</td></tr>
+<tr class="memitem:a23c7452cc8e9eb943c3aea6234ce4297"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1BlendMode.php#a23c7452cc8e9eb943c3aea6234ce4297">BlendMode</a> (<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbb">Factor</a> sourceFactor, <a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbb">Factor</a> destinationFactor, <a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32">Equation</a> blendEquation=<a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32a50c081d8f36cf7b77632966e15d38966">Add</a>)</td></tr>
 <tr class="memdesc:a23c7452cc8e9eb943c3aea6234ce4297"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the blend mode given the factors and equation.  <a href="#a23c7452cc8e9eb943c3aea6234ce4297">More...</a><br /></td></tr>
 <tr class="separator:a23c7452cc8e9eb943c3aea6234ce4297"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69a12c596114e77126616e7e0f7d798b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1BlendMode.php#a69a12c596114e77126616e7e0f7d798b">BlendMode</a> (<a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbb">Factor</a> colorSourceFactor, <a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbb">Factor</a> colorDestinationFactor, <a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32">Equation</a> colorBlendEquation, <a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbb">Factor</a> alphaSourceFactor, <a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbb">Factor</a> alphaDestinationFactor, <a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32">Equation</a> alphaBlendEquation)</td></tr>
@@ -181,12 +113,6 @@ Related Functions</h2></td></tr>
 <tr class="memitem:aee6169f8983f5e92298c4ad6829563ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1BlendMode.php#aee6169f8983f5e92298c4ad6829563ba">operator!=</a> (const <a class="el" href="structsf_1_1BlendMode.php">BlendMode</a> &amp;left, const <a class="el" href="structsf_1_1BlendMode.php">BlendMode</a> &amp;right)</td></tr>
 <tr class="memdesc:aee6169f8983f5e92298c4ad6829563ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of the != operator.  <a href="#aee6169f8983f5e92298c4ad6829563ba">More...</a><br /></td></tr>
 <tr class="separator:aee6169f8983f5e92298c4ad6829563ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20d1be06061109c3cef58e0cc38729ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1BlendMode.php#a20d1be06061109c3cef58e0cc38729ea">operator==</a> (const <a class="el" href="structsf_1_1BlendMode.php">BlendMode</a> &amp;left, const <a class="el" href="structsf_1_1BlendMode.php">BlendMode</a> &amp;right)</td></tr>
-<tr class="memdesc:a20d1be06061109c3cef58e0cc38729ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of the == operator.  <a href="#a20d1be06061109c3cef58e0cc38729ea">More...</a><br /></td></tr>
-<tr class="separator:a20d1be06061109c3cef58e0cc38729ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee6169f8983f5e92298c4ad6829563ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1BlendMode.php#aee6169f8983f5e92298c4ad6829563ba">operator!=</a> (const <a class="el" href="structsf_1_1BlendMode.php">BlendMode</a> &amp;left, const <a class="el" href="structsf_1_1BlendMode.php">BlendMode</a> &amp;right)</td></tr>
-<tr class="memdesc:aee6169f8983f5e92298c4ad6829563ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of the != operator.  <a href="#aee6169f8983f5e92298c4ad6829563ba">More...</a><br /></td></tr>
-<tr class="separator:aee6169f8983f5e92298c4ad6829563ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Blending modes for drawing. </p>
@@ -213,7 +139,7 @@ Related Functions</h2></td></tr>
 </div><!-- fragment --><p>In SFML, a blend mode can be specified every time you draw a <a class="el" href="classsf_1_1Drawable.php" title="Abstract base class for objects that can be drawn to a render target. ">sf::Drawable</a> object to a render target. It is part of the <a class="el" href="classsf_1_1RenderStates.php" title="Define the states used for drawing to a RenderTarget. ">sf::RenderStates</a> compound that is passed to the member function <a class="el" href="classsf_1_1RenderTarget.php#a12417a3bcc245c41d957b29583556f39" title="Draw a drawable object to the render target. ">sf::RenderTarget::draw()</a>.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1RenderStates.php" title="Define the states used for drawing to a RenderTarget. ">sf::RenderStates</a>, <a class="el" href="classsf_1_1RenderTarget.php" title="Base class for all render targets (window, texture, ...) ">sf::RenderTarget</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2BlendMode_8hpp_source.php#l00041">41</a> of file <a class="el" href="include_2SFML_2Graphics_2BlendMode_8hpp_source.php">include/SFML/Graphics/BlendMode.hpp</a>.</p>
+<p>Definition at line <a class="el" href="BlendMode_8hpp_source.php#l00041">41</a> of file <a class="el" href="BlendMode_8hpp_source.php">BlendMode.hpp</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a7bce470e2e384c4f9c8d9595faef7c32"></a>
 <div class="memitem">
@@ -228,64 +154,18 @@ Related Functions</h2></td></tr>
 <p>Enumeration of the blending equations. </p>
 <p>The equations are mapped directly to their OpenGL equivalents, specified by glBlendEquation() or glBlendEquationSeparate(). </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a7bce470e2e384c4f9c8d9595faef7c32ada07390f79e829c0eeb83909d3b828dc"></a>Add&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a7bce470e2e384c4f9c8d9595faef7c32a50c081d8f36cf7b77632966e15d38966"></a>Add&#160;</td><td class="fielddoc">
 <p>Pixel = Src * SrcFactor + Dst * DstFactor. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a7bce470e2e384c4f9c8d9595faef7c32a1c1006d7453b982cb868d65ca439e75c"></a>Subtract&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a7bce470e2e384c4f9c8d9595faef7c32a14c825be24f8412fc5ed5b49f19bc0d0"></a>Subtract&#160;</td><td class="fielddoc">
 <p>Pixel = Src * SrcFactor - Dst * DstFactor. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a7bce470e2e384c4f9c8d9595faef7c32aae64991689dfb87f2b607706a1b11835"></a>ReverseSubtract&#160;</td><td class="fielddoc">
-<p>Pixel = Dst * DstFactor - Src * SrcFactor. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a7bce470e2e384c4f9c8d9595faef7c32ada07390f79e829c0eeb83909d3b828dc"></a>Add&#160;</td><td class="fielddoc">
-<p>Pixel = Src * SrcFactor + Dst * DstFactor. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a7bce470e2e384c4f9c8d9595faef7c32a1c1006d7453b982cb868d65ca439e75c"></a>Subtract&#160;</td><td class="fielddoc">
-<p>Pixel = Src * SrcFactor - Dst * DstFactor. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a7bce470e2e384c4f9c8d9595faef7c32aae64991689dfb87f2b607706a1b11835"></a>ReverseSubtract&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a7bce470e2e384c4f9c8d9595faef7c32a2d04acf59e91811128e7d0ef076f65f0"></a>ReverseSubtract&#160;</td><td class="fielddoc">
 <p>Pixel = Dst * DstFactor - Src * SrcFactor. </p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2BlendMode_8hpp_source.php#l00069">69</a> of file <a class="el" href="include_2SFML_2Graphics_2BlendMode_8hpp_source.php">include/SFML/Graphics/BlendMode.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a7bce470e2e384c4f9c8d9595faef7c32"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32">sf::BlendMode::Equation</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Enumeration of the blending equations. </p>
-<p>The equations are mapped directly to their OpenGL equivalents, specified by glBlendEquation() or glBlendEquationSeparate(). </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a7bce470e2e384c4f9c8d9595faef7c32ada07390f79e829c0eeb83909d3b828dc"></a>Add&#160;</td><td class="fielddoc">
-<p>Pixel = Src * SrcFactor + Dst * DstFactor. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a7bce470e2e384c4f9c8d9595faef7c32a1c1006d7453b982cb868d65ca439e75c"></a>Subtract&#160;</td><td class="fielddoc">
-<p>Pixel = Src * SrcFactor - Dst * DstFactor. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a7bce470e2e384c4f9c8d9595faef7c32aae64991689dfb87f2b607706a1b11835"></a>ReverseSubtract&#160;</td><td class="fielddoc">
-<p>Pixel = Dst * DstFactor - Src * SrcFactor. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a7bce470e2e384c4f9c8d9595faef7c32ada07390f79e829c0eeb83909d3b828dc"></a>Add&#160;</td><td class="fielddoc">
-<p>Pixel = Src * SrcFactor + Dst * DstFactor. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a7bce470e2e384c4f9c8d9595faef7c32a1c1006d7453b982cb868d65ca439e75c"></a>Subtract&#160;</td><td class="fielddoc">
-<p>Pixel = Src * SrcFactor - Dst * DstFactor. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a7bce470e2e384c4f9c8d9595faef7c32aae64991689dfb87f2b607706a1b11835"></a>ReverseSubtract&#160;</td><td class="fielddoc">
-<p>Pixel = Dst * DstFactor - Src * SrcFactor. </p>
-</td></tr>
-</table>
-
-<p>Definition at line <a class="el" href="shared_2include_2SFML_2Graphics_2BlendMode_8hpp_source.php#l00069">69</a> of file <a class="el" href="shared_2include_2SFML_2Graphics_2BlendMode_8hpp_source.php">shared/include/SFML/Graphics/BlendMode.hpp</a>.</p>
+<p>Definition at line <a class="el" href="BlendMode_8hpp_source.php#l00069">69</a> of file <a class="el" href="BlendMode_8hpp_source.php">BlendMode.hpp</a>.</p>
 
 </div>
 </div>
@@ -302,148 +182,39 @@ Related Functions</h2></td></tr>
 <p>Enumeration of the blending factors. </p>
 <p>The factors are mapped directly to their OpenGL equivalents, specified by glBlendFunc() or glBlendFuncSeparate(). </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbba65485893f4abfbf2ae7702f371e003c1"></a>Zero&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbbafda2d66c3c3da15cd3b42338fbf6d2ba"></a>Zero&#160;</td><td class="fielddoc">
 <p>(0, 0, 0, 0) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbba45992876072f707d1565f2d08d6b5ed6"></a>One&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbbaa2d3ba8b8bb2233c9d357cbb94bf4181"></a>One&#160;</td><td class="fielddoc">
 <p>(1, 1, 1, 1) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbbae3d90dc633cbb883554339e4303f0355"></a>SrcColor&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbbad679bb0ecaf15c188d7f2e1fab572188"></a>SrcColor&#160;</td><td class="fielddoc">
 <p>(src.r, src.g, src.b, src.a) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbbafc9454075ca0b0613f23c9d7d614dca4"></a>OneMinusSrcColor&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbba5971ffdbca63382058ccba76bfce219e"></a>OneMinusSrcColor&#160;</td><td class="fielddoc">
 <p>(1, 1, 1, 1) - (src.r, src.g, src.b, src.a) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbbabf55ba7b1fd4567def92e4fbfa40387a"></a>DstColor&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbba3d85281c3eab7153f2bd9faae3e7523a"></a>DstColor&#160;</td><td class="fielddoc">
 <p>(dst.r, dst.g, dst.b, dst.a) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbbae000102101f7c9828e106c9162ddb69e"></a>OneMinusDstColor&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbbac8198db20d14506a841d1091ced1cae2"></a>OneMinusDstColor&#160;</td><td class="fielddoc">
 <p>(1, 1, 1, 1) - (dst.r, dst.g, dst.b, dst.a) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbba8b0cabd5aa52557b385848b8055cb270"></a>SrcAlpha&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbbaac0ae68df2930b4d616c3e7abeec7d41"></a>SrcAlpha&#160;</td><td class="fielddoc">
 <p>(src.a, src.a, src.a, src.a) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbbaf882a5496651c616d7f23cafc8eafe61"></a>OneMinusSrcAlpha&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbbaab57e8616bf4c21d8ee923178acdf2c8"></a>OneMinusSrcAlpha&#160;</td><td class="fielddoc">
 <p>(1, 1, 1, 1) - (src.a, src.a, src.a, src.a) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbba3344b2d94959aa49f66797bf8046b15b"></a>DstAlpha&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbba5e3dc9a6f117aaa5f7433e1f4662a5f7"></a>DstAlpha&#160;</td><td class="fielddoc">
 <p>(dst.a, dst.a, dst.a, dst.a) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbba6f0663bcd2a998b0bb03110fb691ff48"></a>OneMinusDstAlpha&#160;</td><td class="fielddoc">
-<p>(1, 1, 1, 1) - (dst.a, dst.a, dst.a, dst.a) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbba65485893f4abfbf2ae7702f371e003c1"></a>Zero&#160;</td><td class="fielddoc">
-<p>(0, 0, 0, 0) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbba45992876072f707d1565f2d08d6b5ed6"></a>One&#160;</td><td class="fielddoc">
-<p>(1, 1, 1, 1) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbbae3d90dc633cbb883554339e4303f0355"></a>SrcColor&#160;</td><td class="fielddoc">
-<p>(src.r, src.g, src.b, src.a) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbbafc9454075ca0b0613f23c9d7d614dca4"></a>OneMinusSrcColor&#160;</td><td class="fielddoc">
-<p>(1, 1, 1, 1) - (src.r, src.g, src.b, src.a) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbbabf55ba7b1fd4567def92e4fbfa40387a"></a>DstColor&#160;</td><td class="fielddoc">
-<p>(dst.r, dst.g, dst.b, dst.a) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbbae000102101f7c9828e106c9162ddb69e"></a>OneMinusDstColor&#160;</td><td class="fielddoc">
-<p>(1, 1, 1, 1) - (dst.r, dst.g, dst.b, dst.a) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbba8b0cabd5aa52557b385848b8055cb270"></a>SrcAlpha&#160;</td><td class="fielddoc">
-<p>(src.a, src.a, src.a, src.a) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbbaf882a5496651c616d7f23cafc8eafe61"></a>OneMinusSrcAlpha&#160;</td><td class="fielddoc">
-<p>(1, 1, 1, 1) - (src.a, src.a, src.a, src.a) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbba3344b2d94959aa49f66797bf8046b15b"></a>DstAlpha&#160;</td><td class="fielddoc">
-<p>(dst.a, dst.a, dst.a, dst.a) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbba6f0663bcd2a998b0bb03110fb691ff48"></a>OneMinusDstAlpha&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbbab4e5c63f189f26075e5939ad1a2ce4e4"></a>OneMinusDstAlpha&#160;</td><td class="fielddoc">
 <p>(1, 1, 1, 1) - (dst.a, dst.a, dst.a, dst.a) </p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="shared_2include_2SFML_2Graphics_2BlendMode_8hpp_source.php#l00049">49</a> of file <a class="el" href="shared_2include_2SFML_2Graphics_2BlendMode_8hpp_source.php">shared/include/SFML/Graphics/BlendMode.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbb">sf::BlendMode::Factor</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Enumeration of the blending factors. </p>
-<p>The factors are mapped directly to their OpenGL equivalents, specified by glBlendFunc() or glBlendFuncSeparate(). </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbba65485893f4abfbf2ae7702f371e003c1"></a>Zero&#160;</td><td class="fielddoc">
-<p>(0, 0, 0, 0) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbba45992876072f707d1565f2d08d6b5ed6"></a>One&#160;</td><td class="fielddoc">
-<p>(1, 1, 1, 1) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbbae3d90dc633cbb883554339e4303f0355"></a>SrcColor&#160;</td><td class="fielddoc">
-<p>(src.r, src.g, src.b, src.a) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbbafc9454075ca0b0613f23c9d7d614dca4"></a>OneMinusSrcColor&#160;</td><td class="fielddoc">
-<p>(1, 1, 1, 1) - (src.r, src.g, src.b, src.a) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbbabf55ba7b1fd4567def92e4fbfa40387a"></a>DstColor&#160;</td><td class="fielddoc">
-<p>(dst.r, dst.g, dst.b, dst.a) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbbae000102101f7c9828e106c9162ddb69e"></a>OneMinusDstColor&#160;</td><td class="fielddoc">
-<p>(1, 1, 1, 1) - (dst.r, dst.g, dst.b, dst.a) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbba8b0cabd5aa52557b385848b8055cb270"></a>SrcAlpha&#160;</td><td class="fielddoc">
-<p>(src.a, src.a, src.a, src.a) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbbaf882a5496651c616d7f23cafc8eafe61"></a>OneMinusSrcAlpha&#160;</td><td class="fielddoc">
-<p>(1, 1, 1, 1) - (src.a, src.a, src.a, src.a) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbba3344b2d94959aa49f66797bf8046b15b"></a>DstAlpha&#160;</td><td class="fielddoc">
-<p>(dst.a, dst.a, dst.a, dst.a) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbba6f0663bcd2a998b0bb03110fb691ff48"></a>OneMinusDstAlpha&#160;</td><td class="fielddoc">
-<p>(1, 1, 1, 1) - (dst.a, dst.a, dst.a, dst.a) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbba65485893f4abfbf2ae7702f371e003c1"></a>Zero&#160;</td><td class="fielddoc">
-<p>(0, 0, 0, 0) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbba45992876072f707d1565f2d08d6b5ed6"></a>One&#160;</td><td class="fielddoc">
-<p>(1, 1, 1, 1) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbbae3d90dc633cbb883554339e4303f0355"></a>SrcColor&#160;</td><td class="fielddoc">
-<p>(src.r, src.g, src.b, src.a) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbbafc9454075ca0b0613f23c9d7d614dca4"></a>OneMinusSrcColor&#160;</td><td class="fielddoc">
-<p>(1, 1, 1, 1) - (src.r, src.g, src.b, src.a) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbbabf55ba7b1fd4567def92e4fbfa40387a"></a>DstColor&#160;</td><td class="fielddoc">
-<p>(dst.r, dst.g, dst.b, dst.a) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbbae000102101f7c9828e106c9162ddb69e"></a>OneMinusDstColor&#160;</td><td class="fielddoc">
-<p>(1, 1, 1, 1) - (dst.r, dst.g, dst.b, dst.a) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbba8b0cabd5aa52557b385848b8055cb270"></a>SrcAlpha&#160;</td><td class="fielddoc">
-<p>(src.a, src.a, src.a, src.a) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbbaf882a5496651c616d7f23cafc8eafe61"></a>OneMinusSrcAlpha&#160;</td><td class="fielddoc">
-<p>(1, 1, 1, 1) - (src.a, src.a, src.a, src.a) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbba3344b2d94959aa49f66797bf8046b15b"></a>DstAlpha&#160;</td><td class="fielddoc">
-<p>(dst.a, dst.a, dst.a, dst.a) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="afb9852caf356b53bb0de460c58a9ebbba6f0663bcd2a998b0bb03110fb691ff48"></a>OneMinusDstAlpha&#160;</td><td class="fielddoc">
-<p>(1, 1, 1, 1) - (dst.a, dst.a, dst.a, dst.a) </p>
-</td></tr>
-</table>
-
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2BlendMode_8hpp_source.php#l00049">49</a> of file <a class="el" href="include_2SFML_2Graphics_2BlendMode_8hpp_source.php">include/SFML/Graphics/BlendMode.hpp</a>.</p>
+<p>Definition at line <a class="el" href="BlendMode_8hpp_source.php#l00049">49</a> of file <a class="el" href="BlendMode_8hpp_source.php">BlendMode.hpp</a>.</p>
 
 </div>
 </div>
@@ -486,131 +257,7 @@ Related Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32">Equation</a>&#160;</td>
-          <td class="paramname"><em>blendEquation</em> = <code><a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32ada07390f79e829c0eeb83909d3b828dc">Add</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Construct the blend mode given the factors and equation. </p>
-<p>This constructor uses the same factors and equation for both color and alpha components. It also defaults to the Add equation.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sourceFactor</td><td>Specifies how to compute the source factor for the color and alpha channels. </td></tr>
-    <tr><td class="paramname">destinationFactor</td><td>Specifies how to compute the destination factor for the color and alpha channels. </td></tr>
-    <tr><td class="paramname">blendEquation</td><td>Specifies how to combine the source and destination colors and alpha. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a69a12c596114e77126616e7e0f7d798b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">sf::BlendMode::BlendMode </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbb">Factor</a>&#160;</td>
-          <td class="paramname"><em>colorSourceFactor</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbb">Factor</a>&#160;</td>
-          <td class="paramname"><em>colorDestinationFactor</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32">Equation</a>&#160;</td>
-          <td class="paramname"><em>colorBlendEquation</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbb">Factor</a>&#160;</td>
-          <td class="paramname"><em>alphaSourceFactor</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbb">Factor</a>&#160;</td>
-          <td class="paramname"><em>alphaDestinationFactor</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32">Equation</a>&#160;</td>
-          <td class="paramname"><em>alphaBlendEquation</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Construct the blend mode given the factors and equation. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">colorSourceFactor</td><td>Specifies how to compute the source factor for the color channels. </td></tr>
-    <tr><td class="paramname">colorDestinationFactor</td><td>Specifies how to compute the destination factor for the color channels. </td></tr>
-    <tr><td class="paramname">colorBlendEquation</td><td>Specifies how to combine the source and destination colors. </td></tr>
-    <tr><td class="paramname">alphaSourceFactor</td><td>Specifies how to compute the source factor. </td></tr>
-    <tr><td class="paramname">alphaDestinationFactor</td><td>Specifies how to compute the destination factor. </td></tr>
-    <tr><td class="paramname">alphaBlendEquation</td><td>Specifies how to combine the source and destination alphas. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a7faef75eae1fb47bbe93f45f38e3d345"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">sf::BlendMode::BlendMode </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Default constructor. </p>
-<p>Constructs a blending mode that does alpha blending. </p>
-
-</div>
-</div>
-<a class="anchor" id="a23c7452cc8e9eb943c3aea6234ce4297"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">sf::BlendMode::BlendMode </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbb">Factor</a>&#160;</td>
-          <td class="paramname"><em>sourceFactor</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbb">Factor</a>&#160;</td>
-          <td class="paramname"><em>destinationFactor</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32">Equation</a>&#160;</td>
-          <td class="paramname"><em>blendEquation</em> = <code><a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32ada07390f79e829c0eeb83909d3b828dc">Add</a></code>&#160;</td>
+          <td class="paramname"><em>blendEquation</em> = <code><a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32a50c081d8f36cf7b77632966e15d38966">Add</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -741,94 +388,6 @@ Related Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aee6169f8983f5e92298c4ad6829563ba"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool operator!= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structsf_1_1BlendMode.php">BlendMode</a> &amp;&#160;</td>
-          <td class="paramname"><em>left</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structsf_1_1BlendMode.php">BlendMode</a> &amp;&#160;</td>
-          <td class="paramname"><em>right</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">related</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Overload of the != operator. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">left</td><td>Left operand </td></tr>
-    <tr><td class="paramname">right</td><td>Right operand</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if blending modes are different, false if they are equal </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a20d1be06061109c3cef58e0cc38729ea"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool operator== </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structsf_1_1BlendMode.php">BlendMode</a> &amp;&#160;</td>
-          <td class="paramname"><em>left</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structsf_1_1BlendMode.php">BlendMode</a> &amp;&#160;</td>
-          <td class="paramname"><em>right</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">related</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Overload of the == operator. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">left</td><td>Left operand </td></tr>
-    <tr><td class="paramname">right</td><td>Right operand</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if blending modes are equal, false if they are different </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a20d1be06061109c3cef58e0cc38729ea"></a>
 <div class="memitem">
 <div class="memproto">
@@ -886,7 +445,7 @@ Related Functions</h2></td></tr>
 
 <p>Destination blending factor for the alpha channel. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2BlendMode_8hpp_source.php#l00119">119</a> of file <a class="el" href="include_2SFML_2Graphics_2BlendMode_8hpp_source.php">include/SFML/Graphics/BlendMode.hpp</a>.</p>
+<p>Definition at line <a class="el" href="BlendMode_8hpp_source.php#l00119">119</a> of file <a class="el" href="BlendMode_8hpp_source.php">BlendMode.hpp</a>.</p>
 
 </div>
 </div>
@@ -902,7 +461,7 @@ Related Functions</h2></td></tr>
 
 <p>Blending equation for the alpha channel. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2BlendMode_8hpp_source.php#l00120">120</a> of file <a class="el" href="include_2SFML_2Graphics_2BlendMode_8hpp_source.php">include/SFML/Graphics/BlendMode.hpp</a>.</p>
+<p>Definition at line <a class="el" href="BlendMode_8hpp_source.php#l00120">120</a> of file <a class="el" href="BlendMode_8hpp_source.php">BlendMode.hpp</a>.</p>
 
 </div>
 </div>
@@ -918,7 +477,7 @@ Related Functions</h2></td></tr>
 
 <p>Source blending factor for the alpha channel. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2BlendMode_8hpp_source.php#l00118">118</a> of file <a class="el" href="include_2SFML_2Graphics_2BlendMode_8hpp_source.php">include/SFML/Graphics/BlendMode.hpp</a>.</p>
+<p>Definition at line <a class="el" href="BlendMode_8hpp_source.php#l00118">118</a> of file <a class="el" href="BlendMode_8hpp_source.php">BlendMode.hpp</a>.</p>
 
 </div>
 </div>
@@ -934,7 +493,7 @@ Related Functions</h2></td></tr>
 
 <p>Destination blending factor for the color channels. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2BlendMode_8hpp_source.php#l00116">116</a> of file <a class="el" href="include_2SFML_2Graphics_2BlendMode_8hpp_source.php">include/SFML/Graphics/BlendMode.hpp</a>.</p>
+<p>Definition at line <a class="el" href="BlendMode_8hpp_source.php#l00116">116</a> of file <a class="el" href="BlendMode_8hpp_source.php">BlendMode.hpp</a>.</p>
 
 </div>
 </div>
@@ -950,7 +509,7 @@ Related Functions</h2></td></tr>
 
 <p>Blending equation for the color channels. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2BlendMode_8hpp_source.php#l00117">117</a> of file <a class="el" href="include_2SFML_2Graphics_2BlendMode_8hpp_source.php">include/SFML/Graphics/BlendMode.hpp</a>.</p>
+<p>Definition at line <a class="el" href="BlendMode_8hpp_source.php#l00117">117</a> of file <a class="el" href="BlendMode_8hpp_source.php">BlendMode.hpp</a>.</p>
 
 </div>
 </div>
@@ -966,12 +525,12 @@ Related Functions</h2></td></tr>
 
 <p>Source blending factor for the color channels. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2BlendMode_8hpp_source.php#l00115">115</a> of file <a class="el" href="include_2SFML_2Graphics_2BlendMode_8hpp_source.php">include/SFML/Graphics/BlendMode.hpp</a>.</p>
+<p>Definition at line <a class="el" href="BlendMode_8hpp_source.php#l00115">115</a> of file <a class="el" href="BlendMode_8hpp_source.php">BlendMode.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="include_2SFML_2Graphics_2BlendMode_8hpp_source.php">include/SFML/Graphics/BlendMode.hpp</a></li>
+<li><a class="el" href="BlendMode_8hpp_source.php">BlendMode.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <?php

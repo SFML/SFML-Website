@@ -73,23 +73,23 @@
 : <a class="el" href="classsf_1_1Color.php#a591daf9c3c55dea830c76c962d6ba1a5">sf::Color</a>
 </li>
 <li>G
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a471055e88e75c7ec2931a215320d12a0">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142aafb9e3d7679d88d86afc608d79c251f7">sf::Keyboard</a>
 </li>
 <li>GainedFocus
-: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aa067f8b39dcd270abc715652102ce6e66">sf::Event</a>
+: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aa8c5003ced508499933d540df8a6023ec">sf::Event</a>
 </li>
 <li>GatewayTimeout
-: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8a6fc1b50bd2b35a899b086b8703f8672c">sf::Http::Response</a>
+: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8a215935d823ab44694709a184a71353b0">sf::Http::Response</a>
 </li>
 <li>generateMipmap()
 : <a class="el" href="classsf_1_1RenderTexture.php#a8ca34c8b7e00793c1d3ef4f9a834f8cc">sf::RenderTexture</a>
 , <a class="el" href="classsf_1_1Texture.php#a7779a75c0324b5faff77602f871710a9">sf::Texture</a>
 </li>
 <li>Geometry
-: <a class="el" href="classsf_1_1Shader.php#afaa1aa65e5de37b74d047da9def9f9b3ae4df6eca15fba5a8c8b75892009508bc">sf::Shader</a>
+: <a class="el" href="classsf_1_1Shader.php#afaa1aa65e5de37b74d047da9def9f9b3a812421100fd57456727375938fb62788">sf::Shader</a>
 </li>
 <li>Get
-: <a class="el" href="classsf_1_1Http_1_1Request.php#a620f8bff6f43e1378f321bf53fbf5598a24d06852a988a57bbc05874f675ea34b">sf::Http::Request</a>
+: <a class="el" href="classsf_1_1Http_1_1Request.php#a620f8bff6f43e1378f321bf53fbf5598ab822baed393f3d0353621e5378b9fcb4">sf::Http::Request</a>
 </li>
 <li>getActiveContext()
 : <a class="el" href="classsf_1_1Context.php#a26ec3ddaf11a37c0630624037c4eea2d">sf::Context</a>
@@ -326,9 +326,6 @@
 : <a class="el" href="classsf_1_1InputSoundFile.php#a0c7d3293a5b0ed6aff674d5c8bcc1cdf">sf::InputSoundFile</a>
 , <a class="el" href="classsf_1_1SoundBuffer.php#a2a791e7304553fa96269cc355cc4f7e8">sf::SoundBuffer</a>
 </li>
-<li>getSampleOffset()
-: <a class="el" href="classsf_1_1InputSoundFile.php#a94f112dc810dd5009dbe3ddb1ba9de2f">sf::InputSoundFile</a>
-</li>
 <li>getSampleRate()
 : <a class="el" href="classsf_1_1InputSoundFile.php#adfbd1eaaf9fc0b469311fc159f5a3ecb">sf::InputSoundFile</a>
 , <a class="el" href="classsf_1_1SoundBuffer.php#a8cdfaea2ad1d05f81fa67442566c166e">sf::SoundBuffer</a>
@@ -385,9 +382,6 @@
 : <a class="el" href="classsf_1_1Shape.php#af7c4c80a435b85a622812711cf510439">sf::Shape</a>
 , <a class="el" href="classsf_1_1Sprite.php#a89aa58bc39e2072c6afe7c547d27b5a0">sf::Sprite</a>
 </li>
-<li>getTimeOffset()
-: <a class="el" href="classsf_1_1InputSoundFile.php#aa9ca3de078119245e2f0602031d7e2c3">sf::InputSoundFile</a>
-</li>
 <li>getTransform()
 : <a class="el" href="classsf_1_1Transformable.php#a3b48c3362e3e2c14fef7551252deb7bb">sf::Transformable</a>
 , <a class="el" href="classsf_1_1View.php#a0109dba48aee769126f670a212b3ed7f">sf::View</a>
@@ -428,13 +422,13 @@
 : <a class="el" href="classsf_1_1Glyph.php#ab15cfc37eb7b40a94b3b3aedf934010b">sf::Glyph</a>
 </li>
 <li>Gravity
-: <a class="el" href="classsf_1_1Sensor.php#a687375af3ab77b818fca73735bcaea84a88fc8025c897135e18ea02cfe26c7361">sf::Sensor</a>
+: <a class="el" href="classsf_1_1Sensor.php#a687375af3ab77b818fca73735bcaea84afab4d098cc64e791a0c4a9ef6b32db92">sf::Sensor</a>
 </li>
 <li>Green
-: <a class="el" href="classsf_1_1Color.php#a71bdec1f240038ee66fc8f3b418fce71">sf::Color</a>
+: <a class="el" href="classsf_1_1Color.php#a95629b30de8c6856aa7d3afed12eb865">sf::Color</a>
 </li>
 <li>Gyroscope
-: <a class="el" href="classsf_1_1Sensor.php#a687375af3ab77b818fca73735bcaea84a8a6a136ed089dd78dde8e9f7f3a86265">sf::Sensor</a>
+: <a class="el" href="classsf_1_1Sensor.php#a687375af3ab77b818fca73735bcaea84a1c43984aacd29b1fda5356883fb19656">sf::Sensor</a>
 </li>
 </ul>
 </div><!-- contents -->

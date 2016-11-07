@@ -70,7 +70,7 @@
 , <a class="el" href="classsf_1_1SoundBuffer.php#ab2083dc1a934c64959d9e3f162328a76">sf::SoundBuffer</a>
 </li>
 <li>scale()
-: <a class="el" href="classsf_1_1Transform.php#a9198da375173127901f3095e0165ee1b">sf::Transform</a>
+: <a class="el" href="classsf_1_1Transform.php#a6eaeedd35e289cb17f9bf7f24dc28daa">sf::Transform</a>
 , <a class="el" href="classsf_1_1Transformable.php#adecaa6c69b1f27dd5194b067d96bb694">sf::Transformable</a>
 </li>
 <li>seconds()
@@ -84,7 +84,7 @@
 , <a class="el" href="classsf_1_1SoundFileReader.php#a1e18ade5ffe882bdfa20a2ebe7e2b015">sf::SoundFileReader</a>
 </li>
 <li>send()
-: <a class="el" href="classsf_1_1TcpSocket.php#a31f5b280126a96c6f3ad430f4cbcb54d">sf::TcpSocket</a>
+: <a class="el" href="classsf_1_1TcpSocket.php#affce26ab3bcc4f5b9269dad79db544c0">sf::TcpSocket</a>
 , <a class="el" href="classsf_1_1UdpSocket.php#a664ab8f26f37c21cc4de1b847c2efcca">sf::UdpSocket</a>
 </li>
 <li>sendCommand()
@@ -95,9 +95,7 @@
 </li>
 <li>setActive()
 : <a class="el" href="classsf_1_1Context.php#a0806f915ea81ae1f4e8135a7a3696562">sf::Context</a>
-, <a class="el" href="classsf_1_1RenderTarget.php#a4438c5885b142d070a769a7a868b0fdc">sf::RenderTarget</a>
 , <a class="el" href="classsf_1_1RenderTexture.php#a5da95ecdbce615a80bb78399012508cf">sf::RenderTexture</a>
-, <a class="el" href="classsf_1_1RenderWindow.php#aee6c53eced675e885931eb3e91f11155">sf::RenderWindow</a>
 , <a class="el" href="classsf_1_1Window.php#a17ccf8ece0ce0bf2f1e6698bcfa29731">sf::Window</a>
 </li>
 <li>setAttenuation()
@@ -113,7 +111,7 @@
 : <a class="el" href="classsf_1_1Sound.php#a8b395e9713d0efa48a18628c8ec1972e">sf::Sound</a>
 </li>
 <li>setCenter()
-: <a class="el" href="classsf_1_1View.php#ab0296b03793e0873e6ae9e15311f3e78">sf::View</a>
+: <a class="el" href="classsf_1_1View.php#aa8e3fedb008306ff9811163545fb75f2">sf::View</a>
 </li>
 <li>setChannelCount()
 : <a class="el" href="classsf_1_1SoundRecorder.php#ae4e22ba67d12a74966eb05fad55a317c">sf::SoundRecorder</a>
@@ -272,10 +270,10 @@
 : <a class="el" href="classsf_1_1Window.php#a3b3f3513bb6be90f5cd456c20b5fd5fa">sf::Window</a>
 </li>
 <li>setUniform()
-: <a class="el" href="classsf_1_1Shader.php#aca5c55c4a3b23d21e33dbdaab7990755">sf::Shader</a>
+: <a class="el" href="classsf_1_1Shader.php#ab18f531e1f726b88fec1cf5a1e6af26d">sf::Shader</a>
 </li>
 <li>setUniformArray()
-: <a class="el" href="classsf_1_1Shader.php#aeae884292fed977bbea5039818f208e7">sf::Shader</a>
+: <a class="el" href="classsf_1_1Shader.php#a731d3b9953c50fe7d3fb03340b97deff">sf::Shader</a>
 </li>
 <li>setUpVector()
 : <a class="el" href="classsf_1_1Listener.php#a281e8cd44d3411d891b5e83b0cb6b9d4">sf::Listener</a>
@@ -314,10 +312,10 @@
 : <a class="el" href="classsf_1_1Socket.php#a80ffb47ec0bafc83af019055d3e6a303">sf::Socket</a>
 </li>
 <li>SocketSelector()
-: <a class="el" href="classsf_1_1SocketSelector.php#a50b1b955eb7ecb2e7c2764f3f4722fbf">sf::SocketSelector</a>
+: <a class="el" href="classsf_1_1SocketSelector.php#a741959c5158aeb1e4457cad47d90f76b">sf::SocketSelector</a>
 </li>
 <li>Sound()
-: <a class="el" href="classsf_1_1Sound.php#a3b1cfc19a856d4ff8c079ee41bb78e69">sf::Sound</a>
+: <a class="el" href="classsf_1_1Sound.php#ae05eeed6377932694d86b3011be366c0">sf::Sound</a>
 </li>
 <li>SoundBuffer()
 : <a class="el" href="classsf_1_1SoundBuffer.php#a0cabfbfe19b831bf7d5c9592d92ef233">sf::SoundBuffer</a>
@@ -326,13 +324,13 @@
 : <a class="el" href="classsf_1_1SoundRecorder.php#a50ebad413c4f157408a0fa49f23212a9">sf::SoundRecorder</a>
 </li>
 <li>SoundSource()
-: <a class="el" href="classsf_1_1SoundSource.php#ae0c7728c1449fdebe65749ab6fcb3170">sf::SoundSource</a>
+: <a class="el" href="classsf_1_1SoundSource.php#aefa4bd4460f387d81a0637d293979436">sf::SoundSource</a>
 </li>
 <li>SoundStream()
 : <a class="el" href="classsf_1_1SoundStream.php#a769d08f4c3c6b4340ef3a838329d2e5c">sf::SoundStream</a>
 </li>
 <li>Sprite()
-: <a class="el" href="classsf_1_1Sprite.php#a01cfe1402372d243dbaa2ffa96020206">sf::Sprite</a>
+: <a class="el" href="classsf_1_1Sprite.php#a92559fbca895a96758abf5eabab96984">sf::Sprite</a>
 </li>
 <li>start()
 : <a class="el" href="classsf_1_1SoundRecorder.php#a715f0fd2f228c83d79aaedca562ae51f">sf::SoundRecorder</a>
@@ -343,7 +341,7 @@
 , <a class="el" href="classsf_1_1SoundStream.php#a16cc6a0404b32e42c4dce184bb94d0f4">sf::SoundStream</a>
 </li>
 <li>String()
-: <a class="el" href="classsf_1_1String.php#a5742d0a9b0c754f711820c2b5c40fa55">sf::String</a>
+: <a class="el" href="classsf_1_1String.php#a0aa41dcbd17b0c36c74d03d3b0147f1e">sf::String</a>
 </li>
 <li>substring()
 : <a class="el" href="classsf_1_1String.php#a5ee1913acbad01c24feec87d294f6529">sf::String</a>

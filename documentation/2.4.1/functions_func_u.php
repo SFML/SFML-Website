@@ -83,7 +83,7 @@
 <li>update()
 : <a class="el" href="classsf_1_1Joystick.php#ab85fa9175b4edd3e5a07ee3cde0b0f48">sf::Joystick</a>
 , <a class="el" href="classsf_1_1Shape.php#adfb2bd966c8edbc5d6c92ebc375e4ac1">sf::Shape</a>
-, <a class="el" href="classsf_1_1Texture.php#a87f916490b757fe900798eedf3abf3ba">sf::Texture</a>
+, <a class="el" href="classsf_1_1Texture.php#ad3cceef238f7d5d2108a98dd38c17fc5">sf::Texture</a>
 </li>
 <li>upload()
 : <a class="el" href="classsf_1_1Ftp.php#a46d6e15cddd719288b5a08b685e11765">sf::Ftp</a>

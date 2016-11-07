@@ -39,7 +39,7 @@
 <p>Base class for classes that require an OpenAL context.  
  <a href="classsf_1_1AlResource.php#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="include_2SFML_2Audio_2AlResource_8hpp_source.php">AlResource.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="AlResource_8hpp_source.php">AlResource.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for sf::AlResource:</div>
 <div class="dyncontent">
@@ -47,23 +47,12 @@ Inheritance diagram for sf::AlResource:</div>
   <img src="classsf_1_1AlResource.png" usemap="#sf::AlResource_map" alt=""/>
   <map id="sf::AlResource_map" name="sf::AlResource_map">
 <area href="classsf_1_1SoundBuffer.php" title="Storage for audio samples defining a sound. " alt="sf::SoundBuffer" shape="rect" coords="0,56,152,80"/>
-<area href="classsf_1_1SoundBuffer.php" title="Storage for audio samples defining a sound. " alt="sf::SoundBuffer" shape="rect" coords="162,56,314,80"/>
-<area href="classsf_1_1SoundRecorder.php" title="Abstract base class for capturing sound data. " alt="sf::SoundRecorder" shape="rect" coords="324,56,476,80"/>
-<area href="classsf_1_1SoundRecorder.php" title="Abstract base class for capturing sound data. " alt="sf::SoundRecorder" shape="rect" coords="648,56,800,80"/>
-<area href="classsf_1_1SoundSource.php" title="Base class defining a sound&#39;s properties. " alt="sf::SoundSource" shape="rect" coords="972,56,1124,80"/>
-<area href="classsf_1_1SoundSource.php" title="Base class defining a sound&#39;s properties. " alt="sf::SoundSource" shape="rect" coords="1296,56,1448,80"/>
-<area href="classsf_1_1SoundBufferRecorder.php" title="Specialized SoundRecorder which stores the captured audio data into a sound buffer. " alt="sf::SoundBufferRecorder" shape="rect" coords="486,112,638,136"/>
-<area href="classsf_1_1SoundBufferRecorder.php" title="Specialized SoundRecorder which stores the captured audio data into a sound buffer. " alt="sf::SoundBufferRecorder" shape="rect" coords="486,168,638,192"/>
-<area href="classsf_1_1SoundBufferRecorder.php" title="Specialized SoundRecorder which stores the captured audio data into a sound buffer. " alt="sf::SoundBufferRecorder" shape="rect" coords="810,112,962,136"/>
-<area href="classsf_1_1SoundBufferRecorder.php" title="Specialized SoundRecorder which stores the captured audio data into a sound buffer. " alt="sf::SoundBufferRecorder" shape="rect" coords="810,168,962,192"/>
-<area href="classsf_1_1Sound.php" title="Regular sound that can be played in the audio environment. " alt="sf::Sound" shape="rect" coords="1134,112,1286,136"/>
-<area href="classsf_1_1Sound.php" title="Regular sound that can be played in the audio environment. " alt="sf::Sound" shape="rect" coords="1134,168,1286,192"/>
-<area href="classsf_1_1SoundStream.php" title="Abstract base class for streamed audio sources. " alt="sf::SoundStream" shape="rect" coords="1134,224,1286,248"/>
-<area href="classsf_1_1SoundStream.php" title="Abstract base class for streamed audio sources. " alt="sf::SoundStream" shape="rect" coords="1134,280,1286,304"/>
-<area href="classsf_1_1Sound.php" title="Regular sound that can be played in the audio environment. " alt="sf::Sound" shape="rect" coords="1458,112,1610,136"/>
-<area href="classsf_1_1Sound.php" title="Regular sound that can be played in the audio environment. " alt="sf::Sound" shape="rect" coords="1458,168,1610,192"/>
-<area href="classsf_1_1SoundStream.php" title="Abstract base class for streamed audio sources. " alt="sf::SoundStream" shape="rect" coords="1458,224,1610,248"/>
-<area href="classsf_1_1SoundStream.php" title="Abstract base class for streamed audio sources. " alt="sf::SoundStream" shape="rect" coords="1458,280,1610,304"/>
+<area href="classsf_1_1SoundRecorder.php" title="Abstract base class for capturing sound data. " alt="sf::SoundRecorder" shape="rect" coords="162,56,314,80"/>
+<area href="classsf_1_1SoundSource.php" title="Base class defining a sound&#39;s properties. " alt="sf::SoundSource" shape="rect" coords="405,56,557,80"/>
+<area href="classsf_1_1SoundBufferRecorder.php" title="Specialized SoundRecorder which stores the captured audio data into a sound buffer. " alt="sf::SoundBufferRecorder" shape="rect" coords="162,112,314,136"/>
+<area href="classsf_1_1Sound.php" title="Regular sound that can be played in the audio environment. " alt="sf::Sound" shape="rect" coords="324,112,476,136"/>
+<area href="classsf_1_1SoundStream.php" title="Abstract base class for streamed audio sources. " alt="sf::SoundStream" shape="rect" coords="486,112,638,136"/>
+<area href="classsf_1_1Music.php" title="Streamed music played from an audio file. " alt="sf::Music" shape="rect" coords="486,168,638,192"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -75,18 +64,12 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a74ad78198cddcb6e5d847177364049db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1AlResource.php#a74ad78198cddcb6e5d847177364049db">~AlResource</a> ()</td></tr>
 <tr class="memdesc:a74ad78198cddcb6e5d847177364049db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a74ad78198cddcb6e5d847177364049db">More...</a><br /></td></tr>
 <tr class="separator:a74ad78198cddcb6e5d847177364049db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51b4f3a825c5d68386f8683e3e1053d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1AlResource.php#a51b4f3a825c5d68386f8683e3e1053d7">AlResource</a> ()</td></tr>
-<tr class="memdesc:a51b4f3a825c5d68386f8683e3e1053d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a51b4f3a825c5d68386f8683e3e1053d7">More...</a><br /></td></tr>
-<tr class="separator:a51b4f3a825c5d68386f8683e3e1053d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74ad78198cddcb6e5d847177364049db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1AlResource.php#a74ad78198cddcb6e5d847177364049db">~AlResource</a> ()</td></tr>
-<tr class="memdesc:a74ad78198cddcb6e5d847177364049db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a74ad78198cddcb6e5d847177364049db">More...</a><br /></td></tr>
-<tr class="separator:a74ad78198cddcb6e5d847177364049db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for classes that require an OpenAL context. </p>
 <p>This class is for internal use only, it must be the base of every class that requires a valid OpenAL context in order to work.</p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Audio_2AlResource_8hpp_source.php#l00040">40</a> of file <a class="el" href="include_2SFML_2Audio_2AlResource_8hpp_source.php">include/SFML/Audio/AlResource.hpp</a>.</p>
+<p>Definition at line <a class="el" href="AlResource_8hpp_source.php#l00040">40</a> of file <a class="el" href="AlResource_8hpp_source.php">AlResource.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a51b4f3a825c5d68386f8683e3e1053d7"></a>
 <div class="memitem">
@@ -138,58 +121,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a51b4f3a825c5d68386f8683e3e1053d7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">sf::AlResource::AlResource </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Default constructor. </p>
-
-</div>
-</div>
-<a class="anchor" id="a74ad78198cddcb6e5d847177364049db"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">sf::AlResource::~AlResource </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Destructor. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="include_2SFML_2Audio_2AlResource_8hpp_source.php">include/SFML/Audio/AlResource.hpp</a></li>
+<li><a class="el" href="AlResource_8hpp_source.php">AlResource.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <?php

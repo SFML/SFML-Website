@@ -69,7 +69,7 @@
 
 <h3><a class="anchor" id="index_w"></a>- w -</h3><ul>
 <li>W
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142ab374aa3b7462ee8b918f4a94452f1043">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a258aa89e9c6c9aad1ccbaeb41839c5e0">sf::Keyboard</a>
 </li>
 </ul>
 </div><!-- contents -->

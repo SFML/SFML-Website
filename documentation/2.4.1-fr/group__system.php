@@ -77,9 +77,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga666414341ce8396227f5a125ee5b7053"><td class="memItemLeft" align="right" valign="top">ANativeActivity *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system.php#ga666414341ce8396227f5a125ee5b7053">sf::getNativeActivity</a> ()</td></tr>
-<tr class="memdesc:ga666414341ce8396227f5a125ee5b7053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to the Android native activity.  <a href="group__system.php#ga666414341ce8396227f5a125ee5b7053">More...</a><br /></td></tr>
-<tr class="separator:ga666414341ce8396227f5a125ee5b7053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga235cf5cded738208fc8f28a5b67b371a"><td class="memItemLeft" align="right" valign="top">ANativeActivity *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system.php#ga235cf5cded738208fc8f28a5b67b371a">sf::getNativeActivity</a> ()</td></tr>
+<tr class="memdesc:ga235cf5cded738208fc8f28a5b67b371a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to the Android native activity.  <a href="group__system.php#ga235cf5cded738208fc8f28a5b67b371a">More...</a><br /></td></tr>
+<tr class="separator:ga235cf5cded738208fc8f28a5b67b371a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab8c0d1f966b4e5110fd370b662d8c11b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system.php#gab8c0d1f966b4e5110fd370b662d8c11b">sf::sleep</a> (Time duration)</td></tr>
 <tr class="memdesc:gab8c0d1f966b4e5110fd370b662d8c11b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make the current thread sleep for a given duration.  <a href="group__system.php#gab8c0d1f966b4e5110fd370b662d8c11b">More...</a><br /></td></tr>
 <tr class="separator:gab8c0d1f966b4e5110fd370b662d8c11b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,12 +121,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga666414341ce8396227f5a125ee5b7053"></a>
+<a class="anchor" id="ga235cf5cded738208fc8f28a5b67b371a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ANativeActivity * sf::getNativeActivity </td>
+          <td class="memname">ANativeActivity* sf::getNativeActivity </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -137,7 +137,7 @@ Functions</h2></td></tr>
 <p>Return a pointer to the Android native activity. </p>
 <p>You shouldn't have to use this function, unless you want to implement very specific details, that SFML doesn't support, or to use a workaround for a known issue.</p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to Android native activity structure</dd></dl>
-<p>{Android,SFML/System/NativeActivity.hpp} </p>
+<p>{Android,<a class="el" href="NativeActivity_8hpp_source.php">SFML/System/NativeActivity.hpp</a>} </p>
 
 </div>
 </div>

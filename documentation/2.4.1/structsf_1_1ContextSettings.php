@@ -41,41 +41,20 @@
 <p>Structure defining the settings of the OpenGL context attached to a window.  
  <a href="structsf_1_1ContextSettings.php#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="include_2SFML_2Window_2ContextSettings_8hpp_source.php">ContextSettings.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="ContextSettings_8hpp_source.php">ContextSettings.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:af2e91e57e8d26c40afe2ec8efaa32a2c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2c">Attribute</a> { <br />
-&#160;&#160;<a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2ca0246d0341f162d5bd17d3c22d1bf8be1">Default</a> = 0, 
-<a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2cae9f568c99438d04da1f8d393efa3a3a4">Core</a> = 1 &lt;&lt; 0, 
-<a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2ca84963e2e2ec85ef4067c210ed0381295">Debug</a> = 1 &lt;&lt; 2, 
-<a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2ca0246d0341f162d5bd17d3c22d1bf8be1">Default</a> = 0, 
-<br />
-&#160;&#160;<a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2cae9f568c99438d04da1f8d393efa3a3a4">Core</a> = 1 &lt;&lt; 0, 
-<a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2ca84963e2e2ec85ef4067c210ed0381295">Debug</a> = 1 &lt;&lt; 2
-<br />
- }<tr class="memdesc:af2e91e57e8d26c40afe2ec8efaa32a2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of the context attribute flags.  <a href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2c">More...</a><br /></td></tr>
-<tr class="separator:af2e91e57e8d26c40afe2ec8efaa32a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:af2e91e57e8d26c40afe2ec8efaa32a2c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2c">Attribute</a> { <br />
-&#160;&#160;<a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2ca0246d0341f162d5bd17d3c22d1bf8be1">Default</a> = 0, 
-<a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2cae9f568c99438d04da1f8d393efa3a3a4">Core</a> = 1 &lt;&lt; 0, 
-<a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2ca84963e2e2ec85ef4067c210ed0381295">Debug</a> = 1 &lt;&lt; 2, 
-<a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2ca0246d0341f162d5bd17d3c22d1bf8be1">Default</a> = 0, 
-<br />
-&#160;&#160;<a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2cae9f568c99438d04da1f8d393efa3a3a4">Core</a> = 1 &lt;&lt; 0, 
-<a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2ca84963e2e2ec85ef4067c210ed0381295">Debug</a> = 1 &lt;&lt; 2
-<br />
+<tr class="memitem:af2e91e57e8d26c40afe2ec8efaa32a2c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2c">Attribute</a> { <a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2cabf868dcb751b909bf031484ed42a93bb">Default</a> = 0, 
+<a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2cacb581130734cbd87cbbc9438429f4a8b">Core</a> = 1 &lt;&lt; 0, 
+<a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2ca6043f67afb3d48918d5336474eabaafc">Debug</a> = 1 &lt;&lt; 2
  }<tr class="memdesc:af2e91e57e8d26c40afe2ec8efaa32a2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of the context attribute flags.  <a href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2c">More...</a><br /></td></tr>
 <tr class="separator:af2e91e57e8d26c40afe2ec8efaa32a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac56869ccbb6bf0df48b88880754e12b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1ContextSettings.php#ac56869ccbb6bf0df48b88880754e12b7">ContextSettings</a> (unsigned int depth=0, unsigned int stencil=0, unsigned int antialiasing=0, unsigned int major=1, unsigned int minor=1, unsigned int attributes=<a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2ca0246d0341f162d5bd17d3c22d1bf8be1">Default</a>, bool sRgb=false)</td></tr>
-<tr class="memdesc:ac56869ccbb6bf0df48b88880754e12b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#ac56869ccbb6bf0df48b88880754e12b7">More...</a><br /></td></tr>
-<tr class="separator:ac56869ccbb6bf0df48b88880754e12b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac56869ccbb6bf0df48b88880754e12b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1ContextSettings.php#ac56869ccbb6bf0df48b88880754e12b7">ContextSettings</a> (unsigned int depth=0, unsigned int stencil=0, unsigned int antialiasing=0, unsigned int major=1, unsigned int minor=1, unsigned int attributes=<a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2ca0246d0341f162d5bd17d3c22d1bf8be1">Default</a>, bool sRgb=false)</td></tr>
+<tr class="memitem:ac56869ccbb6bf0df48b88880754e12b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1ContextSettings.php#ac56869ccbb6bf0df48b88880754e12b7">ContextSettings</a> (unsigned int depth=0, unsigned int stencil=0, unsigned int antialiasing=0, unsigned int major=1, unsigned int minor=1, unsigned int attributes=<a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2cabf868dcb751b909bf031484ed42a93bb">Default</a>, bool sRgb=false)</td></tr>
 <tr class="memdesc:ac56869ccbb6bf0df48b88880754e12b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#ac56869ccbb6bf0df48b88880754e12b7">More...</a><br /></td></tr>
 <tr class="separator:ac56869ccbb6bf0df48b88880754e12b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -115,7 +94,7 @@ Public Attributes</h2></td></tr>
 <p><b>Special Note for OS X:</b> Apple only supports choosing between either a legacy context (OpenGL 2.1) or a core context (OpenGL version depends on the operating system version but is at least 3.2). Compatibility contexts are not supported. Further information is available on the <a href="https://developer.apple.com/opengl/capabilities/index.html">OpenGL Capabilities Tables</a> page. OS X also currently does not support debug contexts.</p>
 <p>Please note that these values are only a hint. No failure will be reported if one or more of these values are not supported by the system; instead, SFML will try to find the closest valid match. You can then retrieve the settings that the window actually used to create its context, with <a class="el" href="classsf_1_1Window.php#a5a9d5c15facf25ad4d9b2b30caa0a2db" title="Get the settings of the OpenGL context of the window. ">Window::getSettings()</a>. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2ContextSettings_8hpp_source.php#l00036">36</a> of file <a class="el" href="include_2SFML_2Window_2ContextSettings_8hpp_source.php">include/SFML/Window/ContextSettings.hpp</a>.</p>
+<p>Definition at line <a class="el" href="ContextSettings_8hpp_source.php#l00036">36</a> of file <a class="el" href="ContextSettings_8hpp_source.php">ContextSettings.hpp</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="af2e91e57e8d26c40afe2ec8efaa32a2c"></a>
 <div class="memitem">
@@ -129,63 +108,18 @@ Public Attributes</h2></td></tr>
 
 <p>Enumeration of the context attribute flags. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="af2e91e57e8d26c40afe2ec8efaa32a2ca0246d0341f162d5bd17d3c22d1bf8be1"></a>Default&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="af2e91e57e8d26c40afe2ec8efaa32a2cabf868dcb751b909bf031484ed42a93bb"></a>Default&#160;</td><td class="fielddoc">
 <p>Non-debug, compatibility context (this and the core attribute are mutually exclusive) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="af2e91e57e8d26c40afe2ec8efaa32a2cae9f568c99438d04da1f8d393efa3a3a4"></a>Core&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="af2e91e57e8d26c40afe2ec8efaa32a2cacb581130734cbd87cbbc9438429f4a8b"></a>Core&#160;</td><td class="fielddoc">
 <p>Core attribute. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="af2e91e57e8d26c40afe2ec8efaa32a2ca84963e2e2ec85ef4067c210ed0381295"></a>Debug&#160;</td><td class="fielddoc">
-<p>Debug attribute. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="af2e91e57e8d26c40afe2ec8efaa32a2ca0246d0341f162d5bd17d3c22d1bf8be1"></a>Default&#160;</td><td class="fielddoc">
-<p>Non-debug, compatibility context (this and the core attribute are mutually exclusive) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="af2e91e57e8d26c40afe2ec8efaa32a2cae9f568c99438d04da1f8d393efa3a3a4"></a>Core&#160;</td><td class="fielddoc">
-<p>Core attribute. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="af2e91e57e8d26c40afe2ec8efaa32a2ca84963e2e2ec85ef4067c210ed0381295"></a>Debug&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="af2e91e57e8d26c40afe2ec8efaa32a2ca6043f67afb3d48918d5336474eabaafc"></a>Debug&#160;</td><td class="fielddoc">
 <p>Debug attribute. </p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2ContextSettings_8hpp_source.php#l00042">42</a> of file <a class="el" href="include_2SFML_2Window_2ContextSettings_8hpp_source.php">include/SFML/Window/ContextSettings.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af2e91e57e8d26c40afe2ec8efaa32a2c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2c">sf::ContextSettings::Attribute</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Enumeration of the context attribute flags. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="af2e91e57e8d26c40afe2ec8efaa32a2ca0246d0341f162d5bd17d3c22d1bf8be1"></a>Default&#160;</td><td class="fielddoc">
-<p>Non-debug, compatibility context (this and the core attribute are mutually exclusive) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="af2e91e57e8d26c40afe2ec8efaa32a2cae9f568c99438d04da1f8d393efa3a3a4"></a>Core&#160;</td><td class="fielddoc">
-<p>Core attribute. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="af2e91e57e8d26c40afe2ec8efaa32a2ca84963e2e2ec85ef4067c210ed0381295"></a>Debug&#160;</td><td class="fielddoc">
-<p>Debug attribute. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="af2e91e57e8d26c40afe2ec8efaa32a2ca0246d0341f162d5bd17d3c22d1bf8be1"></a>Default&#160;</td><td class="fielddoc">
-<p>Non-debug, compatibility context (this and the core attribute are mutually exclusive) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="af2e91e57e8d26c40afe2ec8efaa32a2cae9f568c99438d04da1f8d393efa3a3a4"></a>Core&#160;</td><td class="fielddoc">
-<p>Core attribute. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="af2e91e57e8d26c40afe2ec8efaa32a2ca84963e2e2ec85ef4067c210ed0381295"></a>Debug&#160;</td><td class="fielddoc">
-<p>Debug attribute. </p>
-</td></tr>
-</table>
-
-<p>Definition at line <a class="el" href="shared_2include_2SFML_2Window_2ContextSettings_8hpp_source.php#l00042">42</a> of file <a class="el" href="shared_2include_2SFML_2Window_2ContextSettings_8hpp_source.php">shared/include/SFML/Window/ContextSettings.hpp</a>.</p>
+<p>Definition at line <a class="el" href="ContextSettings_8hpp_source.php#l00042">42</a> of file <a class="el" href="ContextSettings_8hpp_source.php">ContextSettings.hpp</a>.</p>
 
 </div>
 </div>
@@ -231,7 +165,7 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>attributes</em> = <code><a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2ca0246d0341f162d5bd17d3c22d1bf8be1">Default</a></code>, </td>
+          <td class="paramname"><em>attributes</em> = <code><a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2cabf868dcb751b909bf031484ed42a93bb">Default</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -266,87 +200,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2ContextSettings_8hpp_source.php#l00061">61</a> of file <a class="el" href="include_2SFML_2Window_2ContextSettings_8hpp_source.php">include/SFML/Window/ContextSettings.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac56869ccbb6bf0df48b88880754e12b7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">sf::ContextSettings::ContextSettings </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>depth</em> = <code>0</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>stencil</em> = <code>0</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>antialiasing</em> = <code>0</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>major</em> = <code>1</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>minor</em> = <code>1</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>attributes</em> = <code><a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2ca0246d0341f162d5bd17d3c22d1bf8be1">Default</a></code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>sRgb</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Default constructor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">depth</td><td>Depth buffer bits </td></tr>
-    <tr><td class="paramname">stencil</td><td>Stencil buffer bits </td></tr>
-    <tr><td class="paramname">antialiasing</td><td>Antialiasing level </td></tr>
-    <tr><td class="paramname">major</td><td>Major number of the context version </td></tr>
-    <tr><td class="paramname">minor</td><td>Minor number of the context version </td></tr>
-    <tr><td class="paramname">attributes</td><td>Attribute flags of the context </td></tr>
-    <tr><td class="paramname">sRgb</td><td>sRGB capable framebuffer </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="shared_2include_2SFML_2Window_2ContextSettings_8hpp_source.php#l00061">61</a> of file <a class="el" href="shared_2include_2SFML_2Window_2ContextSettings_8hpp_source.php">shared/include/SFML/Window/ContextSettings.hpp</a>.</p>
+<p>Definition at line <a class="el" href="ContextSettings_8hpp_source.php#l00061">61</a> of file <a class="el" href="ContextSettings_8hpp_source.php">ContextSettings.hpp</a>.</p>
 
 </div>
 </div>
@@ -363,7 +217,7 @@ Public Attributes</h2></td></tr>
 
 <p>Level of antialiasing. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2ContextSettings_8hpp_source.php#l00077">77</a> of file <a class="el" href="include_2SFML_2Window_2ContextSettings_8hpp_source.php">include/SFML/Window/ContextSettings.hpp</a>.</p>
+<p>Definition at line <a class="el" href="ContextSettings_8hpp_source.php#l00077">77</a> of file <a class="el" href="ContextSettings_8hpp_source.php">ContextSettings.hpp</a>.</p>
 
 </div>
 </div>
@@ -379,7 +233,7 @@ Public Attributes</h2></td></tr>
 
 <p>The attribute flags to create the context with. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2ContextSettings_8hpp_source.php#l00080">80</a> of file <a class="el" href="include_2SFML_2Window_2ContextSettings_8hpp_source.php">include/SFML/Window/ContextSettings.hpp</a>.</p>
+<p>Definition at line <a class="el" href="ContextSettings_8hpp_source.php#l00080">80</a> of file <a class="el" href="ContextSettings_8hpp_source.php">ContextSettings.hpp</a>.</p>
 
 </div>
 </div>
@@ -395,7 +249,7 @@ Public Attributes</h2></td></tr>
 
 <p>Bits of the depth buffer. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2ContextSettings_8hpp_source.php#l00075">75</a> of file <a class="el" href="include_2SFML_2Window_2ContextSettings_8hpp_source.php">include/SFML/Window/ContextSettings.hpp</a>.</p>
+<p>Definition at line <a class="el" href="ContextSettings_8hpp_source.php#l00075">75</a> of file <a class="el" href="ContextSettings_8hpp_source.php">ContextSettings.hpp</a>.</p>
 
 </div>
 </div>
@@ -411,7 +265,7 @@ Public Attributes</h2></td></tr>
 
 <p>Major number of the context version to create. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2ContextSettings_8hpp_source.php#l00078">78</a> of file <a class="el" href="include_2SFML_2Window_2ContextSettings_8hpp_source.php">include/SFML/Window/ContextSettings.hpp</a>.</p>
+<p>Definition at line <a class="el" href="ContextSettings_8hpp_source.php#l00078">78</a> of file <a class="el" href="ContextSettings_8hpp_source.php">ContextSettings.hpp</a>.</p>
 
 </div>
 </div>
@@ -427,7 +281,7 @@ Public Attributes</h2></td></tr>
 
 <p>Minor number of the context version to create. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2ContextSettings_8hpp_source.php#l00079">79</a> of file <a class="el" href="include_2SFML_2Window_2ContextSettings_8hpp_source.php">include/SFML/Window/ContextSettings.hpp</a>.</p>
+<p>Definition at line <a class="el" href="ContextSettings_8hpp_source.php#l00079">79</a> of file <a class="el" href="ContextSettings_8hpp_source.php">ContextSettings.hpp</a>.</p>
 
 </div>
 </div>
@@ -443,7 +297,7 @@ Public Attributes</h2></td></tr>
 
 <p>Whether the context framebuffer is sRGB capable. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2ContextSettings_8hpp_source.php#l00081">81</a> of file <a class="el" href="include_2SFML_2Window_2ContextSettings_8hpp_source.php">include/SFML/Window/ContextSettings.hpp</a>.</p>
+<p>Definition at line <a class="el" href="ContextSettings_8hpp_source.php#l00081">81</a> of file <a class="el" href="ContextSettings_8hpp_source.php">ContextSettings.hpp</a>.</p>
 
 </div>
 </div>
@@ -459,12 +313,12 @@ Public Attributes</h2></td></tr>
 
 <p>Bits of the stencil buffer. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2ContextSettings_8hpp_source.php#l00076">76</a> of file <a class="el" href="include_2SFML_2Window_2ContextSettings_8hpp_source.php">include/SFML/Window/ContextSettings.hpp</a>.</p>
+<p>Definition at line <a class="el" href="ContextSettings_8hpp_source.php#l00076">76</a> of file <a class="el" href="ContextSettings_8hpp_source.php">ContextSettings.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="include_2SFML_2Window_2ContextSettings_8hpp_source.php">include/SFML/Window/ContextSettings.hpp</a></li>
+<li><a class="el" href="ContextSettings_8hpp_source.php">ContextSettings.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <?php

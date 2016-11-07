@@ -36,15 +36,10 @@
 <p>This is the complete list of members for <a class="el" href="classsf_1_1Mutex.php">sf::Mutex</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classsf_1_1Mutex.php#a1a16956a6bbea764480c1b80f2e45763">lock</a>()</td><td class="entry"><a class="el" href="classsf_1_1Mutex.php">sf::Mutex</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classsf_1_1Mutex.php#a1a16956a6bbea764480c1b80f2e45763">lock</a>()</td><td class="entry"><a class="el" href="classsf_1_1Mutex.php">sf::Mutex</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classsf_1_1Mutex.php#a9bd52a48320fd7b6db8a78037aad276e">Mutex</a>()</td><td class="entry"><a class="el" href="classsf_1_1Mutex.php">sf::Mutex</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classsf_1_1Mutex.php#a9bd52a48320fd7b6db8a78037aad276e">Mutex</a>()</td><td class="entry"><a class="el" href="classsf_1_1Mutex.php">sf::Mutex</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classsf_1_1NonCopyable.php#a2110add170580fdb946f887719da6860">NonCopyable</a>()</td><td class="entry"><a class="el" href="classsf_1_1NonCopyable.php">sf::NonCopyable</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classsf_1_1NonCopyable.php#a2110add170580fdb946f887719da6860">NonCopyable</a>()</td><td class="entry"><a class="el" href="classsf_1_1NonCopyable.php">sf::NonCopyable</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classsf_1_1Mutex.php#ade71268ffc5e80756652058b01c23c33">unlock</a>()</td><td class="entry"><a class="el" href="classsf_1_1Mutex.php">sf::Mutex</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classsf_1_1Mutex.php#ade71268ffc5e80756652058b01c23c33">unlock</a>()</td><td class="entry"><a class="el" href="classsf_1_1Mutex.php">sf::Mutex</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classsf_1_1Mutex.php#a9f76a67b7b6d3918131a692179b4e3f2">~Mutex</a>()</td><td class="entry"><a class="el" href="classsf_1_1Mutex.php">sf::Mutex</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classsf_1_1Mutex.php#a9f76a67b7b6d3918131a692179b4e3f2">~Mutex</a>()</td><td class="entry"><a class="el" href="classsf_1_1Mutex.php">sf::Mutex</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <?php
     require("../footer.php");

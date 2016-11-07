@@ -70,13 +70,13 @@
 
 <h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
 <li>T
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a5d965e34f7a0a8175f6d619303d82da5">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a19f59109111fc5271d3581bcd0c43187">sf::Keyboard</a>
 </li>
 <li>Tab
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a4053e8feb4913125c645b9c67224b3f5">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a20c552c39c8356b1078f1cfff7936b4a">sf::Keyboard</a>
 </li>
 <li>Tcp
-: <a class="el" href="classsf_1_1Socket.php#a5d3ff44e56e68f02816bb0fabc34adf8a61b0d1d657709c3d1412b46d001ea17b">sf::Socket</a>
+: <a class="el" href="classsf_1_1Socket.php#a5d3ff44e56e68f02816bb0fabc34adf8acc02e97e90234b957eaad4dff7f22214">sf::Socket</a>
 </li>
 <li>TcpListener()
 : <a class="el" href="classsf_1_1TcpListener.php#a59a1db5b6f4711a3e57390da2f8d9630">sf::TcpListener</a>
@@ -102,10 +102,10 @@
 : <a class="el" href="classsf_1_1Text.php#aff7cab6a92e5948c9d1481cb2d87eb84">sf::Text</a>
 </li>
 <li>TextEntered
-: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aa4da4ae2f3e97f8cbd3cb725f2da21a10">sf::Event</a>
+: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aa7e09871dc984080ff528e4f7e073e874">sf::Event</a>
 </li>
 <li>texture
-: <a class="el" href="classsf_1_1RenderStates.php#ad7eb50453917561fa7a9df7f4c53f1fd">sf::RenderStates</a>
+: <a class="el" href="classsf_1_1RenderStates.php#a457fc5a41731889de9cf39cf9b3436c3">sf::RenderStates</a>
 </li>
 <li>Texture()
 : <a class="el" href="classsf_1_1Texture.php#a3e04674853b8533bf981db3173e3a4a7">sf::Texture</a>
@@ -123,7 +123,7 @@
 : <a class="el" href="classsf_1_1ThreadLocalPtr.php#a8c678211d7828d2a8c41cb534422d649">sf::ThreadLocalPtr&lt; T &gt;</a>
 </li>
 <li>Tilde
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a35b29da1a60351f5442676ab805d3d0b">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a90be0882086bccb516e3afc5c7fb82eb">sf::Keyboard</a>
 </li>
 <li>Time()
 : <a class="el" href="classsf_1_1Time.php#acba0cfbc49e3a09a22a8e079eb67a05c">sf::Time</a>
@@ -155,13 +155,13 @@
 : <a class="el" href="classsf_1_1Event.php#a5f6ed8e499a4c3d171ff1baab469b2ee">sf::Event</a>
 </li>
 <li>TouchBegan
-: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aafcdbb3d909117eb088c6d290b564e6b5">sf::Event</a>
+: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aae6f8231ad6013d063929a09b6c28f515">sf::Event</a>
 </li>
 <li>TouchEnded
-: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aae35e2e04bb23e95d3786bef60ea4c074">sf::Event</a>
+: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aabc7123492dbca320da5c03fea1a141e5">sf::Event</a>
 </li>
 <li>TouchMoved
-: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aa4eed100fe434d73ac20e6a8cfd1e726c">sf::Event</a>
+: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aa9524b7d7665212c6d56f623b5b8311a9">sf::Event</a>
 </li>
 <li>toUtf16()
 : <a class="el" href="classsf_1_1String.php#abaa37ec39d40f44a2bff4ad3059bef47">sf::String</a>
@@ -190,7 +190,7 @@
 : <a class="el" href="classsf_1_1String.php#afd8b085ad7255543e4dc1285389d2d82">sf::String</a>
 </li>
 <li>TransferAborted
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba05e7e2eb62bf7d8709f5f6d37dbde7cb">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba7cfefcc586c12ba70f752353fde7126e">sf::Ftp::Response</a>
 </li>
 <li>TransferMode
 : <a class="el" href="classsf_1_1Ftp.php#a1cd6b89ad23253f6d97e6d4ca4d558cb">sf::Ftp</a>
@@ -199,13 +199,13 @@
 : <a class="el" href="classsf_1_1RenderStates.php#a1f737981a0f2f0d4bb8dac866a8d1149">sf::RenderStates</a>
 </li>
 <li>Transform()
-: <a class="el" href="classsf_1_1Transform.php#ac32de51bd0b9f3d52fbe0838225ee83b">sf::Transform</a>
+: <a class="el" href="classsf_1_1Transform.php#a78c48677712fcf41122d02f1301d71a3">sf::Transform</a>
 </li>
 <li>Transformable()
 : <a class="el" href="classsf_1_1Transformable.php#ae71710de0fef423121bab1c684954a2e">sf::Transformable</a>
 </li>
 <li>transformPoint()
-: <a class="el" href="classsf_1_1Transform.php#af20913c6a27087c26192c116397ab40a">sf::Transform</a>
+: <a class="el" href="classsf_1_1Transform.php#ac322cd8f6d606598d1aacc4d1d160ad6">sf::Transform</a>
 </li>
 <li>transformRect()
 : <a class="el" href="classsf_1_1Transform.php#a345112559981d988e92b54b7976fca8a">sf::Transform</a>
@@ -214,10 +214,10 @@
 : <a class="el" href="classsf_1_1GlResource_1_1TransientContextLock.php#a6434ee8f0380c300b361be038f37123a">sf::GlResource::TransientContextLock</a>
 </li>
 <li>translate()
-: <a class="el" href="classsf_1_1Transform.php#a452ff6e32d5120fa8c132c1bf0ad83cd">sf::Transform</a>
+: <a class="el" href="classsf_1_1Transform.php#ab54f6c8070cc05e2afcb3145fbf4395a">sf::Transform</a>
 </li>
 <li>Transparent
-: <a class="el" href="classsf_1_1Color.php#a422c310394afa396d3a2798aad982145">sf::Color</a>
+: <a class="el" href="classsf_1_1Color.php#a569b45471737f770656f50ae7bbac292">sf::Color</a>
 </li>
 <li>type
 : <a class="el" href="structsf_1_1Event_1_1SensorEvent.php#abee7d67bf0947fd1138e4466011e2436">sf::Event::SensorEvent</a>

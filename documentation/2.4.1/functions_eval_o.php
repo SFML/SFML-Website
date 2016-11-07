@@ -69,32 +69,32 @@
 
 <h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
 <li>O
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a2120b9364651bb4d50fbd795058796cd">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a7739288cc628dfa8c50ba712be7c03e1">sf::Keyboard</a>
 </li>
 <li>Ok
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3bac4a1be25f02eef9d4c28755d40e73fcc">sf::Ftp::Response</a>
-, <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8a1c0988840633e4f4836b7813c85a6720">sf::Http::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3baa956e229ba6c0cdf0d88b0e05b286210">sf::Ftp::Response</a>
+, <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8a0158f932254d3f09647dd1f64bd43832">sf::Http::Response</a>
 </li>
 <li>One
-: <a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbba45992876072f707d1565f2d08d6b5ed6">sf::BlendMode</a>
+: <a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbaa2d3ba8b8bb2233c9d357cbb94bf4181">sf::BlendMode</a>
 </li>
 <li>OneMinusDstAlpha
-: <a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbba6f0663bcd2a998b0bb03110fb691ff48">sf::BlendMode</a>
+: <a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbab4e5c63f189f26075e5939ad1a2ce4e4">sf::BlendMode</a>
 </li>
 <li>OneMinusDstColor
-: <a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbae000102101f7c9828e106c9162ddb69e">sf::BlendMode</a>
+: <a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbac8198db20d14506a841d1091ced1cae2">sf::BlendMode</a>
 </li>
 <li>OneMinusSrcAlpha
-: <a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbaf882a5496651c616d7f23cafc8eafe61">sf::BlendMode</a>
+: <a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbaab57e8616bf4c21d8ee923178acdf2c8">sf::BlendMode</a>
 </li>
 <li>OneMinusSrcColor
-: <a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbafc9454075ca0b0613f23c9d7d614dca4">sf::BlendMode</a>
+: <a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbba5971ffdbca63382058ccba76bfce219e">sf::BlendMode</a>
 </li>
 <li>OpeningDataConnection
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3bab31a5cb621b4097247dfd59565ae8b98">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba794ebe743688be611447638bf9e49d86">sf::Ftp::Response</a>
 </li>
 <li>Orientation
-: <a class="el" href="classsf_1_1Sensor.php#a687375af3ab77b818fca73735bcaea84a9fca0168d56fad3e328d59d09f3d4fb3">sf::Sensor</a>
+: <a class="el" href="classsf_1_1Sensor.php#a687375af3ab77b818fca73735bcaea84aa428c5260446555de87c69b65f6edf00">sf::Sensor</a>
 </li>
 </ul>
 </div><!-- contents -->

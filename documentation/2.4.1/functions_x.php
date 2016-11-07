@@ -78,18 +78,18 @@
 , <a class="el" href="structsf_1_1Event_1_1TouchEvent.php#a8993963790b850caa68b98d3cad2be45">sf::Event::TouchEvent</a>
 </li>
 <li>X
-: <a class="el" href="classsf_1_1Joystick.php#a48db337092c2e263774f94de6d50baa7ad77e00ab254935d6757860e82945a01b">sf::Joystick</a>
-, <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a331e747217bc92ad4881bc8d914b4e76">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Joystick.php#a48db337092c2e263774f94de6d50baa7a95dc8b9bf7b0a2157fc67891c54c401e">sf::Joystick</a>
+, <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a012f5ee9d518e9e24caa087fbddc0594">sf::Keyboard</a>
 </li>
 <li>x
 : <a class="el" href="classsf_1_1Vector2.php#a1e6ad77fa155f3753bfb92699bd28141">sf::Vector2&lt; T &gt;</a>
 , <a class="el" href="classsf_1_1Vector3.php#a3cb0c769390bc37c346bb1a69e510d16">sf::Vector3&lt; T &gt;</a>
 </li>
 <li>XButton1
-: <a class="el" href="classsf_1_1Mouse.php#a4fb128be433f9aafe66bc0c605daaa90a3af65e31680f6b1881897691a42cc934">sf::Mouse</a>
+: <a class="el" href="classsf_1_1Mouse.php#a4fb128be433f9aafe66bc0c605daaa90aecc7f3ce9ad6a60b9b0027876446b8d7">sf::Mouse</a>
 </li>
 <li>XButton2
-: <a class="el" href="classsf_1_1Mouse.php#a4fb128be433f9aafe66bc0c605daaa90a634ef28ebbf74e5ef62d66c8ed185350">sf::Mouse</a>
+: <a class="el" href="classsf_1_1Mouse.php#a4fb128be433f9aafe66bc0c605daaa90a03fa056fd0dd9d629c205d91a8ef1b5a">sf::Mouse</a>
 </li>
 </ul>
 </div><!-- contents -->

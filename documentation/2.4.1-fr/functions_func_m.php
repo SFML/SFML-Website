@@ -81,8 +81,8 @@
 : <a class="el" href="classsf_1_1Time.php#a9231f886d925a24d181c8dcfa6448d87">sf::Time</a>
 </li>
 <li>move()
-: <a class="el" href="classsf_1_1Transformable.php#ab9ca691522f6ddc1a40406849b87c469">sf::Transformable</a>
-, <a class="el" href="classsf_1_1View.php#a4c98a6e04fed756dfaff8f629de50862">sf::View</a>
+: <a class="el" href="classsf_1_1Transformable.php#a86b461d6a941ad390c2ad8b6a4a20391">sf::Transformable</a>
+, <a class="el" href="classsf_1_1View.php#a0c82144b837caf812f7cb25a43d80c41">sf::View</a>
 </li>
 <li>Music()
 : <a class="el" href="classsf_1_1Music.php#a0bc787d8e022b3a9b89cf2c28befd42e">sf::Music</a>

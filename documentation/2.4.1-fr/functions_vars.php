@@ -87,7 +87,7 @@
 : <a class="el" href="structsf_1_1ContextSettings.php#ac4a097be18994dba38d73f36b0418bdc">sf::ContextSettings</a>
 </li>
 <li>Any
-: <a class="el" href="classsf_1_1IpAddress.php#a55b612b404531068e4823d44f3fef308">sf::IpAddress</a>
+: <a class="el" href="classsf_1_1IpAddress.php#a3dbc10b0dc6804cc69e29342f7406907">sf::IpAddress</a>
 </li>
 <li>attributeFlags
 : <a class="el" href="structsf_1_1ContextSettings.php#a0ef3fc53802bc0197d2739466915ada5">sf::ContextSettings</a>
@@ -106,19 +106,19 @@
 : <a class="el" href="classsf_1_1VideoMode.php#aa080f1ef96a1008d58b1920eceb189df">sf::VideoMode</a>
 </li>
 <li>Black
-: <a class="el" href="classsf_1_1Color.php#a25bf5208c8c7668f1a3836acbbb23986">sf::Color</a>
+: <a class="el" href="classsf_1_1Color.php#a77c688197b981338f0b19dc58bd2facd">sf::Color</a>
 </li>
 <li>blendMode
 : <a class="el" href="classsf_1_1RenderStates.php#ad6ac87f1b5006dae7ebfee4b5d40f5a8">sf::RenderStates</a>
 </li>
 <li>Blue
-: <a class="el" href="classsf_1_1Color.php#a6d901f24edce210decaeac1ccfdb28a9">sf::Color</a>
+: <a class="el" href="classsf_1_1Color.php#ab03770d4817426b2614cfc33cf0e245c">sf::Color</a>
 </li>
 <li>bounds
 : <a class="el" href="classsf_1_1Glyph.php#a6f3c892093167914adc31e52e5923f4b">sf::Glyph</a>
 </li>
 <li>Broadcast
-: <a class="el" href="classsf_1_1IpAddress.php#aefb978156901e01e2d9642815be10abe">sf::IpAddress</a>
+: <a class="el" href="classsf_1_1IpAddress.php#aa93d1d57b65d243f2baf804b6035465c">sf::IpAddress</a>
 </li>
 <li>button
 : <a class="el" href="structsf_1_1Event_1_1JoystickButtonEvent.php#a6412e698a2f7904c5aa875a0d1b34da4">sf::Event::JoystickButtonEvent</a>
@@ -150,17 +150,17 @@
 : <a class="el" href="structsf_1_1Event_1_1KeyEvent.php#a9255861c2f88501d80ad6b44a310b62f">sf::Event::KeyEvent</a>
 </li>
 <li>CurrentTexture
-: <a class="el" href="classsf_1_1Shader.php#ad679e434fc4f1a1af65f3815b2310fb5">sf::Shader</a>
+: <a class="el" href="classsf_1_1Shader.php#ac84c7953eec2e19358ea6e2cc5385b8d">sf::Shader</a>
 </li>
 <li>Cyan
-: <a class="el" href="classsf_1_1Color.php#a1a5568e8b58269f1c739237e31bed9d8">sf::Color</a>
+: <a class="el" href="classsf_1_1Color.php#a64ae9beb0b9a5865dd811cda4bb18340">sf::Color</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
 <li>Default
-: <a class="el" href="classsf_1_1RenderStates.php#afa30e6d780c05c2a20587ddb01b5fa5c">sf::RenderStates</a>
+: <a class="el" href="classsf_1_1RenderStates.php#ad29672df29f19ce50c3021d95f2bb062">sf::RenderStates</a>
 </li>
 <li>delta
 : <a class="el" href="structsf_1_1Event_1_1MouseWheelEvent.php#a4d02b524b5530c7863e7b0f211fa522c">sf::Event::MouseWheelEvent</a>
@@ -187,7 +187,7 @@
 : <a class="el" href="classsf_1_1Color.php#a591daf9c3c55dea830c76c962d6ba1a5">sf::Color</a>
 </li>
 <li>Green
-: <a class="el" href="classsf_1_1Color.php#a71bdec1f240038ee66fc8f3b418fce71">sf::Color</a>
+: <a class="el" href="classsf_1_1Color.php#a95629b30de8c6856aa7d3afed12eb865">sf::Color</a>
 </li>
 </ul>
 
@@ -203,10 +203,10 @@
 
 <h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
 <li>Identity
-: <a class="el" href="classsf_1_1Transform.php#a854729912a691efeca9f213c54be4f59">sf::Transform</a>
+: <a class="el" href="classsf_1_1Transform.php#aa4eb1eecbcb9979d76e2543b337fdb13">sf::Transform</a>
 </li>
 <li>InvalidPos
-: <a class="el" href="classsf_1_1String.php#a7dd58138a3f2bd887e5711879fd83570">sf::String</a>
+: <a class="el" href="classsf_1_1String.php#abaadecaf12a6b41c54d725c75fd28527">sf::String</a>
 </li>
 </ul>
 
@@ -241,7 +241,7 @@
 : <a class="el" href="classsf_1_1Rect.php#aa49960fa465103d9cb7069ceb25c7c32">sf::Rect&lt; T &gt;</a>
 </li>
 <li>LocalHost
-: <a class="el" href="classsf_1_1IpAddress.php#ac545220c940d381c677113841a218bda">sf::IpAddress</a>
+: <a class="el" href="classsf_1_1IpAddress.php#a594d3a8e2559f8fa8ab0a96fa597333b">sf::IpAddress</a>
 </li>
 </ul>
 
@@ -251,7 +251,7 @@
 : <a class="el" href="classsf_1_1SoundSource.php#a0223cef4b1c587e6e1e17b4c92c4479c">sf::SoundSource</a>
 </li>
 <li>Magenta
-: <a class="el" href="classsf_1_1Color.php#a9ee8537b23a72bff51d8f20f4894519e">sf::Color</a>
+: <a class="el" href="classsf_1_1Color.php#a6fe70d90b65b2163dd066a84ac00426c">sf::Color</a>
 </li>
 <li>majorVersion
 : <a class="el" href="structsf_1_1ContextSettings.php#a99a680d5c15a7e34c935654155dd5166">sf::ContextSettings</a>
@@ -279,7 +279,7 @@
 : <a class="el" href="structsf_1_1Joystick_1_1Identification.php#a135a9a3a4dc11c2b5cde51159b4d136d">sf::Joystick::Identification</a>
 </li>
 <li>None
-: <a class="el" href="classsf_1_1IpAddress.php#af95b0353e632372b5266d6227bc0e3ec">sf::IpAddress</a>
+: <a class="el" href="classsf_1_1IpAddress.php#a4619b4abbe3c8fef056e7299db967404">sf::IpAddress</a>
 </li>
 </ul>
 
@@ -300,7 +300,7 @@
 : <a class="el" href="classsf_1_1Color.php#a6a5256ca24a4f9f0e0808f6fc23e01e1">sf::Color</a>
 </li>
 <li>Red
-: <a class="el" href="classsf_1_1Color.php#a7052b1c5408a953e25f9691e0e828c9d">sf::Color</a>
+: <a class="el" href="classsf_1_1Color.php#a127dbf55db9c07d0fa8f4bfcbb97594a">sf::Color</a>
 </li>
 </ul>
 
@@ -314,13 +314,13 @@
 : <a class="el" href="structsf_1_1SoundFileReader_1_1Info.php#a06ef71c19e7de190b294ae02c361f752">sf::SoundFileReader::Info</a>
 </li>
 <li>samples
-: <a class="el" href="structsf_1_1SoundStream_1_1Chunk.php#ae0b301e2bdfc530a6dc9efeac7e8a2e7">sf::SoundStream::Chunk</a>
+: <a class="el" href="structsf_1_1SoundStream_1_1Chunk.php#aa3b84d69adbe663a17a7671626076df4">sf::SoundStream::Chunk</a>
 </li>
 <li>sensor
 : <a class="el" href="classsf_1_1Event.php#acdeacbb321655b962e27d08eeec5a190">sf::Event</a>
 </li>
 <li>shader
-: <a class="el" href="classsf_1_1RenderStates.php#a30e00c9f28ca246ae73119975255ebd0">sf::RenderStates</a>
+: <a class="el" href="classsf_1_1RenderStates.php#ad4f79ecdd0c60ed0d24fbe555b221bd8">sf::RenderStates</a>
 </li>
 <li>shift
 : <a class="el" href="structsf_1_1Event_1_1KeyEvent.php#a776af1a3ca79abeeec18ebf1c0065aa9">sf::Event::KeyEvent</a>
@@ -348,7 +348,7 @@
 : <a class="el" href="classsf_1_1Event.php#a00c7bba6bee892791847ec22440e0a83">sf::Event</a>
 </li>
 <li>texture
-: <a class="el" href="classsf_1_1RenderStates.php#ad7eb50453917561fa7a9df7f4c53f1fd">sf::RenderStates</a>
+: <a class="el" href="classsf_1_1RenderStates.php#a457fc5a41731889de9cf39cf9b3436c3">sf::RenderStates</a>
 </li>
 <li>textureRect
 : <a class="el" href="classsf_1_1Glyph.php#a0d502d326449f8c49011ed91d2805f5b">sf::Glyph</a>
@@ -363,7 +363,7 @@
 : <a class="el" href="classsf_1_1RenderStates.php#a1f737981a0f2f0d4bb8dac866a8d1149">sf::RenderStates</a>
 </li>
 <li>Transparent
-: <a class="el" href="classsf_1_1Color.php#a422c310394afa396d3a2798aad982145">sf::Color</a>
+: <a class="el" href="classsf_1_1Color.php#a569b45471737f770656f50ae7bbac292">sf::Color</a>
 </li>
 <li>type
 : <a class="el" href="structsf_1_1Event_1_1SensorEvent.php#abee7d67bf0947fd1138e4466011e2436">sf::Event::SensorEvent</a>
@@ -391,7 +391,7 @@
 : <a class="el" href="structsf_1_1Event_1_1MouseWheelScrollEvent.php#a1d82dccecc46968d517b2fc66639dd74">sf::Event::MouseWheelScrollEvent</a>
 </li>
 <li>White
-: <a class="el" href="classsf_1_1Color.php#abd9695b00da63b890ea40f74629237c0">sf::Color</a>
+: <a class="el" href="classsf_1_1Color.php#a4fd874712178d9e206f53226002aa4ca">sf::Color</a>
 </li>
 <li>width
 : <a class="el" href="structsf_1_1Event_1_1SizeEvent.php#a20ea1b78c9bb1604432f8f0067bbfd94">sf::Event::SizeEvent</a>
@@ -427,7 +427,7 @@
 , <a class="el" href="classsf_1_1Vector3.php#a6590d50ccb862c5efc5512e974e9b794">sf::Vector3&lt; T &gt;</a>
 </li>
 <li>Yellow
-: <a class="el" href="classsf_1_1Color.php#ad2e5e0bad294384b8cf26a92d8d8d162">sf::Color</a>
+: <a class="el" href="classsf_1_1Color.php#af8896b5f56650935f5b9d72d528802c7">sf::Color</a>
 </li>
 </ul>
 
@@ -438,7 +438,7 @@
 , <a class="el" href="classsf_1_1Vector3.php#a2f36ab4b552c028e3a9734c1ad4df7d1">sf::Vector3&lt; T &gt;</a>
 </li>
 <li>Zero
-: <a class="el" href="classsf_1_1Time.php#aa343e67f43a940e7b3b51aa10a495f2f">sf::Time</a>
+: <a class="el" href="classsf_1_1Time.php#a8db127b632fa8da21550e7282af11fa0">sf::Time</a>
 </li>
 </ul>
 </div><!-- contents -->

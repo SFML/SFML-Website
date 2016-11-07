@@ -36,9 +36,7 @@
 <p>This is the complete list of members for <a class="el" href="classsf_1_1Drawable.php">sf::Drawable</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classsf_1_1Drawable.php#a35fc1e68eb2b7eda0ec83b9f02a50caf">draw</a>(RenderTarget &amp;target, RenderStates states) const  =0</td><td class="entry"><a class="el" href="classsf_1_1Drawable.php">sf::Drawable</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classsf_1_1Drawable.php#a35fc1e68eb2b7eda0ec83b9f02a50caf">draw</a>(RenderTarget &amp;target, RenderStates states) const  =0</td><td class="entry"><a class="el" href="classsf_1_1Drawable.php">sf::Drawable</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>RenderTarget</b> (defined in <a class="el" href="classsf_1_1Drawable.php">sf::Drawable</a>)</td><td class="entry"><a class="el" href="classsf_1_1Drawable.php">sf::Drawable</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classsf_1_1Drawable.php#a906002f2df7beb5edbddf5bbef96f120">~Drawable</a>()</td><td class="entry"><a class="el" href="classsf_1_1Drawable.php">sf::Drawable</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>RenderTarget</b> (defined in <a class="el" href="classsf_1_1Drawable.php">sf::Drawable</a>)</td><td class="entry"><a class="el" href="classsf_1_1Drawable.php">sf::Drawable</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classsf_1_1Drawable.php#a906002f2df7beb5edbddf5bbef96f120">~Drawable</a>()</td><td class="entry"><a class="el" href="classsf_1_1Drawable.php">sf::Drawable</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <?php

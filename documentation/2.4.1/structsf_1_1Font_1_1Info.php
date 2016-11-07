@@ -39,7 +39,7 @@
 <p>Holds various information about a font.  
  <a href="structsf_1_1Font_1_1Info.php#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="include_2SFML_2Graphics_2Font_8hpp_source.php">Font.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="Font_8hpp_source.php">Font.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -50,7 +50,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Holds various information about a font. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2Font_8hpp_source.php#l00058">58</a> of file <a class="el" href="include_2SFML_2Graphics_2Font_8hpp_source.php">include/SFML/Graphics/Font.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Font_8hpp_source.php#l00058">58</a> of file <a class="el" href="Font_8hpp_source.php">Font.hpp</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a008413b4b6cf621eb92668a11098a519"></a>
 <div class="memitem">
@@ -64,12 +64,12 @@ Public Attributes</h2></td></tr>
 
 <p>The font family. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2Font_8hpp_source.php#l00060">60</a> of file <a class="el" href="include_2SFML_2Graphics_2Font_8hpp_source.php">include/SFML/Graphics/Font.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Font_8hpp_source.php#l00060">60</a> of file <a class="el" href="Font_8hpp_source.php">Font.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="include_2SFML_2Graphics_2Font_8hpp_source.php">include/SFML/Graphics/Font.hpp</a></li>
+<li><a class="el" href="Font_8hpp_source.php">Font.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <?php

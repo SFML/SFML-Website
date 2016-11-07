@@ -277,7 +277,7 @@
 : <a class="el" href="classsf_1_1Listener.php#acd7ee65bc948ca38e1c669aa12340c54">sf::Listener</a>
 , <a class="el" href="classsf_1_1Mouse.php#ac368680f797b7f6e4f50b5b7928c1387">sf::Mouse</a>
 , <a class="el" href="classsf_1_1SoundSource.php#a4c3bc60286f488aaf2941ab76476eebc">sf::SoundSource</a>
-, <a class="el" href="classsf_1_1Touch.php#a372acaba3c7ac70fca4614c16ac4a1bb">sf::Touch</a>
+, <a class="el" href="classsf_1_1Touch.php#af1b7035be709091c7475075e43e2bc23">sf::Touch</a>
 , <a class="el" href="classsf_1_1Transformable.php#a6a0552d8cf155b7df25f6ceda8ee45a5">sf::Transformable</a>
 , <a class="el" href="classsf_1_1Window.php#a2e6bc12612ea289afea8268fe37c8678">sf::Window</a>
 </li>
@@ -303,9 +303,6 @@
 <li>getSampleCount()
 : <a class="el" href="classsf_1_1InputSoundFile.php#a0c7d3293a5b0ed6aff674d5c8bcc1cdf">sf::InputSoundFile</a>
 , <a class="el" href="classsf_1_1SoundBuffer.php#a2a791e7304553fa96269cc355cc4f7e8">sf::SoundBuffer</a>
-</li>
-<li>getSampleOffset()
-: <a class="el" href="classsf_1_1InputSoundFile.php#a94f112dc810dd5009dbe3ddb1ba9de2f">sf::InputSoundFile</a>
 </li>
 <li>getSampleRate()
 : <a class="el" href="classsf_1_1InputSoundFile.php#adfbd1eaaf9fc0b469311fc159f5a3ecb">sf::InputSoundFile</a>
@@ -362,9 +359,6 @@
 <li>getTextureRect()
 : <a class="el" href="classsf_1_1Shape.php#af7c4c80a435b85a622812711cf510439">sf::Shape</a>
 , <a class="el" href="classsf_1_1Sprite.php#a89aa58bc39e2072c6afe7c547d27b5a0">sf::Sprite</a>
-</li>
-<li>getTimeOffset()
-: <a class="el" href="classsf_1_1InputSoundFile.php#aa9ca3de078119245e2f0602031d7e2c3">sf::InputSoundFile</a>
 </li>
 <li>getTransform()
 : <a class="el" href="classsf_1_1Transformable.php#a3b48c3362e3e2c14fef7551252deb7bb">sf::Transformable</a>

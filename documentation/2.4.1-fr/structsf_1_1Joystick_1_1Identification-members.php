@@ -36,10 +36,9 @@
 <p>This is the complete list of members for <a class="el" href="structsf_1_1Joystick_1_1Identification.php">sf::Joystick::Identification</a>, including all inherited members.</p>
 <table class="directory">
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Identification</b>() (defined in <a class="el" href="structsf_1_1Joystick_1_1Identification.php">sf::Joystick::Identification</a>)</td><td class="entry"><a class="el" href="structsf_1_1Joystick_1_1Identification.php">sf::Joystick::Identification</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>Identification</b>() (defined in <a class="el" href="structsf_1_1Joystick_1_1Identification.php">sf::Joystick::Identification</a>)</td><td class="entry"><a class="el" href="structsf_1_1Joystick_1_1Identification.php">sf::Joystick::Identification</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structsf_1_1Joystick_1_1Identification.php#a135a9a3a4dc11c2b5cde51159b4d136d">name</a></td><td class="entry"><a class="el" href="structsf_1_1Joystick_1_1Identification.php">sf::Joystick::Identification</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="structsf_1_1Joystick_1_1Identification.php#a18c21317789f51f9a5f132677727ff77">productId</a></td><td class="entry"><a class="el" href="structsf_1_1Joystick_1_1Identification.php">sf::Joystick::Identification</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structsf_1_1Joystick_1_1Identification.php#a827caf37a56492e3430e5ca6b15b5e9f">vendorId</a></td><td class="entry"><a class="el" href="structsf_1_1Joystick_1_1Identification.php">sf::Joystick::Identification</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structsf_1_1Joystick_1_1Identification.php#a135a9a3a4dc11c2b5cde51159b4d136d">name</a></td><td class="entry"><a class="el" href="structsf_1_1Joystick_1_1Identification.php">sf::Joystick::Identification</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structsf_1_1Joystick_1_1Identification.php#a18c21317789f51f9a5f132677727ff77">productId</a></td><td class="entry"><a class="el" href="structsf_1_1Joystick_1_1Identification.php">sf::Joystick::Identification</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structsf_1_1Joystick_1_1Identification.php#a827caf37a56492e3430e5ca6b15b5e9f">vendorId</a></td><td class="entry"><a class="el" href="structsf_1_1Joystick_1_1Identification.php">sf::Joystick::Identification</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <?php
     require("../footer-fr.php");

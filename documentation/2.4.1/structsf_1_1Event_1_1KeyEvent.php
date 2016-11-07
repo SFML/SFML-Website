@@ -39,7 +39,7 @@
 <p><a class="el" href="classsf_1_1Keyboard.php" title="Give access to the real-time state of the keyboard. ">Keyboard</a> event parameters (KeyPressed, KeyReleased)  
  <a href="structsf_1_1Event_1_1KeyEvent.php#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php">Event.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="Event_8hpp_source.php">Event.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -62,7 +62,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classsf_1_1Keyboard.php" title="Give access to the real-time state of the keyboard. ">Keyboard</a> event parameters (KeyPressed, KeyReleased) </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php#l00062">62</a> of file <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php">include/SFML/Window/Event.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Event_8hpp_source.php#l00062">62</a> of file <a class="el" href="Event_8hpp_source.php">Event.hpp</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a915a483317de67d995188a855701fbd7"></a>
 <div class="memitem">
@@ -76,7 +76,7 @@ Public Attributes</h2></td></tr>
 
 <p>Is the Alt key pressed? </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php#l00065">65</a> of file <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php">include/SFML/Window/Event.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Event_8hpp_source.php#l00065">65</a> of file <a class="el" href="Event_8hpp_source.php">Event.hpp</a>.</p>
 
 </div>
 </div>
@@ -92,7 +92,7 @@ Public Attributes</h2></td></tr>
 
 <p>Code of the key that has been pressed. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php#l00064">64</a> of file <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php">include/SFML/Window/Event.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Event_8hpp_source.php#l00064">64</a> of file <a class="el" href="Event_8hpp_source.php">Event.hpp</a>.</p>
 
 </div>
 </div>
@@ -108,7 +108,7 @@ Public Attributes</h2></td></tr>
 
 <p>Is the Control key pressed? </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php#l00066">66</a> of file <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php">include/SFML/Window/Event.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Event_8hpp_source.php#l00066">66</a> of file <a class="el" href="Event_8hpp_source.php">Event.hpp</a>.</p>
 
 </div>
 </div>
@@ -124,7 +124,7 @@ Public Attributes</h2></td></tr>
 
 <p>Is the Shift key pressed? </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php#l00067">67</a> of file <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php">include/SFML/Window/Event.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Event_8hpp_source.php#l00067">67</a> of file <a class="el" href="Event_8hpp_source.php">Event.hpp</a>.</p>
 
 </div>
 </div>
@@ -140,12 +140,12 @@ Public Attributes</h2></td></tr>
 
 <p>Is the System key pressed? </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php#l00068">68</a> of file <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php">include/SFML/Window/Event.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Event_8hpp_source.php#l00068">68</a> of file <a class="el" href="Event_8hpp_source.php">Event.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php">include/SFML/Window/Event.hpp</a></li>
+<li><a class="el" href="Event_8hpp_source.php">Event.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <?php

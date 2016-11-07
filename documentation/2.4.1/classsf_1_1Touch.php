@@ -39,19 +39,10 @@
 <p>Give access to the real-time state of the touches.  
  <a href="classsf_1_1Touch.php#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="include_2SFML_2Window_2Touch_8hpp_source.php">Touch.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="Touch_8hpp_source.php">Touch.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a2f85297123ea4e401d02c346e50d48a3"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Touch.php#a2f85297123ea4e401d02c346e50d48a3">isDown</a> (unsigned int finger)</td></tr>
-<tr class="memdesc:a2f85297123ea4e401d02c346e50d48a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a touch event is currently down.  <a href="#a2f85297123ea4e401d02c346e50d48a3">More...</a><br /></td></tr>
-<tr class="separator:a2f85297123ea4e401d02c346e50d48a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1b7035be709091c7475075e43e2bc23"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classsf_1_1Vector2.php">Vector2i</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Touch.php#af1b7035be709091c7475075e43e2bc23">getPosition</a> (unsigned int finger)</td></tr>
-<tr class="memdesc:af1b7035be709091c7475075e43e2bc23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current position of a touch in desktop coordinates.  <a href="#af1b7035be709091c7475075e43e2bc23">More...</a><br /></td></tr>
-<tr class="separator:af1b7035be709091c7475075e43e2bc23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a372acaba3c7ac70fca4614c16ac4a1bb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classsf_1_1Vector2.php">Vector2i</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Touch.php#a372acaba3c7ac70fca4614c16ac4a1bb">getPosition</a> (unsigned int finger, const <a class="el" href="classsf_1_1Window.php">Window</a> &amp;relativeTo)</td></tr>
-<tr class="memdesc:a372acaba3c7ac70fca4614c16ac4a1bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current position of a touch in window coordinates.  <a href="#a372acaba3c7ac70fca4614c16ac4a1bb">More...</a><br /></td></tr>
-<tr class="separator:a372acaba3c7ac70fca4614c16ac4a1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f85297123ea4e401d02c346e50d48a3"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Touch.php#a2f85297123ea4e401d02c346e50d48a3">isDown</a> (unsigned int finger)</td></tr>
 <tr class="memdesc:a2f85297123ea4e401d02c346e50d48a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a touch event is currently down.  <a href="#a2f85297123ea4e401d02c346e50d48a3">More...</a><br /></td></tr>
 <tr class="separator:a2f85297123ea4e401d02c346e50d48a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -81,7 +72,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><a class="code" href="classsf_1_1Vector2.php">sf::Vector2i</a> relativePos = <a class="code" href="classsf_1_1Touch.php#af1b7035be709091c7475075e43e2bc23">sf::Touch::getPosition</a>(1, window);</div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Joystick.php" title="Give access to the real-time state of the joysticks. ">sf::Joystick</a>, <a class="el" href="classsf_1_1Keyboard.php" title="Give access to the real-time state of the keyboard. ">sf::Keyboard</a>, <a class="el" href="classsf_1_1Mouse.php" title="Give access to the real-time state of the mouse. ">sf::Mouse</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2Touch_8hpp_source.php#l00043">43</a> of file <a class="el" href="include_2SFML_2Window_2Touch_8hpp_source.php">include/SFML/Window/Touch.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Touch_8hpp_source.php#l00043">43</a> of file <a class="el" href="Touch_8hpp_source.php">Touch.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="af1b7035be709091c7475075e43e2bc23"></a>
 <div class="memitem">
@@ -117,40 +108,6 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af1b7035be709091c7475075e43e2bc23"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="classsf_1_1Vector2.php">Vector2i</a> sf::Touch::getPosition </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>finger</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the current position of a touch in desktop coordinates. </p>
-<p>This function returns the current touch position in global (desktop) coordinates.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">finger</td><td>Finger index</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Current position of <em>finger</em>, or undefined if it's not down </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a372acaba3c7ac70fca4614c16ac4a1bb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -193,84 +150,6 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Current position of <em>finger</em>, or undefined if it's not down </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a372acaba3c7ac70fca4614c16ac4a1bb"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="classsf_1_1Vector2.php">Vector2i</a> sf::Touch::getPosition </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>finger</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Window.php">Window</a> &amp;&#160;</td>
-          <td class="paramname"><em>relativeTo</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the current position of a touch in window coordinates. </p>
-<p>This function returns the current touch position relative to the given window.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">finger</td><td>Finger index </td></tr>
-    <tr><td class="paramname">relativeTo</td><td>Reference window</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Current position of <em>finger</em>, or undefined if it's not down </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a2f85297123ea4e401d02c346e50d48a3"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool sf::Touch::isDown </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>finger</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Check if a touch event is currently down. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">finger</td><td>Finger index</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if <em>finger</em> is currently touching the screen, false otherwise </dd></dl>
 
 </div>
 </div>
@@ -308,7 +187,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="include_2SFML_2Window_2Touch_8hpp_source.php">include/SFML/Window/Touch.hpp</a></li>
+<li><a class="el" href="Touch_8hpp_source.php">Touch.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <?php

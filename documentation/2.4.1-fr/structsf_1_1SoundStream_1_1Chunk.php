@@ -39,13 +39,13 @@
 <p>Structure defining a chunk of audio data to stream.  
  <a href="structsf_1_1SoundStream_1_1Chunk.php#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="include_2SFML_2Audio_2SoundStream_8hpp_source.php">SoundStream.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="SoundStream_8hpp_source.php">SoundStream.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ae0b301e2bdfc530a6dc9efeac7e8a2e7"><td class="memItemLeft" align="right" valign="top">const Int16 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1SoundStream_1_1Chunk.php#ae0b301e2bdfc530a6dc9efeac7e8a2e7">samples</a></td></tr>
-<tr class="memdesc:ae0b301e2bdfc530a6dc9efeac7e8a2e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the audio samples.  <a href="#ae0b301e2bdfc530a6dc9efeac7e8a2e7">More...</a><br /></td></tr>
-<tr class="separator:ae0b301e2bdfc530a6dc9efeac7e8a2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3b84d69adbe663a17a7671626076df4"><td class="memItemLeft" align="right" valign="top">const Int16 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1SoundStream_1_1Chunk.php#aa3b84d69adbe663a17a7671626076df4">samples</a></td></tr>
+<tr class="memdesc:aa3b84d69adbe663a17a7671626076df4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the audio samples.  <a href="#aa3b84d69adbe663a17a7671626076df4">More...</a><br /></td></tr>
+<tr class="separator:aa3b84d69adbe663a17a7671626076df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af47f5d94012acf8b11f056ba77aff97a"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1SoundStream_1_1Chunk.php#af47f5d94012acf8b11f056ba77aff97a">sampleCount</a></td></tr>
 <tr class="memdesc:af47f5d94012acf8b11f056ba77aff97a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of samples pointed by Samples.  <a href="#af47f5d94012acf8b11f056ba77aff97a">More...</a><br /></td></tr>
 <tr class="separator:af47f5d94012acf8b11f056ba77aff97a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -53,7 +53,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Structure defining a chunk of audio data to stream. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Audio_2SoundStream_8hpp_source.php#l00053">53</a> of file <a class="el" href="include_2SFML_2Audio_2SoundStream_8hpp_source.php">include/SFML/Audio/SoundStream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="SoundStream_8hpp_source.php#l00053">53</a> of file <a class="el" href="SoundStream_8hpp_source.php">SoundStream.hpp</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="af47f5d94012acf8b11f056ba77aff97a"></a>
 <div class="memitem">
@@ -67,28 +67,28 @@ Public Attributes</h2></td></tr>
 
 <p>Number of samples pointed by Samples. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Audio_2SoundStream_8hpp_source.php#l00056">56</a> of file <a class="el" href="include_2SFML_2Audio_2SoundStream_8hpp_source.php">include/SFML/Audio/SoundStream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="SoundStream_8hpp_source.php#l00056">56</a> of file <a class="el" href="SoundStream_8hpp_source.php">SoundStream.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae0b301e2bdfc530a6dc9efeac7e8a2e7"></a>
+<a class="anchor" id="aa3b84d69adbe663a17a7671626076df4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const Int16 * sf::SoundStream::Chunk::samples</td>
+          <td class="memname">const Int16* sf::SoundStream::Chunk::samples</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Pointer to the audio samples. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Audio_2SoundStream_8hpp_source.php#l00055">55</a> of file <a class="el" href="include_2SFML_2Audio_2SoundStream_8hpp_source.php">include/SFML/Audio/SoundStream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="SoundStream_8hpp_source.php#l00055">55</a> of file <a class="el" href="SoundStream_8hpp_source.php">SoundStream.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="include_2SFML_2Audio_2SoundStream_8hpp_source.php">include/SFML/Audio/SoundStream.hpp</a></li>
+<li><a class="el" href="SoundStream_8hpp_source.php">SoundStream.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <?php

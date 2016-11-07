@@ -70,7 +70,7 @@
 
 <h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
 <li>C
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a28228963e96f640dc325e475415d4e1f">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a0d586c4ec0cd6b537cb6f49180fedecc">sf::Keyboard</a>
 </li>
 <li>capture()
 : <a class="el" href="classsf_1_1RenderWindow.php#acd1967616b6ef482026b48f44fbf2624">sf::RenderWindow</a>
@@ -100,19 +100,19 @@
 , <a class="el" href="classsf_1_1Window.php#a99d1e030387b0c26f5995670504fe7b5">sf::Window</a>
 </li>
 <li>Closed
-: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aa4f718a7f43b0f2d46be222fe23198d9e">sf::Event</a>
+: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aa316e4212e083f1dce79efd8d9e9c0a95">sf::Event</a>
 </li>
 <li>ClosingConnection
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3bae070a7c775b991e22bbc94164c06a3e1">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3bab23931490fc2d1df3081d651fe0f4d6e">sf::Ftp::Response</a>
 </li>
 <li>ClosingDataConnection
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba326e2020413f73ab20d96e1425dc6c61">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3bac723ebc8a38913bbf0d9504556cbaaa6">sf::Ftp::Response</a>
 </li>
 <li>code
 : <a class="el" href="structsf_1_1Event_1_1KeyEvent.php#a2879fdab8a68cb1c6ecc45730a2d0e61">sf::Event::KeyEvent</a>
 </li>
 <li>Color()
-: <a class="el" href="classsf_1_1Color.php#ac791dc61be4c60baac50fe700f1c9850">sf::Color</a>
+: <a class="el" href="classsf_1_1Color.php#ac2eb4393fb11ad3fa3ccf34e92fe08e4">sf::Color</a>
 </li>
 <li>color
 : <a class="el" href="classsf_1_1Vertex.php#a799faa0629442e90f07cd2edb568ff80">sf::Vertex</a>
@@ -130,24 +130,24 @@
 : <a class="el" href="classsf_1_1Transform.php#acd978f60421a0f839bb9a8263e8877ff">sf::Transform</a>
 </li>
 <li>Comma
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a9dd5eb9a5c45ca7cc3d4abd0d371128d">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142ab7374f48cc79e3085739160b8e3ef2f9">sf::Keyboard</a>
 </li>
 <li>CommandNotImplemented
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3bac91eba896240e927206c386f5bf8e32e">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba2ca4834c756c81b924ebed696fcba0a8">sf::Ftp::Response</a>
 </li>
 <li>CommandUnknown
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba4ccd31337b9478c6cf5089523e16b540">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba75bdf0b6844fa9c07b3c25647d22c269">sf::Ftp::Response</a>
 </li>
 <li>connect()
 : <a class="el" href="classsf_1_1Ftp.php#af02fb3de3f450a50a27981961c69c860">sf::Ftp</a>
 , <a class="el" href="classsf_1_1TcpSocket.php#a68cd42d5ab70ab54b16787f555951c40">sf::TcpSocket</a>
 </li>
 <li>ConnectionClosed
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3baf84c1847c12fe7216eca9a49af1b0cd7">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3bad1e5dcf298ce30c528261435f1a2eb53">sf::Ftp::Response</a>
 </li>
 <li>ConnectionFailed
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba099e88e94cf51258fd901177a37f7bb7">sf::Ftp::Response</a>
-, <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8ad75dc598ea9e428ca9222de7e8a429dc">sf::Http::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba51aa367cc1e85a45ea3c7be48730e990">sf::Ftp::Response</a>
+, <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8a7f307376f13bdc06b24fc274ecd2aa60">sf::Http::Response</a>
 </li>
 <li>ConstIterator
 : <a class="el" href="classsf_1_1String.php#a8e18efc2e8464f6eb82818902d527efa">sf::String</a>
@@ -156,7 +156,7 @@
 : <a class="el" href="classsf_1_1Rect.php#aa8a5364c84de6dd5299f833b54e31ef1">sf::Rect&lt; T &gt;</a>
 </li>
 <li>Context()
-: <a class="el" href="classsf_1_1Context.php#aba22797a790706ca2c5c04ee39f2b555">sf::Context</a>
+: <a class="el" href="classsf_1_1Context.php#a2a9e3529e48919120e6b6fc10bad296c">sf::Context</a>
 </li>
 <li>ContextSettings()
 : <a class="el" href="structsf_1_1ContextSettings.php#ac56869ccbb6bf0df48b88880754e12b7">sf::ContextSettings</a>
@@ -177,12 +177,12 @@
 : <a class="el" href="classsf_1_1Texture.php#aefc19bcd95565dd2348fd4cec0facddc">sf::Texture</a>
 </li>
 <li>Core
-: <a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2cae9f568c99438d04da1f8d393efa3a3a4">sf::ContextSettings</a>
+: <a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2cacb581130734cbd87cbbc9438429f4a8b">sf::ContextSettings</a>
 </li>
 <li>Count
-: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aae5c49a2d50ccccd9c941e6be36b0d05f">sf::Event</a>
-, <a class="el" href="classsf_1_1Joystick.php#a3cbd251ae1151f673398b12bb7926139a58bb2e8f3749310d61097e4361bc0ba8">sf::Joystick</a>
-, <a class="el" href="classsf_1_1Sensor.php#a687375af3ab77b818fca73735bcaea84ade647efb34c9d194e432fa0397d3f656">sf::Sensor</a>
+: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aae51749211243cab2ab270b29cdc32a70">sf::Event</a>
+, <a class="el" href="classsf_1_1Joystick.php#a951a7c775921304a5f3443c6e2bb4d65a6e0a2a95bc1da277610c04d80f52715e">sf::Joystick</a>
+, <a class="el" href="classsf_1_1Sensor.php#a687375af3ab77b818fca73735bcaea84afcb4a80eb9e3f927c5837207a1b9eb29">sf::Sensor</a>
 </li>
 <li>count()
 : <a class="el" href="classsf_1_1Utf_3_0116_01_4.php#a6df8d9be8211ffe1095b3b82eac83f6f">sf::Utf&lt; 16 &gt;</a>
@@ -190,14 +190,14 @@
 , <a class="el" href="classsf_1_1Utf_3_018_01_4.php#af1f15d9a772ee887be39e97431e15d32">sf::Utf&lt; 8 &gt;</a>
 </li>
 <li>create()
-: <a class="el" href="classsf_1_1Image.php#a1c2b960ea12bdbb29e80934ce5268ebf">sf::Image</a>
+: <a class="el" href="classsf_1_1Image.php#a2a67930e2fd9ad97cf004e918cf5832b">sf::Image</a>
 , <a class="el" href="classsf_1_1RenderTexture.php#aefbb76eb3b87e368ab974b2660931ccb">sf::RenderTexture</a>
 , <a class="el" href="classsf_1_1Socket.php#aafbe140f4b1921e0d19e88cf7a61dcbc">sf::Socket</a>
 , <a class="el" href="classsf_1_1Texture.php#a89b4c7d204acf1033c3a1b6e0a3ad0a3">sf::Texture</a>
 , <a class="el" href="classsf_1_1Window.php#acf67483dc21f08d65c8835b3889b41b2">sf::Window</a>
 </li>
 <li>Created
-: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8a1459dbf2b1416eafbfeb4403c9f4eef0">sf::Http::Response</a>
+: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8a0a6e8bafa9365a0ed10b8a9cbfd0649b">sf::Http::Response</a>
 </li>
 <li>createDirectory()
 : <a class="el" href="classsf_1_1Ftp.php#a247b84c4b25da37804218c2b748c4787">sf::Ftp</a>
@@ -218,10 +218,10 @@
 : <a class="el" href="classsf_1_1SoundFileFactory.php#a0702eb2e8a4a171ba80c7fbd04c4defc">sf::SoundFileFactory</a>
 </li>
 <li>CurrentTexture
-: <a class="el" href="classsf_1_1Shader.php#ad679e434fc4f1a1af65f3815b2310fb5">sf::Shader</a>
+: <a class="el" href="classsf_1_1Shader.php#ac84c7953eec2e19358ea6e2cc5385b8d">sf::Shader</a>
 </li>
 <li>Cyan
-: <a class="el" href="classsf_1_1Color.php#a1a5568e8b58269f1c739237e31bed9d8">sf::Color</a>
+: <a class="el" href="classsf_1_1Color.php#a64ae9beb0b9a5865dd811cda4bb18340">sf::Color</a>
 </li>
 </ul>
 </div><!-- contents -->

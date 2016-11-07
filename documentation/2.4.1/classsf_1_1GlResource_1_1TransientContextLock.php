@@ -39,7 +39,7 @@
 <p>RAII helper class to temporarily lock an available context for use.  
  <a href="classsf_1_1GlResource_1_1TransientContextLock.php#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="include_2SFML_2Window_2GlResource_8hpp_source.php">GlResource.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="GlResource_8hpp_source.php">GlResource.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for sf::GlResource::TransientContextLock:</div>
 <div class="dyncontent">
@@ -62,7 +62,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>RAII helper class to temporarily lock an available context for use. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2GlResource_8hpp_source.php#l00064">64</a> of file <a class="el" href="include_2SFML_2Window_2GlResource_8hpp_source.php">include/SFML/Window/GlResource.hpp</a>.</p>
+<p>Definition at line <a class="el" href="GlResource_8hpp_source.php#l00070">70</a> of file <a class="el" href="GlResource_8hpp_source.php">GlResource.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a6434ee8f0380c300b361be038f37123a"></a>
 <div class="memitem">
@@ -99,7 +99,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="include_2SFML_2Window_2GlResource_8hpp_source.php">include/SFML/Window/GlResource.hpp</a></li>
+<li><a class="el" href="GlResource_8hpp_source.php">GlResource.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <?php

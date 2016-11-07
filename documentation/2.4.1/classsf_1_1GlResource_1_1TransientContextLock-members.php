@@ -36,9 +36,8 @@
 <p>This is the complete list of members for <a class="el" href="classsf_1_1GlResource_1_1TransientContextLock.php">sf::GlResource::TransientContextLock</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classsf_1_1NonCopyable.php#a2110add170580fdb946f887719da6860">NonCopyable</a>()</td><td class="entry"><a class="el" href="classsf_1_1NonCopyable.php">sf::NonCopyable</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classsf_1_1NonCopyable.php#a2110add170580fdb946f887719da6860">NonCopyable</a>()</td><td class="entry"><a class="el" href="classsf_1_1NonCopyable.php">sf::NonCopyable</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classsf_1_1GlResource_1_1TransientContextLock.php#a6434ee8f0380c300b361be038f37123a">TransientContextLock</a>()</td><td class="entry"><a class="el" href="classsf_1_1GlResource_1_1TransientContextLock.php">sf::GlResource::TransientContextLock</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classsf_1_1GlResource_1_1TransientContextLock.php#a169285281b252ac8d54523b0fcc4b814">~TransientContextLock</a>()</td><td class="entry"><a class="el" href="classsf_1_1GlResource_1_1TransientContextLock.php">sf::GlResource::TransientContextLock</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classsf_1_1GlResource_1_1TransientContextLock.php#a6434ee8f0380c300b361be038f37123a">TransientContextLock</a>()</td><td class="entry"><a class="el" href="classsf_1_1GlResource_1_1TransientContextLock.php">sf::GlResource::TransientContextLock</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classsf_1_1GlResource_1_1TransientContextLock.php#a169285281b252ac8d54523b0fcc4b814">~TransientContextLock</a>()</td><td class="entry"><a class="el" href="classsf_1_1GlResource_1_1TransientContextLock.php">sf::GlResource::TransientContextLock</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <?php
     require("../footer.php");

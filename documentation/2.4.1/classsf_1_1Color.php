@@ -42,22 +42,10 @@
 <p>Utility class for manipulating RGBA colors.  
  <a href="classsf_1_1Color.php#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="include_2SFML_2Graphics_2Color_8hpp_source.php">Color.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="Color_8hpp_source.php">Color.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac2eb4393fb11ad3fa3ccf34e92fe08e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#ac2eb4393fb11ad3fa3ccf34e92fe08e4">Color</a> ()</td></tr>
-<tr class="memdesc:ac2eb4393fb11ad3fa3ccf34e92fe08e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#ac2eb4393fb11ad3fa3ccf34e92fe08e4">More...</a><br /></td></tr>
-<tr class="separator:ac2eb4393fb11ad3fa3ccf34e92fe08e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac791dc61be4c60baac50fe700f1c9850"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#ac791dc61be4c60baac50fe700f1c9850">Color</a> (Uint8 red, Uint8 green, Uint8 blue, Uint8 alpha=255)</td></tr>
-<tr class="memdesc:ac791dc61be4c60baac50fe700f1c9850"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the color from its 4 RGBA components.  <a href="#ac791dc61be4c60baac50fe700f1c9850">More...</a><br /></td></tr>
-<tr class="separator:ac791dc61be4c60baac50fe700f1c9850"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5449f4b2b9a78230d40ce2c223c9ab2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#a5449f4b2b9a78230d40ce2c223c9ab2e">Color</a> (Uint32 color)</td></tr>
-<tr class="memdesc:a5449f4b2b9a78230d40ce2c223c9ab2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the color from 32-bit unsigned integer.  <a href="#a5449f4b2b9a78230d40ce2c223c9ab2e">More...</a><br /></td></tr>
-<tr class="separator:a5449f4b2b9a78230d40ce2c223c9ab2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48f75a30fc93e79390e6d700e4b4b558"><td class="memItemLeft" align="right" valign="top">Uint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#a48f75a30fc93e79390e6d700e4b4b558">toInteger</a> () const </td></tr>
-<tr class="memdesc:a48f75a30fc93e79390e6d700e4b4b558"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the color as a 32-bit unsigned integer.  <a href="#a48f75a30fc93e79390e6d700e4b4b558">More...</a><br /></td></tr>
-<tr class="separator:a48f75a30fc93e79390e6d700e4b4b558"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2eb4393fb11ad3fa3ccf34e92fe08e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#ac2eb4393fb11ad3fa3ccf34e92fe08e4">Color</a> ()</td></tr>
 <tr class="memdesc:ac2eb4393fb11ad3fa3ccf34e92fe08e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#ac2eb4393fb11ad3fa3ccf34e92fe08e4">More...</a><br /></td></tr>
 <tr class="separator:ac2eb4393fb11ad3fa3ccf34e92fe08e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -88,62 +76,38 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a25bf5208c8c7668f1a3836acbbb23986"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classsf_1_1Color.php">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#a25bf5208c8c7668f1a3836acbbb23986">Black</a></td></tr>
-<tr class="memdesc:a25bf5208c8c7668f1a3836acbbb23986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Black predefined color.  <a href="#a25bf5208c8c7668f1a3836acbbb23986">More...</a><br /></td></tr>
-<tr class="separator:a25bf5208c8c7668f1a3836acbbb23986"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd9695b00da63b890ea40f74629237c0"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classsf_1_1Color.php">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#abd9695b00da63b890ea40f74629237c0">White</a></td></tr>
-<tr class="memdesc:abd9695b00da63b890ea40f74629237c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">White predefined color.  <a href="#abd9695b00da63b890ea40f74629237c0">More...</a><br /></td></tr>
-<tr class="separator:abd9695b00da63b890ea40f74629237c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7052b1c5408a953e25f9691e0e828c9d"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classsf_1_1Color.php">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#a7052b1c5408a953e25f9691e0e828c9d">Red</a></td></tr>
-<tr class="memdesc:a7052b1c5408a953e25f9691e0e828c9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Red predefined color.  <a href="#a7052b1c5408a953e25f9691e0e828c9d">More...</a><br /></td></tr>
-<tr class="separator:a7052b1c5408a953e25f9691e0e828c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71bdec1f240038ee66fc8f3b418fce71"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classsf_1_1Color.php">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#a71bdec1f240038ee66fc8f3b418fce71">Green</a></td></tr>
-<tr class="memdesc:a71bdec1f240038ee66fc8f3b418fce71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Green predefined color.  <a href="#a71bdec1f240038ee66fc8f3b418fce71">More...</a><br /></td></tr>
-<tr class="separator:a71bdec1f240038ee66fc8f3b418fce71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d901f24edce210decaeac1ccfdb28a9"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classsf_1_1Color.php">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#a6d901f24edce210decaeac1ccfdb28a9">Blue</a></td></tr>
-<tr class="memdesc:a6d901f24edce210decaeac1ccfdb28a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blue predefined color.  <a href="#a6d901f24edce210decaeac1ccfdb28a9">More...</a><br /></td></tr>
-<tr class="separator:a6d901f24edce210decaeac1ccfdb28a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2e5e0bad294384b8cf26a92d8d8d162"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classsf_1_1Color.php">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#ad2e5e0bad294384b8cf26a92d8d8d162">Yellow</a></td></tr>
-<tr class="memdesc:ad2e5e0bad294384b8cf26a92d8d8d162"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yellow predefined color.  <a href="#ad2e5e0bad294384b8cf26a92d8d8d162">More...</a><br /></td></tr>
-<tr class="separator:ad2e5e0bad294384b8cf26a92d8d8d162"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ee8537b23a72bff51d8f20f4894519e"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classsf_1_1Color.php">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#a9ee8537b23a72bff51d8f20f4894519e">Magenta</a></td></tr>
-<tr class="memdesc:a9ee8537b23a72bff51d8f20f4894519e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Magenta predefined color.  <a href="#a9ee8537b23a72bff51d8f20f4894519e">More...</a><br /></td></tr>
-<tr class="separator:a9ee8537b23a72bff51d8f20f4894519e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a5568e8b58269f1c739237e31bed9d8"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classsf_1_1Color.php">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#a1a5568e8b58269f1c739237e31bed9d8">Cyan</a></td></tr>
-<tr class="memdesc:a1a5568e8b58269f1c739237e31bed9d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cyan predefined color.  <a href="#a1a5568e8b58269f1c739237e31bed9d8">More...</a><br /></td></tr>
-<tr class="separator:a1a5568e8b58269f1c739237e31bed9d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a422c310394afa396d3a2798aad982145"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classsf_1_1Color.php">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#a422c310394afa396d3a2798aad982145">Transparent</a></td></tr>
-<tr class="memdesc:a422c310394afa396d3a2798aad982145"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transparent (black) predefined color.  <a href="#a422c310394afa396d3a2798aad982145">More...</a><br /></td></tr>
-<tr class="separator:a422c310394afa396d3a2798aad982145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77c688197b981338f0b19dc58bd2facd"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classsf_1_1Color.php">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#a77c688197b981338f0b19dc58bd2facd">Black</a></td></tr>
+<tr class="memdesc:a77c688197b981338f0b19dc58bd2facd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Black predefined color.  <a href="#a77c688197b981338f0b19dc58bd2facd">More...</a><br /></td></tr>
+<tr class="separator:a77c688197b981338f0b19dc58bd2facd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fd874712178d9e206f53226002aa4ca"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classsf_1_1Color.php">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#a4fd874712178d9e206f53226002aa4ca">White</a></td></tr>
+<tr class="memdesc:a4fd874712178d9e206f53226002aa4ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">White predefined color.  <a href="#a4fd874712178d9e206f53226002aa4ca">More...</a><br /></td></tr>
+<tr class="separator:a4fd874712178d9e206f53226002aa4ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a127dbf55db9c07d0fa8f4bfcbb97594a"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classsf_1_1Color.php">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#a127dbf55db9c07d0fa8f4bfcbb97594a">Red</a></td></tr>
+<tr class="memdesc:a127dbf55db9c07d0fa8f4bfcbb97594a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Red predefined color.  <a href="#a127dbf55db9c07d0fa8f4bfcbb97594a">More...</a><br /></td></tr>
+<tr class="separator:a127dbf55db9c07d0fa8f4bfcbb97594a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95629b30de8c6856aa7d3afed12eb865"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classsf_1_1Color.php">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#a95629b30de8c6856aa7d3afed12eb865">Green</a></td></tr>
+<tr class="memdesc:a95629b30de8c6856aa7d3afed12eb865"><td class="mdescLeft">&#160;</td><td class="mdescRight">Green predefined color.  <a href="#a95629b30de8c6856aa7d3afed12eb865">More...</a><br /></td></tr>
+<tr class="separator:a95629b30de8c6856aa7d3afed12eb865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab03770d4817426b2614cfc33cf0e245c"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classsf_1_1Color.php">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#ab03770d4817426b2614cfc33cf0e245c">Blue</a></td></tr>
+<tr class="memdesc:ab03770d4817426b2614cfc33cf0e245c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blue predefined color.  <a href="#ab03770d4817426b2614cfc33cf0e245c">More...</a><br /></td></tr>
+<tr class="separator:ab03770d4817426b2614cfc33cf0e245c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8896b5f56650935f5b9d72d528802c7"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classsf_1_1Color.php">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#af8896b5f56650935f5b9d72d528802c7">Yellow</a></td></tr>
+<tr class="memdesc:af8896b5f56650935f5b9d72d528802c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yellow predefined color.  <a href="#af8896b5f56650935f5b9d72d528802c7">More...</a><br /></td></tr>
+<tr class="separator:af8896b5f56650935f5b9d72d528802c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fe70d90b65b2163dd066a84ac00426c"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classsf_1_1Color.php">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#a6fe70d90b65b2163dd066a84ac00426c">Magenta</a></td></tr>
+<tr class="memdesc:a6fe70d90b65b2163dd066a84ac00426c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Magenta predefined color.  <a href="#a6fe70d90b65b2163dd066a84ac00426c">More...</a><br /></td></tr>
+<tr class="separator:a6fe70d90b65b2163dd066a84ac00426c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64ae9beb0b9a5865dd811cda4bb18340"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classsf_1_1Color.php">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#a64ae9beb0b9a5865dd811cda4bb18340">Cyan</a></td></tr>
+<tr class="memdesc:a64ae9beb0b9a5865dd811cda4bb18340"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cyan predefined color.  <a href="#a64ae9beb0b9a5865dd811cda4bb18340">More...</a><br /></td></tr>
+<tr class="separator:a64ae9beb0b9a5865dd811cda4bb18340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a569b45471737f770656f50ae7bbac292"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classsf_1_1Color.php">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#a569b45471737f770656f50ae7bbac292">Transparent</a></td></tr>
+<tr class="memdesc:a569b45471737f770656f50ae7bbac292"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transparent (black) predefined color.  <a href="#a569b45471737f770656f50ae7bbac292">More...</a><br /></td></tr>
+<tr class="separator:a569b45471737f770656f50ae7bbac292"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="related"></a>
 Related Functions</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p>(Note that these are not member functions.) </p>
 </td></tr>
-<tr class="memitem:a2adc3f68860f7aa5e4d7c79dcbb31d30"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#a2adc3f68860f7aa5e4d7c79dcbb31d30">operator==</a> (const <a class="el" href="classsf_1_1Color.php">Color</a> &amp;left, const <a class="el" href="classsf_1_1Color.php">Color</a> &amp;right)</td></tr>
-<tr class="memdesc:a2adc3f68860f7aa5e4d7c79dcbb31d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of the == operator.  <a href="#a2adc3f68860f7aa5e4d7c79dcbb31d30">More...</a><br /></td></tr>
-<tr class="separator:a2adc3f68860f7aa5e4d7c79dcbb31d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a394c3495753c4b17f9cd45556ef00b8c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#a394c3495753c4b17f9cd45556ef00b8c">operator!=</a> (const <a class="el" href="classsf_1_1Color.php">Color</a> &amp;left, const <a class="el" href="classsf_1_1Color.php">Color</a> &amp;right)</td></tr>
-<tr class="memdesc:a394c3495753c4b17f9cd45556ef00b8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of the != operator.  <a href="#a394c3495753c4b17f9cd45556ef00b8c">More...</a><br /></td></tr>
-<tr class="separator:a394c3495753c4b17f9cd45556ef00b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0355ba6bfd2f83ffd8f8fafdca26cdd0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Color.php">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#a0355ba6bfd2f83ffd8f8fafdca26cdd0">operator+</a> (const <a class="el" href="classsf_1_1Color.php">Color</a> &amp;left, const <a class="el" href="classsf_1_1Color.php">Color</a> &amp;right)</td></tr>
-<tr class="memdesc:a0355ba6bfd2f83ffd8f8fafdca26cdd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of the binary + operator.  <a href="#a0355ba6bfd2f83ffd8f8fafdca26cdd0">More...</a><br /></td></tr>
-<tr class="separator:a0355ba6bfd2f83ffd8f8fafdca26cdd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4586e31d668f183fc46576511169bf2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Color.php">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#a4586e31d668f183fc46576511169bf2c">operator-</a> (const <a class="el" href="classsf_1_1Color.php">Color</a> &amp;left, const <a class="el" href="classsf_1_1Color.php">Color</a> &amp;right)</td></tr>
-<tr class="memdesc:a4586e31d668f183fc46576511169bf2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of the binary - operator.  <a href="#a4586e31d668f183fc46576511169bf2c">More...</a><br /></td></tr>
-<tr class="separator:a4586e31d668f183fc46576511169bf2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bae779fb49bb92dbf820a65e45a6602"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Color.php">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#a1bae779fb49bb92dbf820a65e45a6602">operator*</a> (const <a class="el" href="classsf_1_1Color.php">Color</a> &amp;left, const <a class="el" href="classsf_1_1Color.php">Color</a> &amp;right)</td></tr>
-<tr class="memdesc:a1bae779fb49bb92dbf820a65e45a6602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of the binary * operator.  <a href="#a1bae779fb49bb92dbf820a65e45a6602">More...</a><br /></td></tr>
-<tr class="separator:a1bae779fb49bb92dbf820a65e45a6602"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af39790b2e677c9ab418787f5ff4583ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Color.php">Color</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#af39790b2e677c9ab418787f5ff4583ef">operator+=</a> (<a class="el" href="classsf_1_1Color.php">Color</a> &amp;left, const <a class="el" href="classsf_1_1Color.php">Color</a> &amp;right)</td></tr>
-<tr class="memdesc:af39790b2e677c9ab418787f5ff4583ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of the binary += operator.  <a href="#af39790b2e677c9ab418787f5ff4583ef">More...</a><br /></td></tr>
-<tr class="separator:af39790b2e677c9ab418787f5ff4583ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6927a7dba8b0d330f912fefb43b0c148"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Color.php">Color</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#a6927a7dba8b0d330f912fefb43b0c148">operator-=</a> (<a class="el" href="classsf_1_1Color.php">Color</a> &amp;left, const <a class="el" href="classsf_1_1Color.php">Color</a> &amp;right)</td></tr>
-<tr class="memdesc:a6927a7dba8b0d330f912fefb43b0c148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of the binary -= operator.  <a href="#a6927a7dba8b0d330f912fefb43b0c148">More...</a><br /></td></tr>
-<tr class="separator:a6927a7dba8b0d330f912fefb43b0c148"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d1ea2b9bd5dbe29bb2e54feba9b4b38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Color.php">Color</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#a7d1ea2b9bd5dbe29bb2e54feba9b4b38">operator*=</a> (<a class="el" href="classsf_1_1Color.php">Color</a> &amp;left, const <a class="el" href="classsf_1_1Color.php">Color</a> &amp;right)</td></tr>
-<tr class="memdesc:a7d1ea2b9bd5dbe29bb2e54feba9b4b38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of the binary *= operator.  <a href="#a7d1ea2b9bd5dbe29bb2e54feba9b4b38">More...</a><br /></td></tr>
-<tr class="separator:a7d1ea2b9bd5dbe29bb2e54feba9b4b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2adc3f68860f7aa5e4d7c79dcbb31d30"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.php#a2adc3f68860f7aa5e4d7c79dcbb31d30">operator==</a> (const <a class="el" href="classsf_1_1Color.php">Color</a> &amp;left, const <a class="el" href="classsf_1_1Color.php">Color</a> &amp;right)</td></tr>
 <tr class="memdesc:a2adc3f68860f7aa5e4d7c79dcbb31d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of the == operator.  <a href="#a2adc3f68860f7aa5e4d7c79dcbb31d30">More...</a><br /></td></tr>
 <tr class="separator:a2adc3f68860f7aa5e4d7c79dcbb31d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,118 +147,19 @@ Related Functions</h2></td></tr>
 <div class="line">color.r = 0;                <span class="comment">// make it black</span></div>
 <div class="line">color.b = 128;              <span class="comment">// make it dark blue</span></div>
 </div><!-- fragment --><p>The fourth component of colors, named "alpha", represents the opacity of the color. A color with an alpha value of 255 will be fully opaque, while an alpha value of 0 will make a color fully transparent, whatever the value of the other components is.</p>
-<p>The most common colors are already defined as static variables: </p><div class="fragment"><div class="line"><a class="code" href="classsf_1_1Color.php">sf::Color</a> black       = <a class="code" href="classsf_1_1Color.php#a25bf5208c8c7668f1a3836acbbb23986">sf::Color::Black</a>;</div>
-<div class="line"><a class="code" href="classsf_1_1Color.php">sf::Color</a> white       = <a class="code" href="classsf_1_1Color.php#abd9695b00da63b890ea40f74629237c0">sf::Color::White</a>;</div>
-<div class="line"><a class="code" href="classsf_1_1Color.php">sf::Color</a> red         = <a class="code" href="classsf_1_1Color.php#a7052b1c5408a953e25f9691e0e828c9d">sf::Color::Red</a>;</div>
-<div class="line"><a class="code" href="classsf_1_1Color.php">sf::Color</a> green       = <a class="code" href="classsf_1_1Color.php#a71bdec1f240038ee66fc8f3b418fce71">sf::Color::Green</a>;</div>
-<div class="line"><a class="code" href="classsf_1_1Color.php">sf::Color</a> blue        = <a class="code" href="classsf_1_1Color.php#a6d901f24edce210decaeac1ccfdb28a9">sf::Color::Blue</a>;</div>
-<div class="line"><a class="code" href="classsf_1_1Color.php">sf::Color</a> yellow      = <a class="code" href="classsf_1_1Color.php#ad2e5e0bad294384b8cf26a92d8d8d162">sf::Color::Yellow</a>;</div>
-<div class="line"><a class="code" href="classsf_1_1Color.php">sf::Color</a> magenta     = <a class="code" href="classsf_1_1Color.php#a9ee8537b23a72bff51d8f20f4894519e">sf::Color::Magenta</a>;</div>
-<div class="line"><a class="code" href="classsf_1_1Color.php">sf::Color</a> cyan        = <a class="code" href="classsf_1_1Color.php#a1a5568e8b58269f1c739237e31bed9d8">sf::Color::Cyan</a>;</div>
-<div class="line"><a class="code" href="classsf_1_1Color.php">sf::Color</a> transparent = <a class="code" href="classsf_1_1Color.php#a422c310394afa396d3a2798aad982145">sf::Color::Transparent</a>;</div>
+<p>The most common colors are already defined as static variables: </p><div class="fragment"><div class="line"><a class="code" href="classsf_1_1Color.php">sf::Color</a> black       = <a class="code" href="classsf_1_1Color.php#a77c688197b981338f0b19dc58bd2facd">sf::Color::Black</a>;</div>
+<div class="line"><a class="code" href="classsf_1_1Color.php">sf::Color</a> white       = <a class="code" href="classsf_1_1Color.php#a4fd874712178d9e206f53226002aa4ca">sf::Color::White</a>;</div>
+<div class="line"><a class="code" href="classsf_1_1Color.php">sf::Color</a> red         = <a class="code" href="classsf_1_1Color.php#a127dbf55db9c07d0fa8f4bfcbb97594a">sf::Color::Red</a>;</div>
+<div class="line"><a class="code" href="classsf_1_1Color.php">sf::Color</a> green       = <a class="code" href="classsf_1_1Color.php#a95629b30de8c6856aa7d3afed12eb865">sf::Color::Green</a>;</div>
+<div class="line"><a class="code" href="classsf_1_1Color.php">sf::Color</a> blue        = <a class="code" href="classsf_1_1Color.php#ab03770d4817426b2614cfc33cf0e245c">sf::Color::Blue</a>;</div>
+<div class="line"><a class="code" href="classsf_1_1Color.php">sf::Color</a> yellow      = <a class="code" href="classsf_1_1Color.php#af8896b5f56650935f5b9d72d528802c7">sf::Color::Yellow</a>;</div>
+<div class="line"><a class="code" href="classsf_1_1Color.php">sf::Color</a> magenta     = <a class="code" href="classsf_1_1Color.php#a6fe70d90b65b2163dd066a84ac00426c">sf::Color::Magenta</a>;</div>
+<div class="line"><a class="code" href="classsf_1_1Color.php">sf::Color</a> cyan        = <a class="code" href="classsf_1_1Color.php#a64ae9beb0b9a5865dd811cda4bb18340">sf::Color::Cyan</a>;</div>
+<div class="line"><a class="code" href="classsf_1_1Color.php">sf::Color</a> transparent = <a class="code" href="classsf_1_1Color.php#a569b45471737f770656f50ae7bbac292">sf::Color::Transparent</a>;</div>
 </div><!-- fragment --><p>Colors can also be added and modulated (multiplied) using the overloaded operators + and *. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2Color_8hpp_source.php#l00040">40</a> of file <a class="el" href="include_2SFML_2Graphics_2Color_8hpp_source.php">include/SFML/Graphics/Color.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Color_8hpp_source.php#l00040">40</a> of file <a class="el" href="Color_8hpp_source.php">Color.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ac2eb4393fb11ad3fa3ccf34e92fe08e4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">sf::Color::Color </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Default constructor. </p>
-<p>Constructs an opaque black color. It is equivalent to <a class="el" href="classsf_1_1Color.php" title="Utility class for manipulating RGBA colors. ">sf::Color(0, 0, 0, 255)</a>. </p>
-
-</div>
-</div>
-<a class="anchor" id="ac791dc61be4c60baac50fe700f1c9850"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">sf::Color::Color </td>
-          <td>(</td>
-          <td class="paramtype">Uint8&#160;</td>
-          <td class="paramname"><em>red</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Uint8&#160;</td>
-          <td class="paramname"><em>green</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Uint8&#160;</td>
-          <td class="paramname"><em>blue</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Uint8&#160;</td>
-          <td class="paramname"><em>alpha</em> = <code>255</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Construct the color from its 4 RGBA components. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">red</td><td>Red component (in the range [0, 255]) </td></tr>
-    <tr><td class="paramname">green</td><td>Green component (in the range [0, 255]) </td></tr>
-    <tr><td class="paramname">blue</td><td>Blue component (in the range [0, 255]) </td></tr>
-    <tr><td class="paramname">alpha</td><td>Alpha (opacity) component (in the range [0, 255]) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a5449f4b2b9a78230d40ce2c223c9ab2e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">sf::Color::Color </td>
-          <td>(</td>
-          <td class="paramtype">Uint32&#160;</td>
-          <td class="paramname"><em>color</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Construct the color from 32-bit unsigned integer. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">color</td><td>Number containing the RGBA components (in that order) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a class="anchor" id="ac2eb4393fb11ad3fa3ccf34e92fe08e4"></a>
 <div class="memitem">
 <div class="memproto">
@@ -413,24 +278,6 @@ Related Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a48f75a30fc93e79390e6d700e4b4b558"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Uint32 sf::Color::toInteger </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Retrieve the color as a 32-bit unsigned integer. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsf_1_1Color.php" title="Utility class for manipulating RGBA colors. ">Color</a> represented as a 32-bit unsigned integer </dd></dl>
-
-</div>
-</div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
 <a class="anchor" id="a394c3495753c4b17f9cd45556ef00b8c"></a>
 <div class="memitem">
@@ -477,51 +324,6 @@ Related Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a394c3495753c4b17f9cd45556ef00b8c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool operator!= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Color.php">Color</a> &amp;&#160;</td>
-          <td class="paramname"><em>left</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Color.php">Color</a> &amp;&#160;</td>
-          <td class="paramname"><em>right</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">related</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Overload of the != operator. </p>
-<p>This operator compares two colors and check if they are different.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">left</td><td>Left operand </td></tr>
-    <tr><td class="paramname">right</td><td>Right operand</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if colors are different, false if they are equal </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a1bae779fb49bb92dbf820a65e45a6602"></a>
 <div class="memitem">
 <div class="memproto">
@@ -564,96 +366,6 @@ Related Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Result of <em>left</em> * <em>right</em> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a1bae779fb49bb92dbf820a65e45a6602"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classsf_1_1Color.php">Color</a> operator* </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Color.php">Color</a> &amp;&#160;</td>
-          <td class="paramname"><em>left</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Color.php">Color</a> &amp;&#160;</td>
-          <td class="paramname"><em>right</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">related</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Overload of the binary * operator. </p>
-<p>This operator returns the component-wise multiplication (also called "modulation") of two colors. Components are then divided by 255 so that the result is still in the range [0, 255].</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">left</td><td>Left operand </td></tr>
-    <tr><td class="paramname">right</td><td>Right operand</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Result of <em>left</em> * <em>right</em> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a7d1ea2b9bd5dbe29bb2e54feba9b4b38"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classsf_1_1Color.php">Color</a> &amp; operator*= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classsf_1_1Color.php">Color</a> &amp;&#160;</td>
-          <td class="paramname"><em>left</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Color.php">Color</a> &amp;&#160;</td>
-          <td class="paramname"><em>right</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">related</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Overload of the binary *= operator. </p>
-<p>This operator returns the component-wise multiplication (also called "modulation") of two colors, and assigns the result to the left operand. Components are then divided by 255 so that the result is still in the range [0, 255].</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">left</td><td>Left operand </td></tr>
-    <tr><td class="paramname">right</td><td>Right operand</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Reference to <em>left</em> </dd></dl>
 
 </div>
 </div>
@@ -747,96 +459,6 @@ Related Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0355ba6bfd2f83ffd8f8fafdca26cdd0"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classsf_1_1Color.php">Color</a> operator+ </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Color.php">Color</a> &amp;&#160;</td>
-          <td class="paramname"><em>left</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Color.php">Color</a> &amp;&#160;</td>
-          <td class="paramname"><em>right</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">related</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Overload of the binary + operator. </p>
-<p>This operator returns the component-wise sum of two colors. Components that exceed 255 are clamped to 255.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">left</td><td>Left operand </td></tr>
-    <tr><td class="paramname">right</td><td>Right operand</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Result of <em>left</em> + <em>right</em> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="af39790b2e677c9ab418787f5ff4583ef"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classsf_1_1Color.php">Color</a> &amp; operator+= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classsf_1_1Color.php">Color</a> &amp;&#160;</td>
-          <td class="paramname"><em>left</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Color.php">Color</a> &amp;&#160;</td>
-          <td class="paramname"><em>right</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">related</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Overload of the binary += operator. </p>
-<p>This operator computes the component-wise sum of two colors, and assigns the result to the left operand. Components that exceed 255 are clamped to 255.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">left</td><td>Left operand </td></tr>
-    <tr><td class="paramname">right</td><td>Right operand</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Reference to <em>left</em> </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="af39790b2e677c9ab418787f5ff4583ef"></a>
 <div class="memitem">
 <div class="memproto">
@@ -927,51 +549,6 @@ Related Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4586e31d668f183fc46576511169bf2c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classsf_1_1Color.php">Color</a> operator- </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Color.php">Color</a> &amp;&#160;</td>
-          <td class="paramname"><em>left</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Color.php">Color</a> &amp;&#160;</td>
-          <td class="paramname"><em>right</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">related</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Overload of the binary - operator. </p>
-<p>This operator returns the component-wise subtraction of two colors. Components below 0 are clamped to 0.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">left</td><td>Left operand </td></tr>
-    <tr><td class="paramname">right</td><td>Right operand</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Result of <em>left</em> - <em>right</em> </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a6927a7dba8b0d330f912fefb43b0c148"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1014,96 +591,6 @@ Related Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Reference to <em>left</em> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a6927a7dba8b0d330f912fefb43b0c148"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classsf_1_1Color.php">Color</a> &amp; operator-= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classsf_1_1Color.php">Color</a> &amp;&#160;</td>
-          <td class="paramname"><em>left</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Color.php">Color</a> &amp;&#160;</td>
-          <td class="paramname"><em>right</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">related</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Overload of the binary -= operator. </p>
-<p>This operator computes the component-wise subtraction of two colors, and assigns the result to the left operand. Components below 0 are clamped to 0.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">left</td><td>Left operand </td></tr>
-    <tr><td class="paramname">right</td><td>Right operand</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Reference to <em>left</em> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a2adc3f68860f7aa5e4d7c79dcbb31d30"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool operator== </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Color.php">Color</a> &amp;&#160;</td>
-          <td class="paramname"><em>left</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Color.php">Color</a> &amp;&#160;</td>
-          <td class="paramname"><em>right</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">related</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Overload of the == operator. </p>
-<p>This operator compares two colors and check if they are equal.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">left</td><td>Left operand </td></tr>
-    <tr><td class="paramname">right</td><td>Right operand</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if colors are equal, false if they are different </dd></dl>
 
 </div>
 </div>
@@ -1165,7 +652,7 @@ Related Functions</h2></td></tr>
 
 <p>Alpha (opacity) component. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2Color_8hpp_source.php#l00099">99</a> of file <a class="el" href="include_2SFML_2Graphics_2Color_8hpp_source.php">include/SFML/Graphics/Color.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Color_8hpp_source.php#l00099">99</a> of file <a class="el" href="Color_8hpp_source.php">Color.hpp</a>.</p>
 
 </div>
 </div>
@@ -1181,11 +668,11 @@ Related Functions</h2></td></tr>
 
 <p>Blue component. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2Color_8hpp_source.php#l00098">98</a> of file <a class="el" href="include_2SFML_2Graphics_2Color_8hpp_source.php">include/SFML/Graphics/Color.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Color_8hpp_source.php#l00098">98</a> of file <a class="el" href="Color_8hpp_source.php">Color.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a25bf5208c8c7668f1a3836acbbb23986"></a>
+<a class="anchor" id="a77c688197b981338f0b19dc58bd2facd"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1193,7 +680,7 @@ Related Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static const <a class="el" href="classsf_1_1Color.php">Color</a> sf::Color::Black</td>
+          <td class="memname">const <a class="el" href="classsf_1_1Color.php">Color</a> sf::Color::Black</td>
         </tr>
       </table>
   </td>
@@ -1205,11 +692,11 @@ Related Functions</h2></td></tr>
 
 <p>Black predefined color. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2Color_8hpp_source.php#l00083">83</a> of file <a class="el" href="include_2SFML_2Graphics_2Color_8hpp_source.php">include/SFML/Graphics/Color.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Color_8hpp_source.php#l00083">83</a> of file <a class="el" href="Color_8hpp_source.php">Color.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a6d901f24edce210decaeac1ccfdb28a9"></a>
+<a class="anchor" id="ab03770d4817426b2614cfc33cf0e245c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1217,7 +704,7 @@ Related Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static const <a class="el" href="classsf_1_1Color.php">Color</a> sf::Color::Blue</td>
+          <td class="memname">const <a class="el" href="classsf_1_1Color.php">Color</a> sf::Color::Blue</td>
         </tr>
       </table>
   </td>
@@ -1229,11 +716,11 @@ Related Functions</h2></td></tr>
 
 <p>Blue predefined color. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2Color_8hpp_source.php#l00087">87</a> of file <a class="el" href="include_2SFML_2Graphics_2Color_8hpp_source.php">include/SFML/Graphics/Color.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Color_8hpp_source.php#l00087">87</a> of file <a class="el" href="Color_8hpp_source.php">Color.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a1a5568e8b58269f1c739237e31bed9d8"></a>
+<a class="anchor" id="a64ae9beb0b9a5865dd811cda4bb18340"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1241,7 +728,7 @@ Related Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static const <a class="el" href="classsf_1_1Color.php">Color</a> sf::Color::Cyan</td>
+          <td class="memname">const <a class="el" href="classsf_1_1Color.php">Color</a> sf::Color::Cyan</td>
         </tr>
       </table>
   </td>
@@ -1253,7 +740,7 @@ Related Functions</h2></td></tr>
 
 <p>Cyan predefined color. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2Color_8hpp_source.php#l00090">90</a> of file <a class="el" href="include_2SFML_2Graphics_2Color_8hpp_source.php">include/SFML/Graphics/Color.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Color_8hpp_source.php#l00090">90</a> of file <a class="el" href="Color_8hpp_source.php">Color.hpp</a>.</p>
 
 </div>
 </div>
@@ -1269,11 +756,11 @@ Related Functions</h2></td></tr>
 
 <p>Green component. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2Color_8hpp_source.php#l00097">97</a> of file <a class="el" href="include_2SFML_2Graphics_2Color_8hpp_source.php">include/SFML/Graphics/Color.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Color_8hpp_source.php#l00097">97</a> of file <a class="el" href="Color_8hpp_source.php">Color.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a71bdec1f240038ee66fc8f3b418fce71"></a>
+<a class="anchor" id="a95629b30de8c6856aa7d3afed12eb865"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1281,7 +768,7 @@ Related Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static const <a class="el" href="classsf_1_1Color.php">Color</a> sf::Color::Green</td>
+          <td class="memname">const <a class="el" href="classsf_1_1Color.php">Color</a> sf::Color::Green</td>
         </tr>
       </table>
   </td>
@@ -1293,11 +780,11 @@ Related Functions</h2></td></tr>
 
 <p>Green predefined color. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2Color_8hpp_source.php#l00086">86</a> of file <a class="el" href="include_2SFML_2Graphics_2Color_8hpp_source.php">include/SFML/Graphics/Color.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Color_8hpp_source.php#l00086">86</a> of file <a class="el" href="Color_8hpp_source.php">Color.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a9ee8537b23a72bff51d8f20f4894519e"></a>
+<a class="anchor" id="a6fe70d90b65b2163dd066a84ac00426c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1305,7 +792,7 @@ Related Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static const <a class="el" href="classsf_1_1Color.php">Color</a> sf::Color::Magenta</td>
+          <td class="memname">const <a class="el" href="classsf_1_1Color.php">Color</a> sf::Color::Magenta</td>
         </tr>
       </table>
   </td>
@@ -1317,7 +804,7 @@ Related Functions</h2></td></tr>
 
 <p>Magenta predefined color. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2Color_8hpp_source.php#l00089">89</a> of file <a class="el" href="include_2SFML_2Graphics_2Color_8hpp_source.php">include/SFML/Graphics/Color.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Color_8hpp_source.php#l00089">89</a> of file <a class="el" href="Color_8hpp_source.php">Color.hpp</a>.</p>
 
 </div>
 </div>
@@ -1333,11 +820,11 @@ Related Functions</h2></td></tr>
 
 <p>Red component. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2Color_8hpp_source.php#l00096">96</a> of file <a class="el" href="include_2SFML_2Graphics_2Color_8hpp_source.php">include/SFML/Graphics/Color.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Color_8hpp_source.php#l00096">96</a> of file <a class="el" href="Color_8hpp_source.php">Color.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a7052b1c5408a953e25f9691e0e828c9d"></a>
+<a class="anchor" id="a127dbf55db9c07d0fa8f4bfcbb97594a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1345,7 +832,7 @@ Related Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static const <a class="el" href="classsf_1_1Color.php">Color</a> sf::Color::Red</td>
+          <td class="memname">const <a class="el" href="classsf_1_1Color.php">Color</a> sf::Color::Red</td>
         </tr>
       </table>
   </td>
@@ -1357,11 +844,11 @@ Related Functions</h2></td></tr>
 
 <p>Red predefined color. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2Color_8hpp_source.php#l00085">85</a> of file <a class="el" href="include_2SFML_2Graphics_2Color_8hpp_source.php">include/SFML/Graphics/Color.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Color_8hpp_source.php#l00085">85</a> of file <a class="el" href="Color_8hpp_source.php">Color.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a422c310394afa396d3a2798aad982145"></a>
+<a class="anchor" id="a569b45471737f770656f50ae7bbac292"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1369,7 +856,7 @@ Related Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static const <a class="el" href="classsf_1_1Color.php">Color</a> sf::Color::Transparent</td>
+          <td class="memname">const <a class="el" href="classsf_1_1Color.php">Color</a> sf::Color::Transparent</td>
         </tr>
       </table>
   </td>
@@ -1381,11 +868,11 @@ Related Functions</h2></td></tr>
 
 <p>Transparent (black) predefined color. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2Color_8hpp_source.php#l00091">91</a> of file <a class="el" href="include_2SFML_2Graphics_2Color_8hpp_source.php">include/SFML/Graphics/Color.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Color_8hpp_source.php#l00091">91</a> of file <a class="el" href="Color_8hpp_source.php">Color.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="abd9695b00da63b890ea40f74629237c0"></a>
+<a class="anchor" id="a4fd874712178d9e206f53226002aa4ca"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1393,7 +880,7 @@ Related Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static const <a class="el" href="classsf_1_1Color.php">Color</a> sf::Color::White</td>
+          <td class="memname">const <a class="el" href="classsf_1_1Color.php">Color</a> sf::Color::White</td>
         </tr>
       </table>
   </td>
@@ -1405,11 +892,11 @@ Related Functions</h2></td></tr>
 
 <p>White predefined color. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2Color_8hpp_source.php#l00084">84</a> of file <a class="el" href="include_2SFML_2Graphics_2Color_8hpp_source.php">include/SFML/Graphics/Color.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Color_8hpp_source.php#l00084">84</a> of file <a class="el" href="Color_8hpp_source.php">Color.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ad2e5e0bad294384b8cf26a92d8d8d162"></a>
+<a class="anchor" id="af8896b5f56650935f5b9d72d528802c7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1417,7 +904,7 @@ Related Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static const <a class="el" href="classsf_1_1Color.php">Color</a> sf::Color::Yellow</td>
+          <td class="memname">const <a class="el" href="classsf_1_1Color.php">Color</a> sf::Color::Yellow</td>
         </tr>
       </table>
   </td>
@@ -1429,12 +916,12 @@ Related Functions</h2></td></tr>
 
 <p>Yellow predefined color. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2Color_8hpp_source.php#l00088">88</a> of file <a class="el" href="include_2SFML_2Graphics_2Color_8hpp_source.php">include/SFML/Graphics/Color.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Color_8hpp_source.php#l00088">88</a> of file <a class="el" href="Color_8hpp_source.php">Color.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="include_2SFML_2Graphics_2Color_8hpp_source.php">include/SFML/Graphics/Color.hpp</a></li>
+<li><a class="el" href="Color_8hpp_source.php">Color.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <?php

@@ -41,35 +41,10 @@
 <p>Utility class for manipulating 2D axis aligned rectangles.  
  <a href="classsf_1_1Rect.php#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="include_2SFML_2Graphics_2Rect_8hpp_source.php">Rect.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="Rect_8hpp_source.php">Rect.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0f87ebaef9722a6222fd2e04ce8efb37"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Rect.php#a0f87ebaef9722a6222fd2e04ce8efb37">Rect</a> ()</td></tr>
-<tr class="memdesc:a0f87ebaef9722a6222fd2e04ce8efb37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a0f87ebaef9722a6222fd2e04ce8efb37">More...</a><br /></td></tr>
-<tr class="separator:a0f87ebaef9722a6222fd2e04ce8efb37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15cdbc5a1aed3a8fc7be1bd5004f19f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Rect.php#a15cdbc5a1aed3a8fc7be1bd5004f19f9">Rect</a> (T rectLeft, T rectTop, T rectWidth, T rectHeight)</td></tr>
-<tr class="memdesc:a15cdbc5a1aed3a8fc7be1bd5004f19f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the rectangle from its coordinates.  <a href="#a15cdbc5a1aed3a8fc7be1bd5004f19f9">More...</a><br /></td></tr>
-<tr class="separator:a15cdbc5a1aed3a8fc7be1bd5004f19f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27fdf85caa6d12caeeff78913cc59936"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Rect.php#a27fdf85caa6d12caeeff78913cc59936">Rect</a> (const <a class="el" href="classsf_1_1Vector2.php">Vector2</a>&lt; T &gt; &amp;position, const <a class="el" href="classsf_1_1Vector2.php">Vector2</a>&lt; T &gt; &amp;size)</td></tr>
-<tr class="memdesc:a27fdf85caa6d12caeeff78913cc59936"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the rectangle from position and size.  <a href="#a27fdf85caa6d12caeeff78913cc59936">More...</a><br /></td></tr>
-<tr class="separator:a27fdf85caa6d12caeeff78913cc59936"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fff2bb7e93677839461a66bc2957de0"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr class="memitem:a6fff2bb7e93677839461a66bc2957de0"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1Rect.php#a6fff2bb7e93677839461a66bc2957de0">Rect</a> (const <a class="el" href="classsf_1_1Rect.php">Rect</a>&lt; U &gt; &amp;rectangle)</td></tr>
-<tr class="memdesc:a6fff2bb7e93677839461a66bc2957de0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the rectangle from another type of rectangle.  <a href="#a6fff2bb7e93677839461a66bc2957de0">More...</a><br /></td></tr>
-<tr class="separator:a6fff2bb7e93677839461a66bc2957de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8a5364c84de6dd5299f833b54e31ef1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Rect.php#aa8a5364c84de6dd5299f833b54e31ef1">contains</a> (T x, T y) const </td></tr>
-<tr class="memdesc:aa8a5364c84de6dd5299f833b54e31ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a point is inside the rectangle's area.  <a href="#aa8a5364c84de6dd5299f833b54e31ef1">More...</a><br /></td></tr>
-<tr class="separator:aa8a5364c84de6dd5299f833b54e31ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24163acdb9b2987c0ea55c201e270d41"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Rect.php#a24163acdb9b2987c0ea55c201e270d41">contains</a> (const <a class="el" href="classsf_1_1Vector2.php">Vector2</a>&lt; T &gt; &amp;point) const </td></tr>
-<tr class="memdesc:a24163acdb9b2987c0ea55c201e270d41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a point is inside the rectangle's area.  <a href="#a24163acdb9b2987c0ea55c201e270d41">More...</a><br /></td></tr>
-<tr class="separator:a24163acdb9b2987c0ea55c201e270d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a566740c8f58e01bb052266f47e7e1011"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Rect.php#a566740c8f58e01bb052266f47e7e1011">intersects</a> (const <a class="el" href="classsf_1_1Rect.php">Rect</a>&lt; T &gt; &amp;rectangle) const </td></tr>
-<tr class="memdesc:a566740c8f58e01bb052266f47e7e1011"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the intersection between two rectangles.  <a href="#a566740c8f58e01bb052266f47e7e1011">More...</a><br /></td></tr>
-<tr class="separator:a566740c8f58e01bb052266f47e7e1011"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f1874792b04c7e221bb786b31f5836e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Rect.php#a5f1874792b04c7e221bb786b31f5836e">intersects</a> (const <a class="el" href="classsf_1_1Rect.php">Rect</a>&lt; T &gt; &amp;rectangle, <a class="el" href="classsf_1_1Rect.php">Rect</a>&lt; T &gt; &amp;intersection) const </td></tr>
-<tr class="memdesc:a5f1874792b04c7e221bb786b31f5836e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the intersection between two rectangles.  <a href="#a5f1874792b04c7e221bb786b31f5836e">More...</a><br /></td></tr>
-<tr class="separator:a5f1874792b04c7e221bb786b31f5836e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f87ebaef9722a6222fd2e04ce8efb37"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Rect.php#a0f87ebaef9722a6222fd2e04ce8efb37">Rect</a> ()</td></tr>
 <tr class="memdesc:a0f87ebaef9722a6222fd2e04ce8efb37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a0f87ebaef9722a6222fd2e04ce8efb37">More...</a><br /></td></tr>
 <tr class="separator:a0f87ebaef9722a6222fd2e04ce8efb37"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,14 +98,6 @@ Related Functions</h2></td></tr>
 <tr class="memitem:a03fc4c105687b7d0f07b6b4ed4b45581"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1Rect.php#a03fc4c105687b7d0f07b6b4ed4b45581">operator!=</a> (const <a class="el" href="classsf_1_1Rect.php">Rect</a>&lt; T &gt; &amp;<a class="el" href="classsf_1_1Rect.php#aa49960fa465103d9cb7069ceb25c7c32">left</a>, const <a class="el" href="classsf_1_1Rect.php">Rect</a>&lt; T &gt; &amp;right)</td></tr>
 <tr class="memdesc:a03fc4c105687b7d0f07b6b4ed4b45581"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary operator !=.  <a href="#a03fc4c105687b7d0f07b6b4ed4b45581">More...</a><br /></td></tr>
 <tr class="separator:a03fc4c105687b7d0f07b6b4ed4b45581"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3488b5dbd0e587c4d7cb80605affc46"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ab3488b5dbd0e587c4d7cb80605affc46"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1Rect.php#ab3488b5dbd0e587c4d7cb80605affc46">operator==</a> (const <a class="el" href="classsf_1_1Rect.php">Rect</a>&lt; T &gt; &amp;<a class="el" href="classsf_1_1Rect.php#aa49960fa465103d9cb7069ceb25c7c32">left</a>, const <a class="el" href="classsf_1_1Rect.php">Rect</a>&lt; T &gt; &amp;right)</td></tr>
-<tr class="memdesc:ab3488b5dbd0e587c4d7cb80605affc46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary operator ==.  <a href="#ab3488b5dbd0e587c4d7cb80605affc46">More...</a><br /></td></tr>
-<tr class="separator:ab3488b5dbd0e587c4d7cb80605affc46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03fc4c105687b7d0f07b6b4ed4b45581"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a03fc4c105687b7d0f07b6b4ed4b45581"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1Rect.php#a03fc4c105687b7d0f07b6b4ed4b45581">operator!=</a> (const <a class="el" href="classsf_1_1Rect.php">Rect</a>&lt; T &gt; &amp;<a class="el" href="classsf_1_1Rect.php#aa49960fa465103d9cb7069ceb25c7c32">left</a>, const <a class="el" href="classsf_1_1Rect.php">Rect</a>&lt; T &gt; &amp;right)</td></tr>
-<tr class="memdesc:a03fc4c105687b7d0f07b6b4ed4b45581"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary operator !=.  <a href="#a03fc4c105687b7d0f07b6b4ed4b45581">More...</a><br /></td></tr>
-<tr class="separator:a03fc4c105687b7d0f07b6b4ed4b45581"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
@@ -167,155 +134,8 @@ class sf::Rect&lt; T &gt;</h3>
 <div class="line"><span class="keywordtype">bool</span> b3 = r1.<a class="code" href="classsf_1_1Rect.php#a566740c8f58e01bb052266f47e7e1011">intersects</a>(r2, result); <span class="comment">// true</span></div>
 <div class="line"><span class="comment">// result == (4, 2, 16, 3)</span></div>
 </div><!-- fragment --> 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2Rect_8hpp_source.php#l00042">42</a> of file <a class="el" href="include_2SFML_2Graphics_2Rect_8hpp_source.php">include/SFML/Graphics/Rect.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Rect_8hpp_source.php#l00042">42</a> of file <a class="el" href="Rect_8hpp_source.php">Rect.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a0f87ebaef9722a6222fd2e04ce8efb37"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classsf_1_1Rect.php">sf::Rect</a>&lt; T &gt;::<a class="el" href="classsf_1_1Rect.php">Rect</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Default constructor. </p>
-<p>Creates an empty rectangle (it is equivalent to calling Rect(0, 0, 0, 0)). </p>
-
-</div>
-</div>
-<a class="anchor" id="a15cdbc5a1aed3a8fc7be1bd5004f19f9"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classsf_1_1Rect.php">sf::Rect</a>&lt; T &gt;::<a class="el" href="classsf_1_1Rect.php">Rect</a> </td>
-          <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>rectLeft</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>rectTop</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>rectWidth</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>rectHeight</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Construct the rectangle from its coordinates. </p>
-<p>Be careful, the last two parameters are the width and height, not the right and bottom coordinates!</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rectLeft</td><td>Left coordinate of the rectangle </td></tr>
-    <tr><td class="paramname">rectTop</td><td>Top coordinate of the rectangle </td></tr>
-    <tr><td class="paramname">rectWidth</td><td>Width of the rectangle </td></tr>
-    <tr><td class="paramname">rectHeight</td><td>Height of the rectangle </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a27fdf85caa6d12caeeff78913cc59936"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classsf_1_1Rect.php">sf::Rect</a>&lt; T &gt;::<a class="el" href="classsf_1_1Rect.php">Rect</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Vector2.php">Vector2</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>position</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Vector2.php">Vector2</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Construct the rectangle from position and size. </p>
-<p>Be careful, the last parameter is the size, not the bottom-right corner!</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">position</td><td>Position of the top-left corner of the rectangle </td></tr>
-    <tr><td class="paramname">size</td><td>Size of the rectangle </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a6fff2bb7e93677839461a66bc2957de0"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<div class="memtemplate">
-template&lt;typename U &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classsf_1_1Rect.php">sf::Rect</a>&lt; T &gt;::<a class="el" href="classsf_1_1Rect.php">Rect</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Rect.php">Rect</a>&lt; U &gt; &amp;&#160;</td>
-          <td class="paramname"><em>rectangle</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Construct the rectangle from another type of rectangle. </p>
-<p>This constructor doesn't replace the copy constructor, it's called only when U != T. A call to this constructor will fail to compile if U is not convertible to T.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rectangle</td><td>Rectangle to convert </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a class="anchor" id="a0f87ebaef9722a6222fd2e04ce8efb37"></a>
 <div class="memitem">
 <div class="memproto">
@@ -504,75 +324,6 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aa8a5364c84de6dd5299f833b54e31ef1"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classsf_1_1Rect.php">sf::Rect</a>&lt; T &gt;::contains </td>
-          <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>y</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Check if a point is inside the rectangle's area. </p>
-<p>This check is non-inclusive. If the point lies on the edge of the rectangle, this function will return false.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>X coordinate of the point to test </td></tr>
-    <tr><td class="paramname">y</td><td>Y coordinate of the point to test</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the point is inside, false otherwise</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Rect.php#a566740c8f58e01bb052266f47e7e1011" title="Check the intersection between two rectangles. ">intersects</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a24163acdb9b2987c0ea55c201e270d41"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classsf_1_1Rect.php">sf::Rect</a>&lt; T &gt;::contains </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Vector2.php">Vector2</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>point</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Check if a point is inside the rectangle's area. </p>
-<p>This check is non-inclusive. If the point lies on the edge of the rectangle, this function will return false.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">point</td><td>Point to test</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the point is inside, false otherwise</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Rect.php#a566740c8f58e01bb052266f47e7e1011" title="Check the intersection between two rectangles. ">intersects</a> </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a24163acdb9b2987c0ea55c201e270d41"></a>
 <div class="memitem">
 <div class="memproto">
@@ -622,74 +373,6 @@ template&lt;typename T&gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rectangle</td><td>Rectangle to test</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if rectangles overlap, false otherwise</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Rect.php#aa8a5364c84de6dd5299f833b54e31ef1" title="Check if a point is inside the rectangle&#39;s area. ">contains</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a566740c8f58e01bb052266f47e7e1011"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classsf_1_1Rect.php">sf::Rect</a>&lt; T &gt;::intersects </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Rect.php">Rect</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>rectangle</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Check the intersection between two rectangles. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rectangle</td><td>Rectangle to test</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if rectangles overlap, false otherwise</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Rect.php#aa8a5364c84de6dd5299f833b54e31ef1" title="Check if a point is inside the rectangle&#39;s area. ">contains</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a5f1874792b04c7e221bb786b31f5836e"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classsf_1_1Rect.php">sf::Rect</a>&lt; T &gt;::intersects </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Rect.php">Rect</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>rectangle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classsf_1_1Rect.php">Rect</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>intersection</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Check the intersection between two rectangles. </p>
-<p>This overload returns the overlapped rectangle in the <em>intersection</em> parameter.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rectangle</td><td>Rectangle to test </td></tr>
-    <tr><td class="paramname">intersection</td><td>Rectangle to be filled with the intersection</td></tr>
   </table>
   </dd>
 </dl>
@@ -786,100 +469,6 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a03fc4c105687b7d0f07b6b4ed4b45581"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool operator!= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Rect.php">Rect</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>left</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Rect.php">Rect</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>right</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">related</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Overload of binary operator !=. </p>
-<p>This operator compares strict difference between two rectangles.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">left</td><td>Left operand (a rectangle) </td></tr>
-    <tr><td class="paramname">right</td><td>Right operand (a rectangle)</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if <em>left</em> is not equal to <em>right</em> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ab3488b5dbd0e587c4d7cb80605affc46"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool operator== </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Rect.php">Rect</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>left</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Rect.php">Rect</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>right</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">related</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Overload of binary operator ==. </p>
-<p>This operator compares strict equality between two rectangles.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">left</td><td>Left operand (a rectangle) </td></tr>
-    <tr><td class="paramname">right</td><td>Right operand (a rectangle)</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if <em>left</em> is equal to <em>right</em> </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="ab3488b5dbd0e587c4d7cb80605affc46"></a>
 <div class="memitem">
 <div class="memproto">
@@ -942,7 +531,7 @@ template&lt;typename T&gt; </div>
 
 <p>Height of the rectangle. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2Rect_8hpp_source.php#l00160">160</a> of file <a class="el" href="include_2SFML_2Graphics_2Rect_8hpp_source.php">include/SFML/Graphics/Rect.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Rect_8hpp_source.php#l00160">160</a> of file <a class="el" href="Rect_8hpp_source.php">Rect.hpp</a>.</p>
 
 </div>
 </div>
@@ -960,7 +549,7 @@ template&lt;typename T&gt; </div>
 
 <p>Left coordinate of the rectangle. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2Rect_8hpp_source.php#l00157">157</a> of file <a class="el" href="include_2SFML_2Graphics_2Rect_8hpp_source.php">include/SFML/Graphics/Rect.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Rect_8hpp_source.php#l00157">157</a> of file <a class="el" href="Rect_8hpp_source.php">Rect.hpp</a>.</p>
 
 </div>
 </div>
@@ -978,7 +567,7 @@ template&lt;typename T&gt; </div>
 
 <p>Top coordinate of the rectangle. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2Rect_8hpp_source.php#l00158">158</a> of file <a class="el" href="include_2SFML_2Graphics_2Rect_8hpp_source.php">include/SFML/Graphics/Rect.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Rect_8hpp_source.php#l00158">158</a> of file <a class="el" href="Rect_8hpp_source.php">Rect.hpp</a>.</p>
 
 </div>
 </div>
@@ -996,12 +585,12 @@ template&lt;typename T&gt; </div>
 
 <p>Width of the rectangle. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2Rect_8hpp_source.php#l00159">159</a> of file <a class="el" href="include_2SFML_2Graphics_2Rect_8hpp_source.php">include/SFML/Graphics/Rect.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Rect_8hpp_source.php#l00159">159</a> of file <a class="el" href="Rect_8hpp_source.php">Rect.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="include_2SFML_2Graphics_2Rect_8hpp_source.php">include/SFML/Graphics/Rect.hpp</a></li>
+<li><a class="el" href="Rect_8hpp_source.php">Rect.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <?php

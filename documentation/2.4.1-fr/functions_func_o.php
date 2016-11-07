@@ -194,7 +194,7 @@
 : <a class="el" href="classsf_1_1ThreadLocalPtr.php#aecebc50c4c0ed75bcf246707d54c4d4b">sf::ThreadLocalPtr&lt; T &gt;</a>
 </li>
 <li>operator/()
-: <a class="el" href="classsf_1_1Time.php#a67510d018fd010819ee075db2cbd004f">sf::Time</a>
+: <a class="el" href="classsf_1_1Time.php#a5f7b24dd13c0068d5cba678e1d5db9a6">sf::Time</a>
 , <a class="el" href="classsf_1_1Vector2.php#a7409dd89cb3aad6c3bc6622311107311">sf::Vector2&lt; T &gt;</a>
 , <a class="el" href="classsf_1_1Vector3.php#ad4ba4a83de236ddeb92a7b759187e90d">sf::Vector3&lt; T &gt;</a>
 </li>
@@ -250,7 +250,7 @@
 : <a class="el" href="classsf_1_1Packet.php#af8e26c63ba9bdccd262565ff0d3eeba2">sf::Packet</a>
 </li>
 <li>operator[]()
-: <a class="el" href="classsf_1_1String.php#abc989da7f4fb873ab29188d40772ab24">sf::String</a>
+: <a class="el" href="classsf_1_1String.php#a649b89a65866bf03652f7b5cb6de3bb6">sf::String</a>
 , <a class="el" href="classsf_1_1VertexArray.php#ab41c7768708eb55e8bb13eecce003cc4">sf::VertexArray</a>
 </li>
 <li>OutputSoundFile()

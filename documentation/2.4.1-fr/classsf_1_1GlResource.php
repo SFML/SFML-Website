@@ -41,21 +41,18 @@
 <p>Base class for classes that require an OpenGL context.  
  <a href="classsf_1_1GlResource.php#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="include_2SFML_2Window_2GlResource_8hpp_source.php">GlResource.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="GlResource_8hpp_source.php">GlResource.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for sf::GlResource:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classsf_1_1GlResource.png" usemap="#sf::GlResource_map" alt=""/>
   <map id="sf::GlResource_map" name="sf::GlResource_map">
-<area href="classsf_1_1Context.php" title="Class holding a valid drawing context. " alt="sf::Context" shape="rect" coords="104,56,198,80"/>
-<area href="classsf_1_1Context.php" title="Class holding a valid drawing context. " alt="sf::Context" shape="rect" coords="104,112,198,136"/>
-<area href="classsf_1_1Shader.php" title="Shader class (vertex, geometry and fragment) " alt="sf::Shader" shape="rect" coords="104,168,198,192"/>
-<area href="classsf_1_1Shader.php" title="Shader class (vertex, geometry and fragment) " alt="sf::Shader" shape="rect" coords="104,224,198,248"/>
-<area href="classsf_1_1Texture.php" title="Image living on the graphics card that can be used for drawing. " alt="sf::Texture" shape="rect" coords="104,280,198,304"/>
-<area href="classsf_1_1Texture.php" title="Image living on the graphics card that can be used for drawing. " alt="sf::Texture" shape="rect" coords="104,336,198,360"/>
-<area href="classsf_1_1Window.php" title="Window that serves as a target for OpenGL rendering. " alt="sf::Window" shape="rect" coords="104,392,198,416"/>
-<area href="classsf_1_1Window.php" title="Window that serves as a target for OpenGL rendering. " alt="sf::Window" shape="rect" coords="104,448,198,472"/>
+<area href="classsf_1_1Context.php" title="Class holding a valid drawing context. " alt="sf::Context" shape="rect" coords="0,56,113,80"/>
+<area href="classsf_1_1Shader.php" title="Shader class (vertex, geometry and fragment) " alt="sf::Shader" shape="rect" coords="123,56,236,80"/>
+<area href="classsf_1_1Texture.php" title="Image living on the graphics card that can be used for drawing. " alt="sf::Texture" shape="rect" coords="246,56,359,80"/>
+<area href="classsf_1_1Window.php" title="Window that serves as a target for OpenGL rendering. " alt="sf::Window" shape="rect" coords="369,56,482,80"/>
+<area href="classsf_1_1RenderWindow.php" title="Window that can serve as a target for 2D drawing. " alt="sf::RenderWindow" shape="rect" coords="369,112,482,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -73,75 +70,19 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ab99035b67052331d1e8cf67abd93de98"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1GlResource.php#ab99035b67052331d1e8cf67abd93de98">~GlResource</a> ()</td></tr>
 <tr class="memdesc:ab99035b67052331d1e8cf67abd93de98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#ab99035b67052331d1e8cf67abd93de98">More...</a><br /></td></tr>
 <tr class="separator:ab99035b67052331d1e8cf67abd93de98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8fb7a0674f0f77e530dacc2a3b0dc6a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1GlResource.php#ad8fb7a0674f0f77e530dacc2a3b0dc6a">GlResource</a> ()</td></tr>
-<tr class="memdesc:ad8fb7a0674f0f77e530dacc2a3b0dc6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#ad8fb7a0674f0f77e530dacc2a3b0dc6a">More...</a><br /></td></tr>
-<tr class="separator:ad8fb7a0674f0f77e530dacc2a3b0dc6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab99035b67052331d1e8cf67abd93de98"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1GlResource.php#ab99035b67052331d1e8cf67abd93de98">~GlResource</a> ()</td></tr>
-<tr class="memdesc:ab99035b67052331d1e8cf67abd93de98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#ab99035b67052331d1e8cf67abd93de98">More...</a><br /></td></tr>
-<tr class="separator:ab99035b67052331d1e8cf67abd93de98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
 <tr class="memitem:ae0efa7935241644608ca32ba47b22a33"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1GlResource.php#ae0efa7935241644608ca32ba47b22a33">ensureGlContext</a> ()</td></tr>
-<tr class="memdesc:ae0efa7935241644608ca32ba47b22a33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make sure that a valid OpenGL context exists in the current thread.  <a href="#ae0efa7935241644608ca32ba47b22a33">More...</a><br /></td></tr>
+<tr class="memdesc:ae0efa7935241644608ca32ba47b22a33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empty function for ABI compatibility, use acquireTransientContext instead.  <a href="#ae0efa7935241644608ca32ba47b22a33">More...</a><br /></td></tr>
 <tr class="separator:ae0efa7935241644608ca32ba47b22a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for classes that require an OpenGL context. </p>
 <p>This class is for internal use only, it must be the base of every class that requires a valid OpenGL context in order to work.</p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2GlResource_8hpp_source.php#l00044">44</a> of file <a class="el" href="include_2SFML_2Window_2GlResource_8hpp_source.php">include/SFML/Window/GlResource.hpp</a>.</p>
+<p>Definition at line <a class="el" href="GlResource_8hpp_source.php#l00044">44</a> of file <a class="el" href="GlResource_8hpp_source.php">GlResource.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ad8fb7a0674f0f77e530dacc2a3b0dc6a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">sf::GlResource::GlResource </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Default constructor. </p>
-
-</div>
-</div>
-<a class="anchor" id="ab99035b67052331d1e8cf67abd93de98"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">sf::GlResource::~GlResource </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Destructor. </p>
-
-</div>
-</div>
 <a class="anchor" id="ad8fb7a0674f0f77e530dacc2a3b0dc6a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -214,12 +155,12 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Make sure that a valid OpenGL context exists in the current thread. </p>
+<p>Empty function for ABI compatibility, use acquireTransientContext instead. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="include_2SFML_2Window_2GlResource_8hpp_source.php">include/SFML/Window/GlResource.hpp</a></li>
+<li><a class="el" href="GlResource_8hpp_source.php">GlResource.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <?php

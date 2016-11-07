@@ -39,7 +39,7 @@
 <p>Abstract class for custom file input streams.  
  <a href="classsf_1_1InputStream.php#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="include_2SFML_2System_2InputStream_8hpp_source.php">InputStream.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="InputStream_8hpp_source.php">InputStream.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for sf::InputStream:</div>
 <div class="dyncontent">
@@ -47,29 +47,12 @@ Inheritance diagram for sf::InputStream:</div>
   <img src="classsf_1_1InputStream.png" usemap="#sf::InputStream_map" alt=""/>
   <map id="sf::InputStream_map" name="sf::InputStream_map">
 <area href="classsf_1_1FileInputStream.php" title="Implementation of input stream based on a file. " alt="sf::FileInputStream" shape="rect" coords="0,56,140,80"/>
-<area href="classsf_1_1FileInputStream.php" title="Implementation of input stream based on a file. " alt="sf::FileInputStream" shape="rect" coords="150,56,290,80"/>
-<area href="classsf_1_1MemoryInputStream.php" title="Implementation of input stream based on a memory chunk. " alt="sf::MemoryInputStream" shape="rect" coords="300,56,440,80"/>
-<area href="classsf_1_1MemoryInputStream.php" title="Implementation of input stream based on a memory chunk. " alt="sf::MemoryInputStream" shape="rect" coords="450,56,590,80"/>
+<area href="classsf_1_1MemoryInputStream.php" title="Implementation of input stream based on a memory chunk. " alt="sf::MemoryInputStream" shape="rect" coords="150,56,290,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4b2eb0f92323e630bd0542bc6191682e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1InputStream.php#a4b2eb0f92323e630bd0542bc6191682e">~InputStream</a> ()</td></tr>
-<tr class="memdesc:a4b2eb0f92323e630bd0542bc6191682e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <a href="#a4b2eb0f92323e630bd0542bc6191682e">More...</a><br /></td></tr>
-<tr class="separator:a4b2eb0f92323e630bd0542bc6191682e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dd89c74c1acb693203f50e750c6ae53"><td class="memItemLeft" align="right" valign="top">virtual Int64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1InputStream.php#a8dd89c74c1acb693203f50e750c6ae53">read</a> (void *data, Int64 size)=0</td></tr>
-<tr class="memdesc:a8dd89c74c1acb693203f50e750c6ae53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from the stream.  <a href="#a8dd89c74c1acb693203f50e750c6ae53">More...</a><br /></td></tr>
-<tr class="separator:a8dd89c74c1acb693203f50e750c6ae53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76aba8e5d5cf9b1c5902d5e04f7864fc"><td class="memItemLeft" align="right" valign="top">virtual Int64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1InputStream.php#a76aba8e5d5cf9b1c5902d5e04f7864fc">seek</a> (Int64 position)=0</td></tr>
-<tr class="memdesc:a76aba8e5d5cf9b1c5902d5e04f7864fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the current reading position.  <a href="#a76aba8e5d5cf9b1c5902d5e04f7864fc">More...</a><br /></td></tr>
-<tr class="separator:a76aba8e5d5cf9b1c5902d5e04f7864fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a599515b9ccdbddb6fef5a98424fd559c"><td class="memItemLeft" align="right" valign="top">virtual Int64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1InputStream.php#a599515b9ccdbddb6fef5a98424fd559c">tell</a> ()=0</td></tr>
-<tr class="memdesc:a599515b9ccdbddb6fef5a98424fd559c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current reading position in the stream.  <a href="#a599515b9ccdbddb6fef5a98424fd559c">More...</a><br /></td></tr>
-<tr class="separator:a599515b9ccdbddb6fef5a98424fd559c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a311eaaaa65d636728e5153b574b72d5d"><td class="memItemLeft" align="right" valign="top">virtual Int64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1InputStream.php#a311eaaaa65d636728e5153b574b72d5d">getSize</a> ()=0</td></tr>
-<tr class="memdesc:a311eaaaa65d636728e5153b574b72d5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the size of the stream.  <a href="#a311eaaaa65d636728e5153b574b72d5d">More...</a><br /></td></tr>
-<tr class="separator:a311eaaaa65d636728e5153b574b72d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b2eb0f92323e630bd0542bc6191682e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1InputStream.php#a4b2eb0f92323e630bd0542bc6191682e">~InputStream</a> ()</td></tr>
 <tr class="memdesc:a4b2eb0f92323e630bd0542bc6191682e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <a href="#a4b2eb0f92323e630bd0542bc6191682e">More...</a><br /></td></tr>
 <tr class="separator:a4b2eb0f92323e630bd0542bc6191682e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,7 +109,7 @@ Public Member Functions</h2></td></tr>
 <div class="line"></div>
 <div class="line"><span class="comment">// etc.</span></div>
 </div><!-- fragment --> 
-<p>Definition at line <a class="el" href="include_2SFML_2System_2InputStream_8hpp_source.php#l00041">41</a> of file <a class="el" href="include_2SFML_2System_2InputStream_8hpp_source.php">include/SFML/System/InputStream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="InputStream_8hpp_source.php#l00041">41</a> of file <a class="el" href="InputStream_8hpp_source.php">InputStream.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a4b2eb0f92323e630bd0542bc6191682e"></a>
 <div class="memitem">
@@ -151,34 +134,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Virtual destructor. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2System_2InputStream_8hpp_source.php#l00049">49</a> of file <a class="el" href="include_2SFML_2System_2InputStream_8hpp_source.php">include/SFML/System/InputStream.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4b2eb0f92323e630bd0542bc6191682e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual sf::InputStream::~InputStream </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Virtual destructor. </p>
-
-<p>Definition at line <a class="el" href="shared_2include_2SFML_2System_2InputStream_8hpp_source.php#l00049">49</a> of file <a class="el" href="shared_2include_2SFML_2System_2InputStream_8hpp_source.php">shared/include/SFML/System/InputStream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="InputStream_8hpp_source.php#l00049">49</a> of file <a class="el" href="InputStream_8hpp_source.php">InputStream.hpp</a>.</p>
 
 </div>
 </div>
@@ -207,35 +163,7 @@ Public Member Functions</h2></td></tr>
 <p>Return the size of the stream. </p>
 <dl class="section return"><dt>Returns</dt><dd>The total number of bytes available in the stream, or -1 on error </dd></dl>
 
-<p>Implemented in <a class="el" href="classsf_1_1FileInputStream.php#aabdcaa315e088e008eeb9711ecc796e8">sf::FileInputStream</a>, <a class="el" href="classsf_1_1FileInputStream.php#aabdcaa315e088e008eeb9711ecc796e8">sf::FileInputStream</a>, <a class="el" href="classsf_1_1MemoryInputStream.php#a6ade3ca45de361ffa0a718595f0b6763">sf::MemoryInputStream</a>, and <a class="el" href="classsf_1_1MemoryInputStream.php#a6ade3ca45de361ffa0a718595f0b6763">sf::MemoryInputStream</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a311eaaaa65d636728e5153b574b72d5d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual Int64 sf::InputStream::getSize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Return the size of the stream. </p>
-<dl class="section return"><dt>Returns</dt><dd>The total number of bytes available in the stream, or -1 on error </dd></dl>
-
-<p>Implemented in <a class="el" href="classsf_1_1FileInputStream.php#aabdcaa315e088e008eeb9711ecc796e8">sf::FileInputStream</a>, <a class="el" href="classsf_1_1FileInputStream.php#aabdcaa315e088e008eeb9711ecc796e8">sf::FileInputStream</a>, <a class="el" href="classsf_1_1MemoryInputStream.php#a6ade3ca45de361ffa0a718595f0b6763">sf::MemoryInputStream</a>, and <a class="el" href="classsf_1_1MemoryInputStream.php#a6ade3ca45de361ffa0a718595f0b6763">sf::MemoryInputStream</a>.</p>
+<p>Implemented in <a class="el" href="classsf_1_1FileInputStream.php#aabdcaa315e088e008eeb9711ecc796e8">sf::FileInputStream</a>, and <a class="el" href="classsf_1_1MemoryInputStream.php#a6ade3ca45de361ffa0a718595f0b6763">sf::MemoryInputStream</a>.</p>
 
 </div>
 </div>
@@ -282,54 +210,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The number of bytes actually read, or -1 on error </dd></dl>
 
-<p>Implemented in <a class="el" href="classsf_1_1FileInputStream.php#ad1e94c4152429f485db224c44ee1eb50">sf::FileInputStream</a>, <a class="el" href="classsf_1_1FileInputStream.php#ad1e94c4152429f485db224c44ee1eb50">sf::FileInputStream</a>, <a class="el" href="classsf_1_1MemoryInputStream.php#adff5270c521819639154d42d76fd4c34">sf::MemoryInputStream</a>, and <a class="el" href="classsf_1_1MemoryInputStream.php#adff5270c521819639154d42d76fd4c34">sf::MemoryInputStream</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8dd89c74c1acb693203f50e750c6ae53"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual Int64 sf::InputStream::read </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Int64&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Read data from the stream. </p>
-<p>After reading, the stream's reading position must be advanced by the amount of bytes read.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data</td><td>Buffer where to copy the read data </td></tr>
-    <tr><td class="paramname">size</td><td>Desired number of bytes to read</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The number of bytes actually read, or -1 on error </dd></dl>
-
-<p>Implemented in <a class="el" href="classsf_1_1FileInputStream.php#ad1e94c4152429f485db224c44ee1eb50">sf::FileInputStream</a>, <a class="el" href="classsf_1_1FileInputStream.php#ad1e94c4152429f485db224c44ee1eb50">sf::FileInputStream</a>, <a class="el" href="classsf_1_1MemoryInputStream.php#adff5270c521819639154d42d76fd4c34">sf::MemoryInputStream</a>, and <a class="el" href="classsf_1_1MemoryInputStream.php#adff5270c521819639154d42d76fd4c34">sf::MemoryInputStream</a>.</p>
+<p>Implemented in <a class="el" href="classsf_1_1FileInputStream.php#ad1e94c4152429f485db224c44ee1eb50">sf::FileInputStream</a>, and <a class="el" href="classsf_1_1MemoryInputStream.php#adff5270c521819639154d42d76fd4c34">sf::MemoryInputStream</a>.</p>
 
 </div>
 </div>
@@ -364,42 +245,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The position actually sought to, or -1 on error </dd></dl>
 
-<p>Implemented in <a class="el" href="classsf_1_1FileInputStream.php#abdaf5700d4e1de07568e7829106b4eb9">sf::FileInputStream</a>, <a class="el" href="classsf_1_1FileInputStream.php#abdaf5700d4e1de07568e7829106b4eb9">sf::FileInputStream</a>, <a class="el" href="classsf_1_1MemoryInputStream.php#aa2ac8fda2bdb4c95248ae90c71633034">sf::MemoryInputStream</a>, and <a class="el" href="classsf_1_1MemoryInputStream.php#aa2ac8fda2bdb4c95248ae90c71633034">sf::MemoryInputStream</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a76aba8e5d5cf9b1c5902d5e04f7864fc"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual Int64 sf::InputStream::seek </td>
-          <td>(</td>
-          <td class="paramtype">Int64&#160;</td>
-          <td class="paramname"><em>position</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Change the current reading position. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">position</td><td>The position to seek to, from the beginning</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The position actually sought to, or -1 on error </dd></dl>
-
-<p>Implemented in <a class="el" href="classsf_1_1FileInputStream.php#abdaf5700d4e1de07568e7829106b4eb9">sf::FileInputStream</a>, <a class="el" href="classsf_1_1FileInputStream.php#abdaf5700d4e1de07568e7829106b4eb9">sf::FileInputStream</a>, <a class="el" href="classsf_1_1MemoryInputStream.php#aa2ac8fda2bdb4c95248ae90c71633034">sf::MemoryInputStream</a>, and <a class="el" href="classsf_1_1MemoryInputStream.php#aa2ac8fda2bdb4c95248ae90c71633034">sf::MemoryInputStream</a>.</p>
+<p>Implemented in <a class="el" href="classsf_1_1FileInputStream.php#abdaf5700d4e1de07568e7829106b4eb9">sf::FileInputStream</a>, and <a class="el" href="classsf_1_1MemoryInputStream.php#aa2ac8fda2bdb4c95248ae90c71633034">sf::MemoryInputStream</a>.</p>
 
 </div>
 </div>
@@ -427,40 +273,12 @@ Public Member Functions</h2></td></tr>
 <p>Get the current reading position in the stream. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current position, or -1 on error. </dd></dl>
 
-<p>Implemented in <a class="el" href="classsf_1_1FileInputStream.php#a768c5fdb3be79e2d71d1bce911f8741c">sf::FileInputStream</a>, <a class="el" href="classsf_1_1FileInputStream.php#a768c5fdb3be79e2d71d1bce911f8741c">sf::FileInputStream</a>, <a class="el" href="classsf_1_1MemoryInputStream.php#a7ad4bdf721f29de8f66421ff29e23ee4">sf::MemoryInputStream</a>, and <a class="el" href="classsf_1_1MemoryInputStream.php#a7ad4bdf721f29de8f66421ff29e23ee4">sf::MemoryInputStream</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a599515b9ccdbddb6fef5a98424fd559c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual Int64 sf::InputStream::tell </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the current reading position in the stream. </p>
-<dl class="section return"><dt>Returns</dt><dd>The current position, or -1 on error. </dd></dl>
-
-<p>Implemented in <a class="el" href="classsf_1_1FileInputStream.php#a768c5fdb3be79e2d71d1bce911f8741c">sf::FileInputStream</a>, <a class="el" href="classsf_1_1FileInputStream.php#a768c5fdb3be79e2d71d1bce911f8741c">sf::FileInputStream</a>, <a class="el" href="classsf_1_1MemoryInputStream.php#a7ad4bdf721f29de8f66421ff29e23ee4">sf::MemoryInputStream</a>, and <a class="el" href="classsf_1_1MemoryInputStream.php#a7ad4bdf721f29de8f66421ff29e23ee4">sf::MemoryInputStream</a>.</p>
+<p>Implemented in <a class="el" href="classsf_1_1FileInputStream.php#a768c5fdb3be79e2d71d1bce911f8741c">sf::FileInputStream</a>, and <a class="el" href="classsf_1_1MemoryInputStream.php#a7ad4bdf721f29de8f66421ff29e23ee4">sf::MemoryInputStream</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="include_2SFML_2System_2InputStream_8hpp_source.php">include/SFML/System/InputStream.hpp</a></li>
+<li><a class="el" href="InputStream_8hpp_source.php">InputStream.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <?php

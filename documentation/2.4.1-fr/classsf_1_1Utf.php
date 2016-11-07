@@ -36,7 +36,7 @@
 <p>Utility class providing generic functions for UTF conversions.  
  <a href="classsf_1_1Utf.php#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="include_2SFML_2System_2Utf_8hpp_source.php">Utf.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="Utf_8hpp_source.php">Utf.hpp</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;unsigned int N&gt;<br />
 class sf::Utf&lt; N &gt;</h3>
@@ -50,9 +50,9 @@ class sf::Utf&lt; N &gt;</h3>
 <li><a class="el" href="classsf_1_1Utf_3_0132_01_4.php" title="Specialization of the Utf template for UTF-32. ">sf::Utf&lt;32&gt;</a> (typedef'd to sf::Utf32) </li>
 </ul>
 
-<p>Definition at line <a class="el" href="include_2SFML_2System_2Utf_8hpp_source.php#l00041">41</a> of file <a class="el" href="include_2SFML_2System_2Utf_8hpp_source.php">include/SFML/System/Utf.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Utf_8hpp_source.php#l00041">41</a> of file <a class="el" href="Utf_8hpp_source.php">Utf.hpp</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="include_2SFML_2System_2Utf_8hpp_source.php">include/SFML/System/Utf.hpp</a></li>
+<li><a class="el" href="Utf_8hpp_source.php">Utf.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <?php

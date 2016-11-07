@@ -69,53 +69,53 @@
 
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
 <li>S
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142af8f2db5757f45a0576f1e299347fc88f">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142aca13014bf9ed5887d347060a0334ea5a">sf::Keyboard</a>
 </li>
 <li>SemiColon
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a9b22353efcc6a3dd0e17b2892b22baef">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a460ab09a36f9ed230504b89b9815de88">sf::Keyboard</a>
 </li>
 <li>SensorChanged
-: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aac175c7fb90d3b03cda554ada20d42795">sf::Event</a>
+: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aaadf9a44c788eb9467a83c074fbf12613">sf::Event</a>
 </li>
 <li>ServiceNotAvailable
-: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8af7bd449446db50f838fc5301fff40f27">sf::Http::Response</a>
+: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8ac4fffba9d5ad4c14171a1bbe4f6adf87">sf::Http::Response</a>
 </li>
 <li>ServiceReady
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba94cd5a9201b7ebf0c10739860614e38a">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3baea2ee2007d7843c21108bb686ef03757">sf::Ftp::Response</a>
 </li>
 <li>ServiceReadySoon
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba68f0497585e490250bc2985edb4201d3">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba22413357ade6b586f6ceb0d704f35075">sf::Ftp::Response</a>
 </li>
 <li>ServiceUnavailable
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba831d98246d1bf42ce95e7f75bb34d485">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba43022ddf49b68a4f5aff0bea7e09e89f">sf::Ftp::Response</a>
 </li>
 <li>Slash
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a0a4537ed394d4a2f800deef59fb3011c">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a7424bf901434a587a6c202c423e6786c">sf::Keyboard</a>
 </li>
 <li>Space
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a4a730305a8a8d016ab3ceb5e239cc3cb">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a6fdaa93b6b8d1a2b73bc239e9ada94ef">sf::Keyboard</a>
 </li>
 <li>SrcAlpha
-: <a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbba8b0cabd5aa52557b385848b8055cb270">sf::BlendMode</a>
+: <a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbaac0ae68df2930b4d616c3e7abeec7d41">sf::BlendMode</a>
 </li>
 <li>SrcColor
-: <a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbae3d90dc633cbb883554339e4303f0355">sf::BlendMode</a>
+: <a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbad679bb0ecaf15c188d7f2e1fab572188">sf::BlendMode</a>
 </li>
 <li>Stopped
-: <a class="el" href="classsf_1_1SoundSource.php#ac43af72c98c077500b239bc75b812f03ad00854a77b49463ac52454a98f1ba0ed">sf::SoundSource</a>
+: <a class="el" href="classsf_1_1SoundSource.php#ac43af72c98c077500b239bc75b812f03adabb01e8aa85b2f54b344890addf764a">sf::SoundSource</a>
 </li>
 <li>StrikeThrough
-: <a class="el" href="classsf_1_1Text.php#aa8add4aef484c6e6b20faff07452bd82a1f73626739a892db5b5fa0fc4f904132">sf::Text</a>
+: <a class="el" href="classsf_1_1Text.php#aa8add4aef484c6e6b20faff07452bd82a9ed1f5bb154c21269e1190c5aa97d479">sf::Text</a>
 </li>
 <li>Subtract
-: <a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32a1c1006d7453b982cb868d65ca439e75c">sf::BlendMode</a>
-, <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a4c5d9f9f166cace8b0db8967c96213fa">sf::Keyboard</a>
+: <a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32a14c825be24f8412fc5ed5b49f19bc0d0">sf::BlendMode</a>
+, <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a68983f67bd30d27b27c90d6794c78aa2">sf::Keyboard</a>
 </li>
 <li>SystemStatus
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3baa179c6310d607c920b23a2d6ce2d61a7">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba9bdd02ae119b8be639e778859ee74060">sf::Ftp::Response</a>
 </li>
 <li>SystemType
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3baf9f5fd830fbc98405658fcdd1ed4b958">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba78391f73aa11f07f1514c7d070b93c08">sf::Ftp::Response</a>
 </li>
 </ul>
 </div><!-- contents -->

@@ -123,11 +123,11 @@
 , <a class="el" href="classsf_1_1Utf_3_018_01_4.php#af1f15d9a772ee887be39e97431e15d32">sf::Utf&lt; 8 &gt;</a>
 </li>
 <li>create()
-: <a class="el" href="classsf_1_1Image.php#a2a67930e2fd9ad97cf004e918cf5832b">sf::Image</a>
+: <a class="el" href="classsf_1_1Image.php#a1c2b960ea12bdbb29e80934ce5268ebf">sf::Image</a>
 , <a class="el" href="classsf_1_1RenderTexture.php#aefbb76eb3b87e368ab974b2660931ccb">sf::RenderTexture</a>
 , <a class="el" href="classsf_1_1Socket.php#af1dd898f7aa3ead7ff7b2d1c20e97781">sf::Socket</a>
 , <a class="el" href="classsf_1_1Texture.php#a89b4c7d204acf1033c3a1b6e0a3ad0a3">sf::Texture</a>
-, <a class="el" href="classsf_1_1Window.php#acf67483dc21f08d65c8835b3889b41b2">sf::Window</a>
+, <a class="el" href="classsf_1_1Window.php#a30e6edf2162f8dbff61023b9de5d961d">sf::Window</a>
 </li>
 <li>createDirectory()
 : <a class="el" href="classsf_1_1Ftp.php#a247b84c4b25da37804218c2b748c4787">sf::Ftp</a>

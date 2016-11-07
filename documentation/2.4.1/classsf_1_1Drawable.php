@@ -41,29 +41,25 @@
 <p>Abstract base class for objects that can be drawn to a render target.  
  <a href="classsf_1_1Drawable.php#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="include_2SFML_2Graphics_2Drawable_8hpp_source.php">Drawable.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="Drawable_8hpp_source.php">Drawable.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for sf::Drawable:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classsf_1_1Drawable.png" usemap="#sf::Drawable_map" alt=""/>
   <map id="sf::Drawable_map" name="sf::Drawable_map">
-<area href="classsf_1_1Shape.php" title="Base class for textured shapes with outline. " alt="sf::Shape" shape="rect" coords="108,56,206,80"/>
-<area href="classsf_1_1Shape.php" title="Base class for textured shapes with outline. " alt="sf::Shape" shape="rect" coords="108,112,206,136"/>
-<area href="classsf_1_1Sprite.php" title="Drawable representation of a texture, with its own transformations, color, etc. " alt="sf::Sprite" shape="rect" coords="108,168,206,192"/>
-<area href="classsf_1_1Sprite.php" title="Drawable representation of a texture, with its own transformations, color, etc. " alt="sf::Sprite" shape="rect" coords="108,224,206,248"/>
-<area href="classsf_1_1Text.php" title="Graphical text that can be drawn to a render target. " alt="sf::Text" shape="rect" coords="108,280,206,304"/>
-<area href="classsf_1_1Text.php" title="Graphical text that can be drawn to a render target. " alt="sf::Text" shape="rect" coords="108,336,206,360"/>
-<area href="classsf_1_1VertexArray.php" title="Define a set of one or more 2D primitives. " alt="sf::VertexArray" shape="rect" coords="108,392,206,416"/>
-<area href="classsf_1_1VertexArray.php" title="Define a set of one or more 2D primitives. " alt="sf::VertexArray" shape="rect" coords="108,448,206,472"/>
+<area href="classsf_1_1Shape.php" title="Base class for textured shapes with outline. " alt="sf::Shape" shape="rect" coords="130,56,250,80"/>
+<area href="classsf_1_1Sprite.php" title="Drawable representation of a texture, with its own transformations, color, etc. " alt="sf::Sprite" shape="rect" coords="260,56,380,80"/>
+<area href="classsf_1_1Text.php" title="Graphical text that can be drawn to a render target. " alt="sf::Text" shape="rect" coords="390,56,510,80"/>
+<area href="classsf_1_1VertexArray.php" title="Define a set of one or more 2D primitives. " alt="sf::VertexArray" shape="rect" coords="520,56,640,80"/>
+<area href="classsf_1_1CircleShape.php" title="Specialized shape representing a circle. " alt="sf::CircleShape" shape="rect" coords="0,112,120,136"/>
+<area href="classsf_1_1ConvexShape.php" title="Specialized shape representing a convex polygon. " alt="sf::ConvexShape" shape="rect" coords="130,112,250,136"/>
+<area href="classsf_1_1RectangleShape.php" title="Specialized shape representing a rectangle. " alt="sf::RectangleShape" shape="rect" coords="260,112,380,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a906002f2df7beb5edbddf5bbef96f120"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.php#a906002f2df7beb5edbddf5bbef96f120">~Drawable</a> ()</td></tr>
-<tr class="memdesc:a906002f2df7beb5edbddf5bbef96f120"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <a href="#a906002f2df7beb5edbddf5bbef96f120">More...</a><br /></td></tr>
-<tr class="separator:a906002f2df7beb5edbddf5bbef96f120"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a906002f2df7beb5edbddf5bbef96f120"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.php#a906002f2df7beb5edbddf5bbef96f120">~Drawable</a> ()</td></tr>
 <tr class="memdesc:a906002f2df7beb5edbddf5bbef96f120"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <a href="#a906002f2df7beb5edbddf5bbef96f120">More...</a><br /></td></tr>
 <tr class="separator:a906002f2df7beb5edbddf5bbef96f120"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -73,15 +69,12 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a35fc1e68eb2b7eda0ec83b9f02a50caf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.php#a35fc1e68eb2b7eda0ec83b9f02a50caf">draw</a> (<a class="el" href="classsf_1_1RenderTarget.php">RenderTarget</a> &amp;target, <a class="el" href="classsf_1_1RenderStates.php">RenderStates</a> states) const  =0</td></tr>
 <tr class="memdesc:a35fc1e68eb2b7eda0ec83b9f02a50caf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the object to a render target.  <a href="#a35fc1e68eb2b7eda0ec83b9f02a50caf">More...</a><br /></td></tr>
 <tr class="separator:a35fc1e68eb2b7eda0ec83b9f02a50caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35fc1e68eb2b7eda0ec83b9f02a50caf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.php#a35fc1e68eb2b7eda0ec83b9f02a50caf">draw</a> (<a class="el" href="classsf_1_1RenderTarget.php">RenderTarget</a> &amp;target, <a class="el" href="classsf_1_1RenderStates.php">RenderStates</a> states) const  =0</td></tr>
-<tr class="memdesc:a35fc1e68eb2b7eda0ec83b9f02a50caf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the object to a render target.  <a href="#a35fc1e68eb2b7eda0ec83b9f02a50caf">More...</a><br /></td></tr>
-<tr class="separator:a35fc1e68eb2b7eda0ec83b9f02a50caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a564c389faf3e8638c546c12cdbdda81d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a564c389faf3e8638c546c12cdbdda81d"></a>
+<tr class="memitem:aa5afc6f82b7b587ed5ada4d227ce32aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5afc6f82b7b587ed5ada4d227ce32aa"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>RenderTarget</b></td></tr>
-<tr class="separator:a564c389faf3e8638c546c12cdbdda81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:aa5afc6f82b7b587ed5ada4d227ce32aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abstract base class for objects that can be drawn to a render target. </p>
@@ -102,7 +95,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RenderTarget</b></td
 <div class="line">        target.<a class="code" href="classsf_1_1RenderTarget.php#a12417a3bcc245c41d957b29583556f39">draw</a>(m_sprite, states);</div>
 <div class="line"></div>
 <div class="line">        <span class="comment">// ... or use the low-level API</span></div>
-<div class="line">        states.<a class="code" href="classsf_1_1RenderStates.php#ad7eb50453917561fa7a9df7f4c53f1fd">texture</a> = &amp;m_texture;</div>
+<div class="line">        states.<a class="code" href="classsf_1_1RenderStates.php#a457fc5a41731889de9cf39cf9b3436c3">texture</a> = &amp;m_texture;</div>
 <div class="line">        target.<a class="code" href="classsf_1_1RenderTarget.php#a12417a3bcc245c41d957b29583556f39">draw</a>(m_vertices, states);</div>
 <div class="line"></div>
 <div class="line">        <span class="comment">// ... or draw with OpenGL directly</span></div>
@@ -117,7 +110,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RenderTarget</b></td
 <div class="line">};</div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1RenderTarget.php" title="Base class for all render targets (window, texture, ...) ">sf::RenderTarget</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2Drawable_8hpp_source.php#l00044">44</a> of file <a class="el" href="include_2SFML_2Graphics_2Drawable_8hpp_source.php">include/SFML/Graphics/Drawable.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Drawable_8hpp_source.php#l00044">44</a> of file <a class="el" href="Drawable_8hpp_source.php">Drawable.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a906002f2df7beb5edbddf5bbef96f120"></a>
 <div class="memitem">
@@ -142,34 +135,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RenderTarget</b></td
 
 <p>Virtual destructor. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2Drawable_8hpp_source.php#l00052">52</a> of file <a class="el" href="include_2SFML_2Graphics_2Drawable_8hpp_source.php">include/SFML/Graphics/Drawable.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a906002f2df7beb5edbddf5bbef96f120"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual sf::Drawable::~Drawable </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Virtual destructor. </p>
-
-<p>Definition at line <a class="el" href="shared_2include_2SFML_2Graphics_2Drawable_8hpp_source.php#l00052">52</a> of file <a class="el" href="shared_2include_2SFML_2Graphics_2Drawable_8hpp_source.php">shared/include/SFML/Graphics/Drawable.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Drawable_8hpp_source.php#l00052">52</a> of file <a class="el" href="Drawable_8hpp_source.php">Drawable.hpp</a>.</p>
 
 </div>
 </div>
@@ -218,52 +184,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RenderTarget</b></td
 
 </div>
 </div>
-<a class="anchor" id="a35fc1e68eb2b7eda0ec83b9f02a50caf"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void sf::Drawable::draw </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classsf_1_1RenderTarget.php">RenderTarget</a> &amp;&#160;</td>
-          <td class="paramname"><em>target</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classsf_1_1RenderStates.php">RenderStates</a>&#160;</td>
-          <td class="paramname"><em>states</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Draw the object to a render target. </p>
-<p>This is a pure virtual function that has to be implemented by the derived class to define how the drawable should be drawn.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">target</td><td>Render target to draw to </td></tr>
-    <tr><td class="paramname">states</td><td>Current render states </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="include_2SFML_2Graphics_2Drawable_8hpp_source.php">include/SFML/Graphics/Drawable.hpp</a></li>
+<li><a class="el" href="Drawable_8hpp_source.php">Drawable.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <?php

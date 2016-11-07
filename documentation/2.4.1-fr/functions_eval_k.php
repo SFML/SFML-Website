@@ -69,16 +69,16 @@
 
 <h3><a class="anchor" id="index_k"></a>- k -</h3><ul>
 <li>K
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a4c6dcb66c56241d83674816313d921cb">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a25beb62393ff666a4bec18ea2a66f3f2">sf::Keyboard</a>
 </li>
 <li>KeyCount
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142ab0c85bd27a3228c194265dc62afe9d6e">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a93e6ffa0320fe9b2f29aec14a58be36b">sf::Keyboard</a>
 </li>
 <li>KeyPressed
-: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aaadc5747df45354b4d2c89558c3f0d1a4">sf::Event</a>
+: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aac3c7abfaa98c73bfe6be0b57df09c71b">sf::Event</a>
 </li>
 <li>KeyReleased
-: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aa1df4a1c59bf3a4613f3d577ce137b8f1">sf::Event</a>
+: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aaa5bcc1e603d5a6f4c137af39558bd5d1">sf::Event</a>
 </li>
 </ul>
 </div><!-- contents -->

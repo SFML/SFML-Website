@@ -73,20 +73,20 @@
 : <a class="el" href="classsf_1_1Color.php#a6a5256ca24a4f9f0e0808f6fc23e01e1">sf::Color</a>
 </li>
 <li>R
-: <a class="el" href="classsf_1_1Joystick.php#a48db337092c2e263774f94de6d50baa7a668cd1a4a624c7867fd93b834c4d7333">sf::Joystick</a>
-, <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a53bc68421ea750429616e9dd632304e8">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Joystick.php#a48db337092c2e263774f94de6d50baa7aeebbcdb0828850f4d69e6a084801fab8">sf::Joystick</a>
+, <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142add852cadaa6fff2d982bbab3551c31d0">sf::Keyboard</a>
 </li>
 <li>RAlt
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142ad2d04ac70c7683f01e431c5aa4f84072">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a21dcf098233296462bc7c632b93369cc">sf::Keyboard</a>
 </li>
 <li>RangeNotSatisfiable
-: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8abbea7e411ce71a938ffc1cb5cacc0a49">sf::Http::Response</a>
+: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8a12533d00093b190e6d4c0076577e2239">sf::Http::Response</a>
 </li>
 <li>RBracket
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142acac262f9ac629ef88658b6f2a2369d37">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a578253a70b48e61830aa08292d44680f">sf::Keyboard</a>
 </li>
 <li>RControl
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a712cf4eba56b046bde7dddb380c3bf97">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a275d3fd207a9c0b22ce404012c71dc17">sf::Keyboard</a>
 </li>
 <li>read()
 : <a class="el" href="classsf_1_1FileInputStream.php#ad1e94c4152429f485db224c44ee1eb50">sf::FileInputStream</a>
@@ -97,16 +97,16 @@
 </li>
 <li>receive()
 : <a class="el" href="classsf_1_1TcpSocket.php#a90ce50811ea61d4f00efc62bb99ae1af">sf::TcpSocket</a>
-, <a class="el" href="classsf_1_1UdpSocket.php#ade9ca0f7ed7919136917b0b997a9833a">sf::UdpSocket</a>
+, <a class="el" href="classsf_1_1UdpSocket.php#afdd5c655d00c96222d5b477fc057a22b">sf::UdpSocket</a>
 </li>
 <li>Rect()
-: <a class="el" href="classsf_1_1Rect.php#a27fdf85caa6d12caeeff78913cc59936">sf::Rect&lt; T &gt;</a>
+: <a class="el" href="classsf_1_1Rect.php#a0f87ebaef9722a6222fd2e04ce8efb37">sf::Rect&lt; T &gt;</a>
 </li>
 <li>RectangleShape()
 : <a class="el" href="classsf_1_1RectangleShape.php#a83a2be157ebee85c95ed491c3e78dd7c">sf::RectangleShape</a>
 </li>
 <li>Red
-: <a class="el" href="classsf_1_1Color.php#a7052b1c5408a953e25f9691e0e828c9d">sf::Color</a>
+: <a class="el" href="classsf_1_1Color.php#a127dbf55db9c07d0fa8f4bfcbb97594a">sf::Color</a>
 </li>
 <li>registerReader()
 : <a class="el" href="classsf_1_1SoundFileFactory.php#aeee396bfdbb6ac24c57e5c73c30ec105">sf::SoundFileFactory</a>
@@ -115,7 +115,7 @@
 : <a class="el" href="classsf_1_1SoundFileFactory.php#abb6e082ea3fedf22c8648113d1be5755">sf::SoundFileFactory</a>
 </li>
 <li>Regular
-: <a class="el" href="classsf_1_1Text.php#aa8add4aef484c6e6b20faff07452bd82a65dbbdd9d938efe1eea1e2f3b7d7c944">sf::Text</a>
+: <a class="el" href="classsf_1_1Text.php#aa8add4aef484c6e6b20faff07452bd82a2af9ae5e1cda126570f744448e0caa32">sf::Text</a>
 </li>
 <li>remove()
 : <a class="el" href="classsf_1_1SocketSelector.php#a98b6ab693a65b82caa375639232357c1">sf::SocketSelector</a>
@@ -124,7 +124,7 @@
 : <a class="el" href="classsf_1_1Ftp.php#a8f99251d7153e1dc26723e4006deb764">sf::Ftp</a>
 </li>
 <li>RenderStates()
-: <a class="el" href="classsf_1_1RenderStates.php#a885bf14070d0d5391f062f62b270b7d0">sf::RenderStates</a>
+: <a class="el" href="classsf_1_1RenderStates.php#a39f94233f464739d8d8522f3aefe97d0">sf::RenderStates</a>
 </li>
 <li>RenderTarget()
 : <a class="el" href="classsf_1_1RenderTarget.php#a2997c96cbd93cb8ce0aba2ddae35b86f">sf::RenderTarget</a>
@@ -133,10 +133,10 @@
 : <a class="el" href="classsf_1_1RenderTexture.php#a19ee6e5b4c40ad251803389b3953a9c6">sf::RenderTexture</a>
 </li>
 <li>RenderWindow()
-: <a class="el" href="classsf_1_1RenderWindow.php#aebef983e01f677bf5a66cefc4d547647">sf::RenderWindow</a>
+: <a class="el" href="classsf_1_1RenderWindow.php#a839bbf336bdcafb084dafc3076fc9021">sf::RenderWindow</a>
 </li>
 <li>replace()
-: <a class="el" href="classsf_1_1String.php#ad460e628c287b0fa88deba2eb0b6744b">sf::String</a>
+: <a class="el" href="classsf_1_1String.php#a82bbfee2bf23c641e5361ad505c07921">sf::String</a>
 </li>
 <li>Request()
 : <a class="el" href="classsf_1_1Http_1_1Request.php#a8e89d9e8ffcc1163259b35d79809a61c">sf::Http::Request</a>
@@ -151,7 +151,7 @@
 : <a class="el" href="classsf_1_1Sound.php#acb7289d45e06fb76b8292ac84beb82a7">sf::Sound</a>
 </li>
 <li>ResetContent
-: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8ab9506a38cd6c00048aab39575d4469be">sf::Http::Response</a>
+: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8a77327cc2a5e34cc64030b322e61d12a8">sf::Http::Response</a>
 </li>
 <li>resetGLStates()
 : <a class="el" href="classsf_1_1RenderTarget.php#aac7504990d27dada4bfe3c7866920765">sf::RenderTarget</a>
@@ -160,7 +160,7 @@
 : <a class="el" href="classsf_1_1VertexArray.php#a0c0fe239e8f9a54e64d3bbc96bf548c0">sf::VertexArray</a>
 </li>
 <li>Resized
-: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aac5a9f3d76cbf4a577fa982623f3198eb">sf::Event</a>
+: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aa67fd26d7e520bc6722db3ff47ef24941">sf::Event</a>
 </li>
 <li>Response()
 : <a class="el" href="classsf_1_1Ftp_1_1Response.php#af300fffd4862774102f978eb22f85d9b">sf::Ftp::Response</a>
@@ -170,28 +170,28 @@
 : <a class="el" href="classsf_1_1Clock.php#a123e2627f2943e5ecaa1db0c7df3231b">sf::Clock</a>
 </li>
 <li>RestartMarkerReply
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba9c0f2a9ad7404aa610eb835ba06724a4">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba07e06d3326ba2d078583bef93930d909">sf::Ftp::Response</a>
 </li>
 <li>Return
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a45990e46db316fb01b760bce6b5fcf32">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142ac291de81bdee518d636bc359f2ca77de">sf::Keyboard</a>
 </li>
 <li>ReverseSubtract
-: <a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32aae64991689dfb87f2b607706a1b11835">sf::BlendMode</a>
+: <a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32a2d04acf59e91811128e7d0ef076f65f0">sf::BlendMode</a>
 </li>
 <li>Right
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a30e643d209ea070c73ca1b5602e10ff4">sf::Keyboard</a>
-, <a class="el" href="classsf_1_1Mouse.php#a4fb128be433f9aafe66bc0c605daaa90a64bbf245db73f3b156bc65aa30666831">sf::Mouse</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a2aeb083dea103a8e36b6850b51ef3632">sf::Keyboard</a>
+, <a class="el" href="classsf_1_1Mouse.php#a4fb128be433f9aafe66bc0c605daaa90af2cff24ab6c26daf079b11189f982fc4">sf::Mouse</a>
 </li>
 <li>rotate()
-: <a class="el" href="classsf_1_1Transform.php#a3e548c3c9e3fb9d4bd43cf852669e555">sf::Transform</a>
+: <a class="el" href="classsf_1_1Transform.php#af0b7cc3fed36d0fa22d5d331a779eee2">sf::Transform</a>
 , <a class="el" href="classsf_1_1Transformable.php#af8a5ffddc0d93f238fee3bf8efe1ebda">sf::Transformable</a>
 , <a class="el" href="classsf_1_1View.php#a5fd3901aae1845586ca40add94faa378">sf::View</a>
 </li>
 <li>RShift
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a50b80fe49a8a6ec9561e7a41d756f5cc">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a5be69e3b2f25bd5f4eed75d063f42b90">sf::Keyboard</a>
 </li>
 <li>RSystem
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a9a33b3424ae40d9444998c082e043023">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142ac1b3fd7424feeda242cedbb64f3f5a7f">sf::Keyboard</a>
 </li>
 </ul>
 </div><!-- contents -->

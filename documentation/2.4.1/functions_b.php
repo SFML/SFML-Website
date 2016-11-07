@@ -73,28 +73,28 @@
 : <a class="el" href="classsf_1_1Color.php#a6707aedd0609c8920e12df5d7abc53cb">sf::Color</a>
 </li>
 <li>B
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a4517143863748ea3f964914421b2e505">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142aca3142235e5c4199f0b8b45d8368ef94">sf::Keyboard</a>
 </li>
 <li>BackSlash
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a6766398940ad5791b5acfdc6238ecb74">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a536df84e73859aa44e11e192459470b6">sf::Keyboard</a>
 </li>
 <li>BackSpace
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142ad47962f22c670150ee04798fda2030a7">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a33aeaab900abcd01eebf2fcc4f6d97e2">sf::Keyboard</a>
 </li>
 <li>BadCommandSequence
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba0547dfb381e953f77b7c5a2733c40613">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3bad0c7ab07f01c1f7af16a1852650d7c47">sf::Ftp::Response</a>
 </li>
 <li>BadGateway
-: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8ac04a161c51d59bbf05d4bd9e17660520">sf::Http::Response</a>
+: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8aad0cbad4cdaf448beb763e86bc1f747c">sf::Http::Response</a>
 </li>
 <li>BadRequest
-: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8a12b181a7528db8ca10d6da300a176c08">sf::Http::Response</a>
+: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8a3f88a714cf5483ee22f9051e5a3c080a">sf::Http::Response</a>
 </li>
 <li>begin()
 : <a class="el" href="classsf_1_1String.php#a8ec30ddc08e3a6bd11c99aed782f6dfe">sf::String</a>
 </li>
 <li>Binary
-: <a class="el" href="classsf_1_1Ftp.php#a1cd6b89ad23253f6d97e6d4ca4d558cba8d9a3497be63da2bf7ed663b1bfd7449">sf::Ftp</a>
+: <a class="el" href="classsf_1_1Ftp.php#a1cd6b89ad23253f6d97e6d4ca4d558cba6f253b362639fb5e059dc292762a21ee">sf::Ftp</a>
 </li>
 <li>bind()
 : <a class="el" href="classsf_1_1Shader.php#a09778f78afcbeb854d608c8dacd8ea30">sf::Shader</a>
@@ -105,25 +105,25 @@
 : <a class="el" href="classsf_1_1VideoMode.php#aa080f1ef96a1008d58b1920eceb189df">sf::VideoMode</a>
 </li>
 <li>Black
-: <a class="el" href="classsf_1_1Color.php#a25bf5208c8c7668f1a3836acbbb23986">sf::Color</a>
+: <a class="el" href="classsf_1_1Color.php#a77c688197b981338f0b19dc58bd2facd">sf::Color</a>
 </li>
 <li>BlendMode()
-: <a class="el" href="structsf_1_1BlendMode.php#a7faef75eae1fb47bbe93f45f38e3d345">sf::BlendMode</a>
+: <a class="el" href="structsf_1_1BlendMode.php#a69a12c596114e77126616e7e0f7d798b">sf::BlendMode</a>
 </li>
 <li>blendMode
 : <a class="el" href="classsf_1_1RenderStates.php#ad6ac87f1b5006dae7ebfee4b5d40f5a8">sf::RenderStates</a>
 </li>
 <li>Blue
-: <a class="el" href="classsf_1_1Color.php#a6d901f24edce210decaeac1ccfdb28a9">sf::Color</a>
+: <a class="el" href="classsf_1_1Color.php#ab03770d4817426b2614cfc33cf0e245c">sf::Color</a>
 </li>
 <li>Bold
-: <a class="el" href="classsf_1_1Text.php#aa8add4aef484c6e6b20faff07452bd82a140bf2d7252e8ec458eca939783c0c5c">sf::Text</a>
+: <a class="el" href="classsf_1_1Text.php#aa8add4aef484c6e6b20faff07452bd82af1b47f98fb1e10509ba930a596987171">sf::Text</a>
 </li>
 <li>bounds
 : <a class="el" href="classsf_1_1Glyph.php#a6f3c892093167914adc31e52e5923f4b">sf::Glyph</a>
 </li>
 <li>Broadcast
-: <a class="el" href="classsf_1_1IpAddress.php#aefb978156901e01e2d9642815be10abe">sf::IpAddress</a>
+: <a class="el" href="classsf_1_1IpAddress.php#aa93d1d57b65d243f2baf804b6035465c">sf::IpAddress</a>
 </li>
 <li>button
 : <a class="el" href="structsf_1_1Event_1_1JoystickButtonEvent.php#a6412e698a2f7904c5aa875a0d1b34da4">sf::Event::JoystickButtonEvent</a>
@@ -133,8 +133,8 @@
 : <a class="el" href="classsf_1_1Mouse.php#a4fb128be433f9aafe66bc0c605daaa90">sf::Mouse</a>
 </li>
 <li>ButtonCount
-: <a class="el" href="classsf_1_1Joystick.php#a3cbd251ae1151f673398b12bb7926139a34b2a9c61551a32ea6f60004963c7252">sf::Joystick</a>
-, <a class="el" href="classsf_1_1Mouse.php#a4fb128be433f9aafe66bc0c605daaa90a8912c097ec6ffbd248c3057b4b95685d">sf::Mouse</a>
+: <a class="el" href="classsf_1_1Joystick.php#a951a7c775921304a5f3443c6e2bb4d65a2f1b8a0a59f2c12a4775c0e1e69e1816">sf::Joystick</a>
+, <a class="el" href="classsf_1_1Mouse.php#a4fb128be433f9aafe66bc0c605daaa90a52a1d434289774240ddaa22496762402">sf::Mouse</a>
 </li>
 </ul>
 </div><!-- contents -->

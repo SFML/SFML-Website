@@ -77,7 +77,7 @@
 <li>loadFromFile()
 : <a class="el" href="classsf_1_1Font.php#ab020052ef4e01f6c749a85571c0f3fd1">sf::Font</a>
 , <a class="el" href="classsf_1_1Image.php#a9e4f2aa8e36d0cabde5ed5a4ef80290b">sf::Image</a>
-, <a class="el" href="classsf_1_1Shader.php#a053a5632848ebaca2fcd8ba29abe9e6e">sf::Shader</a>
+, <a class="el" href="classsf_1_1Shader.php#ac9d7289966fcef562eeb92271c03e3dc">sf::Shader</a>
 , <a class="el" href="classsf_1_1SoundBuffer.php#a2be6a8025c97eb622a7dff6cf2594394">sf::SoundBuffer</a>
 , <a class="el" href="classsf_1_1Texture.php#a8e1b56eabfe33e2e0e1cb03712c7fcc7">sf::Texture</a>
 </li>
@@ -87,7 +87,7 @@
 <li>loadFromMemory()
 : <a class="el" href="classsf_1_1Font.php#abf2f8d6de31eb4e1db02e061c323e346">sf::Font</a>
 , <a class="el" href="classsf_1_1Image.php#aaa6c7afa5851a51cec6ab438faa7354c">sf::Image</a>
-, <a class="el" href="classsf_1_1Shader.php#ac92d46bf71dff2d791117e4e472148aa">sf::Shader</a>
+, <a class="el" href="classsf_1_1Shader.php#ae34e94070d7547a890166b7993658a9b">sf::Shader</a>
 , <a class="el" href="classsf_1_1SoundBuffer.php#af8cfa5599739a7edae69c5cba273d33f">sf::SoundBuffer</a>
 , <a class="el" href="classsf_1_1Texture.php#a2c4adb19dd4cbee0a588eeb85e52a249">sf::Texture</a>
 </li>
@@ -97,7 +97,7 @@
 <li>loadFromStream()
 : <a class="el" href="classsf_1_1Font.php#abc3f37a354ce8b9a21f8eb93bd9fdafb">sf::Font</a>
 , <a class="el" href="classsf_1_1Image.php#a21122ded0e8368bb06ed3b9acfbfb501">sf::Image</a>
-, <a class="el" href="classsf_1_1Shader.php#a3b7958159ffb5596c4babc3052e35465">sf::Shader</a>
+, <a class="el" href="classsf_1_1Shader.php#aa08f1c091806205e6654db9d83197fcd">sf::Shader</a>
 , <a class="el" href="classsf_1_1SoundBuffer.php#ad292156b1e01f6dabd4c0c277d5e079e">sf::SoundBuffer</a>
 , <a class="el" href="classsf_1_1Texture.php#a786b486a46b1c6d1c16ff4af61ecc601">sf::Texture</a>
 </li>

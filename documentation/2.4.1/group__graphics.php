@@ -112,59 +112,18 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:ga5ee56ac1339984909610713096283b1b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__graphics.php#ga5ee56ac1339984909610713096283b1b">sf::PrimitiveType</a> { <br />
-&#160;&#160;<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1ba85cf551ca780a29ec5df3ee9fc282c22">sf::Points</a>, 
-<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1ba2017328f9eda40a9aade94d5c45d0e8c">sf::Lines</a>, 
-<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1baa58596ca614193671ca68cc213d8ecf1">sf::LineStrip</a>, 
-<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1babdd5e75b8944a886fdaa30e5bb3adc0d">sf::Triangles</a>, 
+&#160;&#160;<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1bac7097d3e01778b9318def1f7ac35a785">sf::Points</a>, 
+<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1ba2bf015eeff9f798dfc3d6d744d669f1e">sf::Lines</a>, 
+<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1ba14d9eeec2c7c314f239a57bde35949fa">sf::LineStrip</a>, 
+<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1ba880a7aa72c20b9f9beb7eb64d2434670">sf::Triangles</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1bae9b9616d82cb0d0dd4fe0c9e14f7a22a">sf::TriangleStrip</a>, 
-<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1ba00348a97a2ba25f9d9325d5b9933abc3">sf::TriangleFan</a>, 
-<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1bac968add05250b2cf59350dc68043a3c0">sf::Quads</a>, 
-<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1bafc070260a0222df367922706bbeb905a">sf::LinesStrip</a> = LineStrip, 
+&#160;&#160;<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1ba05e55fec6d32c2fc8328f94d07f91184">sf::TriangleStrip</a>, 
+<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1ba363f7762b33706c805c6a451ad554f5e">sf::TriangleFan</a>, 
+<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1ba5041359b76b4bd3d3e6ef738826b8743">sf::Quads</a>, 
+<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1ba5b09910f5d0f39641342184ccd0d1de3">sf::LinesStrip</a> = LineStrip, 
 <br />
-&#160;&#160;<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1baf5ef0ffa5d13f9ea3e0eb18a2a8da7fb">sf::TrianglesStrip</a> = TriangleStrip, 
-<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1ba698ecd8ec938b4132412b8da44a1a6be">sf::TrianglesFan</a> = TriangleFan, 
-<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1ba85cf551ca780a29ec5df3ee9fc282c22">sf::Points</a>, 
-<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1ba2017328f9eda40a9aade94d5c45d0e8c">sf::Lines</a>, 
-<br />
-&#160;&#160;<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1baa58596ca614193671ca68cc213d8ecf1">sf::LineStrip</a>, 
-<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1babdd5e75b8944a886fdaa30e5bb3adc0d">sf::Triangles</a>, 
-<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1bae9b9616d82cb0d0dd4fe0c9e14f7a22a">sf::TriangleStrip</a>, 
-<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1ba00348a97a2ba25f9d9325d5b9933abc3">sf::TriangleFan</a>, 
-<br />
-&#160;&#160;<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1bac968add05250b2cf59350dc68043a3c0">sf::Quads</a>, 
-<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1bafc070260a0222df367922706bbeb905a">sf::LinesStrip</a> = LineStrip, 
-<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1baf5ef0ffa5d13f9ea3e0eb18a2a8da7fb">sf::TrianglesStrip</a> = TriangleStrip, 
-<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1ba698ecd8ec938b4132412b8da44a1a6be">sf::TrianglesFan</a> = TriangleFan
-<br />
- }<tr class="memdesc:ga5ee56ac1339984909610713096283b1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types of primitives that a <a class="el" href="classsf_1_1VertexArray.php" title="Define a set of one or more 2D primitives. ">sf::VertexArray</a> can render.  <a href="group__graphics.php#ga5ee56ac1339984909610713096283b1b">More...</a><br /></td></tr>
-<tr class="separator:ga5ee56ac1339984909610713096283b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:ga5ee56ac1339984909610713096283b1b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__graphics.php#ga5ee56ac1339984909610713096283b1b">sf::PrimitiveType</a> { <br />
-&#160;&#160;<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1ba85cf551ca780a29ec5df3ee9fc282c22">sf::Points</a>, 
-<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1ba2017328f9eda40a9aade94d5c45d0e8c">sf::Lines</a>, 
-<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1baa58596ca614193671ca68cc213d8ecf1">sf::LineStrip</a>, 
-<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1babdd5e75b8944a886fdaa30e5bb3adc0d">sf::Triangles</a>, 
-<br />
-&#160;&#160;<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1bae9b9616d82cb0d0dd4fe0c9e14f7a22a">sf::TriangleStrip</a>, 
-<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1ba00348a97a2ba25f9d9325d5b9933abc3">sf::TriangleFan</a>, 
-<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1bac968add05250b2cf59350dc68043a3c0">sf::Quads</a>, 
-<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1bafc070260a0222df367922706bbeb905a">sf::LinesStrip</a> = LineStrip, 
-<br />
-&#160;&#160;<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1baf5ef0ffa5d13f9ea3e0eb18a2a8da7fb">sf::TrianglesStrip</a> = TriangleStrip, 
-<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1ba698ecd8ec938b4132412b8da44a1a6be">sf::TrianglesFan</a> = TriangleFan, 
-<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1ba85cf551ca780a29ec5df3ee9fc282c22">sf::Points</a>, 
-<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1ba2017328f9eda40a9aade94d5c45d0e8c">sf::Lines</a>, 
-<br />
-&#160;&#160;<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1baa58596ca614193671ca68cc213d8ecf1">sf::LineStrip</a>, 
-<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1babdd5e75b8944a886fdaa30e5bb3adc0d">sf::Triangles</a>, 
-<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1bae9b9616d82cb0d0dd4fe0c9e14f7a22a">sf::TriangleStrip</a>, 
-<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1ba00348a97a2ba25f9d9325d5b9933abc3">sf::TriangleFan</a>, 
-<br />
-&#160;&#160;<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1bac968add05250b2cf59350dc68043a3c0">sf::Quads</a>, 
-<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1bafc070260a0222df367922706bbeb905a">sf::LinesStrip</a> = LineStrip, 
-<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1baf5ef0ffa5d13f9ea3e0eb18a2a8da7fb">sf::TrianglesStrip</a> = TriangleStrip, 
-<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1ba698ecd8ec938b4132412b8da44a1a6be">sf::TrianglesFan</a> = TriangleFan
+&#160;&#160;<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1ba66643dbbb24bbacb405973ed80eebae0">sf::TrianglesStrip</a> = TriangleStrip, 
+<a class="el" href="group__graphics.php#gga5ee56ac1339984909610713096283b1ba5338a2c6d922151fe50f235036af8a20">sf::TrianglesFan</a> = TriangleFan
 <br />
  }<tr class="memdesc:ga5ee56ac1339984909610713096283b1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types of primitives that a <a class="el" href="classsf_1_1VertexArray.php" title="Define a set of one or more 2D primitives. ">sf::VertexArray</a> can render.  <a href="group__graphics.php#ga5ee56ac1339984909610713096283b1b">More...</a><br /></td></tr>
 <tr class="separator:ga5ee56ac1339984909610713096283b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,160 +145,39 @@ Enumerations</h2></td></tr>
 <p>Types of primitives that a <a class="el" href="classsf_1_1VertexArray.php" title="Define a set of one or more 2D primitives. ">sf::VertexArray</a> can render. </p>
 <p>Points and lines have no area, therefore their thickness will always be 1 pixel, regardless the current transform and view. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1ba85cf551ca780a29ec5df3ee9fc282c22"></a>Points&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1bac7097d3e01778b9318def1f7ac35a785"></a>Points&#160;</td><td class="fielddoc">
 <p>List of individual points. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1ba2017328f9eda40a9aade94d5c45d0e8c"></a>Lines&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1ba2bf015eeff9f798dfc3d6d744d669f1e"></a>Lines&#160;</td><td class="fielddoc">
 <p>List of individual lines. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1baa58596ca614193671ca68cc213d8ecf1"></a>LineStrip&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1ba14d9eeec2c7c314f239a57bde35949fa"></a>LineStrip&#160;</td><td class="fielddoc">
 <p>List of connected lines, a point uses the previous point to form a line. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1babdd5e75b8944a886fdaa30e5bb3adc0d"></a>Triangles&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1ba880a7aa72c20b9f9beb7eb64d2434670"></a>Triangles&#160;</td><td class="fielddoc">
 <p>List of individual triangles. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1bae9b9616d82cb0d0dd4fe0c9e14f7a22a"></a>TriangleStrip&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1ba05e55fec6d32c2fc8328f94d07f91184"></a>TriangleStrip&#160;</td><td class="fielddoc">
 <p>List of connected triangles, a point uses the two previous points to form a triangle. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1ba00348a97a2ba25f9d9325d5b9933abc3"></a>TriangleFan&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1ba363f7762b33706c805c6a451ad554f5e"></a>TriangleFan&#160;</td><td class="fielddoc">
 <p>List of connected triangles, a point uses the common center and the previous point to form a triangle. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1bac968add05250b2cf59350dc68043a3c0"></a>Quads&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1ba5041359b76b4bd3d3e6ef738826b8743"></a>Quads&#160;</td><td class="fielddoc">
 <p>List of individual quads (deprecated, don't work with OpenGL ES) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1bafc070260a0222df367922706bbeb905a"></a>LinesStrip&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1ba5b09910f5d0f39641342184ccd0d1de3"></a>LinesStrip&#160;</td><td class="fielddoc">
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.php#_deprecated000001">Deprecated:</a></b></dt><dd>Use LineStrip instead </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.php#_deprecated000018">Deprecated:</a></b></dt><dd>Use LineStrip instead </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1baf5ef0ffa5d13f9ea3e0eb18a2a8da7fb"></a>TrianglesStrip&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1ba66643dbbb24bbacb405973ed80eebae0"></a>TrianglesStrip&#160;</td><td class="fielddoc">
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.php#_deprecated000002">Deprecated:</a></b></dt><dd>Use TriangleStrip instead </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.php#_deprecated000019">Deprecated:</a></b></dt><dd>Use TriangleStrip instead </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1ba698ecd8ec938b4132412b8da44a1a6be"></a>TrianglesFan&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1ba5338a2c6d922151fe50f235036af8a20"></a>TrianglesFan&#160;</td><td class="fielddoc">
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.php#_deprecated000003">Deprecated:</a></b></dt><dd>Use TriangleFan instead </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.php#_deprecated000020">Deprecated:</a></b></dt><dd>Use TriangleFan instead </dd></dl>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1ba85cf551ca780a29ec5df3ee9fc282c22"></a>Points&#160;</td><td class="fielddoc">
-<p>List of individual points. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1ba2017328f9eda40a9aade94d5c45d0e8c"></a>Lines&#160;</td><td class="fielddoc">
-<p>List of individual lines. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1baa58596ca614193671ca68cc213d8ecf1"></a>LineStrip&#160;</td><td class="fielddoc">
-<p>List of connected lines, a point uses the previous point to form a line. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1babdd5e75b8944a886fdaa30e5bb3adc0d"></a>Triangles&#160;</td><td class="fielddoc">
-<p>List of individual triangles. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1bae9b9616d82cb0d0dd4fe0c9e14f7a22a"></a>TriangleStrip&#160;</td><td class="fielddoc">
-<p>List of connected triangles, a point uses the two previous points to form a triangle. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1ba00348a97a2ba25f9d9325d5b9933abc3"></a>TriangleFan&#160;</td><td class="fielddoc">
-<p>List of connected triangles, a point uses the common center and the previous point to form a triangle. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1bac968add05250b2cf59350dc68043a3c0"></a>Quads&#160;</td><td class="fielddoc">
-<p>List of individual quads (deprecated, don't work with OpenGL ES) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1bafc070260a0222df367922706bbeb905a"></a>LinesStrip&#160;</td><td class="fielddoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.php#_deprecated000001">Deprecated:</a></b></dt><dd>Use LineStrip instead </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.php#_deprecated000018">Deprecated:</a></b></dt><dd>Use LineStrip instead </dd></dl>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1baf5ef0ffa5d13f9ea3e0eb18a2a8da7fb"></a>TrianglesStrip&#160;</td><td class="fielddoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.php#_deprecated000002">Deprecated:</a></b></dt><dd>Use TriangleStrip instead </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.php#_deprecated000019">Deprecated:</a></b></dt><dd>Use TriangleStrip instead </dd></dl>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1ba698ecd8ec938b4132412b8da44a1a6be"></a>TrianglesFan&#160;</td><td class="fielddoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.php#_deprecated000003">Deprecated:</a></b></dt><dd>Use TriangleFan instead </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.php#_deprecated000020">Deprecated:</a></b></dt><dd>Use TriangleFan instead </dd></dl>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2PrimitiveType_8hpp_source.php#l00039">39</a> of file <a class="el" href="include_2SFML_2Graphics_2PrimitiveType_8hpp_source.php">include/SFML/Graphics/PrimitiveType.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga5ee56ac1339984909610713096283b1b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__graphics.php#ga5ee56ac1339984909610713096283b1b">sf::PrimitiveType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Types of primitives that a <a class="el" href="classsf_1_1VertexArray.php" title="Define a set of one or more 2D primitives. ">sf::VertexArray</a> can render. </p>
-<p>Points and lines have no area, therefore their thickness will always be 1 pixel, regardless the current transform and view. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1ba85cf551ca780a29ec5df3ee9fc282c22"></a>Points&#160;</td><td class="fielddoc">
-<p>List of individual points. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1ba2017328f9eda40a9aade94d5c45d0e8c"></a>Lines&#160;</td><td class="fielddoc">
-<p>List of individual lines. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1baa58596ca614193671ca68cc213d8ecf1"></a>LineStrip&#160;</td><td class="fielddoc">
-<p>List of connected lines, a point uses the previous point to form a line. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1babdd5e75b8944a886fdaa30e5bb3adc0d"></a>Triangles&#160;</td><td class="fielddoc">
-<p>List of individual triangles. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1bae9b9616d82cb0d0dd4fe0c9e14f7a22a"></a>TriangleStrip&#160;</td><td class="fielddoc">
-<p>List of connected triangles, a point uses the two previous points to form a triangle. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1ba00348a97a2ba25f9d9325d5b9933abc3"></a>TriangleFan&#160;</td><td class="fielddoc">
-<p>List of connected triangles, a point uses the common center and the previous point to form a triangle. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1bac968add05250b2cf59350dc68043a3c0"></a>Quads&#160;</td><td class="fielddoc">
-<p>List of individual quads (deprecated, don't work with OpenGL ES) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1bafc070260a0222df367922706bbeb905a"></a>LinesStrip&#160;</td><td class="fielddoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.php#_deprecated000001">Deprecated:</a></b></dt><dd>Use LineStrip instead </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.php#_deprecated000018">Deprecated:</a></b></dt><dd>Use LineStrip instead </dd></dl>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1baf5ef0ffa5d13f9ea3e0eb18a2a8da7fb"></a>TrianglesStrip&#160;</td><td class="fielddoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.php#_deprecated000002">Deprecated:</a></b></dt><dd>Use TriangleStrip instead </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.php#_deprecated000019">Deprecated:</a></b></dt><dd>Use TriangleStrip instead </dd></dl>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1ba698ecd8ec938b4132412b8da44a1a6be"></a>TrianglesFan&#160;</td><td class="fielddoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.php#_deprecated000003">Deprecated:</a></b></dt><dd>Use TriangleFan instead </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.php#_deprecated000020">Deprecated:</a></b></dt><dd>Use TriangleFan instead </dd></dl>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1ba85cf551ca780a29ec5df3ee9fc282c22"></a>Points&#160;</td><td class="fielddoc">
-<p>List of individual points. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1ba2017328f9eda40a9aade94d5c45d0e8c"></a>Lines&#160;</td><td class="fielddoc">
-<p>List of individual lines. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1baa58596ca614193671ca68cc213d8ecf1"></a>LineStrip&#160;</td><td class="fielddoc">
-<p>List of connected lines, a point uses the previous point to form a line. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1babdd5e75b8944a886fdaa30e5bb3adc0d"></a>Triangles&#160;</td><td class="fielddoc">
-<p>List of individual triangles. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1bae9b9616d82cb0d0dd4fe0c9e14f7a22a"></a>TriangleStrip&#160;</td><td class="fielddoc">
-<p>List of connected triangles, a point uses the two previous points to form a triangle. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1ba00348a97a2ba25f9d9325d5b9933abc3"></a>TriangleFan&#160;</td><td class="fielddoc">
-<p>List of connected triangles, a point uses the common center and the previous point to form a triangle. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1bac968add05250b2cf59350dc68043a3c0"></a>Quads&#160;</td><td class="fielddoc">
-<p>List of individual quads (deprecated, don't work with OpenGL ES) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1bafc070260a0222df367922706bbeb905a"></a>LinesStrip&#160;</td><td class="fielddoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.php#_deprecated000001">Deprecated:</a></b></dt><dd>Use LineStrip instead </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.php#_deprecated000018">Deprecated:</a></b></dt><dd>Use LineStrip instead </dd></dl>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1baf5ef0ffa5d13f9ea3e0eb18a2a8da7fb"></a>TrianglesStrip&#160;</td><td class="fielddoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.php#_deprecated000002">Deprecated:</a></b></dt><dd>Use TriangleStrip instead </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.php#_deprecated000019">Deprecated:</a></b></dt><dd>Use TriangleStrip instead </dd></dl>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga5ee56ac1339984909610713096283b1ba698ecd8ec938b4132412b8da44a1a6be"></a>TrianglesFan&#160;</td><td class="fielddoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.php#_deprecated000003">Deprecated:</a></b></dt><dd>Use TriangleFan instead </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.php#_deprecated000020">Deprecated:</a></b></dt><dd>Use TriangleFan instead </dd></dl>
-</td></tr>
-</table>
-
-<p>Definition at line <a class="el" href="shared_2include_2SFML_2Graphics_2PrimitiveType_8hpp_source.php#l00039">39</a> of file <a class="el" href="shared_2include_2SFML_2Graphics_2PrimitiveType_8hpp_source.php">shared/include/SFML/Graphics/PrimitiveType.hpp</a>.</p>
+<p>Definition at line <a class="el" href="PrimitiveType_8hpp_source.php#l00039">39</a> of file <a class="el" href="PrimitiveType_8hpp_source.php">PrimitiveType.hpp</a>.</p>
 
 </div>
 </div>

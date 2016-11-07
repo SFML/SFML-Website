@@ -39,7 +39,7 @@
 <p><a class="el" href="classsf_1_1Mouse.php" title="Give access to the real-time state of the mouse. ">Mouse</a> buttons events parameters (MouseButtonPressed, MouseButtonReleased)  
  <a href="structsf_1_1Event_1_1MouseButtonEvent.php#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php">Event.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="Event_8hpp_source.php">Event.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -56,7 +56,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classsf_1_1Mouse.php" title="Give access to the real-time state of the mouse. ">Mouse</a> buttons events parameters (MouseButtonPressed, MouseButtonReleased) </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php#l00095">95</a> of file <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php">include/SFML/Window/Event.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Event_8hpp_source.php#l00095">95</a> of file <a class="el" href="Event_8hpp_source.php">Event.hpp</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a5f53725aa7b647705486eeb95f723024"></a>
 <div class="memitem">
@@ -70,7 +70,7 @@ Public Attributes</h2></td></tr>
 
 <p>Code of the button that has been pressed. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php#l00097">97</a> of file <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php">include/SFML/Window/Event.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Event_8hpp_source.php#l00097">97</a> of file <a class="el" href="Event_8hpp_source.php">Event.hpp</a>.</p>
 
 </div>
 </div>
@@ -86,7 +86,7 @@ Public Attributes</h2></td></tr>
 
 <p>X position of the mouse pointer, relative to the left of the owner window. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php#l00098">98</a> of file <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php">include/SFML/Window/Event.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Event_8hpp_source.php#l00098">98</a> of file <a class="el" href="Event_8hpp_source.php">Event.hpp</a>.</p>
 
 </div>
 </div>
@@ -102,12 +102,12 @@ Public Attributes</h2></td></tr>
 
 <p>Y position of the mouse pointer, relative to the top of the owner window. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php#l00099">99</a> of file <a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php">include/SFML/Window/Event.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Event_8hpp_source.php#l00099">99</a> of file <a class="el" href="Event_8hpp_source.php">Event.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="include_2SFML_2Window_2Event_8hpp_source.php">include/SFML/Window/Event.hpp</a></li>
+<li><a class="el" href="Event_8hpp_source.php">Event.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <?php

@@ -40,13 +40,10 @@
 <p>Structure describing a glyph.  
  <a href="classsf_1_1Glyph.php#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="include_2SFML_2Graphics_2Glyph_8hpp_source.php">Glyph.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="Glyph_8hpp_source.php">Glyph.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab15cfc37eb7b40a94b3b3aedf934010b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Glyph.php#ab15cfc37eb7b40a94b3b3aedf934010b">Glyph</a> ()</td></tr>
-<tr class="memdesc:ab15cfc37eb7b40a94b3b3aedf934010b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#ab15cfc37eb7b40a94b3b3aedf934010b">More...</a><br /></td></tr>
-<tr class="separator:ab15cfc37eb7b40a94b3b3aedf934010b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab15cfc37eb7b40a94b3b3aedf934010b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Glyph.php#ab15cfc37eb7b40a94b3b3aedf934010b">Glyph</a> ()</td></tr>
 <tr class="memdesc:ab15cfc37eb7b40a94b3b3aedf934010b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#ab15cfc37eb7b40a94b3b3aedf934010b">More...</a><br /></td></tr>
 <tr class="separator:ab15cfc37eb7b40a94b3b3aedf934010b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -73,7 +70,7 @@ Public Attributes</h2></td></tr>
 </ul>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Font.php" title="Class for loading and manipulating character fonts. ">sf::Font</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2Glyph_8hpp_source.php#l00041">41</a> of file <a class="el" href="include_2SFML_2Graphics_2Glyph_8hpp_source.php">include/SFML/Graphics/Glyph.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Glyph_8hpp_source.php#l00041">41</a> of file <a class="el" href="Glyph_8hpp_source.php">Glyph.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ab15cfc37eb7b40a94b3b3aedf934010b"></a>
 <div class="memitem">
@@ -98,34 +95,7 @@ Public Attributes</h2></td></tr>
 
 <p>Default constructor. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2Glyph_8hpp_source.php#l00049">49</a> of file <a class="el" href="include_2SFML_2Graphics_2Glyph_8hpp_source.php">include/SFML/Graphics/Glyph.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab15cfc37eb7b40a94b3b3aedf934010b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">sf::Glyph::Glyph </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Default constructor. </p>
-
-<p>Definition at line <a class="el" href="shared_2include_2SFML_2Graphics_2Glyph_8hpp_source.php#l00049">49</a> of file <a class="el" href="shared_2include_2SFML_2Graphics_2Glyph_8hpp_source.php">shared/include/SFML/Graphics/Glyph.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Glyph_8hpp_source.php#l00049">49</a> of file <a class="el" href="Glyph_8hpp_source.php">Glyph.hpp</a>.</p>
 
 </div>
 </div>
@@ -142,7 +112,7 @@ Public Attributes</h2></td></tr>
 
 <p>Offset to move horizontally to the next character. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2Glyph_8hpp_source.php#l00054">54</a> of file <a class="el" href="include_2SFML_2Graphics_2Glyph_8hpp_source.php">include/SFML/Graphics/Glyph.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Glyph_8hpp_source.php#l00054">54</a> of file <a class="el" href="Glyph_8hpp_source.php">Glyph.hpp</a>.</p>
 
 </div>
 </div>
@@ -158,7 +128,7 @@ Public Attributes</h2></td></tr>
 
 <p>Bounding rectangle of the glyph, in coordinates relative to the baseline. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2Glyph_8hpp_source.php#l00055">55</a> of file <a class="el" href="include_2SFML_2Graphics_2Glyph_8hpp_source.php">include/SFML/Graphics/Glyph.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Glyph_8hpp_source.php#l00055">55</a> of file <a class="el" href="Glyph_8hpp_source.php">Glyph.hpp</a>.</p>
 
 </div>
 </div>
@@ -174,12 +144,12 @@ Public Attributes</h2></td></tr>
 
 <p><a class="el" href="classsf_1_1Texture.php" title="Image living on the graphics card that can be used for drawing. ">Texture</a> coordinates of the glyph inside the font's texture. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2Glyph_8hpp_source.php#l00056">56</a> of file <a class="el" href="include_2SFML_2Graphics_2Glyph_8hpp_source.php">include/SFML/Graphics/Glyph.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Glyph_8hpp_source.php#l00056">56</a> of file <a class="el" href="Glyph_8hpp_source.php">Glyph.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="include_2SFML_2Graphics_2Glyph_8hpp_source.php">include/SFML/Graphics/Glyph.hpp</a></li>
+<li><a class="el" href="Glyph_8hpp_source.php">Glyph.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <?php

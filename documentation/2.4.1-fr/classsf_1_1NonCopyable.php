@@ -39,7 +39,7 @@
 <p>Utility class that makes any derived class non-copyable.  
  <a href="classsf_1_1NonCopyable.php#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="include_2SFML_2System_2NonCopyable_8hpp_source.php">NonCopyable.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="NonCopyable_8hpp_source.php">NonCopyable.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for sf::NonCopyable:</div>
 <div class="dyncontent">
@@ -47,42 +47,25 @@ Inheritance diagram for sf::NonCopyable:</div>
   <img src="classsf_1_1NonCopyable.png" usemap="#sf::NonCopyable_map" alt=""/>
   <map id="sf::NonCopyable_map" name="sf::NonCopyable_map">
 <area href="classsf_1_1Context.php" title="Class holding a valid drawing context. " alt="sf::Context" shape="rect" coords="231,56,452,80"/>
-<area href="classsf_1_1Context.php" title="Class holding a valid drawing context. " alt="sf::Context" shape="rect" coords="231,112,452,136"/>
-<area href="classsf_1_1FileInputStream.php" title="Implementation of input stream based on a file. " alt="sf::FileInputStream" shape="rect" coords="231,168,452,192"/>
-<area href="classsf_1_1FileInputStream.php" title="Implementation of input stream based on a file. " alt="sf::FileInputStream" shape="rect" coords="231,224,452,248"/>
-<area href="classsf_1_1Ftp.php" title="A FTP client. " alt="sf::Ftp" shape="rect" coords="231,280,452,304"/>
-<area href="classsf_1_1Ftp.php" title="A FTP client. " alt="sf::Ftp" shape="rect" coords="231,336,452,360"/>
-<area href="classsf_1_1GlResource_1_1TransientContextLock.php" title="RAII helper class to temporarily lock an available context for use. " alt="sf::GlResource::TransientContextLock" shape="rect" coords="231,392,452,416"/>
-<area href="classsf_1_1Http.php" title="A HTTP client. " alt="sf::Http" shape="rect" coords="231,448,452,472"/>
-<area href="classsf_1_1Http.php" title="A HTTP client. " alt="sf::Http" shape="rect" coords="231,504,452,528"/>
-<area href="classsf_1_1InputSoundFile.php" title="Provide read access to sound files. " alt="sf::InputSoundFile" shape="rect" coords="231,560,452,584"/>
-<area href="classsf_1_1InputSoundFile.php" title="Provide read access to sound files. " alt="sf::InputSoundFile" shape="rect" coords="231,616,452,640"/>
-<area href="classsf_1_1Lock.php" title="Automatic wrapper for locking and unlocking mutexes. " alt="sf::Lock" shape="rect" coords="231,672,452,696"/>
-<area href="classsf_1_1Lock.php" title="Automatic wrapper for locking and unlocking mutexes. " alt="sf::Lock" shape="rect" coords="231,728,452,752"/>
-<area href="classsf_1_1Mutex.php" title="Blocks concurrent access to shared resources from multiple threads. " alt="sf::Mutex" shape="rect" coords="231,784,452,808"/>
-<area href="classsf_1_1Mutex.php" title="Blocks concurrent access to shared resources from multiple threads. " alt="sf::Mutex" shape="rect" coords="231,840,452,864"/>
-<area href="classsf_1_1OutputSoundFile.php" title="Provide write access to sound files. " alt="sf::OutputSoundFile" shape="rect" coords="231,896,452,920"/>
-<area href="classsf_1_1OutputSoundFile.php" title="Provide write access to sound files. " alt="sf::OutputSoundFile" shape="rect" coords="231,952,452,976"/>
-<area href="classsf_1_1RenderTarget.php" title="Base class for all render targets (window, texture, ...) " alt="sf::RenderTarget" shape="rect" coords="231,1008,452,1032"/>
-<area href="classsf_1_1RenderTarget.php" title="Base class for all render targets (window, texture, ...) " alt="sf::RenderTarget" shape="rect" coords="231,1064,452,1088"/>
-<area href="classsf_1_1Shader.php" title="Shader class (vertex, geometry and fragment) " alt="sf::Shader" shape="rect" coords="231,1120,452,1144"/>
-<area href="classsf_1_1Shader.php" title="Shader class (vertex, geometry and fragment) " alt="sf::Shader" shape="rect" coords="231,1176,452,1200"/>
-<area href="classsf_1_1Socket.php" title="Base class for all the socket types. " alt="sf::Socket" shape="rect" coords="231,1232,452,1256"/>
-<area href="classsf_1_1Socket.php" title="Base class for all the socket types. " alt="sf::Socket" shape="rect" coords="231,1288,452,1312"/>
-<area href="classsf_1_1Thread.php" title="Utility class to manipulate threads. " alt="sf::Thread" shape="rect" coords="231,1344,452,1368"/>
-<area href="classsf_1_1Thread.php" title="Utility class to manipulate threads. " alt="sf::Thread" shape="rect" coords="231,1400,452,1424"/>
-<area href="classsf_1_1ThreadLocal.php" title="Defines variables with thread-local storage. " alt="sf::ThreadLocal" shape="rect" coords="231,1456,452,1480"/>
-<area href="classsf_1_1ThreadLocal.php" title="Defines variables with thread-local storage. " alt="sf::ThreadLocal" shape="rect" coords="231,1512,452,1536"/>
-<area href="classsf_1_1Window.php" title="Window that serves as a target for OpenGL rendering. " alt="sf::Window" shape="rect" coords="231,1568,452,1592"/>
-<area href="classsf_1_1Window.php" title="Window that serves as a target for OpenGL rendering. " alt="sf::Window" shape="rect" coords="231,1624,452,1648"/>
+<area href="classsf_1_1FileInputStream.php" title="Implementation of input stream based on a file. " alt="sf::FileInputStream" shape="rect" coords="231,112,452,136"/>
+<area href="classsf_1_1Ftp.php" title="A FTP client. " alt="sf::Ftp" shape="rect" coords="231,168,452,192"/>
+<area href="classsf_1_1GlResource_1_1TransientContextLock.php" title="RAII helper class to temporarily lock an available context for use. " alt="sf::GlResource::TransientContextLock" shape="rect" coords="231,224,452,248"/>
+<area href="classsf_1_1Http.php" title="A HTTP client. " alt="sf::Http" shape="rect" coords="231,280,452,304"/>
+<area href="classsf_1_1InputSoundFile.php" title="Provide read access to sound files. " alt="sf::InputSoundFile" shape="rect" coords="231,336,452,360"/>
+<area href="classsf_1_1Lock.php" title="Automatic wrapper for locking and unlocking mutexes. " alt="sf::Lock" shape="rect" coords="231,392,452,416"/>
+<area href="classsf_1_1Mutex.php" title="Blocks concurrent access to shared resources from multiple threads. " alt="sf::Mutex" shape="rect" coords="231,448,452,472"/>
+<area href="classsf_1_1OutputSoundFile.php" title="Provide write access to sound files. " alt="sf::OutputSoundFile" shape="rect" coords="231,504,452,528"/>
+<area href="classsf_1_1RenderTarget.php" title="Base class for all render targets (window, texture, ...) " alt="sf::RenderTarget" shape="rect" coords="231,560,452,584"/>
+<area href="classsf_1_1Shader.php" title="Shader class (vertex, geometry and fragment) " alt="sf::Shader" shape="rect" coords="231,616,452,640"/>
+<area href="classsf_1_1Socket.php" title="Base class for all the socket types. " alt="sf::Socket" shape="rect" coords="231,672,452,696"/>
+<area href="classsf_1_1Thread.php" title="Utility class to manipulate threads. " alt="sf::Thread" shape="rect" coords="231,728,452,752"/>
+<area href="classsf_1_1ThreadLocal.php" title="Defines variables with thread-local storage. " alt="sf::ThreadLocal" shape="rect" coords="231,784,452,808"/>
+<area href="classsf_1_1Window.php" title="Window that serves as a target for OpenGL rendering. " alt="sf::Window" shape="rect" coords="231,840,452,864"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a2110add170580fdb946f887719da6860"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1NonCopyable.php#a2110add170580fdb946f887719da6860">NonCopyable</a> ()</td></tr>
-<tr class="memdesc:a2110add170580fdb946f887719da6860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a2110add170580fdb946f887719da6860">More...</a><br /></td></tr>
-<tr class="separator:a2110add170580fdb946f887719da6860"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2110add170580fdb946f887719da6860"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1NonCopyable.php#a2110add170580fdb946f887719da6860">NonCopyable</a> ()</td></tr>
 <tr class="memdesc:a2110add170580fdb946f887719da6860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a2110add170580fdb946f887719da6860">More...</a><br /></td></tr>
 <tr class="separator:a2110add170580fdb946f887719da6860"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -98,7 +81,7 @@ Protected Member Functions</h2></td></tr>
 <div class="line">};</div>
 </div><!-- fragment --><p>Deciding whether the instances of a class can be copied or not is a very important design choice. You are strongly encouraged to think about it before writing a class, and to use <a class="el" href="classsf_1_1NonCopyable.php" title="Utility class that makes any derived class non-copyable. ">sf::NonCopyable</a> when necessary to prevent many potential future errors when using it. This is also a very important indication to users of your class. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2System_2NonCopyable_8hpp_source.php#l00041">41</a> of file <a class="el" href="include_2SFML_2System_2NonCopyable_8hpp_source.php">include/SFML/System/NonCopyable.hpp</a>.</p>
+<p>Definition at line <a class="el" href="NonCopyable_8hpp_source.php#l00041">41</a> of file <a class="el" href="NonCopyable_8hpp_source.php">NonCopyable.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a2110add170580fdb946f887719da6860"></a>
 <div class="memitem">
@@ -124,40 +107,12 @@ Protected Member Functions</h2></td></tr>
 <p>Default constructor. </p>
 <p>Because this class has a copy constructor, the compiler will not automatically generate the default constructor. That's why we must define it explicitly. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2System_2NonCopyable_8hpp_source.php#l00053">53</a> of file <a class="el" href="include_2SFML_2System_2NonCopyable_8hpp_source.php">include/SFML/System/NonCopyable.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2110add170580fdb946f887719da6860"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">sf::NonCopyable::NonCopyable </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Default constructor. </p>
-<p>Because this class has a copy constructor, the compiler will not automatically generate the default constructor. That's why we must define it explicitly. </p>
-
-<p>Definition at line <a class="el" href="shared_2include_2SFML_2System_2NonCopyable_8hpp_source.php#l00053">53</a> of file <a class="el" href="shared_2include_2SFML_2System_2NonCopyable_8hpp_source.php">shared/include/SFML/System/NonCopyable.hpp</a>.</p>
+<p>Definition at line <a class="el" href="NonCopyable_8hpp_source.php#l00053">53</a> of file <a class="el" href="NonCopyable_8hpp_source.php">NonCopyable.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="include_2SFML_2System_2NonCopyable_8hpp_source.php">include/SFML/System/NonCopyable.hpp</a></li>
+<li><a class="el" href="NonCopyable_8hpp_source.php">NonCopyable.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <?php

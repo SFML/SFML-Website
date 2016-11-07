@@ -78,15 +78,15 @@
 , <a class="el" href="structsf_1_1Event_1_1TouchEvent.php#add80639dc68bc37e3275744d501cdbe0">sf::Event::TouchEvent</a>
 </li>
 <li>Y
-: <a class="el" href="classsf_1_1Joystick.php#a48db337092c2e263774f94de6d50baa7ab93da03117a7dc92d19243e39c50bde0">sf::Joystick</a>
-, <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142ab72cdb1cf5d6f02055e05df773c48129">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Joystick.php#a48db337092c2e263774f94de6d50baa7a51ef1455f7511ad4a78ba241d66593ce">sf::Joystick</a>
+, <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a5d877e63d1353e0fc0a0757a87a7bd0e">sf::Keyboard</a>
 </li>
 <li>y
 : <a class="el" href="classsf_1_1Vector2.php#a420f2481b015f4eb929c75f2af564299">sf::Vector2&lt; T &gt;</a>
 , <a class="el" href="classsf_1_1Vector3.php#a6590d50ccb862c5efc5512e974e9b794">sf::Vector3&lt; T &gt;</a>
 </li>
 <li>Yellow
-: <a class="el" href="classsf_1_1Color.php#ad2e5e0bad294384b8cf26a92d8d8d162">sf::Color</a>
+: <a class="el" href="classsf_1_1Color.php#af8896b5f56650935f5b9d72d528802c7">sf::Color</a>
 </li>
 </ul>
 </div><!-- contents -->

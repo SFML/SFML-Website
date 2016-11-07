@@ -37,14 +37,9 @@
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classsf_1_1Http.php#abe2360194f99bdde402c9f97a85cf067">Http</a>()</td><td class="entry"><a class="el" href="classsf_1_1Http.php">sf::Http</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classsf_1_1Http.php#a79efd844a735f083fcce0edbf1092385">Http</a>(const std::string &amp;host, unsigned short port=0)</td><td class="entry"><a class="el" href="classsf_1_1Http.php">sf::Http</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classsf_1_1Http.php#abe2360194f99bdde402c9f97a85cf067">Http</a>()</td><td class="entry"><a class="el" href="classsf_1_1Http.php">sf::Http</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classsf_1_1Http.php#a79efd844a735f083fcce0edbf1092385">Http</a>(const std::string &amp;host, unsigned short port=0)</td><td class="entry"><a class="el" href="classsf_1_1Http.php">sf::Http</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classsf_1_1NonCopyable.php#a2110add170580fdb946f887719da6860">NonCopyable</a>()</td><td class="entry"><a class="el" href="classsf_1_1NonCopyable.php">sf::NonCopyable</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classsf_1_1NonCopyable.php#a2110add170580fdb946f887719da6860">NonCopyable</a>()</td><td class="entry"><a class="el" href="classsf_1_1NonCopyable.php">sf::NonCopyable</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classsf_1_1Http.php#aaf09ebfb5e00dcc82e0d494d5c6a9e2a">sendRequest</a>(const Request &amp;request, Time timeout=Time::Zero)</td><td class="entry"><a class="el" href="classsf_1_1Http.php">sf::Http</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classsf_1_1Http.php#aaf09ebfb5e00dcc82e0d494d5c6a9e2a">sendRequest</a>(const Request &amp;request, Time timeout=Time::Zero)</td><td class="entry"><a class="el" href="classsf_1_1Http.php">sf::Http</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classsf_1_1Http.php#a55121d543b61c41cf20b885a97b04e65">setHost</a>(const std::string &amp;host, unsigned short port=0)</td><td class="entry"><a class="el" href="classsf_1_1Http.php">sf::Http</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classsf_1_1Http.php#a55121d543b61c41cf20b885a97b04e65">setHost</a>(const std::string &amp;host, unsigned short port=0)</td><td class="entry"><a class="el" href="classsf_1_1Http.php">sf::Http</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <?php
     require("../footer-fr.php");

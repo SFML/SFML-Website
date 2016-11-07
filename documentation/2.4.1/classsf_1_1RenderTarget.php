@@ -41,19 +41,16 @@
 <p>Base class for all render targets (window, texture, ...)  
  <a href="classsf_1_1RenderTarget.php#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="include_2SFML_2Graphics_2RenderTarget_8hpp_source.php">RenderTarget.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="RenderTarget_8hpp_source.php">RenderTarget.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for sf::RenderTarget:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classsf_1_1RenderTarget.png" usemap="#sf::RenderTarget_map" alt=""/>
   <map id="sf::RenderTarget_map" name="sf::RenderTarget_map">
-<area href="classsf_1_1NonCopyable.php" title="Utility class that makes any derived class non-copyable. " alt="sf::NonCopyable" shape="rect" coords="123,0,236,24"/>
-<area href="classsf_1_1NonCopyable.php" title="Utility class that makes any derived class non-copyable. " alt="sf::NonCopyable" shape="rect" coords="246,0,359,24"/>
+<area href="classsf_1_1NonCopyable.php" title="Utility class that makes any derived class non-copyable. " alt="sf::NonCopyable" shape="rect" coords="61,0,174,24"/>
 <area href="classsf_1_1RenderTexture.php" title="Target for off-screen 2D rendering into a texture. " alt="sf::RenderTexture" shape="rect" coords="0,112,113,136"/>
-<area href="classsf_1_1RenderTexture.php" title="Target for off-screen 2D rendering into a texture. " alt="sf::RenderTexture" shape="rect" coords="123,112,236,136"/>
-<area href="classsf_1_1RenderWindow.php" title="Window that can serve as a target for 2D drawing. " alt="sf::RenderWindow" shape="rect" coords="246,112,359,136"/>
-<area href="classsf_1_1RenderWindow.php" title="Window that can serve as a target for 2D drawing. " alt="sf::RenderWindow" shape="rect" coords="369,112,482,136"/>
+<area href="classsf_1_1RenderWindow.php" title="Window that can serve as a target for 2D drawing. " alt="sf::RenderWindow" shape="rect" coords="123,112,236,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -89,61 +86,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7a2d427bdb9bd8f9f456fcf82813aa60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Vector2.php">Vector2i</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1RenderTarget.php#a7a2d427bdb9bd8f9f456fcf82813aa60">mapCoordsToPixel</a> (const <a class="el" href="classsf_1_1Vector2.php">Vector2f</a> &amp;point, const <a class="el" href="classsf_1_1View.php">View</a> &amp;view) const </td></tr>
 <tr class="memdesc:a7a2d427bdb9bd8f9f456fcf82813aa60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a point from world coordinates to target coordinates.  <a href="#a7a2d427bdb9bd8f9f456fcf82813aa60">More...</a><br /></td></tr>
 <tr class="separator:a7a2d427bdb9bd8f9f456fcf82813aa60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12417a3bcc245c41d957b29583556f39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1RenderTarget.php#a12417a3bcc245c41d957b29583556f39">draw</a> (const <a class="el" href="classsf_1_1Drawable.php">Drawable</a> &amp;drawable, const <a class="el" href="classsf_1_1RenderStates.php">RenderStates</a> &amp;states=<a class="el" href="classsf_1_1RenderStates.php#afa30e6d780c05c2a20587ddb01b5fa5c">RenderStates::Default</a>)</td></tr>
+<tr class="memitem:a12417a3bcc245c41d957b29583556f39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1RenderTarget.php#a12417a3bcc245c41d957b29583556f39">draw</a> (const <a class="el" href="classsf_1_1Drawable.php">Drawable</a> &amp;drawable, const <a class="el" href="classsf_1_1RenderStates.php">RenderStates</a> &amp;states=<a class="el" href="classsf_1_1RenderStates.php#ad29672df29f19ce50c3021d95f2bb062">RenderStates::Default</a>)</td></tr>
 <tr class="memdesc:a12417a3bcc245c41d957b29583556f39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a drawable object to the render target.  <a href="#a12417a3bcc245c41d957b29583556f39">More...</a><br /></td></tr>
 <tr class="separator:a12417a3bcc245c41d957b29583556f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a976bc94057799eb9f8a18ac5fdfd9b73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1RenderTarget.php#a976bc94057799eb9f8a18ac5fdfd9b73">draw</a> (const <a class="el" href="classsf_1_1Vertex.php">Vertex</a> *vertices, std::size_t vertexCount, <a class="el" href="group__graphics.php#ga5ee56ac1339984909610713096283b1b">PrimitiveType</a> type, const <a class="el" href="classsf_1_1RenderStates.php">RenderStates</a> &amp;states=<a class="el" href="classsf_1_1RenderStates.php#afa30e6d780c05c2a20587ddb01b5fa5c">RenderStates::Default</a>)</td></tr>
-<tr class="memdesc:a976bc94057799eb9f8a18ac5fdfd9b73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw primitives defined by an array of vertices.  <a href="#a976bc94057799eb9f8a18ac5fdfd9b73">More...</a><br /></td></tr>
-<tr class="separator:a976bc94057799eb9f8a18ac5fdfd9b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88031922215f4da7b06309b9214169aa"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classsf_1_1Vector2.php">Vector2u</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1RenderTarget.php#a88031922215f4da7b06309b9214169aa">getSize</a> () const  =0</td></tr>
-<tr class="memdesc:a88031922215f4da7b06309b9214169aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the size of the rendering region of the target.  <a href="#a88031922215f4da7b06309b9214169aa">More...</a><br /></td></tr>
-<tr class="separator:a88031922215f4da7b06309b9214169aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4438c5885b142d070a769a7a868b0fdc"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1RenderTarget.php#a4438c5885b142d070a769a7a868b0fdc">setActive</a> (bool active=true)=0</td></tr>
-<tr class="memdesc:a4438c5885b142d070a769a7a868b0fdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate or deactivate the render target for rendering.  <a href="#a4438c5885b142d070a769a7a868b0fdc">More...</a><br /></td></tr>
-<tr class="separator:a4438c5885b142d070a769a7a868b0fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d1998464ccc54e789aaf990242b47f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1RenderTarget.php#a8d1998464ccc54e789aaf990242b47f7">pushGLStates</a> ()</td></tr>
-<tr class="memdesc:a8d1998464ccc54e789aaf990242b47f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the current OpenGL render states and matrices.  <a href="#a8d1998464ccc54e789aaf990242b47f7">More...</a><br /></td></tr>
-<tr class="separator:a8d1998464ccc54e789aaf990242b47f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5a98401113df931ddcd54c080f7aa8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1RenderTarget.php#ad5a98401113df931ddcd54c080f7aa8e">popGLStates</a> ()</td></tr>
-<tr class="memdesc:ad5a98401113df931ddcd54c080f7aa8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restore the previously saved OpenGL render states and matrices.  <a href="#ad5a98401113df931ddcd54c080f7aa8e">More...</a><br /></td></tr>
-<tr class="separator:ad5a98401113df931ddcd54c080f7aa8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac7504990d27dada4bfe3c7866920765"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1RenderTarget.php#aac7504990d27dada4bfe3c7866920765">resetGLStates</a> ()</td></tr>
-<tr class="memdesc:aac7504990d27dada4bfe3c7866920765"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the internal OpenGL states so that the target is ready for drawing.  <a href="#aac7504990d27dada4bfe3c7866920765">More...</a><br /></td></tr>
-<tr class="separator:aac7504990d27dada4bfe3c7866920765"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9abd1654a99fba46f6887b9c625b9b06"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1RenderTarget.php#a9abd1654a99fba46f6887b9c625b9b06">~RenderTarget</a> ()</td></tr>
-<tr class="memdesc:a9abd1654a99fba46f6887b9c625b9b06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a9abd1654a99fba46f6887b9c625b9b06">More...</a><br /></td></tr>
-<tr class="separator:a9abd1654a99fba46f6887b9c625b9b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bb6f0ba348f2b1e2f46114aeaf60f26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1RenderTarget.php#a6bb6f0ba348f2b1e2f46114aeaf60f26">clear</a> (const <a class="el" href="classsf_1_1Color.php">Color</a> &amp;color=<a class="el" href="classsf_1_1Color.php">Color</a>(0, 0, 0, 255))</td></tr>
-<tr class="memdesc:a6bb6f0ba348f2b1e2f46114aeaf60f26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the entire target with a single color.  <a href="#a6bb6f0ba348f2b1e2f46114aeaf60f26">More...</a><br /></td></tr>
-<tr class="separator:a6bb6f0ba348f2b1e2f46114aeaf60f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a063db6dd0a14913504af30e50cb6d946"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1RenderTarget.php#a063db6dd0a14913504af30e50cb6d946">setView</a> (const <a class="el" href="classsf_1_1View.php">View</a> &amp;view)</td></tr>
-<tr class="memdesc:a063db6dd0a14913504af30e50cb6d946"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the current active view.  <a href="#a063db6dd0a14913504af30e50cb6d946">More...</a><br /></td></tr>
-<tr class="separator:a063db6dd0a14913504af30e50cb6d946"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98f721cc6dc11478922427fedfb2288b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classsf_1_1View.php">View</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1RenderTarget.php#a98f721cc6dc11478922427fedfb2288b">getView</a> () const </td></tr>
-<tr class="memdesc:a98f721cc6dc11478922427fedfb2288b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the view currently in use in the render target.  <a href="#a98f721cc6dc11478922427fedfb2288b">More...</a><br /></td></tr>
-<tr class="separator:a98f721cc6dc11478922427fedfb2288b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a718b1aa6296bf855171699cc18251ced"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classsf_1_1View.php">View</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1RenderTarget.php#a718b1aa6296bf855171699cc18251ced">getDefaultView</a> () const </td></tr>
-<tr class="memdesc:a718b1aa6296bf855171699cc18251ced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default view of the render target.  <a href="#a718b1aa6296bf855171699cc18251ced">More...</a><br /></td></tr>
-<tr class="separator:a718b1aa6296bf855171699cc18251ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae035b0d45f87a0da2a28a0de6ba1086"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Rect.php">IntRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1RenderTarget.php#aae035b0d45f87a0da2a28a0de6ba1086">getViewport</a> (const <a class="el" href="classsf_1_1View.php">View</a> &amp;view) const </td></tr>
-<tr class="memdesc:aae035b0d45f87a0da2a28a0de6ba1086"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the viewport of a view, applied to this render target.  <a href="#aae035b0d45f87a0da2a28a0de6ba1086">More...</a><br /></td></tr>
-<tr class="separator:aae035b0d45f87a0da2a28a0de6ba1086"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b0cab0e4c6af29d4efaba149d28116d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Vector2.php">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1RenderTarget.php#a2b0cab0e4c6af29d4efaba149d28116d">mapPixelToCoords</a> (const <a class="el" href="classsf_1_1Vector2.php">Vector2i</a> &amp;point) const </td></tr>
-<tr class="memdesc:a2b0cab0e4c6af29d4efaba149d28116d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a point from target coordinates to world coordinates, using the current view.  <a href="#a2b0cab0e4c6af29d4efaba149d28116d">More...</a><br /></td></tr>
-<tr class="separator:a2b0cab0e4c6af29d4efaba149d28116d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46eb08f775dd1420d6207ea87dde6e54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Vector2.php">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1RenderTarget.php#a46eb08f775dd1420d6207ea87dde6e54">mapPixelToCoords</a> (const <a class="el" href="classsf_1_1Vector2.php">Vector2i</a> &amp;point, const <a class="el" href="classsf_1_1View.php">View</a> &amp;view) const </td></tr>
-<tr class="memdesc:a46eb08f775dd1420d6207ea87dde6e54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a point from target coordinates to world coordinates.  <a href="#a46eb08f775dd1420d6207ea87dde6e54">More...</a><br /></td></tr>
-<tr class="separator:a46eb08f775dd1420d6207ea87dde6e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0c11e1989573f2cce64c621205f8e83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Vector2.php">Vector2i</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1RenderTarget.php#aa0c11e1989573f2cce64c621205f8e83">mapCoordsToPixel</a> (const <a class="el" href="classsf_1_1Vector2.php">Vector2f</a> &amp;point) const </td></tr>
-<tr class="memdesc:aa0c11e1989573f2cce64c621205f8e83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a point from world coordinates to target coordinates, using the current view.  <a href="#aa0c11e1989573f2cce64c621205f8e83">More...</a><br /></td></tr>
-<tr class="separator:aa0c11e1989573f2cce64c621205f8e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a2d427bdb9bd8f9f456fcf82813aa60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Vector2.php">Vector2i</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1RenderTarget.php#a7a2d427bdb9bd8f9f456fcf82813aa60">mapCoordsToPixel</a> (const <a class="el" href="classsf_1_1Vector2.php">Vector2f</a> &amp;point, const <a class="el" href="classsf_1_1View.php">View</a> &amp;view) const </td></tr>
-<tr class="memdesc:a7a2d427bdb9bd8f9f456fcf82813aa60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a point from world coordinates to target coordinates.  <a href="#a7a2d427bdb9bd8f9f456fcf82813aa60">More...</a><br /></td></tr>
-<tr class="separator:a7a2d427bdb9bd8f9f456fcf82813aa60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12417a3bcc245c41d957b29583556f39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1RenderTarget.php#a12417a3bcc245c41d957b29583556f39">draw</a> (const <a class="el" href="classsf_1_1Drawable.php">Drawable</a> &amp;drawable, const <a class="el" href="classsf_1_1RenderStates.php">RenderStates</a> &amp;states=<a class="el" href="classsf_1_1RenderStates.php#afa30e6d780c05c2a20587ddb01b5fa5c">RenderStates::Default</a>)</td></tr>
-<tr class="memdesc:a12417a3bcc245c41d957b29583556f39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a drawable object to the render target.  <a href="#a12417a3bcc245c41d957b29583556f39">More...</a><br /></td></tr>
-<tr class="separator:a12417a3bcc245c41d957b29583556f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a976bc94057799eb9f8a18ac5fdfd9b73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1RenderTarget.php#a976bc94057799eb9f8a18ac5fdfd9b73">draw</a> (const <a class="el" href="classsf_1_1Vertex.php">Vertex</a> *vertices, std::size_t vertexCount, <a class="el" href="group__graphics.php#ga5ee56ac1339984909610713096283b1b">PrimitiveType</a> type, const <a class="el" href="classsf_1_1RenderStates.php">RenderStates</a> &amp;states=<a class="el" href="classsf_1_1RenderStates.php#afa30e6d780c05c2a20587ddb01b5fa5c">RenderStates::Default</a>)</td></tr>
+<tr class="memitem:a976bc94057799eb9f8a18ac5fdfd9b73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1RenderTarget.php#a976bc94057799eb9f8a18ac5fdfd9b73">draw</a> (const <a class="el" href="classsf_1_1Vertex.php">Vertex</a> *vertices, std::size_t vertexCount, <a class="el" href="group__graphics.php#ga5ee56ac1339984909610713096283b1b">PrimitiveType</a> type, const <a class="el" href="classsf_1_1RenderStates.php">RenderStates</a> &amp;states=<a class="el" href="classsf_1_1RenderStates.php#ad29672df29f19ce50c3021d95f2bb062">RenderStates::Default</a>)</td></tr>
 <tr class="memdesc:a976bc94057799eb9f8a18ac5fdfd9b73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw primitives defined by an array of vertices.  <a href="#a976bc94057799eb9f8a18ac5fdfd9b73">More...</a><br /></td></tr>
 <tr class="separator:a976bc94057799eb9f8a18ac5fdfd9b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88031922215f4da7b06309b9214169aa"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classsf_1_1Vector2.php">Vector2u</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1RenderTarget.php#a88031922215f4da7b06309b9214169aa">getSize</a> () const  =0</td></tr>
@@ -167,12 +113,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:af530274b34159d644e509b4b4dc43eb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1RenderTarget.php#af530274b34159d644e509b4b4dc43eb7">initialize</a> ()</td></tr>
 <tr class="memdesc:af530274b34159d644e509b4b4dc43eb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs the common initialization step after creation.  <a href="#af530274b34159d644e509b4b4dc43eb7">More...</a><br /></td></tr>
 <tr class="separator:af530274b34159d644e509b4b4dc43eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2997c96cbd93cb8ce0aba2ddae35b86f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1RenderTarget.php#a2997c96cbd93cb8ce0aba2ddae35b86f">RenderTarget</a> ()</td></tr>
-<tr class="memdesc:a2997c96cbd93cb8ce0aba2ddae35b86f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a2997c96cbd93cb8ce0aba2ddae35b86f">More...</a><br /></td></tr>
-<tr class="separator:a2997c96cbd93cb8ce0aba2ddae35b86f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af530274b34159d644e509b4b4dc43eb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1RenderTarget.php#af530274b34159d644e509b4b4dc43eb7">initialize</a> ()</td></tr>
-<tr class="memdesc:af530274b34159d644e509b4b4dc43eb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs the common initialization step after creation.  <a href="#af530274b34159d644e509b4b4dc43eb7">More...</a><br /></td></tr>
-<tr class="separator:af530274b34159d644e509b4b4dc43eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for all render targets (window, texture, ...) </p>
@@ -182,58 +122,8 @@ Protected Member Functions</h2></td></tr>
 <p>On top of that, render targets are still able to render direct OpenGL stuff. It is even possible to mix together OpenGL calls and regular SFML drawing commands. When doing so, make sure that OpenGL states are not messed up by calling the pushGLStates/popGLStates functions.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1RenderWindow.php" title="Window that can serve as a target for 2D drawing. ">sf::RenderWindow</a>, <a class="el" href="classsf_1_1RenderTexture.php" title="Target for off-screen 2D rendering into a texture. ">sf::RenderTexture</a>, <a class="el" href="classsf_1_1View.php" title="2D camera that defines what region is shown on screen ">sf::View</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2RenderTarget_8hpp_source.php#l00051">51</a> of file <a class="el" href="include_2SFML_2Graphics_2RenderTarget_8hpp_source.php">include/SFML/Graphics/RenderTarget.hpp</a>.</p>
+<p>Definition at line <a class="el" href="RenderTarget_8hpp_source.php#l00051">51</a> of file <a class="el" href="RenderTarget_8hpp_source.php">RenderTarget.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a9abd1654a99fba46f6887b9c625b9b06"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual sf::RenderTarget::~RenderTarget </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Destructor. </p>
-
-</div>
-</div>
-<a class="anchor" id="a2997c96cbd93cb8ce0aba2ddae35b86f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">sf::RenderTarget::RenderTarget </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Default constructor. </p>
-
-</div>
-</div>
 <a class="anchor" id="a9abd1654a99fba46f6887b9c625b9b06"></a>
 <div class="memitem">
 <div class="memproto">
@@ -310,31 +200,6 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6bb6f0ba348f2b1e2f46114aeaf60f26"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sf::RenderTarget::clear </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Color.php">Color</a> &amp;&#160;</td>
-          <td class="paramname"><em>color</em> = <code><a class="el" href="classsf_1_1Color.php">Color</a>(0,&#160;0,&#160;0,&#160;255)</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Clear the entire target with a single color. </p>
-<p>This function is usually called once every frame, to clear the previous contents of the target.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">color</td><td>Fill color to use to clear the render target </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a class="anchor" id="a12417a3bcc245c41d957b29583556f39"></a>
 <div class="memitem">
 <div class="memproto">
@@ -349,42 +214,7 @@ Protected Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classsf_1_1RenderStates.php">RenderStates</a> &amp;&#160;</td>
-          <td class="paramname"><em>states</em> = <code><a class="el" href="classsf_1_1RenderStates.php#afa30e6d780c05c2a20587ddb01b5fa5c">RenderStates::Default</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Draw a drawable object to the render target. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">drawable</td><td>Object to draw </td></tr>
-    <tr><td class="paramname">states</td><td>Render states to use for drawing </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a12417a3bcc245c41d957b29583556f39"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sf::RenderTarget::draw </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Drawable.php">Drawable</a> &amp;&#160;</td>
-          <td class="paramname"><em>drawable</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1RenderStates.php">RenderStates</a> &amp;&#160;</td>
-          <td class="paramname"><em>states</em> = <code><a class="el" href="classsf_1_1RenderStates.php#afa30e6d780c05c2a20587ddb01b5fa5c">RenderStates::Default</a></code>&#160;</td>
+          <td class="paramname"><em>states</em> = <code><a class="el" href="classsf_1_1RenderStates.php#ad29672df29f19ce50c3021d95f2bb062">RenderStates::Default</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -431,7 +261,7 @@ Protected Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classsf_1_1RenderStates.php">RenderStates</a> &amp;&#160;</td>
-          <td class="paramname"><em>states</em> = <code><a class="el" href="classsf_1_1RenderStates.php#afa30e6d780c05c2a20587ddb01b5fa5c">RenderStates::Default</a></code>&#160;</td>
+          <td class="paramname"><em>states</em> = <code><a class="el" href="classsf_1_1RenderStates.php#ad29672df29f19ce50c3021d95f2bb062">RenderStates::Default</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -451,75 +281,6 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a class="anchor" id="a976bc94057799eb9f8a18ac5fdfd9b73"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sf::RenderTarget::draw </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Vertex.php">Vertex</a> *&#160;</td>
-          <td class="paramname"><em>vertices</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>vertexCount</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__graphics.php#ga5ee56ac1339984909610713096283b1b">PrimitiveType</a>&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1RenderStates.php">RenderStates</a> &amp;&#160;</td>
-          <td class="paramname"><em>states</em> = <code><a class="el" href="classsf_1_1RenderStates.php#afa30e6d780c05c2a20587ddb01b5fa5c">RenderStates::Default</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Draw primitives defined by an array of vertices. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vertices</td><td>Pointer to the vertices </td></tr>
-    <tr><td class="paramname">vertexCount</td><td>Number of vertices in the array </td></tr>
-    <tr><td class="paramname">type</td><td>Type of primitives to draw </td></tr>
-    <tr><td class="paramname">states</td><td>Render states to use for drawing </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a718b1aa6296bf855171699cc18251ced"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classsf_1_1View.php">View</a>&amp; sf::RenderTarget::getDefaultView </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the default view of the render target. </p>
-<p>The default view has the initial size of the render target, and never changes after the target has been created.</p>
-<dl class="section return"><dt>Returns</dt><dd>The default view of the render target</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1RenderTarget.php#a063db6dd0a14913504af30e50cb6d946" title="Change the current active view. ">setView</a>, <a class="el" href="classsf_1_1RenderTarget.php#a98f721cc6dc11478922427fedfb2288b" title="Get the view currently in use in the render target. ">getView</a> </dd></dl>
 
 </div>
 </div>
@@ -567,35 +328,7 @@ Protected Member Functions</h2></td></tr>
 <p>Return the size of the rendering region of the target. </p>
 <dl class="section return"><dt>Returns</dt><dd>Size in pixels </dd></dl>
 
-<p>Implemented in <a class="el" href="classsf_1_1RenderTexture.php#a757ba45ec7a7deefcaef717049b00b8c">sf::RenderTexture</a>, <a class="el" href="classsf_1_1RenderTexture.php#a757ba45ec7a7deefcaef717049b00b8c">sf::RenderTexture</a>, <a class="el" href="classsf_1_1RenderWindow.php#a2c7ff414be32621a453745cf2a0f8a3e">sf::RenderWindow</a>, and <a class="el" href="classsf_1_1RenderWindow.php#a2c7ff414be32621a453745cf2a0f8a3e">sf::RenderWindow</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a88031922215f4da7b06309b9214169aa"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classsf_1_1Vector2.php">Vector2u</a> sf::RenderTarget::getSize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Return the size of the rendering region of the target. </p>
-<dl class="section return"><dt>Returns</dt><dd>Size in pixels </dd></dl>
-
-<p>Implemented in <a class="el" href="classsf_1_1RenderTexture.php#a757ba45ec7a7deefcaef717049b00b8c">sf::RenderTexture</a>, <a class="el" href="classsf_1_1RenderTexture.php#a757ba45ec7a7deefcaef717049b00b8c">sf::RenderTexture</a>, <a class="el" href="classsf_1_1RenderWindow.php#a2c7ff414be32621a453745cf2a0f8a3e">sf::RenderWindow</a>, and <a class="el" href="classsf_1_1RenderWindow.php#a2c7ff414be32621a453745cf2a0f8a3e">sf::RenderWindow</a>.</p>
+<p>Implemented in <a class="el" href="classsf_1_1RenderTexture.php#a757ba45ec7a7deefcaef717049b00b8c">sf::RenderTexture</a>, and <a class="el" href="classsf_1_1RenderWindow.php#a2c7ff414be32621a453745cf2a0f8a3e">sf::RenderWindow</a>.</p>
 
 </div>
 </div>
@@ -615,51 +348,6 @@ Protected Member Functions</h2></td></tr>
 <p>Get the view currently in use in the render target. </p>
 <dl class="section return"><dt>Returns</dt><dd>The view object that is currently used</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1RenderTarget.php#a063db6dd0a14913504af30e50cb6d946" title="Change the current active view. ">setView</a>, <a class="el" href="classsf_1_1RenderTarget.php#a718b1aa6296bf855171699cc18251ced" title="Get the default view of the render target. ">getDefaultView</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a98f721cc6dc11478922427fedfb2288b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classsf_1_1View.php">View</a>&amp; sf::RenderTarget::getView </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the view currently in use in the render target. </p>
-<dl class="section return"><dt>Returns</dt><dd>The view object that is currently used</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1RenderTarget.php#a063db6dd0a14913504af30e50cb6d946" title="Change the current active view. ">setView</a>, <a class="el" href="classsf_1_1RenderTarget.php#a718b1aa6296bf855171699cc18251ced" title="Get the default view of the render target. ">getDefaultView</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="aae035b0d45f87a0da2a28a0de6ba1086"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classsf_1_1Rect.php">IntRect</a> sf::RenderTarget::getViewport </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1View.php">View</a> &amp;&#160;</td>
-          <td class="paramname"><em>view</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the viewport of a view, applied to this render target. </p>
-<p>The viewport is defined in the view as a ratio, this function simply applies this ratio to the current dimensions of the render target to calculate the pixels rectangle that the viewport actually covers in the target.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">view</td><td>The view for which we want to compute the viewport</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Viewport rectangle, expressed in pixels </dd></dl>
 
 </div>
 </div>
@@ -715,32 +403,6 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af530274b34159d644e509b4b4dc43eb7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sf::RenderTarget::initialize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Performs the common initialization step after creation. </p>
-<p>The derived classes must call this function after the target is created and ready for drawing. </p>
-
-</div>
-</div>
 <a class="anchor" id="aa0c11e1989573f2cce64c621205f8e83"></a>
 <div class="memitem">
 <div class="memproto">
@@ -760,73 +422,6 @@ Protected Member Functions</h2></td></tr>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">point</td><td>Point to convert</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The converted point, in target coordinates (pixels)</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1RenderTarget.php#a2b0cab0e4c6af29d4efaba149d28116d" title="Convert a point from target coordinates to world coordinates, using the current view. ">mapPixelToCoords</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="aa0c11e1989573f2cce64c621205f8e83"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classsf_1_1Vector2.php">Vector2i</a> sf::RenderTarget::mapCoordsToPixel </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Vector2.php">Vector2f</a> &amp;&#160;</td>
-          <td class="paramname"><em>point</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Convert a point from world coordinates to target coordinates, using the current view. </p>
-<p>This function is an overload of the mapCoordsToPixel function that implicitly uses the current view. It is equivalent to: </p><div class="fragment"><div class="line">target.<a class="code" href="classsf_1_1RenderTarget.php#aa0c11e1989573f2cce64c621205f8e83">mapCoordsToPixel</a>(point, target.<a class="code" href="classsf_1_1RenderTarget.php#a98f721cc6dc11478922427fedfb2288b">getView</a>());</div>
-</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">point</td><td>Point to convert</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The converted point, in target coordinates (pixels)</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1RenderTarget.php#a2b0cab0e4c6af29d4efaba149d28116d" title="Convert a point from target coordinates to world coordinates, using the current view. ">mapPixelToCoords</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a7a2d427bdb9bd8f9f456fcf82813aa60"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classsf_1_1Vector2.php">Vector2i</a> sf::RenderTarget::mapCoordsToPixel </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Vector2.php">Vector2f</a> &amp;&#160;</td>
-          <td class="paramname"><em>point</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1View.php">View</a> &amp;&#160;</td>
-          <td class="paramname"><em>view</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Convert a point from world coordinates to target coordinates. </p>
-<p>This function finds the pixel of the render target that matches the given 2D point. In other words, it goes through the same process as the graphics card, to compute the final position of a rendered point.</p>
-<p>Initially, both coordinate systems (world units and target pixels) match perfectly. But if you define a custom view or resize your render target, this assertion is not true anymore, i.e. a point located at (150, 75) in your 2D world may map to the pixel (10, 50) of your render target &ndash; if the view is translated by (140, 25).</p>
-<p>This version uses a custom view for calculations, see the other overload of the function if you want to use the current view of the render target.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">point</td><td>Point to convert </td></tr>
-    <tr><td class="paramname">view</td><td>The view to use for converting the point</td></tr>
   </table>
   </dd>
 </dl>
@@ -902,74 +497,6 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2b0cab0e4c6af29d4efaba149d28116d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classsf_1_1Vector2.php">Vector2f</a> sf::RenderTarget::mapPixelToCoords </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Vector2.php">Vector2i</a> &amp;&#160;</td>
-          <td class="paramname"><em>point</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Convert a point from target coordinates to world coordinates, using the current view. </p>
-<p>This function is an overload of the mapPixelToCoords function that implicitly uses the current view. It is equivalent to: </p><div class="fragment"><div class="line">target.<a class="code" href="classsf_1_1RenderTarget.php#a2b0cab0e4c6af29d4efaba149d28116d">mapPixelToCoords</a>(point, target.<a class="code" href="classsf_1_1RenderTarget.php#a98f721cc6dc11478922427fedfb2288b">getView</a>());</div>
-</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">point</td><td>Pixel to convert</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The converted point, in "world" coordinates</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1RenderTarget.php#aa0c11e1989573f2cce64c621205f8e83" title="Convert a point from world coordinates to target coordinates, using the current view. ">mapCoordsToPixel</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a46eb08f775dd1420d6207ea87dde6e54"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classsf_1_1Vector2.php">Vector2f</a> sf::RenderTarget::mapPixelToCoords </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Vector2.php">Vector2i</a> &amp;&#160;</td>
-          <td class="paramname"><em>point</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1View.php">View</a> &amp;&#160;</td>
-          <td class="paramname"><em>view</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Convert a point from target coordinates to world coordinates. </p>
-<p>This function finds the 2D position that matches the given pixel of the render target. In other words, it does the inverse of what the graphics card does, to find the initial position of a rendered pixel.</p>
-<p>Initially, both coordinate systems (world units and target pixels) match perfectly. But if you define a custom view or resize your render target, this assertion is not true anymore, i.e. a point located at (10, 50) in your render target may map to the point (150, 75) in your 2D world &ndash; if the view is translated by (140, 25).</p>
-<p>For render-windows, this function is typically used to find which point (or object) is located below the mouse cursor.</p>
-<p>This version uses a custom view for calculations, see the other overload of the function if you want to use the current view of the render target.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">point</td><td>Pixel to convert </td></tr>
-    <tr><td class="paramname">view</td><td>The view to use for converting the point</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The converted point, in "world" units</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1RenderTarget.php#aa0c11e1989573f2cce64c621205f8e83" title="Convert a point from world coordinates to target coordinates, using the current view. ">mapCoordsToPixel</a> </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a46eb08f775dd1420d6207ea87dde6e54"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1030,54 +557,6 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad5a98401113df931ddcd54c080f7aa8e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sf::RenderTarget::popGLStates </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Restore the previously saved OpenGL render states and matrices. </p>
-<p>See the description of pushGLStates to get a detailed description of these functions.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1RenderTarget.php#a8d1998464ccc54e789aaf990242b47f7" title="Save the current OpenGL render states and matrices. ">pushGLStates</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a8d1998464ccc54e789aaf990242b47f7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sf::RenderTarget::pushGLStates </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Save the current OpenGL render states and matrices. </p>
-<p>This function can be used when you mix SFML drawing and direct OpenGL rendering. Combined with popGLStates, it ensures that: </p><ul>
-<li>SFML's internal states are not messed up by your OpenGL code </li>
-<li>your OpenGL states are not modified by a call to a SFML function</li>
-</ul>
-<p>More specifically, it must be used around code that calls Draw functions. Example: </p><div class="fragment"><div class="line"><span class="comment">// OpenGL code here...</span></div>
-<div class="line">window.pushGLStates();</div>
-<div class="line">window.draw(...);</div>
-<div class="line">window.draw(...);</div>
-<div class="line">window.popGLStates();</div>
-<div class="line"><span class="comment">// OpenGL code here...</span></div>
-</div><!-- fragment --><p>Note that this function is quite expensive: it saves all the possible OpenGL states and matrices, even the ones you don't care about. Therefore it should be used wisely. It is provided for convenience, but the best results will be achieved if you handle OpenGL states yourself (because you know which states have really changed, and need to be saved and restored). Take a look at the resetGLStates function if you do so.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1RenderTarget.php#ad5a98401113df931ddcd54c080f7aa8e" title="Restore the previously saved OpenGL render states and matrices. ">popGLStates</a> </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a8d1998464ccc54e789aaf990242b47f7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1130,93 +609,6 @@ Protected Member Functions</h2></td></tr>
 <div class="line">glPopAttrib(...);</div>
 <div class="line"><span class="comment">// OpenGL code here...</span></div>
 </div><!-- fragment --> 
-</div>
-</div>
-<a class="anchor" id="aac7504990d27dada4bfe3c7866920765"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sf::RenderTarget::resetGLStates </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Reset the internal OpenGL states so that the target is ready for drawing. </p>
-<p>This function can be used when you mix SFML drawing and direct OpenGL rendering, if you choose not to use pushGLStates/popGLStates. It makes sure that all OpenGL states needed by SFML are set, so that subsequent <a class="el" href="classsf_1_1RenderTarget.php#a12417a3bcc245c41d957b29583556f39" title="Draw a drawable object to the render target. ">draw()</a> calls will work as expected.</p>
-<p>Example: </p><div class="fragment"><div class="line"><span class="comment">// OpenGL code here...</span></div>
-<div class="line">glPushAttrib(...);</div>
-<div class="line">window.resetGLStates();</div>
-<div class="line">window.draw(...);</div>
-<div class="line">window.draw(...);</div>
-<div class="line">glPopAttrib(...);</div>
-<div class="line"><span class="comment">// OpenGL code here...</span></div>
-</div><!-- fragment --> 
-</div>
-</div>
-<a class="anchor" id="a4438c5885b142d070a769a7a868b0fdc"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool sf::RenderTarget::setActive </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>active</em> = <code>true</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Activate or deactivate the render target for rendering. </p>
-<p>This function makes the render target's context current for future OpenGL rendering operations (so you shouldn't care about it if you're not doing direct OpenGL stuff). A render target's context is active only on the current thread, if you want to make it active on another thread you have to deactivate it on the previous thread first if it was active. Only one context can be current in a thread, so if you want to draw OpenGL geometry to another render target don't forget to activate it again. Activating a render target will automatically deactivate the previously active context (if any).</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">active</td><td>True to activate, false to deactivate</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if operation was successful, false otherwise </dd></dl>
-
-<p>Implemented in <a class="el" href="classsf_1_1RenderTexture.php#a5da95ecdbce615a80bb78399012508cf">sf::RenderTexture</a>, <a class="el" href="classsf_1_1RenderTexture.php#a5da95ecdbce615a80bb78399012508cf">sf::RenderTexture</a>, and <a class="el" href="classsf_1_1RenderWindow.php#aee6c53eced675e885931eb3e91f11155">sf::RenderWindow</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a063db6dd0a14913504af30e50cb6d946"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sf::RenderTarget::setView </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1View.php">View</a> &amp;&#160;</td>
-          <td class="paramname"><em>view</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Change the current active view. </p>
-<p>The view is like a 2D camera, it controls which part of the 2D scene is visible, and how it is viewed in the render target. The new view will affect everything that is drawn, until another view is set. The render target keeps its own copy of the view object, so it is not necessary to keep the original one alive after calling this function. To restore the original view of the target, you can pass the result of <a class="el" href="classsf_1_1RenderTarget.php#a718b1aa6296bf855171699cc18251ced" title="Get the default view of the render target. ">getDefaultView()</a> to this function.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">view</td><td>New view to use</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1RenderTarget.php#a98f721cc6dc11478922427fedfb2288b" title="Get the view currently in use in the render target. ">getView</a>, <a class="el" href="classsf_1_1RenderTarget.php#a718b1aa6296bf855171699cc18251ced" title="Get the default view of the render target. ">getDefaultView</a> </dd></dl>
-
 </div>
 </div>
 <a class="anchor" id="a063db6dd0a14913504af30e50cb6d946"></a>
@@ -1246,7 +638,7 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="include_2SFML_2Graphics_2RenderTarget_8hpp_source.php">include/SFML/Graphics/RenderTarget.hpp</a></li>
+<li><a class="el" href="RenderTarget_8hpp_source.php">RenderTarget.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <?php

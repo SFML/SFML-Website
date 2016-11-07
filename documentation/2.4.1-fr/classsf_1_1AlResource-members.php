@@ -36,8 +36,6 @@
 <p>This is the complete list of members for <a class="el" href="classsf_1_1AlResource.php">sf::AlResource</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classsf_1_1AlResource.php#a51b4f3a825c5d68386f8683e3e1053d7">AlResource</a>()</td><td class="entry"><a class="el" href="classsf_1_1AlResource.php">sf::AlResource</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classsf_1_1AlResource.php#a51b4f3a825c5d68386f8683e3e1053d7">AlResource</a>()</td><td class="entry"><a class="el" href="classsf_1_1AlResource.php">sf::AlResource</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classsf_1_1AlResource.php#a74ad78198cddcb6e5d847177364049db">~AlResource</a>()</td><td class="entry"><a class="el" href="classsf_1_1AlResource.php">sf::AlResource</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classsf_1_1AlResource.php#a74ad78198cddcb6e5d847177364049db">~AlResource</a>()</td><td class="entry"><a class="el" href="classsf_1_1AlResource.php">sf::AlResource</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
 </table></div><!-- contents -->
 <?php

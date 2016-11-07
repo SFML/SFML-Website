@@ -36,15 +36,10 @@
 <p>This is the complete list of members for <a class="el" href="classsf_1_1ThreadLocal.php">sf::ThreadLocal</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classsf_1_1ThreadLocal.php#aef35a39686eac4b6634a6e5605aacfd7">getValue</a>() const </td><td class="entry"><a class="el" href="classsf_1_1ThreadLocal.php">sf::ThreadLocal</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classsf_1_1ThreadLocal.php#aef35a39686eac4b6634a6e5605aacfd7">getValue</a>() const </td><td class="entry"><a class="el" href="classsf_1_1ThreadLocal.php">sf::ThreadLocal</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classsf_1_1NonCopyable.php#a2110add170580fdb946f887719da6860">NonCopyable</a>()</td><td class="entry"><a class="el" href="classsf_1_1NonCopyable.php">sf::NonCopyable</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="classsf_1_1NonCopyable.php#a2110add170580fdb946f887719da6860">NonCopyable</a>()</td><td class="entry"><a class="el" href="classsf_1_1NonCopyable.php">sf::NonCopyable</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classsf_1_1ThreadLocal.php#ab7e334c83d77644a8e67ee31c3230007">setValue</a>(void *value)</td><td class="entry"><a class="el" href="classsf_1_1ThreadLocal.php">sf::ThreadLocal</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classsf_1_1ThreadLocal.php#ab7e334c83d77644a8e67ee31c3230007">setValue</a>(void *value)</td><td class="entry"><a class="el" href="classsf_1_1ThreadLocal.php">sf::ThreadLocal</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classsf_1_1ThreadLocal.php#a44ea3c4be4eef118080275cbf4cf04cd">ThreadLocal</a>(void *value=NULL)</td><td class="entry"><a class="el" href="classsf_1_1ThreadLocal.php">sf::ThreadLocal</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classsf_1_1ThreadLocal.php#a44ea3c4be4eef118080275cbf4cf04cd">ThreadLocal</a>(void *value=NULL)</td><td class="entry"><a class="el" href="classsf_1_1ThreadLocal.php">sf::ThreadLocal</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classsf_1_1ThreadLocal.php#acc612bddfd0f0507b1c5da8b3b8c75c2">~ThreadLocal</a>()</td><td class="entry"><a class="el" href="classsf_1_1ThreadLocal.php">sf::ThreadLocal</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classsf_1_1ThreadLocal.php#acc612bddfd0f0507b1c5da8b3b8c75c2">~ThreadLocal</a>()</td><td class="entry"><a class="el" href="classsf_1_1ThreadLocal.php">sf::ThreadLocal</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <?php
     require("../footer-fr.php");

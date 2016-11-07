@@ -69,10 +69,10 @@
 
 <h3><a class="anchor" id="index_q"></a>- q -</h3><ul>
 <li>Q
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a9d0722f129701d4536d39c91c943a110">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a27e3d50587c9789d2592d275d22fbada">sf::Keyboard</a>
 </li>
 <li>Quote
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142ac3586b73c214538fe81b4d0ea0847c76">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142af031edb6bcf319734a6664388958c475">sf::Keyboard</a>
 </li>
 </ul>
 </div><!-- contents -->

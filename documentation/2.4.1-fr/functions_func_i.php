@@ -82,7 +82,7 @@
 : <a class="el" href="classsf_1_1Rect.php#a566740c8f58e01bb052266f47e7e1011">sf::Rect&lt; T &gt;</a>
 </li>
 <li>IpAddress()
-: <a class="el" href="classsf_1_1IpAddress.php#a656b7445ab04cabaa7398685bc09c3f7">sf::IpAddress</a>
+: <a class="el" href="classsf_1_1IpAddress.php#af32a0574baa0f46e48deb2d83ca7658b">sf::IpAddress</a>
 </li>
 <li>isAvailable()
 : <a class="el" href="classsf_1_1Sensor.php#a7b7a2570218221781233bd495323abf0">sf::Sensor</a>

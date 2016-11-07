@@ -70,22 +70,22 @@
 
 <h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
 <li>N
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142ae64e9492767fb13e4484ba8f88367d29">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142ab652ed6b308db95a74dc4ff5229ac9c8">sf::Keyboard</a>
 </li>
 <li>name
 : <a class="el" href="structsf_1_1Joystick_1_1Identification.php#a135a9a3a4dc11c2b5cde51159b4d136d">sf::Joystick::Identification</a>
 </li>
 <li>NeedAccountToLogIn
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3baa8c41b24d7fba52b82600c74929a7d8c">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba9e048185f253f6eb6f5ff9e063b712fa">sf::Ftp::Response</a>
 </li>
 <li>NeedAccountToStore
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3baa19655e1a74e69425758933af91d0c65">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba1af0f173062a471739b50d8e0f40d5f7">sf::Ftp::Response</a>
 </li>
 <li>NeedInformation
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba3e7c902cae306df22540129d1b9c3731">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba02e6f05964ecb829e9b6fb6020d6528a">sf::Ftp::Response</a>
 </li>
 <li>NeedPassword
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3baeb7f26cf02a13fc05d9e1d8a323b1dde">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba9249e3fe9818eb93f181fbbf3ae3bc56">sf::Ftp::Response</a>
 </li>
 <li>next()
 : <a class="el" href="classsf_1_1Utf_3_0116_01_4.php#ab899108d77ce088eb001588e84d91525">sf::Utf&lt; 16 &gt;</a>
@@ -93,94 +93,94 @@
 , <a class="el" href="classsf_1_1Utf_3_018_01_4.php#a0365a0b38700baa161843563d083edf6">sf::Utf&lt; 8 &gt;</a>
 </li>
 <li>NoContent
-: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8aa71ad360db6281fd55c032c493820422">sf::Http::Response</a>
+: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8aefde9e4abf5682dcd314d63143be42e0">sf::Http::Response</a>
 </li>
 <li>NonCopyable()
 : <a class="el" href="classsf_1_1NonCopyable.php#a2110add170580fdb946f887719da6860">sf::NonCopyable</a>
 </li>
 <li>None
-: <a class="el" href="classsf_1_1IpAddress.php#af95b0353e632372b5266d6227bc0e3ec">sf::IpAddress</a>
+: <a class="el" href="classsf_1_1IpAddress.php#a4619b4abbe3c8fef056e7299db967404">sf::IpAddress</a>
 </li>
 <li>Normalized
-: <a class="el" href="classsf_1_1Texture.php#aa6fd3bbe3c334b3c4428edfb2765a82ea3b684a2e0aa92c07a074864d0ea17f51">sf::Texture</a>
+: <a class="el" href="classsf_1_1Texture.php#aa6fd3bbe3c334b3c4428edfb2765a82ea69d6228950882e4d68be4ba4dbe7df73">sf::Texture</a>
 </li>
 <li>NotEnoughMemory
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3bab65332f3729d28c9f2551dfa2827dc0c">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3baf418e54753e0b8f9cb0325dd618acd14">sf::Ftp::Response</a>
 </li>
 <li>NotFound
-: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8a3b265f3a2ba6b197f656b48c020c4abe">sf::Http::Response</a>
+: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8affca8a8319a62d98bd3ef90ff5cfc030">sf::Http::Response</a>
 </li>
 <li>NotImplemented
-: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8a18a9af9b94e369281abaab667e3c479c">sf::Http::Response</a>
+: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8a6920ba06d7e2bcf0b325da23ee95ef68">sf::Http::Response</a>
 </li>
 <li>NotLoggedIn
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba4d55199035de3c613fff260681ca762e">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3bafcfbaff2c6fed941b6bcbc0999db764e">sf::Ftp::Response</a>
 </li>
 <li>NotModified
-: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8a6fe25fcb5fbee4b2d898973f7d64d12c">sf::Http::Response</a>
+: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8a060ebc3af266e6bfe045b89e298e2545">sf::Http::Response</a>
 </li>
 <li>NotReady
-: <a class="el" href="classsf_1_1Socket.php#a51bf0fd51057b98a10fbb866246176dca412bf3512c20bfcbcd511858d55acfbd">sf::Socket</a>
+: <a class="el" href="classsf_1_1Socket.php#a51bf0fd51057b98a10fbb866246176dca8554848daae98f996e131bdeed076c09">sf::Socket</a>
 </li>
 <li>Num0
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a2f8fba9cfa0559ca4cdf714b7b1f37ae">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142af026fd133ee93a0bd8c70762cc3be4bc">sf::Keyboard</a>
 </li>
 <li>Num1
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a0ff1818a2ba93596f964827d5fff6c6b">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a506bd962cab80722a8c5a4b178912c59">sf::Keyboard</a>
 </li>
 <li>Num2
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a9f86f6aa3e319459be711f0c902e0f8b">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a2d6eb5118179bb140fdb3485bb08c182">sf::Keyboard</a>
 </li>
 <li>Num3
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142ad1902dd80640fe203b8188a9285e798c">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142aee78e5ed27d31598fc285400166c0dd5">sf::Keyboard</a>
 </li>
 <li>Num4
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142ad0046a39d1a7ac9f84443baf3161435d">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a5fbd8a089460dc33c22f68b36e1fdc98">sf::Keyboard</a>
 </li>
 <li>Num5
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a569b6898d7fabf3ee50a640046f84b70">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a1dc7e87810b8d4b7039e202b0adcc4ee">sf::Keyboard</a>
 </li>
 <li>Num6
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a63323068b847ef23ed384535c78b60c6">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142af86dafb69d922ad2b0f4bd4c37696575">sf::Keyboard</a>
 </li>
 <li>Num7
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a41a2d78b1bc4fc035c34da2894c9cd8f">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a8fa0056a0a6f5a7d9fcef3402c9c916d">sf::Keyboard</a>
 </li>
 <li>Num8
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a606ccfef2bb03c339fcca7f95a9f5264">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142adb9f2549fd57bfd99d4713ff1845c530">sf::Keyboard</a>
 </li>
 <li>Num9
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142aea295658de02326acf1a9db235b1ba95">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a9bc0d0727958bef97e2b6a58e23743db">sf::Keyboard</a>
 </li>
 <li>Numpad0
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a8d638cee97abb85463f71c731a5a4c00">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142af0b2af83a7a8c358f7b8f7c403089a4e">sf::Keyboard</a>
 </li>
 <li>Numpad1
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a2ac1ee8244ad38a0be3c9bdb5075ac5d">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a03536d369ae55cc18024f7e4a341a5ac">sf::Keyboard</a>
 </li>
 <li>Numpad2
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a9dd7c181a8be6d6be3c3245b44a79625">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a8ad9ccf62631d583f44f06aebd662093">sf::Keyboard</a>
 </li>
 <li>Numpad3
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142ac6e222f120cdf2e3cf88ac44953d8274">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142ab63ae26e90126b1842bde25d6dedb205">sf::Keyboard</a>
 </li>
 <li>Numpad4
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142af4644923d37479d80900ab33c7602497">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a65336d823bd823a0d246a872ff90e08a">sf::Keyboard</a>
 </li>
 <li>Numpad5
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142af07e467b79b8c376aa009532a7f96a97">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a8bc5041f12fdfbefba1dbd823c7e1054">sf::Keyboard</a>
 </li>
 <li>Numpad6
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a3ff2bcae211332b0069c5f2c2d038286">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142aaf28fdf0d3da6a18030e685478e3a713">sf::Keyboard</a>
 </li>
 <li>Numpad7
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142ae45c4baf1089097db9a22a2c8f720448">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a3f9bf9835d65a0df5cce2d3842a40541">sf::Keyboard</a>
 </li>
 <li>Numpad8
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a967d8277d043976e2f4d46f6a87cbdd5">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a25dcd4e4183ceceb3ac06c72995bae49">sf::Keyboard</a>
 </li>
 <li>Numpad9
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142ab7472f64ad341a2367d403ecb2698092">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a365eb80f54003670a78e3b850c28df21">sf::Keyboard</a>
 </li>
 </ul>
 </div><!-- contents -->

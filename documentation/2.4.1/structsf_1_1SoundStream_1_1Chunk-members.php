@@ -36,7 +36,7 @@
 <p>This is the complete list of members for <a class="el" href="structsf_1_1SoundStream_1_1Chunk.php">sf::SoundStream::Chunk</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="structsf_1_1SoundStream_1_1Chunk.php#af47f5d94012acf8b11f056ba77aff97a">sampleCount</a></td><td class="entry"><a class="el" href="structsf_1_1SoundStream_1_1Chunk.php">sf::SoundStream::Chunk</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="structsf_1_1SoundStream_1_1Chunk.php#ae0b301e2bdfc530a6dc9efeac7e8a2e7">samples</a></td><td class="entry"><a class="el" href="structsf_1_1SoundStream_1_1Chunk.php">sf::SoundStream::Chunk</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structsf_1_1SoundStream_1_1Chunk.php#aa3b84d69adbe663a17a7671626076df4">samples</a></td><td class="entry"><a class="el" href="structsf_1_1SoundStream_1_1Chunk.php">sf::SoundStream::Chunk</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <?php
     require("../footer.php");

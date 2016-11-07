@@ -63,7 +63,7 @@ Short example</h1>
 <div class="line">        <span class="keywordflow">while</span> (window.<a class="code" href="classsf_1_1Window.php#a338e996585faf82e93069858e3b531b7">pollEvent</a>(event))</div>
 <div class="line">        {</div>
 <div class="line">            <span class="comment">// Close window: exit</span></div>
-<div class="line">            <span class="keywordflow">if</span> (event.<a class="code" href="classsf_1_1Event.php#adf2f8044f713fd9d6019077b0d1ffe0a">type</a> == <a class="code" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aa4f718a7f43b0f2d46be222fe23198d9e">sf::Event::Closed</a>)</div>
+<div class="line">            <span class="keywordflow">if</span> (event.<a class="code" href="classsf_1_1Event.php#adf2f8044f713fd9d6019077b0d1ffe0a">type</a> == <a class="code" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aa316e4212e083f1dce79efd8d9e9c0a95">sf::Event::Closed</a>)</div>
 <div class="line">                window.<a class="code" href="classsf_1_1Window.php#a99d1e030387b0c26f5995670504fe7b5">close</a>();</div>
 <div class="line">        }</div>
 <div class="line"></div>

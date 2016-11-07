@@ -69,16 +69,16 @@
 : <a class="el" href="classsf_1_1Vector2.php#a58c32383b5291380db4b43a289f75988">sf::Vector2&lt; T &gt;</a>
 </li>
 <li>Vector3()
-: <a class="el" href="classsf_1_1Vector3.php#a99ed75b68f58adfa3e9fa0561b424bf6">sf::Vector3&lt; T &gt;</a>
+: <a class="el" href="classsf_1_1Vector3.php#aee8be1985c6e45e381ad4071265636f9">sf::Vector3&lt; T &gt;</a>
 </li>
 <li>Vertex()
-: <a class="el" href="classsf_1_1Vertex.php#ab9bf849c4c0d82d09bf5bece23d2456a">sf::Vertex</a>
+: <a class="el" href="classsf_1_1Vertex.php#a4dccc5c351b73b6fac169fe442535b40">sf::Vertex</a>
 </li>
 <li>VertexArray()
-: <a class="el" href="classsf_1_1VertexArray.php#a15729e01df8fc0021f9774dfb56295c1">sf::VertexArray</a>
+: <a class="el" href="classsf_1_1VertexArray.php#a4bb1c29a0e3354a035075899d84f02f9">sf::VertexArray</a>
 </li>
 <li>VideoMode()
-: <a class="el" href="classsf_1_1VideoMode.php#a04c9417e5c304510bef5f6aeb03f6ce1">sf::VideoMode</a>
+: <a class="el" href="classsf_1_1VideoMode.php#a46c35ed41de9e115661dcd529d64e9d3">sf::VideoMode</a>
 </li>
 <li>View()
 : <a class="el" href="classsf_1_1View.php#afdaf84cfc910ef160450d63603457ea4">sf::View</a>

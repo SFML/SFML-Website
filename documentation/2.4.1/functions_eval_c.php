@@ -69,43 +69,43 @@
 
 <h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
 <li>C
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a28228963e96f640dc325e475415d4e1f">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a0d586c4ec0cd6b537cb6f49180fedecc">sf::Keyboard</a>
 </li>
 <li>Closed
-: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aa4f718a7f43b0f2d46be222fe23198d9e">sf::Event</a>
+: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aa316e4212e083f1dce79efd8d9e9c0a95">sf::Event</a>
 </li>
 <li>ClosingConnection
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3bae070a7c775b991e22bbc94164c06a3e1">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3bab23931490fc2d1df3081d651fe0f4d6e">sf::Ftp::Response</a>
 </li>
 <li>ClosingDataConnection
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba326e2020413f73ab20d96e1425dc6c61">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3bac723ebc8a38913bbf0d9504556cbaaa6">sf::Ftp::Response</a>
 </li>
 <li>Comma
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a9dd5eb9a5c45ca7cc3d4abd0d371128d">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142ab7374f48cc79e3085739160b8e3ef2f9">sf::Keyboard</a>
 </li>
 <li>CommandNotImplemented
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3bac91eba896240e927206c386f5bf8e32e">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba2ca4834c756c81b924ebed696fcba0a8">sf::Ftp::Response</a>
 </li>
 <li>CommandUnknown
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba4ccd31337b9478c6cf5089523e16b540">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba75bdf0b6844fa9c07b3c25647d22c269">sf::Ftp::Response</a>
 </li>
 <li>ConnectionClosed
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3baf84c1847c12fe7216eca9a49af1b0cd7">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3bad1e5dcf298ce30c528261435f1a2eb53">sf::Ftp::Response</a>
 </li>
 <li>ConnectionFailed
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba099e88e94cf51258fd901177a37f7bb7">sf::Ftp::Response</a>
-, <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8ad75dc598ea9e428ca9222de7e8a429dc">sf::Http::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba51aa367cc1e85a45ea3c7be48730e990">sf::Ftp::Response</a>
+, <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8a7f307376f13bdc06b24fc274ecd2aa60">sf::Http::Response</a>
 </li>
 <li>Core
-: <a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2cae9f568c99438d04da1f8d393efa3a3a4">sf::ContextSettings</a>
+: <a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2cacb581130734cbd87cbbc9438429f4a8b">sf::ContextSettings</a>
 </li>
 <li>Count
-: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aae5c49a2d50ccccd9c941e6be36b0d05f">sf::Event</a>
-, <a class="el" href="classsf_1_1Joystick.php#a3cbd251ae1151f673398b12bb7926139a58bb2e8f3749310d61097e4361bc0ba8">sf::Joystick</a>
-, <a class="el" href="classsf_1_1Sensor.php#a687375af3ab77b818fca73735bcaea84ade647efb34c9d194e432fa0397d3f656">sf::Sensor</a>
+: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aae51749211243cab2ab270b29cdc32a70">sf::Event</a>
+, <a class="el" href="classsf_1_1Joystick.php#a951a7c775921304a5f3443c6e2bb4d65a6e0a2a95bc1da277610c04d80f52715e">sf::Joystick</a>
+, <a class="el" href="classsf_1_1Sensor.php#a687375af3ab77b818fca73735bcaea84afcb4a80eb9e3f927c5837207a1b9eb29">sf::Sensor</a>
 </li>
 <li>Created
-: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8a1459dbf2b1416eafbfeb4403c9f4eef0">sf::Http::Response</a>
+: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8a0a6e8bafa9365a0ed10b8a9cbfd0649b">sf::Http::Response</a>
 </li>
 </ul>
 </div><!-- contents -->

@@ -39,7 +39,7 @@
 <p>Structure holding a joystick's identification.  
  <a href="structsf_1_1Joystick_1_1Identification.php#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="include_2SFML_2Window_2Joystick_8hpp_source.php">Joystick.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="Joystick_8hpp_source.php">Joystick.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -56,7 +56,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Structure holding a joystick's identification. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2Joystick_8hpp_source.php#l00076">76</a> of file <a class="el" href="include_2SFML_2Window_2Joystick_8hpp_source.php">include/SFML/Window/Joystick.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Joystick_8hpp_source.php#l00076">76</a> of file <a class="el" href="Joystick_8hpp_source.php">Joystick.hpp</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a135a9a3a4dc11c2b5cde51159b4d136d"></a>
 <div class="memitem">
@@ -70,7 +70,7 @@ Public Attributes</h2></td></tr>
 
 <p>Name of the joystick. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2Joystick_8hpp_source.php#l00080">80</a> of file <a class="el" href="include_2SFML_2Window_2Joystick_8hpp_source.php">include/SFML/Window/Joystick.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Joystick_8hpp_source.php#l00080">80</a> of file <a class="el" href="Joystick_8hpp_source.php">Joystick.hpp</a>.</p>
 
 </div>
 </div>
@@ -86,7 +86,7 @@ Public Attributes</h2></td></tr>
 
 <p>Product identifier. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2Joystick_8hpp_source.php#l00082">82</a> of file <a class="el" href="include_2SFML_2Window_2Joystick_8hpp_source.php">include/SFML/Window/Joystick.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Joystick_8hpp_source.php#l00082">82</a> of file <a class="el" href="Joystick_8hpp_source.php">Joystick.hpp</a>.</p>
 
 </div>
 </div>
@@ -102,12 +102,12 @@ Public Attributes</h2></td></tr>
 
 <p>Manufacturer identifier. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Window_2Joystick_8hpp_source.php#l00081">81</a> of file <a class="el" href="include_2SFML_2Window_2Joystick_8hpp_source.php">include/SFML/Window/Joystick.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Joystick_8hpp_source.php#l00081">81</a> of file <a class="el" href="Joystick_8hpp_source.php">Joystick.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="include_2SFML_2Window_2Joystick_8hpp_source.php">include/SFML/Window/Joystick.hpp</a></li>
+<li><a class="el" href="Joystick_8hpp_source.php">Joystick.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <?php

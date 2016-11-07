@@ -73,7 +73,7 @@
 , <a class="el" href="classsf_1_1SoundFileReader.php#a3b7d86769ea07e24e7b0f0486bed7591">sf::SoundFileReader</a>
 </li>
 <li>receive()
-: <a class="el" href="classsf_1_1TcpSocket.php#aa655352609bc9804f2baa020df3e7331">sf::TcpSocket</a>
+: <a class="el" href="classsf_1_1TcpSocket.php#a90ce50811ea61d4f00efc62bb99ae1af">sf::TcpSocket</a>
 , <a class="el" href="classsf_1_1UdpSocket.php#ade9ca0f7ed7919136917b0b997a9833a">sf::UdpSocket</a>
 </li>
 <li>Rect()
@@ -104,10 +104,10 @@
 : <a class="el" href="classsf_1_1RenderTexture.php#a19ee6e5b4c40ad251803389b3953a9c6">sf::RenderTexture</a>
 </li>
 <li>RenderWindow()
-: <a class="el" href="classsf_1_1RenderWindow.php#a25c0af7d515e710b6eebc9c6be952aa5">sf::RenderWindow</a>
+: <a class="el" href="classsf_1_1RenderWindow.php#a839bbf336bdcafb084dafc3076fc9021">sf::RenderWindow</a>
 </li>
 <li>replace()
-: <a class="el" href="classsf_1_1String.php#ad460e628c287b0fa88deba2eb0b6744b">sf::String</a>
+: <a class="el" href="classsf_1_1String.php#a82bbfee2bf23c641e5361ad505c07921">sf::String</a>
 </li>
 <li>Request()
 : <a class="el" href="classsf_1_1Http_1_1Request.php#a8e89d9e8ffcc1163259b35d79809a61c">sf::Http::Request</a>
@@ -135,7 +135,7 @@
 : <a class="el" href="classsf_1_1Clock.php#a123e2627f2943e5ecaa1db0c7df3231b">sf::Clock</a>
 </li>
 <li>rotate()
-: <a class="el" href="classsf_1_1Transform.php#a3e548c3c9e3fb9d4bd43cf852669e555">sf::Transform</a>
+: <a class="el" href="classsf_1_1Transform.php#af0b7cc3fed36d0fa22d5d331a779eee2">sf::Transform</a>
 , <a class="el" href="classsf_1_1Transformable.php#af8a5ffddc0d93f238fee3bf8efe1ebda">sf::Transformable</a>
 , <a class="el" href="classsf_1_1View.php#a5fd3901aae1845586ca40add94faa378">sf::View</a>
 </li>

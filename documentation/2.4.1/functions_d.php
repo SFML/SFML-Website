@@ -70,22 +70,22 @@
 
 <h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
 <li>D
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a5550a42f9631b2af06e3d232ebbc9624">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142ae778600bd3e878b59df1dbdd5877ba7a">sf::Keyboard</a>
 </li>
 <li>Dash
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142ab3d333d80ab5c00ffced0b666320bf0c">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a401a183dcfde0a06cb60fe6c91fa1e39">sf::Keyboard</a>
 </li>
 <li>DataConnectionAlreadyOpened
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3bac40df58b564d1256c9dc7cbdaede9ad2">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3bafa52d19bc813d69055f4cc390d4a76ca">sf::Ftp::Response</a>
 </li>
 <li>DataConnectionOpened
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3baca24974cc31d5076fb34effeb7c37459">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3badc78ed87d5bddb174fa3c16707ac2f2d">sf::Ftp::Response</a>
 </li>
 <li>DataConnectionUnavailable
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba0b82e3e39aa5ce3e9b3115abd04c74cf">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba757b89ff1f236941f7759b0ed0c28b88">sf::Ftp::Response</a>
 </li>
 <li>Debug
-: <a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2ca84963e2e2ec85ef4067c210ed0381295">sf::ContextSettings</a>
+: <a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2ca6043f67afb3d48918d5336474eabaafc">sf::ContextSettings</a>
 </li>
 <li>decode()
 : <a class="el" href="classsf_1_1Utf_3_0116_01_4.php#a17be6fc08e51182e7ac8bf9269dfae37">sf::Utf&lt; 16 &gt;</a>
@@ -99,12 +99,12 @@
 : <a class="el" href="classsf_1_1Utf_3_0132_01_4.php#a043fe25f5f4dbc205e78e6f1d99840dc">sf::Utf&lt; 32 &gt;</a>
 </li>
 <li>Default
-: <a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2ca0246d0341f162d5bd17d3c22d1bf8be1">sf::ContextSettings</a>
-, <a class="el" href="classsf_1_1RenderStates.php#afa30e6d780c05c2a20587ddb01b5fa5c">sf::RenderStates</a>
+: <a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2cabf868dcb751b909bf031484ed42a93bb">sf::ContextSettings</a>
+, <a class="el" href="classsf_1_1RenderStates.php#ad29672df29f19ce50c3021d95f2bb062">sf::RenderStates</a>
 </li>
 <li>Delete
-: <a class="el" href="classsf_1_1Http_1_1Request.php#a620f8bff6f43e1378f321bf53fbf5598afc3cd1d5383bd18cd82a21e293c094ab">sf::Http::Request</a>
-, <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142ad54bf2d4efdc6fc0ed859f552f40ce15">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Http_1_1Request.php#a620f8bff6f43e1378f321bf53fbf5598abc9555b94c1b896185015ec3990999f9">sf::Http::Request</a>
+, <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142ab66187002fc7f6695ef3d05237b93a38">sf::Keyboard</a>
 </li>
 <li>deleteDirectory()
 : <a class="el" href="classsf_1_1Ftp.php#a2a8a7ef9144204b5b319c9a4be8806c2">sf::Ftp</a>
@@ -120,46 +120,46 @@
 : <a class="el" href="structsf_1_1ContextSettings.php#a4809e22089c2af7276b8809b5aede7bb">sf::ContextSettings</a>
 </li>
 <li>DirectoryOk
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba469897826bb8b8139df17bc60e584df1">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba06d26e95a170fc422af13def415e0437">sf::Ftp::Response</a>
 </li>
 <li>DirectoryResponse()
 : <a class="el" href="classsf_1_1Ftp_1_1DirectoryResponse.php#a36b6d2728fa53c4ad37b7a6307f4d388">sf::Ftp::DirectoryResponse</a>
 </li>
 <li>DirectoryStatus
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba01821e4dc199adbf69ef65df4f949da7">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba8729460a695013cc96330e2fced0ae1f">sf::Ftp::Response</a>
 </li>
 <li>disconnect()
 : <a class="el" href="classsf_1_1Ftp.php#acf7459926f3391cd06bf84337ed6a0f4">sf::Ftp</a>
 , <a class="el" href="classsf_1_1TcpSocket.php#ac18f518a9be3d6be5e74b9404c253c1e">sf::TcpSocket</a>
 </li>
 <li>Disconnected
-: <a class="el" href="classsf_1_1Socket.php#a51bf0fd51057b98a10fbb866246176dca4cbfeb4c26392f23efa26ae6900ae164">sf::Socket</a>
+: <a class="el" href="classsf_1_1Socket.php#a51bf0fd51057b98a10fbb866246176dcab215141f756acdc23c67fad149710eb1">sf::Socket</a>
 </li>
 <li>display()
 : <a class="el" href="classsf_1_1RenderTexture.php#af92886d5faef3916caff9fa9ab32c555">sf::RenderTexture</a>
 , <a class="el" href="classsf_1_1Window.php#adabf839cb103ac96cfc82f781638772a">sf::Window</a>
 </li>
 <li>Divide
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142abe83e423e1b42bfbcd9728a211e5e84d">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142afae3dc28752954f0bfe298ac52f58cb6">sf::Keyboard</a>
 </li>
 <li>Done
-: <a class="el" href="classsf_1_1Socket.php#a51bf0fd51057b98a10fbb866246176dca6b3d5ba897b6df8ebda86c823b30348a">sf::Socket</a>
+: <a class="el" href="classsf_1_1Socket.php#a51bf0fd51057b98a10fbb866246176dca1de3a85bc56d3ae85b3d0f3cfd04ae90">sf::Socket</a>
 </li>
 <li>Down
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a4c156edb237453ea7e9070b8178333ad">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a33dd676edbdf0817d7a65b21df3d0dca">sf::Keyboard</a>
 </li>
 <li>download()
 : <a class="el" href="classsf_1_1Ftp.php#a20c1600ec5fd6f5a2ad1429ab8aa5df4">sf::Ftp</a>
 </li>
 <li>draw()
 : <a class="el" href="classsf_1_1Drawable.php#a35fc1e68eb2b7eda0ec83b9f02a50caf">sf::Drawable</a>
-, <a class="el" href="classsf_1_1RenderTarget.php#a12417a3bcc245c41d957b29583556f39">sf::RenderTarget</a>
+, <a class="el" href="classsf_1_1RenderTarget.php#a976bc94057799eb9f8a18ac5fdfd9b73">sf::RenderTarget</a>
 </li>
 <li>DstAlpha
-: <a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbba3344b2d94959aa49f66797bf8046b15b">sf::BlendMode</a>
+: <a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbba5e3dc9a6f117aaa5f7433e1f4662a5f7">sf::BlendMode</a>
 </li>
 <li>DstColor
-: <a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbabf55ba7b1fd4567def92e4fbfa40387a">sf::BlendMode</a>
+: <a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbba3d85281c3eab7153f2bd9faae3e7523a">sf::BlendMode</a>
 </li>
 </ul>
 </div><!-- contents -->

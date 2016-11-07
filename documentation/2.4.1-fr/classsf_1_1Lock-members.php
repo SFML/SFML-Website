@@ -36,11 +36,8 @@
 <p>This is the complete list of members for <a class="el" href="classsf_1_1Lock.php">sf::Lock</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classsf_1_1Lock.php#a1a4c5d7a15da61103d85c9aa7f118920">Lock</a>(Mutex &amp;mutex)</td><td class="entry"><a class="el" href="classsf_1_1Lock.php">sf::Lock</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classsf_1_1Lock.php#a1a4c5d7a15da61103d85c9aa7f118920">Lock</a>(Mutex &amp;mutex)</td><td class="entry"><a class="el" href="classsf_1_1Lock.php">sf::Lock</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classsf_1_1NonCopyable.php#a2110add170580fdb946f887719da6860">NonCopyable</a>()</td><td class="entry"><a class="el" href="classsf_1_1NonCopyable.php">sf::NonCopyable</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="classsf_1_1NonCopyable.php#a2110add170580fdb946f887719da6860">NonCopyable</a>()</td><td class="entry"><a class="el" href="classsf_1_1NonCopyable.php">sf::NonCopyable</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classsf_1_1Lock.php#a8168b36323a18ccf5b6bc531d964aec5">~Lock</a>()</td><td class="entry"><a class="el" href="classsf_1_1Lock.php">sf::Lock</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classsf_1_1Lock.php#a8168b36323a18ccf5b6bc531d964aec5">~Lock</a>()</td><td class="entry"><a class="el" href="classsf_1_1Lock.php">sf::Lock</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <?php
     require("../footer-fr.php");

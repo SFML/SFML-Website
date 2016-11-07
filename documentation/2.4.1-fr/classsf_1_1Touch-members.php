@@ -37,10 +37,7 @@
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classsf_1_1Touch.php#af1b7035be709091c7475075e43e2bc23">getPosition</a>(unsigned int finger)</td><td class="entry"><a class="el" href="classsf_1_1Touch.php">sf::Touch</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="classsf_1_1Touch.php#a372acaba3c7ac70fca4614c16ac4a1bb">getPosition</a>(unsigned int finger, const Window &amp;relativeTo)</td><td class="entry"><a class="el" href="classsf_1_1Touch.php">sf::Touch</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classsf_1_1Touch.php#af1b7035be709091c7475075e43e2bc23">getPosition</a>(unsigned int finger)</td><td class="entry"><a class="el" href="classsf_1_1Touch.php">sf::Touch</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classsf_1_1Touch.php#a372acaba3c7ac70fca4614c16ac4a1bb">getPosition</a>(unsigned int finger, const Window &amp;relativeTo)</td><td class="entry"><a class="el" href="classsf_1_1Touch.php">sf::Touch</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classsf_1_1Touch.php#a2f85297123ea4e401d02c346e50d48a3">isDown</a>(unsigned int finger)</td><td class="entry"><a class="el" href="classsf_1_1Touch.php">sf::Touch</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classsf_1_1Touch.php#a2f85297123ea4e401d02c346e50d48a3">isDown</a>(unsigned int finger)</td><td class="entry"><a class="el" href="classsf_1_1Touch.php">sf::Touch</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
 </table></div><!-- contents -->
 <?php
     require("../footer-fr.php");

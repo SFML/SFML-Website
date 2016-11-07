@@ -77,7 +77,7 @@
 : <a class="el" href="classsf_1_1Utf_3_0132_01_4.php#a52e511e74ddc5df1bbf18f910193bc47">sf::Utf&lt; 32 &gt;</a>
 </li>
 <li>end()
-: <a class="el" href="classsf_1_1String.php#ac823012f39cb6f61100418876e99d53b">sf::String</a>
+: <a class="el" href="classsf_1_1String.php#ab6fb6ee1b21bd5dbdc9d6840f035eb79">sf::String</a>
 </li>
 <li>endOfPacket()
 : <a class="el" href="classsf_1_1Packet.php#aee3adfca6303f1e6bde3c62be392b945">sf::Packet</a>

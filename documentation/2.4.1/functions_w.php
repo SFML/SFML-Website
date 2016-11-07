@@ -70,7 +70,7 @@
 
 <h3><a class="anchor" id="index_w"></a>- w -</h3><ul>
 <li>W
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142ab374aa3b7462ee8b918f4a94452f1043">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a258aa89e9c6c9aad1ccbaeb41839c5e0">sf::Keyboard</a>
 </li>
 <li>wait()
 : <a class="el" href="classsf_1_1SocketSelector.php#a9cfda5475f17925e65889394d70af702">sf::SocketSelector</a>
@@ -86,7 +86,7 @@
 : <a class="el" href="classsf_1_1Mouse.php#a60dd479a43f26f200e7957aa11803ff4">sf::Mouse</a>
 </li>
 <li>White
-: <a class="el" href="classsf_1_1Color.php#abd9695b00da63b890ea40f74629237c0">sf::Color</a>
+: <a class="el" href="classsf_1_1Color.php#a4fd874712178d9e206f53226002aa4ca">sf::Color</a>
 </li>
 <li>width
 : <a class="el" href="structsf_1_1Event_1_1SizeEvent.php#a20ea1b78c9bb1604432f8f0067bbfd94">sf::Event::SizeEvent</a>
@@ -94,7 +94,7 @@
 , <a class="el" href="classsf_1_1VideoMode.php#a9b3b2ad2cac6b9c266823fb5ed506d90">sf::VideoMode</a>
 </li>
 <li>Window()
-: <a class="el" href="classsf_1_1Window.php#a5359122166b4dc492c3d25caf08ccfc4">sf::Window</a>
+: <a class="el" href="classsf_1_1Window.php#a1bee771baecbae6d357871929dc042a2">sf::Window</a>
 </li>
 <li>write()
 : <a class="el" href="classsf_1_1OutputSoundFile.php#adfcf525fced71121f336fa89faac3d67">sf::OutputSoundFile</a>

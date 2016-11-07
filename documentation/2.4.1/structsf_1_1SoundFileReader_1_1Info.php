@@ -39,7 +39,7 @@
 <p>Structure holding the audio properties of a sound file.  
  <a href="structsf_1_1SoundFileReader_1_1Info.php#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="include_2SFML_2Audio_2SoundFileReader_8hpp_source.php">SoundFileReader.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="SoundFileReader_8hpp_source.php">SoundFileReader.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -56,7 +56,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Structure holding the audio properties of a sound file. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Audio_2SoundFileReader_8hpp_source.php#l00051">51</a> of file <a class="el" href="include_2SFML_2Audio_2SoundFileReader_8hpp_source.php">include/SFML/Audio/SoundFileReader.hpp</a>.</p>
+<p>Definition at line <a class="el" href="SoundFileReader_8hpp_source.php#l00051">51</a> of file <a class="el" href="SoundFileReader_8hpp_source.php">SoundFileReader.hpp</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="ac748bb30768d1a3caf329e95d31d6d2a"></a>
 <div class="memitem">
@@ -70,7 +70,7 @@ Public Attributes</h2></td></tr>
 
 <p>Number of channels of the sound. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Audio_2SoundFileReader_8hpp_source.php#l00054">54</a> of file <a class="el" href="include_2SFML_2Audio_2SoundFileReader_8hpp_source.php">include/SFML/Audio/SoundFileReader.hpp</a>.</p>
+<p>Definition at line <a class="el" href="SoundFileReader_8hpp_source.php#l00054">54</a> of file <a class="el" href="SoundFileReader_8hpp_source.php">SoundFileReader.hpp</a>.</p>
 
 </div>
 </div>
@@ -86,7 +86,7 @@ Public Attributes</h2></td></tr>
 
 <p>Total number of samples in the file. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Audio_2SoundFileReader_8hpp_source.php#l00053">53</a> of file <a class="el" href="include_2SFML_2Audio_2SoundFileReader_8hpp_source.php">include/SFML/Audio/SoundFileReader.hpp</a>.</p>
+<p>Definition at line <a class="el" href="SoundFileReader_8hpp_source.php#l00053">53</a> of file <a class="el" href="SoundFileReader_8hpp_source.php">SoundFileReader.hpp</a>.</p>
 
 </div>
 </div>
@@ -102,12 +102,12 @@ Public Attributes</h2></td></tr>
 
 <p>Samples rate of the sound, in samples per second. </p>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Audio_2SoundFileReader_8hpp_source.php#l00055">55</a> of file <a class="el" href="include_2SFML_2Audio_2SoundFileReader_8hpp_source.php">include/SFML/Audio/SoundFileReader.hpp</a>.</p>
+<p>Definition at line <a class="el" href="SoundFileReader_8hpp_source.php#l00055">55</a> of file <a class="el" href="SoundFileReader_8hpp_source.php">SoundFileReader.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="include_2SFML_2Audio_2SoundFileReader_8hpp_source.php">include/SFML/Audio/SoundFileReader.hpp</a></li>
+<li><a class="el" href="SoundFileReader_8hpp_source.php">SoundFileReader.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <?php

@@ -43,7 +43,7 @@
 <p><a class="el" href="classsf_1_1Image.php" title="Class for loading, manipulating and saving images. ">Image</a> living on the graphics card that can be used for drawing.  
  <a href="classsf_1_1Texture.php#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="include_2SFML_2Graphics_2Texture_8hpp_source.php">Texture.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="Texture_8hpp_source.php">Texture.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for sf::Texture:</div>
 <div class="dyncontent">
@@ -51,23 +51,13 @@ Inheritance diagram for sf::Texture:</div>
   <img src="classsf_1_1Texture.png" usemap="#sf::Texture_map" alt=""/>
   <map id="sf::Texture_map" name="sf::Texture_map">
 <area href="classsf_1_1GlResource.php" title="Base class for classes that require an OpenGL context. " alt="sf::GlResource" shape="rect" coords="0,0,94,24"/>
-<area href="classsf_1_1GlResource.php" title="Base class for classes that require an OpenGL context. " alt="sf::GlResource" shape="rect" coords="104,0,198,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aa6fd3bbe3c334b3c4428edfb2765a82e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#aa6fd3bbe3c334b3c4428edfb2765a82e">CoordinateType</a> { <a class="el" href="classsf_1_1Texture.php#aa6fd3bbe3c334b3c4428edfb2765a82ea3b684a2e0aa92c07a074864d0ea17f51">Normalized</a>, 
-<a class="el" href="classsf_1_1Texture.php#aa6fd3bbe3c334b3c4428edfb2765a82eaef6f1159be622a46cd9ae35d44bbc790">Pixels</a>, 
-<a class="el" href="classsf_1_1Texture.php#aa6fd3bbe3c334b3c4428edfb2765a82ea3b684a2e0aa92c07a074864d0ea17f51">Normalized</a>, 
-<a class="el" href="classsf_1_1Texture.php#aa6fd3bbe3c334b3c4428edfb2765a82eaef6f1159be622a46cd9ae35d44bbc790">Pixels</a>
- }<tr class="memdesc:aa6fd3bbe3c334b3c4428edfb2765a82e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types of texture coordinates that can be used for rendering.  <a href="classsf_1_1Texture.php#aa6fd3bbe3c334b3c4428edfb2765a82e">More...</a><br /></td></tr>
-<tr class="separator:aa6fd3bbe3c334b3c4428edfb2765a82e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:aa6fd3bbe3c334b3c4428edfb2765a82e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#aa6fd3bbe3c334b3c4428edfb2765a82e">CoordinateType</a> { <a class="el" href="classsf_1_1Texture.php#aa6fd3bbe3c334b3c4428edfb2765a82ea3b684a2e0aa92c07a074864d0ea17f51">Normalized</a>, 
-<a class="el" href="classsf_1_1Texture.php#aa6fd3bbe3c334b3c4428edfb2765a82eaef6f1159be622a46cd9ae35d44bbc790">Pixels</a>, 
-<a class="el" href="classsf_1_1Texture.php#aa6fd3bbe3c334b3c4428edfb2765a82ea3b684a2e0aa92c07a074864d0ea17f51">Normalized</a>, 
-<a class="el" href="classsf_1_1Texture.php#aa6fd3bbe3c334b3c4428edfb2765a82eaef6f1159be622a46cd9ae35d44bbc790">Pixels</a>
+<tr class="memitem:aa6fd3bbe3c334b3c4428edfb2765a82e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#aa6fd3bbe3c334b3c4428edfb2765a82e">CoordinateType</a> { <a class="el" href="classsf_1_1Texture.php#aa6fd3bbe3c334b3c4428edfb2765a82ea69d6228950882e4d68be4ba4dbe7df73">Normalized</a>, 
+<a class="el" href="classsf_1_1Texture.php#aa6fd3bbe3c334b3c4428edfb2765a82ea6372f9c3a10203a7a69d8d5da59d82ff">Pixels</a>
  }<tr class="memdesc:aa6fd3bbe3c334b3c4428edfb2765a82e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types of texture coordinates that can be used for rendering.  <a href="classsf_1_1Texture.php#aa6fd3bbe3c334b3c4428edfb2765a82e">More...</a><br /></td></tr>
 <tr class="separator:aa6fd3bbe3c334b3c4428edfb2765a82e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
@@ -149,91 +139,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a14526d89b9008a3d851dc7b5e9532450"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#a14526d89b9008a3d851dc7b5e9532450">getNativeHandle</a> () const </td></tr>
 <tr class="memdesc:a14526d89b9008a3d851dc7b5e9532450"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the underlying OpenGL handle of the texture.  <a href="#a14526d89b9008a3d851dc7b5e9532450">More...</a><br /></td></tr>
 <tr class="separator:a14526d89b9008a3d851dc7b5e9532450"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e04674853b8533bf981db3173e3a4a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#a3e04674853b8533bf981db3173e3a4a7">Texture</a> ()</td></tr>
-<tr class="memdesc:a3e04674853b8533bf981db3173e3a4a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a3e04674853b8533bf981db3173e3a4a7">More...</a><br /></td></tr>
-<tr class="separator:a3e04674853b8533bf981db3173e3a4a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a524855cbf89de3b74be84d385fd229de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#a524855cbf89de3b74be84d385fd229de">Texture</a> (const <a class="el" href="classsf_1_1Texture.php">Texture</a> &amp;copy)</td></tr>
-<tr class="memdesc:a524855cbf89de3b74be84d385fd229de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="#a524855cbf89de3b74be84d385fd229de">More...</a><br /></td></tr>
-<tr class="separator:a524855cbf89de3b74be84d385fd229de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c5354ad40eb1c5aeeeb21f57ccd7e6c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#a9c5354ad40eb1c5aeeeb21f57ccd7e6c">~Texture</a> ()</td></tr>
-<tr class="memdesc:a9c5354ad40eb1c5aeeeb21f57ccd7e6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a9c5354ad40eb1c5aeeeb21f57ccd7e6c">More...</a><br /></td></tr>
-<tr class="separator:a9c5354ad40eb1c5aeeeb21f57ccd7e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89b4c7d204acf1033c3a1b6e0a3ad0a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#a89b4c7d204acf1033c3a1b6e0a3ad0a3">create</a> (unsigned int width, unsigned int height)</td></tr>
-<tr class="memdesc:a89b4c7d204acf1033c3a1b6e0a3ad0a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the texture.  <a href="#a89b4c7d204acf1033c3a1b6e0a3ad0a3">More...</a><br /></td></tr>
-<tr class="separator:a89b4c7d204acf1033c3a1b6e0a3ad0a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e1b56eabfe33e2e0e1cb03712c7fcc7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#a8e1b56eabfe33e2e0e1cb03712c7fcc7">loadFromFile</a> (const std::string &amp;filename, const <a class="el" href="classsf_1_1Rect.php">IntRect</a> &amp;area=<a class="el" href="classsf_1_1Rect.php">IntRect</a>())</td></tr>
-<tr class="memdesc:a8e1b56eabfe33e2e0e1cb03712c7fcc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the texture from a file on disk.  <a href="#a8e1b56eabfe33e2e0e1cb03712c7fcc7">More...</a><br /></td></tr>
-<tr class="separator:a8e1b56eabfe33e2e0e1cb03712c7fcc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c4adb19dd4cbee0a588eeb85e52a249"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#a2c4adb19dd4cbee0a588eeb85e52a249">loadFromMemory</a> (const void *data, std::size_t size, const <a class="el" href="classsf_1_1Rect.php">IntRect</a> &amp;area=<a class="el" href="classsf_1_1Rect.php">IntRect</a>())</td></tr>
-<tr class="memdesc:a2c4adb19dd4cbee0a588eeb85e52a249"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the texture from a file in memory.  <a href="#a2c4adb19dd4cbee0a588eeb85e52a249">More...</a><br /></td></tr>
-<tr class="separator:a2c4adb19dd4cbee0a588eeb85e52a249"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a786b486a46b1c6d1c16ff4af61ecc601"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#a786b486a46b1c6d1c16ff4af61ecc601">loadFromStream</a> (<a class="el" href="classsf_1_1InputStream.php">InputStream</a> &amp;stream, const <a class="el" href="classsf_1_1Rect.php">IntRect</a> &amp;area=<a class="el" href="classsf_1_1Rect.php">IntRect</a>())</td></tr>
-<tr class="memdesc:a786b486a46b1c6d1c16ff4af61ecc601"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the texture from a custom stream.  <a href="#a786b486a46b1c6d1c16ff4af61ecc601">More...</a><br /></td></tr>
-<tr class="separator:a786b486a46b1c6d1c16ff4af61ecc601"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abec4567ad9856a3596dc74803f26fba2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#abec4567ad9856a3596dc74803f26fba2">loadFromImage</a> (const <a class="el" href="classsf_1_1Image.php">Image</a> &amp;image, const <a class="el" href="classsf_1_1Rect.php">IntRect</a> &amp;area=<a class="el" href="classsf_1_1Rect.php">IntRect</a>())</td></tr>
-<tr class="memdesc:abec4567ad9856a3596dc74803f26fba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the texture from an image.  <a href="#abec4567ad9856a3596dc74803f26fba2">More...</a><br /></td></tr>
-<tr class="separator:abec4567ad9856a3596dc74803f26fba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f370acd8f41c8b97a6959389c521c2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Vector2.php">Vector2u</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#a0f370acd8f41c8b97a6959389c521c2c">getSize</a> () const </td></tr>
-<tr class="memdesc:a0f370acd8f41c8b97a6959389c521c2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the size of the texture.  <a href="#a0f370acd8f41c8b97a6959389c521c2c">More...</a><br /></td></tr>
-<tr class="separator:a0f370acd8f41c8b97a6959389c521c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefc19bcd95565dd2348fd4cec0facddc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Image.php">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#aefc19bcd95565dd2348fd4cec0facddc">copyToImage</a> () const </td></tr>
-<tr class="memdesc:aefc19bcd95565dd2348fd4cec0facddc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the texture pixels to an image.  <a href="#aefc19bcd95565dd2348fd4cec0facddc">More...</a><br /></td></tr>
-<tr class="separator:aefc19bcd95565dd2348fd4cec0facddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4eab5c6781316840b0c50ad08370963"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#ae4eab5c6781316840b0c50ad08370963">update</a> (const Uint8 *pixels)</td></tr>
-<tr class="memdesc:ae4eab5c6781316840b0c50ad08370963"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the whole texture from an array of pixels.  <a href="#ae4eab5c6781316840b0c50ad08370963">More...</a><br /></td></tr>
-<tr class="separator:ae4eab5c6781316840b0c50ad08370963"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1352d8e16c2aeb4df586ed65dd2c36b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#a1352d8e16c2aeb4df586ed65dd2c36b9">update</a> (const Uint8 *pixels, unsigned int width, unsigned int height, unsigned int x, unsigned int y)</td></tr>
-<tr class="memdesc:a1352d8e16c2aeb4df586ed65dd2c36b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a part of the texture from an array of pixels.  <a href="#a1352d8e16c2aeb4df586ed65dd2c36b9">More...</a><br /></td></tr>
-<tr class="separator:a1352d8e16c2aeb4df586ed65dd2c36b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a037cdf171af0fb392d07626a44a4ea17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#a037cdf171af0fb392d07626a44a4ea17">update</a> (const <a class="el" href="classsf_1_1Image.php">Image</a> &amp;image)</td></tr>
-<tr class="memdesc:a037cdf171af0fb392d07626a44a4ea17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the texture from an image.  <a href="#a037cdf171af0fb392d07626a44a4ea17">More...</a><br /></td></tr>
-<tr class="separator:a037cdf171af0fb392d07626a44a4ea17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87f916490b757fe900798eedf3abf3ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#a87f916490b757fe900798eedf3abf3ba">update</a> (const <a class="el" href="classsf_1_1Image.php">Image</a> &amp;image, unsigned int x, unsigned int y)</td></tr>
-<tr class="memdesc:a87f916490b757fe900798eedf3abf3ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a part of the texture from an image.  <a href="#a87f916490b757fe900798eedf3abf3ba">More...</a><br /></td></tr>
-<tr class="separator:a87f916490b757fe900798eedf3abf3ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3cceef238f7d5d2108a98dd38c17fc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#ad3cceef238f7d5d2108a98dd38c17fc5">update</a> (const <a class="el" href="classsf_1_1Window.php">Window</a> &amp;window)</td></tr>
-<tr class="memdesc:ad3cceef238f7d5d2108a98dd38c17fc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the texture from the contents of a window.  <a href="#ad3cceef238f7d5d2108a98dd38c17fc5">More...</a><br /></td></tr>
-<tr class="separator:ad3cceef238f7d5d2108a98dd38c17fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a154f246eb8059b602076009ab1cfd175"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#a154f246eb8059b602076009ab1cfd175">update</a> (const <a class="el" href="classsf_1_1Window.php">Window</a> &amp;window, unsigned int x, unsigned int y)</td></tr>
-<tr class="memdesc:a154f246eb8059b602076009ab1cfd175"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a part of the texture from the contents of a window.  <a href="#a154f246eb8059b602076009ab1cfd175">More...</a><br /></td></tr>
-<tr class="separator:a154f246eb8059b602076009ab1cfd175"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c3bd6825b9a99714f10d44179d74324"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#a0c3bd6825b9a99714f10d44179d74324">setSmooth</a> (bool smooth)</td></tr>
-<tr class="memdesc:a0c3bd6825b9a99714f10d44179d74324"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable the smooth filter.  <a href="#a0c3bd6825b9a99714f10d44179d74324">More...</a><br /></td></tr>
-<tr class="separator:a0c3bd6825b9a99714f10d44179d74324"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d6643d3c76f2be29dc401dc22749e16"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#a1d6643d3c76f2be29dc401dc22749e16">isSmooth</a> () const </td></tr>
-<tr class="memdesc:a1d6643d3c76f2be29dc401dc22749e16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tell whether the smooth filter is enabled or not.  <a href="#a1d6643d3c76f2be29dc401dc22749e16">More...</a><br /></td></tr>
-<tr class="separator:a1d6643d3c76f2be29dc401dc22749e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8a38872c50a33ff074bd0865db19dd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#af8a38872c50a33ff074bd0865db19dd4">setSrgb</a> (bool sRgb)</td></tr>
-<tr class="memdesc:af8a38872c50a33ff074bd0865db19dd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable conversion from sRGB.  <a href="#af8a38872c50a33ff074bd0865db19dd4">More...</a><br /></td></tr>
-<tr class="separator:af8a38872c50a33ff074bd0865db19dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71497736ee0593e493814c32678d981f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#a71497736ee0593e493814c32678d981f">isSrgb</a> () const </td></tr>
-<tr class="memdesc:a71497736ee0593e493814c32678d981f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tell whether the texture source is converted from sRGB or not.  <a href="#a71497736ee0593e493814c32678d981f">More...</a><br /></td></tr>
-<tr class="separator:a71497736ee0593e493814c32678d981f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa87d1eff053b9d4d34a24c784a28658"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#aaa87d1eff053b9d4d34a24c784a28658">setRepeated</a> (bool repeated)</td></tr>
-<tr class="memdesc:aaa87d1eff053b9d4d34a24c784a28658"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable repeating.  <a href="#aaa87d1eff053b9d4d34a24c784a28658">More...</a><br /></td></tr>
-<tr class="separator:aaa87d1eff053b9d4d34a24c784a28658"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a007a19b48952b7854120bf423c102150"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#a007a19b48952b7854120bf423c102150">isRepeated</a> () const </td></tr>
-<tr class="memdesc:a007a19b48952b7854120bf423c102150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tell whether the texture is repeated or not.  <a href="#a007a19b48952b7854120bf423c102150">More...</a><br /></td></tr>
-<tr class="separator:a007a19b48952b7854120bf423c102150"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7779a75c0324b5faff77602f871710a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#a7779a75c0324b5faff77602f871710a9">generateMipmap</a> ()</td></tr>
-<tr class="memdesc:a7779a75c0324b5faff77602f871710a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a mipmap using the current texture data.  <a href="#a7779a75c0324b5faff77602f871710a9">More...</a><br /></td></tr>
-<tr class="separator:a7779a75c0324b5faff77602f871710a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80a089b6b19bb09b83012d5f0e6af9ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Texture.php">Texture</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#a80a089b6b19bb09b83012d5f0e6af9ba">operator=</a> (const <a class="el" href="classsf_1_1Texture.php">Texture</a> &amp;right)</td></tr>
-<tr class="memdesc:a80a089b6b19bb09b83012d5f0e6af9ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of assignment operator.  <a href="#a80a089b6b19bb09b83012d5f0e6af9ba">More...</a><br /></td></tr>
-<tr class="separator:a80a089b6b19bb09b83012d5f0e6af9ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14526d89b9008a3d851dc7b5e9532450"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#a14526d89b9008a3d851dc7b5e9532450">getNativeHandle</a> () const </td></tr>
-<tr class="memdesc:a14526d89b9008a3d851dc7b5e9532450"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the underlying OpenGL handle of the texture.  <a href="#a14526d89b9008a3d851dc7b5e9532450">More...</a><br /></td></tr>
-<tr class="separator:a14526d89b9008a3d851dc7b5e9532450"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ae9a4274e7b95ebf7244d09c7445833b0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#ae9a4274e7b95ebf7244d09c7445833b0">bind</a> (const <a class="el" href="classsf_1_1Texture.php">Texture</a> *texture, <a class="el" href="classsf_1_1Texture.php#aa6fd3bbe3c334b3c4428edfb2765a82e">CoordinateType</a> coordinateType=<a class="el" href="classsf_1_1Texture.php#aa6fd3bbe3c334b3c4428edfb2765a82ea3b684a2e0aa92c07a074864d0ea17f51">Normalized</a>)</td></tr>
-<tr class="memdesc:ae9a4274e7b95ebf7244d09c7445833b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind a texture for rendering.  <a href="#ae9a4274e7b95ebf7244d09c7445833b0">More...</a><br /></td></tr>
-<tr class="separator:ae9a4274e7b95ebf7244d09c7445833b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bf905d487b104b758549c2e9e20a3fb"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#a0bf905d487b104b758549c2e9e20a3fb">getMaximumSize</a> ()</td></tr>
-<tr class="memdesc:a0bf905d487b104b758549c2e9e20a3fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum texture size allowed.  <a href="#a0bf905d487b104b758549c2e9e20a3fb">More...</a><br /></td></tr>
-<tr class="separator:a0bf905d487b104b758549c2e9e20a3fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9a4274e7b95ebf7244d09c7445833b0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#ae9a4274e7b95ebf7244d09c7445833b0">bind</a> (const <a class="el" href="classsf_1_1Texture.php">Texture</a> *texture, <a class="el" href="classsf_1_1Texture.php#aa6fd3bbe3c334b3c4428edfb2765a82e">CoordinateType</a> coordinateType=<a class="el" href="classsf_1_1Texture.php#aa6fd3bbe3c334b3c4428edfb2765a82ea3b684a2e0aa92c07a074864d0ea17f51">Normalized</a>)</td></tr>
+<tr class="memitem:ae9a4274e7b95ebf7244d09c7445833b0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#ae9a4274e7b95ebf7244d09c7445833b0">bind</a> (const <a class="el" href="classsf_1_1Texture.php">Texture</a> *texture, <a class="el" href="classsf_1_1Texture.php#aa6fd3bbe3c334b3c4428edfb2765a82e">CoordinateType</a> coordinateType=<a class="el" href="classsf_1_1Texture.php#aa6fd3bbe3c334b3c4428edfb2765a82ea69d6228950882e4d68be4ba4dbe7df73">Normalized</a>)</td></tr>
 <tr class="memdesc:ae9a4274e7b95ebf7244d09c7445833b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind a texture for rendering.  <a href="#ae9a4274e7b95ebf7244d09c7445833b0">More...</a><br /></td></tr>
 <tr class="separator:ae9a4274e7b95ebf7244d09c7445833b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bf905d487b104b758549c2e9e20a3fb"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.php#a0bf905d487b104b758549c2e9e20a3fb">getMaximumSize</a> ()</td></tr>
@@ -243,17 +152,17 @@ Static Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
 <tr class="memitem:ae0efa7935241644608ca32ba47b22a33"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1GlResource.php#ae0efa7935241644608ca32ba47b22a33">ensureGlContext</a> ()</td></tr>
-<tr class="memdesc:ae0efa7935241644608ca32ba47b22a33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make sure that a valid OpenGL context exists in the current thread.  <a href="#ae0efa7935241644608ca32ba47b22a33">More...</a><br /></td></tr>
+<tr class="memdesc:ae0efa7935241644608ca32ba47b22a33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empty function for ABI compatibility, use acquireTransientContext instead.  <a href="#ae0efa7935241644608ca32ba47b22a33">More...</a><br /></td></tr>
 <tr class="separator:ae0efa7935241644608ca32ba47b22a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a96c222b24c6d9ddbc3666f7981622156"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96c222b24c6d9ddbc3666f7981622156"></a>
+<tr class="memitem:a2548fc9744f5e43e0276d5627ca178de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2548fc9744f5e43e0276d5627ca178de"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>RenderTexture</b></td></tr>
-<tr class="separator:a96c222b24c6d9ddbc3666f7981622156"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a564c389faf3e8638c546c12cdbdda81d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a564c389faf3e8638c546c12cdbdda81d"></a>
+<tr class="separator:a2548fc9744f5e43e0276d5627ca178de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5afc6f82b7b587ed5ada4d227ce32aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5afc6f82b7b587ed5ada4d227ce32aa"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>RenderTarget</b></td></tr>
-<tr class="separator:a564c389faf3e8638c546c12cdbdda81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:aa5afc6f82b7b587ed5ada4d227ce32aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classsf_1_1Image.php" title="Class for loading, manipulating and saving images. ">Image</a> living on the graphics card that can be used for drawing. </p>
@@ -307,7 +216,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RenderTarget</b></td
 <div class="line">sf::Texture::bind(NULL);</div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Sprite.php" title="Drawable representation of a texture, with its own transformations, color, etc. ">sf::Sprite</a>, <a class="el" href="classsf_1_1Image.php" title="Class for loading, manipulating and saving images. ">sf::Image</a>, <a class="el" href="classsf_1_1RenderTexture.php" title="Target for off-screen 2D rendering into a texture. ">sf::RenderTexture</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2Texture_8hpp_source.php#l00047">47</a> of file <a class="el" href="include_2SFML_2Graphics_2Texture_8hpp_source.php">include/SFML/Graphics/Texture.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Texture_8hpp_source.php#l00047">47</a> of file <a class="el" href="Texture_8hpp_source.php">Texture.hpp</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="aa6fd3bbe3c334b3c4428edfb2765a82e"></a>
 <div class="memitem">
@@ -321,114 +230,19 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RenderTarget</b></td
 
 <p>Types of texture coordinates that can be used for rendering. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aa6fd3bbe3c334b3c4428edfb2765a82ea3b684a2e0aa92c07a074864d0ea17f51"></a>Normalized&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aa6fd3bbe3c334b3c4428edfb2765a82ea69d6228950882e4d68be4ba4dbe7df73"></a>Normalized&#160;</td><td class="fielddoc">
 <p><a class="el" href="classsf_1_1Texture.php" title="Image living on the graphics card that can be used for drawing. ">Texture</a> coordinates in range [0 .. 1]. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aa6fd3bbe3c334b3c4428edfb2765a82eaef6f1159be622a46cd9ae35d44bbc790"></a>Pixels&#160;</td><td class="fielddoc">
-<p><a class="el" href="classsf_1_1Texture.php" title="Image living on the graphics card that can be used for drawing. ">Texture</a> coordinates in range [0 .. size]. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aa6fd3bbe3c334b3c4428edfb2765a82ea3b684a2e0aa92c07a074864d0ea17f51"></a>Normalized&#160;</td><td class="fielddoc">
-<p><a class="el" href="classsf_1_1Texture.php" title="Image living on the graphics card that can be used for drawing. ">Texture</a> coordinates in range [0 .. 1]. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aa6fd3bbe3c334b3c4428edfb2765a82eaef6f1159be622a46cd9ae35d44bbc790"></a>Pixels&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aa6fd3bbe3c334b3c4428edfb2765a82ea6372f9c3a10203a7a69d8d5da59d82ff"></a>Pixels&#160;</td><td class="fielddoc">
 <p><a class="el" href="classsf_1_1Texture.php" title="Image living on the graphics card that can be used for drawing. ">Texture</a> coordinates in range [0 .. size]. </p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="include_2SFML_2Graphics_2Texture_8hpp_source.php#l00055">55</a> of file <a class="el" href="include_2SFML_2Graphics_2Texture_8hpp_source.php">include/SFML/Graphics/Texture.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa6fd3bbe3c334b3c4428edfb2765a82e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="classsf_1_1Texture.php#aa6fd3bbe3c334b3c4428edfb2765a82e">sf::Texture::CoordinateType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Types of texture coordinates that can be used for rendering. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aa6fd3bbe3c334b3c4428edfb2765a82ea3b684a2e0aa92c07a074864d0ea17f51"></a>Normalized&#160;</td><td class="fielddoc">
-<p><a class="el" href="classsf_1_1Texture.php" title="Image living on the graphics card that can be used for drawing. ">Texture</a> coordinates in range [0 .. 1]. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aa6fd3bbe3c334b3c4428edfb2765a82eaef6f1159be622a46cd9ae35d44bbc790"></a>Pixels&#160;</td><td class="fielddoc">
-<p><a class="el" href="classsf_1_1Texture.php" title="Image living on the graphics card that can be used for drawing. ">Texture</a> coordinates in range [0 .. size]. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aa6fd3bbe3c334b3c4428edfb2765a82ea3b684a2e0aa92c07a074864d0ea17f51"></a>Normalized&#160;</td><td class="fielddoc">
-<p><a class="el" href="classsf_1_1Texture.php" title="Image living on the graphics card that can be used for drawing. ">Texture</a> coordinates in range [0 .. 1]. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aa6fd3bbe3c334b3c4428edfb2765a82eaef6f1159be622a46cd9ae35d44bbc790"></a>Pixels&#160;</td><td class="fielddoc">
-<p><a class="el" href="classsf_1_1Texture.php" title="Image living on the graphics card that can be used for drawing. ">Texture</a> coordinates in range [0 .. size]. </p>
-</td></tr>
-</table>
-
-<p>Definition at line <a class="el" href="shared_2include_2SFML_2Graphics_2Texture_8hpp_source.php#l00055">55</a> of file <a class="el" href="shared_2include_2SFML_2Graphics_2Texture_8hpp_source.php">shared/include/SFML/Graphics/Texture.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Texture_8hpp_source.php#l00055">55</a> of file <a class="el" href="Texture_8hpp_source.php">Texture.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a3e04674853b8533bf981db3173e3a4a7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">sf::Texture::Texture </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Default constructor. </p>
-<p>Creates an empty texture. </p>
-
-</div>
-</div>
-<a class="anchor" id="a524855cbf89de3b74be84d385fd229de"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">sf::Texture::Texture </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Texture.php">Texture</a> &amp;&#160;</td>
-          <td class="paramname"><em>copy</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Copy constructor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">copy</td><td>instance to copy </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a9c5354ad40eb1c5aeeeb21f57ccd7e6c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">sf::Texture::~Texture </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Destructor. </p>
-
-</div>
-</div>
 <a class="anchor" id="a3e04674853b8533bf981db3173e3a4a7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -506,7 +320,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RenderTarget</b></td
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classsf_1_1Texture.php#aa6fd3bbe3c334b3c4428edfb2765a82e">CoordinateType</a>&#160;</td>
-          <td class="paramname"><em>coordinateType</em> = <code><a class="el" href="classsf_1_1Texture.php#aa6fd3bbe3c334b3c4428edfb2765a82ea3b684a2e0aa92c07a074864d0ea17f51">Normalized</a></code>&#160;</td>
+          <td class="paramname"><em>coordinateType</em> = <code><a class="el" href="classsf_1_1Texture.php#aa6fd3bbe3c334b3c4428edfb2765a82ea69d6228950882e4d68be4ba4dbe7df73">Normalized</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -539,79 +353,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RenderTarget</b></td
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a class="anchor" id="ae9a4274e7b95ebf7244d09c7445833b0"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void sf::Texture::bind </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Texture.php">Texture</a> *&#160;</td>
-          <td class="paramname"><em>texture</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classsf_1_1Texture.php#aa6fd3bbe3c334b3c4428edfb2765a82e">CoordinateType</a>&#160;</td>
-          <td class="paramname"><em>coordinateType</em> = <code><a class="el" href="classsf_1_1Texture.php#aa6fd3bbe3c334b3c4428edfb2765a82ea3b684a2e0aa92c07a074864d0ea17f51">Normalized</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Bind a texture for rendering. </p>
-<p>This function is not part of the graphics API, it mustn't be used when drawing SFML entities. It must be used only if you mix <a class="el" href="classsf_1_1Texture.php" title="Image living on the graphics card that can be used for drawing. ">sf::Texture</a> with OpenGL code.</p>
-<div class="fragment"><div class="line"><a class="code" href="classsf_1_1Texture.php">sf::Texture</a> t1, t2;</div>
-<div class="line">...</div>
-<div class="line">sf::Texture::bind(&amp;t1);</div>
-<div class="line"><span class="comment">// draw OpenGL stuff that use t1...</span></div>
-<div class="line"><a class="code" href="classsf_1_1Texture.php#ae9a4274e7b95ebf7244d09c7445833b0">sf::Texture::bind</a>(&amp;t2);</div>
-<div class="line"><span class="comment">// draw OpenGL stuff that use t2...</span></div>
-<div class="line"><a class="code" href="classsf_1_1Texture.php#ae9a4274e7b95ebf7244d09c7445833b0">sf::Texture::bind</a>(NULL);</div>
-<div class="line"><span class="comment">// draw OpenGL stuff that use no texture...</span></div>
-</div><!-- fragment --><p>The <em>coordinateType</em> argument controls how texture coordinates will be interpreted. If Normalized (the default), they must be in range [0 .. 1], which is the default way of handling texture coordinates with OpenGL. If Pixels, they must be given in pixels (range [0 .. size]). This mode is used internally by the graphics classes of SFML, it makes the definition of texture coordinates more intuitive for the high-level API, users don't need to compute normalized values.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">texture</td><td>Pointer to the texture to bind, can be null to use no texture </td></tr>
-    <tr><td class="paramname">coordinateType</td><td>Type of texture coordinates to use </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="aefc19bcd95565dd2348fd4cec0facddc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classsf_1_1Image.php">Image</a> sf::Texture::copyToImage </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Copy the texture pixels to an image. </p>
-<p>This function performs a slow operation that downloads the texture's pixels from the graphics card and copies them to a new image, potentially applying transformations to pixels if necessary (texture may be padded or flipped).</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsf_1_1Image.php" title="Class for loading, manipulating and saving images. ">Image</a> containing the texture's pixels</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Texture.php#abec4567ad9856a3596dc74803f26fba2" title="Load the texture from an image. ">loadFromImage</a> </dd></dl>
 
 </div>
 </div>
@@ -672,43 +413,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RenderTarget</b></td
 
 </div>
 </div>
-<a class="anchor" id="a89b4c7d204acf1033c3a1b6e0a3ad0a3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool sf::Texture::create </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>height</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create the texture. </p>
-<p>If this function fails, the texture is left unchanged.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">width</td><td>Width of the texture </td></tr>
-    <tr><td class="paramname">height</td><td>Height of the texture</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if creation was successful </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a7779a75c0324b5faff77602f871710a9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -726,53 +430,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RenderTarget</b></td
 <p>Mipmaps are pre-computed chains of optimized textures. Each level of texture in a mipmap is generated by halving each of the previous level's dimensions. This is done until the final level has the size of 1x1. The textures generated in this process may make use of more advanced filters which might improve the visual quality of textures when they are applied to objects much smaller than they are. This is known as minification. Because fewer texels (texture elements) have to be sampled from when heavily minified, usage of mipmaps can also improve rendering performance in certain scenarios.</p>
 <p>Mipmap generation relies on the necessary OpenGL extension being available. If it is unavailable or generation fails due to another reason, this function will return false. Mipmap data is only valid from the time it is generated until the next time the base level image is modified, at which point this function will have to be called again to regenerate it.</p>
 <dl class="section return"><dt>Returns</dt><dd>True if mipmap generation was successful, false if unsuccessful </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a7779a75c0324b5faff77602f871710a9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool sf::Texture::generateMipmap </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Generate a mipmap using the current texture data. </p>
-<p>Mipmaps are pre-computed chains of optimized textures. Each level of texture in a mipmap is generated by halving each of the previous level's dimensions. This is done until the final level has the size of 1x1. The textures generated in this process may make use of more advanced filters which might improve the visual quality of textures when they are applied to objects much smaller than they are. This is known as minification. Because fewer texels (texture elements) have to be sampled from when heavily minified, usage of mipmaps can also improve rendering performance in certain scenarios.</p>
-<p>Mipmap generation relies on the necessary OpenGL extension being available. If it is unavailable or generation fails due to another reason, this function will return false. Mipmap data is only valid from the time it is generated until the next time the base level image is modified, at which point this function will have to be called again to regenerate it.</p>
-<dl class="section return"><dt>Returns</dt><dd>True if mipmap generation was successful, false if unsuccessful </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a0bf905d487b104b758549c2e9e20a3fb"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static unsigned int sf::Texture::getMaximumSize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the maximum texture size allowed. </p>
-<p>This maximum size is defined by the graphics driver. You can expect a value of 512 pixels for low-end graphics card, and up to 8192 pixels or more for newer hardware.</p>
-<dl class="section return"><dt>Returns</dt><dd>Maximum size allowed for textures, in pixels </dd></dl>
 
 </div>
 </div>
@@ -822,25 +479,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RenderTarget</b></td
 
 </div>
 </div>
-<a class="anchor" id="a14526d89b9008a3d851dc7b5e9532450"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int sf::Texture::getNativeHandle </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the underlying OpenGL handle of the texture. </p>
-<p>You shouldn't need to use this function, unless you have very specific stuff to implement that SFML doesn't support, or implement a temporary workaround until a bug is fixed.</p>
-<dl class="section return"><dt>Returns</dt><dd>OpenGL handle of the texture or 0 if not yet created </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a0f370acd8f41c8b97a6959389c521c2c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -856,43 +494,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RenderTarget</b></td
 
 <p>Return the size of the texture. </p>
 <dl class="section return"><dt>Returns</dt><dd>Size in pixels </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a0f370acd8f41c8b97a6959389c521c2c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classsf_1_1Vector2.php">Vector2u</a> sf::Texture::getSize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Return the size of the texture. </p>
-<dl class="section return"><dt>Returns</dt><dd>Size in pixels </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a007a19b48952b7854120bf423c102150"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool sf::Texture::isRepeated </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Tell whether the texture is repeated or not. </p>
-<dl class="section return"><dt>Returns</dt><dd>True if repeat mode is enabled, false if it is disabled</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Texture.php#aaa87d1eff053b9d4d34a24c784a28658" title="Enable or disable repeating. ">setRepeated</a> </dd></dl>
 
 </div>
 </div>
@@ -934,25 +535,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RenderTarget</b></td
 
 </div>
 </div>
-<a class="anchor" id="a1d6643d3c76f2be29dc401dc22749e16"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool sf::Texture::isSmooth </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Tell whether the smooth filter is enabled or not. </p>
-<dl class="section return"><dt>Returns</dt><dd>True if smoothing is enabled, false if it is disabled</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Texture.php#a0c3bd6825b9a99714f10d44179d74324" title="Enable or disable the smooth filter. ">setSmooth</a> </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a71497736ee0593e493814c32678d981f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -969,68 +551,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RenderTarget</b></td
 <p>Tell whether the texture source is converted from sRGB or not. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the texture source is converted from sRGB, false if not</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Texture.php#af8a38872c50a33ff074bd0865db19dd4" title="Enable or disable conversion from sRGB. ">setSrgb</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a71497736ee0593e493814c32678d981f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool sf::Texture::isSrgb </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Tell whether the texture source is converted from sRGB or not. </p>
-<dl class="section return"><dt>Returns</dt><dd>True if the texture source is converted from sRGB, false if not</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Texture.php#af8a38872c50a33ff074bd0865db19dd4" title="Enable or disable conversion from sRGB. ">setSrgb</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a8e1b56eabfe33e2e0e1cb03712c7fcc7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool sf::Texture::loadFromFile </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Rect.php">IntRect</a> &amp;&#160;</td>
-          <td class="paramname"><em>area</em> = <code><a class="el" href="classsf_1_1Rect.php">IntRect</a>()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Load the texture from a file on disk. </p>
-<p>This function is a shortcut for the following code: </p><div class="fragment"><div class="line"><a class="code" href="classsf_1_1Image.php">sf::Image</a> image;</div>
-<div class="line">image.<a class="code" href="classsf_1_1Image.php#a9e4f2aa8e36d0cabde5ed5a4ef80290b">loadFromFile</a>(filename);</div>
-<div class="line">texture.<a class="code" href="classsf_1_1Texture.php#abec4567ad9856a3596dc74803f26fba2">loadFromImage</a>(image, area);</div>
-</div><!-- fragment --><p>The <em>area</em> argument can be used to load only a sub-rectangle of the whole image. If you want the entire image then leave the default value (which is an empty IntRect). If the <em>area</em> rectangle crosses the bounds of the image, it is adjusted to fit the image size.</p>
-<p>The maximum size for a texture depends on the graphics driver and can be retrieved with the getMaximumSize function.</p>
-<p>If this function fails, the texture is left unchanged.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">filename</td><td>Path of the image file to load </td></tr>
-    <tr><td class="paramname">area</td><td>Area of the image to load</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if loading was successful</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Texture.php#a2c4adb19dd4cbee0a588eeb85e52a249" title="Load the texture from a file in memory. ">loadFromMemory</a>, <a class="el" href="classsf_1_1Texture.php#a786b486a46b1c6d1c16ff4af61ecc601" title="Load the texture from a custom stream. ">loadFromStream</a>, <a class="el" href="classsf_1_1Texture.php#abec4567ad9856a3596dc74803f26fba2" title="Load the texture from an image. ">loadFromImage</a> </dd></dl>
 
 </div>
 </div>
@@ -1114,96 +634,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RenderTarget</b></td
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if loading was successful</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Texture.php#a8e1b56eabfe33e2e0e1cb03712c7fcc7" title="Load the texture from a file on disk. ">loadFromFile</a>, <a class="el" href="classsf_1_1Texture.php#a2c4adb19dd4cbee0a588eeb85e52a249" title="Load the texture from a file in memory. ">loadFromMemory</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="abec4567ad9856a3596dc74803f26fba2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool sf::Texture::loadFromImage </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Image.php">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>image</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Rect.php">IntRect</a> &amp;&#160;</td>
-          <td class="paramname"><em>area</em> = <code><a class="el" href="classsf_1_1Rect.php">IntRect</a>()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Load the texture from an image. </p>
-<p>The <em>area</em> argument can be used to load only a sub-rectangle of the whole image. If you want the entire image then leave the default value (which is an empty IntRect). If the <em>area</em> rectangle crosses the bounds of the image, it is adjusted to fit the image size.</p>
-<p>The maximum size for a texture depends on the graphics driver and can be retrieved with the getMaximumSize function.</p>
-<p>If this function fails, the texture is left unchanged.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">image</td><td><a class="el" href="classsf_1_1Image.php" title="Class for loading, manipulating and saving images. ">Image</a> to load into the texture </td></tr>
-    <tr><td class="paramname">area</td><td>Area of the image to load</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if loading was successful</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Texture.php#a8e1b56eabfe33e2e0e1cb03712c7fcc7" title="Load the texture from a file on disk. ">loadFromFile</a>, <a class="el" href="classsf_1_1Texture.php#a2c4adb19dd4cbee0a588eeb85e52a249" title="Load the texture from a file in memory. ">loadFromMemory</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a2c4adb19dd4cbee0a588eeb85e52a249"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool sf::Texture::loadFromMemory </td>
-          <td>(</td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Rect.php">IntRect</a> &amp;&#160;</td>
-          <td class="paramname"><em>area</em> = <code><a class="el" href="classsf_1_1Rect.php">IntRect</a>()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Load the texture from a file in memory. </p>
-<p>This function is a shortcut for the following code: </p><div class="fragment"><div class="line"><a class="code" href="classsf_1_1Image.php">sf::Image</a> image;</div>
-<div class="line">image.<a class="code" href="classsf_1_1Image.php#aaa6c7afa5851a51cec6ab438faa7354c">loadFromMemory</a>(data, size);</div>
-<div class="line">texture.<a class="code" href="classsf_1_1Texture.php#abec4567ad9856a3596dc74803f26fba2">loadFromImage</a>(image, area);</div>
-</div><!-- fragment --><p>The <em>area</em> argument can be used to load only a sub-rectangle of the whole image. If you want the entire image then leave the default value (which is an empty IntRect). If the <em>area</em> rectangle crosses the bounds of the image, it is adjusted to fit the image size.</p>
-<p>The maximum size for a texture depends on the graphics driver and can be retrieved with the getMaximumSize function.</p>
-<p>If this function fails, the texture is left unchanged.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data</td><td>Pointer to the file data in memory </td></tr>
-    <tr><td class="paramname">size</td><td>Size of the data to load, in bytes </td></tr>
-    <tr><td class="paramname">area</td><td>Area of the image to load</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if loading was successful</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Texture.php#a8e1b56eabfe33e2e0e1cb03712c7fcc7" title="Load the texture from a file on disk. ">loadFromFile</a>, <a class="el" href="classsf_1_1Texture.php#a786b486a46b1c6d1c16ff4af61ecc601" title="Load the texture from a custom stream. ">loadFromStream</a>, <a class="el" href="classsf_1_1Texture.php#abec4567ad9856a3596dc74803f26fba2" title="Load the texture from an image. ">loadFromImage</a> </dd></dl>
 
 </div>
 </div>
@@ -1300,74 +730,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RenderTarget</b></td
 
 </div>
 </div>
-<a class="anchor" id="a786b486a46b1c6d1c16ff4af61ecc601"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool sf::Texture::loadFromStream </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classsf_1_1InputStream.php">InputStream</a> &amp;&#160;</td>
-          <td class="paramname"><em>stream</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Rect.php">IntRect</a> &amp;&#160;</td>
-          <td class="paramname"><em>area</em> = <code><a class="el" href="classsf_1_1Rect.php">IntRect</a>()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Load the texture from a custom stream. </p>
-<p>This function is a shortcut for the following code: </p><div class="fragment"><div class="line"><a class="code" href="classsf_1_1Image.php">sf::Image</a> image;</div>
-<div class="line">image.<a class="code" href="classsf_1_1Image.php#a21122ded0e8368bb06ed3b9acfbfb501">loadFromStream</a>(stream);</div>
-<div class="line">texture.<a class="code" href="classsf_1_1Texture.php#abec4567ad9856a3596dc74803f26fba2">loadFromImage</a>(image, area);</div>
-</div><!-- fragment --><p>The <em>area</em> argument can be used to load only a sub-rectangle of the whole image. If you want the entire image then leave the default value (which is an empty IntRect). If the <em>area</em> rectangle crosses the bounds of the image, it is adjusted to fit the image size.</p>
-<p>The maximum size for a texture depends on the graphics driver and can be retrieved with the getMaximumSize function.</p>
-<p>If this function fails, the texture is left unchanged.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">stream</td><td>Source stream to read from </td></tr>
-    <tr><td class="paramname">area</td><td>Area of the image to load</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if loading was successful</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Texture.php#a8e1b56eabfe33e2e0e1cb03712c7fcc7" title="Load the texture from a file on disk. ">loadFromFile</a>, <a class="el" href="classsf_1_1Texture.php#a2c4adb19dd4cbee0a588eeb85e52a249" title="Load the texture from a file in memory. ">loadFromMemory</a>, <a class="el" href="classsf_1_1Texture.php#abec4567ad9856a3596dc74803f26fba2" title="Load the texture from an image. ">loadFromImage</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a80a089b6b19bb09b83012d5f0e6af9ba"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classsf_1_1Texture.php">Texture</a>&amp; sf::Texture::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Texture.php">Texture</a> &amp;&#160;</td>
-          <td class="paramname"><em>right</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Overload of assignment operator. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">right</td><td>Instance to assign</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Reference to self </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a80a089b6b19bb09b83012d5f0e6af9ba"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1416,58 +778,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RenderTarget</b></td
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Texture.php#a007a19b48952b7854120bf423c102150" title="Tell whether the texture is repeated or not. ">isRepeated</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="aaa87d1eff053b9d4d34a24c784a28658"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sf::Texture::setRepeated </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>repeated</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Enable or disable repeating. </p>
-<p>Repeating is involved when using texture coordinates outside the texture rectangle [0, 0, width, height]. In this case, if repeat mode is enabled, the whole texture will be repeated as many times as needed to reach the coordinate (for example, if the X texture coordinate is 3 * width, the texture will be repeated 3 times). If repeat mode is disabled, the "extra space" will instead be filled with border pixels. Warning: on very old graphics cards, white pixels may appear when the texture is repeated. With such cards, repeat mode can be used reliably only if the texture has power-of-two dimensions (such as 256x128). Repeating is disabled by default.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">repeated</td><td>True to repeat the texture, false to disable repeating</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Texture.php#a007a19b48952b7854120bf423c102150" title="Tell whether the texture is repeated or not. ">isRepeated</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a0c3bd6825b9a99714f10d44179d74324"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sf::Texture::setSmooth </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>smooth</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Enable or disable the smooth filter. </p>
-<p>When the filter is activated, the texture appears smoother so that pixels are less noticeable. However if you want the texture to look exactly the same as its source file, you should leave it disabled. The smooth filter is disabled by default.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">smooth</td><td>True to enable smoothing, false to disable it</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Texture.php#a1d6643d3c76f2be29dc401dc22749e16" title="Tell whether the smooth filter is enabled or not. ">isSmooth</a> </dd></dl>
 
 </div>
 </div>
@@ -1525,34 +835,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RenderTarget</b></td
 
 </div>
 </div>
-<a class="anchor" id="af8a38872c50a33ff074bd0865db19dd4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sf::Texture::setSrgb </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>sRgb</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Enable or disable conversion from sRGB. </p>
-<p>When providing texture data from an image file or memory, it can either be stored in a linear color space or an sRGB color space. Most digital images account for gamma correction already, so they would need to be "uncorrected" back to linear color space before being processed by the hardware. The hardware can automatically convert it from the sRGB color space to a linear color space when it gets sampled. When the rendered image gets output to the final framebuffer, it gets converted back to sRGB.</p>
-<p>After enabling or disabling sRGB conversion, make sure to reload the texture data in order for the setting to take effect.</p>
-<p>This option is only useful in conjunction with an sRGB capable framebuffer. This can be requested during window creation.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sRgb</td><td>True to enable sRGB conversion, false to disable it</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Texture.php#a71497736ee0593e493814c32678d981f" title="Tell whether the texture source is converted from sRGB or not. ">isSrgb</a> </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="ae4eab5c6781316840b0c50ad08370963"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1574,92 +856,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RenderTarget</b></td
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pixels</td><td>Array of pixels to copy to the texture </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ae4eab5c6781316840b0c50ad08370963"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sf::Texture::update </td>
-          <td>(</td>
-          <td class="paramtype">const Uint8 *&#160;</td>
-          <td class="paramname"><em>pixels</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Update the whole texture from an array of pixels. </p>
-<p>The <em>pixel</em> array is assumed to have the same size as the <em>area</em> rectangle, and to contain 32-bits RGBA pixels.</p>
-<p>No additional check is performed on the size of the pixel array, passing invalid arguments will lead to an undefined behavior.</p>
-<p>This function does nothing if <em>pixels</em> is null or if the texture was not previously created.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pixels</td><td>Array of pixels to copy to the texture </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a1352d8e16c2aeb4df586ed65dd2c36b9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sf::Texture::update </td>
-          <td>(</td>
-          <td class="paramtype">const Uint8 *&#160;</td>
-          <td class="paramname"><em>pixels</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>height</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>y</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Update a part of the texture from an array of pixels. </p>
-<p>The size of the <em>pixel</em> array must match the <em>width</em> and <em>height</em> arguments, and it must contain 32-bits RGBA pixels.</p>
-<p>No additional check is performed on the size of the pixel array or the bounds of the area to update, passing invalid arguments will lead to an undefined behavior.</p>
-<p>This function does nothing if <em>pixels</em> is null or if the texture was not previously created.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pixels</td><td>Array of pixels to copy to the texture </td></tr>
-    <tr><td class="paramname">width</td><td>Width of the pixel region contained in <em>pixels</em> </td></tr>
-    <tr><td class="paramname">height</td><td>Height of the pixel region contained in <em>pixels</em> </td></tr>
-    <tr><td class="paramname">x</td><td>X offset in the texture where to copy the source pixels </td></tr>
-    <tr><td class="paramname">y</td><td>Y offset in the texture where to copy the source pixels </td></tr>
   </table>
   </dd>
 </dl>
@@ -1752,77 +948,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RenderTarget</b></td
 
 </div>
 </div>
-<a class="anchor" id="a037cdf171af0fb392d07626a44a4ea17"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sf::Texture::update </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Image.php">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>image</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Update the texture from an image. </p>
-<p>Although the source image can be smaller than the texture, this function is usually used for updating the whole texture. The other overload, which has (x, y) additional arguments, is more convenient for updating a sub-area of the texture.</p>
-<p>No additional check is performed on the size of the image, passing an image bigger than the texture will lead to an undefined behavior.</p>
-<p>This function does nothing if the texture was not previously created.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">image</td><td><a class="el" href="classsf_1_1Image.php" title="Class for loading, manipulating and saving images. ">Image</a> to copy to the texture </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a87f916490b757fe900798eedf3abf3ba"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sf::Texture::update </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Image.php">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>image</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>y</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Update a part of the texture from an image. </p>
-<p>No additional check is performed on the size of the image, passing an invalid combination of image size and offset will lead to an undefined behavior.</p>
-<p>This function does nothing if the texture was not previously created.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">image</td><td><a class="el" href="classsf_1_1Image.php" title="Class for loading, manipulating and saving images. ">Image</a> to copy to the texture </td></tr>
-    <tr><td class="paramname">x</td><td>X offset in the texture where to copy the source image </td></tr>
-    <tr><td class="paramname">y</td><td>Y offset in the texture where to copy the source image </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a class="anchor" id="a87f916490b757fe900798eedf3abf3ba"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1888,77 +1013,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RenderTarget</b></td
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">window</td><td><a class="el" href="classsf_1_1Window.php" title="Window that serves as a target for OpenGL rendering. ">Window</a> to copy to the texture </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ad3cceef238f7d5d2108a98dd38c17fc5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sf::Texture::update </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Window.php">Window</a> &amp;&#160;</td>
-          <td class="paramname"><em>window</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Update the texture from the contents of a window. </p>
-<p>Although the source window can be smaller than the texture, this function is usually used for updating the whole texture. The other overload, which has (x, y) additional arguments, is more convenient for updating a sub-area of the texture.</p>
-<p>No additional check is performed on the size of the window, passing a window bigger than the texture will lead to an undefined behavior.</p>
-<p>This function does nothing if either the texture or the window was not previously created.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">window</td><td><a class="el" href="classsf_1_1Window.php" title="Window that serves as a target for OpenGL rendering. ">Window</a> to copy to the texture </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a154f246eb8059b602076009ab1cfd175"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sf::Texture::update </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classsf_1_1Window.php">Window</a> &amp;&#160;</td>
-          <td class="paramname"><em>window</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>y</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Update a part of the texture from the contents of a window. </p>
-<p>No additional check is performed on the size of the window, passing an invalid combination of window size and offset will lead to an undefined behavior.</p>
-<p>This function does nothing if either the texture or the window was not previously created.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">window</td><td><a class="el" href="classsf_1_1Window.php" title="Window that serves as a target for OpenGL rendering. ">Window</a> to copy to the texture </td></tr>
-    <tr><td class="paramname">x</td><td>X offset in the texture where to copy the source window </td></tr>
-    <tr><td class="paramname">y</td><td>Y offset in the texture where to copy the source window </td></tr>
   </table>
   </dd>
 </dl>
@@ -2010,7 +1064,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RenderTarget</b></td
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="include_2SFML_2Graphics_2Texture_8hpp_source.php">include/SFML/Graphics/Texture.hpp</a></li>
+<li><a class="el" href="Texture_8hpp_source.php">Texture.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <?php

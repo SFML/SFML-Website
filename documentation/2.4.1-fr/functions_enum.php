@@ -33,80 +33,36 @@
       <li><a href="functions_rela.php"><span>Related&#160;Functions</span></a></li>
     </ul>
   </div>
-  <div id="navrow4" class="tabs3">
-    <ul class="tablist">
-      <li><a href="#index_a"><span>a</span></a></li>
-      <li><a href="#index_b"><span>b</span></a></li>
-      <li><a href="#index_c"><span>c</span></a></li>
-      <li><a href="#index_e"><span>e</span></a></li>
-      <li><a href="#index_f"><span>f</span></a></li>
-      <li><a href="#index_k"><span>k</span></a></li>
-      <li><a href="#index_m"><span>m</span></a></li>
-      <li><a href="#index_s"><span>s</span></a></li>
-      <li><a href="#index_t"><span>t</span></a></li>
-      <li class="current"><a href="#index_w"><span>w</span></a></li>
-    </ul>
-  </div>
 </div><!-- top -->
 <div class="contents">
-&#160;
-
-<h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
+&#160;<ul>
 <li>Attribute
 : <a class="el" href="structsf_1_1ContextSettings.php#af2e91e57e8d26c40afe2ec8efaa32a2c">sf::ContextSettings</a>
 </li>
 <li>Axis
 : <a class="el" href="classsf_1_1Joystick.php#a48db337092c2e263774f94de6d50baa7">sf::Joystick</a>
 </li>
-</ul>
-
-
-<h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
 <li>Button
 : <a class="el" href="classsf_1_1Mouse.php#a4fb128be433f9aafe66bc0c605daaa90">sf::Mouse</a>
 </li>
-</ul>
-
-
-<h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
 <li>CoordinateType
 : <a class="el" href="classsf_1_1Texture.php#aa6fd3bbe3c334b3c4428edfb2765a82e">sf::Texture</a>
 </li>
-</ul>
-
-
-<h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
 <li>Equation
 : <a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32">sf::BlendMode</a>
 </li>
 <li>EventType
 : <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4a">sf::Event</a>
 </li>
-</ul>
-
-
-<h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
 <li>Factor
 : <a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbb">sf::BlendMode</a>
 </li>
-</ul>
-
-
-<h3><a class="anchor" id="index_k"></a>- k -</h3><ul>
 <li>Key
 : <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142">sf::Keyboard</a>
 </li>
-</ul>
-
-
-<h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
 <li>Method
 : <a class="el" href="classsf_1_1Http_1_1Request.php#a620f8bff6f43e1378f321bf53fbf5598">sf::Http::Request</a>
 </li>
-</ul>
-
-
-<h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
 <li>Status
 : <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3b">sf::Ftp::Response</a>
 , <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8">sf::Http::Response</a>
@@ -116,10 +72,6 @@
 <li>Style
 : <a class="el" href="classsf_1_1Text.php#aa8add4aef484c6e6b20faff07452bd82">sf::Text</a>
 </li>
-</ul>
-
-
-<h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
 <li>TransferMode
 : <a class="el" href="classsf_1_1Ftp.php#a1cd6b89ad23253f6d97e6d4ca4d558cb">sf::Ftp</a>
 </li>
@@ -128,10 +80,6 @@
 , <a class="el" href="classsf_1_1Shader.php#afaa1aa65e5de37b74d047da9def9f9b3">sf::Shader</a>
 , <a class="el" href="classsf_1_1Socket.php#a5d3ff44e56e68f02816bb0fabc34adf8">sf::Socket</a>
 </li>
-</ul>
-
-
-<h3><a class="anchor" id="index_w"></a>- w -</h3><ul>
 <li>Wheel
 : <a class="el" href="classsf_1_1Mouse.php#a60dd479a43f26f200e7957aa11803ff4">sf::Mouse</a>
 </li>

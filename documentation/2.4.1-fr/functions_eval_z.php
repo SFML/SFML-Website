@@ -69,11 +69,11 @@
 
 <h3><a class="anchor" id="index_z"></a>- z -</h3><ul>
 <li>Z
-: <a class="el" href="classsf_1_1Joystick.php#a48db337092c2e263774f94de6d50baa7a2ab9334de564994be3bfd322c7ef9383">sf::Joystick</a>
-, <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142aae0abfcf9c5d91646028d51c3fdbd15e">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Joystick.php#a48db337092c2e263774f94de6d50baa7a7c37a1240b2dafbbfc5c1a0e23911315">sf::Joystick</a>
+, <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a4e12efd6478a2d174264f29b0b41ab43">sf::Keyboard</a>
 </li>
 <li>Zero
-: <a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbba65485893f4abfbf2ae7702f371e003c1">sf::BlendMode</a>
+: <a class="el" href="structsf_1_1BlendMode.php#afb9852caf356b53bb0de460c58a9ebbbafda2d66c3c3da15cd3b42338fbf6d2ba">sf::BlendMode</a>
 </li>
 </ul>
 </div><!-- contents -->

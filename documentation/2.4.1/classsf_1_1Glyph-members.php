@@ -38,8 +38,7 @@
   <tr class="even"><td class="entry"><a class="el" href="classsf_1_1Glyph.php#aeac19b97ec11409147191606b784deda">advance</a></td><td class="entry"><a class="el" href="classsf_1_1Glyph.php">sf::Glyph</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classsf_1_1Glyph.php#a6f3c892093167914adc31e52e5923f4b">bounds</a></td><td class="entry"><a class="el" href="classsf_1_1Glyph.php">sf::Glyph</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classsf_1_1Glyph.php#ab15cfc37eb7b40a94b3b3aedf934010b">Glyph</a>()</td><td class="entry"><a class="el" href="classsf_1_1Glyph.php">sf::Glyph</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classsf_1_1Glyph.php#ab15cfc37eb7b40a94b3b3aedf934010b">Glyph</a>()</td><td class="entry"><a class="el" href="classsf_1_1Glyph.php">sf::Glyph</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classsf_1_1Glyph.php#a0d502d326449f8c49011ed91d2805f5b">textureRect</a></td><td class="entry"><a class="el" href="classsf_1_1Glyph.php">sf::Glyph</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classsf_1_1Glyph.php#a0d502d326449f8c49011ed91d2805f5b">textureRect</a></td><td class="entry"><a class="el" href="classsf_1_1Glyph.php">sf::Glyph</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <?php
     require("../footer.php");

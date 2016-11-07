@@ -69,48 +69,48 @@
 
 <h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
 <li>R
-: <a class="el" href="classsf_1_1Joystick.php#a48db337092c2e263774f94de6d50baa7a668cd1a4a624c7867fd93b834c4d7333">sf::Joystick</a>
-, <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a53bc68421ea750429616e9dd632304e8">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Joystick.php#a48db337092c2e263774f94de6d50baa7aeebbcdb0828850f4d69e6a084801fab8">sf::Joystick</a>
+, <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142add852cadaa6fff2d982bbab3551c31d0">sf::Keyboard</a>
 </li>
 <li>RAlt
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142ad2d04ac70c7683f01e431c5aa4f84072">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a21dcf098233296462bc7c632b93369cc">sf::Keyboard</a>
 </li>
 <li>RangeNotSatisfiable
-: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8abbea7e411ce71a938ffc1cb5cacc0a49">sf::Http::Response</a>
+: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8a12533d00093b190e6d4c0076577e2239">sf::Http::Response</a>
 </li>
 <li>RBracket
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142acac262f9ac629ef88658b6f2a2369d37">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a578253a70b48e61830aa08292d44680f">sf::Keyboard</a>
 </li>
 <li>RControl
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a712cf4eba56b046bde7dddb380c3bf97">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a275d3fd207a9c0b22ce404012c71dc17">sf::Keyboard</a>
 </li>
 <li>Regular
-: <a class="el" href="classsf_1_1Text.php#aa8add4aef484c6e6b20faff07452bd82a65dbbdd9d938efe1eea1e2f3b7d7c944">sf::Text</a>
+: <a class="el" href="classsf_1_1Text.php#aa8add4aef484c6e6b20faff07452bd82a2af9ae5e1cda126570f744448e0caa32">sf::Text</a>
 </li>
 <li>ResetContent
-: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8ab9506a38cd6c00048aab39575d4469be">sf::Http::Response</a>
+: <a class="el" href="classsf_1_1Http_1_1Response.php#a663e071978e30fbbeb20ed045be874d8a77327cc2a5e34cc64030b322e61d12a8">sf::Http::Response</a>
 </li>
 <li>Resized
-: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aac5a9f3d76cbf4a577fa982623f3198eb">sf::Event</a>
+: <a class="el" href="classsf_1_1Event.php#af41fa9ed45c02449030699f671331d4aa67fd26d7e520bc6722db3ff47ef24941">sf::Event</a>
 </li>
 <li>RestartMarkerReply
-: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba9c0f2a9ad7404aa610eb835ba06724a4">sf::Ftp::Response</a>
+: <a class="el" href="classsf_1_1Ftp_1_1Response.php#af81738f06b6f571761696291276acb3ba07e06d3326ba2d078583bef93930d909">sf::Ftp::Response</a>
 </li>
 <li>Return
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a45990e46db316fb01b760bce6b5fcf32">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142ac291de81bdee518d636bc359f2ca77de">sf::Keyboard</a>
 </li>
 <li>ReverseSubtract
-: <a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32aae64991689dfb87f2b607706a1b11835">sf::BlendMode</a>
+: <a class="el" href="structsf_1_1BlendMode.php#a7bce470e2e384c4f9c8d9595faef7c32a2d04acf59e91811128e7d0ef076f65f0">sf::BlendMode</a>
 </li>
 <li>Right
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a30e643d209ea070c73ca1b5602e10ff4">sf::Keyboard</a>
-, <a class="el" href="classsf_1_1Mouse.php#a4fb128be433f9aafe66bc0c605daaa90a64bbf245db73f3b156bc65aa30666831">sf::Mouse</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a2aeb083dea103a8e36b6850b51ef3632">sf::Keyboard</a>
+, <a class="el" href="classsf_1_1Mouse.php#a4fb128be433f9aafe66bc0c605daaa90af2cff24ab6c26daf079b11189f982fc4">sf::Mouse</a>
 </li>
 <li>RShift
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a50b80fe49a8a6ec9561e7a41d756f5cc">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a5be69e3b2f25bd5f4eed75d063f42b90">sf::Keyboard</a>
 </li>
 <li>RSystem
-: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142a9a33b3424ae40d9444998c082e043023">sf::Keyboard</a>
+: <a class="el" href="classsf_1_1Keyboard.php#acb4cacd7cc5802dec45724cf3314a142ac1b3fd7424feeda242cedbb64f3f5a7f">sf::Keyboard</a>
 </li>
 </ul>
 </div><!-- contents -->
