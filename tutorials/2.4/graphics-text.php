@@ -63,7 +63,7 @@ text.setString("Hello world");
 text.setCharacterSize(24); // in pixels, not points!
 
 // set the color
-text.setColor(sf::Color::Red);
+text.setFillColor(sf::Color::Red);
 
 // set the text style
 text.setStyle(sf::Text::Bold | sf::Text::Underlined);
