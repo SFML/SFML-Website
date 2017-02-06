@@ -10,6 +10,7 @@
 <h1>Changelog</h1>
 
 <ul>
+ <li><a href="#sfml-2.4.2">SFML 2.4.2</a></li>
  <li><a href="#sfml-2.4.1">SFML 2.4.1</a></li>
  <li><a href="#sfml-2.4.0">SFML 2.4.0</a></li>
  <li><a href="#sfml-2.3.2">SFML 2.3.2</a></li>
@@ -26,12 +27,34 @@
  <li><a href="#sfml-1.1">SFML 1.1</a></li>
 </ul>
 
+<h2 id="sfml-2.4.2"><a class="h2-link" href="#sfml-2.4.2">SFML 2.4.2</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
+<h3 id="2.4.2-system"><a class="h3-link" href="#2.4.2-system">System</a></h3>
+<h4>Bugfixes</h4>
+<ul>
+  <li>[Windows] Removed thread affinity changes in sf::Clock (<a href="https://github.com/SFML/SFML/pull/1007">#1107</a>)</li>
+</ul>
+
+<h3 id="2.4.2-window"><a class="h3-link" href="#2.4.2-window">Window</a></h3>
+<h4>Bugfixes</h4>
+<ul>
+  <li>Fixed bug where TransientContextLock would hang (<a href="https://github.com/SFML/SFML/issues/1165">#1165</a>, <a href="https://github.com/SFML/SFML/pull/1172">#1172</a>)</li>
+  <li>[Linux] Fixed GLX extensions being loaded too late (<a href="https://github.com/SFML/SFML/pull/1183">#1183</a>)</li>
+  <li>[Linux] Fix wrong types passed to XChangeProperty (<a href="https://github.com/SFML/SFML/issues/1168">#1168</a> <a href="https://github.com/SFML/SFML/pull/1171">#1171</a>)</li>
+  <li>[Windows] Make context disabling via wglMakeCurrent more tolerant of broken drivers (<a href="https://github.com/SFML/SFML/pull/1186">#1186</a>)</li>
+</ul>
+
+<h3 id="2.4.2-graphics"><a class="h3-link" href="#2.4.2-graphics">Graphics</a></h3>
+<h4>Bugfixes</h4>
+<ul>
+  <li>Optimized sf::Image::create and made it more exception safe (<a href="https://github.com/SFML/SFML/pull/1166">#1166</a>)</li>
+</ul>
+
 <h2 id="sfml-2.4.1"><a class="h2-link" href="#sfml-2.4.1">SFML 2.4.1</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 <h3 id="2.4.1-general"><a class="h3-link" href="#2.4.1-general">General</a></h3>
 <h4>Bugfixes</h4>
 <ul>
   <li>[kFreeBSD] Define SFML_OS_FREEBSD when compiling for kFreeBSD (<a href="https://github.com/SFML/SFML/pull/1129">#1129</a></li>
-  <li>[Window] Added some simple messaging when trying to build under Cygwin (<a href="https://github.com/SFML/SFML/pull/1153">#1153</a>)</li>
+  <li>[Windows] Added some simple messaging when trying to build under Cygwin (<a href="https://github.com/SFML/SFML/pull/1153">#1153</a>)</li>
 </ul>
 
 <h3 id="2.4.1-window"><a class="h3-link" href="#2.4.1-window">Window</a></h3>
