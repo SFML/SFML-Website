@@ -207,7 +207,7 @@ window2.setActive(true);
 </p>
 <pre><code class="cpp">void renderingThread(sf::Window* window)
 {
-    // activate the window's context
+    // activate the windows context
     window->setActive(true);
 
     // the rendering loop

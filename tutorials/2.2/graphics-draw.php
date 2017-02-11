@@ -42,7 +42,7 @@ int main()
     // run the program as long as the window is open
     while (window.isOpen())
     {
-        // check all the window's events that were triggered since the last iteration of the loop
+        // check all the windows events that were triggered since the last iteration of the loop
         sf::Event event;
         while (window.pollEvent(event))
         {
