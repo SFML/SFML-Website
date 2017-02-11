@@ -111,7 +111,9 @@ while (window.pollEvent(event))
 if (event.type == sf::Event::GainedFocus)
     myGame.resume();
 </code></pre>
-
+<p>
+    See also sf::Window::hasFocus, sf::Window::requestFocus
+</p>
 <?php h2('The TextEntered event') ?>
 <p>
     The <code>sf::Event::TextEntered</code> event is triggered when a character is typed. This must not be confused with the <code>KeyPressed</code>
