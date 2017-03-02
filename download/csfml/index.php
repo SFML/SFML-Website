@@ -41,18 +41,32 @@
     the current source code. You can also watch the open issues on the task tracker, or add new ones.
 </p>
 
+<h3>CSFML 2.4</h3>
+<table class="styled download">
+    <tbody>
+        <tr>
+            <td class="os">Windows</td>
+            <td><?php download_link('2.4', 'Visual C++ / GCC', '32-bit', '3.45', '../../files/CSFML-2.4-windows-32-bit.zip') ?></td>
+            <td><?php download_link('2.4', 'Visual C++ / GCC', '64-bit', '3.62', '../../files/CSFML-2.4-windows-64-bit.zip') ?></td>
+        </tr>
+        <tr>
+            <td class="os">Mac OS X</td>
+            <td colspan="2"><?php download_link('2.4', 'Clang', '64-bit (OS X 10.7+, compatible with C++11 and libc++)', '0.15', '../../files/CSFML-2.4-osx-clang.tar.gz') ?></td>
+        </tr>
+        <tr>
+            <td class="os">All</td>
+            <td colspan="2"><span class="description">Source code</span><a href="../../files/CSFML-2.4-sources.zip">Download<span class="size">0.27 MB</span></a></td>
+        </tr>
+    </tbody>
+</table>
+
 <h3>CSFML 2.3</h3>
 <table class="styled download">
     <tbody>
         <tr>
             <td class="os">Windows</td>
-            <td><?php download_link('2.3', 'Visual C++ / GCC', '32-bit', '3.39', '../../files/CSFML-2.3-windows-32-bit.zip') ?></td>
-            <td><?php download_link('2.3', 'Visual C++ / GCC', '64-bit', '3.45', '../../files/CSFML-2.3-windows-64-bit.zip') ?></td>
-        </tr>
-        <tr>
-            <td class="os">Linux</td>
-            <td><?php download_link('2.3', 'GCC', '32-bit', '1.53', '../../files/CSFML-2.3-linux-gcc-32-bit.tar.bz2') ?></td>
-            <td><?php download_link('2.3', 'GCC', '64-bit', '1.51', '../../files/CSFML-2.3-linux-gcc-64-bit.tar.bz2') ?></td>
+            <td><?php download_link('2.3', 'Visual C++ / GCC', '32-bit', '3.31', '../../files/CSFML-2.3-windows-32-bit.zip') ?></td>
+            <td><?php download_link('2.3', 'Visual C++ / GCC', '64-bit', '3.48', '../../files/CSFML-2.3-windows-64-bit.zip') ?></td>
         </tr>
         <tr>
             <td class="os">Mac OS X</td>

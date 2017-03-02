@@ -31,7 +31,7 @@
         <tr>
             <th rowspan="1">C</th>
             <td><a href="csfml" class="website">CSFML</a></td>
-            <td>2.3</td>
+            <td>2.4</td>
             <td><a href="mailto:laurent@sfml-dev.org">Laurent Gomila</a></td>
         </tr>
         <tr>

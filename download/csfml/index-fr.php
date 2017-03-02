@@ -41,18 +41,33 @@
     télécharger un instantané des toutes dernières sources. Vous pouvez aussi consulter les tâches ou bugs en cours sur le tracker, ainsi qu'en ajouter de nouveaux.
 </p>
 
+
+<h3>CSFML 2.4</h3>
+<table class="styled download">
+    <tbody>
+        <tr>
+            <td class="os">Windows</td>
+            <td><?php download_link('2.4', 'Visual C++ / GCC', '32-bit', '3.45', '../../files/CSFML-2.4-windows-32-bit.zip') ?></td>
+            <td><?php download_link('2.4', 'Visual C++ / GCC', '64-bit', '3.62', '../../files/CSFML-2.4-windows-64-bit.zip') ?></td>
+        </tr>
+        <tr>
+            <td class="os">Mac OS X</td>
+            <td colspan="2"><?php download_link('2.4', 'Clang', '64-bit (OS X 10.7+, compatible C++11 et libc++)', '0.15', '../../files/CSFML-2.4-osx-clang.tar.gz') ?></td>
+        </tr>
+        <tr>
+            <td class="os">All</td>
+            <td colspan="2"><span class="description">Code source</span><a href="../../files/CSFML-2.4-sources.zip">Télécharger<span class="size">0.27 Mo</span></a></td>
+        </tr>
+    </tbody>
+</table>
+
 <h3>CSFML 2.3</h3>
 <table class="styled download">
     <tbody>
         <tr>
             <td class="os">Windows</td>
-            <td><?php download_link('2.3', 'Visual C++ / GCC', '32-bit', '3.39', '../../files/CSFML-2.3-windows-32-bit.zip') ?></td>
-            <td><?php download_link('2.3', 'Visual C++ / GCC', '64-bit', '3.45', '../../files/CSFML-2.3-windows-64-bit.zip') ?></td>
-        </tr>
-        <tr>
-            <td class="os">Linux</td>
-            <td><?php download_link('2.3', 'GCC', '32-bit', '1.53', '../../files/CSFML-2.3-linux-gcc-32-bit.tar.bz2') ?></td>
-            <td><?php download_link('2.3', 'GCC', '64-bit', '1.51', '../../files/CSFML-2.3-linux-gcc-64-bit.tar.bz2') ?></td>
+            <td><?php download_link('2.3', 'Visual C++ / GCC', '32-bit', '3.31', '../../files/CSFML-2.3-windows-32-bit.zip') ?></td>
+            <td><?php download_link('2.3', 'Visual C++ / GCC', '64-bit', '3.48', '../../files/CSFML-2.3-windows-64-bit.zip') ?></td>
         </tr>
         <tr>
             <td class="os">Mac OS X</td>
