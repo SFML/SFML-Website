@@ -29,13 +29,13 @@
 </p>
 <pre><code class="no-highlight">sudo apt-get install libsfml-dev</code></pre>
 <p>
-    Option 3 requires more work: you need to ensure all of SFML's dependencies including their development headers are available, make sure CMake is installed, and manually
+    Option 2 requires more work: you need to ensure all of SFML's dependencies including their development headers are available, make sure CMake is installed, and manually
     execute some commands. This will result in a package which is tailored to your system.<br />
     If you want to go this way, there's a dedicated tutorial on
     <a class="internal" href="./compile-with-cmake.php" title="How to compile SFML">building SFML yourself</a>.
 </p>
 <p>
-    Finally, option 2 is a good choice for quick installation if SFML is not available as an official package. Download the SDK
+    Finally, option 3 is a good choice for quick installation if SFML is not available as an official package. Download the SDK
     from the <a class="internal" href="../../download.php" title="Go to the download page">download page</a>, unpack it and copy the files to your
     preferred location: either a separate path in your personal folder (like <em>/home/me/sfml</em>), or a standard path (like <em>/usr/local</em>).
 </p>
