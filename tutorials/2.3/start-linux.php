@@ -98,10 +98,112 @@ int main()
     (the "lib" prefix and the ".so" extension of the library file name must be omitted).
 </p>
 <pre><code class="no-highlight">g++ main.o -o sfml-app -lsfml-graphics -lsfml-window -lsfml-system</code></pre>
+<p class="important">
+    It is important to link to the libraries that match the configuration: "sfml-xxx-d" for Debug, and "sfml-xxx" for Release. A bad mix may result
+    in crashes.
+</p>
 <p>
     If you installed SFML to a non-standard path, you'll need to tell the linker where to find the SFML libraries (.so files):
 </p>
 <pre><code class="no-highlight">g++ main.o -o sfml-app -L<em>&lt;sfml-install-path&gt;</em>/lib -lsfml-graphics -lsfml-window -lsfml-system</code></pre>
+<p class="important">
+    When linking to multiple SFML libraries, make sure that you link them in the right order, it is very important for GCC. The rule is that libraries
+    that depend on other libraries must be put first in the list. Every SFML library depends on sfml-system, and sfml-graphics also depends on
+    sfml-window. So, the correct order for these three libraries would be: sfml-graphics, sfml-window, sfml-system -- as used in the command lines
+    above.
+</p>
+<p>
+    The settings shown here will result in your application being linked to the dynamic version of SFML, the one that makes use of shared object files.
+    If you don't want to rely on these shared object files and have SFML directly integrated into your executable, you must link to the static version.
+    Static SFML libraries have the "-s" suffix: "sfml-xxx-s-d" for Debug, and "sfml-xxx-s" for Release.<br />
+    In this case, you'll also need to define the SFML_STATIC macro in the preprocessor options of your project.
+</p>
+<p class="important">
+    Starting from SFML 2.2, when static linking, you will have to link all of SFML's dependencies to your project as well. This means that if you are linking
+    sfml-window-s or sfml-window-s-d for example, you will also have to link GL, xcb, xcb-image, xcb-randr, X11-xcb, X11, Xext and udev. These dependency libraries
+    come as part of development packages you can install using your distribution's package manager.
+</p>
+<p>
+    Here are the dependencies of each module, append the -d as described above if you want to link the SFML debug libraries:
+</p>
+<table class="styled expanded">
+    <thead>
+        <tr>
+            <th class="expand-left">Module</th>
+            <th class="expand-right">Dependencies</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="one">
+            <td><code>sfml-graphics-s</code></td>
+            <td><ul>
+                <li>sfml-window-s</li>
+                <li>sfml-system-s</li>
+                <li>GL</li>
+                <li>freetype</li>
+                <li>jpeg</li>
+            </ul></td>
+        </tr>
+        <tr class="two">
+            <td><code>sfml-window-s</code></td>
+            <td><ul>
+                <li>sfml-system-s</li>
+                <li>GL</li>
+                <li>xcb</li>
+                <li>xcb-image</li>
+                <li>xcb-randr</li>
+                <li>X11-xcb</li>
+                <li>X11</li>
+                <li>Xext</li>
+                <li>udev</li>
+            </ul></td>
+        </tr>
+        <tr class="one">
+            <td><code>sfml-audio-s</code></td>
+            <td><ul>
+                <li>sfml-system-s</li>
+                <li>openal</li>
+                <li>FLAC</li>
+                <li>vorbisenc</li>
+                <li>vorbisfile</li>
+                <li>vorbis</li>
+                <li>ogg</li>
+            </ul></td>
+        </tr>
+        <tr class="two">
+            <td><code>sfml-network-s</code></td>
+            <td><ul>
+                <li>sfml-system-s</li>
+            </ul></td>
+        </tr>
+        <tr class="one">
+            <td><code>sfml-system-s</code></td>
+            <td><ul>
+                <li>pthread</li>
+                <li>rt</li>
+            </ul></td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    You might have noticed from the table that SFML modules can also depend on one another, e.g. sfml-graphics-s depends both on sfml-window-s and sfml-system-s.
+    If you static link to an SFML library, make sure to link to the dependencies of the library in question, as well as the dependencies of the dependencies
+    and so on. If anything along the dependency chain is missing, you <em>will</em> get linker errors.
+</p>
+<p class="important">
+    Additionally, because GCC is typically used on Linux, the linking order <em>does</em> matter. This means that libraries that depend on other libraries have to
+    be added to the library list <em>before</em> the libraries they depend on. If you don't follow this rule, you <em>will</em> get linker errors.
+</p>
+<p>
+    If you are slightly confused, don't worry, it is perfectly normal for beginners to be overwhelmed by all this information regarding static linking. If something
+    doesn't work for you the first time around, you can simply keep trying always bearing in mind what has been said above. If you still can't get static linking to
+    work, you can check the <a class="internal" href="../../faq.php#build-link-static" title="Go to the FAQ page">FAQ</a> and the
+    <a href="http://en.sfml-dev.org/forums/index.php?board=4.0" title="Go to the general help forum">forum</a> for threads about static linking.
+</p>
+<p>
+    If you don't know the differences between dynamic (also called shared) and static libraries, and don't know which one to use, you can search for more information on the internet.
+    There are many good articles/blogs/posts about them.
+</p>
 <p>
     We are now ready to execute the compiled program:
 </p>
