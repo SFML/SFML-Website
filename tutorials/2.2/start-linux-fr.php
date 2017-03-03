@@ -21,8 +21,8 @@
 </p>
 <ul>
     <li>L'installer directement depuis les dépôts de votre distrib Linux</li>
-    <li>Télécharger le SDK et copier les fichiers manuellement</li>
     <li>La compiler directement à partir des sources</li>
+    <li>Télécharger le SDK et copier les fichiers manuellement</li>
 </ul>
 <p>
     L'option 1 est de loin celle à préférer; si la version de SFML que vous souhaitez installer est disponible dans les dépôts officiels, alors

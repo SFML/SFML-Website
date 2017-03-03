@@ -20,8 +20,8 @@
 </p>
 <ul>
     <li>Install it directly from your distribution's package repository</li>
-    <li>Download the precompiled SDK and manually copy the files</li>
     <li>Get the source code, build it and install it</li>
+    <li>Download the precompiled SDK and manually copy the files</li>
 </ul>
 <p>
     Option 1 is the preferred one; if the version of SFML that you want to install is available in the official repository, then install it using your
