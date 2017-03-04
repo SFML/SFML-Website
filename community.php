@@ -9,7 +9,7 @@
 <h1>Community</h1>
 
 <div class="home-section">
-    <div class="column">
+    <div class="community-column-wide">
         <div class="title">&raquo; <a href="http://en.sfml-dev.org/forums/" title="Go to the forum">Forum</a></div>
         <p>
             Whether you have a question about SFML's <a href="learn.php" title="Go to the learn page">API</a>, are experiencing odd behavior with SFML or have a feature request, you'll certainly find help, answers or feedback on the forum.
@@ -18,16 +18,16 @@
             In the <a href="http://en.sfml-dev.org/forums/index.php?board=10.0" title="Go to the 'SFML projects' sub-forum">SFML projects</a> sub-forum you'll find many existing projects.
         </p>
     </div>
-    <div class="column">
+    <div class="community-column-thin">
         <a href="http://en.sfml-dev.org/forums/" title="Go to the forum"><img src="<?php echo image('community/forum.png') ?>" alt="Forum" /></a>
     </div>
 </div>
 
 <div class="home-section">
-    <div class="column">
+    <div class="community-column-thin">
         <a href="https://github.com/SFML/SFML/wiki" title="Go to the wiki"><img src="<?php echo image('community/wiki.png') ?>" alt="Wiki" /></a>
     </div>
-    <div class="column">
+    <div class="community-column-wide">
         <div class="title">&raquo; <a href="https://github.com/SFML/SFML/wiki" title="Go to the wiki">Wiki</a></div>
         <p>
             The SFML community wiki contains code snippets, tutorials and other community-contributed content.
@@ -36,7 +36,7 @@
 </div>
 
 <div class="home-section">
-    <div class="column">
+    <div class="community-column-wide">
         <div class="title">&raquo; <a href="http://chat.sfml-dev.org" title="Chat in the browser now">IRC</a></div>
         <p>
             For friendly help and talk about SFML (as well as off-topic chat with a lot of other users), either click on the button to the right to instantly chat in your browser, or connect via an IRC client to the server below.
@@ -47,7 +47,7 @@
             <li><a href="http://chat.sfml-dev.org" title="Chat in your browser now">Chat in your browser now</a></li>
         </ul>
     </div>
-    <div class="column">
+    <div class="community-column-thin">
         <a href="http://chat.sfml-dev.org"><img src="<?php echo image('community/irc.png') ?>" alt="IRC" /></a>
     </div>
 </div>
