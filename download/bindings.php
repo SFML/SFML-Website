@@ -116,7 +116,7 @@
         <tr>
             <th rowspan="1">Pascal</th>
             <td><a href="https://github.com/CWBudde/PasSFML" class="website">PasSFML</a></td>
-            <td>2.3</td>
+            <td>2.4</td>
             <td>Christian-W. Budde</td>
         </tr>
         <tr>
