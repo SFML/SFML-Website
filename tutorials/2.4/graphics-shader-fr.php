@@ -146,13 +146,13 @@ void main()
 }
 </code></pre>
 <p>
-    Les variables uniformes peuvent être modifiées depuis le programme C++, en utilisant les diverses surcharges de la fonction <code>setParameter</code> de la classe
+    Les variables uniformes peuvent être modifiées depuis le programme C++, en utilisant les diverses surcharges de la fonction <code>setUniform</code> de la classe
     <?php class_link("Shader") ?>.
 </p>
-<pre><code class="cpp">shader.setParameter("myvar", 5.f);
+<pre><code class="cpp">shader.setUniform("myvar", 5.f);
 </code></pre>
 <p>
-    Les surcharges de <code>setParameter</code> supportent tous les types fournis par SFML :
+    Les surcharges de <code>setUniform</code> supportent tous les types fournis par SFML :
 </p>
 <ul>
     <li><code>float</code> (type GLSL <code>float</code>)</li>
@@ -165,7 +165,7 @@ void main()
 </ul>
 <p class="important">
     Lors de son processus d'optimisation, le compilateur GLSL vire les variables inutilisées (ici, "inutilisée" signifie "n'intervenant pas dans le calcul du vertex/pixel final").
-    Ne soyez donc pas surpris si vous obtenez des erreurs telles que <q>Failed to find variable "xxx" in shader</q> lorsque vous appelez <code>setParameter</code>, durant
+    Ne soyez donc pas surpris si vous obtenez des erreurs telles que <q>Failed to find variable "xxx" in shader</q> lorsque vous appelez <code>setUniform</code>, durant
     vos tests.
 </p>
 
@@ -218,9 +218,9 @@ void main()
 <p>
     La gestion de la texture n'est pas automatique : vous devez la gérer comme une variable uniforme standard, et donc la passer explicitement depuis votre programme C++.
     Etant donné que chaque entité peut avoir une texture différente, et pire, qu'il ne peut y avoir aucun moyen pour vous de la récupérer et la passer au shader, SFML
-    fournit une surcharge spéciale de la fonction <code>setParameter</code> qui fait tout ça pour vous.
+    fournit une surcharge spéciale de la fonction <code>setUniform</code> qui fait tout ça pour vous.
 </p>
-<pre><code class="cpp">shader.setParameter("texture", sf::Shader::CurrentTexture);
+<pre><code class="cpp">shader.setUniform("texture", sf::Shader::CurrentTexture);
 </code></pre>
 <p>
     Ce paramètre un peu spécial affecte la texture de l'entité en cours de dessin à la variable de shader donnée. A chaque fois qu'une nouvelle entité est dessinée,

@@ -142,12 +142,12 @@ window.draw(vertices, 2, sf::Lines);
             </td>
         </tr>
         <tr>
-            <td><code>sf::LinesStrip</code></td>
+            <td><code>sf::LineStrip</code></td>
             <td>
                 A set of connected lines. The end vertex of one line is used as the start vertex of the next one.
             </td>
             <td>
-                <img src="./images/graphics-vertex-array-lines-strip.png" alt="The sf::LinesStrip primitive type"/>
+                <img src="./images/graphics-vertex-array-line-strip.png" alt="The sf::LineStrip primitive type"/>
             </td>
         </tr>
         <tr>
@@ -160,22 +160,22 @@ window.draw(vertices, 2, sf::Lines);
             </td>
         </tr>
         <tr>
-            <td><code>sf::TrianglesStrip</code></td>
+            <td><code>sf::TriangleStrip</code></td>
             <td>
                 A set of connected triangles. Each triangle shares its two last vertices with the next one.
             </td>
             <td>
-                <img src="./images/graphics-vertex-array-triangles-strip.png" alt="The sf::TrianglesStrip primitive type"/>
+                <img src="./images/graphics-vertex-array-triangle-strip.png" alt="The sf::TriangleStrip primitive type"/>
             </td>
         </tr>
         <tr>
-            <td><code>sf::TrianglesFan</code></td>
+            <td><code>sf::TriangleFan</code></td>
             <td>
                 A set of triangles connected to a central point. The first vertex is the center, then each new vertex defines a new triangle, using the center
                 and the previous vertex.
             </td>
             <td>
-                <img src="./images/graphics-vertex-array-triangles-fan.png" alt="The sf::TrianglesFan primitive type"/>
+                <img src="./images/graphics-vertex-array-triangle-fan.png" alt="The sf::TriangleFan primitive type"/>
             </td>
         </tr>
         <tr>
