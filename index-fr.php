@@ -19,13 +19,13 @@
             la documentation de l'API</a>.
         </p>
     </div>
-    <div class="column image">
+    <div class="stagger-column-thin">
         <img src="<?php echo image('home/multimedia.png') ?>" alt="Image multimedia" />
     </div>
 </div>
 
 <div class="home-section">
-    <div class="column image">
+    <div class="stagger-column-thin">
         <img src="<?php echo image('home/multiplatform.png') ?>" alt="Image multi-platforme" />
     </div>
     <div class="stagger-column-wide">
@@ -51,7 +51,7 @@
             Apprenez-en d'avantage à leur sujet sur la <a href="download/bindings-fr.php" title="Aller à la page des bindings">page des bindings</a>.
         </p>
     </div>
-    <div class="column image">
+    <div class="stagger-column-thin">
         <img src="<?php echo image('home/multilanguage.png') ?>" alt="Image multi-langage" />
     </div>
 </div>
