@@ -147,12 +147,12 @@ void main()
 }
 </code></pre>
 <p>
-    Uniforms can be set by the C++ program, using the various overloads of the <code>setParameter</code> function in the <?php class_link("Shader") ?> class.
+    Uniforms can be set by the C++ program, using the various overloads of the <code>setUniform</code> function in the <?php class_link("Shader") ?> class.
 </p>
-<pre><code class="cpp">shader.setParameter("myvar", 5.f);
+<pre><code class="cpp">shader.setUniform("myvar", 5.f);
 </code></pre>
 <p>
-    <code>setParameter</code>'s overloads support all the types provided by SFML:
+    <code>setUniform</code>'s overloads support all the types provided by SFML:
 </p>
 <ul>
     <li><code>float</code> (GLSL type <code>float</code>)</li>
@@ -165,7 +165,7 @@ void main()
 </ul>
 <p class="important">
     The GLSL compiler optimizes out unused variables (here, "unused" means "not involved in the calculation of the final vertex/pixel"). So don't be surprised if you get
-    error messages such as <q>Failed to find variable "xxx" in shader</q> when you call <code>setParameter</code> during your tests.
+    error messages such as <q>Failed to find variable "xxx" in shader</q> when you call <code>setUniform</code> during your tests.
 </p>
 
 <?php h2('Minimal shaders') ?>
@@ -216,10 +216,10 @@ void main()
 </code></pre>
 <p>
     The current texture is not automatic, you need to treat it like you do the other input variables, and explicitly set it from your C++ program. Since each entity can have a different
-    texture, and worse, there might be no way for you to get it and pass it to the shader, SFML provides a special overload of the <code>setParameter</code> function that
+    texture, and worse, there might be no way for you to get it and pass it to the shader, SFML provides a special overload of the <code>setUniform</code> function that
     does this job for you.
 </p>
-<pre><code class="cpp">shader.setParameter("texture", sf::Shader::CurrentTexture);
+<pre><code class="cpp">shader.setUniform("texture", sf::Shader::CurrentTexture);
 </code></pre>
 <p>
     This special parameter automatically sets the texture of the entity being drawn to the shader variable with the given name. Every time you draw a new entity, SFML will update the shader
