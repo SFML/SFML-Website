@@ -51,11 +51,11 @@
 <h3 id="reporting-bugs"><a class="h3-link" href="#reporting-bugs">Reporting bugs</a></h3>
 <ol>
  <li>Make sure it is really a bug and not a misunderstanding of what SFML is supposed to do. Check the <a href="documentation/2.2/">documentation</a> again to be sure.</li>
- <li>Make sure the bug has not already been reported. Check <a href="https://github.com/SFML/SFML/issues?q=">the GitHub issues</a> and <a href="http://en.sfml-dev.org/forums/index.php?action=search">the forum</a>.</li>
+ <li>Make sure the bug has not already been reported. Check <a href="https://github.com/SFML/SFML/issues?q=">the GitHub issues</a> and <a href="//en.sfml-dev.org/forums/index.php?action=search">the forum</a>.</li>
  <li>Use the <a href="https://github.com/SFML/SFML">latest revision</a> from GitHub and check if the bug has not already been fixed. Refer to the <a href="tutorials/2.2/compile-with-cmake.php">official tutorial</a> for information on how to build SFML yourself.</li>
- <li>Open a new thread on the <a href="http://en.sfml-dev.org/forums/">forum</a> in the appropriate help board and give the following information:
+ <li>Open a new thread on the <a href="//en.sfml-dev.org/forums/">forum</a> in the appropriate help board and give the following information:
   <ul>
-   <li><a href="http://en.sfml-dev.org/forums/index.php?topic=5559.msg36368#msg36368">A minimal and complete code example</a> that reproduces the bug as you are experiencing it.</li>
+   <li><a href="//en.sfml-dev.org/forums/index.php?topic=5559.msg36368#msg36368">A minimal and complete code example</a> that reproduces the bug as you are experiencing it.</li>
    <li>Instructions for reproducing the bug if it isn't obvious when running the example.</li>
    <li>Environment information (operating system, SFML version, compiler etc.).</li>
    <li>Screenshots and/or videos, if necessary, to demonstrate certain behavior.</li>
@@ -65,7 +65,7 @@
 </ol>
 
 <h3 id="requesting-features"><a class="h3-link" href="#requesting-features">Requesting features</a></h3>
-<p>If you have an idea for a new feature, and it's within SFML's scope (see above), create a proper thread on <a href="http://en.sfml-dev.org/forums/index.php?board=2.0">the dedicated sub-forum</a>.</p>
+<p>If you have an idea for a new feature, and it's within SFML's scope (see above), create a proper thread on <a href="//en.sfml-dev.org/forums/index.php?board=2.0">the dedicated sub-forum</a>.</p>
 <p>A feature request should always contain a rationale for the change. Whenever you suggest a feature, argue from a user perspective: in which way is SFML limited? What use cases does the feature allow? How can other users benefit from the change?</p>
 
 <h3 id="testing"><a class="h3-link" href="#testing">Testing</a></h3>
@@ -86,7 +86,7 @@
  <li>Concise description of the modification.</li>
  <li>Reference the GitHub issue that you implemented/fixed.</li>
  <li>Link to the forum thread where the discussion originated.</li>
- <li><a href="http://en.sfml-dev.org/forums/index.php?topic=5559.msg36368#msg36368">A minimal complete code example</a> that helps people to test the implementation. The idea is that anybody can test the functionality with minimal effort. If external files are needed, add a link to them.</li>
+ <li><a href="//en.sfml-dev.org/forums/index.php?topic=5559.msg36368#msg36368">A minimal complete code example</a> that helps people to test the implementation. The idea is that anybody can test the functionality with minimal effort. If external files are needed, add a link to them.</li>
  <li>Bugfix: the code should reproduce the bug.</li>
  <li>Feature: show how the feature is used.</li>
 </ul>

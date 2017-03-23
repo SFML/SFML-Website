@@ -10,16 +10,16 @@
 
 <div class="home-section">
     <div class="column">
-        <div class="title">&raquo; <a href="http://en.sfml-dev.org/forums/" title="Go to the forum">Forum</a></div>
+        <div class="title">&raquo; <a href="//en.sfml-dev.org/forums/" title="Go to the forum">Forum</a></div>
         <p>
             Whether you have a question about SFML's <a href="learn.php" title="Go to the learn page">API</a>, are experiencing odd behavior with SFML or have a feature request, you'll certainly find help, answers or feedback on the forum.
         </p>
         <p>
-            In the <a href="http://en.sfml-dev.org/forums/index.php?board=10.0" title="Go to the 'SFML projects' sub-forum">SFML projects</a> sub-forum you'll find many existing projects.
+            In the <a href="//en.sfml-dev.org/forums/index.php?board=10.0" title="Go to the 'SFML projects' sub-forum">SFML projects</a> sub-forum you'll find many existing projects.
         </p>
     </div>
     <div class="column">
-        <a href="http://en.sfml-dev.org/forums/" title="Go to the forum"><img src="<?php echo image('community/forum.png') ?>" alt="Forum" /></a>
+        <a href="//en.sfml-dev.org/forums/" title="Go to the forum"><img src="<?php echo image('community/forum.png') ?>" alt="Forum" /></a>
     </div>
 </div>
 
@@ -44,11 +44,11 @@
         <ul>
             <li>SSL: <a href="irc://irc.sfml-dev.org:6697/sfml" title="Open an IRC client with the SSL port">irc://irc.sfml-dev.org:6697/sfml</a></li>
             <li>No SSL: <a href="irc://irc.sfml-dev.org:6667/sfml" title="Open an IRC client with the none-SSL port">irc://irc.sfml-dev.org:6667/sfml</a></li>
-            <li><a href="http://chat.sfml-dev.org" title="Chat in your browser now">Chat in your browser now</a></li>
+            <li><a href="//chat.sfml-dev.org" title="Chat in your browser now">Chat in your browser now</a></li>
         </ul>
     </div>
     <div class="column">
-        <a href="http://chat.sfml-dev.org"><img src="<?php echo image('community/irc.png') ?>" alt="IRC" /></a>
+        <a href="//chat.sfml-dev.org"><img src="<?php echo image('community/irc.png') ?>" alt="IRC" /></a>
     </div>
 </div>
 
