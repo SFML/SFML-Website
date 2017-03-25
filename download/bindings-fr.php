@@ -134,7 +134,7 @@
         <tr>
             <th rowspan="1">Rust</th>
             <td><a href="https://github.com/jeremyletang/rust-sfml" class="website"><img src="../images/bindings/rust-sfml.png" alt="rust-sfml"></a></td>
-            <td>2.3</td>
+            <td>2.4</td>
             <td><a href="mailto:letang.jeremy@gmail.com">Jérémy Letang</a></td>
         </tr>
 
