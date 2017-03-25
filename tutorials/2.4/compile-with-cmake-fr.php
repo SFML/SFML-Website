@@ -15,7 +15,7 @@
     un compilateur. Mais alors CMake, c'est quoi ?
 </p>
 <p>
-    CMake est un meta-système de compilation. Au lieu de construire SFML, il va construire ce qui construit SFML: des solutions Visual Studio,
+    CMake est un meta-système de compilation. Au lieu de construire SFML, il va construire ce qui construit SFML : des solutions Visual Studio,
     des workspaces Code::Blocks, des makefiles Linux, des projets XCode, ... en fait il peut générer des makefiles et projets pour l'OS et le
     compilateur de votre choix. C'est un outil similaire à autoconf/automake ou premake -- pour ceux qui connaissent.
 </p>
@@ -75,19 +75,19 @@
     créés. Vous pouvez les générer directement dans l'arborescence source (ie. la racine des répertoires SFML), mais cela va polluer votre
     répertoire SFML avec pas mal de déchets : une hiérarchie complète de fichiers de compilation, fichiers objets, etc. La solution la plus propre
     est de générer les projets/makefiles dans un répertoire complètement séparé, de manière à garder votre répertoire SFML intact. Utiliser des
-    répertoires séparés vous permettra aussi d'avoir plusieurs compilations différentes en même temps (statique, dynamique, debug ,release, ...).
+    répertoires séparés vous permettra aussi d'avoir plusieurs compilations différentes en même temps (statique, dynamique, debug, release, ...).
 </p>
 <p>
     Maintenant que vous avez choisi le répertoire de compilation, il y a encore une chose à faire avant de pouvoir lancer CMake. Lorsque CMake configure
     votre projet, il teste la disponibilité et la version du compilateur choisi. Ainsi, l'exécutable du compilateur doit être accessible quand
-    CMake est lancé. Ce n'est pas un problème pour les utilisateurs Linux ou Max OS X, étant donné que les compilateurs sont installés dans des
+    CMake est lancé. Ce n'est pas un problème pour les utilisateurs Linux ou Mac OS X, étant donné que les compilateurs sont installés dans des
     chemins standards et tout le temps accessibles, mais sous Windows il se pourrait que vous deviez ajouter le répertoire de votre compilateur
     à la variable d'environnement PATH, afin que CMake puisse le trouver automatiquement. Ceci est particulièrement important lorsque vous avez
     plusieurs compilateurs, ou plusieurs versions du même compilateur.
 </p>
 <p>
     Sous Windows, si vous voulez utiliser GCC (MinGW), vous pouvez ajouter temporairement le répertoire MinGW\bin au PATH puis lancer
-    CMake à partir de l'invite de commande:
+    CMake à partir de l'invite de commande :
 </p>
 <pre><code class="no-highlight">&gt; set PATH=%PATH%;votre_repertoire_mingw\bin
 &gt; cmake -G"MinGW Makefiles" ./build
@@ -148,7 +148,7 @@
     inutiles.<br>
 </p>
 <p class="important">
-    Le processus d'installation (décrit plus loin dans ce document) peut ne pas fonctionner avec Xcode;
+    Le processus d'installation (décrit plus loin dans ce document) peut ne pas fonctionner avec Xcode ;
     c'est pourquoi il est fortement recommendé d'utiliser le générateur de <em>Makefile</em> sur Mac OS X.
 </p>
 <p>
@@ -162,7 +162,7 @@
 </p>
 <img class="screenshot" src="./images/cmake-configure.png" alt="Capture d'écran de la fenêtre de cmake-gui après la configuration" title="Capture d'écran de la fenêtre de cmake-gui après la configuration" />
 <p>
-    Après que CMake a terminé la configuration, des options apparaissent dans la partie centrale de la fenêtre. CMake possède beaucoup d'options, mais
+    Après que CMake ai terminé la configuration, des options apparaissent dans la partie centrale de la fenêtre. CMake possède beaucoup d'options, mais
     la plupart ont la bonne valeur par défaut. Beaucoup d'options ne sont même pas faites pour être éditées, elles sont simplement là pour vous montrer
     ce que CMake a trouvé tout seul.<br />
     Voici la liste des quelques options vraiment importantes pour configurer votre compilation de SFML :
@@ -215,11 +215,11 @@
             <td>
                 Cette option booléenne détermine si vous voulez compiler la SFML en tant que
                 <a class="external" title="documentation d'Apple sur les frameworks" href="http://developer.apple.com/library/mac/#documentation/MacOSX/Conceptual/BPFrameworks/Frameworks.html">frameworks bundle</a>
-                ou en tant
+                ou en tant que
                 <a class="external" title="documentation d'Apple sur les bibliothèques dynamiques" href="http://developer.apple.com/library/mac/#documentation/DeveloperTools/Conceptual/DynamicLibraries/000-Introduction/Introduction.html">binaires dylib</a>.
                 Produire des frameworks nécessite que l'option BUILD_SHARED_LIBS soit activée.<br/>
                 Il est recommandé d'utiliser SFML en tant que frameworks quand vous distribuez votre application au
-                public. Par contre, SFML ne peut pas être construite en tant que framework en type "Debug"; à la place
+                public. Par contre, SFML ne peut pas être construite en tant que framework en type "Debug" ; à la place
                 utilisez les dylibs.
             </td>
         </tr>
@@ -255,7 +255,7 @@
             <td><code>CMAKE_OSX_ARCHITECTURES<br/>(Mac OS X uniquement)</code></td>
             <td>
                 Ce paramètre définit pour quelles architectures SFML doit être compilée.
-                La valeur recommendée est "x86_64" because 32-bit build are no longer supported.
+                La valeur recommandée est "x86_64" parce que la compilation en 32-bit n'est plus supportée.
             </td>
         </tr>
         <tr class="two">
@@ -304,7 +304,7 @@
 <?php h2('Compiler SFML') ?>
 <p>
     Commençons cette nouvelle section avec une bonne nouvelle : vous n'aurez plus à exécuter l'étape de configuration décrite ci-dessus, même si
-    vous mettez à jour les sources de SFML. CMake est futé, il ajoute aux makefiles/projets générés une étape personnalisée, qui régénère
+    vous mettez à jour les sources de SFML. CMake est futé, il ajoute aux makefiles/projets générés une étape personnalisée, qui regénère
     automatiquement tous les fichiers nécessaires à chaque fois que quelque chose a changé.
 </p>
 <p>
@@ -336,7 +336,7 @@
         <tr class="one">
             <td><code>all</code></td>
             <td>
-                C'est la cible par défaut, elle est utilisée si aucune cible n'est explicitement spécifiée. Elle contruit toutes les cibles qui produisent
+                C'est la cible par défaut, elle est utilisée si aucune cible n'est explicitement spécifiée. Elle construit toutes les cibles qui produisent
                 des fichiers binaires (les bibliothèques SFML et les exemples).
             </td>
         </tr>
