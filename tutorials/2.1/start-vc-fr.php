@@ -21,7 +21,7 @@
     <a class="internal" href="../../download-fr.php" title="Aller à la page des téléchargements">page des téléchargements</a>.
 </p>
 <p class="important">
-    Vous devez télécharger le package qui correspond à cotre version de Visual C++. En effet, une bibliothèque compilée avec VC++ 9 (Visual Studio 2008)
+    Vous devez télécharger le package qui correspond à votre version de Visual C++. En effet, une bibliothèque compilée avec VC++ 9 (Visual Studio 2008)
     ne sera pas compatible avec Visual C++ 10 (Visual Studio 2010) par exemple. S'il n'y a aucun package de SFML compilé pour votre version
     de Visual C++, vous devrez <a class="internal" href="./compile-with-cmake-fr.php" title="Comment compiler SFML">recompiler SFML</a>.
 </p>
@@ -62,7 +62,7 @@
 </p>
 <img class="screenshot" src="./images/start-vc-link-libs.png" alt="Capture d'écran de la boîte de dialogue pour configurer les bibliothèques du projet" title="Capture d'écran de la boîte de dialogue pour configurer les bibliothèques du projet" />
 <p class="important">
-    Il est important de lier les bibiothèques qui correspondent à la configuration : "sfml-xxx-d.lib" pour Debug, and "sfml-xxx.lib" pour Release.
+    Il est important de lier les bibiothèques qui correspondent à la configuration : "sfml-xxx-d.lib" pour Debug, et "sfml-xxx.lib" pour Release.
     Un mauvais mélange pourrait entraîner des crashs.
 </p>
 <p>
