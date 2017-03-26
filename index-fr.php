@@ -25,9 +25,6 @@
 </div>
 
 <div class="home-section">
-    <div class="column image">
-        <img src="<?php echo image('home/multiplatform.png') ?>" alt="Image multi-platforme" />
-    </div>
     <div class="column">
         <div class="title">SFML est multi-plateforme</div>
         <p>
@@ -37,6 +34,9 @@
         <p>
             Des SDKs précompilés pour votre OS préféré sont disponibles sur la <a href="download-fr.php" title="Aller à la page des téléchargements">page des téléchargements</a>.
         </p>
+    </div>
+    <div class="column image">
+        <img src="<?php echo image('home/multiplatform.png') ?>" alt="Image multi-platforme" />
     </div>
 </div>
 
