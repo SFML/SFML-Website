@@ -192,7 +192,7 @@ int main()
 </p>
 <img class="screenshot" src="./images/start-cb-app.png" alt="Capture d'écran de l'application Hello SFML" title="Capture d'écran de l'application Hello SFML" />
 <p>
-    Si vous utilisez le module sfml-audio (que ce soit dynamiquement ou statiquement), vous devez aussi copier le DLL de bibliothèque externe dont
+    Si vous utilisez le module sfml-audio (que ce soit dynamiquement ou statiquement), vous devez aussi copier la DLL de bibliothèque externe dont
     il dépend, qui est OpenAL32.dll.<br/>
     Ces fichiers se trouvent également dans <em>&lt;installation-de-sfml/bin&gt;</em>.
 </p>
