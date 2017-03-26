@@ -25,8 +25,8 @@
     <li>Télécharger le SDK et copier les fichiers manuellement</li>
 </ul>
 <p>
-    L'option 1 est de loin celle à préférer; si la version de SFML que vous souhaitez installer est disponible dans les dépôts officiels, alors
-    installez la simplement avec votre gestionnaire de paquets. Par exemple, sous Debian vous feriez :
+    L'option 1 est de loin celle à préférer ; si la version de SFML que vous souhaitez installer est disponible dans les dépôts officiels, alors
+    installez-la simplement avec votre gestionnaire de paquets. Par exemple, sous Debian vous feriez :
 </p>
 <pre><code class="no-highlight">sudo apt-get install libsfml-dev</code></pre>
 <p>
@@ -38,7 +38,7 @@
 <p>
     Enfin, l'option 3 est un bon compromis pour une installation rapide si SFML n'est pas disponible en tant que package officiel. Téléchargez le SDK
     depuis la <a class="internal" href="../../download-fr.php" title="Aller à la page des téléchargements">page des téléchargements</a>, décompressez-le
-    et copier les fichiers vers votre endroit préféré : soit un chemin à part dans votre dossier personnel (comme <em>/home/moi/sfml</em>), ou bien un
+    et copiez les fichiers vers votre endroit préféré : soit un chemin à part dans votre dossier personnel (comme <em>/home/moi/sfml</em>), ou bien un
     chemin standard (comme <em>/usr/local</em>).
 </p>
 <p>
@@ -49,9 +49,9 @@
 <p>
     Dans ce tutoriel nous n'allons pas parler des EDIs tels que Code::Blocks ou Eclipse. Nous détaillerons simplement les commandes requises pour
     compiler et lier un exécutable SFML, mais écrire un makefile complet ou configurer un projet dans un EDI sort du cadre de ce tutoriel -- il existe
-    de meilleurs tutoriels spécifique pour ces choses.<br />
+    de meilleurs tutoriels spécifiques pour ces choses.<br />
     Si vous utilisez Code::Blocks, vous pouvez aller jeter un oeil au
-    <a class="internal" href="./start-cb-fr.php" title="SFML et Code::Blocks">tutoriel pour Code::Blocks sous Windows</a>; les instructions devraient être
+    <a class="internal" href="./start-cb-fr.php" title="SFML et Code::Blocks">tutoriel pour Code::Blocks sous Windows</a> ; les instructions devraient être
     similaires, sauf que si vous avez installé SFML dans un chemin standard du système vous n'aurez pas à définir les chemins de recherche du compilateur
     et de l'éditeur de liens.
 </p>
