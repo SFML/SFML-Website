@@ -20,7 +20,7 @@
     your choice. It is similar to autoconf/automake or premake for those who are already familiar with these tools.
 </p>
 <p>
-    CMake is used by many projects including well-known ones such as Blender, Boost, KDE, and Ogre. You can read more about CMake on its
+    CMake is used by many projects including well-known ones such as Blender, KDE, and Ogre. You can read more about CMake on its
     <a class="external" title="CMake official website" href="http://www.cmake.org/">official website</a> or in its
     <a class="external" title="Wikipedia page of CMake" href="http://en.wikipedia.org/wiki/CMake">Wikipedia article</a>.
 </p>
