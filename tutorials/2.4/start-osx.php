@@ -23,7 +23,7 @@
     All you need to create an SFML application is:
 </p>
 <ul>
-    <li>An 64-bit Intel Mac with Lion or later (10.7+)</li>
+    <li>A 64-bit Intel Mac with Lion or later (10.7+)</li>
     <li><a href="http://developer.apple.com/xcode/" title="Download Xcode">Xcode</a> (preferably version 4 or later of the IDE which is available on the <em>App Store</em>) and clang.</li>
 </ul>
 <p class="important">
