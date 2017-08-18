@@ -53,7 +53,7 @@
 <h3 id="2.4.1-general"><a class="h3-link" href="#2.4.1-general">General</a></h3>
 <h4>Bugfixes</h4>
 <ul>
-  <li>[kFreeBSD] Define SFML_OS_FREEBSD when compiling for kFreeBSD (<a href="https://github.com/SFML/SFML/pull/1129">#1129</a></li>
+  <li>[kFreeBSD] Define SFML_OS_FREEBSD when compiling for kFreeBSD (<a href="https://github.com/SFML/SFML/pull/1129">#1129</a>)</li>
   <li>[Windows] Added some simple messaging when trying to build under Cygwin (<a href="https://github.com/SFML/SFML/pull/1153">#1153</a>)</li>
 </ul>
 
