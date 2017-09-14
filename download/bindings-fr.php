@@ -70,10 +70,15 @@
             <td>DJMaster</td>
         </tr>
         <tr>
-            <th rowspan="1">Go</th>
+            <th rowspan="2">Go</th>
             <td><a href="https://bitbucket.org/krepa098/gosfml2" class="website"><img src="../images/bindings/gosfml2.png" alt="GoSFML2"></a></td>
             <td>2.0</td>
             <td>krepa098</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/teh-cmc/go-sfml" class="website"></a></td>
+            <td>2.4</td>
+            <td><a href="mailto:cr.rey.clement@gmail.com">Clement Rey</a></td>
         </tr>
         <tr>
             <th rowspan="1">Haskell</th>
