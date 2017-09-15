@@ -45,7 +45,7 @@
         <meta charset="utf-8"/>
         <link rel="icon" type="image/ico" href="<?php echo image('favicon.ico') ?>"/>
         <link rel='stylesheet' type='text/css' href="//fonts.googleapis.com/css?family=Ubuntu:400,700,400italic"/>
-        <link rel="stylesheet" type="text/css" href="<?php echo style('style.css') ?>?2015-09-16-0000" title="default" media="screen,print"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo style('style.css') ?>?2017-09-15-0000" title="default" media="screen,print"/>
         <link rel="stylesheet" type="text/css" href="<?php echo script('highlight/styles/github.css') ?>"/>
         <?php if (isset($doxygen))
         {
