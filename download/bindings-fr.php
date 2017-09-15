@@ -76,7 +76,7 @@
             <td>krepa098</td>
         </tr>
         <tr>
-            <td><a href="https://github.com/teh-cmc/go-sfml" class="website"></a></td>
+            <td><a href="https://github.com/teh-cmc/go-sfml" class="website">go-sfml</a></td>
             <td>2.4</td>
             <td><a href="mailto:cr.rey.clement@gmail.com">Clement Rey</a></td>
         </tr>
