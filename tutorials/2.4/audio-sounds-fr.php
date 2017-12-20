@@ -61,7 +61,7 @@ int main()
     <a class="internal" href="./system-stream-fr.php" title="Tutoriel sur les flux de données">flux de données perso</a> (<code>loadFromStream</code>).
 </p>
 <p>
-    SFML supporte les formats WAV, OGG/Vorbis et FLAC. En raison de l'octroi de licences question MP3 ne est <strong>pas</strong> supporté.
+    SFML supporte les formats WAV, OGG/Vorbis et FLAC. En raison de l'octroi de licences, le format MP3 n'est <strong>pas</strong> supporté.
 </p>
 <p>
     Vous pouvez aussi charger un buffer directement depuis un tableau d'échantillons, au cas où vous les auriez récupéré depuis autre chose
