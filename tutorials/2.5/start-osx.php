@@ -24,7 +24,8 @@
 </p>
 <ul>
     <li>A 64-bit Intel Mac with Lion or later (10.7+)</li>
-    <li><a href="http://developer.apple.com/xcode/" title="Download Xcode">Xcode</a> (preferably version 4 or later of the IDE which is available on the <em>App Store</em>) and clang.</li>
+    <li><a href="http://developer.apple.com/xcode/" title="Download Xcode">Xcode</a> (versions 4 or above of the IDE, which is available on the <em>App Store</em>, are supported).</li>
+    <li>Clang and libc++ (which are shipped by default with Xcode).</li>
 </ul>
 <p class="important">
     With recent versions of Xcode you also need to install the <tt>Command Line Tools</tt> from <tt>Xcode &gt; Preferences &gt; Downloads &gt; Components</tt>. If you can't find the CLT there use <code>xcode-select --install</code> in a Terminal and follow on-screen instructions.
@@ -64,15 +65,6 @@
     how to add a library to your project.
 </p>
 
-<h3>C++11, libc++ and libstdc++</h3>
-<p>
-    Apple ships a custom version of <tt>clang</tt> and <tt>libc++</tt> with Xcode that supports C++11.
-    If you plan to use C++11's new features, you need to configure your project to use <tt>clang</tt> and <tt>libc++</tt>.
-</p>
-<p>
-    However, if your project depends on libstdc++ (directly or indirectly), you need to <a href="compile-with-cmake.php" title="Compiling SFML with CMake">build SFML yourself</a>
-    and configure your project accordingly.
-</p>
 
 <?php h2('Installing SFML') ?>
 <p>
@@ -123,14 +115,6 @@
     <a href="https://developer.apple.com/library/mac/#documentation/CoreFoundation/Conceptual/CFBundles/BundleTypes/BundleTypes.html" title="Go to Apple's documentation
     about application bundle">application bundle ".app"</a>.
 </p>
-<p class="important">
-    A few words about the templates settings. If you choose an incompatible option for <tt>C++ Compiler and Standard Library</tt> you will end up with linker errors.
-    Make sure you follow this guideline:
-</p>
-<ul>
-    <li>If you downloaded the "Clang" version from the download page, you should select <tt>C++11 with Clang and libc++</tt>.</li>
-    <li>If you compiled SFML yourself, you should be able to figure out which option you should use. ;-)</li>
-</ul>
 <p>
     Now that your project is ready, let's see what is inside:
 </p>

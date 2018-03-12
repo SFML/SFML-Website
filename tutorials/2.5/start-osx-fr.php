@@ -26,7 +26,8 @@
 </p>
 <ul>
     <li>un Mac Intel 64-bit avec Lion ou ultérieur (10.7+)</li>
-    <li>avec <a href="http://developer.apple.com/xcode/" title="Télécharger Xcode">Xcode</a> (de préférence la quatrième, cinquième ou sixième version de l'EDI, qui est disponible sur l'<em>App Store</em>) et clang.</li>
+    <li>avec <a href="http://developer.apple.com/xcode/" title="Télécharger Xcode">Xcode</a> (les versions 4 et ultérieurs de l'EDI, qui est disponible sur l'<em>App Store</em>, sont supportées)</li>
+    <li>avec clang et libc++ (fournis par Xcode).</li>
 </ul>
 <p class="important">
     Avec les versions récentes de Xcode vous devez aussi installer les <tt>Command Line Tools</tt> depuis <tt>Xcode &gt; Preferences &gt; Downloads &gt; Components</tt>. Si vous ne trouvez pas les CLT dans Xcode, utilisez <code>xcode-select --install</code> dans un Terminal et suivez les instructions à l'écran.
@@ -69,15 +70,6 @@
     d'Apple concernant Xcode 3, et plus particulièrement regarder comment ajouter une bibliothèque à votre projet.
 </p>
 
-<h3>C++11, libc++ et libstdc++</h3>
-<p>
-    Apple fournit une version personnalisée de <tt>clang</tt> et <tt>libc++</tt> avec Xcode, qui supportent standard C++11.
-    Si vous avez prévu d'utiliser ces nouvelles fonctionnalités, vous devez configurer votre projet pour utiliser <tt>clang</tt> et <tt>libc++</tt>.
-</p>
-<p>
-    Cependant, si votre projet dépend (indirectement ou non) de libstdc++ vous devez <a href="compile-with-cmake-fr.php" title="Compiler SFML avec CMake">compiler SFML vous-même</a>
-    et configurer votre projet en conséquence.
-</p>
 
 <?php h2('Installer SFML') ?>
 <p>
@@ -130,16 +122,6 @@
     <a href="https://developer.apple.com/library/mac/#documentation/CoreFoundation/Conceptual/CFBundles/BundleTypes/BundleTypes.html"
     title="Consulter la documentation d'Apple sur les bundles d'application">bundle d'application ".app"</a>.
 </p>
-<p class="important">
-    Quelques mots à propos de la configuration des templates.
-    Si vous choisissez une option incompatible pour <tt>C++ Compiler and Standard Library</tt>,
-    vous allez rencontrer des erreurs à l'édition des liens.
-    Faites bien attention à suivre cette ligne directrice :
-</p>
-<ul>
-    <li>Si vous avez téléchargé la version "Clang" depuis la la page de téléchargement, vous devez choisir <tt>C++11 with Clang and libc++</tt>.</li>
-    <li>Si vous avez compilé SFML vous-même, vous devriez savoir quelle option utiliser. ;-)</li>
-</ul>
 <p>
     Maintenant que votre projet est prêt, voyons ce qu'il y a à l'intérieur :
 </p>
