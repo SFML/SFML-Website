@@ -72,12 +72,12 @@
 <table class="styled download">
     <tbody>
         <tr>
-            <td class="os" rowspan="2">Mac OS X</td>
+            <td class="os" rowspan="2">macOS</td>
             <td><?php download_link('Clang', '64-bit (OS X 10.7+, compatible with C++11 and libc++)', '5.34', '../../../files/SFML-2.4.2-osx-clang.tar.gz') ?></td>
         </tr>
         <tr>
             <td class="notice" colspan="3">
-                Mac OS X libraries are only compatible with 64-bit systems.
+                macOS libraries are only compatible with 64-bit systems.
             </td>
         </tr>
     </tbody>

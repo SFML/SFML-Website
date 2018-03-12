@@ -271,9 +271,9 @@ sf::WindowHandle handle = window.getSystemHandle();
     be compatible with the other limitation described below.
 </p>
 
-<h3>On OS X, windows and events must be managed in the main thread</h3>
+<h3>On macOS, windows and events must be managed in the main thread</h3>
 <p>
-    Yep, that's true. Mac OS X just won't agree if you try to create a window or handle events in a thread other than the main one.
+    Yep, that's true; macOS just won't agree if you try to create a window or handle events in a thread other than the main one.
 </p>
 
 <h3>On Windows, a window which is bigger than the desktop will not behave correctly</h3>

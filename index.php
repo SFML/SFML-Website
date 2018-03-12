@@ -31,7 +31,7 @@
     <div class="stagger-column-wide">
         <div class="title">SFML is multi-platform</div>
         <p>
-            With SFML, your application can compile and run out of the box on the most common operating systems: Windows, Linux, Mac OS X and soon Android &amp; iOS.
+            With SFML, your application can compile and run out of the box on the most common operating systems: Windows, Linux, macOS and soon Android &amp; iOS.
         </p>
         <p>
             Pre-compiled SDKs for your favorite OS are available on the <a href="download.php" title="Go to the download page">download page</a>.

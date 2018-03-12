@@ -69,7 +69,7 @@
   <li>[Linux] Fixed an issue where GNOME flags window unresponsive (<a href="https://github.com/SFML/SFML/issues/1089">#1089</a>, <a href="https://github.com/SFML/SFML/pull/1138">#1138</a>)</li>
   <li>[Linux] Fixed leak of XVisualInfo objects during GlxContext creation (<a href="https://github.com/SFML/SFML/pull/1135">#1135</a>)</li>
   <li>[Linux] Fixed possible hang when setting visibility if external window sources (<a href="https://github.com/SFML/SFML/pull/1136">#1136</a>)</li>
-  <li>[OS X] Fixed inconsistency between doc and impl on OS X for the grab feature (<a href="https://github.com/SFML/SFML/pull/1133">#1133</a>, <a href="https://github.com/SFML/SFML/issues/1148">#1148</a>, <a href="https://github.com/SFML/SFML/pull/1150">#1150</a>)</li>
+  <li>[macOS] Fixed inconsistency between doc and impl on macOS for the grab feature (<a href="https://github.com/SFML/SFML/pull/1133">#1133</a>, <a href="https://github.com/SFML/SFML/issues/1148">#1148</a>, <a href="https://github.com/SFML/SFML/pull/1150">#1150</a>)</li>
   <li>[Windows] Fixed context memory leaks (<a href="https://github.com/SFML/SFML/issues/1143">#1143</a>, <a href="https://github.com/SFML/SFML/pull/1002">#1002</a>)</li>
 </ul>
 
@@ -97,7 +97,7 @@
   <li>Updated/fixed string comparisons in Config.cmake (<a href="https://github.com/SFML/SFML/pull/1102">#1102</a>)</li>
   <li>Added the missing -s postfix for the RelWithDebInfo config (<a href="https://github.com/SFML/SFML/pull/1014">#1014</a>)</li>
   <li>[Android] Fixed current Android compilation issues (<a href="https://github.com/SFML/SFML/pull/1116">#1116</a>, <a href="https://github.com/SFML/SFML/pull/1111">#1111</a>, <a href="https://github.com/SFML/SFML/pull/1079">#1079</a>)</li>
-  <li>[OS X] Update Xcode template material (<a href="https://github.com/SFML/SFML/pull/976">#976</a>, <a href="https://github.com/SFML/SFML/pull/968">#968</a>)</li>
+  <li>[macOS] Update Xcode template material (<a href="https://github.com/SFML/SFML/pull/976">#976</a>, <a href="https://github.com/SFML/SFML/pull/968">#968</a>)</li>
   <li>[Windows] Added support for VS 2015 (<a href="https://github.com/SFML/SFML/pull/972">#972</a>)</li>
   <li>[Windows] Create and install PDB debug symbols alongside binaries (<a href="https://github.com/SFML/SFML/pull/1037">#1037</a>)</li>
 </ul>
@@ -140,10 +140,10 @@
   <li>[Android] Accept touch events from "multiple" devices (<a href="https://github.com/SFML/SFML/pull/954">#954</a>, <a href="https://github.com/SFML/SFML/pull/953">#953</a>)</li>
   <li>[Android] Copy the selected EGL context's settings to SFML (<a href="https://github.com/SFML/SFML/pull/1039">#1039</a>)</li>
   <li>[Linux] Fixed modifiers causing sf::Keyboard::Unknown being returned (<a href="https://github.com/SFML/SFML/pull/1022">#1022</a>, <a href="https://github.com/SFML/SFML/pull/1012">#1012</a>)</li>
-  <li>[OS X] Improved memory management on OS X (<a href="https://github.com/SFML/SFML/pull/962">#962</a>, <a href="https://github.com/SFML/SFML/pull/790">#790</a>)</li>
-  <li>[OS X] Fixed crash when resizing a window to a zero-height/width size (<a href="https://github.com/SFML/SFML/pull/986">#986</a>, <a href="https://github.com/SFML/SFML/pull/984">#984</a>)</li>
-  <li>[OS X] Use the mouse button constant instead of 0 to avoid a compiler error on OSX (<a href="https://github.com/SFML/SFML/pull/1035">#1035</a>)</li>
-  <li>[OS X] OS X improvement: warnings + bugfix + refactoring, the lot! (<a href="https://github.com/SFML/SFML/pull/1042">#1042</a>)</li>
+  <li>[macOS] Improved memory management on macOS (<a href="https://github.com/SFML/SFML/pull/962">#962</a>, <a href="https://github.com/SFML/SFML/pull/790">#790</a>)</li>
+  <li>[macOS] Fixed crash when resizing a window to a zero-height/width size (<a href="https://github.com/SFML/SFML/pull/986">#986</a>, <a href="https://github.com/SFML/SFML/pull/984">#984</a>)</li>
+  <li>[macOS] Use the mouse button constant instead of 0 to avoid a compiler error on macOS (<a href="https://github.com/SFML/SFML/pull/1035">#1035</a>)</li>
+  <li>[macOS] macOS improvement: warnings + bugfix + refactoring, the lot! (<a href="https://github.com/SFML/SFML/pull/1042">#1042</a>)</li>
 </ul>
 
 <h3 id="2.4.0-graphics"><a class="h3-link" href="#2.4.0-graphics">Graphics</a></h3>

@@ -1,17 +1,17 @@
 <?php
 
-    $title = "SFML and Xcode (Mac OS X)";
+    $title = "SFML and Xcode (macOS)";
     $page = "start-osx.php";
 
     require("header.php");
 
 ?>
 
-<h1>SFML and Xcode (Mac OS X)</h1>
+<h1>SFML and Xcode (macOS)</h1>
 
 <?php h2('Introduction') ?>
 <p>
-    This is the first tutorial you should read if you're using SFML with Xcode -- and more generally if you are developing applications for Mac OS X. It will show you how
+    This is the first tutorial you should read if you're using SFML with Xcode -- and more generally if you are developing applications for macOS. It will show you how
     to install SFML, set up your IDE and compile a basic SFML program. More importantly, it will also show you how to make your applications ready "out of the box" for the end users.
 </p>
 <p>
@@ -32,7 +32,7 @@
 
 <h3>Binaries: dylib vs framework</h3>
 <p>
-    SFML is available in two formats on Mac OS X. You have the <em>dylib</em> libraries on the one hand and the <em>framework</em> bundles on the other.
+    SFML is available in two formats on macOS. You have the <em>dylib</em> libraries on the one hand and the <em>framework</em> bundles on the other.
 </p>
 <ul>
     <li>
@@ -96,7 +96,7 @@
     </li>
     <li>
         <strong>SFML dependencies</strong><br />
-        SFML depends on a few external libraries on Mac OS X. Copy the content of <tt>extlibs</tt> to <tt>/Library/Frameworks</tt>.
+        SFML depends on a few external libraries on macOS. Copy the content of <tt>extlibs</tt> to <tt>/Library/Frameworks</tt>.
     </li>
     <li>
         <strong>Xcode templates</strong><br />
@@ -143,7 +143,7 @@
         <strong>Header &amp; source files:</strong> the project comes with a basic example in <tt>main.cpp</tt> and the helper function <code>std::string resourcePath(void);</code> in
         <tt>ResourcePath.hpp</tt> and <tt>ResourcePath.mm</tt>. The purpose of this function, as illustrated in the provided example, is to provide a convenient way to access
         the <tt>Resources</tt> folder of your application bundle.<br />
-        Please note that this function only works on Mac OS X. If you are planning to make your application work on other operating systems, you should implement your own version of this
+        Please note that this function only works on macOS. If you are planning to make your application work on other operating systems, you should implement your own version of this
         function on the operating systems in question.
     </li>
     <li>

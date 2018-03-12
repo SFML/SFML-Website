@@ -173,7 +173,7 @@ int main()
 </code></pre>
 <p>
     Si vous avez choisi de créer un projet "Windows application", alors le point d'entrée de votre code devrait être la fonction "WinMain" au lieu de
-    "main". Étant donné que c'est spécifique à Windows, et que votre code ne compilerait donc pas sous Linux ou Mac OS X, SFML fournit un moyen de garder
+    "main". Étant donné que c'est spécifique à Windows, et que votre code ne compilerait donc pas sous Linux ou macOS, SFML fournit un moyen de garder
     un point d'entrée "main" standard dans ce cas : liez votre projet au module sfml-main ("sfml-main-d.lib" en Debug, "sfml-main.lib" en Release),
     de la même manière que vous avez lié sfml-graphics, sfml-window et sfml-system.
 </p>

@@ -151,14 +151,14 @@
  <!--p>You can find a more specific presentation of its features on <a href="features.php">this page</a>.</p//-->
 
  <h3 id="grl-platforms"><a class="h3-link" href="#grl-platforms">On which platforms is SFML currently available?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>SFML 2.3 is currently available and fully functional on Windows (8, 7, Vista, XP), Linux and Mac OS X. SFML works on both 32 and 64 bit systems. If older Windows versions need to be supported, it should be possible to use SFML 2.0 instead (see <a href="https://github.com/SFML/SFML/commit/cd68d662043c2305990d1b6b559b0138bd77af14">the commit</a> for removal of Windows 9x and similar). Since SFML 2.2, there has also been experimental support for iOS and Android.</p>
+ <p>SFML 2.3 is currently available and fully functional on Windows (8, 7, Vista, XP), Linux and macOS. SFML works on both 32 and 64 bit systems. If older Windows versions need to be supported, it should be possible to use SFML 2.0 instead (see <a href="https://github.com/SFML/SFML/commit/cd68d662043c2305990d1b6b559b0138bd77af14">the commit</a> for removal of Windows 9x and similar). Since SFML 2.2, there has also been experimental support for iOS and Android.</p>
 
  <h3 id="grl-languages"><a class="h3-link" href="#grl-languages">Which programming languages are supported by SFML?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>SFML is implemented in C++. That said, several <a href="download/bindings.php">bindings</a> have been created for other languages that allow SFML to be used from C, C#, C++/CLI, D, Ruby, OCaml, Java, Python and VB.NET.</p>
 
  <h3 id="grl-dependencies"><a class="h3-link" href="#grl-dependencies">What dependencies does SFML have?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>SFML depends on a few other libraries, so before starting to compile you must have their development files installed.</p>
- <p>On Windows and Mac OS X, all the needed dependencies are provided directly with SFML, so you don't have to download/install anything. Compilation will work out of the box.</p>
+ <p>On Windows and macOS, all the needed dependencies are provided directly with SFML, so you don't have to download/install anything. Compilation will work out of the box.</p>
  <p>On Linux however, nothing is provided and SFML relies on your own installation of the libraries it depends on. Here is a list of what you need to install before compiling SFML:</p>
  <ul>
   <li>pthread</li>
@@ -821,7 +821,7 @@ int main() {
  <p>Yes, you may use SFML in commercial applications. You don't even have to mention that you used SFML in your application, but the zlib license states that if you do mention it, you are not allowed to state that you yourself are the author of SFML. You are also not allowed to modify SFML and represent it as being the original.</p>
 
  <h3 id="lic-static"><a class="h3-link" href="#lic-static">Can I link SFML statically?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>Yes, you can link SFML statically. This can be done in any operating system, although in Linux and Mac OS X it is recommended to only link dynamically unless you have special requirements.</p>
+ <p>Yes, you can link SFML statically. This can be done in any operating system, although in Linux and macOS it is recommended to only link dynamically unless you have special requirements.</p>
  <p>When linking statically, do not forget to specify the <code>SFML_STATIC</code> define on your command line.</p>
 
  <h3 id="lic-examples"><a class="h3-link" href="#lic-examples">Can I use the code from the example directory?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>

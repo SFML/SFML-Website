@@ -51,7 +51,7 @@
             <td><?php download_link('2.4', 'Visual C++ / GCC', '64-bit', '3.62', '../../files/CSFML-2.4-windows-64-bit.zip') ?></td>
         </tr>
         <tr>
-            <td class="os">Mac OS X</td>
+            <td class="os">macOS</td>
             <td colspan="2"><?php download_link('2.4', 'Clang', '64-bit (OS X 10.7+, compatible C++11 et libc++)', '0.15', '../../files/CSFML-2.4-osx-clang.tar.gz') ?></td>
         </tr>
         <tr>
@@ -70,7 +70,7 @@
             <td><?php download_link('2.3', 'Visual C++ / GCC', '64-bit', '3.48', '../../files/CSFML-2.3-windows-64-bit.zip') ?></td>
         </tr>
         <tr>
-            <td class="os">Mac OS X</td>
+            <td class="os">macOS</td>
             <td colspan="2"><?php download_link('2.3', 'Clang', 'universel 32+64-bit (OS X 10.7+, compatible C++11 et libc++)', '0.21', '../../files/CSFML-2.3-osx-clang-universal.tar.gz') ?></td>
         </tr>
         <tr>
@@ -94,7 +94,7 @@
             <td><?php download_link('2.2', 'GCC', '64-bit', '1.47', '../../files/CSFML-2.2-linux-gcc-64-bit.tar.bz2') ?></td>
         </tr>
         <tr>
-            <td class="os">Mac OS X</td>
+            <td class="os">macOS</td>
             <td colspan="2"><?php download_link('2.2', 'Clang', 'universel 32+64-bit (OS X 10.7+, compatible C++11 et libc++)', '1.74', '../../files/CSFML-2.2-osx-clang-universal.tar.gz') ?></td>
         </tr>
         <tr>
@@ -118,7 +118,7 @@
             <td><?php download_link('2.1', 'GCC', '64-bit', '0.39', '../../files/CSFML-2.1-linux-gcc-64bits.tar.bz2') ?></td>
         </tr>
         <tr>
-            <td class="os" rowspan="2">Mac OS X</td>
+            <td class="os" rowspan="2">macOS</td>
             <td colspan="2"><?php download_link('2.1', 'GCC', 'universel 32+64-bit (OS X 10.5+)', '0.99', '../../files/CSFML-2.1-osx-gcc-universal.tar.gz') ?></td>
         </tr>
         <tr>
@@ -145,7 +145,7 @@
             <td><?php download_link('2.0', 'GCC', '64-bit', '0.48', '../../files/CSFML-2.0-linux-gcc-64bits.tar.bz2') ?></td>
         </tr>
         <tr>
-            <td class="os" rowspan="2">Mac OS X</td>
+            <td class="os" rowspan="2">macOS</td>
             <td colspan="2"><?php download_link('2.0', 'GCC', 'universel 32+64-bit (OS X 10.5+)', '0.62', '../../files/CSFML-2.0-osx-gcc-universal.zip') ?></td>
         </tr>
         <tr>

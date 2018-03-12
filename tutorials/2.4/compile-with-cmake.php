@@ -34,7 +34,7 @@
     SFML depends on a few other libraries, so before starting to configure you must have their development files installed.
 </p>
 <p>
-    On Windows and Mac OS X, all the required dependencies are provided alongside SFML so you won't have to download/install anything else.
+    On Windows and macOS, all the required dependencies are provided alongside SFML so you won't have to download/install anything else.
     Building will work out of the box.
 </p>
 <p>
@@ -79,7 +79,7 @@
 <p>
     Now that you've chosen the build directory, there's one more thing to do before you can run CMake. When CMake configures your project, it tests
     the availability of the compiler (and checks its version as well). As a consequence, the compiler executable must be available when CMake is run.
-    This is not a problem for Linux and Mac OS X users, since the compilers are installed in a standard path and are always globally available,
+    This is not a problem for Linux and macOS users, since the compilers are installed in a standard path and are always globally available,
     but on Windows you may have to add the directory of your compiler in the PATH environment variable, so that CMake can find it automatically.
     This is especially important when you have several compilers installed, or multiple versions of the same compiler.
 </p>
@@ -144,7 +144,7 @@
 </p>
 <p class="important">
     The installation process (described further down) may not work with the "Xcode" generator.
-    It is therefore highly recommended to use the <em>Makefile</em> generator when building on Mac OS X.
+    It is therefore highly recommended to use the <em>Makefile</em> generator when building on macOS.
 </p>
 <p>
     Always keep the "Use default native compilers" option enabled. The other three fields can be left alone.
@@ -179,14 +179,14 @@
         <tr class="two">
             <td><code>CMAKE_INSTALL_PREFIX</code></td>
             <td>
-                This is the install path. By default, it is set to the installation path that is most typical on the operating system ("/usr/local" for Linux and Mac OS X,
+                This is the install path. By default, it is set to the installation path that is most typical on the operating system ("/usr/local" for Linux and macOS,
                 "C:\Program Files" for Windows, etc.). Installing SFML after building it is not mandatory since you can use the binaries directly from where
                 they were built. It may be a better solution, however, to install them properly so you can remove all the temporary files produced during
                 the build process.
             </td>
         </tr>
         <tr class="one">
-            <td><code>CMAKE_INSTALL_FRAMEWORK_PREFIX<br/>(Mac OS X only)</code></td>
+            <td><code>CMAKE_INSTALL_FRAMEWORK_PREFIX<br/>(macOS only)</code></td>
             <td>
                 This is the install path for frameworks. By default, it is set to the root library folder
                 i.e. /Library/Frameworks. As stated explained above for CMAKE_INSTALL_PREFIX, it is not mandatory to install SFML
@@ -203,7 +203,7 @@
             </td>
         </tr>
         <tr class="one">
-            <td><code>SFML_BUILD_FRAMEWORKS<br/>(Mac OS X only)</code></td>
+            <td><code>SFML_BUILD_FRAMEWORKS<br/>(macOS only)</code></td>
             <td>
                 This boolean option controls whether you build SFML as
                 <a class="external" title="go to Apple documentation about frameworks" href="http://developer.apple.com/library/mac/#documentation/MacOSX/Conceptual/BPFrameworks/Frameworks.html">framework bundles</a>
@@ -226,7 +226,7 @@
                 This boolean option controls whether you generate the SFML documentation or not. Note that the
                 <a class="external" title="go to doxygen website" href="http://www.doxygen.org">Doxygen</a> tool must be installed and accessible, otherwise
                 enabling this option will produce an error.<br>
-                On Mac OS X you can either install the classic-Unix doxygen binary into /usr/bin or any similar directory,
+                On macOS you can either install the classic-Unix doxygen binary into /usr/bin or any similar directory,
                 or install Doxygen.app into any "Applications" folder, e.g. ~/Applications.
             </td>
         </tr>
@@ -243,17 +243,17 @@
             </td>
         </tr>
         <tr class="one">
-            <td><code>CMAKE_OSX_ARCHITECTURES<br/>(Mac OS X only)</code></td>
+            <td><code>CMAKE_OSX_ARCHITECTURES<br/>(macOS only)</code></td>
             <td>
                 This setting specifies for which architectures SFML should be built. The recommended value is "x86_64" as 32-bit build are no longer supported.
             </td>
         </tr>
         <tr class="two">
-            <td><code>SFML_INSTALL_XCODE_TEMPLATES<br/>(Mac OS X only)</code></td>
+            <td><code>SFML_INSTALL_XCODE_TEMPLATES<br/>(macOS only)</code></td>
             <td>
                 This boolean option controls whether CMake will install the Xcode templates on your system or not.
                 Please make sure that /Library/Developer/Xcode/Templates/SFML exists and is writable.
-                More information about these templates is given in the "Getting started" tutorial for Mac OS X.
+                More information about these templates is given in the "Getting started" tutorial for macOS.
             </td>
         </tr>
         <tr class="one">
@@ -275,9 +275,9 @@
     that your settings have been saved from the previous configuration. Make the necessary changes, reconfigure and generate the updated makefiles/projects.
 </p>
 
-<h3>C++11 and Mac OS X</h3>
+<h3>C++11 and macOS</h3>
 <p>
-    If you want to use C++11 features in your application on Mac OS X, you have to use clang (Apple's official compiler) and libc++. Moreover, you will need to build SFML with
+    If you want to use C++11 features in your application on macOS, you have to use clang (Apple's official compiler) and libc++. Moreover, you will need to build SFML with
     these tools to work around any incompatibility between the standard libraries and compilers.
 </p>
 <p>
@@ -340,7 +340,7 @@
             <td><code>cocoa<br/>ftp<br/>opengl<br/>pong<br/>shader<br/>sockets<br/>sound<br/>sound&#8209;capture<br/>voip<br/>window<br/>win32<br/>X11</code></td>
             <td>
                 Builds the corresponding SFML example. These targets are available only if the <code>SFML_BUILD_EXAMPLES</code> option is enabled. Note that some of the
-                targets are available only on certain operating systems ("cocoa" is available on Mac OS X, "win32" on Windows, "X11" on Linux, etc.).
+                targets are available only on certain operating systems ("cocoa" is available on macOS, "win32" on Windows, "X11" on Linux, etc.).
             </td>
         </tr>
         <tr class="two">

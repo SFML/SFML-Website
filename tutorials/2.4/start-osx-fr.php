@@ -1,17 +1,17 @@
 <?php
 
-    $title = "SFML et Xcode (Mac OS X)";
+    $title = "SFML et Xcode (macOS)";
     $page = "start-osx-fr.php";
 
     require("header-fr.php");
 
 ?>
 
-<h1>SFML et Xcode (Mac OS X)</h1>
+<h1>SFML et Xcode (macOS)</h1>
 
 <?php h2('Introduction') ?>
 <p>
-    Ceci est le premier tutoriel que vous devriez lire si vous utilisez SFML avec Xcode -- et de manière plus générale, si vous développez des applications pour Mac OS X.
+    Ceci est le premier tutoriel que vous devriez lire si vous utilisez SFML avec Xcode -- et de manière plus générale, si vous développez des applications pour macOS.
     Ce tutoriel vous montrera comment installer SFML, configurer votre EDI et compiler un programme SFML simple. Mais aussi, plus important, comment créer des applications qui
     soient prêtes à être utilisées "<em>out of the box</em>" pour l'utilisateur final.
 </p>
@@ -34,7 +34,7 @@
 
 <h3>Les binaires : dylib contre framework</h3>
 <p>
-    SFML est disponible en deux formats sous Mac OS X. Vous avez les bibliothèques <em>dylib</em> d'un côté, et les bundles <em>framework</em> de l'autre.
+    SFML est disponible en deux formats sous macOS. Vous avez les bibliothèques <em>dylib</em> d'un côté, et les bundles <em>framework</em> de l'autre.
 </p>
 <ul>
     <li>
@@ -99,7 +99,7 @@
     </li>
     <li>
         <strong>Les dépendances de SFML</strong><br />
-        SFML requiert seulement quelques bibliothèques externes sous Mac OS X. Copiez le contenu de <tt>extlibs</tt>
+        SFML requiert seulement quelques bibliothèques externes sous macOS. Copiez le contenu de <tt>extlibs</tt>
         dans <tt>/Library/Frameworks</tt>.
     </li>
     <li>
@@ -152,7 +152,7 @@
         <strong>En-tête &amp; fichiers sources :</strong> le projet vient avec un exemple basique dans <tt>main.cpp</tt> et une fonction d'utilitaire :
         <code>std::string resourcePath(void);</code> dans <tt>ResourcePath.hpp</tt> et <tt>ResourcePath.mm</tt>.
         Le but de cette fonction, comme illustré dans l'exemple, est de fournir un moyen pratique d'accéder au répertoire <tt>Resources</tt> du bundle d'application.<br />
-        Notez bien que cette fonction ne marche que sous Mac OS X. Si vous prévoyez de porter votre application sur un autre OS, vous devrez faire une autre implémentation
+        Notez bien que cette fonction ne marche que sous macOS. Si vous prévoyez de porter votre application sur un autre OS, vous devrez faire une autre implémentation
         de cette fonction.
     </li>
     <li>
