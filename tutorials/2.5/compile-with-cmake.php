@@ -104,11 +104,6 @@
         This is CMake's graphical interface which allows you to configure everything with buttons and text fields.
         It's very convenient to see and edit the build options and is probably the easiest solution for beginners and people who don't want to deal with the command line.
     </li>
-    <li><strong>cmake -i</strong><br />
-        This is CMake's interactive command line wizard which guides you through filling build options one at a time.
-        It is a good option if you want to start by using the command line since you are probably not able to remember
-        all the different options that are available and which of them are important.
-    </li>
     <li><strong>cmake</strong><br />
         This is the direct call to CMake. If you use this, you must specify all the option names and their values as command line parameters.
         To print out a list of all options, run cmake -L.
