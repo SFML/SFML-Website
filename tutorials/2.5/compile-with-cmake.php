@@ -171,56 +171,63 @@
         <tr class="one">
             <td><code>CMAKE_BUILD_TYPE</code></td>
             <td>
-                This option selects the build configuration type. Valid values are "Debug" and "Release" (there are other types such as "RelWithDebInfo" or "MinSizeRel",
-                but they are meant for more advanced builds). Note that if you generate a workspace for an IDE that supports multiple configurations,
-                such as Visual Studio, this option is ignored since the workspace can contain multiple configurations simultaneously.
+                <p>This option selects the build configuration type. Valid values are "Debug" and "Release" (there are other types such as "RelWithDebInfo" or
+                "MinSizeRel", but they are meant for more advanced builds).</p>
+                <p>Note that if you generate a workspace for an IDE that supports multiple configurations, such as Visual Studio, this option is ignored since
+                the workspace can contain multiple configurations simultaneously.</p>
             </td>
         </tr>
         <tr class="two">
             <td><code>CMAKE_INSTALL_PREFIX</code></td>
             <td>
-                This is the install path. By default, it is set to the installation path that is most typical on the operating system ("/usr/local" for Linux and macOS,
-                "C:\Program Files" for Windows, etc.). Installing SFML after building it is not mandatory since you can use the binaries directly from where
+                <p>This is the install path. By default, it is set to the installation path that is most typical on the operating system ("/usr/local" for Linux and macOS,
+                "C:\Program Files" for Windows, etc.). When building frameworks on macOS, you may want to change the value to "/Library/Frameworks".</p>
+                <p>Installing SFML after building it is not mandatory since you can use the binaries directly from where
                 they were built. It may be a better solution, however, to install them properly so you can remove all the temporary files produced during
-                the build process.
+                the build process.</p>
             </td>
         </tr>
         <tr class="one">
-            <td><code>CMAKE_INSTALL_FRAMEWORK_PREFIX<br/>(macOS only)</code></td>
+            <td><code>SFML_DEPENDENCIES_INSTALL_PREFIX</code></td>
             <td>
-                This is the install path for frameworks. By default, it is set to the root library folder
-                i.e. /Library/Frameworks. As stated explained above for CMAKE_INSTALL_PREFIX, it is not mandatory to install SFML
-                after building it, but it is definitely cleaner to do so.<br>
-                This path is also used to install the sndfile framework on your system (a required dependency not provided by Apple)
-                and SFML as frameworks if BUILD_FRAMEWORKS is selected.
+                <p>This is the path where SFML's dependencies like Freetype and OpenAL are installed. By default it is the same as <code>CMAKE_INSTALL_PREFIX</code>,
+                except on macOS where it defaults to "/Library/Frameworks", because dependencies on macOS are provided as frameworks.</p>
+                <p>As stated above for <code>CMAKE_INSTALL_PREFIX</code>, it is not mandatory to install SFML after building it but it is definitely cleaner to do so.</p>
             </td>
         </tr>
         <tr class="two">
-            <td><code>BUILD_SHARED_LIBS</code></td>
+            <td><code>SFML_MISC_INSTALL_PREFIX</code></td>
             <td>
-                This boolean option controls whether you build SFML as dynamic (shared) libraries, or as static ones. <br/>
-                This option should not be enabled simultaneously with SFML_USE_STATIC_STD_LIBS, they are mutually exclusive.
+                <p>This is the path where SFML examples, documentation, license and readme files are installed. On Windows it defaults to
+                <code>CMAKE_INSTALL_PREFIX</code> and to <code>CMAKE_INSTALL_PREFIX/share/SFML</code> on FreeBSD, Linux. On macOS, it defaults to "/usr/local/share/SFML".</p>
             </td>
         </tr>
         <tr class="one">
+            <td><code>BUILD_SHARED_LIBS</code></td>
+            <td>
+                This boolean option controls whether you build SFML as dynamic (shared) libraries, or as static ones. <br/>
+                This option should not be enabled simultaneously with <code>SFML_USE_STATIC_STD_LIBS</code>, they are mutually exclusive.
+            </td>
+        </tr>
+        <tr class="two">
             <td><code>SFML_BUILD_FRAMEWORKS<br/>(macOS only)</code></td>
             <td>
                 This boolean option controls whether you build SFML as
                 <a class="external" title="go to Apple documentation about frameworks" href="http://developer.apple.com/library/mac/#documentation/MacOSX/Conceptual/BPFrameworks/Frameworks.html">framework bundles</a>
                 or as
                 <a class="external" title="go to Apple documentation about dynamic library" href="http://developer.apple.com/library/mac/#documentation/DeveloperTools/Conceptual/DynamicLibraries/000-Introduction/Introduction.html">dylib binaries</a>.
-                Building frameworks requires BUILD_SHARED_LIBS to be selected.<br>
+                Building frameworks requires <code>BUILD_SHARED_LIBS</code> to be selected.<br>
                 It is recommended to use SFML as frameworks when publishing your applications. Note however,
                 that SFML cannot be built in the debug configuration as frameworks. In that case, use dylibs instead.
             </td>
         </tr>
-        <tr class="two">
+        <tr class="one">
             <td><code>SFML_BUILD_EXAMPLES</code></td>
             <td>
                 This boolean option controls whether the SFML examples are built alongside the library or not.
             </td>
         </tr>
-        <tr class="one">
+        <tr class="two">
             <td><code>SFML_BUILD_DOC</code></td>
             <td>
                 This boolean option controls whether you generate the SFML documentation or not. Note that the
@@ -230,7 +237,7 @@
                 or install Doxygen.app into any "Applications" folder, e.g. ~/Applications.
             </td>
         </tr>
-        <tr class="two">
+        <tr class="one">
             <td><code>SFML_USE_STATIC_STD_LIBS<br/>(Windows only)</code></td>
             <td>
                 This boolean option selects the type of the C/C++ runtime library which is linked to SFML. <br/>
@@ -240,12 +247,6 @@
                 (msvcrxx.dll/msvcpxx.dll for Visual C++, libgcc_s_xxx-1.dll/libstdc++-6.dll for GCC). Be careful when setting this. The setting must match your own project's
                 setting or else your application may fail to run. <br/>
                 This option should not be enabled simultaneously with BUILD_SHARED_LIBS, they are mutually exclusive.
-            </td>
-        </tr>
-        <tr class="one">
-            <td><code>CMAKE_OSX_ARCHITECTURES<br/>(macOS only)</code></td>
-            <td>
-                This setting specifies for which architectures SFML should be built. The recommended value is "x86_64" as 32-bit build are no longer supported.
             </td>
         </tr>
         <tr class="two">
@@ -275,21 +276,6 @@
     that your settings have been saved from the previous configuration. Make the necessary changes, reconfigure and generate the updated makefiles/projects.
 </p>
 
-<h3>C++11 and macOS</h3>
-<p>
-    If you want to use C++11 features in your application on macOS, you have to use clang (Apple's official compiler) and libc++. Moreover, you will need to build SFML with
-    these tools to work around any incompatibility between the standard libraries and compilers.
-</p>
-<p>
-    Here are the settings to use to build SFML with clang and libc++:
-</p>
-<ul>
-    <li>Choose "Specify native compilers" rather than "Use default native compilers" when you select the generator.</li>
-    <li>Set <code>CMAKE_CXX_COMPILER</code> to /usr/bin/clang++ (see screenshot).</li>
-    <li>Set <code>CMAKE_C_COMPILER</code> to /usr/bin/clang (see screenshot).</li>
-    <li>Set <code>CMAKE_CXX_FLAGS</code> and <code>CMAKE_C_FLAGS</code> to "-stdlib=libc++".</li>
-</ul>
-<img class="screenshot" src="./images/cmake-osx-compilers.png" alt="Screenshot of the compiler configuration on OS X" title="Screenshot of the compiler configuration on OS X" />
 
 <?php h2('Building SFML') ?>
 <p>
