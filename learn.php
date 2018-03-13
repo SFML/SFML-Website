@@ -9,7 +9,7 @@
 <h1>Learn</h1>
 
 <div class="link-box two-columns-left">
-    <a class="style" href="tutorials/2.4">
+    <a class="style" href="tutorials/2.5">
         <div class="title">Tutorials</div>
         <div class="description">Learn how to use SFML</div>
     </a>
@@ -81,6 +81,7 @@
 <h2 id="old-docs"><a class="h2-link" href="#old-docs">Documentation for older versions</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 
 <ul>
+    <li><strong>SFML 2.4.2:</strong> <a href="tutorials/2.4">Tutorials</a>, <a href="documentation/2.4.2">API documentation</a></li>
     <li><strong>SFML 2.4.1:</strong> <a href="tutorials/2.4">Tutorials</a>, <a href="documentation/2.4.1">API documentation</a></li>
     <li><strong>SFML 2.4.0:</strong> <a href="tutorials/2.4">Tutorials</a>, <a href="documentation/2.4.0">API documentation</a></li>
     <li><strong>SFML 2.3.2:</strong> <a href="tutorials/2.3">Tutorials</a>, <a href="documentation/2.3.2">API documentation</a></li>
