@@ -315,7 +315,7 @@ int main()
 
     // lancement du thread de rendu
     sf::Thread thread(&amp;renderingThread, &amp;window);
-    thread.Launch();
+    thread.launch();
 
     // la boucle d'évènements/logique/etc.
     while (window.isOpen())

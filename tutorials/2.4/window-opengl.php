@@ -279,7 +279,7 @@ int main()
 
     // launch the rendering thread
     sf::Thread thread(&amp;renderingThread, &amp;window);
-    thread.Launch();
+    thread.launch();
 
     // the event/logic/whatever loop
     while (window.isOpen())
