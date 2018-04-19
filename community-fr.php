@@ -54,10 +54,10 @@
 
 <div class="home-section">
     <div class="stagger-column-thin">
-        <a href="https://discord.gg/xJT8d"><img src="<?php echo image('community/discord.png') ?>" alt="Discord" /></a>
+        <a href="https://discord.gg/nr4X7Fh"><img src="<?php echo image('community/discord.png') ?>" alt="Discord" /></a>
     </div>
     <div class="stagger-column-wide">
-        <div class="title">&raquo; <a href="https://discord.gg/xJT8d" title="Rejoignez notre serveur Discord">Discord</a></div>
+        <div class="title">&raquo; <a href="https://discord.gg/nr4X7Fh" title="Rejoignez notre serveur Discord">Discord</a></div>
         <p>
             Pour une aide amicale, des discussions sur SFML ou d'autres sujets, et partager facilement des medias, rejoignez notre serveur Discord. Avec l'aide d'un pont IRC-Discord, tout le monde se retrouve connecté ensemble !
         </p>

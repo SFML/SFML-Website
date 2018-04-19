@@ -54,10 +54,10 @@
 
 <div class="home-section">
     <div class="stagger-column-thin">
-        <a href="https://discord.gg/xJT8d"><img src="<?php echo image('community/discord.png') ?>" alt="Discord" /></a>
+        <a href="https://discord.gg/nr4X7Fh"><img src="<?php echo image('community/discord.png') ?>" alt="Discord" /></a>
     </div>
     <div class="stagger-column-wide">
-        <div class="title">&raquo; <a href="https://discord.gg/xJT8d" title="Join our Discord server now">Discord</a></div>
+        <div class="title">&raquo; <a href="https://discord.gg/nr4X7Fh" title="Join our Discord server now">Discord</a></div>
         <p>
             For friendly help, on- and off-topic discussions and easy media sharing join our Discord server. With the help of an IRC-Discord bridge everyone is connected with each other!
         </p>
