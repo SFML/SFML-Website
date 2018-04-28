@@ -16,7 +16,7 @@
 </div>
 
 <div class="link-box two-columns-right">
-    <a class="apidocs" href="documentation/2.4.2">
+    <a class="apidocs" href="documentation/2.5.0">
         <div class="title">API Documentation</div>
         <div class="description">Reference</div>
     </a>

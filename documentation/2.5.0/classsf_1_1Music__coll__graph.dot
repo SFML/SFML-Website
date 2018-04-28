@@ -1,0 +1,12 @@
+digraph "sf::Music"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node4 [label="sf::Music",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="sf::SoundStream",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsf_1_1SoundStream.php",tooltip="Abstract base class for streamed audio sources. "];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="sf::SoundSource",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsf_1_1SoundSource.php",tooltip="Base class defining a sound&#39;s properties. "];
+  Node7 -> Node6 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="sf::AlResource",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsf_1_1AlResource.php",tooltip="Base class for classes that require an OpenAL context. "];
+}
