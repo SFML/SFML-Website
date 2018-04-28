@@ -63,7 +63,7 @@
                 vous utilisez un Linux 64-bit.<br />
                 Si vous avez besoin d'une version 32-bit de SFML, il vous faudra <a href="/tutorials/2.4/compile-with-cmake-fr.php">compiler la bibliothèque vous-même</a>.
                 <div class="important">
-                    It's recommended to use the SFML version from your package manager (if recent enough) or build from source to prevent incompatibilities.
+                    Il est recommandé d'utiliser la version de SFML fournie par votre gestionnaire de paquets (si elle est suffisamment récente), ou de compiler SFML depuis ses sources pour éviter des problèmes d'incompatibilité.
                 </div>
             </td>
         </tr>
