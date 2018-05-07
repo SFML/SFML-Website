@@ -9,18 +9,19 @@
         $version . ' Documentation'  => 'documentation/' . $version,
         $pagetitle => substr($_SERVER['REQUEST_URI'], 1) // remove the starting '/'
     );
-    require('../../header.php');
+
+    $expected_page = str_replace($version, $latest, '/' . $breadcrumbs[$pagetitle]);
+    if (file_exists($_SERVER['DOCUMENT_ROOT'] . $expected_page))
+        $redirect = $expected_page;
+    else
+        $redirect = '/documentation/' . $latest;
 
     if($version != $latest)
     {
-        $expected_page = str_replace($version, $latest, '/' . $breadcrumbs[$pagetitle]);
-        if (file_exists($_SERVER['DOCUMENT_ROOT'] . $expected_page))
-            $redirect = $expected_page;
-        else
-            $redirect = '/documentation/' . $latest;
-
         $linklatest = '<a class="important" href="' . $redirect . '"><strong>Warning:</strong> this page refers to an old version of SFML. Click here to switch to the latest version.</a>';
     }
+
+    require('../../header.php');
 ?>
 
 <h1>Documentation of SFML <?php echo $version; ?></h1>

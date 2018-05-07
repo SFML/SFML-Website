@@ -43,14 +43,14 @@
     doc_link("struct", $sfml_struct, $doc_struct);
   }
 
+  $expected_page = str_replace($version, $latest, '/' . end($breadcrumbs));
+  if (file_exists($_SERVER['DOCUMENT_ROOT'] . $expected_page))
+      $redirect = $expected_page;
+  else
+      $redirect = '/tutorials/' . $latest;
+
   if($version != $latest)
   {
-    $expected_page = str_replace($version, $latest, '/' . end($breadcrumbs));
-    if (file_exists($_SERVER['DOCUMENT_ROOT'] . $expected_page))
-        $redirect = $expected_page;
-    else
-        $redirect = '/tutorials/' . $latest;
-
     $linklatest = '<p style="text-align:center"><a class="important" href="' . $redirect . '"><strong>Attention:</strong> cette page se réfère à une ancienne version de SFML. Cliquez ici pour passer à la dernière version.</a></p>';
   }
 
