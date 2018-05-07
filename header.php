@@ -47,7 +47,10 @@
         <link rel='stylesheet' type='text/css' href="//fonts.googleapis.com/css?family=Ubuntu:400,700,400italic"/>
         <link rel="stylesheet" type="text/css" href="<?php echo style('style.css') ?>?2017-09-15-0000" title="default" media="screen,print"/>
         <link rel="stylesheet" type="text/css" href="<?php echo script('highlight/styles/github.css') ?>"/>
-        <link rel="canonical" href="<?php echo $redirect ?>"/>
+        <?php if (isset($redirect))
+        {
+            echo '<link rel="canonical" href="' . $redirect .'"/>' . "\n";
+        } ?>
         <?php if (isset($doxygen))
         {
             echo '<link rel="stylesheet" type="text/css"  href="' . root() . '/' . $docpath . 'doxygen.css" title="default" media="screen,print" />' . "\n" .
