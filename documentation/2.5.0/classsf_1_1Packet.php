@@ -70,100 +70,100 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8ab20be4a63921b7cb1a4d8ca5c30f75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test the validity of the packet, for reading.  <a href="#a8ab20be4a63921b7cb1a4d8ca5c30f75">More...</a><br /></td></tr>
 <tr class="separator:a8ab20be4a63921b7cb1a4d8ca5c30f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8e26c63ba9bdccd262565ff0d3eeba2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#af8e26c63ba9bdccd262565ff0d3eeba2">operator&gt;&gt;</a> (bool &amp;data)</td></tr>
-<tr class="memdesc:af8e26c63ba9bdccd262565ff0d3eeba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloads of operator &gt;&gt; to read data from the packet.  <a href="#af8e26c63ba9bdccd262565ff0d3eeba2">More...</a><br /></td></tr>
+<tr class="memdesc:af8e26c63ba9bdccd262565ff0d3eeba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of operator &gt;&gt; to read data from the packet.  <a href="#af8e26c63ba9bdccd262565ff0d3eeba2">More...</a><br /></td></tr>
 <tr class="separator:af8e26c63ba9bdccd262565ff0d3eeba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70fd5abb9095b5335b79c0cefd17b222"><td class="memItemLeft" align="right" valign="top"><a id="a70fd5abb9095b5335b79c0cefd17b222"></a>
-<a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (Int8 &amp;data)</td></tr>
+<tr class="memitem:a70fd5abb9095b5335b79c0cefd17b222"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#a70fd5abb9095b5335b79c0cefd17b222">operator&gt;&gt;</a> (Int8 &amp;data)</td></tr>
+<tr class="memdesc:a70fd5abb9095b5335b79c0cefd17b222"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <a href="#a70fd5abb9095b5335b79c0cefd17b222">More...</a><br /></td></tr>
 <tr class="separator:a70fd5abb9095b5335b79c0cefd17b222"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa67738284a7efc16c7594b358ef35510"><td class="memItemLeft" align="right" valign="top"><a id="aa67738284a7efc16c7594b358ef35510"></a>
-<a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (Uint8 &amp;data)</td></tr>
+<tr class="memitem:aa67738284a7efc16c7594b358ef35510"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#aa67738284a7efc16c7594b358ef35510">operator&gt;&gt;</a> (Uint8 &amp;data)</td></tr>
+<tr class="memdesc:aa67738284a7efc16c7594b358ef35510"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <a href="#aa67738284a7efc16c7594b358ef35510">More...</a><br /></td></tr>
 <tr class="separator:aa67738284a7efc16c7594b358ef35510"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af82d6c4e6d74f2ca39732c1e29f30781"><td class="memItemLeft" align="right" valign="top"><a id="af82d6c4e6d74f2ca39732c1e29f30781"></a>
-<a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (Int16 &amp;data)</td></tr>
+<tr class="memitem:af82d6c4e6d74f2ca39732c1e29f30781"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#af82d6c4e6d74f2ca39732c1e29f30781">operator&gt;&gt;</a> (Int16 &amp;data)</td></tr>
+<tr class="memdesc:af82d6c4e6d74f2ca39732c1e29f30781"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <a href="#af82d6c4e6d74f2ca39732c1e29f30781">More...</a><br /></td></tr>
 <tr class="separator:af82d6c4e6d74f2ca39732c1e29f30781"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd8706f092bc830ebb438aeee9271647"><td class="memItemLeft" align="right" valign="top"><a id="afd8706f092bc830ebb438aeee9271647"></a>
-<a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (Uint16 &amp;data)</td></tr>
+<tr class="memitem:afd8706f092bc830ebb438aeee9271647"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#afd8706f092bc830ebb438aeee9271647">operator&gt;&gt;</a> (Uint16 &amp;data)</td></tr>
+<tr class="memdesc:afd8706f092bc830ebb438aeee9271647"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <a href="#afd8706f092bc830ebb438aeee9271647">More...</a><br /></td></tr>
 <tr class="separator:afd8706f092bc830ebb438aeee9271647"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7b44e79f12d500b63f5dc2a10d78d8c"><td class="memItemLeft" align="right" valign="top"><a id="ae7b44e79f12d500b63f5dc2a10d78d8c"></a>
-<a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (Int32 &amp;data)</td></tr>
+<tr class="memitem:ae7b44e79f12d500b63f5dc2a10d78d8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#ae7b44e79f12d500b63f5dc2a10d78d8c">operator&gt;&gt;</a> (Int32 &amp;data)</td></tr>
+<tr class="memdesc:ae7b44e79f12d500b63f5dc2a10d78d8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <a href="#ae7b44e79f12d500b63f5dc2a10d78d8c">More...</a><br /></td></tr>
 <tr class="separator:ae7b44e79f12d500b63f5dc2a10d78d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b57e1953db5bec39a851929df9a339a"><td class="memItemLeft" align="right" valign="top"><a id="a4b57e1953db5bec39a851929df9a339a"></a>
-<a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (Uint32 &amp;data)</td></tr>
+<tr class="memitem:a4b57e1953db5bec39a851929df9a339a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#a4b57e1953db5bec39a851929df9a339a">operator&gt;&gt;</a> (Uint32 &amp;data)</td></tr>
+<tr class="memdesc:a4b57e1953db5bec39a851929df9a339a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <a href="#a4b57e1953db5bec39a851929df9a339a">More...</a><br /></td></tr>
 <tr class="separator:a4b57e1953db5bec39a851929df9a339a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8409de6477e17ca48225a835451261c1"><td class="memItemLeft" align="right" valign="top"><a id="a8409de6477e17ca48225a835451261c1"></a>
-<a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (Int64 &amp;data)</td></tr>
+<tr class="memitem:a8409de6477e17ca48225a835451261c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#a8409de6477e17ca48225a835451261c1">operator&gt;&gt;</a> (Int64 &amp;data)</td></tr>
+<tr class="memdesc:a8409de6477e17ca48225a835451261c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <a href="#a8409de6477e17ca48225a835451261c1">More...</a><br /></td></tr>
 <tr class="separator:a8409de6477e17ca48225a835451261c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fa9c970062753b03e43db4999fc7743"><td class="memItemLeft" align="right" valign="top"><a id="a8fa9c970062753b03e43db4999fc7743"></a>
-<a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (Uint64 &amp;data)</td></tr>
+<tr class="memitem:a8fa9c970062753b03e43db4999fc7743"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#a8fa9c970062753b03e43db4999fc7743">operator&gt;&gt;</a> (Uint64 &amp;data)</td></tr>
+<tr class="memdesc:a8fa9c970062753b03e43db4999fc7743"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <a href="#a8fa9c970062753b03e43db4999fc7743">More...</a><br /></td></tr>
 <tr class="separator:a8fa9c970062753b03e43db4999fc7743"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6704b4d13d6f798efe6fa836a8b5fa24"><td class="memItemLeft" align="right" valign="top"><a id="a6704b4d13d6f798efe6fa836a8b5fa24"></a>
-<a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (float &amp;data)</td></tr>
+<tr class="memitem:a6704b4d13d6f798efe6fa836a8b5fa24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#a6704b4d13d6f798efe6fa836a8b5fa24">operator&gt;&gt;</a> (float &amp;data)</td></tr>
+<tr class="memdesc:a6704b4d13d6f798efe6fa836a8b5fa24"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <a href="#a6704b4d13d6f798efe6fa836a8b5fa24">More...</a><br /></td></tr>
 <tr class="separator:a6704b4d13d6f798efe6fa836a8b5fa24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac84239a8ba0a165394805c17b35a88cf"><td class="memItemLeft" align="right" valign="top"><a id="ac84239a8ba0a165394805c17b35a88cf"></a>
-<a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (double &amp;data)</td></tr>
+<tr class="memitem:ac84239a8ba0a165394805c17b35a88cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#ac84239a8ba0a165394805c17b35a88cf">operator&gt;&gt;</a> (double &amp;data)</td></tr>
+<tr class="memdesc:ac84239a8ba0a165394805c17b35a88cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <a href="#ac84239a8ba0a165394805c17b35a88cf">More...</a><br /></td></tr>
 <tr class="separator:ac84239a8ba0a165394805c17b35a88cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9f8d8b0c776204f79f615b1e58bccec"><td class="memItemLeft" align="right" valign="top"><a id="ae9f8d8b0c776204f79f615b1e58bccec"></a>
-<a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (char *data)</td></tr>
+<tr class="memitem:ae9f8d8b0c776204f79f615b1e58bccec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#ae9f8d8b0c776204f79f615b1e58bccec">operator&gt;&gt;</a> (char *data)</td></tr>
+<tr class="memdesc:ae9f8d8b0c776204f79f615b1e58bccec"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <a href="#ae9f8d8b0c776204f79f615b1e58bccec">More...</a><br /></td></tr>
 <tr class="separator:ae9f8d8b0c776204f79f615b1e58bccec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabace32063c44e1a5cc54af6267c1fab"><td class="memItemLeft" align="right" valign="top"><a id="aabace32063c44e1a5cc54af6267c1fab"></a>
-<a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (std::string &amp;data)</td></tr>
+<tr class="memitem:aabace32063c44e1a5cc54af6267c1fab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#aabace32063c44e1a5cc54af6267c1fab">operator&gt;&gt;</a> (std::string &amp;data)</td></tr>
+<tr class="memdesc:aabace32063c44e1a5cc54af6267c1fab"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <a href="#aabace32063c44e1a5cc54af6267c1fab">More...</a><br /></td></tr>
 <tr class="separator:aabace32063c44e1a5cc54af6267c1fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1444500d29df0991e630ac78933c6282"><td class="memItemLeft" align="right" valign="top"><a id="a1444500d29df0991e630ac78933c6282"></a>
-<a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (wchar_t *data)</td></tr>
+<tr class="memitem:a1444500d29df0991e630ac78933c6282"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#a1444500d29df0991e630ac78933c6282">operator&gt;&gt;</a> (wchar_t *data)</td></tr>
+<tr class="memdesc:a1444500d29df0991e630ac78933c6282"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <a href="#a1444500d29df0991e630ac78933c6282">More...</a><br /></td></tr>
 <tr class="separator:a1444500d29df0991e630ac78933c6282"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab74c37a290385fd7b1f962bf954a2005"><td class="memItemLeft" align="right" valign="top"><a id="ab74c37a290385fd7b1f962bf954a2005"></a>
-<a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (std::wstring &amp;data)</td></tr>
+<tr class="memitem:ab74c37a290385fd7b1f962bf954a2005"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#ab74c37a290385fd7b1f962bf954a2005">operator&gt;&gt;</a> (std::wstring &amp;data)</td></tr>
+<tr class="memdesc:ab74c37a290385fd7b1f962bf954a2005"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <a href="#ab74c37a290385fd7b1f962bf954a2005">More...</a><br /></td></tr>
 <tr class="separator:ab74c37a290385fd7b1f962bf954a2005"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a081233e0cab2182a219b129a1383dc0b"><td class="memItemLeft" align="right" valign="top"><a id="a081233e0cab2182a219b129a1383dc0b"></a>
-<a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (<a class="el" href="classsf_1_1String.php">String</a> &amp;data)</td></tr>
+<tr class="memitem:a081233e0cab2182a219b129a1383dc0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#a081233e0cab2182a219b129a1383dc0b">operator&gt;&gt;</a> (<a class="el" href="classsf_1_1String.php">String</a> &amp;data)</td></tr>
+<tr class="memdesc:a081233e0cab2182a219b129a1383dc0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <a href="#a081233e0cab2182a219b129a1383dc0b">More...</a><br /></td></tr>
 <tr class="separator:a081233e0cab2182a219b129a1383dc0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5a465ed02ba29d83ecdafb0ac3fff21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#aa5a465ed02ba29d83ecdafb0ac3fff21">operator&lt;&lt;</a> (bool data)</td></tr>
-<tr class="memdesc:aa5a465ed02ba29d83ecdafb0ac3fff21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloads of operator &lt;&lt; to write data into the packet.  <a href="#aa5a465ed02ba29d83ecdafb0ac3fff21">More...</a><br /></td></tr>
+<tr class="memdesc:aa5a465ed02ba29d83ecdafb0ac3fff21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of operator &lt;&lt; to write data into the packet.  <a href="#aa5a465ed02ba29d83ecdafb0ac3fff21">More...</a><br /></td></tr>
 <tr class="separator:aa5a465ed02ba29d83ecdafb0ac3fff21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a034b68a4281cae0b53a43af7aa4172f6"><td class="memItemLeft" align="right" valign="top"><a id="a034b68a4281cae0b53a43af7aa4172f6"></a>
-<a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (Int8 data)</td></tr>
+<tr class="memitem:a034b68a4281cae0b53a43af7aa4172f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#a034b68a4281cae0b53a43af7aa4172f6">operator&lt;&lt;</a> (Int8 data)</td></tr>
+<tr class="memdesc:a034b68a4281cae0b53a43af7aa4172f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <a href="#a034b68a4281cae0b53a43af7aa4172f6">More...</a><br /></td></tr>
 <tr class="separator:a034b68a4281cae0b53a43af7aa4172f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af27e4498bf83151b0591d5f04a8b30e1"><td class="memItemLeft" align="right" valign="top"><a id="af27e4498bf83151b0591d5f04a8b30e1"></a>
-<a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (Uint8 data)</td></tr>
+<tr class="memitem:af27e4498bf83151b0591d5f04a8b30e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#af27e4498bf83151b0591d5f04a8b30e1">operator&lt;&lt;</a> (Uint8 data)</td></tr>
+<tr class="memdesc:af27e4498bf83151b0591d5f04a8b30e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <a href="#af27e4498bf83151b0591d5f04a8b30e1">More...</a><br /></td></tr>
 <tr class="separator:af27e4498bf83151b0591d5f04a8b30e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afda8754ab4f2a34600f0153ba9ff24fa"><td class="memItemLeft" align="right" valign="top"><a id="afda8754ab4f2a34600f0153ba9ff24fa"></a>
-<a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (Int16 data)</td></tr>
+<tr class="memitem:afda8754ab4f2a34600f0153ba9ff24fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#afda8754ab4f2a34600f0153ba9ff24fa">operator&lt;&lt;</a> (Int16 data)</td></tr>
+<tr class="memdesc:afda8754ab4f2a34600f0153ba9ff24fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <a href="#afda8754ab4f2a34600f0153ba9ff24fa">More...</a><br /></td></tr>
 <tr class="separator:afda8754ab4f2a34600f0153ba9ff24fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a557cbc0289135209248aca1aa2117c40"><td class="memItemLeft" align="right" valign="top"><a id="a557cbc0289135209248aca1aa2117c40"></a>
-<a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (Uint16 data)</td></tr>
+<tr class="memitem:a557cbc0289135209248aca1aa2117c40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#a557cbc0289135209248aca1aa2117c40">operator&lt;&lt;</a> (Uint16 data)</td></tr>
+<tr class="memdesc:a557cbc0289135209248aca1aa2117c40"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <a href="#a557cbc0289135209248aca1aa2117c40">More...</a><br /></td></tr>
 <tr class="separator:a557cbc0289135209248aca1aa2117c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad60c9ad6e4e92399e2a36938ad122d05"><td class="memItemLeft" align="right" valign="top"><a id="ad60c9ad6e4e92399e2a36938ad122d05"></a>
-<a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (Int32 data)</td></tr>
+<tr class="memitem:ad60c9ad6e4e92399e2a36938ad122d05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#ad60c9ad6e4e92399e2a36938ad122d05">operator&lt;&lt;</a> (Int32 data)</td></tr>
+<tr class="memdesc:ad60c9ad6e4e92399e2a36938ad122d05"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <a href="#ad60c9ad6e4e92399e2a36938ad122d05">More...</a><br /></td></tr>
 <tr class="separator:ad60c9ad6e4e92399e2a36938ad122d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb113b73749efb662a75deb98257ad34"><td class="memItemLeft" align="right" valign="top"><a id="afb113b73749efb662a75deb98257ad34"></a>
-<a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (Uint32 data)</td></tr>
+<tr class="memitem:afb113b73749efb662a75deb98257ad34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#afb113b73749efb662a75deb98257ad34">operator&lt;&lt;</a> (Uint32 data)</td></tr>
+<tr class="memdesc:afb113b73749efb662a75deb98257ad34"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <a href="#afb113b73749efb662a75deb98257ad34">More...</a><br /></td></tr>
 <tr class="separator:afb113b73749efb662a75deb98257ad34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abba83b3c98af99190886d20d7595a94c"><td class="memItemLeft" align="right" valign="top"><a id="abba83b3c98af99190886d20d7595a94c"></a>
-<a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (Int64 data)</td></tr>
+<tr class="memitem:abba83b3c98af99190886d20d7595a94c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#abba83b3c98af99190886d20d7595a94c">operator&lt;&lt;</a> (Int64 data)</td></tr>
+<tr class="memdesc:abba83b3c98af99190886d20d7595a94c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <a href="#abba83b3c98af99190886d20d7595a94c">More...</a><br /></td></tr>
 <tr class="separator:abba83b3c98af99190886d20d7595a94c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60df5a35a3fb6416131d77232737c68b"><td class="memItemLeft" align="right" valign="top"><a id="a60df5a35a3fb6416131d77232737c68b"></a>
-<a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (Uint64 data)</td></tr>
+<tr class="memitem:a60df5a35a3fb6416131d77232737c68b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#a60df5a35a3fb6416131d77232737c68b">operator&lt;&lt;</a> (Uint64 data)</td></tr>
+<tr class="memdesc:a60df5a35a3fb6416131d77232737c68b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <a href="#a60df5a35a3fb6416131d77232737c68b">More...</a><br /></td></tr>
 <tr class="separator:a60df5a35a3fb6416131d77232737c68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76d31c4f864253a7e9b53701b4660fe5"><td class="memItemLeft" align="right" valign="top"><a id="a76d31c4f864253a7e9b53701b4660fe5"></a>
-<a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (float data)</td></tr>
+<tr class="memitem:a76d31c4f864253a7e9b53701b4660fe5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#a76d31c4f864253a7e9b53701b4660fe5">operator&lt;&lt;</a> (float data)</td></tr>
+<tr class="memdesc:a76d31c4f864253a7e9b53701b4660fe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <a href="#a76d31c4f864253a7e9b53701b4660fe5">More...</a><br /></td></tr>
 <tr class="separator:a76d31c4f864253a7e9b53701b4660fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b3077720a486b569ac8e7dec638a3f0"><td class="memItemLeft" align="right" valign="top"><a id="a3b3077720a486b569ac8e7dec638a3f0"></a>
-<a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (double data)</td></tr>
+<tr class="memitem:a3b3077720a486b569ac8e7dec638a3f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#a3b3077720a486b569ac8e7dec638a3f0">operator&lt;&lt;</a> (double data)</td></tr>
+<tr class="memdesc:a3b3077720a486b569ac8e7dec638a3f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <a href="#a3b3077720a486b569ac8e7dec638a3f0">More...</a><br /></td></tr>
 <tr class="separator:a3b3077720a486b569ac8e7dec638a3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67c9985f7b3d6e90886e56e309280a9d"><td class="memItemLeft" align="right" valign="top"><a id="a67c9985f7b3d6e90886e56e309280a9d"></a>
-<a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (const char *data)</td></tr>
+<tr class="memitem:a67c9985f7b3d6e90886e56e309280a9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#a67c9985f7b3d6e90886e56e309280a9d">operator&lt;&lt;</a> (const char *data)</td></tr>
+<tr class="memdesc:a67c9985f7b3d6e90886e56e309280a9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <a href="#a67c9985f7b3d6e90886e56e309280a9d">More...</a><br /></td></tr>
 <tr class="separator:a67c9985f7b3d6e90886e56e309280a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59a21671caaa69da5d47c54b50e1eb54"><td class="memItemLeft" align="right" valign="top"><a id="a59a21671caaa69da5d47c54b50e1eb54"></a>
-<a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (const std::string &amp;data)</td></tr>
+<tr class="memitem:a59a21671caaa69da5d47c54b50e1eb54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#a59a21671caaa69da5d47c54b50e1eb54">operator&lt;&lt;</a> (const std::string &amp;data)</td></tr>
+<tr class="memdesc:a59a21671caaa69da5d47c54b50e1eb54"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <a href="#a59a21671caaa69da5d47c54b50e1eb54">More...</a><br /></td></tr>
 <tr class="separator:a59a21671caaa69da5d47c54b50e1eb54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f7c6a9ce795fac342ea937896d98016"><td class="memItemLeft" align="right" valign="top"><a id="a6f7c6a9ce795fac342ea937896d98016"></a>
-<a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (const wchar_t *data)</td></tr>
+<tr class="memitem:a6f7c6a9ce795fac342ea937896d98016"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#a6f7c6a9ce795fac342ea937896d98016">operator&lt;&lt;</a> (const wchar_t *data)</td></tr>
+<tr class="memdesc:a6f7c6a9ce795fac342ea937896d98016"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <a href="#a6f7c6a9ce795fac342ea937896d98016">More...</a><br /></td></tr>
 <tr class="separator:a6f7c6a9ce795fac342ea937896d98016"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f3401d038470f629d0c2c6be928a14b"><td class="memItemLeft" align="right" valign="top"><a id="a9f3401d038470f629d0c2c6be928a14b"></a>
-<a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (const std::wstring &amp;data)</td></tr>
+<tr class="memitem:a9f3401d038470f629d0c2c6be928a14b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#a9f3401d038470f629d0c2c6be928a14b">operator&lt;&lt;</a> (const std::wstring &amp;data)</td></tr>
+<tr class="memdesc:a9f3401d038470f629d0c2c6be928a14b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <a href="#a9f3401d038470f629d0c2c6be928a14b">More...</a><br /></td></tr>
 <tr class="separator:a9f3401d038470f629d0c2c6be928a14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc17272df082a36b202e10045bd9e220"><td class="memItemLeft" align="right" valign="top"><a id="abc17272df082a36b202e10045bd9e220"></a>
-<a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (const <a class="el" href="classsf_1_1String.php">String</a> &amp;data)</td></tr>
+<tr class="memitem:abc17272df082a36b202e10045bd9e220"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Packet.php">Packet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.php#abc17272df082a36b202e10045bd9e220">operator&lt;&lt;</a> (const <a class="el" href="classsf_1_1String.php">String</a> &amp;data)</td></tr>
+<tr class="memdesc:abc17272df082a36b202e10045bd9e220"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.  <a href="#abc17272df082a36b202e10045bd9e220">More...</a><br /></td></tr>
 <tr class="separator:abc17272df082a36b202e10045bd9e220"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
@@ -488,7 +488,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UdpSocket</b></td></
 </div>
 </div>
 <a id="aa5a465ed02ba29d83ecdafb0ac3fff21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5a465ed02ba29d83ecdafb0ac3fff21">&#9670;&nbsp;</a></span>operator&lt;&lt;()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5a465ed02ba29d83ecdafb0ac3fff21">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[1/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -503,12 +503,312 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UdpSocket</b></td></
       </table>
 </div><div class="memdoc">
 
-<p>Overloads of operator &lt;&lt; to write data into the packet. </p>
+<p>Overload of operator &lt;&lt; to write data into the packet. </p>
+
+</div>
+</div>
+<a id="a034b68a4281cae0b53a43af7aa4172f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a034b68a4281cae0b53a43af7aa4172f6">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[2/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsf_1_1Packet.php">Packet</a>&amp; sf::Packet::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">Int8&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="af27e4498bf83151b0591d5f04a8b30e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af27e4498bf83151b0591d5f04a8b30e1">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[3/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsf_1_1Packet.php">Packet</a>&amp; sf::Packet::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">Uint8&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="afda8754ab4f2a34600f0153ba9ff24fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afda8754ab4f2a34600f0153ba9ff24fa">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[4/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsf_1_1Packet.php">Packet</a>&amp; sf::Packet::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">Int16&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a557cbc0289135209248aca1aa2117c40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a557cbc0289135209248aca1aa2117c40">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[5/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsf_1_1Packet.php">Packet</a>&amp; sf::Packet::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">Uint16&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="ad60c9ad6e4e92399e2a36938ad122d05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad60c9ad6e4e92399e2a36938ad122d05">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[6/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsf_1_1Packet.php">Packet</a>&amp; sf::Packet::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">Int32&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="afb113b73749efb662a75deb98257ad34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb113b73749efb662a75deb98257ad34">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[7/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsf_1_1Packet.php">Packet</a>&amp; sf::Packet::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">Uint32&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="abba83b3c98af99190886d20d7595a94c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abba83b3c98af99190886d20d7595a94c">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[8/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsf_1_1Packet.php">Packet</a>&amp; sf::Packet::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">Int64&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a60df5a35a3fb6416131d77232737c68b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60df5a35a3fb6416131d77232737c68b">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[9/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsf_1_1Packet.php">Packet</a>&amp; sf::Packet::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">Uint64&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a76d31c4f864253a7e9b53701b4660fe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76d31c4f864253a7e9b53701b4660fe5">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[10/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsf_1_1Packet.php">Packet</a>&amp; sf::Packet::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a3b3077720a486b569ac8e7dec638a3f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b3077720a486b569ac8e7dec638a3f0">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[11/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsf_1_1Packet.php">Packet</a>&amp; sf::Packet::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a67c9985f7b3d6e90886e56e309280a9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67c9985f7b3d6e90886e56e309280a9d">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[12/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsf_1_1Packet.php">Packet</a>&amp; sf::Packet::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a59a21671caaa69da5d47c54b50e1eb54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59a21671caaa69da5d47c54b50e1eb54">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[13/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsf_1_1Packet.php">Packet</a>&amp; sf::Packet::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a6f7c6a9ce795fac342ea937896d98016"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f7c6a9ce795fac342ea937896d98016">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[14/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsf_1_1Packet.php">Packet</a>&amp; sf::Packet::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a9f3401d038470f629d0c2c6be928a14b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f3401d038470f629d0c2c6be928a14b">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[15/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsf_1_1Packet.php">Packet</a>&amp; sf::Packet::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const std::wstring &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="abc17272df082a36b202e10045bd9e220"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc17272df082a36b202e10045bd9e220">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[16/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsf_1_1Packet.php">Packet</a>&amp; sf::Packet::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsf_1_1String.php">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
 
 </div>
 </div>
 <a id="af8e26c63ba9bdccd262565ff0d3eeba2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8e26c63ba9bdccd262565ff0d3eeba2">&#9670;&nbsp;</a></span>operator&gt;&gt;()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af8e26c63ba9bdccd262565ff0d3eeba2">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[1/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -523,7 +823,307 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UdpSocket</b></td></
       </table>
 </div><div class="memdoc">
 
-<p>Overloads of operator &gt;&gt; to read data from the packet. </p>
+<p>Overload of operator &gt;&gt; to read data from the packet. </p>
+
+</div>
+</div>
+<a id="a70fd5abb9095b5335b79c0cefd17b222"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70fd5abb9095b5335b79c0cefd17b222">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[2/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsf_1_1Packet.php">Packet</a>&amp; sf::Packet::operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">Int8 &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="aa67738284a7efc16c7594b358ef35510"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa67738284a7efc16c7594b358ef35510">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[3/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsf_1_1Packet.php">Packet</a>&amp; sf::Packet::operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">Uint8 &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="af82d6c4e6d74f2ca39732c1e29f30781"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af82d6c4e6d74f2ca39732c1e29f30781">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[4/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsf_1_1Packet.php">Packet</a>&amp; sf::Packet::operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">Int16 &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="afd8706f092bc830ebb438aeee9271647"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd8706f092bc830ebb438aeee9271647">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[5/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsf_1_1Packet.php">Packet</a>&amp; sf::Packet::operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">Uint16 &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="ae7b44e79f12d500b63f5dc2a10d78d8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7b44e79f12d500b63f5dc2a10d78d8c">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[6/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsf_1_1Packet.php">Packet</a>&amp; sf::Packet::operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">Int32 &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a4b57e1953db5bec39a851929df9a339a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b57e1953db5bec39a851929df9a339a">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[7/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsf_1_1Packet.php">Packet</a>&amp; sf::Packet::operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">Uint32 &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a8409de6477e17ca48225a835451261c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8409de6477e17ca48225a835451261c1">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[8/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsf_1_1Packet.php">Packet</a>&amp; sf::Packet::operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">Int64 &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a8fa9c970062753b03e43db4999fc7743"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fa9c970062753b03e43db4999fc7743">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[9/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsf_1_1Packet.php">Packet</a>&amp; sf::Packet::operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">Uint64 &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a6704b4d13d6f798efe6fa836a8b5fa24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6704b4d13d6f798efe6fa836a8b5fa24">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[10/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsf_1_1Packet.php">Packet</a>&amp; sf::Packet::operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="ac84239a8ba0a165394805c17b35a88cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac84239a8ba0a165394805c17b35a88cf">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[11/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsf_1_1Packet.php">Packet</a>&amp; sf::Packet::operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="ae9f8d8b0c776204f79f615b1e58bccec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9f8d8b0c776204f79f615b1e58bccec">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[12/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsf_1_1Packet.php">Packet</a>&amp; sf::Packet::operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="aabace32063c44e1a5cc54af6267c1fab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabace32063c44e1a5cc54af6267c1fab">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[13/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsf_1_1Packet.php">Packet</a>&amp; sf::Packet::operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a1444500d29df0991e630ac78933c6282"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1444500d29df0991e630ac78933c6282">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[14/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsf_1_1Packet.php">Packet</a>&amp; sf::Packet::operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">wchar_t *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="ab74c37a290385fd7b1f962bf954a2005"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab74c37a290385fd7b1f962bf954a2005">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[15/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsf_1_1Packet.php">Packet</a>&amp; sf::Packet::operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">std::wstring &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a id="a081233e0cab2182a219b129a1383dc0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a081233e0cab2182a219b129a1383dc0b">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[16/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsf_1_1Packet.php">Packet</a>&amp; sf::Packet::operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsf_1_1String.php">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
 
 </div>
 </div>

@@ -196,12 +196,12 @@
 : <a class="el" href="classsf_1_1ThreadLocalPtr.php#a752299e2858076ee89c62d4dbfb19245">sf::ThreadLocalPtr&lt; T &gt;</a>
 </li>
 <li>operator/()
-: <a class="el" href="classsf_1_1Time.php#a67510d018fd010819ee075db2cbd004f">sf::Time</a>
+: <a class="el" href="classsf_1_1Time.php#a097cf1326d2d50e0043ff4e865c1bbac">sf::Time</a>
 , <a class="el" href="classsf_1_1Vector2.php#a7409dd89cb3aad6c3bc6622311107311">sf::Vector2&lt; T &gt;</a>
 , <a class="el" href="classsf_1_1Vector3.php#ad4ba4a83de236ddeb92a7b759187e90d">sf::Vector3&lt; T &gt;</a>
 </li>
 <li>operator/=()
-: <a class="el" href="classsf_1_1Time.php#ad513a413be41bc66feb0ff2b29d5f947">sf::Time</a>
+: <a class="el" href="classsf_1_1Time.php#ac4b8df6ef282ee71808fd185f91490aa">sf::Time</a>
 , <a class="el" href="classsf_1_1Vector2.php#ac4d293c9dc7954ccfd5e373972f38b03">sf::Vector2&lt; T &gt;</a>
 , <a class="el" href="classsf_1_1Vector3.php#a8995a700f9dffccc6dddb3696ae17b64">sf::Vector3&lt; T &gt;</a>
 </li>
@@ -211,7 +211,7 @@
 , <a class="el" href="classsf_1_1VideoMode.php#a54cc77c0b6c4b133e0147a43d6829b13">sf::VideoMode</a>
 </li>
 <li>operator&lt;&lt;()
-: <a class="el" href="classsf_1_1Packet.php#aa5a465ed02ba29d83ecdafb0ac3fff21">sf::Packet</a>
+: <a class="el" href="classsf_1_1Packet.php#a59a21671caaa69da5d47c54b50e1eb54">sf::Packet</a>
 </li>
 <li>operator&lt;=()
 : <a class="el" href="classsf_1_1String.php#ac1c1bb5dcf02aad3b2c0a1bf74a11cc9">sf::String</a>
@@ -226,7 +226,7 @@
 , <a class="el" href="classsf_1_1SoundSource.php#a355a07f34b5ecc38465d39a33b701b6d">sf::SoundSource</a>
 , <a class="el" href="classsf_1_1String.php#a096255c066e5ef8c31952216b8ce9c42">sf::String</a>
 , <a class="el" href="classsf_1_1Texture.php#a80a089b6b19bb09b83012d5f0e6af9ba">sf::Texture</a>
-, <a class="el" href="classsf_1_1ThreadLocalPtr.php#a2adfc2e37f437e53acd9d1abd377ef2e">sf::ThreadLocalPtr&lt; T &gt;</a>
+, <a class="el" href="classsf_1_1ThreadLocalPtr.php#a934db0e5bed32b2d8d0cb02786fb91cf">sf::ThreadLocalPtr&lt; T &gt;</a>
 , <a class="el" href="classsf_1_1VertexBuffer.php#a812f98083da8f10361d457008bf9fa79">sf::VertexBuffer</a>
 </li>
 <li>operator==()
@@ -251,11 +251,11 @@
 , <a class="el" href="classsf_1_1VideoMode.php#a6e3d91683fcabb88c5b640e9884fe3df">sf::VideoMode</a>
 </li>
 <li>operator&gt;&gt;()
-: <a class="el" href="classsf_1_1Packet.php#af8e26c63ba9bdccd262565ff0d3eeba2">sf::Packet</a>
+: <a class="el" href="classsf_1_1Packet.php#a4b57e1953db5bec39a851929df9a339a">sf::Packet</a>
 </li>
 <li>operator[]()
-: <a class="el" href="classsf_1_1String.php#a035c1b585a0ebed81e773ecafed57926">sf::String</a>
-, <a class="el" href="classsf_1_1VertexArray.php#a6006676417d91f42d0278f1abcfe4352">sf::VertexArray</a>
+: <a class="el" href="classsf_1_1String.php#abc989da7f4fb873ab29188d40772ab24">sf::String</a>
+, <a class="el" href="classsf_1_1VertexArray.php#a6bfcf91c01c754e86ee8b44b6c79441b">sf::VertexArray</a>
 </li>
 <li>OutputSoundFile()
 : <a class="el" href="classsf_1_1OutputSoundFile.php#a7ae9f2dbd0991fa9394726a3d58bb19e">sf::OutputSoundFile</a>

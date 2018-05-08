@@ -228,7 +228,7 @@
 : <a class="el" href="classsf_1_1ThreadLocalPtr.php#a752299e2858076ee89c62d4dbfb19245">sf::ThreadLocalPtr&lt; T &gt;</a>
 </li>
 <li>operator/()
-: <a class="el" href="classsf_1_1Time.php#a5f7b24dd13c0068d5cba678e1d5db9a6">sf::Time</a>
+: <a class="el" href="classsf_1_1Time.php#a67510d018fd010819ee075db2cbd004f">sf::Time</a>
 , <a class="el" href="classsf_1_1Vector2.php#a7409dd89cb3aad6c3bc6622311107311">sf::Vector2&lt; T &gt;</a>
 , <a class="el" href="classsf_1_1Vector3.php#ad4ba4a83de236ddeb92a7b759187e90d">sf::Vector3&lt; T &gt;</a>
 </li>
@@ -244,7 +244,7 @@
 , <a class="el" href="classsf_1_1VideoMode.php#a54cc77c0b6c4b133e0147a43d6829b13">sf::VideoMode</a>
 </li>
 <li>operator&lt;&lt;()
-: <a class="el" href="classsf_1_1Packet.php#aa5a465ed02ba29d83ecdafb0ac3fff21">sf::Packet</a>
+: <a class="el" href="classsf_1_1Packet.php#a034b68a4281cae0b53a43af7aa4172f6">sf::Packet</a>
 </li>
 <li>operator&lt;=()
 : <a class="el" href="classsf_1_1String.php#ac1c1bb5dcf02aad3b2c0a1bf74a11cc9">sf::String</a>
@@ -284,11 +284,11 @@
 , <a class="el" href="classsf_1_1VideoMode.php#a6e3d91683fcabb88c5b640e9884fe3df">sf::VideoMode</a>
 </li>
 <li>operator&gt;&gt;()
-: <a class="el" href="classsf_1_1Packet.php#af8e26c63ba9bdccd262565ff0d3eeba2">sf::Packet</a>
+: <a class="el" href="classsf_1_1Packet.php#a1444500d29df0991e630ac78933c6282">sf::Packet</a>
 </li>
 <li>operator[]()
-: <a class="el" href="classsf_1_1String.php#abc989da7f4fb873ab29188d40772ab24">sf::String</a>
-, <a class="el" href="classsf_1_1VertexArray.php#a6bfcf91c01c754e86ee8b44b6c79441b">sf::VertexArray</a>
+: <a class="el" href="classsf_1_1String.php#a035c1b585a0ebed81e773ecafed57926">sf::String</a>
+, <a class="el" href="classsf_1_1VertexArray.php#a6006676417d91f42d0278f1abcfe4352">sf::VertexArray</a>
 </li>
 <li>Orientation
 : <a class="el" href="classsf_1_1Sensor.php#a687375af3ab77b818fca73735bcaea84aa428c5260446555de87c69b65f6edf00">sf::Sensor</a>

@@ -128,10 +128,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Window</b></td></tr>
 <p>Refer to the following table to determine which cursor is available on which platform.</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadCenter">Linux  </th><th class="markdownTableHeadCenter">Mac OS X  </th><th class="markdownTableHeadCenter">Windows<ul>
-<li></li>
-</ul>
-</th></tr>
+<th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadCenter">Linux  </th><th class="markdownTableHeadCenter">Mac OS X  </th><th class="markdownTableHeadCenter">Windows   </th></tr>
 <tr class="markdownTableBody" class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a class="el" href="classsf_1_1Cursor.php#ab9ab152aec1f8a4955e34ccae08f930aa8d9a9cd284dabb4246ab4f147ba779a3" title="Arrow cursor (default) ">sf::Cursor::Arrow</a>  </td><td class="markdownTableBodyCenter">yes  </td><td class="markdownTableBodyCenter">yes  </td><td class="markdownTableBodyCenter">yes   </td></tr>
 <tr class="markdownTableBody" class="markdownTableRowEven">
