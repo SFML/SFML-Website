@@ -102,6 +102,12 @@
             <td>Zachary Yedidia</td>
         </tr>
         <tr>
+            <th rowspan="1">mruby</th>
+            <td><a href="https://github.com/IceDragon200/mruby-sfml" class="website">mruby-sfml</a></td>
+            <td>2.4</td>
+            <td><a href="mailto:mistdragon100@gmail.com">Corey Powell</a></td>
+        </tr>
+        <tr>
             <th rowspan="1">Nim</th>
             <td><a href="https://github.com/BlaXpirit/nim-csfml" class="website">nim-csfml</a></td>
             <td>2.3</td>
