@@ -32,24 +32,24 @@
             </td>
         </tr>
         <tr>
-            <td><?php download_link('Visual C++ 15 (2017)', '32-bit', '', '../../../files/SFML-2.5.0-windows-vc15-32-bit.zip') ?></td>
-            <td><?php download_link('Visual C++ 15 (2017)', '64-bit', '', '../../../files/SFML-2.5.0-windows-vc15-64-bit.zip') ?></td>
+            <td><?php download_link('Visual C++ 15 (2017)', '32-bit', '17.8', '../../../files/SFML-2.5.0-windows-vc15-32-bit.zip') ?></td>
+            <td><?php download_link('Visual C++ 15 (2017)', '64-bit', '19.4', '../../../files/SFML-2.5.0-windows-vc15-64-bit.zip') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('Visual C++ 14 (2015)', '32-bit', '', '../../../files/SFML-2.5.0-windows-vc14-32-bit.zip') ?></td>
-            <td><?php download_link('Visual C++ 14 (2015)', '64-bit', '', '../../../files/SFML-2.5.0-windows-vc14-64-bit.zip') ?></td>
+            <td><?php download_link('Visual C++ 14 (2015)', '32-bit', '17.6', '../../../files/SFML-2.5.0-windows-vc14-32-bit.zip') ?></td>
+            <td><?php download_link('Visual C++ 14 (2015)', '64-bit', '19.4', '../../../files/SFML-2.5.0-windows-vc14-64-bit.zip') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('Visual C++ 12 (2013)', '32-bit', '', '../../../files/SFML-2.5.0-windows-vc12-32-bit.zip') ?></td>
-            <td><?php download_link('Visual C++ 12 (2013)', '64-bit', '', '../../../files/SFML-2.5.0-windows-vc12-64-bit.zip') ?></td>
+            <td><?php download_link('Visual C++ 12 (2013)', '32-bit', '17.8', '../../../files/SFML-2.5.0-windows-vc12-32-bit.zip') ?></td>
+            <td><?php download_link('Visual C++ 12 (2013)', '64-bit', '19.6', '../../../files/SFML-2.5.0-windows-vc12-64-bit.zip') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('GCC 5.1.0 TDM (SJLJ) - Code::Blocks', '32-bit', '', '../../../files/SFML-2.5.0-windows-gcc-5.1.0-tdm-32-bit.zip') ?></td>
+            <td><?php download_link('GCC 5.1.0 TDM (SJLJ) - Code::Blocks', '32-bit', '15.6', '../../../files/SFML-2.5.0-windows-gcc-5.1.0-tdm-32-bit.zip') ?></td>
             <td></td>
         </tr>
         <tr>
-            <td><?php download_link('GCC 7.3.0 MinGW (DW2)', '32-bit', '', '../../../files/SFML-2.5.0-windows-gcc-7.3.0-mingw-32-bit.zip') ?></td>
-            <td><?php download_link('GCC 7.3.0 MinGW (SEH)', '64-bit', '', '../../../files/SFML-2.5.0-windows-gcc-7.3.0-mingw-64-bit.zip') ?></td>
+            <td><?php download_link('GCC 7.3.0 MinGW (DW2)', '32-bit', '17.0', '../../../files/SFML-2.5.0-windows-gcc-7.3.0-mingw-32-bit.zip') ?></td>
+            <td><?php download_link('GCC 7.3.0 MinGW (SEH)', '64-bit', '17.9', '../../../files/SFML-2.5.0-windows-gcc-7.3.0-mingw-64-bit.zip') ?></td>
         </tr>
     </tbody>
 </table>
@@ -69,7 +69,7 @@
         </tr>
         <tr>
             <td class="os" rowspan="2">Linux</td>
-            <td><?php download_link('GCC', '64-bit', '', '../../../files/SFML-2.5.0-linux-gcc-64-bit.tar.gz') ?></td>
+            <td><?php download_link('GCC', '64-bit', '15.5', '../../../files/SFML-2.5.0-linux-gcc-64-bit.tar.gz') ?></td>
         </tr>
     </tbody>
 </table>
@@ -92,10 +92,10 @@
     <tbody>
         <tr>
             <td class="os" rowspan="2">Tous OS</td>
-            <td><span class="description">Code source</span><a href="../../../files/SFML-2.5.0-sources.zip">Télécharger<span class="size">23.8 Mo</span></a></td>
+            <td><span class="description">Code source</span><a href="../../../files/SFML-2.5.0-sources.zip">Télécharger<span class="size">22.2 Mo</span></a></td>
         </tr>
         <tr>
-            <td><span class="description">Documentation HTML</span><a href="../../../files/SFML-2.5.0-doc.zip">Télécharger<span class="size">1.48 Mo</span></a></td>
+            <td><span class="description">Documentation HTML</span><a href="../../../files/SFML-2.5.0-doc.zip">Télécharger<span class="size">1.53 Mo</span></a></td>
         </tr>
     </tbody>
 </table>
