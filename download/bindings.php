@@ -49,7 +49,7 @@
         <tr>
             <th rowspan="2">D</th>
             <td><a href="https://github.com/DerelictOrg/DerelictSFML2" class="website">DerelictSFML2</a></td>
-            <td>2.3</td>
+            <td>2.4</td>
             <td><a href="mailto:aldacron@gmail.com">Mike Parker</a></td>
         </tr>
         <tr>
@@ -60,7 +60,7 @@
         <tr>
             <th rowspan="1">Euphoria</th>
             <td><a href="https://github.com/gAndy50/EuSFML2" class="website">EuSFML2</a></td>
-            <td>2.3.2</td>
+            <td>2.4</td>
             <td>Andy Patterson</td>
         </tr>
         <tr>
@@ -132,14 +132,14 @@
         </tr>
         <tr>
             <th rowspan="1">Python</th>
-            <td><a href="http://www.python-sfml.org/" class="website"><img src="../images/bindings/python-sfml.png" alt="pySFML"></a></td>
-            <td>2.2</td>
+            <td><a href="https://github.com/Sonkun/python-sfml" class="website"><img src="../images/bindings/python-sfml.png" alt="pySFML"></a></td>
+            <td>2.3.2</td>
             <td><a href="mailto:dewachter.jonathan@gmail.com">Jonathan De Wachter</a>, Edwin Marshall</td>
         </tr>
         <tr>
             <th rowspan="1">Ruby</th>
             <td><a href="http://www.groogy.se/mainsite/rbsfml/" class="website"><img src="../images/bindings/rbsfml.png" alt="rbSFML"></a></td>
-            <td>2.0</td>
+            <td>2.3.2</td>
             <td><a href="mailto:groogy@groogy.se">Henrik Valter Vogelius Hansson</a></td>
         </tr>
         <tr>
