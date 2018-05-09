@@ -77,7 +77,7 @@
     <tbody>
         <tr>
             <td class="os" rowspan="2">macOS</td>
-            <td><?php download_link('Clang', '64-bit (OS X 10.7+, compatible with C++11 and libc++)', '', '../../../files/SFML-2.5.0-mavos-clang.tar.gz') ?></td>
+            <td><?php download_link('Clang', '64-bit (OS X 10.7+, compatible with C++11 and libc++)', '5.9', '../../../files/SFML-2.5.0-mavos-clang.tar.gz') ?></td>
         </tr>
         <tr>
             <td class="notice" colspan="3">
