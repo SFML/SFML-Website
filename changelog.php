@@ -36,7 +36,7 @@
   <li>Improve packaging support (<a href="https://github.com/SFML/SFML/pull/1173">#1173</a>)</li>
   <li>Added Tagfile generation and search (<a href="https://github.com/SFML/SFML/pull/1327">#1327</a>)</li>
   <li>Added CMake variables to select the modules to be built (<a href="https://github.com/SFML/SFML/issues/798">#798</a>, <a href="https://github.com/SFML/SFML/pull/800">#800</a>)</li>
-  <li>Do not install extlibs if `SFML_USE_SYSTEM_DEPS` is true (<a href="https://github.com/SFML/SFML/issues/1236">#1236</a>, <a href="https://github.com/SFML/SFML/pull/1237">#1237</a>)</li>
+  <li>Do not install extlibs if SFML_USE_SYSTEM_DEPS is true (<a href="https://github.com/SFML/SFML/issues/1236">#1236</a>, <a href="https://github.com/SFML/SFML/pull/1237">#1237</a>)</li>
   <li>Fixed various type conversion/comparison warnings (<a href="https://github.com/SFML/SFML/pull/1325">#1325</a>)</li>
   <li>[Android] Increased minimum API version to 14 (<a href="https://github.com/SFML/SFML/pull/1362">#1362</a>)</li>
   <li>[Android] Removed custom toolchain and added support for the newest NDK version and Gradle (<a href="https://github.com/SFML/SFML/pull/1350">#1350</a>, <a href="https://github.com/SFML/SFML/pull/1393">#1393</a>)</li>
@@ -49,15 +49,15 @@
   <li>[macOS] Fixed launch of cocoa examples (<a href="https://github.com/SFML/SFML/pull/1334">#1334</a>)</li>
   <li>[macOS] Improved application signing process (<a href="https://github.com/SFML/SFML/pull/1020">#1020</a>, <a href="https://github.com/SFML/SFML/pull/1036">#1036</a>, <a href="https://github.com/SFML/SFML/pull/1194">#1194</a>)</li>
   <li>[macOS] Improved CMake script (<a href="https://github.com/SFML/SFML/pull/1215">#1215</a>, <a href="https://github.com/SFML/SFML/pull/1371">#1371</a>)</li>
-  <li>[macOS] Use `-stdlib=libc++` (<a href="https://github.com/SFML/SFML/pull/1361">#1361</a>)</li>
+  <li>[macOS] Use -stdlib=libc++ (<a href="https://github.com/SFML/SFML/pull/1361">#1361</a>)</li>
   <li>[OpenBSD] Added support for OpenBSD (<a href="https://github.com/SFML/SFML/pull/1330">#1330</a>)</li>
 </ul>
 
 <h3 id="2.5.0-system"><a class="h3-link" href="#2.5.0-system">System</a></h3>
 <h4>Bugfixes</h4>
 <ul>
-  <li>Added protected destructor to `sf::NonCopyable` to prevent possible resource leaks (<a href="https://github.com/SFML/SFML/pull/1125">#1125</a>, <a href="https://github.com/SFML/SFML/pull/1161">#1161</a>)</li>
-  <li>Fixed crash when `sf::Clock` is constructed in a global scope (<a href="https://github.com/SFML/SFML/pull/1258">#1258</a>)</li>
+  <li>Added protected destructor to sf::NonCopyable to prevent possible resource leaks (<a href="https://github.com/SFML/SFML/pull/1125">#1125</a>, <a href="https://github.com/SFML/SFML/pull/1161">#1161</a>)</li>
+  <li>Fixed crash when sf::Clock is constructed in a global scope (<a href="https://github.com/SFML/SFML/pull/1258">#1258</a>)</li>
 </ul>
 
 <h3 id="2.5.0-window"><a class="h3-link" href="#2.5.0-window">Window</a></h3>
@@ -75,7 +75,7 @@
 <ul>
   <li>[Android] Return correct key code for delete/backspace (<a href="https://github.com/SFML/SFML/pull/1309">#1309</a>, <a href="https://github.com/SFML/SFML/pull/1362">#1362</a>)</li>
   <li>[iOS] Don't need to find vorbisfile or vorbisenc (<a href="https://github.com/SFML/SFML/pull/1347">#1347</a>)</li>
-  <li>[Linux] Fixed `sf::Window::getPosition()` returning incorrect position because of differences in window managers (<a href="https://github.com/SFML/SFML/pull/1228">#1228</a>, <a href="https://github.com/SFML/SFML/pull/1266">#1266</a>)</li>
+  <li>[Linux] Fixed sf::Window::getPosition() returning incorrect position because of differences in window managers (<a href="https://github.com/SFML/SFML/pull/1228">#1228</a>, <a href="https://github.com/SFML/SFML/pull/1266">#1266</a>)</li>
   <li>[Linux] Fix X11 key repeat handling not filtering out events from other windows (<a href="https://github.com/SFML/SFML/pull/1223">#1223</a>, <a href="https://github.com/SFML/SFML/pull/1230">#1230</a>, <a href="https://github.com/SFML/SFML/pull/1291">#1291</a>)</li>
   <li>[Linux] Restore fullscreen of a non-visible window (<a href="https://github.com/SFML/SFML/pull/1339">#1339</a>)</li>
   <li>[macOS] Fixed window menu not working (<a href="https://github.com/SFML/SFML/pull/1091">#1091</a>, <a href="https://github.com/SFML/SFML/pull/1180">#1180</a>, <a href="https://github.com/SFML/SFML/pull/1193">#1193</a>)</li>
@@ -88,27 +88,27 @@
 <h3 id="2.5.0-graphics"><a class="h3-link" href="#2.5.0-graphics">Graphics</a></h3>
 <h4>Features</h4>
 <ul>
-  <li>Implemented additional line spacing and letter spacing in `sf::Text` (<a href="https://github.com/SFML/SFML/pull/928">#928</a>, <a href="https://github.com/SFML/SFML/pull/1366">#1366</a>)</li>
-  <li>Added `sf::VertexBuffer` class (<a href="https://github.com/SFML/SFML/pull/1308">#1308</a>)</li>
+  <li>Implemented additional line spacing and letter spacing in sf::Text (<a href="https://github.com/SFML/SFML/pull/928">#928</a>, <a href="https://github.com/SFML/SFML/pull/1366">#1366</a>)</li>
+  <li>Added sf::VertexBuffer class (<a href="https://github.com/SFML/SFML/pull/1308">#1308</a>)</li>
   <li>Added GPU local texture copying support, allowing performance optimizations and texture swapping (<a href="https://github.com/SFML/SFML/pull/1119">#1119</a>, <a href="https://github.com/SFML/SFML/pull/1319">#1319</a>, <a href="https://github.com/SFML/SFML/pull/1320">#1320</a>)</li>
-  <li>Optimize performance by skipping `glTexCoordPointer()` call if not needed (<a href="https://github.com/SFML/SFML/pull/1015">#1015</a>)</li>
+  <li>Optimize performance by skipping glTexCoordPointer() call if not needed (<a href="https://github.com/SFML/SFML/pull/1015">#1015</a>)</li>
   <li>Generate shape outline vertices only if necessary (<a href="https://github.com/SFML/SFML/pull/925">#925</a>, <a href="https://github.com/SFML/SFML/pull/1356">#1356</a>)</li>
   <li>Removed dependency to libjpeg, stb_image_write now supports writing JPEG files (<a href="https://github.com/SFML/SFML/pull/1278">#1278</a>, <a href="https://github.com/SFML/SFML/pull/1279">#1279</a>)</li>
-  <li>Enable comparing `sf::Transform` and optimize resetting OpenGL back to the identity matrix (<a href="https://github.com/SFML/SFML/pull/1298">#1298</a>)</li>
-  <li>Added missing `setActive()` virtual method to `sf::RenderTarget` (<a href="https://github.com/SFML/SFML/pull/1157">#1157</a>)</li>
+  <li>Enable comparing sf::Transform and optimize resetting OpenGL back to the identity matrix (<a href="https://github.com/SFML/SFML/pull/1298">#1298</a>)</li>
+  <li>Added missing setActive() virtual method to sf::RenderTarget (<a href="https://github.com/SFML/SFML/pull/1157">#1157</a>)</li>
   <li>Updated stb_image to v2.16 and stb_image_write to v1.07 (<a href="https://github.com/SFML/SFML/pull/1270">#1270</a>)</li>
-  <li>Added `sf::RenderTexture` stencil and multisampling support (<a href="https://github.com/SFML/SFML/pull/1274">#1274</a>, <a href="https://github.com/SFML/SFML/pull/1285">#1285</a>)</li>
-  <li>Added example demonstrating `sf::VertexBuffer`, `sf::Shader` and `sf::Thread` usage (<a href="https://github.com/SFML/SFML/pull/1352">#1352</a>)</li>
-  <li>Optimized `sf::RenderTexture` performance (<a href="https://github.com/SFML/SFML/pull/1379">#1379</a>)</li>
+  <li>Added sf::RenderTexture stencil and multisampling support (<a href="https://github.com/SFML/SFML/pull/1274">#1274</a>, <a href="https://github.com/SFML/SFML/pull/1285">#1285</a>)</li>
+  <li>Added example demonstrating sf::VertexBuffer, sf::Shader and sf::Thread usage (<a href="https://github.com/SFML/SFML/pull/1352">#1352</a>)</li>
+  <li>Optimized sf::RenderTexture performance (<a href="https://github.com/SFML/SFML/pull/1379">#1379</a>)</li>
 </ul>
 
 <h4>Bugfixes</h4>
 <ul>
-  <li>Properly free memory in `sf::Font::cleanup()` (<a href="https://github.com/SFML/SFML/pull/1119">#1119</a>)</li>
-  <li>Fixed memory leak in `sf::Font` (<a href="https://github.com/SFML/SFML/pull/1216">#1216</a>)</li>
+  <li>Properly free memory in sf::Font::cleanup() (<a href="https://github.com/SFML/SFML/pull/1119">#1119</a>)</li>
+  <li>Fixed memory leak in sf::Font (<a href="https://github.com/SFML/SFML/pull/1216">#1216</a>)</li>
   <li>Fix OpenGL texture coordinate pointer not being updated correctly under certain conditions (<a href="https://github.com/SFML/SFML/pull/1297">#1297</a>)</li>
   <li>Fix for broken text when the font is reloaded (<a href="https://github.com/SFML/SFML/pull/1345">#1345</a>)</li>
-  <li>Fix memory leak in `sf::Text` (<a href="https://github.com/SFML/SFML/pull/1233">#1233</a>, <a href="https://github.com/SFML/SFML/pull/1360">#1360</a>)</li>
+  <li>Fix memory leak in sf::Text (<a href="https://github.com/SFML/SFML/pull/1233">#1233</a>, <a href="https://github.com/SFML/SFML/pull/1360">#1360</a>)</li>
   <li>Fixed strict aliasing punning warning when generating the key of a glyph in Font.cpp (<a href="https://github.com/SFML/SFML/pull/1187">#1187</a>, <a href="https://github.com/SFML/SFML/pull/1396">#1396</a>)</li>
   <li>Fixed OpenGL version string being parsed incorrectly on some platforms (<a href="https://github.com/SFML/SFML/pull/1249">#1249</a>, <a href="https://github.com/SFML/SFML/pull/1390">#1390</a>)</li>
   <li>[macOS] Worked around render target bug (<a href="https://github.com/SFML/SFML/pull/1132">#1132</a>, <a href="https://github.com/SFML/SFML/pull/1342">#1342</a>)</li>
@@ -118,19 +118,19 @@
 <h3 id="2.5.0-audio"><a class="h3-link" href="#2.5.0-audio">Audio</a></h3>
 <h4>Features</h4>
 <ul>
-  <li>Added loop point support to `sf::Music` (<a href="https://github.com/SFML/SFML/pull/177">#177</a>, <a href="https://github.com/SFML/SFML/pull/629">#629</a>)</li>
+  <li>Added loop point support to sf::Music (<a href="https://github.com/SFML/SFML/pull/177">#177</a>, <a href="https://github.com/SFML/SFML/pull/629">#629</a>)</li>
   <li>Added support for the extensible PCM wave file format (<a href="https://github.com/SFML/SFML/pull/1296">#1296</a>)</li>
   <li>[iOS] Enable audio module (<a href="https://github.com/SFML/SFML/pull/1338">#1338</a>)</li>
 </ul>
 
 <h4>Bugfixes</h4>
 <ul>
-  <li>Fixed inconsistent seek behavior in `sf::SoundStream` (<a href="https://github.com/SFML/SFML/pull/1118">#1118</a>)</li>
-  <li>Fixed stack overflow in `sf::SoundStream::fillAndPushBuffer()` (<a href="https://github.com/SFML/SFML/pull/1154">#1154</a>)</li>
+  <li>Fixed inconsistent seek behavior in sf::SoundStream (<a href="https://github.com/SFML/SFML/pull/1118">#1118</a>)</li>
+  <li>Fixed stack overflow in sf::SoundStream::fillAndPushBuffer() (<a href="https://github.com/SFML/SFML/pull/1154">#1154</a>)</li>
   <li>Fixed seeking quirks in the FLAC reader (<a href="https://github.com/SFML/SFML/pull/966">#966</a>, <a href="https://github.com/SFML/SFML/pull/1162">#1162</a>)</li>
-  <li>Allow polymorphism with `sf::SoundSource` (<a href="https://github.com/SFML/SFML/pull/1185">#1185</a>)</li>
+  <li>Allow polymorphism with sf::SoundSource (<a href="https://github.com/SFML/SFML/pull/1185">#1185</a>)</li>
   <li>Fixed WAV file writer writing wrong header values (<a href="https://github.com/SFML/SFML/pull/1280">#1280</a>, <a href="https://github.com/SFML/SFML/pull/1281">#1281</a>)</li>
-  <li>Small bugfix to argument of `alcCaptureOpenDevice()` (<a href="https://github.com/SFML/SFML/pull/1304">#1304</a>, <a href="https://github.com/SFML/SFML/pull/1305">#1305</a>)</li>
+  <li>Small bugfix to argument of alcCaptureOpenDevice() (<a href="https://github.com/SFML/SFML/pull/1304">#1304</a>, <a href="https://github.com/SFML/SFML/pull/1305">#1305</a>)</li>
   <li>[iOS] Find OpenAL correctly (<a href="https://github.com/SFML/SFML/pull/1263">#1263</a>, <a href="https://github.com/SFML/SFML/pull/1376">#1376</a>)</li>
   <li>[Windows] Updated OpenAL Soft to 1.18.1 fixing crashes (<a href="https://github.com/SFML/SFML/pull/1247">#1247</a>, <a href="https://github.com/SFML/SFML/pull/1260">#1260</a>)</li>
 </ul>
