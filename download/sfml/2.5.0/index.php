@@ -77,7 +77,7 @@
     <tbody>
         <tr>
             <td class="os" rowspan="2">macOS</td>
-            <td><?php download_link('Clang', '64-bit (OS X 10.7+, compatible with C++11 and libc++)', '5.9', '../../../files/SFML-2.5.0-mavos-clang.tar.gz') ?></td>
+            <td><?php download_link('Clang', '64-bit (OS X 10.7+, compatible with C++11 and libc++)', '5.9', '../../../files/SFML-2.5.0-macOS-clang.tar.gz') ?></td>
         </tr>
         <tr>
             <td class="notice" colspan="3">
@@ -91,7 +91,7 @@
     <tbody>
         <tr>
             <td class="os" rowspan="2">All</td>
-            <td><span class="description">Source code</span><a href="../../../files/SFML-2.5.0-sources.zip">Download<span class="size">22.2 MB</span></a></td>
+            <td><span class="description">Source code</span><a href="../../../files/SFML-2.5.0-sources.zip">Download<span class="size">22.1 MB</span></a></td>
         </tr>
         <tr>
             <td><span class="description">HTML Documentation</span><a href="../../../files/SFML-2.5.0-doc.zip">Download<span class="size">1.53 MB</span></a></td>
