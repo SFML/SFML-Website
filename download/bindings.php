@@ -42,9 +42,9 @@
         </tr>
         <tr>
             <th rowspan="1">Crystal</th>
-            <td><a href="https://github.com/BlaXpirit/crsfml" class="website"><img src="../images/bindings/crsfml.png" alt="CrSFML"/></a></td>
-            <td>2.4</td>
-            <td><a href="mailto:blaxpirit@gmail.com">Oleh Prypin</a></td>
+            <td><a href="https://github.com/oprypin/crsfml" class="website"><img src="../images/bindings/crsfml.png" alt="CrSFML"/></a></td>
+            <td>2.5</td>
+            <td><a href="mailto:oleh@pryp.in">Oleh Prypin</a></td>
         </tr>
         <tr>
             <th rowspan="2">D</th>
