@@ -18,7 +18,7 @@
     <ul class="tablist">
       <li><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li><a href="classes.php"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.php"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -42,13 +42,6 @@
  <a href="classsf_1_1Vector2.php#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Vector2_8hpp_source.php">Vector2.hpp</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for sf::Vector2&lt; T &gt;:</div>
-<div class="dyncontent">
-<div class="center"><img src="classsf_1_1Vector2__coll__graph.png" border="0" usemap="#sf_1_1Vector2_3_01T_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="sf_1_1Vector2_3_01T_01_4_coll__map" id="sf_1_1Vector2_3_01T_01_4_coll__map">
-</map>
-<center><span class="legend">[<a href="graph_legend.php">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>

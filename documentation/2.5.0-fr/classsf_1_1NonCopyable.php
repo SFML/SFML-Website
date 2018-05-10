@@ -18,7 +18,7 @@
     <ul class="tablist">
       <li><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li><a href="classes.php"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.php"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -43,10 +43,27 @@
 <div class="dynheader">
 Inheritance diagram for sf::NonCopyable:</div>
 <div class="dyncontent">
-<div class="center"><img src="classsf_1_1NonCopyable__inherit__graph.png" border="0" usemap="#sf_1_1NonCopyable_inherit__map" alt="Inheritance graph"/></div>
-<map name="sf_1_1NonCopyable_inherit__map" id="sf_1_1NonCopyable_inherit__map">
+ <div class="center">
+  <img src="classsf_1_1NonCopyable.png" usemap="#sf::NonCopyable_map" alt=""/>
+  <map id="sf::NonCopyable_map" name="sf::NonCopyable_map">
+<area href="classsf_1_1Context.php" title="Class holding a valid drawing context. " alt="sf::Context" shape="rect" coords="231,56,452,80"/>
+<area href="classsf_1_1Cursor.php" title="Cursor defines the appearance of a system cursor. " alt="sf::Cursor" shape="rect" coords="231,112,452,136"/>
+<area href="classsf_1_1FileInputStream.php" title="Implementation of input stream based on a file. " alt="sf::FileInputStream" shape="rect" coords="231,168,452,192"/>
+<area href="classsf_1_1Ftp.php" title="A FTP client. " alt="sf::Ftp" shape="rect" coords="231,224,452,248"/>
+<area href="classsf_1_1GlResource_1_1TransientContextLock.php" title="RAII helper class to temporarily lock an available context for use. " alt="sf::GlResource::TransientContextLock" shape="rect" coords="231,280,452,304"/>
+<area href="classsf_1_1Http.php" title="A HTTP client. " alt="sf::Http" shape="rect" coords="231,336,452,360"/>
+<area href="classsf_1_1InputSoundFile.php" title="Provide read access to sound files. " alt="sf::InputSoundFile" shape="rect" coords="231,392,452,416"/>
+<area href="classsf_1_1Lock.php" title="Automatic wrapper for locking and unlocking mutexes. " alt="sf::Lock" shape="rect" coords="231,448,452,472"/>
+<area href="classsf_1_1Mutex.php" title="Blocks concurrent access to shared resources from multiple threads. " alt="sf::Mutex" shape="rect" coords="231,504,452,528"/>
+<area href="classsf_1_1OutputSoundFile.php" title="Provide write access to sound files. " alt="sf::OutputSoundFile" shape="rect" coords="231,560,452,584"/>
+<area href="classsf_1_1RenderTarget.php" title="Base class for all render targets (window, texture, ...) " alt="sf::RenderTarget" shape="rect" coords="231,616,452,640"/>
+<area href="classsf_1_1Shader.php" title="Shader class (vertex, geometry and fragment) " alt="sf::Shader" shape="rect" coords="231,672,452,696"/>
+<area href="classsf_1_1Socket.php" title="Base class for all the socket types. " alt="sf::Socket" shape="rect" coords="231,728,452,752"/>
+<area href="classsf_1_1Thread.php" title="Utility class to manipulate threads. " alt="sf::Thread" shape="rect" coords="231,784,452,808"/>
+<area href="classsf_1_1ThreadLocal.php" title="Defines variables with thread-local storage. " alt="sf::ThreadLocal" shape="rect" coords="231,840,452,864"/>
+<area href="classsf_1_1Window.php" title="Window that serves as a target for OpenGL rendering. " alt="sf::Window" shape="rect" coords="231,896,452,920"/>
 </map>
-<center><span class="legend">[<a href="graph_legend.php">legend</a>]</span></center></div>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>

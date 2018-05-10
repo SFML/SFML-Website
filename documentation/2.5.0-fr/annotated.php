@@ -18,7 +18,7 @@
     <ul class="tablist">
       <li class="current"><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li><a href="classes.php"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.php"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>

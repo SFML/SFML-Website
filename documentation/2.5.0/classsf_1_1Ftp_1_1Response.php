@@ -18,7 +18,7 @@
     <ul class="tablist">
       <li><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li><a href="classes.php"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.php"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -44,10 +44,13 @@
 <div class="dynheader">
 Inheritance diagram for sf::Ftp::Response:</div>
 <div class="dyncontent">
-<div class="center"><img src="classsf_1_1Ftp_1_1Response__inherit__graph.png" border="0" usemap="#sf_1_1Ftp_1_1Response_inherit__map" alt="Inheritance graph"/></div>
-<map name="sf_1_1Ftp_1_1Response_inherit__map" id="sf_1_1Ftp_1_1Response_inherit__map">
+ <div class="center">
+  <img src="classsf_1_1Ftp_1_1Response.png" usemap="#sf::Ftp::Response_map" alt=""/>
+  <map id="sf::Ftp::Response_map" name="sf::Ftp::Response_map">
+<area href="classsf_1_1Ftp_1_1DirectoryResponse.php" title="Specialization of FTP response returning a directory. " alt="sf::Ftp::DirectoryResponse" shape="rect" coords="0,56,160,80"/>
+<area href="classsf_1_1Ftp_1_1ListingResponse.php" title="Specialization of FTP response returning a filename listing. " alt="sf::Ftp::ListingResponse" shape="rect" coords="170,56,330,80"/>
 </map>
-<center><span class="legend">[<a href="graph_legend.php">legend</a>]</span></center></div>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>

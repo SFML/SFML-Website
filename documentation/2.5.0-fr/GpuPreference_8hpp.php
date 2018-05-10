@@ -36,13 +36,6 @@
 <p>Headers.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;SFML/Config.hpp&gt;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for GpuPreference.hpp:</div>
-<div class="dyncontent">
-<div class="center"><img src="GpuPreference_8hpp__incl.png" border="0" usemap="#GpuPreference_8hpp" alt=""/></div>
-<map name="GpuPreference_8hpp" id="GpuPreference_8hpp">
-</map>
-</div>
 </div>
 <p><a href="GpuPreference_8hpp_source.php">Go to the source code of this file.</a></p>
 <table class="memberdecls">

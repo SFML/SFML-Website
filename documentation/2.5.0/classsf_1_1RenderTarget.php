@@ -18,7 +18,7 @@
     <ul class="tablist">
       <li><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li><a href="classes.php"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.php"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -45,17 +45,14 @@
 <div class="dynheader">
 Inheritance diagram for sf::RenderTarget:</div>
 <div class="dyncontent">
-<div class="center"><img src="classsf_1_1RenderTarget__inherit__graph.png" border="0" usemap="#sf_1_1RenderTarget_inherit__map" alt="Inheritance graph"/></div>
-<map name="sf_1_1RenderTarget_inherit__map" id="sf_1_1RenderTarget_inherit__map">
+ <div class="center">
+  <img src="classsf_1_1RenderTarget.png" usemap="#sf::RenderTarget_map" alt=""/>
+  <map id="sf::RenderTarget_map" name="sf::RenderTarget_map">
+<area href="classsf_1_1NonCopyable.php" title="Utility class that makes any derived class non-copyable. " alt="sf::NonCopyable" shape="rect" coords="61,0,174,24"/>
+<area href="classsf_1_1RenderTexture.php" title="Target for off-screen 2D rendering into a texture. " alt="sf::RenderTexture" shape="rect" coords="0,112,113,136"/>
+<area href="classsf_1_1RenderWindow.php" title="Window that can serve as a target for 2D drawing. " alt="sf::RenderWindow" shape="rect" coords="123,112,236,136"/>
 </map>
-<center><span class="legend">[<a href="graph_legend.php">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for sf::RenderTarget:</div>
-<div class="dyncontent">
-<div class="center"><img src="classsf_1_1RenderTarget__coll__graph.png" border="0" usemap="#sf_1_1RenderTarget_coll__map" alt="Collaboration graph"/></div>
-<map name="sf_1_1RenderTarget_coll__map" id="sf_1_1RenderTarget_coll__map">
-</map>
-<center><span class="legend">[<a href="graph_legend.php">legend</a>]</span></center></div>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>

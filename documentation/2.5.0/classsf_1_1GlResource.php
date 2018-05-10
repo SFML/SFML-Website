@@ -18,7 +18,7 @@
     <ul class="tablist">
       <li><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li><a href="classes.php"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.php"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -45,10 +45,17 @@
 <div class="dynheader">
 Inheritance diagram for sf::GlResource:</div>
 <div class="dyncontent">
-<div class="center"><img src="classsf_1_1GlResource__inherit__graph.png" border="0" usemap="#sf_1_1GlResource_inherit__map" alt="Inheritance graph"/></div>
-<map name="sf_1_1GlResource_inherit__map" id="sf_1_1GlResource_inherit__map">
+ <div class="center">
+  <img src="classsf_1_1GlResource.png" usemap="#sf::GlResource_map" alt=""/>
+  <map id="sf::GlResource_map" name="sf::GlResource_map">
+<area href="classsf_1_1Context.php" title="Class holding a valid drawing context. " alt="sf::Context" shape="rect" coords="0,56,113,80"/>
+<area href="classsf_1_1Shader.php" title="Shader class (vertex, geometry and fragment) " alt="sf::Shader" shape="rect" coords="123,56,236,80"/>
+<area href="classsf_1_1Texture.php" title="Image living on the graphics card that can be used for drawing. " alt="sf::Texture" shape="rect" coords="246,56,359,80"/>
+<area href="classsf_1_1VertexBuffer.php" title="Vertex buffer storage for one or more 2D primitives. " alt="sf::VertexBuffer" shape="rect" coords="369,56,482,80"/>
+<area href="classsf_1_1Window.php" title="Window that serves as a target for OpenGL rendering. " alt="sf::Window" shape="rect" coords="492,56,605,80"/>
+<area href="classsf_1_1RenderWindow.php" title="Window that can serve as a target for 2D drawing. " alt="sf::RenderWindow" shape="rect" coords="492,112,605,136"/>
 </map>
-<center><span class="legend">[<a href="graph_legend.php">legend</a>]</span></center></div>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>

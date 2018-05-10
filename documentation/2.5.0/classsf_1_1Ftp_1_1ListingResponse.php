@@ -18,7 +18,7 @@
     <ul class="tablist">
       <li><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li><a href="classes.php"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.php"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -44,17 +44,12 @@
 <div class="dynheader">
 Inheritance diagram for sf::Ftp::ListingResponse:</div>
 <div class="dyncontent">
-<div class="center"><img src="classsf_1_1Ftp_1_1ListingResponse__inherit__graph.png" border="0" usemap="#sf_1_1Ftp_1_1ListingResponse_inherit__map" alt="Inheritance graph"/></div>
-<map name="sf_1_1Ftp_1_1ListingResponse_inherit__map" id="sf_1_1Ftp_1_1ListingResponse_inherit__map">
+ <div class="center">
+  <img src="classsf_1_1Ftp_1_1ListingResponse.png" usemap="#sf::Ftp::ListingResponse_map" alt=""/>
+  <map id="sf::Ftp::ListingResponse_map" name="sf::Ftp::ListingResponse_map">
+<area href="classsf_1_1Ftp_1_1Response.php" title="Define a FTP response. " alt="sf::Ftp::Response" shape="rect" coords="0,0,143,24"/>
 </map>
-<center><span class="legend">[<a href="graph_legend.php">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for sf::Ftp::ListingResponse:</div>
-<div class="dyncontent">
-<div class="center"><img src="classsf_1_1Ftp_1_1ListingResponse__coll__graph.png" border="0" usemap="#sf_1_1Ftp_1_1ListingResponse_coll__map" alt="Collaboration graph"/></div>
-<map name="sf_1_1Ftp_1_1ListingResponse_coll__map" id="sf_1_1Ftp_1_1ListingResponse_coll__map">
-</map>
-<center><span class="legend">[<a href="graph_legend.php">legend</a>]</span></center></div>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>

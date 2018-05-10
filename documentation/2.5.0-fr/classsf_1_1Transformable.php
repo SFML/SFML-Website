@@ -18,7 +18,7 @@
     <ul class="tablist">
       <li><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li><a href="classes.php"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.php"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -43,10 +43,17 @@
 <div class="dynheader">
 Inheritance diagram for sf::Transformable:</div>
 <div class="dyncontent">
-<div class="center"><img src="classsf_1_1Transformable__inherit__graph.png" border="0" usemap="#sf_1_1Transformable_inherit__map" alt="Inheritance graph"/></div>
-<map name="sf_1_1Transformable_inherit__map" id="sf_1_1Transformable_inherit__map">
+ <div class="center">
+  <img src="classsf_1_1Transformable.png" usemap="#sf::Transformable_map" alt=""/>
+  <map id="sf::Transformable_map" name="sf::Transformable_map">
+<area href="classsf_1_1Shape.php" title="Base class for textured shapes with outline. " alt="sf::Shape" shape="rect" coords="130,56,250,80"/>
+<area href="classsf_1_1Sprite.php" title="Drawable representation of a texture, with its own transformations, color, etc. " alt="sf::Sprite" shape="rect" coords="260,56,380,80"/>
+<area href="classsf_1_1Text.php" title="Graphical text that can be drawn to a render target. " alt="sf::Text" shape="rect" coords="390,56,510,80"/>
+<area href="classsf_1_1CircleShape.php" title="Specialized shape representing a circle. " alt="sf::CircleShape" shape="rect" coords="0,112,120,136"/>
+<area href="classsf_1_1ConvexShape.php" title="Specialized shape representing a convex polygon. " alt="sf::ConvexShape" shape="rect" coords="130,112,250,136"/>
+<area href="classsf_1_1RectangleShape.php" title="Specialized shape representing a rectangle. " alt="sf::RectangleShape" shape="rect" coords="260,112,380,136"/>
 </map>
-<center><span class="legend">[<a href="graph_legend.php">legend</a>]</span></center></div>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>

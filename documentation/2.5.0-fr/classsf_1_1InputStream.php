@@ -18,7 +18,7 @@
     <ul class="tablist">
       <li><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li><a href="classes.php"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.php"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -43,10 +43,13 @@
 <div class="dynheader">
 Inheritance diagram for sf::InputStream:</div>
 <div class="dyncontent">
-<div class="center"><img src="classsf_1_1InputStream__inherit__graph.png" border="0" usemap="#sf_1_1InputStream_inherit__map" alt="Inheritance graph"/></div>
-<map name="sf_1_1InputStream_inherit__map" id="sf_1_1InputStream_inherit__map">
+ <div class="center">
+  <img src="classsf_1_1InputStream.png" usemap="#sf::InputStream_map" alt=""/>
+  <map id="sf::InputStream_map" name="sf::InputStream_map">
+<area href="classsf_1_1FileInputStream.php" title="Implementation of input stream based on a file. " alt="sf::FileInputStream" shape="rect" coords="0,56,140,80"/>
+<area href="classsf_1_1MemoryInputStream.php" title="Implementation of input stream based on a memory chunk. " alt="sf::MemoryInputStream" shape="rect" coords="150,56,290,80"/>
 </map>
-<center><span class="legend">[<a href="graph_legend.php">legend</a>]</span></center></div>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>

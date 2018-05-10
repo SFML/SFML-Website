@@ -18,7 +18,7 @@
     <ul class="tablist">
       <li><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li><a href="classes.php"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.php"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -48,17 +48,13 @@
 <div class="dynheader">
 Inheritance diagram for sf::Shader:</div>
 <div class="dyncontent">
-<div class="center"><img src="classsf_1_1Shader__inherit__graph.png" border="0" usemap="#sf_1_1Shader_inherit__map" alt="Inheritance graph"/></div>
-<map name="sf_1_1Shader_inherit__map" id="sf_1_1Shader_inherit__map">
+ <div class="center">
+  <img src="classsf_1_1Shader.png" usemap="#sf::Shader_map" alt=""/>
+  <map id="sf::Shader_map" name="sf::Shader_map">
+<area href="classsf_1_1GlResource.php" title="Base class for classes that require an OpenGL context. " alt="sf::GlResource" shape="rect" coords="0,0,105,24"/>
+<area href="classsf_1_1NonCopyable.php" title="Utility class that makes any derived class non-copyable. " alt="sf::NonCopyable" shape="rect" coords="115,0,220,24"/>
 </map>
-<center><span class="legend">[<a href="graph_legend.php">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for sf::Shader:</div>
-<div class="dyncontent">
-<div class="center"><img src="classsf_1_1Shader__coll__graph.png" border="0" usemap="#sf_1_1Shader_coll__map" alt="Collaboration graph"/></div>
-<map name="sf_1_1Shader_coll__map" id="sf_1_1Shader_coll__map">
-</map>
-<center><span class="legend">[<a href="graph_legend.php">legend</a>]</span></center></div>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>

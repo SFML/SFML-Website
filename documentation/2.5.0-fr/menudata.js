@@ -33,7 +33,7 @@ var menudata={children:[
 {text:"Classes",url:"annotated.php",children:[
 {text:"Class List",url:"annotated.php"},
 {text:"Class Index",url:"classes.php"},
-{text:"Class Hierarchy",url:"inherits.php"},
+{text:"Class Hierarchy",url:"hierarchy.php"},
 {text:"Class Members",url:"functions.php",children:[
 {text:"All",url:"functions.php",children:[
 {text:"a",url:"functions.php#index_a"},

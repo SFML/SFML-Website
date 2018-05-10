@@ -18,7 +18,7 @@
     <ul class="tablist">
       <li><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li><a href="classes.php"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.php"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -46,17 +46,12 @@
 <div class="dynheader">
 Inheritance diagram for sf::Ftp:</div>
 <div class="dyncontent">
-<div class="center"><img src="classsf_1_1Ftp__inherit__graph.png" border="0" usemap="#sf_1_1Ftp_inherit__map" alt="Inheritance graph"/></div>
-<map name="sf_1_1Ftp_inherit__map" id="sf_1_1Ftp_inherit__map">
+ <div class="center">
+  <img src="classsf_1_1Ftp.png" usemap="#sf::Ftp_map" alt=""/>
+  <map id="sf::Ftp_map" name="sf::Ftp_map">
+<area href="classsf_1_1NonCopyable.php" title="Utility class that makes any derived class non-copyable. " alt="sf::NonCopyable" shape="rect" coords="0,0,105,24"/>
 </map>
-<center><span class="legend">[<a href="graph_legend.php">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for sf::Ftp:</div>
-<div class="dyncontent">
-<div class="center"><img src="classsf_1_1Ftp__coll__graph.png" border="0" usemap="#sf_1_1Ftp_coll__map" alt="Collaboration graph"/></div>
-<map name="sf_1_1Ftp_coll__map" id="sf_1_1Ftp_coll__map">
-</map>
-<center><span class="legend">[<a href="graph_legend.php">legend</a>]</span></center></div>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>

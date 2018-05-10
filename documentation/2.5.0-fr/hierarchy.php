@@ -18,7 +18,7 @@
     <ul class="tablist">
       <li><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li><a href="classes.php"><span>Class&#160;Index</span></a></li>
-      <li class="current"><a href="inherits.php"><span>Class&#160;Hierarchy</span></a></li>
+      <li class="current"><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -28,9 +28,7 @@
 <div class="title">Class Hierarchy</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock">
-<p><a href="inherits.php">Go to the graphical class hierarchy</a></p>
-This inheritance list is sorted roughly, but not completely, alphabetically:</div><div class="directory">
+<div class="textblock">This inheritance list is sorted roughly, but not completely, alphabetically:</div><div class="directory">
 <div class="levels">[detail level <span onclick="javascript:toggleLevel(1);">1</span><span onclick="javascript:toggleLevel(2);">2</span><span onclick="javascript:toggleLevel(3);">3</span><span onclick="javascript:toggleLevel(4);">4</span>]</div><table class="directory">
 <tr id="row_0_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_0_" class="arrow" onclick="toggleFolder('0_')">&#9654;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classsf_1_1AlResource.php" target="_self">sf::AlResource</a></td><td class="desc">Base class for classes that require an OpenAL context </td></tr>
 <tr id="row_0_0_" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classsf_1_1SoundBuffer.php" target="_self">sf::SoundBuffer</a></td><td class="desc">Storage for audio samples defining a sound </td></tr>

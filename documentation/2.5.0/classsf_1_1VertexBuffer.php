@@ -18,7 +18,7 @@
     <ul class="tablist">
       <li><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li><a href="classes.php"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.php"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -46,17 +46,13 @@
 <div class="dynheader">
 Inheritance diagram for sf::VertexBuffer:</div>
 <div class="dyncontent">
-<div class="center"><img src="classsf_1_1VertexBuffer__inherit__graph.png" border="0" usemap="#sf_1_1VertexBuffer_inherit__map" alt="Inheritance graph"/></div>
-<map name="sf_1_1VertexBuffer_inherit__map" id="sf_1_1VertexBuffer_inherit__map">
+ <div class="center">
+  <img src="classsf_1_1VertexBuffer.png" usemap="#sf::VertexBuffer_map" alt=""/>
+  <map id="sf::VertexBuffer_map" name="sf::VertexBuffer_map">
+<area href="classsf_1_1Drawable.php" title="Abstract base class for objects that can be drawn to a render target. " alt="sf::Drawable" shape="rect" coords="0,0,100,24"/>
+<area href="classsf_1_1GlResource.php" title="Base class for classes that require an OpenGL context. " alt="sf::GlResource" shape="rect" coords="110,0,210,24"/>
 </map>
-<center><span class="legend">[<a href="graph_legend.php">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for sf::VertexBuffer:</div>
-<div class="dyncontent">
-<div class="center"><img src="classsf_1_1VertexBuffer__coll__graph.png" border="0" usemap="#sf_1_1VertexBuffer_coll__map" alt="Collaboration graph"/></div>
-<map name="sf_1_1VertexBuffer_coll__map" id="sf_1_1VertexBuffer_coll__map">
-</map>
-<center><span class="legend">[<a href="graph_legend.php">legend</a>]</span></center></div>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>

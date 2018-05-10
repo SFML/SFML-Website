@@ -18,7 +18,7 @@
     <ul class="tablist">
       <li><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li><a href="classes.php"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.php"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -43,10 +43,18 @@
 <div class="dynheader">
 Inheritance diagram for sf::AlResource:</div>
 <div class="dyncontent">
-<div class="center"><img src="classsf_1_1AlResource__inherit__graph.png" border="0" usemap="#sf_1_1AlResource_inherit__map" alt="Inheritance graph"/></div>
-<map name="sf_1_1AlResource_inherit__map" id="sf_1_1AlResource_inherit__map">
+ <div class="center">
+  <img src="classsf_1_1AlResource.png" usemap="#sf::AlResource_map" alt=""/>
+  <map id="sf::AlResource_map" name="sf::AlResource_map">
+<area href="classsf_1_1SoundBuffer.php" title="Storage for audio samples defining a sound. " alt="sf::SoundBuffer" shape="rect" coords="0,56,152,80"/>
+<area href="classsf_1_1SoundRecorder.php" title="Abstract base class for capturing sound data. " alt="sf::SoundRecorder" shape="rect" coords="162,56,314,80"/>
+<area href="classsf_1_1SoundSource.php" title="Base class defining a sound&#39;s properties. " alt="sf::SoundSource" shape="rect" coords="405,56,557,80"/>
+<area href="classsf_1_1SoundBufferRecorder.php" title="Specialized SoundRecorder which stores the captured audio data into a sound buffer. " alt="sf::SoundBufferRecorder" shape="rect" coords="162,112,314,136"/>
+<area href="classsf_1_1Sound.php" title="Regular sound that can be played in the audio environment. " alt="sf::Sound" shape="rect" coords="324,112,476,136"/>
+<area href="classsf_1_1SoundStream.php" title="Abstract base class for streamed audio sources. " alt="sf::SoundStream" shape="rect" coords="486,112,638,136"/>
+<area href="classsf_1_1Music.php" title="Streamed music played from an audio file. " alt="sf::Music" shape="rect" coords="486,168,638,192"/>
 </map>
-<center><span class="legend">[<a href="graph_legend.php">legend</a>]</span></center></div>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>

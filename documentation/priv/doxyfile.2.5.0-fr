@@ -236,24 +236,7 @@ TAB_SIZE               = 4
 # will allow you to put the command \sideeffect (or @sideeffect) in the
 # documentation, which will result in a user-defined paragraph with heading
 # "Side Effects:". You can put \n's in the value part of an alias to insert
-# newlines (in the resulting output). You can put ^^ in the value part of an
-# alias to insert a newline as if a physical newline was in the original file.
-
-#---------------------------------------------------------------------------
-# SFML specific aliases
-#---------------------------------------------------------------------------
-
-# sfplatform{platform(s)}
-# sfplatform{platform(s), header}
-#
-# Warns the user that some specific class or function is only available on
-# specific platforms.
-#
-# This shouldn't be used for incomplete implementations. It's meant for things
-# that will never appear on another platform, e.g. Android's native activity.
-#
-# If a header is given, the user is informed, that this header must be included
-# for the mentioned element to be defined.
+# newlines.
 
 ALIASES                = "sfplatform{1}=<dl class=\"attention\"><dt>Platform Limitation</dt><dd><b>This is only available on \1.</b></dd></dl>" \
                          "sfplatform{2}=<dl class=\"attention\"><dt>Platform Limitation</dt><dd><b>This is only available on \1</b> and to use it, you'll have to specifically include \2 in your code.</dd></dl>"
@@ -2191,7 +2174,7 @@ PERL_PATH              = /usr/bin/perl
 # powerful graphs.
 # The default value is: YES.
 
-CLASS_DIAGRAMS         = NO
+CLASS_DIAGRAMS         = YES
 
 # You can define message sequence charts within doxygen comments using the \msc
 # command. Doxygen will then run the mscgen tool (see:
@@ -2222,7 +2205,7 @@ HIDE_UNDOC_RELATIONS   = YES
 # set to NO
 # The default value is: NO.
 
-HAVE_DOT               = YES
+HAVE_DOT               = NO
 
 # The DOT_NUM_THREADS specifies the number of dot invocations doxygen is allowed
 # to run in parallel. When set to 0 doxygen will base this on the number of
@@ -2432,7 +2415,7 @@ PLANTUML_JAR_PATH      =
 # When using plantuml, the PLANTUML_CFG_FILE tag can be used to specify a
 # configuration file for plantuml.
 
-PLANTUML_CFG_FILE      =
+PLANTUML_CFG_FILE      = 
 
 # When using plantuml, the specified paths are searched for files specified by
 # the !include statement in a plantuml block.
