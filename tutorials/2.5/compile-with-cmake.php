@@ -43,7 +43,6 @@
 </p>
 <ul>
     <li>freetype</li>
-    <li>jpeg</li>
     <li>x11</li>
     <li>xrandr</li>
     <li>xcb</li>

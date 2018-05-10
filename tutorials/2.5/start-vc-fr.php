@@ -93,7 +93,6 @@
                 <li>sfml-system-s.lib</li>
                 <li>opengl32.lib</li>
                 <li>freetype.lib</li>
-                <li>jpeg.lib</li>
             </ul></td>
         </tr>
         <tr class="two">

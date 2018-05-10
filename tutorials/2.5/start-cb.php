@@ -100,7 +100,6 @@
                 <li>sfml-system-s</li>
                 <li>opengl32</li>
                 <li>freetype</li>
-                <li>jpeg</li>
             </ul></td>
         </tr>
         <tr class="two">
