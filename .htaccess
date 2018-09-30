@@ -1,0 +1,16 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteCond %{HTTP_HOST} !^en\. [NC]
+RewriteCond %{HTTP_HOST} !^fr\. [NC]
+RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# force https:// for all except some selected URLs    
+RewriteCond %{HTTPS} off
+RewriteCond %{THE_REQUEST} !/ip-provider.php [NC]
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# force http:// for selected URLs
+RewriteCond %{HTTPS} on
+RewriteCond %{THE_REQUEST} /ip-provider.php [NC]
+RewriteRule ^ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
