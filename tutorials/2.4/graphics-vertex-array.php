@@ -457,7 +457,7 @@ private:
 </code></pre>
 <img class="screenshot" src="./images/graphics-vertex-array-tilemap.png" alt="The tilemap example"/>
 
-<p>Click on filenames to download <a href="./images/graphics-vertex-array-tilemap-tileset.png" title="graphics-vertex-array-tilemap-tileset.png">"graphics-vertex-array-tilemap-tileset.png"</a> and the optional <a href="./graphics-vertex-array-tilemap.pyxel" title="graphics-vertex-array-tilemap.pyxel">"graphics-vertex-array-tilemap.pyxel"</a> (for 3rd party <i>Pyxel Edit</i> software).</p>
+<p>You can download the tileset used for this tilemap example <a href="./images/graphics-vertex-array-tilemap-tileset.png" title="Tilemap example tileset">here</a>.</p>
 
 <?php h2('Example: particle system') ?>
 <p>

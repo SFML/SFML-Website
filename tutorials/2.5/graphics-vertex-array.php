@@ -457,6 +457,8 @@ private:
 </code></pre>
 <img class="screenshot" src="./images/graphics-vertex-array-tilemap.png" alt="The tilemap example"/>
 
+<p>You can download the tileset used for this tilemap example <a href="./images/graphics-vertex-array-tilemap-tileset.png" title="Tilemap example tileset">here</a>.</p>
+
 <?php h2('Example: particle system') ?>
 <p>
     This second example implements another common entity: The particle system. This one is very simple, with no texture and as few parameters as possible.
