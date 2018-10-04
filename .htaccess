@@ -1,6 +1,6 @@
 RewriteEngine On
 
-#RewriteCond %{HTTP_HOST} !^www\.
+RewriteCond %{HTTP_HOST} !^www\.
 RewriteCond %{HTTP_HOST} !^en\. [NC]
 RewriteCond %{HTTP_HOST} !^fr\. [NC]
 RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
