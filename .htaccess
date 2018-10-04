@@ -1,19 +1,34 @@
+ErrorDocument 403 /error-403.php
+ErrorDocument 404 /error-404.php
+
 RewriteEngine On
 
+# Append the www. prefix for all sites except en./fr. subdomains
 RewriteCond %{HTTP_HOST} !^www\.
 RewriteCond %{HTTP_HOST} !^en\. [NC]
 RewriteCond %{HTTP_HOST} !^fr\. [NC]
 RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# force https:// for all except some selected URLs    
+# Force https:// for all except some selected URLs    
 RewriteCond %{HTTPS} off
 RewriteCond %{THE_REQUEST} !/ip-provider.php [NC]
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# force http:// for selected URLs
+# Force http:// for selected URLs
 RewriteCond %{HTTPS} on
 RewriteCond %{THE_REQUEST} /ip-provider.php [NC]
 RewriteRule ^ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-ErrorDocument 403 /error-403.php
-ErrorDocument 404 /error-404.php
+# Documentation redirects
+RewriteCond %{REQUEST_URI} ^/documentation(/?)$
+RewriteRule ^ /documentation/latest/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/documentation/latest(/?)(.*)$
+RewriteRule /latest(/?)(.*) /documentation/2.5.0/$2 [R=301,L]
+
+# Tutorial redirects
+RewriteCond %{REQUEST_URI} ^/tutorials(/?)$
+RewriteRule ^ /tutorials/latest/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/tutorials/latest(/?)(.*)$
+RewriteRule /latest(/?)(.*) /tutorials/2.5/$2 [R=301,L]
