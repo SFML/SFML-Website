@@ -1,6 +1,6 @@
 RewriteEngine On
 
-RewriteCond %{HTTP_HOST} !^www\.
+#RewriteCond %{HTTP_HOST} !^www\.
 RewriteCond %{HTTP_HOST} !^en\. [NC]
 RewriteCond %{HTTP_HOST} !^fr\. [NC]
 RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
@@ -14,3 +14,6 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 RewriteCond %{HTTPS} on
 RewriteCond %{THE_REQUEST} /ip-provider.php [NC]
 RewriteRule ^ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+ErrorDocument 403 /error-403.php
+ErrorDocument 404 /error-404.php
