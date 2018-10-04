@@ -470,6 +470,8 @@ private:
 </code></pre>
 <img class="screenshot" src="./images/graphics-vertex-array-tilemap.png" alt="L'exemple 'tilemap'"/>
 
+<p>Vous pouvez télécharger le tileset utilisé pour cet exemple de tilemap <a href="./images/graphics-vertex-array-tilemap-tileset.png" title="L'exemple tileset">ici</a>.</p>
+
 <?php h2('Exemple: système de particules') ?>
 <p>
     Ce second exemple implémente une autre entité communément utilisée : le système de particules. Le nôtre sera relativement simple : pas de texture et aussi peu
