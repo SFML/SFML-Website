@@ -2,18 +2,18 @@
     $breadcrumbs = array
     (
         'Download' => 'download.php',
-        'SFML 2.5.0' => 'download/sfml/2.5.0'
+        'SFML 2.5.1' => 'download/sfml/2.5.1'
     );
     include('../../../header.php');
 
     function download_link($compiler, $arch, $size, $link)
     {
-        $counter_script = "_gaq.push(['_trackEvent', 'Download', 'SFML 2.5.0']);";
+        $counter_script = "_gaq.push(['_trackEvent', 'Download', 'SFML 2.5.1']);";
         echo '<span class="description">' . $compiler . ' - ' . $arch . '</span><a href="' . $link . '" onclick="' . $counter_script . '">Download<span class="size">' . $size . ' MB</span></a>';
     }
 ?>
 
-<h1>Download SFML 2.5.0</h1>
+<h1>Download SFML 2.5.1</h1>
 
 <table class="styled download">
     <tbody>
@@ -32,24 +32,24 @@
             </td>
         </tr>
         <tr>
-            <td><?php download_link('Visual C++ 15 (2017)', '32-bit', '17.8', '../../../files/SFML-2.5.0-windows-vc15-32-bit.zip') ?></td>
-            <td><?php download_link('Visual C++ 15 (2017)', '64-bit', '19.4', '../../../files/SFML-2.5.0-windows-vc15-64-bit.zip') ?></td>
+            <td><?php download_link('Visual C++ 15 (2017)', '32-bit', '', '../../../files/SFML-2.5.1-windows-vc15-32-bit.zip') ?></td>
+            <td><?php download_link('Visual C++ 15 (2017)', '64-bit', '', '../../../files/SFML-2.5.1-windows-vc15-64-bit.zip') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('Visual C++ 14 (2015)', '32-bit', '17.6', '../../../files/SFML-2.5.0-windows-vc14-32-bit.zip') ?></td>
-            <td><?php download_link('Visual C++ 14 (2015)', '64-bit', '19.4', '../../../files/SFML-2.5.0-windows-vc14-64-bit.zip') ?></td>
+            <td><?php download_link('Visual C++ 14 (2015)', '32-bit', '', '../../../files/SFML-2.5.1-windows-vc14-32-bit.zip') ?></td>
+            <td><?php download_link('Visual C++ 14 (2015)', '64-bit', '', '../../../files/SFML-2.5.1-windows-vc14-64-bit.zip') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('Visual C++ 12 (2013)', '32-bit', '17.8', '../../../files/SFML-2.5.0-windows-vc12-32-bit.zip') ?></td>
-            <td><?php download_link('Visual C++ 12 (2013)', '64-bit', '19.6', '../../../files/SFML-2.5.0-windows-vc12-64-bit.zip') ?></td>
+            <td><?php download_link('Visual C++ 12 (2013)', '32-bit', '', '../../../files/SFML-2.5.1-windows-vc12-32-bit.zip') ?></td>
+            <td><?php download_link('Visual C++ 12 (2013)', '64-bit', '', '../../../files/SFML-2.5.1-windows-vc12-64-bit.zip') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('GCC 5.1.0 TDM (SJLJ) - Code::Blocks', '32-bit', '15.6', '../../../files/SFML-2.5.0-windows-gcc-5.1.0-tdm-32-bit.zip') ?></td>
+            <td><?php download_link('GCC 5.1.0 TDM (SJLJ) - Code::Blocks', '32-bit', '', '../../../files/SFML-2.5.1-windows-gcc-5.1.0-tdm-32-bit.zip') ?></td>
             <td></td>
         </tr>
         <tr>
-            <td><?php download_link('GCC 7.3.0 MinGW (DW2)', '32-bit', '17.0', '../../../files/SFML-2.5.0-windows-gcc-7.3.0-mingw-32-bit.zip') ?></td>
-            <td><?php download_link('GCC 7.3.0 MinGW (SEH)', '64-bit', '17.9', '../../../files/SFML-2.5.0-windows-gcc-7.3.0-mingw-64-bit.zip') ?></td>
+            <td><?php download_link('GCC 7.3.0 MinGW (DW2)', '32-bit', '', '../../../files/SFML-2.5.1-windows-gcc-7.3.0-mingw-32-bit.zip') ?></td>
+            <td><?php download_link('GCC 7.3.0 MinGW (SEH)', '64-bit', '', '../../../files/SFML-2.5.1-windows-gcc-7.3.0-mingw-64-bit.zip') ?></td>
         </tr>
     </tbody>
 </table>
@@ -68,7 +68,7 @@
         </tr>
         <tr>
             <td class="os" rowspan="2">Linux</td>
-            <td><?php download_link('GCC', '64-bit', '15.5', '../../../files/SFML-2.5.0-linux-gcc-64-bit.tar.gz') ?></td>
+            <td><?php download_link('GCC', '64-bit', '', '../../../files/SFML-2.5.1-linux-gcc-64-bit.tar.gz') ?></td>
         </tr>
     </tbody>
 </table>
@@ -77,7 +77,7 @@
     <tbody>
         <tr>
             <td class="os" rowspan="2">macOS</td>
-            <td><?php download_link('Clang', '64-bit (OS X 10.7+, compatible with C++11 and libc++)', '5.9', '../../../files/SFML-2.5.0-macOS-clang.tar.gz') ?></td>
+            <td><?php download_link('Clang', '64-bit (OS X 10.7+, compatible with C++11 and libc++)', '', '../../../files/SFML-2.5.1-macOS-clang.tar.gz') ?></td>
         </tr>
         <tr>
             <td class="notice" colspan="3">
@@ -91,10 +91,10 @@
     <tbody>
         <tr>
             <td class="os" rowspan="2">All</td>
-            <td><span class="description">Source code</span><a href="../../../files/SFML-2.5.0-sources.zip">Download<span class="size">22.1 MB</span></a></td>
+            <td><span class="description">Source code</span><a href="../../../files/SFML-2.5.1-sources.zip">Download<span class="size"> MB</span></a></td>
         </tr>
         <tr>
-            <td><span class="description">HTML Documentation</span><a href="../../../files/SFML-2.5.0-doc.zip">Download<span class="size">1.53 MB</span></a></td>
+            <td><span class="description">HTML Documentation</span><a href="../../../files/SFML-2.5.1-doc.zip">Download<span class="size"> MB</span></a></td>
         </tr>
     </tbody>
 </table>

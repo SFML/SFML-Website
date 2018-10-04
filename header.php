@@ -1,5 +1,5 @@
 <?php
-    // define access functions for the website's most common directories
+    // Define access functions for the website's most common directories
     function root() {return '//' . $_SERVER['SERVER_NAME'];}
     function home() {return root() . '/index.php';}
     function page($name) {return root() . '/' . $name;}
@@ -7,7 +7,7 @@
     function style($name) {return root() . '/styles/' . $name;}
     function script($name) {return root() . '/scripts/' . $name;}
 
-    // build the page title
+    // Build the page title
     $keys = array_keys($breadcrumbs);
     if (empty($keys))
     {
@@ -24,7 +24,7 @@
         $page_title .= ')';
     }
 
-    // build the translated URL of the current page
+    // Build the translated URL of the current page
     if (!isset($doxygen))
         $translated_page = str_replace(".php", "-fr.php", $_SERVER['PHP_SELF']);
     else

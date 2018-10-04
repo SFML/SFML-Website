@@ -176,17 +176,17 @@
  <p>SFML has also internal dependencies: Audio and Window depend on System, while Graphics depends on System and Window. In order to use the Graphics module, you must link with Graphics, Window, and System (the order of linkage matters with GCC).</p>
 
  <h3 id="grl-version"><a class="h3-link" href="#grl-version">What version of SFML should I use?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>Go for SFML 2.4.2, because you'll get a stable release with the latest features and bugfixes. As such it will save you a lot of headaches because other versions such as 1.6 are not maintained anymore, contain quite a few critical bugs and lack a lot of useful features.</p>
+ <p>Go for the latest SFML version, because you'll get a stable release with the latest features and bugfixes. As such it will save you a lot of headaches because other versions such as 1.6 are not maintained anymore, contain quite a few critical bugs and lack a lot of useful features.</p>
 
  <h3 id="grl-changes"><a class="h3-link" href="#grl-changes">Is there a complete list with all the changes from SFML 1.6 to SFML 2.x?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>This non-exhaustive list can be used as a starting point: <a href="http://en.sfml-dev.org/forums/index.php?topic=5343.0">SFML Forum</a><br>
+ <p>This non-exhaustive list can be used as a starting point: <a href="https://en.sfml-dev.org/forums/index.php?topic=5343.0">SFML Forum</a><br>
  It however does not contain all changes made between 1.6 and 2.0. It was written more than a year ago and since then a few major changes have been made including:</p>
  <ul>
   <li>Rewrite of the graphics API</li>
   <li>New <code>sf::Time</code> API</li>
   <li>Removal of the default built-in Arial font</li>
   <li>Replaced <code>getWidth()</code> and <code>getHeight()</code> with <code>getSize()</code></li>
-  <li>Naming convention change (further details and rationale <a href="http://en.sfml-dev.org/forums/index.php?topic=6709.0">here</a>)</li>
+  <li>Naming convention change (further details and rationale <a href="https://en.sfml-dev.org/forums/index.php?topic=6709.0">here</a>)</li>
  </ul>
 
  <h3 id="grl-3d"><a class="h3-link" href="#grl-3d">Will/does SFML support 3D?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
@@ -248,7 +248,7 @@
  </ul>
 
  <h3 id="grl-questions"><a class="h3-link" href="#grl-questions">Where can I ask questions?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>First make sure you've read the tutorials and the documentation, then check whether the question has already been asked before. If after that you still have a question <strong>regarding SFML</strong> in the <a href="http://en.sfml-dev.org/forums/">SFML forum</a>.</p>
+ <p>First make sure you've read the tutorials and the documentation, then check whether the question has already been asked before. If after that you still have a question <strong>regarding SFML</strong> in the <a href="https://en.sfml-dev.org/forums/">SFML forum</a>.</p>
  <p>Keep in mind that using SFML is not a very suitable way to <a href="#grl-learn">learn the bare basics of C++ programming</a>, and as such it is recommended that any questions regarding general C++ be asked in more adequate forums where people proficient in C++ can help you better.</p>
  <p>Additionally you also find people in the <a href="community.php">Official IRC chat</a>.</p>
 
@@ -259,7 +259,7 @@
 
  <h3 id="build-nightly"><a class="h3-link" href="#build-nightly">Are there any nightly builds?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>There are no official nightly builds, however there is a thread on the forum where unofficial nightly builds are provided for certain platforms.</p>
- <p><a href="http://en.sfml-dev.org/forums/index.php?topic=9513.0">Link to the thread</a></p>
+ <p><a href="https://en.sfml-dev.org/forums/index.php?topic=9513.0">Link to the thread</a></p>
 
  <h3 id="build-environment"><a class="h3-link" href="#build-environment">How do I setup my development environment to work with SFML?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>This is covered quite thoroughly in the tutorials section for some of the most popular IDEs.</p>
@@ -289,12 +289,12 @@
  <p>GCC (which implies MinGW as well) requires that the dependees (libraries that others depend on) are specified after the dependers (libraries that depend on others).</p>
  <p>An example of a GCC command line linking all modules would be as follows:</p>
  <pre><code>g++ main.o -o sfml-app -lsfml-graphics -lsfml-window -lsfml-audio -lsfml-network -lsfml-system</code></pre>
- <p>This is explained as well in <a href="http://en.sfml-dev.org/forums/index.php?topic=8518.msg57257#msg57257">this forum post</a>.</p>
+ <p>This is explained as well in <a href="https://en.sfml-dev.org/forums/index.php?topic=8518.msg57257#msg57257">this forum post</a>.</p>
  <p>In Code::Blocks for example you would have to make sure the dependees come after the dependers in the list of libraries to link against.</p>
 
  <h3 id="build-link-static"><a class="h3-link" href="#build-link-static">How do I link SFML statically?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>In order to link SFML statically, you'll need to setup your build environment to link against the static libraries of SFML. Static libraries are the ones with a <code>-s</code> suffix, for example <code>sfml-graphics-s</code>. Next, you'll need to add <code>SFML_STATIC</code> to the preprocessor option and, as always, you'll need to make sure to link the debug libraries (<code>-d</code> suffix) in debug mode and the release libraries (no <code>-d</code> suffix) in release mode.</p>
- <p>In the past, SFML included on Windows all its dependencies into the SFML libraries. However, this was changed to eliminate multiple issues and get a commonly expected behavior (<a href="http://en.sfml-dev.org/forums/index.php?topic=9362.0">full discussion</a>). Now, SFML behaves the same on Linux as well as on Windows, which however means, that you need to link SFML's dependencies on your own when linking statically. Since the dependencies aren't obvious to everyone, here's a listing:</p>
+ <p>In the past, SFML included on Windows all its dependencies into the SFML libraries. However, this was changed to eliminate multiple issues and get a commonly expected behavior (<a href="https://en.sfml-dev.org/forums/index.php?topic=9362.0">full discussion</a>). Now, SFML behaves the same on Linux as well as on Windows, which however means, that you need to link SFML's dependencies on your own when linking statically. Since the dependencies aren't obvious to everyone, here's a listing:</p>
  <p><strong>Windows</strong></p>
  <ul>
   <li>
@@ -465,10 +465,10 @@ while( window.isOpen() ) {
 
  <h3 id="audio-formats"><a class="h3-link" href="#audio-formats">What audio formats does SFML support?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>The Audio module is capable of playing wav, ogg/vorbis and flac files.<br>
- Unfortunately MP3 is covered by a license from Thompson Multimedia and thus support for it is not included in SFML. For more information regarding the MP3 license, see <a href="http://www.mp3licensing.com">http://www.mp3licensing.com</a>.</p>
+ MP3 is currently not supported, as the the patents and licenses around MP3 only ran out recently. We're happy to accept pull requests with a proper implementation.</p>
 
  <h3 id="audio-sound-problem"><a class="h3-link" href="#audio-sound-problem">Why can't I hear any sound?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>If everything compiles and seems to work correctly, but yet no sound is coming out of your speakers you should check the obvious. Ensure your speakers and plugged in and working correctly before assuming something is wrong with SFML. You can do this by opening one of your audio assets in another audio player such as Windows Media Player or <a href="http://www.videolan.org/">VLC</a>. If audio fails to play correctly there, then check that your PC audio is not muted and that the volume control on your speakers is turned up. Once it plays correctly in an external player then the problem may be with SFML.</p>
+ <p>If everything compiles and seems to work correctly, but yet no sound is coming out of your speakers you should check the obvious. Ensure your speakers and plugged in and working correctly before assuming something is wrong with SFML. You can do this by opening one of your audio assets in another audio player such as Windows Media Player or <a href="https://www.videolan.org/">VLC</a>. If audio fails to play correctly there, then check that your PC audio is not muted and that the volume control on your speakers is turned up. Once it plays correctly in an external player then the problem may be with SFML.</p>
 
  <h2 id="networking"><a class="h2-link" href="#networking">SFML Networking</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 
@@ -480,7 +480,7 @@ while( window.isOpen() ) {
   <li>Client-Client (Peer-to-Peer)</li>
  </ul>
  <p>Client-Server is generally easier to set up and often achieves higher performance than Client-Client due to the fact that dedicated servers are already configured to handle a large amount of traffic from multiple connected systems. When running a server application you can also be sure that clients can not manipulate the game state (cheat) themselves unless they have direct access to the server and can execute things there (which requires logging in etc.).</p>
- <p>When running in a Client-Client configuration, the first thing to overcome is the initial connection establishment. Home/Office gateways/routers are mostly configured by default to not accept any incoming connection requests. As such none of the sides can establish a connection to the other. There is a way of overcoming this called <a href="http://en.wikipedia.org/wiki/NAT_hole_punching">NAT hole punching</a>, however this is beyond the scope of this FAQ. Care has to be taken to ensure that nobody is able to cheat in this topology. This is usually done by mirroring the game state across all involved systems and performing checks and synchronization at every game step.</p>
+ <p>When running in a Client-Client configuration, the first thing to overcome is the initial connection establishment. Home/Office gateways/routers are mostly configured by default to not accept any incoming connection requests. As such none of the sides can establish a connection to the other. There is a way of overcoming this called <a href="https://en.wikipedia.org/wiki/NAT_hole_punching">NAT hole punching</a>, however this is beyond the scope of this FAQ. Care has to be taken to ensure that nobody is able to cheat in this topology. This is usually done by mirroring the game state across all involved systems and performing checks and synchronization at every game step.</p>
  <p>Once you have picked a suitable topology for your application, you can start to think about what kind of data you want to send between the systems. There is no general answer or recommendation for this as this is very application specific and you will have to rely on good judgment to make the right choices.</p>
 
  <h3 id="network-tcp-vs-udp"><a class="h3-link" href="#network-tcp-vs-udp">Should I use TCP or UDP sockets?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
@@ -508,11 +508,11 @@ while( window.isOpen() ) {
    <ul>
     <li>By private address e.g. 192.168.1.1 (192.168.<em>.</em>, 10.<em>.</em>.* and 172.16.<em>.</em> to 172.31.<em>.</em> are all private networks)</li>
     <li>By public address e.g. 123.123.123.123</li>
-    <li>By FQDN (Fully-Qualified Domain Name) e.g. <a href="http://www.sfml-dev.org/">www.sfml-dev.org</a> (www is the <em>hostname</em> and sfml-dev.org is the <em>domain name</em>)</li>
+    <li>By FQDN (Fully-Qualified Domain Name) e.g. <a href="https://www.sfml-dev.org/">www.sfml-dev.org</a> (www is the <em>hostname</em> and sfml-dev.org is the <em>domain name</em>)</li>
    </ul>
   </li>
   <li>Make sure that data transmission is not hindered by anything in the networking infrastructure (routers, firewalls etc.), if you are not sure about this, it most likely means that the port you are trying to use is either closed or not configured to be forwarded behind a NAT.</li>
-  <li>Make sure that data is really being sent and received by the hosts independent of your application. It might occur that you try to send data within your application, SFML doesn't report an error, but the operating system refuses to transmit it. To check if this problem exists, it is recommended that you install some form of packet capturing software such as <a href="http://www.wireshark.org/">Wireshark</a> on both systems.</li>
+  <li>Make sure that data is really being sent and received by the hosts independent of your application. It might occur that you try to send data within your application, SFML doesn't report an error, but the operating system refuses to transmit it. To check if this problem exists, it is recommended that you install some form of packet capturing software such as <a href="https://www.wireshark.org/">Wireshark</a> on both systems.</li>
   <li>Make sure that the data leaves the local network over the router. There is a possibility that the router blocks outgoing data as well.</li>
   <li>Make sure that the data arrives at the destination network router and is properly forwarded. If you are sure that the data leaves the origin network but never arrives at the destination network, try using a different port. Some ISPs have policies that block traffic from certain software and because they are not interested in using a better filtering mechanism, they decide to block the whole port instead of only traffic that really stems from the specific software. If you happen to use one of those ports, you are unlucky and should just try another.</li>
   <li>If you are sure that the port you use isn't blocked, in very very rare cases it might be an error somewhere on the way from the source the the destination within some ISPs network. If this is really the case, you are as good as out of luck and should just try again at another time or be prepared to make a lot of phone calls with a lot of uninterested people.</li>
@@ -527,7 +527,7 @@ while( window.isOpen() ) {
  <p>SFML does however provide <code>sf::Window::getSystemHandle()</code>. Using the handle you can do a bit of research and find out how to manipulate the window representation yourself using the functions of your window manager.</p>
 
  <h3 id="window-get-frame-time"><a class="h3-link" href="#window-get-frame-time">What happened to getFrameTime()?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p><code>getFrameTime()</code> was removed from SFML at the beginning of 2012. The reasoning for it can be found here: <a href="http://en.sfml-dev.org/forums/index.php?topic=6831.0">http://en.sfml-dev.org/forums/index.php?topic=6831.0</a></p>
+ <p><code>getFrameTime()</code> was removed from SFML at the beginning of 2012. The reasoning for it can be found here: <a href="https://en.sfml-dev.org/forums/index.php?topic=6831.0">https://en.sfml-dev.org/forums/index.php?topic=6831.0</a></p>
  <p>Users have to create an <code>sf::Clock</code> object now and keep time themselves. This has more advantages than disadvantages including:</p>
  <ul>
   <li>Correct time reporting (<code>getFrameTime()</code> reported the time spent <strong>during the last frame</strong>)</li>
@@ -610,7 +610,7 @@ std::size_t pos = cpp_string.find( sfml_string );</code></pre>
 
  <h3 id="prog-global"><a class="h3-link" href="#prog-global">Why shouldn't I use global variables?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>Usage of global variables is considered as bad programming practice. They might seem like an easy solution to your initial problem but they will become a headache later on when the project gets bigger or you are unaware of the implications of declaring something in global scope.</p>
- <p>One of the most dangerous things of declaring non-POD (<a href="http://en.wikipedia.org/wiki/Plain_old_data_structure">plain old data</a>) objects in global scope is that you can never be sure when they are actually constructed and when they will be destroyed. This means that if they need to own resources you need to make sure they are available before the object is created, which can be tricky to do if that takes place before your main() code gets executed. Analogous to that, the object might get destroyed after your main() returns thus leaving resource destruction up to some self-clean-up mechanism or in the worst case to a resource manager that already got destroyed before main() returned. This leads to leaks and is very bad practice. Furthermore the initialization order and destruction order is not well-defined. It is only defined <em>within one translation unit</em> as being dependent on the order of declaration, however you can't count on global variables from different translation units being constructed or destroyed in a specific order, it is pure luck here.</p>
+ <p>One of the most dangerous things of declaring non-POD (<a href="https://en.wikipedia.org/wiki/Plain_old_data_structure">plain old data</a>) objects in global scope is that you can never be sure when they are actually constructed and when they will be destroyed. This means that if they need to own resources you need to make sure they are available before the object is created, which can be tricky to do if that takes place before your main() code gets executed. Analogous to that, the object might get destroyed after your main() returns thus leaving resource destruction up to some self-clean-up mechanism or in the worst case to a resource manager that already got destroyed before main() returned. This leads to leaks and is very bad practice. Furthermore the initialization order and destruction order is not well-defined. It is only defined <em>within one translation unit</em> as being dependent on the order of declaration, however you can't count on global variables from different translation units being constructed or destroyed in a specific order, it is pure luck here.</p>
  <p>Another problem with global variables is that sooner or later you are going to have so many of them that they will clog up your namespace. Unless you declare them in a separate namespace they will all be in the same giant one: the global one. If you happen to declare a local variable in one of your functions that happens to have the same name as the global one you are actually referring to, you will not notice the global variable get shadowed unless you have certain warnings switched on. Some people suggest using Hungarian notation to solve this problem but the modern demeanor tends to avoid Hungarian notation as well.</p>
  <p>Furthermore, global variables work against code modularity. Global variables can be accessed from anywhere and thus bypass well-defined interfaces between modules. This introduces hidden dependencies in the code, which is not only an additional maintenance burden, but can lead to very difficult-to-track bugs. Simply because you are not able to control the access to global variables, as they can be changed anywhere, at any time.</p>
  <p>As if this were not enough, global variables also play very badly in multi-threaded environments. Access to global variables from different threads must be protected by mutexes. This requires additional care by the developer accessing the variable and often leads much more synchronization overhead than necessary, because variables are protected prematurely. On the other hand, unprotected global variables can silently introduce bugs if an application starts to use multiple threads.</p>
@@ -694,10 +694,10 @@ std::size_t pos = cpp_string.find( sfml_string );</code></pre>
 
  <h3 id="tr-grl-i-found-a-bug"><a class="h3-link" href="#tr-grl-i-found-a-bug">I found a bug!</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>Most of the time any unexpected behavior is a result of misunderstanding how to use SFML. Out of many bug reports only few of them turn out to be real bugs <strong>which are caused by SFML itself and nothing else</strong>.</p>
- <p>If you think you have found a bug and are still using SFML 1.6, note that support for 1.6 had ceased long ago. It is highly recommended to upgrade to 2.4.2. Any bug reports made for SFML 1.6 will be ignored unless they were carried over to 2.4.2 as well, however this is very unlikely. If you are using 2.4.2, try building the latest master revision available on GitHub. There are many things that might have already been fixed between the release which is available on the site and the latest development version.</p>
- <p>If the bug is still present in the latest SFML version, try to produce a <a href="#tr-grl-minimal">minimal compilable code example</a> that displays the bug and nothing else. That way the developers and others can focus on why it is occurring.</p>
+ <p>If you think you have found a bug and are still using SFML 1.6, note that support for 1.6 had ceased long ago. It is highly recommended to upgrade to the latest SFML version. Any bug reports made for SFML 1.6 will be ignored unless they were carried over to the latest SFML version as well, however this is very unlikely. If you are using the latest SFML version, try building the latest master revision available on <a href="https://github.com/SFML/SFML/">GitHub</a>. There are many things that might have already been fixed between the release which is available on the site and the latest development version.</p>
+ <p>If the bug is still present in the latest master version, try to produce a <a href="#tr-grl-minimal">minimal compilable code example</a> that displays the bug and nothing else. That way the developers and others can focus on why it is occurring.</p>
  <p>If you can reproduce what you think is a bug, if you have another computer at your disposal, try to run it there as well. If the bug does not occur there, try to reconfigure the corresponding hardware/software settings on the first PC. A lot of strange behavior is a result of misconfigured/faulty software/drivers. <strong>WARNING: Trying to report a bug that is a result of the usage of beta drivers is not a good idea. The source of the problem does not lie within the responsibility of the SFML developers and as such they can't do much to fix it themselves.</strong></p>
- <p>When you are sure that the bug is a result of SFML internals and is platform independent, you can go ahead and post in the forum of the package in question, and don't forget to provide a precise description of your problem, the version of SFML you're using, your system configuration, and the compilable code, and if the situation requires, the logs of your compiler and/or linker. Also make sure that the bug hasn't already been reported (use the <a href="http://en.sfml-dev.org/forums/index.php?action=search">search function</a>), confirmed (look on the <a href="https://github.com/SFML/SFML/issues?page=1&amp;state=open">issue tracker</a>) or even resolved in the latest source (check also the <a href="https://github.com/SFML/SFML/issues?page=1&amp;state=closed">closed issues</a>).</p>
+ <p>When you are sure that the bug is a result of SFML internals and is platform independent, you can go ahead and post in the forum of the package in question, and don't forget to provide a precise description of your problem, the version of SFML you're using, your system configuration, and the compilable code, and if the situation requires, the logs of your compiler and/or linker. Also make sure that the bug hasn't already been reported (use the <a href="https://en.sfml-dev.org/forums/index.php?action=search">search function</a>), confirmed (look on the <a href="https://github.com/SFML/SFML/issues?page=1&amp;state=open">issue tracker</a>) or even resolved in the latest source (check also the <a href="https://github.com/SFML/SFML/issues?page=1&amp;state=closed">closed issues</a>).</p>
 
  <h3 id="tr-grl-minimal"><a class="h3-link" href="#tr-grl-minimal">What is a minimal code?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>A minimal code example is a snippet of source code that is compilable with very little effort.</p>
@@ -731,7 +731,7 @@ int main() {
 
     return EXIT_SUCCESS;
 }</code></pre>
- <p>See also <a href="http://en.sfml-dev.org/forums/index.php?topic=5559.msg36368#msg36368">the rules</a> for further details.</p>
+ <p>See also <a href="https://en.sfml-dev.org/forums/index.php?topic=5559.msg36368#msg36368">the rules</a> for further details.</p>
 
  <h3 id="tr-grl-obtain-minimal"><a class="h3-link" href="#tr-grl-obtain-minimal">And how can I easily obtain this minimal code?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>Easy :</p>
@@ -815,7 +815,7 @@ int main() {
  <h2 id="licensing"><a class="h2-link" href="#licensing">Licensing</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 
  <h3 id="lic-license"><a class="h3-link" href="#lic-license">What license does SFML have?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>SFML is under the <a href="http://www.opensource.org/licenses/zlib-license.php">zlib/png license</a>. You can use SFML for both open-source and proprietary projects, including paid or commercial ones. If you use SFML in your projects, a credit or mention is appreciated, but is not required.</p>
+ <p>SFML is under the <a href="https://www.opensource.org/licenses/zlib-license.php">zlib/png license</a>. You can use SFML for both open-source and proprietary projects, including paid or commercial ones. If you use SFML in your projects, a credit or mention is appreciated, but is not required.</p>
 
  <h3 id="lic-commercial"><a class="h3-link" href="#lic-commercial">Can I use SFML in commercial applications?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>Yes, you may use SFML in commercial applications. You don't even have to mention that you used SFML in your application, but the zlib license states that if you do mention it, you are not allowed to state that you yourself are the author of SFML. You are also not allowed to modify SFML and represent it as being the original.</p>
