@@ -10,6 +10,7 @@
 <h1>Changelog</h1>
 
 <ul>
+ <li><a href="#sfml-2.5.1">SFML 2.5.1</a></li>
  <li><a href="#sfml-2.5.0">SFML 2.5.0</a></li>
  <li><a href="#sfml-2.4.2">SFML 2.4.2</a></li>
  <li><a href="#sfml-2.4.1">SFML 2.4.1</a></li>
@@ -26,6 +27,50 @@
  <li><a href="#sfml-1.3">SFML 1.3</a></li>
  <li><a href="#sfml-1.2">SFML 1.2</a></li>
  <li><a href="#sfml-1.1">SFML 1.1</a></li>
+</ul>
+
+<h2 id="sfml-2.5.1"><a class="h2-link" href="#sfml-2.5.1">SFML 2.5.1</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
+<h3 id="2.5.1-general"><a class="h3-link" href="#2.5.1-general">General</a></h3>
+<ul>
+  <li>Various CMake fixes (<a href="https://github.com/SFML/SFML/pull/1414">#1414</a>, <a href="https://github.com/SFML/SFML/pull/1416">#1416</a>, <a href="https://github.com/SFML/SFML/pull/1436">#1436</a>, <a href="https://github.com/SFML/SFML/pull/1439">#1439</a>, <a href="https://github.com/SFML/SFML/pull/1467">#1467</a>, <a href="https://github.com/SFML/SFML/pull/1470">#1470</a>)</li>
+  <li>Fixed the installation of pkg-config files (<a href="https://github.com/SFML/SFML/pull/1466">#1466</a>)</li>
+  <li>Fixed two conversion warnings (<a href="https://github.com/SFML/SFML/pull/1454">#1454</a>)</li>
+  <li>[Android] Fixes all symbols in sfml-main are hidden (<a href="https://github.com/SFML/SFML/pull/1457">#1457</a>, <a href="https://github.com/SFML/SFML/pull/1460">#1460</a>)</li>
+  <li>[Android] Fixed some #define flag problem (<a href="https://github.com/SFML/SFML/pull/1458">#1458</a>)</li>
+  <li>[Android] Fix deadlock in main cleanup (<a href="https://github.com/SFML/SFML/pull/1265">#1265</a>)</li>
+  <li>[iOS] Modernized toolchain file (<a href="https://github.com/SFML/SFML/pull/1411">#1411</a>)</li>
+  <li>[iOS] Check that SFML/Main.hpp is used (<a href="https://github.com/SFML/SFML/pull/1412">#1412</a>)</li>
+</ul>
+
+<h3 id="2.5.1-window"><a class="h3-link" href="#2.5.1-window">Window</a></h3>
+<h4>Bugfixes</h4>
+<ul>
+  <li>[iOS] Use default supported rotations when none are specified (<a href="https://github.com/SFML/SFML/pull/1417">#1417</a>)</li>
+  <li>[iOS] Fixed autocomplete window overlaps keyboard (<a href="https://github.com/SFML/SFML/pull/1473">#1473</a>, <a href="https://github.com/SFML/SFML/pull/1482">#1482</a>)</li>
+  <li>[Linux] Fixed dual monitor issue (<a href="https://github.com/SFML/SFML/pull/1226">#1226</a>, <a href="https://github.com/SFML/SFML/pull/1238">#1238</a>)</li>
+  <li>[Linux] Fixed the Unix clipboard implementation causing an abort due to internal data races in Xlib (<a href="https://github.com/SFML/SFML/pull/1437">#1437</a>)</li>
+  <li>[macOS] Added additional system cursors (<a href="https://github.com/SFML/SFML/pull/1401">#1401</a>, <a href="https://github.com/SFML/SFML/pull/1413">#1413</a>, <a href="https://github.com/SFML/SFML/pull/1425">#1425</a>)</li>
+  <li>[Windows] Fixed swapped colors for custom cursors (<a href="https://github.com/SFML/SFML/pull/1464">#1464</a>, <a href="https://github.com/SFML/SFML/pull/1465">#1465</a>, <a href="https://github.com/SFML/SFML/pull/1491">#1491</a>)</li>
+</ul>
+
+<h3 id="2.5.1-graphics"><a class="h3-link" href="#2.5.1-graphics">Graphics</a></h3>
+<h4>Bugfixes</h4>
+<ul>
+  <li>Fixed a bug in which a sf::RenderTexture would not be re-activated after being re-created (<a href="https://github.com/SFML/SFML/pull/1438">#1438</a>)</li>
+  <li>Fixed sf::RenderTextureImplFBO's destructor incorrectly triggering deletion of other sf::RenderTextureImplFBO's active FBOs (<a href="https://github.com/SFML/SFML/pull/1440">#1440</a>)</li>
+  <li>Fix sf::RenderWindow::setActive incorrectly trying to unbind an FBO during deactivation <a href="https://github.com/SFML/SFML/pull/1442">(#1442</a>)</li>
+  <li>Fixed sf::RenderTexture::display() dereferencing a NULL pointer when being called before sf::RenderTexture::create() (<a href="https://github.com/SFML/SFML/pull/1446">#1446</a>)</li>
+  <li>Fixed bug in sf::Text when applying an outline color/thickness (<a href="https://github.com/SFML/SFML/pull/1176">#1176</a>)</li>
+  <li>Squash duplicated sf::Fon` glyphs to single chars (<a href="https://github.com/SFML/SFML/pull/1461">#1461</a>)</li>
+  <li>Fixed two issues with glyph sub-pixel positioning (<a href="https://github.com/SFML/SFML/pull/1452">#1452</a>)</li>
+  <li>Reduced context locking & unlocking while creating textures (<a href="https://github.com/SFML/SFML/pull/1459">#1459</a>)</li>
+  <li>Fixed the error message when the wrong bitmap font size is selected (<a href="https://github.com/SFML/SFML/pull/1456">#1456</a>, <a href="https://github.com/SFML/SFML/pull/1474">#1474</a>, <a href="https://github.com/SFML/SFML/pull/1492">#1492</a>)</li>
+</ul>
+
+<h3 id="2.5.1-audio"><a class="h3-link" href="#2.5.1-audio">Audio</a></h3>
+<h4>Bugfixes</h4>
+<ul>
+  <li>Fixed performance issue with reading WAV files (<a href="https://github.com/SFML/SFML/pull/1450">#1450</a>)</li>
 </ul>
 
 <h2 id="sfml-2.5.0"><a class="h2-link" href="#sfml-2.5.0">SFML 2.5.0</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
