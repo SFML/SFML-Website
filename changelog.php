@@ -40,6 +40,7 @@
   <li>[Android] Fix deadlock in main cleanup (<a href="https://github.com/SFML/SFML/pull/1265">#1265</a>)</li>
   <li>[iOS] Modernized toolchain file (<a href="https://github.com/SFML/SFML/pull/1411">#1411</a>)</li>
   <li>[iOS] Check that SFML/Main.hpp is used (<a href="https://github.com/SFML/SFML/pull/1412">#1412</a>)</li>
+  <li>[macOS] Add -ObjC flag to fix static linking on macOS (<a href="https://github.com/SFML/SFML/pull/1485">#1485</a>)</li>
 </ul>
 
 <h3 id="2.5.1-window"><a class="h3-link" href="#2.5.1-window">Window</a></h3>
@@ -48,6 +49,7 @@
   <li>[iOS] Use default supported rotations when none are specified (<a href="https://github.com/SFML/SFML/pull/1417">#1417</a>)</li>
   <li>[iOS] Fixed autocomplete window overlaps keyboard (<a href="https://github.com/SFML/SFML/pull/1473">#1473</a>, <a href="https://github.com/SFML/SFML/pull/1482">#1482</a>)</li>
   <li>[Linux] Fixed dual monitor issue (<a href="https://github.com/SFML/SFML/pull/1226">#1226</a>, <a href="https://github.com/SFML/SFML/pull/1238">#1238</a>)</li>
+  <li>[Linux] Fixed issue where fullscreen window didn't go over task bars on top and left on in Ubuntu (<a href="https://github.com/SFML/SFML/pull/1224">#1224</a>)</li>
   <li>[Linux] Fixed the Unix clipboard implementation causing an abort due to internal data races in Xlib (<a href="https://github.com/SFML/SFML/pull/1437">#1437</a>)</li>
   <li>[macOS] Added additional system cursors (<a href="https://github.com/SFML/SFML/pull/1401">#1401</a>, <a href="https://github.com/SFML/SFML/pull/1413">#1413</a>, <a href="https://github.com/SFML/SFML/pull/1425">#1425</a>)</li>
   <li>[Windows] Fixed swapped colors for custom cursors (<a href="https://github.com/SFML/SFML/pull/1464">#1464</a>, <a href="https://github.com/SFML/SFML/pull/1465">#1465</a>, <a href="https://github.com/SFML/SFML/pull/1491">#1491</a>)</li>
