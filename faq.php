@@ -151,7 +151,7 @@
  <!--p>You can find a more specific presentation of its features on <a href="features.php">this page</a>.</p//-->
 
  <h3 id="grl-platforms"><a class="h3-link" href="#grl-platforms">On which platforms is SFML currently available?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>SFML 2.3 is currently available and fully functional on Windows (8, 7, Vista, XP), Linux and macOS. SFML works on both 32 and 64 bit systems. If older Windows versions need to be supported, it should be possible to use SFML 2.0 instead (see <a href="https://github.com/SFML/SFML/commit/cd68d662043c2305990d1b6b559b0138bd77af14">the commit</a> for removal of Windows 9x and similar). Since SFML 2.2, there has also been experimental support for iOS and Android.</p>
+ <p>The latest version of SFML is currently available and fully functional on Windows (10, 8, 7, Vista, XP), Linux and macOS. SFML works on both 32 and 64 bit systems. If older Windows versions need to be supported, it should be possible to use SFML 2.0 instead (see <a href="https://github.com/SFML/SFML/commit/cd68d662043c2305990d1b6b559b0138bd77af14">the commit</a> for removal of Windows 9x and similar). Since SFML 2.2, there has also been experimental support for iOS and Android, which have taken great shape over the years and should be working quite stable.</p>
 
  <h3 id="grl-languages"><a class="h3-link" href="#grl-languages">Which programming languages are supported by SFML?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>SFML is implemented in C++. That said, several <a href="download/bindings.php">bindings</a> have been created for other languages that allow SFML to be used from C, C#, C++/CLI, D, Ruby, OCaml, Java, Python and VB.NET.</p>
@@ -193,11 +193,11 @@
  <p>The previous statement is recommendable only if you have a minimal use for 3D, as it becomes very hard and tedious to manage full 3D functionality through graphics pipeline only.</p>
 
  <h3 id="grl-request"><a class="h3-link" href="#grl-request">I want to propose a new feature!</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>See our <a href="contribute.php#requesting-features">Contribution Guidelines</a>.</p>
+ <p>See our <a href="/contribute.php#requesting-features">Contribution Guidelines</a>.</p>
 
  <h3 id="grl-learn"><a class="h3-link" href="#grl-learn">Is using SFML a good way to learn to program (in C++)?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>In general, you can learn to program any way you want. The question is: what is the most <strong>effective</strong> way to learn to program? The unanimous answer to this question is, don't start with SFML if you are trying to grasp the basic language features of C++. SFML makes use of basic as well as advanced features of the C++ language. You might be able to achieve something in your first hours of C++ and SFML but whether it is usable and maintainable is another question. It is probable that you would have learned more and faster if you just stuck to the standard libraries C++ already provides. This allows you to focus on learning the language and not the SFML API at the same time. There are many good examples of text-based games made using just stdin and stdout.</p>
- <p>Where you learn to program (in C++) from is also totally up to you. However it is recommended to always take examples/tutorials available on the internet with a pinch of salt. They might contain bad habits of the writer which are not apparent to a newcomer. The safest way to learn to program is probably accompanied by a book written by a reputable author who is actively involved in the development of the language (see <a href="https://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list">this list</a>). This ensures that they grasp the important aspects of the language and can teach you to program effectively as well. Contrary to what many newcomers believe, C++ is still evolving and has done so even more over the last years with the standardization of C++11 and C++14. Learning from an older book or internet source might therefore not teach you all the aspects of the language there are and worse teach you old practices, which are no longer recommended. It is therefore recommended that you actively seek to learn about these new features on your own after you have grasped the basics.</p>
+ <p>Where you learn to program (in C++) from is also totally up to you. However it is recommended to always take examples/tutorials available on the internet with a pinch of salt. They might contain bad habits of the writer which are not apparent to a newcomer. The safest way to learn to program is probably accompanied by a book written by a reputable author who is actively involved in the development of the language (see <a href="https://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list">this list</a>). This ensures that they grasp the important aspects of the language and can teach you to program effectively as well. Contrary to what many newcomers believe, C++ is still evolving and has done so even more over the last years with the standardization of C++11, C++14 and C++17. Learning from an older book or internet source might therefore not teach you all the aspects of the language there are and worse teach you old practices, which are no longer recommended. It is therefore recommended that you actively seek to learn about these new features on your own after you have grasped the basics.</p>
  <p>If you are unsure when you might consider yourself ready for SFML, here is a checklist of language features that are highly recommended to know when using SFML.</p>
  <p>Basics, required to program with SFML:</p>
  <ul>
@@ -214,7 +214,7 @@
   <li>Type casting</li>
   <li>Advanced OOP, inheritance, polymorphism</li>
   <li>Advanced program structure, header files, linking</li>
-  <li><strong>Debugging techniques</strong> This is important to be able to help yourself when the situation arises.</li>
+  <li><strong>Debugging techniques:</strong> This is important to be able to help yourself when the situation arises.</li>
  </ul>
  <p>Advanced concepts, not all required to program with SFML but good to know:</p>
  <ul>
@@ -254,15 +254,15 @@
  <h2 id="build-use"><a class="h2-link" href="#build-use">Building and Using SFML</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 
  <h3 id="build-build"><a class="h3-link" href="#build-build">How do I build SFML?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>Tutorials for each version of SFML can be found <a href="tutorials/">here</a>. The first part of these tutorials is aimed at getting started, which includes building SFML with CMake and your build tool of choice, as well as setting up your IDE (if you use one) for use with SFML.</p>
+ <p>Tutorials for each version of SFML can be found <a href="/tutorials/">here</a>. The first part of these tutorials is aimed at getting started, which includes building SFML with CMake and your build tool of choice, as well as setting up your IDE (if you use one) for use with SFML.</p>
 
- <h3 id="build-nightly"><a class="h3-link" href="#build-nightly">Are there any nightly builds?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>There are no official nightly builds, however there is a thread on the forum where unofficial nightly builds are provided for certain platforms.</p>
- <p><a href="https://en.sfml-dev.org/forums/index.php?topic=9513.0">Link to the thread</a></p>
+ <h3 id="build-nightly"><a class="h3-link" href="#build-nightly">Are there any "nightly builds"?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
+ <p>Our CI (continuous integration) system is building every commit on the master branch and saving the built binaries as artifacts, ready to be downloaded. You can find them either by commit hash or branch name.</p>
+ <p><a href="/artifacts/">Link to the artifacts</a></p>
 
  <h3 id="build-environment"><a class="h3-link" href="#build-environment">How do I setup my development environment to work with SFML?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>This is covered quite thoroughly in the tutorials section for some of the most popular IDEs.</p>
- <p>Check out the Getting Started sections of the <a href="learn.php">tutorials</a>.</p>
+ <p>Check out the Getting Started sections of the <a href="learn.php">/tutorials/</a>.</p>
 
  <h3 id="build-link"><a class="h3-link" href="#build-link">What and how do I link to use SFML?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>When you want to use SFML, you need to link to the library files that provide the functionality you make use of in your application.</p>
