@@ -45,10 +45,7 @@
     <li>freetype</li>
     <li>x11</li>
     <li>xrandr</li>
-    <li>xcb</li>
-    <li>x11-xcb</li>
-    <li>xcb-randr</li>
-    <li>xcb-image</li>
+    <li>udev</li>
     <li>opengl</li>
     <li>flac</li>
     <li>ogg</li>
