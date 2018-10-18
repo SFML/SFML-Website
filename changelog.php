@@ -63,7 +63,7 @@
   <li>Fix sf::RenderWindow::setActive incorrectly trying to unbind an FBO during deactivation <a href="https://github.com/SFML/SFML/pull/1442">(#1442</a>)</li>
   <li>Fixed sf::RenderTexture::display() dereferencing a NULL pointer when being called before sf::RenderTexture::create() (<a href="https://github.com/SFML/SFML/pull/1446">#1446</a>)</li>
   <li>Fixed bug in sf::Text when applying an outline color/thickness (<a href="https://github.com/SFML/SFML/pull/1176">#1176</a>)</li>
-  <li>Squash duplicated sf::Fon` glyphs to single chars (<a href="https://github.com/SFML/SFML/pull/1461">#1461</a>)</li>
+  <li>Squash duplicated sf::Font glyphs to single chars (<a href="https://github.com/SFML/SFML/pull/1461">#1461</a>)</li>
   <li>Fixed two issues with glyph sub-pixel positioning (<a href="https://github.com/SFML/SFML/pull/1452">#1452</a>)</li>
   <li>Reduced context locking & unlocking while creating textures (<a href="https://github.com/SFML/SFML/pull/1459">#1459</a>)</li>
   <li>Fixed the error message when the wrong bitmap font size is selected (<a href="https://github.com/SFML/SFML/pull/1456">#1456</a>, <a href="https://github.com/SFML/SFML/pull/1474">#1474</a>, <a href="https://github.com/SFML/SFML/pull/1492">#1492</a>)</li>
