@@ -19,7 +19,7 @@
   <li><a href="#grl-version">What version of SFML should I use?</a></li>
   <li><a href="#grl-changes">Is there a complete list with all the changes from SFML 1.6 to SFML 2.x?</a></li>
   <li><a href="#grl-3d">Will/does SFML support 3D?</a></li>
-  <li><a href="#grl-reqeust">I want to propose a new feature!</a></li>
+  <li><a href="#grl-request">I want to propose a new feature!</a></li>
   <li><a href="#grl-learn">Is using SFML a good way to learn to program (in C++)?</a></li>
   <li><a href="#grl-questions">Where can I ask questions?</a></li>
  </ul>
@@ -167,7 +167,6 @@
   <li>xrandr</li>
   <li>udev</li>
   <li>freetype</li>
-  <li>jpeg</li>
   <li>openal</li>
   <li>flac</li>
   <li>vorbis</li>
@@ -193,7 +192,7 @@
  <p>No, and the SFML Team has decided to keep the library as a way to handle 2D graphics with ease and hardware acceleration, so in short there won't be support for 3D in the future either. However you can use libraries such as Irrlicht with SFML as a window creator. You could also use raw OpenGL to implement 3D and have it alongside your 2D rendering in SFML without problems.</p>
  <p>The previous statement is recommendable only if you have a minimal use for 3D, as it becomes very hard and tedious to manage full 3D functionality through graphics pipeline only.</p>
 
- <h3 id="grl-reqeust"><a class="h3-link" href="#grl-reqeust">I want to propose a new feature!</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
+ <h3 id="grl-request"><a class="h3-link" href="#grl-request">I want to propose a new feature!</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>See our <a href="contribute.php#requesting-features">Contribution Guidelines</a>.</p>
 
  <h3 id="grl-learn"><a class="h3-link" href="#grl-learn">Is using SFML a good way to learn to program (in C++)?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
@@ -250,9 +249,9 @@
  <h3 id="grl-questions"><a class="h3-link" href="#grl-questions">Where can I ask questions?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>First make sure you've read the tutorials and the documentation, then check whether the question has already been asked before. If after that you still have a question <strong>regarding SFML</strong> in the <a href="https://en.sfml-dev.org/forums/">SFML forum</a>.</p>
  <p>Keep in mind that using SFML is not a very suitable way to <a href="#grl-learn">learn the bare basics of C++ programming</a>, and as such it is recommended that any questions regarding general C++ be asked in more adequate forums where people proficient in C++ can help you better.</p>
- <p>Additionally you also find people in the <a href="community.php">Official IRC chat</a>.</p>
+ <p>Additionally you also find people in the <a href="community.php">Official IRC chat or Discord server</a>.</p>
 
- <h2 id="buil-use"><a class="h2-link" href="#build-use">Building and Using SFML</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
+ <h2 id="build-use"><a class="h2-link" href="#build-use">Building and Using SFML</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 
  <h3 id="build-build"><a class="h3-link" href="#build-build">How do I build SFML?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>Tutorials for each version of SFML can be found <a href="tutorials/">here</a>. The first part of these tutorials is aimed at getting started, which includes building SFML with CMake and your build tool of choice, as well as setting up your IDE (if you use one) for use with SFML.</p>
@@ -313,7 +312,6 @@
     <li>sfml-window</li>
     <li>opengl32</li>
     <li>freetype</li>
-    <li>jpeg</li>
    </ul>
   </li>
   <li>
@@ -360,7 +358,7 @@
  <h3 id="graphics-image-formats"><a class="h3-link" href="#graphics-image-formats">What image formats does SFML support?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>SFML can load the following file formats: bmp, dds, jpg, png, tga, psd<br>
 But keep in mind that not all variants of each format are supported.</p>
- <p>Also see the official <a href="documentation/2.2/classsf_1_1Image.php#a9e4f2aa8e36d0cabde5ed5a4ef80290b">documentation</a>.</p>
+ <p>Also see the official <a href="/documentation/latest/classsf_1_1Image.php#a9e4f2aa8e36d0cabde5ed5a4ef80290b">documentation</a>.</p>
 
  <h3 id="graphics-white-rect"><a class="h3-link" href="#graphics-white-rect">Why do I get a white/black rectangle instead of my texture?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>This is due to a premature destruction of the <code>sf::Texture</code>. An <code>sf::Sprite</code> only holds a reference to the <code>sf::Texture</code> bound to it. You have to keep the <code>sf::Texture</code> "alive" as long as the sprite uses it. It can also be that you never bound a texture to the sprite, hence you need to call <code>setTexture()</code> with the initial texture it is to use.</p>
@@ -480,7 +478,7 @@ while( window.isOpen() ) {
   <li>Client-Client (Peer-to-Peer)</li>
  </ul>
  <p>Client-Server is generally easier to set up and often achieves higher performance than Client-Client due to the fact that dedicated servers are already configured to handle a large amount of traffic from multiple connected systems. When running a server application you can also be sure that clients can not manipulate the game state (cheat) themselves unless they have direct access to the server and can execute things there (which requires logging in etc.).</p>
- <p>When running in a Client-Client configuration, the first thing to overcome is the initial connection establishment. Home/Office gateways/routers are mostly configured by default to not accept any incoming connection requests. As such none of the sides can establish a connection to the other. There is a way of overcoming this called <a href="https://en.wikipedia.org/wiki/NAT_hole_punching">NAT hole punching</a>, however this is beyond the scope of this FAQ. Care has to be taken to ensure that nobody is able to cheat in this topology. This is usually done by mirroring the game state across all involved systems and performing checks and synchronization at every game step.</p>
+ <p>When running in a Client-Client configuration, the first thing to overcome is the initial connection establishment. Home/Office gateways/routers are mostly configured by default to not accept any incoming connection requests. As such none of the sides can establish a connection to the other. There is a way of overcoming this called <a href="https://en.wikipedia.org/wiki/Hole_punching_(networking)">NAT hole punching</a>, however this is beyond the scope of this FAQ. Care has to be taken to ensure that nobody is able to cheat in this topology. This is usually done by mirroring the game state across all involved systems and performing checks and synchronization at every game step.</p>
  <p>Once you have picked a suitable topology for your application, you can start to think about what kind of data you want to send between the systems. There is no general answer or recommendation for this as this is very application specific and you will have to rely on good judgment to make the right choices.</p>
 
  <h3 id="network-tcp-vs-udp"><a class="h3-link" href="#network-tcp-vs-udp">Should I use TCP or UDP sockets?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
@@ -546,7 +544,7 @@ while( window.isOpen() ) {
  <h3 id="system-string-convert"><a class="h3-link" href="#system-string-convert">How do I convert from sf::String to &lt;type&gt; and vice-versa?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>For conversions to <code>sf::String</code>, you can just construct the <code>sf::String</code> directly from whatever object you already have. </p>
  <pre><code>sf::String sfml_string( cpp_string );</code></pre>
- <p>There are enough constructors that take care of implicit conversion from all standard C++ string types. If you want to see what these look like, take a look in the <a href="documentation/2.2/classsf_1_1String.php"><code>sf::String</code> documentation</a>. If you want to convert from a non-C++ string to <code>sf::String</code>, it is recommended to first convert to a C++ string and then to an <code>sf::String</code>. Since any library using custom string types should provide support for this, this shouldn't be problematic.</p>
+ <p>There are enough constructors that take care of implicit conversion from all standard C++ string types. If you want to see what these look like, take a look in the <a href="/documentation/latest/classsf_1_1String.php"><code>sf::String</code> documentation</a>. If you want to convert from a non-C++ string to <code>sf::String</code>, it is recommended to first convert to a C++ string and then to an <code>sf::String</code>. Since any library using custom string types should provide support for this, this shouldn't be problematic.</p>
  <p>For conversions from <code>sf::String</code> to any other custom string type, it is also recommended to first convert to a C++ string then from C++ string to that type.</p>
  <p><code>sf::String</code> supports implicit conversion to <code>std::string</code> and <code>std::wstring</code>, so things like</p>
  <pre><code class="cpp">std::cout << sfml_string << std::endl;
@@ -572,7 +570,7 @@ std::size_t pos = cpp_string.find( sfml_string );</code></pre>
  <h3 id="system-mutex"><a class="h3-link" href="#system-mutex">How do I use sf::Mutex?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p><code>sf::Mutex</code> is used to lock (acquire) a resource for exclusive access and unlock (release) a resource when exclusive access is no longer necessary. If you try to lock a mutex that has already been locked by another thread, you will have no choice but to wait for the locking thread to release the lock in order for execution to proceed.</p>
  <p>It is good practice to not lock/unlock an <code>sf::Mutex</code> directly, but to rely on RAII <code>sf::Lock</code> objects to automatically unlock their owned mutex on destruction.</p>
- <p>For more information on <code>sf::Mutex</code> and <code>sf::Lock</code>, refer to the <a href="tutorials/2.1/system-thread.php#protecting-shared-data">official documentation</a>.</p>
+ <p>For more information on <code>sf::Mutex</code> and <code>sf::Lock</code>, refer to the <a href="/tutorials/latest/system-thread.php#protecting-shared-data">official documentation</a>.</p>
 
  <h3 id="system-thread-container"><a class="h3-link" href="#system-thread-container">Why can't I store my sf::Thread in an STL container?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p><code>sf::Thread</code> inherits from <code>sf::NonCopyable</code> meaning you cannot copy or assign an <code>sf::Thread</code>. This is however a requirement to use a data type with an STL container.</p>
@@ -621,7 +619,7 @@ std::size_t pos = cpp_string.find( sfml_string );</code></pre>
  <p>If you happen to use a C++11 compliant compiler then you can be sure that many Standard Library objects you pass around will have move constructors defined which makes it less painful to "pass by value" since if certain conditions are met, the compiler will use the Rvalue reference version of certain functions to speed up execution by a substantial amount.</p>
 
  <h3 id="prog-singleton"><a class="h3-link" href="#prog-singleton">Why is the singleton pattern not a good one?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>In short, singleton classes are global variables, they just hide it better. As a result, they share almost all of the related problems (construction/destruction time, implicit dependencies, multithreading). The fact that singletons are referred to as an OOP design pattern makes people think "it's OOP, so it must be good", which is not only a generally questionable conclusion, but particularly in this case. Having a class around it doesn't make code object-oriented; on the contrary, core OOP principles such as modularity or encapsulation are broken in the case of singletons.</p>
+ <p>In short, singleton classes are global variables, they just hide it better. As a result, they share almost all of the related problems (construction/destruction time, implicit dependencies, multi-threading). The fact that singletons are referred to as an OOP design pattern makes people think "it's OOP, so it must be good", which is not only a generally questionable conclusion, but particularly in this case. Having a class around it doesn't make code object-oriented; on the contrary, core OOP principles such as modularity or encapsulation are broken in the case of singletons.</p>
  <p>A frequent misconception is the idea that things that are only instantiated once should become singletons. The purpose is to technically enforce that no two instances of a class can coexist. While this on its own sounds reasonable, the singleton technique mixes the solution to this problem with an unrelated aspect: providing a global access point for that one and only instance. And this often introduces far more problems than it promises to solve.</p>
  <p>There are indeed use cases for classes of which only one object should exist, e.g. management-related tasks like rendering, resource handling, configuration, etc. As simple as it may sound, the most straightforward way to have only one instance at runtime is to create only one. The problematic of accidentally creating more is largely overstated, there is usually a clear place where instantiation should happen. And even if that problem should pose a serious threat, it can be trivially mitigated through assertions. That alone is rarely a good reason to pay the high price of having global variables.</p>
 
@@ -670,7 +668,7 @@ std::size_t pos = cpp_string.find( sfml_string );</code></pre>
  <img class="screenshot" src="/images/faq/vs-build-log.png" alt="Screenshot of the Visual Studio build log" title="Screenshot of the Visual Studio build log" />
  <p>Inspect the build log and see if it helps solve your problem. If you need further help, you can ask on the forum. In that case copy the output and paste it in your post.</p>
  <p><b>Reminder</b></p>
- <p>When posting on the forum, it is helpful to paste your log in <code>[code][/code]</code> tags to enable people to handle it easier. Not only does it avoid linebreaks, it is also displayed in a monospace font which makes it easier to read if it spans multiple lines.</p>
+ <p>When posting on the forum, it is helpful to paste your log in <code>[code][/code]</code> tags to enable people to handle it easier. Not only does it avoid line-breaks, it is also displayed in a monospace font which makes it easier to read if it spans multiple lines.</p>
 
  <h3 id="tr-grl-64bit"><a class="h3-link" href="#tr-grl-64bit">Why can't I use SFML as a 64-bit library on my 64-bit system?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>First of all, you have to ask yourself: Do I really need to use SFML as a 64-bit library? There are some benefits to building 64-bit applications, but it is recommended that beginners do not try this until they are confident with the compile and linking process</p>
@@ -697,7 +695,7 @@ std::size_t pos = cpp_string.find( sfml_string );</code></pre>
  <p>If you think you have found a bug and are still using SFML 1.6, note that support for 1.6 had ceased long ago. It is highly recommended to upgrade to the latest SFML version. Any bug reports made for SFML 1.6 will be ignored unless they were carried over to the latest SFML version as well, however this is very unlikely. If you are using the latest SFML version, try building the latest master revision available on <a href="https://github.com/SFML/SFML/">GitHub</a>. There are many things that might have already been fixed between the release which is available on the site and the latest development version.</p>
  <p>If the bug is still present in the latest master version, try to produce a <a href="#tr-grl-minimal">minimal compilable code example</a> that displays the bug and nothing else. That way the developers and others can focus on why it is occurring.</p>
  <p>If you can reproduce what you think is a bug, if you have another computer at your disposal, try to run it there as well. If the bug does not occur there, try to reconfigure the corresponding hardware/software settings on the first PC. A lot of strange behavior is a result of misconfigured/faulty software/drivers. <strong>WARNING: Trying to report a bug that is a result of the usage of beta drivers is not a good idea. The source of the problem does not lie within the responsibility of the SFML developers and as such they can't do much to fix it themselves.</strong></p>
- <p>When you are sure that the bug is a result of SFML internals and is platform independent, you can go ahead and post in the forum of the package in question, and don't forget to provide a precise description of your problem, the version of SFML you're using, your system configuration, and the compilable code, and if the situation requires, the logs of your compiler and/or linker. Also make sure that the bug hasn't already been reported (use the <a href="https://en.sfml-dev.org/forums/index.php?action=search">search function</a>), confirmed (look on the <a href="https://github.com/SFML/SFML/issues?page=1&amp;state=open">issue tracker</a>) or even resolved in the latest source (check also the <a href="https://github.com/SFML/SFML/issues?page=1&amp;state=closed">closed issues</a>).</p>
+ <p>When you are sure that the bug is a result of SFML internals and is platform independent, you can go ahead and post in the forum of the package in question, and don't forget to provide a precise description of your problem, the version of SFML you're using, your system configuration, and the compilable code, and if the situation requires, the logs of your compiler and/or linker. Also make sure that the bug hasn't already been reported (use the <a href="https://en.sfml-dev.org/forums/index.php?action=search">search function</a>), confirmed (look on the <a href="https://github.com/SFML/SFML/issues?q=is%3Aopen">issue tracker</a>) or even resolved in the latest source (check also the <a href="hhttps://github.com/SFML/SFML/issues?q=is%3Aclosed">closed issues</a>).</p>
 
  <h3 id="tr-grl-minimal"><a class="h3-link" href="#tr-grl-minimal">What is a minimal code?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>A minimal code example is a snippet of source code that is compilable with very little effort.</p>
@@ -787,14 +785,9 @@ int main() {
  <p>Before anything else, make sure that you've followed the <a href="tutorials/">official tutorial</a> and then check if the following packages have been installed:</p>
  <ul>
   <li>libx11-dev</li>
-  <li>libxcb1-dev</li>
-  <li>libx11-xcb-dev</li>
-  <li>libxcb-randr0-dev</li>
-  <li>libxcb-image0-dev</li>
   <li>libgl1-mesa-dev</li>
   <li>libudev-dev</li>
   <li>libfreetype6-dev</li>
-  <li>libjpeg-dev</li>
   <li>libopenal-dev</li>
   <li>libflac-dev</li>
   <li>libvorbis-dev</li>
@@ -815,7 +808,7 @@ int main() {
  <h2 id="licensing"><a class="h2-link" href="#licensing">Licensing</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 
  <h3 id="lic-license"><a class="h3-link" href="#lic-license">What license does SFML have?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
- <p>SFML is under the <a href="https://www.opensource.org/licenses/zlib-license.php">zlib/png license</a>. You can use SFML for both open-source and proprietary projects, including paid or commercial ones. If you use SFML in your projects, a credit or mention is appreciated, but is not required.</p>
+ <p>SFML is under the <a href="https://opensource.org/licenses/zlib-license.php">zlib/png license</a>. You can use SFML for both open-source and proprietary projects, including paid or commercial ones. If you use SFML in your projects, a credit or mention is appreciated, but is not required.</p>
 
  <h3 id="lic-commercial"><a class="h3-link" href="#lic-commercial">Can I use SFML in commercial applications?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
  <p>Yes, you may use SFML in commercial applications. You don't even have to mention that you used SFML in your application, but the zlib license states that if you do mention it, you are not allowed to state that you yourself are the author of SFML. You are also not allowed to modify SFML and represent it as being the original.</p>
