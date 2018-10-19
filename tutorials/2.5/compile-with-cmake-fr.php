@@ -235,6 +235,37 @@
                 similaire, ou installer Doxygen.app dans n'importe quel dossier "Applications", par exemple ~/Applications.
             </td>
         </tr>
+        <tr class="one">
+            <td><code>SFML_BUILD_Audio</code></td>
+            <td>
+                This boolean option controls whether the SFML audio module is built or not.
+            </td>
+        </tr>
+        <tr class="two">
+            <td><code>SFML_BUILD_GRAPHICS</code></td>
+            <td>
+                This boolean option controls whether the SFML graphics module is built or not.
+            </td>
+        </tr>
+        <tr class="one">
+            <td><code>SFML_BUILD_WINDOW</code></td>
+            <td>
+                This boolean option controls whether the SFML window module is built or not.
+            </td>
+        </tr>
+        <tr class="two">
+            <td><code>SFML_BUILD_NETWORK</code></td>
+            <td>
+                This boolean option controls whether the SFML network module is built or not.
+            </td>
+        </tr>
+        <tr class="one">
+            <td><code>SFML_USE_SYSTEM_DEP</code></td>
+            <td>
+                This boolean option controls whether the dependencies from the extlibs directory are used or whether the system dependencies are used.<br/>
+                The std_image_* header in the extlibs directory are used regardless of this option.
+            </td>
+        </tr>
         <tr class="two">
             <td><code>SFML_USE_STATIC_STD_LIBS<br/>(Windows uniquement)</code></td>
             <td>
@@ -248,13 +279,19 @@
             </td>
         </tr>
         <tr class="one">
+            <td><code>SFML_GENERATE_PDB<br/>(Visual Studio only)</code></td>
+            <td>
+                The boolean option controls whether Visual Studio should or shouldn't generate PDB files, which are separate files containing the debug symbols needed to debug SFML.
+            </td>
+        </tr>
+        <tr class="two">
             <td><code>CMAKE_OSX_ARCHITECTURES<br/>(macOS uniquement)</code></td>
             <td>
                 Ce paramètre définit pour quelles architectures SFML doit être compilée.
                 La valeur recommandée est "x86_64" parce que la compilation en 32-bit n'est plus supportée.
             </td>
         </tr>
-        <tr class="two">
+        <tr class="one">
             <td><code>SFML_INSTALL_XCODE_TEMPLATES<br/>(macOS uniquement)</code></td>
             <td>
                 Cette option booléenne détermine si CMake va installer les templates pour Xcode sur votre système ou non.
@@ -262,7 +299,7 @@
                 De plus amples informations sur ces templates sont données dans le tutoriel "Démarrer sur macOS".
             </td>
         </tr>
-        <tr class="one">
+        <tr class="two">
             <td><code>SFML_INSTALL_PKGCONFIG_FILES<br/>(bibliothèques partagées Linux uniquement)</code></td>
             <td>
                 Cette option booléenne détermine si CMake va installer les fichiers pkg-config sur votre système ou non.
