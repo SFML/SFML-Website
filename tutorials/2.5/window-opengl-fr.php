@@ -102,7 +102,7 @@ int main()
     sf::Window window(sf::VideoMode(800, 600), "OpenGL", sf::Style::Default, sf::ContextSettings(32));
     window.setVerticalSyncEnabled(true);
 
-    // activation de la fenêtreTranslated previous changes of the OpenGL tutorial
+    // activation de la fenêtre
     window.setActive(true);
 
     // chargement des ressources, initialisation des états OpenGL, ...

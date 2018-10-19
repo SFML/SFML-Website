@@ -142,6 +142,9 @@ window.draw(sprite);
 </p>
 <pre><code class="cpp">void renderingThread(sf::RenderWindow* window)
 {
+    // activate the window's context
+    window->setActive(true);
+
     // the rendering loop
     while (window->isOpen())
     {
