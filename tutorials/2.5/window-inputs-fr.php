@@ -30,7 +30,7 @@
 <pre><code class="cpp">if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
 {
     // la touche "flèche gauche" est enfoncée : on bouge le personnage
-    character.move(1, 0);
+    character.move(1.f, 0.f);
 }
 </code></pre>
 <p>

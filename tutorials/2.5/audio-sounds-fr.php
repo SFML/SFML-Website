@@ -135,7 +135,7 @@ music.play();
 sound.play();
 
 // on avance de deux secondes
-sound.setPlayingOffset(sf::seconds(2));
+sound.setPlayingOffset(sf::seconds(2.f));
 
 // on met en pause
 sound.pause();
@@ -156,13 +156,13 @@ sound.stop();
     Le <em>pitch</em> est un facteur qui modifie la fréquence perçue du son : plus que 1 rend le son plus aigü, moins que 1 rend le son plus grave,
     et 1 restitue le son d'origine. Attention, la modification du pitch a un effet de bord : cela change aussi la vitesse de lecture.
 </p>
-<pre><code class="cpp">sound.setPitch(1.2);
+<pre><code class="cpp">sound.setPitch(1.2f);
 </code></pre>
 <p>
     Le <em>volume</em> est... le volume. Sa valeur est comprise entre 0 (muet) et 100 (volume maximum). La valeur par défaut est 100, ce qui signifie
     qu'il est impossible d'augmenter le volume d'un son au-delà de son volume d'origine.
 </p>
-<pre><code class="cpp">sound.setVolume(50);
+<pre><code class="cpp">sound.setVolume(50.f);
 </code></pre>
 </p>
     La propriété <em>loop</em> détermine si le son ou la musique boucle automatiquement ou non. S'il boucle, il recommencera à zéro dès qu'il se finira,

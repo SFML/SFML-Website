@@ -27,10 +27,10 @@
 <pre><code class="cpp">// 'entity' can be a sf::Sprite, a sf::Text, a sf::Shape or any other transformable class
 
 // set the absolute position of the entity
-entity.setPosition(10, 50);
+entity.setPosition(10.f, 50.f);
 
 // move the entity relatively to its current position
-entity.move(5, 5);
+entity.move(5.f, 5.f);
 
 // retrieve the absolute position of the entity
 sf::Vector2f position = entity.getPosition(); // = (15, 55)
@@ -47,10 +47,10 @@ sf::Vector2f position = entity.getPosition(); // = (15, 55)
 <pre><code class="cpp">// 'entity' can be a sf::Sprite, a sf::Text, a sf::Shape or any other transformable class
 
 // set the absolute rotation of the entity
-entity.setRotation(45);
+entity.setRotation(45.f);
 
 // rotate the entity relatively to its current orientation
-entity.rotate(10);
+entity.rotate(10.f);
 
 // retrieve the absolute rotation of the entity
 float rotation = entity.getRotation(); // = 55
@@ -71,7 +71,7 @@ float rotation = entity.getRotation(); // = 55
 <pre><code class="cpp">// 'entity' can be a sf::Sprite, a sf::Text, a sf::Shape or any other transformable class
 
 // set the absolute scale of the entity
-entity.setScale(4.0f, 1.6f);
+entity.setScale(4.f, 1.6f);
 
 // scale the entity relatively to its current scale
 entity.scale(0.5f, 0.5f);
@@ -94,7 +94,7 @@ sf::Vector2f scale = entity.getScale(); // = (2, 0.8)
 <pre><code class="cpp">// 'entity' can be a sf::Sprite, a sf::Text, a sf::Shape or any other transformable class
 
 // set the origin of the entity
-entity.setOrigin(10, 20);
+entity.setOrigin(10.f, 20.f);
 
 // retrieve the origin of the entity
 sf::Vector2f origin = entity.getOrigin(); // = (10, 20)
@@ -114,8 +114,8 @@ sf::Vector2f origin = entity.getOrigin(); // = (10, 20)
 };
 
 MyGraphicalEntity entity;
-entity.setPosition(10, 30);
-entity.setRotation(110);
+entity.setPosition(10.f, 30.f);
+entity.setRotation(110.f);
 entity.setScale(0.5f, 0.2f);
 </code></pre>
 <p>
@@ -149,12 +149,12 @@ sf::Transform t1 = sf::Transform::Identity;
 
 // a rotation transform
 sf::Transform t2;
-t2.rotate(45);
+t2.rotate(45.f);
 
 // a custom matrix
-sf::Transform t3(2, 0, 20,
-                 0, 1, 50,
-                 0, 0, 1);
+sf::Transform t3(2.f, 0.f, 20.f,
+                 0.f, 1.f, 50.f,
+                 0.f, 0.f, 1.f);
 
 // a combined transform
 sf::Transform t4 = t1 * t2 * t3;
@@ -163,9 +163,9 @@ sf::Transform t4 = t1 * t2 * t3;
     You can apply several predefined transformations to the same transform as well. They will all be combined sequentially:
 </p>
 <pre><code class="cpp">sf::Transform t;
-t.translate(10, 100);
-t.rotate(90);
-t.translate(-10, 50);
+t.translate(10.f, 100.f);
+t.rotate(90.f);
+t.translate(-10.f, 50.f);
 t.scale(0.5f, 0.75f);
 </code></pre>
 <p>

@@ -28,7 +28,7 @@
 <p>
     One of the basic properties of a shape is its color. You can change with the <code>setFillColor</code> function.
 </p>
-<pre><code class="cpp">sf::CircleShape shape(50);
+<pre><code class="cpp">sf::CircleShape shape(50.f);
 
 // set the shape color to green
 shape.setFillColor(sf::Color(100, 250, 50));
@@ -39,11 +39,11 @@ shape.setFillColor(sf::Color(100, 250, 50));
 <p>
     Shapes can have an outline. You can set the thickness and color of the outline with the <code>setOutlineThickness</code> and <code>setOutlineColor</code> functions.
 </p>
-<pre><code class="cpp">sf::CircleShape shape(50);
+<pre><code class="cpp">sf::CircleShape shape(50.f);
 shape.setFillColor(sf::Color(150, 50, 250));
 
 // set a 10-pixel wide orange outline
-shape.setOutlineThickness(10);
+shape.setOutlineThickness(10.f);
 shape.setOutlineColor(sf::Color(250, 150, 100));
 </code></pre>
 <img class="screenshot" src="./images/graphics-shape-outline.png" alt="An outlined shape"/>
@@ -88,10 +88,10 @@ shape.setTextureRect(sf::IntRect(10, 10, 100, 100));
     To draw rectangles, you can use the <?php class_link('RectangleShape') ?> class. It has a single attribute: The size of the rectangle.
 </p>
 <pre><code class="cpp">// define a 120x50 rectangle
-sf::RectangleShape rectangle(sf::Vector2f(120, 50));
+sf::RectangleShape rectangle(sf::Vector2f(120.f, 50.f));
 
 // change the size to 100x100
-rectangle.setSize(sf::Vector2f(100, 100));
+rectangle.setSize(sf::Vector2f(100.f, 100.f));
 </code></pre>
 <img class="screenshot" src="./images/graphics-shape-rectangle.png" alt="A rectangle shape"/>
 
@@ -103,10 +103,10 @@ rectangle.setSize(sf::Vector2f(100, 100));
     circles, or zoom on regular circles, you'll most likely need more sides.
 </p>
 <pre><code class="cpp">// define a circle with radius = 200
-sf::CircleShape circle(200);
+sf::CircleShape circle(200.f);
 
 // change the radius to 40
-circle.setRadius(40);
+circle.setRadius(40.f);
 
 // change the number of sides (points) to 100
 circle.setPointCount(100);
@@ -120,13 +120,13 @@ circle.setPointCount(100);
     with 3 points is a triangle, with 4 points it's a square, etc.
 </p>
 <pre><code class="cpp">// define a triangle
-sf::CircleShape triangle(80, 3);
+sf::CircleShape triangle(80.f, 3);
 
 // define a square
-sf::CircleShape square(80, 4);
+sf::CircleShape square(80.f, 4);
 
 // define an octagon
-sf::CircleShape octagon(80, 8);
+sf::CircleShape octagon(80.f, 8);
 </code></pre>
 <img class="screenshot" src="./images/graphics-shape-regular.png" alt="Regular polygons"/>
 
@@ -145,11 +145,11 @@ sf::ConvexShape convex;
 convex.setPointCount(5);
 
 // define the points
-convex.setPoint(0, sf::Vector2f(0, 0));
-convex.setPoint(1, sf::Vector2f(150, 10));
-convex.setPoint(2, sf::Vector2f(120, 90));
-convex.setPoint(3, sf::Vector2f(30, 100));
-convex.setPoint(4, sf::Vector2f(0, 50));
+convex.setPoint(0, sf::Vector2f(0.f, 0.f));
+convex.setPoint(1, sf::Vector2f(150.f, 10.f));
+convex.setPoint(2, sf::Vector2f(120.f, 90.f));
+convex.setPoint(3, sf::Vector2f(30.f, 100.f));
+convex.setPoint(4, sf::Vector2f(0.f, 50.f));
 </code></pre>
 <p class="important">
     The order in which you define the points is very important. They must <em>all</em> be defined either in clockwise or counter-clockwise order. If you
@@ -171,8 +171,8 @@ convex.setPoint(4, sf::Vector2f(0, 50));
 <p>
     Line with thickness:
 </p>
-<pre><code class="cpp">sf::RectangleShape line(sf::Vector2f(150, 5));
-line.rotate(45);
+<pre><code class="cpp">sf::RectangleShape line(sf::Vector2f(150.f, 5.f));
+line.rotate(45.f);
 </code></pre>
 <img class="screenshot" src="./images/graphics-shape-line-rectangle.png" alt="A line shape drawn as a rectangle"/>
 <p>
@@ -180,8 +180,8 @@ line.rotate(45);
 </p>
 <pre><code class="cpp">sf::Vertex line[] =
 {
-    sf::Vertex(sf::Vector2f(10, 10)),
-    sf::Vertex(sf::Vector2f(150, 150))
+    sf::Vertex(sf::Vector2f(10.f, 10.f)),
+    sf::Vertex(sf::Vector2f(150.f, 150.f))
 };
 
 window.draw(line, 2, sf::Lines);
@@ -211,7 +211,7 @@ window.draw(line, 2, sf::Lines);
 {
 public :
 
-    explicit EllipseShape(const sf::Vector2f&amp; radius = sf::Vector2f(0, 0)) :
+    explicit EllipseShape(const sf::Vector2f&amp; radius = sf::Vector2f(0.f, 0.f)) :
     m_radius(radius)
     {
         update();

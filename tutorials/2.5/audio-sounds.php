@@ -125,7 +125,7 @@ music.play();
 sound.play();
 
 // advance to 2 seconds
-sound.setPlayingOffset(sf::seconds(2));
+sound.setPlayingOffset(sf::seconds(2.f));
 
 // pause playback
 sound.pause();
@@ -145,13 +145,13 @@ sound.stop();
     The <em>pitch</em> is a factor that changes the perceived frequency of the sound: greater than 1 plays the sound at a higher pitch,
     less than 1 plays the sound at a lower pitch, and 1 leaves it unchanged. Changing the pitch has a side effect: it impacts the playing speed.
 </p>
-<pre><code class="cpp">sound.setPitch(1.2);
+<pre><code class="cpp">sound.setPitch(1.2f);
 </code></pre>
 <p>
     The <em>volume</em> is... the volume. The value ranges from 0 (mute) to 100 (full volume). The default value is 100, which
     means that you can't make a sound louder than its initial volume.
 </p>
-<pre><code class="cpp">sound.setVolume(50);
+<pre><code class="cpp">sound.setVolume(50.f);
 </code></pre>
 </p>
     The <em>loop</em> attribute controls whether the sound/music automatically loops or not. If it loops, it will restart playing from the beginning when it's finished,

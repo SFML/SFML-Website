@@ -44,18 +44,18 @@
 sf::Vertex vertex;
 
 // set its position
-vertex.position = sf::Vector2f(10, 50);
+vertex.position = sf::Vector2f(10.f, 50.f);
 
 // set its color
 vertex.color = sf::Color::Red;
 
 // set its texture coordinates
-vertex.texCoords = sf::Vector2f(100, 100);
+vertex.texCoords = sf::Vector2f(100.f, 100.f);
 </code></pre>
 <p>
     ... or, using the correct constructor:
 </p>
-<pre><code class="cpp">sf::Vertex vertex(sf::Vector2f(10, 50), sf::Color::Red, sf::Vector2f(100, 100));
+<pre><code class="cpp">sf::Vertex vertex(sf::Vector2f(10.f, 50.f), sf::Color::Red, sf::Vector2f(100.f, 100.f));
 </code></pre>
 <p>
     Now, let's define a primitive. Remember, a primitive consists of several vertices, therefore we need a vertex array. SFML provides a simple wrapper for this:
@@ -65,9 +65,9 @@ vertex.texCoords = sf::Vector2f(100, 100);
 sf::VertexArray triangle(sf::Triangles, 3);
 
 // define the position of the triangle's points
-triangle[0].position = sf::Vector2f(10, 10);
-triangle[1].position = sf::Vector2f(100, 10);
-triangle[2].position = sf::Vector2f(100, 100);
+triangle[0].position = sf::Vector2f(10.f, 10.f);
+triangle[1].position = sf::Vector2f(100.f, 10.f);
+triangle[2].position = sf::Vector2f(100.f, 100.f);
 
 // define the color of the triangle's points
 triangle[0].color = sf::Color::Red;
@@ -199,16 +199,16 @@ window.draw(vertices, 2, sf::Lines);
 sf::VertexArray quad(sf::Quads, 4);
 
 // define it as a rectangle, located at (10, 10) and with size 100x100
-quad[0].position = sf::Vector2f(10, 10);
-quad[1].position = sf::Vector2f(110, 10);
-quad[2].position = sf::Vector2f(110, 110);
-quad[3].position = sf::Vector2f(10, 110);
+quad[0].position = sf::Vector2f(10.f, 10.f);
+quad[1].position = sf::Vector2f(110.f, 10.f);
+quad[2].position = sf::Vector2f(110.f, 110.f);
+quad[3].position = sf::Vector2f(10.f, 110.f);
 
 // define its texture area to be a 25x50 rectangle starting at (0, 0)
-quad[0].texCoords = sf::Vector2f(0, 0);
-quad[1].texCoords = sf::Vector2f(25, 0);
-quad[2].texCoords = sf::Vector2f(25, 50);
-quad[3].texCoords = sf::Vector2f(0, 50);
+quad[0].texCoords = sf::Vector2f(0.f, 0.f);
+quad[1].texCoords = sf::Vector2f(25.f, 0.f);
+quad[2].texCoords = sf::Vector2f(25.f, 50.f);
+quad[3].texCoords = sf::Vector2f(0.f, 50.f);
 </code></pre>
 <p class="important">
     Texture coordinates are defined in <em>pixels</em> (just like the <code>textureRect</code> of sprites and shapes). They are <em>not</em> normalized (between 0 and 1), as
@@ -334,8 +334,8 @@ private:
 <pre><code class="cpp">MyEntity entity;
 
 // you can transform it
-entity.setPosition(10, 50);
-entity.setRotation(45);
+entity.setPosition(10.f, 50.f);
+entity.setRotation(45.f);
 
 // you can draw it
 window.draw(entity);
@@ -471,8 +471,8 @@ public:
     ParticleSystem(unsigned int count) :
     m_particles(count),
     m_vertices(sf::Points, count),
-    m_lifetime(sf::seconds(3)),
-    m_emitter(0, 0)
+    m_lifetime(sf::seconds(3.f)),
+    m_emitter(0.f, 0.f)
     {
     }
 

@@ -28,7 +28,7 @@
 <pre><code class="cpp">if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
 {
     // left key is pressed: move our character
-    character.move(1, 0);
+    character.move(1.f, 0.f);
 }
 </code></pre>
 <p>

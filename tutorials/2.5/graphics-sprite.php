@@ -162,12 +162,12 @@ sprite.setColor(sf::Color(255, 255, 255, 128)); // half transparent
     Sprites can also be transformed: They have a position, an orientation and a scale.
 </p>
 <pre><code class="cpp">// position
-sprite.setPosition(sf::Vector2f(10, 50)); // absolute position
-sprite.move(sf::Vector2f(5, 10)); // offset relative to the current position
+sprite.setPosition(sf::Vector2f(10.f, 50.f)); // absolute position
+sprite.move(sf::Vector2f(5.f, 10.f)); // offset relative to the current position
 
 // rotation
-sprite.setRotation(90); // absolute angle
-sprite.rotate(15); // offset relative to the current angle
+sprite.setRotation(90.f); // absolute angle
+sprite.rotate(15.f); // offset relative to the current angle
 
 // scale
 sprite.setScale(sf::Vector2f(0.5f, 2.f)); // absolute scale factor
@@ -177,7 +177,7 @@ sprite.scale(sf::Vector2f(1.5f, 3.f)); // factor relative to the current scale
     By default, the origin for these three transformations is the top-left corner of the sprite. If you want to set the origin to a different point
     (for example the center of the sprite, or another corner), you can use the <code>setOrigin</code> function.
 </p>
-<pre><code class="cpp">sprite.setOrigin(sf::Vector2f(25, 25));
+<pre><code class="cpp">sprite.setOrigin(sf::Vector2f(25.f, 25.f));
 </code></pre>
 <p>
     Since transformation functions are common to all SFML entities, they are explained in a separate tutorial: 

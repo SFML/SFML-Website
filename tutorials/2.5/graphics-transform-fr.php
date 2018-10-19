@@ -28,10 +28,10 @@
 <pre><code class="cpp">// 'entity' peut être un sf::Sprite, un sf::Text, un sf::Shape ou n'importe quelle autre classe transformable
 
 // change la position absolue de l'entité
-entity.setPosition(10, 50);
+entity.setPosition(10.f, 50.f);
 
 // déplace l'entité relativement à sa position actuelle
-entity.move(5, 5);
+entity.move(5.f, 5.f);
 
 // récupère la position absolue de l'entité
 sf::Vector2f position = entity.getPosition(); // = (15, 55)
@@ -49,10 +49,10 @@ sf::Vector2f position = entity.getPosition(); // = (15, 55)
 <pre><code class="cpp">// 'entity' peut être un sf::Sprite, un sf::Text, un sf::Shape ou n'importe quelle autre classe transformable
 
 // change la rotation absolue de l'entité
-entity.setRotation(45);
+entity.setRotation(45.f);
 
 // tourne l'entité relativement à son orientation actuelle
-entity.rotate(10);
+entity.rotate(10.f);
 
 // récupère la rotation absolue de l'entité
 float rotation = entity.getRotation(); // = 55
@@ -73,7 +73,7 @@ float rotation = entity.getRotation(); // = 55
 <pre><code class="cpp">// 'entity' peut être un sf::Sprite, un sf::Text, un sf::Shape ou n'importe quelle autre classe transformable
 
 // change l'échelle absolue de l'entité
-entity.setScale(4.0f, 1.6f);
+entity.setScale(4.f, 1.6f);
 
 // redimensionne l'entité relativement à son échelle actuelle
 entity.scale(0.5f, 0.5f);
@@ -97,7 +97,7 @@ sf::Vector2f scale = entity.getScale(); // = (2, 0.8)
 <pre><code class="cpp">// 'entity' peut être un sf::Sprite, un sf::Text, un sf::Shape ou n'importe quelle autre classe transformable
 
 // change l'origine de l'entité
-entity.setOrigin(10, 20);
+entity.setOrigin(10.f, 20.f);
 
 // récupère l'origine de l'entité
 sf::Vector2f origin = entity.getOrigin(); // = (10, 20)
@@ -117,8 +117,8 @@ sf::Vector2f origin = entity.getOrigin(); // = (10, 20)
 };
 
 MyGraphicalEntity entity;
-entity.setPosition(10, 30);
-entity.setRotation(110);
+entity.setPosition(10.f, 30.f);
+entity.setRotation(110.f);
 entity.setScale(0.5f, 0.2f);
 </code></pre>
 <p>
@@ -154,12 +154,12 @@ sf::Transform t1 = sf::Transform::Identity;
 
 // une rotation
 sf::Transform t2;
-t2.rotate(45);
+t2.rotate(45.f);
 
 // une matrice 3x3
-sf::Transform t3(2, 0, 20,
-                 0, 1, 50,
-                 0, 0, 1);
+sf::Transform t3(2.f, 0.f, 20.f,
+                 0.f, 1.f, 50.f,
+                 0.f, 0.f, 1.f);
 
 // une combinaison de transformations
 sf::Transform t4 = t1 * t2 * t3;
@@ -168,9 +168,9 @@ sf::Transform t4 = t1 * t2 * t3;
     Vous pouvez bien entendu appliquer plusieurs transformations de base au même <?php class_link('Transform') ?>, celles-ci seront toutes combinées séquentiellement :
 </p>
 <pre><code class="cpp">sf::Transform t;
-t.translate(10, 100);
-t.rotate(90);
-t.translate(-10, 50);
+t.translate(10.f, 100.f);
+t.rotate(90.f);
+t.translate(-10.f, 50.f);
 t.scale(0.5f, 0.75f);
 </code></pre>
 <p>

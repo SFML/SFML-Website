@@ -28,7 +28,7 @@
 <p>
     L'une des propriétés les plus basiques d'une forme est sa couleur, que vous pouvez modifier via la fonction <code>setFillColor</code>.
 </p>
-<pre><code class="cpp">sf::CircleShape shape(50);
+<pre><code class="cpp">sf::CircleShape shape(50.f);
 
 // change la couleur de la forme pour du vert
 shape.setFillColor(sf::Color(100, 250, 50));
@@ -40,11 +40,11 @@ shape.setFillColor(sf::Color(100, 250, 50));
     Les formes peuvent avoir un contour. Vous pouvez choisir l'épaisseur et la couleur de celui-ci avec les fonctions <code>setOutlineThickness</code> et
     <code>setOutlineColor</code>.
 </p>
-<pre><code class="cpp">sf::CircleShape shape(50);
+<pre><code class="cpp">sf::CircleShape shape(50.f);
 shape.setFillColor(sf::Color(150, 50, 250));
 
 // définit un contour orange de 10 pixels d'épaisseur
-shape.setOutlineThickness(10);
+shape.setOutlineThickness(10.f);
 shape.setOutlineColor(sf::Color(250, 150, 100));
 </code></pre>
 <img class="screenshot" src="./images/graphics-shape-outline.png" alt="Une forme avec contour"/>
@@ -63,7 +63,7 @@ shape.setOutlineColor(sf::Color(250, 150, 100));
     <code>setTexture</code>. Celle-ci prend en paramètre le rectangle de la texture à coller sur le rectangle englobant de la forme. Cette méthode offre une flexibilité
     limitée, mais elle est bien plus simple à utiliser que d'avoir à attribuer explicitement des coordonnées de texture à chaque point de la forme.
 </p>
-<pre><code class="cpp">sf::CircleShape shape(50);
+<pre><code class="cpp">sf::CircleShape shape(50.f);
 
 // colle un rectangle texturé de 100x100 sur la forme
 shape.setTexture(&amp;texture); // texture est un sf::Texture
@@ -90,10 +90,10 @@ shape.setTextureRect(sf::IntRect(10, 10, 100, 100));
     Pour dessiner des rectangles, vous devez utiliser la classe <?php class_link('RectangleShape') ?>. Celle-ci ne possède qu'un attribut : la taille du rectangle.
 </p>
 <pre><code class="cpp">// définit un rectangle de 120x50
-sf::RectangleShape rectangle(sf::Vector2f(120, 50));
+sf::RectangleShape rectangle(sf::Vector2f(120.f, 50.f));
 
 // change sa taille en 100x100
-rectangle.setSize(sf::Vector2f(100, 100));
+rectangle.setSize(sf::Vector2f(100.f, 100.f));
 </code></pre>
 <img class="screenshot" src="./images/graphics-shape-rectangle.png" alt="Un rectangle"/>
 
@@ -106,10 +106,10 @@ rectangle.setSize(sf::Vector2f(100, 100));
     vous voulez que ceux-ci restent imperceptibles.
 </p>
 <pre><code class="cpp">// définit un cercle de rayon 200
-sf::CircleShape circle(200);
+sf::CircleShape circle(200.f);
 
 // change le rayon à 40
-circle.setRadius(40);
+circle.setRadius(40.f);
 
 // change le nombre de points (côtés) du cercle
 circle.setPointCount(100);
@@ -123,13 +123,13 @@ circle.setPointCount(100);
     pour obtenir le polygone voulu. Un <?php class_link('CircleShape') ?> avec 3 points est un triangle, avec 4 points c'est un carré, etc.
 </p>
 <pre><code class="cpp">// définit un triangle
-sf::CircleShape triangle(80, 3);
+sf::CircleShape triangle(80.f, 3);
 
 // définit un carré
-sf::CircleShape square(80, 4);
+sf::CircleShape square(80.f, 4);
 
 // définit un octogone
-sf::CircleShape octagon(80, 8);
+sf::CircleShape octagon(80.f, 8);
 </code></pre>
 <img class="screenshot" src="./images/graphics-shape-regular.png" alt="Des polygones réguliers"/>
 
@@ -148,11 +148,11 @@ sf::ConvexShape convex;
 convex.setPointCount(5);
 
 // définit les points
-convex.setPoint(0, sf::Vector2f(0, 0));
-convex.setPoint(1, sf::Vector2f(150, 10));
-convex.setPoint(2, sf::Vector2f(120, 90));
-convex.setPoint(3, sf::Vector2f(30, 100));
-convex.setPoint(4, sf::Vector2f(0, 50));
+convex.setPoint(0, sf::Vector2f(0.f, 0.f));
+convex.setPoint(1, sf::Vector2f(150.f, 10.f));
+convex.setPoint(2, sf::Vector2f(120.f, 90.f));
+convex.setPoint(3, sf::Vector2f(30.f, 100.f));
+convex.setPoint(4, sf::Vector2f(0.f, 50.f));
 </code></pre>
 <p class="important">
     Il est très important de définir les points d'une forme convexe dans le sens des aiguilles d'une montre (ou inverse). Si vous les définissez dans un ordre quelconque,
@@ -182,8 +182,8 @@ line.rotate(45);
 </p>
 <pre><code class="cpp">sf::Vertex line[] =
 {
-    sf::Vertex(sf::Vector2f(10, 10)),
-    sf::Vertex(sf::Vector2f(150, 150))
+    sf::Vertex(sf::Vector2f(10.f, 10.f)),
+    sf::Vertex(sf::Vector2f(150.f, 150.f))
 };
 
 window.draw(line, 2, sf::Lines);
@@ -210,7 +210,7 @@ window.draw(line, 2, sf::Lines);
 {
 public :
 
-    explicit EllipseShape(const sf::Vector2f&amp; radius = sf::Vector2f(0, 0)) :
+    explicit EllipseShape(const sf::Vector2f&amp; radius = sf::Vector2f(0.f, 0.f)) :
     m_radius(radius)
     {
         update();

@@ -29,10 +29,10 @@
     The class which encapsulates views in SFML is <?php class_link('View') ?>. It can be constructed directly with a definition of the area to view:
 </p>
 <pre><code class="cpp">// create a view with the rectangular area of the 2D world to show
-sf::View view1(sf::FloatRect(200, 200, 300, 200));
+sf::View view1(sf::FloatRect(200.f, 200.f, 300.f, 200.f));
 
 // create a view with its center and size
-sf::View view2(sf::Vector2f(350, 300), sf::Vector2f(300, 200));
+sf::View view2(sf::Vector2f(350.f, 300.f), sf::Vector2f(300.f, 200.f));
 </code></pre>
 <p>
     These two definitions are equivalent: Both views will show the same area of the 2D world, a 300x200 rectangle <em>centered</em> on the point (350, 300).
@@ -42,11 +42,11 @@ sf::View view2(sf::Vector2f(350, 300), sf::Vector2f(300, 200));
     If you don't want to define the view upon construction or want to modify it later, you can use the equivalent setters:
 </p>
 <pre><code class="cpp">sf::View view1;
-view1.reset(sf::FloatRect(200, 200, 300, 200));
+view1.reset(sf::FloatRect(200.f, 200.f, 300.f, 200.f));
 
 sf::View view2;
-view2.setCenter(sf::Vector2f(350, 300));
-view2.setSize(sf::Vector2f(200, 200));
+view2.setCenter(sf::Vector2f(350.f, 300.f));
+view2.setSize(sf::Vector2f(200.f, 200.f));
 </code></pre>
 <p>
     Once your view is defined, you can transform it to make it show a translated/rotated/scaled version of your 2D world.
@@ -59,10 +59,10 @@ view2.setSize(sf::Vector2f(200, 200));
     <code>setPosition</code>.
 </p>
 <pre><code class="cpp">// move the view at point (200, 200)
-view.setCenter(200, 200);
+view.setCenter(200.f, 200.f);
 
 // move the view by an offset of (100, 100) (so its final position is (300, 300))
-view.move(100, 100);
+view.move(100.f, 100.f);
 </code></pre>
 <img class="screenshot" src="images/graphics-view-translated.png" title="A translated view" />
 
@@ -71,10 +71,10 @@ view.move(100, 100);
     To rotate a view, use the <code>setRotation</code> function.
 </p>
 <pre><code class="cpp">// rotate the view at 20 degrees
-view.setRotation(20);
+view.setRotation(20.f);
 
 // rotate the view by 5 degrees relatively to its current orientation (so its final orientation is 25 degrees)
-view.rotate(5);
+view.rotate(5.f);
 </code></pre>
 <img class="screenshot" src="images/graphics-view-rotated.png" title="A rotated view" />
 
@@ -83,7 +83,7 @@ view.rotate(5);
     Zooming in (or out) a view is done through to resizing it, so the function to use is <code>setSize</code>.
 </p>
 <pre><code class="cpp">// resize the view to show a 1200x800 area (we see a bigger area, so this is a zoom out)
-view.setSize(1200, 800);
+view.setSize(1200.f, 800.f);
 
 // zoom the view relatively to its current size (apply a factor 0.5, so its final size is 600x400)
 view.zoom(0.5f);
@@ -117,10 +117,10 @@ view.setViewport(sf::FloatRect(0.25f, 0.25, 0.5f, 0.5f));
     Using a viewport, it is straightforward to split the screen for multiplayer games:
 </p>
 <pre><code class="cpp">// player 1 (left side of the screen)
-player1View.setViewport(sf::FloatRect(0, 0, 0.5f, 1));
+player1View.setViewport(sf::FloatRect(0.f, 0.f, 0.5f, 1.f));
 
 // player 2 (right side of the screen)
-player2View.setViewport(sf::FloatRect(0.5f, 0, 0.5f, 1));
+player2View.setViewport(sf::FloatRect(0.5f, 0.f, 0.5f, 1.f));
 </code></pre>
 <img class="screenshot" src="images/graphics-view-split-screen.png" title="A split screen" />
 
@@ -128,10 +128,10 @@ player2View.setViewport(sf::FloatRect(0.5f, 0, 0.5f, 1));
     ... or a mini-map:
 </p>
 <pre><code class="cpp">// the game view (full window)
-gameView.setViewport(sf::FloatRect(0, 0, 1, 1));
+gameView.setViewport(sf::FloatRect(0.f, 0.f, 1.f, 1.f));
 
 // mini-map (upper-right corner)
-minimapView.setViewport(sf::FloatRect(0.75f, 0, 0.25f, 0.25f));
+minimapView.setViewport(sf::FloatRect(0.75f, 0.f, 0.25f, 0.25f));
 </code></pre>
 <img class="screenshot" src="images/graphics-view-minimap.png" title="A minimap" />
 
@@ -141,7 +141,7 @@ minimapView.setViewport(sf::FloatRect(0.75f, 0, 0.25f, 0.25f));
     (<?php class_link('RenderWindow') ?> or <?php class_link('RenderTexture') ?>).
 </p>
 <pre><code class="cpp">// let's define a view
-sf::View view(sf::FloatRect(0, 0, 1000, 600));
+sf::View view(sf::FloatRect(0.f, 0.f, 1000.f, 600.f));
 
 // activate it
 window.setView(view);
@@ -192,7 +192,7 @@ while (window.pollEvent(event))
     if (event.type == sf::Event::Resized)
     {
         // update the view to the new size of the window
-        sf::FloatRect visibleArea(0, 0, event.size.width, event.size.height);
+        sf::FloatRect visibleArea(0.f, 0.f, event.size.width, event.size.height);
         window.setView(sf::View(visibleArea));
     }
 }

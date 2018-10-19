@@ -47,13 +47,13 @@
 sf::Vertex vertex;
 
 // on change sa position
-vertex.position = sf::Vector2f(10, 50);
+vertex.position = sf::Vector2f(10.f, 50.f);
 
 // on change sa couleur
 vertex.color = sf::Color::Red;
 
 // on change ses coordonnées de texture
-vertex.texCoords = sf::Vector2f(100, 100);
+vertex.texCoords = sf::Vector2f(100.f, 100.f);
 </code></pre>
 <p>
     ... ou bien, en utilisant le constructeur adéquat :
@@ -69,9 +69,9 @@ vertex.texCoords = sf::Vector2f(100, 100);
 sf::VertexArray triangle(sf::Triangles, 3);
 
 // on définit la position des sommets du triangle
-triangle[0].position = sf::Vector2f(10, 10);
-triangle[1].position = sf::Vector2f(100, 10);
-triangle[2].position = sf::Vector2f(100, 100);
+triangle[0].position = sf::Vector2f(10.f, 10.f);
+triangle[1].position = sf::Vector2f(100.f, 10.f);
+triangle[2].position = sf::Vector2f(100.f, 100.f);
 
 // on définit la couleur des sommets du triangle
 triangle[0].color = sf::Color::Red;
@@ -208,16 +208,16 @@ window.draw(vertices, 2, sf::Lines);
 sf::VertexArray quad(sf::Quads, 4);
 
 // on le définit comme un rectangle, placé en (10, 10) et de taille 100x100
-quad[0].position = sf::Vector2f(10, 10);
-quad[1].position = sf::Vector2f(110, 10);
-quad[2].position = sf::Vector2f(110, 110);
-quad[3].position = sf::Vector2f(10, 110);
+quad[0].position = sf::Vector2f(10.f, 10.f);
+quad[1].position = sf::Vector2f(110.f, 10).f;
+quad[2].position = sf::Vector2f(110.f, 110.f);
+quad[3].position = sf::Vector2f(10.f, 110.f);
 
 // et on définit la zone de texture à lui appliquer comme étant le rectangle de 25x50 démarrant en (0, 0)
-quad[0].texCoords = sf::Vector2f(0, 0);
-quad[1].texCoords = sf::Vector2f(25, 0);
-quad[2].texCoords = sf::Vector2f(25, 50);
-quad[3].texCoords = sf::Vector2f(0, 50);
+quad[0].texCoords = sf::Vector2f(0.f, 0.f);
+quad[1].texCoords = sf::Vector2f(25.f, 0.f);
+quad[2].texCoords = sf::Vector2f(25.f, 50.f);
+quad[3].texCoords = sf::Vector2f(0.f, 50.f);
 </code></pre>
 <p class="important">
     Les coordonnées de texture sont définies en <em>pixels</em> (tout comme le <code>textureRect</code> des sprites et des formes). Elles ne sont <em>pas</em> normalisées
@@ -346,8 +346,8 @@ private:
 <pre><code class="cpp">MyEntity entity;
 
 // vous pouvez la transformer
-entity.setPosition(10, 50);
-entity.setRotation(45);
+entity.setPosition(10.f, 50.f);
+entity.setRotation(45.f);
 
 // vous pouvez la dessiner
 window.draw(entity);
@@ -486,7 +486,7 @@ public:
     m_particles(count),
     m_vertices(sf::Points, count),
     m_lifetime(sf::seconds(3)),
-    m_emitter(0, 0)
+    m_emitter(0.f, 0.f)
     {
     }
 

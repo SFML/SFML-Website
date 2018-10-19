@@ -166,12 +166,12 @@ sprite.setColor(sf::Color(255, 255, 255, 128)); // à moitié transparent
     Les sprites peuvent aussi être transformés : ils ont une position, une orientation et une échelle.
 </p>
 <pre><code class="cpp">// position
-sprite.setPosition(sf::Vector2f(10, 50)); // position absolue
-sprite.move(sf::Vector2f(5, 10)); // décalage relatif à la position actuelle
+sprite.setPosition(sf::Vector2f(10.f, 50.f)); // position absolue
+sprite.move(sf::Vector2f(5.f, 10.f)); // décalage relatif à la position actuelle
 
 // rotation
-sprite.setRotation(90); // angle absolu
-sprite.rotate(15); // rotation par rapport à l'orientation actuelle
+sprite.setRotation(90.f); // angle absolu
+sprite.rotate(15.f); // rotation par rapport à l'orientation actuelle
 
 // scale
 sprite.setScale(sf::Vector2f(0.5f, 2.f)); // facteurs d'échelle absolus
@@ -181,7 +181,7 @@ sprite.scale(sf::Vector2f(1.5f, 3.f)); // facters d'échelle relatifs à l'éche
     Par défaut, l'origine de ces trois transformations est le coin haut-gauche du sprite. Si vous souhaitez utiliser une origine différente (par exemple le centre
     du sprite, ou bien un autre coin), vous pouvez utiliser la fonction <code>setOrigin</code>.
 </p>
-<pre><code class="cpp">sprite.setOrigin(sf::Vector2f(25, 25));
+<pre><code class="cpp">sprite.setOrigin(sf::Vector2f(25.f, 25.f));
 </code></pre>
 <p>
     Les transformations étant communes à toutes les entités de SFML, elles sont expliquées plus en détail dans leur propre tutoriel :

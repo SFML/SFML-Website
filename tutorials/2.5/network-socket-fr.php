@@ -255,7 +255,7 @@ selector.add(socket);
     jusqu'à ce que l'une d'entre elles ait reçu quelque chose (ou bien ait déclenché une erreur). Vous pouvez aussi passer un timeout optionel, de sorte que la fonction
     échoue si aucune socket n'a rien reçu pendant un certain temps -- cela évite de rester bloqué indéfiniment si rien ne se passe.
 </p>
-<pre><code class="cpp">if (selector.wait(sf::seconds(10)))
+<pre><code class="cpp">if (selector.wait(sf::seconds(10.f)))
 {
     // on a reçu quelque chose
 }
@@ -273,7 +273,7 @@ else
     Etant donné que le sélecteur n'est pas un conteneur de sockets, il ne peut pas directement vous retourner les sockets qui sont prêtes à recevoir. Au lieu de cela,
     vous devez tester les candidates une par une avec la fonction <code>isReady</code> :
 </p>
-<pre><code class="cpp">if (selector.wait(sf::seconds(10)))
+<pre><code class="cpp">if (selector.wait(sf::seconds(10.f)))
 {
     // pour chaque socket... &lt;-- pseudo-code, car je ne sais pas comment vous stockez vos sockets :)
     {
