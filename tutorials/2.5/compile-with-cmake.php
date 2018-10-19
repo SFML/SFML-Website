@@ -229,6 +229,37 @@
             </td>
         </tr>
         <tr class="one">
+            <td><code>SFML_BUILD_Audio</code></td>
+            <td>
+                This boolean option controls whether the SFML audio module is built or not.
+            </td>
+        </tr>
+        <tr class="two">
+            <td><code>SFML_BUILD_GRAPHICS</code></td>
+            <td>
+                This boolean option controls whether the SFML graphics module is built or not.
+            </td>
+        </tr>
+        <tr class="one">
+            <td><code>SFML_BUILD_WINDOW</code></td>
+            <td>
+                This boolean option controls whether the SFML window module is built or not.
+            </td>
+        </tr>
+        <tr class="two">
+            <td><code>SFML_BUILD_NETWORK</code></td>
+            <td>
+                This boolean option controls whether the SFML network module is built or not.
+            </td>
+        </tr>
+        <tr class="one">
+            <td><code>SFML_USE_SYSTEM_DEP</code></td>
+            <td>
+                This boolean option controls whether the dependencies from the extlibs directory are used or whether the system dependencies are used.<br/>
+                The std_image_* header in the extlibs directory are used regardless of this option.
+            </td>
+        </tr>
+        <tr class="two">
             <td><code>SFML_USE_STATIC_STD_LIBS<br/>(Windows only)</code></td>
             <td>
                 This boolean option selects the type of the C/C++ runtime library which is linked to SFML. <br/>
@@ -240,7 +271,20 @@
                 This option should not be enabled simultaneously with BUILD_SHARED_LIBS, they are mutually exclusive.
             </td>
         </tr>
+        <tr class="one">
+            <td><code>SFML_GENERATE_PDB<br/>(Visual Studio only)</code></td>
+            <td>
+                The boolean option controls whether Visual Studio should or shouldn't generate PDB files, which are separate files containing the debug symbols needed to debug SFML.
+            </td>
+        </tr>
         <tr class="two">
+            <td><code>CMAKE_OSX_ARCHITECTURES<br/>(macOS only)</code></td>
+            <td>
+                This boolean option defines which architecture SFML should be compiled for
+                The recommended value is "x86_64" as 32-bit compilation is not supported.
+            </td>
+        </tr>
+        <tr class="one">
             <td><code>SFML_INSTALL_XCODE_TEMPLATES<br/>(macOS only)</code></td>
             <td>
                 This boolean option controls whether CMake will install the Xcode templates on your system or not.
@@ -248,7 +292,7 @@
                 More information about these templates is given in the "Getting started" tutorial for macOS.
             </td>
         </tr>
-        <tr class="one">
+        <tr class="two">
             <td><code>SFML_INSTALL_PKGCONFIG_FILES<br/>(Linux shared libraries only)</code></td>
             <td>
                 This boolean option controls whether CMake will install the pkg-config files on your system or not.
