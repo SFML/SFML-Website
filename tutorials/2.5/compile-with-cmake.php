@@ -229,7 +229,7 @@
             </td>
         </tr>
         <tr class="one">
-            <td><code>SFML_BUILD_Audio</code></td>
+            <td><code>SFML_BUILD_AUDIO</code></td>
             <td>
                 This boolean option controls whether the SFML audio module is built or not.
             </td>
@@ -256,7 +256,7 @@
             <td><code>SFML_USE_SYSTEM_DEP</code></td>
             <td>
                 This boolean option controls whether the dependencies from the extlibs directory are used or whether the system dependencies are used.<br/>
-                The std_image_* header in the extlibs directory are used regardless of this option.
+                The stb_image_* header in the extlibs directory are used regardless of this option.
             </td>
         </tr>
         <tr class="two">
@@ -280,7 +280,7 @@
         <tr class="two">
             <td><code>CMAKE_OSX_ARCHITECTURES<br/>(macOS only)</code></td>
             <td>
-                This boolean option defines which architecture SFML should be compiled for
+                This boolean option defines which architecture SFML should be compiled for.<br/>
                 The recommended value is "x86_64" as 32-bit compilation is not supported.
             </td>
         </tr>
