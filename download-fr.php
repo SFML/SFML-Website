@@ -16,7 +16,7 @@
 </div>
 
 <div class="link-box two-columns-right">
-    <a class="download-old" href="artifacts/by-branch/master/">
+    <a class="download-old" href="artifacts/index-fr.php">
         <div class="title">Instantanés</div>
         <div class="description">Versions en développement</div>
     </a>
