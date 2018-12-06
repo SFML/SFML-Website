@@ -41,6 +41,25 @@
     the current source code. You can also watch the open issues on the task tracker, or add new ones.
 </p>
 
+<h3>CSFML 2.5</h3>
+<table class="styled download">
+    <tbody>
+        <tr>
+            <td class="os">Windows</td>
+            <td><?php download_link('2.5', 'Visual C++ / GCC', '32-bit', '1.51', '../../files/CSFML-2.5-windows-32-bit.zip') ?></td>
+            <td><?php download_link('2.5', 'Visual C++ / GCC', '64-bit', '1.68', '../../files/CSFML-2.5-windows-64-bit.zip') ?></td>
+        </tr>
+        <tr>
+            <td class="os">macOS</td>
+            <td colspan="2"><?php download_link('2.5', 'Clang', '64-bit (OS X 10.7+, compatible with C++11 and libc++)', '0.15', '../../files/CSFML-2.5-macOS-clang.tar.gz') ?></td>
+        </tr>
+        <tr>
+            <td class="os">All</td>
+            <td colspan="2"><span class="description">Source code</span><a href="../../files/CSFML-2.5-sources.zip">Download<span class="size">0.29 MB</span></a></td>
+        </tr>
+    </tbody>
+</table>
+
 <h3>CSFML 2.4</h3>
 <table class="styled download">
     <tbody>
