@@ -16,7 +16,7 @@
 </div>
 
 <div class="link-box two-columns-right">
-    <a class="download-old" href="artifacts">
+    <a class="download-old" href="https://artifacts.sfml-dev.org/by-branch/master/">
         <div class="title">Snapshots</div>
         <div class="description">In development versions</div>
     </a>

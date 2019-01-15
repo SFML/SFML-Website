@@ -16,7 +16,7 @@
 </div>
 
 <div class="link-box two-columns-right">
-    <a class="download-old" href="artifacts/index-fr.php">
+    <a class="download-old" href="https://artifacts.sfml-dev.org/by-branch/master/">
         <div class="title">Instantanés</div>
         <div class="description">Versions en développement</div>
     </a>
