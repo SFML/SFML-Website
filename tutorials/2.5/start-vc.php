@@ -31,8 +31,9 @@
 
 <?php h2('Creating and configuring a SFML project') ?>
 <p>
-    The first thing to do is choose what kind of project to create. It is recommended to select "Empty Project". The wizard offers a few options to customize
-    the project: select "Console application" if you need the console, or "Windows application" if you don't want it.<br />
+    The first thing to do is choose what kind of project to create. It is recommended to select "Empty Project". 
+    The dialog window offers a few other options to customize the project: select "Console application" or "Windows 
+    application" only if you know how to use pre-compiled headers.<br />
     For the purpose of this tutorial, you should create a main.cpp file and add it to the project, so that we have access to the C++ settings
     (otherwise Visual Studio doesn't know which language you're going to use for this project). We'll explain what to put inside later.
 </p>
