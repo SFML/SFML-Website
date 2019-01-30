@@ -334,8 +334,8 @@ else
 <p>If multiple <code>&amp;&amp;</code> or <code>||</code> operators are used in the same boolean expression, then each part is guarded by parenthesis as soon as they consist of multiple sub-expressions themselves.</p>
 <pre><code class="cpp">x &lt; y              // no parenthesis
 (x &lt; y) &amp;&amp; (y &lt; z) // with parenthesis
-var &amp;&amp; (x &lt; y);    // variable not parenthesized
-func() &amp;&amp; (x &lt; y); // function call not parenthesized</code></pre>
+var &amp;&amp; (x &lt; y)     // variable not parenthesized
+func() &amp;&amp; (x &lt; y)  // function call not parenthesized</code></pre>
 
 <h4>Binary Operators</h4>
 <p>If different binary operators are combined in the same statement, parenthesis are added <em>even if not necessary</em> to disambiguate the reading; e.g.:</p>
