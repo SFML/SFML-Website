@@ -254,7 +254,7 @@ Accepted = 202, ///&lt; The request has been accepted, but will be processed lat
   </tr>
   <tr>
    <td>object-style macro (<code>SFML_STATIC</code>)</td>
-   <td>SFML UPPER_CASE (prefixed with SFML)</td>
+   <td>SFML_UPPER_CASE (prefixed with SFML)</td>
   </tr>
  </tbody>
 </table>
