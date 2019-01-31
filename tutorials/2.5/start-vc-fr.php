@@ -33,9 +33,9 @@
 
 <?php h2('Créer et configurer un projet SFML') ?>
 <p>
-    La première chose à faire est de choisir quel type de projet créer : vous devez sélectionner "Win32 application". L'assistant offre quelques options
-    pour personnaliser le projet : choisissez "Console application" si vous voulez la console, ou "Windows application" si vous n'en avez pas besoin.
-    Cochez la case "Empty project" si vous ne voulez pas être embêté avec du code généré automatiquement.<br />
+    La première chose à faire est de choisir quel type de projet créer. Il est recommandé de sélectionner "Empty project".
+    L'assistant offre quelques options pour personnaliser le projet : choisissez "Console application" ou "Windows application" uniquement si vous
+    savez vous servir des en-têtes précompilés.<br />
     Pour les besoins de ce tutoriel, vous devez également créer un fichier main.cpp et l'ajouter immédiatement au projet, de manière à avoir accès
     aux options C++ (sinon, Visual Studio ne sait pas quel langage vous allez utiliser dans le projet). Nous verrons plus tard quoi mettre dedans.
 </p>
