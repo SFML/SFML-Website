@@ -47,6 +47,47 @@
     the current source code (which contain the sources of the examples). You can also watch the open issues on the task tracker, or add new ones.
 </p>
 
+<h3>SFML.Net 2.5</h3>
+<table class="styled download">
+    <tbody>
+        <tr>
+            <td class="os" rowspan="2">All</td>
+            <td><span class="description">Official NuGet Package</span><a href="https://www.nuget.org/packages/SFML.Net/" target="_blank">SFML.Net</a></td>
+        </tr>
+        <tr>
+            <td><span class="description">Source code</span><a href="../../files/SFML.Net-2.5-sources.zip">Download<span class="size">0.85 MB</span></a></td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>SFML.Net 2.4</h3>
+<table class="styled download">
+    <tbody>
+        <tr>
+            <td class="os" rowspan="2">All</td>
+            <td><?php download_link('2.4', 'All compilers', '32-bit', '2.86', '../../files/SFML.Net-2.4-32-bit.zip') ?></td>
+            <td><?php download_link('2.4', 'All compilers', '64-bit', '2.99', '../../files/SFML.Net-2.4-64-bit.zip') ?></td>
+        </tr>
+        <tr>
+            <td colspan="2"><span class="description">Source code</span><a href="../../files/SFML.Net-2.4-sources.zip">Download<span class="size">0.84 MB</span></a></td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>SFML.Net 2.3</h3>
+<table class="styled download">
+    <tbody>
+        <tr>
+            <td class="os" rowspan="2">All</td>
+            <td><?php download_link('2.3', 'All compilers', '32-bit', '3.86', '../../files/SFML.Net-2.3-32-bit.zip') ?></td>
+            <td><?php download_link('2.3', 'All compilers', '64-bit', '3.93', '../../files/SFML.Net-2.3-64-bit.zip') ?></td>
+        </tr>
+        <tr>
+            <td colspan="2"><span class="description">Source code</span><a href="../../files/SFML.Net-2.3-sources.zip">Download<span class="size">0.79 MB</span></a></td>
+        </tr>
+    </tbody>
+</table>
+
 <h3>SFML.Net 2.2</h3>
 <table class="styled download">
     <tbody>

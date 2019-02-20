@@ -51,6 +51,47 @@
     ainsi qu'en ajouter de nouveaux.
 </p>
 
+<h3>SFML.Net 2.5</h3>
+<table class="styled download">
+    <tbody>
+        <tr>
+            <td class="os" rowspan="2">All</td>
+            <td><span class="description">Package officiel de NuGet</span><a href="https://www.nuget.org/packages/SFML.Net/" target="_blank">SFML.Net</a></td>
+        </tr>
+        <tr>
+            <td><span class="description">Code source</span><a href="../../files/SFML.Net-2.5-sources.zip">Télécharger<span class="size">0.85 MB</span></a></td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>SFML.Net 2.4</h3>
+<table class="styled download">
+    <tbody>
+        <tr>
+            <td class="os" rowspan="2">Tous les OS</td>
+            <td><?php download_link('2.4', 'Tous compilateurs', '32-bit', '2.86', '../../files/SFML.Net-2.4-32-bit.zip') ?></td>
+            <td><?php download_link('2.4', 'Tous compilateurs', '64-bit', '2.99', '../../files/SFML.Net-2.4-64-bit.zip') ?></td>
+        </tr>
+        <tr>
+            <td colspan="2"><span class="description">Code source</span><a href="../../files/SFML.Net-2.4-sources.zip">Télécharger<span class="size">0.84 Mo</span></a></td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>SFML.Net 2.3</h3>
+<table class="styled download">
+    <tbody>
+        <tr>
+            <td class="os" rowspan="2">Tous les OS</td>
+            <td><?php download_link('2.3', 'Tous compilateurs', '32-bit', '3.86', '../../files/SFML.Net-2.3-32-bit.zip') ?></td>
+            <td><?php download_link('2.3', 'Tous compilateurs', '64-bit', '3.93', '../../files/SFML.Net-2.3-64-bit.zip') ?></td>
+        </tr>
+        <tr>
+            <td colspan="2"><span class="description">Code source</span><a href="../../files/SFML.Net-2.3-sources.zip">Télécharger<span class="size">0.79 Mo</span></a></td>
+        </tr>
+    </tbody>
+</table>
+
 <h3>SFML.Net 2.2</h3>
 <table class="styled download">
     <tbody>
