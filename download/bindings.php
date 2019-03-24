@@ -66,7 +66,7 @@
         <tr>
             <th rowspan="1">Free Pascal Compiler aka FPC</th>
             <td><a href="https://github.com/DJMaster/csfml-fpc" class="website">csfml-fpc</a></td>
-            <td>2.4</td>
+            <td>2.5</td>
             <td>DJMaster</td>
         </tr>
         <tr>
