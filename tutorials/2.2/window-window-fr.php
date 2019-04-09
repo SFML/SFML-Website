@@ -188,6 +188,9 @@ sf::Vector2u size = window.getSize();
 unsigned int width = size.x;
 unsigned int height = size.y;
 
+// détecte si la fenêtre est au premier plan
+bool focus = window.hasFocus();
+
 ...
 </code></pre>
 <p>
