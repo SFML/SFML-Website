@@ -773,8 +773,9 @@ int main() {
  <ul>
   <li>In Code::Blocks, open the project options (Project Menu -&gt; Properties). In the Build targets tab, select the build target you wish to change on the left (most of the time only Debug and Release exist) and change its type option in the drop-down list on the right side from "Console application" to "GUI application".</li>
   <li>In Visual Studio, go to the project options (Project Menu -&gt; Properties). In the tree on the left, expand the "Configuration properties" tree and expand the "Linker" sub-tree. Select "System" from the sub-tree, and in the SubSystem field on the right side change "Console (/SUBSYSTEM:CONSOLE)" to "Windows (/SUBSYSTEM:WINDOWS)" by clicking on the field and using the drop-down list.</li>
+  <li>With CMake, add the WIN32 flag to your executable (<code>add_executable(name WIN32 ...)</code>). This will do the same as the steps above.</li>
  </ul>
- <p>To maintain a portable entry point (<code>int main()</code> function), you can link your program against the small sfml-main.lib library in the case of Visual Studio or libsfml-main.a in the case of Code::Blocks/MinGW.</p>
+ <p>To maintain a portable entry point (<code>int main()</code> function), you can link your program against the sfml-main.lib library in the case of Visual Studio or libsfml-main.a in the case of Code::Blocks/MinGW. Using CMake, you can just make an if statement checking for WIN32 and add <code>sfml-main</code> to your linked libraries.</p>
  <p>Alternatively to hide the console, you can also define your own Windows entry point for graphical applications.</p>
  <pre><code>int WINAPI WinMain(HINSTANCE hThisInstance, HINSTANCE hPrevInstance, LPSTR lpszArgument, int nCmdShow)</code></pre>
  <p>Replace your <code>int main()</code> or <code>int main(int argc, char** argv)</code> with this function and it will be called by the operating system when your program is executed just like the classical <code>int main()</code> function.</p>
