@@ -77,7 +77,7 @@ triangle[2].color = sf::Color::Green;
 // no texture coordinates here, we'll see that later
 </code></pre>
 <p>
-    Your triangle is ready and you can now draw it. Drawing a vertex array can be done similar to drawing any other SFML entity, by using the <code>draw</code> function:
+    Your triangle is ready and you can now draw it. Drawing a vertex array can be done similarly to drawing any other SFML entity, by using the <code>draw</code> function:
 </p>
 <pre><code class="cpp">window.draw(triangle);
 </code></pre>
