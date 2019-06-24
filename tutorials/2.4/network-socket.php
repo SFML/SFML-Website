@@ -29,13 +29,13 @@
     UDP is not connection-based, you can send and receive to/from anyone at any time with the same socket.
 </p>
 <p>
-    The second difference is that TCP is reliable unlike UDP. It ensures that what you send is always received, without corruption and in the same order. UDP performs less
+    The second difference is that TCP is reliable unlike UDP. It ensures that what you send is always received, without corruption and in the same order. UDP performs fewer
     checks, and doesn't provide any reliability: what you send might be received multiple times (duplication), or in a different order, or be lost and never reach the remote computer.
     However, UDP does guarantee that data which is received is always valid (not corrupted).<br/>
     UDP may seem scary, but keep in mind that <em>almost all the time</em>, data arrives correctly and in the right order.
 </p>
 <p>
-    The third difference is a direct consequence of the second one: UDP is faster and more lightweight than TCP. Because it has less requirements, thus less overhead.
+    The third difference is a direct consequence of the second one: UDP is faster and more lightweight than TCP because it has fewer requirements, thus less overhead.
 </p>
 <p>
     The last difference is about the way data is transported. TCP is a <em>stream</em> protocol: there's no message boundary, if you send "Hello" and then "SFML", the remote

@@ -1,5 +1,5 @@
 <?php
-    $latest = '2.4.2';
+    $latest = '2.5.1';
     $linklatest = '';
     $doxygen = true;
     $docpath = 'documentation/' . $version . '-fr/';
@@ -9,18 +9,19 @@
         'Documentation ' . $version => 'documentation/' . $version . '-fr',
         $pagetitle => substr($_SERVER['REQUEST_URI'], 1) // remove the starting '/'
     );
-    require('../../header-fr.php');
+
+    $expected_page = str_replace($version, $latest, '/' . $breadcrumbs[$pagetitle]);
+    if (file_exists($_SERVER['DOCUMENT_ROOT'] . $expected_page))
+        $redirect = $expected_page;
+    else
+        $redirect = '/documentation/' . $latest . '-fr';
 
     if($version != $latest)
     {
-        $expected_page = str_replace($version, $latest, '/' . $breadcrumbs[$pagetitle]);
-        if (file_exists($_SERVER['DOCUMENT_ROOT'] . $expected_page))
-            $redirect = $expected_page;
-        else
-            $redirect = '/documentation/' . $latest . '-fr';
-
         $linklatest = '<a class="important" href="' . $redirect . '"><strong>Attention:</strong> cette page se réfère à une ancienne version de SFML. Cliquez ici pour passer à la dernière version.</a>';
     }
+
+    require('../../header-fr.php');
 ?>
 
 <h1>Documentation de SFML <?php echo $version; ?></h1>

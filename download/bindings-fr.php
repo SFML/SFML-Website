@@ -31,25 +31,25 @@
         <tr>
             <th rowspan="1">C</th>
             <td><a href="csfml" class="website">CSFML</a></td>
-            <td>2.4</td>
+            <td>2.5</td>
             <td><a href="mailto:laurent@sfml-dev.org">Laurent Gomila</a></td>
         </tr>
         <tr>
             <th rowspan="1">.Net (C#, VB.Net etc.)</th>
             <td><a href="sfml.net" class="website">SFML.Net</a></td>
-            <td>2.2</td>
+            <td>2.5</td>
             <td><a href="mailto:laurent@sfml-dev.org">Laurent Gomila</a></td>
         </tr>
         <tr>
             <th rowspan="1">Crystal</th>
-            <td><a href="https://github.com/BlaXpirit/crsfml" class="website"><img src="../images/bindings/crsfml.png" alt="CrSFML"/></a></td>
-            <td>2.4</td>
-            <td><a href="mailto:blaxpirit@gmail.com">Oleh Prypin</a></td>
+            <td><a href="https://github.com/oprypin/crsfml" class="website"><img src="../images/bindings/crsfml.png" alt="CrSFML"/></a></td>
+            <td>2.5</td>
+            <td><a href="mailto:oleh@pryp.in">Oleh Prypin</a></td>
         </tr>
         <tr>
             <th rowspan="2">D</th>
             <td><a href="https://github.com/DerelictOrg/DerelictSFML2" class="website">DerelictSFML2</a></td>
-            <td>2.3</td>
+            <td>2.4</td>
             <td><a href="mailto:aldacron@gmail.com">Mike Parker</a></td>
         </tr>
         <tr>
@@ -60,20 +60,25 @@
         <tr>
             <th rowspan="1">Euphoria</th>
             <td><a href="https://github.com/gAndy50/EuSFML2" class="website">EuSFML2</a></td>
-            <td>2.3.2</td>
+            <td>2.4</td>
             <td>Andy Patterson</td>
         </tr>
         <tr>
             <th rowspan="1">Free Pascal Compiler aka FPC</th>
             <td><a href="https://github.com/DJMaster/csfml-fpc" class="website">csfml-fpc</a></td>
-            <td>2.4</td>
+            <td>2.5</td>
             <td>DJMaster</td>
         </tr>
         <tr>
-            <th rowspan="1">Go</th>
+            <th rowspan="2">Go</th>
             <td><a href="https://bitbucket.org/krepa098/gosfml2" class="website"><img src="../images/bindings/gosfml2.png" alt="GoSFML2"></a></td>
             <td>2.0</td>
             <td>krepa098</td>
+        </tr>
+        <tr>
+            <td><a href="https://github.com/teh-cmc/go-sfml" class="website">go-sfml</a></td>
+            <td>2.4</td>
+            <td><a href="mailto:cr.rey.clement@gmail.com">Clement Rey</a></td>
         </tr>
         <tr>
             <th rowspan="1">Haskell</th>
@@ -97,6 +102,12 @@
             <td>Zachary Yedidia</td>
         </tr>
         <tr>
+            <th rowspan="1">mruby</th>
+            <td><a href="https://github.com/IceDragon200/mruby-sfml" class="website">mruby-sfml</a></td>
+            <td>2.4</td>
+            <td><a href="mailto:mistdragon100@gmail.com">Corey Powell</a></td>
+        </tr>
+        <tr>
             <th rowspan="1">Nim</th>
             <td><a href="https://github.com/BlaXpirit/nim-csfml" class="website">nim-csfml</a></td>
             <td>2.3</td>
@@ -116,25 +127,25 @@
         <tr>
             <th rowspan="1">Pascal</th>
             <td><a href="https://github.com/CWBudde/PasSFML" class="website">PasSFML</a></td>
-            <td>2.3</td>
+            <td>2.4</td>
             <td>Christian-W. Budde</td>
         </tr>
         <tr>
             <th rowspan="1">Python</th>
-            <td><a href="http://www.python-sfml.org/" class="website"><img src="../images/bindings/python-sfml.png" alt="pySFML"></a></td>
-            <td>2.2</td>
+            <td><a href="https://github.com/Sonkun/python-sfml" class="website"><img src="../images/bindings/python-sfml.png" alt="pySFML"></a></td>
+            <td>2.3.2</td>
             <td><a href="mailto:dewachter.jonathan@gmail.com">Jonathan De Wachter</a>, Edwin Marshall</td>
         </tr>
         <tr>
             <th rowspan="1">Ruby</th>
             <td><a href="http://www.groogy.se/mainsite/rbsfml/" class="website"><img src="../images/bindings/rbsfml.png" alt="rbSFML"></a></td>
-            <td>2.0</td>
+            <td>2.3.2</td>
             <td><a href="mailto:groogy@groogy.se">Henrik Valter Vogelius Hansson</a></td>
         </tr>
         <tr>
             <th rowspan="1">Rust</th>
             <td><a href="https://github.com/jeremyletang/rust-sfml" class="website"><img src="../images/bindings/rust-sfml.png" alt="rust-sfml"></a></td>
-            <td>2.3</td>
+            <td>2.4</td>
             <td><a href="mailto:letang.jeremy@gmail.com">Jérémy Letang</a></td>
         </tr>
 

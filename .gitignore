@@ -1,4 +1,7 @@
+/artifacts/*
 /files/*
 /forums/*
 /honeypot/*
+/piwik/*
 /progressbar-osx-values.php
+/google*.html

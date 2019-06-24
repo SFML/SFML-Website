@@ -10,6 +10,8 @@
 <h1>Changelog</h1>
 
 <ul>
+ <li><a href="#sfml-2.5.1">SFML 2.5.1</a></li>
+ <li><a href="#sfml-2.5.0">SFML 2.5.0</a></li>
  <li><a href="#sfml-2.4.2">SFML 2.4.2</a></li>
  <li><a href="#sfml-2.4.1">SFML 2.4.1</a></li>
  <li><a href="#sfml-2.4.0">SFML 2.4.0</a></li>
@@ -27,6 +29,173 @@
  <li><a href="#sfml-1.1">SFML 1.1</a></li>
 </ul>
 
+<h2 id="sfml-2.5.1"><a class="h2-link" href="#sfml-2.5.1">SFML 2.5.1</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
+<h3 id="2.5.1-general"><a class="h3-link" href="#2.5.1-general">General</a></h3>
+<ul>
+  <li>Various CMake fixes (<a href="https://github.com/SFML/SFML/pull/1414">#1414</a>, <a href="https://github.com/SFML/SFML/pull/1416">#1416</a>, <a href="https://github.com/SFML/SFML/pull/1436">#1436</a>, <a href="https://github.com/SFML/SFML/pull/1439">#1439</a>, <a href="https://github.com/SFML/SFML/pull/1467">#1467</a>, <a href="https://github.com/SFML/SFML/pull/1470">#1470</a>)</li>
+  <li>Fixed the installation of pkg-config files (<a href="https://github.com/SFML/SFML/pull/1466">#1466</a>)</li>
+  <li>Fixed two conversion warnings (<a href="https://github.com/SFML/SFML/pull/1454">#1454</a>)</li>
+  <li>[Android] Fixes all symbols in sfml-main are hidden (<a href="https://github.com/SFML/SFML/pull/1457">#1457</a>, <a href="https://github.com/SFML/SFML/pull/1460">#1460</a>)</li>
+  <li>[Android] Fixed some #define flag problem (<a href="https://github.com/SFML/SFML/pull/1458">#1458</a>)</li>
+  <li>[Android] Fix deadlock in main cleanup (<a href="https://github.com/SFML/SFML/pull/1265">#1265</a>)</li>
+  <li>[iOS] Modernized toolchain file (<a href="https://github.com/SFML/SFML/pull/1411">#1411</a>)</li>
+  <li>[iOS] Check that SFML/Main.hpp is used (<a href="https://github.com/SFML/SFML/pull/1412">#1412</a>)</li>
+  <li>[macOS] Add -ObjC flag to fix static linking on macOS (<a href="https://github.com/SFML/SFML/pull/1485">#1485</a>)</li>
+</ul>
+
+<h3 id="2.5.1-window"><a class="h3-link" href="#2.5.1-window">Window</a></h3>
+<h4>Bugfixes</h4>
+<ul>
+  <li>[iOS] Use default supported rotations when none are specified (<a href="https://github.com/SFML/SFML/pull/1417">#1417</a>)</li>
+  <li>[iOS] Fixed autocomplete window overlaps keyboard (<a href="https://github.com/SFML/SFML/pull/1473">#1473</a>, <a href="https://github.com/SFML/SFML/pull/1482">#1482</a>)</li>
+  <li>[Linux] Fixed dual monitor issue (<a href="https://github.com/SFML/SFML/pull/1226">#1226</a>, <a href="https://github.com/SFML/SFML/pull/1238">#1238</a>)</li>
+  <li>[Linux] Fixed issue where fullscreen window didn't go over task bars on top and left on in Ubuntu (<a href="https://github.com/SFML/SFML/pull/1224">#1224</a>)</li>
+  <li>[Linux] Fixed the Unix clipboard implementation causing an abort due to internal data races in Xlib (<a href="https://github.com/SFML/SFML/pull/1437">#1437</a>)</li>
+  <li>[macOS] Added additional system cursors (<a href="https://github.com/SFML/SFML/pull/1401">#1401</a>, <a href="https://github.com/SFML/SFML/pull/1413">#1413</a>, <a href="https://github.com/SFML/SFML/pull/1425">#1425</a>)</li>
+  <li>[Windows] Fixed swapped colors for custom cursors (<a href="https://github.com/SFML/SFML/pull/1464">#1464</a>, <a href="https://github.com/SFML/SFML/pull/1465">#1465</a>, <a href="https://github.com/SFML/SFML/pull/1491">#1491</a>)</li>
+</ul>
+
+<h3 id="2.5.1-graphics"><a class="h3-link" href="#2.5.1-graphics">Graphics</a></h3>
+<h4>Bugfixes</h4>
+<ul>
+  <li>Fixed a bug in which a sf::RenderTexture would not be re-activated after being re-created (<a href="https://github.com/SFML/SFML/pull/1438">#1438</a>)</li>
+  <li>Fixed sf::RenderTextureImplFBO's destructor incorrectly triggering deletion of other sf::RenderTextureImplFBO's active FBOs (<a href="https://github.com/SFML/SFML/pull/1440">#1440</a>)</li>
+  <li>Fix sf::RenderWindow::setActive incorrectly trying to unbind an FBO during deactivation <a href="https://github.com/SFML/SFML/pull/1442">(#1442</a>)</li>
+  <li>Fixed sf::RenderTexture::display() dereferencing a NULL pointer when being called before sf::RenderTexture::create() (<a href="https://github.com/SFML/SFML/pull/1446">#1446</a>)</li>
+  <li>Fixed bug in sf::Text when applying an outline color/thickness (<a href="https://github.com/SFML/SFML/pull/1176">#1176</a>)</li>
+  <li>Squash duplicated sf::Font glyphs to single chars (<a href="https://github.com/SFML/SFML/pull/1461">#1461</a>)</li>
+  <li>Fixed two issues with glyph sub-pixel positioning (<a href="https://github.com/SFML/SFML/pull/1452">#1452</a>)</li>
+  <li>Reduced context locking & unlocking while creating textures (<a href="https://github.com/SFML/SFML/pull/1459">#1459</a>)</li>
+  <li>Fixed the error message when the wrong bitmap font size is selected (<a href="https://github.com/SFML/SFML/pull/1456">#1456</a>, <a href="https://github.com/SFML/SFML/pull/1474">#1474</a>, <a href="https://github.com/SFML/SFML/pull/1492">#1492</a>)</li>
+</ul>
+
+<h3 id="2.5.1-audio"><a class="h3-link" href="#2.5.1-audio">Audio</a></h3>
+<h4>Bugfixes</h4>
+<ul>
+  <li>Fixed performance issue with reading WAV files (<a href="https://github.com/SFML/SFML/pull/1450">#1450</a>)</li>
+</ul>
+
+<h2 id="sfml-2.5.0"><a class="h2-link" href="#sfml-2.5.0">SFML 2.5.0</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
+<h3 id="2.5.0-general"><a class="h3-link" href="#2.5.0-general">General</a></h3>
+<ul>
+  <li>Replaced FindSFML.cmake with SFMLConfig.cmake (<a href="https://github.com/SFML/SFML/pull/1335">#1335</a>)</li>
+  <li>Markdown'd and updated readme, changelog, contributing and license files (<a href="https://github.com/SFML/SFML/pull/1196">#1196</a>, <a href="https://github.com/SFML/SFML/pull/1368">#1368</a>, <a href="https://github.com/SFML/SFML/pull/1317">#1317</a>)</li>
+  <li>Improve packaging support (<a href="https://github.com/SFML/SFML/pull/1173">#1173</a>)</li>
+  <li>Added Tagfile generation and search (<a href="https://github.com/SFML/SFML/pull/1327">#1327</a>)</li>
+  <li>Added CMake variables to select the modules to be built (<a href="https://github.com/SFML/SFML/issues/798">#798</a>, <a href="https://github.com/SFML/SFML/pull/800">#800</a>)</li>
+  <li>Do not install extlibs if SFML_USE_SYSTEM_DEPS is true (<a href="https://github.com/SFML/SFML/issues/1236">#1236</a>, <a href="https://github.com/SFML/SFML/pull/1237">#1237</a>)</li>
+  <li>Fixed various type conversion/comparison warnings (<a href="https://github.com/SFML/SFML/pull/1325">#1325</a>)</li>
+  <li>[Android] Increased minimum API version to 14 (<a href="https://github.com/SFML/SFML/pull/1362">#1362</a>)</li>
+  <li>[Android] Removed custom toolchain and added support for the newest NDK version and Gradle (<a href="https://github.com/SFML/SFML/pull/1350">#1350</a>, <a href="https://github.com/SFML/SFML/pull/1393">#1393</a>)</li>
+  <li>[iOS] Updated the binary libs from exlibs/libs-ios (<a href="https://github.com/SFML/SFML/pull/1207">#1207</a>, <a href="https://github.com/SFML/SFML/pull/1209">#1209</a>)</li>
+  <li>[iOS] Use a CMake toolchain file for iOS build (<a href="https://github.com/SFML/SFML/pull/1268">#1268</a>, <a href="https://github.com/SFML/SFML/pull/1269">#1269</a>)</li>
+  <li>[iOS] Install extlibs if needed (<a href="https://github.com/SFML/SFML/pull/1348">#1348</a>)</li>
+  <li>[iOS] Drop 32 bit support (<a href="https://github.com/SFML/SFML/pull/1374">#1374</a>)</li>
+  <li>[iOS] Force correct iOS architecture for cmake (<a href="https://github.com/SFML/SFML/pull/1373">#1373</a>, <a href="https://github.com/SFML/SFML/pull/1377">#1377</a>)</li>
+  <li>[iOS] Added iOS example (<a href="https://github.com/SFML/SFML/pull/1378">#1378</a>)</li>
+  <li>[macOS] Fixed launch of cocoa examples (<a href="https://github.com/SFML/SFML/pull/1334">#1334</a>)</li>
+  <li>[macOS] Improved application signing process (<a href="https://github.com/SFML/SFML/pull/1020">#1020</a>, <a href="https://github.com/SFML/SFML/pull/1036">#1036</a>, <a href="https://github.com/SFML/SFML/pull/1194">#1194</a>)</li>
+  <li>[macOS] Improved CMake script (<a href="https://github.com/SFML/SFML/pull/1215">#1215</a>, <a href="https://github.com/SFML/SFML/pull/1371">#1371</a>)</li>
+  <li>[macOS] Use -stdlib=libc++ (<a href="https://github.com/SFML/SFML/pull/1361">#1361</a>)</li>
+  <li>[OpenBSD] Added support for OpenBSD (<a href="https://github.com/SFML/SFML/pull/1330">#1330</a>)</li>
+</ul>
+
+<h3 id="2.5.0-system"><a class="h3-link" href="#2.5.0-system">System</a></h3>
+<h4>Bugfixes</h4>
+<ul>
+  <li>Added protected destructor to sf::NonCopyable to prevent possible resource leaks (<a href="https://github.com/SFML/SFML/pull/1125">#1125</a>, <a href="https://github.com/SFML/SFML/pull/1161">#1161</a>)</li>
+  <li>Fixed crash when sf::Clock is constructed in a global scope (<a href="https://github.com/SFML/SFML/pull/1258">#1258</a>)</li>
+</ul>
+
+<h3 id="2.5.0-window"><a class="h3-link" href="#2.5.0-window">Window</a></h3>
+<h4>Features</h4>
+<ul>
+  <li>Implemented Cursor API (<a href="https://github.com/SFML/SFML/pull/269">#269</a>, <a href="https://github.com/SFML/SFML/pull/784">#784</a>, <a href="https://github.com/SFML/SFML/pull/827">#827</a>)</li>
+  <li>Implemented Clipboard API (<a href="https://github.com/SFML/SFML/pull/715">#715</a>, <a href="https://github.com/SFML/SFML/pull/1204">#1204</a>, <a href="https://github.com/SFML/SFML/pull/1221">#1221</a>)</li>
+  <li>Renamed a few key codes (<a href="https://github.com/SFML/SFML/pull/1395">#1395</a>)</li>
+  <li>Added joystick example (<a href="https://github.com/SFML/SFML/pull/1363">#1363</a>)</li>
+  <li>[Windows] Added support for interfacing with joysticks via DirectInput when it is available (<a href="https://github.com/SFML/SFML/pull/1251">#1251</a>, <a href="https://github.com/SFML/SFML/pull/1326">#1326</a>)</li>
+  <li>[Windows] Fix discrete GPU preference symbols being exported from the wrong place (<a href="https://github.com/SFML/SFML/pull/1192">#1192</a>, <a href="https://github.com/SFML/SFML/pull/1406">#1406</a>)</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+  <li>[Android] Return correct key code for delete/backspace (<a href="https://github.com/SFML/SFML/pull/1309">#1309</a>, <a href="https://github.com/SFML/SFML/pull/1362">#1362</a>)</li>
+  <li>[iOS] Don't need to find vorbisfile or vorbisenc (<a href="https://github.com/SFML/SFML/pull/1347">#1347</a>)</li>
+  <li>[Linux] Fixed sf::Window::getPosition() returning incorrect position because of differences in window managers (<a href="https://github.com/SFML/SFML/pull/1228">#1228</a>, <a href="https://github.com/SFML/SFML/pull/1266">#1266</a>)</li>
+  <li>[Linux] Fix X11 key repeat handling not filtering out events from other windows (<a href="https://github.com/SFML/SFML/pull/1223">#1223</a>, <a href="https://github.com/SFML/SFML/pull/1230">#1230</a>, <a href="https://github.com/SFML/SFML/pull/1291">#1291</a>)</li>
+  <li>[Linux] Restore fullscreen of a non-visible window (<a href="https://github.com/SFML/SFML/pull/1339">#1339</a>)</li>
+  <li>[macOS] Fixed window menu not working (<a href="https://github.com/SFML/SFML/pull/1091">#1091</a>, <a href="https://github.com/SFML/SFML/pull/1180">#1180</a>, <a href="https://github.com/SFML/SFML/pull/1193">#1193</a>)</li>
+  <li>[macOS] Fixed crash with application messing hardware detection e.g. TeamViewer (<a href="https://github.com/SFML/SFML/pull/1323">#1323</a>)</li>
+  <li>[macOS] Added support for (some) Hat/POV axis (<a href="https://github.com/SFML/SFML/pull/1248">#1248</a>)</li>
+  <li>[Windows] Prevent uninitialized read by zeroing memory (<a href="https://github.com/SFML/SFML/pull/1264">#1264</a>)</li>
+  <li>[Windows] Fixed modifier keys handling (<a href="https://github.com/SFML/SFML/pull/1357">#1357</a>)</li>
+</ul>
+
+<h3 id="2.5.0-graphics"><a class="h3-link" href="#2.5.0-graphics">Graphics</a></h3>
+<h4>Features</h4>
+<ul>
+  <li>Implemented additional line spacing and letter spacing in sf::Text (<a href="https://github.com/SFML/SFML/pull/928">#928</a>, <a href="https://github.com/SFML/SFML/pull/1366">#1366</a>)</li>
+  <li>Added sf::VertexBuffer class (<a href="https://github.com/SFML/SFML/pull/1308">#1308</a>)</li>
+  <li>Added GPU local texture copying support, allowing performance optimizations and texture swapping (<a href="https://github.com/SFML/SFML/pull/1119">#1119</a>, <a href="https://github.com/SFML/SFML/pull/1319">#1319</a>, <a href="https://github.com/SFML/SFML/pull/1320">#1320</a>)</li>
+  <li>Optimize performance by skipping glTexCoordPointer() call if not needed (<a href="https://github.com/SFML/SFML/pull/1015">#1015</a>)</li>
+  <li>Generate shape outline vertices only if necessary (<a href="https://github.com/SFML/SFML/pull/925">#925</a>, <a href="https://github.com/SFML/SFML/pull/1356">#1356</a>)</li>
+  <li>Removed dependency to libjpeg, stb_image_write now supports writing JPEG files (<a href="https://github.com/SFML/SFML/pull/1278">#1278</a>, <a href="https://github.com/SFML/SFML/pull/1279">#1279</a>)</li>
+  <li>Enable comparing sf::Transform and optimize resetting OpenGL back to the identity matrix (<a href="https://github.com/SFML/SFML/pull/1298">#1298</a>)</li>
+  <li>Added missing setActive() virtual method to sf::RenderTarget (<a href="https://github.com/SFML/SFML/pull/1157">#1157</a>)</li>
+  <li>Updated stb_image to v2.16 and stb_image_write to v1.07 (<a href="https://github.com/SFML/SFML/pull/1270">#1270</a>)</li>
+  <li>Added sf::RenderTexture stencil and multisampling support (<a href="https://github.com/SFML/SFML/pull/1274">#1274</a>, <a href="https://github.com/SFML/SFML/pull/1285">#1285</a>)</li>
+  <li>Added example demonstrating sf::VertexBuffer, sf::Shader and sf::Thread usage (<a href="https://github.com/SFML/SFML/pull/1352">#1352</a>)</li>
+  <li>Optimized sf::RenderTexture performance (<a href="https://github.com/SFML/SFML/pull/1379">#1379</a>)</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+  <li>Properly free memory in sf::Font::cleanup() (<a href="https://github.com/SFML/SFML/pull/1119">#1119</a>)</li>
+  <li>Fixed memory leak in sf::Font (<a href="https://github.com/SFML/SFML/pull/1216">#1216</a>)</li>
+  <li>Fix OpenGL texture coordinate pointer not being updated correctly under certain conditions (<a href="https://github.com/SFML/SFML/pull/1297">#1297</a>)</li>
+  <li>Fix for broken text when the font is reloaded (<a href="https://github.com/SFML/SFML/pull/1345">#1345</a>)</li>
+  <li>Fix memory leak in sf::Text (<a href="https://github.com/SFML/SFML/pull/1233">#1233</a>, <a href="https://github.com/SFML/SFML/pull/1360">#1360</a>)</li>
+  <li>Fixed strict aliasing punning warning when generating the key of a glyph in Font.cpp (<a href="https://github.com/SFML/SFML/pull/1187">#1187</a>, <a href="https://github.com/SFML/SFML/pull/1396">#1396</a>)</li>
+  <li>Fixed OpenGL version string being parsed incorrectly on some platforms (<a href="https://github.com/SFML/SFML/pull/1249">#1249</a>, <a href="https://github.com/SFML/SFML/pull/1390">#1390</a>)</li>
+  <li>[macOS] Worked around render target bug (<a href="https://github.com/SFML/SFML/pull/1132">#1132</a>, <a href="https://github.com/SFML/SFML/pull/1342">#1342</a>)</li>
+  <li>[Windows] Replaced time-based joystick poll with a hardware event handler (<a href="https://github.com/SFML/SFML/pull/1179">#1179</a>, <a href="https://github.com/SFML/SFML/pull/1195">#1195</a>, <a href="https://github.com/SFML/SFML/pull/1198">#1198</a>, <a href="https://github.com/SFML/SFML/pull/1199">#1199</a>, <a href="https://github.com/SFML/SFML/pull/1421">#1421</a>)</li>
+</ul>
+
+<h3 id="2.5.0-audio"><a class="h3-link" href="#2.5.0-audio">Audio</a></h3>
+<h4>Features</h4>
+<ul>
+  <li>Added loop point support to sf::Music (<a href="https://github.com/SFML/SFML/pull/177">#177</a>, <a href="https://github.com/SFML/SFML/pull/629">#629</a>)</li>
+  <li>Added support for the extensible PCM wave file format (<a href="https://github.com/SFML/SFML/pull/1296">#1296</a>)</li>
+  <li>[iOS] Enable audio module (<a href="https://github.com/SFML/SFML/pull/1338">#1338</a>)</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+  <li>Fixed inconsistent seek behavior in sf::SoundStream (<a href="https://github.com/SFML/SFML/pull/1118">#1118</a>)</li>
+  <li>Fixed stack overflow in sf::SoundStream::fillAndPushBuffer() (<a href="https://github.com/SFML/SFML/pull/1154">#1154</a>)</li>
+  <li>Fixed seeking quirks in the FLAC reader (<a href="https://github.com/SFML/SFML/pull/966">#966</a>, <a href="https://github.com/SFML/SFML/pull/1162">#1162</a>)</li>
+  <li>Allow polymorphism with sf::SoundSource (<a href="https://github.com/SFML/SFML/pull/1185">#1185</a>)</li>
+  <li>Fixed WAV file writer writing wrong header values (<a href="https://github.com/SFML/SFML/pull/1280">#1280</a>, <a href="https://github.com/SFML/SFML/pull/1281">#1281</a>)</li>
+  <li>Small bugfix to argument of alcCaptureOpenDevice() (<a href="https://github.com/SFML/SFML/pull/1304">#1304</a>, <a href="https://github.com/SFML/SFML/pull/1305">#1305</a>)</li>
+  <li>[iOS] Find OpenAL correctly (<a href="https://github.com/SFML/SFML/pull/1263">#1263</a>, <a href="https://github.com/SFML/SFML/pull/1376">#1376</a>)</li>
+  <li>[Windows] Updated OpenAL Soft to 1.18.1 fixing crashes (<a href="https://github.com/SFML/SFML/pull/1247">#1247</a>, <a href="https://github.com/SFML/SFML/pull/1260">#1260</a>)</li>
+</ul>
+
+<h3 id="2.5.0-network"><a class="h3-link" href="#2.5.0-network">Network</a></h3>
+<h4>Features</h4>
+<ul>
+  <li>Add append/overwrite parameter to Ftp::upload (<a href="https://github.com/SFML/SFML/pull/1072">#1072</a>, <a href="https://github.com/SFML/SFML/pull/1399">#1399</a>)</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+  <li>Fixed wrong condition for building network support (<a href="https://github.com/SFML/SFML/pull/1253">#1253</a>)</li>
+  <li>Changed TCP listen backlog from 0 to SOMAXCONN (<a href="https://github.com/SFML/SFML/pull/1369">#1369</a>, <a href="https://github.com/SFML/SFML/pull/1407">#1407</a>)</li>
+  <li>Fixed socket reuse not conforming to documentation (<a href="https://github.com/SFML/SFML/pull/1346">#1346</a>, <a href="https://github.com/SFML/SFML/pull/1408">#1408</a>)</li>
+</ul>
+
+
 <h2 id="sfml-2.4.2"><a class="h2-link" href="#sfml-2.4.2">SFML 2.4.2</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 <h3 id="2.4.2-system"><a class="h3-link" href="#2.4.2-system">System</a></h3>
 <h4>Bugfixes</h4>
@@ -39,7 +208,7 @@
 <ul>
   <li>Fixed bug where TransientContextLock would hang (<a href="https://github.com/SFML/SFML/issues/1165">#1165</a>, <a href="https://github.com/SFML/SFML/pull/1172">#1172</a>)</li>
   <li>[Linux] Fixed GLX extensions being loaded too late (<a href="https://github.com/SFML/SFML/pull/1183">#1183</a>)</li>
-  <li>[Linux] Fix wrong types passed to XChangeProperty (<a href="https://github.com/SFML/SFML/issues/1168">#1168</a> <a href="https://github.com/SFML/SFML/pull/1171">#1171</a>)</li>
+  <li>[Linux] Fix wrong types passed to XChangeProperty (<a href="https://github.com/SFML/SFML/issues/1168">#1168</a>, <a href="https://github.com/SFML/SFML/pull/1171">#1171</a>)</li>
   <li>[Windows] Make context disabling via wglMakeCurrent more tolerant of broken drivers (<a href="https://github.com/SFML/SFML/pull/1186">#1186</a>)</li>
 </ul>
 
@@ -49,11 +218,12 @@
   <li>Optimized sf::Image::create and made it more exception safe (<a href="https://github.com/SFML/SFML/pull/1166">#1166</a>)</li>
 </ul>
 
+
 <h2 id="sfml-2.4.1"><a class="h2-link" href="#sfml-2.4.1">SFML 2.4.1</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 <h3 id="2.4.1-general"><a class="h3-link" href="#2.4.1-general">General</a></h3>
 <h4>Bugfixes</h4>
 <ul>
-  <li>[kFreeBSD] Define SFML_OS_FREEBSD when compiling for kFreeBSD (<a href="https://github.com/SFML/SFML/pull/1129">#1129</a></li>
+  <li>[kFreeBSD] Define SFML_OS_FREEBSD when compiling for kFreeBSD (<a href="https://github.com/SFML/SFML/pull/1129">#1129</a>)</li>
   <li>[Windows] Added some simple messaging when trying to build under Cygwin (<a href="https://github.com/SFML/SFML/pull/1153">#1153</a>)</li>
 </ul>
 
@@ -69,7 +239,7 @@
   <li>[Linux] Fixed an issue where GNOME flags window unresponsive (<a href="https://github.com/SFML/SFML/issues/1089">#1089</a>, <a href="https://github.com/SFML/SFML/pull/1138">#1138</a>)</li>
   <li>[Linux] Fixed leak of XVisualInfo objects during GlxContext creation (<a href="https://github.com/SFML/SFML/pull/1135">#1135</a>)</li>
   <li>[Linux] Fixed possible hang when setting visibility if external window sources (<a href="https://github.com/SFML/SFML/pull/1136">#1136</a>)</li>
-  <li>[OS X] Fixed inconsistency between doc and impl on OS X for the grab feature (<a href="https://github.com/SFML/SFML/pull/1133">#1133</a>, <a href="https://github.com/SFML/SFML/issues/1148">#1148</a>, <a href="https://github.com/SFML/SFML/pull/1150">#1150</a>)</li>
+  <li>[macOS] Fixed inconsistency between doc and impl on macOS for the grab feature (<a href="https://github.com/SFML/SFML/pull/1133">#1133</a>, <a href="https://github.com/SFML/SFML/issues/1148">#1148</a>, <a href="https://github.com/SFML/SFML/pull/1150">#1150</a>)</li>
   <li>[Windows] Fixed context memory leaks (<a href="https://github.com/SFML/SFML/issues/1143">#1143</a>, <a href="https://github.com/SFML/SFML/pull/1002">#1002</a>)</li>
 </ul>
 
@@ -86,6 +256,7 @@
   <li>Fixed a typo in comment for sf::UdpSocket::unbind() (<a href="https://github.com/SFML/SFML/pull/1121">#1121</a>)</li>
 </ul>
 
+
 <h2 id="sfml-2.4.0"><a class="h2-link" href="#sfml-2.4.0">SFML 2.4.0</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 <h3 id="2.4.0-general"><a class="h3-link" href="#2.4.0-general">General</a></h3>
 <ul>
@@ -97,7 +268,7 @@
   <li>Updated/fixed string comparisons in Config.cmake (<a href="https://github.com/SFML/SFML/pull/1102">#1102</a>)</li>
   <li>Added the missing -s postfix for the RelWithDebInfo config (<a href="https://github.com/SFML/SFML/pull/1014">#1014</a>)</li>
   <li>[Android] Fixed current Android compilation issues (<a href="https://github.com/SFML/SFML/pull/1116">#1116</a>, <a href="https://github.com/SFML/SFML/pull/1111">#1111</a>, <a href="https://github.com/SFML/SFML/pull/1079">#1079</a>)</li>
-  <li>[OS X] Update Xcode template material (<a href="https://github.com/SFML/SFML/pull/976">#976</a>, <a href="https://github.com/SFML/SFML/pull/968">#968</a>)</li>
+  <li>[macOS] Update Xcode template material (<a href="https://github.com/SFML/SFML/pull/976">#976</a>, <a href="https://github.com/SFML/SFML/pull/968">#968</a>)</li>
   <li>[Windows] Added support for VS 2015 (<a href="https://github.com/SFML/SFML/pull/972">#972</a>)</li>
   <li>[Windows] Create and install PDB debug symbols alongside binaries (<a href="https://github.com/SFML/SFML/pull/1037">#1037</a>)</li>
 </ul>
@@ -140,10 +311,10 @@
   <li>[Android] Accept touch events from "multiple" devices (<a href="https://github.com/SFML/SFML/pull/954">#954</a>, <a href="https://github.com/SFML/SFML/pull/953">#953</a>)</li>
   <li>[Android] Copy the selected EGL context's settings to SFML (<a href="https://github.com/SFML/SFML/pull/1039">#1039</a>)</li>
   <li>[Linux] Fixed modifiers causing sf::Keyboard::Unknown being returned (<a href="https://github.com/SFML/SFML/pull/1022">#1022</a>, <a href="https://github.com/SFML/SFML/pull/1012">#1012</a>)</li>
-  <li>[OS X] Improved memory management on OS X (<a href="https://github.com/SFML/SFML/pull/962">#962</a>, <a href="https://github.com/SFML/SFML/pull/790">#790</a>)</li>
-  <li>[OS X] Fixed crash when resizing a window to a zero-height/width size (<a href="https://github.com/SFML/SFML/pull/986">#986</a>, <a href="https://github.com/SFML/SFML/pull/984">#984</a>)</li>
-  <li>[OS X] Use the mouse button constant instead of 0 to avoid a compiler error on OSX (<a href="https://github.com/SFML/SFML/pull/1035">#1035</a>)</li>
-  <li>[OS X] OS X improvement: warnings + bugfix + refactoring, the lot! (<a href="https://github.com/SFML/SFML/pull/1042">#1042</a>)</li>
+  <li>[macOS] Improved memory management on macOS (<a href="https://github.com/SFML/SFML/pull/962">#962</a>, <a href="https://github.com/SFML/SFML/pull/790">#790</a>)</li>
+  <li>[macOS] Fixed crash when resizing a window to a zero-height/width size (<a href="https://github.com/SFML/SFML/pull/986">#986</a>, <a href="https://github.com/SFML/SFML/pull/984">#984</a>)</li>
+  <li>[macOS] Use the mouse button constant instead of 0 to avoid a compiler error on macOS (<a href="https://github.com/SFML/SFML/pull/1035">#1035</a>)</li>
+  <li>[macOS] macOS improvement: warnings + bugfix + refactoring, the lot! (<a href="https://github.com/SFML/SFML/pull/1042">#1042</a>)</li>
 </ul>
 
 <h3 id="2.4.0-graphics"><a class="h3-link" href="#2.4.0-graphics">Graphics</a></h3>
@@ -171,7 +342,7 @@
 <h4>Bugfixes</h4>
 <ul>
   <li>Added an assignment operator to SoundSource (<a href="https://github.com/SFML/SFML/pull/864">#864</a>)</li>
-  <li>[OS X] Updates OpenAL-soft for OS X to version 1.17.2 (<a href="https://github.com/SFML/SFML/pull/1057">#1057</a>, <a href="https://github.com/SFML/SFML/pull/900">#900</a>, <a href="https://github.com/SFML/SFML/pull/1000">#1000</a>)</li>
+  <li>[macOS] Updates OpenAL-soft for macOS to version 1.17.2 (<a href="https://github.com/SFML/SFML/pull/1057">#1057</a>, <a href="https://github.com/SFML/SFML/pull/900">#900</a>, <a href="https://github.com/SFML/SFML/pull/1000">#1000</a>)</li>
   <li>Fixed a bug where vorbis can't handle large buffers (<a href="https://github.com/SFML/SFML/pull/1067">#1067</a>)</li>
   <li>Added support for 24-bit .wav files (<a href="https://github.com/SFML/SFML/pull/958">#958</a>, <a href="https://github.com/SFML/SFML/pull/955">#955</a>)</li>
   <li>Fixed threading issue in sf::SoundRecorder (<a href="https://github.com/SFML/SFML/pull/1011">#1011</a>)</li>
@@ -258,7 +429,7 @@
  <li>Added missing includes in the general headers (<a href="https://github.com/SFML/SFML/pull/851">#851</a>)</li>
  <li>[Android] Updated toolchain file and dependencies (<a href="https://github.com/SFML/SFML/pull/791">#791</a>)</li>
  <li>[Linux] Fixed missing pthread dependency (<a href="https://github.com/SFML/SFML/pull/794">#794</a>)</li>
- <li>[OS X] Relaxed CMake installation rules regarding framework dependencies (<a href="https://github.com/SFML/SFML/pull/767">#767</a>)</li>
+ <li>[macOS] Relaxed CMake installation rules regarding framework dependencies (<a href="https://github.com/SFML/SFML/pull/767">#767</a>)</li>
 </ul>
 
 <h3 id="2.3-deprecated"><a class="h3-link" href="#2.3-deprecated">Deprecated API</a></h3>
@@ -283,8 +454,8 @@
  <li>[iOS] Fixed inconsistency between sf::Touch::getPosition and touch events (<a href="https://github.com/SFML/SFML/pull/875">#875</a>)</li>
  <li>[Linux] Fixed Alt+F4 not getting triggered in window mode (<a href="https://github.com/SFML/SFML/issues/274">#274</a>)</li>
  <li>[Linux] Fixed Unix joystick stuff (<a href="https://github.com/SFML/SFML/pull/838">#838</a>)</li>
- <li>[OS X] Fixed typo in JoystickImpl.cpp to prevent a crash (<a href="https://github.com/SFML/SFML/issues/762">#762</a>, <a href="https://github.com/SFML/SFML/pull/765">#765</a>)</li>
- <li>[OS X] Fixed an issue in InputImpl::getSFOpenGLViewFromSFMLWindow (<a href="https://github.com/SFML/SFML/issues/782">#782</a>, <a href="https://github.com/SFML/SFML/pull/792">#792</a>)</li>
+ <li>[macOS] Fixed typo in JoystickImpl.cpp to prevent a crash (<a href="https://github.com/SFML/SFML/issues/762">#762</a>, <a href="https://github.com/SFML/SFML/pull/765">#765</a>)</li>
+ <li>[macOS] Fixed an issue in InputImpl::getSFOpenGLViewFromSFMLWindow (<a href="https://github.com/SFML/SFML/issues/782">#782</a>, <a href="https://github.com/SFML/SFML/pull/792">#792</a>)</li>
 </ul>
 
 <h3 id="2.3-graphics"><a class="h3-link" href="#2.3-graphics">Graphics</a></h3>
@@ -314,7 +485,7 @@
 <h4>Bugfixes</h4>
 <ul>
  <li>Fixed access violation error in the destructor of sf::AudioDevice (<a href="https://github.com/SFML/SFML/issues/30">#30</a>, <a href="https://github.com/SFML/SFML/pull/602">#602</a>)</li>
- <li>[OS X] Fixed threading issue with sf::SoundStream and OpenAL (<a href="https://github.com/SFML/SFML/issues/541">#541</a>, <a href="https://github.com/SFML/SFML/pull/831">#831</a>)</li>
+ <li>[macOS] Fixed threading issue with sf::SoundStream and OpenAL (<a href="https://github.com/SFML/SFML/issues/541">#541</a>, <a href="https://github.com/SFML/SFML/pull/831">#831</a>)</li>
 </ul>
 
 <h3 id="2.3-network"><a class="h3-link" href="#2.3-network">Network</a></h3>
@@ -340,15 +511,15 @@
  <li>Slight adjustments to the examples (<a href="https://github.com/SFML/SFML/pull/737">#737</a>)</li>
  <li>[FreeBSD] Various configuration fixes (<a href="https://github.com/SFML/SFML/pull/577">#577</a>, <a href="https://github.com/SFML/SFML/pull/578">#578</a>)</li>
  <li>[Linux] Updated <code>FindSFML.cmake</code> to add UDev to SFML's dependencies (<a href="https://github.com/SFML/SFML/issues/728">#728</a>, <a href="https://github.com/SFML/SFML/pull/729">#729</a>, <a href="https://github.com/SFML/SFML/issues/734">#734</a>, <a href="https://github.com/SFML/SFML/pull/736">#736</a>)</li>
- <li>[OS X] Fixed incorrect symlink in freetype.framework (<a href="https://github.com/SFML/SFML/issues/519">#519</a>)</li>
- <li>[OS X] CMake module for correct dependencies (<a href="https://github.com/SFML/SFML/pull/548">#548</a>)</li>
- <li>[OS X] Fixed SFML target for Xcode (<a href="https://github.com/SFML/SFML/issues/595">#595</a>, <a href="https://github.com/SFML/SFML/issues/596">#596</a>)</li>
- <li>[OS X] Updated implementation, mainly reverting to non-ARC (<a href="https://github.com/SFML/SFML/issues/601">#601</a>)</li>
- <li>[OS X] Fixed memory leaks and dead store (<a href="https://github.com/SFML/SFML/issues/615">#615</a>)</li>
- <li>[OS X] Improved event handling and performance (<a href="https://github.com/SFML/SFML/issues/617">#617</a>)</li>
- <li>[OS X] Reduced memory usage (<a href="https://github.com/SFML/SFML/issues/672">#672</a>, <a href="https://github.com/SFML/SFML/issues/698">#698</a>)</li>
- <li>[OS X] OS X 10.10 support (<a href="https://github.com/SFML/SFML/issues/691">#691</a>, <a href="https://github.com/SFML/SFML/pull/699">#699</a>)</li>
- <li>[OS X] Improve flexibility of dependencies' locations (<a href="https://github.com/SFML/SFML/pull/713">#713</a>)</li>
+ <li>[macOS] Fixed incorrect symlink in freetype.framework (<a href="https://github.com/SFML/SFML/issues/519">#519</a>)</li>
+ <li>[macOS] CMake module for correct dependencies (<a href="https://github.com/SFML/SFML/pull/548">#548</a>)</li>
+ <li>[macOS] Fixed SFML target for Xcode (<a href="https://github.com/SFML/SFML/issues/595">#595</a>, <a href="https://github.com/SFML/SFML/issues/596">#596</a>)</li>
+ <li>[macOS] Updated implementation, mainly reverting to non-ARC (<a href="https://github.com/SFML/SFML/issues/601">#601</a>)</li>
+ <li>[macOS] Fixed memory leaks and dead store (<a href="https://github.com/SFML/SFML/issues/615">#615</a>)</li>
+ <li>[macOS] Improved event handling and performance (<a href="https://github.com/SFML/SFML/issues/617">#617</a>)</li>
+ <li>[macOS] Reduced memory usage (<a href="https://github.com/SFML/SFML/issues/672">#672</a>, <a href="https://github.com/SFML/SFML/issues/698">#698</a>)</li>
+ <li>[macOS] macOS 10.10 support (<a href="https://github.com/SFML/SFML/issues/691">#691</a>, <a href="https://github.com/SFML/SFML/pull/699">#699</a>)</li>
+ <li>[macOS] Improve flexibility of dependencies' locations (<a href="https://github.com/SFML/SFML/pull/713">#713</a>)</li>
  <li>[Windows] Removed the hack that copied external libraries into SFML static libraries (<a href="https://github.com/SFML/SFML/commit/dbf01a775b7545bf83fbee0e1464f3f323723187">dbf01a7</a>)</li>
 </ul>
 
@@ -374,10 +545,10 @@
  <li>Added window methods to request and to check focus (<a href="https://github.com/SFML/SFML/issues/518">#518</a>, <a href="https://github.com/SFML/SFML/pull/525">#525</a>, <a href="https://github.com/SFML/SFML/pull/613">#613</a>, <a href="https://github.com/SFML/SFML/pull/723">#723</a>, <a href="https://github.com/SFML/SFML/pull/735">#735</a>)</li>
  <li>Provide name, manufacturer ID and product ID via <code>sf::Joystick</code> (<a href="https://github.com/SFML/SFML/issues/152">#152</a>, <a href="https://github.com/SFML/SFML/pull/528">#528</a>)</li>
  <li>[FreeBSD] Joystick support (<a href="https://github.com/SFML/SFML/issues/477">#477</a>)</li>
- <li>[OS X] Improved integration with menus and dock actions (<a href="https://github.com/SFML/SFML/issues/11">#11</a>)</li>
- <li>[OS X] Support for OpenGL 3.2 (<a href="https://github.com/SFML/SFML/issues/84">#84</a>)</li>
- <li>[OS X] Improved fullscreen support (<a href="https://github.com/SFML/SFML/issues/343">#343</a>)</li>
- <li>[OS X] Added support for retina displays (<a href="https://github.com/SFML/SFML/issues/353">#353</a>, <a href="https://github.com/SFML/SFML/pull/388">#388</a>)</li>
+ <li>[macOS] Improved integration with menus and dock actions (<a href="https://github.com/SFML/SFML/issues/11">#11</a>)</li>
+ <li>[macOS] Support for OpenGL 3.2 (<a href="https://github.com/SFML/SFML/issues/84">#84</a>)</li>
+ <li>[macOS] Improved fullscreen support (<a href="https://github.com/SFML/SFML/issues/343">#343</a>)</li>
+ <li>[macOS] Added support for retina displays (<a href="https://github.com/SFML/SFML/issues/353">#353</a>, <a href="https://github.com/SFML/SFML/pull/388">#388</a>)</li>
  <li>[Windows] Removed support for Windows 9x (<a href="https://github.com/SFML/SFML/issues/469">#469</a>)</li>
  <li>[Windows] Fixed typo in Windows keyboard implementation (<a href="https://github.com/SFML/SFML/issues/516">#516</a>)</li>
 </ul>
@@ -391,14 +562,14 @@
  <li>[Linux] Output error message when <code>XOpenDisplay()</code> fails (<a href="https://github.com/SFML/SFML/issues/508">#508</a>, <a href="https://github.com/SFML/SFML/pull/616">#616</a>)</li>
  <li>[Linux] Resize window with <code>setSize</code> when <code>sf::Style::Resize</code> is set (<a href="https://github.com/SFML/SFML/issues/466">#466</a>)</li>
  <li>[Linux] Fixed broken key repeat on window recreation (<a href="https://github.com/SFML/SFML/issues/564">#564</a>, <a href="https://github.com/SFML/SFML/pull/567">#567</a>)</li>
- <li>[OS X] Fixes <code>KeyReleased</code> not being fired in fullscreen mode (<a href="https://github.com/SFML/SFML/issues/465">#465</a>)</li>
- <li>[OS X] Fixed an issue where disconnecting the keyboard would cause a crash (<a href="https://github.com/SFML/SFML/issues/467">#467</a>)</li>
- <li>[OS X] Fixed unexpected resizing behavior (<a href="https://github.com/SFML/SFML/issues/468">#468</a>)</li>
- <li>[OS X] Improved resizing windows (<a href="https://github.com/SFML/SFML/issues/474">#474</a>)</li>
- <li>[OS X] Fixed memory leak with <code>sf::Window::create()</code> (<a href="https://github.com/SFML/SFML/issues/484">#484</a>)</li>
- <li>[OS X] Fixed menu shortcuts in fullscreen on OS X (<a href="https://github.com/SFML/SFML/issues/527">#527</a>)</li>
- <li>[OS X] Improved cursor hiding (<a href="https://github.com/SFML/SFML/pull/703">#703</a>)</li>
- <li>[OS X] Fixed right click not detected with trackpads (<a href="https://github.com/SFML/SFML/issues/716">#716</a>, <a href="https://github.com/SFML/SFML/pull/730">#730</a>)</li>
+ <li>[macOS] Fixes <code>KeyReleased</code> not being fired in fullscreen mode (<a href="https://github.com/SFML/SFML/issues/465">#465</a>)</li>
+ <li>[macOS] Fixed an issue where disconnecting the keyboard would cause a crash (<a href="https://github.com/SFML/SFML/issues/467">#467</a>)</li>
+ <li>[macOS] Fixed unexpected resizing behavior (<a href="https://github.com/SFML/SFML/issues/468">#468</a>)</li>
+ <li>[macOS] Improved resizing windows (<a href="https://github.com/SFML/SFML/issues/474">#474</a>)</li>
+ <li>[macOS] Fixed memory leak with <code>sf::Window::create()</code> (<a href="https://github.com/SFML/SFML/issues/484">#484</a>)</li>
+ <li>[macOS] Fixed menu shortcuts in fullscreen on macOS (<a href="https://github.com/SFML/SFML/issues/527">#527</a>)</li>
+ <li>[macOS] Improved cursor hiding (<a href="https://github.com/SFML/SFML/pull/703">#703</a>)</li>
+ <li>[macOS] Fixed right click not detected with trackpads (<a href="https://github.com/SFML/SFML/issues/716">#716</a>, <a href="https://github.com/SFML/SFML/pull/730">#730</a>)</li>
  <li>[Windows] Fixed joystick POV values (<a href="https://github.com/SFML/SFML/commit/ef1d29bf73c76bfbf06155228de2e7abf1d13c00">ef1d29b</a>)</li>
  <li>[Windows] Fixed Unicode inconsistency (<a href="https://github.com/SFML/SFML/pull/635">#635</a>)</li>
  <li>[Windows] Fixed Alt+F4 and mouse clicks issues (<a href="https://github.com/SFML/SFML/issues/437">#437</a>, <a href="https://github.com/SFML/SFML/pull/457">#457</a>)</li>
@@ -487,12 +658,12 @@
 <h4>Features</h4>
 <ul>
  <li>Now using <code>inotify</code> on Linux to avoid constantly polling joystick connections (<a href="https://github.com/SFML/SFML/issues/96">#96</a>)</li>
- <li>Add keypad return, equal and period keys support for OS X</li>
- <li>Improved mouse events on OS X regarding fullscreen mode</li>
- <li>Improved mouse events on OS X (<a href="https://github.com/SFML/SFML/issues/213">#213</a>, <a href="https://github.com/SFML/SFML/issues/277">#277</a>)</li>
- <li>Improved reactivity of <code>setMousePosition</code> on OS X (<a href="https://github.com/SFML/SFML/issues/290">#290</a>)</li>
- <li>Added support for right control key on OS X</li>
- <li>Improved <code>TextEntered</code> for OS X (<a href="https://github.com/SFML/SFML/issues/377">#377</a>)</li>
+ <li>Add keypad return, equal and period keys support for macOS</li>
+ <li>Improved mouse events on macOS regarding fullscreen mode</li>
+ <li>Improved mouse events on macOS (<a href="https://github.com/SFML/SFML/issues/213">#213</a>, <a href="https://github.com/SFML/SFML/issues/277">#277</a>)</li>
+ <li>Improved reactivity of <code>setMousePosition</code> on macOS (<a href="https://github.com/SFML/SFML/issues/290">#290</a>)</li>
+ <li>Added support for right control key on macOS</li>
+ <li>Improved <code>TextEntered</code> for macOS (<a href="https://github.com/SFML/SFML/issues/377">#377</a>)</li>
  <li>Improved the performances of <code>Window::getSize()</code> (the size is now cached)</li>
  <li>Added the <code>WM_CLASS</code> property to SFML windows on Linux</li>
  <li>Fake resize events are no longer sent when the window is moved, on Linux</li>
@@ -506,7 +677,7 @@
  <li>Fixed <code>ContextSettings</code> ignored on Linux when creating a window (<a href="https://github.com/SFML/SFML/issues/35">#35</a>)</li>
  <li>Fixed windows bigger than the desktop not appearing on Windows (<a href="https://github.com/SFML/SFML/issues/215">#215</a>)</li>
  <li>Fixed <code>KeyRelease</code> events sometimes not reported on Linux (<a href="https://github.com/SFML/SFML/issues/404">#404</a>)</li>
- <li>Fixed mouse moved event on OS X when dragging the cursor (<a href="https://github.com/SFML/SFML/issues/277">#277</a>)</li>
+ <li>Fixed mouse moved event on macOS when dragging the cursor (<a href="https://github.com/SFML/SFML/issues/277">#277</a>)</li>
  <li>Fixed <code>KeyRelease</code> event with CMD key pressed (<a href="https://github.com/SFML/SFML/issues/381">#381</a>)</li>
  <li>Fixed taskbar bugs on Windows (<a href="https://github.com/SFML/SFML/issues/328">#328</a>, <a href="https://github.com/SFML/SFML/issues/69">#69</a>)</li>
  <li>Fixed <code>Window::getPosition()</code> on Linux (<a href="https://github.com/SFML/SFML/issues/346">#346</a>)</li>
@@ -537,7 +708,7 @@
 
 <h4>Bugfixes</h4>
 <ul>
- <li>Added a workaround for a bug in the OS X implementation of OpenAL (unsupported channel count no properly detected) (<a href="https://github.com/SFML/SFML/issues/201">#201</a>)</li>
+ <li>Added a workaround for a bug in the macOS implementation of OpenAL (unsupported channel count no properly detected) (<a href="https://github.com/SFML/SFML/issues/201">#201</a>)</li>
  <li>Fixed <code>SoundBuffer::loadFromStream</code> reading past the end of the stream (<a href="https://github.com/SFML/SFML/issues/214">#214</a>)</li>
 </ul>
 
@@ -565,7 +736,7 @@
  <li>SFML libraries are now be compiled with gcc 4.4.0 on Windows (MinGW)</li>
  <li>Updated the Qt sample</li>
  <li>Added a Cocoa sample</li>
- <li>Added support for 64 bits on Mac OS X 10.5 and greater</li>
+ <li>Added support for 64 bits on Mac macOS 10.5 and greater</li>
 </ul>
 
 <h3 id="1.6-system"><a class="h3-link" href="#1.6-system">System</a></h3>
@@ -578,8 +749,8 @@
 <h4>Features</h4>
 <ul>
  <li>Increased the number of supported joysticks to 4</li>
- <li>Added return to the desktop resolution when the SFML fullscreen application is not active, on Mac OS X</li>
- <li>Added support for importing Cocoa widgets (in addition to Cocoa windows), on Mac OS X</li>
+ <li>Added return to the desktop resolution when the SFML fullscreen application is not active, on Mac macOS</li>
+ <li>Added support for importing Cocoa widgets (in addition to Cocoa windows), on Mac macOS</li>
 </ul>
 
 <h4>Bugfixes</h4>
@@ -588,12 +759,12 @@
  <li>Fixed joystick axes being sometimes ignored</li>
  <li>Fixed <code>Event::TextEntered</code> ignoring the key repeat state</li>
  <li>Fixed <code>KeyEvent.Alt</code>/<code>Control</code>/<code>Shift</code> members not working, in SFML.Net</li>
- <li>Fixed a crash happening when closing an imported window, on Mac OS X</li>
- <li>Fixed a bad behaviour when switching to fullscreen mode, on Mac OS X</li>
- <li>Fixed bips produced when pressing function or escape keys, on Mac OS X</li>
- <li>Fixed a conflict between SFML and Cocoa that may create memory leaks, on Mac OS X</li>
- <li>Fixed possible conflict between the SFML objective-C classes and the user's ones (using a private prefix in SFML), on Mac OS X</li>
- <li>Fixed wrong mouse coordinates when importing a Cocoa widget, on Mac OS X</li>
+ <li>Fixed a crash happening when closing an imported window, on Mac macOS</li>
+ <li>Fixed a bad behaviour when switching to fullscreen mode, on Mac macOS</li>
+ <li>Fixed bips produced when pressing function or escape keys, on Mac macOS</li>
+ <li>Fixed a conflict between SFML and Cocoa that may create memory leaks, on Mac macOS</li>
+ <li>Fixed possible conflict between the SFML objective-C classes and the user's ones (using a private prefix in SFML), on Mac macOS</li>
+ <li>Fixed wrong mouse coordinates when importing a Cocoa widget, on Mac macOS</li>
 </ul>
 
 <h3 id="1.6-graphics"><a class="h3-link" href="#1.6-graphics">Graphics</a></h3>
@@ -608,7 +779,7 @@
 <ul>
  <li>Fixed crash with the default font at global exit on Windows</li>
  <li>Fixed current OpenGL matrix mode not properly saved when <code>PreserveOpenGLStates</code> is activated</li>
- <li>Fixed a bug preventing image creation if no window was created, on Mac OS X</li>
+ <li>Fixed a bug preventing image creation if no window was created, on Mac macOS</li>
 </ul>
 
 <h3 id="1.6-audio"><a class="h3-link" href="#1.6-audio">Audio</a></h3>
@@ -643,8 +814,8 @@
 <h3 id="1.5-general"><a class="h3-link" href="#1.5-general">General</a></h3>
 <ul>
  <li>Fixed the code to make SFML compile on FreeBSD</li>
- <li>Added the OpenAL framework to the SDK on Mac OS X</li>
- <li><code>libsndfile</code> is now linked dynamically on Mac OS X</li>
+ <li>Added the OpenAL framework to the SDK on Mac macOS</li>
+ <li><code>libsndfile</code> is now linked dynamically on Mac macOS</li>
  <li>Added the XCode project files for CSFML</li>
  <li>Added Visual C++ project files for samples</li>
 </ul>
@@ -652,8 +823,8 @@
 <h3 id="1.5-system"><a class="h3-link" href="#1.5-system">System</a></h3>
 <h4>Bugfixes</h4>
 <ul>
- <li>Fixed bug with <code>std::locale</code> on Mac OS X</li>
- <li>The working directory is now initialized properly at startup on Mac OS X</li>
+ <li>Fixed bug with <code>std::locale</code> on Mac macOS</li>
+ <li>The working directory is now initialized properly at startup on Mac macOS</li>
 </ul>
 
 <h3 id="1.5-window"><a class="h3-link" href="#1.5-window">Window</a></h3>
@@ -661,8 +832,8 @@
 <ul>
  <li>Updated the Qt sample and tutorial to work with Qt 4.5</li>
  <li>Added missing <code>VideoMode</code> functions to SFML.Net</li>
- <li>Added support for creating a <code>sf::Window</code> from a Cocoa window on Mac OS X</li>
- <li>Added support for composed characters on Mac OS X</li>
+ <li>Added support for creating a <code>sf::Window</code> from a Cocoa window on Mac macOS</li>
+ <li>Added support for composed characters on Mac macOS</li>
 </ul>
 
 <h4>Bugfixes</h4>
@@ -674,9 +845,9 @@
  <li>Fixed <code>Window::SetSize</code> not resizing to the requested size, on Windows</li>
  <li>Fixed <code>KeyPressed</code> event sometimes returning a null key code on Windows</li>
  <li>Fixed <code>EnableKeyRepeat</code> not working anymore after a second window has been created on Linux</li>
- <li>Fixed bug when destroying / recreating a window on Mac OS X</li>
- <li>Desktop resolution is properly restored when hiding the application on Mac OS X</li>
- <li>Fixed accentuated characters not properly retrieved on Mac OS X</li>
+ <li>Fixed bug when destroying / recreating a window on Mac macOS</li>
+ <li>Desktop resolution is properly restored when hiding the application on Mac macOS</li>
+ <li>Fixed accentuated characters not properly retrieved on Mac macOS</li>
 </ul>
 
 <h3 id="1.5-graphics"><a class="h3-link" href="#1.5-graphics">Graphics</a></h3>
@@ -705,7 +876,7 @@
 <ul>
  <li>Fixed <code>Listener</code> functions being private in SFML.Net</li>
  <li>Fixed memory leaks when playing ogg audio files</li>
- <li>Fixed OpenAL error on Mac OSX when calling <code>SoundStream::Stop</code></code></li>
+ <li>Fixed OpenAL error on macOS when calling <code>SoundStream::Stop</code></code></li>
  <li>Fixed multi-threading issues in <code>sf::Music</code></code></li>
  <li>Fixed <code>sf::SoundStream</code> (and <code>sf::Music</code>) not looping seamlessly</li>
 </ul>
@@ -971,7 +1142,7 @@
 
 <h3 id="1.1-general"><a class="h3-link" href="#1.1-general">General</a></h3>
 <ul>
- <li>Added the Mac OSX port from Brad Leffler</li>
+ <li>Added the macOS port from Brad Leffler</li>
  <li>Added the Ruby binding from Sean O'Neil</li>
  <li>Added namespaces (now the SFML classes and functions are inside the <code>sf</code> namespace)</li>
  <li>Added a new sample (pong)</li>

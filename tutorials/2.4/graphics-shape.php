@@ -228,12 +228,12 @@ public :
         return m_radius;
     }
 
-    virtual unsigned int getPointCount() const
+    virtual std::size_t getPointCount() const
     {
         return 30; // fixed, but could be an attribute of the class if needed
     }
 
-    virtual sf::Vector2f getPoint(unsigned int index) const
+    virtual sf::Vector2f getPoint(std::size_t index) const
     {
         static const float pi = 3.141592654f;
 

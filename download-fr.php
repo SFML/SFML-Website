@@ -9,14 +9,14 @@
 <h1>Téléchargement</h1>
 
 <div class="link-box two-columns-left">
-    <a class="download" href="download/sfml/2.4.2/index-fr.php">
-        <div class="title">SFML 2.4.2</div>
+    <a class="download" href="download/sfml/2.5.1/index-fr.php">
+        <div class="title">SFML 2.5.1</div>
         <div class="description">Dernière version stable</div>
     </a>
 </div>
 
 <div class="link-box two-columns-right">
-    <a class="download-old" href="artifacts/by-branch/master/">
+    <a class="download-old" href="https://artifacts.sfml-dev.org/by-branch/master/">
         <div class="title">Instantanés</div>
         <div class="description">Versions en développement</div>
     </a>

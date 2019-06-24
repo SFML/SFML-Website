@@ -21,7 +21,7 @@
     <a class="internal" href="../../download-fr.php" title="Aller à la page des téléchargements">page des téléchargements</a>.
 </p>
 <p class="important">
-    Vous devez télécharger le package qui correspond à cotre version de Visual C++. En effet, une bibliothèque compilée avec VC++ 10 (Visual Studio 2010)
+    Vous devez télécharger le package qui correspond à votre version de Visual C++. En effet, une bibliothèque compilée avec VC++ 10 (Visual Studio 2010)
     ne sera pas compatible avec Visual C++ 12 (Visual Studio 2013) par exemple. S'il n'y a aucun package de SFML compilé pour votre version
     de Visual C++, vous devrez <a class="internal" href="./compile-with-cmake-fr.php" title="Comment compiler SFML">recompiler SFML</a>.
 </p>
@@ -62,7 +62,7 @@
 </p>
 <img class="screenshot" src="./images/start-vc-link-libs.png" alt="Capture d'écran de la boîte de dialogue pour configurer les bibliothèques du projet" title="Capture d'écran de la boîte de dialogue pour configurer les bibliothèques du projet" />
 <p class="important">
-    Il est important de lier les bibliothèques qui correspondent à la configuration : "sfml-xxx-d.lib" pour Debug, and "sfml-xxx.lib" pour Release.
+    Il est important de lier les bibliothèques qui correspondent à la configuration : "sfml-xxx-d.lib" pour Debug, et "sfml-xxx.lib" pour Release.
     Un mauvais mélange pourrait entraîner des crashs.
 </p>
 <p>
@@ -73,10 +73,10 @@
 </p>
 <img class="screenshot" src="./images/start-vc-static.png" alt="Capture d'écran de la boîte de dialogue pour définir la macro SFML_STATIC" title="Capture d'écran de la boîte de dialogue pour définir la macro SFML_STATIC" />
 <p class="important">
-    Depuis SFML 2.2, lors d'une liaison statique, il faut aussi lier toutes les dépendances de SFML. Par exemple: si vous liez à sfml-window-s.lib ou sfml-window-s-d.lib sur Windows, il faudra aussi lier à winmm.lib, gdi32.lib et opengl32.lib. Parfois ces bibliothèques seront listées sous "Inherited values" mais les ajouter une fois de plus ne devrait pas poser de problème.
+    Depuis SFML 2.2, lors d'une liaison statique, il faut aussi lier toutes les dépendances de SFML. Par exemple : si vous liez à sfml-window-s.lib ou sfml-window-s-d.lib sur Windows, il faudra aussi lier à winmm.lib, gdi32.lib et opengl32.lib. Parfois ces bibliothèques seront listées sous "Inherited values" mais les ajouter une fois de plus ne devrait pas poser de problème.
 </p>
 <p>
-    Voici la liste des dépendances de chaque module; il faudra y ajouter -d pour lier les bibliothèques SFML de débogage.
+    Voici la liste des dépendances de chaque module ; il faudra y ajouter -d pour lier les bibliothèques SFML de débogage.
 </p>
 <table class="styled expanded">
     <thead>
@@ -173,7 +173,7 @@ int main()
 </code></pre>
 <p>
     Si vous avez choisi de créer un projet "Windows application", alors le point d'entrée de votre code devrait être la fonction "WinMain" au lieu de
-    "main". Étant donné que c'est spécifique à Windows, et que votre code ne compilerait donc pas sous Linux ou Mac OS X, SFML fournit un moyen de garder
+    "main". Étant donné que c'est spécifique à Windows, et que votre code ne compilerait donc pas sous Linux ou macOS, SFML fournit un moyen de garder
     un point d'entrée "main" standard dans ce cas : liez votre projet au module sfml-main ("sfml-main-d.lib" en Debug, "sfml-main.lib" en Release),
     de la même manière que vous avez lié sfml-graphics, sfml-window et sfml-system.
 </p>
@@ -184,7 +184,7 @@ int main()
 </p>
 <img class="screenshot" src="./images/start-vc-app.png" alt="Capture d'écran de l'application Hello SFML" title="Capture d'écran de l'application Hello SFML" />
 <p>
-    Si vous utilisez le module sfml-audio (que ce soit dynamiquement ou statiquement), vous devez aussi copier le DLL de bibliothèque externe dont
+    Si vous utilisez le module sfml-audio (que ce soit dynamiquement ou statiquement), vous devez aussi copier la DLL de bibliothèque externe dont
     il dépend, qui est OpenAL32.dll.<br/>
     Ces fichiers se trouvent également dans <em>&lt;installation-de-sfml/bin&gt;</em>.
 </p>

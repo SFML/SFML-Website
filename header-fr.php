@@ -1,5 +1,5 @@
 <?php
-    // define access functions for the website's most common directories
+    // Define access functions for the website's most common directories
     function root() {return '//' . $_SERVER['SERVER_NAME'];}
     function home() {return root() . '/index-fr.php';}
     function page($name) {return root() . '/' . $name;}
@@ -7,7 +7,7 @@
     function style($name) {return root() . '/styles/' . $name;}
     function script($name) {return root() . '/scripts/' . $name;}
 
-    // build the page title
+    // Build the page title
     $keys = array_keys($breadcrumbs);
     if (empty($keys))
     {
@@ -24,7 +24,7 @@
         $page_title .= ')';
     }
 
-    // build the translated URL of the current page
+    // Build the translated URL of the current page
     if (!isset($doxygen))
         $translated_page = str_replace("-fr.php", ".php", $_SERVER['PHP_SELF']);
     else
@@ -45,7 +45,7 @@
         <meta charset="utf-8"/>
         <link rel="icon" type="image/ico" href="<?php echo image('favicon.ico') ?>"/>
         <link rel='stylesheet' type='text/css' href="//fonts.googleapis.com/css?family=Ubuntu:400,700,400italic"/>
-        <link rel="stylesheet" type="text/css" href="<?php echo style('style.css') ?>?2015-09-16-0000" title="default" media="screen,print"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo style('style.css') ?>?2017-09-15-0000" title="default" media="screen,print"/>
         <link rel="stylesheet" type="text/css" href="<?php echo script('highlight/styles/github.css') ?>"/>
         <?php if (isset($doxygen))
         {
@@ -85,7 +85,6 @@
                     <ul id="buttons">
                         <li><a id="language-en" href="<?php echo $translated_page ?>" title="Website in english">English</a></li>
                         <li><a id="donate" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VH4J3GW5GUXR4&lc=FR" title="Faire un don">Faire un don</a></li>
-                        <li><a id="flattr" href="https://flattr.com/thing/38063/SFML-multimedia-library" title="Flattrer SFML">Flattr</a></li>
                     </ul>
                 </div>
             </div>

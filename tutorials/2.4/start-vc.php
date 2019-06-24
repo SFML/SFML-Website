@@ -176,7 +176,7 @@ int main()
 </code></pre>
 <p>
     If you chose to create a "Windows application" project, the entry point of your code has to be set to "WinMain" instead of "main". Since it's
-    Windows specific, and your code would therefore not compile on Linux or Mac OS X, SFML provides a way to keep a standard "main" entry point in this case:
+    Windows specific, and your code would therefore not compile on Linux or macOS, SFML provides a way to keep a standard "main" entry point in this case:
     link your project to the sfml-main module ("sfml-main-d.lib" in Debug, "sfml-main.lib" in Release), the same way you linked sfml-graphics, sfml-window
     and sfml-system.
 </p>

@@ -151,12 +151,12 @@ window.draw(vertices, 2, sf::Lines);
             </td>
         </tr>
         <tr>
-            <td><code>sf::LinesStrip</code></td>
+            <td><code>sf::LineStrip</code></td>
             <td>
                 Un ensemble de lignes connectées. Le second vertex d'une ligne est utilisé comme premier vertex de la suivante.
             </td>
             <td>
-                <img src="./images/graphics-vertex-array-lines-strip.png" alt="La primitive sf::LinesStrip"/>
+                <img src="./images/graphics-vertex-array-line-strip.png" alt="La primitive sf::LineStrip"/>
             </td>
         </tr>
         <tr>
@@ -169,22 +169,22 @@ window.draw(vertices, 2, sf::Lines);
             </td>
         </tr>
         <tr>
-            <td><code>sf::TrianglesStrip</code></td>
+            <td><code>sf::TriangleStrip</code></td>
             <td>
                 Un ensemble de triangles connectés par un côté. Chaque triangle partage ses deux derniers vertex avec le suivant.
             </td>
             <td>
-                <img src="./images/graphics-vertex-array-triangles-strip.png" alt="La primitive sf::TrianglesStrip"/>
+                <img src="./images/graphics-vertex-array-triangle-strip.png" alt="La primitive sf::TriangleStrip"/>
             </td>
         </tr>
         <tr>
-            <td><code>sf::TrianglesFan</code></td>
+            <td><code>sf::TriangleFan</code></td>
             <td>
                 Un ensemble de triangles connectés à un point central (en éventail). Le tout premier vertex est le centre, puis chaque nouveau vertex définit un nouveau
                 triangle, combiné au centre et au vertex suivant.
             </td>
             <td>
-                <img src="./images/graphics-vertex-array-triangles-fan.png" alt="La primitive sf::TrianglesFan"/>
+                <img src="./images/graphics-vertex-array-triangle-fan.png" alt="La primitive sf::TriangleFan"/>
             </td>
         </tr>
         <tr>
@@ -469,6 +469,8 @@ private:
 }
 </code></pre>
 <img class="screenshot" src="./images/graphics-vertex-array-tilemap.png" alt="L'exemple 'tilemap'"/>
+
+<p>Vous pouvez télécharger le tileset utilisé pour cet exemple de tilemap <a href="./images/graphics-vertex-array-tilemap-tileset.png" title="L'exemple tileset">ici</a>.</p>
 
 <?php h2('Exemple: système de particules') ?>
 <p>

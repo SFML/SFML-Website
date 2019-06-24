@@ -75,7 +75,7 @@ sf::Mouse::setPosition(sf::Vector2i(10, 50), window); // window is a sf::Window
 <p>
     There is no function for reading the current state of the mouse wheel. Since the wheel can only be moved relatively, it has no absolute state that can be queried.
     By looking at a key you can tell whether it's pressed or released. By looking at the mouse cursor you can tell where it is located on the screen.
-    However, looking at the mouse wheel doesn't tell you which "tick" it is on. You can only be notified when it moves (<code>MouseWheelMoved</code> event).
+    However, looking at the mouse wheel doesn't tell you which "tick" it is on. You can only be notified when it moves (<code>MouseWheelScrolled</code> event).
 </p>
 
 <?php h2('Joystick') ?>

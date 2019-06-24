@@ -78,7 +78,7 @@ sf::Mouse::setPosition(sf::Vector2i(10, 50), window); // window est un sf::Windo
     Il n'y a pas de fonction pour récupérer l'état de la molette. En effet, celle-ci n'effectue que des mouvements relatifs et n'a pas d'état absolu.
     En regardant une touche du clavier on peut dire si elle est enfoncée ou relâchée ; en regardant le curseur de la souris on peut dire où il se
     trouve à l'écran ; mais en regardant la molette de la souris on ne peut pas savoir sur quel "cran" elle se trouve. On peut uniquement savoir
-    quand elle bouge (évènement <code>MouseWheelMoved</code>).
+    quand elle bouge (évènement <code>MouseWheelScrolled</code>).
 </p>
 
 <?php h2('Les joysticks') ?>

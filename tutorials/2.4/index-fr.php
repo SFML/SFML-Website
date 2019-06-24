@@ -11,7 +11,7 @@
     <li><a href="./start-vc-fr.php" title="SFML et Visual Studio">SFML et Visual Studio</a></li>
     <li><a href="./start-cb-fr.php" title="SFML et Code::Blocks">SFML et Code::Blocks (MinGW)</a></li>
     <li><a href="./start-linux-fr.php" title="SFML et Linux">SFML et Linux</a></li>
-    <li><a href="./start-osx-fr.php" title="SFML et XCode (Mac OS X)">SFML et Xcode (Mac OS X)</a></li>
+    <li><a href="./start-osx-fr.php" title="SFML et XCode (macOS)">SFML et Xcode (macOS)</a></li>
     <li><a href="./compile-with-cmake-fr.php" title="Compiler SFML avec CMake">Compiler SFML avec CMake</a></li>
 </ul>
 

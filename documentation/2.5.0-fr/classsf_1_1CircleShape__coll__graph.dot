@@ -1,0 +1,12 @@
+digraph "sf::CircleShape"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node4 [label="sf::CircleShape",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="sf::Shape",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsf_1_1Shape.php",tooltip="Base class for textured shapes with outline. "];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="sf::Drawable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsf_1_1Drawable.php",tooltip="Abstract base class for objects that can be drawn to a render target. "];
+  Node7 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="sf::Transformable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsf_1_1Transformable.php",tooltip="Decomposed transform defined by a position, a rotation and a scale. "];
+}

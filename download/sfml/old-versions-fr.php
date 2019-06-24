@@ -10,6 +10,18 @@
 <h1>Télécharger d'anciennes versions de SFML</h1>
 
 <div class="link-box one-column">
+    <a class="download-old" href="2.5.0/index-fr.php">
+        <div class="title">SFML 2.5.0</div>
+    </a>
+</div>
+
+<div class="link-box one-column">
+    <a class="download-old" href="2.4.2/index-fr.php">
+        <div class="title">SFML 2.4.2</div>
+    </a>
+</div>
+
+<div class="link-box one-column">
     <a class="download-old" href="2.4.1/index-fr.php">
         <div class="title">SFML 2.4.1</div>
     </a>

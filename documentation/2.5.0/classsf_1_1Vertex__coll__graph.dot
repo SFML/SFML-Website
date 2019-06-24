@@ -1,0 +1,11 @@
+digraph "sf::Vertex"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="sf::Vertex",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" color" ,fontname="Helvetica"];
+  Node2 [label="sf::Color",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsf_1_1Color.php",tooltip="Utility class for manipulating RGBA colors. "];
+  Node2 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Transparent\nYellow\nMagenta\nWhite\nBlue\nBlack\nRed\nCyan\nGreen" ,fontname="Helvetica"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" texCoords\nposition" ,fontname="Helvetica"];
+  Node3 [label="sf::Vector2\< float \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsf_1_1Vector2.php"];
+}
