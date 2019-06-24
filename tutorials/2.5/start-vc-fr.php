@@ -1,13 +1,13 @@
 <?php
 
-    $title = "SFML et Visual studio";
+    $title = "SFML et Visual Studio";
     $page = "start-vc-fr.php";
 
     require("header-fr.php");
 
 ?>
 
-<h1>SFML et Visual studio</h1>
+<h1>SFML et Visual Studio</h1>
 
 <?php h2('Introduction') ?>
 <p>

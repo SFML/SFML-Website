@@ -423,7 +423,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get a read-only pointer to the array of pixels. </p>
-<p>The returned value points to an array of RGBA pixels made of 8 bits integers components. The size of the array is width * height * 4 (<a class="el" href="classsf_1_1Image.php#a85409951b05369813069ed64393391ce" title="Return the size (width and height) of the image. ">getSize()</a>.x * <a class="el" href="classsf_1_1Image.php#a85409951b05369813069ed64393391ce" title="Return the size (width and height) of the image. ">getSize()</a>.y * 4). Warning: the returned pointer may become invalid if you modify the image, so you should never store it for too long. If the image is empty, a null pointer is returned.</p>
+<p>The returned value points to an array of RGBA pixels made of 8 bits integers components. The size of the array is width * height * 4 (<a class="el" href="classsf_1_1Image.php#a85409951b05369813069ed64393391ce" title="Return the size (width and height) of the image. ">getSize()</a>.x * <a class="el" href="classsf_1_1Image.php#a85409951b05369813069ed64393391ce" title="Return the size (width and height) of the image. ">getSize()</a>.y * 4). Warning: the returned pointer may become invalid if you modify the sf::Image (though only modifying its data does not invalid the pointer) so you should never store it for too long. If the image is empty, a null pointer is returned.</p>
 <dl class="section return"><dt>Returns</dt><dd>Read-only pointer to the array of pixels </dd></dl>
 
 </div>
