@@ -120,9 +120,9 @@
             <td>Jun Maillard, Kenji Maillard</td>
         </tr>
         <tr>
-            <td><a href="http://ocaml-sfml.forge.ocamlcore.org/" class="website">ocaml-sfml</a></td>
-            <td>2.0</td>
-            <td>Florent Monnier</td>
+            <td><a href="https://github.com/fccm/ocaml-sfml" class="website">ocaml-sfml</a></td>
+            <td>2.5.1</td>
+            <td>Florent Monnier, Sylvain Boilard</td>
         </tr>
         <tr>
             <th rowspan="1">Pascal</th>
