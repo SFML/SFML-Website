@@ -44,11 +44,7 @@
         <ul>
             <li>SSL: <a href="irc://irc.sfml-dev.org:6697/sfml" title="Ouvrir un client IRC avec le port SSL">irc://irc.sfml-dev.org:6697/sfml</a></li>
             <li>Non SSL: <a href="irc://irc.sfml-dev.org:6667/sfml" title="Ouvrir un client IRC avec le port non SSL">irc://irc.sfml-dev.org:6667/sfml</a></li>
-            <li><a href="https://chat.sfml-dev.org" title="Discutez dans votre naviguateur maintenant">Discutez dans votre naviguateur maintenant</a></li>
         </ul>
-    </div>
-    <div class="stagger-column-thin">
-        <a href="https://chat.sfml-dev.org"><img src="<?php echo image('community/irc.png') ?>" alt="IRC" /></a>
     </div>
 </div>
 
