@@ -243,7 +243,7 @@ public:
         sf::Transform combinedTransform = parentTransform * m_transform;
 
         // let the node draw itself
-        onDraw(target, combinedTransform)
+        onDraw(target, combinedTransform);
 
         // draw its children
         for (std::size_t i = 0; i &lt; m_children.size(); ++i)

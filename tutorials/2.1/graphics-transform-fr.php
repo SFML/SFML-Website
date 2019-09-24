@@ -251,7 +251,7 @@ public:
         sf::Transform combinedTransform = parentTransform * m_transform;
 
         // on laisse le noeud se dessiner
-        onDraw(target, combinedTransform)
+        onDraw(target, combinedTransform);
 
         // on dessine ses enfants
         for (std::size_t i = 0; i &lt; m_children.size(); ++i)
