@@ -160,7 +160,7 @@ sf::Transform t3(2.f, 0.f, 20.f,
 sf::Transform t4 = t1 * t2 * t3;
 </code></pre>
 <p>
-    You can apply several predefined transformations to the same transform as well. They will all be combined sequentially:
+    You can apply several predefined transformations to the same transform as well. They will all be combined sequentially, in reverse order: the last operation (here <code>scale</code>) is applied first, and will be affected by operations above it in code (second would be <code>translate(-10.f, 50.f)</code>, for example).
 </p>
 <pre><code class="cpp">sf::Transform t;
 t.translate(10.f, 100.f);
