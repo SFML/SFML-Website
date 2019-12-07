@@ -165,7 +165,7 @@ sf::Transform t3(2.f, 0.f, 20.f,
 sf::Transform t4 = t1 * t2 * t3;
 </code></pre>
 <p>
-    Vous pouvez bien entendu appliquer plusieurs transformations de base au même <?php class_link('Transform') ?>, celles-ci seront toutes combinées séquentiellement :
+    Vous pouvez bien entendu appliquer plusieurs transformations de base au même <?php class_link('Transform') ?>, celles-ci seront toutes combinées séquentiellement. Remarquez que transformer un objet en combinant plusieurs transformations est équivalent à effectuer chaque opération dans l'ordre inverse. La dernière opération (ici <code>scale</code>) est appliquée en premier, et sera affectée par les opérations en amont dans le code (la deuxième serait <code>translate(-10.f, 50.f)</code>, par exemple).
 </p>
 <pre><code class="cpp">sf::Transform t;
 t.translate(10.f, 100.f);
