@@ -253,7 +253,7 @@
             </td>
         </tr>
         <tr class="one">
-            <td><code>SFML_USE_SYSTEM_DEP</code></td>
+            <td><code>SFML_USE_SYSTEM_DEPS</code></td>
             <td>
                 This boolean option controls whether the dependencies from the extlibs directory are used or whether the system dependencies are used.<br/>
                 The stb_image_* header in the extlibs directory are used regardless of this option.

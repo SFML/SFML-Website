@@ -260,7 +260,7 @@
             </td>
         </tr>
         <tr class="one">
-            <td><code>SFML_USE_SYSTEM_DEP</code></td>
+            <td><code>SFML_USE_SYSTEM_DEPS</code></td>
             <td>
                 Cette option booléenne détermine si ce sont les dépendances du répertoire "extlibs" qui sont utilisées, ou les dépendances trouvées sur le système.<br/>
                 Les en-têtes stb_image_* du répertoire "extlibs" sont toujours utilisés indépendamment de cette option.
