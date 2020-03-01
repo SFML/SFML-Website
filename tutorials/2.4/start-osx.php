@@ -101,7 +101,7 @@
     <li>
         <strong>Xcode templates</strong><br />
         This feature is optional but we strongly recommend that you install it.
-        Copy the <tt>SFML</tt> directory from <tt>templates</tt> to <tt>/Library/Developer/Xcode/Templates</tt> (create the folders if they don't exist yet).
+        Copy the <tt>SFML</tt> directory from <tt>templates</tt> to <tt>~/Library/Developer/Xcode/Templates</tt> (create the folders if they don't exist yet).
     </li>
 </ul>
 
