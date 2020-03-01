@@ -105,7 +105,7 @@
     <li>
         <strong>Les templates Xcode</strong><br />
         Ce composant est optionnel mais il est fortement recommandé de l'installer.
-        Copiez le dossier <tt>SFML</tt> de <tt>templates</tt> dans <tt>/Library/Developer/Xcode/Templates</tt> (si besoin, créez d'abord l'arborescence de répertoires).
+        Copiez le dossier <tt>SFML</tt> de <tt>templates</tt> dans <tt>~/Library/Developer/Xcode/Templates</tt> (si besoin, créez d'abord l'arborescence de répertoires).
     </li>
 </ul>
 <p>
