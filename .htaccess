@@ -3,10 +3,11 @@ ErrorDocument 404 /error-404.php
 
 RewriteEngine On
 
-# Append the www. prefix for all sites except en./fr. subdomains
+# Append the www. prefix for all sites except en.*/fr.*/mirror1.* subdomains
 RewriteCond %{HTTP_HOST} !^www\.
 RewriteCond %{HTTP_HOST} !^en\. [NC]
 RewriteCond %{HTTP_HOST} !^fr\. [NC]
+RewriteCond %{HTTP_HOST} !^mirror1\. [NC]
 RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Force https:// for all except some selected URLs    
