@@ -138,7 +138,7 @@
         </tr>
         <tr>
             <th rowspan="1">Ruby</th>
-            <td><a href="http://www.groogy.se/mainsite/rbsfml/" class="website"><img src="../images/bindings/rbsfml.png" alt="rbSFML"></a></td>
+            <td><a href="https://github.com/Groogy/rbSFML" class="website"><img src="../images/bindings/rbsfml.png" alt="rbSFML"></a></td>
             <td>2.3.2</td>
             <td><a href="mailto:groogy@groogy.se">Henrik Valter Vogelius Hansson</a></td>
         </tr>
