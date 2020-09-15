@@ -37,43 +37,48 @@
 </div>
 
 <h2 id="livres"><a class="h2-link" href="#livres">Livres</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
-<div class="news">
-    &nbsp;&nbsp;&nbsp;&nbsp;Utilisez le code <strong>sfgde50</strong> pour obtenir <strong>50%</strong> de réduction pour les <a href="https://www.packtpub.com/all/?search=%22sfml%22">e-books sur SFML</a> publiés par Packt
-</div>
-<br>
 <div class="book">
-    <a class="link" href="https://www.packtpub.com/game-development/sfml-game-development" title="Page web du livre SFML Game Development"><img src="images/books/sfml-game-development.png" alt="Couverture du livre SFML Game Development" /></a>
+    <a class="link" href="https://www.packtpub.com/product/sfml-game-development/9781849696845" title="SFML Game Development book web page"><img src="images/books/sfml-game-development.png" alt="SFML Game Development book cover" /></a>
     <div class="description">
         <p class="title">SFML Game Development</p>
-        <a class="link" href="https://www.packtpub.com/game-development/sfml-game-development" title="Page web du livre SFML Game Development">
-            https://www.packtpub.com/game-development/sfml-game-development
+        <a class="link" href="https://www.packtpub.com/product/sfml-game-development/9781849696845" title="SFML Game Development book web page">
+            https://www.packtpub.com/product/sfml-game-development/9781849696845
         </a>
     </div>
 </div>
 <div class="book">
-    <a class="link" href="https://www.packtpub.com/game-development/sfml-essentials" title="Page web du livre SFML Essentials"><img src="images/books/sfml-essentials.png" alt="Couverture du livre SFML Essentials" /></a>
+    <a class="link" href="https://www.packtpub.com/product/sfml-essentials/9781784397326" title="SFML Essentials book web page"><img src="images/books/sfml-essentials.png" alt="SFML Essentials book cover" /></a>
     <div class="description">
         <p class="title">SFML Essentials</p>
-        <a class="link" href="https://www.packtpub.com/game-development/sfml-essentials" title="Page web du livre SFML Essentials">
-            https://www.packtpub.com/game-development/sfml-essentials
+        <a class="link" href="https://www.packtpub.com/product/sfml-essentials/9781784397326" title="SFML Essentials book web page">
+            https://www.packtpub.com/product/sfml-essentials/9781784397326
         </a>
     </div>
 </div>
 <div class="book">
-    <a class="link" href="https://www.packtpub.com/game-development/sfml-blueprints" title="Page web du livre SFML Blueprints"><img src="images/books/sfml-blueprints.png" alt="Couverture du livre SFML Blueprints" /></a>
+    <a class="link" href="https://www.packtpub.com/product/sfml-blueprints/9781784398477" title="SFML Blueprints book web page"><img src="images/books/sfml-blueprints.png" alt="SFML Blueprints book cover" /></a>
     <div class="description">
         <p class="title">SFML Blueprints</p>
-        <a class="link" href="https://www.packtpub.com/game-development/sfml-blueprints" title="Page web du livre SFML Blueprints">
-            https://www.packtpub.com/game-development/sfml-blueprints
+        <a class="link" href="https://www.packtpub.com/product/sfml-blueprints/9781784398477" title="SFML Blueprints book web page">
+            https://www.packtpub.com/product/sfml-blueprints/9781784398477
         </a>
     </div>
 </div>
 <div class="book">
-    <a class="link" href="https://www.packtpub.com/game-development/sfml-game-development-example" title="SFML Game Development By Example book web page"><img src="images/books/sfml-game-development-by-example.png" alt="SFML Game Development By Example book cover" /></a>
+    <a class="link" href="https://www.packtpub.com/product/sfml-game-development-by-example/9781785287343" title="SFML Game Development By Example book web page"><img src="images/books/sfml-game-development-by-example.png" alt="SFML Game Development By Example book cover" /></a>
     <div class="description">
         <p class="title">SFML Game Development By Example</p>
-        <a class="link" href="https://www.packtpub.com/game-development/sfml-game-development-example" title="SFML Game Development By Example book web page">
-            https://www.packtpub.com/game-development/sfml-game-development-example
+        <a class="link" href="https://www.packtpub.com/product/sfml-game-development-by-example/9781785287343" title="SFML Game Development By Example book web page">
+            https://www.packtpub.com/product/sfml-game-development-by-example/9781785287343
+        </a>
+    </div>
+</div>
+<div class="book">
+    <a class="link" href="https://www.packtpub.com/product/mastering-sfml-game-development/9781786469885" title="Mastering SFML Game Development book web page"><img src="images/books/sfml-mastering-sfml-game-development.png" alt="Mastering SFML Game Development book cover" /></a>
+    <div class="description">
+        <p class="title">Mastering SFML Game Development</p>
+        <a class="link" href="https://www.packtpub.com/product/mastering-sfml-game-development/9781786469885" title="Mastering SFML Game Development book web page">
+            https://www.packtpub.com/product/mastering-sfml-game-development/9781786469885
         </a>
     </div>
 </div>
