@@ -1,4 +1,4 @@
-SFML Website
+SFML Website -Amazing Website
 ============
 
 This repository contains the source code of the [SFML website](http://www.sfml-dev.org).
