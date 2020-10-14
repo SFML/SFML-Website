@@ -114,6 +114,12 @@
             <td><a href="mailto:blaxpirit@gmail.com">Oleh Prypin</a></td>
         </tr>
         <tr>
+            <th rowspan="1">Node.js</th>
+            <td><a href="https://github.com/4h7l/node-sfml-bindings" class="website">node-sfml-bindings</a></td>
+            <td>2.5.1</td>
+            <td><a href="mailto:4h7lseq@gmail.com">4h7l</a></td>
+        </tr>
+        <tr>
             <th rowspan="2">OCaml</th>
             <td><a href="https://github.com/JoeDralliam/Ocsfml" class="website">Ocsfml</a></td>
             <td>2.2</td>
