@@ -29,13 +29,13 @@
 
     <tbody>
         <tr>
-            <th rowspan="1">C</th>
+            <th rowspan="1">Beef</th>
             <td><a href="https://github.com/MineGame159/BeefSFML" class="website">BeefSFML</a></td>
             <td>2.5</td>
             <td>EnokViking & MineGame159</td>
         </tr>
         <tr>
-            <th rowspan="1">Beef</th>
+            <th rowspan="1">C</th>
             <td><a href="csfml" class="website">CSFML</a></td>
             <td>2.5</td>
             <td><a href="mailto:laurent@sfml-dev.org">Laurent Gomila</a></td>
