@@ -29,6 +29,12 @@
 
     <tbody>
         <tr>
+            <th rowspan="1">Ada</th>
+            <td><a href="https://github.com/mgrojo/ASFML" class="website">ASFML</a></td>
+            <td>2.4 / 2.5</td>
+            <td>Manuel</td>
+        </tr>
+        <tr>
             <th rowspan="1">Beef</th>
             <td><a href="https://github.com/MineGame159/BeefSFML" class="website">BeefSFML</a></td>
             <td>2.5</td>
