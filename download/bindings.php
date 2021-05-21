@@ -143,6 +143,12 @@
             <td>Christian-W. Budde</td>
         </tr>
         <tr>
+            <th rowspan="1">Plutonium</th>
+            <td><a href="https://github.com/shehryar49/pltSFML" class="website">pltSFML</a></td>
+            <td>2.5</td>
+            <td>Shehryar Ahmed</td>
+        </tr>
+        <tr>
             <th rowspan="1">Python</th>
             <td><a href="https://github.com/Sonkun/python-sfml" class="website"><img src="../images/bindings/python-sfml.png" alt="pySFML"></a></td>
             <td>2.3.2</td>
