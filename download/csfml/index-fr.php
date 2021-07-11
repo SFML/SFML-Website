@@ -41,6 +41,25 @@
     télécharger un instantané des toutes dernières sources. Vous pouvez aussi consulter les tâches ou bugs en cours sur le tracker, ainsi qu'en ajouter de nouveaux.
 </p>
 
+<h3>CSFML 2.5.1</h3>
+<table class="styled download">
+    <tbody>
+        <tr>
+            <td class="os">Windows</td>
+            <td><?php download_link('2.5.1', 'Visual C++ / GCC', '32-bit', '1.50', '../../files/CSFML-2.5.1-windows-32-bit.zip') ?></td>
+            <td><?php download_link('2.5.1', 'Visual C++ / GCC', '64-bit', '1.68', '../../files/CSFML-2.5.1-windows-64-bit.zip') ?></td>
+        </tr>
+        <tr>
+            <td class="os">macOS</td>
+            <td colspan="2"><?php download_link('2.5.1', 'Clang', '64-bit (OS X 10.15+, compatible with C++11 and libc++)', '0.26', '../../files/CSFML-2.5.1-macOS-clang.tar.gz') ?></td>
+        </tr>
+        <tr>
+            <td class="os">Tous OS</td>
+            <td colspan="2"><span class="description">Code source</span><a href="../../files/CSFML-2.5.1-sources.zip">Télécharger<span class="size">0.31 MB</span></a></td>
+        </tr>
+    </tbody>
+</table>
+
 <h3>CSFML 2.5</h3>
 <table class="styled download">
     <tbody>
