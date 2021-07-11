@@ -185,6 +185,9 @@ sf::Vector2u size = window.getSize();
 unsigned int width = size.x;
 unsigned int height = size.y;
 
+// check whether the window has the focus
+bool focus = window.hasFocus();
+
 ...
 </code></pre>
 <p>
