@@ -1,7 +1,7 @@
 ErrorDocument 403 /error-403.php
 ErrorDocument 404 /error-404.php
 
-Header set Content-Security-Policy "default-src 'none'; script-src 'self' 'unsafe-eval' 'unsafe-inline' *.sfml-dev.org www.gstatic.com www.google.com www.google-analytics.com ssl.google-analytics.com; connect-src 'self' www.google-analytics.com; img-src https: data:; style-src 'self' 'unsafe-inline' *.sfml-dev.org fonts.googleapis.com; media-src https: data:; font-src 'self' fonts.gstatic.com; base-uri 'self'; form-action 'self'; frame-src https: data:"
+Header set Content-Security-Policy "default-src 'none'; script-src 'self' 'unsafe-eval' 'unsafe-inline' *.sfml-dev.org www.gstatic.com www.google.com www.google-analytics.com ssl.google-analytics.com; connect-src 'self' www.google-analytics.com; img-src 'self' https: data:; style-src 'self' 'unsafe-inline' *.sfml-dev.org fonts.googleapis.com; media-src https: data:; font-src 'self' fonts.gstatic.com; base-uri 'self'; form-action 'self'; frame-src https: data:"
 
 RewriteEngine On
 

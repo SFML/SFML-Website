@@ -26,9 +26,9 @@
 
     // Build the translated URL of the current page
     if (!isset($doxygen))
-        $translated_page = str_replace("-fr.php", ".php", $_SERVER['PHP_SELF']);
+        $translated_page = str_replace("-fr.php", ".php", $_SERVER['SCRIPT_NAME']);
     else
-        $translated_page = str_replace("documentation/" . $version . "-fr", "documentation/" . $version, $_SERVER['PHP_SELF']);
+        $translated_page = str_replace("documentation/" . $version . "-fr", "documentation/" . $version, $_SERVER['SCRIPT_NAME']);
 
     function h2($title)
     {
