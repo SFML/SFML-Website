@@ -149,6 +149,12 @@
             <td>Shehryar Ahmed</td>
         </tr>
         <tr>
+            <th rowspan="1">Nelua</th>
+            <td><a href="https://github.com/Rabios/nelua-fun/tree/main/csfml" class="website">csfml-nelua</a></td>
+            <td>2.5.1</td>
+            <td>Rabia Alhaffar</td>
+        </tr>
+        <tr>
             <th rowspan="1">Python</th>
             <td><a href="https://github.com/Sonkun/python-sfml" class="website"><img src="../images/bindings/python-sfml.png" alt="pySFML"></a></td>
             <td>2.3.2</td>
