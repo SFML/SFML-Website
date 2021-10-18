@@ -23,14 +23,14 @@ RewriteCond %{THE_REQUEST} /ip-provider.php [NC]
 RewriteRule ^ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Documentation redirects
-RewriteCond %{REQUEST_URI} ^/documentation(/?)$
+RewriteCond %{REQUEST_URI} ^/documentation(/?)(\.php)?$
 RewriteRule ^ /documentation/latest/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/documentation/latest(/?)(.*)$
 RewriteRule /latest(/?)(.*) /documentation/2.5.1/$2 [R=301,L]
 
 # Tutorial redirects
-RewriteCond %{REQUEST_URI} ^/tutorials(/?)$
+RewriteCond %{REQUEST_URI} ^/tutorials(/?)(\.php)?$
 RewriteRule ^ /tutorials/latest/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/tutorials/latest(/?)(.*)$
