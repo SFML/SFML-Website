@@ -172,6 +172,12 @@
             <td>2.5</td>
             <td><a href="mailto:letang.jeremy@gmail.com">Jérémy Letang</a></td>
         </tr>
+        <tr>
+            <th rowspan="1">Zig</th>
+            <td><a href="https://github.com/Guigui220D/zig-sfml-wrapper" class="website">zig-sfml-wrapper</a></td>
+            <td>2.5.1</td>
+            <td>Guillaume Derex</td>
+        </tr>
     </tbody>
 </table>
 
