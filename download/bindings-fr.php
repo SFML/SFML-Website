@@ -178,6 +178,12 @@
             <td>2.5.1</td>
             <td>Guillaume Derex</td>
         </tr>
+        <tr>
+            <th rowspan="1">Node.js</th>
+            <td><a href="https://github.com/XadillaX/node-sfml" class="website">sfml.js</a></td>
+            <td>2.5.1</td>
+            <td><a href="https://github.com/XadillaX">XadillaX</a></td>
+        </tr>
     </tbody>
 </table>
 
