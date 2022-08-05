@@ -88,9 +88,9 @@
             <td>krepa098</td>
         </tr>
         <tr>
-            <td><a href="https://github.com/teh-cmc/go-sfml" class="website">go-sfml</a></td>
-            <td>2.4</td>
-            <td><a href="mailto:cr.rey.clement@gmail.com">Clement Rey</a></td>
+            <td><a href="https://github.com/telroshan/go-sfml" class="website">go-sfml</a></td>
+            <td>2.5.1</td>
+            <td><a href="mailto:cr.rey.clement@gmail.com">Clement Rey</a>, <a href="mailto:telroshan@gmail.com">Telroshan</a></td>
         </tr>
         <tr>
             <th rowspan="1">Haskell</th>
