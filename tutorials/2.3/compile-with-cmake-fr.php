@@ -339,13 +339,13 @@
             </td>
         </tr>
         <tr class="two">
-            <td><code>sfml&#8209;system<br/>sfml&#8209;window<br/>sfml&#8209;network<br/>sfml&#8209;graphics<br/>sfml&#8209;audio<br/>sfml&#8209;main</code></td>
+            <td><code>sfml-system<br/>sfml-window<br/>sfml-network<br/>sfml-graphics<br/>sfml-audio<br/>sfml-main</code></td>
             <td>
                 Construit la bibliothèque SFML correspondante. La cible "sfml-main" n'est disponible que sous Windows.
             </td>
         </tr>
         <tr class="one">
-            <td><code>cocoa<br/>ftp<br/>opengl<br/>pong<br/>shader<br/>sockets<br/>sound<br/>sound&#8209;capture<br/>voip<br/>window<br/>win32<br/>X11</code></td>
+            <td><code>cocoa<br/>ftp<br/>opengl<br/>pong<br/>shader<br/>sockets<br/>sound<br/>sound-capture<br/>voip<br/>window<br/>win32<br/>X11</code></td>
             <td>
                 Construit l'exemple SFML correspondant. Ces cibles ne sont disponibles que si l'option <code>SFML_BUILD_EXAMPLES</code> a été activée. Notez que certains
                 exemples ne sont définis que pour un OS particulier ("cocoa" n'est disponible que sous Mac OS X, "win32" sous Windows, "X11" sous Linux, etc.).
