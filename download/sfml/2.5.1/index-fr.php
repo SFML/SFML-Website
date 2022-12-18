@@ -23,7 +23,8 @@
                 En effet, un Windows 64-bit peut parfaitement compiler et faire tourner un programme 32-bit. Vous voudrez donc très certainement utiliser les
                 packages 32-bit, afin de cibler une audience la plus large possible. Choisissez les packages 64-bit uniquement si vous avez de bonnes raisons.<br>
                 <div class="important">
-                    <strong>La version du compilateur doit correspondre à 100% !</strong><br>
+                    <strong>À moins que vous n'utilisiez une version plus récente de Visual Studio, la version du compilateur doit correspondre à 100%!</strong><br>
+                    Si vous utilisez Visual Studio 2015 ou une version plus récente, vous pouvez utiliser la version de SFML compilée pour Visual C++ 15 (VS 2017), qui est toujours compatible avec les versions plus récentes de la chaîne de compilation.<br>
                     Voici les liens vers les versions du compilateur MinGW qui ont été utilisées pour compiler les paquets fournis :<br>
                     <a href="https://sourceforge.net/projects/tdm-gcc/files/TDM-GCC%20Installer/tdm-gcc-5.1.0-3.exe/download">TDM 5.1.0 (32-bit)</a>,
                     <a href="https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/7.3.0/threads-posix/dwarf/i686-7.3.0-release-posix-dwarf-rt_v5-rev0.7z/download">MinGW Builds 7.3.0 (32-bit)</a>,
