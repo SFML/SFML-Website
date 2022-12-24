@@ -50,9 +50,9 @@
 <h2 id="contributing"><a class="h2-link" href="#contributing">Contributing</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2> 
 <h3 id="reporting-bugs"><a class="h3-link" href="#reporting-bugs">Reporting bugs</a></h3>
 <ol>
- <li>Make sure it is really a bug and not a misunderstanding of what SFML is supposed to do. Check the <a href="documentation/2.5.1/">documentation</a> again to be sure.</li>
+ <li>Make sure it is really a bug and not a misunderstanding of what SFML is supposed to do. Check the <a href="documentation/latest/">documentation</a> again to be sure.</li>
  <li>Make sure the bug has not already been reported. Check <a href="https://github.com/SFML/SFML/issues?q=">the GitHub issues</a> and <a href="http://en.sfml-dev.org/forums/index.php?action=search">the forum</a>.</li>
- <li>Use the <a href="https://github.com/SFML/SFML">latest revision</a> from GitHub and check if the bug has not already been fixed. Refer to the <a href="tutorials/2.5/compile-with-cmake.php">official tutorial</a> for information on how to build SFML yourself.</li>
+ <li>Use the <a href="https://github.com/SFML/SFML">latest revision</a> from GitHub and check if the bug has not already been fixed. Refer to the <a href="tutorials/latest/compile-with-cmake.php">official tutorial</a> for information on how to build SFML yourself.</li>
  <li>Open a new thread on the <a href="http://en.sfml-dev.org/forums/">forum</a> in the appropriate help board and give the following information:
   <ul>
    <li><a href="http://en.sfml-dev.org/forums/index.php?topic=5559.msg36368#msg36368">A minimal and complete code example</a> that reproduces the bug as you are experiencing it.</li>
