@@ -20,7 +20,7 @@
     <?php class_link("Event") ?> is a <em>union</em>, which means that only one of its members is valid at a time (remember your C++ lesson: all the
     members of a union share the same memory space). The valid member is the one that matches the event type, for example <code>event.key</code> for a
     <code>KeyPressed</code> event. Trying to read any other member will result in an undefined behavior (most likely: random or invalid values).
-    It it important to never try to use an event member that doesn't match its type.
+    It is important to never try to use an event member that doesn't match its type.
 </p>
 <p>
     <?php class_link("Event") ?> instances are filled by the <code>pollEvent</code> (or <code>waitEvent</code>) function of the <?php class_link("Window") ?>
