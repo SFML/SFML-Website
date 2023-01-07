@@ -352,13 +352,13 @@
             </td>
         </tr>
         <tr class="two">
-            <td><code>sfml&#8209;system<br/>sfml&#8209;window<br/>sfml&#8209;network<br/>sfml&#8209;graphics<br/>sfml&#8209;audio<br/>sfml&#8209;main</code></td>
+            <td><code>sfml-system<br/>sfml-window<br/>sfml-network<br/>sfml-graphics<br/>sfml-audio<br/>sfml-main</code></td>
             <td>
                 Builds the corresponding SFML library. The "sfml-main" target is available only when building for Windows.
             </td>
         </tr>
         <tr class="one">
-            <td><code>cocoa<br/>ftp<br/>opengl<br/>pong<br/>shader<br/>sockets<br/>sound<br/>sound&#8209;capture<br/>voip<br/>window<br/>win32<br/>X11</code></td>
+            <td><code>cocoa<br/>ftp<br/>opengl<br/>pong<br/>shader<br/>sockets<br/>sound<br/>sound-capture<br/>voip<br/>window<br/>win32<br/>X11</code></td>
             <td>
                 Builds the corresponding SFML example. These targets are available only if the <code>SFML_BUILD_EXAMPLES</code> option is enabled. Note that some of the
                 targets are available only on certain operating systems ("cocoa" is available on macOS, "win32" on Windows, "X11" on Linux, etc.).
