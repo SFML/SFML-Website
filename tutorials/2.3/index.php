@@ -4,7 +4,7 @@
     require("header.php");
 ?>
 
-<h1>Tutorials for SFML 2.3</h1>
+<h1>Tutorials for SFML <?php echo $version; ?></h1>
 
 <?php h2('Getting started') ?>
 <ul>
