@@ -53,9 +53,18 @@
         } ?>
         <?php if (isset($doxygen))
         {
-            echo '<link rel="stylesheet" type="text/css"  href="' . root() . '/' . $docpath . 'doxygen.css" title="default" media="screen,print" />' . "\n" .
-                 '<script type="text/javascript" src="jquery.js"></script>' . "\n" .
-                 '<script type="text/javascript" src="dynsections.js"></script>' . "\n";
+            echo '<link rel="stylesheet" type="text/css" href="' . root() . '/' . $docpath . 'doxygen.css" title="default" media="screen,print" />
+                 <script type="text/javascript" src="jquery.js"></script>
+                 <script type="text/javascript" src="dynsections.js"></script>
+                 <link rel="stylesheet" type="text/css" href="search/search.css" />
+                 <link rel="stylesheet" type="text/css" href="' . root() . '/' . $docpath . 'searchOverrides.css" />
+                 <script type="text/javascript" src="search/searchdata.js"></script>
+                 <script type="text/javascript" src="search/search.js"></script>
+                 <script type="text/javascript">
+                 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+                   $(document).ready(function() { init_search(); });
+                 /* @license-end */
+                 </script>';
         } ?>
 <!--[if (gte IE 9)|!(IE)]>
 <!-->
