@@ -27,11 +27,11 @@ RewriteCond %{REQUEST_URI} ^/documentation(/?)(\.php)?$
 RewriteRule ^ /documentation/latest/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/documentation/latest(/?)(.*)$
-RewriteRule /latest(/?)(.*) /documentation/2.5.1/$2 [R=301,L]
+RewriteRule /latest(/?)(.*) /documentation/2.6.0/$2 [R=301,L]
 
 # Tutorial redirects
 RewriteCond %{REQUEST_URI} ^/tutorials(/?)(\.php)?$
 RewriteRule ^ /tutorials/latest/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/tutorials/latest(/?)(.*)$
-RewriteRule /latest(/?)(.*) /tutorials/2.5/$2 [R=301,L]
+RewriteRule /latest(/?)(.*) /tutorials/2.6/$2 [R=301,L]
