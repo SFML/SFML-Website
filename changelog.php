@@ -10,6 +10,7 @@
 <h1>Changelog</h1>
 
 <ul>
+ <li><a href="#sfml-2.6.0">SFML 2.6.0</a></li>
  <li><a href="#sfml-2.5.1">SFML 2.5.1</a></li>
  <li><a href="#sfml-2.5.0">SFML 2.5.0</a></li>
  <li><a href="#sfml-2.4.2">SFML 2.4.2</a></li>
@@ -27,6 +28,152 @@
  <li><a href="#sfml-1.3">SFML 1.3</a></li>
  <li><a href="#sfml-1.2">SFML 1.2</a></li>
  <li><a href="#sfml-1.1">SFML 1.1</a></li>
+</ul>
+
+<h2 id="sfml-2.6.0"><a class="h2-link" href="#sfml-2.6.0">SFML 2.6.0</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
+<h3 id="2.6.0-general"><a class="h3-link" href="#2.6.0-general">General</a></h3>
+<ul>
+  <li>Various CMake enhancements (<a href="https://github.com/SFML/SFML/pull/1477">#1477</a>, <a href="https://github.com/SFML/SFML/pull/1509">#1509</a>, <a href="https://github.com/SFML/SFML/pull/1561">#1561</a>, <a href="https://github.com/SFML/SFML/pull/1563">#1563</a>, <a href="https://github.com/SFML/SFML/pull/1576">#1576</a>, <a href="https://github.com/SFML/SFML/pull/1624">#1624</a>, <a href="https://github.com/SFML/SFML/pull/1739">#1739</a>, <a href="https://github.com/SFML/SFML/pull/1960">#1960</a>)</li>
+  <li>Small documentation changes (<a href="https://github.com/SFML/SFML/pull/1519">#1519</a>, <a href="https://github.com/SFML/SFML/pull/1608">#1608</a>, <a href="https://github.com/SFML/SFML/pull/1628">#1628</a>, <a href="https://github.com/SFML/SFML/pull/1657">#1657</a>, <a href="https://github.com/SFML/SFML/pull/1658">#1658</a>, <a href="https://github.com/SFML/SFML/pull/1652">#1652</a>, <a href="https://github.com/SFML/SFML/pull/1665">#1665</a>, <a href="https://github.com/SFML/SFML/pull/1697">#1697</a>, <a href="https://github.com/SFML/SFML/pull/1774">#1774</a>, <a href="https://github.com/SFML/SFML/pull/1776">#1776</a>, <a href="https://github.com/SFML/SFML/pull/1853">#1853</a>, <a href="https://github.com/SFML/SFML/pull/2038">#2038</a>, <a href="https://github.com/SFML/SFML/pull/2083">#2083</a>, <a href="https://github.com/SFML/SFML/pull/2271">#2271</a>)</li>
+  <li>Various casting fixes (<a href="https://github.com/SFML/SFML/pull/1499">#1499</a>, <a href="https://github.com/SFML/SFML/pull/1553">#1553</a>, <a href="https://github.com/SFML/SFML/pull/2040">#2040</a>, <a href="https://github.com/SFML/SFML/pull/2222">#2222</a>, <a href="https://github.com/SFML/SFML/pull/2297">#2297</a>, <a href="https://github.com/SFML/SFML/pull/2298">#2298</a>, <a href="https://github.com/SFML/SFML/pull/2323">#2323</a>, <a href="https://github.com/SFML/SFML/pull/2576">#2576</a>)</li>
+  <li>Add unit testing foundation to SFML (<a href="https://github.com/SFML/SFML/pull/623">#623</a>, <a href="https://github.com/SFML/SFML/pull/1475">#1475</a>)</li>
+  <li>Changed Doxygen single-line comment format (<a href="https://github.com/SFML/SFML/pull/1622">#1622</a>, <a href="https://github.com/SFML/SFML/pull/1623">#1623</a>)</li>
+  <li>Add support for GitHub Actions (<a href="https://github.com/SFML/SFML/pull/1716">#1716</a>, <a href="https://github.com/SFML/SFML/pull/1751">#1751</a>, <a href="https://github.com/SFML/SFML/pull/2058">#2058</a>, <a href="https://github.com/SFML/SFML/pull/2114">#2114</a>)</li>
+  <li>Add support for NetBSD (<a href="https://github.com/SFML/SFML/pull/1535">#1535</a>, <a href="https://github.com/SFML/SFML/pull/1723">#1723</a>)</li>
+  <li>Slight increase performance and code refactor (<a href="https://github.com/SFML/SFML/pull/1732">#1732</a>)</li>
+  <li>Use public domain resources for examples (<a href="https://github.com/SFML/SFML/pull/1627">#1627</a>, <a href="https://github.com/SFML/SFML/pull/1718">#1718</a>)</li>
+  <li>Add support for CPack and NSIS with CPack (<a href="https://github.com/SFML/SFML/pull/1114">#1114</a>)</li>
+  <li>Enable support for unity builds (<a href="https://github.com/SFML/SFML/pull/1787">#1787</a>, <a href="https://github.com/SFML/SFML/pull/1788">#1788</a>)</li>
+  <li>Various clean ups (<a href="https://github.com/SFML/SFML/pull/1848">#1848</a>, <a href="https://github.com/SFML/SFML/pull/1849">#1849</a>, <a href="https://github.com/SFML/SFML/pull/2219">#2219</a>, <a href="https://github.com/SFML/SFML/pull/2220">#2220</a>, <a href="https://github.com/SFML/SFML/pull/2221">#2221</a>, <a href="https://github.com/SFML/SFML/pull/2241">#2241</a>)</li>
+  <li>Enable and enforce a large set of warnings (<a href="https://github.com/SFML/SFML/pull/1785">#1785</a>, <a href="https://github.com/SFML/SFML/pull/1791">#1791</a>, <a href="https://github.com/SFML/SFML/pull/1846">#1846</a>, <a href="https://github.com/SFML/SFML/pull/1906">#1906</a>, <a href="https://github.com/SFML/SFML/pull/1908">#1908</a>, <a href="https://github.com/SFML/SFML/pull/2048">#2048</a>, <a href="https://github.com/SFML/SFML/pull/2066">#2066</a>, <a href="https://github.com/SFML/SFML/pull/2073">#2073</a>, <a href="https://github.com/SFML/SFML/pull/2094">#2094</a>, <a href="https://github.com/SFML/SFML/pull/2100">#2100</a>, <a href="https://github.com/SFML/SFML/pull/2106">#2106</a>, <a href="https://github.com/SFML/SFML/pull/2142">#2142</a>, <a href="https://github.com/SFML/SFML/pull/2217">#2217</a>, <a href="https://github.com/SFML/SFML/pull/2218">#2218</a>)</li>
+  <li>Enable search box for the Doxygen documentation (<a href="https://github.com/SFML/SFML/pull/1841">#1841</a>, <a href="https://github.com/SFML/SFML/pull/1940">#1940</a>, <a href="https://github.com/SFML/SFML/pull/2173">#2173</a>, <a href="https://github.com/SFML/SFML/pull/2477">#2477</a>)</li>
+  <li>Enhancements of the CI pipeline (<a href="https://github.com/SFML/SFML/pull/2046">#2046</a>, <a href="https://github.com/SFML/SFML/pull/2263">#2263</a>, <a href="https://github.com/SFML/SFML/pull/2294">#2294</a>)</li>
+  <li>Fix header include paths in Doxygen documentation (<a href="https://github.com/SFML/SFML/pull/2512">#2512</a>)</li>
+  <li>Fix compilation for GCC 13.1.1 (<a href="https://github.com/SFML/SFML/pull/2553">#2553</a>)</li>
+  <li>[macOS] Add support for arm64 on macOS (<a href="https://github.com/SFML/SFML/pull/1749">#1749</a>, <a href="https://github.com/SFML/SFML/pull/1750">#1750</a>, <a href="https://github.com/SFML/SFML/pull/1761">#1761</a>, <a href="https://github.com/SFML/SFML/pull/1843">#1843</a>, <a href="https://github.com/SFML/SFML/pull/1868">#1868</a>)</li>
+  <li>[iOS] Build examples for iOS as well (<a href="https://github.com/SFML/SFML/pull/1418">#1418</a>, <a href="https://github.com/SFML/SFML/pull/1520">#1520</a>, <a href="https://github.com/SFML/SFML/pull/1522">#1522</a>)</li>
+  <li>[Windows] Properly support Clang on Windows (<a href="https://github.com/SFML/SFML/pull/1612">#1612</a>, <a href="https://github.com/SFML/SFML/pull/1720">#1720</a>, <a href="https://github.com/SFML/SFML/pull/1784">#1784</a>, <a href="https://github.com/SFML/SFML/pull/1795">#1795</a>)</li>
+  <li>[Windows] Link legacy stdio definitions on newer Visual Studio versions (<a href="https://github.com/SFML/SFML/pull/1712">#1712</a>)</li>
+  <li>[Windows] Provide additional metadata through resource files (<a href="https://github.com/SFML/SFML/pull/1419">#1419</a>, <a href="https://github.com/SFML/SFML/pull/1779">#1779</a>)</li>
+  <li>[Android] Add 64-bits libraries for Android (<a href="https://github.com/SFML/SFML/pull/1648">#1648</a>, <a href="https://github.com/SFML/SFML/pull/2165">#2165</a>)</li>
+  <li>[Android] Adjust NDK search path to support newer NDKs (<a href="https://github.com/SFML/SFML/pull/1575">#1575</a>)</li>
+  <li>[macOS] Copy logo.png to Resources in Cocoa example (<a href="https://github.com/SFML/SFML/pull/1818">#1818</a>)</li>
+  <li>[Windows] Add support for Visual Studio 2022 (<a href="https://github.com/SFML/SFML/pull/1819">#1819</a>)</li>
+  <li>[Android] Build sfml-main with position-independent code (<a href="https://github.com/SFML/SFML/pull/2393">#2393</a>, <a href="https://github.com/SFML/SFML/pull/2397">#2397</a>)</li>
+</ul>
+
+<h3 id="2.6.0-system"><a class="h3-link" href="#2.6.0-system">System</a></h3>
+<h4>Features</h4>
+<ul>
+  <li>[Android] Simplify management of ActivityStates (<a href="https://github.com/SFML/SFML/pull/1845">#1845</a>)</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+  <li>[Windows] Fix overflow when using sf::Clock for long time (<a href="https://github.com/SFML/SFML/pull/1765">#1765</a>, <a href="https://github.com/SFML/SFML/pull/1771">#1771</a>)</li>
+</ul>
+
+<h3 id="2.6.0-window"><a class="h3-link" href="#2.6.0-window">Window</a></h3>
+<h4>Features</h4>
+<ul>
+  <li>Allow creation of a window without an OpenGL context (<a href="https://github.com/SFML/SFML/pull/1484">#1484</a>)</li>
+  <li>Dynamically load EGL and GLES extensions as is done for desktop GL (<a href="https://github.com/SFML/SFML/pull/1539">#1539</a>, <a href="https://github.com/SFML/SFML/pull/1577">#1577</a>, <a href="https://github.com/SFML/SFML/pull/1603">#1603</a>, <a href="https://github.com/SFML/SFML/pull/2157">#2157</a>, <a href="https://github.com/SFML/SFML/pull/2160">#2160</a>)</li>
+  <li>Add support for creating Vulkan window surfaces (<a href="https://github.com/SFML/SFML/pull/1557">#1557</a>)</li>
+  <li>Scancode support (<a href="https://github.com/SFML/SFML/pull/1235">#1235</a>, <a href="https://github.com/SFML/SFML/pull/1400">#1400</a>, <a href="https://github.com/SFML/SFML/pull/1596">#1596</a>, <a href="https://github.com/SFML/SFML/pull/2009">#2009</a>, <a href="https://github.com/SFML/SFML/pull/2096">#2096</a>, <a href="https://github.com/SFML/SFML/pull/2148">#2148</a>, <a href="https://github.com/SFML/SFML/pull/2243">#2243</a>)</li>
+  <li>[Linux] Add support for colored cursors in Unix implementation (<a href="https://github.com/SFML/SFML/pull/1693">#1693</a>, <a href="https://github.com/SFML/SFML/pull/1694">#1694</a>)</li>
+  <li>[Linux] Added support for directional arrow resize cursors on Linux (<a href="https://github.com/SFML/SFML/pull/1688">#1688</a>)</li>
+  <li>[Linux] Add support for X Input Method (<a href="https://github.com/SFML/SFML/pull/1840">#1840</a>, <a href="https://github.com/SFML/SFML/pull/1850">#1850</a>, <a href="https://github.com/SFML/SFML/pull/2191">#2191</a>, <a href="https://github.com/SFML/SFML/pull/2242">#2242</a>)</li>
+  <li>[Linux] Add support for Direct Rendering Mode (DRM) / Kernel Mode Setting (KMS) (<a href="https://github.com/SFML/SFML/pull/2029">#2029</a>, <a href="https://github.com/SFML/SFML/pull/2146">#2146</a>, <a href="https://github.com/SFML/SFML/pull/2246">#2246</a>, <a href="https://github.com/SFML/SFML/pull/2259">#2259</a>, <a href="https://github.com/SFML/SFML/pull/2400">#2400</a>)</li>
+  <li>[Windows] Use monitor aware DPI scaling on Windows (<a href="https://github.com/SFML/SFML/pull/2268">#2268</a>)</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+  <li>Fix sf::Context::getActiveContext to stop returning inactive contexts (<a href="https://github.com/SFML/SFML/pull/1794">#1794</a>)</li>
+  <li>[Linux] Fixed crash with X11 when $DISPLAY is not 0.0 (<a href="https://github.com/SFML/SFML/pull/724">#724</a>, <a href="https://github.com/SFML/SFML/pull/1504">#1504</a>)</li>
+  <li>[Android] Ensure setActive(false) is called before the surface is destroyed in EglContext (<a href="https://github.com/SFML/SFML/pull/1530">#1530</a>, <a href="https://github.com/SFML/SFML/pull/1531">#1531</a>)</li>
+  <li>[Android] Fixed EGL incorrectly being passed the anti-aliasing level as EGL_SAMPLE_BUFFERS instead of EGL_SAMPLES (<a href="https://github.com/SFML/SFML/pull/1533">#1533</a>, <a href="https://github.com/SFML/SFML/pull/1534">#1534</a>)</li>
+  <li>[Linux] Fix OpenGL extensions not loading in a specific Linux VM configuration (<a href="https://github.com/SFML/SFML/pull/1495">#1495</a>, <a href="https://github.com/SFML/SFML/pull/1543">#1543</a>)</li>
+  <li>[Windows] Fixed potential buffer overrun in Win32 OpenGL error handling (<a href="https://github.com/SFML/SFML/pull/1245">#1245</a>, <a href="https://github.com/SFML/SFML/pull/1246">#1246</a>)</li>
+  <li>[Windows] Fix no longer hides cursor when hovering title bar (<a href="https://github.com/SFML/SFML/pull/1569">#1569</a>, <a href="https://github.com/SFML/SFML/pull/1570">#1570</a>)</li>
+  <li>[macOS] Initialize m_context correctly in SFContext constructors (<a href="https://github.com/SFML/SFML/pull/1582">#1582</a>, <a href="https://github.com/SFML/SFML/pull/1610">#1610</a>)</li>
+  <li>[Android] Fixed navigation bar not being entirely hidden on Android (<a href="https://github.com/SFML/SFML/pull/1538">#1538</a>, <a href="https://github.com/SFML/SFML/pull/1554">#1554</a>)</li>
+  <li>[Windows] Make the process to set a DirectInput device's axis mode more conservative (<a href="https://github.com/SFML/SFML/pull/1634">#1634</a>)</li>
+  <li>[Linux] Fix an issue where the cursor wasn't changed instantaneously (<a href="https://github.com/SFML/SFML/pull/1686">#1686</a>)</li>
+  <li>[Windows] Fix issue where joystick/controller POV values were not set correctly for DirectInput devices (<a href="https://github.com/SFML/SFML/pull/1719">#1719</a>)</li>
+  <li>[Android] Fix warning: control may reach end of non-void function (<a href="https://github.com/SFML/SFML/pull/1713">#1713</a>)</li>
+  <li>[Windows] Fixed Win32 requestFocus in multi-threaded environment (<a href="https://github.com/SFML/SFML/pull/1600">#1600</a>)</li>
+  <li>[Android] Fix issue where EGL_DEFAULT_DISPLAY is NULL (<a href="https://github.com/SFML/SFML/pull/1639">#1639</a>, <a href="https://github.com/SFML/SFML/pull/1740">#1740</a>)</li>
+  <li>[macOS] When initializing an OpenGL view with an existing window, call finishInit (<a href="https://github.com/SFML/SFML/pull/1759">#1759</a>, <a href="https://github.com/SFML/SFML/pull/1760">#1760</a>)</li>
+  <li>[macOS] Fix potential crash when changing cursor (<a href="https://github.com/SFML/SFML/pull/1721">#1721</a>, <a href="https://github.com/SFML/SFML/pull/1736">#1736</a>)</li>
+  <li>[Android] Fixed SIGSEGV after pressing back button on Android (<a href="https://github.com/SFML/SFML/pull/531">#531</a>, <a href="https://github.com/SFML/SFML/pull/1580">#1580</a>)</li>
+  <li>[Android] Fix issue with waitEvent and an OpenGL Context (<a href="https://github.com/SFML/SFML/pull/1532">#1532</a>, <a href="https://github.com/SFML/SFML/pull/1790">#1790</a>)</li>
+  <li>[iOS] Fix issue where OpenGL ES libraries couldn't be located (<a href="https://github.com/SFML/SFML/pull/1687">#1687</a>, <a href="https://github.com/SFML/SFML/pull/1804">#1804</a>)</li>
+  <li>[macOS] Fix issue where window wouldn't be closing because of events still being processed (<a href="https://github.com/SFML/SFML/pull/1581">#1581</a>, <a href="https://github.com/SFML/SFML/pull/1814">#1814</a>)</li>
+  <li>[Windows] Preserve the drop shadow for system cursors on Windows (<a href="https://github.com/SFML/SFML/pull/1731">#1731</a>)</li>
+  <li>[Windows] Use GetWindowLongPtr for better overall compatibility (<a href="https://github.com/SFML/SFML/pull/1806">#1806</a>)</li>
+  <li>[macOS] Ensure proper nesting of autorelease pools on OS X (<a href="https://github.com/SFML/SFML/pull/1549">#1549</a>, <a href="https://github.com/SFML/SFML/pull/1820">#1820</a>)</li>
+  <li>[Linux] Fix typo in window construction (<a href="https://github.com/SFML/SFML/pull/1951">#1951</a>, <a href="https://github.com/SFML/SFML/pull/1953">#1953</a>)</li>
+  <li>[Linux] Prevent crash in Unix JoystickImpl with too many file descriptors (<a href="https://github.com/SFML/SFML/pull/1900">#1900</a>, <a href="https://github.com/SFML/SFML/pull/1941">#1941</a>)</li>
+</ul>
+
+<h3 id="2.6.0-graphics"><a class="h3-link" href="#2.6.0-graphics">Graphics</a></h3>
+<h4>Features</h4>
+<ul>
+  <li>Allow re-creation of the shared context as a core context if the user requests a core profile context (<a href="https://github.com/SFML/SFML/pull/1434">#1434</a>, <a href="https://github.com/SFML/SFML/pull/1443">#1443</a>)</li>
+  <li>Added getPosition() and getSize() to sf::Rect (<a href="https://github.com/SFML/SFML/pull/1047">#1047</a>)</li>
+  <li>Added Font::hasGlyph field (<a href="https://github.com/SFML/SFML/pull/1644">#1644</a>)</li>
+  <li>Implemented saveToMemory and saveImageToMemory (<a href="https://github.com/SFML/SFML/pull/988">#988</a>, <a href="https://github.com/SFML/SFML/pull/1597">#1597</a>, <a href="https://github.com/SFML/SFML/pull/1669">#1669</a>)</li>
+  <li>Implement smoothing for fonts (<a href="https://github.com/SFML/SFML/pull/1690">#1690</a>, <a href="https://github.com/SFML/SFML/pull/2064">#2064</a>, <a href="https://github.com/SFML/SFML/pull/2072">#2072</a>)</li>
+  <li>Add Min and Max blend modes (<a href="https://github.com/SFML/SFML/pull/1710">#1710</a>, <a href="https://github.com/SFML/SFML/pull/1756">#1756</a>)</li>
+  <li>Support geometry shaders when a OpenGL 3.2+ context is available (<a href="https://github.com/SFML/SFML/pull/1768">#1768</a>, <a href="https://github.com/SFML/SFML/pull/1769">#1769</a>, <a href="https://github.com/SFML/SFML/pull/1786">#1786</a>, <a href="https://github.com/SFML/SFML/pull/1789">#1789</a>)</li>
+  <li>Align encodings for new line characters (<a href="https://github.com/SFML/SFML/pull/2107">#2107</a>)</li>
+  <li>Update stb_image to 2.28, thus adding support for more image formats (<a href="https://github.com/SFML/SFML/pull/1712">#1712</a>, <a href="https://github.com/SFML/SFML/pull/2322">#2322</a>, <a href="https://github.com/SFML/SFML/pull/2464">#2464</a>)</li>
+  <li>[macOS] Improve high DPI handling on macOS (<a href="https://github.com/SFML/SFML/pull/1817">#1817</a>)</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+  <li>Fixed missing checks for empty vertex arrays when updating the vertex buffers in sf::Text (<a href="https://github.com/SFML/SFML/pull/1558">#1558</a>, <a href="https://github.com/SFML/SFML/pull/1560">#1560</a>)</li>
+  <li>Remove unnecessary glFlush() in sf::Texture (<a href="https://github.com/SFML/SFML/pull/1609">#1609</a>)</li>
+  <li>Fixed text rendering artifacts on Radeon cards (<a href="https://github.com/SFML/SFML/pull/1568">#1568</a>)</li>
+  <li>Force OpenGL states to be reset when RenderTarget detects that a new context has to be tracked (<a href="https://github.com/SFML/SFML/pull/1625">#1625</a>, <a href="https://github.com/SFML/SFML/pull/1630">#1630</a>)</li>
+  <li>Don't set default Texture Rect of a sf::Sprite before the user provided one (<a href="https://github.com/SFML/SFML/pull/1725">#1725</a>)</li>
+  <li>Added auto hinting compensation to fix too wide gaps between small glyphs (<a href="https://github.com/SFML/SFML/pull/1745">#1745</a>, <a href="https://github.com/SFML/SFML/pull/1746">#1746</a>)</li>
+  <li>Fix support for sRGB color space in sf::RenderTexture (<a href="https://github.com/SFML/SFML/pull/1092">#1092</a>, <a href="https://github.com/SFML/SFML/pull/1757">#1757</a>)</li>
+  <li>Fix incorrect glyph rect for text outline (<a href="https://github.com/SFML/SFML/pull/1826">#1826</a>, <a href="https://github.com/SFML/SFML/pull/1827">#1827</a>, <a href="https://github.com/SFML/SFML/pull/1836">#1836</a>)</li>
+  <li>Fix alpha value calculation for semi-transparent pixels on fully transparent pixels with sf::Image::copy() (<a href="https://github.com/SFML/SFML/pull/1993">#1993</a>)</li>
+  <li>Fix getLocalBounds inconsistency for sf::Text (<a href="https://github.com/SFML/SFML/pull/2129">#2129</a>, <a href="https://github.com/SFML/SFML/pull/2132">#2132</a>)</li>
+  <li>[iOS] Ensure the proper default framebuffer is bound when activating a RenderWindow (<a href="https://github.com/SFML/SFML/pull/1471">#1471</a>, <a href="https://github.com/SFML/SFML/pull/1487">#1487</a>)</li>
+</ul>
+
+<h3 id="2.6.0-audio"><a class="h3-link" href="#2.6.0-audio">Audio</a></h3>
+<h4>Features</h4>
+<ul>
+  <li>Allow explicitly closing sf::InputSoundFile (<a href="https://github.com/SFML/SFML/pull/1516">#1516</a>)</li>
+  <li>Replace use of auto_ptr for future-proofing (<a href="https://github.com/SFML/SFML/pull/1546">#1546</a>)</li>
+  <li>Adjustable processing interval in sf::SoundStream (<a href="https://github.com/SFML/SFML/pull/1517">#1517</a>, <a href="https://github.com/SFML/SFML/pull/1666">#1666</a>)</li>
+  <li>Fix sf::Music sometimes failing to loop after seeking (<a href="https://github.com/SFML/SFML/pull/1707">#1707</a>)</li>
+  <li>Add MP3 decoding support (<a href="https://github.com/SFML/SFML/pull/1232">#1232</a>, <a href="https://github.com/SFML/SFML/pull/1796">#1796</a>, <a href="https://github.com/SFML/SFML/pull/1851">#1851</a>)</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+  <li>Rename FindVorbis -> FindVORBIS, for consistency with exported variables (<a href="https://github.com/SFML/SFML/pull/1626">#1626</a>, <a href="https://github.com/SFML/SFML/pull/1629">#1629</a>)</li>
+  <li>Fix naming of VORBIS in SFMLConfigDependencies.cmake.in (<a href="https://github.com/SFML/SFML/pull/1636">#1636</a>, <a href="https://github.com/SFML/SFML/pull/1637">#1637</a>)</li>
+  <li>Fixed copy assign operator in sf::Sound so it checks for self-assignment (<a href="https://github.com/SFML/SFML/pull/1744">#1744</a>)</li>
+  <li>Fix SoundStream::play to restart the sound if it was played before (<a href="https://github.com/SFML/SFML/pull/2175">#2175</a>)</li>
+</ul>
+
+<h3 id="2.6.0-network"><a class="h3-link" href="#2.6.0-network">Network</a></h3>
+<h4>Features</h4>
+<ul>
+  <li>Added method to get the current read position of sf::Packet (<a href="https://github.com/SFML/SFML/pull/1382">#1382</a>, <a href="https://github.com/SFML/SFML/pull/1641">#1641</a>)</li>
+</ul>
+
+<h4>Bugfixes</h4>
+<ul>
+  <li>Fixed sometimes failing to read floats and doubles from Packet on Android (<a href="https://github.com/SFML/SFML/pull/1565">#1565</a>, <a href="https://github.com/SFML/SFML/pull/1578">#1578</a>)</li>
 </ul>
 
 <h2 id="sfml-2.5.1"><a class="h2-link" href="#sfml-2.5.1">SFML 2.5.1</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
