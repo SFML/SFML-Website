@@ -179,7 +179,7 @@ window.draw(vertices, 2, sf::Lines);
             </td>
         </tr>
         <tr>
-            <td><code>sf::Quads</code></td>
+            <td><code>sf::Quads</code> (deprecated)</td>
             <td>
                 A set of unconnected quads. The 4 points of each quad must be defined consistently, either in clockwise or counter-clockwise order.
             </td>
@@ -195,20 +195,20 @@ window.draw(vertices, 2, sf::Lines);
     Like other SFML entities, vertex arrays can also be textured. To do so, you'll need to manipulate the <code>texCoords</code> attribute of the vertices. This attribute defines
     which pixel of the texture is mapped to the vertex.
 </p>
-<pre><code class="cpp">// create a quad
-sf::VertexArray quad(sf::Quads, 4);
+<pre><code class="cpp">// create a triangle strip
+sf::VertexArray triangleStrip(sf::TriangleStrip, 4);
 
 // define it as a rectangle, located at (10, 10) and with size 100x100
-quad[0].position = sf::Vector2f(10.f, 10.f);
-quad[1].position = sf::Vector2f(110.f, 10.f);
-quad[2].position = sf::Vector2f(110.f, 110.f);
-quad[3].position = sf::Vector2f(10.f, 110.f);
+triangleStrip[0].position = sf::Vector2f(10.f, 10.f);
+triangleStrip[1].position = sf::Vector2f(10.f, 110.f);
+triangleStrip[2].position = sf::Vector2f(110.f, 10.f);
+triangleStrip[3].position = sf::Vector2f(110.f, 110.f);
 
 // define its texture area to be a 25x50 rectangle starting at (0, 0)
-quad[0].texCoords = sf::Vector2f(0.f, 0.f);
-quad[1].texCoords = sf::Vector2f(25.f, 0.f);
-quad[2].texCoords = sf::Vector2f(25.f, 50.f);
-quad[3].texCoords = sf::Vector2f(0.f, 50.f);
+triangleStrip[0].texCoords = sf::Vector2f(0.f, 0.f);
+triangleStrip[1].texCoords = sf::Vector2f(0.f, 50.f);
+triangleStrip[2].texCoords = sf::Vector2f(25.f, 0.f);
+triangleStrip[3].texCoords = sf::Vector2f(25.f, 50.f);
 </code></pre>
 <p class="important">
     Texture coordinates are defined in <em>pixels</em> (just like the <code>textureRect</code> of sprites and shapes). They are <em>not</em> normalized (between 0 and 1), as
@@ -358,10 +358,10 @@ public:
             return false;
 
         // resize the vertex array to fit the level size
-        m_vertices.setPrimitiveType(sf::Quads);
-        m_vertices.resize(width * height * 4);
+        m_vertices.setPrimitiveType(sf::Triangles);
+        m_vertices.resize(width * height * 6);
 
-        // populate the vertex array, with one quad per tile
+        // populate the vertex array, with two triangles per tile
         for (unsigned int i = 0; i &lt; width; ++i)
             for (unsigned int j = 0; j &lt; height; ++j)
             {
@@ -372,20 +372,24 @@ public:
                 int tu = tileNumber % (m_tileset.getSize().x / tileSize.x);
                 int tv = tileNumber / (m_tileset.getSize().x / tileSize.x);
 
-                // get a pointer to the current tile's quad
-                sf::Vertex* quad = &amp;m_vertices[(i + j * width) * 4];
+                // get a pointer to the triangles' vertices of the current tile
+                sf::Vertex* triangles = &amp;m_vertices[(i + j * width) * 6];
 
-                // define its 4 corners
-                quad[0].position = sf::Vector2f(i * tileSize.x, j * tileSize.y);
-                quad[1].position = sf::Vector2f((i + 1) * tileSize.x, j * tileSize.y);
-                quad[2].position = sf::Vector2f((i + 1) * tileSize.x, (j + 1) * tileSize.y);
-                quad[3].position = sf::Vector2f(i * tileSize.x, (j + 1) * tileSize.y);
+                // define the 6 corners of the two triangles
+                triangles[0].position = sf::Vector2f(i * tileSize.x, j * tileSize.y);
+                triangles[1].position = sf::Vector2f((i + 1) * tileSize.x, j * tileSize.y);
+                triangles[2].position = sf::Vector2f(i * tileSize.x, (j + 1) * tileSize.y);
+                triangles[3].position = sf::Vector2f(i * tileSize.x, (j + 1) * tileSize.y);
+                triangles[4].position = sf::Vector2f((i + 1) * tileSize.x, j * tileSize.y);
+                triangles[5].position = sf::Vector2f((i + 1) * tileSize.x, (j + 1) * tileSize.y);
 
-                // define its 4 texture coordinates
-                quad[0].texCoords = sf::Vector2f(tu * tileSize.x, tv * tileSize.y);
-                quad[1].texCoords = sf::Vector2f((tu + 1) * tileSize.x, tv * tileSize.y);
-                quad[2].texCoords = sf::Vector2f((tu + 1) * tileSize.x, (tv + 1) * tileSize.y);
-                quad[3].texCoords = sf::Vector2f(tu * tileSize.x, (tv + 1) * tileSize.y);
+                // define the 6 matching texture coordinates
+                triangles[0].texCoords = sf::Vector2f(tu * tileSize.x, tv * tileSize.y);
+                triangles[1].texCoords = sf::Vector2f((tu + 1) * tileSize.x, tv * tileSize.y);
+                triangles[2].texCoords = sf::Vector2f(tu * tileSize.x, (tv + 1) * tileSize.y);
+                triangles[3].texCoords = sf::Vector2f(tu * tileSize.x, (tv + 1) * tileSize.y);
+                triangles[4].texCoords = sf::Vector2f((tu + 1) * tileSize.x, tv * tileSize.y);
+                triangles[5].texCoords = sf::Vector2f((tu + 1) * tileSize.x, (tv + 1) * tileSize.y);
             }
 
         return true;
