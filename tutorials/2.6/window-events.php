@@ -161,23 +161,38 @@ if (event.type == sf::Event::GainedFocus)
     <a class="internal" href="./window-inputs.php" title="Real-time inputs tutorial">dedicated tutorial</a>).
 </p>
 <p>
-    The member associated with these events is <code>event.key</code>, it contains the code of the pressed/released key, as well as the current state of
+    The member associated with these events is <code>event.key</code>, it contains the scancode and key code of the pressed/released key, as well as the current state of
     the modifier keys (alt, control, shift, system).
+</p>
+<p>
+    Scancodes are unique values for each physical key on a keyboard, regardless of the language or layout, whereas key codes represent keys based on the user's chosen layout.
+    For instance, the <kbd>Z</kbd> key is in the bottom row to the left of the <kbd>X</kbd> key on a US layout. Referring to the scancode for <kbd>Z</kbd> would identify
+    this physical key location on any keyboard. However, on a German layout, the same physical key is labeled <kbd>Y</kbd>. Thus, using the key code for <kbd>Y</kbd> can
+    lead to different physical key locations, depending on the chosen layout.
+</p>
+<p>
+    It is strongly recommended to use scancodes over key codes if the physical location of the keys is more important than the key values that depend on the keyboard layout,
+    such as using <kbd>WASD</kbd> keys for movement.
 </p>
 <pre><code class="cpp">if (event.type == sf::Event::KeyPressed)
 {
-    if (event.key.code == sf::Keyboard::Escape)
+    if (event.key.scancode == sf::Keyboard::Scan::Escape)
     {
         std::cout &lt;&lt; "the escape key was pressed" &lt;&lt; std::endl;
-        std::cout &lt;&lt; "control:" &lt;&lt; event.key.control &lt;&lt; std::endl;
-        std::cout &lt;&lt; "alt:" &lt;&lt; event.key.alt &lt;&lt; std::endl;
-        std::cout &lt;&lt; "shift:" &lt;&lt; event.key.shift &lt;&lt; std::endl;
-        std::cout &lt;&lt; "system:" &lt;&lt; event.key.system &lt;&lt; std::endl;
+        std::cout &lt;&lt; "scancode: " &lt;&lt; event.key.scancode &lt;&lt; std::endl;
+        std::cout &lt;&lt; "code: " &lt;&lt; event.key.code &lt;&lt; std::endl;
+        std::cout &lt;&lt; "control: " &lt;&lt; event.key.control &lt;&lt; std::endl;
+        std::cout &lt;&lt; "alt: " &lt;&lt; event.key.alt &lt;&lt; std::endl;
+        std::cout &lt;&lt; "shift: " &lt;&lt; event.key.shift &lt;&lt; std::endl;
+        std::cout &lt;&lt; "system: " &lt;&lt; event.key.system &lt;&lt; std::endl;
+        std::cout &lt;&lt; "description: " &lt;&lt; sf::Keyboard::getDescription(event.key.scancode).toAnsiString() &lt;&lt; std::endl;
+        std::cout &lt;&lt; "localize: " &lt;&lt; sf::Keyboard::localize(event.key.scancode) &lt;&lt; std::endl;
+        std::cout &lt;&lt; "delocalize: " &lt;&lt; sf::Keyboard::delocalize(event.key.code) &lt;&lt; std::endl;
     }
 }</code></pre>
 <p>
     Note that some keys have a special meaning for the operating system, and will lead to unexpected behavior. An example is the F10 key on Windows, which "steals"
-    the focus, or the F12 key which starts the debugger when using Visual Studio. This will probably be solved in a future version of SFML.
+    the focus, or the F12 key which starts the debugger when using Visual Studio.
 </p>
 
 <?php h2('The MouseWheelMoved event') ?>
