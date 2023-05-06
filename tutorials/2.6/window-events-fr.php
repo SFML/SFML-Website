@@ -172,24 +172,39 @@ if (event.type == sf::Event::GainedFocus)
     <a class="internal" href="./window-inputs-fr.php" title="Tutoriel sur les entrées temps-réel">tutoriel dédié</a>).
 </p>
 <p>
-    Le membre associé à ces évènements est <code>event.key</code>, il contient le code de la touche pressée/relâchée, ainsi que l'état des
+    Le membre associé à ces évènements est <code>event.key</code>, il contient le scancode et le code de touche de la touche pressée/relâchée, ainsi que l'état des
     touches spéciales (alt, control, shift, system) au moment de l'appui.
+</p>
+<p>
+    Les scancodes sont des valeurs uniques pour chaque touche physique d'un clavier, quelle que soit la langue ou la disposition. Les codes de touches représentent
+    les touches en fonction de la disposition choisie par l'utilisateur. Par exemple, la touche <kbd>Z</kbd> se trouve dans la rangée inférieure à gauche de la
+    touche <kbd>X</kbd> sur un clavier américain. En se référant au scancode pour <kbd>Z</kbd>, on peut identifier l'emplacement physique de cette touche sur n'importe
+    quel clavier. Cependant, sur un clavier allemand, la même touche physique est étiquetée <kbd>Y</kbd>. Ainsi, l'utilisation du code de la touche <kbd>Y</kbd> peut
+    conduire à des emplacements de touches physiques différents, en fonction de la disposition choisie.
+</p>
+<p>
+    Il est fortement recommandé d'utiliser des scancodes plutôt que des codes de touches si l'emplacement physique des touches est plus important que les valeurs des
+    touches qui dépendent de la disposition du clavier, comme l'utilisation des touches <kbd>WASD</kbd> pour les déplacements.
 </p>
 <pre><code class="cpp">if (event.type == sf::Event::KeyPressed)
 {
-    if (event.key.code == sf::Keyboard::Escape)
+    if (event.key.scancode == sf::Keyboard::Scan::Escape)
     {
         std::cout &lt;&lt; "the escape key was pressed" &lt;&lt; std::endl;
-        std::cout &lt;&lt; "control:" &lt;&lt; event.key.control &lt;&lt; std::endl;
-        std::cout &lt;&lt; "alt:" &lt;&lt; event.key.alt &lt;&lt; std::endl;
-        std::cout &lt;&lt; "shift:" &lt;&lt; event.key.shift &lt;&lt; std::endl;
-        std::cout &lt;&lt; "system:" &lt;&lt; event.key.system &lt;&lt; std::endl;
+        std::cout &lt;&lt; "scancode: " &lt;&lt; event.key.scancode &lt;&lt; std::endl;
+        std::cout &lt;&lt; "code: " &lt;&lt; event.key.code &lt;&lt; std::endl;
+        std::cout &lt;&lt; "control: " &lt;&lt; event.key.control &lt;&lt; std::endl;
+        std::cout &lt;&lt; "alt: " &lt;&lt; event.key.alt &lt;&lt; std::endl;
+        std::cout &lt;&lt; "shift: " &lt;&lt; event.key.shift &lt;&lt; std::endl;
+        std::cout &lt;&lt; "system: " &lt;&lt; event.key.system &lt;&lt; std::endl;
+        std::cout &lt;&lt; "description: " &lt;&lt; sf::Keyboard::getDescription(event.key.scancode).toAnsiString() &lt;&lt; std::endl;
+        std::cout &lt;&lt; "localize: " &lt;&lt; sf::Keyboard::localize(event.key.scancode) &lt;&lt; std::endl;
+        std::cout &lt;&lt; "delocalize: " &lt;&lt; sf::Keyboard::delocalize(event.key.code) &lt;&lt; std::endl;
     }
 }</code></pre>
 <p>
     Attention : certaines touches ont un sens particulier pour l'OS, et produisent des résultats inattendus. Par exemple la touche F10 qui, sous Windows,
-    "vole" le focus, ou bien encore la touche F12 qui démarre le debugger sous Visual Studio. Ces différences de comportement seront probablement
-    gommées dans une version future de SFML.
+    "vole" le focus, ou bien encore la touche F12 qui démarre le debugger sous Visual Studio.
 </p>
 
 <?php h2('L\'évènement MouseWheelMoved') ?>
