@@ -36,10 +36,6 @@
 <p>
     Les codes de touches sont définis dans l'enum <code>sf::Keyboard::Key</code>.
 </p>
-<p class="important">
-    Certaines touches peuvent manquer, ou être interprétées de manière incorrecte selon votre OS et l'agencement de votre clavier. C'est un aspect qui
-    fera l'objet d'améliorations dans une future version de SFML.
-</p>
 
 <?php h2('La souris') ?>
 <p>

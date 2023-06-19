@@ -34,10 +34,6 @@
 <p>
     Key codes are defined in the <code>sf::Keyboard::Key</code> enum.
 </p>
-<p class="important">
-    Depending on your operating system and keyboard layout, some key codes might be missing or interpreted incorrectly. This is something that will be improved in
-    a future version of SFML.
-</p>
 
 <?php h2('Mouse') ?>
 <p>
