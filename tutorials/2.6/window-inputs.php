@@ -18,21 +18,30 @@
 
 <?php h2('Keyboard') ?>
 <p>
-    The class that provides access to the keyboard state is <?php class_link("Keyboard") ?>. It only contains one function, <code>isKeyPressed</code>,
+    The class that provides access to the keyboard state is <?php class_link("Keyboard") ?>. It contains two overloads of the same function, <code>isKeyPressed</code>,
     which checks the current state of a key (pressed or released). It is a static function, so you don't need to instantiate <?php class_link("Keyboard") ?> to use it.
 </p>
 <p>
     This function directly reads the keyboard state, ignoring the focus state of your window. This means that <code>isKeyPressed</code> may return
-    true even if your window is inactive.
+    true, even if your window is inactive.
 </p>
 <pre><code class="cpp">if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
 {
     // left key is pressed: move our character
-    character.move(1.f, 0.f);
+    character.move(-1.f, 0.f);
 }
 </code></pre>
 <p>
     Key codes are defined in the <code>sf::Keyboard::Key</code> enum.
+</p>
+<pre><code class="cpp">if (sf::Keyboard::isKeyPressed(sf::Keyboard::Scan::Right))
+{
+    // right key is pressed: move our character
+    character.move(1.f, 0.f);
+}
+</code></pre>
+<p>
+    Scancodes are defined in the <code>sf::Keyboard::Scancode</code> enum.
 </p>
 
 <?php h2('Mouse') ?>
