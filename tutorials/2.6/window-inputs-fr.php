@@ -19,7 +19,7 @@
 
 <?php h2('Le clavier') ?>
 <p>
-    La classe qui donne accès à l'état du clavier est <?php class_link("Keyboard") ?>. Elle contient une unique fonction, <code>isKeyPressed</code>,
+    La classe qui donne accès à l'état du clavier est <?php class_link("Keyboard") ?>. Elle contient deux surcharges de la même fonction, <code>isKeyPressed</code>,
     qui donne l'état courant d'une touche (appuyée ou relâchée). C'est une fonction statique, vous n'avez pas besoin d'instancier
     <?php class_link("Keyboard") ?> pour l'utiliser.
 </p>
@@ -30,11 +30,20 @@
 <pre><code class="cpp">if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
 {
     // la touche "flèche gauche" est enfoncée : on bouge le personnage
-    character.move(1.f, 0.f);
+    character.move(-1.f, 0.f);
 }
 </code></pre>
 <p>
     Les codes de touches sont définis dans l'enum <code>sf::Keyboard::Key</code>.
+</p>
+<pre><code class="cpp">if (sf::Keyboard::isKeyPressed(sf::Keyboard::Scan::Right))
+{
+    // la touche "flèche droite" est enfoncée : on bouge le personnage
+    character.move(1.f, 0.f);
+}
+</code></pre>
+<p>
+    Les scancodes sont définis dans l'enum <code>sf::Keyboard::Scancode</code>.
 </p>
 
 <?php h2('La souris') ?>
