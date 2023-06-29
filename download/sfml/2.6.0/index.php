@@ -43,8 +43,8 @@
             <td><?php download_link('Visual C++ 15 (2017)', '64-bit', '19.4', '../../../files/SFML-2.6.0-windows-vc15-64-bit.zip') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('GCC 13.1.0 MinGW (DW2)', '32-bit', '11.4', '../../../files/SFML-2.6.0-windows-gcc-13.1.0-mingw-32-bit.zip') ?></td>
-            <td><?php download_link('GCC 13.1.0 MinGW (SEH)', '64-bit', '11.9', '../../../files/SFML-2.6.0-windows-gcc-13.1.0-mingw-64-bit.zip') ?></td>
+            <td><?php download_link('GCC 13.1.0 MinGW (DW2)', '32-bit', '17.9', '../../../files/SFML-2.6.0-windows-gcc-13.1.0-mingw-32-bit.zip') ?></td>
+            <td><?php download_link('GCC 13.1.0 MinGW (SEH)', '64-bit', '19.0', '../../../files/SFML-2.6.0-windows-gcc-13.1.0-mingw-64-bit.zip') ?></td>
         </tr>
     </tbody>
 </table>
