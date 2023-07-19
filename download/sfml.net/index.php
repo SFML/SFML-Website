@@ -19,8 +19,8 @@
 <h2>Description</h2>
 <p>
     SFML.Net is the official binding of SFML for the .Net language family (C#, VB.Net, C++/CLI, etc.). It is built on top of the C binding, CSFML, to ensure maximum
-    compatibility across platforms (i.e. it works with Mono). The API of SFML.Net is close to the C++ one, but in the .Net style: naming conventions are different, event
-    handling uses native event support, etc. So don't hesitate to have a look at the API documentation and at the provided examples, before posting questions on the forum.
+    compatibility across platforms. The API of SFML.Net is close to the C++ one, but in the .Net style: naming conventions are different, event handling uses native
+    event support, etc. So don't hesitate to have a look at the API documentation and at the provided examples, before posting questions on the forum.
 </p>
 <p>
     Since the SFML.Net API is similar to SFML, there's no tutorial for it; but you can follow the C++ tutorials available on this website, and adapt them to your preferred .Net
@@ -31,15 +31,6 @@
 <p>
     The following archives contain everything that you need in order to work with SFML.Net: libraries, dependencies, examples and documentation.
 </p>
-<p>
-    Since it's a .Net library, there's only one archive per architecture, which works for any OS and compiler. However, since the name of CSFML libraries appear in the source
-    code, and are different on each OS, for OS X and Linux you will have to write a special configuration file which maps the names of the CSFML DLLs to the names of the
-    corresponding CSFML shared libraries on your OS (for example, "csfml-graphics-2.dll" -> "libcsfml-graphics.so.2");
-    see <a href="http://www.mono-project.com/DllMap" title="Mono DLL map">the Mono documentation</a> for more details.
-</p>
-<p>
-    The provided dependencies are also for Windows only; on other OSes, you have to install the required dependencies (CSFML, SFML and its own dependencies) yourself.
-</p>
 
 <h3>Current sources</h3>
 <p>
@@ -47,12 +38,25 @@
     the current source code (which contain the sources of the examples). You can also watch the open issues on the task tracker, or add new ones.
 </p>
 
+<h3>SFML.Net 2.5.1</h3>
+<table class="styled download">
+    <tbody>
+        <tr>
+            <td class="os" rowspan="2">All</td>
+            <td><span class="description">Official NuGet Package</span><a href="https://www.nuget.org/packages/SFML.Net/2.5.1" target="_blank">SFML.Net</a></td>
+        </tr>
+        <tr>
+            <td><span class="description">Source code</span><a href="../../files/SFML.Net-2.5.1-sources.zip">Download<span class="size">0.84 MB</span></a></td>
+        </tr>
+    </tbody>
+</table>
+
 <h3>SFML.Net 2.5</h3>
 <table class="styled download">
     <tbody>
         <tr>
             <td class="os" rowspan="2">All</td>
-            <td><span class="description">Official NuGet Package</span><a href="https://www.nuget.org/packages/SFML.Net/" target="_blank">SFML.Net</a></td>
+            <td><span class="description">Official NuGet Package</span><a href="https://www.nuget.org/packages/SFML.Net/2.5.0" target="_blank">SFML.Net</a></td>
         </tr>
         <tr>
             <td><span class="description">Source code</span><a href="../../files/SFML.Net-2.5-sources.zip">Download<span class="size">0.85 MB</span></a></td>
