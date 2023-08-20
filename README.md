@@ -26,7 +26,7 @@ Ensure [`brew`](https://brew.sh/) is installed.
 
 ```bash
 brew install php
-brew install nginx
+brew install httpd
 brew install nginx
 ```
 
