@@ -26,8 +26,14 @@ Ensure [`brew`](https://brew.sh/) is installed.
 
 ```bash
 brew install php
-brew install httpd
+
 brew install nginx
+# OR
+brew install httpd
+```
+
+```bash
+
 ```
 
 **Additional References:**
@@ -41,8 +47,10 @@ On Linux, we'll provide commands for Debian/Ubuntu-like package managers. If you
 
 ```bash
 sudo apt install php8.1-fpm
-sudo apt install apache2
+
 sudo apt install nginx
+# OR
+sudo apt install apache2
 ```
 
 In case `php8.1-fpm` doesn't exist, add the PPA:
@@ -61,26 +69,6 @@ sudo apt update
 -   On Windows, `*.localhost` DNS are automatically mapped to `127.0.0.1`. If you want to use another custom domain, make sure to put a resolving DNS entry in your `hosts` file.
 -   On Windows with WSL2, you can use `/mnt/c/...` to access the `C:\` drive.
 
-#### Apache
-
--   On Linux:
-    -   Create a new config file at `/etc/apache2/sites-available`
-    -   Create a link to the `sites-enabled` directory, to enable the new config: `sudo ln -s /etc/apache2/sites-available/sfml /etc/apache2/sites-enabled/sfml`
-    -   Test the Nginx config: `sudo /sbin/apache2 -t`
-    -   Reload the config: `sudo service apache2 reload` or `sudo systemctl reload apache2`
--   On macOS:
-    -   Edit: `/usr/local/etc/httpd/httpd.conf` or `/opt/homebrew/etc/httpd/httpd.conf`
-    -   Reload the config: `brew services reload httpd`
-
-```apache
-<VirtualHost *:80>
-        ServerName sfml.localhost
-
-        DocumentRoot /path/to/the/cloned/SFML-website/repository
-        DirectoryIndex index.php index.html
-</VirtualHost>
-```
-
 #### Nginx
 
 -   On Linux:
@@ -89,6 +77,8 @@ sudo apt update
     -   Test the Nginx config: `sudo /sbin/nginx -t`
     -   Reload the config: `sudo service nginx reload` or `sudo systemctl reload nginx`
 -   On macOS:
+    -   Start Nginx: `brew services start nginx`
+    -   Start php as service for Nginx: `brew services start php`
     -   Edit: `/usr/local/etc/nginx/nginx.conf` or `/opt/homebrew/etc/nginx/nginx.conf`
     -   Test the Nginx config: `nginx -t`
     -   Reload the config: `brew services reload nginx`
@@ -110,7 +100,13 @@ server {
         location ~* \.php$ {
                 try_files $uri =404;
                 fastcgi_split_path_info ^(.+\.php)(/.+)$;
-                fastcgi_pass unix:/run/php/php8.1-fpm.sock;
+
+                # Uncomment for Linux
+                #fastcgi_pass unix:/run/php/php8.1-fpm.sock;
+
+                # Uncomment for macOS
+                #fastcgi_pass 127.0.0.1:9000;
+
                 fastcgi_index index.php;
                 fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
                 include fastcgi_params;
@@ -118,9 +114,25 @@ server {
 }
 ```
 
-**Notes:**
+#### Apache
 
--   On macOS, the `fastcgi_pass` may not be needed.
+-   On Linux:
+    -   Create a new config file at `/etc/apache2/sites-available`
+    -   Create a link to the `sites-enabled` directory, to enable the new config: `sudo ln -s /etc/apache2/sites-available/sfml /etc/apache2/sites-enabled/sfml`
+    -   Test the Nginx config: `sudo /sbin/apache2 -t`
+    -   Reload the config: `sudo service apache2 reload` or `sudo systemctl reload apache2`
+-   On macOS:
+    -   Edit: `/usr/local/etc/httpd/httpd.conf` or `/opt/homebrew/etc/httpd/httpd.conf`
+    -   Reload the config: `brew services reload httpd`
+
+```apache
+<VirtualHost *:80>
+        ServerName sfml.localhost
+
+        DocumentRoot /path/to/the/cloned/SFML-website/repository
+        DirectoryIndex index.php index.html
+</VirtualHost>
+```
 
 ## License
 
