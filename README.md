@@ -32,10 +32,6 @@ brew install nginx
 brew install httpd
 ```
 
-```bash
-
-```
-
 **Additional References:**
 
 -   https://pimylifeup.com/install-nginx-on-macos/
