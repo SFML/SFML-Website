@@ -8,6 +8,7 @@
 
 <?php h2('Démarrer') ?>
 <ul>
+    <li><a href="./start-cmake-fr.php" title="SFML avec le modèle de projet CMake">SFML avec le modèle de projet CMake</a></li>
     <li><a href="./start-vc-fr.php" title="SFML et Visual Studio">SFML et Visual Studio</a></li>
     <li><a href="./start-cb-fr.php" title="SFML et Code::Blocks">SFML et Code::Blocks (MinGW)</a></li>
     <li><a href="./start-linux-fr.php" title="SFML et Linux">SFML et Linux</a></li>
@@ -39,7 +40,7 @@
     <li><a href="graphics-vertex-array-fr.php" title="Concevoir ses entités avec les tableaux de vertex">Concevoir ses entités avec les tableaux de vertex</a></li>
     <li><a href="graphics-transform-fr.php" title="Position, rotation, échelle : transformer des entités">Position, rotation, échelle : transformer des entités</a></li>
     <li><a href="graphics-shader-fr.php" title="Effets spéciaux avec les shaders">Effets spéciaux avec les shaders</a></li>
-    <li><a href="graphics-view-fr.php" title="CContrôler la caméra 2D avec les vues">Contrôler la caméra 2D avec les vues</a></li>
+    <li><a href="graphics-view-fr.php" title="Contrôler la caméra 2D avec les vues">Contrôler la caméra 2D avec les vues</a></li>
 </ul>
 
 <?php h2('Module audio') ?>

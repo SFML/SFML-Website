@@ -1,7 +1,7 @@
 <?php
-$page = 'index.php';
-$title = '';
-require("header.php");
+    $page = 'index.php';
+    $title = '';
+    require("header.php");
 ?>
 
 <h1>Tutorials for SFML <?php echo $version; ?></h1>
@@ -61,6 +61,6 @@ require("header.php");
 
 <?php
 
-require("footer.php");
+    require("footer.php");
 
 ?>

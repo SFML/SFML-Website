@@ -1,9 +1,9 @@
 <?php
 
-$title = "SFML with the CMake Project Template";
-$page = "start-cmake.php";
+    $title = "SFML with the CMake Project Template";
+    $page = "start-cmake.php";
 
-require("header.php");
+    require("header.php");
 
 ?>
 
@@ -104,6 +104,6 @@ cmake --build build --config Release</code>
 
 <?php
 
-require("footer.php");
+    require("footer.php");
 
 ?>
