@@ -1,14 +1,14 @@
 <?php
-    $page = 'index.php';
-    $title = '';
-    require("header.php");
+$page = 'index.php';
+$title = '';
+require("header.php");
 ?>
 
 <h1>Tutorials for SFML <?php echo $version; ?></h1>
 
 <?php h2('Getting started') ?>
 <ul>
-    <li><a href="start-cmake.php" title="SFML with CMake Project Template">SFML with CMake Project Template</a></li>
+    <li><a href="start-cmake.php" title="SFML with the CMake Project Template">SFML with the CMake Project Template</a></li>
     <li><a href="start-vc.php" title="SFML and Visual Studio">SFML and Visual Studio</a></li>
     <li><a href="start-cb.php" title="SFML and Code::Blocks">SFML and Code::Blocks (MinGW)</a></li>
     <li><a href="start-linux.php" title="SFML and Linux">SFML and Linux</a></li>
@@ -61,6 +61,6 @@
 
 <?php
 
-    require("footer.php");
+require("footer.php");
 
 ?>
