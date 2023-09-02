@@ -12,9 +12,9 @@
 <?php h2('Introduction') ?>
 <p>
     This tutorial will work on any OS, with any IDE, and with any compiler.
-    It will explain, how to build a project, that can be used with any release, branch, or Git commit of SFML.
-    This approach is unique, in that it eliminates the possibility of linker errors and makes it as easy as possible to upgrade your SFML version in the future.
-    It even includes a CI pipeline to automatically verify, that your project continues to compile on Windows, Linux, and macOS.
+    It will explain how to build a project that can be used with any release, branch, or Git commit of SFML.
+    This approach is unique in that it eliminates the possibility of linker errors and makes it as easy as possible to upgrade your SFML version in the future.
+    It even includes a CI pipeline to automatically verify that your project continues to compile on Windows, Linux, and macOS.
 </p>
 
 <?php h2('Create Your Own GitHub Project') ?>
@@ -77,14 +77,14 @@ sudo apt install \
 </p>
 <p>
     <a class="external" title="Git SCM" href="https://git-scm.com/">Git</a> is also required since CMake uses Git to clone the SFML repository.
-    If you cloned your own GitHub project, then you will already have Git installed.
+    If you cloned your own GitHub project then you will already have Git installed.
     Without Git, CMake will fail in an unintuitive way.
 </p>
 
 <?php h2('Configure and Build Your Project') ?>
 <p>
     Now that you've made any changes you wanted to the build script, we're ready to build!
-    CMake is by far the most popular C++ build system so any IDE you may use, will have support for CMake projects.
+    CMake is by far the most popular C++ build system so any IDE you may use will have support for CMake projects.
     Below are some links to the documentation for setting up CMake projects with a few different popular IDEs.
 </p>
 <ul>
