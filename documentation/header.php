@@ -1,5 +1,5 @@
 <?php
-    $latest = '2.6.0';
+    $latest = '2.6.1';
     $linklatest = '';
     $doxygen = true;
     $docpath = 'documentation/' . $version . '/';
