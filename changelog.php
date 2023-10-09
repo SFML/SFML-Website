@@ -10,6 +10,7 @@
 <h1>Changelog</h1>
 
 <ul>
+ <li><a href="#sfml-2.6.1">SFML 2.6.1</a></li>
  <li><a href="#sfml-2.6.0">SFML 2.6.0</a></li>
  <li><a href="#sfml-2.5.1">SFML 2.5.1</a></li>
  <li><a href="#sfml-2.5.0">SFML 2.5.0</a></li>
@@ -28,6 +29,35 @@
  <li><a href="#sfml-1.3">SFML 1.3</a></li>
  <li><a href="#sfml-1.2">SFML 1.2</a></li>
  <li><a href="#sfml-1.1">SFML 1.1</a></li>
+</ul>
+
+<h2 id="sfml-2.6.1"><a class="h2-link" href="#sfml-2.6.1">SFML 2.6.1</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
+<h3 id="2.6.1-general"><a class="h3-link" href="#2.6.1-general">General</a></h3>
+<ul>
+  <li>Stop overwriting CMAKE_MODULE_PATH (<a href="https://github.com/SFML/SFML/pull/2577">#2577</a>)</li>
+  <li>Loosen restrictions on unknown compilers (<a href="https://github.com/SFML/SFML/pull/2585">#2585</a>)</li>
+  <li>Fix CI deprecation warnings (<a href="https://github.com/SFML/SFML/pull/2624">#2624</a>)</li>
+  <li>Fix unused compiler flag error in Clang (<a href="https://github.com/SFML/SFML/pull/2625">#2625</a>)</li>
+  <li>Disable warnings as errors by default  (<a href="https://github.com/SFML/SFML/pull/2680">#2680</a>)</li>
+</ul>
+
+<h3 id="2.6.1-window"><a class="h3-link" href="#2.6.1-window">Window</a></h3>
+<h4>Bugfixes</h4>
+<ul>
+  <li>Fix macOS resize event bug (<a href="https://github.com/SFML/SFML/pull/2618">#2618</a>)</li>
+  <li>Skip ClientMessage events with other window ID unless it is for IM (<a href="https://github.com/SFML/SFML/pull/2651">#2651</a>)</li>
+</ul>
+
+<h3 id="2.6.1-graphics"><a class="h3-link" href="#2.6.1-graphics">Graphics</a></h3>
+<h4>Bugfixes</h4>
+<ul>
+  <li>Ensure OpenGL extensions are loaded before querying maximum texture size (<a href="https://github.com/SFML/SFML/pull/2603">#2603</a>)</li>
+</ul>
+
+<h3 id="2.6.1-audio"><a class="h3-link" href="#2.6.1-audio">Audio</a></h3>
+<h4>Bugfixes</h4>
+<ul>
+  <li>Remove use of C++11 header (<a href="https://github.com/SFML/SFML/pull/2591">#2591</a>)</li>
 </ul>
 
 <h2 id="sfml-2.6.0"><a class="h2-link" href="#sfml-2.6.0">SFML 2.6.0</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
