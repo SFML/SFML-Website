@@ -52,6 +52,8 @@
 <h4>Bugfixes</h4>
 <ul>
   <li>Ensure OpenGL extensions are loaded before querying maximum texture size (<a href="https://github.com/SFML/SFML/pull/2603">#2603</a>)</li>
+  <li>Fixed RenderTexture being upside down on Android (<a href="https://github.com/SFML/SFML/pull/2730">#2730</a>)</li>
+  <li>Fix warnings in Linux OpenGL ES codepaths (<a href="https://github.com/SFML/SFML/pull/2747">#2747</a>)</li>
 </ul>
 
 <h3 id="2.6.1-audio"><a class="h3-link" href="#2.6.1-audio">Audio</a></h3>
