@@ -176,7 +176,7 @@ if (event.type == sf::Event::GainedFocus)
     touches spéciales (alt, control, shift, system) au moment de l'appui.
 </p>
 <p>
-    Les scancodes sont des valeurs uniques pour chaque touche physique d'un clavier, quelle que soit la langue ou la disposition. Les codes de touches représentent
+    Les scancodes sont des valeurs uniques pour chaque touche physique d'un clavier, quelle que soit la langue ou la disposition, tandis que les codes de touches représentent
     les touches en fonction de la disposition choisie par l'utilisateur. Par exemple, la touche <kbd>Z</kbd> se trouve dans la rangée inférieure à gauche de la
     touche <kbd>X</kbd> sur un clavier américain. En se référant au scancode pour <kbd>Z</kbd>, on peut identifier l'emplacement physique de cette touche sur n'importe
     quel clavier. Cependant, sur un clavier allemand, la même touche physique est étiquetée <kbd>Y</kbd>. Ainsi, l'utilisation du code de la touche <kbd>Y</kbd> peut
