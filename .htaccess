@@ -35,3 +35,7 @@ RewriteRule ^ /tutorials/latest/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/tutorials/latest(/?)(.*)$
 RewriteRule /latest(/?)(.*) /tutorials/2.6/$2 [R=301,L]
+
+# Artifact redirects
+RewriteCond %{REQUEST_URI} ^/artifacts(/?)(.*)?$
+RewriteRule ^ https://artifacts.sfml-dev.org/by-branch/master/ [R=301,L]
