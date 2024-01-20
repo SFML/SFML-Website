@@ -24,7 +24,7 @@
 
 int main()
 {
-    sf::Window window(sf::VideoMode(800, 600), "My window");
+    sf::Window window(sf::VideoMode({800, 600}), "My window");
 
     ...
 
@@ -85,7 +85,7 @@ int main()
 int main()
 {
     sf::Window window;
-    window.create(sf::VideoMode(800, 600), "My window");
+    window.create(sf::VideoMode({800, 600}), "My window");
 
     ...
 
@@ -106,7 +106,7 @@ int main()
 
 int main()
 {
-    sf::Window window(sf::VideoMode(800, 600), "My window");
+    sf::Window window(sf::VideoMode({800, 600}), "My window");
 
     // on fait tourner le programme jusqu'à ce que la fenêtre soit fermée
     while (window.isOpen())
@@ -209,7 +209,7 @@ sf::Window window(handle);
     Si vous voulez juste une fonctionnalité supplémentaire bien spécifique, vous pouvez aussi faire l'inverse : créer une fenêtre SFML normale, et
     récupérer son handle natif afin d'implémenter les fonctions que SFML ne supporte pas.
 </p>
-<pre><code class="cpp">sf::Window window(sf::VideoMode(800, 600), "SFML window");
+<pre><code class="cpp">sf::Window window(sf::VideoMode({800, 600}), "SFML window");
 sf::WindowHandle handle = window.getSystemHandle();
 
 // vous pouvez maintenant utiliser 'handle' avec les fonctions spécifiques à l'OS

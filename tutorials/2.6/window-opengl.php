@@ -41,7 +41,7 @@
 <p>
     Since SFML is based on OpenGL, its windows are ready for OpenGL calls without any extra effort.
 </p>
-<pre><code class="cpp">sf::Window window(sf::VideoMode(800, 600), "OpenGL");
+<pre><code class="cpp">sf::Window window(sf::VideoMode({800, 600}), "OpenGL");
 
 // it works out of the box
 glEnable(GL_TEXTURE_2D);
@@ -65,7 +65,7 @@ settings.antialiasingLevel = 4;
 settings.majorVersion = 3;
 settings.minorVersion = 0;
 
-sf::Window window(sf::VideoMode(800, 600), "OpenGL", sf::Style::Default, settings);
+sf::Window window(sf::VideoMode({800, 600}), "OpenGL", sf::Style::Default, settings);
 </code></pre>
 <p>
     If any of these settings is not supported by the graphics card, SFML tries to find the closest valid match. For example, if 4x anti-aliasing
@@ -98,7 +98,7 @@ std::cout &lt;&lt; "version:" &lt;&lt; settings.majorVersion &lt;&lt; "." &lt;&l
 int main()
 {
     // create the window
-    sf::Window window(sf::VideoMode(800, 600), "OpenGL", sf::Style::Default, sf::ContextSettings(32));
+    sf::Window window(sf::VideoMode({800, 600}), "OpenGL", sf::Style::Default, sf::ContextSettings(32));
     window.setVerticalSyncEnabled(true);
 
     // activate the window
@@ -240,7 +240,7 @@ window2.setActive(true);
 
     // load OpenGL resources...
 
-    sf::Window window(sf::VideoMode(800, 600), "OpenGL");
+    sf::Window window(sf::VideoMode({800, 600}), "OpenGL");
 
     ...
 
@@ -272,7 +272,7 @@ window2.setActive(true);
 int main()
 {
     // create the window (remember: it's safer to create it in the main thread due to OS limitations)
-    sf::Window window(sf::VideoMode(800, 600), "OpenGL");
+    sf::Window window(sf::VideoMode({800, 600}), "OpenGL");
 
     // deactivate its OpenGL context
     window.setActive(false);

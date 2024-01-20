@@ -419,7 +419,7 @@ private:
 <pre><code class="cpp">int main()
 {
     // create the window
-    sf::RenderWindow window(sf::VideoMode(512, 256), "Tilemap");
+    sf::RenderWindow window(sf::VideoMode({512, 256}), "Tilemap");
 
     // define the level with an array of tile indices
     const int level[] =
@@ -552,7 +552,7 @@ private:
 <pre><code class="cpp">int main()
 {
     // create the window
-    sf::RenderWindow window(sf::VideoMode(512, 256), "Particles");
+    sf::RenderWindow window(sf::VideoMode({512, 256}), "Particles");
 
     // create the particle system
     ParticleSystem particles(1000);

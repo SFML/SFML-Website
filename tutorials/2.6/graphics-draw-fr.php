@@ -38,7 +38,7 @@
 int main()
 {
     // création de la fenêtre
-    sf::RenderWindow window(sf::VideoMode(800, 600), "My window");
+    sf::RenderWindow window(sf::VideoMode({800, 600}), "My window");
 
     // on fait tourner le programme tant que la fenêtre n'a pas été fermée
     while (window.isOpen())
@@ -163,7 +163,7 @@ int main()
 {
     // création de la fenêtre
     // (rappelez-vous : il est plus prudent de le faire dans le thread principal à cause des limitations de l'OS)
-    sf::RenderWindow window(sf::VideoMode(800, 600), "OpenGL");
+    sf::RenderWindow window(sf::VideoMode({800, 600}), "OpenGL");
 
     // désactivation de son contexte OpenGL
     window.setActive(false);

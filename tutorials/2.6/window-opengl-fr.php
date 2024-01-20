@@ -43,7 +43,7 @@
 <p>
     Comme SFML est construite par dessus OpenGL, ses fenêtres sont déjà prêtes pour vos appels OpenGL, sans effort supplémentaire.
 </p>
-<pre><code class="cpp">sf::Window window(sf::VideoMode(800, 600), "OpenGL");
+<pre><code class="cpp">sf::Window window(sf::VideoMode({800, 600}), "OpenGL");
 
 // ça marche directement
 glEnable(GL_TEXTURE_2D);
@@ -67,7 +67,7 @@ settings.antialiasingLevel = 4;
 settings.majorVersion = 3;
 settings.minorVersion = 0;
 
-sf::Window window(sf::VideoMode(800, 600), "OpenGL", sf::Style::Default, settings);
+sf::Window window(sf::VideoMode({800, 600}), "OpenGL", sf::Style::Default, settings);
 </code></pre>
 <p>
     Si l'un (ou plusieurs) de ces paramètres n'est pas supporté par la carte graphique, SFML essaye de trouver la plus proche valeur qui soit valide.
@@ -99,7 +99,7 @@ std::cout &lt;&lt; "version:" &lt;&lt; settings.majorVersion &lt;&lt; "." &lt;&l
 int main()
 {
     // crée la fenêtre
-    sf::Window window(sf::VideoMode(800, 600), "OpenGL", sf::Style::Default, sf::ContextSettings(32));
+    sf::Window window(sf::VideoMode({800, 600}), "OpenGL", sf::Style::Default, sf::ContextSettings(32));
     window.setVerticalSyncEnabled(true);
 
     // activation de la fenêtre
@@ -276,7 +276,7 @@ window2.setActive(true);
 
     // chargement de ressources OpenGL...
 
-    sf::Window window(sf::VideoMode(800, 600), "OpenGL");
+    sf::Window window(sf::VideoMode({800, 600}), "OpenGL");
 
     ...
 
@@ -308,7 +308,7 @@ window2.setActive(true);
 int main()
 {
     // création de la fenêtre (souvenez-vous: créer la fenêtre dans le thread principal est plus sûr, du fait des limitations de l'OS)
-    sf::Window window(sf::VideoMode(800, 600), "OpenGL");
+    sf::Window window(sf::VideoMode({800, 600}), "OpenGL");
 
     // désactivation de son contexte OpenGL
     window.setActive(false);

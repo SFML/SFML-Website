@@ -259,7 +259,7 @@ private :
 <pre><code class="cpp">sf::ContextSettings settings;
 settings.antialiasingLevel = 8;
 
-sf::RenderWindow window(sf::VideoMode(800, 600), "SFML shapes", sf::Style::Default, settings);
+sf::RenderWindow window(sf::VideoMode({800, 600}), "SFML shapes", sf::Style::Default, settings);
 </code></pre>
 <img class="screenshot" src="./images/graphics-shape-antialiasing.png" alt="Aliased vs antialiased shape"/>
 <p>

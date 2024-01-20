@@ -37,7 +37,7 @@
 int main()
 {
     // create the window
-    sf::RenderWindow window(sf::VideoMode(800, 600), "My window");
+    sf::RenderWindow window(sf::VideoMode({800, 600}), "My window");
 
     // run the program as long as the window is open
     while (window.isOpen())
@@ -158,7 +158,7 @@ window.draw(sprite);
 int main()
 {
     // create the window (remember: it's safer to create it in the main thread due to OS limitations)
-    sf::RenderWindow window(sf::VideoMode(800, 600), "OpenGL");
+    sf::RenderWindow window(sf::VideoMode({800, 600}), "OpenGL");
 
     // deactivate its OpenGL context
     window.setActive(false);

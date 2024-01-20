@@ -23,7 +23,7 @@
 
 int main()
 {
-    sf::Window window(sf::VideoMode(800, 600), "My window");
+    sf::Window window(sf::VideoMode({800, 600}), "My window");
 
     ...
 
@@ -85,7 +85,7 @@ int main()
 int main()
 {
     sf::Window window;
-    window.create(sf::VideoMode(800, 600), "My window");
+    window.create(sf::VideoMode({800, 600}), "My window");
 
     ...
 
@@ -106,7 +106,7 @@ int main()
 
 int main()
 {
-    sf::Window window(sf::VideoMode(800, 600), "My window");
+    sf::Window window(sf::VideoMode({800, 600}), "My window");
 
     // run the program as long as the window is open
     while (window.isOpen())
@@ -206,7 +206,7 @@ sf::Window window(handle);
     If you just want an additional, very specific feature, you can also do it the other way round: create an SFML window and get its OS-specific handle
     to implement things that SFML itself doesn't support.
 </p>
-<pre><code class="cpp">sf::Window window(sf::VideoMode(800, 600), "SFML window");
+<pre><code class="cpp">sf::Window window(sf::VideoMode({800, 600}), "SFML window");
 sf::WindowHandle handle = window.getSystemHandle();
 
 // you can now use the handle with OS specific functions

@@ -432,7 +432,7 @@ private:
 <pre><code class="cpp">int main()
 {
     // on crée la fenêtre
-    sf::RenderWindow window(sf::VideoMode(512, 256), "Tilemap");
+    sf::RenderWindow window(sf::VideoMode({512, 256}), "Tilemap");
 
     // on définit le niveau à l'aide de numéro de tuiles
     const int level[] =
@@ -566,7 +566,7 @@ private:
 <pre><code class="cpp">int main()
 {
     // on crée la fenêtre
-    sf::RenderWindow window(sf::VideoMode(512, 256), "Particles");
+    sf::RenderWindow window(sf::VideoMode({512, 256}), "Particles");
 
     // on crée un système de 1000 particules
     ParticleSystem particles(1000);
