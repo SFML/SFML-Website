@@ -190,9 +190,9 @@ int main()
     <a href="./window-window.php" title="Tutoriel sur les fenêtres">tutoriel sur les fenêtres</a>.
 </p>
 <p class="important">
-    Bien que <?php class_link("RenderWindow") ?> permette de dessiner dans un thread et de gérer ses évènements dans un autre, ses autres fonctions ne sont pas
-    pour autant thread-safe. 
-    En particulier, vous devez arrêter le thread de dessin avant d'appeler la fonction <code>close</code>.
+    Vous pouvez dessiner et gérer les évènements d'une fenêtre dans deux threads différents car ces deux fonctionnalités sont complètement indépendantes.
+    La classe <?php class_link("RenderWindow") ?> n'est autrement pas thread-safe. 
+    En particulier, vous devez vous assurer que la fenêtre ne soit plus utilisée que dans un seul thread avant de la fermer.
 </p>
 
 <?php
