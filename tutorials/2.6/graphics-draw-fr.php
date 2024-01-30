@@ -182,11 +182,17 @@ int main()
 }
 </code></pre>
 <p>
-    Comme vous pouvez le voir, vous n'avez même pas besoin d'activer la fenêtre dans le thread de dessin, SFML le fait automatiquement pour vous dès que nécessaire.
+    Remarque : vous n'avez pas besoin d'activer la fenêtre dans le thread de dessin, SFML le fait automatiquement pour vous dès que nécessaire à condition 
+    que le contexte OpenGL ait été correctement désactivé auparavant.
 </p>
 <p>
     Souvenez-vous : il faut toujours créer la fenêtre et gérer ses évènements dans le thread principal, pour un maximum de portabilité, comme expliqué dans le
     <a href="./window-window.php" title="Tutoriel sur les fenêtres">tutoriel sur les fenêtres</a>.
+</p>
+<p class="important">
+    Bien que <?php class_link("RenderWindow") ?> permette de dessiner dans un thread et de gérer ses évènements dans un autre, ses autres fonctions ne sont pas
+    pour autant thread-safe. 
+    En particulier, vous devez arrêter le thread de dessin avant d'appeler la fonction <code>close</code>.
 </p>
 
 <?php
