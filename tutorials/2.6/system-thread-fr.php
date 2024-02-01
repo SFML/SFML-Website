@@ -227,6 +227,10 @@ thread.wait();
     plusieurs threads en même temps. Et si l'opération en question n'est pas <em>thread-safe</em>, le résultat sera indéterminé (c'est-à-dire que
     cela pourrait planter ou corrompre des données).
 </p>
+<p class="important">
+    Les instances des classes fournies par SFML ne sont en général pas thread-safe. Vous devez les protéger si vous les utilisez 
+    dans plusieurs threads en même temps !
+</p>
 <p>
     Il existe plusieurs outils de programmation pour vous aider à protéger les variables partagées et rendre votre code thread-safe, ils sont
     appelés "primitives de synchronisation". Les plus communs sont les mutexs, les sémaphores, les conditions d'attente et les <em>spin locks</em>.
