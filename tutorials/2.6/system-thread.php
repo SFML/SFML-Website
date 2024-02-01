@@ -223,7 +223,7 @@ thread.wait();
     If the operation is not <em>thread-safe</em>, it can lead to undefined behavior (ie. it might crash or corrupt data).
 </p>
 <p class="important">
-    Instances of classes defined by SFML are usually not thread-safe. You must protect them if you use them in multiple threads at the same time !
+    SFML objects are usually not thread-safe, you must protect them to use them in multiple threads at the same time !
 </p>
 <p>
     Several programming tools exist to help you protect shared data and make your code thread-safe, these are called synchronization primitives. Common ones

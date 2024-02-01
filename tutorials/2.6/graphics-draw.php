@@ -177,17 +177,19 @@ int main()
 }
 </code></pre>
 <p>
-    Note : you don't need to activate the window in the rendering thread, SFML does it automatically for you whenever it needs 
+    Note that you don't need to activate the window in the rendering thread, SFML does it automatically for you whenever it needs 
     to be done, as long as the OpenGL context is properly deactivate beforehand.
 </p>
 <p>
     Remember to always create the window and handle its events in the main thread for maximum portability. This is explained in the
-    <a href="./window-window.php" title="Window tutorial">window tutorial</a>.
+    <a href="./window-window.php#things-to-know-about-windows" title="Window tutorial">window tutorial</a>.
 </p>
 <p class="important">
-    You can draw and handle the events of a window in two different threads because these two functionalities dont share anything.
-    The <?php class_link("RenderWindow") ?> class is otherwise not thread-safe.
-    In particular, you must ensure the window is only used in one thread before closing it.
+    The example show here is not completely thread-safe because a thread could close the window while another still uses it.
+    Generally speaking, SFML objects are not themselves thread-safe and you need to 
+    <a href="./system-thread.php#protecting-shared-data" title="Protecting shared data">protect the shared data</a> yourself.<br/>
+    Note that you can draw and handle the events of a window in two different threads without issues because these 
+    two functionalities are independent.
 </p>
 
 <?php
