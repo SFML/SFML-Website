@@ -185,7 +185,7 @@ int main()
     <a href="./window-window.php#things-to-know-about-windows" title="Window tutorial">window tutorial</a>.
 </p>
 <p class="important">
-    The example show here is not completely thread-safe because a thread could close the window while another still uses it.
+    The example shown here is not completely thread-safe because a thread could close the window while another still uses it.
     Generally speaking, SFML objects are not themselves thread-safe and you need to 
     <a href="./system-thread.php#protecting-shared-data" title="Protecting shared data">protect the shared data</a> yourself.<br/>
     Note that you can draw and handle the events of a window in two different threads without issues because these 
