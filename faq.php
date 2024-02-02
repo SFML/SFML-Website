@@ -590,7 +590,7 @@ std::size_t pos = cpp_string.find( sfml_string );</code></pre>
     <p>In the end, what this means is that <code>sf::sleep()</code> is merely a guideline, and not a contract. The longer you sleep for, the more accurate it will be. The shorter you sleep for, the less accurate it will be and to a certain extent more dependent on luck it will become.</p>
 
     <h3 id="system-thread-safe"><a class="h3-link" href="#system-thread-safe">Is SFML thread-safe?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
-    <p>No, instances of SFML's classes are not thread-safe by themselves. If you need thread-safety you must protect them. SFML comes with <a href="/documentation/latest/classsf_1_1Mutex.php"><code>sf::Mutex</code></a> and <a href="/documentation/latest/classsf_1_1Lock.php"><code>sf::Lock</code></a> for this purpose but you can use other tools you may have available such as C++11's <code>std::mutex</code> and <code>std::lock_guard</code> as you see fit.</p>
+    <p>No, SFML objects are not thread-safe by themselves. If you need thread-safety you must protect them. SFML comes with <a href="/documentation/latest/classsf_1_1Mutex.php"><code>sf::Mutex</code></a> and <a href="/documentation/latest/classsf_1_1Lock.php"><code>sf::Lock</code></a> for this purpose but you can use other tools you may have available such as C++11's <code>std::mutex</code> and <code>std::lock_guard</code> as you see fit.</p>
     <p>For more information on how to protect you shared data, refer to the <a href="/tutorials/latest/system-thread.php#protecting-shared-data">official documentation</a>.</p>
 
     <h2 id="programming"><a class="h2-link" href="#programming">Programming in General</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
