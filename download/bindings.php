@@ -30,8 +30,8 @@
     <tbody>
         <tr>
             <th rowspan="1">Ada</th>
-            <td><a href="https://github.com/mgrojo/ASFML" class="website">ASFML</a></td>
-            <td>2.4 / 2.5</td>
+            <td><a href="https://github.com/mgrojo/ASFML" class="website"><img src="../images/bindings/asfml.png" alt="ASFML"/></a></td>
+            <td>2.4 - 2.6</td>
             <td>Manuel</td>
         </tr>
         <tr>
