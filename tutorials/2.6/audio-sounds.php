@@ -56,7 +56,7 @@ int main()
     <a class="internal" href="./system-stream.php" title="Input streams tutorial">custom input stream</a> (<code>loadFromStream</code>).
 </p>
 <p>
-    SFML supports the audio file formats WAV, OGG/Vorbis and FLAC. Due to licensing issues MP3 is <strong>not</strong> supported.
+    SFML supports the audio file formats WAV, OGG/Vorbis and FLAC. MP3 is supported for decoding but not encoding.
 </p>
 <p>
     You can also load a sound buffer directly from an array of samples, in the case they originate from another source:
