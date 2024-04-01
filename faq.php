@@ -462,8 +462,7 @@ while( window.isOpen() ) {
     <h2 id="audio"><a class="h2-link" href="#audio">SFML Audio</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 
     <h3 id="audio-formats"><a class="h3-link" href="#audio-formats">What audio formats does SFML support?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
-    <p>The Audio module is capable of playing wav, ogg/vorbis and flac files.<br>
-        MP3 is currently not supported, as the the patents and licenses around MP3 only ran out recently. We're happy to accept pull requests with a proper implementation.</p>
+    <p>The Audio module is capable of playing wav, ogg/vorbis, flac, and MP3 files.</p>
 
     <h3 id="audio-sound-problem"><a class="h3-link" href="#audio-sound-problem">Why can't I hear any sound?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
     <p>If everything compiles and seems to work correctly, but yet no sound is coming out of your speakers you should check the obvious. Ensure your speakers and plugged in and working correctly before assuming something is wrong with SFML. You can do this by opening one of your audio assets in another audio player such as Windows Media Player or <a href="https://www.videolan.org/">VLC</a>. If audio fails to play correctly there, then check that your PC audio is not muted and that the volume control on your speakers is turned up. Once it plays correctly in an external player then the problem may be with SFML.</p>
