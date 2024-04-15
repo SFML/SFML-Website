@@ -41,6 +41,36 @@
     télécharger un instantané des toutes dernières sources. Vous pouvez aussi consulter les tâches ou bugs en cours sur le tracker, ainsi qu'en ajouter de nouveaux.
 </p>
 
+<h3>CSFML 2.6.0</h3>
+<table class="styled download">
+    <tbody>
+        <tr>
+            <td class="os">Windows</td>
+            <td><?php download_link('2.6.0', 'Visual C++ / GCC', '32-bit', '1.57', '../../files/CSFML-2.6.0-windows-32-bit.zip') ?></td>
+            <td><?php download_link('2.6.0', 'Visual C++ / GCC', '64-bit', '1.74', '../../files/CSFML-2.6.0-windows-64-bit.zip') ?></td>
+        </tr>
+        <tr>
+            <td class="os">Tous OS</td>
+            <td colspan="2"><span class="description">Code source</span><a href="../../files/CSFML-2.6.0-sources.zip">Télécharger<span class="size">0.47 MB</span></a></td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>CSFML 2.5.2</h3>
+<table class="styled download">
+    <tbody>
+        <tr>
+            <td class="os">Windows</td>
+            <td><?php download_link('2.5.2', 'Visual C++ / GCC', '32-bit', '1.48', '../../files/CSFML-2.5.2-windows-32-bit.zip') ?></td>
+            <td><?php download_link('2.5.2', 'Visual C++ / GCC', '64-bit', '1.66', '../../files/CSFML-2.5.2-windows-64-bit.zip') ?></td>
+        </tr>
+        <tr>
+            <td class="os">Tous OS</td>
+            <td colspan="2"><span class="description">Code source</span><a href="../../files/CSFML-2.5.2-sources.zip">Télécharger<span class="size">0.31 MB</span></a></td>
+        </tr>
+    </tbody>
+</table>
+
 <h3>CSFML 2.5.1</h3>
 <table class="styled download">
     <tbody>

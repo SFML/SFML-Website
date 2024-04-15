@@ -43,14 +43,14 @@
         <tr>
             <th rowspan="1">C</th>
             <td><a href="csfml" class="website">CSFML</a></td>
-            <td>2.5</td>
-            <td><a href="mailto:laurent@sfml-dev.org">Laurent Gomila</a></td>
+            <td>2.6</td>
+            <td><a href="mailto:csfml@sfml-dev.org">SFML Team</a></td>
         </tr>
         <tr>
             <th rowspan="1">.Net (C#, VB.Net etc.)</th>
             <td><a href="sfml.net" class="website">SFML.Net</a></td>
             <td>2.5</td>
-            <td><a href="mailto:laurent@sfml-dev.org">Laurent Gomila</a></td>
+            <td><a href="mailto:sfmlnet@sfml-dev.org">SFML Team</a></td>
         </tr>
         <tr>
             <th rowspan="1">Crystal</th>
