@@ -379,7 +379,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return the position of the <em>index-th</em> character. </p>
-<p>This function computes the visual position of a character from its index in the string. The returned position is in global coordinates (translation, rotation, scale and origin are applied). If <em>index</em> is out of range, the position of the end of the string is returned.</p>
+<p>This function computes the visual position of a character from its index in the string. The returned position is the global coordinates (translation, rotation, scale and origin are applied) at the top of the character's text line. If <em>index</em> is out of range, the position of the end of the string is returned.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">index</td><td>Index of the character</td></tr>
