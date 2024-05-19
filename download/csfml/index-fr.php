@@ -41,6 +41,26 @@
     télécharger un instantané des toutes dernières sources. Vous pouvez aussi consulter les tâches ou bugs en cours sur le tracker, ainsi qu'en ajouter de nouveaux.
 </p>
 
+<h3>CSFML 2.6.1</h3>
+<table class="styled download">
+    <tbody>
+        <tr>
+            <td class="os">Windows</td>
+            <td><?php download_link('2.6.1', 'Visual C++ / GCC', '32-bit', '1.57', '../../files/CSFML-2.6.1-windows-32-bit.zip') ?></td>
+            <td><?php download_link('2.6.1', 'Visual C++ / GCC', '64-bit', '1.74', '../../files/CSFML-2.6.1-windows-64-bit.zip') ?></td>
+        </tr>
+        <tr>
+            <td class="os">macOS</td>
+            <td><?php download_link('2.6.1', 'Clang', '64-bit', '0.16', '../../files/CSFML-2.6.1-macOS-clang-64-bit.tar.gz') ?></td>
+            <td><?php download_link('2.6.1', 'Clang', 'ARM64', '0.17', '../../files/CSFML-2.6.1-macOS-clang-arm64.tar.gz') ?></td>
+        </tr>
+        <tr>
+            <td class="os">Tous OS</td>
+            <td colspan="2"><span class="description">Code source</span><a href="../../files/CSFML-2.6.1-sources.zip">Télécharger<span class="size">0.47 Mo</span></a></td>
+        </tr>
+    </tbody>
+</table>
+
 <h3>CSFML 2.6.0</h3>
 <table class="styled download">
     <tbody>
@@ -50,8 +70,13 @@
             <td><?php download_link('2.6.0', 'Visual C++ / GCC', '64-bit', '1.74', '../../files/CSFML-2.6.0-windows-64-bit.zip') ?></td>
         </tr>
         <tr>
+            <td class="os">macOS</td>
+            <td><?php download_link('2.6.0', 'Clang', '64-bit', '0.16', '../../files/CSFML-2.6.0-macOS-clang-64-bit.tar.gz') ?></td>
+            <td><?php download_link('2.6.0', 'Clang', 'ARM64', '0.16', '../../files/CSFML-2.6.0-macOS-clang-arm64.tar.gz') ?></td>
+        </tr>
+        <tr>
             <td class="os">Tous OS</td>
-            <td colspan="2"><span class="description">Code source</span><a href="../../files/CSFML-2.6.0-sources.zip">Télécharger<span class="size">0.47 MB</span></a></td>
+            <td colspan="2"><span class="description">Code source</span><a href="../../files/CSFML-2.6.0-sources.zip">Télécharger<span class="size">0.47 Mo</span></a></td>
         </tr>
     </tbody>
 </table>
@@ -66,7 +91,7 @@
         </tr>
         <tr>
             <td class="os">Tous OS</td>
-            <td colspan="2"><span class="description">Code source</span><a href="../../files/CSFML-2.5.2-sources.zip">Télécharger<span class="size">0.31 MB</span></a></td>
+            <td colspan="2"><span class="description">Code source</span><a href="../../files/CSFML-2.5.2-sources.zip">Télécharger<span class="size">0.31 Mo</span></a></td>
         </tr>
     </tbody>
 </table>
@@ -85,7 +110,7 @@
         </tr>
         <tr>
             <td class="os">Tous OS</td>
-            <td colspan="2"><span class="description">Code source</span><a href="../../files/CSFML-2.5.1-sources.zip">Télécharger<span class="size">0.31 MB</span></a></td>
+            <td colspan="2"><span class="description">Code source</span><a href="../../files/CSFML-2.5.1-sources.zip">Télécharger<span class="size">0.31 Mo</span></a></td>
         </tr>
     </tbody>
 </table>
@@ -104,7 +129,7 @@
         </tr>
         <tr>
             <td class="os">Tous OS</td>
-            <td colspan="2"><span class="description">Code source</span><a href="../../files/CSFML-2.5-sources.zip">Télécharger<span class="size">0.29 MB</span></a></td>
+            <td colspan="2"><span class="description">Code source</span><a href="../../files/CSFML-2.5-sources.zip">Télécharger<span class="size">0.29 Mo</span></a></td>
         </tr>
     </tbody>
 </table>
