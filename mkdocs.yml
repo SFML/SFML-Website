@@ -1,0 +1,110 @@
+site_name: Simple and Fast Multimedia Library
+site_url: https://www.sfml-dev.org
+site_description: Simple and Fast Multimedia Library
+
+docs_dir: pages
+
+repo_url: https://github.com/SFML/SFML
+repo_name: SFML
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  icon:
+    repo: fontawesome/brands/github
+  font:
+    text: Ubuntu
+  logo: images/logo.png
+  favicon: images/favicon.ico
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: light green
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - content.code.copy
+    #- navigation.instant
+    #- navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.prune
+    - navigation.path
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+
+extra_css:
+  - styles/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/mastodon
+      link: https://fosstodon.org/@sfml
+      name: SFML on Fosstodon
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/sfmldev
+      name: SFML on Twitter
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/nr4X7Fh
+      name: SFML's Discord Server
+  generator: false
+
+copyright: Copyright &copy; <a href="mailto:laurent@sfml-dev.org">Laurent Gomila</a>
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets:
+      base_path: documentation
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+
+plugins:
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: fr
+          name: Français
+          build: true
+  - search
+  #- macros
+  #- privacy
+  #- git-committers:
+  #    repository: SFML/SFML-website
+  #    branch: master
+  #    exclude:
+  #      - documentations/*
+  #- git-revision-date-localized:
+  #    fallback_to_build_date: true
+  - literate-nav:
+      nav_file: navigation.md
+      implicit_index: false
+      tab_length: 4
