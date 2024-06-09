@@ -41,6 +41,19 @@
     ainsi qu'en ajouter de nouveaux.
 </p>
 
+<h3>SFML.Net 2.6.0</h3>
+<table class="styled download">
+    <tbody>
+        <tr>
+            <td class="os" rowspan="2">All</td>
+            <td><span class="description">Package officiel de NuGet</span><a href="https://www.nuget.org/packages/SFML.Net/2.6.0" target="_blank">SFML.Net</a></td>
+        </tr>
+        <tr>
+            <td><span class="description">Code source</span><a href="../../files/SFML.Net-2.6.0-sources.zip">Télécharger<span class="size">0.84 MB</span></a></td>
+        </tr>
+    </tbody>
+</table>
+
 <h3>SFML.Net 2.5.1</h3>
 <table class="styled download">
     <tbody>
@@ -49,7 +62,7 @@
             <td><span class="description">Package officiel de NuGet</span><a href="https://www.nuget.org/packages/SFML.Net/2.5.1" target="_blank">SFML.Net</a></td>
         </tr>
         <tr>
-            <td><span class="description">Code source</span><a href="../../files/SFML.Net-2.5-sources.zip">Télécharger<span class="size">0.84 MB</span></a></td>
+            <td><span class="description">Code source</span><a href="../../files/SFML.Net-2.5.1-sources.zip">Télécharger<span class="size">0.84 MB</span></a></td>
         </tr>
     </tbody>
 </table>

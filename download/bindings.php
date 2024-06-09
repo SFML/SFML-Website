@@ -49,7 +49,7 @@
         <tr>
             <th rowspan="1">.Net (C#, VB.Net etc.)</th>
             <td><a href="sfml.net" class="website">SFML.Net</a></td>
-            <td>2.5</td>
+            <td>2.6</td>
             <td><a href="mailto:sfmlnet@sfml-dev.org">SFML Team</a></td>
         </tr>
         <tr>

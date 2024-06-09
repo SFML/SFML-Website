@@ -38,6 +38,19 @@
     the current source code (which contain the sources of the examples). You can also watch the open issues on the task tracker, or add new ones.
 </p>
 
+<h3>SFML.Net 2.6.0</h3>
+<table class="styled download">
+    <tbody>
+        <tr>
+            <td class="os" rowspan="2">All</td>
+            <td><span class="description">Official NuGet Package</span><a href="https://www.nuget.org/packages/SFML.Net/2.6.0" target="_blank">SFML.Net</a></td>
+        </tr>
+        <tr>
+            <td><span class="description">Source code</span><a href="../../files/SFML.Net-2.6.0-sources.zip">Download<span class="size">0.84 MB</span></a></td>
+        </tr>
+    </tbody>
+</table>
+
 <h3>SFML.Net 2.5.1</h3>
 <table class="styled download">
     <tbody>
