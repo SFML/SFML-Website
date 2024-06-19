@@ -175,7 +175,7 @@
         <tr>
             <th rowspan="1">Zig</th>
             <td><a href="https://github.com/Guigui220D/zig-sfml-wrapper" class="website">zig-sfml-wrapper</a></td>
-            <td>2.5.1</td>
+            <td>2.6.1</td>
             <td>Guillaume Derex</td>
         </tr>
         <tr>
