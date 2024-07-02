@@ -25,7 +25,7 @@
     Tout ce dont vous avez besoin pour créer une application SFML est :
 </p>
 <ul>
-    <li>un Mac Intel 64-bit avec Lion ou ultérieur (10.7+)</li>
+    <li>un Mac Intel avec Catalina ou ultérieur (10.15+) ou un Mac Apple Silicon avec Big Sur ou ultérieur (11+)</li>
     <li>avec <a href="http://developer.apple.com/xcode/" title="Télécharger Xcode">Xcode</a> (les versions 4 et ultérieurs de l'EDI, qui est disponible sur l'<em>App Store</em>, sont supportées)</li>
     <li>avec clang et libc++ (fournis par Xcode).</li>
 </ul>
