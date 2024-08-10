@@ -1,0 +1,1752 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="Simple and Fast Multimedia Library" />
+        <link rel="canonical" href="https://www.sfml-dev.org/" />
+        <link rel="next" href="/learn/" />
+        <link rel="icon" href="/images/favicon.ico" />
+        <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.30" />
+        <title>Home - Simple and Fast Multimedia Library</title>
+        <link rel="stylesheet" href="/assets/stylesheets/main.3cba04c6.min.css" />
+        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback" />
+        <style>
+            :root {
+                --md-text-font: "Ubuntu";
+                --md-code-font: "Roboto Mono";
+            }
+        </style>
+        <link rel="stylesheet" href="/styles/extra.css" />
+        <script>
+            (__md_scope = new URL(".", location)),
+                (__md_hash = (e) => [...e].reduce((e, _) => (e << 5) - e + _.charCodeAt(0), 0)),
+                (__md_get = (e, _ = localStorage, t = __md_scope) => JSON.parse(_.getItem(t.pathname + "." + e))),
+                (__md_set = (e, _, t = localStorage, a = __md_scope) => {
+                    try {
+                        t.setItem(a.pathname + "." + e, JSON.stringify(_));
+                    } catch (e) {}
+                });
+        </script>
+        <link rel="stylesheet" type="text/css" href="doxygen.css" title="default" media="screen,print" />
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="dynsections.js"></script>
+        <script type="text/javascript" src="clipboard.js"></script>
+        <script type="text/javascript" src="cookie.js"></script>
+        <script type="text/javascript" src="resize.js"></script>
+        <link rel="stylesheet" type="text/css" href="search/search.css" />
+        <link rel="stylesheet" type="text/css" href="searchOverrides.css" />
+        <script type="text/javascript" src="search/searchdata.js"></script>
+        <script type="text/javascript" src="search/search.js"></script>
+        <script type="text/javascript">
+            /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+            $(document).ready(function () {
+                init_search();
+            });
+            /* @license-end */
+        </script>
+    </head>
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="indigo">
+        <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off" />
+        <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off" />
+        <label class="md-overlay" for="__drawer"></label>
+        <div data-md-component="skip">
+            <a href="#simple-and-fast-multimedia-library" class="md-skip"> Skip to content </a>
+        </div>
+        <div data-md-component="announce"></div>
+        <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+            <nav class="md-header__inner md-grid" aria-label="Header">
+                <a href="." title="Simple and Fast Multimedia Library" class="md-header__button md-logo" aria-label="Simple and Fast Multimedia Library" data-md-component="logo">
+                    <img src="/images/logo.png" alt="logo" />
+                </a>
+                <label class="md-header__button md-icon" for="__drawer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z" /></svg>
+                </label>
+                <div class="md-header__title" data-md-component="header-title">
+                    <div class="md-header__ellipsis">
+                        <div class="md-header__topic">
+                            <span class="md-ellipsis"> Simple and Fast Multimedia Library </span>
+                        </div>
+                        <div class="md-header__topic" data-md-component="header-topic">
+                            <span class="md-ellipsis"> Home </span>
+                        </div>
+                    </div>
+                </div>
+                <form class="md-header__option" data-md-component="palette">
+                    <input
+                        class="md-option"
+                        data-md-color-media="(prefers-color-scheme: light)"
+                        data-md-color-scheme="default"
+                        data-md-color-primary="light-green"
+                        data-md-color-accent="indigo"
+                        aria-label="Switch to dark mode"
+                        type="radio"
+                        name="__palette"
+                        id="__palette_0"
+                    />
+                    <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"
+                            />
+                        </svg>
+                    </label>
+                    <input
+                        class="md-option"
+                        data-md-color-media="(prefers-color-scheme: dark)"
+                        data-md-color-scheme="slate"
+                        data-md-color-primary="green"
+                        data-md-color-accent="indigo"
+                        aria-label="Switch to light mode"
+                        type="radio"
+                        name="__palette"
+                        id="__palette_1"
+                    />
+                    <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"
+                            />
+                        </svg>
+                    </label>
+                </form>
+                <script>
+                    var media,
+                        input,
+                        key,
+                        value,
+                        palette = __md_get("__palette");
+                    if (palette && palette.color) {
+                        "(prefers-color-scheme)" === palette.color.media &&
+                            ((media = matchMedia("(prefers-color-scheme: light)")),
+                            (input = document.querySelector(media.matches ? "[data-md-color-media='(prefers-color-scheme: light)']" : "[data-md-color-media='(prefers-color-scheme: dark)']")),
+                            (palette.color.media = input.getAttribute("data-md-color-media")),
+                            (palette.color.scheme = input.getAttribute("data-md-color-scheme")),
+                            (palette.color.primary = input.getAttribute("data-md-color-primary")),
+                            (palette.color.accent = input.getAttribute("data-md-color-accent")));
+                        for ([key, value] of Object.entries(palette.color)) document.body.setAttribute("data-md-color-" + key, value);
+                    }
+                </script>
+                <div class="md-header__option">
+                    <div class="md-select">
+                        <button class="md-header__button md-icon" aria-label="Select language">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"
+                                />
+                            </svg>
+                        </button>
+                        <div class="md-select__inner">
+                            <ul class="md-select__list">
+                                <li class="md-select__item">
+                                    <a href="/" hreflang="en" class="md-select__link"> English </a>
+                                </li>
+                                <li class="md-select__item">
+                                    <a href="/fr/" hreflang="fr" class="md-select__link"> Français </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <label class="md-header__button md-icon" for="__search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"
+                        />
+                    </svg>
+                </label>
+                <div class="md-search" data-md-component="search" role="dialog">
+                    <label class="md-search__overlay" for="__search"></label>
+                    <div class="md-search__inner" role="search">
+                        <form class="md-search__form" name="search">
+                            <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required />
+                            <label class="md-search__icon md-icon" for="__search">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"
+                                    />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z" /></svg>
+                            </label>
+                            <nav class="md-search__options" aria-label="Search">
+                                <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z" /></svg>
+                                </button>
+                            </nav>
+                            <div class="md-search__suggest" data-md-component="search-suggest"></div>
+                        </form>
+                        <div class="md-search__output">
+                            <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+                                <div class="md-search-result" data-md-component="search-result">
+                                    <div class="md-search-result__meta">Initializing search</div>
+                                    <ol class="md-search-result__list" role="presentation"></ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-header__source">
+                    <a href="https://github.com/SFML/SFML" title="Go to repository" class="md-source" data-md-component="source">
+                        <div class="md-source__icon md-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. -->
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                                />
+                            </svg>
+                        </div>
+                        <div class="md-source__repository">SFML</div>
+                    </a>
+                </div>
+            </nav>
+            <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+                <div class="md-grid">
+                    <ul class="md-tabs__list">
+                        <li class="md-tabs__item">
+                            <a href="/" class="md-tabs__link"> Home </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/learn/" class="md-tabs__link"> Learn </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/tutorials/2.6/" class="md-tabs__link"> Tutorials </a>
+                        </li>
+                        <li class="md-tabs__item md-tabs__item--active">
+                            <a href="/documentation" class="md-tabs__link"> Documentation </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/download/" class="md-tabs__link"> Download </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/community/" class="md-tabs__link"> Community </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/development/" class="md-tabs__link"> Development </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="md-container" data-md-component="container">
+            <main class="md-main" data-md-component="main">
+                <div class="md-main__inner md-grid">
+                    <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                        <div class="md-sidebar__scrollwrap">
+                            <div class="md-sidebar__inner">
+                                <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+                                    <label class="md-nav__title" for="__drawer">
+                                        <a href="." title="Simple and Fast Multimedia Library" class="md-nav__button md-logo" aria-label="Simple and Fast Multimedia Library" data-md-component="logo">
+                                            <img src="/images/logo.png" alt="logo" />
+                                        </a>
+                                        Simple and Fast Multimedia Library
+                                    </label>
+                                    <div class="md-nav__source">
+                                        <a href="https://github.com/SFML/SFML" title="Go to repository" class="md-source" data-md-component="source">
+                                            <div class="md-source__icon md-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. -->
+                                                    <path
+                                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                                                    />
+                                                </svg>
+                                            </div>
+                                            <div class="md-source__repository">SFML</div>
+                                        </a>
+                                    </div>
+                                    <ul class="md-nav__list" data-md-scrollfix>
+                                        <li class="md-nav__item">
+                                            <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc" />
+                                            <label class="md-nav__link" for="__toc">
+                                                <span class="md-ellipsis"> Home </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </label>
+                                            <a href="." class="md-nav__link">
+                                                <span class="md-ellipsis"> Home </span>
+                                            </a>
+                                            <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+                                                <label class="md-nav__title" for="__toc">
+                                                    <span class="md-nav__icon md-icon"></span>
+                                                    Table of contents
+                                                </label>
+                                                <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-media" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-media </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-platform" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-platform </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-language" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-language </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="learn/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Learn </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="tutorials/2.6/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Tutorials </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--active">
+                                            <a href="documentation" class="md-nav__link md-nav__link--active">
+                                                <span class="md-ellipsis"> Documentation </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="download/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Download </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="community/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Community </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="development/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Development </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                        <div class="md-sidebar__scrollwrap">
+                            <div class="md-sidebar__inner">
+                                <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+                                    <label class="md-nav__title" for="__toc">
+                                        <span class="md-nav__icon md-icon"></span>
+                                        Table of contents
+                                    </label>
+                                    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-media" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-media </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-platform" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-platform </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-language" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-language </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-content" data-md-component="content">
+                        <div class="contents">
+<!-- Generated by Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="topics.html"><span>Topics</span></a></li>
+      <li class="current"><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="namespaces.html"><span>Namespace&#160;List</span></a></li>
+      <li><a href="namespacemembers.html"><span>Namespace&#160;Members</span></a></li>
+    </ul>
+  </div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">sf Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesf_1_1Style.html">Style</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1BlendMode.html">BlendMode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blending modes for drawing.  <a href="structsf_1_1BlendMode.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1CircleShape.html">CircleShape</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialized shape representing a circle.  <a href="classsf_1_1CircleShape.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Clock.html">Clock</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility class that measures the elapsed time.  <a href="classsf_1_1Clock.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.html">Color</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility class for manipulating RGBA colors.  <a href="classsf_1_1Color.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Context.html">Context</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class holding a valid drawing context.  <a href="classsf_1_1Context.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1ContextSettings.html">ContextSettings</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure defining the settings of the OpenGL context attached to a window.  <a href="structsf_1_1ContextSettings.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1ConvexShape.html">ConvexShape</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialized shape representing a convex polygon.  <a href="classsf_1_1ConvexShape.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.html">Drawable</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base class for objects that can be drawn to a render target.  <a href="classsf_1_1Drawable.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Event.html">Event</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a system event and its parameters.  <a href="classsf_1_1Event.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Font.html">Font</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for loading and manipulating character fonts.  <a href="classsf_1_1Font.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Ftp.html">Ftp</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A FTP client.  <a href="classsf_1_1Ftp.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1GlResource.html">GlResource</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for classes that require an OpenGL context.  <a href="classsf_1_1GlResource.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Glyph.html">Glyph</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure describing a glyph.  <a href="classsf_1_1Glyph.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Http.html">Http</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A HTTP client.  <a href="classsf_1_1Http.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Image.html">Image</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for loading, manipulating and saving images.  <a href="classsf_1_1Image.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1InputStream.html">InputStream</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract class for custom file input streams.  <a href="classsf_1_1InputStream.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1IpAddress.html">IpAddress</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encapsulate an IPv4 network address.  <a href="classsf_1_1IpAddress.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Joystick.html">Joystick</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Give access to the real-time state of the joysticks.  <a href="classsf_1_1Joystick.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Keyboard.html">Keyboard</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Give access to the real-time state of the keyboard.  <a href="classsf_1_1Keyboard.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Listener.html">Listener</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The audio listener is the point in the scene from where all the sounds are heard.  <a href="classsf_1_1Listener.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Lock.html">Lock</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Automatic wrapper for locking and unlocking mutexes.  <a href="classsf_1_1Lock.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Mouse.html">Mouse</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Give access to the real-time state of the mouse.  <a href="classsf_1_1Mouse.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Music.html">Music</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Streamed music played from an audio file.  <a href="classsf_1_1Music.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Mutex.html">Mutex</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks concurrent access to shared resources from multiple threads.  <a href="classsf_1_1Mutex.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1NonCopyable.html">NonCopyable</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility class that makes any derived class non-copyable.  <a href="classsf_1_1NonCopyable.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Packet.html">Packet</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility class to build blocks of data to transfer over the network.  <a href="classsf_1_1Packet.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Rect.html">Rect</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility class for manipulating 2D axis aligned rectangles.  <a href="classsf_1_1Rect.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1RectangleShape.html">RectangleShape</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialized shape representing a rectangle.  <a href="classsf_1_1RectangleShape.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1RenderStates.html">RenderStates</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the states used for drawing to a <a class="el" href="classsf_1_1RenderTarget.html" title="Base class for all render targets (window, texture, ...)">RenderTarget</a>.  <a href="classsf_1_1RenderStates.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1RenderTarget.html">RenderTarget</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for all render targets (window, texture, ...)  <a href="classsf_1_1RenderTarget.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1RenderTexture.html">RenderTexture</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Target for off-screen 2D rendering into a texture.  <a href="classsf_1_1RenderTexture.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1RenderWindow.html">RenderWindow</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classsf_1_1Window.html" title="Window that serves as a target for OpenGL rendering.">Window</a> that can serve as a target for 2D drawing.  <a href="classsf_1_1RenderWindow.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Sensor.html">Sensor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Give access to the real-time state of the sensors.  <a href="classsf_1_1Sensor.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Shader.html">Shader</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classsf_1_1Shader.html" title="Shader class (vertex and fragment)">Shader</a> class (vertex and fragment)  <a href="classsf_1_1Shader.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Shape.html">Shape</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for textured shapes with outline.  <a href="classsf_1_1Shape.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Socket.html">Socket</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for all the socket types.  <a href="classsf_1_1Socket.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1SocketSelector.html">SocketSelector</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplexer that allows to read from multiple sockets.  <a href="classsf_1_1SocketSelector.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Sound.html">Sound</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Regular sound that can be played in the audio environment.  <a href="classsf_1_1Sound.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1SoundBuffer.html">SoundBuffer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Storage for audio samples defining a sound.  <a href="classsf_1_1SoundBuffer.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1SoundBufferRecorder.html">SoundBufferRecorder</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialized <a class="el" href="classsf_1_1SoundRecorder.html" title="Abstract base class for capturing sound data.">SoundRecorder</a> which stores the captured audio data into a sound buffer.  <a href="classsf_1_1SoundBufferRecorder.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1SoundRecorder.html">SoundRecorder</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base class for capturing sound data.  <a href="classsf_1_1SoundRecorder.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1SoundSource.html">SoundSource</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class defining a sound's properties.  <a href="classsf_1_1SoundSource.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1SoundStream.html">SoundStream</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base class for streamed audio sources.  <a href="classsf_1_1SoundStream.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Sprite.html">Sprite</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classsf_1_1Drawable.html" title="Abstract base class for objects that can be drawn to a render target.">Drawable</a> representation of a texture, with its own transformations, color, etc.  <a href="classsf_1_1Sprite.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1String.html">String</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility string class that automatically handles conversions between types and encodings.  <a href="classsf_1_1String.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1TcpListener.html">TcpListener</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classsf_1_1Socket.html" title="Base class for all the socket types.">Socket</a> that listens to new TCP connections.  <a href="classsf_1_1TcpListener.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1TcpSocket.html">TcpSocket</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialized socket using the TCP protocol.  <a href="classsf_1_1TcpSocket.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Text.html">Text</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Graphical text that can be drawn to a render target.  <a href="classsf_1_1Text.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Texture.html">Texture</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classsf_1_1Image.html" title="Class for loading, manipulating and saving images.">Image</a> living on the graphics card that can be used for drawing.  <a href="classsf_1_1Texture.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Thread.html">Thread</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility class to manipulate threads.  <a href="classsf_1_1Thread.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1ThreadLocal.html">ThreadLocal</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines variables with thread-local storage.  <a href="classsf_1_1ThreadLocal.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1ThreadLocalPtr.html">ThreadLocalPtr</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to a thread-local variable.  <a href="classsf_1_1ThreadLocalPtr.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Time.html">Time</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a time value.  <a href="classsf_1_1Time.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Touch.html">Touch</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Give access to the real-time state of the touches.  <a href="classsf_1_1Touch.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transform.html">Transform</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a 3x3 transform matrix.  <a href="classsf_1_1Transform.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transformable.html">Transformable</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decomposed transform defined by a position, a rotation and a scale.  <a href="classsf_1_1Transformable.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1UdpSocket.html">UdpSocket</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialized socket using the UDP protocol.  <a href="classsf_1_1UdpSocket.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Utf.html">Utf</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility class providing generic functions for UTF conversions.  <a href="classsf_1_1Utf.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Utf_3_0116_01_4.html">Utf&lt; 16 &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialization of the <a class="el" href="classsf_1_1Utf.html" title="Utility class providing generic functions for UTF conversions.">Utf</a> template for UTF-16.  <a href="classsf_1_1Utf_3_0116_01_4.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Utf_3_0132_01_4.html">Utf&lt; 32 &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialization of the <a class="el" href="classsf_1_1Utf.html" title="Utility class providing generic functions for UTF conversions.">Utf</a> template for UTF-32.  <a href="classsf_1_1Utf_3_0132_01_4.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Utf_3_018_01_4.html">Utf&lt; 8 &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialization of the <a class="el" href="classsf_1_1Utf.html" title="Utility class providing generic functions for UTF conversions.">Utf</a> template for UTF-8.  <a href="classsf_1_1Utf_3_018_01_4.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Vector2.html">Vector2</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility template class for manipulating 2-dimensional vectors.  <a href="classsf_1_1Vector2.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Vector3.html">Vector3</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility template class for manipulating 3-dimensional vectors.  <a href="classsf_1_1Vector3.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Vertex.html">Vertex</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a point with color and texture coordinates.  <a href="classsf_1_1Vertex.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1VertexArray.html">VertexArray</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a set of one or more 2D primitives.  <a href="classsf_1_1VertexArray.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1VideoMode.html">VideoMode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classsf_1_1VideoMode.html" title="VideoMode defines a video mode (width, height, bpp)">VideoMode</a> defines a video mode (width, height, bpp)  <a href="classsf_1_1VideoMode.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1View.html">View</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">2D camera that defines what region is shown on screen  <a href="classsf_1_1View.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Window.html">Window</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classsf_1_1Window.html" title="Window that serves as a target for OpenGL rendering.">Window</a> that serves as a target for OpenGL rendering.  <a href="classsf_1_1Window.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a69b109973eac74e22b97e5339bdb68dd" id="r_a69b109973eac74e22b97e5339bdb68dd"><td class="memItemLeft" align="right" valign="top">typedef signed char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69b109973eac74e22b97e5339bdb68dd">Int8</a></td></tr>
+<tr class="separator:a69b109973eac74e22b97e5339bdb68dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ef3d630785c4f296f9b4f274c33d78e" id="r_a4ef3d630785c4f296f9b4f274c33d78e"><td class="memItemLeft" align="right" valign="top">typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ef3d630785c4f296f9b4f274c33d78e">Uint8</a></td></tr>
+<tr class="separator:a4ef3d630785c4f296f9b4f274c33d78e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c8e10435e2a310a7741755e66b5c94e" id="r_a3c8e10435e2a310a7741755e66b5c94e"><td class="memItemLeft" align="right" valign="top">typedef signed short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c8e10435e2a310a7741755e66b5c94e">Int16</a></td></tr>
+<tr class="separator:a3c8e10435e2a310a7741755e66b5c94e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fcaf787248b0b83dfb6b145ca348246" id="r_a2fcaf787248b0b83dfb6b145ca348246"><td class="memItemLeft" align="right" valign="top">typedef unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fcaf787248b0b83dfb6b145ca348246">Uint16</a></td></tr>
+<tr class="separator:a2fcaf787248b0b83dfb6b145ca348246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2dfd4952377a26dee4750e2e4a30a15" id="r_ac2dfd4952377a26dee4750e2e4a30a15"><td class="memItemLeft" align="right" valign="top">typedef signed int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2dfd4952377a26dee4750e2e4a30a15">Int32</a></td></tr>
+<tr class="separator:ac2dfd4952377a26dee4750e2e4a30a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa746fb1ddef4410bddf198ebb27e727c" id="r_aa746fb1ddef4410bddf198ebb27e727c"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa746fb1ddef4410bddf198ebb27e727c">Uint32</a></td></tr>
+<tr class="separator:aa746fb1ddef4410bddf198ebb27e727c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2840579fed3494d9f330baf7a5a19903" id="r_a2840579fed3494d9f330baf7a5a19903"><td class="memItemLeft" align="right" valign="top">typedef signed long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2840579fed3494d9f330baf7a5a19903">Int64</a></td></tr>
+<tr class="separator:a2840579fed3494d9f330baf7a5a19903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add9ac83466d96b9f50a009b9f4064266" id="r_add9ac83466d96b9f50a009b9f4064266"><td class="memItemLeft" align="right" valign="top">typedef unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add9ac83466d96b9f50a009b9f4064266">Uint64</a></td></tr>
+<tr class="separator:add9ac83466d96b9f50a009b9f4064266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae67411782674934f78d55fa3af18403" id="r_aae67411782674934f78d55fa3af18403"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classsf_1_1Rect.html">Rect</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae67411782674934f78d55fa3af18403">IntRect</a></td></tr>
+<tr class="separator:aae67411782674934f78d55fa3af18403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed4e58f586b2eed2621c0365d0b7554e" id="r_aed4e58f586b2eed2621c0365d0b7554e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classsf_1_1Rect.html">Rect</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed4e58f586b2eed2621c0365d0b7554e">FloatRect</a></td></tr>
+<tr class="separator:aed4e58f586b2eed2621c0365d0b7554e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefabb521d8f5eec9e6a9b521271d20d1" id="r_aefabb521d8f5eec9e6a9b521271d20d1"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aefabb521d8f5eec9e6a9b521271d20d1">SocketHandle</a></td></tr>
+<tr class="separator:aefabb521d8f5eec9e6a9b521271d20d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab78b7f576a82034d14eab92becc15301" id="r_ab78b7f576a82034d14eab92becc15301"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classsf_1_1Utf.html">Utf</a>&lt; 8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab78b7f576a82034d14eab92becc15301">Utf8</a></td></tr>
+<tr class="separator:ab78b7f576a82034d14eab92becc15301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae30b6ea05a1723d608853ebc3043e53d" id="r_ae30b6ea05a1723d608853ebc3043e53d"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classsf_1_1Utf.html">Utf</a>&lt; 16 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae30b6ea05a1723d608853ebc3043e53d">Utf16</a></td></tr>
+<tr class="separator:ae30b6ea05a1723d608853ebc3043e53d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51a40f697607908d2e9f58e67f4c89a3" id="r_a51a40f697607908d2e9f58e67f4c89a3"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classsf_1_1Utf.html">Utf</a>&lt; 32 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51a40f697607908d2e9f58e67f4c89a3">Utf32</a></td></tr>
+<tr class="separator:a51a40f697607908d2e9f58e67f4c89a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace09dd1447d74c6e9ba56ae874c094e1" id="r_ace09dd1447d74c6e9ba56ae874c094e1"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace09dd1447d74c6e9ba56ae874c094e1">Vector2i</a></td></tr>
+<tr class="separator:ace09dd1447d74c6e9ba56ae874c094e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa02ba42bf79b001a376fe9d79254cb3" id="r_aaa02ba42bf79b001a376fe9d79254cb3"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa02ba42bf79b001a376fe9d79254cb3">Vector2u</a></td></tr>
+<tr class="separator:aaa02ba42bf79b001a376fe9d79254cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf03098c2577b869e2fa6836cc48f1a0" id="r_acf03098c2577b869e2fa6836cc48f1a0"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a></td></tr>
+<tr class="separator:acf03098c2577b869e2fa6836cc48f1a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad066a8774efaf7b623df8909ba219dc7" id="r_ad066a8774efaf7b623df8909ba219dc7"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad066a8774efaf7b623df8909ba219dc7">Vector3i</a></td></tr>
+<tr class="separator:ad066a8774efaf7b623df8909ba219dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af97357d7d32e7d6a700d03be2f3b4811" id="r_af97357d7d32e7d6a700d03be2f3b4811"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af97357d7d32e7d6a700d03be2f3b4811">Vector3f</a></td></tr>
+<tr class="separator:af97357d7d32e7d6a700d03be2f3b4811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga5ee56ac1339984909610713096283b1b" id="r_ga5ee56ac1339984909610713096283b1b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__graphics.html#ga5ee56ac1339984909610713096283b1b">PrimitiveType</a> { <br />
+&#160;&#160;<a class="el" href="group__graphics.html#gga5ee56ac1339984909610713096283b1bac7097d3e01778b9318def1f7ac35a785">Points</a>
+, <a class="el" href="group__graphics.html#gga5ee56ac1339984909610713096283b1ba2bf015eeff9f798dfc3d6d744d669f1e">Lines</a>
+, <a class="el" href="group__graphics.html#gga5ee56ac1339984909610713096283b1ba5b09910f5d0f39641342184ccd0d1de3">LinesStrip</a>
+, <a class="el" href="group__graphics.html#gga5ee56ac1339984909610713096283b1ba880a7aa72c20b9f9beb7eb64d2434670">Triangles</a>
+, <br />
+&#160;&#160;<a class="el" href="group__graphics.html#gga5ee56ac1339984909610713096283b1ba66643dbbb24bbacb405973ed80eebae0">TrianglesStrip</a>
+, <a class="el" href="group__graphics.html#gga5ee56ac1339984909610713096283b1ba5338a2c6d922151fe50f235036af8a20">TrianglesFan</a>
+, <a class="el" href="group__graphics.html#gga5ee56ac1339984909610713096283b1ba5041359b76b4bd3d3e6ef738826b8743">Quads</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:ga5ee56ac1339984909610713096283b1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types of primitives that a <a class="el" href="classsf_1_1VertexArray.html" title="Define a set of one or more 2D primitives.">sf::VertexArray</a> can render.  <a href="group__graphics.html#ga5ee56ac1339984909610713096283b1b">More...</a><br /></td></tr>
+<tr class="separator:ga5ee56ac1339984909610713096283b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a1c7342603d3a758144298b70d8166923" id="r_a1c7342603d3a758144298b70d8166923"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c7342603d3a758144298b70d8166923">operator==</a> (const <a class="el" href="classsf_1_1IpAddress.html">IpAddress</a> &amp;left, const <a class="el" href="classsf_1_1IpAddress.html">IpAddress</a> &amp;right)</td></tr>
+<tr class="memdesc:a1c7342603d3a758144298b70d8166923"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of == operator to compare two IP addresses.  <br /></td></tr>
+<tr class="separator:a1c7342603d3a758144298b70d8166923"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e9416575ff1e62467c692e00a3290e1" id="r_a7e9416575ff1e62467c692e00a3290e1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e9416575ff1e62467c692e00a3290e1">operator!=</a> (const <a class="el" href="classsf_1_1IpAddress.html">IpAddress</a> &amp;left, const <a class="el" href="classsf_1_1IpAddress.html">IpAddress</a> &amp;right)</td></tr>
+<tr class="memdesc:a7e9416575ff1e62467c692e00a3290e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of != operator to compare two IP addresses.  <br /></td></tr>
+<tr class="separator:a7e9416575ff1e62467c692e00a3290e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae761c09191acb8e31cce343197fec0b9" id="r_ae761c09191acb8e31cce343197fec0b9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae761c09191acb8e31cce343197fec0b9">operator&lt;</a> (const <a class="el" href="classsf_1_1IpAddress.html">IpAddress</a> &amp;left, const <a class="el" href="classsf_1_1IpAddress.html">IpAddress</a> &amp;right)</td></tr>
+<tr class="memdesc:ae761c09191acb8e31cce343197fec0b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of &lt; operator to compare two IP addresses.  <br /></td></tr>
+<tr class="separator:ae761c09191acb8e31cce343197fec0b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af142e40929bb8cc96d79c48af19bd045" id="r_af142e40929bb8cc96d79c48af19bd045"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af142e40929bb8cc96d79c48af19bd045">operator&gt;</a> (const <a class="el" href="classsf_1_1IpAddress.html">IpAddress</a> &amp;left, const <a class="el" href="classsf_1_1IpAddress.html">IpAddress</a> &amp;right)</td></tr>
+<tr class="memdesc:af142e40929bb8cc96d79c48af19bd045"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of &gt; operator to compare two IP addresses.  <br /></td></tr>
+<tr class="separator:af142e40929bb8cc96d79c48af19bd045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c0477225ec01865c550da5b3b2b6cc5" id="r_a9c0477225ec01865c550da5b3b2b6cc5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c0477225ec01865c550da5b3b2b6cc5">operator&lt;=</a> (const <a class="el" href="classsf_1_1IpAddress.html">IpAddress</a> &amp;left, const <a class="el" href="classsf_1_1IpAddress.html">IpAddress</a> &amp;right)</td></tr>
+<tr class="memdesc:a9c0477225ec01865c550da5b3b2b6cc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of &lt;= operator to compare two IP addresses.  <br /></td></tr>
+<tr class="separator:a9c0477225ec01865c550da5b3b2b6cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68124f60ee7ee08073bd1894d69b0ed2" id="r_a68124f60ee7ee08073bd1894d69b0ed2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68124f60ee7ee08073bd1894d69b0ed2">operator&gt;=</a> (const <a class="el" href="classsf_1_1IpAddress.html">IpAddress</a> &amp;left, const <a class="el" href="classsf_1_1IpAddress.html">IpAddress</a> &amp;right)</td></tr>
+<tr class="memdesc:a68124f60ee7ee08073bd1894d69b0ed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of &gt;= operator to compare two IP addresses.  <br /></td></tr>
+<tr class="separator:a68124f60ee7ee08073bd1894d69b0ed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a79ef337fc5bca4fb054e15dee675c0" id="r_a6a79ef337fc5bca4fb054e15dee675c0"><td class="memItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a79ef337fc5bca4fb054e15dee675c0">operator&gt;&gt;</a> (std::istream &amp;stream, <a class="el" href="classsf_1_1IpAddress.html">IpAddress</a> &amp;address)</td></tr>
+<tr class="memdesc:a6a79ef337fc5bca4fb054e15dee675c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of &gt;&gt; operator to extract an IP address from an input stream.  <br /></td></tr>
+<tr class="separator:a6a79ef337fc5bca4fb054e15dee675c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab76f5a287dd4b6885eb083e9c5985753" id="r_ab76f5a287dd4b6885eb083e9c5985753"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab76f5a287dd4b6885eb083e9c5985753">operator&lt;&lt;</a> (std::ostream &amp;stream, const <a class="el" href="classsf_1_1IpAddress.html">IpAddress</a> &amp;address)</td></tr>
+<tr class="memdesc:ab76f5a287dd4b6885eb083e9c5985753"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of &lt;&lt; operator to print an IP address to an output stream.  <br /></td></tr>
+<tr class="separator:ab76f5a287dd4b6885eb083e9c5985753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga885486205a724571d140a7c8a0e3626b" id="r_ga885486205a724571d140a7c8a0e3626b"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system.html#ga885486205a724571d140a7c8a0e3626b">err</a> ()</td></tr>
+<tr class="memdesc:ga885486205a724571d140a7c8a0e3626b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard stream used by SFML to output warnings and errors.  <br /></td></tr>
+<tr class="separator:ga885486205a724571d140a7c8a0e3626b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab8c0d1f966b4e5110fd370b662d8c11b" id="r_gab8c0d1f966b4e5110fd370b662d8c11b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system.html#gab8c0d1f966b4e5110fd370b662d8c11b">sleep</a> (<a class="el" href="classsf_1_1Time.html">Time</a> duration)</td></tr>
+<tr class="memdesc:gab8c0d1f966b4e5110fd370b662d8c11b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make the current thread sleep for a given duration.  <br /></td></tr>
+<tr class="separator:gab8c0d1f966b4e5110fd370b662d8c11b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20d1be06061109c3cef58e0cc38729ea" id="r_a20d1be06061109c3cef58e0cc38729ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1BlendMode.html#a20d1be06061109c3cef58e0cc38729ea">operator==</a> (const <a class="el" href="structsf_1_1BlendMode.html">BlendMode</a> &amp;left, const <a class="el" href="structsf_1_1BlendMode.html">BlendMode</a> &amp;right)</td></tr>
+<tr class="memdesc:a20d1be06061109c3cef58e0cc38729ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of the == operator.  <br /></td></tr>
+<tr class="separator:a20d1be06061109c3cef58e0cc38729ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee6169f8983f5e92298c4ad6829563ba" id="r_aee6169f8983f5e92298c4ad6829563ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1BlendMode.html#aee6169f8983f5e92298c4ad6829563ba">operator!=</a> (const <a class="el" href="structsf_1_1BlendMode.html">BlendMode</a> &amp;left, const <a class="el" href="structsf_1_1BlendMode.html">BlendMode</a> &amp;right)</td></tr>
+<tr class="memdesc:aee6169f8983f5e92298c4ad6829563ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of the != operator.  <br /></td></tr>
+<tr class="separator:aee6169f8983f5e92298c4ad6829563ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2adc3f68860f7aa5e4d7c79dcbb31d30" id="r_a2adc3f68860f7aa5e4d7c79dcbb31d30"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.html#a2adc3f68860f7aa5e4d7c79dcbb31d30">operator==</a> (const <a class="el" href="classsf_1_1Color.html">Color</a> &amp;left, const <a class="el" href="classsf_1_1Color.html">Color</a> &amp;right)</td></tr>
+<tr class="memdesc:a2adc3f68860f7aa5e4d7c79dcbb31d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of the == operator.  <br /></td></tr>
+<tr class="separator:a2adc3f68860f7aa5e4d7c79dcbb31d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a394c3495753c4b17f9cd45556ef00b8c" id="r_a394c3495753c4b17f9cd45556ef00b8c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.html#a394c3495753c4b17f9cd45556ef00b8c">operator!=</a> (const <a class="el" href="classsf_1_1Color.html">Color</a> &amp;left, const <a class="el" href="classsf_1_1Color.html">Color</a> &amp;right)</td></tr>
+<tr class="memdesc:a394c3495753c4b17f9cd45556ef00b8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of the != operator.  <br /></td></tr>
+<tr class="separator:a394c3495753c4b17f9cd45556ef00b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0355ba6bfd2f83ffd8f8fafdca26cdd0" id="r_a0355ba6bfd2f83ffd8f8fafdca26cdd0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.html#a0355ba6bfd2f83ffd8f8fafdca26cdd0">operator+</a> (const <a class="el" href="classsf_1_1Color.html">Color</a> &amp;left, const <a class="el" href="classsf_1_1Color.html">Color</a> &amp;right)</td></tr>
+<tr class="memdesc:a0355ba6bfd2f83ffd8f8fafdca26cdd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of the binary + operator.  <br /></td></tr>
+<tr class="separator:a0355ba6bfd2f83ffd8f8fafdca26cdd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4586e31d668f183fc46576511169bf2c" id="r_a4586e31d668f183fc46576511169bf2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.html#a4586e31d668f183fc46576511169bf2c">operator-</a> (const <a class="el" href="classsf_1_1Color.html">Color</a> &amp;left, const <a class="el" href="classsf_1_1Color.html">Color</a> &amp;right)</td></tr>
+<tr class="memdesc:a4586e31d668f183fc46576511169bf2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of the binary - operator.  <br /></td></tr>
+<tr class="separator:a4586e31d668f183fc46576511169bf2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bae779fb49bb92dbf820a65e45a6602" id="r_a1bae779fb49bb92dbf820a65e45a6602"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.html#a1bae779fb49bb92dbf820a65e45a6602">operator*</a> (const <a class="el" href="classsf_1_1Color.html">Color</a> &amp;left, const <a class="el" href="classsf_1_1Color.html">Color</a> &amp;right)</td></tr>
+<tr class="memdesc:a1bae779fb49bb92dbf820a65e45a6602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of the binary * operator.  <br /></td></tr>
+<tr class="separator:a1bae779fb49bb92dbf820a65e45a6602"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af39790b2e677c9ab418787f5ff4583ef" id="r_af39790b2e677c9ab418787f5ff4583ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Color.html">Color</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.html#af39790b2e677c9ab418787f5ff4583ef">operator+=</a> (<a class="el" href="classsf_1_1Color.html">Color</a> &amp;left, const <a class="el" href="classsf_1_1Color.html">Color</a> &amp;right)</td></tr>
+<tr class="memdesc:af39790b2e677c9ab418787f5ff4583ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of the binary += operator.  <br /></td></tr>
+<tr class="separator:af39790b2e677c9ab418787f5ff4583ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6927a7dba8b0d330f912fefb43b0c148" id="r_a6927a7dba8b0d330f912fefb43b0c148"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Color.html">Color</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.html#a6927a7dba8b0d330f912fefb43b0c148">operator-=</a> (<a class="el" href="classsf_1_1Color.html">Color</a> &amp;left, const <a class="el" href="classsf_1_1Color.html">Color</a> &amp;right)</td></tr>
+<tr class="memdesc:a6927a7dba8b0d330f912fefb43b0c148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of the binary -= operator.  <br /></td></tr>
+<tr class="separator:a6927a7dba8b0d330f912fefb43b0c148"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d1ea2b9bd5dbe29bb2e54feba9b4b38" id="r_a7d1ea2b9bd5dbe29bb2e54feba9b4b38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Color.html">Color</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Color.html#a7d1ea2b9bd5dbe29bb2e54feba9b4b38">operator*=</a> (<a class="el" href="classsf_1_1Color.html">Color</a> &amp;left, const <a class="el" href="classsf_1_1Color.html">Color</a> &amp;right)</td></tr>
+<tr class="memdesc:a7d1ea2b9bd5dbe29bb2e54feba9b4b38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of the binary *= operator.  <br /></td></tr>
+<tr class="separator:a7d1ea2b9bd5dbe29bb2e54feba9b4b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3488b5dbd0e587c4d7cb80605affc46" id="r_ab3488b5dbd0e587c4d7cb80605affc46"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ab3488b5dbd0e587c4d7cb80605affc46"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1Rect.html#ab3488b5dbd0e587c4d7cb80605affc46">operator==</a> (const <a class="el" href="classsf_1_1Rect.html">Rect</a>&lt; T &gt; &amp;left, const <a class="el" href="classsf_1_1Rect.html">Rect</a>&lt; T &gt; &amp;right)</td></tr>
+<tr class="memdesc:ab3488b5dbd0e587c4d7cb80605affc46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary operator ==.  <br /></td></tr>
+<tr class="separator:ab3488b5dbd0e587c4d7cb80605affc46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03fc4c105687b7d0f07b6b4ed4b45581" id="r_a03fc4c105687b7d0f07b6b4ed4b45581"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a03fc4c105687b7d0f07b6b4ed4b45581"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1Rect.html#a03fc4c105687b7d0f07b6b4ed4b45581">operator!=</a> (const <a class="el" href="classsf_1_1Rect.html">Rect</a>&lt; T &gt; &amp;left, const <a class="el" href="classsf_1_1Rect.html">Rect</a>&lt; T &gt; &amp;right)</td></tr>
+<tr class="memdesc:a03fc4c105687b7d0f07b6b4ed4b45581"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary operator !=.  <br /></td></tr>
+<tr class="separator:a03fc4c105687b7d0f07b6b4ed4b45581"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85ea4e5539795f9b2ceb7d4b06736c8f" id="r_a85ea4e5539795f9b2ceb7d4b06736c8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transform.html#a85ea4e5539795f9b2ceb7d4b06736c8f">operator*</a> (const <a class="el" href="classsf_1_1Transform.html">Transform</a> &amp;left, const <a class="el" href="classsf_1_1Transform.html">Transform</a> &amp;right)</td></tr>
+<tr class="memdesc:a85ea4e5539795f9b2ceb7d4b06736c8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary operator * to combine two transforms.  <br /></td></tr>
+<tr class="separator:a85ea4e5539795f9b2ceb7d4b06736c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a189899674616490f6250953ac581ac30" id="r_a189899674616490f6250953ac581ac30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Transform.html">Transform</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transform.html#a189899674616490f6250953ac581ac30">operator*=</a> (<a class="el" href="classsf_1_1Transform.html">Transform</a> &amp;left, const <a class="el" href="classsf_1_1Transform.html">Transform</a> &amp;right)</td></tr>
+<tr class="memdesc:a189899674616490f6250953ac581ac30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary operator *= to combine two transforms.  <br /></td></tr>
+<tr class="separator:a189899674616490f6250953ac581ac30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eeee49125c3c72c250062eef35ceb75" id="r_a4eeee49125c3c72c250062eef35ceb75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transform.html#a4eeee49125c3c72c250062eef35ceb75">operator*</a> (const <a class="el" href="classsf_1_1Transform.html">Transform</a> &amp;left, const <a class="el" href="#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp;right)</td></tr>
+<tr class="memdesc:a4eeee49125c3c72c250062eef35ceb75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary operator * to transform a point.  <br /></td></tr>
+<tr class="separator:a4eeee49125c3c72c250062eef35ceb75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a483931724196c580552b68751fb4d837" id="r_a483931724196c580552b68751fb4d837"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1String.html#a483931724196c580552b68751fb4d837">operator==</a> (const <a class="el" href="classsf_1_1String.html">String</a> &amp;left, const <a class="el" href="classsf_1_1String.html">String</a> &amp;right)</td></tr>
+<tr class="memdesc:a483931724196c580552b68751fb4d837"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of == operator to compare two UTF-32 strings.  <br /></td></tr>
+<tr class="separator:a483931724196c580552b68751fb4d837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bfb9217788a9978499b8d5696bb0ef2" id="r_a3bfb9217788a9978499b8d5696bb0ef2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1String.html#a3bfb9217788a9978499b8d5696bb0ef2">operator!=</a> (const <a class="el" href="classsf_1_1String.html">String</a> &amp;left, const <a class="el" href="classsf_1_1String.html">String</a> &amp;right)</td></tr>
+<tr class="memdesc:a3bfb9217788a9978499b8d5696bb0ef2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of != operator to compare two UTF-32 strings.  <br /></td></tr>
+<tr class="separator:a3bfb9217788a9978499b8d5696bb0ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5158a142e0966685ec7fb4e147b24ef0" id="r_a5158a142e0966685ec7fb4e147b24ef0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1String.html#a5158a142e0966685ec7fb4e147b24ef0">operator&lt;</a> (const <a class="el" href="classsf_1_1String.html">String</a> &amp;left, const <a class="el" href="classsf_1_1String.html">String</a> &amp;right)</td></tr>
+<tr class="memdesc:a5158a142e0966685ec7fb4e147b24ef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of &lt; operator to compare two UTF-32 strings.  <br /></td></tr>
+<tr class="separator:a5158a142e0966685ec7fb4e147b24ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac96278a8cbe282632b11f0c8c007df0c" id="r_ac96278a8cbe282632b11f0c8c007df0c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1String.html#ac96278a8cbe282632b11f0c8c007df0c">operator&gt;</a> (const <a class="el" href="classsf_1_1String.html">String</a> &amp;left, const <a class="el" href="classsf_1_1String.html">String</a> &amp;right)</td></tr>
+<tr class="memdesc:ac96278a8cbe282632b11f0c8c007df0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of &gt; operator to compare two UTF-32 strings.  <br /></td></tr>
+<tr class="separator:ac96278a8cbe282632b11f0c8c007df0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1c1bb5dcf02aad3b2c0a1bf74a11cc9" id="r_ac1c1bb5dcf02aad3b2c0a1bf74a11cc9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1String.html#ac1c1bb5dcf02aad3b2c0a1bf74a11cc9">operator&lt;=</a> (const <a class="el" href="classsf_1_1String.html">String</a> &amp;left, const <a class="el" href="classsf_1_1String.html">String</a> &amp;right)</td></tr>
+<tr class="memdesc:ac1c1bb5dcf02aad3b2c0a1bf74a11cc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of &lt;= operator to compare two UTF-32 strings.  <br /></td></tr>
+<tr class="separator:ac1c1bb5dcf02aad3b2c0a1bf74a11cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a112689eec28e0ca9489e8c4ec6a34493" id="r_a112689eec28e0ca9489e8c4ec6a34493"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1String.html#a112689eec28e0ca9489e8c4ec6a34493">operator&gt;=</a> (const <a class="el" href="classsf_1_1String.html">String</a> &amp;left, const <a class="el" href="classsf_1_1String.html">String</a> &amp;right)</td></tr>
+<tr class="memdesc:a112689eec28e0ca9489e8c4ec6a34493"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of &gt;= operator to compare two UTF-32 strings.  <br /></td></tr>
+<tr class="separator:a112689eec28e0ca9489e8c4ec6a34493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af140f992b7698cf1448677c2c8e11bf1" id="r_af140f992b7698cf1448677c2c8e11bf1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1String.html#af140f992b7698cf1448677c2c8e11bf1">operator+</a> (const <a class="el" href="classsf_1_1String.html">String</a> &amp;left, const <a class="el" href="classsf_1_1String.html">String</a> &amp;right)</td></tr>
+<tr class="memdesc:af140f992b7698cf1448677c2c8e11bf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary + operator to concatenate two strings.  <br /></td></tr>
+<tr class="separator:af140f992b7698cf1448677c2c8e11bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9fc40a6c0e687e3430da1cf296385b1" id="r_af9fc40a6c0e687e3430da1cf296385b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Time.html#af9fc40a6c0e687e3430da1cf296385b1">seconds</a> (float amount)</td></tr>
+<tr class="memdesc:af9fc40a6c0e687e3430da1cf296385b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a time value from a number of seconds.  <br /></td></tr>
+<tr class="separator:af9fc40a6c0e687e3430da1cf296385b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9231f886d925a24d181c8dcfa6448d87" id="r_a9231f886d925a24d181c8dcfa6448d87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Time.html#a9231f886d925a24d181c8dcfa6448d87">milliseconds</a> (<a class="el" href="#ac2dfd4952377a26dee4750e2e4a30a15">Int32</a> amount)</td></tr>
+<tr class="memdesc:a9231f886d925a24d181c8dcfa6448d87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a time value from a number of milliseconds.  <br /></td></tr>
+<tr class="separator:a9231f886d925a24d181c8dcfa6448d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a6ae28a1962198a69b92355649c6aa0" id="r_a8a6ae28a1962198a69b92355649c6aa0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Time.html#a8a6ae28a1962198a69b92355649c6aa0">microseconds</a> (<a class="el" href="#a2840579fed3494d9f330baf7a5a19903">Int64</a> amount)</td></tr>
+<tr class="memdesc:a8a6ae28a1962198a69b92355649c6aa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a time value from a number of microseconds.  <br /></td></tr>
+<tr class="separator:a8a6ae28a1962198a69b92355649c6aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bbb2368cf012149f1001535a20c664a" id="r_a9bbb2368cf012149f1001535a20c664a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Time.html#a9bbb2368cf012149f1001535a20c664a">operator==</a> (<a class="el" href="classsf_1_1Time.html">Time</a> left, <a class="el" href="classsf_1_1Time.html">Time</a> right)</td></tr>
+<tr class="memdesc:a9bbb2368cf012149f1001535a20c664a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of == operator to compare two time values.  <br /></td></tr>
+<tr class="separator:a9bbb2368cf012149f1001535a20c664a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a142729f295af8b1baf2d8762bc39ac" id="r_a3a142729f295af8b1baf2d8762bc39ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Time.html#a3a142729f295af8b1baf2d8762bc39ac">operator!=</a> (<a class="el" href="classsf_1_1Time.html">Time</a> left, <a class="el" href="classsf_1_1Time.html">Time</a> right)</td></tr>
+<tr class="memdesc:a3a142729f295af8b1baf2d8762bc39ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of != operator to compare two time values.  <br /></td></tr>
+<tr class="separator:a3a142729f295af8b1baf2d8762bc39ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bad89721b8c026e80082a7aa539f244" id="r_a3bad89721b8c026e80082a7aa539f244"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Time.html#a3bad89721b8c026e80082a7aa539f244">operator&lt;</a> (<a class="el" href="classsf_1_1Time.html">Time</a> left, <a class="el" href="classsf_1_1Time.html">Time</a> right)</td></tr>
+<tr class="memdesc:a3bad89721b8c026e80082a7aa539f244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of &lt; operator to compare two time values.  <br /></td></tr>
+<tr class="separator:a3bad89721b8c026e80082a7aa539f244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a472ce6d82aa0caf8e20af4a4b309f2" id="r_a9a472ce6d82aa0caf8e20af4a4b309f2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Time.html#a9a472ce6d82aa0caf8e20af4a4b309f2">operator&gt;</a> (<a class="el" href="classsf_1_1Time.html">Time</a> left, <a class="el" href="classsf_1_1Time.html">Time</a> right)</td></tr>
+<tr class="memdesc:a9a472ce6d82aa0caf8e20af4a4b309f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of &gt; operator to compare two time values.  <br /></td></tr>
+<tr class="separator:a9a472ce6d82aa0caf8e20af4a4b309f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafb9de87ed6047956cd9487ab807371f" id="r_aafb9de87ed6047956cd9487ab807371f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Time.html#aafb9de87ed6047956cd9487ab807371f">operator&lt;=</a> (<a class="el" href="classsf_1_1Time.html">Time</a> left, <a class="el" href="classsf_1_1Time.html">Time</a> right)</td></tr>
+<tr class="memdesc:aafb9de87ed6047956cd9487ab807371f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of &lt;= operator to compare two time values.  <br /></td></tr>
+<tr class="separator:aafb9de87ed6047956cd9487ab807371f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a158c5f9a6abf575651b7b2f6af8aedaa" id="r_a158c5f9a6abf575651b7b2f6af8aedaa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Time.html#a158c5f9a6abf575651b7b2f6af8aedaa">operator&gt;=</a> (<a class="el" href="classsf_1_1Time.html">Time</a> left, <a class="el" href="classsf_1_1Time.html">Time</a> right)</td></tr>
+<tr class="memdesc:a158c5f9a6abf575651b7b2f6af8aedaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of &gt;= operator to compare two time values.  <br /></td></tr>
+<tr class="separator:a158c5f9a6abf575651b7b2f6af8aedaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaead0aa2de9f82a548fcd8208a40f70" id="r_acaead0aa2de9f82a548fcd8208a40f70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Time.html#acaead0aa2de9f82a548fcd8208a40f70">operator-</a> (<a class="el" href="classsf_1_1Time.html">Time</a> right)</td></tr>
+<tr class="memdesc:acaead0aa2de9f82a548fcd8208a40f70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of unary - operator to negate a time value.  <br /></td></tr>
+<tr class="separator:acaead0aa2de9f82a548fcd8208a40f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8249d3a28c8062c7c46cc426186f76c8" id="r_a8249d3a28c8062c7c46cc426186f76c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Time.html#a8249d3a28c8062c7c46cc426186f76c8">operator+</a> (<a class="el" href="classsf_1_1Time.html">Time</a> left, <a class="el" href="classsf_1_1Time.html">Time</a> right)</td></tr>
+<tr class="memdesc:a8249d3a28c8062c7c46cc426186f76c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary + operator to add two time values.  <br /></td></tr>
+<tr class="separator:a8249d3a28c8062c7c46cc426186f76c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34b983deefecaf2725131771d54631e0" id="r_a34b983deefecaf2725131771d54631e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Time.html">Time</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Time.html#a34b983deefecaf2725131771d54631e0">operator+=</a> (<a class="el" href="classsf_1_1Time.html">Time</a> &amp;left, <a class="el" href="classsf_1_1Time.html">Time</a> right)</td></tr>
+<tr class="memdesc:a34b983deefecaf2725131771d54631e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary += operator to add/assign two time values.  <br /></td></tr>
+<tr class="separator:a34b983deefecaf2725131771d54631e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebd95ec0cd0b2dc5d858e70149ccd136" id="r_aebd95ec0cd0b2dc5d858e70149ccd136"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Time.html#aebd95ec0cd0b2dc5d858e70149ccd136">operator-</a> (<a class="el" href="classsf_1_1Time.html">Time</a> left, <a class="el" href="classsf_1_1Time.html">Time</a> right)</td></tr>
+<tr class="memdesc:aebd95ec0cd0b2dc5d858e70149ccd136"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary - operator to subtract two time values.  <br /></td></tr>
+<tr class="separator:aebd95ec0cd0b2dc5d858e70149ccd136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0a16136d024a44bbaa4ca49ac172c8f" id="r_ae0a16136d024a44bbaa4ca49ac172c8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Time.html">Time</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Time.html#ae0a16136d024a44bbaa4ca49ac172c8f">operator-=</a> (<a class="el" href="classsf_1_1Time.html">Time</a> &amp;left, <a class="el" href="classsf_1_1Time.html">Time</a> right)</td></tr>
+<tr class="memdesc:ae0a16136d024a44bbaa4ca49ac172c8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary -= operator to subtract/assign two time values.  <br /></td></tr>
+<tr class="separator:ae0a16136d024a44bbaa4ca49ac172c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab891d4f3dbb454f6c1c484a7844bb581" id="r_ab891d4f3dbb454f6c1c484a7844bb581"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Time.html#ab891d4f3dbb454f6c1c484a7844bb581">operator*</a> (<a class="el" href="classsf_1_1Time.html">Time</a> left, float right)</td></tr>
+<tr class="memdesc:ab891d4f3dbb454f6c1c484a7844bb581"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary * operator to scale a time value.  <br /></td></tr>
+<tr class="separator:ab891d4f3dbb454f6c1c484a7844bb581"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a667d1568893f4e2520a223fa4e2b6ee2" id="r_a667d1568893f4e2520a223fa4e2b6ee2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Time.html#a667d1568893f4e2520a223fa4e2b6ee2">operator*</a> (<a class="el" href="classsf_1_1Time.html">Time</a> left, <a class="el" href="#a2840579fed3494d9f330baf7a5a19903">Int64</a> right)</td></tr>
+<tr class="memdesc:a667d1568893f4e2520a223fa4e2b6ee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary * operator to scale a time value.  <br /></td></tr>
+<tr class="separator:a667d1568893f4e2520a223fa4e2b6ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61e3255c79b3d98a1a04ed8968a87863" id="r_a61e3255c79b3d98a1a04ed8968a87863"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Time.html#a61e3255c79b3d98a1a04ed8968a87863">operator*</a> (float left, <a class="el" href="classsf_1_1Time.html">Time</a> right)</td></tr>
+<tr class="memdesc:a61e3255c79b3d98a1a04ed8968a87863"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary * operator to scale a time value.  <br /></td></tr>
+<tr class="separator:a61e3255c79b3d98a1a04ed8968a87863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a998a2ae6bd79e753bf9f4dea5b06370c" id="r_a998a2ae6bd79e753bf9f4dea5b06370c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Time.html#a998a2ae6bd79e753bf9f4dea5b06370c">operator*</a> (<a class="el" href="#a2840579fed3494d9f330baf7a5a19903">Int64</a> left, <a class="el" href="classsf_1_1Time.html">Time</a> right)</td></tr>
+<tr class="memdesc:a998a2ae6bd79e753bf9f4dea5b06370c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary * operator to scale a time value.  <br /></td></tr>
+<tr class="separator:a998a2ae6bd79e753bf9f4dea5b06370c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f7baa961b8961fc5e6a37dea7de10e3" id="r_a3f7baa961b8961fc5e6a37dea7de10e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Time.html">Time</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Time.html#a3f7baa961b8961fc5e6a37dea7de10e3">operator*=</a> (<a class="el" href="classsf_1_1Time.html">Time</a> &amp;left, float right)</td></tr>
+<tr class="memdesc:a3f7baa961b8961fc5e6a37dea7de10e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary *= operator to scale/assign a time value.  <br /></td></tr>
+<tr class="separator:a3f7baa961b8961fc5e6a37dea7de10e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac883749b4e0a72c32e166ad802220539" id="r_ac883749b4e0a72c32e166ad802220539"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Time.html">Time</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Time.html#ac883749b4e0a72c32e166ad802220539">operator*=</a> (<a class="el" href="classsf_1_1Time.html">Time</a> &amp;left, <a class="el" href="#a2840579fed3494d9f330baf7a5a19903">Int64</a> right)</td></tr>
+<tr class="memdesc:ac883749b4e0a72c32e166ad802220539"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary *= operator to scale/assign a time value.  <br /></td></tr>
+<tr class="separator:ac883749b4e0a72c32e166ad802220539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67510d018fd010819ee075db2cbd004f" id="r_a67510d018fd010819ee075db2cbd004f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Time.html#a67510d018fd010819ee075db2cbd004f">operator/</a> (<a class="el" href="classsf_1_1Time.html">Time</a> left, float right)</td></tr>
+<tr class="memdesc:a67510d018fd010819ee075db2cbd004f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary / operator to scale a time value.  <br /></td></tr>
+<tr class="separator:a67510d018fd010819ee075db2cbd004f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f7b24dd13c0068d5cba678e1d5db9a6" id="r_a5f7b24dd13c0068d5cba678e1d5db9a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Time.html#a5f7b24dd13c0068d5cba678e1d5db9a6">operator/</a> (<a class="el" href="classsf_1_1Time.html">Time</a> left, <a class="el" href="#a2840579fed3494d9f330baf7a5a19903">Int64</a> right)</td></tr>
+<tr class="memdesc:a5f7b24dd13c0068d5cba678e1d5db9a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary / operator to scale a time value.  <br /></td></tr>
+<tr class="separator:a5f7b24dd13c0068d5cba678e1d5db9a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad513a413be41bc66feb0ff2b29d5f947" id="r_ad513a413be41bc66feb0ff2b29d5f947"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Time.html">Time</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Time.html#ad513a413be41bc66feb0ff2b29d5f947">operator/=</a> (<a class="el" href="classsf_1_1Time.html">Time</a> &amp;left, float right)</td></tr>
+<tr class="memdesc:ad513a413be41bc66feb0ff2b29d5f947"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary /= operator to scale/assign a time value.  <br /></td></tr>
+<tr class="separator:ad513a413be41bc66feb0ff2b29d5f947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4b8df6ef282ee71808fd185f91490aa" id="r_ac4b8df6ef282ee71808fd185f91490aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Time.html">Time</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Time.html#ac4b8df6ef282ee71808fd185f91490aa">operator/=</a> (<a class="el" href="classsf_1_1Time.html">Time</a> &amp;left, <a class="el" href="#a2840579fed3494d9f330baf7a5a19903">Int64</a> right)</td></tr>
+<tr class="memdesc:ac4b8df6ef282ee71808fd185f91490aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary /= operator to scale/assign a time value.  <br /></td></tr>
+<tr class="separator:ac4b8df6ef282ee71808fd185f91490aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a097cf1326d2d50e0043ff4e865c1bbac" id="r_a097cf1326d2d50e0043ff4e865c1bbac"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Time.html#a097cf1326d2d50e0043ff4e865c1bbac">operator/</a> (<a class="el" href="classsf_1_1Time.html">Time</a> left, <a class="el" href="classsf_1_1Time.html">Time</a> right)</td></tr>
+<tr class="memdesc:a097cf1326d2d50e0043ff4e865c1bbac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary / operator to compute the ratio of two time values.  <br /></td></tr>
+<tr class="separator:a097cf1326d2d50e0043ff4e865c1bbac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe7206e15c2bf7ce8695f82219d466d2" id="r_abe7206e15c2bf7ce8695f82219d466d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Time.html#abe7206e15c2bf7ce8695f82219d466d2">operator%</a> (<a class="el" href="classsf_1_1Time.html">Time</a> left, <a class="el" href="classsf_1_1Time.html">Time</a> right)</td></tr>
+<tr class="memdesc:abe7206e15c2bf7ce8695f82219d466d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary % operator to compute remainder of a time value.  <br /></td></tr>
+<tr class="separator:abe7206e15c2bf7ce8695f82219d466d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a880fb0137cd426bd4457fd9e4a2f9d83" id="r_a880fb0137cd426bd4457fd9e4a2f9d83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Time.html">Time</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Time.html#a880fb0137cd426bd4457fd9e4a2f9d83">operator%=</a> (<a class="el" href="classsf_1_1Time.html">Time</a> &amp;left, <a class="el" href="classsf_1_1Time.html">Time</a> right)</td></tr>
+<tr class="memdesc:a880fb0137cd426bd4457fd9e4a2f9d83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary %= operator to compute/assign remainder of a time value.  <br /></td></tr>
+<tr class="separator:a880fb0137cd426bd4457fd9e4a2f9d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3885c2e66dc427cec7eaa178d59d8e8b" id="r_a3885c2e66dc427cec7eaa178d59d8e8b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a3885c2e66dc427cec7eaa178d59d8e8b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1Vector2.html#a3885c2e66dc427cec7eaa178d59d8e8b">operator-</a> (const <a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt; T &gt; &amp;right)</td></tr>
+<tr class="memdesc:a3885c2e66dc427cec7eaa178d59d8e8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of unary operator -.  <br /></td></tr>
+<tr class="separator:a3885c2e66dc427cec7eaa178d59d8e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4b7a9d355d57790bfc7df0ade8bb628" id="r_ad4b7a9d355d57790bfc7df0ade8bb628"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ad4b7a9d355d57790bfc7df0ade8bb628"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1Vector2.html#ad4b7a9d355d57790bfc7df0ade8bb628">operator+=</a> (<a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt; T &gt; &amp;left, const <a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt; T &gt; &amp;right)</td></tr>
+<tr class="memdesc:ad4b7a9d355d57790bfc7df0ade8bb628"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary operator +=.  <br /></td></tr>
+<tr class="separator:ad4b7a9d355d57790bfc7df0ade8bb628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30a5a12ad03c9a3a982a0a313bf84e6f" id="r_a30a5a12ad03c9a3a982a0a313bf84e6f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a30a5a12ad03c9a3a982a0a313bf84e6f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1Vector2.html#a30a5a12ad03c9a3a982a0a313bf84e6f">operator-=</a> (<a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt; T &gt; &amp;left, const <a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt; T &gt; &amp;right)</td></tr>
+<tr class="memdesc:a30a5a12ad03c9a3a982a0a313bf84e6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary operator -=.  <br /></td></tr>
+<tr class="separator:a30a5a12ad03c9a3a982a0a313bf84e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72421239823c38a6b780c86a710ead07" id="r_a72421239823c38a6b780c86a710ead07"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a72421239823c38a6b780c86a710ead07"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1Vector2.html#a72421239823c38a6b780c86a710ead07">operator+</a> (const <a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt; T &gt; &amp;left, const <a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt; T &gt; &amp;right)</td></tr>
+<tr class="memdesc:a72421239823c38a6b780c86a710ead07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary operator +.  <br /></td></tr>
+<tr class="separator:a72421239823c38a6b780c86a710ead07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad027adae53ec547a86c20deeb05c9e85" id="r_ad027adae53ec547a86c20deeb05c9e85"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ad027adae53ec547a86c20deeb05c9e85"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1Vector2.html#ad027adae53ec547a86c20deeb05c9e85">operator-</a> (const <a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt; T &gt; &amp;left, const <a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt; T &gt; &amp;right)</td></tr>
+<tr class="memdesc:ad027adae53ec547a86c20deeb05c9e85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary operator -.  <br /></td></tr>
+<tr class="separator:ad027adae53ec547a86c20deeb05c9e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f48ca928995b41c89f155afe8d16b02" id="r_a5f48ca928995b41c89f155afe8d16b02"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a5f48ca928995b41c89f155afe8d16b02"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1Vector2.html#a5f48ca928995b41c89f155afe8d16b02">operator*</a> (const <a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt; T &gt; &amp;left, T right)</td></tr>
+<tr class="memdesc:a5f48ca928995b41c89f155afe8d16b02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary operator *.  <br /></td></tr>
+<tr class="separator:a5f48ca928995b41c89f155afe8d16b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8b3e1cf7b156a984bc1427539ca8605" id="r_ad8b3e1cf7b156a984bc1427539ca8605"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ad8b3e1cf7b156a984bc1427539ca8605"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1Vector2.html#ad8b3e1cf7b156a984bc1427539ca8605">operator*</a> (T left, const <a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt; T &gt; &amp;right)</td></tr>
+<tr class="memdesc:ad8b3e1cf7b156a984bc1427539ca8605"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary operator *.  <br /></td></tr>
+<tr class="separator:ad8b3e1cf7b156a984bc1427539ca8605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abea24cb28c0d6e2957e259ba4e65d70e" id="r_abea24cb28c0d6e2957e259ba4e65d70e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:abea24cb28c0d6e2957e259ba4e65d70e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1Vector2.html#abea24cb28c0d6e2957e259ba4e65d70e">operator*=</a> (<a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt; T &gt; &amp;left, T right)</td></tr>
+<tr class="memdesc:abea24cb28c0d6e2957e259ba4e65d70e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary operator *=.  <br /></td></tr>
+<tr class="separator:abea24cb28c0d6e2957e259ba4e65d70e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7409dd89cb3aad6c3bc6622311107311" id="r_a7409dd89cb3aad6c3bc6622311107311"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a7409dd89cb3aad6c3bc6622311107311"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1Vector2.html#a7409dd89cb3aad6c3bc6622311107311">operator/</a> (const <a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt; T &gt; &amp;left, T right)</td></tr>
+<tr class="memdesc:a7409dd89cb3aad6c3bc6622311107311"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary operator /.  <br /></td></tr>
+<tr class="separator:a7409dd89cb3aad6c3bc6622311107311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4d293c9dc7954ccfd5e373972f38b03" id="r_ac4d293c9dc7954ccfd5e373972f38b03"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac4d293c9dc7954ccfd5e373972f38b03"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1Vector2.html#ac4d293c9dc7954ccfd5e373972f38b03">operator/=</a> (<a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt; T &gt; &amp;left, T right)</td></tr>
+<tr class="memdesc:ac4d293c9dc7954ccfd5e373972f38b03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary operator /=.  <br /></td></tr>
+<tr class="separator:ac4d293c9dc7954ccfd5e373972f38b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a7b2d36c3850828fdb651facfd25136" id="r_a9a7b2d36c3850828fdb651facfd25136"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a9a7b2d36c3850828fdb651facfd25136"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1Vector2.html#a9a7b2d36c3850828fdb651facfd25136">operator==</a> (const <a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt; T &gt; &amp;left, const <a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt; T &gt; &amp;right)</td></tr>
+<tr class="memdesc:a9a7b2d36c3850828fdb651facfd25136"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary operator ==.  <br /></td></tr>
+<tr class="separator:a9a7b2d36c3850828fdb651facfd25136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01673da35ef9c52d0e54b8263549a956" id="r_a01673da35ef9c52d0e54b8263549a956"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a01673da35ef9c52d0e54b8263549a956"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1Vector2.html#a01673da35ef9c52d0e54b8263549a956">operator!=</a> (const <a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt; T &gt; &amp;left, const <a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt; T &gt; &amp;right)</td></tr>
+<tr class="memdesc:a01673da35ef9c52d0e54b8263549a956"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary operator !=.  <br /></td></tr>
+<tr class="separator:a01673da35ef9c52d0e54b8263549a956"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b75d2fb9b0f2fd9fe33f8f06f9dda75" id="r_a9b75d2fb9b0f2fd9fe33f8f06f9dda75"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a9b75d2fb9b0f2fd9fe33f8f06f9dda75"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1Vector3.html#a9b75d2fb9b0f2fd9fe33f8f06f9dda75">operator-</a> (const <a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt; T &gt; &amp;left)</td></tr>
+<tr class="memdesc:a9b75d2fb9b0f2fd9fe33f8f06f9dda75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of unary operator -.  <br /></td></tr>
+<tr class="separator:a9b75d2fb9b0f2fd9fe33f8f06f9dda75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc28859af163c63318ea2723b81c5ad9" id="r_abc28859af163c63318ea2723b81c5ad9"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:abc28859af163c63318ea2723b81c5ad9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1Vector3.html#abc28859af163c63318ea2723b81c5ad9">operator+=</a> (<a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt; T &gt; &amp;left, const <a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt; T &gt; &amp;right)</td></tr>
+<tr class="memdesc:abc28859af163c63318ea2723b81c5ad9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary operator +=.  <br /></td></tr>
+<tr class="separator:abc28859af163c63318ea2723b81c5ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa465672d2a4ee5fd354e585cf08d2ab9" id="r_aa465672d2a4ee5fd354e585cf08d2ab9"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aa465672d2a4ee5fd354e585cf08d2ab9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1Vector3.html#aa465672d2a4ee5fd354e585cf08d2ab9">operator-=</a> (<a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt; T &gt; &amp;left, const <a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt; T &gt; &amp;right)</td></tr>
+<tr class="memdesc:aa465672d2a4ee5fd354e585cf08d2ab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary operator -=.  <br /></td></tr>
+<tr class="separator:aa465672d2a4ee5fd354e585cf08d2ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6500a0cb00e07801e9e9d7e96852ddd3" id="r_a6500a0cb00e07801e9e9d7e96852ddd3"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a6500a0cb00e07801e9e9d7e96852ddd3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1Vector3.html#a6500a0cb00e07801e9e9d7e96852ddd3">operator+</a> (const <a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt; T &gt; &amp;left, const <a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt; T &gt; &amp;right)</td></tr>
+<tr class="memdesc:a6500a0cb00e07801e9e9d7e96852ddd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary operator +.  <br /></td></tr>
+<tr class="separator:a6500a0cb00e07801e9e9d7e96852ddd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe0b9411c00cf807bf8a5f835874bd2a" id="r_abe0b9411c00cf807bf8a5f835874bd2a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:abe0b9411c00cf807bf8a5f835874bd2a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1Vector3.html#abe0b9411c00cf807bf8a5f835874bd2a">operator-</a> (const <a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt; T &gt; &amp;left, const <a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt; T &gt; &amp;right)</td></tr>
+<tr class="memdesc:abe0b9411c00cf807bf8a5f835874bd2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary operator -.  <br /></td></tr>
+<tr class="separator:abe0b9411c00cf807bf8a5f835874bd2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44ec312b31c1a85dcff4863795f98329" id="r_a44ec312b31c1a85dcff4863795f98329"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a44ec312b31c1a85dcff4863795f98329"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1Vector3.html#a44ec312b31c1a85dcff4863795f98329">operator*</a> (const <a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt; T &gt; &amp;left, T right)</td></tr>
+<tr class="memdesc:a44ec312b31c1a85dcff4863795f98329"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary operator *.  <br /></td></tr>
+<tr class="separator:a44ec312b31c1a85dcff4863795f98329"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6f2b0d9f79c1b9774759b7087affbb1" id="r_aa6f2b0d9f79c1b9774759b7087affbb1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aa6f2b0d9f79c1b9774759b7087affbb1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1Vector3.html#aa6f2b0d9f79c1b9774759b7087affbb1">operator*</a> (T left, const <a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt; T &gt; &amp;right)</td></tr>
+<tr class="memdesc:aa6f2b0d9f79c1b9774759b7087affbb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary operator *.  <br /></td></tr>
+<tr class="separator:aa6f2b0d9f79c1b9774759b7087affbb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5fb972775ce8ab58cd9670789e806a7" id="r_ad5fb972775ce8ab58cd9670789e806a7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ad5fb972775ce8ab58cd9670789e806a7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1Vector3.html#ad5fb972775ce8ab58cd9670789e806a7">operator*=</a> (<a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt; T &gt; &amp;left, T right)</td></tr>
+<tr class="memdesc:ad5fb972775ce8ab58cd9670789e806a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary operator *=.  <br /></td></tr>
+<tr class="separator:ad5fb972775ce8ab58cd9670789e806a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4ba4a83de236ddeb92a7b759187e90d" id="r_ad4ba4a83de236ddeb92a7b759187e90d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ad4ba4a83de236ddeb92a7b759187e90d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1Vector3.html#ad4ba4a83de236ddeb92a7b759187e90d">operator/</a> (const <a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt; T &gt; &amp;left, T right)</td></tr>
+<tr class="memdesc:ad4ba4a83de236ddeb92a7b759187e90d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary operator /.  <br /></td></tr>
+<tr class="separator:ad4ba4a83de236ddeb92a7b759187e90d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8995a700f9dffccc6dddb3696ae17b64" id="r_a8995a700f9dffccc6dddb3696ae17b64"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a8995a700f9dffccc6dddb3696ae17b64"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1Vector3.html#a8995a700f9dffccc6dddb3696ae17b64">operator/=</a> (<a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt; T &gt; &amp;left, T right)</td></tr>
+<tr class="memdesc:a8995a700f9dffccc6dddb3696ae17b64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary operator /=.  <br /></td></tr>
+<tr class="separator:a8995a700f9dffccc6dddb3696ae17b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a388d72db973306a35ba467016b3dee30" id="r_a388d72db973306a35ba467016b3dee30"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a388d72db973306a35ba467016b3dee30"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1Vector3.html#a388d72db973306a35ba467016b3dee30">operator==</a> (const <a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt; T &gt; &amp;left, const <a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt; T &gt; &amp;right)</td></tr>
+<tr class="memdesc:a388d72db973306a35ba467016b3dee30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary operator ==.  <br /></td></tr>
+<tr class="separator:a388d72db973306a35ba467016b3dee30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a608500d1ad3b78082cb5bb4356742bd4" id="r_a608500d1ad3b78082cb5bb4356742bd4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a608500d1ad3b78082cb5bb4356742bd4"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1Vector3.html#a608500d1ad3b78082cb5bb4356742bd4">operator!=</a> (const <a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt; T &gt; &amp;left, const <a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt; T &gt; &amp;right)</td></tr>
+<tr class="memdesc:a608500d1ad3b78082cb5bb4356742bd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of binary operator !=.  <br /></td></tr>
+<tr class="separator:a608500d1ad3b78082cb5bb4356742bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca24086fd94d11014f3a0b5ca9a3acd6" id="r_aca24086fd94d11014f3a0b5ca9a3acd6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1VideoMode.html#aca24086fd94d11014f3a0b5ca9a3acd6">operator==</a> (const <a class="el" href="classsf_1_1VideoMode.html">VideoMode</a> &amp;left, const <a class="el" href="classsf_1_1VideoMode.html">VideoMode</a> &amp;right)</td></tr>
+<tr class="memdesc:aca24086fd94d11014f3a0b5ca9a3acd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of == operator to compare two video modes.  <br /></td></tr>
+<tr class="separator:aca24086fd94d11014f3a0b5ca9a3acd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34b5c266a7b9cd5bc95de62f8beafc5a" id="r_a34b5c266a7b9cd5bc95de62f8beafc5a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1VideoMode.html#a34b5c266a7b9cd5bc95de62f8beafc5a">operator!=</a> (const <a class="el" href="classsf_1_1VideoMode.html">VideoMode</a> &amp;left, const <a class="el" href="classsf_1_1VideoMode.html">VideoMode</a> &amp;right)</td></tr>
+<tr class="memdesc:a34b5c266a7b9cd5bc95de62f8beafc5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of != operator to compare two video modes.  <br /></td></tr>
+<tr class="separator:a34b5c266a7b9cd5bc95de62f8beafc5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54cc77c0b6c4b133e0147a43d6829b13" id="r_a54cc77c0b6c4b133e0147a43d6829b13"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1VideoMode.html#a54cc77c0b6c4b133e0147a43d6829b13">operator&lt;</a> (const <a class="el" href="classsf_1_1VideoMode.html">VideoMode</a> &amp;left, const <a class="el" href="classsf_1_1VideoMode.html">VideoMode</a> &amp;right)</td></tr>
+<tr class="memdesc:a54cc77c0b6c4b133e0147a43d6829b13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of &lt; operator to compare video modes.  <br /></td></tr>
+<tr class="separator:a54cc77c0b6c4b133e0147a43d6829b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b894cab5f2a3a14597e4c6d200179a4" id="r_a5b894cab5f2a3a14597e4c6d200179a4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1VideoMode.html#a5b894cab5f2a3a14597e4c6d200179a4">operator&gt;</a> (const <a class="el" href="classsf_1_1VideoMode.html">VideoMode</a> &amp;left, const <a class="el" href="classsf_1_1VideoMode.html">VideoMode</a> &amp;right)</td></tr>
+<tr class="memdesc:a5b894cab5f2a3a14597e4c6d200179a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of &gt; operator to compare video modes.  <br /></td></tr>
+<tr class="separator:a5b894cab5f2a3a14597e4c6d200179a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa094b7b9ae4c0194892ebda7b4b9bb37" id="r_aa094b7b9ae4c0194892ebda7b4b9bb37"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1VideoMode.html#aa094b7b9ae4c0194892ebda7b4b9bb37">operator&lt;=</a> (const <a class="el" href="classsf_1_1VideoMode.html">VideoMode</a> &amp;left, const <a class="el" href="classsf_1_1VideoMode.html">VideoMode</a> &amp;right)</td></tr>
+<tr class="memdesc:aa094b7b9ae4c0194892ebda7b4b9bb37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of &lt;= operator to compare video modes.  <br /></td></tr>
+<tr class="separator:aa094b7b9ae4c0194892ebda7b4b9bb37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e3d91683fcabb88c5b640e9884fe3df" id="r_a6e3d91683fcabb88c5b640e9884fe3df"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1VideoMode.html#a6e3d91683fcabb88c5b640e9884fe3df">operator&gt;=</a> (const <a class="el" href="classsf_1_1VideoMode.html">VideoMode</a> &amp;left, const <a class="el" href="classsf_1_1VideoMode.html">VideoMode</a> &amp;right)</td></tr>
+<tr class="memdesc:a6e3d91683fcabb88c5b640e9884fe3df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of &gt;= operator to compare video modes.  <br /></td></tr>
+<tr class="separator:a6e3d91683fcabb88c5b640e9884fe3df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a3d4548be9621e2fcfe187b3cb59f6f53" id="r_a3d4548be9621e2fcfe187b3cb59f6f53"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structsf_1_1BlendMode.html">BlendMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d4548be9621e2fcfe187b3cb59f6f53">BlendAlpha</a></td></tr>
+<tr class="memdesc:a3d4548be9621e2fcfe187b3cb59f6f53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blend source and dest according to dest alpha.  <br /></td></tr>
+<tr class="separator:a3d4548be9621e2fcfe187b3cb59f6f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a519b69f28b0d5f1cd65b8d3d7b94e13c" id="r_a519b69f28b0d5f1cd65b8d3d7b94e13c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structsf_1_1BlendMode.html">BlendMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a519b69f28b0d5f1cd65b8d3d7b94e13c">BlendAdd</a></td></tr>
+<tr class="memdesc:a519b69f28b0d5f1cd65b8d3d7b94e13c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add source to dest.  <br /></td></tr>
+<tr class="separator:a519b69f28b0d5f1cd65b8d3d7b94e13c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad451e51fcecccb331fb3238aea54c8e2" id="r_ad451e51fcecccb331fb3238aea54c8e2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structsf_1_1BlendMode.html">BlendMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad451e51fcecccb331fb3238aea54c8e2">BlendMultiply</a></td></tr>
+<tr class="memdesc:ad451e51fcecccb331fb3238aea54c8e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply source and dest.  <br /></td></tr>
+<tr class="separator:ad451e51fcecccb331fb3238aea54c8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9286f4004890232f7ba3853e40162284" id="r_a9286f4004890232f7ba3853e40162284"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structsf_1_1BlendMode.html">BlendMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9286f4004890232f7ba3853e40162284">BlendNone</a></td></tr>
+<tr class="memdesc:a9286f4004890232f7ba3853e40162284"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overwrite dest with source.  <br /></td></tr>
+<tr class="separator:a9286f4004890232f7ba3853e40162284"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="aed4e58f586b2eed2621c0365d0b7554e" name="aed4e58f586b2eed2621c0365d0b7554e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed4e58f586b2eed2621c0365d0b7554e">&#9670;&#160;</a></span>FloatRect</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classsf_1_1Rect.html">Rect</a>&lt;float&gt; <a class="el" href="#aed4e58f586b2eed2621c0365d0b7554e">sf::FloatRect</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Rect_8hpp_source.html#l00191">191</a> of file <a class="el" href="Rect_8hpp_source.html">Rect.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a3c8e10435e2a310a7741755e66b5c94e" name="a3c8e10435e2a310a7741755e66b5c94e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c8e10435e2a310a7741755e66b5c94e">&#9670;&#160;</a></span>Int16</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef signed short <a class="el" href="#a3c8e10435e2a310a7741755e66b5c94e">sf::Int16</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Config_8hpp_source.html#l00174">174</a> of file <a class="el" href="Config_8hpp_source.html">Config.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ac2dfd4952377a26dee4750e2e4a30a15" name="ac2dfd4952377a26dee4750e2e4a30a15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2dfd4952377a26dee4750e2e4a30a15">&#9670;&#160;</a></span>Int32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef signed int <a class="el" href="#ac2dfd4952377a26dee4750e2e4a30a15">sf::Int32</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Config_8hpp_source.html#l00178">178</a> of file <a class="el" href="Config_8hpp_source.html">Config.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a2840579fed3494d9f330baf7a5a19903" name="a2840579fed3494d9f330baf7a5a19903"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2840579fed3494d9f330baf7a5a19903">&#9670;&#160;</a></span>Int64</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef signed long long <a class="el" href="#a2840579fed3494d9f330baf7a5a19903">sf::Int64</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Config_8hpp_source.html#l00186">186</a> of file <a class="el" href="Config_8hpp_source.html">Config.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a69b109973eac74e22b97e5339bdb68dd" name="a69b109973eac74e22b97e5339bdb68dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69b109973eac74e22b97e5339bdb68dd">&#9670;&#160;</a></span>Int8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef signed char <a class="el" href="#a69b109973eac74e22b97e5339bdb68dd">sf::Int8</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Config_8hpp_source.html#l00170">170</a> of file <a class="el" href="Config_8hpp_source.html">Config.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aae67411782674934f78d55fa3af18403" name="aae67411782674934f78d55fa3af18403"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae67411782674934f78d55fa3af18403">&#9670;&#160;</a></span>IntRect</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classsf_1_1Rect.html">Rect</a>&lt;int&gt; <a class="el" href="#aae67411782674934f78d55fa3af18403">sf::IntRect</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Rect_8hpp_source.html#l00190">190</a> of file <a class="el" href="Rect_8hpp_source.html">Rect.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aefabb521d8f5eec9e6a9b521271d20d1" name="aefabb521d8f5eec9e6a9b521271d20d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefabb521d8f5eec9e6a9b521271d20d1">&#9670;&#160;</a></span>SocketHandle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int <a class="el" href="#aefabb521d8f5eec9e6a9b521271d20d1">sf::SocketHandle</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="SocketHandle_8hpp_source.html#l00050">50</a> of file <a class="el" href="SocketHandle_8hpp_source.html">SocketHandle.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a2fcaf787248b0b83dfb6b145ca348246" name="a2fcaf787248b0b83dfb6b145ca348246"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fcaf787248b0b83dfb6b145ca348246">&#9670;&#160;</a></span>Uint16</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned short <a class="el" href="#a2fcaf787248b0b83dfb6b145ca348246">sf::Uint16</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Config_8hpp_source.html#l00175">175</a> of file <a class="el" href="Config_8hpp_source.html">Config.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aa746fb1ddef4410bddf198ebb27e727c" name="aa746fb1ddef4410bddf198ebb27e727c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa746fb1ddef4410bddf198ebb27e727c">&#9670;&#160;</a></span>Uint32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned int <a class="el" href="#aa746fb1ddef4410bddf198ebb27e727c">sf::Uint32</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Config_8hpp_source.html#l00179">179</a> of file <a class="el" href="Config_8hpp_source.html">Config.hpp</a>.</p>
+
+</div>
+</div>
+<a id="add9ac83466d96b9f50a009b9f4064266" name="add9ac83466d96b9f50a009b9f4064266"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add9ac83466d96b9f50a009b9f4064266">&#9670;&#160;</a></span>Uint64</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned long long <a class="el" href="#add9ac83466d96b9f50a009b9f4064266">sf::Uint64</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Config_8hpp_source.html#l00187">187</a> of file <a class="el" href="Config_8hpp_source.html">Config.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a4ef3d630785c4f296f9b4f274c33d78e" name="a4ef3d630785c4f296f9b4f274c33d78e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ef3d630785c4f296f9b4f274c33d78e">&#9670;&#160;</a></span>Uint8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned char <a class="el" href="#a4ef3d630785c4f296f9b4f274c33d78e">sf::Uint8</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Config_8hpp_source.html#l00171">171</a> of file <a class="el" href="Config_8hpp_source.html">Config.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ae30b6ea05a1723d608853ebc3043e53d" name="ae30b6ea05a1723d608853ebc3043e53d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae30b6ea05a1723d608853ebc3043e53d">&#9670;&#160;</a></span>Utf16</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classsf_1_1Utf.html">Utf</a>&lt;16&gt; <a class="el" href="#ae30b6ea05a1723d608853ebc3043e53d">sf::Utf16</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Utf_8hpp_source.html#l00735">735</a> of file <a class="el" href="Utf_8hpp_source.html">Utf.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a51a40f697607908d2e9f58e67f4c89a3" name="a51a40f697607908d2e9f58e67f4c89a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51a40f697607908d2e9f58e67f4c89a3">&#9670;&#160;</a></span>Utf32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classsf_1_1Utf.html">Utf</a>&lt;32&gt; <a class="el" href="#a51a40f697607908d2e9f58e67f4c89a3">sf::Utf32</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Utf_8hpp_source.html#l00736">736</a> of file <a class="el" href="Utf_8hpp_source.html">Utf.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ab78b7f576a82034d14eab92becc15301" name="ab78b7f576a82034d14eab92becc15301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab78b7f576a82034d14eab92becc15301">&#9670;&#160;</a></span>Utf8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classsf_1_1Utf.html">Utf</a>&lt;8&gt; <a class="el" href="#ab78b7f576a82034d14eab92becc15301">sf::Utf8</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Utf_8hpp_source.html#l00734">734</a> of file <a class="el" href="Utf_8hpp_source.html">Utf.hpp</a>.</p>
+
+</div>
+</div>
+<a id="acf03098c2577b869e2fa6836cc48f1a0" name="acf03098c2577b869e2fa6836cc48f1a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf03098c2577b869e2fa6836cc48f1a0">&#9670;&#160;</a></span>Vector2f</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt;float&gt; <a class="el" href="#acf03098c2577b869e2fa6836cc48f1a0">sf::Vector2f</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Vector2_8hpp_source.html#l00255">255</a> of file <a class="el" href="Vector2_8hpp_source.html">Vector2.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ace09dd1447d74c6e9ba56ae874c094e1" name="ace09dd1447d74c6e9ba56ae874c094e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace09dd1447d74c6e9ba56ae874c094e1">&#9670;&#160;</a></span>Vector2i</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt;int&gt; <a class="el" href="#ace09dd1447d74c6e9ba56ae874c094e1">sf::Vector2i</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Vector2_8hpp_source.html#l00253">253</a> of file <a class="el" href="Vector2_8hpp_source.html">Vector2.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aaa02ba42bf79b001a376fe9d79254cb3" name="aaa02ba42bf79b001a376fe9d79254cb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa02ba42bf79b001a376fe9d79254cb3">&#9670;&#160;</a></span>Vector2u</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classsf_1_1Vector2.html">Vector2</a>&lt;unsigned int&gt; <a class="el" href="#aaa02ba42bf79b001a376fe9d79254cb3">sf::Vector2u</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Vector2_8hpp_source.html#l00254">254</a> of file <a class="el" href="Vector2_8hpp_source.html">Vector2.hpp</a>.</p>
+
+</div>
+</div>
+<a id="af97357d7d32e7d6a700d03be2f3b4811" name="af97357d7d32e7d6a700d03be2f3b4811"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af97357d7d32e7d6a700d03be2f3b4811">&#9670;&#160;</a></span>Vector3f</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt;float&gt; <a class="el" href="#af97357d7d32e7d6a700d03be2f3b4811">sf::Vector3f</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Vector3_8hpp_source.html#l00256">256</a> of file <a class="el" href="Vector3_8hpp_source.html">Vector3.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ad066a8774efaf7b623df8909ba219dc7" name="ad066a8774efaf7b623df8909ba219dc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad066a8774efaf7b623df8909ba219dc7">&#9670;&#160;</a></span>Vector3i</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classsf_1_1Vector3.html">Vector3</a>&lt;int&gt; <a class="el" href="#ad066a8774efaf7b623df8909ba219dc7">sf::Vector3i</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Vector3_8hpp_source.html#l00255">255</a> of file <a class="el" href="Vector3_8hpp_source.html">Vector3.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a7e9416575ff1e62467c692e00a3290e1" name="a7e9416575ff1e62467c692e00a3290e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e9416575ff1e62467c692e00a3290e1">&#9670;&#160;</a></span>operator!=() <span class="overload">[1/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sf::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsf_1_1IpAddress.html">IpAddress</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>left</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classsf_1_1IpAddress.html">IpAddress</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>right</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Overload of != operator to compare two IP addresses. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">left</td><td>Left operand (a IP address) </td></tr>
+    <tr><td class="paramname">right</td><td>Right operand (a IP address)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if both addresses are different </dd></dl>
+
+</div>
+</div>
+<a id="ae761c09191acb8e31cce343197fec0b9" name="ae761c09191acb8e31cce343197fec0b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae761c09191acb8e31cce343197fec0b9">&#9670;&#160;</a></span>operator&lt;() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sf::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsf_1_1IpAddress.html">IpAddress</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>left</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classsf_1_1IpAddress.html">IpAddress</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>right</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Overload of &lt; operator to compare two IP addresses. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">left</td><td>Left operand (a IP address) </td></tr>
+    <tr><td class="paramname">right</td><td>Right operand (a IP address)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if <em>left</em> is lesser than <em>right</em> </dd></dl>
+
+</div>
+</div>
+<a id="ab76f5a287dd4b6885eb083e9c5985753" name="ab76f5a287dd4b6885eb083e9c5985753"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab76f5a287dd4b6885eb083e9c5985753">&#9670;&#160;</a></span>operator&lt;&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; sf::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;</td>          <td class="paramname"><span class="paramname"><em>stream</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classsf_1_1IpAddress.html">IpAddress</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>address</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Overload of &lt;&lt; operator to print an IP address to an output stream. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>Output stream </td></tr>
+    <tr><td class="paramname">address</td><td>IP address to print</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to the output stream </dd></dl>
+
+</div>
+</div>
+<a id="a9c0477225ec01865c550da5b3b2b6cc5" name="a9c0477225ec01865c550da5b3b2b6cc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c0477225ec01865c550da5b3b2b6cc5">&#9670;&#160;</a></span>operator&lt;=() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sf::operator&lt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsf_1_1IpAddress.html">IpAddress</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>left</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classsf_1_1IpAddress.html">IpAddress</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>right</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Overload of &lt;= operator to compare two IP addresses. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">left</td><td>Left operand (a IP address) </td></tr>
+    <tr><td class="paramname">right</td><td>Right operand (a IP address)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if <em>left</em> is lesser or equal than <em>right</em> </dd></dl>
+
+</div>
+</div>
+<a id="a1c7342603d3a758144298b70d8166923" name="a1c7342603d3a758144298b70d8166923"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c7342603d3a758144298b70d8166923">&#9670;&#160;</a></span>operator==() <span class="overload">[1/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sf::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsf_1_1IpAddress.html">IpAddress</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>left</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classsf_1_1IpAddress.html">IpAddress</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>right</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Overload of == operator to compare two IP addresses. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">left</td><td>Left operand (a IP address) </td></tr>
+    <tr><td class="paramname">right</td><td>Right operand (a IP address)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if both addresses are equal </dd></dl>
+
+</div>
+</div>
+<a id="af142e40929bb8cc96d79c48af19bd045" name="af142e40929bb8cc96d79c48af19bd045"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af142e40929bb8cc96d79c48af19bd045">&#9670;&#160;</a></span>operator&gt;() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sf::operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsf_1_1IpAddress.html">IpAddress</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>left</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classsf_1_1IpAddress.html">IpAddress</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>right</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Overload of &gt; operator to compare two IP addresses. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">left</td><td>Left operand (a IP address) </td></tr>
+    <tr><td class="paramname">right</td><td>Right operand (a IP address)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if <em>left</em> is greater than <em>right</em> </dd></dl>
+
+</div>
+</div>
+<a id="a68124f60ee7ee08073bd1894d69b0ed2" name="a68124f60ee7ee08073bd1894d69b0ed2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68124f60ee7ee08073bd1894d69b0ed2">&#9670;&#160;</a></span>operator&gt;=() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sf::operator&gt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsf_1_1IpAddress.html">IpAddress</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>left</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classsf_1_1IpAddress.html">IpAddress</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>right</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Overload of &gt;= operator to compare two IP addresses. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">left</td><td>Left operand (a IP address) </td></tr>
+    <tr><td class="paramname">right</td><td>Right operand (a IP address)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if <em>left</em> is greater or equal than <em>right</em> </dd></dl>
+
+</div>
+</div>
+<a id="a6a79ef337fc5bca4fb054e15dee675c0" name="a6a79ef337fc5bca4fb054e15dee675c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a79ef337fc5bca4fb054e15dee675c0">&#9670;&#160;</a></span>operator&gt;&gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::istream &amp; sf::operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;</td>          <td class="paramname"><span class="paramname"><em>stream</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classsf_1_1IpAddress.html">IpAddress</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>address</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Overload of &gt;&gt; operator to extract an IP address from an input stream. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>Input stream </td></tr>
+    <tr><td class="paramname">address</td><td>IP address to extract</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to the input stream </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a519b69f28b0d5f1cd65b8d3d7b94e13c" name="a519b69f28b0d5f1cd65b8d3d7b94e13c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a519b69f28b0d5f1cd65b8d3d7b94e13c">&#9670;&#160;</a></span>BlendAdd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structsf_1_1BlendMode.html">BlendMode</a> sf::BlendAdd</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add source to dest. </p>
+
+</div>
+</div>
+<a id="a3d4548be9621e2fcfe187b3cb59f6f53" name="a3d4548be9621e2fcfe187b3cb59f6f53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d4548be9621e2fcfe187b3cb59f6f53">&#9670;&#160;</a></span>BlendAlpha</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structsf_1_1BlendMode.html">BlendMode</a> sf::BlendAlpha</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Blend source and dest according to dest alpha. </p>
+
+</div>
+</div>
+<a id="ad451e51fcecccb331fb3238aea54c8e2" name="ad451e51fcecccb331fb3238aea54c8e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad451e51fcecccb331fb3238aea54c8e2">&#9670;&#160;</a></span>BlendMultiply</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structsf_1_1BlendMode.html">BlendMode</a> sf::BlendMultiply</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Multiply source and dest. </p>
+
+</div>
+</div>
+<a id="a9286f4004890232f7ba3853e40162284" name="a9286f4004890232f7ba3853e40162284"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9286f4004890232f7ba3853e40162284">&#9670;&#160;</a></span>BlendNone</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structsf_1_1BlendMode.html">BlendMode</a> sf::BlendNone</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Overwrite dest with source. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+                    Back to top
+                </button>
+            </main>
+            <footer class="md-footer">
+                <nav class="md-footer__inner md-grid" aria-label="Footer" hidden>
+                    <a href="/learn/" class="md-footer__link md-footer__link--next" aria-label="Next: Learn">
+                        <div class="md-footer__title">
+                            <span class="md-footer__direction"> Next </span>
+                            <div class="md-ellipsis">Learn</div>
+                        </div>
+                        <div class="md-footer__button md-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z" /></svg>
+                        </div>
+                    </a>
+                </nav>
+                <div class="md-footer-meta md-typeset">
+                    <div class="md-footer-meta__inner md-grid">
+                        <div class="md-copyright">
+                            <div class="md-copyright__highlight">Copyright &copy; <a href="mailto:laurent@sfml-dev.org">Laurent Gomila</a></div>
+                        </div>
+                        <div class="md-social">
+                            <a href="https://fosstodon.org/@sfml" target="_blank" rel="noopener me" title="SFML on Fosstodon" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com/sfmldev" target="_blank" rel="noopener" title="SFML on Twitter" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="https://discord.gg/nr4X7Fh" target="_blank" rel="noopener" title="SFML&#39;s Discord Server" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="md-dialog" data-md-component="dialog">
+            <div class="md-dialog__inner md-typeset"></div>
+        </div>
+        <script id="__config" type="application/json">
+            {
+                "base": ".",
+                "features": ["content.code.copy", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.prune", "navigation.path", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.suggest"],
+                "search": "/assets/javascripts/workers/search.b8dbb3d2.min.js",
+                "translations": {
+                    "clipboard.copied": "Copied to clipboard",
+                    "clipboard.copy": "Copy to clipboard",
+                    "search.result.more.one": "1 more on this page",
+                    "search.result.more.other": "# more on this page",
+                    "search.result.none": "No matching documents",
+                    "search.result.one": "1 matching document",
+                    "search.result.other": "# matching documents",
+                    "search.result.placeholder": "Type to start searching",
+                    "search.result.term.missing": "Missing",
+                    "select.version": "Select version"
+                }
+            }
+        </script>
+        <script src="/assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+    </body>
+</html>

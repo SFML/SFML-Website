@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="Simple and Fast Multimedia Library" />
+        <link rel="canonical" href="https://www.sfml-dev.org/" />
+        <link rel="next" href="/learn/" />
+        <link rel="icon" href="/images/favicon.ico" />
+        <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.30" />
+        <title>Home - Simple and Fast Multimedia Library</title>
+        <link rel="stylesheet" href="/assets/stylesheets/main.3cba04c6.min.css" />
+        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback" />
+        <style>
+            :root {
+                --md-text-font: "Ubuntu";
+                --md-code-font: "Roboto Mono";
+            }
+        </style>
+        <link rel="stylesheet" href="/styles/extra.css" />
+        <script>
+            (__md_scope = new URL(".", location)),
+                (__md_hash = (e) => [...e].reduce((e, _) => (e << 5) - e + _.charCodeAt(0), 0)),
+                (__md_get = (e, _ = localStorage, t = __md_scope) => JSON.parse(_.getItem(t.pathname + "." + e))),
+                (__md_set = (e, _, t = localStorage, a = __md_scope) => {
+                    try {
+                        t.setItem(a.pathname + "." + e, JSON.stringify(_));
+                    } catch (e) {}
+                });
+        </script>
+        <link rel="stylesheet" type="text/css" href="doxygen.css" title="default" media="screen,print" />
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="dynsections.js"></script>
+        <script type="text/javascript" src="clipboard.js"></script>
+        <script type="text/javascript" src="cookie.js"></script>
+        <script type="text/javascript" src="resize.js"></script>
+        <link rel="stylesheet" type="text/css" href="search/search.css" />
+        <link rel="stylesheet" type="text/css" href="searchOverrides.css" />
+        <script type="text/javascript" src="search/searchdata.js"></script>
+        <script type="text/javascript" src="search/search.js"></script>
+        <script type="text/javascript">
+            /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+            $(document).ready(function () {
+                init_search();
+            });
+            /* @license-end */
+        </script>
+    </head>
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="indigo">
+        <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off" />
+        <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off" />
+        <label class="md-overlay" for="__drawer"></label>
+        <div data-md-component="skip">
+            <a href="#simple-and-fast-multimedia-library" class="md-skip"> Skip to content </a>
+        </div>
+        <div data-md-component="announce"></div>
+        <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+            <nav class="md-header__inner md-grid" aria-label="Header">
+                <a href="." title="Simple and Fast Multimedia Library" class="md-header__button md-logo" aria-label="Simple and Fast Multimedia Library" data-md-component="logo">
+                    <img src="/images/logo.png" alt="logo" />
+                </a>
+                <label class="md-header__button md-icon" for="__drawer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z" /></svg>
+                </label>
+                <div class="md-header__title" data-md-component="header-title">
+                    <div class="md-header__ellipsis">
+                        <div class="md-header__topic">
+                            <span class="md-ellipsis"> Simple and Fast Multimedia Library </span>
+                        </div>
+                        <div class="md-header__topic" data-md-component="header-topic">
+                            <span class="md-ellipsis"> Home </span>
+                        </div>
+                    </div>
+                </div>
+                <form class="md-header__option" data-md-component="palette">
+                    <input
+                        class="md-option"
+                        data-md-color-media="(prefers-color-scheme: light)"
+                        data-md-color-scheme="default"
+                        data-md-color-primary="light-green"
+                        data-md-color-accent="indigo"
+                        aria-label="Switch to dark mode"
+                        type="radio"
+                        name="__palette"
+                        id="__palette_0"
+                    />
+                    <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"
+                            />
+                        </svg>
+                    </label>
+                    <input
+                        class="md-option"
+                        data-md-color-media="(prefers-color-scheme: dark)"
+                        data-md-color-scheme="slate"
+                        data-md-color-primary="green"
+                        data-md-color-accent="indigo"
+                        aria-label="Switch to light mode"
+                        type="radio"
+                        name="__palette"
+                        id="__palette_1"
+                    />
+                    <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"
+                            />
+                        </svg>
+                    </label>
+                </form>
+                <script>
+                    var media,
+                        input,
+                        key,
+                        value,
+                        palette = __md_get("__palette");
+                    if (palette && palette.color) {
+                        "(prefers-color-scheme)" === palette.color.media &&
+                            ((media = matchMedia("(prefers-color-scheme: light)")),
+                            (input = document.querySelector(media.matches ? "[data-md-color-media='(prefers-color-scheme: light)']" : "[data-md-color-media='(prefers-color-scheme: dark)']")),
+                            (palette.color.media = input.getAttribute("data-md-color-media")),
+                            (palette.color.scheme = input.getAttribute("data-md-color-scheme")),
+                            (palette.color.primary = input.getAttribute("data-md-color-primary")),
+                            (palette.color.accent = input.getAttribute("data-md-color-accent")));
+                        for ([key, value] of Object.entries(palette.color)) document.body.setAttribute("data-md-color-" + key, value);
+                    }
+                </script>
+                <div class="md-header__option">
+                    <div class="md-select">
+                        <button class="md-header__button md-icon" aria-label="Select language">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"
+                                />
+                            </svg>
+                        </button>
+                        <div class="md-select__inner">
+                            <ul class="md-select__list">
+                                <li class="md-select__item">
+                                    <a href="/" hreflang="en" class="md-select__link"> English </a>
+                                </li>
+                                <li class="md-select__item">
+                                    <a href="/fr/" hreflang="fr" class="md-select__link"> Français </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <label class="md-header__button md-icon" for="__search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"
+                        />
+                    </svg>
+                </label>
+                <div class="md-search" data-md-component="search" role="dialog">
+                    <label class="md-search__overlay" for="__search"></label>
+                    <div class="md-search__inner" role="search">
+                        <form class="md-search__form" name="search">
+                            <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required />
+                            <label class="md-search__icon md-icon" for="__search">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"
+                                    />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z" /></svg>
+                            </label>
+                            <nav class="md-search__options" aria-label="Search">
+                                <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z" /></svg>
+                                </button>
+                            </nav>
+                            <div class="md-search__suggest" data-md-component="search-suggest"></div>
+                        </form>
+                        <div class="md-search__output">
+                            <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+                                <div class="md-search-result" data-md-component="search-result">
+                                    <div class="md-search-result__meta">Initializing search</div>
+                                    <ol class="md-search-result__list" role="presentation"></ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-header__source">
+                    <a href="https://github.com/SFML/SFML" title="Go to repository" class="md-source" data-md-component="source">
+                        <div class="md-source__icon md-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. -->
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                                />
+                            </svg>
+                        </div>
+                        <div class="md-source__repository">SFML</div>
+                    </a>
+                </div>
+            </nav>
+            <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+                <div class="md-grid">
+                    <ul class="md-tabs__list">
+                        <li class="md-tabs__item">
+                            <a href="/" class="md-tabs__link"> Home </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/learn/" class="md-tabs__link"> Learn </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/tutorials/2.6/" class="md-tabs__link"> Tutorials </a>
+                        </li>
+                        <li class="md-tabs__item md-tabs__item--active">
+                            <a href="/documentation" class="md-tabs__link"> Documentation </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/download/" class="md-tabs__link"> Download </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/community/" class="md-tabs__link"> Community </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/development/" class="md-tabs__link"> Development </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="md-container" data-md-component="container">
+            <main class="md-main" data-md-component="main">
+                <div class="md-main__inner md-grid">
+                    <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                        <div class="md-sidebar__scrollwrap">
+                            <div class="md-sidebar__inner">
+                                <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+                                    <label class="md-nav__title" for="__drawer">
+                                        <a href="." title="Simple and Fast Multimedia Library" class="md-nav__button md-logo" aria-label="Simple and Fast Multimedia Library" data-md-component="logo">
+                                            <img src="/images/logo.png" alt="logo" />
+                                        </a>
+                                        Simple and Fast Multimedia Library
+                                    </label>
+                                    <div class="md-nav__source">
+                                        <a href="https://github.com/SFML/SFML" title="Go to repository" class="md-source" data-md-component="source">
+                                            <div class="md-source__icon md-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. -->
+                                                    <path
+                                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                                                    />
+                                                </svg>
+                                            </div>
+                                            <div class="md-source__repository">SFML</div>
+                                        </a>
+                                    </div>
+                                    <ul class="md-nav__list" data-md-scrollfix>
+                                        <li class="md-nav__item">
+                                            <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc" />
+                                            <label class="md-nav__link" for="__toc">
+                                                <span class="md-ellipsis"> Home </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </label>
+                                            <a href="." class="md-nav__link">
+                                                <span class="md-ellipsis"> Home </span>
+                                            </a>
+                                            <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+                                                <label class="md-nav__title" for="__toc">
+                                                    <span class="md-nav__icon md-icon"></span>
+                                                    Table of contents
+                                                </label>
+                                                <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-media" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-media </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-platform" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-platform </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-language" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-language </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="learn/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Learn </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="tutorials/2.6/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Tutorials </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--active">
+                                            <a href="documentation" class="md-nav__link md-nav__link--active">
+                                                <span class="md-ellipsis"> Documentation </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="download/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Download </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="community/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Community </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="development/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Development </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                        <div class="md-sidebar__scrollwrap">
+                            <div class="md-sidebar__inner">
+                                <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+                                    <label class="md-nav__title" for="__toc">
+                                        <span class="md-nav__icon md-icon"></span>
+                                        Table of contents
+                                    </label>
+                                    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-media" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-media </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-platform" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-platform </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-language" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-language </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-content" data-md-component="content">
+                        <div class="contents">
+<!-- Generated by Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
+    </ul>
+  </div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c9d62fd513ce19bab3d7ef8db833e3f1.html">SFML</a></li><li class="navelem"><a class="el" href="dir_66c4f0b3361ff6a900e01a4b3c9d5eb7.html">include</a></li><li class="navelem"><a class="el" href="dir_b640c2c295eeac6b731646a7ed21830e.html">SFML</a></li><li class="navelem"><a class="el" href="dir_9aeeb18f6197238fd33123535246e540.html">Window</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">Event.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="Event_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">//</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// SFML - Simple and Fast Multimedia Library</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// Copyright (C) 2007-2009 Laurent Gomila (laurent.gom@gmail.com)</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// This software is provided &#39;as-is&#39;, without any express or implied warranty.</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// In no event will the authors be held liable for any damages arising from the use of this software.</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">//</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// Permission is granted to anyone to use this software for any purpose,</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// including commercial applications, and to alter it and redistribute it freely,</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// subject to the following restrictions:</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">//</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// 1. The origin of this software must not be misrepresented;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">//    you must not claim that you wrote the original software.</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">//    If you use this software in a product, an acknowledgment</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">//    in the product documentation would be appreciated but is not required.</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">//</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// 2. Altered source versions must be plainly marked as such,</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">//    and must not be misrepresented as being the original software.</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">//</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// 3. This notice may not be removed or altered from any source distribution.</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">//</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#ifndef SFML_EVENT_HPP</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#define SFML_EVENT_HPP</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">// Headers</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;<a class="code" href="Config_8hpp.html">SFML/Config.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacesf.html">sf</a></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
+<div class="foldopen" id="foldopen00039" data-start="{" data-end="}">
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html">   39</a></span><span class="keyword">namespace </span>Key</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{</div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="};">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81">   41</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81">Code</a></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ab75d2463ab565165a2d7d6cb05ebf494">   43</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ab75d2463ab565165a2d7d6cb05ebf494">A</a> = <span class="charliteral">&#39;a&#39;</span>,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81abe898b39d99d8dd4b94a53f6ab452d7e">   44</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81abe898b39d99d8dd4b94a53f6ab452d7e">B</a> = <span class="charliteral">&#39;b&#39;</span>,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81abd440f2a76645ba005149a619b7df68e">   45</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81abd440f2a76645ba005149a619b7df68e">C</a> = <span class="charliteral">&#39;c&#39;</span>,</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a739a8fc40ed8dc2db93290869d941d85">   46</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a739a8fc40ed8dc2db93290869d941d85">D</a> = <span class="charliteral">&#39;d&#39;</span>,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a15010a24b6626f0ff4e2b6edfa0d36c3">   47</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a15010a24b6626f0ff4e2b6edfa0d36c3">E</a> = <span class="charliteral">&#39;e&#39;</span>,</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81add27cbf40b3b0a99182aaaddf0a3e037">   48</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81add27cbf40b3b0a99182aaaddf0a3e037">F</a> = <span class="charliteral">&#39;f&#39;</span>,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a93f3dfd1f5999f42573d6efe3f3c4949">   49</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a93f3dfd1f5999f42573d6efe3f3c4949">G</a> = <span class="charliteral">&#39;g&#39;</span>,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81af3dd77caf8c37b69d2295874813d0365">   50</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81af3dd77caf8c37b69d2295874813d0365">H</a> = <span class="charliteral">&#39;h&#39;</span>,</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81aed799a0d8fd004a491d24996f5d90474">   51</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81aed799a0d8fd004a491d24996f5d90474">I</a> = <span class="charliteral">&#39;i&#39;</span>,</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81afb704ffedd4533047bb25cf13cd36de4">   52</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81afb704ffedd4533047bb25cf13cd36de4">J</a> = <span class="charliteral">&#39;j&#39;</span>,</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a8596d24b6d43d01eb540f086c1118b23">   53</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a8596d24b6d43d01eb540f086c1118b23">K</a> = <span class="charliteral">&#39;k&#39;</span>,</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a12c278f37f2e904cdd5d5dc312f3dd7b">   54</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a12c278f37f2e904cdd5d5dc312f3dd7b">L</a> = <span class="charliteral">&#39;l&#39;</span>,</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a923bcd0f55f59e23ce2efbec1683a918">   55</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a923bcd0f55f59e23ce2efbec1683a918">M</a> = <span class="charliteral">&#39;m&#39;</span>,</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a66cee9a0dfbc1871912a002a566d26b3">   56</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a66cee9a0dfbc1871912a002a566d26b3">N</a> = <span class="charliteral">&#39;n&#39;</span>,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81afd064db0641a4f3740bd77befa830812">   57</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81afd064db0641a4f3740bd77befa830812">O</a> = <span class="charliteral">&#39;o&#39;</span>,</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81aea9439fd1ef20debf55464bd7136f431">   58</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81aea9439fd1ef20debf55464bd7136f431">P</a> = <span class="charliteral">&#39;p&#39;</span>,</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ac8682579147a5816dbcf3009fe7b94dc">   59</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ac8682579147a5816dbcf3009fe7b94dc">Q</a> = <span class="charliteral">&#39;q&#39;</span>,</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81adf2b6106e12c1b90600dcba0adacad55">   60</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81adf2b6106e12c1b90600dcba0adacad55">R</a> = <span class="charliteral">&#39;r&#39;</span>,</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81abf7a03063f758c75e4bace3161d42527">   61</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81abf7a03063f758c75e4bace3161d42527">S</a> = <span class="charliteral">&#39;s&#39;</span>,</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a977e8d65750028a7e92a211d39b369d9">   62</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a977e8d65750028a7e92a211d39b369d9">T</a> = <span class="charliteral">&#39;t&#39;</span>,</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81acaf109c629c45da4e3908c54513ece99">   63</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81acaf109c629c45da4e3908c54513ece99">U</a> = <span class="charliteral">&#39;u&#39;</span>,</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a18b06473e8a9ff5a409f3fa9e7b61d69">   64</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a18b06473e8a9ff5a409f3fa9e7b61d69">V</a> = <span class="charliteral">&#39;v&#39;</span>,</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81aa41f459ef5354c81bf151a019fc02b36">   65</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81aa41f459ef5354c81bf151a019fc02b36">W</a> = <span class="charliteral">&#39;w&#39;</span>,</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81afe1cdd4aafb0437db108910452aecff4">   66</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81afe1cdd4aafb0437db108910452aecff4">X</a> = <span class="charliteral">&#39;x&#39;</span>,</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a8dd2673797e8a18ded85f649ff8894b5">   67</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a8dd2673797e8a18ded85f649ff8894b5">Y</a> = <span class="charliteral">&#39;y&#39;</span>,</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81afe0a227e22141f3e7eaff8ec3ecf2fbd">   68</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81afe0a227e22141f3e7eaff8ec3ecf2fbd">Z</a> = <span class="charliteral">&#39;z&#39;</span>,</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ac23fbcf00e2298e5b8859f664efb6c43">   69</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ac23fbcf00e2298e5b8859f664efb6c43">Num0</a> = <span class="charliteral">&#39;0&#39;</span>,</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a0339c81a8dc230f13c32f875062f9ffb">   70</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a0339c81a8dc230f13c32f875062f9ffb">Num1</a> = <span class="charliteral">&#39;1&#39;</span>,</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81afa5af59812cf928b0d31f64ff9a0a84a">   71</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81afa5af59812cf928b0d31f64ff9a0a84a">Num2</a> = <span class="charliteral">&#39;2&#39;</span>,</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a1f44eaf330f25253aaf933cd994dc668">   72</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a1f44eaf330f25253aaf933cd994dc668">Num3</a> = <span class="charliteral">&#39;3&#39;</span>,</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ac61d82f4a5d12a78bbffb3bcc87eec73">   73</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ac61d82f4a5d12a78bbffb3bcc87eec73">Num4</a> = <span class="charliteral">&#39;4&#39;</span>,</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ac964347c3d61806fa397197ab05da1fa">   74</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ac964347c3d61806fa397197ab05da1fa">Num5</a> = <span class="charliteral">&#39;5&#39;</span>,</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ab5e56eeedcf2f9748b999cf9b8371545">   75</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ab5e56eeedcf2f9748b999cf9b8371545">Num6</a> = <span class="charliteral">&#39;6&#39;</span>,</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81abd996c2a665c85c96341f2e4fd8f1d8f">   76</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81abd996c2a665c85c96341f2e4fd8f1d8f">Num7</a> = <span class="charliteral">&#39;7&#39;</span>,</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a699d83ac2bedf75a800c15489a62c520">   77</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a699d83ac2bedf75a800c15489a62c520">Num8</a> = <span class="charliteral">&#39;8&#39;</span>,</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a850a819481f60424ad824f5f6ab7b8ad">   78</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a850a819481f60424ad824f5f6ab7b8ad">Num9</a> = <span class="charliteral">&#39;9&#39;</span>, </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ac9e8700961991543dc439145e83a2605">   79</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ac9e8700961991543dc439145e83a2605">Escape</a> = 256,</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ae5f5491df13804d13b0915aa31e47db1">   80</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ae5f5491df13804d13b0915aa31e47db1">LControl</a>,</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ac6ac0f86989c265471ebbe86f986bdd1">   81</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ac6ac0f86989c265471ebbe86f986bdd1">LShift</a>,</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81afa919d4f5261f4c6af34adb7409a1f34">   82</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81afa919d4f5261f4c6af34adb7409a1f34">LAlt</a>,</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a819a5d0739e89a6543b8a1d3b2ed4bdb">   83</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a819a5d0739e89a6543b8a1d3b2ed4bdb">LSystem</a>,      </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a6dba2cdc41e8010b0220abb01d60fdd3">   84</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a6dba2cdc41e8010b0220abb01d60fdd3">RControl</a>,</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ad30f9b919b2da5b1dc26c2fe1b62be44">   85</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ad30f9b919b2da5b1dc26c2fe1b62be44">RShift</a>,</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81adcd3e67fec4bdc555505817ec8aa3867">   86</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81adcd3e67fec4bdc555505817ec8aa3867">RAlt</a>,</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a461545de42376b666cb38860a0beec49">   87</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a461545de42376b666cb38860a0beec49">RSystem</a>,      </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a378a7fde4cabe729981edbd30e142dfb">   88</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a378a7fde4cabe729981edbd30e142dfb">Menu</a>,</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a7c927ff513554092cbd16d275542ca93">   89</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a7c927ff513554092cbd16d275542ca93">LBracket</a>,     </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a9b950e8ca9b87c679c0dd34b978323a5">   90</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a9b950e8ca9b87c679c0dd34b978323a5">RBracket</a>,     </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a9221b62140c199d7d4babe3ab45bdb01">   91</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a9221b62140c199d7d4babe3ab45bdb01">SemiColon</a>,    </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ad7c3cca627323fa271fd141a0bfec207">   92</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ad7c3cca627323fa271fd141a0bfec207">Comma</a>,        </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a50ec4d0d46359708e3337f7c5c9a00b8">   93</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a50ec4d0d46359708e3337f7c5c9a00b8">Period</a>,       </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ad8e07863826f31633566959e55fbd1b9">   94</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ad8e07863826f31633566959e55fbd1b9">Quote</a>,        </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a5e4e1a9e56e51395103ccf57093fb9fd">   95</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a5e4e1a9e56e51395103ccf57093fb9fd">Slash</a>,        </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81acf4972cd8cf5daaf8653f840bd48824a">   96</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81acf4972cd8cf5daaf8653f840bd48824a">BackSlash</a>,</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ae1e8ba49e9a03ae9db79d671372baf67">   97</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ae1e8ba49e9a03ae9db79d671372baf67">Tilde</a>,        </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a5f4b9b3ede3db0e0a009ae02aaf81359">   98</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a5f4b9b3ede3db0e0a009ae02aaf81359">Equal</a>,        </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81acabf862b02044080f5691ff510fcbf00">   99</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81acabf862b02044080f5691ff510fcbf00">Dash</a>,         </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a3149cafd5c1110712fc2efc100fd38d0">  100</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a3149cafd5c1110712fc2efc100fd38d0">Space</a>,</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ab18aa7011665567f5f2210312c0b09fd">  101</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ab18aa7011665567f5f2210312c0b09fd">Return</a>,</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a6d180d15ded6ac9cf3bba436e4ebf539">  102</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a6d180d15ded6ac9cf3bba436e4ebf539">Back</a>,</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81aeb0122fb482008aa025719b0558a2b21">  103</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81aeb0122fb482008aa025719b0558a2b21">Tab</a>,</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a422447bc7ab651c4bec1a7062020df43">  104</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a422447bc7ab651c4bec1a7062020df43">PageUp</a>,</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a3e8883bb03cb01d1693031bd73527c54">  105</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a3e8883bb03cb01d1693031bd73527c54">PageDown</a>,</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a28ce57312fa03e0f1bae49899d603935">  106</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a28ce57312fa03e0f1bae49899d603935">End</a>,</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a2c0d8ba0e8420362538f18f20811d635">  107</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a2c0d8ba0e8420362538f18f20811d635">Home</a>,</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a587e64e6e80464eb499f300a8b9b38b6">  108</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a587e64e6e80464eb499f300a8b9b38b6">Insert</a>,</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81aad4165b29176276c3157785786a3ce42">  109</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81aad4165b29176276c3157785786a3ce42">Delete</a>,</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ac1a4bc755e274027f79cd34a6951977e">  110</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ac1a4bc755e274027f79cd34a6951977e">Add</a>,          </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a61d59029edf2f17e0c562a674e2a1865">  111</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a61d59029edf2f17e0c562a674e2a1865">Subtract</a>,     </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a0c2cf360fb1665c3387f205a001a6814">  112</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a0c2cf360fb1665c3387f205a001a6814">Multiply</a>,     </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81af0ef65e172118c443e123935e64269e2">  113</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81af0ef65e172118c443e123935e64269e2">Divide</a>,       </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a1b48e9fd546b2afdcbb64ae95047be94">  114</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a1b48e9fd546b2afdcbb64ae95047be94">Left</a>,         </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a32eb7e9964eda306d83efd2442991f8e">  115</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a32eb7e9964eda306d83efd2442991f8e">Right</a>,        </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a93a664cfe6ee856cf5027a01f03954ff">  116</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a93a664cfe6ee856cf5027a01f03954ff">Up</a>,           </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81adb621980e92786cf06b6fb65d622bb62">  117</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81adb621980e92786cf06b6fb65d622bb62">Down</a>,         </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81afb8e6371224bc83a43019ae65584bd05">  118</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81afb8e6371224bc83a43019ae65584bd05">Numpad0</a>,</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a3559d90bf21bce751c7c90cfc6f00f05">  119</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a3559d90bf21bce751c7c90cfc6f00f05">Numpad1</a>,</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81afd8b7df9af54e5dc3670bc03d8b0503b">  120</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81afd8b7df9af54e5dc3670bc03d8b0503b">Numpad2</a>,</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a842c5966772e988fa1eb083ecfbc1e7a">  121</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a842c5966772e988fa1eb083ecfbc1e7a">Numpad3</a>,</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a65aa332cfa34e12509797ee688550b4b">  122</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a65aa332cfa34e12509797ee688550b4b">Numpad4</a>,</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a3fbc4813062ef6a68b158799b001256f">  123</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a3fbc4813062ef6a68b158799b001256f">Numpad5</a>,</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ac3c93a0280b5a112036cc7ecb910a2c1">  124</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ac3c93a0280b5a112036cc7ecb910a2c1">Numpad6</a>,</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a35ca432502dd7a2d67238ad35b9321be">  125</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a35ca432502dd7a2d67238ad35b9321be">Numpad7</a>,</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a78ee5c4a641a48be33852012b6da09b4">  126</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a78ee5c4a641a48be33852012b6da09b4">Numpad8</a>,</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a24e9ec3b806b7475db2212076f357ec7">  127</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a24e9ec3b806b7475db2212076f357ec7">Numpad9</a>,</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a250086a6e4c9fdf85633867b4d5b7f8b">  128</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a250086a6e4c9fdf85633867b4d5b7f8b">F1</a>,</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ad00a2fb063512f02f1bcd824b0500ebe">  129</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ad00a2fb063512f02f1bcd824b0500ebe">F2</a>,</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a7ee1567832b895e0022dc0d453560f28">  130</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a7ee1567832b895e0022dc0d453560f28">F3</a>,</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a83e01e85717567b8bbf2a803c7aceae9">  131</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a83e01e85717567b8bbf2a803c7aceae9">F4</a>,</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81aad697d94fd5c422b83f5d6403f523ad6">  132</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81aad697d94fd5c422b83f5d6403f523ad6">F5</a>,</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a91d3bc2b7c150f3f9bf225455a7d2a73">  133</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a91d3bc2b7c150f3f9bf225455a7d2a73">F6</a>,</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a72ac28d67aea1994e706856deb46e823">  134</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a72ac28d67aea1994e706856deb46e823">F7</a>,</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ac1995f92cf6d30de3e1e95862dc747f2">  135</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ac1995f92cf6d30de3e1e95862dc747f2">F8</a>,</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a615c5be88f63eba232f766f176c1268e">  136</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a615c5be88f63eba232f766f176c1268e">F9</a>,</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a083c35ca9bdfd29c944e72035fa4d441">  137</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a083c35ca9bdfd29c944e72035fa4d441">F10</a>,</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a0a984cb1dd6a8bad8db8398df9c32df7">  138</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a0a984cb1dd6a8bad8db8398df9c32df7">F11</a>,</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ab6be50a336f1de1dba89e061cc5a3e75">  139</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ab6be50a336f1de1dba89e061cc5a3e75">F12</a>,</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81af9032e0f95f33c1bdaf32bb733a68cf2">  140</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81af9032e0f95f33c1bdaf32bb733a68cf2">F13</a>,</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a1621adf4564b0474cd7dd4b62117dfc5">  141</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a1621adf4564b0474cd7dd4b62117dfc5">F14</a>,</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a402d34e3e0bb9497d43085dd02722861">  142</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a402d34e3e0bb9497d43085dd02722861">F15</a>,</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a0f82c32e6385cb44227a16783619083d">  143</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a0f82c32e6385cb44227a16783619083d">Pause</a>,</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        <a class="code hl_enumvalue" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a22c2194947c560a4598af6e705adac9a">Count</a> <span class="comment">// Keep last -- total number of keyboard keys</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a22c2194947c560a4598af6e705adac9a">  146</a></span>    };</div>
+</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>}</div>
+</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="foldopen" id="foldopen00153" data-start="{" data-end="}">
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="namespacesf_1_1Mouse.html">  153</a></span><span class="keyword">namespace </span>Mouse</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>{</div>
+<div class="foldopen" id="foldopen00155" data-start="{" data-end="};">
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="namespacesf_1_1Mouse.html#a4fb128be433f9aafe66bc0c605daaa90">  155</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="namespacesf_1_1Mouse.html#a4fb128be433f9aafe66bc0c605daaa90">Button</a></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    {</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="namespacesf_1_1Mouse.html#a4fb128be433f9aafe66bc0c605daaa90a8bb4856e1ec7f6b6a8605effdfc0eee8">  157</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Mouse.html#a4fb128be433f9aafe66bc0c605daaa90a8bb4856e1ec7f6b6a8605effdfc0eee8">Left</a>,</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="namespacesf_1_1Mouse.html#a4fb128be433f9aafe66bc0c605daaa90af2cff24ab6c26daf079b11189f982fc4">  158</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Mouse.html#a4fb128be433f9aafe66bc0c605daaa90af2cff24ab6c26daf079b11189f982fc4">Right</a>,</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="namespacesf_1_1Mouse.html#a4fb128be433f9aafe66bc0c605daaa90a2c353189c4b11cf216d7caddafcc609d">  159</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Mouse.html#a4fb128be433f9aafe66bc0c605daaa90a2c353189c4b11cf216d7caddafcc609d">Middle</a>,</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="namespacesf_1_1Mouse.html#a4fb128be433f9aafe66bc0c605daaa90aecc7f3ce9ad6a60b9b0027876446b8d7">  160</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Mouse.html#a4fb128be433f9aafe66bc0c605daaa90aecc7f3ce9ad6a60b9b0027876446b8d7">XButton1</a>,</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="namespacesf_1_1Mouse.html#a4fb128be433f9aafe66bc0c605daaa90a03fa056fd0dd9d629c205d91a8ef1b5a">  161</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Mouse.html#a4fb128be433f9aafe66bc0c605daaa90a03fa056fd0dd9d629c205d91a8ef1b5a">XButton2</a>,</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        <a class="code hl_enumvalue" href="namespacesf_1_1Mouse.html#a4fb128be433f9aafe66bc0c605daaa90a52a1d434289774240ddaa22496762402">ButtonCount</a> <span class="comment">// Keep last -- total number of mouse buttons</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="namespacesf_1_1Mouse.html#a4fb128be433f9aafe66bc0c605daaa90a52a1d434289774240ddaa22496762402">  164</a></span>    };</div>
+</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>}</div>
+</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="foldopen" id="foldopen00171" data-start="{" data-end="}">
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="namespacesf_1_1Joy.html">  171</a></span><span class="keyword">namespace </span>Joy</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>{</div>
+<div class="foldopen" id="foldopen00173" data-start="{" data-end="};">
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno"><a class="line" href="namespacesf_1_1Joy.html#ae7ae4bc4af23f012e5667f18d4aa1039">  173</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="namespacesf_1_1Joy.html#ae7ae4bc4af23f012e5667f18d4aa1039">Axis</a></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    {</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="namespacesf_1_1Joy.html#ae7ae4bc4af23f012e5667f18d4aa1039a57bea633c5de52b28f734fb6b71e2834">  175</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Joy.html#ae7ae4bc4af23f012e5667f18d4aa1039a57bea633c5de52b28f734fb6b71e2834">AxisX</a>,</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="namespacesf_1_1Joy.html#ae7ae4bc4af23f012e5667f18d4aa1039a1ee21608c5ad03d400e9c3b10ddea202">  176</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Joy.html#ae7ae4bc4af23f012e5667f18d4aa1039a1ee21608c5ad03d400e9c3b10ddea202">AxisY</a>,</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="namespacesf_1_1Joy.html#ae7ae4bc4af23f012e5667f18d4aa1039a8d515a43b933d62839de9b9bafcf24d5">  177</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Joy.html#ae7ae4bc4af23f012e5667f18d4aa1039a8d515a43b933d62839de9b9bafcf24d5">AxisZ</a>,</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="namespacesf_1_1Joy.html#ae7ae4bc4af23f012e5667f18d4aa1039a86e65c4375e5bc22417b8e3bfde4d66b">  178</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Joy.html#ae7ae4bc4af23f012e5667f18d4aa1039a86e65c4375e5bc22417b8e3bfde4d66b">AxisR</a>,</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="namespacesf_1_1Joy.html#ae7ae4bc4af23f012e5667f18d4aa1039ae8de2f58c8b4cde85ab2ee600e5ef8c4">  179</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Joy.html#ae7ae4bc4af23f012e5667f18d4aa1039ae8de2f58c8b4cde85ab2ee600e5ef8c4">AxisU</a>,</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="namespacesf_1_1Joy.html#ae7ae4bc4af23f012e5667f18d4aa1039abeac0518f19525e059f114466041ff1b">  180</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Joy.html#ae7ae4bc4af23f012e5667f18d4aa1039abeac0518f19525e059f114466041ff1b">AxisV</a>,</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno"><a class="line" href="namespacesf_1_1Joy.html#ae7ae4bc4af23f012e5667f18d4aa1039a3901e70c52aad6e205189592fe295b45">  181</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Joy.html#ae7ae4bc4af23f012e5667f18d4aa1039a3901e70c52aad6e205189592fe295b45">AxisPOV</a>,</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        <a class="code hl_enumvalue" href="namespacesf_1_1Joy.html#ae7ae4bc4af23f012e5667f18d4aa1039a01ae5fcc4ab6a656385e06c9afd3746b">AxisCount</a> <span class="comment">// Keep last -- total number of joystick axis</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="namespacesf_1_1Joy.html#ae7ae4bc4af23f012e5667f18d4aa1039a01ae5fcc4ab6a656385e06c9afd3746b">  184</a></span>    };</div>
+</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <span class="keyword">enum</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    {</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="namespacesf_1_1Joy.html#abb37a72f42b3ef9841fcf8270d0ac881a668554c121c39f79eceb15f8b6631a9f">  188</a></span>        <a class="code hl_enumvalue" href="namespacesf_1_1Joy.html#abb37a72f42b3ef9841fcf8270d0ac881a668554c121c39f79eceb15f8b6631a9f">Count</a>       = 4, </div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        <a class="code hl_enumvalue" href="namespacesf_1_1Joy.html#abb37a72f42b3ef9841fcf8270d0ac881aa555e27e351d2052df5f4b7b6e6953bf">ButtonCount</a> = 32 </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="namespacesf_1_1Joy.html#abb37a72f42b3ef9841fcf8270d0ac881aa555e27e351d2052df5f4b7b6e6953bf">  190</a></span>    };</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>}</div>
+</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
+<div class="foldopen" id="foldopen00197" data-start="{" data-end="};">
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html">  197</a></span><span class="keyword">class </span><a class="code hl_class" href="classsf_1_1Event.html">Event</a></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>{</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>public :</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="foldopen" id="foldopen00204" data-start="{" data-end="};">
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1KeyEvent.html">  204</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structsf_1_1Event_1_1KeyEvent.html">KeyEvent</a></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    {</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1KeyEvent.html#a2a835e0538e666c26af15722ac95934d">  206</a></span>        <a class="code hl_enumeration" href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81">Key::Code</a> <a class="code hl_variable" href="structsf_1_1Event_1_1KeyEvent.html#a2a835e0538e666c26af15722ac95934d">Code</a>;</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1KeyEvent.html#a6270b578cce29ed958492788571f2c4c">  207</a></span>        <span class="keywordtype">bool</span>      <a class="code hl_variable" href="structsf_1_1Event_1_1KeyEvent.html#a6270b578cce29ed958492788571f2c4c">Alt</a>;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1KeyEvent.html#a9dd63eccbdb38ad68d32de484f0151c8">  208</a></span>        <span class="keywordtype">bool</span>      <a class="code hl_variable" href="structsf_1_1Event_1_1KeyEvent.html#a9dd63eccbdb38ad68d32de484f0151c8">Control</a>;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1KeyEvent.html#a024b19f70f7a0c04f358b6fb5b818984">  209</a></span>        <span class="keywordtype">bool</span>      <a class="code hl_variable" href="structsf_1_1Event_1_1KeyEvent.html#a024b19f70f7a0c04f358b6fb5b818984">Shift</a>;</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    };</div>
+</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
+<div class="foldopen" id="foldopen00215" data-start="{" data-end="};">
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1TextEvent.html">  215</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structsf_1_1Event_1_1TextEvent.html">TextEvent</a></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    {</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1TextEvent.html#a56342a4d036036d233160b20be7e8855">  217</a></span>        Uint32 <a class="code hl_variable" href="structsf_1_1Event_1_1TextEvent.html#a56342a4d036036d233160b20be7e8855">Unicode</a>;</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    };</div>
+</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="foldopen" id="foldopen00223" data-start="{" data-end="};">
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1MouseMoveEvent.html">  223</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structsf_1_1Event_1_1MouseMoveEvent.html">MouseMoveEvent</a></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    {</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1MouseMoveEvent.html#a010fa592ac21e4566f9f23415d0b77dc">  225</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="structsf_1_1Event_1_1MouseMoveEvent.html#a010fa592ac21e4566f9f23415d0b77dc">X</a>;</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1MouseMoveEvent.html#acb4d3d5f74ce68cbd26a277d4918b77c">  226</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="structsf_1_1Event_1_1MouseMoveEvent.html#acb4d3d5f74ce68cbd26a277d4918b77c">Y</a>;</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    };</div>
+</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
+<div class="foldopen" id="foldopen00232" data-start="{" data-end="};">
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1MouseButtonEvent.html">  232</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structsf_1_1Event_1_1MouseButtonEvent.html">MouseButtonEvent</a></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    {</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1MouseButtonEvent.html#a2f7f7e1dfb8ffd744510ffa4540f3578">  234</a></span>        <a class="code hl_enumeration" href="namespacesf_1_1Mouse.html#a4fb128be433f9aafe66bc0c605daaa90">Mouse::Button</a> <a class="code hl_variable" href="structsf_1_1Event_1_1MouseButtonEvent.html#a2f7f7e1dfb8ffd744510ffa4540f3578">Button</a>;</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1MouseButtonEvent.html#a558da3a034c64ff6a2ac52b01936f02a">  235</a></span>        <span class="keywordtype">int</span>           <a class="code hl_variable" href="structsf_1_1Event_1_1MouseButtonEvent.html#a558da3a034c64ff6a2ac52b01936f02a">X</a>;</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1MouseButtonEvent.html#a59a22c45a777b871c3ef3dd5c1b4d218">  236</a></span>        <span class="keywordtype">int</span>           <a class="code hl_variable" href="structsf_1_1Event_1_1MouseButtonEvent.html#a59a22c45a777b871c3ef3dd5c1b4d218">Y</a>;</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    };</div>
+</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
+<div class="foldopen" id="foldopen00242" data-start="{" data-end="};">
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1MouseWheelEvent.html">  242</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structsf_1_1Event_1_1MouseWheelEvent.html">MouseWheelEvent</a></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    {</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1MouseWheelEvent.html#a34a075257c261a33fa40f7f6196e496f">  244</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="structsf_1_1Event_1_1MouseWheelEvent.html#a34a075257c261a33fa40f7f6196e496f">Delta</a>;</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    };</div>
+</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
+<div class="foldopen" id="foldopen00250" data-start="{" data-end="};">
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1JoyMoveEvent.html">  250</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structsf_1_1Event_1_1JoyMoveEvent.html">JoyMoveEvent</a></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    {</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1JoyMoveEvent.html#a94d1b6343ef0fddbb997ce5c98c35ede">  252</a></span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="structsf_1_1Event_1_1JoyMoveEvent.html#a94d1b6343ef0fddbb997ce5c98c35ede">JoystickId</a>;</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1JoyMoveEvent.html#a32135c0f72321d3cd5302caf0f0a3e11">  253</a></span>        <a class="code hl_enumeration" href="namespacesf_1_1Joy.html#ae7ae4bc4af23f012e5667f18d4aa1039">Joy::Axis</a>    <a class="code hl_variable" href="structsf_1_1Event_1_1JoyMoveEvent.html#a32135c0f72321d3cd5302caf0f0a3e11">Axis</a>;</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1JoyMoveEvent.html#a8662f85e4cd6a18609bf04d5aaed8bd8">  254</a></span>        <span class="keywordtype">float</span>        <a class="code hl_variable" href="structsf_1_1Event_1_1JoyMoveEvent.html#a8662f85e4cd6a18609bf04d5aaed8bd8">Position</a>;</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    };</div>
+</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
+<div class="foldopen" id="foldopen00260" data-start="{" data-end="};">
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1JoyButtonEvent.html">  260</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structsf_1_1Event_1_1JoyButtonEvent.html">JoyButtonEvent</a></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    {</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1JoyButtonEvent.html#a1e0742191da2566433577cb1e0f070ef">  262</a></span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="structsf_1_1Event_1_1JoyButtonEvent.html#a1e0742191da2566433577cb1e0f070ef">JoystickId</a>;</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1JoyButtonEvent.html#a03dee4c051e606562d74c29847029706">  263</a></span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="structsf_1_1Event_1_1JoyButtonEvent.html#a03dee4c051e606562d74c29847029706">Button</a>;</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>    };</div>
+</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
+<div class="foldopen" id="foldopen00269" data-start="{" data-end="};">
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1SizeEvent.html">  269</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structsf_1_1Event_1_1SizeEvent.html">SizeEvent</a></div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    {</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1SizeEvent.html#aeb65b016cbcac57cb964623b1e453d1b">  271</a></span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="structsf_1_1Event_1_1SizeEvent.html#aeb65b016cbcac57cb964623b1e453d1b">Width</a>;</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1SizeEvent.html#a03cd57484155d672ffc59acdb6c9779c">  272</a></span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="structsf_1_1Event_1_1SizeEvent.html#a03cd57484155d672ffc59acdb6c9779c">Height</a>;</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    };</div>
+</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
+<div class="foldopen" id="foldopen00278" data-start="{" data-end="};">
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4a">  278</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4a">EventType</a></div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    {</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aa316e4212e083f1dce79efd8d9e9c0a95">  280</a></span>        <a class="code hl_enumvalue" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aa316e4212e083f1dce79efd8d9e9c0a95">Closed</a>,</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aa67fd26d7e520bc6722db3ff47ef24941">  281</a></span>        <a class="code hl_enumvalue" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aa67fd26d7e520bc6722db3ff47ef24941">Resized</a>,</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aabd7877b5011a337268357c973e8347bd">  282</a></span>        <a class="code hl_enumvalue" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aabd7877b5011a337268357c973e8347bd">LostFocus</a>,</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aa8c5003ced508499933d540df8a6023ec">  283</a></span>        <a class="code hl_enumvalue" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aa8c5003ced508499933d540df8a6023ec">GainedFocus</a>,</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aa7e09871dc984080ff528e4f7e073e874">  284</a></span>        <a class="code hl_enumvalue" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aa7e09871dc984080ff528e4f7e073e874">TextEntered</a>,</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aac3c7abfaa98c73bfe6be0b57df09c71b">  285</a></span>        <a class="code hl_enumvalue" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aac3c7abfaa98c73bfe6be0b57df09c71b">KeyPressed</a>,</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aaa5bcc1e603d5a6f4c137af39558bd5d1">  286</a></span>        <a class="code hl_enumvalue" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aaa5bcc1e603d5a6f4c137af39558bd5d1">KeyReleased</a>,</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aa5cc9d3941af2a36049f4f9922c934a80">  287</a></span>        <a class="code hl_enumvalue" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aa5cc9d3941af2a36049f4f9922c934a80">MouseWheelMoved</a>,</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aa55a3dcc8bf6c40e37f9ff2cdf606481f">  288</a></span>        <a class="code hl_enumvalue" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aa55a3dcc8bf6c40e37f9ff2cdf606481f">MouseButtonPressed</a>,</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aa9be69ecc07e484467ebbb133182fe5c1">  289</a></span>        <a class="code hl_enumvalue" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aa9be69ecc07e484467ebbb133182fe5c1">MouseButtonReleased</a>,</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aa4ff4fc3b3dc857e3617a63feb54be209">  290</a></span>        <a class="code hl_enumvalue" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aa4ff4fc3b3dc857e3617a63feb54be209">MouseMoved</a>,</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aa50d98590a953e74c7ccf3dabadb22067">  291</a></span>        <a class="code hl_enumvalue" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aa50d98590a953e74c7ccf3dabadb22067">MouseEntered</a>,</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aaa90b8526b328e0246d04b026de17c6e7">  292</a></span>        <a class="code hl_enumvalue" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aaa90b8526b328e0246d04b026de17c6e7">MouseLeft</a>,</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aade775771e9d3cbb61195b605c51de12a">  293</a></span>        <a class="code hl_enumvalue" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aade775771e9d3cbb61195b605c51de12a">JoyButtonPressed</a>,</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aaf46cb19972ae5314adbccc52fea942a2">  294</a></span>        <a class="code hl_enumvalue" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aaf46cb19972ae5314adbccc52fea942a2">JoyButtonReleased</a>,</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aade4f95e7116fb238a36d1e565e42e78a">  295</a></span>        <a class="code hl_enumvalue" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aade4f95e7116fb238a36d1e565e42e78a">JoyMoved</a>,</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> </div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>        <a class="code hl_enumvalue" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aae51749211243cab2ab270b29cdc32a70">Count</a> <span class="comment">// Keep last -- total number of event types</span></div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aae51749211243cab2ab270b29cdc32a70">  298</a></span>    };</div>
+</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    <span class="comment">// Member data</span></div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#a90d5da29dd2f49d13dc10e7a402c0b65">  303</a></span>    <a class="code hl_enumeration" href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4a">EventType</a> <a class="code hl_variable" href="classsf_1_1Event.html#a90d5da29dd2f49d13dc10e7a402c0b65">Type</a>; </div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span> </div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    <span class="keyword">union</span></div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    {</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#a529227c18c1530068dafd241da7b0af9">  307</a></span>        <a class="code hl_struct" href="structsf_1_1Event_1_1KeyEvent.html">KeyEvent</a>         <a class="code hl_variable" href="classsf_1_1Event.html#a529227c18c1530068dafd241da7b0af9">Key</a>;</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#ab5e7e4154cd3734502f226303f68c58d">  308</a></span>        <a class="code hl_struct" href="structsf_1_1Event_1_1TextEvent.html">TextEvent</a>        <a class="code hl_variable" href="classsf_1_1Event.html#ab5e7e4154cd3734502f226303f68c58d">Text</a>;</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#a0ac5a0cd79bea16e374023f18b8d39db">  309</a></span>        <a class="code hl_struct" href="structsf_1_1Event_1_1MouseMoveEvent.html">MouseMoveEvent</a>   <a class="code hl_variable" href="classsf_1_1Event.html#a0ac5a0cd79bea16e374023f18b8d39db">MouseMove</a>;</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#abcd104440e0e43647d8f0ba49a593210">  310</a></span>        <a class="code hl_struct" href="structsf_1_1Event_1_1MouseButtonEvent.html">MouseButtonEvent</a> <a class="code hl_variable" href="classsf_1_1Event.html#abcd104440e0e43647d8f0ba49a593210">MouseButton</a>;</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#a64d0f7a2cce7196de0a0e28b2d3fdd7c">  311</a></span>        <a class="code hl_struct" href="structsf_1_1Event_1_1MouseWheelEvent.html">MouseWheelEvent</a>  <a class="code hl_variable" href="classsf_1_1Event.html#a64d0f7a2cce7196de0a0e28b2d3fdd7c">MouseWheel</a>;</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#a7225b7733f73845dc8d07af7c8ecfb22">  312</a></span>        <a class="code hl_struct" href="structsf_1_1Event_1_1JoyMoveEvent.html">JoyMoveEvent</a>     <a class="code hl_variable" href="classsf_1_1Event.html#a7225b7733f73845dc8d07af7c8ecfb22">JoyMove</a>;</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#ad39651df3634e2bcdc4c567933055464">  313</a></span>        <a class="code hl_struct" href="structsf_1_1Event_1_1JoyButtonEvent.html">JoyButtonEvent</a>   <a class="code hl_variable" href="classsf_1_1Event.html#ad39651df3634e2bcdc4c567933055464">JoyButton</a>;</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#abf98a968c19a31f9719ff40839c28f9e">  314</a></span>        <a class="code hl_struct" href="structsf_1_1Event_1_1SizeEvent.html">SizeEvent</a>        <a class="code hl_variable" href="classsf_1_1Event.html#abf98a968c19a31f9719ff40839c28f9e">Size</a>;</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    };</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>};</div>
+</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>} <span class="comment">// namespace sf</span></div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span> </div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span><span class="preprocessor">#endif </span><span class="comment">// SFML_EVENT_HPP</span></div>
+<div class="ttc" id="aConfig_8hpp_html"><div class="ttname"><a href="Config_8hpp.html">Config.hpp</a></div></div>
+<div class="ttc" id="aclasssf_1_1Event_html"><div class="ttname"><a href="classsf_1_1Event.html">sf::Event</a></div><div class="ttdoc">Event defines a system event and its parameters.</div><div class="ttdef"><b>Definition</b> <a href="#l00197">Event.hpp:198</a></div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_a0ac5a0cd79bea16e374023f18b8d39db"><div class="ttname"><a href="classsf_1_1Event.html#a0ac5a0cd79bea16e374023f18b8d39db">sf::Event::MouseMove</a></div><div class="ttdeci">MouseMoveEvent MouseMove</div><div class="ttdef"><b>Definition</b> <a href="#l00309">Event.hpp:309</a></div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_a529227c18c1530068dafd241da7b0af9"><div class="ttname"><a href="classsf_1_1Event.html#a529227c18c1530068dafd241da7b0af9">sf::Event::Key</a></div><div class="ttdeci">KeyEvent Key</div><div class="ttdef"><b>Definition</b> <a href="#l00307">Event.hpp:307</a></div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_a64d0f7a2cce7196de0a0e28b2d3fdd7c"><div class="ttname"><a href="classsf_1_1Event.html#a64d0f7a2cce7196de0a0e28b2d3fdd7c">sf::Event::MouseWheel</a></div><div class="ttdeci">MouseWheelEvent MouseWheel</div><div class="ttdef"><b>Definition</b> <a href="#l00311">Event.hpp:311</a></div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_a7225b7733f73845dc8d07af7c8ecfb22"><div class="ttname"><a href="classsf_1_1Event.html#a7225b7733f73845dc8d07af7c8ecfb22">sf::Event::JoyMove</a></div><div class="ttdeci">JoyMoveEvent JoyMove</div><div class="ttdef"><b>Definition</b> <a href="#l00312">Event.hpp:312</a></div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_a90d5da29dd2f49d13dc10e7a402c0b65"><div class="ttname"><a href="classsf_1_1Event.html#a90d5da29dd2f49d13dc10e7a402c0b65">sf::Event::Type</a></div><div class="ttdeci">EventType Type</div><div class="ttdoc">Type of the event.</div><div class="ttdef"><b>Definition</b> <a href="#l00303">Event.hpp:303</a></div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_ab5e7e4154cd3734502f226303f68c58d"><div class="ttname"><a href="classsf_1_1Event.html#ab5e7e4154cd3734502f226303f68c58d">sf::Event::Text</a></div><div class="ttdeci">TextEvent Text</div><div class="ttdef"><b>Definition</b> <a href="#l00308">Event.hpp:308</a></div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_abcd104440e0e43647d8f0ba49a593210"><div class="ttname"><a href="classsf_1_1Event.html#abcd104440e0e43647d8f0ba49a593210">sf::Event::MouseButton</a></div><div class="ttdeci">MouseButtonEvent MouseButton</div><div class="ttdef"><b>Definition</b> <a href="#l00310">Event.hpp:310</a></div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_abf98a968c19a31f9719ff40839c28f9e"><div class="ttname"><a href="classsf_1_1Event.html#abf98a968c19a31f9719ff40839c28f9e">sf::Event::Size</a></div><div class="ttdeci">SizeEvent Size</div><div class="ttdef"><b>Definition</b> <a href="#l00314">Event.hpp:314</a></div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_ad39651df3634e2bcdc4c567933055464"><div class="ttname"><a href="classsf_1_1Event.html#ad39651df3634e2bcdc4c567933055464">sf::Event::JoyButton</a></div><div class="ttdeci">JoyButtonEvent JoyButton</div><div class="ttdef"><b>Definition</b> <a href="#l00313">Event.hpp:313</a></div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_af41fa9ed45c02449030699f671331d4a"><div class="ttname"><a href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4a">sf::Event::EventType</a></div><div class="ttdeci">EventType</div><div class="ttdoc">Enumeration of the different types of events.</div><div class="ttdef"><b>Definition</b> <a href="#l00278">Event.hpp:279</a></div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_af41fa9ed45c02449030699f671331d4aa316e4212e083f1dce79efd8d9e9c0a95"><div class="ttname"><a href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aa316e4212e083f1dce79efd8d9e9c0a95">sf::Event::Closed</a></div><div class="ttdeci">@ Closed</div><div class="ttdef"><b>Definition</b> <a href="#l00280">Event.hpp:280</a></div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_af41fa9ed45c02449030699f671331d4aa4ff4fc3b3dc857e3617a63feb54be209"><div class="ttname"><a href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aa4ff4fc3b3dc857e3617a63feb54be209">sf::Event::MouseMoved</a></div><div class="ttdeci">@ MouseMoved</div><div class="ttdef"><b>Definition</b> <a href="#l00290">Event.hpp:290</a></div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_af41fa9ed45c02449030699f671331d4aa50d98590a953e74c7ccf3dabadb22067"><div class="ttname"><a href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aa50d98590a953e74c7ccf3dabadb22067">sf::Event::MouseEntered</a></div><div class="ttdeci">@ MouseEntered</div><div class="ttdef"><b>Definition</b> <a href="#l00291">Event.hpp:291</a></div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_af41fa9ed45c02449030699f671331d4aa55a3dcc8bf6c40e37f9ff2cdf606481f"><div class="ttname"><a href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aa55a3dcc8bf6c40e37f9ff2cdf606481f">sf::Event::MouseButtonPressed</a></div><div class="ttdeci">@ MouseButtonPressed</div><div class="ttdef"><b>Definition</b> <a href="#l00288">Event.hpp:288</a></div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_af41fa9ed45c02449030699f671331d4aa5cc9d3941af2a36049f4f9922c934a80"><div class="ttname"><a href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aa5cc9d3941af2a36049f4f9922c934a80">sf::Event::MouseWheelMoved</a></div><div class="ttdeci">@ MouseWheelMoved</div><div class="ttdef"><b>Definition</b> <a href="#l00287">Event.hpp:287</a></div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_af41fa9ed45c02449030699f671331d4aa67fd26d7e520bc6722db3ff47ef24941"><div class="ttname"><a href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aa67fd26d7e520bc6722db3ff47ef24941">sf::Event::Resized</a></div><div class="ttdeci">@ Resized</div><div class="ttdef"><b>Definition</b> <a href="#l00281">Event.hpp:281</a></div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_af41fa9ed45c02449030699f671331d4aa7e09871dc984080ff528e4f7e073e874"><div class="ttname"><a href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aa7e09871dc984080ff528e4f7e073e874">sf::Event::TextEntered</a></div><div class="ttdeci">@ TextEntered</div><div class="ttdef"><b>Definition</b> <a href="#l00284">Event.hpp:284</a></div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_af41fa9ed45c02449030699f671331d4aa8c5003ced508499933d540df8a6023ec"><div class="ttname"><a href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aa8c5003ced508499933d540df8a6023ec">sf::Event::GainedFocus</a></div><div class="ttdeci">@ GainedFocus</div><div class="ttdef"><b>Definition</b> <a href="#l00283">Event.hpp:283</a></div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_af41fa9ed45c02449030699f671331d4aa9be69ecc07e484467ebbb133182fe5c1"><div class="ttname"><a href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aa9be69ecc07e484467ebbb133182fe5c1">sf::Event::MouseButtonReleased</a></div><div class="ttdeci">@ MouseButtonReleased</div><div class="ttdef"><b>Definition</b> <a href="#l00289">Event.hpp:289</a></div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_af41fa9ed45c02449030699f671331d4aaa5bcc1e603d5a6f4c137af39558bd5d1"><div class="ttname"><a href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aaa5bcc1e603d5a6f4c137af39558bd5d1">sf::Event::KeyReleased</a></div><div class="ttdeci">@ KeyReleased</div><div class="ttdef"><b>Definition</b> <a href="#l00286">Event.hpp:286</a></div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_af41fa9ed45c02449030699f671331d4aaa90b8526b328e0246d04b026de17c6e7"><div class="ttname"><a href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aaa90b8526b328e0246d04b026de17c6e7">sf::Event::MouseLeft</a></div><div class="ttdeci">@ MouseLeft</div><div class="ttdef"><b>Definition</b> <a href="#l00292">Event.hpp:292</a></div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_af41fa9ed45c02449030699f671331d4aabd7877b5011a337268357c973e8347bd"><div class="ttname"><a href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aabd7877b5011a337268357c973e8347bd">sf::Event::LostFocus</a></div><div class="ttdeci">@ LostFocus</div><div class="ttdef"><b>Definition</b> <a href="#l00282">Event.hpp:282</a></div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_af41fa9ed45c02449030699f671331d4aac3c7abfaa98c73bfe6be0b57df09c71b"><div class="ttname"><a href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aac3c7abfaa98c73bfe6be0b57df09c71b">sf::Event::KeyPressed</a></div><div class="ttdeci">@ KeyPressed</div><div class="ttdef"><b>Definition</b> <a href="#l00285">Event.hpp:285</a></div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_af41fa9ed45c02449030699f671331d4aade4f95e7116fb238a36d1e565e42e78a"><div class="ttname"><a href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aade4f95e7116fb238a36d1e565e42e78a">sf::Event::JoyMoved</a></div><div class="ttdeci">@ JoyMoved</div><div class="ttdef"><b>Definition</b> <a href="#l00295">Event.hpp:295</a></div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_af41fa9ed45c02449030699f671331d4aade775771e9d3cbb61195b605c51de12a"><div class="ttname"><a href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aade775771e9d3cbb61195b605c51de12a">sf::Event::JoyButtonPressed</a></div><div class="ttdeci">@ JoyButtonPressed</div><div class="ttdef"><b>Definition</b> <a href="#l00293">Event.hpp:293</a></div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_af41fa9ed45c02449030699f671331d4aae51749211243cab2ab270b29cdc32a70"><div class="ttname"><a href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aae51749211243cab2ab270b29cdc32a70">sf::Event::Count</a></div><div class="ttdeci">@ Count</div><div class="ttdef"><b>Definition</b> <a href="#l00298">Event.hpp:297</a></div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_af41fa9ed45c02449030699f671331d4aaf46cb19972ae5314adbccc52fea942a2"><div class="ttname"><a href="classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aaf46cb19972ae5314adbccc52fea942a2">sf::Event::JoyButtonReleased</a></div><div class="ttdeci">@ JoyButtonReleased</div><div class="ttdef"><b>Definition</b> <a href="#l00294">Event.hpp:294</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Joy_html_abb37a72f42b3ef9841fcf8270d0ac881a668554c121c39f79eceb15f8b6631a9f"><div class="ttname"><a href="namespacesf_1_1Joy.html#abb37a72f42b3ef9841fcf8270d0ac881a668554c121c39f79eceb15f8b6631a9f">sf::Joy::Count</a></div><div class="ttdeci">@ Count</div><div class="ttdoc">Total number of supported joysticks.</div><div class="ttdef"><b>Definition</b> <a href="#l00188">Event.hpp:188</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Joy_html_abb37a72f42b3ef9841fcf8270d0ac881aa555e27e351d2052df5f4b7b6e6953bf"><div class="ttname"><a href="namespacesf_1_1Joy.html#abb37a72f42b3ef9841fcf8270d0ac881aa555e27e351d2052df5f4b7b6e6953bf">sf::Joy::ButtonCount</a></div><div class="ttdeci">@ ButtonCount</div><div class="ttdoc">Total number of supported joystick buttons.</div><div class="ttdef"><b>Definition</b> <a href="#l00190">Event.hpp:189</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Joy_html_ae7ae4bc4af23f012e5667f18d4aa1039"><div class="ttname"><a href="namespacesf_1_1Joy.html#ae7ae4bc4af23f012e5667f18d4aa1039">sf::Joy::Axis</a></div><div class="ttdeci">Axis</div><div class="ttdef"><b>Definition</b> <a href="#l00173">Event.hpp:174</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Joy_html_ae7ae4bc4af23f012e5667f18d4aa1039a01ae5fcc4ab6a656385e06c9afd3746b"><div class="ttname"><a href="namespacesf_1_1Joy.html#ae7ae4bc4af23f012e5667f18d4aa1039a01ae5fcc4ab6a656385e06c9afd3746b">sf::Joy::AxisCount</a></div><div class="ttdeci">@ AxisCount</div><div class="ttdef"><b>Definition</b> <a href="#l00184">Event.hpp:183</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Joy_html_ae7ae4bc4af23f012e5667f18d4aa1039a1ee21608c5ad03d400e9c3b10ddea202"><div class="ttname"><a href="namespacesf_1_1Joy.html#ae7ae4bc4af23f012e5667f18d4aa1039a1ee21608c5ad03d400e9c3b10ddea202">sf::Joy::AxisY</a></div><div class="ttdeci">@ AxisY</div><div class="ttdef"><b>Definition</b> <a href="#l00176">Event.hpp:176</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Joy_html_ae7ae4bc4af23f012e5667f18d4aa1039a3901e70c52aad6e205189592fe295b45"><div class="ttname"><a href="namespacesf_1_1Joy.html#ae7ae4bc4af23f012e5667f18d4aa1039a3901e70c52aad6e205189592fe295b45">sf::Joy::AxisPOV</a></div><div class="ttdeci">@ AxisPOV</div><div class="ttdef"><b>Definition</b> <a href="#l00181">Event.hpp:181</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Joy_html_ae7ae4bc4af23f012e5667f18d4aa1039a57bea633c5de52b28f734fb6b71e2834"><div class="ttname"><a href="namespacesf_1_1Joy.html#ae7ae4bc4af23f012e5667f18d4aa1039a57bea633c5de52b28f734fb6b71e2834">sf::Joy::AxisX</a></div><div class="ttdeci">@ AxisX</div><div class="ttdef"><b>Definition</b> <a href="#l00175">Event.hpp:175</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Joy_html_ae7ae4bc4af23f012e5667f18d4aa1039a86e65c4375e5bc22417b8e3bfde4d66b"><div class="ttname"><a href="namespacesf_1_1Joy.html#ae7ae4bc4af23f012e5667f18d4aa1039a86e65c4375e5bc22417b8e3bfde4d66b">sf::Joy::AxisR</a></div><div class="ttdeci">@ AxisR</div><div class="ttdef"><b>Definition</b> <a href="#l00178">Event.hpp:178</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Joy_html_ae7ae4bc4af23f012e5667f18d4aa1039a8d515a43b933d62839de9b9bafcf24d5"><div class="ttname"><a href="namespacesf_1_1Joy.html#ae7ae4bc4af23f012e5667f18d4aa1039a8d515a43b933d62839de9b9bafcf24d5">sf::Joy::AxisZ</a></div><div class="ttdeci">@ AxisZ</div><div class="ttdef"><b>Definition</b> <a href="#l00177">Event.hpp:177</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Joy_html_ae7ae4bc4af23f012e5667f18d4aa1039abeac0518f19525e059f114466041ff1b"><div class="ttname"><a href="namespacesf_1_1Joy.html#ae7ae4bc4af23f012e5667f18d4aa1039abeac0518f19525e059f114466041ff1b">sf::Joy::AxisV</a></div><div class="ttdeci">@ AxisV</div><div class="ttdef"><b>Definition</b> <a href="#l00180">Event.hpp:180</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Joy_html_ae7ae4bc4af23f012e5667f18d4aa1039ae8de2f58c8b4cde85ab2ee600e5ef8c4"><div class="ttname"><a href="namespacesf_1_1Joy.html#ae7ae4bc4af23f012e5667f18d4aa1039ae8de2f58c8b4cde85ab2ee600e5ef8c4">sf::Joy::AxisU</a></div><div class="ttdeci">@ AxisU</div><div class="ttdef"><b>Definition</b> <a href="#l00179">Event.hpp:179</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81">sf::Key::Code</a></div><div class="ttdeci">Code</div><div class="ttdef"><b>Definition</b> <a href="#l00041">Event.hpp:42</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a0339c81a8dc230f13c32f875062f9ffb"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a0339c81a8dc230f13c32f875062f9ffb">sf::Key::Num1</a></div><div class="ttdeci">@ Num1</div><div class="ttdef"><b>Definition</b> <a href="#l00070">Event.hpp:70</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a083c35ca9bdfd29c944e72035fa4d441"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a083c35ca9bdfd29c944e72035fa4d441">sf::Key::F10</a></div><div class="ttdeci">@ F10</div><div class="ttdef"><b>Definition</b> <a href="#l00137">Event.hpp:137</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a0a984cb1dd6a8bad8db8398df9c32df7"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a0a984cb1dd6a8bad8db8398df9c32df7">sf::Key::F11</a></div><div class="ttdeci">@ F11</div><div class="ttdef"><b>Definition</b> <a href="#l00138">Event.hpp:138</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a0c2cf360fb1665c3387f205a001a6814"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a0c2cf360fb1665c3387f205a001a6814">sf::Key::Multiply</a></div><div class="ttdeci">@ Multiply</div><div class="ttdef"><b>Definition</b> <a href="#l00112">Event.hpp:112</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a0f82c32e6385cb44227a16783619083d"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a0f82c32e6385cb44227a16783619083d">sf::Key::Pause</a></div><div class="ttdeci">@ Pause</div><div class="ttdef"><b>Definition</b> <a href="#l00143">Event.hpp:143</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a12c278f37f2e904cdd5d5dc312f3dd7b"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a12c278f37f2e904cdd5d5dc312f3dd7b">sf::Key::L</a></div><div class="ttdeci">@ L</div><div class="ttdef"><b>Definition</b> <a href="#l00054">Event.hpp:54</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a15010a24b6626f0ff4e2b6edfa0d36c3"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a15010a24b6626f0ff4e2b6edfa0d36c3">sf::Key::E</a></div><div class="ttdeci">@ E</div><div class="ttdef"><b>Definition</b> <a href="#l00047">Event.hpp:47</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a1621adf4564b0474cd7dd4b62117dfc5"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a1621adf4564b0474cd7dd4b62117dfc5">sf::Key::F14</a></div><div class="ttdeci">@ F14</div><div class="ttdef"><b>Definition</b> <a href="#l00141">Event.hpp:141</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a18b06473e8a9ff5a409f3fa9e7b61d69"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a18b06473e8a9ff5a409f3fa9e7b61d69">sf::Key::V</a></div><div class="ttdeci">@ V</div><div class="ttdef"><b>Definition</b> <a href="#l00064">Event.hpp:64</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a1b48e9fd546b2afdcbb64ae95047be94"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a1b48e9fd546b2afdcbb64ae95047be94">sf::Key::Left</a></div><div class="ttdeci">@ Left</div><div class="ttdoc">Left arrow.</div><div class="ttdef"><b>Definition</b> <a href="#l00114">Event.hpp:114</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a1f44eaf330f25253aaf933cd994dc668"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a1f44eaf330f25253aaf933cd994dc668">sf::Key::Num3</a></div><div class="ttdeci">@ Num3</div><div class="ttdef"><b>Definition</b> <a href="#l00072">Event.hpp:72</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a22c2194947c560a4598af6e705adac9a"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a22c2194947c560a4598af6e705adac9a">sf::Key::Count</a></div><div class="ttdeci">@ Count</div><div class="ttdef"><b>Definition</b> <a href="#l00146">Event.hpp:145</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a24e9ec3b806b7475db2212076f357ec7"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a24e9ec3b806b7475db2212076f357ec7">sf::Key::Numpad9</a></div><div class="ttdeci">@ Numpad9</div><div class="ttdef"><b>Definition</b> <a href="#l00127">Event.hpp:127</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a250086a6e4c9fdf85633867b4d5b7f8b"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a250086a6e4c9fdf85633867b4d5b7f8b">sf::Key::F1</a></div><div class="ttdeci">@ F1</div><div class="ttdef"><b>Definition</b> <a href="#l00128">Event.hpp:128</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a28ce57312fa03e0f1bae49899d603935"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a28ce57312fa03e0f1bae49899d603935">sf::Key::End</a></div><div class="ttdeci">@ End</div><div class="ttdef"><b>Definition</b> <a href="#l00106">Event.hpp:106</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a2c0d8ba0e8420362538f18f20811d635"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a2c0d8ba0e8420362538f18f20811d635">sf::Key::Home</a></div><div class="ttdeci">@ Home</div><div class="ttdef"><b>Definition</b> <a href="#l00107">Event.hpp:107</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a3149cafd5c1110712fc2efc100fd38d0"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a3149cafd5c1110712fc2efc100fd38d0">sf::Key::Space</a></div><div class="ttdeci">@ Space</div><div class="ttdef"><b>Definition</b> <a href="#l00100">Event.hpp:100</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a32eb7e9964eda306d83efd2442991f8e"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a32eb7e9964eda306d83efd2442991f8e">sf::Key::Right</a></div><div class="ttdeci">@ Right</div><div class="ttdoc">Right arrow.</div><div class="ttdef"><b>Definition</b> <a href="#l00115">Event.hpp:115</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a3559d90bf21bce751c7c90cfc6f00f05"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a3559d90bf21bce751c7c90cfc6f00f05">sf::Key::Numpad1</a></div><div class="ttdeci">@ Numpad1</div><div class="ttdef"><b>Definition</b> <a href="#l00119">Event.hpp:119</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a35ca432502dd7a2d67238ad35b9321be"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a35ca432502dd7a2d67238ad35b9321be">sf::Key::Numpad7</a></div><div class="ttdeci">@ Numpad7</div><div class="ttdef"><b>Definition</b> <a href="#l00125">Event.hpp:125</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a378a7fde4cabe729981edbd30e142dfb"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a378a7fde4cabe729981edbd30e142dfb">sf::Key::Menu</a></div><div class="ttdeci">@ Menu</div><div class="ttdef"><b>Definition</b> <a href="#l00088">Event.hpp:88</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a3e8883bb03cb01d1693031bd73527c54"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a3e8883bb03cb01d1693031bd73527c54">sf::Key::PageDown</a></div><div class="ttdeci">@ PageDown</div><div class="ttdef"><b>Definition</b> <a href="#l00105">Event.hpp:105</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a3fbc4813062ef6a68b158799b001256f"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a3fbc4813062ef6a68b158799b001256f">sf::Key::Numpad5</a></div><div class="ttdeci">@ Numpad5</div><div class="ttdef"><b>Definition</b> <a href="#l00123">Event.hpp:123</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a402d34e3e0bb9497d43085dd02722861"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a402d34e3e0bb9497d43085dd02722861">sf::Key::F15</a></div><div class="ttdeci">@ F15</div><div class="ttdef"><b>Definition</b> <a href="#l00142">Event.hpp:142</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a422447bc7ab651c4bec1a7062020df43"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a422447bc7ab651c4bec1a7062020df43">sf::Key::PageUp</a></div><div class="ttdeci">@ PageUp</div><div class="ttdef"><b>Definition</b> <a href="#l00104">Event.hpp:104</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a461545de42376b666cb38860a0beec49"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a461545de42376b666cb38860a0beec49">sf::Key::RSystem</a></div><div class="ttdeci">@ RSystem</div><div class="ttdoc">OS specific key (right side) : windows (Win and Linux), apple (MacOS), ...</div><div class="ttdef"><b>Definition</b> <a href="#l00087">Event.hpp:87</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a50ec4d0d46359708e3337f7c5c9a00b8"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a50ec4d0d46359708e3337f7c5c9a00b8">sf::Key::Period</a></div><div class="ttdeci">@ Period</div><div class="ttdef"><b>Definition</b> <a href="#l00093">Event.hpp:93</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a587e64e6e80464eb499f300a8b9b38b6"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a587e64e6e80464eb499f300a8b9b38b6">sf::Key::Insert</a></div><div class="ttdeci">@ Insert</div><div class="ttdef"><b>Definition</b> <a href="#l00108">Event.hpp:108</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a5e4e1a9e56e51395103ccf57093fb9fd"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a5e4e1a9e56e51395103ccf57093fb9fd">sf::Key::Slash</a></div><div class="ttdeci">@ Slash</div><div class="ttdoc">/</div><div class="ttdef"><b>Definition</b> <a href="#l00095">Event.hpp:95</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a5f4b9b3ede3db0e0a009ae02aaf81359"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a5f4b9b3ede3db0e0a009ae02aaf81359">sf::Key::Equal</a></div><div class="ttdeci">@ Equal</div><div class="ttdoc">=</div><div class="ttdef"><b>Definition</b> <a href="#l00098">Event.hpp:98</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a615c5be88f63eba232f766f176c1268e"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a615c5be88f63eba232f766f176c1268e">sf::Key::F9</a></div><div class="ttdeci">@ F9</div><div class="ttdef"><b>Definition</b> <a href="#l00136">Event.hpp:136</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a61d59029edf2f17e0c562a674e2a1865"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a61d59029edf2f17e0c562a674e2a1865">sf::Key::Subtract</a></div><div class="ttdeci">@ Subtract</div><div class="ttdef"><b>Definition</b> <a href="#l00111">Event.hpp:111</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a65aa332cfa34e12509797ee688550b4b"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a65aa332cfa34e12509797ee688550b4b">sf::Key::Numpad4</a></div><div class="ttdeci">@ Numpad4</div><div class="ttdef"><b>Definition</b> <a href="#l00122">Event.hpp:122</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a66cee9a0dfbc1871912a002a566d26b3"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a66cee9a0dfbc1871912a002a566d26b3">sf::Key::N</a></div><div class="ttdeci">@ N</div><div class="ttdef"><b>Definition</b> <a href="#l00056">Event.hpp:56</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a699d83ac2bedf75a800c15489a62c520"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a699d83ac2bedf75a800c15489a62c520">sf::Key::Num8</a></div><div class="ttdeci">@ Num8</div><div class="ttdef"><b>Definition</b> <a href="#l00077">Event.hpp:77</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a6d180d15ded6ac9cf3bba436e4ebf539"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a6d180d15ded6ac9cf3bba436e4ebf539">sf::Key::Back</a></div><div class="ttdeci">@ Back</div><div class="ttdef"><b>Definition</b> <a href="#l00102">Event.hpp:102</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a6dba2cdc41e8010b0220abb01d60fdd3"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a6dba2cdc41e8010b0220abb01d60fdd3">sf::Key::RControl</a></div><div class="ttdeci">@ RControl</div><div class="ttdef"><b>Definition</b> <a href="#l00084">Event.hpp:84</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a72ac28d67aea1994e706856deb46e823"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a72ac28d67aea1994e706856deb46e823">sf::Key::F7</a></div><div class="ttdeci">@ F7</div><div class="ttdef"><b>Definition</b> <a href="#l00134">Event.hpp:134</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a739a8fc40ed8dc2db93290869d941d85"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a739a8fc40ed8dc2db93290869d941d85">sf::Key::D</a></div><div class="ttdeci">@ D</div><div class="ttdef"><b>Definition</b> <a href="#l00046">Event.hpp:46</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a78ee5c4a641a48be33852012b6da09b4"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a78ee5c4a641a48be33852012b6da09b4">sf::Key::Numpad8</a></div><div class="ttdeci">@ Numpad8</div><div class="ttdef"><b>Definition</b> <a href="#l00126">Event.hpp:126</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a7c927ff513554092cbd16d275542ca93"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a7c927ff513554092cbd16d275542ca93">sf::Key::LBracket</a></div><div class="ttdeci">@ LBracket</div><div class="ttdoc">[</div><div class="ttdef"><b>Definition</b> <a href="#l00089">Event.hpp:89</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a7ee1567832b895e0022dc0d453560f28"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a7ee1567832b895e0022dc0d453560f28">sf::Key::F3</a></div><div class="ttdeci">@ F3</div><div class="ttdef"><b>Definition</b> <a href="#l00130">Event.hpp:130</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a819a5d0739e89a6543b8a1d3b2ed4bdb"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a819a5d0739e89a6543b8a1d3b2ed4bdb">sf::Key::LSystem</a></div><div class="ttdeci">@ LSystem</div><div class="ttdoc">OS specific key (left side) : windows (Win and Linux), apple (MacOS), ...</div><div class="ttdef"><b>Definition</b> <a href="#l00083">Event.hpp:83</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a83e01e85717567b8bbf2a803c7aceae9"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a83e01e85717567b8bbf2a803c7aceae9">sf::Key::F4</a></div><div class="ttdeci">@ F4</div><div class="ttdef"><b>Definition</b> <a href="#l00131">Event.hpp:131</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a842c5966772e988fa1eb083ecfbc1e7a"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a842c5966772e988fa1eb083ecfbc1e7a">sf::Key::Numpad3</a></div><div class="ttdeci">@ Numpad3</div><div class="ttdef"><b>Definition</b> <a href="#l00121">Event.hpp:121</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a850a819481f60424ad824f5f6ab7b8ad"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a850a819481f60424ad824f5f6ab7b8ad">sf::Key::Num9</a></div><div class="ttdeci">@ Num9</div><div class="ttdef"><b>Definition</b> <a href="#l00078">Event.hpp:78</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a8596d24b6d43d01eb540f086c1118b23"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a8596d24b6d43d01eb540f086c1118b23">sf::Key::K</a></div><div class="ttdeci">@ K</div><div class="ttdef"><b>Definition</b> <a href="#l00053">Event.hpp:53</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a8dd2673797e8a18ded85f649ff8894b5"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a8dd2673797e8a18ded85f649ff8894b5">sf::Key::Y</a></div><div class="ttdeci">@ Y</div><div class="ttdef"><b>Definition</b> <a href="#l00067">Event.hpp:67</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a91d3bc2b7c150f3f9bf225455a7d2a73"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a91d3bc2b7c150f3f9bf225455a7d2a73">sf::Key::F6</a></div><div class="ttdeci">@ F6</div><div class="ttdef"><b>Definition</b> <a href="#l00133">Event.hpp:133</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a9221b62140c199d7d4babe3ab45bdb01"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a9221b62140c199d7d4babe3ab45bdb01">sf::Key::SemiColon</a></div><div class="ttdeci">@ SemiColon</div><div class="ttdoc">;</div><div class="ttdef"><b>Definition</b> <a href="#l00091">Event.hpp:91</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a923bcd0f55f59e23ce2efbec1683a918"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a923bcd0f55f59e23ce2efbec1683a918">sf::Key::M</a></div><div class="ttdeci">@ M</div><div class="ttdef"><b>Definition</b> <a href="#l00055">Event.hpp:55</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a93a664cfe6ee856cf5027a01f03954ff"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a93a664cfe6ee856cf5027a01f03954ff">sf::Key::Up</a></div><div class="ttdeci">@ Up</div><div class="ttdoc">Up arrow.</div><div class="ttdef"><b>Definition</b> <a href="#l00116">Event.hpp:116</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a93f3dfd1f5999f42573d6efe3f3c4949"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a93f3dfd1f5999f42573d6efe3f3c4949">sf::Key::G</a></div><div class="ttdeci">@ G</div><div class="ttdef"><b>Definition</b> <a href="#l00049">Event.hpp:49</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a977e8d65750028a7e92a211d39b369d9"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a977e8d65750028a7e92a211d39b369d9">sf::Key::T</a></div><div class="ttdeci">@ T</div><div class="ttdef"><b>Definition</b> <a href="#l00062">Event.hpp:62</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81a9b950e8ca9b87c679c0dd34b978323a5"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a9b950e8ca9b87c679c0dd34b978323a5">sf::Key::RBracket</a></div><div class="ttdeci">@ RBracket</div><div class="ttdoc">]</div><div class="ttdef"><b>Definition</b> <a href="#l00090">Event.hpp:90</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81aa41f459ef5354c81bf151a019fc02b36"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81aa41f459ef5354c81bf151a019fc02b36">sf::Key::W</a></div><div class="ttdeci">@ W</div><div class="ttdef"><b>Definition</b> <a href="#l00065">Event.hpp:65</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81aad4165b29176276c3157785786a3ce42"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81aad4165b29176276c3157785786a3ce42">sf::Key::Delete</a></div><div class="ttdeci">@ Delete</div><div class="ttdef"><b>Definition</b> <a href="#l00109">Event.hpp:109</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81aad697d94fd5c422b83f5d6403f523ad6"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81aad697d94fd5c422b83f5d6403f523ad6">sf::Key::F5</a></div><div class="ttdeci">@ F5</div><div class="ttdef"><b>Definition</b> <a href="#l00132">Event.hpp:132</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81ab18aa7011665567f5f2210312c0b09fd"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ab18aa7011665567f5f2210312c0b09fd">sf::Key::Return</a></div><div class="ttdeci">@ Return</div><div class="ttdef"><b>Definition</b> <a href="#l00101">Event.hpp:101</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81ab5e56eeedcf2f9748b999cf9b8371545"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ab5e56eeedcf2f9748b999cf9b8371545">sf::Key::Num6</a></div><div class="ttdeci">@ Num6</div><div class="ttdef"><b>Definition</b> <a href="#l00075">Event.hpp:75</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81ab6be50a336f1de1dba89e061cc5a3e75"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ab6be50a336f1de1dba89e061cc5a3e75">sf::Key::F12</a></div><div class="ttdeci">@ F12</div><div class="ttdef"><b>Definition</b> <a href="#l00139">Event.hpp:139</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81ab75d2463ab565165a2d7d6cb05ebf494"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ab75d2463ab565165a2d7d6cb05ebf494">sf::Key::A</a></div><div class="ttdeci">@ A</div><div class="ttdef"><b>Definition</b> <a href="#l00043">Event.hpp:43</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81abd440f2a76645ba005149a619b7df68e"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81abd440f2a76645ba005149a619b7df68e">sf::Key::C</a></div><div class="ttdeci">@ C</div><div class="ttdef"><b>Definition</b> <a href="#l00045">Event.hpp:45</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81abd996c2a665c85c96341f2e4fd8f1d8f"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81abd996c2a665c85c96341f2e4fd8f1d8f">sf::Key::Num7</a></div><div class="ttdeci">@ Num7</div><div class="ttdef"><b>Definition</b> <a href="#l00076">Event.hpp:76</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81abe898b39d99d8dd4b94a53f6ab452d7e"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81abe898b39d99d8dd4b94a53f6ab452d7e">sf::Key::B</a></div><div class="ttdeci">@ B</div><div class="ttdef"><b>Definition</b> <a href="#l00044">Event.hpp:44</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81abf7a03063f758c75e4bace3161d42527"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81abf7a03063f758c75e4bace3161d42527">sf::Key::S</a></div><div class="ttdeci">@ S</div><div class="ttdef"><b>Definition</b> <a href="#l00061">Event.hpp:61</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81ac1995f92cf6d30de3e1e95862dc747f2"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ac1995f92cf6d30de3e1e95862dc747f2">sf::Key::F8</a></div><div class="ttdeci">@ F8</div><div class="ttdef"><b>Definition</b> <a href="#l00135">Event.hpp:135</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81ac1a4bc755e274027f79cd34a6951977e"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ac1a4bc755e274027f79cd34a6951977e">sf::Key::Add</a></div><div class="ttdeci">@ Add</div><div class="ttdef"><b>Definition</b> <a href="#l00110">Event.hpp:110</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81ac23fbcf00e2298e5b8859f664efb6c43"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ac23fbcf00e2298e5b8859f664efb6c43">sf::Key::Num0</a></div><div class="ttdeci">@ Num0</div><div class="ttdef"><b>Definition</b> <a href="#l00069">Event.hpp:69</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81ac3c93a0280b5a112036cc7ecb910a2c1"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ac3c93a0280b5a112036cc7ecb910a2c1">sf::Key::Numpad6</a></div><div class="ttdeci">@ Numpad6</div><div class="ttdef"><b>Definition</b> <a href="#l00124">Event.hpp:124</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81ac61d82f4a5d12a78bbffb3bcc87eec73"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ac61d82f4a5d12a78bbffb3bcc87eec73">sf::Key::Num4</a></div><div class="ttdeci">@ Num4</div><div class="ttdef"><b>Definition</b> <a href="#l00073">Event.hpp:73</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81ac6ac0f86989c265471ebbe86f986bdd1"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ac6ac0f86989c265471ebbe86f986bdd1">sf::Key::LShift</a></div><div class="ttdeci">@ LShift</div><div class="ttdef"><b>Definition</b> <a href="#l00081">Event.hpp:81</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81ac8682579147a5816dbcf3009fe7b94dc"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ac8682579147a5816dbcf3009fe7b94dc">sf::Key::Q</a></div><div class="ttdeci">@ Q</div><div class="ttdef"><b>Definition</b> <a href="#l00059">Event.hpp:59</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81ac964347c3d61806fa397197ab05da1fa"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ac964347c3d61806fa397197ab05da1fa">sf::Key::Num5</a></div><div class="ttdeci">@ Num5</div><div class="ttdef"><b>Definition</b> <a href="#l00074">Event.hpp:74</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81ac9e8700961991543dc439145e83a2605"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ac9e8700961991543dc439145e83a2605">sf::Key::Escape</a></div><div class="ttdeci">@ Escape</div><div class="ttdef"><b>Definition</b> <a href="#l00079">Event.hpp:79</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81acabf862b02044080f5691ff510fcbf00"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81acabf862b02044080f5691ff510fcbf00">sf::Key::Dash</a></div><div class="ttdeci">@ Dash</div><div class="ttdef"><b>Definition</b> <a href="#l00099">Event.hpp:99</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81acaf109c629c45da4e3908c54513ece99"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81acaf109c629c45da4e3908c54513ece99">sf::Key::U</a></div><div class="ttdeci">@ U</div><div class="ttdef"><b>Definition</b> <a href="#l00063">Event.hpp:63</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81acf4972cd8cf5daaf8653f840bd48824a"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81acf4972cd8cf5daaf8653f840bd48824a">sf::Key::BackSlash</a></div><div class="ttdeci">@ BackSlash</div><div class="ttdef"><b>Definition</b> <a href="#l00096">Event.hpp:96</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81ad00a2fb063512f02f1bcd824b0500ebe"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ad00a2fb063512f02f1bcd824b0500ebe">sf::Key::F2</a></div><div class="ttdeci">@ F2</div><div class="ttdef"><b>Definition</b> <a href="#l00129">Event.hpp:129</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81ad30f9b919b2da5b1dc26c2fe1b62be44"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ad30f9b919b2da5b1dc26c2fe1b62be44">sf::Key::RShift</a></div><div class="ttdeci">@ RShift</div><div class="ttdef"><b>Definition</b> <a href="#l00085">Event.hpp:85</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81ad7c3cca627323fa271fd141a0bfec207"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ad7c3cca627323fa271fd141a0bfec207">sf::Key::Comma</a></div><div class="ttdeci">@ Comma</div><div class="ttdoc">,</div><div class="ttdef"><b>Definition</b> <a href="#l00092">Event.hpp:92</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81ad8e07863826f31633566959e55fbd1b9"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ad8e07863826f31633566959e55fbd1b9">sf::Key::Quote</a></div><div class="ttdeci">@ Quote</div><div class="ttdoc">'</div><div class="ttdef"><b>Definition</b> <a href="#l00094">Event.hpp:94</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81adb621980e92786cf06b6fb65d622bb62"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81adb621980e92786cf06b6fb65d622bb62">sf::Key::Down</a></div><div class="ttdeci">@ Down</div><div class="ttdoc">Down arrow.</div><div class="ttdef"><b>Definition</b> <a href="#l00117">Event.hpp:117</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81adcd3e67fec4bdc555505817ec8aa3867"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81adcd3e67fec4bdc555505817ec8aa3867">sf::Key::RAlt</a></div><div class="ttdeci">@ RAlt</div><div class="ttdef"><b>Definition</b> <a href="#l00086">Event.hpp:86</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81add27cbf40b3b0a99182aaaddf0a3e037"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81add27cbf40b3b0a99182aaaddf0a3e037">sf::Key::F</a></div><div class="ttdeci">@ F</div><div class="ttdef"><b>Definition</b> <a href="#l00048">Event.hpp:48</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81adf2b6106e12c1b90600dcba0adacad55"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81adf2b6106e12c1b90600dcba0adacad55">sf::Key::R</a></div><div class="ttdeci">@ R</div><div class="ttdef"><b>Definition</b> <a href="#l00060">Event.hpp:60</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81ae1e8ba49e9a03ae9db79d671372baf67"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ae1e8ba49e9a03ae9db79d671372baf67">sf::Key::Tilde</a></div><div class="ttdeci">@ Tilde</div><div class="ttdoc">~</div><div class="ttdef"><b>Definition</b> <a href="#l00097">Event.hpp:97</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81ae5f5491df13804d13b0915aa31e47db1"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81ae5f5491df13804d13b0915aa31e47db1">sf::Key::LControl</a></div><div class="ttdeci">@ LControl</div><div class="ttdef"><b>Definition</b> <a href="#l00080">Event.hpp:80</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81aea9439fd1ef20debf55464bd7136f431"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81aea9439fd1ef20debf55464bd7136f431">sf::Key::P</a></div><div class="ttdeci">@ P</div><div class="ttdef"><b>Definition</b> <a href="#l00058">Event.hpp:58</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81aeb0122fb482008aa025719b0558a2b21"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81aeb0122fb482008aa025719b0558a2b21">sf::Key::Tab</a></div><div class="ttdeci">@ Tab</div><div class="ttdef"><b>Definition</b> <a href="#l00103">Event.hpp:103</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81aed799a0d8fd004a491d24996f5d90474"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81aed799a0d8fd004a491d24996f5d90474">sf::Key::I</a></div><div class="ttdeci">@ I</div><div class="ttdef"><b>Definition</b> <a href="#l00051">Event.hpp:51</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81af0ef65e172118c443e123935e64269e2"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81af0ef65e172118c443e123935e64269e2">sf::Key::Divide</a></div><div class="ttdeci">@ Divide</div><div class="ttdoc">/</div><div class="ttdef"><b>Definition</b> <a href="#l00113">Event.hpp:113</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81af3dd77caf8c37b69d2295874813d0365"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81af3dd77caf8c37b69d2295874813d0365">sf::Key::H</a></div><div class="ttdeci">@ H</div><div class="ttdef"><b>Definition</b> <a href="#l00050">Event.hpp:50</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81af9032e0f95f33c1bdaf32bb733a68cf2"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81af9032e0f95f33c1bdaf32bb733a68cf2">sf::Key::F13</a></div><div class="ttdeci">@ F13</div><div class="ttdef"><b>Definition</b> <a href="#l00140">Event.hpp:140</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81afa5af59812cf928b0d31f64ff9a0a84a"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81afa5af59812cf928b0d31f64ff9a0a84a">sf::Key::Num2</a></div><div class="ttdeci">@ Num2</div><div class="ttdef"><b>Definition</b> <a href="#l00071">Event.hpp:71</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81afa919d4f5261f4c6af34adb7409a1f34"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81afa919d4f5261f4c6af34adb7409a1f34">sf::Key::LAlt</a></div><div class="ttdeci">@ LAlt</div><div class="ttdef"><b>Definition</b> <a href="#l00082">Event.hpp:82</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81afb704ffedd4533047bb25cf13cd36de4"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81afb704ffedd4533047bb25cf13cd36de4">sf::Key::J</a></div><div class="ttdeci">@ J</div><div class="ttdef"><b>Definition</b> <a href="#l00052">Event.hpp:52</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81afb8e6371224bc83a43019ae65584bd05"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81afb8e6371224bc83a43019ae65584bd05">sf::Key::Numpad0</a></div><div class="ttdeci">@ Numpad0</div><div class="ttdef"><b>Definition</b> <a href="#l00118">Event.hpp:118</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81afd064db0641a4f3740bd77befa830812"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81afd064db0641a4f3740bd77befa830812">sf::Key::O</a></div><div class="ttdeci">@ O</div><div class="ttdef"><b>Definition</b> <a href="#l00057">Event.hpp:57</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81afd8b7df9af54e5dc3670bc03d8b0503b"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81afd8b7df9af54e5dc3670bc03d8b0503b">sf::Key::Numpad2</a></div><div class="ttdeci">@ Numpad2</div><div class="ttdef"><b>Definition</b> <a href="#l00120">Event.hpp:120</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81afe0a227e22141f3e7eaff8ec3ecf2fbd"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81afe0a227e22141f3e7eaff8ec3ecf2fbd">sf::Key::Z</a></div><div class="ttdeci">@ Z</div><div class="ttdef"><b>Definition</b> <a href="#l00068">Event.hpp:68</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Key_html_ad32ed01d3448273340bd25af5cdd9c81afe1cdd4aafb0437db108910452aecff4"><div class="ttname"><a href="namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81afe1cdd4aafb0437db108910452aecff4">sf::Key::X</a></div><div class="ttdeci">@ X</div><div class="ttdef"><b>Definition</b> <a href="#l00066">Event.hpp:66</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Mouse_html_a4fb128be433f9aafe66bc0c605daaa90"><div class="ttname"><a href="namespacesf_1_1Mouse.html#a4fb128be433f9aafe66bc0c605daaa90">sf::Mouse::Button</a></div><div class="ttdeci">Button</div><div class="ttdef"><b>Definition</b> <a href="#l00155">Event.hpp:156</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Mouse_html_a4fb128be433f9aafe66bc0c605daaa90a03fa056fd0dd9d629c205d91a8ef1b5a"><div class="ttname"><a href="namespacesf_1_1Mouse.html#a4fb128be433f9aafe66bc0c605daaa90a03fa056fd0dd9d629c205d91a8ef1b5a">sf::Mouse::XButton2</a></div><div class="ttdeci">@ XButton2</div><div class="ttdef"><b>Definition</b> <a href="#l00161">Event.hpp:161</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Mouse_html_a4fb128be433f9aafe66bc0c605daaa90a2c353189c4b11cf216d7caddafcc609d"><div class="ttname"><a href="namespacesf_1_1Mouse.html#a4fb128be433f9aafe66bc0c605daaa90a2c353189c4b11cf216d7caddafcc609d">sf::Mouse::Middle</a></div><div class="ttdeci">@ Middle</div><div class="ttdef"><b>Definition</b> <a href="#l00159">Event.hpp:159</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Mouse_html_a4fb128be433f9aafe66bc0c605daaa90a52a1d434289774240ddaa22496762402"><div class="ttname"><a href="namespacesf_1_1Mouse.html#a4fb128be433f9aafe66bc0c605daaa90a52a1d434289774240ddaa22496762402">sf::Mouse::ButtonCount</a></div><div class="ttdeci">@ ButtonCount</div><div class="ttdef"><b>Definition</b> <a href="#l00164">Event.hpp:163</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Mouse_html_a4fb128be433f9aafe66bc0c605daaa90a8bb4856e1ec7f6b6a8605effdfc0eee8"><div class="ttname"><a href="namespacesf_1_1Mouse.html#a4fb128be433f9aafe66bc0c605daaa90a8bb4856e1ec7f6b6a8605effdfc0eee8">sf::Mouse::Left</a></div><div class="ttdeci">@ Left</div><div class="ttdef"><b>Definition</b> <a href="#l00157">Event.hpp:157</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Mouse_html_a4fb128be433f9aafe66bc0c605daaa90aecc7f3ce9ad6a60b9b0027876446b8d7"><div class="ttname"><a href="namespacesf_1_1Mouse.html#a4fb128be433f9aafe66bc0c605daaa90aecc7f3ce9ad6a60b9b0027876446b8d7">sf::Mouse::XButton1</a></div><div class="ttdeci">@ XButton1</div><div class="ttdef"><b>Definition</b> <a href="#l00160">Event.hpp:160</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Mouse_html_a4fb128be433f9aafe66bc0c605daaa90af2cff24ab6c26daf079b11189f982fc4"><div class="ttname"><a href="namespacesf_1_1Mouse.html#a4fb128be433f9aafe66bc0c605daaa90af2cff24ab6c26daf079b11189f982fc4">sf::Mouse::Right</a></div><div class="ttdeci">@ Right</div><div class="ttdef"><b>Definition</b> <a href="#l00158">Event.hpp:158</a></div></div>
+<div class="ttc" id="anamespacesf_html"><div class="ttname"><a href="namespacesf.html">sf</a></div><div class="ttdef"><b>Definition</b> <a href="AudioResource_8hpp_source.html#l00034">AudioResource.hpp:35</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1JoyButtonEvent_html"><div class="ttname"><a href="structsf_1_1Event_1_1JoyButtonEvent.html">sf::Event::JoyButtonEvent</a></div><div class="ttdoc">Joystick buttons events parameters.</div><div class="ttdef"><b>Definition</b> <a href="#l00260">Event.hpp:261</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1JoyButtonEvent_html_a03dee4c051e606562d74c29847029706"><div class="ttname"><a href="structsf_1_1Event_1_1JoyButtonEvent.html#a03dee4c051e606562d74c29847029706">sf::Event::JoyButtonEvent::Button</a></div><div class="ttdeci">unsigned int Button</div><div class="ttdef"><b>Definition</b> <a href="#l00263">Event.hpp:263</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1JoyButtonEvent_html_a1e0742191da2566433577cb1e0f070ef"><div class="ttname"><a href="structsf_1_1Event_1_1JoyButtonEvent.html#a1e0742191da2566433577cb1e0f070ef">sf::Event::JoyButtonEvent::JoystickId</a></div><div class="ttdeci">unsigned int JoystickId</div><div class="ttdef"><b>Definition</b> <a href="#l00262">Event.hpp:262</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1JoyMoveEvent_html"><div class="ttname"><a href="structsf_1_1Event_1_1JoyMoveEvent.html">sf::Event::JoyMoveEvent</a></div><div class="ttdoc">Joystick axis move event parameters.</div><div class="ttdef"><b>Definition</b> <a href="#l00250">Event.hpp:251</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1JoyMoveEvent_html_a32135c0f72321d3cd5302caf0f0a3e11"><div class="ttname"><a href="structsf_1_1Event_1_1JoyMoveEvent.html#a32135c0f72321d3cd5302caf0f0a3e11">sf::Event::JoyMoveEvent::Axis</a></div><div class="ttdeci">Joy::Axis Axis</div><div class="ttdef"><b>Definition</b> <a href="#l00253">Event.hpp:253</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1JoyMoveEvent_html_a8662f85e4cd6a18609bf04d5aaed8bd8"><div class="ttname"><a href="structsf_1_1Event_1_1JoyMoveEvent.html#a8662f85e4cd6a18609bf04d5aaed8bd8">sf::Event::JoyMoveEvent::Position</a></div><div class="ttdeci">float Position</div><div class="ttdef"><b>Definition</b> <a href="#l00254">Event.hpp:254</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1JoyMoveEvent_html_a94d1b6343ef0fddbb997ce5c98c35ede"><div class="ttname"><a href="structsf_1_1Event_1_1JoyMoveEvent.html#a94d1b6343ef0fddbb997ce5c98c35ede">sf::Event::JoyMoveEvent::JoystickId</a></div><div class="ttdeci">unsigned int JoystickId</div><div class="ttdef"><b>Definition</b> <a href="#l00252">Event.hpp:252</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1KeyEvent_html"><div class="ttname"><a href="structsf_1_1Event_1_1KeyEvent.html">sf::Event::KeyEvent</a></div><div class="ttdoc">Keyboard event parameters.</div><div class="ttdef"><b>Definition</b> <a href="#l00204">Event.hpp:205</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1KeyEvent_html_a024b19f70f7a0c04f358b6fb5b818984"><div class="ttname"><a href="structsf_1_1Event_1_1KeyEvent.html#a024b19f70f7a0c04f358b6fb5b818984">sf::Event::KeyEvent::Shift</a></div><div class="ttdeci">bool Shift</div><div class="ttdef"><b>Definition</b> <a href="#l00209">Event.hpp:209</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1KeyEvent_html_a2a835e0538e666c26af15722ac95934d"><div class="ttname"><a href="structsf_1_1Event_1_1KeyEvent.html#a2a835e0538e666c26af15722ac95934d">sf::Event::KeyEvent::Code</a></div><div class="ttdeci">Key::Code Code</div><div class="ttdef"><b>Definition</b> <a href="#l00206">Event.hpp:206</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1KeyEvent_html_a6270b578cce29ed958492788571f2c4c"><div class="ttname"><a href="structsf_1_1Event_1_1KeyEvent.html#a6270b578cce29ed958492788571f2c4c">sf::Event::KeyEvent::Alt</a></div><div class="ttdeci">bool Alt</div><div class="ttdef"><b>Definition</b> <a href="#l00207">Event.hpp:207</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1KeyEvent_html_a9dd63eccbdb38ad68d32de484f0151c8"><div class="ttname"><a href="structsf_1_1Event_1_1KeyEvent.html#a9dd63eccbdb38ad68d32de484f0151c8">sf::Event::KeyEvent::Control</a></div><div class="ttdeci">bool Control</div><div class="ttdef"><b>Definition</b> <a href="#l00208">Event.hpp:208</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1MouseButtonEvent_html"><div class="ttname"><a href="structsf_1_1Event_1_1MouseButtonEvent.html">sf::Event::MouseButtonEvent</a></div><div class="ttdoc">Mouse buttons events parameters.</div><div class="ttdef"><b>Definition</b> <a href="#l00232">Event.hpp:233</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1MouseButtonEvent_html_a2f7f7e1dfb8ffd744510ffa4540f3578"><div class="ttname"><a href="structsf_1_1Event_1_1MouseButtonEvent.html#a2f7f7e1dfb8ffd744510ffa4540f3578">sf::Event::MouseButtonEvent::Button</a></div><div class="ttdeci">Mouse::Button Button</div><div class="ttdef"><b>Definition</b> <a href="#l00234">Event.hpp:234</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1MouseButtonEvent_html_a558da3a034c64ff6a2ac52b01936f02a"><div class="ttname"><a href="structsf_1_1Event_1_1MouseButtonEvent.html#a558da3a034c64ff6a2ac52b01936f02a">sf::Event::MouseButtonEvent::X</a></div><div class="ttdeci">int X</div><div class="ttdef"><b>Definition</b> <a href="#l00235">Event.hpp:235</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1MouseButtonEvent_html_a59a22c45a777b871c3ef3dd5c1b4d218"><div class="ttname"><a href="structsf_1_1Event_1_1MouseButtonEvent.html#a59a22c45a777b871c3ef3dd5c1b4d218">sf::Event::MouseButtonEvent::Y</a></div><div class="ttdeci">int Y</div><div class="ttdef"><b>Definition</b> <a href="#l00236">Event.hpp:236</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1MouseMoveEvent_html"><div class="ttname"><a href="structsf_1_1Event_1_1MouseMoveEvent.html">sf::Event::MouseMoveEvent</a></div><div class="ttdoc">Mouse move event parameters.</div><div class="ttdef"><b>Definition</b> <a href="#l00223">Event.hpp:224</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1MouseMoveEvent_html_a010fa592ac21e4566f9f23415d0b77dc"><div class="ttname"><a href="structsf_1_1Event_1_1MouseMoveEvent.html#a010fa592ac21e4566f9f23415d0b77dc">sf::Event::MouseMoveEvent::X</a></div><div class="ttdeci">int X</div><div class="ttdef"><b>Definition</b> <a href="#l00225">Event.hpp:225</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1MouseMoveEvent_html_acb4d3d5f74ce68cbd26a277d4918b77c"><div class="ttname"><a href="structsf_1_1Event_1_1MouseMoveEvent.html#acb4d3d5f74ce68cbd26a277d4918b77c">sf::Event::MouseMoveEvent::Y</a></div><div class="ttdeci">int Y</div><div class="ttdef"><b>Definition</b> <a href="#l00226">Event.hpp:226</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1MouseWheelEvent_html"><div class="ttname"><a href="structsf_1_1Event_1_1MouseWheelEvent.html">sf::Event::MouseWheelEvent</a></div><div class="ttdoc">Mouse wheel events parameters.</div><div class="ttdef"><b>Definition</b> <a href="#l00242">Event.hpp:243</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1MouseWheelEvent_html_a34a075257c261a33fa40f7f6196e496f"><div class="ttname"><a href="structsf_1_1Event_1_1MouseWheelEvent.html#a34a075257c261a33fa40f7f6196e496f">sf::Event::MouseWheelEvent::Delta</a></div><div class="ttdeci">int Delta</div><div class="ttdef"><b>Definition</b> <a href="#l00244">Event.hpp:244</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1SizeEvent_html"><div class="ttname"><a href="structsf_1_1Event_1_1SizeEvent.html">sf::Event::SizeEvent</a></div><div class="ttdoc">Size events parameters.</div><div class="ttdef"><b>Definition</b> <a href="#l00269">Event.hpp:270</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1SizeEvent_html_a03cd57484155d672ffc59acdb6c9779c"><div class="ttname"><a href="structsf_1_1Event_1_1SizeEvent.html#a03cd57484155d672ffc59acdb6c9779c">sf::Event::SizeEvent::Height</a></div><div class="ttdeci">unsigned int Height</div><div class="ttdef"><b>Definition</b> <a href="#l00272">Event.hpp:272</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1SizeEvent_html_aeb65b016cbcac57cb964623b1e453d1b"><div class="ttname"><a href="structsf_1_1Event_1_1SizeEvent.html#aeb65b016cbcac57cb964623b1e453d1b">sf::Event::SizeEvent::Width</a></div><div class="ttdeci">unsigned int Width</div><div class="ttdef"><b>Definition</b> <a href="#l00271">Event.hpp:271</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1TextEvent_html"><div class="ttname"><a href="structsf_1_1Event_1_1TextEvent.html">sf::Event::TextEvent</a></div><div class="ttdoc">Text event parameters.</div><div class="ttdef"><b>Definition</b> <a href="#l00215">Event.hpp:216</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1TextEvent_html_a56342a4d036036d233160b20be7e8855"><div class="ttname"><a href="structsf_1_1Event_1_1TextEvent.html#a56342a4d036036d233160b20be7e8855">sf::Event::TextEvent::Unicode</a></div><div class="ttdeci">Uint32 Unicode</div><div class="ttdef"><b>Definition</b> <a href="#l00217">Event.hpp:217</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+                    Back to top
+                </button>
+            </main>
+            <footer class="md-footer">
+                <nav class="md-footer__inner md-grid" aria-label="Footer" hidden>
+                    <a href="/learn/" class="md-footer__link md-footer__link--next" aria-label="Next: Learn">
+                        <div class="md-footer__title">
+                            <span class="md-footer__direction"> Next </span>
+                            <div class="md-ellipsis">Learn</div>
+                        </div>
+                        <div class="md-footer__button md-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z" /></svg>
+                        </div>
+                    </a>
+                </nav>
+                <div class="md-footer-meta md-typeset">
+                    <div class="md-footer-meta__inner md-grid">
+                        <div class="md-copyright">
+                            <div class="md-copyright__highlight">Copyright &copy; <a href="mailto:laurent@sfml-dev.org">Laurent Gomila</a></div>
+                        </div>
+                        <div class="md-social">
+                            <a href="https://fosstodon.org/@sfml" target="_blank" rel="noopener me" title="SFML on Fosstodon" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com/sfmldev" target="_blank" rel="noopener" title="SFML on Twitter" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="https://discord.gg/nr4X7Fh" target="_blank" rel="noopener" title="SFML&#39;s Discord Server" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="md-dialog" data-md-component="dialog">
+            <div class="md-dialog__inner md-typeset"></div>
+        </div>
+        <script id="__config" type="application/json">
+            {
+                "base": ".",
+                "features": ["content.code.copy", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.prune", "navigation.path", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.suggest"],
+                "search": "/assets/javascripts/workers/search.b8dbb3d2.min.js",
+                "translations": {
+                    "clipboard.copied": "Copied to clipboard",
+                    "clipboard.copy": "Copy to clipboard",
+                    "search.result.more.one": "1 more on this page",
+                    "search.result.more.other": "# more on this page",
+                    "search.result.none": "No matching documents",
+                    "search.result.one": "1 matching document",
+                    "search.result.other": "# matching documents",
+                    "search.result.placeholder": "Type to start searching",
+                    "search.result.term.missing": "Missing",
+                    "select.version": "Select version"
+                }
+            }
+        </script>
+        <script src="/assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+    </body>
+</html>

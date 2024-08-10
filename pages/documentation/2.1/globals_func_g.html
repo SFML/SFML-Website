@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="Simple and Fast Multimedia Library" />
+        <link rel="canonical" href="https://www.sfml-dev.org/" />
+        <link rel="next" href="/learn/" />
+        <link rel="icon" href="/images/favicon.ico" />
+        <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.30" />
+        <title>Home - Simple and Fast Multimedia Library</title>
+        <link rel="stylesheet" href="/assets/stylesheets/main.3cba04c6.min.css" />
+        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback" />
+        <style>
+            :root {
+                --md-text-font: "Ubuntu";
+                --md-code-font: "Roboto Mono";
+            }
+        </style>
+        <link rel="stylesheet" href="/styles/extra.css" />
+        <script>
+            (__md_scope = new URL(".", location)),
+                (__md_hash = (e) => [...e].reduce((e, _) => (e << 5) - e + _.charCodeAt(0), 0)),
+                (__md_get = (e, _ = localStorage, t = __md_scope) => JSON.parse(_.getItem(t.pathname + "." + e))),
+                (__md_set = (e, _, t = localStorage, a = __md_scope) => {
+                    try {
+                        t.setItem(a.pathname + "." + e, JSON.stringify(_));
+                    } catch (e) {}
+                });
+        </script>
+        <link rel="stylesheet" type="text/css" href="doxygen.css" title="default" media="screen,print" />
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="dynsections.js"></script>
+        <script type="text/javascript" src="clipboard.js"></script>
+        <script type="text/javascript" src="cookie.js"></script>
+        <script type="text/javascript" src="resize.js"></script>
+        <link rel="stylesheet" type="text/css" href="search/search.css" />
+        <link rel="stylesheet" type="text/css" href="searchOverrides.css" />
+        <script type="text/javascript" src="search/searchdata.js"></script>
+        <script type="text/javascript" src="search/search.js"></script>
+        <script type="text/javascript">
+            /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+            $(document).ready(function () {
+                init_search();
+            });
+            /* @license-end */
+        </script>
+    </head>
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="indigo">
+        <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off" />
+        <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off" />
+        <label class="md-overlay" for="__drawer"></label>
+        <div data-md-component="skip">
+            <a href="#simple-and-fast-multimedia-library" class="md-skip"> Skip to content </a>
+        </div>
+        <div data-md-component="announce"></div>
+        <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+            <nav class="md-header__inner md-grid" aria-label="Header">
+                <a href="." title="Simple and Fast Multimedia Library" class="md-header__button md-logo" aria-label="Simple and Fast Multimedia Library" data-md-component="logo">
+                    <img src="/images/logo.png" alt="logo" />
+                </a>
+                <label class="md-header__button md-icon" for="__drawer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z" /></svg>
+                </label>
+                <div class="md-header__title" data-md-component="header-title">
+                    <div class="md-header__ellipsis">
+                        <div class="md-header__topic">
+                            <span class="md-ellipsis"> Simple and Fast Multimedia Library </span>
+                        </div>
+                        <div class="md-header__topic" data-md-component="header-topic">
+                            <span class="md-ellipsis"> Home </span>
+                        </div>
+                    </div>
+                </div>
+                <form class="md-header__option" data-md-component="palette">
+                    <input
+                        class="md-option"
+                        data-md-color-media="(prefers-color-scheme: light)"
+                        data-md-color-scheme="default"
+                        data-md-color-primary="light-green"
+                        data-md-color-accent="indigo"
+                        aria-label="Switch to dark mode"
+                        type="radio"
+                        name="__palette"
+                        id="__palette_0"
+                    />
+                    <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"
+                            />
+                        </svg>
+                    </label>
+                    <input
+                        class="md-option"
+                        data-md-color-media="(prefers-color-scheme: dark)"
+                        data-md-color-scheme="slate"
+                        data-md-color-primary="green"
+                        data-md-color-accent="indigo"
+                        aria-label="Switch to light mode"
+                        type="radio"
+                        name="__palette"
+                        id="__palette_1"
+                    />
+                    <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"
+                            />
+                        </svg>
+                    </label>
+                </form>
+                <script>
+                    var media,
+                        input,
+                        key,
+                        value,
+                        palette = __md_get("__palette");
+                    if (palette && palette.color) {
+                        "(prefers-color-scheme)" === palette.color.media &&
+                            ((media = matchMedia("(prefers-color-scheme: light)")),
+                            (input = document.querySelector(media.matches ? "[data-md-color-media='(prefers-color-scheme: light)']" : "[data-md-color-media='(prefers-color-scheme: dark)']")),
+                            (palette.color.media = input.getAttribute("data-md-color-media")),
+                            (palette.color.scheme = input.getAttribute("data-md-color-scheme")),
+                            (palette.color.primary = input.getAttribute("data-md-color-primary")),
+                            (palette.color.accent = input.getAttribute("data-md-color-accent")));
+                        for ([key, value] of Object.entries(palette.color)) document.body.setAttribute("data-md-color-" + key, value);
+                    }
+                </script>
+                <div class="md-header__option">
+                    <div class="md-select">
+                        <button class="md-header__button md-icon" aria-label="Select language">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"
+                                />
+                            </svg>
+                        </button>
+                        <div class="md-select__inner">
+                            <ul class="md-select__list">
+                                <li class="md-select__item">
+                                    <a href="/" hreflang="en" class="md-select__link"> English </a>
+                                </li>
+                                <li class="md-select__item">
+                                    <a href="/fr/" hreflang="fr" class="md-select__link"> Français </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <label class="md-header__button md-icon" for="__search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"
+                        />
+                    </svg>
+                </label>
+                <div class="md-search" data-md-component="search" role="dialog">
+                    <label class="md-search__overlay" for="__search"></label>
+                    <div class="md-search__inner" role="search">
+                        <form class="md-search__form" name="search">
+                            <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required />
+                            <label class="md-search__icon md-icon" for="__search">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"
+                                    />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z" /></svg>
+                            </label>
+                            <nav class="md-search__options" aria-label="Search">
+                                <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z" /></svg>
+                                </button>
+                            </nav>
+                            <div class="md-search__suggest" data-md-component="search-suggest"></div>
+                        </form>
+                        <div class="md-search__output">
+                            <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+                                <div class="md-search-result" data-md-component="search-result">
+                                    <div class="md-search-result__meta">Initializing search</div>
+                                    <ol class="md-search-result__list" role="presentation"></ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-header__source">
+                    <a href="https://github.com/SFML/SFML" title="Go to repository" class="md-source" data-md-component="source">
+                        <div class="md-source__icon md-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. -->
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                                />
+                            </svg>
+                        </div>
+                        <div class="md-source__repository">SFML</div>
+                    </a>
+                </div>
+            </nav>
+            <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+                <div class="md-grid">
+                    <ul class="md-tabs__list">
+                        <li class="md-tabs__item">
+                            <a href="/" class="md-tabs__link"> Home </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/learn/" class="md-tabs__link"> Learn </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/tutorials/2.6/" class="md-tabs__link"> Tutorials </a>
+                        </li>
+                        <li class="md-tabs__item md-tabs__item--active">
+                            <a href="/documentation" class="md-tabs__link"> Documentation </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/download/" class="md-tabs__link"> Download </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/community/" class="md-tabs__link"> Community </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/development/" class="md-tabs__link"> Development </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="md-container" data-md-component="container">
+            <main class="md-main" data-md-component="main">
+                <div class="md-main__inner md-grid">
+                    <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                        <div class="md-sidebar__scrollwrap">
+                            <div class="md-sidebar__inner">
+                                <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+                                    <label class="md-nav__title" for="__drawer">
+                                        <a href="." title="Simple and Fast Multimedia Library" class="md-nav__button md-logo" aria-label="Simple and Fast Multimedia Library" data-md-component="logo">
+                                            <img src="/images/logo.png" alt="logo" />
+                                        </a>
+                                        Simple and Fast Multimedia Library
+                                    </label>
+                                    <div class="md-nav__source">
+                                        <a href="https://github.com/SFML/SFML" title="Go to repository" class="md-source" data-md-component="source">
+                                            <div class="md-source__icon md-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. -->
+                                                    <path
+                                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                                                    />
+                                                </svg>
+                                            </div>
+                                            <div class="md-source__repository">SFML</div>
+                                        </a>
+                                    </div>
+                                    <ul class="md-nav__list" data-md-scrollfix>
+                                        <li class="md-nav__item">
+                                            <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc" />
+                                            <label class="md-nav__link" for="__toc">
+                                                <span class="md-ellipsis"> Home </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </label>
+                                            <a href="." class="md-nav__link">
+                                                <span class="md-ellipsis"> Home </span>
+                                            </a>
+                                            <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+                                                <label class="md-nav__title" for="__toc">
+                                                    <span class="md-nav__icon md-icon"></span>
+                                                    Table of contents
+                                                </label>
+                                                <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-media" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-media </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-platform" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-platform </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-language" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-language </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="learn/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Learn </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="tutorials/2.6/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Tutorials </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--active">
+                                            <a href="documentation" class="md-nav__link md-nav__link--active">
+                                                <span class="md-ellipsis"> Documentation </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="download/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Download </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="community/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Community </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="development/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Development </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                        <div class="md-sidebar__scrollwrap">
+                            <div class="md-sidebar__inner">
+                                <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+                                    <label class="md-nav__title" for="__toc">
+                                        <span class="md-nav__icon md-icon"></span>
+                                        Table of contents
+                                    </label>
+                                    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-media" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-media </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-platform" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-platform </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-language" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-language </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-content" data-md-component="content">
+                        <div class="contents">
+<!-- Generated by Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="topics.html"><span>Topics</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li class="current"><a href="globals.html"><span>File&#160;Members</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow3" class="tabs2">
+    <ul class="tablist">
+      <li><a href="globals.html"><span>All</span></a></li>
+      <li class="current"><a href="globals_func.html"><span>Functions</span></a></li>
+      <li><a href="globals_vars.html"><span>Variables</span></a></li>
+      <li><a href="globals_type.html"><span>Typedefs</span></a></li>
+      <li><a href="globals_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="globals_eval.html"><span>Enumerator</span></a></li>
+      <li><a href="globals_defs.html"><span>Macros</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow4" class="tabs3">
+    <ul class="tablist">
+      <li><a href="globals_func.html#index_a"><span>a</span></a></li>
+      <li><a href="globals_func_b.html#index_b"><span>b</span></a></li>
+      <li><a href="globals_func_c.html#index_c"><span>c</span></a></li>
+      <li><a href="globals_func_d.html#index_d"><span>d</span></a></li>
+      <li><a href="globals_func_e.html#index_e"><span>e</span></a></li>
+      <li><a href="globals_func_f.html#index_f"><span>f</span></a></li>
+      <li class="current"><a href="globals_func_g.html#index_g"><span>g</span></a></li>
+      <li><a href="globals_func_h.html#index_h"><span>h</span></a></li>
+      <li><a href="globals_func_i.html#index_i"><span>i</span></a></li>
+      <li><a href="globals_func_j.html#index_j"><span>j</span></a></li>
+      <li><a href="globals_func_l.html#index_l"><span>l</span></a></li>
+      <li><a href="globals_func_p.html#index_p"><span>p</span></a></li>
+      <li><a href="globals_func_r.html#index_r"><span>r</span></a></li>
+      <li><a href="globals_func_s.html#index_s"><span>s</span></a></li>
+      <li><a href="globals_func_t.html#index_t"><span>t</span></a></li>
+      <li><a href="globals_func_v.html#index_v"><span>v</span></a></li>
+      <li><a href="globals_func_w.html#index_w"><span>w</span></a></li>
+      <li><a href="globals_func_y.html#index_y"><span>y</span></a></li>
+      <li><a href="globals_func_z.html#index_z"><span>z</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="doc-content">
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="contents">
+<div class="textblock">Here is a list of all functions with links to the files they belong to:</div>
+
+<h3><a id="index_g" name="index_g"></a>- g -</h3><ul>
+<li>get16()&#160;:&#160;<a class="el" href="stb__image_8h.html#aa6f16d004643ea5c5c38c7198dc25141">stb_image.h</a></li>
+<li>get16le()&#160;:&#160;<a class="el" href="stb__image_8h.html#aeef53f9c6b757791340b398119198b83">stb_image.h</a></li>
+<li>get32()&#160;:&#160;<a class="el" href="stb__image_8h.html#af0cf46c0fd30cf9aa5478c5e59cabdce">stb_image.h</a></li>
+<li>get32le()&#160;:&#160;<a class="el" href="stb__image_8h.html#a490e673a041c77ffd3bf3678b63ac401">stb_image.h</a></li>
+<li>get8()&#160;:&#160;<a class="el" href="stb__image_8h.html#ae7d89884c32f0eb6edd8e7369031ae13">stb_image.h</a></li>
+<li>get8u()&#160;:&#160;<a class="el" href="stb__image_8h.html#a8ab33004ad51977319641ade6494ec19">stb_image.h</a></li>
+<li>get_chunk_header()&#160;:&#160;<a class="el" href="stb__image_8h.html#a3fa1c17098aeba2fac9371c1c7e3ae60">stb_image.h</a></li>
+<li>get_marker()&#160;:&#160;<a class="el" href="stb__image_8h.html#a9d57b6044b52a189c3a739c893f853d5">stb_image.h</a></li>
+<li>getn()&#160;:&#160;<a class="el" href="stb__image_8h.html#a8780812d8f19a042ef706fcf49ccf125">stb_image.h</a></li>
+<li>gif_test()&#160;:&#160;<a class="el" href="stb__image_8h.html#ac85f91c1424b07798f7cafa0559deab4">stb_image.h</a></li>
+<li>glAccum()&#160;:&#160;<a class="el" href="glew_8h.html#afbaedddd52a2dded82fc807444b72fdb">glew.h</a></li>
+<li>glAlphaFunc()&#160;:&#160;<a class="el" href="glew_8h.html#aa31b49664790d3a67fa1c3d0458a6c96">glew.h</a></li>
+<li>glAreTexturesResident()&#160;:&#160;<a class="el" href="glew_8h.html#ad846e83a77564442ed1d304740726b69">glew.h</a></li>
+<li>glArrayElement()&#160;:&#160;<a class="el" href="glew_8h.html#af504254b05b3e5ec4cf53b125fe737a6">glew.h</a></li>
+<li>glBegin()&#160;:&#160;<a class="el" href="glew_8h.html#a98964453975519f92d6cc59ef77f7436">glew.h</a></li>
+<li>glBindTexture()&#160;:&#160;<a class="el" href="glew_8h.html#a940f58f3728713267a58e2d09ff602b2">glew.h</a></li>
+<li>glBitmap()&#160;:&#160;<a class="el" href="glew_8h.html#aeedecb00366fd61d9464391040ba5359">glew.h</a></li>
+<li>glBlendFunc()&#160;:&#160;<a class="el" href="glew_8h.html#a8e13e72c3a7bac1f4685fcf3d32bf98c">glew.h</a></li>
+<li>GLboolean()&#160;:&#160;<a class="el" href="glext_8h.html#a8fe38f5f5d271d25d582135baf95121e">glext.h</a></li>
+<li>glCallList()&#160;:&#160;<a class="el" href="glew_8h.html#a31d8f4c0ab0fdc04ee4ba3236eea9c13">glew.h</a></li>
+<li>glCallLists()&#160;:&#160;<a class="el" href="glew_8h.html#ac6fde9294691e98720166eecb5b6484f">glew.h</a></li>
+<li>glClear()&#160;:&#160;<a class="el" href="glew_8h.html#affc6c383998f3d5c0a5e74a07788f6ed">glew.h</a></li>
+<li>glClearAccum()&#160;:&#160;<a class="el" href="glew_8h.html#a591b63df83a393dd6052ee4d15e75fdd">glew.h</a></li>
+<li>glClearColor()&#160;:&#160;<a class="el" href="glew_8h.html#af339551012daa99fef8c4d313e98b546">glew.h</a></li>
+<li>glClearDepth()&#160;:&#160;<a class="el" href="glew_8h.html#a00362af73243cfbcf5509f74893b1b31">glew.h</a></li>
+<li>glClearIndex()&#160;:&#160;<a class="el" href="glew_8h.html#a3451ebf1e17225b3df454e0c12b89594">glew.h</a></li>
+<li>glClearStencil()&#160;:&#160;<a class="el" href="glew_8h.html#af4c986bec10d88f980498507c67d21eb">glew.h</a></li>
+<li>glClipPlane()&#160;:&#160;<a class="el" href="glew_8h.html#a58e5cf051ae9f46d72a4fba67dd51233">glew.h</a></li>
+<li>glColor3b()&#160;:&#160;<a class="el" href="glew_8h.html#aed181d2ce892fa24594a04e802ec605d">glew.h</a></li>
+<li>glColor3bv()&#160;:&#160;<a class="el" href="glew_8h.html#ab9acd1bfce6514bf45578f09d8ae6af4">glew.h</a></li>
+<li>glColor3d()&#160;:&#160;<a class="el" href="glew_8h.html#adde7d85b385fac85463d780f77074f8f">glew.h</a></li>
+<li>glColor3dv()&#160;:&#160;<a class="el" href="glew_8h.html#a7f99f46067d687cab7ee5dc4be04d5aa">glew.h</a></li>
+<li>glColor3f()&#160;:&#160;<a class="el" href="glew_8h.html#acee7240272b34e83a4567a1fb586be99">glew.h</a></li>
+<li>glColor3fv()&#160;:&#160;<a class="el" href="glew_8h.html#a40ebb0da5ec243b569ee26f6b2f1f5ef">glew.h</a></li>
+<li>glColor3i()&#160;:&#160;<a class="el" href="glew_8h.html#a3609d3633a286ec3e7162637ffa485b1">glew.h</a></li>
+<li>glColor3iv()&#160;:&#160;<a class="el" href="glew_8h.html#af65f04b8f45c3c6a4e114cb9f7cc28d2">glew.h</a></li>
+<li>glColor3s()&#160;:&#160;<a class="el" href="glew_8h.html#a37cabe4304b9acc84a404120b23cb25c">glew.h</a></li>
+<li>glColor3sv()&#160;:&#160;<a class="el" href="glew_8h.html#a59fc2962bfcc1f70aff2b0abfe979b71">glew.h</a></li>
+<li>glColor3ub()&#160;:&#160;<a class="el" href="glew_8h.html#ac4a27c2f93c1e808c049df3865d65d31">glew.h</a></li>
+<li>glColor3ubv()&#160;:&#160;<a class="el" href="glew_8h.html#a7c0754befe292425beb63f25fa5c065f">glew.h</a></li>
+<li>glColor3ui()&#160;:&#160;<a class="el" href="glew_8h.html#ab7d218539cfb25ebee1edf6d5cf36269">glew.h</a></li>
+<li>glColor3uiv()&#160;:&#160;<a class="el" href="glew_8h.html#ab26f0367b9c538a0574fd1ced07ef3bf">glew.h</a></li>
+<li>glColor3us()&#160;:&#160;<a class="el" href="glew_8h.html#ab168a170dfbf35adc2af77c15cbf94be">glew.h</a></li>
+<li>glColor3usv()&#160;:&#160;<a class="el" href="glew_8h.html#a8299c4b4dcedcab403124d8b04bfe037">glew.h</a></li>
+<li>glColor4b()&#160;:&#160;<a class="el" href="glew_8h.html#a1cf5ff4319f3ef552073360786ce8ef7">glew.h</a></li>
+<li>glColor4bv()&#160;:&#160;<a class="el" href="glew_8h.html#aca37be70e9e68741e125327944433d6e">glew.h</a></li>
+<li>glColor4d()&#160;:&#160;<a class="el" href="glew_8h.html#a74ee76a450a1a7214621728779729b24">glew.h</a></li>
+<li>glColor4dv()&#160;:&#160;<a class="el" href="glew_8h.html#a715be98c7bc5dab09387a31747f0c040">glew.h</a></li>
+<li>glColor4f()&#160;:&#160;<a class="el" href="glew_8h.html#ae9e165c507000556a24b1ce329aadd15">glew.h</a></li>
+<li>glColor4fv()&#160;:&#160;<a class="el" href="glew_8h.html#ad51a6f07da93ae9b5769e272cda30e39">glew.h</a></li>
+<li>glColor4i()&#160;:&#160;<a class="el" href="glew_8h.html#abe71fd7b9dc487c6b1bf7b7942095628">glew.h</a></li>
+<li>glColor4iv()&#160;:&#160;<a class="el" href="glew_8h.html#a2712a64b042c30e058a0b828a84ac145">glew.h</a></li>
+<li>glColor4s()&#160;:&#160;<a class="el" href="glew_8h.html#a02b1d9728918bc91d1bac219678943fd">glew.h</a></li>
+<li>glColor4sv()&#160;:&#160;<a class="el" href="glew_8h.html#a7296309cf88f785ae94c2dcd2a60d5ea">glew.h</a></li>
+<li>glColor4ub()&#160;:&#160;<a class="el" href="glew_8h.html#ad24c41fcbded94aaeddca3f6b27dde93">glew.h</a></li>
+<li>glColor4ubv()&#160;:&#160;<a class="el" href="glew_8h.html#aa7b4d7ec2c5ba2e457e4fce647128495">glew.h</a></li>
+<li>glColor4ui()&#160;:&#160;<a class="el" href="glew_8h.html#a612fe834847403d423e3ca944b483b36">glew.h</a></li>
+<li>glColor4uiv()&#160;:&#160;<a class="el" href="glew_8h.html#aceb47ba51fde6d1c6221cf615a7ca16c">glew.h</a></li>
+<li>glColor4us()&#160;:&#160;<a class="el" href="glew_8h.html#a8e79d041d31b18f11fe2bedbaf021cc4">glew.h</a></li>
+<li>glColor4usv()&#160;:&#160;<a class="el" href="glew_8h.html#a05f6c255ae9c9eaad31e39dfdc0a31e5">glew.h</a></li>
+<li>glColorMask()&#160;:&#160;<a class="el" href="glew_8h.html#abb149cb09a1ba5383aa2dff78471472b">glew.h</a></li>
+<li>glColorMaterial()&#160;:&#160;<a class="el" href="glew_8h.html#a3745295c009366506b73664129d44ba0">glew.h</a></li>
+<li>glColorPointer()&#160;:&#160;<a class="el" href="glew_8h.html#a665b391a671fb860027aa40b3eefdada">glew.h</a></li>
+<li>glCopyPixels()&#160;:&#160;<a class="el" href="glew_8h.html#a1b5c9844a89887d2d6ab98a17129f0fc">glew.h</a></li>
+<li>glCopyTexImage1D()&#160;:&#160;<a class="el" href="glew_8h.html#a1efcf2cfa8eea44937de9da607eda4d4">glew.h</a></li>
+<li>glCopyTexImage2D()&#160;:&#160;<a class="el" href="glew_8h.html#af3523e750b7de9126f835ab9f25487aa">glew.h</a></li>
+<li>glCopyTexSubImage1D()&#160;:&#160;<a class="el" href="glew_8h.html#aa5bf292932518d1ab3e0354bd01223c7">glew.h</a></li>
+<li>glCopyTexSubImage2D()&#160;:&#160;<a class="el" href="glew_8h.html#a0830f42a1de1e994b5d12937a2dcd541">glew.h</a></li>
+<li>glCullFace()&#160;:&#160;<a class="el" href="glew_8h.html#ab96734b878496b7f1d84b854a0cc072c">glew.h</a></li>
+<li>glDeleteLists()&#160;:&#160;<a class="el" href="glew_8h.html#a782f22940cc83d3b30c42a25f1bd0e9f">glew.h</a></li>
+<li>glDeleteTextures()&#160;:&#160;<a class="el" href="glew_8h.html#a2f5eccab2c3938a8c0c141035b4df47c">glew.h</a></li>
+<li>glDepthFunc()&#160;:&#160;<a class="el" href="glew_8h.html#a193efd842a4f4d9bf391afd286c4eef4">glew.h</a></li>
+<li>glDepthMask()&#160;:&#160;<a class="el" href="glew_8h.html#a2dd6d6a950c820e1448dd34a6c1e7ad0">glew.h</a></li>
+<li>glDepthRange()&#160;:&#160;<a class="el" href="glew_8h.html#a80a5e17235ce46cd5425a802b6c956aa">glew.h</a></li>
+<li>glDisable()&#160;:&#160;<a class="el" href="glew_8h.html#acfd692f7e3361a218a542300f35ea816">glew.h</a></li>
+<li>glDisableClientState()&#160;:&#160;<a class="el" href="glew_8h.html#aeb7ecc1586fb72b04fcdb2781727dc31">glew.h</a></li>
+<li>glDrawArrays()&#160;:&#160;<a class="el" href="glew_8h.html#a1101b854177debf0c1d2611fbec24ffa">glew.h</a></li>
+<li>glDrawBuffer()&#160;:&#160;<a class="el" href="glew_8h.html#a170c1426633472880793e711b06ef0df">glew.h</a></li>
+<li>glDrawElements()&#160;:&#160;<a class="el" href="glew_8h.html#ad495fab218048892eb1fa43be08e9dd2">glew.h</a></li>
+<li>glDrawPixels()&#160;:&#160;<a class="el" href="glew_8h.html#ad759a99e9298e86b34b3d0b3d7e5491e">glew.h</a></li>
+<li>glEdgeFlag()&#160;:&#160;<a class="el" href="glew_8h.html#aadfd9c85f88289be81e913fb116d0d2f">glew.h</a></li>
+<li>glEdgeFlagPointer()&#160;:&#160;<a class="el" href="glew_8h.html#a51134a0bf75ac5098b411645b095999e">glew.h</a></li>
+<li>glEdgeFlagv()&#160;:&#160;<a class="el" href="glew_8h.html#a632b411901cc56e98a3471f11a407ca5">glew.h</a></li>
+<li>glEnable()&#160;:&#160;<a class="el" href="glew_8h.html#a1beaf822e5a901dc3fe429b68efb77d4">glew.h</a></li>
+<li>glEnableClientState()&#160;:&#160;<a class="el" href="glew_8h.html#a8d83b3ccaa4fe514a0b2e0f0aa891e02">glew.h</a></li>
+<li>glEnd()&#160;:&#160;<a class="el" href="glew_8h.html#abbff207d1fa71b296ff35b149cef7238">glew.h</a></li>
+<li>glEndList()&#160;:&#160;<a class="el" href="glew_8h.html#a9bd7233f539f4fd2000c5d5999f6c439">glew.h</a></li>
+<li>GLenum()&#160;:&#160;<a class="el" href="glext_8h.html#a508b2dec21679e2e346cad3e0d1969bf">glext.h</a></li>
+<li>glEvalCoord1d()&#160;:&#160;<a class="el" href="glew_8h.html#a2161857324f0965ce9e4cd3e1b658efe">glew.h</a></li>
+<li>glEvalCoord1dv()&#160;:&#160;<a class="el" href="glew_8h.html#a12e02111358b29f4f291e520b3b0756f">glew.h</a></li>
+<li>glEvalCoord1f()&#160;:&#160;<a class="el" href="glew_8h.html#ae5619acff735d05f06c501bc8cc51d79">glew.h</a></li>
+<li>glEvalCoord1fv()&#160;:&#160;<a class="el" href="glew_8h.html#acddbd38df84cc883ed5982fc0f9de0d4">glew.h</a></li>
+<li>glEvalCoord2d()&#160;:&#160;<a class="el" href="glew_8h.html#a0bf52d8438fac7985c0a0581796f8993">glew.h</a></li>
+<li>glEvalCoord2dv()&#160;:&#160;<a class="el" href="glew_8h.html#a222359907218fe14f3d7115c4cd2f4a0">glew.h</a></li>
+<li>glEvalCoord2f()&#160;:&#160;<a class="el" href="glew_8h.html#a1a4cc967fb6b95c73fa90f494ecfdbca">glew.h</a></li>
+<li>glEvalCoord2fv()&#160;:&#160;<a class="el" href="glew_8h.html#ad35c09037f6904f3989d4e12d47d8819">glew.h</a></li>
+<li>glEvalMesh1()&#160;:&#160;<a class="el" href="glew_8h.html#ad5666317b3c46cc5059629f2a20850fe">glew.h</a></li>
+<li>glEvalMesh2()&#160;:&#160;<a class="el" href="glew_8h.html#a2260e752d41d9c53dacfc9f3bb0292fb">glew.h</a></li>
+<li>glEvalPoint1()&#160;:&#160;<a class="el" href="glew_8h.html#ac539bbb62f78c6170071b053fe3ce521">glew.h</a></li>
+<li>glEvalPoint2()&#160;:&#160;<a class="el" href="glew_8h.html#ab102cfd4d1697ecf63388db5d2c97868">glew.h</a></li>
+<li>glewGetErrorString()&#160;:&#160;<a class="el" href="glew_8h.html#aeb321e959326491221e4effda591f49b">glew.h</a></li>
+<li>glewGetExtension()&#160;:&#160;<a class="el" href="glew_8h.html#a3d84341b1f876ac61065fef3f5933ff7">glew.h</a></li>
+<li>glewGetString()&#160;:&#160;<a class="el" href="glew_8h.html#a1272ed0d17a152528c4648cc7450b1bd">glew.h</a></li>
+<li>glewInit()&#160;:&#160;<a class="el" href="glew_8h.html#a60f638ea2b56ff27509779faf093e3e7">glew.h</a></li>
+<li>glewIsSupported()&#160;:&#160;<a class="el" href="glew_8h.html#aac39208b61ce8d31608ed8211a8b63f1">glew.h</a></li>
+<li>glFeedbackBuffer()&#160;:&#160;<a class="el" href="glew_8h.html#a199f6df36ccd844d6b78818e80178075">glew.h</a></li>
+<li>glFinish()&#160;:&#160;<a class="el" href="glew_8h.html#a32df7ba224618f3a64723debf23835dd">glew.h</a></li>
+<li>glFlush()&#160;:&#160;<a class="el" href="glew_8h.html#afb3e087fc26a916a909d46ead9cfc44a">glew.h</a></li>
+<li>glFogf()&#160;:&#160;<a class="el" href="glew_8h.html#aaf831a71e047f060ff3fac8c633dd416">glew.h</a></li>
+<li>glFogfv()&#160;:&#160;<a class="el" href="glew_8h.html#a930dcd1cd4f2047ec4cd383c442d8d99">glew.h</a></li>
+<li>glFogi()&#160;:&#160;<a class="el" href="glew_8h.html#ac5f6e56e07e3ec4441b7844541e1e36d">glew.h</a></li>
+<li>glFogiv()&#160;:&#160;<a class="el" href="glew_8h.html#ac77f39310b9435915427b8a2aed11318">glew.h</a></li>
+<li>glFrontFace()&#160;:&#160;<a class="el" href="glew_8h.html#afa8b9e2bcb7fed76f69b2182bc2f3d73">glew.h</a></li>
+<li>glFrustum()&#160;:&#160;<a class="el" href="glew_8h.html#a274891950d4d4c5ae73a0fe2aeb05733">glew.h</a></li>
+<li>glGenLists()&#160;:&#160;<a class="el" href="glew_8h.html#a695a55175b5e79ab29946bcba8b16668">glew.h</a></li>
+<li>glGenTextures()&#160;:&#160;<a class="el" href="glew_8h.html#a99e77ebf136a8c511226cf705049a305">glew.h</a></li>
+<li>glGetBooleanv()&#160;:&#160;<a class="el" href="glew_8h.html#a1bd1bb6838936dfba3b9d17ceb5df238">glew.h</a></li>
+<li>glGetClipPlane()&#160;:&#160;<a class="el" href="glew_8h.html#a9d551619fcd9b7b91dd1faec314ddd51">glew.h</a></li>
+<li>glGetDoublev()&#160;:&#160;<a class="el" href="glew_8h.html#a8e049c0d8dae830e89aa6586b346b21a">glew.h</a></li>
+<li>glGetError()&#160;:&#160;<a class="el" href="glew_8h.html#a96d12fe2ba9949b71f7834676df8ee10">glew.h</a></li>
+<li>glGetFloatv()&#160;:&#160;<a class="el" href="glew_8h.html#ad8c26383a66e464f7a383399334de809">glew.h</a></li>
+<li>glGetIntegerv()&#160;:&#160;<a class="el" href="glew_8h.html#ae9ebc290561b3321b629610807155a35">glew.h</a></li>
+<li>glGetLightfv()&#160;:&#160;<a class="el" href="glew_8h.html#a2c25b9c3d7f6dbb85acc77f9bfd4140a">glew.h</a></li>
+<li>glGetLightiv()&#160;:&#160;<a class="el" href="glew_8h.html#ac9346b6f71e5330961938efcc6d8796b">glew.h</a></li>
+<li>glGetMapdv()&#160;:&#160;<a class="el" href="glew_8h.html#a2d1350f0fd2917a8ec16de1913819ddb">glew.h</a></li>
+<li>glGetMapfv()&#160;:&#160;<a class="el" href="glew_8h.html#a555996a28d3dee6168b4647f1b7225b1">glew.h</a></li>
+<li>glGetMapiv()&#160;:&#160;<a class="el" href="glew_8h.html#ac0b20e1ea77f52e55621ff94cd0d5c0c">glew.h</a></li>
+<li>glGetMaterialfv()&#160;:&#160;<a class="el" href="glew_8h.html#ad819197d7d0fe64edef7497a2de658f9">glew.h</a></li>
+<li>glGetMaterialiv()&#160;:&#160;<a class="el" href="glew_8h.html#accf1f20e1ec49d925745a72624df4a71">glew.h</a></li>
+<li>glGetPixelMapfv()&#160;:&#160;<a class="el" href="glew_8h.html#a3d7ded8546fbcde6804fb302445859d8">glew.h</a></li>
+<li>glGetPixelMapuiv()&#160;:&#160;<a class="el" href="glew_8h.html#ab1ba14ec80115aa4a6514968d4ddedf6">glew.h</a></li>
+<li>glGetPixelMapusv()&#160;:&#160;<a class="el" href="glew_8h.html#a962691e9f27fb395c4b923c06d57209f">glew.h</a></li>
+<li>glGetPointerv()&#160;:&#160;<a class="el" href="glew_8h.html#afa1969739de445b823cfb969d31269c9">glew.h</a></li>
+<li>glGetPolygonStipple()&#160;:&#160;<a class="el" href="glew_8h.html#a048a84139039edcde8acd283ca924fb0">glew.h</a></li>
+<li>glGetString()&#160;:&#160;<a class="el" href="glew_8h.html#af200396ea125a263cc53032ab203987b">glew.h</a></li>
+<li>glGetTexEnvfv()&#160;:&#160;<a class="el" href="glew_8h.html#a2b2d0319e5ff5969480a1b4580bfbeaf">glew.h</a></li>
+<li>glGetTexEnviv()&#160;:&#160;<a class="el" href="glew_8h.html#a6ad82e04edeb03f700c983f5f0e2f2b1">glew.h</a></li>
+<li>glGetTexGendv()&#160;:&#160;<a class="el" href="glew_8h.html#a185cf2c7fbbc910d05a1b6007492d7ec">glew.h</a></li>
+<li>glGetTexGenfv()&#160;:&#160;<a class="el" href="glew_8h.html#ad7c55b55b30658d9a507ed4b039db5be">glew.h</a></li>
+<li>glGetTexGeniv()&#160;:&#160;<a class="el" href="glew_8h.html#ae38382494ec8ecb37c6c31517dea1287">glew.h</a></li>
+<li>glGetTexImage()&#160;:&#160;<a class="el" href="glew_8h.html#a1e3a5d514c8587268c17567d5a0c717a">glew.h</a></li>
+<li>glGetTexLevelParameterfv()&#160;:&#160;<a class="el" href="glew_8h.html#aa5110b02ec2396688404d0ff4ddc6e45">glew.h</a></li>
+<li>glGetTexLevelParameteriv()&#160;:&#160;<a class="el" href="glew_8h.html#a0a944b33e43834706b71f70bc933c3fd">glew.h</a></li>
+<li>glGetTexParameterfv()&#160;:&#160;<a class="el" href="glew_8h.html#acc410a7792331331d0a74714230dc9bf">glew.h</a></li>
+<li>glGetTexParameteriv()&#160;:&#160;<a class="el" href="glew_8h.html#a6039ba8d5e6571152889d0be326ea100">glew.h</a></li>
+<li>GLhandleARB()&#160;:&#160;<a class="el" href="glext_8h.html#aead20ecfc472bd58ebf1f5af54794236">glext.h</a></li>
+<li>glHint()&#160;:&#160;<a class="el" href="glew_8h.html#a38aa3c596c7fdd95358f165194b45d83">glew.h</a></li>
+<li>glIndexd()&#160;:&#160;<a class="el" href="glew_8h.html#ab570791f76820a726a9b5184c3166eeb">glew.h</a></li>
+<li>glIndexdv()&#160;:&#160;<a class="el" href="glew_8h.html#a1eed4567fbc11eae0f41a851fa619073">glew.h</a></li>
+<li>glIndexf()&#160;:&#160;<a class="el" href="glew_8h.html#a24fe0938fc23911f5fcdd5c646869865">glew.h</a></li>
+<li>glIndexfv()&#160;:&#160;<a class="el" href="glew_8h.html#ac28481be2c890f6faf774ce3a90ef3d5">glew.h</a></li>
+<li>glIndexi()&#160;:&#160;<a class="el" href="glew_8h.html#a4fb06af074fe0ec2043a71c0cd7bfee1">glew.h</a></li>
+<li>glIndexiv()&#160;:&#160;<a class="el" href="glew_8h.html#a2e26c0979d1a9b95aa4f2986437619cc">glew.h</a></li>
+<li>glIndexMask()&#160;:&#160;<a class="el" href="glew_8h.html#a3cca703c2b5dd1f11d6af634f87a517d">glew.h</a></li>
+<li>glIndexPointer()&#160;:&#160;<a class="el" href="glew_8h.html#a42afa9ab7eedc3f9faa70eba279baeac">glew.h</a></li>
+<li>glIndexs()&#160;:&#160;<a class="el" href="glew_8h.html#a82991239259488fee86e0f9fb06d09f2">glew.h</a></li>
+<li>glIndexsv()&#160;:&#160;<a class="el" href="glew_8h.html#ab8a539f962d86e6958f5125822d8058f">glew.h</a></li>
+<li>glIndexub()&#160;:&#160;<a class="el" href="glew_8h.html#ae9afcdf792490808004208dcfcbdf095">glew.h</a></li>
+<li>glIndexubv()&#160;:&#160;<a class="el" href="glew_8h.html#aa81ab3edd637db93598926f9db8c4c13">glew.h</a></li>
+<li>glInitNames()&#160;:&#160;<a class="el" href="glew_8h.html#a7fea5390c8d58f5a3db34dfc8d049905">glew.h</a></li>
+<li>GLint()&#160;:&#160;<a class="el" href="glext_8h.html#aacf898e4ecb940565baac883dc587ff0">glext.h</a></li>
+<li>glInterleavedArrays()&#160;:&#160;<a class="el" href="glew_8h.html#a21da4369abac0bfe989f866ff614fead">glew.h</a></li>
+<li>GLintptr()&#160;:&#160;<a class="el" href="glext_8h.html#abb4d39fc1b703cf3a253f157aff5dc5f">glext.h</a></li>
+<li>glIsEnabled()&#160;:&#160;<a class="el" href="glew_8h.html#a380a1eb7a097e80f3825b943f4f30d19">glew.h</a></li>
+<li>glIsList()&#160;:&#160;<a class="el" href="glew_8h.html#af696b5d51dcfa29e4fd56c08219b4945">glew.h</a></li>
+<li>glIsTexture()&#160;:&#160;<a class="el" href="glew_8h.html#a63b4f70e2424903fac15179b1c15efbe">glew.h</a></li>
+<li>glLightf()&#160;:&#160;<a class="el" href="glew_8h.html#a9ad00dfada87d983d5ad03ed5635a106">glew.h</a></li>
+<li>glLightfv()&#160;:&#160;<a class="el" href="glew_8h.html#ac942c968c5084600e431332674d11d39">glew.h</a></li>
+<li>glLighti()&#160;:&#160;<a class="el" href="glew_8h.html#afe3ed82ba9c69f7d43747c97bbb28954">glew.h</a></li>
+<li>glLightiv()&#160;:&#160;<a class="el" href="glew_8h.html#ad1f3fd598c4d3691ff361f732d988813">glew.h</a></li>
+<li>glLightModelf()&#160;:&#160;<a class="el" href="glew_8h.html#aba0a48a87bac90bfe49861dc7362848e">glew.h</a></li>
+<li>glLightModelfv()&#160;:&#160;<a class="el" href="glew_8h.html#ac2281a96f181f32ee65bfc86b6e6bb68">glew.h</a></li>
+<li>glLightModeli()&#160;:&#160;<a class="el" href="glew_8h.html#aa4dfec46335156ad344fc8014018c267">glew.h</a></li>
+<li>glLightModeliv()&#160;:&#160;<a class="el" href="glew_8h.html#a55ad0e7ce779bcaa21bf6a3b33a5eae4">glew.h</a></li>
+<li>glLineStipple()&#160;:&#160;<a class="el" href="glew_8h.html#ac49602705e3f6aed685e224e67845d06">glew.h</a></li>
+<li>glLineWidth()&#160;:&#160;<a class="el" href="glew_8h.html#a8ac47f6bf1d1c4699a40b5458db28833">glew.h</a></li>
+<li>glListBase()&#160;:&#160;<a class="el" href="glew_8h.html#acbe1f2d3e4e5e317ca7af7c27ae81c94">glew.h</a></li>
+<li>glLoadIdentity()&#160;:&#160;<a class="el" href="glew_8h.html#a6577472f85b23086331edadaf0311a49">glew.h</a></li>
+<li>glLoadMatrixd()&#160;:&#160;<a class="el" href="glew_8h.html#a3bede8776c94c6c8739df49c5a170502">glew.h</a></li>
+<li>glLoadMatrixf()&#160;:&#160;<a class="el" href="glew_8h.html#a137dd30e913277535731eccb9b69a0c0">glew.h</a></li>
+<li>glLoadName()&#160;:&#160;<a class="el" href="glew_8h.html#a7b1e8cad8be5d867bdf0c98bdb3fbf88">glew.h</a></li>
+<li>glLogicOp()&#160;:&#160;<a class="el" href="glew_8h.html#ad5d3e3ae4ec88cbd91322c77f32d8a92">glew.h</a></li>
+<li>glMap1d()&#160;:&#160;<a class="el" href="glew_8h.html#a4145da07d6dcd2e55fea3835ef903c9f">glew.h</a></li>
+<li>glMap1f()&#160;:&#160;<a class="el" href="glew_8h.html#a7a9d77ab01cd824f1fde6a5e8ccaa00c">glew.h</a></li>
+<li>glMap2d()&#160;:&#160;<a class="el" href="glew_8h.html#a0fe1e63ae020f4d0fb68d6648c62c61a">glew.h</a></li>
+<li>glMap2f()&#160;:&#160;<a class="el" href="glew_8h.html#a53d46b8ab876bbc0952d979637d91121">glew.h</a></li>
+<li>glMapGrid1d()&#160;:&#160;<a class="el" href="glew_8h.html#a035994f83a88d5dcecdfdcf46c5185c3">glew.h</a></li>
+<li>glMapGrid1f()&#160;:&#160;<a class="el" href="glew_8h.html#a77958cf3ef2440cf39bd59109dbe8cf9">glew.h</a></li>
+<li>glMapGrid2d()&#160;:&#160;<a class="el" href="glew_8h.html#a9462a111041d725ac72362e97b9ee23e">glew.h</a></li>
+<li>glMapGrid2f()&#160;:&#160;<a class="el" href="glew_8h.html#a6f6e6155f4396d7b3fa7ca6c7f25c242">glew.h</a></li>
+<li>glMaterialf()&#160;:&#160;<a class="el" href="glew_8h.html#a44edf608613acc70b5a5378a369bfae9">glew.h</a></li>
+<li>glMaterialfv()&#160;:&#160;<a class="el" href="glew_8h.html#a598f8ff6c7caf0dc3f52c437a27a1426">glew.h</a></li>
+<li>glMateriali()&#160;:&#160;<a class="el" href="glew_8h.html#aed60a4897c5f140d90028a8b0e11eeae">glew.h</a></li>
+<li>glMaterialiv()&#160;:&#160;<a class="el" href="glew_8h.html#aedde32c0622054f0d999e0f9b383894b">glew.h</a></li>
+<li>glMatrixMode()&#160;:&#160;<a class="el" href="glew_8h.html#af14e38e22806d0220680b52edbc3bcef">glew.h</a></li>
+<li>glMultMatrixd()&#160;:&#160;<a class="el" href="glew_8h.html#a5c675407cfada4e8406692a62a361aae">glew.h</a></li>
+<li>glMultMatrixf()&#160;:&#160;<a class="el" href="glew_8h.html#a7a68c08236ddad5d7bff76295712ea89">glew.h</a></li>
+<li>glNewList()&#160;:&#160;<a class="el" href="glew_8h.html#a2255efdc1e7585c158d43eb670dde31b">glew.h</a></li>
+<li>glNormal3b()&#160;:&#160;<a class="el" href="glew_8h.html#a8512a2b96cea65d8b8a79712a60ffa92">glew.h</a></li>
+<li>glNormal3bv()&#160;:&#160;<a class="el" href="glew_8h.html#a407e50487391d2992570e02d463f68a4">glew.h</a></li>
+<li>glNormal3d()&#160;:&#160;<a class="el" href="glew_8h.html#a38e6ab1ab876be4f54072b348cf7b23f">glew.h</a></li>
+<li>glNormal3dv()&#160;:&#160;<a class="el" href="glew_8h.html#a8137f10da7476393569ccc4fe62a7df7">glew.h</a></li>
+<li>glNormal3f()&#160;:&#160;<a class="el" href="glew_8h.html#a921a9cbeeca45725bc6be5db6a59679c">glew.h</a></li>
+<li>glNormal3fv()&#160;:&#160;<a class="el" href="glew_8h.html#ad73bbb2f71327e85ce98cf1c91e71f79">glew.h</a></li>
+<li>glNormal3i()&#160;:&#160;<a class="el" href="glew_8h.html#a32a02c66409b07158ef7ea600e21a634">glew.h</a></li>
+<li>glNormal3iv()&#160;:&#160;<a class="el" href="glew_8h.html#a474fd7614af2cf8fba8687fa846ed535">glew.h</a></li>
+<li>glNormal3s()&#160;:&#160;<a class="el" href="glew_8h.html#a476f81c9929e8973bb7fa2eba84d6f8c">glew.h</a></li>
+<li>glNormal3sv()&#160;:&#160;<a class="el" href="glew_8h.html#a4f08712b4a783973f84e7d909f287b4b">glew.h</a></li>
+<li>glNormalPointer()&#160;:&#160;<a class="el" href="glew_8h.html#a7b011498edafcfd04035da3e34be60a2">glew.h</a></li>
+<li>glOrtho()&#160;:&#160;<a class="el" href="glew_8h.html#a2d92120b1fad876057dfd00e2d942525">glew.h</a></li>
+<li>glPassThrough()&#160;:&#160;<a class="el" href="glew_8h.html#a46e827cd2a53ddf88efd6b26d685781a">glew.h</a></li>
+<li>glPixelMapfv()&#160;:&#160;<a class="el" href="glew_8h.html#a29ccefc305491a4f5965dabe7a82c6cf">glew.h</a></li>
+<li>glPixelMapuiv()&#160;:&#160;<a class="el" href="glew_8h.html#a39566f1e3e843415f71dc18462761055">glew.h</a></li>
+<li>glPixelMapusv()&#160;:&#160;<a class="el" href="glew_8h.html#a981144909be460c259415d701890ecb8">glew.h</a></li>
+<li>glPixelStoref()&#160;:&#160;<a class="el" href="glew_8h.html#ad334e2539cef9a1f7dc5d6ce1bfd0fcc">glew.h</a></li>
+<li>glPixelStorei()&#160;:&#160;<a class="el" href="glew_8h.html#adb2666717eedb30c430d1a371d897c76">glew.h</a></li>
+<li>glPixelTransferf()&#160;:&#160;<a class="el" href="glew_8h.html#af4185b0cfe2a5d2320edf73d656cd633">glew.h</a></li>
+<li>glPixelTransferi()&#160;:&#160;<a class="el" href="glew_8h.html#ae194f224bffdf65a8ac9c8f54dd5122c">glew.h</a></li>
+<li>glPixelZoom()&#160;:&#160;<a class="el" href="glew_8h.html#a0ea87f28c6104d6ecb83e5465ca93a77">glew.h</a></li>
+<li>glPointSize()&#160;:&#160;<a class="el" href="glew_8h.html#a6e4c9239a0c28e7076599c1137e00c26">glew.h</a></li>
+<li>glPolygonMode()&#160;:&#160;<a class="el" href="glew_8h.html#a5e3f489d997350749919a24247a8203b">glew.h</a></li>
+<li>glPolygonOffset()&#160;:&#160;<a class="el" href="glew_8h.html#a5673d075eeb21403488ecb7b7d3521bd">glew.h</a></li>
+<li>glPolygonStipple()&#160;:&#160;<a class="el" href="glew_8h.html#a025e7188d5009251d1b1ccc5eddaf518">glew.h</a></li>
+<li>glPopAttrib()&#160;:&#160;<a class="el" href="glew_8h.html#acbb6d06bd442336aac5ce9a6619dddc0">glew.h</a></li>
+<li>glPopClientAttrib()&#160;:&#160;<a class="el" href="glew_8h.html#ab89a698d3f3889561f39cc71d353cf91">glew.h</a></li>
+<li>glPopMatrix()&#160;:&#160;<a class="el" href="glew_8h.html#a9e424a5503edd5a5b76442b503661afe">glew.h</a></li>
+<li>glPopName()&#160;:&#160;<a class="el" href="glew_8h.html#adbaa320ed97cfc2401f243ec0b67738b">glew.h</a></li>
+<li>glPrioritizeTextures()&#160;:&#160;<a class="el" href="glew_8h.html#a2c5a738c72114caf0a5546e692fd3cf7">glew.h</a></li>
+<li>glPushAttrib()&#160;:&#160;<a class="el" href="glew_8h.html#aeb6223bfd0e2b3a549fbf31af890ee53">glew.h</a></li>
+<li>glPushClientAttrib()&#160;:&#160;<a class="el" href="glew_8h.html#a1245d0162a57ef8b1e43f2aa5280f768">glew.h</a></li>
+<li>glPushMatrix()&#160;:&#160;<a class="el" href="glew_8h.html#a64e877be265de9d7e1e8e479768cc86c">glew.h</a></li>
+<li>glPushName()&#160;:&#160;<a class="el" href="glew_8h.html#a5c469b5e2e2276bfb83687facf454f54">glew.h</a></li>
+<li>glRasterPos2d()&#160;:&#160;<a class="el" href="glew_8h.html#a3f690af8c739d9eb0fe13c48d07d7611">glew.h</a></li>
+<li>glRasterPos2dv()&#160;:&#160;<a class="el" href="glew_8h.html#a3deecd76f56b45b48b9208fc9738b555">glew.h</a></li>
+<li>glRasterPos2f()&#160;:&#160;<a class="el" href="glew_8h.html#ae36ecd91a0bf99013401360db42b6777">glew.h</a></li>
+<li>glRasterPos2fv()&#160;:&#160;<a class="el" href="glew_8h.html#a9d435f648ddb56278fad54068bf19470">glew.h</a></li>
+<li>glRasterPos2i()&#160;:&#160;<a class="el" href="glew_8h.html#a25030ca18aa389cf0351eba5f1eca5dc">glew.h</a></li>
+<li>glRasterPos2iv()&#160;:&#160;<a class="el" href="glew_8h.html#accc1d9ee0daa0547f3ee891792b71a32">glew.h</a></li>
+<li>glRasterPos2s()&#160;:&#160;<a class="el" href="glew_8h.html#abf5602076324afa06c02ebb081437360">glew.h</a></li>
+<li>glRasterPos2sv()&#160;:&#160;<a class="el" href="glew_8h.html#a06a4517e06f44340e78cd3d1ec2e6d50">glew.h</a></li>
+<li>glRasterPos3d()&#160;:&#160;<a class="el" href="glew_8h.html#a588afc91c1b736c5f613fa747397d480">glew.h</a></li>
+<li>glRasterPos3dv()&#160;:&#160;<a class="el" href="glew_8h.html#ac3e30de9decadb74ac557881d5fb5c6b">glew.h</a></li>
+<li>glRasterPos3f()&#160;:&#160;<a class="el" href="glew_8h.html#a039b24faa844b125288064149433c944">glew.h</a></li>
+<li>glRasterPos3fv()&#160;:&#160;<a class="el" href="glew_8h.html#a40f75c6f3b4add013e898e5f2b0d94a9">glew.h</a></li>
+<li>glRasterPos3i()&#160;:&#160;<a class="el" href="glew_8h.html#ab0d80a20e5c27f2adc52e4eb09ed3768">glew.h</a></li>
+<li>glRasterPos3iv()&#160;:&#160;<a class="el" href="glew_8h.html#a26e5a17e945209f7708e4738eddf8342">glew.h</a></li>
+<li>glRasterPos3s()&#160;:&#160;<a class="el" href="glew_8h.html#afcf26b08560027fd679a384ad1b6f71d">glew.h</a></li>
+<li>glRasterPos3sv()&#160;:&#160;<a class="el" href="glew_8h.html#ac782df0d1da9cf7ccde88ee6562527b9">glew.h</a></li>
+<li>glRasterPos4d()&#160;:&#160;<a class="el" href="glew_8h.html#afb734632ce0b62fb0b21178d5ceab111">glew.h</a></li>
+<li>glRasterPos4dv()&#160;:&#160;<a class="el" href="glew_8h.html#aed0e298c65a074276a31117d6e01a968">glew.h</a></li>
+<li>glRasterPos4f()&#160;:&#160;<a class="el" href="glew_8h.html#a5832cd02cc2e7e5e59a3e09012e6d196">glew.h</a></li>
+<li>glRasterPos4fv()&#160;:&#160;<a class="el" href="glew_8h.html#adca21bb34964fd4a63841445a5c28161">glew.h</a></li>
+<li>glRasterPos4i()&#160;:&#160;<a class="el" href="glew_8h.html#a2165010ae0a076c93abc513e36adf90d">glew.h</a></li>
+<li>glRasterPos4iv()&#160;:&#160;<a class="el" href="glew_8h.html#ab34c56c6c6dbeb8409830f24885c4a0f">glew.h</a></li>
+<li>glRasterPos4s()&#160;:&#160;<a class="el" href="glew_8h.html#ab6ac31372e9575175082211ba9dc6e90">glew.h</a></li>
+<li>glRasterPos4sv()&#160;:&#160;<a class="el" href="glew_8h.html#aa357635c47a3e126df1ce0372bfb0308">glew.h</a></li>
+<li>glReadBuffer()&#160;:&#160;<a class="el" href="glew_8h.html#aea1d47483e7a506d5d7c437309a74fbb">glew.h</a></li>
+<li>glReadPixels()&#160;:&#160;<a class="el" href="glew_8h.html#adbab0cced722a4b572d6647798a961af">glew.h</a></li>
+<li>glRectd()&#160;:&#160;<a class="el" href="glew_8h.html#ad3712a12647bd064ee99326de59f6052">glew.h</a></li>
+<li>glRectdv()&#160;:&#160;<a class="el" href="glew_8h.html#a4178cd386125b216c8014dfc2c394bea">glew.h</a></li>
+<li>glRectf()&#160;:&#160;<a class="el" href="glew_8h.html#a77cd832b15731444bf65e676ba26856b">glew.h</a></li>
+<li>glRectfv()&#160;:&#160;<a class="el" href="glew_8h.html#a0549ede41a6727d0168ee9f96eff4f3c">glew.h</a></li>
+<li>glRecti()&#160;:&#160;<a class="el" href="glew_8h.html#a5d138c814b7f6066595709de59142971">glew.h</a></li>
+<li>glRectiv()&#160;:&#160;<a class="el" href="glew_8h.html#aef3438cf6c77d878b5595cb97edd1b42">glew.h</a></li>
+<li>glRects()&#160;:&#160;<a class="el" href="glew_8h.html#a7e817fc3231c3c5cc9abca31615ae6cb">glew.h</a></li>
+<li>glRectsv()&#160;:&#160;<a class="el" href="glew_8h.html#ab7caa78d3c29b389385d640290eb83ef">glew.h</a></li>
+<li>glRenderMode()&#160;:&#160;<a class="el" href="glew_8h.html#a9c810a7ec8acf5b398afe7b708785f5f">glew.h</a></li>
+<li>glRotated()&#160;:&#160;<a class="el" href="glew_8h.html#ae19896a9eb09eea2310b95d0d2e7118c">glew.h</a></li>
+<li>glRotatef()&#160;:&#160;<a class="el" href="glew_8h.html#ab7849dc11574cfb61a713688f713dd8d">glew.h</a></li>
+<li>glScaled()&#160;:&#160;<a class="el" href="glew_8h.html#a86cfb11b85f0628cb0a25ef861c375f4">glew.h</a></li>
+<li>glScalef()&#160;:&#160;<a class="el" href="glew_8h.html#a8fd928b1b75f4c7b75bd3b0fa06a3fd3">glew.h</a></li>
+<li>glScissor()&#160;:&#160;<a class="el" href="glew_8h.html#aa437a0088fd3ea6c20e18262c0298ca7">glew.h</a></li>
+<li>glSelectBuffer()&#160;:&#160;<a class="el" href="glew_8h.html#abd993f5a69ed97a01b1548363bf7c9b7">glew.h</a></li>
+<li>glShadeModel()&#160;:&#160;<a class="el" href="glew_8h.html#af1e3a750be50d9edd85f0fe49a6fe4a0">glew.h</a></li>
+<li>glStencilFunc()&#160;:&#160;<a class="el" href="glew_8h.html#a91c1bce950eb4b3e4f61f6387bd88905">glew.h</a></li>
+<li>glStencilMask()&#160;:&#160;<a class="el" href="glew_8h.html#a7cdca07b0f710e75aae5eba3e09b7dff">glew.h</a></li>
+<li>glStencilOp()&#160;:&#160;<a class="el" href="glew_8h.html#af668105f54e6d7db62bbdda2d17ebb5e">glew.h</a></li>
+<li>GLsync()&#160;:&#160;<a class="el" href="glext_8h.html#a18f41c291ba9a67abbb6eb9e1a3f58ce">glext.h</a></li>
+<li>glTexCoord1d()&#160;:&#160;<a class="el" href="glew_8h.html#a1afe4e7197d9d266755813b8c6d82d26">glew.h</a></li>
+<li>glTexCoord1dv()&#160;:&#160;<a class="el" href="glew_8h.html#a5dde6bc07804ce23072fded1969ac1e6">glew.h</a></li>
+<li>glTexCoord1f()&#160;:&#160;<a class="el" href="glew_8h.html#acea737f65964b7a12ed0c31561f27900">glew.h</a></li>
+<li>glTexCoord1fv()&#160;:&#160;<a class="el" href="glew_8h.html#a967af0c1edceac82a1fd9c2151e9a2e8">glew.h</a></li>
+<li>glTexCoord1i()&#160;:&#160;<a class="el" href="glew_8h.html#ae0f2614948d97ff19fe40c51069a7665">glew.h</a></li>
+<li>glTexCoord1iv()&#160;:&#160;<a class="el" href="glew_8h.html#a02641884159f58af3cfe289d7034bacd">glew.h</a></li>
+<li>glTexCoord1s()&#160;:&#160;<a class="el" href="glew_8h.html#a810305db85c7e31541b0277101c95278">glew.h</a></li>
+<li>glTexCoord1sv()&#160;:&#160;<a class="el" href="glew_8h.html#ab169d55988bca587049de279235a95f5">glew.h</a></li>
+<li>glTexCoord2d()&#160;:&#160;<a class="el" href="glew_8h.html#aa9863b05e5620be66b08d31b88c54a03">glew.h</a></li>
+<li>glTexCoord2dv()&#160;:&#160;<a class="el" href="glew_8h.html#a662f76461c014fb20949be7741ac80d0">glew.h</a></li>
+<li>glTexCoord2f()&#160;:&#160;<a class="el" href="glew_8h.html#a09db6f9fa0d39ef7e3919e6212296ece">glew.h</a></li>
+<li>glTexCoord2fv()&#160;:&#160;<a class="el" href="glew_8h.html#a6372b9bff2a4d173a71c3d5c514c4ce2">glew.h</a></li>
+<li>glTexCoord2i()&#160;:&#160;<a class="el" href="glew_8h.html#a3a21de74d8799ed05076a96998429d7b">glew.h</a></li>
+<li>glTexCoord2iv()&#160;:&#160;<a class="el" href="glew_8h.html#af1574f4e6bea83e89d4ec283b5983a3d">glew.h</a></li>
+<li>glTexCoord2s()&#160;:&#160;<a class="el" href="glew_8h.html#a35f6e2944a7bf66ff31640a6e126d13f">glew.h</a></li>
+<li>glTexCoord2sv()&#160;:&#160;<a class="el" href="glew_8h.html#ab92234f0764a92f8580b31ec9fd946bb">glew.h</a></li>
+<li>glTexCoord3d()&#160;:&#160;<a class="el" href="glew_8h.html#aecc6ee79b79e743ba1ac10c2e9c54499">glew.h</a></li>
+<li>glTexCoord3dv()&#160;:&#160;<a class="el" href="glew_8h.html#aa072a0c19869779f06d5e9915114a416">glew.h</a></li>
+<li>glTexCoord3f()&#160;:&#160;<a class="el" href="glew_8h.html#a6e9159fb147f6d99f94109844f0a3265">glew.h</a></li>
+<li>glTexCoord3fv()&#160;:&#160;<a class="el" href="glew_8h.html#a455a4407931a5e6cbc8965f339f7ca13">glew.h</a></li>
+<li>glTexCoord3i()&#160;:&#160;<a class="el" href="glew_8h.html#a3b3f5d10f14c84fa20f604c00e4d463b">glew.h</a></li>
+<li>glTexCoord3iv()&#160;:&#160;<a class="el" href="glew_8h.html#a185956ef8c72c3c952041fe0b15692de">glew.h</a></li>
+<li>glTexCoord3s()&#160;:&#160;<a class="el" href="glew_8h.html#a94aa52ba707da6d4cc8f06d368db6cbd">glew.h</a></li>
+<li>glTexCoord3sv()&#160;:&#160;<a class="el" href="glew_8h.html#a361ac549dd9dd462078d658f0115bab1">glew.h</a></li>
+<li>glTexCoord4d()&#160;:&#160;<a class="el" href="glew_8h.html#a5e9e8d42cf8835f7acd95c520fd1255e">glew.h</a></li>
+<li>glTexCoord4dv()&#160;:&#160;<a class="el" href="glew_8h.html#a0df29a6b66c94167d53da7521db38c10">glew.h</a></li>
+<li>glTexCoord4f()&#160;:&#160;<a class="el" href="glew_8h.html#aa2e8901497832532ef9e9d6ff50ccbe3">glew.h</a></li>
+<li>glTexCoord4fv()&#160;:&#160;<a class="el" href="glew_8h.html#a5d6e564bf95b72cc99c234b764120f7d">glew.h</a></li>
+<li>glTexCoord4i()&#160;:&#160;<a class="el" href="glew_8h.html#ab51f6bfd3d424372db86978f4c908247">glew.h</a></li>
+<li>glTexCoord4iv()&#160;:&#160;<a class="el" href="glew_8h.html#a7cd62842e8f84d5e8395e4bb0ee45a50">glew.h</a></li>
+<li>glTexCoord4s()&#160;:&#160;<a class="el" href="glew_8h.html#a3fac009391043ec435047836c8b1226e">glew.h</a></li>
+<li>glTexCoord4sv()&#160;:&#160;<a class="el" href="glew_8h.html#a971b1dcde0046aa0b2500d7b790496bf">glew.h</a></li>
+<li>glTexCoordPointer()&#160;:&#160;<a class="el" href="glew_8h.html#ab66422ac3004419cac19a9354c382315">glew.h</a></li>
+<li>glTexEnvf()&#160;:&#160;<a class="el" href="glew_8h.html#aef002569ef87edd0dfbd47788cf79994">glew.h</a></li>
+<li>glTexEnvfv()&#160;:&#160;<a class="el" href="glew_8h.html#acea9599bd6d362625ee9c20279e354aa">glew.h</a></li>
+<li>glTexEnvi()&#160;:&#160;<a class="el" href="glew_8h.html#a414668e7628d609ce501994bd609bfdf">glew.h</a></li>
+<li>glTexEnviv()&#160;:&#160;<a class="el" href="glew_8h.html#a4fe8333325909f53f241757ebc09d95e">glew.h</a></li>
+<li>glTexGend()&#160;:&#160;<a class="el" href="glew_8h.html#ac68045b0f060eefd07eaf2577d5f7ed0">glew.h</a></li>
+<li>glTexGendv()&#160;:&#160;<a class="el" href="glew_8h.html#a66e245056a2ce82aeda7d97907b13da3">glew.h</a></li>
+<li>glTexGenf()&#160;:&#160;<a class="el" href="glew_8h.html#a8060d71b0a8cfd76b6fe0dd7b1442ec1">glew.h</a></li>
+<li>glTexGenfv()&#160;:&#160;<a class="el" href="glew_8h.html#a902fad6f4038313950843f46906a41cb">glew.h</a></li>
+<li>glTexGeni()&#160;:&#160;<a class="el" href="glew_8h.html#a988e76d56b4b6298598c5099721e7b85">glew.h</a></li>
+<li>glTexGeniv()&#160;:&#160;<a class="el" href="glew_8h.html#a3a0e7a28cbdc6906a0fe87fc48d7e2b6">glew.h</a></li>
+<li>glTexImage1D()&#160;:&#160;<a class="el" href="glew_8h.html#a8323ff76b3357d38995f56e11cbbac21">glew.h</a></li>
+<li>glTexImage2D()&#160;:&#160;<a class="el" href="glew_8h.html#aa95edbecc15f2cb8072b81af66d60f5b">glew.h</a></li>
+<li>glTexParameterf()&#160;:&#160;<a class="el" href="glew_8h.html#afcc62879f041bd64da028bfb59d4d34e">glew.h</a></li>
+<li>glTexParameterfv()&#160;:&#160;<a class="el" href="glew_8h.html#ab3f8ed1ddc1cc1b2889325c9b7bd55e3">glew.h</a></li>
+<li>glTexParameteri()&#160;:&#160;<a class="el" href="glew_8h.html#ac8dbabff536e520bc700960dadd8d787">glew.h</a></li>
+<li>glTexParameteriv()&#160;:&#160;<a class="el" href="glew_8h.html#ad84054923676cfaa7d4e4f801568c061">glew.h</a></li>
+<li>glTexSubImage1D()&#160;:&#160;<a class="el" href="glew_8h.html#ae849e9d34b19a5d74ac819e8a525aea2">glew.h</a></li>
+<li>glTexSubImage2D()&#160;:&#160;<a class="el" href="glew_8h.html#a83b997226c74c32cab88fef3fe9d2105">glew.h</a></li>
+<li>glTranslated()&#160;:&#160;<a class="el" href="glew_8h.html#a82a0c709ea663480e6a2c5b53a46e5ce">glew.h</a></li>
+<li>glTranslatef()&#160;:&#160;<a class="el" href="glew_8h.html#a078179cbd4f3f1768197c92ad55c6bb5">glew.h</a></li>
+<li>GLuint()&#160;:&#160;<a class="el" href="glext_8h.html#a2f0c8cd5c21f9fcbd931c3f48bc90dfc">glext.h</a></li>
+<li>GLvdpauSurfaceNV()&#160;:&#160;<a class="el" href="glext_8h.html#a85ec27b38b3e5ec6bb6abd69927c9f1c">glext.h</a></li>
+<li>glVertex2d()&#160;:&#160;<a class="el" href="glew_8h.html#a1378d753ab0dd5915326831e40cfcdca">glew.h</a></li>
+<li>glVertex2dv()&#160;:&#160;<a class="el" href="glew_8h.html#a03fa5900875722a524b9f41a4b0bea46">glew.h</a></li>
+<li>glVertex2f()&#160;:&#160;<a class="el" href="glew_8h.html#a474f4498ace02f86e7f299eb8bf27da3">glew.h</a></li>
+<li>glVertex2fv()&#160;:&#160;<a class="el" href="glew_8h.html#afc396faf57c9030a037c070fde859f4f">glew.h</a></li>
+<li>glVertex2i()&#160;:&#160;<a class="el" href="glew_8h.html#a43e94a9a0586067872b96a8a790e60bc">glew.h</a></li>
+<li>glVertex2iv()&#160;:&#160;<a class="el" href="glew_8h.html#a1a5cbc807c09083f0a6e74ceb62cff85">glew.h</a></li>
+<li>glVertex2s()&#160;:&#160;<a class="el" href="glew_8h.html#a9b7fb7e3db85d81291bf582b3a42738d">glew.h</a></li>
+<li>glVertex2sv()&#160;:&#160;<a class="el" href="glew_8h.html#a3d95b487982e8d2ee281dd3d0fc4d1da">glew.h</a></li>
+<li>glVertex3d()&#160;:&#160;<a class="el" href="glew_8h.html#af2a34ba084502f0c20671ba3ef5b825c">glew.h</a></li>
+<li>glVertex3dv()&#160;:&#160;<a class="el" href="glew_8h.html#a54884cdcebda1aa0fc03e952d7004c7e">glew.h</a></li>
+<li>glVertex3f()&#160;:&#160;<a class="el" href="glew_8h.html#a9a95e17961303a80a5bf052b8c1cf677">glew.h</a></li>
+<li>glVertex3fv()&#160;:&#160;<a class="el" href="glew_8h.html#a9b4edc193aaaed4a2d4f18633f07ad03">glew.h</a></li>
+<li>glVertex3i()&#160;:&#160;<a class="el" href="glew_8h.html#a533ae3c8e7130fd15973e0f89c222da7">glew.h</a></li>
+<li>glVertex3iv()&#160;:&#160;<a class="el" href="glew_8h.html#a4869bc37055310e0ed3543aa830f23f1">glew.h</a></li>
+<li>glVertex3s()&#160;:&#160;<a class="el" href="glew_8h.html#a26345ba9c5aae71ea0d54ca9ba9cac7b">glew.h</a></li>
+<li>glVertex3sv()&#160;:&#160;<a class="el" href="glew_8h.html#a4553f58b26a9f2996f009bd63d2b16be">glew.h</a></li>
+<li>glVertex4d()&#160;:&#160;<a class="el" href="glew_8h.html#a0c2d6f90dc6cfd9d42ef05b64fb51671">glew.h</a></li>
+<li>glVertex4dv()&#160;:&#160;<a class="el" href="glew_8h.html#a1f6444c04cac4f7545991f706773161a">glew.h</a></li>
+<li>glVertex4f()&#160;:&#160;<a class="el" href="glew_8h.html#a733d422eb7a14bba998574e41d8db609">glew.h</a></li>
+<li>glVertex4fv()&#160;:&#160;<a class="el" href="glew_8h.html#a6e621b764c8bad0f2136d5db174eaaff">glew.h</a></li>
+<li>glVertex4i()&#160;:&#160;<a class="el" href="glew_8h.html#a4285cce3c0813b9486808cd0fec73029">glew.h</a></li>
+<li>glVertex4iv()&#160;:&#160;<a class="el" href="glew_8h.html#a3434e051ca6004923bbbc9946da7e93d">glew.h</a></li>
+<li>glVertex4s()&#160;:&#160;<a class="el" href="glew_8h.html#ad167d718945f91547c8c3c26dcd56990">glew.h</a></li>
+<li>glVertex4sv()&#160;:&#160;<a class="el" href="glew_8h.html#a0f436f936b9abcd742ac6d9b72d29f92">glew.h</a></li>
+<li>glVertexPointer()&#160;:&#160;<a class="el" href="glew_8h.html#a0439191d97d7c12e1c16915131405145">glew.h</a></li>
+<li>glViewport()&#160;:&#160;<a class="el" href="glew_8h.html#a8e93835e91933b7078c88f905dd8599c">glew.h</a></li>
+<li>glXChooseVisual()&#160;:&#160;<a class="el" href="glxew_8h.html#ab0b330cb12b7fd703841eebb7ebc45d2">glxew.h</a></li>
+<li>glXCopyContext()&#160;:&#160;<a class="el" href="glxew_8h.html#ab17966247d58d018c9a1c30000749010">glxew.h</a></li>
+<li>glXCreateContext()&#160;:&#160;<a class="el" href="glxew_8h.html#a194b7e7f5b8a5d167f3166b2b696631a">glxew.h</a></li>
+<li>glXCreateGLXPixmap()&#160;:&#160;<a class="el" href="glxew_8h.html#a7951589deb0add6ef493bec86d358a9f">glxew.h</a></li>
+<li>glXDestroyContext()&#160;:&#160;<a class="el" href="glxew_8h.html#a84f8530e3fa01fba10d715eeca3bd5d2">glxew.h</a></li>
+<li>glXDestroyGLXPixmap()&#160;:&#160;<a class="el" href="glxew_8h.html#aa373208c7de268f7453402c75057613b">glxew.h</a></li>
+<li>glxewGetExtension()&#160;:&#160;<a class="el" href="glxew_8h.html#aac5568f7a9e9194ee6bf3c7d6d571c85">glxew.h</a></li>
+<li>glxewIsSupported()&#160;:&#160;<a class="el" href="glxew_8h.html#ab6c0ca50680ddcec17d9e39af01ba3fa">glxew.h</a></li>
+<li>glXGetClientString()&#160;:&#160;<a class="el" href="glxew_8h.html#a7213d9d965b0f31ce68ddbc5bb1aaa31">glxew.h</a></li>
+<li>glXGetConfig()&#160;:&#160;<a class="el" href="glxew_8h.html#abeac5c04d395adaf0a08442eb3e3323e">glxew.h</a></li>
+<li>glXGetCurrentContext()&#160;:&#160;<a class="el" href="glxew_8h.html#a3124873668dd8c0aa2aeba23499eef7d">glxew.h</a></li>
+<li>glXGetCurrentDrawable()&#160;:&#160;<a class="el" href="glxew_8h.html#a16ac5b0ed109285666ccceabc36c30a7">glxew.h</a></li>
+<li>glXIsDirect()&#160;:&#160;<a class="el" href="glxew_8h.html#a644a3ec7778c2a841e8ed84005ac4f0e">glxew.h</a></li>
+<li>glXMakeCurrent()&#160;:&#160;<a class="el" href="glxew_8h.html#a48fc247a5c42d06cda6664d2a36b470b">glxew.h</a></li>
+<li>glXQueryExtension()&#160;:&#160;<a class="el" href="glxew_8h.html#a13df2f7d7de61b71be5223fe74c213e8">glxew.h</a></li>
+<li>glXQueryExtensionsString()&#160;:&#160;<a class="el" href="glxew_8h.html#a89f59b5737d9f45ee589e55af3d26626">glxew.h</a></li>
+<li>glXQueryServerString()&#160;:&#160;<a class="el" href="glxew_8h.html#a60c796a0f3ee9716332a0e1c652726da">glxew.h</a></li>
+<li>glXQueryVersion()&#160;:&#160;<a class="el" href="glxew_8h.html#abe33df0d0a90ca798161656e07a88482">glxew.h</a></li>
+<li>glXSwapBuffers()&#160;:&#160;<a class="el" href="glxew_8h.html#adf5758fe90cccf8daa9f0b9753ea1085">glxew.h</a></li>
+<li>glXUseXFont()&#160;:&#160;<a class="el" href="glxew_8h.html#ad1165317ed6cc928202997ae741edbc9">glxew.h</a></li>
+<li>glXWaitGL()&#160;:&#160;<a class="el" href="glxew_8h.html#a260017b9f7cac2a3e1aa21dfa5dde3c0">glxew.h</a></li>
+<li>glXWaitX()&#160;:&#160;<a class="el" href="glxew_8h.html#ae37efe4bfc21adda1d4ef1606d5c53c1">glxew.h</a></li>
+<li>grow_buffer_unsafe()&#160;:&#160;<a class="el" href="stb__image_8h.html#a0d5cd042c3f9d8dd94e1cba45c4ccfc0">stb_image.h</a></li>
+</ul>
+</div><!-- contents -->
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+                    Back to top
+                </button>
+            </main>
+            <footer class="md-footer">
+                <nav class="md-footer__inner md-grid" aria-label="Footer" hidden>
+                    <a href="/learn/" class="md-footer__link md-footer__link--next" aria-label="Next: Learn">
+                        <div class="md-footer__title">
+                            <span class="md-footer__direction"> Next </span>
+                            <div class="md-ellipsis">Learn</div>
+                        </div>
+                        <div class="md-footer__button md-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z" /></svg>
+                        </div>
+                    </a>
+                </nav>
+                <div class="md-footer-meta md-typeset">
+                    <div class="md-footer-meta__inner md-grid">
+                        <div class="md-copyright">
+                            <div class="md-copyright__highlight">Copyright &copy; <a href="mailto:laurent@sfml-dev.org">Laurent Gomila</a></div>
+                        </div>
+                        <div class="md-social">
+                            <a href="https://fosstodon.org/@sfml" target="_blank" rel="noopener me" title="SFML on Fosstodon" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com/sfmldev" target="_blank" rel="noopener" title="SFML on Twitter" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="https://discord.gg/nr4X7Fh" target="_blank" rel="noopener" title="SFML&#39;s Discord Server" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="md-dialog" data-md-component="dialog">
+            <div class="md-dialog__inner md-typeset"></div>
+        </div>
+        <script id="__config" type="application/json">
+            {
+                "base": ".",
+                "features": ["content.code.copy", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.prune", "navigation.path", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.suggest"],
+                "search": "/assets/javascripts/workers/search.b8dbb3d2.min.js",
+                "translations": {
+                    "clipboard.copied": "Copied to clipboard",
+                    "clipboard.copy": "Copy to clipboard",
+                    "search.result.more.one": "1 more on this page",
+                    "search.result.more.other": "# more on this page",
+                    "search.result.none": "No matching documents",
+                    "search.result.one": "1 matching document",
+                    "search.result.other": "# matching documents",
+                    "search.result.placeholder": "Type to start searching",
+                    "search.result.term.missing": "Missing",
+                    "select.version": "Select version"
+                }
+            }
+        </script>
+        <script src="/assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+    </body>
+</html>

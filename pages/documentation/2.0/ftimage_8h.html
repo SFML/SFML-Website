@@ -1,0 +1,2167 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="Simple and Fast Multimedia Library" />
+        <link rel="canonical" href="https://www.sfml-dev.org/" />
+        <link rel="next" href="/learn/" />
+        <link rel="icon" href="/images/favicon.ico" />
+        <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.30" />
+        <title>Home - Simple and Fast Multimedia Library</title>
+        <link rel="stylesheet" href="/assets/stylesheets/main.3cba04c6.min.css" />
+        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback" />
+        <style>
+            :root {
+                --md-text-font: "Ubuntu";
+                --md-code-font: "Roboto Mono";
+            }
+        </style>
+        <link rel="stylesheet" href="/styles/extra.css" />
+        <script>
+            (__md_scope = new URL(".", location)),
+                (__md_hash = (e) => [...e].reduce((e, _) => (e << 5) - e + _.charCodeAt(0), 0)),
+                (__md_get = (e, _ = localStorage, t = __md_scope) => JSON.parse(_.getItem(t.pathname + "." + e))),
+                (__md_set = (e, _, t = localStorage, a = __md_scope) => {
+                    try {
+                        t.setItem(a.pathname + "." + e, JSON.stringify(_));
+                    } catch (e) {}
+                });
+        </script>
+        <link rel="stylesheet" type="text/css" href="doxygen.css" title="default" media="screen,print" />
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="dynsections.js"></script>
+        <script type="text/javascript" src="clipboard.js"></script>
+        <script type="text/javascript" src="cookie.js"></script>
+        <script type="text/javascript" src="resize.js"></script>
+        <link rel="stylesheet" type="text/css" href="search/search.css" />
+        <link rel="stylesheet" type="text/css" href="searchOverrides.css" />
+        <script type="text/javascript" src="search/searchdata.js"></script>
+        <script type="text/javascript" src="search/search.js"></script>
+        <script type="text/javascript">
+            /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+            $(document).ready(function () {
+                init_search();
+            });
+            /* @license-end */
+        </script>
+    </head>
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="indigo">
+        <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off" />
+        <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off" />
+        <label class="md-overlay" for="__drawer"></label>
+        <div data-md-component="skip">
+            <a href="#simple-and-fast-multimedia-library" class="md-skip"> Skip to content </a>
+        </div>
+        <div data-md-component="announce"></div>
+        <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+            <nav class="md-header__inner md-grid" aria-label="Header">
+                <a href="." title="Simple and Fast Multimedia Library" class="md-header__button md-logo" aria-label="Simple and Fast Multimedia Library" data-md-component="logo">
+                    <img src="/images/logo.png" alt="logo" />
+                </a>
+                <label class="md-header__button md-icon" for="__drawer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z" /></svg>
+                </label>
+                <div class="md-header__title" data-md-component="header-title">
+                    <div class="md-header__ellipsis">
+                        <div class="md-header__topic">
+                            <span class="md-ellipsis"> Simple and Fast Multimedia Library </span>
+                        </div>
+                        <div class="md-header__topic" data-md-component="header-topic">
+                            <span class="md-ellipsis"> Home </span>
+                        </div>
+                    </div>
+                </div>
+                <form class="md-header__option" data-md-component="palette">
+                    <input
+                        class="md-option"
+                        data-md-color-media="(prefers-color-scheme: light)"
+                        data-md-color-scheme="default"
+                        data-md-color-primary="light-green"
+                        data-md-color-accent="indigo"
+                        aria-label="Switch to dark mode"
+                        type="radio"
+                        name="__palette"
+                        id="__palette_0"
+                    />
+                    <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"
+                            />
+                        </svg>
+                    </label>
+                    <input
+                        class="md-option"
+                        data-md-color-media="(prefers-color-scheme: dark)"
+                        data-md-color-scheme="slate"
+                        data-md-color-primary="green"
+                        data-md-color-accent="indigo"
+                        aria-label="Switch to light mode"
+                        type="radio"
+                        name="__palette"
+                        id="__palette_1"
+                    />
+                    <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"
+                            />
+                        </svg>
+                    </label>
+                </form>
+                <script>
+                    var media,
+                        input,
+                        key,
+                        value,
+                        palette = __md_get("__palette");
+                    if (palette && palette.color) {
+                        "(prefers-color-scheme)" === palette.color.media &&
+                            ((media = matchMedia("(prefers-color-scheme: light)")),
+                            (input = document.querySelector(media.matches ? "[data-md-color-media='(prefers-color-scheme: light)']" : "[data-md-color-media='(prefers-color-scheme: dark)']")),
+                            (palette.color.media = input.getAttribute("data-md-color-media")),
+                            (palette.color.scheme = input.getAttribute("data-md-color-scheme")),
+                            (palette.color.primary = input.getAttribute("data-md-color-primary")),
+                            (palette.color.accent = input.getAttribute("data-md-color-accent")));
+                        for ([key, value] of Object.entries(palette.color)) document.body.setAttribute("data-md-color-" + key, value);
+                    }
+                </script>
+                <div class="md-header__option">
+                    <div class="md-select">
+                        <button class="md-header__button md-icon" aria-label="Select language">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"
+                                />
+                            </svg>
+                        </button>
+                        <div class="md-select__inner">
+                            <ul class="md-select__list">
+                                <li class="md-select__item">
+                                    <a href="/" hreflang="en" class="md-select__link"> English </a>
+                                </li>
+                                <li class="md-select__item">
+                                    <a href="/fr/" hreflang="fr" class="md-select__link"> Français </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <label class="md-header__button md-icon" for="__search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"
+                        />
+                    </svg>
+                </label>
+                <div class="md-search" data-md-component="search" role="dialog">
+                    <label class="md-search__overlay" for="__search"></label>
+                    <div class="md-search__inner" role="search">
+                        <form class="md-search__form" name="search">
+                            <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required />
+                            <label class="md-search__icon md-icon" for="__search">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"
+                                    />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z" /></svg>
+                            </label>
+                            <nav class="md-search__options" aria-label="Search">
+                                <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z" /></svg>
+                                </button>
+                            </nav>
+                            <div class="md-search__suggest" data-md-component="search-suggest"></div>
+                        </form>
+                        <div class="md-search__output">
+                            <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+                                <div class="md-search-result" data-md-component="search-result">
+                                    <div class="md-search-result__meta">Initializing search</div>
+                                    <ol class="md-search-result__list" role="presentation"></ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-header__source">
+                    <a href="https://github.com/SFML/SFML" title="Go to repository" class="md-source" data-md-component="source">
+                        <div class="md-source__icon md-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. -->
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                                />
+                            </svg>
+                        </div>
+                        <div class="md-source__repository">SFML</div>
+                    </a>
+                </div>
+            </nav>
+            <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+                <div class="md-grid">
+                    <ul class="md-tabs__list">
+                        <li class="md-tabs__item">
+                            <a href="/" class="md-tabs__link"> Home </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/learn/" class="md-tabs__link"> Learn </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/tutorials/2.6/" class="md-tabs__link"> Tutorials </a>
+                        </li>
+                        <li class="md-tabs__item md-tabs__item--active">
+                            <a href="/documentation" class="md-tabs__link"> Documentation </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/download/" class="md-tabs__link"> Download </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/community/" class="md-tabs__link"> Community </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/development/" class="md-tabs__link"> Development </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="md-container" data-md-component="container">
+            <main class="md-main" data-md-component="main">
+                <div class="md-main__inner md-grid">
+                    <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                        <div class="md-sidebar__scrollwrap">
+                            <div class="md-sidebar__inner">
+                                <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+                                    <label class="md-nav__title" for="__drawer">
+                                        <a href="." title="Simple and Fast Multimedia Library" class="md-nav__button md-logo" aria-label="Simple and Fast Multimedia Library" data-md-component="logo">
+                                            <img src="/images/logo.png" alt="logo" />
+                                        </a>
+                                        Simple and Fast Multimedia Library
+                                    </label>
+                                    <div class="md-nav__source">
+                                        <a href="https://github.com/SFML/SFML" title="Go to repository" class="md-source" data-md-component="source">
+                                            <div class="md-source__icon md-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. -->
+                                                    <path
+                                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                                                    />
+                                                </svg>
+                                            </div>
+                                            <div class="md-source__repository">SFML</div>
+                                        </a>
+                                    </div>
+                                    <ul class="md-nav__list" data-md-scrollfix>
+                                        <li class="md-nav__item">
+                                            <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc" />
+                                            <label class="md-nav__link" for="__toc">
+                                                <span class="md-ellipsis"> Home </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </label>
+                                            <a href="." class="md-nav__link">
+                                                <span class="md-ellipsis"> Home </span>
+                                            </a>
+                                            <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+                                                <label class="md-nav__title" for="__toc">
+                                                    <span class="md-nav__icon md-icon"></span>
+                                                    Table of contents
+                                                </label>
+                                                <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-media" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-media </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-platform" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-platform </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-language" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-language </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="learn/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Learn </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="tutorials/2.6/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Tutorials </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--active">
+                                            <a href="documentation" class="md-nav__link md-nav__link--active">
+                                                <span class="md-ellipsis"> Documentation </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="download/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Download </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="community/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Community </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="development/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Development </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                        <div class="md-sidebar__scrollwrap">
+                            <div class="md-sidebar__inner">
+                                <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+                                    <label class="md-nav__title" for="__toc">
+                                        <span class="md-nav__icon md-icon"></span>
+                                        Table of contents
+                                    </label>
+                                    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-media" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-media </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-platform" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-platform </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-language" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-language </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-content" data-md-component="content">
+                        <div class="contents">
+<!-- Generated by Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="topics.html"><span>Topics</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
+    </ul>
+  </div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c9d62fd513ce19bab3d7ef8db833e3f1.html">SFML</a></li><li class="navelem"><a class="el" href="dir_1b418db46549f82cdaf64a4014eaf7c5.html">extlibs</a></li><li class="navelem"><a class="el" href="dir_5796c7b1b7a91bd7d14da4f5f337813d.html">headers</a></li><li class="navelem"><a class="el" href="dir_c91535e3f05b3300be3316b0a0f2b4fb.html">libfreetype</a></li><li class="navelem"><a class="el" href="dir_d1c8f021c504044a2b11d308f59c5804.html">windows</a></li><li class="navelem"><a class="el" href="dir_71be8bcd70e78eacff86e134e8bbd532.html">freetype</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">ftimage.h File Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="ft2build_8h_source.html">ft2build.h</a>&gt;</code><br />
+</div>
+<p><a href="ftimage_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFT__Vector__.html">FT_Vector_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFT__BBox__.html">FT_BBox_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFT__Bitmap__.html">FT_Bitmap_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFT__Outline__.html">FT_Outline_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFT__Outline__Funcs__.html">FT_Outline_Funcs_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFT__Span__.html">FT_Span_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFT__Raster__Params__.html">FT_Raster_Params_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFT__Raster__Funcs__.html">FT_Raster_Funcs_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ae37598ecb2f865765a3abe8ff3466727" id="r_ae37598ecb2f865765a3abe8ff3466727"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae37598ecb2f865765a3abe8ff3466727">ft_pixel_mode_none</a>&#160;&#160;&#160;<a class="el" href="#a4953570a0afb7abb672a6583035865a4a42b2be5eb5c8e72d81fa43b11cf942ca">FT_PIXEL_MODE_NONE</a></td></tr>
+<tr class="separator:ae37598ecb2f865765a3abe8ff3466727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef5fede71e6d6d90968255f1c728625d" id="r_aef5fede71e6d6d90968255f1c728625d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef5fede71e6d6d90968255f1c728625d">ft_pixel_mode_mono</a>&#160;&#160;&#160;<a class="el" href="#a4953570a0afb7abb672a6583035865a4a3c16f8be14915a529161ff1514204fb4">FT_PIXEL_MODE_MONO</a></td></tr>
+<tr class="separator:aef5fede71e6d6d90968255f1c728625d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dabde8b30dc0dc8842f7d15ae354a73" id="r_a8dabde8b30dc0dc8842f7d15ae354a73"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8dabde8b30dc0dc8842f7d15ae354a73">ft_pixel_mode_grays</a>&#160;&#160;&#160;<a class="el" href="#a4953570a0afb7abb672a6583035865a4a58a764f37700cb5258d02987a9209e2c">FT_PIXEL_MODE_GRAY</a></td></tr>
+<tr class="separator:a8dabde8b30dc0dc8842f7d15ae354a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c58ec93a6ea09a9d66ad661567f88b7" id="r_a9c58ec93a6ea09a9d66ad661567f88b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c58ec93a6ea09a9d66ad661567f88b7">ft_pixel_mode_pal2</a>&#160;&#160;&#160;<a class="el" href="#a4953570a0afb7abb672a6583035865a4a15764edffc5eb2f5b55e989a1d2be93a">FT_PIXEL_MODE_GRAY2</a></td></tr>
+<tr class="separator:a9c58ec93a6ea09a9d66ad661567f88b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06e0e74ada05dc865422aec86699cf6d" id="r_a06e0e74ada05dc865422aec86699cf6d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06e0e74ada05dc865422aec86699cf6d">ft_pixel_mode_pal4</a>&#160;&#160;&#160;<a class="el" href="#a4953570a0afb7abb672a6583035865a4aed2aa6cba156a0cd9c4bf16be7a9249d">FT_PIXEL_MODE_GRAY4</a></td></tr>
+<tr class="separator:a06e0e74ada05dc865422aec86699cf6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa50d34733fea6dbd96ccf45641176261" id="r_aa50d34733fea6dbd96ccf45641176261"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa50d34733fea6dbd96ccf45641176261">FT_OUTLINE_CONTOURS_MAX</a>&#160;&#160;&#160;SHRT_MAX</td></tr>
+<tr class="separator:aa50d34733fea6dbd96ccf45641176261"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab3403442f558892216d95af8a41075d" id="r_aab3403442f558892216d95af8a41075d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab3403442f558892216d95af8a41075d">FT_OUTLINE_POINTS_MAX</a>&#160;&#160;&#160;SHRT_MAX</td></tr>
+<tr class="separator:aab3403442f558892216d95af8a41075d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b9770808811255f74015c64ddca54c9" id="r_a5b9770808811255f74015c64ddca54c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b9770808811255f74015c64ddca54c9">FT_OUTLINE_NONE</a>&#160;&#160;&#160;0x0</td></tr>
+<tr class="separator:a5b9770808811255f74015c64ddca54c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace1302f12b2a7d5824d7fb346cdca89c" id="r_ace1302f12b2a7d5824d7fb346cdca89c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace1302f12b2a7d5824d7fb346cdca89c">FT_OUTLINE_OWNER</a>&#160;&#160;&#160;0x1</td></tr>
+<tr class="separator:ace1302f12b2a7d5824d7fb346cdca89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4efa7b75e501ea7e8f299649336a201d" id="r_a4efa7b75e501ea7e8f299649336a201d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4efa7b75e501ea7e8f299649336a201d">FT_OUTLINE_EVEN_ODD_FILL</a>&#160;&#160;&#160;0x2</td></tr>
+<tr class="separator:a4efa7b75e501ea7e8f299649336a201d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6eb93e2e13c7e67da3b399f1dd57045" id="r_ae6eb93e2e13c7e67da3b399f1dd57045"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6eb93e2e13c7e67da3b399f1dd57045">FT_OUTLINE_REVERSE_FILL</a>&#160;&#160;&#160;0x4</td></tr>
+<tr class="separator:ae6eb93e2e13c7e67da3b399f1dd57045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ad8f4d36f10c26397c4fbd74b306f7a" id="r_a6ad8f4d36f10c26397c4fbd74b306f7a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ad8f4d36f10c26397c4fbd74b306f7a">FT_OUTLINE_IGNORE_DROPOUTS</a>&#160;&#160;&#160;0x8</td></tr>
+<tr class="separator:a6ad8f4d36f10c26397c4fbd74b306f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d69c5b5db14cdcaccf941cfe3788204" id="r_a2d69c5b5db14cdcaccf941cfe3788204"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d69c5b5db14cdcaccf941cfe3788204">FT_OUTLINE_SMART_DROPOUTS</a>&#160;&#160;&#160;0x10</td></tr>
+<tr class="separator:a2d69c5b5db14cdcaccf941cfe3788204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cc7c7324d7c0382c2e211ccdf0ababd" id="r_a6cc7c7324d7c0382c2e211ccdf0ababd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6cc7c7324d7c0382c2e211ccdf0ababd">FT_OUTLINE_INCLUDE_STUBS</a>&#160;&#160;&#160;0x20</td></tr>
+<tr class="separator:a6cc7c7324d7c0382c2e211ccdf0ababd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa52794bb013ef86fc3da0eb8502024b1" id="r_aa52794bb013ef86fc3da0eb8502024b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa52794bb013ef86fc3da0eb8502024b1">FT_OUTLINE_HIGH_PRECISION</a>&#160;&#160;&#160;0x100</td></tr>
+<tr class="separator:aa52794bb013ef86fc3da0eb8502024b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7ff66a72c5702a0ab34436b02ca8662" id="r_ae7ff66a72c5702a0ab34436b02ca8662"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7ff66a72c5702a0ab34436b02ca8662">FT_OUTLINE_SINGLE_PASS</a>&#160;&#160;&#160;0x200</td></tr>
+<tr class="separator:ae7ff66a72c5702a0ab34436b02ca8662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8206880ac83ae4a79912cebff21aa26d" id="r_a8206880ac83ae4a79912cebff21aa26d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8206880ac83ae4a79912cebff21aa26d">ft_outline_none</a>&#160;&#160;&#160;<a class="el" href="#a5b9770808811255f74015c64ddca54c9">FT_OUTLINE_NONE</a></td></tr>
+<tr class="separator:a8206880ac83ae4a79912cebff21aa26d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f0f4693f1bdcfdaed206d97688b8070" id="r_a7f0f4693f1bdcfdaed206d97688b8070"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f0f4693f1bdcfdaed206d97688b8070">ft_outline_owner</a>&#160;&#160;&#160;<a class="el" href="#ace1302f12b2a7d5824d7fb346cdca89c">FT_OUTLINE_OWNER</a></td></tr>
+<tr class="separator:a7f0f4693f1bdcfdaed206d97688b8070"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fab8e2a53bdfa2d25a0ce9213304d3e" id="r_a8fab8e2a53bdfa2d25a0ce9213304d3e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8fab8e2a53bdfa2d25a0ce9213304d3e">ft_outline_even_odd_fill</a>&#160;&#160;&#160;<a class="el" href="#a4efa7b75e501ea7e8f299649336a201d">FT_OUTLINE_EVEN_ODD_FILL</a></td></tr>
+<tr class="separator:a8fab8e2a53bdfa2d25a0ce9213304d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a141d4ef79000e3e959ca209cccdba2ce" id="r_a141d4ef79000e3e959ca209cccdba2ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a141d4ef79000e3e959ca209cccdba2ce">ft_outline_reverse_fill</a>&#160;&#160;&#160;<a class="el" href="#ae6eb93e2e13c7e67da3b399f1dd57045">FT_OUTLINE_REVERSE_FILL</a></td></tr>
+<tr class="separator:a141d4ef79000e3e959ca209cccdba2ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42b656a9c0ecfaa210a21f9e6a759d2e" id="r_a42b656a9c0ecfaa210a21f9e6a759d2e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42b656a9c0ecfaa210a21f9e6a759d2e">ft_outline_ignore_dropouts</a>&#160;&#160;&#160;<a class="el" href="#a6ad8f4d36f10c26397c4fbd74b306f7a">FT_OUTLINE_IGNORE_DROPOUTS</a></td></tr>
+<tr class="separator:a42b656a9c0ecfaa210a21f9e6a759d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6ca3f2d8d6817877c159a23ed7e300f" id="r_aa6ca3f2d8d6817877c159a23ed7e300f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6ca3f2d8d6817877c159a23ed7e300f">ft_outline_high_precision</a>&#160;&#160;&#160;<a class="el" href="#aa52794bb013ef86fc3da0eb8502024b1">FT_OUTLINE_HIGH_PRECISION</a></td></tr>
+<tr class="separator:aa6ca3f2d8d6817877c159a23ed7e300f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dd16821c11559df986080778a2f9267" id="r_a4dd16821c11559df986080778a2f9267"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4dd16821c11559df986080778a2f9267">ft_outline_single_pass</a>&#160;&#160;&#160;<a class="el" href="#ae7ff66a72c5702a0ab34436b02ca8662">FT_OUTLINE_SINGLE_PASS</a></td></tr>
+<tr class="separator:a4dd16821c11559df986080778a2f9267"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87ccc09e7aaa99f75a5e7f5360ad6e47" id="r_a87ccc09e7aaa99f75a5e7f5360ad6e47"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87ccc09e7aaa99f75a5e7f5360ad6e47">FT_CURVE_TAG</a>(flag)</td></tr>
+<tr class="separator:a87ccc09e7aaa99f75a5e7f5360ad6e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a967f934e5e5e1ee1fe4291d23959aa9c" id="r_a967f934e5e5e1ee1fe4291d23959aa9c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a967f934e5e5e1ee1fe4291d23959aa9c">FT_CURVE_TAG_ON</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a967f934e5e5e1ee1fe4291d23959aa9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4083b94d7eb1e27dce067c38faa040ba" id="r_a4083b94d7eb1e27dce067c38faa040ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4083b94d7eb1e27dce067c38faa040ba">FT_CURVE_TAG_CONIC</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a4083b94d7eb1e27dce067c38faa040ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a031f7941800d809c561e39bc10935b18" id="r_a031f7941800d809c561e39bc10935b18"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a031f7941800d809c561e39bc10935b18">FT_CURVE_TAG_CUBIC</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a031f7941800d809c561e39bc10935b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dd1ef72bd2a47f89b354a3c76c5720f" id="r_a3dd1ef72bd2a47f89b354a3c76c5720f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3dd1ef72bd2a47f89b354a3c76c5720f">FT_CURVE_TAG_HAS_SCANMODE</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a3dd1ef72bd2a47f89b354a3c76c5720f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a208728b27b1fa2962cdc05a4f8861476" id="r_a208728b27b1fa2962cdc05a4f8861476"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a208728b27b1fa2962cdc05a4f8861476">FT_CURVE_TAG_TOUCH_X</a>&#160;&#160;&#160;8  /* reserved for the TrueType hinter */</td></tr>
+<tr class="separator:a208728b27b1fa2962cdc05a4f8861476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d3c478c162d051b173095198cf40eb9" id="r_a2d3c478c162d051b173095198cf40eb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d3c478c162d051b173095198cf40eb9">FT_CURVE_TAG_TOUCH_Y</a>&#160;&#160;&#160;16  /* reserved for the TrueType hinter */</td></tr>
+<tr class="separator:a2d3c478c162d051b173095198cf40eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bdd5798976257559d1bb624e17a951b" id="r_a2bdd5798976257559d1bb624e17a951b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2bdd5798976257559d1bb624e17a951b">FT_CURVE_TAG_TOUCH_BOTH</a></td></tr>
+<tr class="separator:a2bdd5798976257559d1bb624e17a951b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9548449bf2fae689516af3b733e13acb" id="r_a9548449bf2fae689516af3b733e13acb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9548449bf2fae689516af3b733e13acb">FT_Curve_Tag_On</a>&#160;&#160;&#160;<a class="el" href="#a967f934e5e5e1ee1fe4291d23959aa9c">FT_CURVE_TAG_ON</a></td></tr>
+<tr class="separator:a9548449bf2fae689516af3b733e13acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7137878cba0793e4e1e0ece434a3324e" id="r_a7137878cba0793e4e1e0ece434a3324e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7137878cba0793e4e1e0ece434a3324e">FT_Curve_Tag_Conic</a>&#160;&#160;&#160;<a class="el" href="#a4083b94d7eb1e27dce067c38faa040ba">FT_CURVE_TAG_CONIC</a></td></tr>
+<tr class="separator:a7137878cba0793e4e1e0ece434a3324e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1fc759555474f5952aca97ac354bd15" id="r_ab1fc759555474f5952aca97ac354bd15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1fc759555474f5952aca97ac354bd15">FT_Curve_Tag_Cubic</a>&#160;&#160;&#160;<a class="el" href="#a031f7941800d809c561e39bc10935b18">FT_CURVE_TAG_CUBIC</a></td></tr>
+<tr class="separator:ab1fc759555474f5952aca97ac354bd15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a73ec8dd1884906136072ba15c6ad23" id="r_a2a73ec8dd1884906136072ba15c6ad23"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a73ec8dd1884906136072ba15c6ad23">FT_Curve_Tag_Touch_X</a>&#160;&#160;&#160;<a class="el" href="#a208728b27b1fa2962cdc05a4f8861476">FT_CURVE_TAG_TOUCH_X</a></td></tr>
+<tr class="separator:a2a73ec8dd1884906136072ba15c6ad23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d46e507c9ce73a609d753505e3b7da6" id="r_a7d46e507c9ce73a609d753505e3b7da6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d46e507c9ce73a609d753505e3b7da6">FT_Curve_Tag_Touch_Y</a>&#160;&#160;&#160;<a class="el" href="#a2d3c478c162d051b173095198cf40eb9">FT_CURVE_TAG_TOUCH_Y</a></td></tr>
+<tr class="separator:a7d46e507c9ce73a609d753505e3b7da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5c15ee22f5ae04acc40ebc08b2c384b" id="r_ae5c15ee22f5ae04acc40ebc08b2c384b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5c15ee22f5ae04acc40ebc08b2c384b">FT_Outline_MoveTo_Func</a>&#160;&#160;&#160;<a class="el" href="#adb1c27eedf361dcd3d331fa266a466af">FT_Outline_MoveToFunc</a></td></tr>
+<tr class="separator:ae5c15ee22f5ae04acc40ebc08b2c384b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77419f525bb73211cc997081290367d0" id="r_a77419f525bb73211cc997081290367d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77419f525bb73211cc997081290367d0">FT_Outline_LineTo_Func</a>&#160;&#160;&#160;<a class="el" href="#a522526513387d998682d59515fe93ccf">FT_Outline_LineToFunc</a></td></tr>
+<tr class="separator:a77419f525bb73211cc997081290367d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95a8dd2e9f3fb3da159807606d3e46a2" id="r_a95a8dd2e9f3fb3da159807606d3e46a2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95a8dd2e9f3fb3da159807606d3e46a2">FT_Outline_ConicTo_Func</a>&#160;&#160;&#160;<a class="el" href="#a44b83dd26e7f37eae86aee33ff3efd9b">FT_Outline_ConicToFunc</a></td></tr>
+<tr class="separator:a95a8dd2e9f3fb3da159807606d3e46a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67500fd20d9d06ae0baa123b28f4a35e" id="r_a67500fd20d9d06ae0baa123b28f4a35e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67500fd20d9d06ae0baa123b28f4a35e">FT_Outline_CubicTo_Func</a>&#160;&#160;&#160;<a class="el" href="#a9c6f8d42a1660a57f55614baaa4b61b2">FT_Outline_CubicToFunc</a></td></tr>
+<tr class="separator:a67500fd20d9d06ae0baa123b28f4a35e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20f1ec5a92f85f98bcd219141b604cfb" id="r_a20f1ec5a92f85f98bcd219141b604cfb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20f1ec5a92f85f98bcd219141b604cfb">FT_IMAGE_TAG</a>(<a class="el" href="glext_8h.html#a79169be77d7e02a24f68a5bfe627dc29">value</a>,  _x1,  _x2,  _x3,  _x4)</td></tr>
+<tr class="separator:a20f1ec5a92f85f98bcd219141b604cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11d7e34888fb972beba499f0c71e2fa1" id="r_a11d7e34888fb972beba499f0c71e2fa1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11d7e34888fb972beba499f0c71e2fa1">ft_glyph_format_none</a>&#160;&#160;&#160;FT_GLYPH_FORMAT_NONE</td></tr>
+<tr class="separator:a11d7e34888fb972beba499f0c71e2fa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ffc312de5036f898e5b6d56c2034925" id="r_a9ffc312de5036f898e5b6d56c2034925"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ffc312de5036f898e5b6d56c2034925">ft_glyph_format_composite</a>&#160;&#160;&#160;FT_GLYPH_FORMAT_COMPOSITE</td></tr>
+<tr class="separator:a9ffc312de5036f898e5b6d56c2034925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f74f8a5a721951381a9ec21889757d9" id="r_a3f74f8a5a721951381a9ec21889757d9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f74f8a5a721951381a9ec21889757d9">ft_glyph_format_bitmap</a>&#160;&#160;&#160;FT_GLYPH_FORMAT_BITMAP</td></tr>
+<tr class="separator:a3f74f8a5a721951381a9ec21889757d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9d7e20f1492e8ba16fddd5c91fea832" id="r_ad9d7e20f1492e8ba16fddd5c91fea832"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9d7e20f1492e8ba16fddd5c91fea832">ft_glyph_format_outline</a>&#160;&#160;&#160;FT_GLYPH_FORMAT_OUTLINE</td></tr>
+<tr class="separator:ad9d7e20f1492e8ba16fddd5c91fea832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a127746d73f015c67e3a9037b9630726f" id="r_a127746d73f015c67e3a9037b9630726f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a127746d73f015c67e3a9037b9630726f">ft_glyph_format_plotter</a>&#160;&#160;&#160;FT_GLYPH_FORMAT_PLOTTER</td></tr>
+<tr class="separator:a127746d73f015c67e3a9037b9630726f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27308127a1ced75fcb7c2af04a858a54" id="r_a27308127a1ced75fcb7c2af04a858a54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27308127a1ced75fcb7c2af04a858a54">FT_Raster_Span_Func</a>&#160;&#160;&#160;<a class="el" href="#abae5f0d92287252b367d3e8210ec4e3a">FT_SpanFunc</a></td></tr>
+<tr class="separator:a27308127a1ced75fcb7c2af04a858a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fc8ce328ef25aa1de7e28466d1c6009" id="r_a3fc8ce328ef25aa1de7e28466d1c6009"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3fc8ce328ef25aa1de7e28466d1c6009">FT_RASTER_FLAG_DEFAULT</a>&#160;&#160;&#160;0x0</td></tr>
+<tr class="separator:a3fc8ce328ef25aa1de7e28466d1c6009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13000ad084c4cb1d878a179aba9763ee" id="r_a13000ad084c4cb1d878a179aba9763ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13000ad084c4cb1d878a179aba9763ee">FT_RASTER_FLAG_AA</a>&#160;&#160;&#160;0x1</td></tr>
+<tr class="separator:a13000ad084c4cb1d878a179aba9763ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83b26348efb1b92915c4927e8a87cb4c" id="r_a83b26348efb1b92915c4927e8a87cb4c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83b26348efb1b92915c4927e8a87cb4c">FT_RASTER_FLAG_DIRECT</a>&#160;&#160;&#160;0x2</td></tr>
+<tr class="separator:a83b26348efb1b92915c4927e8a87cb4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a680cffd057eb1375459fe576791f2b7f" id="r_a680cffd057eb1375459fe576791f2b7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a680cffd057eb1375459fe576791f2b7f">FT_RASTER_FLAG_CLIP</a>&#160;&#160;&#160;0x4</td></tr>
+<tr class="separator:a680cffd057eb1375459fe576791f2b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acea91525c5657d9e06f4cbb22938050b" id="r_acea91525c5657d9e06f4cbb22938050b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acea91525c5657d9e06f4cbb22938050b">ft_raster_flag_default</a>&#160;&#160;&#160;<a class="el" href="#a3fc8ce328ef25aa1de7e28466d1c6009">FT_RASTER_FLAG_DEFAULT</a></td></tr>
+<tr class="separator:acea91525c5657d9e06f4cbb22938050b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a078b9acf5d8ca399833af886d8c4008a" id="r_a078b9acf5d8ca399833af886d8c4008a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a078b9acf5d8ca399833af886d8c4008a">ft_raster_flag_aa</a>&#160;&#160;&#160;<a class="el" href="#a13000ad084c4cb1d878a179aba9763ee">FT_RASTER_FLAG_AA</a></td></tr>
+<tr class="separator:a078b9acf5d8ca399833af886d8c4008a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa87501beac782a89867a87433f0577c0" id="r_aa87501beac782a89867a87433f0577c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa87501beac782a89867a87433f0577c0">ft_raster_flag_direct</a>&#160;&#160;&#160;<a class="el" href="#a83b26348efb1b92915c4927e8a87cb4c">FT_RASTER_FLAG_DIRECT</a></td></tr>
+<tr class="separator:aa87501beac782a89867a87433f0577c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97bd3d42e14d10a256c45546605e0beb" id="r_a97bd3d42e14d10a256c45546605e0beb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97bd3d42e14d10a256c45546605e0beb">ft_raster_flag_clip</a>&#160;&#160;&#160;<a class="el" href="#a680cffd057eb1375459fe576791f2b7f">FT_RASTER_FLAG_CLIP</a></td></tr>
+<tr class="separator:a97bd3d42e14d10a256c45546605e0beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab50a467c3e9e8313c31c14f1e694af34" id="r_ab50a467c3e9e8313c31c14f1e694af34"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab50a467c3e9e8313c31c14f1e694af34">FT_Raster_New_Func</a>&#160;&#160;&#160;<a class="el" href="#acfff989cc4f373de6211b12c97a265e8">FT_Raster_NewFunc</a></td></tr>
+<tr class="separator:ab50a467c3e9e8313c31c14f1e694af34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3fbba4618478eb180ed0ac2ed09e8d6" id="r_af3fbba4618478eb180ed0ac2ed09e8d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3fbba4618478eb180ed0ac2ed09e8d6">FT_Raster_Done_Func</a>&#160;&#160;&#160;<a class="el" href="#a2df7d8d26927263fc038263851b18cf6">FT_Raster_DoneFunc</a></td></tr>
+<tr class="separator:af3fbba4618478eb180ed0ac2ed09e8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7af295aa684d0354fced2dc791a4de89" id="r_a7af295aa684d0354fced2dc791a4de89"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7af295aa684d0354fced2dc791a4de89">FT_Raster_Reset_Func</a>&#160;&#160;&#160;<a class="el" href="#a0ae680a37517fe355321f780123d12f6">FT_Raster_ResetFunc</a></td></tr>
+<tr class="separator:a7af295aa684d0354fced2dc791a4de89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad86623a6850838c7fec54f4f622c2744" id="r_ad86623a6850838c7fec54f4f622c2744"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad86623a6850838c7fec54f4f622c2744">FT_Raster_Set_Mode_Func</a>&#160;&#160;&#160;<a class="el" href="#a959011dc7420bae5989460bfd0727bd1">FT_Raster_SetModeFunc</a></td></tr>
+<tr class="separator:ad86623a6850838c7fec54f4f622c2744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a469b1d3125d0032b8c66df3179832657" id="r_a469b1d3125d0032b8c66df3179832657"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a469b1d3125d0032b8c66df3179832657">FT_Raster_Render_Func</a>&#160;&#160;&#160;<a class="el" href="#a4da783a601182e9e5b9d75584fd814ec">FT_Raster_RenderFunc</a></td></tr>
+<tr class="separator:a469b1d3125d0032b8c66df3179832657"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:abfcb941b4b81f3a922d4ae57c620db27" id="r_abfcb941b4b81f3a922d4ae57c620db27"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structFT__Vector__.html">FT_Vector_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfcb941b4b81f3a922d4ae57c620db27">FT_Vector</a></td></tr>
+<tr class="separator:abfcb941b4b81f3a922d4ae57c620db27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e1422cfbeb7c3992d5d7b8f85732efd" id="r_a1e1422cfbeb7c3992d5d7b8f85732efd"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structFT__BBox__.html">FT_BBox_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e1422cfbeb7c3992d5d7b8f85732efd">FT_BBox</a></td></tr>
+<tr class="separator:a1e1422cfbeb7c3992d5d7b8f85732efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac567a2d1df18aa5cd04d09859152ff3a" id="r_ac567a2d1df18aa5cd04d09859152ff3a"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="#a4953570a0afb7abb672a6583035865a4">FT_Pixel_Mode_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac567a2d1df18aa5cd04d09859152ff3a">FT_Pixel_Mode</a></td></tr>
+<tr class="separator:ac567a2d1df18aa5cd04d09859152ff3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1901381e05d5dd7ad6567c85ee2076c3" id="r_a1901381e05d5dd7ad6567c85ee2076c3"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structFT__Bitmap__.html">FT_Bitmap_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1901381e05d5dd7ad6567c85ee2076c3">FT_Bitmap</a></td></tr>
+<tr class="separator:a1901381e05d5dd7ad6567c85ee2076c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b64eb35252e8829024c12c98cce37d4" id="r_a6b64eb35252e8829024c12c98cce37d4"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structFT__Outline__.html">FT_Outline_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b64eb35252e8829024c12c98cce37d4">FT_Outline</a></td></tr>
+<tr class="separator:a6b64eb35252e8829024c12c98cce37d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb1c27eedf361dcd3d331fa266a466af" id="r_adb1c27eedf361dcd3d331fa266a466af"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb1c27eedf361dcd3d331fa266a466af">FT_Outline_MoveToFunc</a>) (const <a class="el" href="#abfcb941b4b81f3a922d4ae57c620db27">FT_Vector</a> *to, <a class="el" href="glext_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *user)</td></tr>
+<tr class="separator:adb1c27eedf361dcd3d331fa266a466af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a522526513387d998682d59515fe93ccf" id="r_a522526513387d998682d59515fe93ccf"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a522526513387d998682d59515fe93ccf">FT_Outline_LineToFunc</a>) (const <a class="el" href="#abfcb941b4b81f3a922d4ae57c620db27">FT_Vector</a> *to, <a class="el" href="glext_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *user)</td></tr>
+<tr class="separator:a522526513387d998682d59515fe93ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44b83dd26e7f37eae86aee33ff3efd9b" id="r_a44b83dd26e7f37eae86aee33ff3efd9b"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44b83dd26e7f37eae86aee33ff3efd9b">FT_Outline_ConicToFunc</a>) (const <a class="el" href="#abfcb941b4b81f3a922d4ae57c620db27">FT_Vector</a> *control, const <a class="el" href="#abfcb941b4b81f3a922d4ae57c620db27">FT_Vector</a> *to, <a class="el" href="glext_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *user)</td></tr>
+<tr class="separator:a44b83dd26e7f37eae86aee33ff3efd9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c6f8d42a1660a57f55614baaa4b61b2" id="r_a9c6f8d42a1660a57f55614baaa4b61b2"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c6f8d42a1660a57f55614baaa4b61b2">FT_Outline_CubicToFunc</a>) (const <a class="el" href="#abfcb941b4b81f3a922d4ae57c620db27">FT_Vector</a> *control1, const <a class="el" href="#abfcb941b4b81f3a922d4ae57c620db27">FT_Vector</a> *control2, const <a class="el" href="#abfcb941b4b81f3a922d4ae57c620db27">FT_Vector</a> *to, <a class="el" href="glext_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *user)</td></tr>
+<tr class="separator:a9c6f8d42a1660a57f55614baaa4b61b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5de8c9dd920eccd7ef91a7a4c0f1645" id="r_ae5de8c9dd920eccd7ef91a7a4c0f1645"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structFT__Outline__Funcs__.html">FT_Outline_Funcs_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5de8c9dd920eccd7ef91a7a4c0f1645">FT_Outline_Funcs</a></td></tr>
+<tr class="separator:ae5de8c9dd920eccd7ef91a7a4c0f1645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac277a6c91e1d785fae31f2aa86d60588" id="r_ac277a6c91e1d785fae31f2aa86d60588"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="#a62d06240f489f4d35830e42b7297eb22">FT_Glyph_Format_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac277a6c91e1d785fae31f2aa86d60588">FT_Glyph_Format</a></td></tr>
+<tr class="separator:ac277a6c91e1d785fae31f2aa86d60588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6774d2eb4bf030daf319aa6b56347431" id="r_a6774d2eb4bf030daf319aa6b56347431"><td class="memItemLeft" align="right" valign="top">typedef struct FT_RasterRec_ *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6774d2eb4bf030daf319aa6b56347431">FT_Raster</a></td></tr>
+<tr class="separator:a6774d2eb4bf030daf319aa6b56347431"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6436dd00a70a85bfc3a8012bdc47b958" id="r_a6436dd00a70a85bfc3a8012bdc47b958"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structFT__Span__.html">FT_Span_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6436dd00a70a85bfc3a8012bdc47b958">FT_Span</a></td></tr>
+<tr class="separator:a6436dd00a70a85bfc3a8012bdc47b958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abae5f0d92287252b367d3e8210ec4e3a" id="r_abae5f0d92287252b367d3e8210ec4e3a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="glext_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abae5f0d92287252b367d3e8210ec4e3a">FT_SpanFunc</a>) (int <a class="el" href="glext_8h.html#a74d80fd479c0f6d0153c709949a089ef">y</a>, int <a class="el" href="glext_8h.html#a4e867eee5910f6b2df6123b47ab70dae">count</a>, const <a class="el" href="#a6436dd00a70a85bfc3a8012bdc47b958">FT_Span</a> *spans, <a class="el" href="glext_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *user)</td></tr>
+<tr class="separator:abae5f0d92287252b367d3e8210ec4e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ac5897dab423a944f4457a3131061e4" id="r_a2ac5897dab423a944f4457a3131061e4"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ac5897dab423a944f4457a3131061e4">FT_Raster_BitTest_Func</a>) (int <a class="el" href="glext_8h.html#a74d80fd479c0f6d0153c709949a089ef">y</a>, int <a class="el" href="glext_8h.html#a0cdec8e97a75ee9458b23d152bf962d4">x</a>, <a class="el" href="glext_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *user)</td></tr>
+<tr class="separator:a2ac5897dab423a944f4457a3131061e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a715e9f91407a9758dbefb6dd6549fe35" id="r_a715e9f91407a9758dbefb6dd6549fe35"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="glext_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a715e9f91407a9758dbefb6dd6549fe35">FT_Raster_BitSet_Func</a>) (int <a class="el" href="glext_8h.html#a74d80fd479c0f6d0153c709949a089ef">y</a>, int <a class="el" href="glext_8h.html#a0cdec8e97a75ee9458b23d152bf962d4">x</a>, <a class="el" href="glext_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *user)</td></tr>
+<tr class="separator:a715e9f91407a9758dbefb6dd6549fe35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f41c3fb4a05eacd520be21e4db611bc" id="r_a4f41c3fb4a05eacd520be21e4db611bc"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structFT__Raster__Params__.html">FT_Raster_Params_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f41c3fb4a05eacd520be21e4db611bc">FT_Raster_Params</a></td></tr>
+<tr class="separator:a4f41c3fb4a05eacd520be21e4db611bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfff989cc4f373de6211b12c97a265e8" id="r_acfff989cc4f373de6211b12c97a265e8"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfff989cc4f373de6211b12c97a265e8">FT_Raster_NewFunc</a>) (<a class="el" href="glext_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *memory, <a class="el" href="#a6774d2eb4bf030daf319aa6b56347431">FT_Raster</a> *raster)</td></tr>
+<tr class="separator:acfff989cc4f373de6211b12c97a265e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2df7d8d26927263fc038263851b18cf6" id="r_a2df7d8d26927263fc038263851b18cf6"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="glext_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2df7d8d26927263fc038263851b18cf6">FT_Raster_DoneFunc</a>) (<a class="el" href="#a6774d2eb4bf030daf319aa6b56347431">FT_Raster</a> raster)</td></tr>
+<tr class="separator:a2df7d8d26927263fc038263851b18cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ae680a37517fe355321f780123d12f6" id="r_a0ae680a37517fe355321f780123d12f6"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="glext_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ae680a37517fe355321f780123d12f6">FT_Raster_ResetFunc</a>) (<a class="el" href="#a6774d2eb4bf030daf319aa6b56347431">FT_Raster</a> raster, unsigned char *pool_base, unsigned long pool_size)</td></tr>
+<tr class="separator:a0ae680a37517fe355321f780123d12f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a959011dc7420bae5989460bfd0727bd1" id="r_a959011dc7420bae5989460bfd0727bd1"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a959011dc7420bae5989460bfd0727bd1">FT_Raster_SetModeFunc</a>) (<a class="el" href="#a6774d2eb4bf030daf319aa6b56347431">FT_Raster</a> raster, unsigned long <a class="el" href="glext_8h.html#a1e71d9c196e4683cc06c4b54d53f7ef5">mode</a>, <a class="el" href="glext_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *args)</td></tr>
+<tr class="separator:a959011dc7420bae5989460bfd0727bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4da783a601182e9e5b9d75584fd814ec" id="r_a4da783a601182e9e5b9d75584fd814ec"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4da783a601182e9e5b9d75584fd814ec">FT_Raster_RenderFunc</a>) (<a class="el" href="#a6774d2eb4bf030daf319aa6b56347431">FT_Raster</a> raster, const <a class="el" href="#a4f41c3fb4a05eacd520be21e4db611bc">FT_Raster_Params</a> *<a class="el" href="glext_8h.html#a7eca977aec48ecd8d48ebd7558c0538c">params</a>)</td></tr>
+<tr class="separator:a4da783a601182e9e5b9d75584fd814ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a738d501723224dee6667ada1e1b6eb1c" id="r_a738d501723224dee6667ada1e1b6eb1c"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structFT__Raster__Funcs__.html">FT_Raster_Funcs_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a738d501723224dee6667ada1e1b6eb1c">FT_Raster_Funcs</a></td></tr>
+<tr class="separator:a738d501723224dee6667ada1e1b6eb1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a4953570a0afb7abb672a6583035865a4" id="r_a4953570a0afb7abb672a6583035865a4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4953570a0afb7abb672a6583035865a4">FT_Pixel_Mode_</a> { <br />
+&#160;&#160;<a class="el" href="#a4953570a0afb7abb672a6583035865a4a42b2be5eb5c8e72d81fa43b11cf942ca">FT_PIXEL_MODE_NONE</a> = 0
+, <br />
+&#160;&#160;<a class="el" href="#a4953570a0afb7abb672a6583035865a4a3c16f8be14915a529161ff1514204fb4">FT_PIXEL_MODE_MONO</a>
+, <br />
+&#160;&#160;<a class="el" href="#a4953570a0afb7abb672a6583035865a4a58a764f37700cb5258d02987a9209e2c">FT_PIXEL_MODE_GRAY</a>
+, <br />
+&#160;&#160;<a class="el" href="#a4953570a0afb7abb672a6583035865a4a15764edffc5eb2f5b55e989a1d2be93a">FT_PIXEL_MODE_GRAY2</a>
+, <br />
+&#160;&#160;<a class="el" href="#a4953570a0afb7abb672a6583035865a4aed2aa6cba156a0cd9c4bf16be7a9249d">FT_PIXEL_MODE_GRAY4</a>
+, <br />
+&#160;&#160;<a class="el" href="#a4953570a0afb7abb672a6583035865a4a7735f0c481982819c28cce353230d214">FT_PIXEL_MODE_LCD</a>
+, <br />
+&#160;&#160;<a class="el" href="#a4953570a0afb7abb672a6583035865a4a2fe6ff91ba59130265c5c371e0fe671b">FT_PIXEL_MODE_LCD_V</a>
+, <br />
+&#160;&#160;<a class="el" href="#a4953570a0afb7abb672a6583035865a4a650b585fbc19e71dafed4861dd71d04c">FT_PIXEL_MODE_MAX</a>
+<br />
+ }</td></tr>
+<tr class="separator:a4953570a0afb7abb672a6583035865a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62d06240f489f4d35830e42b7297eb22" id="r_a62d06240f489f4d35830e42b7297eb22"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62d06240f489f4d35830e42b7297eb22">FT_Glyph_Format_</a> { <br />
+&#160;&#160;<a class="el" href="#a62d06240f489f4d35830e42b7297eb22a6fbfde68c5be5ff527967af5cd7bf947">FT_IMAGE_TAG</a> =( FT_GLYPH_FORMAT_NONE, 0, 0, 0, 0 )
+, <br />
+&#160;&#160;<a class="el" href="#a62d06240f489f4d35830e42b7297eb22a6fbfde68c5be5ff527967af5cd7bf947">FT_IMAGE_TAG</a> =( FT_GLYPH_FORMAT_NONE, 0, 0, 0, 0 )
+, <br />
+&#160;&#160;<a class="el" href="#a62d06240f489f4d35830e42b7297eb22a6fbfde68c5be5ff527967af5cd7bf947">FT_IMAGE_TAG</a> =( FT_GLYPH_FORMAT_NONE, 0, 0, 0, 0 )
+, <br />
+&#160;&#160;<a class="el" href="#a62d06240f489f4d35830e42b7297eb22a6fbfde68c5be5ff527967af5cd7bf947">FT_IMAGE_TAG</a> =( FT_GLYPH_FORMAT_NONE, 0, 0, 0, 0 )
+<br />
+ }</td></tr>
+<tr class="separator:a62d06240f489f4d35830e42b7297eb22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:af5f230f4b253d4c7715fd2e595614c90" id="r_af5f230f4b253d4c7715fd2e595614c90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ftheader_8h.html#a72ee5814b3ae378ebb7fd3a8e3ddec14">FT_BEGIN_HEADER</a> typedef signed long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5f230f4b253d4c7715fd2e595614c90">FT_Pos</a></td></tr>
+<tr class="separator:af5f230f4b253d4c7715fd2e595614c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a87ccc09e7aaa99f75a5e7f5360ad6e47" name="a87ccc09e7aaa99f75a5e7f5360ad6e47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87ccc09e7aaa99f75a5e7f5360ad6e47">&#9670;&#160;</a></span>FT_CURVE_TAG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_CURVE_TAG</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>flag</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">( flag &amp; 3 )</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00514">514</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a4083b94d7eb1e27dce067c38faa040ba" name="a4083b94d7eb1e27dce067c38faa040ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4083b94d7eb1e27dce067c38faa040ba">&#9670;&#160;</a></span>FT_CURVE_TAG_CONIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_CURVE_TAG_CONIC&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00517">517</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a7137878cba0793e4e1e0ece434a3324e" name="a7137878cba0793e4e1e0ece434a3324e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7137878cba0793e4e1e0ece434a3324e">&#9670;&#160;</a></span>FT_Curve_Tag_Conic</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_Curve_Tag_Conic&#160;&#160;&#160;<a class="el" href="#a4083b94d7eb1e27dce067c38faa040ba">FT_CURVE_TAG_CONIC</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00529">529</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a031f7941800d809c561e39bc10935b18" name="a031f7941800d809c561e39bc10935b18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a031f7941800d809c561e39bc10935b18">&#9670;&#160;</a></span>FT_CURVE_TAG_CUBIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_CURVE_TAG_CUBIC&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00518">518</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="ab1fc759555474f5952aca97ac354bd15" name="ab1fc759555474f5952aca97ac354bd15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1fc759555474f5952aca97ac354bd15">&#9670;&#160;</a></span>FT_Curve_Tag_Cubic</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_Curve_Tag_Cubic&#160;&#160;&#160;<a class="el" href="#a031f7941800d809c561e39bc10935b18">FT_CURVE_TAG_CUBIC</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00530">530</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a3dd1ef72bd2a47f89b354a3c76c5720f" name="a3dd1ef72bd2a47f89b354a3c76c5720f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dd1ef72bd2a47f89b354a3c76c5720f">&#9670;&#160;</a></span>FT_CURVE_TAG_HAS_SCANMODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_CURVE_TAG_HAS_SCANMODE&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00520">520</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a967f934e5e5e1ee1fe4291d23959aa9c" name="a967f934e5e5e1ee1fe4291d23959aa9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a967f934e5e5e1ee1fe4291d23959aa9c">&#9670;&#160;</a></span>FT_CURVE_TAG_ON</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_CURVE_TAG_ON&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00516">516</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a9548449bf2fae689516af3b733e13acb" name="a9548449bf2fae689516af3b733e13acb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9548449bf2fae689516af3b733e13acb">&#9670;&#160;</a></span>FT_Curve_Tag_On</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_Curve_Tag_On&#160;&#160;&#160;<a class="el" href="#a967f934e5e5e1ee1fe4291d23959aa9c">FT_CURVE_TAG_ON</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00528">528</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a2bdd5798976257559d1bb624e17a951b" name="a2bdd5798976257559d1bb624e17a951b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bdd5798976257559d1bb624e17a951b">&#9670;&#160;</a></span>FT_CURVE_TAG_TOUCH_BOTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_CURVE_TAG_TOUCH_BOTH</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">                                     ( <a class="code hl_define" href="#a208728b27b1fa2962cdc05a4f8861476">FT_CURVE_TAG_TOUCH_X</a> | \</div>
+<div class="line">                                     <a class="code hl_define" href="#a2d3c478c162d051b173095198cf40eb9">FT_CURVE_TAG_TOUCH_Y</a> )</div>
+<div class="ttc" id="aftimage_8h_html_a208728b27b1fa2962cdc05a4f8861476"><div class="ttname"><a href="#a208728b27b1fa2962cdc05a4f8861476">FT_CURVE_TAG_TOUCH_X</a></div><div class="ttdeci">#define FT_CURVE_TAG_TOUCH_X</div><div class="ttdef"><b>Definition</b> <a href="ftimage_8h_source.html#l00522">ftimage.h:522</a></div></div>
+<div class="ttc" id="aftimage_8h_html_a2d3c478c162d051b173095198cf40eb9"><div class="ttname"><a href="#a2d3c478c162d051b173095198cf40eb9">FT_CURVE_TAG_TOUCH_Y</a></div><div class="ttdeci">#define FT_CURVE_TAG_TOUCH_Y</div><div class="ttdef"><b>Definition</b> <a href="ftimage_8h_source.html#l00523">ftimage.h:523</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00525">525</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a208728b27b1fa2962cdc05a4f8861476" name="a208728b27b1fa2962cdc05a4f8861476"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a208728b27b1fa2962cdc05a4f8861476">&#9670;&#160;</a></span>FT_CURVE_TAG_TOUCH_X</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_CURVE_TAG_TOUCH_X&#160;&#160;&#160;8  /* reserved for the TrueType hinter */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00522">522</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a2a73ec8dd1884906136072ba15c6ad23" name="a2a73ec8dd1884906136072ba15c6ad23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a73ec8dd1884906136072ba15c6ad23">&#9670;&#160;</a></span>FT_Curve_Tag_Touch_X</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_Curve_Tag_Touch_X&#160;&#160;&#160;<a class="el" href="#a208728b27b1fa2962cdc05a4f8861476">FT_CURVE_TAG_TOUCH_X</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00531">531</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a2d3c478c162d051b173095198cf40eb9" name="a2d3c478c162d051b173095198cf40eb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d3c478c162d051b173095198cf40eb9">&#9670;&#160;</a></span>FT_CURVE_TAG_TOUCH_Y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_CURVE_TAG_TOUCH_Y&#160;&#160;&#160;16  /* reserved for the TrueType hinter */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00523">523</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a7d46e507c9ce73a609d753505e3b7da6" name="a7d46e507c9ce73a609d753505e3b7da6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d46e507c9ce73a609d753505e3b7da6">&#9670;&#160;</a></span>FT_Curve_Tag_Touch_Y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_Curve_Tag_Touch_Y&#160;&#160;&#160;<a class="el" href="#a2d3c478c162d051b173095198cf40eb9">FT_CURVE_TAG_TOUCH_Y</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00532">532</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a3f74f8a5a721951381a9ec21889757d9" name="a3f74f8a5a721951381a9ec21889757d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f74f8a5a721951381a9ec21889757d9">&#9670;&#160;</a></span>ft_glyph_format_bitmap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ft_glyph_format_bitmap&#160;&#160;&#160;FT_GLYPH_FORMAT_BITMAP</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00808">808</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a9ffc312de5036f898e5b6d56c2034925" name="a9ffc312de5036f898e5b6d56c2034925"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ffc312de5036f898e5b6d56c2034925">&#9670;&#160;</a></span>ft_glyph_format_composite</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ft_glyph_format_composite&#160;&#160;&#160;FT_GLYPH_FORMAT_COMPOSITE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00807">807</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a11d7e34888fb972beba499f0c71e2fa1" name="a11d7e34888fb972beba499f0c71e2fa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11d7e34888fb972beba499f0c71e2fa1">&#9670;&#160;</a></span>ft_glyph_format_none</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ft_glyph_format_none&#160;&#160;&#160;FT_GLYPH_FORMAT_NONE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00806">806</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="ad9d7e20f1492e8ba16fddd5c91fea832" name="ad9d7e20f1492e8ba16fddd5c91fea832"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9d7e20f1492e8ba16fddd5c91fea832">&#9670;&#160;</a></span>ft_glyph_format_outline</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ft_glyph_format_outline&#160;&#160;&#160;FT_GLYPH_FORMAT_OUTLINE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00809">809</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a127746d73f015c67e3a9037b9630726f" name="a127746d73f015c67e3a9037b9630726f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a127746d73f015c67e3a9037b9630726f">&#9670;&#160;</a></span>ft_glyph_format_plotter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ft_glyph_format_plotter&#160;&#160;&#160;FT_GLYPH_FORMAT_PLOTTER</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00810">810</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a20f1ec5a92f85f98bcd219141b604cfb" name="a20f1ec5a92f85f98bcd219141b604cfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20f1ec5a92f85f98bcd219141b604cfb">&#9670;&#160;</a></span>FT_IMAGE_TAG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_IMAGE_TAG</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em><a class="el" href="glext_8h.html#a79169be77d7e02a24f68a5bfe627dc29">value</a></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>_x1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>_x2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>_x3</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>_x4</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">          <a class="code hl_typedef" href="glext_8h.html#a79169be77d7e02a24f68a5bfe627dc29">value</a> = ( ( (<span class="keywordtype">unsigned</span> long)_x1 &lt;&lt; 24 ) | \</div>
+<div class="line">                    ( (<span class="keywordtype">unsigned</span> long)_x2 &lt;&lt; 16 ) | \</div>
+<div class="line">                    ( (<span class="keywordtype">unsigned</span> long)_x3 &lt;&lt; 8  ) | \</div>
+<div class="line">                      (<span class="keywordtype">unsigned</span> long)_x4         )</div>
+<div class="ttc" id="aglext_8h_html_a79169be77d7e02a24f68a5bfe627dc29"><div class="ttname"><a href="glext_8h.html#a79169be77d7e02a24f68a5bfe627dc29">value</a></div><div class="ttdeci">GLsizei const GLfloat * value</div><div class="ttdef"><b>Definition</b> <a href="glext_8h_source.html#l05604">glext.h:5604</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00732">732</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a95a8dd2e9f3fb3da159807606d3e46a2" name="a95a8dd2e9f3fb3da159807606d3e46a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95a8dd2e9f3fb3da159807606d3e46a2">&#9670;&#160;</a></span>FT_Outline_ConicTo_Func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_Outline_ConicTo_Func&#160;&#160;&#160;<a class="el" href="#a44b83dd26e7f37eae86aee33ff3efd9b">FT_Outline_ConicToFunc</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00618">618</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="aa50d34733fea6dbd96ccf45641176261" name="aa50d34733fea6dbd96ccf45641176261"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa50d34733fea6dbd96ccf45641176261">&#9670;&#160;</a></span>FT_OUTLINE_CONTOURS_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_OUTLINE_CONTOURS_MAX&#160;&#160;&#160;SHRT_MAX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00398">398</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a67500fd20d9d06ae0baa123b28f4a35e" name="a67500fd20d9d06ae0baa123b28f4a35e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67500fd20d9d06ae0baa123b28f4a35e">&#9670;&#160;</a></span>FT_Outline_CubicTo_Func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_Outline_CubicTo_Func&#160;&#160;&#160;<a class="el" href="#a9c6f8d42a1660a57f55614baaa4b61b2">FT_Outline_CubicToFunc</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00651">651</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a4efa7b75e501ea7e8f299649336a201d" name="a4efa7b75e501ea7e8f299649336a201d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4efa7b75e501ea7e8f299649336a201d">&#9670;&#160;</a></span>FT_OUTLINE_EVEN_ODD_FILL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_OUTLINE_EVEN_ODD_FILL&#160;&#160;&#160;0x2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00476">476</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a8fab8e2a53bdfa2d25a0ce9213304d3e" name="a8fab8e2a53bdfa2d25a0ce9213304d3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fab8e2a53bdfa2d25a0ce9213304d3e">&#9670;&#160;</a></span>ft_outline_even_odd_fill</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ft_outline_even_odd_fill&#160;&#160;&#160;<a class="el" href="#a4efa7b75e501ea7e8f299649336a201d">FT_OUTLINE_EVEN_ODD_FILL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00506">506</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="aa52794bb013ef86fc3da0eb8502024b1" name="aa52794bb013ef86fc3da0eb8502024b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa52794bb013ef86fc3da0eb8502024b1">&#9670;&#160;</a></span>FT_OUTLINE_HIGH_PRECISION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_OUTLINE_HIGH_PRECISION&#160;&#160;&#160;0x100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00482">482</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="aa6ca3f2d8d6817877c159a23ed7e300f" name="aa6ca3f2d8d6817877c159a23ed7e300f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6ca3f2d8d6817877c159a23ed7e300f">&#9670;&#160;</a></span>ft_outline_high_precision</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ft_outline_high_precision&#160;&#160;&#160;<a class="el" href="#aa52794bb013ef86fc3da0eb8502024b1">FT_OUTLINE_HIGH_PRECISION</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00509">509</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a6ad8f4d36f10c26397c4fbd74b306f7a" name="a6ad8f4d36f10c26397c4fbd74b306f7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ad8f4d36f10c26397c4fbd74b306f7a">&#9670;&#160;</a></span>FT_OUTLINE_IGNORE_DROPOUTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_OUTLINE_IGNORE_DROPOUTS&#160;&#160;&#160;0x8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00478">478</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a42b656a9c0ecfaa210a21f9e6a759d2e" name="a42b656a9c0ecfaa210a21f9e6a759d2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42b656a9c0ecfaa210a21f9e6a759d2e">&#9670;&#160;</a></span>ft_outline_ignore_dropouts</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ft_outline_ignore_dropouts&#160;&#160;&#160;<a class="el" href="#a6ad8f4d36f10c26397c4fbd74b306f7a">FT_OUTLINE_IGNORE_DROPOUTS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00508">508</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a6cc7c7324d7c0382c2e211ccdf0ababd" name="a6cc7c7324d7c0382c2e211ccdf0ababd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cc7c7324d7c0382c2e211ccdf0ababd">&#9670;&#160;</a></span>FT_OUTLINE_INCLUDE_STUBS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_OUTLINE_INCLUDE_STUBS&#160;&#160;&#160;0x20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00480">480</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a77419f525bb73211cc997081290367d0" name="a77419f525bb73211cc997081290367d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77419f525bb73211cc997081290367d0">&#9670;&#160;</a></span>FT_Outline_LineTo_Func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_Outline_LineTo_Func&#160;&#160;&#160;<a class="el" href="#a522526513387d998682d59515fe93ccf">FT_Outline_LineToFunc</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00586">586</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="ae5c15ee22f5ae04acc40ebc08b2c384b" name="ae5c15ee22f5ae04acc40ebc08b2c384b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5c15ee22f5ae04acc40ebc08b2c384b">&#9670;&#160;</a></span>FT_Outline_MoveTo_Func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_Outline_MoveTo_Func&#160;&#160;&#160;<a class="el" href="#adb1c27eedf361dcd3d331fa266a466af">FT_Outline_MoveToFunc</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00559">559</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a5b9770808811255f74015c64ddca54c9" name="a5b9770808811255f74015c64ddca54c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b9770808811255f74015c64ddca54c9">&#9670;&#160;</a></span>FT_OUTLINE_NONE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_OUTLINE_NONE&#160;&#160;&#160;0x0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00474">474</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a8206880ac83ae4a79912cebff21aa26d" name="a8206880ac83ae4a79912cebff21aa26d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8206880ac83ae4a79912cebff21aa26d">&#9670;&#160;</a></span>ft_outline_none</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ft_outline_none&#160;&#160;&#160;<a class="el" href="#a5b9770808811255f74015c64ddca54c9">FT_OUTLINE_NONE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00504">504</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="ace1302f12b2a7d5824d7fb346cdca89c" name="ace1302f12b2a7d5824d7fb346cdca89c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace1302f12b2a7d5824d7fb346cdca89c">&#9670;&#160;</a></span>FT_OUTLINE_OWNER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_OUTLINE_OWNER&#160;&#160;&#160;0x1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00475">475</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a7f0f4693f1bdcfdaed206d97688b8070" name="a7f0f4693f1bdcfdaed206d97688b8070"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f0f4693f1bdcfdaed206d97688b8070">&#9670;&#160;</a></span>ft_outline_owner</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ft_outline_owner&#160;&#160;&#160;<a class="el" href="#ace1302f12b2a7d5824d7fb346cdca89c">FT_OUTLINE_OWNER</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00505">505</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="aab3403442f558892216d95af8a41075d" name="aab3403442f558892216d95af8a41075d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab3403442f558892216d95af8a41075d">&#9670;&#160;</a></span>FT_OUTLINE_POINTS_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_OUTLINE_POINTS_MAX&#160;&#160;&#160;SHRT_MAX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00399">399</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="ae6eb93e2e13c7e67da3b399f1dd57045" name="ae6eb93e2e13c7e67da3b399f1dd57045"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6eb93e2e13c7e67da3b399f1dd57045">&#9670;&#160;</a></span>FT_OUTLINE_REVERSE_FILL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_OUTLINE_REVERSE_FILL&#160;&#160;&#160;0x4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00477">477</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a141d4ef79000e3e959ca209cccdba2ce" name="a141d4ef79000e3e959ca209cccdba2ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a141d4ef79000e3e959ca209cccdba2ce">&#9670;&#160;</a></span>ft_outline_reverse_fill</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ft_outline_reverse_fill&#160;&#160;&#160;<a class="el" href="#ae6eb93e2e13c7e67da3b399f1dd57045">FT_OUTLINE_REVERSE_FILL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00507">507</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="ae7ff66a72c5702a0ab34436b02ca8662" name="ae7ff66a72c5702a0ab34436b02ca8662"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7ff66a72c5702a0ab34436b02ca8662">&#9670;&#160;</a></span>FT_OUTLINE_SINGLE_PASS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_OUTLINE_SINGLE_PASS&#160;&#160;&#160;0x200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00483">483</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a4dd16821c11559df986080778a2f9267" name="a4dd16821c11559df986080778a2f9267"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dd16821c11559df986080778a2f9267">&#9670;&#160;</a></span>ft_outline_single_pass</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ft_outline_single_pass&#160;&#160;&#160;<a class="el" href="#ae7ff66a72c5702a0ab34436b02ca8662">FT_OUTLINE_SINGLE_PASS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00510">510</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a2d69c5b5db14cdcaccf941cfe3788204" name="a2d69c5b5db14cdcaccf941cfe3788204"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d69c5b5db14cdcaccf941cfe3788204">&#9670;&#160;</a></span>FT_OUTLINE_SMART_DROPOUTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_OUTLINE_SMART_DROPOUTS&#160;&#160;&#160;0x10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00479">479</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a8dabde8b30dc0dc8842f7d15ae354a73" name="a8dabde8b30dc0dc8842f7d15ae354a73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dabde8b30dc0dc8842f7d15ae354a73">&#9670;&#160;</a></span>ft_pixel_mode_grays</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ft_pixel_mode_grays&#160;&#160;&#160;<a class="el" href="#a4953570a0afb7abb672a6583035865a4a58a764f37700cb5258d02987a9209e2c">FT_PIXEL_MODE_GRAY</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00205">205</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="aef5fede71e6d6d90968255f1c728625d" name="aef5fede71e6d6d90968255f1c728625d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef5fede71e6d6d90968255f1c728625d">&#9670;&#160;</a></span>ft_pixel_mode_mono</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ft_pixel_mode_mono&#160;&#160;&#160;<a class="el" href="#a4953570a0afb7abb672a6583035865a4a3c16f8be14915a529161ff1514204fb4">FT_PIXEL_MODE_MONO</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00204">204</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="ae37598ecb2f865765a3abe8ff3466727" name="ae37598ecb2f865765a3abe8ff3466727"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae37598ecb2f865765a3abe8ff3466727">&#9670;&#160;</a></span>ft_pixel_mode_none</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ft_pixel_mode_none&#160;&#160;&#160;<a class="el" href="#a4953570a0afb7abb672a6583035865a4a42b2be5eb5c8e72d81fa43b11cf942ca">FT_PIXEL_MODE_NONE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00203">203</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a9c58ec93a6ea09a9d66ad661567f88b7" name="a9c58ec93a6ea09a9d66ad661567f88b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c58ec93a6ea09a9d66ad661567f88b7">&#9670;&#160;</a></span>ft_pixel_mode_pal2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ft_pixel_mode_pal2&#160;&#160;&#160;<a class="el" href="#a4953570a0afb7abb672a6583035865a4a15764edffc5eb2f5b55e989a1d2be93a">FT_PIXEL_MODE_GRAY2</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00206">206</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a06e0e74ada05dc865422aec86699cf6d" name="a06e0e74ada05dc865422aec86699cf6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06e0e74ada05dc865422aec86699cf6d">&#9670;&#160;</a></span>ft_pixel_mode_pal4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ft_pixel_mode_pal4&#160;&#160;&#160;<a class="el" href="#a4953570a0afb7abb672a6583035865a4aed2aa6cba156a0cd9c4bf16be7a9249d">FT_PIXEL_MODE_GRAY4</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00207">207</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="af3fbba4618478eb180ed0ac2ed09e8d6" name="af3fbba4618478eb180ed0ac2ed09e8d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3fbba4618478eb180ed0ac2ed09e8d6">&#9670;&#160;</a></span>FT_Raster_Done_Func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_Raster_Done_Func&#160;&#160;&#160;<a class="el" href="#a2df7d8d26927263fc038263851b18cf6">FT_Raster_DoneFunc</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l01164">1164</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a13000ad084c4cb1d878a179aba9763ee" name="a13000ad084c4cb1d878a179aba9763ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13000ad084c4cb1d878a179aba9763ee">&#9670;&#160;</a></span>FT_RASTER_FLAG_AA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_RASTER_FLAG_AA&#160;&#160;&#160;0x1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l01043">1043</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a078b9acf5d8ca399833af886d8c4008a" name="a078b9acf5d8ca399833af886d8c4008a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a078b9acf5d8ca399833af886d8c4008a">&#9670;&#160;</a></span>ft_raster_flag_aa</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ft_raster_flag_aa&#160;&#160;&#160;<a class="el" href="#a13000ad084c4cb1d878a179aba9763ee">FT_RASTER_FLAG_AA</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l01049">1049</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a680cffd057eb1375459fe576791f2b7f" name="a680cffd057eb1375459fe576791f2b7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a680cffd057eb1375459fe576791f2b7f">&#9670;&#160;</a></span>FT_RASTER_FLAG_CLIP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_RASTER_FLAG_CLIP&#160;&#160;&#160;0x4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l01045">1045</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a97bd3d42e14d10a256c45546605e0beb" name="a97bd3d42e14d10a256c45546605e0beb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97bd3d42e14d10a256c45546605e0beb">&#9670;&#160;</a></span>ft_raster_flag_clip</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ft_raster_flag_clip&#160;&#160;&#160;<a class="el" href="#a680cffd057eb1375459fe576791f2b7f">FT_RASTER_FLAG_CLIP</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l01051">1051</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a3fc8ce328ef25aa1de7e28466d1c6009" name="a3fc8ce328ef25aa1de7e28466d1c6009"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fc8ce328ef25aa1de7e28466d1c6009">&#9670;&#160;</a></span>FT_RASTER_FLAG_DEFAULT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_RASTER_FLAG_DEFAULT&#160;&#160;&#160;0x0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l01042">1042</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="acea91525c5657d9e06f4cbb22938050b" name="acea91525c5657d9e06f4cbb22938050b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acea91525c5657d9e06f4cbb22938050b">&#9670;&#160;</a></span>ft_raster_flag_default</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ft_raster_flag_default&#160;&#160;&#160;<a class="el" href="#a3fc8ce328ef25aa1de7e28466d1c6009">FT_RASTER_FLAG_DEFAULT</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l01048">1048</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a83b26348efb1b92915c4927e8a87cb4c" name="a83b26348efb1b92915c4927e8a87cb4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83b26348efb1b92915c4927e8a87cb4c">&#9670;&#160;</a></span>FT_RASTER_FLAG_DIRECT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_RASTER_FLAG_DIRECT&#160;&#160;&#160;0x2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l01044">1044</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="aa87501beac782a89867a87433f0577c0" name="aa87501beac782a89867a87433f0577c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa87501beac782a89867a87433f0577c0">&#9670;&#160;</a></span>ft_raster_flag_direct</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ft_raster_flag_direct&#160;&#160;&#160;<a class="el" href="#a83b26348efb1b92915c4927e8a87cb4c">FT_RASTER_FLAG_DIRECT</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l01050">1050</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="ab50a467c3e9e8313c31c14f1e694af34" name="ab50a467c3e9e8313c31c14f1e694af34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab50a467c3e9e8313c31c14f1e694af34">&#9670;&#160;</a></span>FT_Raster_New_Func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_Raster_New_Func&#160;&#160;&#160;<a class="el" href="#acfff989cc4f373de6211b12c97a265e8">FT_Raster_NewFunc</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l01147">1147</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a469b1d3125d0032b8c66df3179832657" name="a469b1d3125d0032b8c66df3179832657"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a469b1d3125d0032b8c66df3179832657">&#9670;&#160;</a></span>FT_Raster_Render_Func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_Raster_Render_Func&#160;&#160;&#160;<a class="el" href="#a4da783a601182e9e5b9d75584fd814ec">FT_Raster_RenderFunc</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l01266">1266</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a7af295aa684d0354fced2dc791a4de89" name="a7af295aa684d0354fced2dc791a4de89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7af295aa684d0354fced2dc791a4de89">&#9670;&#160;</a></span>FT_Raster_Reset_Func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_Raster_Reset_Func&#160;&#160;&#160;<a class="el" href="#a0ae680a37517fe355321f780123d12f6">FT_Raster_ResetFunc</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l01199">1199</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="ad86623a6850838c7fec54f4f622c2744" name="ad86623a6850838c7fec54f4f622c2744"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad86623a6850838c7fec54f4f622c2744">&#9670;&#160;</a></span>FT_Raster_Set_Mode_Func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_Raster_Set_Mode_Func&#160;&#160;&#160;<a class="el" href="#a959011dc7420bae5989460bfd0727bd1">FT_Raster_SetModeFunc</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l01225">1225</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a27308127a1ced75fcb7c2af04a858a54" name="a27308127a1ced75fcb7c2af04a858a54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27308127a1ced75fcb7c2af04a858a54">&#9670;&#160;</a></span>FT_Raster_Span_Func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_Raster_Span_Func&#160;&#160;&#160;<a class="el" href="#abae5f0d92287252b367d3e8210ec4e3a">FT_SpanFunc</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00942">942</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a1e1422cfbeb7c3992d5d7b8f85732efd" name="a1e1422cfbeb7c3992d5d7b8f85732efd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e1422cfbeb7c3992d5d7b8f85732efd">&#9670;&#160;</a></span>FT_BBox</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structFT__BBox__.html">FT_BBox_</a> <a class="el" href="#a1e1422cfbeb7c3992d5d7b8f85732efd">FT_BBox</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1901381e05d5dd7ad6567c85ee2076c3" name="a1901381e05d5dd7ad6567c85ee2076c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1901381e05d5dd7ad6567c85ee2076c3">&#9670;&#160;</a></span>FT_Bitmap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structFT__Bitmap__.html">FT_Bitmap_</a> <a class="el" href="#a1901381e05d5dd7ad6567c85ee2076c3">FT_Bitmap</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac277a6c91e1d785fae31f2aa86d60588" name="ac277a6c91e1d785fae31f2aa86d60588"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac277a6c91e1d785fae31f2aa86d60588">&#9670;&#160;</a></span>FT_Glyph_Format</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="#a62d06240f489f4d35830e42b7297eb22">FT_Glyph_Format_</a> <a class="el" href="#ac277a6c91e1d785fae31f2aa86d60588">FT_Glyph_Format</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b64eb35252e8829024c12c98cce37d4" name="a6b64eb35252e8829024c12c98cce37d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b64eb35252e8829024c12c98cce37d4">&#9670;&#160;</a></span>FT_Outline</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structFT__Outline__.html">FT_Outline_</a> <a class="el" href="#a6b64eb35252e8829024c12c98cce37d4">FT_Outline</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a44b83dd26e7f37eae86aee33ff3efd9b" name="a44b83dd26e7f37eae86aee33ff3efd9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44b83dd26e7f37eae86aee33ff3efd9b">&#9670;&#160;</a></span>FT_Outline_ConicToFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* FT_Outline_ConicToFunc) (const <a class="el" href="#abfcb941b4b81f3a922d4ae57c620db27">FT_Vector</a> *control, const <a class="el" href="#abfcb941b4b81f3a922d4ae57c620db27">FT_Vector</a> *to, <a class="el" href="glext_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *user)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00613">613</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a9c6f8d42a1660a57f55614baaa4b61b2" name="a9c6f8d42a1660a57f55614baaa4b61b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c6f8d42a1660a57f55614baaa4b61b2">&#9670;&#160;</a></span>FT_Outline_CubicToFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* FT_Outline_CubicToFunc) (const <a class="el" href="#abfcb941b4b81f3a922d4ae57c620db27">FT_Vector</a> *control1, const <a class="el" href="#abfcb941b4b81f3a922d4ae57c620db27">FT_Vector</a> *control2, const <a class="el" href="#abfcb941b4b81f3a922d4ae57c620db27">FT_Vector</a> *to, <a class="el" href="glext_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *user)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00645">645</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="ae5de8c9dd920eccd7ef91a7a4c0f1645" name="ae5de8c9dd920eccd7ef91a7a4c0f1645"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5de8c9dd920eccd7ef91a7a4c0f1645">&#9670;&#160;</a></span>FT_Outline_Funcs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structFT__Outline__Funcs__.html">FT_Outline_Funcs_</a> <a class="el" href="#ae5de8c9dd920eccd7ef91a7a4c0f1645">FT_Outline_Funcs</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a522526513387d998682d59515fe93ccf" name="a522526513387d998682d59515fe93ccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a522526513387d998682d59515fe93ccf">&#9670;&#160;</a></span>FT_Outline_LineToFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* FT_Outline_LineToFunc) (const <a class="el" href="#abfcb941b4b81f3a922d4ae57c620db27">FT_Vector</a> *to, <a class="el" href="glext_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *user)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00582">582</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="adb1c27eedf361dcd3d331fa266a466af" name="adb1c27eedf361dcd3d331fa266a466af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb1c27eedf361dcd3d331fa266a466af">&#9670;&#160;</a></span>FT_Outline_MoveToFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* FT_Outline_MoveToFunc) (const <a class="el" href="#abfcb941b4b81f3a922d4ae57c620db27">FT_Vector</a> *to, <a class="el" href="glext_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *user)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00555">555</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="ac567a2d1df18aa5cd04d09859152ff3a" name="ac567a2d1df18aa5cd04d09859152ff3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac567a2d1df18aa5cd04d09859152ff3a">&#9670;&#160;</a></span>FT_Pixel_Mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="#a4953570a0afb7abb672a6583035865a4">FT_Pixel_Mode_</a> <a class="el" href="#ac567a2d1df18aa5cd04d09859152ff3a">FT_Pixel_Mode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6774d2eb4bf030daf319aa6b56347431" name="a6774d2eb4bf030daf319aa6b56347431"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6774d2eb4bf030daf319aa6b56347431">&#9670;&#160;</a></span>FT_Raster</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct FT_RasterRec_* <a class="el" href="#a6774d2eb4bf030daf319aa6b56347431">FT_Raster</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00862">862</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a715e9f91407a9758dbefb6dd6549fe35" name="a715e9f91407a9758dbefb6dd6549fe35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a715e9f91407a9758dbefb6dd6549fe35">&#9670;&#160;</a></span>FT_Raster_BitSet_Func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="glext_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a>(* FT_Raster_BitSet_Func) (int <a class="el" href="glext_8h.html#a74d80fd479c0f6d0153c709949a089ef">y</a>, int <a class="el" href="glext_8h.html#a0cdec8e97a75ee9458b23d152bf962d4">x</a>, <a class="el" href="glext_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *user)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00996">996</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a2ac5897dab423a944f4457a3131061e4" name="a2ac5897dab423a944f4457a3131061e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ac5897dab423a944f4457a3131061e4">&#9670;&#160;</a></span>FT_Raster_BitTest_Func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* FT_Raster_BitTest_Func) (int <a class="el" href="glext_8h.html#a74d80fd479c0f6d0153c709949a089ef">y</a>, int <a class="el" href="glext_8h.html#a0cdec8e97a75ee9458b23d152bf962d4">x</a>, <a class="el" href="glext_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *user)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00968">968</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a2df7d8d26927263fc038263851b18cf6" name="a2df7d8d26927263fc038263851b18cf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2df7d8d26927263fc038263851b18cf6">&#9670;&#160;</a></span>FT_Raster_DoneFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="glext_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a>(* FT_Raster_DoneFunc) (<a class="el" href="#a6774d2eb4bf030daf319aa6b56347431">FT_Raster</a> raster)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l01161">1161</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a738d501723224dee6667ada1e1b6eb1c" name="a738d501723224dee6667ada1e1b6eb1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a738d501723224dee6667ada1e1b6eb1c">&#9670;&#160;</a></span>FT_Raster_Funcs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structFT__Raster__Funcs__.html">FT_Raster_Funcs_</a> <a class="el" href="#a738d501723224dee6667ada1e1b6eb1c">FT_Raster_Funcs</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acfff989cc4f373de6211b12c97a265e8" name="acfff989cc4f373de6211b12c97a265e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfff989cc4f373de6211b12c97a265e8">&#9670;&#160;</a></span>FT_Raster_NewFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* FT_Raster_NewFunc) (<a class="el" href="glext_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *memory, <a class="el" href="#a6774d2eb4bf030daf319aa6b56347431">FT_Raster</a> *raster)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l01143">1143</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a4f41c3fb4a05eacd520be21e4db611bc" name="a4f41c3fb4a05eacd520be21e4db611bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f41c3fb4a05eacd520be21e4db611bc">&#9670;&#160;</a></span>FT_Raster_Params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structFT__Raster__Params__.html">FT_Raster_Params_</a> <a class="el" href="#a4f41c3fb4a05eacd520be21e4db611bc">FT_Raster_Params</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4da783a601182e9e5b9d75584fd814ec" name="a4da783a601182e9e5b9d75584fd814ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4da783a601182e9e5b9d75584fd814ec">&#9670;&#160;</a></span>FT_Raster_RenderFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* FT_Raster_RenderFunc) (<a class="el" href="#a6774d2eb4bf030daf319aa6b56347431">FT_Raster</a> raster, const <a class="el" href="#a4f41c3fb4a05eacd520be21e4db611bc">FT_Raster_Params</a> *<a class="el" href="glext_8h.html#a7eca977aec48ecd8d48ebd7558c0538c">params</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l01262">1262</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a0ae680a37517fe355321f780123d12f6" name="a0ae680a37517fe355321f780123d12f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ae680a37517fe355321f780123d12f6">&#9670;&#160;</a></span>FT_Raster_ResetFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="glext_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a>(* FT_Raster_ResetFunc) (<a class="el" href="#a6774d2eb4bf030daf319aa6b56347431">FT_Raster</a> raster, unsigned char *pool_base, unsigned long pool_size)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l01194">1194</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a959011dc7420bae5989460bfd0727bd1" name="a959011dc7420bae5989460bfd0727bd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a959011dc7420bae5989460bfd0727bd1">&#9670;&#160;</a></span>FT_Raster_SetModeFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* FT_Raster_SetModeFunc) (<a class="el" href="#a6774d2eb4bf030daf319aa6b56347431">FT_Raster</a> raster, unsigned long <a class="el" href="glext_8h.html#a1e71d9c196e4683cc06c4b54d53f7ef5">mode</a>, <a class="el" href="glext_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *args)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l01220">1220</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a6436dd00a70a85bfc3a8012bdc47b958" name="a6436dd00a70a85bfc3a8012bdc47b958"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6436dd00a70a85bfc3a8012bdc47b958">&#9670;&#160;</a></span>FT_Span</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structFT__Span__.html">FT_Span_</a> <a class="el" href="#a6436dd00a70a85bfc3a8012bdc47b958">FT_Span</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abae5f0d92287252b367d3e8210ec4e3a" name="abae5f0d92287252b367d3e8210ec4e3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abae5f0d92287252b367d3e8210ec4e3a">&#9670;&#160;</a></span>FT_SpanFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="glext_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a>(* FT_SpanFunc) (int <a class="el" href="glext_8h.html#a74d80fd479c0f6d0153c709949a089ef">y</a>, int <a class="el" href="glext_8h.html#a4e867eee5910f6b2df6123b47ab70dae">count</a>, const <a class="el" href="#a6436dd00a70a85bfc3a8012bdc47b958">FT_Span</a> *spans, <a class="el" href="glext_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *user)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00936">936</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="abfcb941b4b81f3a922d4ae57c620db27" name="abfcb941b4b81f3a922d4ae57c620db27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfcb941b4b81f3a922d4ae57c620db27">&#9670;&#160;</a></span>FT_Vector</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structFT__Vector__.html">FT_Vector_</a> <a class="el" href="#abfcb941b4b81f3a922d4ae57c620db27">FT_Vector</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a62d06240f489f4d35830e42b7297eb22" name="a62d06240f489f4d35830e42b7297eb22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62d06240f489f4d35830e42b7297eb22">&#9670;&#160;</a></span>FT_Glyph_Format_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a62d06240f489f4d35830e42b7297eb22">FT_Glyph_Format_</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a62d06240f489f4d35830e42b7297eb22a6fbfde68c5be5ff527967af5cd7bf947" name="a62d06240f489f4d35830e42b7297eb22a6fbfde68c5be5ff527967af5cd7bf947"></a>FT_IMAGE_TAG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a62d06240f489f4d35830e42b7297eb22a6fbfde68c5be5ff527967af5cd7bf947" name="a62d06240f489f4d35830e42b7297eb22a6fbfde68c5be5ff527967af5cd7bf947"></a>FT_IMAGE_TAG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a62d06240f489f4d35830e42b7297eb22a6fbfde68c5be5ff527967af5cd7bf947" name="a62d06240f489f4d35830e42b7297eb22a6fbfde68c5be5ff527967af5cd7bf947"></a>FT_IMAGE_TAG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a62d06240f489f4d35830e42b7297eb22a6fbfde68c5be5ff527967af5cd7bf947" name="a62d06240f489f4d35830e42b7297eb22a6fbfde68c5be5ff527967af5cd7bf947"></a>FT_IMAGE_TAG&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00778">778</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<a id="a4953570a0afb7abb672a6583035865a4" name="a4953570a0afb7abb672a6583035865a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4953570a0afb7abb672a6583035865a4">&#9670;&#160;</a></span>FT_Pixel_Mode_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a4953570a0afb7abb672a6583035865a4">FT_Pixel_Mode_</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4953570a0afb7abb672a6583035865a4a42b2be5eb5c8e72d81fa43b11cf942ca" name="a4953570a0afb7abb672a6583035865a4a42b2be5eb5c8e72d81fa43b11cf942ca"></a>FT_PIXEL_MODE_NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4953570a0afb7abb672a6583035865a4a3c16f8be14915a529161ff1514204fb4" name="a4953570a0afb7abb672a6583035865a4a3c16f8be14915a529161ff1514204fb4"></a>FT_PIXEL_MODE_MONO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4953570a0afb7abb672a6583035865a4a58a764f37700cb5258d02987a9209e2c" name="a4953570a0afb7abb672a6583035865a4a58a764f37700cb5258d02987a9209e2c"></a>FT_PIXEL_MODE_GRAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4953570a0afb7abb672a6583035865a4a15764edffc5eb2f5b55e989a1d2be93a" name="a4953570a0afb7abb672a6583035865a4a15764edffc5eb2f5b55e989a1d2be93a"></a>FT_PIXEL_MODE_GRAY2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4953570a0afb7abb672a6583035865a4aed2aa6cba156a0cd9c4bf16be7a9249d" name="a4953570a0afb7abb672a6583035865a4aed2aa6cba156a0cd9c4bf16be7a9249d"></a>FT_PIXEL_MODE_GRAY4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4953570a0afb7abb672a6583035865a4a7735f0c481982819c28cce353230d214" name="a4953570a0afb7abb672a6583035865a4a7735f0c481982819c28cce353230d214"></a>FT_PIXEL_MODE_LCD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4953570a0afb7abb672a6583035865a4a2fe6ff91ba59130265c5c371e0fe671b" name="a4953570a0afb7abb672a6583035865a4a2fe6ff91ba59130265c5c371e0fe671b"></a>FT_PIXEL_MODE_LCD_V&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4953570a0afb7abb672a6583035865a4a650b585fbc19e71dafed4861dd71d04c" name="a4953570a0afb7abb672a6583035865a4a650b585fbc19e71dafed4861dd71d04c"></a>FT_PIXEL_MODE_MAX&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00172">172</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="af5f230f4b253d4c7715fd2e595614c90" name="af5f230f4b253d4c7715fd2e595614c90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5f230f4b253d4c7715fd2e595614c90">&#9670;&#160;</a></span>FT_Pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ftheader_8h.html#a72ee5814b3ae378ebb7fd3a8e3ddec14">FT_BEGIN_HEADER</a> typedef signed long FT_Pos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftimage_8h_source.html#l00059">59</a> of file <a class="el" href="ftimage_8h_source.html">ftimage.h</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+                    Back to top
+                </button>
+            </main>
+            <footer class="md-footer">
+                <nav class="md-footer__inner md-grid" aria-label="Footer" hidden>
+                    <a href="/learn/" class="md-footer__link md-footer__link--next" aria-label="Next: Learn">
+                        <div class="md-footer__title">
+                            <span class="md-footer__direction"> Next </span>
+                            <div class="md-ellipsis">Learn</div>
+                        </div>
+                        <div class="md-footer__button md-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z" /></svg>
+                        </div>
+                    </a>
+                </nav>
+                <div class="md-footer-meta md-typeset">
+                    <div class="md-footer-meta__inner md-grid">
+                        <div class="md-copyright">
+                            <div class="md-copyright__highlight">Copyright &copy; <a href="mailto:laurent@sfml-dev.org">Laurent Gomila</a></div>
+                        </div>
+                        <div class="md-social">
+                            <a href="https://fosstodon.org/@sfml" target="_blank" rel="noopener me" title="SFML on Fosstodon" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com/sfmldev" target="_blank" rel="noopener" title="SFML on Twitter" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="https://discord.gg/nr4X7Fh" target="_blank" rel="noopener" title="SFML&#39;s Discord Server" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="md-dialog" data-md-component="dialog">
+            <div class="md-dialog__inner md-typeset"></div>
+        </div>
+        <script id="__config" type="application/json">
+            {
+                "base": ".",
+                "features": ["content.code.copy", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.prune", "navigation.path", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.suggest"],
+                "search": "/assets/javascripts/workers/search.b8dbb3d2.min.js",
+                "translations": {
+                    "clipboard.copied": "Copied to clipboard",
+                    "clipboard.copy": "Copy to clipboard",
+                    "search.result.more.one": "1 more on this page",
+                    "search.result.more.other": "# more on this page",
+                    "search.result.none": "No matching documents",
+                    "search.result.one": "1 matching document",
+                    "search.result.other": "# matching documents",
+                    "search.result.placeholder": "Type to start searching",
+                    "search.result.term.missing": "Missing",
+                    "select.version": "Select version"
+                }
+            }
+        </script>
+        <script src="/assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+    </body>
+</html>

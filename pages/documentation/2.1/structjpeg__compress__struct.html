@@ -1,0 +1,1809 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="Simple and Fast Multimedia Library" />
+        <link rel="canonical" href="https://www.sfml-dev.org/" />
+        <link rel="next" href="/learn/" />
+        <link rel="icon" href="/images/favicon.ico" />
+        <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.30" />
+        <title>Home - Simple and Fast Multimedia Library</title>
+        <link rel="stylesheet" href="/assets/stylesheets/main.3cba04c6.min.css" />
+        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback" />
+        <style>
+            :root {
+                --md-text-font: "Ubuntu";
+                --md-code-font: "Roboto Mono";
+            }
+        </style>
+        <link rel="stylesheet" href="/styles/extra.css" />
+        <script>
+            (__md_scope = new URL(".", location)),
+                (__md_hash = (e) => [...e].reduce((e, _) => (e << 5) - e + _.charCodeAt(0), 0)),
+                (__md_get = (e, _ = localStorage, t = __md_scope) => JSON.parse(_.getItem(t.pathname + "." + e))),
+                (__md_set = (e, _, t = localStorage, a = __md_scope) => {
+                    try {
+                        t.setItem(a.pathname + "." + e, JSON.stringify(_));
+                    } catch (e) {}
+                });
+        </script>
+        <link rel="stylesheet" type="text/css" href="doxygen.css" title="default" media="screen,print" />
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="dynsections.js"></script>
+        <script type="text/javascript" src="clipboard.js"></script>
+        <script type="text/javascript" src="cookie.js"></script>
+        <script type="text/javascript" src="resize.js"></script>
+        <link rel="stylesheet" type="text/css" href="search/search.css" />
+        <link rel="stylesheet" type="text/css" href="searchOverrides.css" />
+        <script type="text/javascript" src="search/searchdata.js"></script>
+        <script type="text/javascript" src="search/search.js"></script>
+        <script type="text/javascript">
+            /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+            $(document).ready(function () {
+                init_search();
+            });
+            /* @license-end */
+        </script>
+    </head>
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="indigo">
+        <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off" />
+        <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off" />
+        <label class="md-overlay" for="__drawer"></label>
+        <div data-md-component="skip">
+            <a href="#simple-and-fast-multimedia-library" class="md-skip"> Skip to content </a>
+        </div>
+        <div data-md-component="announce"></div>
+        <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+            <nav class="md-header__inner md-grid" aria-label="Header">
+                <a href="." title="Simple and Fast Multimedia Library" class="md-header__button md-logo" aria-label="Simple and Fast Multimedia Library" data-md-component="logo">
+                    <img src="/images/logo.png" alt="logo" />
+                </a>
+                <label class="md-header__button md-icon" for="__drawer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z" /></svg>
+                </label>
+                <div class="md-header__title" data-md-component="header-title">
+                    <div class="md-header__ellipsis">
+                        <div class="md-header__topic">
+                            <span class="md-ellipsis"> Simple and Fast Multimedia Library </span>
+                        </div>
+                        <div class="md-header__topic" data-md-component="header-topic">
+                            <span class="md-ellipsis"> Home </span>
+                        </div>
+                    </div>
+                </div>
+                <form class="md-header__option" data-md-component="palette">
+                    <input
+                        class="md-option"
+                        data-md-color-media="(prefers-color-scheme: light)"
+                        data-md-color-scheme="default"
+                        data-md-color-primary="light-green"
+                        data-md-color-accent="indigo"
+                        aria-label="Switch to dark mode"
+                        type="radio"
+                        name="__palette"
+                        id="__palette_0"
+                    />
+                    <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"
+                            />
+                        </svg>
+                    </label>
+                    <input
+                        class="md-option"
+                        data-md-color-media="(prefers-color-scheme: dark)"
+                        data-md-color-scheme="slate"
+                        data-md-color-primary="green"
+                        data-md-color-accent="indigo"
+                        aria-label="Switch to light mode"
+                        type="radio"
+                        name="__palette"
+                        id="__palette_1"
+                    />
+                    <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"
+                            />
+                        </svg>
+                    </label>
+                </form>
+                <script>
+                    var media,
+                        input,
+                        key,
+                        value,
+                        palette = __md_get("__palette");
+                    if (palette && palette.color) {
+                        "(prefers-color-scheme)" === palette.color.media &&
+                            ((media = matchMedia("(prefers-color-scheme: light)")),
+                            (input = document.querySelector(media.matches ? "[data-md-color-media='(prefers-color-scheme: light)']" : "[data-md-color-media='(prefers-color-scheme: dark)']")),
+                            (palette.color.media = input.getAttribute("data-md-color-media")),
+                            (palette.color.scheme = input.getAttribute("data-md-color-scheme")),
+                            (palette.color.primary = input.getAttribute("data-md-color-primary")),
+                            (palette.color.accent = input.getAttribute("data-md-color-accent")));
+                        for ([key, value] of Object.entries(palette.color)) document.body.setAttribute("data-md-color-" + key, value);
+                    }
+                </script>
+                <div class="md-header__option">
+                    <div class="md-select">
+                        <button class="md-header__button md-icon" aria-label="Select language">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"
+                                />
+                            </svg>
+                        </button>
+                        <div class="md-select__inner">
+                            <ul class="md-select__list">
+                                <li class="md-select__item">
+                                    <a href="/" hreflang="en" class="md-select__link"> English </a>
+                                </li>
+                                <li class="md-select__item">
+                                    <a href="/fr/" hreflang="fr" class="md-select__link"> Français </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <label class="md-header__button md-icon" for="__search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"
+                        />
+                    </svg>
+                </label>
+                <div class="md-search" data-md-component="search" role="dialog">
+                    <label class="md-search__overlay" for="__search"></label>
+                    <div class="md-search__inner" role="search">
+                        <form class="md-search__form" name="search">
+                            <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required />
+                            <label class="md-search__icon md-icon" for="__search">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"
+                                    />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z" /></svg>
+                            </label>
+                            <nav class="md-search__options" aria-label="Search">
+                                <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z" /></svg>
+                                </button>
+                            </nav>
+                            <div class="md-search__suggest" data-md-component="search-suggest"></div>
+                        </form>
+                        <div class="md-search__output">
+                            <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+                                <div class="md-search-result" data-md-component="search-result">
+                                    <div class="md-search-result__meta">Initializing search</div>
+                                    <ol class="md-search-result__list" role="presentation"></ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-header__source">
+                    <a href="https://github.com/SFML/SFML" title="Go to repository" class="md-source" data-md-component="source">
+                        <div class="md-source__icon md-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. -->
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                                />
+                            </svg>
+                        </div>
+                        <div class="md-source__repository">SFML</div>
+                    </a>
+                </div>
+            </nav>
+            <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+                <div class="md-grid">
+                    <ul class="md-tabs__list">
+                        <li class="md-tabs__item">
+                            <a href="/" class="md-tabs__link"> Home </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/learn/" class="md-tabs__link"> Learn </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/tutorials/2.6/" class="md-tabs__link"> Tutorials </a>
+                        </li>
+                        <li class="md-tabs__item md-tabs__item--active">
+                            <a href="/documentation" class="md-tabs__link"> Documentation </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/download/" class="md-tabs__link"> Download </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/community/" class="md-tabs__link"> Community </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/development/" class="md-tabs__link"> Development </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="md-container" data-md-component="container">
+            <main class="md-main" data-md-component="main">
+                <div class="md-main__inner md-grid">
+                    <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                        <div class="md-sidebar__scrollwrap">
+                            <div class="md-sidebar__inner">
+                                <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+                                    <label class="md-nav__title" for="__drawer">
+                                        <a href="." title="Simple and Fast Multimedia Library" class="md-nav__button md-logo" aria-label="Simple and Fast Multimedia Library" data-md-component="logo">
+                                            <img src="/images/logo.png" alt="logo" />
+                                        </a>
+                                        Simple and Fast Multimedia Library
+                                    </label>
+                                    <div class="md-nav__source">
+                                        <a href="https://github.com/SFML/SFML" title="Go to repository" class="md-source" data-md-component="source">
+                                            <div class="md-source__icon md-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. -->
+                                                    <path
+                                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                                                    />
+                                                </svg>
+                                            </div>
+                                            <div class="md-source__repository">SFML</div>
+                                        </a>
+                                    </div>
+                                    <ul class="md-nav__list" data-md-scrollfix>
+                                        <li class="md-nav__item">
+                                            <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc" />
+                                            <label class="md-nav__link" for="__toc">
+                                                <span class="md-ellipsis"> Home </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </label>
+                                            <a href="." class="md-nav__link">
+                                                <span class="md-ellipsis"> Home </span>
+                                            </a>
+                                            <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+                                                <label class="md-nav__title" for="__toc">
+                                                    <span class="md-nav__icon md-icon"></span>
+                                                    Table of contents
+                                                </label>
+                                                <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-media" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-media </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-platform" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-platform </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-language" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-language </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="learn/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Learn </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="tutorials/2.6/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Tutorials </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--active">
+                                            <a href="documentation" class="md-nav__link md-nav__link--active">
+                                                <span class="md-ellipsis"> Documentation </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="download/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Download </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="community/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Community </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="development/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Development </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                        <div class="md-sidebar__scrollwrap">
+                            <div class="md-sidebar__inner">
+                                <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+                                    <label class="md-nav__title" for="__toc">
+                                        <span class="md-nav__icon md-icon"></span>
+                                        Table of contents
+                                    </label>
+                                    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-media" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-media </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-platform" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-platform </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-language" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-language </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-content" data-md-component="content">
+                        <div class="contents">
+<!-- Generated by Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="topics.html"><span>Topics</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
+    </ul>
+  </div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="structjpeg__compress__struct-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">jpeg_compress_struct Struct Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a831013770bec36f77dd2048c8771513c" id="r_a831013770bec36f77dd2048c8771513c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a831013770bec36f77dd2048c8771513c">jpeg_common_fields</a></td></tr>
+<tr class="separator:a831013770bec36f77dd2048c8771513c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab31c2c756e309dee8d0318557353ba40" id="r_ab31c2c756e309dee8d0318557353ba40"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structjpeg__destination__mgr.html">jpeg_destination_mgr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab31c2c756e309dee8d0318557353ba40">dest</a></td></tr>
+<tr class="separator:ab31c2c756e309dee8d0318557353ba40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8e50a2c70252c53f3e10b886818f2cf" id="r_ac8e50a2c70252c53f3e10b886818f2cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jmorecfg_8h.html#a04ed4674f6f1d0d50ec241531e38274f">JDIMENSION</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8e50a2c70252c53f3e10b886818f2cf">image_width</a></td></tr>
+<tr class="separator:ac8e50a2c70252c53f3e10b886818f2cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30863835e7785b7df800811f842b2da0" id="r_a30863835e7785b7df800811f842b2da0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jmorecfg_8h.html#a04ed4674f6f1d0d50ec241531e38274f">JDIMENSION</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30863835e7785b7df800811f842b2da0">image_height</a></td></tr>
+<tr class="separator:a30863835e7785b7df800811f842b2da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5b66b039ea5a96bb2f5cf0254115837" id="r_af5b66b039ea5a96bb2f5cf0254115837"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5b66b039ea5a96bb2f5cf0254115837">input_components</a></td></tr>
+<tr class="separator:af5b66b039ea5a96bb2f5cf0254115837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac27d1dfbbbd677aab9fb570c58ca960d" id="r_ac27d1dfbbbd677aab9fb570c58ca960d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jpeglib_8h.html#a6ea40239360b06efe6377f125f1134f3">J_COLOR_SPACE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac27d1dfbbbd677aab9fb570c58ca960d">in_color_space</a></td></tr>
+<tr class="separator:ac27d1dfbbbd677aab9fb570c58ca960d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5d2e16382ea12fb4e3bd6a69f7831ea" id="r_ac5d2e16382ea12fb4e3bd6a69f7831ea"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5d2e16382ea12fb4e3bd6a69f7831ea">input_gamma</a></td></tr>
+<tr class="separator:ac5d2e16382ea12fb4e3bd6a69f7831ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16eb7e2e1ac30c42e8bd753bde43129c" id="r_a16eb7e2e1ac30c42e8bd753bde43129c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16eb7e2e1ac30c42e8bd753bde43129c">scale_num</a></td></tr>
+<tr class="separator:a16eb7e2e1ac30c42e8bd753bde43129c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab30f569483d6c25032aa2c18c885e91c" id="r_ab30f569483d6c25032aa2c18c885e91c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab30f569483d6c25032aa2c18c885e91c">scale_denom</a></td></tr>
+<tr class="separator:ab30f569483d6c25032aa2c18c885e91c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab433b317fcbe32212122621e476ac9d8" id="r_ab433b317fcbe32212122621e476ac9d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jmorecfg_8h.html#a04ed4674f6f1d0d50ec241531e38274f">JDIMENSION</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab433b317fcbe32212122621e476ac9d8">jpeg_width</a></td></tr>
+<tr class="separator:ab433b317fcbe32212122621e476ac9d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc2cf065c0faab28327f7238949f76d3" id="r_abc2cf065c0faab28327f7238949f76d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jmorecfg_8h.html#a04ed4674f6f1d0d50ec241531e38274f">JDIMENSION</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc2cf065c0faab28327f7238949f76d3">jpeg_height</a></td></tr>
+<tr class="separator:abc2cf065c0faab28327f7238949f76d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64c5b59e436f7d3d1d38b58d49993469" id="r_a64c5b59e436f7d3d1d38b58d49993469"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64c5b59e436f7d3d1d38b58d49993469">data_precision</a></td></tr>
+<tr class="separator:a64c5b59e436f7d3d1d38b58d49993469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a524f0284a6fcf96b21c8a745282c15e2" id="r_a524f0284a6fcf96b21c8a745282c15e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a524f0284a6fcf96b21c8a745282c15e2">num_components</a></td></tr>
+<tr class="separator:a524f0284a6fcf96b21c8a745282c15e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fb5305ec135340eddc2ebabec6a84d7" id="r_a7fb5305ec135340eddc2ebabec6a84d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jpeglib_8h.html#a6ea40239360b06efe6377f125f1134f3">J_COLOR_SPACE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fb5305ec135340eddc2ebabec6a84d7">jpeg_color_space</a></td></tr>
+<tr class="separator:a7fb5305ec135340eddc2ebabec6a84d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d37d3f336cc11acafef541bf8ed38cc" id="r_a4d37d3f336cc11acafef541bf8ed38cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structjpeg__component__info.html">jpeg_component_info</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d37d3f336cc11acafef541bf8ed38cc">comp_info</a></td></tr>
+<tr class="separator:a4d37d3f336cc11acafef541bf8ed38cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70a194c6a9c1744e1ed3a97232fb97f5" id="r_a70a194c6a9c1744e1ed3a97232fb97f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJQUANT__TBL.html">JQUANT_TBL</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70a194c6a9c1744e1ed3a97232fb97f5">quant_tbl_ptrs</a> [<a class="el" href="jpeglib_8h.html#ab3254a23612ea48615001fffc0c9f691">NUM_QUANT_TBLS</a>]</td></tr>
+<tr class="separator:a70a194c6a9c1744e1ed3a97232fb97f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d8545504353556fae60e1e865d2c600" id="r_a3d8545504353556fae60e1e865d2c600"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d8545504353556fae60e1e865d2c600">q_scale_factor</a> [<a class="el" href="jpeglib_8h.html#ab3254a23612ea48615001fffc0c9f691">NUM_QUANT_TBLS</a>]</td></tr>
+<tr class="separator:a3d8545504353556fae60e1e865d2c600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a69e90a68e1f7f46774d83ba3737a4e" id="r_a6a69e90a68e1f7f46774d83ba3737a4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJHUFF__TBL.html">JHUFF_TBL</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a69e90a68e1f7f46774d83ba3737a4e">dc_huff_tbl_ptrs</a> [<a class="el" href="jpeglib_8h.html#a6b12985705944e0623b671f29dc5722e">NUM_HUFF_TBLS</a>]</td></tr>
+<tr class="separator:a6a69e90a68e1f7f46774d83ba3737a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98d33cae3c8eee8f1f8d662e31cb905d" id="r_a98d33cae3c8eee8f1f8d662e31cb905d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJHUFF__TBL.html">JHUFF_TBL</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98d33cae3c8eee8f1f8d662e31cb905d">ac_huff_tbl_ptrs</a> [<a class="el" href="jpeglib_8h.html#a6b12985705944e0623b671f29dc5722e">NUM_HUFF_TBLS</a>]</td></tr>
+<tr class="separator:a98d33cae3c8eee8f1f8d662e31cb905d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a736d867907116e88b3b38422fb2688c5" id="r_a736d867907116e88b3b38422fb2688c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jmorecfg_8h.html#adfb9a8ea1dd59f151065f763e1e9acd6">UINT8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a736d867907116e88b3b38422fb2688c5">arith_dc_L</a> [<a class="el" href="jpeglib_8h.html#a4efb0fccc8d9db72ca18f32a26fad6ab">NUM_ARITH_TBLS</a>]</td></tr>
+<tr class="separator:a736d867907116e88b3b38422fb2688c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ba30334643b7a5280343fe0e5e49e1e" id="r_a6ba30334643b7a5280343fe0e5e49e1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jmorecfg_8h.html#adfb9a8ea1dd59f151065f763e1e9acd6">UINT8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ba30334643b7a5280343fe0e5e49e1e">arith_dc_U</a> [<a class="el" href="jpeglib_8h.html#a4efb0fccc8d9db72ca18f32a26fad6ab">NUM_ARITH_TBLS</a>]</td></tr>
+<tr class="separator:a6ba30334643b7a5280343fe0e5e49e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1994386d3fa3ff139b63bf4bb4dcc36" id="r_ac1994386d3fa3ff139b63bf4bb4dcc36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jmorecfg_8h.html#adfb9a8ea1dd59f151065f763e1e9acd6">UINT8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1994386d3fa3ff139b63bf4bb4dcc36">arith_ac_K</a> [<a class="el" href="jpeglib_8h.html#a4efb0fccc8d9db72ca18f32a26fad6ab">NUM_ARITH_TBLS</a>]</td></tr>
+<tr class="separator:ac1994386d3fa3ff139b63bf4bb4dcc36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf2f96c340659a09a9ce08469a17e08b" id="r_abf2f96c340659a09a9ce08469a17e08b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf2f96c340659a09a9ce08469a17e08b">num_scans</a></td></tr>
+<tr class="separator:abf2f96c340659a09a9ce08469a17e08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a545fed3fef0d0c5962dbe0e80c067c03" id="r_a545fed3fef0d0c5962dbe0e80c067c03"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structjpeg__scan__info.html">jpeg_scan_info</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a545fed3fef0d0c5962dbe0e80c067c03">scan_info</a></td></tr>
+<tr class="separator:a545fed3fef0d0c5962dbe0e80c067c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f9dfd37243943bc138815bcf1e89584" id="r_a7f9dfd37243943bc138815bcf1e89584"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jconfig_8h.html#a7670a4e8a07d9ebb00411948b0bbf86d">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f9dfd37243943bc138815bcf1e89584">raw_data_in</a></td></tr>
+<tr class="separator:a7f9dfd37243943bc138815bcf1e89584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93a42fe4e984ab0afff45636e23d538a" id="r_a93a42fe4e984ab0afff45636e23d538a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jconfig_8h.html#a7670a4e8a07d9ebb00411948b0bbf86d">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93a42fe4e984ab0afff45636e23d538a">arith_code</a></td></tr>
+<tr class="separator:a93a42fe4e984ab0afff45636e23d538a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ed9c1e2bd808fd684338a009a164ef3" id="r_a2ed9c1e2bd808fd684338a009a164ef3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jconfig_8h.html#a7670a4e8a07d9ebb00411948b0bbf86d">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ed9c1e2bd808fd684338a009a164ef3">optimize_coding</a></td></tr>
+<tr class="separator:a2ed9c1e2bd808fd684338a009a164ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf474ed47e9f0a9c066bc47de5b0e8e7" id="r_abf474ed47e9f0a9c066bc47de5b0e8e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jconfig_8h.html#a7670a4e8a07d9ebb00411948b0bbf86d">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf474ed47e9f0a9c066bc47de5b0e8e7">CCIR601_sampling</a></td></tr>
+<tr class="separator:abf474ed47e9f0a9c066bc47de5b0e8e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a683db079af3beb44eaab5b421a5a9d4f" id="r_a683db079af3beb44eaab5b421a5a9d4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jconfig_8h.html#a7670a4e8a07d9ebb00411948b0bbf86d">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a683db079af3beb44eaab5b421a5a9d4f">do_fancy_downsampling</a></td></tr>
+<tr class="separator:a683db079af3beb44eaab5b421a5a9d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e14f65876566ff8eec195d124535307" id="r_a0e14f65876566ff8eec195d124535307"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e14f65876566ff8eec195d124535307">smoothing_factor</a></td></tr>
+<tr class="separator:a0e14f65876566ff8eec195d124535307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab782f698c650e8ec5f9b47043691d3c1" id="r_ab782f698c650e8ec5f9b47043691d3c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jpeglib_8h.html#ae4245c819e9217a321fb23f1a106d563">J_DCT_METHOD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab782f698c650e8ec5f9b47043691d3c1">dct_method</a></td></tr>
+<tr class="separator:ab782f698c650e8ec5f9b47043691d3c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57ad1f6d9015e25fe272c645dcc3f71e" id="r_a57ad1f6d9015e25fe272c645dcc3f71e"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57ad1f6d9015e25fe272c645dcc3f71e">restart_interval</a></td></tr>
+<tr class="separator:a57ad1f6d9015e25fe272c645dcc3f71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9636f9df88d5a3ae56f0bb9a5f923db7" id="r_a9636f9df88d5a3ae56f0bb9a5f923db7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9636f9df88d5a3ae56f0bb9a5f923db7">restart_in_rows</a></td></tr>
+<tr class="separator:a9636f9df88d5a3ae56f0bb9a5f923db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12178443b9177fd4bdddc66ce4e08e12" id="r_a12178443b9177fd4bdddc66ce4e08e12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jconfig_8h.html#a7670a4e8a07d9ebb00411948b0bbf86d">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12178443b9177fd4bdddc66ce4e08e12">write_JFIF_header</a></td></tr>
+<tr class="separator:a12178443b9177fd4bdddc66ce4e08e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e2468a5bffedad2257c715a59ded2e0" id="r_a8e2468a5bffedad2257c715a59ded2e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jmorecfg_8h.html#adfb9a8ea1dd59f151065f763e1e9acd6">UINT8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e2468a5bffedad2257c715a59ded2e0">JFIF_major_version</a></td></tr>
+<tr class="separator:a8e2468a5bffedad2257c715a59ded2e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9653a22025ac9ff342d6f4221e2a9564" id="r_a9653a22025ac9ff342d6f4221e2a9564"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jmorecfg_8h.html#adfb9a8ea1dd59f151065f763e1e9acd6">UINT8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9653a22025ac9ff342d6f4221e2a9564">JFIF_minor_version</a></td></tr>
+<tr class="separator:a9653a22025ac9ff342d6f4221e2a9564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f3a056ed558bf7be4ff52999416a525" id="r_a8f3a056ed558bf7be4ff52999416a525"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jmorecfg_8h.html#adfb9a8ea1dd59f151065f763e1e9acd6">UINT8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f3a056ed558bf7be4ff52999416a525">density_unit</a></td></tr>
+<tr class="separator:a8f3a056ed558bf7be4ff52999416a525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adef3c4b809ebca2a853b5659e177deaa" id="r_adef3c4b809ebca2a853b5659e177deaa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jmorecfg_8h.html#a805c2c164bdd38d72a30c46e84fb568b">UINT16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adef3c4b809ebca2a853b5659e177deaa">X_density</a></td></tr>
+<tr class="separator:adef3c4b809ebca2a853b5659e177deaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a978dc1c187fab34211757a134ebf4adb" id="r_a978dc1c187fab34211757a134ebf4adb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jmorecfg_8h.html#a805c2c164bdd38d72a30c46e84fb568b">UINT16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a978dc1c187fab34211757a134ebf4adb">Y_density</a></td></tr>
+<tr class="separator:a978dc1c187fab34211757a134ebf4adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39c549a441052b38df2dfd7359c68814" id="r_a39c549a441052b38df2dfd7359c68814"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jconfig_8h.html#a7670a4e8a07d9ebb00411948b0bbf86d">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39c549a441052b38df2dfd7359c68814">write_Adobe_marker</a></td></tr>
+<tr class="separator:a39c549a441052b38df2dfd7359c68814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefb3f2e6479374ba03e7d0421dcfb086" id="r_aefb3f2e6479374ba03e7d0421dcfb086"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jmorecfg_8h.html#a04ed4674f6f1d0d50ec241531e38274f">JDIMENSION</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aefb3f2e6479374ba03e7d0421dcfb086">next_scanline</a></td></tr>
+<tr class="separator:aefb3f2e6479374ba03e7d0421dcfb086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3b16d173e7feef7b6b0e823fd2fde3f" id="r_ae3b16d173e7feef7b6b0e823fd2fde3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jconfig_8h.html#a7670a4e8a07d9ebb00411948b0bbf86d">boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3b16d173e7feef7b6b0e823fd2fde3f">progressive_mode</a></td></tr>
+<tr class="separator:ae3b16d173e7feef7b6b0e823fd2fde3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8de4e6079b80e3a81135d07934c640d" id="r_ae8de4e6079b80e3a81135d07934c640d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8de4e6079b80e3a81135d07934c640d">max_h_samp_factor</a></td></tr>
+<tr class="separator:ae8de4e6079b80e3a81135d07934c640d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e03a4eb7af87c682937caed3d341d4a" id="r_a9e03a4eb7af87c682937caed3d341d4a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e03a4eb7af87c682937caed3d341d4a">max_v_samp_factor</a></td></tr>
+<tr class="separator:a9e03a4eb7af87c682937caed3d341d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99a75ca2f7569dcb4444e7cb35ce916f" id="r_a99a75ca2f7569dcb4444e7cb35ce916f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99a75ca2f7569dcb4444e7cb35ce916f">min_DCT_h_scaled_size</a></td></tr>
+<tr class="separator:a99a75ca2f7569dcb4444e7cb35ce916f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d63d182b17f0885fcabf88c6a08a9a5" id="r_a5d63d182b17f0885fcabf88c6a08a9a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d63d182b17f0885fcabf88c6a08a9a5">min_DCT_v_scaled_size</a></td></tr>
+<tr class="separator:a5d63d182b17f0885fcabf88c6a08a9a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef01162f4c66434929f933a40e695f9e" id="r_aef01162f4c66434929f933a40e695f9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jmorecfg_8h.html#a04ed4674f6f1d0d50ec241531e38274f">JDIMENSION</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef01162f4c66434929f933a40e695f9e">total_iMCU_rows</a></td></tr>
+<tr class="separator:aef01162f4c66434929f933a40e695f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3387358088abbec1c8838499966c8f06" id="r_a3387358088abbec1c8838499966c8f06"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3387358088abbec1c8838499966c8f06">comps_in_scan</a></td></tr>
+<tr class="separator:a3387358088abbec1c8838499966c8f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cacb367b7d69227d3086ff105bca9ab" id="r_a1cacb367b7d69227d3086ff105bca9ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structjpeg__component__info.html">jpeg_component_info</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1cacb367b7d69227d3086ff105bca9ab">cur_comp_info</a> [<a class="el" href="jpeglib_8h.html#adc7013da016c19051dc623fb3d8b35b4">MAX_COMPS_IN_SCAN</a>]</td></tr>
+<tr class="separator:a1cacb367b7d69227d3086ff105bca9ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97f0c5e0ae932d1810007077443da684" id="r_a97f0c5e0ae932d1810007077443da684"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jmorecfg_8h.html#a04ed4674f6f1d0d50ec241531e38274f">JDIMENSION</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97f0c5e0ae932d1810007077443da684">MCUs_per_row</a></td></tr>
+<tr class="separator:a97f0c5e0ae932d1810007077443da684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab605396740a26114095bf99c7c7349fb" id="r_ab605396740a26114095bf99c7c7349fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jmorecfg_8h.html#a04ed4674f6f1d0d50ec241531e38274f">JDIMENSION</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab605396740a26114095bf99c7c7349fb">MCU_rows_in_scan</a></td></tr>
+<tr class="separator:ab605396740a26114095bf99c7c7349fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac32cf016a916984f68f158e5310a16bb" id="r_ac32cf016a916984f68f158e5310a16bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac32cf016a916984f68f158e5310a16bb">blocks_in_MCU</a></td></tr>
+<tr class="separator:ac32cf016a916984f68f158e5310a16bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6debf977451892aae1116b47c5c1c95f" id="r_a6debf977451892aae1116b47c5c1c95f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6debf977451892aae1116b47c5c1c95f">MCU_membership</a> [<a class="el" href="jpeglib_8h.html#a4f270f4efb3fc0bb09f0d5ffa51ca327">C_MAX_BLOCKS_IN_MCU</a>]</td></tr>
+<tr class="separator:a6debf977451892aae1116b47c5c1c95f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adda4b7ef0dda94b38b6e34df42769d81" id="r_adda4b7ef0dda94b38b6e34df42769d81"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adda4b7ef0dda94b38b6e34df42769d81">Ss</a></td></tr>
+<tr class="separator:adda4b7ef0dda94b38b6e34df42769d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2c1fe7c62791cda75219c10d71132d9" id="r_af2c1fe7c62791cda75219c10d71132d9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2c1fe7c62791cda75219c10d71132d9">Se</a></td></tr>
+<tr class="separator:af2c1fe7c62791cda75219c10d71132d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a301a95efc904d22aca78592f7a21673a" id="r_a301a95efc904d22aca78592f7a21673a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a301a95efc904d22aca78592f7a21673a">Ah</a></td></tr>
+<tr class="separator:a301a95efc904d22aca78592f7a21673a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4160152697f6042b8fe1d6838a8118e2" id="r_a4160152697f6042b8fe1d6838a8118e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4160152697f6042b8fe1d6838a8118e2">Al</a></td></tr>
+<tr class="separator:a4160152697f6042b8fe1d6838a8118e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad43e172d1ec5dd1e369b72ed8753410" id="r_aad43e172d1ec5dd1e369b72ed8753410"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad43e172d1ec5dd1e369b72ed8753410">block_size</a></td></tr>
+<tr class="separator:aad43e172d1ec5dd1e369b72ed8753410"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40fe112672c5c26f6bc53978a2b9a2a1" id="r_a40fe112672c5c26f6bc53978a2b9a2a1"><td class="memItemLeft" align="right" valign="top">const int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40fe112672c5c26f6bc53978a2b9a2a1">natural_order</a></td></tr>
+<tr class="separator:a40fe112672c5c26f6bc53978a2b9a2a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb8a6365a8225a8d14d88b5d3c1d03c3" id="r_acb8a6365a8225a8d14d88b5d3c1d03c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb8a6365a8225a8d14d88b5d3c1d03c3">lim_Se</a></td></tr>
+<tr class="separator:acb8a6365a8225a8d14d88b5d3c1d03c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50b9c60f47c9fff393d7d5b3a7b3618e" id="r_a50b9c60f47c9fff393d7d5b3a7b3618e"><td class="memItemLeft" align="right" valign="top">struct jpeg_comp_master *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50b9c60f47c9fff393d7d5b3a7b3618e">master</a></td></tr>
+<tr class="separator:a50b9c60f47c9fff393d7d5b3a7b3618e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1bb86e9c2ade498b09a9a19d60e6570" id="r_ab1bb86e9c2ade498b09a9a19d60e6570"><td class="memItemLeft" align="right" valign="top">struct jpeg_c_main_controller *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1bb86e9c2ade498b09a9a19d60e6570">main</a></td></tr>
+<tr class="separator:ab1bb86e9c2ade498b09a9a19d60e6570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66875fd858cd11fb7a696a717c5c7b76" id="r_a66875fd858cd11fb7a696a717c5c7b76"><td class="memItemLeft" align="right" valign="top">struct jpeg_c_prep_controller *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66875fd858cd11fb7a696a717c5c7b76">prep</a></td></tr>
+<tr class="separator:a66875fd858cd11fb7a696a717c5c7b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad54865b66c30ce332c6757d56393dedc" id="r_ad54865b66c30ce332c6757d56393dedc"><td class="memItemLeft" align="right" valign="top">struct jpeg_c_coef_controller *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad54865b66c30ce332c6757d56393dedc">coef</a></td></tr>
+<tr class="separator:ad54865b66c30ce332c6757d56393dedc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a909e4ca5c3c48f380a53cc1b068eea12" id="r_a909e4ca5c3c48f380a53cc1b068eea12"><td class="memItemLeft" align="right" valign="top">struct jpeg_marker_writer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a909e4ca5c3c48f380a53cc1b068eea12">marker</a></td></tr>
+<tr class="separator:a909e4ca5c3c48f380a53cc1b068eea12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c51e665f18d6e5a0fed053c470f4914" id="r_a7c51e665f18d6e5a0fed053c470f4914"><td class="memItemLeft" align="right" valign="top">struct jpeg_color_converter *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c51e665f18d6e5a0fed053c470f4914">cconvert</a></td></tr>
+<tr class="separator:a7c51e665f18d6e5a0fed053c470f4914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65a72b804640a0c339863f6562098113" id="r_a65a72b804640a0c339863f6562098113"><td class="memItemLeft" align="right" valign="top">struct jpeg_downsampler *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65a72b804640a0c339863f6562098113">downsample</a></td></tr>
+<tr class="separator:a65a72b804640a0c339863f6562098113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac113c777486860f0b2f3784345073a83" id="r_ac113c777486860f0b2f3784345073a83"><td class="memItemLeft" align="right" valign="top">struct jpeg_forward_dct *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac113c777486860f0b2f3784345073a83">fdct</a></td></tr>
+<tr class="separator:ac113c777486860f0b2f3784345073a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30477f9e5f6be16823e1aff2762ae270" id="r_a30477f9e5f6be16823e1aff2762ae270"><td class="memItemLeft" align="right" valign="top">struct jpeg_entropy_encoder *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30477f9e5f6be16823e1aff2762ae270">entropy</a></td></tr>
+<tr class="separator:a30477f9e5f6be16823e1aff2762ae270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4a2c220ed2cda1b0d4c88518d02a229" id="r_ab4a2c220ed2cda1b0d4c88518d02a229"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structjpeg__scan__info.html">jpeg_scan_info</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4a2c220ed2cda1b0d4c88518d02a229">script_space</a></td></tr>
+<tr class="separator:ab4a2c220ed2cda1b0d4c88518d02a229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae50a683b4baddef6571900ca6240b1a3" id="r_ae50a683b4baddef6571900ca6240b1a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae50a683b4baddef6571900ca6240b1a3">script_space_size</a></td></tr>
+<tr class="separator:ae50a683b4baddef6571900ca6240b1a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00277">277</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a98d33cae3c8eee8f1f8d662e31cb905d" name="a98d33cae3c8eee8f1f8d662e31cb905d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98d33cae3c8eee8f1f8d662e31cb905d">&#9670;&#160;</a></span>ac_huff_tbl_ptrs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structJHUFF__TBL.html">JHUFF_TBL</a>* jpeg_compress_struct::ac_huff_tbl_ptrs[<a class="el" href="jpeglib_8h.html#a6b12985705944e0623b671f29dc5722e">NUM_HUFF_TBLS</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00329">329</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a301a95efc904d22aca78592f7a21673a" name="a301a95efc904d22aca78592f7a21673a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a301a95efc904d22aca78592f7a21673a">&#9670;&#160;</a></span>Ah</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jpeg_compress_struct::Ah</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00417">417</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a4160152697f6042b8fe1d6838a8118e2" name="a4160152697f6042b8fe1d6838a8118e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4160152697f6042b8fe1d6838a8118e2">&#9670;&#160;</a></span>Al</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jpeg_compress_struct::Al</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00417">417</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="ac1994386d3fa3ff139b63bf4bb4dcc36" name="ac1994386d3fa3ff139b63bf4bb4dcc36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1994386d3fa3ff139b63bf4bb4dcc36">&#9670;&#160;</a></span>arith_ac_K</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jmorecfg_8h.html#adfb9a8ea1dd59f151065f763e1e9acd6">UINT8</a> jpeg_compress_struct::arith_ac_K[<a class="el" href="jpeglib_8h.html#a4efb0fccc8d9db72ca18f32a26fad6ab">NUM_ARITH_TBLS</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00334">334</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a93a42fe4e984ab0afff45636e23d538a" name="a93a42fe4e984ab0afff45636e23d538a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93a42fe4e984ab0afff45636e23d538a">&#9670;&#160;</a></span>arith_code</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jconfig_8h.html#a7670a4e8a07d9ebb00411948b0bbf86d">boolean</a> jpeg_compress_struct::arith_code</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00344">344</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a736d867907116e88b3b38422fb2688c5" name="a736d867907116e88b3b38422fb2688c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a736d867907116e88b3b38422fb2688c5">&#9670;&#160;</a></span>arith_dc_L</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jmorecfg_8h.html#adfb9a8ea1dd59f151065f763e1e9acd6">UINT8</a> jpeg_compress_struct::arith_dc_L[<a class="el" href="jpeglib_8h.html#a4efb0fccc8d9db72ca18f32a26fad6ab">NUM_ARITH_TBLS</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00332">332</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a6ba30334643b7a5280343fe0e5e49e1e" name="a6ba30334643b7a5280343fe0e5e49e1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ba30334643b7a5280343fe0e5e49e1e">&#9670;&#160;</a></span>arith_dc_U</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jmorecfg_8h.html#adfb9a8ea1dd59f151065f763e1e9acd6">UINT8</a> jpeg_compress_struct::arith_dc_U[<a class="el" href="jpeglib_8h.html#a4efb0fccc8d9db72ca18f32a26fad6ab">NUM_ARITH_TBLS</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00333">333</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="aad43e172d1ec5dd1e369b72ed8753410" name="aad43e172d1ec5dd1e369b72ed8753410"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad43e172d1ec5dd1e369b72ed8753410">&#9670;&#160;</a></span>block_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jpeg_compress_struct::block_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00419">419</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="ac32cf016a916984f68f158e5310a16bb" name="ac32cf016a916984f68f158e5310a16bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac32cf016a916984f68f158e5310a16bb">&#9670;&#160;</a></span>blocks_in_MCU</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jpeg_compress_struct::blocks_in_MCU</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00412">412</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="abf474ed47e9f0a9c066bc47de5b0e8e7" name="abf474ed47e9f0a9c066bc47de5b0e8e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf474ed47e9f0a9c066bc47de5b0e8e7">&#9670;&#160;</a></span>CCIR601_sampling</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jconfig_8h.html#a7670a4e8a07d9ebb00411948b0bbf86d">boolean</a> jpeg_compress_struct::CCIR601_sampling</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00346">346</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a7c51e665f18d6e5a0fed053c470f4914" name="a7c51e665f18d6e5a0fed053c470f4914"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c51e665f18d6e5a0fed053c470f4914">&#9670;&#160;</a></span>cconvert</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct jpeg_color_converter* jpeg_compress_struct::cconvert</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00431">431</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="ad54865b66c30ce332c6757d56393dedc" name="ad54865b66c30ce332c6757d56393dedc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad54865b66c30ce332c6757d56393dedc">&#9670;&#160;</a></span>coef</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct jpeg_c_coef_controller* jpeg_compress_struct::coef</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00429">429</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a4d37d3f336cc11acafef541bf8ed38cc" name="a4d37d3f336cc11acafef541bf8ed38cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d37d3f336cc11acafef541bf8ed38cc">&#9670;&#160;</a></span>comp_info</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structjpeg__component__info.html">jpeg_component_info</a>* jpeg_compress_struct::comp_info</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00319">319</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a3387358088abbec1c8838499966c8f06" name="a3387358088abbec1c8838499966c8f06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3387358088abbec1c8838499966c8f06">&#9670;&#160;</a></span>comps_in_scan</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jpeg_compress_struct::comps_in_scan</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00405">405</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a1cacb367b7d69227d3086ff105bca9ab" name="a1cacb367b7d69227d3086ff105bca9ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cacb367b7d69227d3086ff105bca9ab">&#9670;&#160;</a></span>cur_comp_info</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structjpeg__component__info.html">jpeg_component_info</a>* jpeg_compress_struct::cur_comp_info[<a class="el" href="jpeglib_8h.html#adc7013da016c19051dc623fb3d8b35b4">MAX_COMPS_IN_SCAN</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00406">406</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a64c5b59e436f7d3d1d38b58d49993469" name="a64c5b59e436f7d3d1d38b58d49993469"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64c5b59e436f7d3d1d38b58d49993469">&#9670;&#160;</a></span>data_precision</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jpeg_compress_struct::data_precision</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00314">314</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a6a69e90a68e1f7f46774d83ba3737a4e" name="a6a69e90a68e1f7f46774d83ba3737a4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a69e90a68e1f7f46774d83ba3737a4e">&#9670;&#160;</a></span>dc_huff_tbl_ptrs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structJHUFF__TBL.html">JHUFF_TBL</a>* jpeg_compress_struct::dc_huff_tbl_ptrs[<a class="el" href="jpeglib_8h.html#a6b12985705944e0623b671f29dc5722e">NUM_HUFF_TBLS</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00328">328</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="ab782f698c650e8ec5f9b47043691d3c1" name="ab782f698c650e8ec5f9b47043691d3c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab782f698c650e8ec5f9b47043691d3c1">&#9670;&#160;</a></span>dct_method</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jpeglib_8h.html#ae4245c819e9217a321fb23f1a106d563">J_DCT_METHOD</a> jpeg_compress_struct::dct_method</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00349">349</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a8f3a056ed558bf7be4ff52999416a525" name="a8f3a056ed558bf7be4ff52999416a525"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f3a056ed558bf7be4ff52999416a525">&#9670;&#160;</a></span>density_unit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jmorecfg_8h.html#adfb9a8ea1dd59f151065f763e1e9acd6">UINT8</a> jpeg_compress_struct::density_unit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00368">368</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="ab31c2c756e309dee8d0318557353ba40" name="ab31c2c756e309dee8d0318557353ba40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab31c2c756e309dee8d0318557353ba40">&#9670;&#160;</a></span>dest</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structjpeg__destination__mgr.html">jpeg_destination_mgr</a>* jpeg_compress_struct::dest</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00281">281</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a683db079af3beb44eaab5b421a5a9d4f" name="a683db079af3beb44eaab5b421a5a9d4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a683db079af3beb44eaab5b421a5a9d4f">&#9670;&#160;</a></span>do_fancy_downsampling</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jconfig_8h.html#a7670a4e8a07d9ebb00411948b0bbf86d">boolean</a> jpeg_compress_struct::do_fancy_downsampling</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00347">347</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a65a72b804640a0c339863f6562098113" name="a65a72b804640a0c339863f6562098113"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65a72b804640a0c339863f6562098113">&#9670;&#160;</a></span>downsample</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct jpeg_downsampler* jpeg_compress_struct::downsample</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00432">432</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a30477f9e5f6be16823e1aff2762ae270" name="a30477f9e5f6be16823e1aff2762ae270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30477f9e5f6be16823e1aff2762ae270">&#9670;&#160;</a></span>entropy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct jpeg_entropy_encoder* jpeg_compress_struct::entropy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00434">434</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="ac113c777486860f0b2f3784345073a83" name="ac113c777486860f0b2f3784345073a83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac113c777486860f0b2f3784345073a83">&#9670;&#160;</a></span>fdct</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct jpeg_forward_dct* jpeg_compress_struct::fdct</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00433">433</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a30863835e7785b7df800811f842b2da0" name="a30863835e7785b7df800811f842b2da0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30863835e7785b7df800811f842b2da0">&#9670;&#160;</a></span>image_height</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jmorecfg_8h.html#a04ed4674f6f1d0d50ec241531e38274f">JDIMENSION</a> jpeg_compress_struct::image_height</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00289">289</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="ac8e50a2c70252c53f3e10b886818f2cf" name="ac8e50a2c70252c53f3e10b886818f2cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8e50a2c70252c53f3e10b886818f2cf">&#9670;&#160;</a></span>image_width</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jmorecfg_8h.html#a04ed4674f6f1d0d50ec241531e38274f">JDIMENSION</a> jpeg_compress_struct::image_width</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00288">288</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="ac27d1dfbbbd677aab9fb570c58ca960d" name="ac27d1dfbbbd677aab9fb570c58ca960d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac27d1dfbbbd677aab9fb570c58ca960d">&#9670;&#160;</a></span>in_color_space</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jpeglib_8h.html#a6ea40239360b06efe6377f125f1134f3">J_COLOR_SPACE</a> jpeg_compress_struct::in_color_space</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00291">291</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="af5b66b039ea5a96bb2f5cf0254115837" name="af5b66b039ea5a96bb2f5cf0254115837"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5b66b039ea5a96bb2f5cf0254115837">&#9670;&#160;</a></span>input_components</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jpeg_compress_struct::input_components</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00290">290</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="ac5d2e16382ea12fb4e3bd6a69f7831ea" name="ac5d2e16382ea12fb4e3bd6a69f7831ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5d2e16382ea12fb4e3bd6a69f7831ea">&#9670;&#160;</a></span>input_gamma</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double jpeg_compress_struct::input_gamma</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00293">293</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a8e2468a5bffedad2257c715a59ded2e0" name="a8e2468a5bffedad2257c715a59ded2e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e2468a5bffedad2257c715a59ded2e0">&#9670;&#160;</a></span>JFIF_major_version</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jmorecfg_8h.html#adfb9a8ea1dd59f151065f763e1e9acd6">UINT8</a> jpeg_compress_struct::JFIF_major_version</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00362">362</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a9653a22025ac9ff342d6f4221e2a9564" name="a9653a22025ac9ff342d6f4221e2a9564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9653a22025ac9ff342d6f4221e2a9564">&#9670;&#160;</a></span>JFIF_minor_version</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jmorecfg_8h.html#adfb9a8ea1dd59f151065f763e1e9acd6">UINT8</a> jpeg_compress_struct::JFIF_minor_version</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00363">363</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a7fb5305ec135340eddc2ebabec6a84d7" name="a7fb5305ec135340eddc2ebabec6a84d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fb5305ec135340eddc2ebabec6a84d7">&#9670;&#160;</a></span>jpeg_color_space</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jpeglib_8h.html#a6ea40239360b06efe6377f125f1134f3">J_COLOR_SPACE</a> jpeg_compress_struct::jpeg_color_space</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00317">317</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a831013770bec36f77dd2048c8771513c" name="a831013770bec36f77dd2048c8771513c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a831013770bec36f77dd2048c8771513c">&#9670;&#160;</a></span>jpeg_common_fields</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jpeg_compress_struct::jpeg_common_fields</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00278">278</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="abc2cf065c0faab28327f7238949f76d3" name="abc2cf065c0faab28327f7238949f76d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc2cf065c0faab28327f7238949f76d3">&#9670;&#160;</a></span>jpeg_height</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jmorecfg_8h.html#a04ed4674f6f1d0d50ec241531e38274f">JDIMENSION</a> jpeg_compress_struct::jpeg_height</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00306">306</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="ab433b317fcbe32212122621e476ac9d8" name="ab433b317fcbe32212122621e476ac9d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab433b317fcbe32212122621e476ac9d8">&#9670;&#160;</a></span>jpeg_width</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jmorecfg_8h.html#a04ed4674f6f1d0d50ec241531e38274f">JDIMENSION</a> jpeg_compress_struct::jpeg_width</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00305">305</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="acb8a6365a8225a8d14d88b5d3c1d03c3" name="acb8a6365a8225a8d14d88b5d3c1d03c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb8a6365a8225a8d14d88b5d3c1d03c3">&#9670;&#160;</a></span>lim_Se</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jpeg_compress_struct::lim_Se</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00421">421</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="ab1bb86e9c2ade498b09a9a19d60e6570" name="ab1bb86e9c2ade498b09a9a19d60e6570"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1bb86e9c2ade498b09a9a19d60e6570">&#9670;&#160;</a></span>main</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct jpeg_c_main_controller* jpeg_compress_struct::main</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00427">427</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a909e4ca5c3c48f380a53cc1b068eea12" name="a909e4ca5c3c48f380a53cc1b068eea12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a909e4ca5c3c48f380a53cc1b068eea12">&#9670;&#160;</a></span>marker</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct jpeg_marker_writer* jpeg_compress_struct::marker</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00430">430</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a50b9c60f47c9fff393d7d5b3a7b3618e" name="a50b9c60f47c9fff393d7d5b3a7b3618e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50b9c60f47c9fff393d7d5b3a7b3618e">&#9670;&#160;</a></span>master</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct jpeg_comp_master* jpeg_compress_struct::master</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00426">426</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="ae8de4e6079b80e3a81135d07934c640d" name="ae8de4e6079b80e3a81135d07934c640d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8de4e6079b80e3a81135d07934c640d">&#9670;&#160;</a></span>max_h_samp_factor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jpeg_compress_struct::max_h_samp_factor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00388">388</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a9e03a4eb7af87c682937caed3d341d4a" name="a9e03a4eb7af87c682937caed3d341d4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e03a4eb7af87c682937caed3d341d4a">&#9670;&#160;</a></span>max_v_samp_factor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jpeg_compress_struct::max_v_samp_factor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00389">389</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a6debf977451892aae1116b47c5c1c95f" name="a6debf977451892aae1116b47c5c1c95f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6debf977451892aae1116b47c5c1c95f">&#9670;&#160;</a></span>MCU_membership</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jpeg_compress_struct::MCU_membership[<a class="el" href="jpeglib_8h.html#a4f270f4efb3fc0bb09f0d5ffa51ca327">C_MAX_BLOCKS_IN_MCU</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00413">413</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="ab605396740a26114095bf99c7c7349fb" name="ab605396740a26114095bf99c7c7349fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab605396740a26114095bf99c7c7349fb">&#9670;&#160;</a></span>MCU_rows_in_scan</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jmorecfg_8h.html#a04ed4674f6f1d0d50ec241531e38274f">JDIMENSION</a> jpeg_compress_struct::MCU_rows_in_scan</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00410">410</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a97f0c5e0ae932d1810007077443da684" name="a97f0c5e0ae932d1810007077443da684"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97f0c5e0ae932d1810007077443da684">&#9670;&#160;</a></span>MCUs_per_row</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jmorecfg_8h.html#a04ed4674f6f1d0d50ec241531e38274f">JDIMENSION</a> jpeg_compress_struct::MCUs_per_row</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00409">409</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a99a75ca2f7569dcb4444e7cb35ce916f" name="a99a75ca2f7569dcb4444e7cb35ce916f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99a75ca2f7569dcb4444e7cb35ce916f">&#9670;&#160;</a></span>min_DCT_h_scaled_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jpeg_compress_struct::min_DCT_h_scaled_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00391">391</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a5d63d182b17f0885fcabf88c6a08a9a5" name="a5d63d182b17f0885fcabf88c6a08a9a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d63d182b17f0885fcabf88c6a08a9a5">&#9670;&#160;</a></span>min_DCT_v_scaled_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jpeg_compress_struct::min_DCT_v_scaled_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00392">392</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a40fe112672c5c26f6bc53978a2b9a2a1" name="a40fe112672c5c26f6bc53978a2b9a2a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40fe112672c5c26f6bc53978a2b9a2a1">&#9670;&#160;</a></span>natural_order</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int* jpeg_compress_struct::natural_order</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00420">420</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="aefb3f2e6479374ba03e7d0421dcfb086" name="aefb3f2e6479374ba03e7d0421dcfb086"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefb3f2e6479374ba03e7d0421dcfb086">&#9670;&#160;</a></span>next_scanline</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jmorecfg_8h.html#a04ed4674f6f1d0d50ec241531e38274f">JDIMENSION</a> jpeg_compress_struct::next_scanline</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00378">378</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a524f0284a6fcf96b21c8a745282c15e2" name="a524f0284a6fcf96b21c8a745282c15e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a524f0284a6fcf96b21c8a745282c15e2">&#9670;&#160;</a></span>num_components</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jpeg_compress_struct::num_components</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00316">316</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="abf2f96c340659a09a9ce08469a17e08b" name="abf2f96c340659a09a9ce08469a17e08b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf2f96c340659a09a9ce08469a17e08b">&#9670;&#160;</a></span>num_scans</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jpeg_compress_struct::num_scans</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00336">336</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a2ed9c1e2bd808fd684338a009a164ef3" name="a2ed9c1e2bd808fd684338a009a164ef3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ed9c1e2bd808fd684338a009a164ef3">&#9670;&#160;</a></span>optimize_coding</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jconfig_8h.html#a7670a4e8a07d9ebb00411948b0bbf86d">boolean</a> jpeg_compress_struct::optimize_coding</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00345">345</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a66875fd858cd11fb7a696a717c5c7b76" name="a66875fd858cd11fb7a696a717c5c7b76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66875fd858cd11fb7a696a717c5c7b76">&#9670;&#160;</a></span>prep</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct jpeg_c_prep_controller* jpeg_compress_struct::prep</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00428">428</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="ae3b16d173e7feef7b6b0e823fd2fde3f" name="ae3b16d173e7feef7b6b0e823fd2fde3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3b16d173e7feef7b6b0e823fd2fde3f">&#9670;&#160;</a></span>progressive_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jconfig_8h.html#a7670a4e8a07d9ebb00411948b0bbf86d">boolean</a> jpeg_compress_struct::progressive_mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00387">387</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a3d8545504353556fae60e1e865d2c600" name="a3d8545504353556fae60e1e865d2c600"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d8545504353556fae60e1e865d2c600">&#9670;&#160;</a></span>q_scale_factor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jpeg_compress_struct::q_scale_factor[<a class="el" href="jpeglib_8h.html#ab3254a23612ea48615001fffc0c9f691">NUM_QUANT_TBLS</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00323">323</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a70a194c6a9c1744e1ed3a97232fb97f5" name="a70a194c6a9c1744e1ed3a97232fb97f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70a194c6a9c1744e1ed3a97232fb97f5">&#9670;&#160;</a></span>quant_tbl_ptrs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structJQUANT__TBL.html">JQUANT_TBL</a>* jpeg_compress_struct::quant_tbl_ptrs[<a class="el" href="jpeglib_8h.html#ab3254a23612ea48615001fffc0c9f691">NUM_QUANT_TBLS</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00322">322</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a7f9dfd37243943bc138815bcf1e89584" name="a7f9dfd37243943bc138815bcf1e89584"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f9dfd37243943bc138815bcf1e89584">&#9670;&#160;</a></span>raw_data_in</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jconfig_8h.html#a7670a4e8a07d9ebb00411948b0bbf86d">boolean</a> jpeg_compress_struct::raw_data_in</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00343">343</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a9636f9df88d5a3ae56f0bb9a5f923db7" name="a9636f9df88d5a3ae56f0bb9a5f923db7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9636f9df88d5a3ae56f0bb9a5f923db7">&#9670;&#160;</a></span>restart_in_rows</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jpeg_compress_struct::restart_in_rows</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00357">357</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a57ad1f6d9015e25fe272c645dcc3f71e" name="a57ad1f6d9015e25fe272c645dcc3f71e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57ad1f6d9015e25fe272c645dcc3f71e">&#9670;&#160;</a></span>restart_interval</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int jpeg_compress_struct::restart_interval</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00356">356</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="ab30f569483d6c25032aa2c18c885e91c" name="ab30f569483d6c25032aa2c18c885e91c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab30f569483d6c25032aa2c18c885e91c">&#9670;&#160;</a></span>scale_denom</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int jpeg_compress_struct::scale_denom</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00303">303</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a16eb7e2e1ac30c42e8bd753bde43129c" name="a16eb7e2e1ac30c42e8bd753bde43129c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16eb7e2e1ac30c42e8bd753bde43129c">&#9670;&#160;</a></span>scale_num</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int jpeg_compress_struct::scale_num</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00303">303</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a545fed3fef0d0c5962dbe0e80c067c03" name="a545fed3fef0d0c5962dbe0e80c067c03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a545fed3fef0d0c5962dbe0e80c067c03">&#9670;&#160;</a></span>scan_info</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structjpeg__scan__info.html">jpeg_scan_info</a>* jpeg_compress_struct::scan_info</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00337">337</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="ab4a2c220ed2cda1b0d4c88518d02a229" name="ab4a2c220ed2cda1b0d4c88518d02a229"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4a2c220ed2cda1b0d4c88518d02a229">&#9670;&#160;</a></span>script_space</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structjpeg__scan__info.html">jpeg_scan_info</a>* jpeg_compress_struct::script_space</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00435">435</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="ae50a683b4baddef6571900ca6240b1a3" name="ae50a683b4baddef6571900ca6240b1a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae50a683b4baddef6571900ca6240b1a3">&#9670;&#160;</a></span>script_space_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jpeg_compress_struct::script_space_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00436">436</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="af2c1fe7c62791cda75219c10d71132d9" name="af2c1fe7c62791cda75219c10d71132d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2c1fe7c62791cda75219c10d71132d9">&#9670;&#160;</a></span>Se</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jpeg_compress_struct::Se</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00417">417</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a0e14f65876566ff8eec195d124535307" name="a0e14f65876566ff8eec195d124535307"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e14f65876566ff8eec195d124535307">&#9670;&#160;</a></span>smoothing_factor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jpeg_compress_struct::smoothing_factor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00348">348</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="adda4b7ef0dda94b38b6e34df42769d81" name="adda4b7ef0dda94b38b6e34df42769d81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adda4b7ef0dda94b38b6e34df42769d81">&#9670;&#160;</a></span>Ss</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jpeg_compress_struct::Ss</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00417">417</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="aef01162f4c66434929f933a40e695f9e" name="aef01162f4c66434929f933a40e695f9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef01162f4c66434929f933a40e695f9e">&#9670;&#160;</a></span>total_iMCU_rows</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jmorecfg_8h.html#a04ed4674f6f1d0d50ec241531e38274f">JDIMENSION</a> jpeg_compress_struct::total_iMCU_rows</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00394">394</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a39c549a441052b38df2dfd7359c68814" name="a39c549a441052b38df2dfd7359c68814"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39c549a441052b38df2dfd7359c68814">&#9670;&#160;</a></span>write_Adobe_marker</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jconfig_8h.html#a7670a4e8a07d9ebb00411948b0bbf86d">boolean</a> jpeg_compress_struct::write_Adobe_marker</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00371">371</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a12178443b9177fd4bdddc66ce4e08e12" name="a12178443b9177fd4bdddc66ce4e08e12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12178443b9177fd4bdddc66ce4e08e12">&#9670;&#160;</a></span>write_JFIF_header</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jconfig_8h.html#a7670a4e8a07d9ebb00411948b0bbf86d">boolean</a> jpeg_compress_struct::write_JFIF_header</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00361">361</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="adef3c4b809ebca2a853b5659e177deaa" name="adef3c4b809ebca2a853b5659e177deaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adef3c4b809ebca2a853b5659e177deaa">&#9670;&#160;</a></span>X_density</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jmorecfg_8h.html#a805c2c164bdd38d72a30c46e84fb568b">UINT16</a> jpeg_compress_struct::X_density</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00369">369</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<a id="a978dc1c187fab34211757a134ebf4adb" name="a978dc1c187fab34211757a134ebf4adb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a978dc1c187fab34211757a134ebf4adb">&#9670;&#160;</a></span>Y_density</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jmorecfg_8h.html#a805c2c164bdd38d72a30c46e84fb568b">UINT16</a> jpeg_compress_struct::Y_density</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="jpeglib_8h_source.html#l00370">370</a> of file <a class="el" href="jpeglib_8h_source.html">jpeglib.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="jpeglib_8h_source.html">jpeglib.h</a></li>
+</ul>
+</div><!-- contents -->
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+                    Back to top
+                </button>
+            </main>
+            <footer class="md-footer">
+                <nav class="md-footer__inner md-grid" aria-label="Footer" hidden>
+                    <a href="/learn/" class="md-footer__link md-footer__link--next" aria-label="Next: Learn">
+                        <div class="md-footer__title">
+                            <span class="md-footer__direction"> Next </span>
+                            <div class="md-ellipsis">Learn</div>
+                        </div>
+                        <div class="md-footer__button md-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z" /></svg>
+                        </div>
+                    </a>
+                </nav>
+                <div class="md-footer-meta md-typeset">
+                    <div class="md-footer-meta__inner md-grid">
+                        <div class="md-copyright">
+                            <div class="md-copyright__highlight">Copyright &copy; <a href="mailto:laurent@sfml-dev.org">Laurent Gomila</a></div>
+                        </div>
+                        <div class="md-social">
+                            <a href="https://fosstodon.org/@sfml" target="_blank" rel="noopener me" title="SFML on Fosstodon" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com/sfmldev" target="_blank" rel="noopener" title="SFML on Twitter" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="https://discord.gg/nr4X7Fh" target="_blank" rel="noopener" title="SFML&#39;s Discord Server" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="md-dialog" data-md-component="dialog">
+            <div class="md-dialog__inner md-typeset"></div>
+        </div>
+        <script id="__config" type="application/json">
+            {
+                "base": ".",
+                "features": ["content.code.copy", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.prune", "navigation.path", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.suggest"],
+                "search": "/assets/javascripts/workers/search.b8dbb3d2.min.js",
+                "translations": {
+                    "clipboard.copied": "Copied to clipboard",
+                    "clipboard.copy": "Copy to clipboard",
+                    "search.result.more.one": "1 more on this page",
+                    "search.result.more.other": "# more on this page",
+                    "search.result.none": "No matching documents",
+                    "search.result.one": "1 matching document",
+                    "search.result.other": "# matching documents",
+                    "search.result.placeholder": "Type to start searching",
+                    "search.result.term.missing": "Missing",
+                    "select.version": "Select version"
+                }
+            }
+        </script>
+        <script src="/assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+    </body>
+</html>

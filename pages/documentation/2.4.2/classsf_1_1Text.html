@@ -1,0 +1,1889 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="Simple and Fast Multimedia Library" />
+        <link rel="canonical" href="https://www.sfml-dev.org/" />
+        <link rel="next" href="/learn/" />
+        <link rel="icon" href="/images/favicon.ico" />
+        <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.30" />
+        <title>Home - Simple and Fast Multimedia Library</title>
+        <link rel="stylesheet" href="/assets/stylesheets/main.3cba04c6.min.css" />
+        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback" />
+        <style>
+            :root {
+                --md-text-font: "Ubuntu";
+                --md-code-font: "Roboto Mono";
+            }
+        </style>
+        <link rel="stylesheet" href="/styles/extra.css" />
+        <script>
+            (__md_scope = new URL(".", location)),
+                (__md_hash = (e) => [...e].reduce((e, _) => (e << 5) - e + _.charCodeAt(0), 0)),
+                (__md_get = (e, _ = localStorage, t = __md_scope) => JSON.parse(_.getItem(t.pathname + "." + e))),
+                (__md_set = (e, _, t = localStorage, a = __md_scope) => {
+                    try {
+                        t.setItem(a.pathname + "." + e, JSON.stringify(_));
+                    } catch (e) {}
+                });
+        </script>
+        <link rel="stylesheet" type="text/css" href="doxygen.css" title="default" media="screen,print" />
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="dynsections.js"></script>
+        <script type="text/javascript" src="clipboard.js"></script>
+        <script type="text/javascript" src="cookie.js"></script>
+        <script type="text/javascript" src="resize.js"></script>
+        <link rel="stylesheet" type="text/css" href="search/search.css" />
+        <link rel="stylesheet" type="text/css" href="searchOverrides.css" />
+        <script type="text/javascript" src="search/searchdata.js"></script>
+        <script type="text/javascript" src="search/search.js"></script>
+        <script type="text/javascript">
+            /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+            $(document).ready(function () {
+                init_search();
+            });
+            /* @license-end */
+        </script>
+    </head>
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="indigo">
+        <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off" />
+        <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off" />
+        <label class="md-overlay" for="__drawer"></label>
+        <div data-md-component="skip">
+            <a href="#simple-and-fast-multimedia-library" class="md-skip"> Skip to content </a>
+        </div>
+        <div data-md-component="announce"></div>
+        <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+            <nav class="md-header__inner md-grid" aria-label="Header">
+                <a href="." title="Simple and Fast Multimedia Library" class="md-header__button md-logo" aria-label="Simple and Fast Multimedia Library" data-md-component="logo">
+                    <img src="/images/logo.png" alt="logo" />
+                </a>
+                <label class="md-header__button md-icon" for="__drawer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z" /></svg>
+                </label>
+                <div class="md-header__title" data-md-component="header-title">
+                    <div class="md-header__ellipsis">
+                        <div class="md-header__topic">
+                            <span class="md-ellipsis"> Simple and Fast Multimedia Library </span>
+                        </div>
+                        <div class="md-header__topic" data-md-component="header-topic">
+                            <span class="md-ellipsis"> Home </span>
+                        </div>
+                    </div>
+                </div>
+                <form class="md-header__option" data-md-component="palette">
+                    <input
+                        class="md-option"
+                        data-md-color-media="(prefers-color-scheme: light)"
+                        data-md-color-scheme="default"
+                        data-md-color-primary="light-green"
+                        data-md-color-accent="indigo"
+                        aria-label="Switch to dark mode"
+                        type="radio"
+                        name="__palette"
+                        id="__palette_0"
+                    />
+                    <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"
+                            />
+                        </svg>
+                    </label>
+                    <input
+                        class="md-option"
+                        data-md-color-media="(prefers-color-scheme: dark)"
+                        data-md-color-scheme="slate"
+                        data-md-color-primary="green"
+                        data-md-color-accent="indigo"
+                        aria-label="Switch to light mode"
+                        type="radio"
+                        name="__palette"
+                        id="__palette_1"
+                    />
+                    <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"
+                            />
+                        </svg>
+                    </label>
+                </form>
+                <script>
+                    var media,
+                        input,
+                        key,
+                        value,
+                        palette = __md_get("__palette");
+                    if (palette && palette.color) {
+                        "(prefers-color-scheme)" === palette.color.media &&
+                            ((media = matchMedia("(prefers-color-scheme: light)")),
+                            (input = document.querySelector(media.matches ? "[data-md-color-media='(prefers-color-scheme: light)']" : "[data-md-color-media='(prefers-color-scheme: dark)']")),
+                            (palette.color.media = input.getAttribute("data-md-color-media")),
+                            (palette.color.scheme = input.getAttribute("data-md-color-scheme")),
+                            (palette.color.primary = input.getAttribute("data-md-color-primary")),
+                            (palette.color.accent = input.getAttribute("data-md-color-accent")));
+                        for ([key, value] of Object.entries(palette.color)) document.body.setAttribute("data-md-color-" + key, value);
+                    }
+                </script>
+                <div class="md-header__option">
+                    <div class="md-select">
+                        <button class="md-header__button md-icon" aria-label="Select language">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"
+                                />
+                            </svg>
+                        </button>
+                        <div class="md-select__inner">
+                            <ul class="md-select__list">
+                                <li class="md-select__item">
+                                    <a href="/" hreflang="en" class="md-select__link"> English </a>
+                                </li>
+                                <li class="md-select__item">
+                                    <a href="/fr/" hreflang="fr" class="md-select__link"> Français </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <label class="md-header__button md-icon" for="__search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"
+                        />
+                    </svg>
+                </label>
+                <div class="md-search" data-md-component="search" role="dialog">
+                    <label class="md-search__overlay" for="__search"></label>
+                    <div class="md-search__inner" role="search">
+                        <form class="md-search__form" name="search">
+                            <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required />
+                            <label class="md-search__icon md-icon" for="__search">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"
+                                    />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z" /></svg>
+                            </label>
+                            <nav class="md-search__options" aria-label="Search">
+                                <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z" /></svg>
+                                </button>
+                            </nav>
+                            <div class="md-search__suggest" data-md-component="search-suggest"></div>
+                        </form>
+                        <div class="md-search__output">
+                            <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+                                <div class="md-search-result" data-md-component="search-result">
+                                    <div class="md-search-result__meta">Initializing search</div>
+                                    <ol class="md-search-result__list" role="presentation"></ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-header__source">
+                    <a href="https://github.com/SFML/SFML" title="Go to repository" class="md-source" data-md-component="source">
+                        <div class="md-source__icon md-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. -->
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                                />
+                            </svg>
+                        </div>
+                        <div class="md-source__repository">SFML</div>
+                    </a>
+                </div>
+            </nav>
+            <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+                <div class="md-grid">
+                    <ul class="md-tabs__list">
+                        <li class="md-tabs__item">
+                            <a href="/" class="md-tabs__link"> Home </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/learn/" class="md-tabs__link"> Learn </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/tutorials/2.6/" class="md-tabs__link"> Tutorials </a>
+                        </li>
+                        <li class="md-tabs__item md-tabs__item--active">
+                            <a href="/documentation" class="md-tabs__link"> Documentation </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/download/" class="md-tabs__link"> Download </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/community/" class="md-tabs__link"> Community </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/development/" class="md-tabs__link"> Development </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="md-container" data-md-component="container">
+            <main class="md-main" data-md-component="main">
+                <div class="md-main__inner md-grid">
+                    <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                        <div class="md-sidebar__scrollwrap">
+                            <div class="md-sidebar__inner">
+                                <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+                                    <label class="md-nav__title" for="__drawer">
+                                        <a href="." title="Simple and Fast Multimedia Library" class="md-nav__button md-logo" aria-label="Simple and Fast Multimedia Library" data-md-component="logo">
+                                            <img src="/images/logo.png" alt="logo" />
+                                        </a>
+                                        Simple and Fast Multimedia Library
+                                    </label>
+                                    <div class="md-nav__source">
+                                        <a href="https://github.com/SFML/SFML" title="Go to repository" class="md-source" data-md-component="source">
+                                            <div class="md-source__icon md-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. -->
+                                                    <path
+                                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                                                    />
+                                                </svg>
+                                            </div>
+                                            <div class="md-source__repository">SFML</div>
+                                        </a>
+                                    </div>
+                                    <ul class="md-nav__list" data-md-scrollfix>
+                                        <li class="md-nav__item">
+                                            <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc" />
+                                            <label class="md-nav__link" for="__toc">
+                                                <span class="md-ellipsis"> Home </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </label>
+                                            <a href="." class="md-nav__link">
+                                                <span class="md-ellipsis"> Home </span>
+                                            </a>
+                                            <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+                                                <label class="md-nav__title" for="__toc">
+                                                    <span class="md-nav__icon md-icon"></span>
+                                                    Table of contents
+                                                </label>
+                                                <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-media" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-media </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-platform" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-platform </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-language" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-language </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="learn/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Learn </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="tutorials/2.6/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Tutorials </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--active">
+                                            <a href="documentation" class="md-nav__link md-nav__link--active">
+                                                <span class="md-ellipsis"> Documentation </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="download/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Download </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="community/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Community </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="development/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Development </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                        <div class="md-sidebar__scrollwrap">
+                            <div class="md-sidebar__inner">
+                                <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+                                    <label class="md-nav__title" for="__toc">
+                                        <span class="md-nav__icon md-icon"></span>
+                                        Table of contents
+                                    </label>
+                                    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-media" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-media </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-platform" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-platform </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-language" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-language </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-content" data-md-component="content">
+                        <div class="contents">
+<!-- Generated by Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="topics.html"><span>Topics</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
+    </ul>
+  </div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacesf.html">sf</a></li><li class="navelem"><a class="el" href="classsf_1_1Text.html">Text</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classsf_1_1Text-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">sf::Text Class Reference<div class="ingroups"><a class="el" href="group__graphics.html">Graphics module</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Graphical text that can be drawn to a render target.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Text_8hpp_source.html">Text.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for sf::Text:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classsf_1_1Text.png" usemap="#sf::Text_map" alt=""/>
+  <map id="sf::Text_map" name="sf::Text_map">
+<area href="classsf_1_1Drawable.html" title="Abstract base class for objects that can be drawn to a render target." alt="sf::Drawable" shape="rect" coords="0,0,109,24"/>
+<area href="classsf_1_1Transformable.html" title="Decomposed transform defined by a position, a rotation and a scale." alt="sf::Transformable" shape="rect" coords="119,0,228,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aa8add4aef484c6e6b20faff07452bd82" id="r_aa8add4aef484c6e6b20faff07452bd82"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8add4aef484c6e6b20faff07452bd82">Style</a> { <br />
+&#160;&#160;<a class="el" href="#aa8add4aef484c6e6b20faff07452bd82a2af9ae5e1cda126570f744448e0caa32">Regular</a> = 0
+, <a class="el" href="#aa8add4aef484c6e6b20faff07452bd82af1b47f98fb1e10509ba930a596987171">Bold</a> = 1 &lt;&lt; 0
+, <a class="el" href="#aa8add4aef484c6e6b20faff07452bd82aee249eb803848723c542c2062ebe69d8">Italic</a> = 1 &lt;&lt; 1
+, <a class="el" href="#aa8add4aef484c6e6b20faff07452bd82a664bd143f92b6e8c709d7f788e8b20df">Underlined</a> = 1 &lt;&lt; 2
+, <br />
+&#160;&#160;<a class="el" href="#aa8add4aef484c6e6b20faff07452bd82a9ed1f5bb154c21269e1190c5aa97d479">StrikeThrough</a> = 1 &lt;&lt; 3
+<br />
+ }</td></tr>
+<tr class="memdesc:aa8add4aef484c6e6b20faff07452bd82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of the string drawing styles.  <a href="#aa8add4aef484c6e6b20faff07452bd82">More...</a><br /></td></tr>
+<tr class="separator:aa8add4aef484c6e6b20faff07452bd82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aff7cab6a92e5948c9d1481cb2d87eb84" id="r_aff7cab6a92e5948c9d1481cb2d87eb84"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff7cab6a92e5948c9d1481cb2d87eb84">Text</a> ()</td></tr>
+<tr class="memdesc:aff7cab6a92e5948c9d1481cb2d87eb84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <br /></td></tr>
+<tr class="separator:aff7cab6a92e5948c9d1481cb2d87eb84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a614019e0b5c0ed39a99d32483a51f2c5" id="r_a614019e0b5c0ed39a99d32483a51f2c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a614019e0b5c0ed39a99d32483a51f2c5">Text</a> (const <a class="el" href="classsf_1_1String.html">String</a> &amp;string, const <a class="el" href="classsf_1_1Font.html">Font</a> &amp;font, unsigned int characterSize=30)</td></tr>
+<tr class="memdesc:a614019e0b5c0ed39a99d32483a51f2c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the text from a string, font and size.  <br /></td></tr>
+<tr class="separator:a614019e0b5c0ed39a99d32483a51f2c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d3b3359f286fd9503d1ced25b7b6c33" id="r_a7d3b3359f286fd9503d1ced25b7b6c33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d3b3359f286fd9503d1ced25b7b6c33">setString</a> (const <a class="el" href="classsf_1_1String.html">String</a> &amp;string)</td></tr>
+<tr class="memdesc:a7d3b3359f286fd9503d1ced25b7b6c33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the text's string.  <br /></td></tr>
+<tr class="separator:a7d3b3359f286fd9503d1ced25b7b6c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2927805d1ae92d57f15034ea34756b81" id="r_a2927805d1ae92d57f15034ea34756b81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2927805d1ae92d57f15034ea34756b81">setFont</a> (const <a class="el" href="classsf_1_1Font.html">Font</a> &amp;font)</td></tr>
+<tr class="memdesc:a2927805d1ae92d57f15034ea34756b81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the text's font.  <br /></td></tr>
+<tr class="separator:a2927805d1ae92d57f15034ea34756b81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae96f835fc1bff858f8a23c5b01eaaf7e" id="r_ae96f835fc1bff858f8a23c5b01eaaf7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae96f835fc1bff858f8a23c5b01eaaf7e">setCharacterSize</a> (unsigned int size)</td></tr>
+<tr class="memdesc:ae96f835fc1bff858f8a23c5b01eaaf7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the character size.  <br /></td></tr>
+<tr class="separator:ae96f835fc1bff858f8a23c5b01eaaf7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad791702bc2d1b6590a1719aa60635edf" id="r_ad791702bc2d1b6590a1719aa60635edf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad791702bc2d1b6590a1719aa60635edf">setStyle</a> (<a class="el" href="namespacesf.html#aa746fb1ddef4410bddf198ebb27e727c">Uint32</a> style)</td></tr>
+<tr class="memdesc:ad791702bc2d1b6590a1719aa60635edf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the text's style.  <br /></td></tr>
+<tr class="separator:ad791702bc2d1b6590a1719aa60635edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ce65272d6d63ed01118366e92c68132" id="r_a6ce65272d6d63ed01118366e92c68132"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Config_8hpp.html#a9d22ae32bba2961ae9abc7e40f035fc7">SFML_DEPRECATED</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ce65272d6d63ed01118366e92c68132">setColor</a> (const <a class="el" href="classsf_1_1Color.html">Color</a> &amp;color)</td></tr>
+<tr class="memdesc:a6ce65272d6d63ed01118366e92c68132"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the fill color of the text.  <br /></td></tr>
+<tr class="separator:a6ce65272d6d63ed01118366e92c68132"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7bb3babac5a6da1802b2c3e1a3e6dcc" id="r_ab7bb3babac5a6da1802b2c3e1a3e6dcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7bb3babac5a6da1802b2c3e1a3e6dcc">setFillColor</a> (const <a class="el" href="classsf_1_1Color.html">Color</a> &amp;color)</td></tr>
+<tr class="memdesc:ab7bb3babac5a6da1802b2c3e1a3e6dcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the fill color of the text.  <br /></td></tr>
+<tr class="separator:ab7bb3babac5a6da1802b2c3e1a3e6dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa19ec69c3b894e963602a6804ca68fe4" id="r_aa19ec69c3b894e963602a6804ca68fe4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa19ec69c3b894e963602a6804ca68fe4">setOutlineColor</a> (const <a class="el" href="classsf_1_1Color.html">Color</a> &amp;color)</td></tr>
+<tr class="memdesc:aa19ec69c3b894e963602a6804ca68fe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the outline color of the text.  <br /></td></tr>
+<tr class="separator:aa19ec69c3b894e963602a6804ca68fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0e6be3b40124557bf53737fe6a6ce77" id="r_ab0e6be3b40124557bf53737fe6a6ce77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0e6be3b40124557bf53737fe6a6ce77">setOutlineThickness</a> (float thickness)</td></tr>
+<tr class="memdesc:ab0e6be3b40124557bf53737fe6a6ce77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the thickness of the text's outline.  <br /></td></tr>
+<tr class="separator:ab0e6be3b40124557bf53737fe6a6ce77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab334881845307db46ccf344191aa819c" id="r_ab334881845307db46ccf344191aa819c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classsf_1_1String.html">String</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab334881845307db46ccf344191aa819c">getString</a> () const</td></tr>
+<tr class="memdesc:ab334881845307db46ccf344191aa819c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the text's string.  <br /></td></tr>
+<tr class="separator:ab334881845307db46ccf344191aa819c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad947a43bddaddf54d008df600699599b" id="r_ad947a43bddaddf54d008df600699599b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classsf_1_1Font.html">Font</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad947a43bddaddf54d008df600699599b">getFont</a> () const</td></tr>
+<tr class="memdesc:ad947a43bddaddf54d008df600699599b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the text's font.  <br /></td></tr>
+<tr class="separator:ad947a43bddaddf54d008df600699599b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46d1d7f1d513bb8d434e985a93ea5224" id="r_a46d1d7f1d513bb8d434e985a93ea5224"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46d1d7f1d513bb8d434e985a93ea5224">getCharacterSize</a> () const</td></tr>
+<tr class="memdesc:a46d1d7f1d513bb8d434e985a93ea5224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the character size.  <br /></td></tr>
+<tr class="separator:a46d1d7f1d513bb8d434e985a93ea5224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0da79b0c057f4bb51592465a205c35d7" id="r_a0da79b0c057f4bb51592465a205c35d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacesf.html#aa746fb1ddef4410bddf198ebb27e727c">Uint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0da79b0c057f4bb51592465a205c35d7">getStyle</a> () const</td></tr>
+<tr class="memdesc:a0da79b0c057f4bb51592465a205c35d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the text's style.  <br /></td></tr>
+<tr class="separator:a0da79b0c057f4bb51592465a205c35d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a810cc4aa8eb5998f9eb9d02b1c099660" id="r_a810cc4aa8eb5998f9eb9d02b1c099660"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Config_8hpp.html#a9d22ae32bba2961ae9abc7e40f035fc7">SFML_DEPRECATED</a> const <a class="el" href="classsf_1_1Color.html">Color</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a810cc4aa8eb5998f9eb9d02b1c099660">getColor</a> () const</td></tr>
+<tr class="memdesc:a810cc4aa8eb5998f9eb9d02b1c099660"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the fill color of the text.  <br /></td></tr>
+<tr class="separator:a810cc4aa8eb5998f9eb9d02b1c099660"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10400757492ec7fa97454488314ca39b" id="r_a10400757492ec7fa97454488314ca39b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classsf_1_1Color.html">Color</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10400757492ec7fa97454488314ca39b">getFillColor</a> () const</td></tr>
+<tr class="memdesc:a10400757492ec7fa97454488314ca39b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the fill color of the text.  <br /></td></tr>
+<tr class="separator:a10400757492ec7fa97454488314ca39b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade9256ff9d43c9481fcf5f4003fe0141" id="r_ade9256ff9d43c9481fcf5f4003fe0141"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classsf_1_1Color.html">Color</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade9256ff9d43c9481fcf5f4003fe0141">getOutlineColor</a> () const</td></tr>
+<tr class="memdesc:ade9256ff9d43c9481fcf5f4003fe0141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the outline color of the text.  <br /></td></tr>
+<tr class="separator:ade9256ff9d43c9481fcf5f4003fe0141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6bf01c23189edf52c8b38708db6f3f6" id="r_af6bf01c23189edf52c8b38708db6f3f6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6bf01c23189edf52c8b38708db6f3f6">getOutlineThickness</a> () const</td></tr>
+<tr class="memdesc:af6bf01c23189edf52c8b38708db6f3f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the outline thickness of the text.  <br /></td></tr>
+<tr class="separator:af6bf01c23189edf52c8b38708db6f3f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e252d8dcae3eb61c6c962c0bc674b12" id="r_a2e252d8dcae3eb61c6c962c0bc674b12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e252d8dcae3eb61c6c962c0bc674b12">findCharacterPos</a> (std::size_t index) const</td></tr>
+<tr class="memdesc:a2e252d8dcae3eb61c6c962c0bc674b12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the position of the <em>index-th</em> character.  <br /></td></tr>
+<tr class="separator:a2e252d8dcae3eb61c6c962c0bc674b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e6b3b298827f853b41165eee2cbbc66" id="r_a3e6b3b298827f853b41165eee2cbbc66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacesf.html#aed4e58f586b2eed2621c0365d0b7554e">FloatRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e6b3b298827f853b41165eee2cbbc66">getLocalBounds</a> () const</td></tr>
+<tr class="memdesc:a3e6b3b298827f853b41165eee2cbbc66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the local bounding rectangle of the entity.  <br /></td></tr>
+<tr class="separator:a3e6b3b298827f853b41165eee2cbbc66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad33ed96ce9fbe99610f7f8b6874a16b4" id="r_ad33ed96ce9fbe99610f7f8b6874a16b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacesf.html#aed4e58f586b2eed2621c0365d0b7554e">FloatRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad33ed96ce9fbe99610f7f8b6874a16b4">getGlobalBounds</a> () const</td></tr>
+<tr class="memdesc:ad33ed96ce9fbe99610f7f8b6874a16b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the global bounding rectangle of the entity.  <br /></td></tr>
+<tr class="separator:ad33ed96ce9fbe99610f7f8b6874a16b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dbfb1a7c80688b0b4c477d706550208" id="r_a4dbfb1a7c80688b0b4c477d706550208"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transformable.html#a4dbfb1a7c80688b0b4c477d706550208">setPosition</a> (float x, float y)</td></tr>
+<tr class="memdesc:a4dbfb1a7c80688b0b4c477d706550208"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the position of the object  <br /></td></tr>
+<tr class="separator:a4dbfb1a7c80688b0b4c477d706550208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1a42209ce2b5d3f07b00f917bcd8015" id="r_af1a42209ce2b5d3f07b00f917bcd8015"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transformable.html#af1a42209ce2b5d3f07b00f917bcd8015">setPosition</a> (const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp;position)</td></tr>
+<tr class="memdesc:af1a42209ce2b5d3f07b00f917bcd8015"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the position of the object  <br /></td></tr>
+<tr class="separator:af1a42209ce2b5d3f07b00f917bcd8015"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32baf2bf1a74699b03bf8c95030a38ed" id="r_a32baf2bf1a74699b03bf8c95030a38ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transformable.html#a32baf2bf1a74699b03bf8c95030a38ed">setRotation</a> (float angle)</td></tr>
+<tr class="memdesc:a32baf2bf1a74699b03bf8c95030a38ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the orientation of the object  <br /></td></tr>
+<tr class="separator:a32baf2bf1a74699b03bf8c95030a38ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaec50b46b3f41b054763304d1e727471" id="r_aaec50b46b3f41b054763304d1e727471"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transformable.html#aaec50b46b3f41b054763304d1e727471">setScale</a> (float factorX, float factorY)</td></tr>
+<tr class="memdesc:aaec50b46b3f41b054763304d1e727471"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the scale factors of the object  <br /></td></tr>
+<tr class="separator:aaec50b46b3f41b054763304d1e727471"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c48a87f1626047e448f9c1a68ff167e" id="r_a4c48a87f1626047e448f9c1a68ff167e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transformable.html#a4c48a87f1626047e448f9c1a68ff167e">setScale</a> (const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp;factors)</td></tr>
+<tr class="memdesc:a4c48a87f1626047e448f9c1a68ff167e"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the scale factors of the object  <br /></td></tr>
+<tr class="separator:a4c48a87f1626047e448f9c1a68ff167e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56c67bd80aae8418d13fb96c034d25ec" id="r_a56c67bd80aae8418d13fb96c034d25ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transformable.html#a56c67bd80aae8418d13fb96c034d25ec">setOrigin</a> (float x, float y)</td></tr>
+<tr class="memdesc:a56c67bd80aae8418d13fb96c034d25ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the local origin of the object  <br /></td></tr>
+<tr class="separator:a56c67bd80aae8418d13fb96c034d25ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa93a835ffbf3bee2098dfbbc695a7f05" id="r_aa93a835ffbf3bee2098dfbbc695a7f05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transformable.html#aa93a835ffbf3bee2098dfbbc695a7f05">setOrigin</a> (const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp;origin)</td></tr>
+<tr class="memdesc:aa93a835ffbf3bee2098dfbbc695a7f05"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the local origin of the object  <br /></td></tr>
+<tr class="separator:aa93a835ffbf3bee2098dfbbc695a7f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea8b18e91a7bf7be589851bb9dd11241" id="r_aea8b18e91a7bf7be589851bb9dd11241"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transformable.html#aea8b18e91a7bf7be589851bb9dd11241">getPosition</a> () const</td></tr>
+<tr class="memdesc:aea8b18e91a7bf7be589851bb9dd11241"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the position of the object  <br /></td></tr>
+<tr class="separator:aea8b18e91a7bf7be589851bb9dd11241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa00b5c5d4a06ac24a94dd72c56931d3a" id="r_aa00b5c5d4a06ac24a94dd72c56931d3a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transformable.html#aa00b5c5d4a06ac24a94dd72c56931d3a">getRotation</a> () const</td></tr>
+<tr class="memdesc:aa00b5c5d4a06ac24a94dd72c56931d3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the orientation of the object  <br /></td></tr>
+<tr class="separator:aa00b5c5d4a06ac24a94dd72c56931d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bcae0e924213f2e89edd8926f2453af" id="r_a7bcae0e924213f2e89edd8926f2453af"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transformable.html#a7bcae0e924213f2e89edd8926f2453af">getScale</a> () const</td></tr>
+<tr class="memdesc:a7bcae0e924213f2e89edd8926f2453af"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the current scale of the object  <br /></td></tr>
+<tr class="separator:a7bcae0e924213f2e89edd8926f2453af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a898b33eb6513161eb5c747a072364f15" id="r_a898b33eb6513161eb5c747a072364f15"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transformable.html#a898b33eb6513161eb5c747a072364f15">getOrigin</a> () const</td></tr>
+<tr class="memdesc:a898b33eb6513161eb5c747a072364f15"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the local origin of the object  <br /></td></tr>
+<tr class="separator:a898b33eb6513161eb5c747a072364f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86b461d6a941ad390c2ad8b6a4a20391" id="r_a86b461d6a941ad390c2ad8b6a4a20391"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transformable.html#a86b461d6a941ad390c2ad8b6a4a20391">move</a> (float offsetX, float offsetY)</td></tr>
+<tr class="memdesc:a86b461d6a941ad390c2ad8b6a4a20391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move the object by a given offset.  <br /></td></tr>
+<tr class="separator:a86b461d6a941ad390c2ad8b6a4a20391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9ca691522f6ddc1a40406849b87c469" id="r_ab9ca691522f6ddc1a40406849b87c469"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transformable.html#ab9ca691522f6ddc1a40406849b87c469">move</a> (const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp;offset)</td></tr>
+<tr class="memdesc:ab9ca691522f6ddc1a40406849b87c469"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move the object by a given offset.  <br /></td></tr>
+<tr class="separator:ab9ca691522f6ddc1a40406849b87c469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8a5ffddc0d93f238fee3bf8efe1ebda" id="r_af8a5ffddc0d93f238fee3bf8efe1ebda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transformable.html#af8a5ffddc0d93f238fee3bf8efe1ebda">rotate</a> (float angle)</td></tr>
+<tr class="memdesc:af8a5ffddc0d93f238fee3bf8efe1ebda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotate the object.  <br /></td></tr>
+<tr class="separator:af8a5ffddc0d93f238fee3bf8efe1ebda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3de0c6d8957f3cf318092f3f60656391" id="r_a3de0c6d8957f3cf318092f3f60656391"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transformable.html#a3de0c6d8957f3cf318092f3f60656391">scale</a> (float factorX, float factorY)</td></tr>
+<tr class="memdesc:a3de0c6d8957f3cf318092f3f60656391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale the object.  <br /></td></tr>
+<tr class="separator:a3de0c6d8957f3cf318092f3f60656391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adecaa6c69b1f27dd5194b067d96bb694" id="r_adecaa6c69b1f27dd5194b067d96bb694"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transformable.html#adecaa6c69b1f27dd5194b067d96bb694">scale</a> (const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp;factor)</td></tr>
+<tr class="memdesc:adecaa6c69b1f27dd5194b067d96bb694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale the object.  <br /></td></tr>
+<tr class="separator:adecaa6c69b1f27dd5194b067d96bb694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e1b4772a451ec66ac7e6af655726154" id="r_a3e1b4772a451ec66ac7e6af655726154"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classsf_1_1Transform.html">Transform</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transformable.html#a3e1b4772a451ec66ac7e6af655726154">getTransform</a> () const</td></tr>
+<tr class="memdesc:a3e1b4772a451ec66ac7e6af655726154"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the combined transform of the object  <br /></td></tr>
+<tr class="separator:a3e1b4772a451ec66ac7e6af655726154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5e75d724436069d2268791c6b486916" id="r_ac5e75d724436069d2268791c6b486916"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classsf_1_1Transform.html">Transform</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transformable.html#ac5e75d724436069d2268791c6b486916">getInverseTransform</a> () const</td></tr>
+<tr class="memdesc:ac5e75d724436069d2268791c6b486916"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the inverse of the combined transform of the object  <br /></td></tr>
+<tr class="separator:ac5e75d724436069d2268791c6b486916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Graphical text that can be drawn to a render target. </p>
+<p><a class="el" href="classsf_1_1Text.html" title="Graphical text that can be drawn to a render target.">sf::Text</a> is a drawable class that allows to easily display some text with custom style and color on a render target.</p>
+<p>It inherits all the functions from <a class="el" href="classsf_1_1Transformable.html" title="Decomposed transform defined by a position, a rotation and a scale.">sf::Transformable</a>: position, rotation, scale, origin. It also adds text-specific properties such as the font to use, the character size, the font style (bold, italic, underlined, strike through), the global color and the text to display of course. It also provides convenience functions to calculate the graphical size of the text, or to get the global position of a given character.</p>
+<p><a class="el" href="classsf_1_1Text.html" title="Graphical text that can be drawn to a render target.">sf::Text</a> works in combination with the <a class="el" href="classsf_1_1Font.html" title="Class for loading and manipulating character fonts.">sf::Font</a> class, which loads and provides the glyphs (visual characters) of a given font.</p>
+<p>The separation of <a class="el" href="classsf_1_1Font.html" title="Class for loading and manipulating character fonts.">sf::Font</a> and <a class="el" href="classsf_1_1Text.html" title="Graphical text that can be drawn to a render target.">sf::Text</a> allows more flexibility and better performances: indeed a <a class="el" href="classsf_1_1Font.html" title="Class for loading and manipulating character fonts.">sf::Font</a> is a heavy resource, and any operation on it is slow (often too slow for real-time applications). On the other side, a <a class="el" href="classsf_1_1Text.html" title="Graphical text that can be drawn to a render target.">sf::Text</a> is a lightweight object which can combine the glyphs data and metrics of a <a class="el" href="classsf_1_1Font.html" title="Class for loading and manipulating character fonts.">sf::Font</a> to display any text on a render target.</p>
+<p>It is important to note that the <a class="el" href="classsf_1_1Text.html" title="Graphical text that can be drawn to a render target.">sf::Text</a> instance doesn't copy the font that it uses, it only keeps a reference to it. Thus, a <a class="el" href="classsf_1_1Font.html" title="Class for loading and manipulating character fonts.">sf::Font</a> must not be destructed while it is used by a <a class="el" href="classsf_1_1Text.html" title="Graphical text that can be drawn to a render target.">sf::Text</a> (i.e. never write a function that uses a local <a class="el" href="classsf_1_1Font.html" title="Class for loading and manipulating character fonts.">sf::Font</a> instance for creating a text).</p>
+<p>See also the note on coordinates and undistorted rendering in <a class="el" href="classsf_1_1Transformable.html" title="Decomposed transform defined by a position, a rotation and a scale.">sf::Transformable</a>.</p>
+<p>Usage example: </p><div class="fragment"><div class="line"><span class="comment">// Declare and load a font</span></div>
+<div class="line"><a class="code hl_class" href="classsf_1_1Font.html">sf::Font</a> font;</div>
+<div class="line">font.<a class="code hl_function" href="classsf_1_1Font.html#ab020052ef4e01f6c749a85571c0f3fd1">loadFromFile</a>(<span class="stringliteral">&quot;arial.ttf&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Create a text</span></div>
+<div class="line"><a class="code hl_class" href="classsf_1_1Text.html">sf::Text</a> text(<span class="stringliteral">&quot;hello&quot;</span>, font);</div>
+<div class="line">text.setCharacterSize(30);</div>
+<div class="line">text.setStyle(<a class="code hl_enumvalue" href="#aa8add4aef484c6e6b20faff07452bd82af1b47f98fb1e10509ba930a596987171">sf::Text::Bold</a>);</div>
+<div class="line">text.setColor(<a class="code hl_variable" href="classsf_1_1Color.html#a127dbf55db9c07d0fa8f4bfcbb97594a">sf::Color::Red</a>);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Draw it</span></div>
+<div class="line">window.draw(text);</div>
+<div class="ttc" id="aclasssf_1_1Color_html_a127dbf55db9c07d0fa8f4bfcbb97594a"><div class="ttname"><a href="classsf_1_1Color.html#a127dbf55db9c07d0fa8f4bfcbb97594a">sf::Color::Red</a></div><div class="ttdeci">static const Color Red</div><div class="ttdoc">Red predefined color.</div><div class="ttdef"><b>Definition</b> <a href="Color_8hpp_source.html#l00085">Color.hpp:85</a></div></div>
+<div class="ttc" id="aclasssf_1_1Font_html"><div class="ttname"><a href="classsf_1_1Font.html">sf::Font</a></div><div class="ttdoc">Class for loading and manipulating character fonts.</div><div class="ttdef"><b>Definition</b> <a href="Font_8hpp_source.html#l00050">Font.hpp:51</a></div></div>
+<div class="ttc" id="aclasssf_1_1Font_html_ab020052ef4e01f6c749a85571c0f3fd1"><div class="ttname"><a href="classsf_1_1Font.html#ab020052ef4e01f6c749a85571c0f3fd1">sf::Font::loadFromFile</a></div><div class="ttdeci">bool loadFromFile(const std::string &amp;filename)</div><div class="ttdoc">Load the font from a file.</div></div>
+<div class="ttc" id="aclasssf_1_1Text_html"><div class="ttname"><a href="classsf_1_1Text.html">sf::Text</a></div><div class="ttdoc">Graphical text that can be drawn to a render target.</div><div class="ttdef"><b>Definition</b> <a href="Text_8hpp_source.html#l00048">Text.hpp:49</a></div></div>
+<div class="ttc" id="aclasssf_1_1Text_html_aa8add4aef484c6e6b20faff07452bd82af1b47f98fb1e10509ba930a596987171"><div class="ttname"><a href="#aa8add4aef484c6e6b20faff07452bd82af1b47f98fb1e10509ba930a596987171">sf::Text::Bold</a></div><div class="ttdeci">@ Bold</div><div class="ttdoc">Bold characters.</div><div class="ttdef"><b>Definition</b> <a href="Text_8hpp_source.html#l00059">Text.hpp:59</a></div></div>
+</div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Font.html" title="Class for loading and manipulating character fonts.">sf::Font</a>, <a class="el" href="classsf_1_1Transformable.html" title="Decomposed transform defined by a position, a rotation and a scale.">sf::Transformable</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="Text_8hpp_source.html#l00048">48</a> of file <a class="el" href="Text_8hpp_source.html">Text.hpp</a>.</p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="aa8add4aef484c6e6b20faff07452bd82" name="aa8add4aef484c6e6b20faff07452bd82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8add4aef484c6e6b20faff07452bd82">&#9670;&#160;</a></span>Style</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#aa8add4aef484c6e6b20faff07452bd82">sf::Text::Style</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enumeration of the string drawing styles. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa8add4aef484c6e6b20faff07452bd82a2af9ae5e1cda126570f744448e0caa32" name="aa8add4aef484c6e6b20faff07452bd82a2af9ae5e1cda126570f744448e0caa32"></a>Regular&#160;</td><td class="fielddoc"><p>Regular characters, no style. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa8add4aef484c6e6b20faff07452bd82af1b47f98fb1e10509ba930a596987171" name="aa8add4aef484c6e6b20faff07452bd82af1b47f98fb1e10509ba930a596987171"></a>Bold&#160;</td><td class="fielddoc"><p>Bold characters. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa8add4aef484c6e6b20faff07452bd82aee249eb803848723c542c2062ebe69d8" name="aa8add4aef484c6e6b20faff07452bd82aee249eb803848723c542c2062ebe69d8"></a>Italic&#160;</td><td class="fielddoc"><p>Italic characters. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa8add4aef484c6e6b20faff07452bd82a664bd143f92b6e8c709d7f788e8b20df" name="aa8add4aef484c6e6b20faff07452bd82a664bd143f92b6e8c709d7f788e8b20df"></a>Underlined&#160;</td><td class="fielddoc"><p>Underlined characters. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa8add4aef484c6e6b20faff07452bd82a9ed1f5bb154c21269e1190c5aa97d479" name="aa8add4aef484c6e6b20faff07452bd82a9ed1f5bb154c21269e1190c5aa97d479"></a>StrikeThrough&#160;</td><td class="fielddoc"><p>Strike through characters. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="Text_8hpp_source.html#l00056">56</a> of file <a class="el" href="Text_8hpp_source.html">Text.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aff7cab6a92e5948c9d1481cb2d87eb84" name="aff7cab6a92e5948c9d1481cb2d87eb84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff7cab6a92e5948c9d1481cb2d87eb84">&#9670;&#160;</a></span>Text() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Text::Text </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Default constructor. </p>
+<p>Creates an empty text. </p>
+
+</div>
+</div>
+<a id="a614019e0b5c0ed39a99d32483a51f2c5" name="a614019e0b5c0ed39a99d32483a51f2c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a614019e0b5c0ed39a99d32483a51f2c5">&#9670;&#160;</a></span>Text() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Text::Text </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsf_1_1String.html">String</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>string</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classsf_1_1Font.html">Font</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>font</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>characterSize</em></span><span class="paramdefsep"> = </span><span class="paramdefval">30</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct the text from a string, font and size. </p>
+<p>Note that if the used font is a bitmap font, it is not scalable, thus not all requested sizes will be available to use. This needs to be taken into consideration when setting the character size. If you need to display text of a certain size, make sure the corresponding bitmap font that supports that size is used.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td><a class="el" href="classsf_1_1Text.html" title="Graphical text that can be drawn to a render target.">Text</a> assigned to the string </td></tr>
+    <tr><td class="paramname">font</td><td><a class="el" href="classsf_1_1Font.html" title="Class for loading and manipulating character fonts.">Font</a> used to draw the string </td></tr>
+    <tr><td class="paramname">characterSize</td><td>Base size of characters, in pixels </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2e252d8dcae3eb61c6c962c0bc674b12" name="a2e252d8dcae3eb61c6c962c0bc674b12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e252d8dcae3eb61c6c962c0bc674b12">&#9670;&#160;</a></span>findCharacterPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> sf::Text::findCharacterPos </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the position of the <em>index-th</em> character. </p>
+<p>This function computes the visual position of a character from its index in the string. The returned position is in global coordinates (translation, rotation, scale and origin are applied). If <em>index</em> is out of range, the position of the end of the string is returned.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Index of the character</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Position of the character </dd></dl>
+
+</div>
+</div>
+<a id="a46d1d7f1d513bb8d434e985a93ea5224" name="a46d1d7f1d513bb8d434e985a93ea5224"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46d1d7f1d513bb8d434e985a93ea5224">&#9670;&#160;</a></span>getCharacterSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int sf::Text::getCharacterSize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the character size. </p>
+<dl class="section return"><dt>Returns</dt><dd>Size of the characters, in pixels</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#ae96f835fc1bff858f8a23c5b01eaaf7e" title="Set the character size.">setCharacterSize</a> </dd></dl>
+
+</div>
+</div>
+<a id="a810cc4aa8eb5998f9eb9d02b1c099660" name="a810cc4aa8eb5998f9eb9d02b1c099660"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a810cc4aa8eb5998f9eb9d02b1c099660">&#9670;&#160;</a></span>getColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Config_8hpp.html#a9d22ae32bba2961ae9abc7e40f035fc7">SFML_DEPRECATED</a> const <a class="el" href="classsf_1_1Color.html">Color</a> &amp; sf::Text::getColor </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the fill color of the text. </p>
+<dl class="section return"><dt>Returns</dt><dd>Fill color of the text</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#ab7bb3babac5a6da1802b2c3e1a3e6dcc" title="Set the fill color of the text.">setFillColor</a></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000016">Deprecated</a></b></dt><dd>There is now fill and outline colors instead of a single global color. Use <a class="el" href="#a10400757492ec7fa97454488314ca39b" title="Get the fill color of the text.">getFillColor()</a> or <a class="el" href="#ade9256ff9d43c9481fcf5f4003fe0141" title="Get the outline color of the text.">getOutlineColor()</a> instead.</dd></dl>
+
+</div>
+</div>
+<a id="a10400757492ec7fa97454488314ca39b" name="a10400757492ec7fa97454488314ca39b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10400757492ec7fa97454488314ca39b">&#9670;&#160;</a></span>getFillColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classsf_1_1Color.html">Color</a> &amp; sf::Text::getFillColor </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the fill color of the text. </p>
+<dl class="section return"><dt>Returns</dt><dd>Fill color of the text</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#ab7bb3babac5a6da1802b2c3e1a3e6dcc" title="Set the fill color of the text.">setFillColor</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad947a43bddaddf54d008df600699599b" name="ad947a43bddaddf54d008df600699599b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad947a43bddaddf54d008df600699599b">&#9670;&#160;</a></span>getFont()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classsf_1_1Font.html">Font</a> * sf::Text::getFont </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the text's font. </p>
+<p>If the text has no font attached, a NULL pointer is returned. The returned pointer is const, which means that you cannot modify the font when you get it from this function.</p>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the text's font</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a2927805d1ae92d57f15034ea34756b81" title="Set the text&#39;s font.">setFont</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad33ed96ce9fbe99610f7f8b6874a16b4" name="ad33ed96ce9fbe99610f7f8b6874a16b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad33ed96ce9fbe99610f7f8b6874a16b4">&#9670;&#160;</a></span>getGlobalBounds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacesf.html#aed4e58f586b2eed2621c0365d0b7554e">FloatRect</a> sf::Text::getGlobalBounds </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the global bounding rectangle of the entity. </p>
+<p>The returned rectangle is in global coordinates, which means that it takes into account the transformations (translation, rotation, scale, ...) that are applied to the entity. In other words, this function returns the bounds of the text in the global 2D world's coordinate system.</p>
+<dl class="section return"><dt>Returns</dt><dd>Global bounding rectangle of the entity </dd></dl>
+
+</div>
+</div>
+<a id="ac5e75d724436069d2268791c6b486916" name="ac5e75d724436069d2268791c6b486916"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5e75d724436069d2268791c6b486916">&#9670;&#160;</a></span>getInverseTransform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classsf_1_1Transform.html">Transform</a> &amp; sf::Transformable::getInverseTransform </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get the inverse of the combined transform of the object </p>
+<dl class="section return"><dt>Returns</dt><dd>Inverse of the combined transformations applied to the object</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a3e1b4772a451ec66ac7e6af655726154" title="get the combined transform of the object">getTransform</a> </dd></dl>
+
+</div>
+</div>
+<a id="a3e6b3b298827f853b41165eee2cbbc66" name="a3e6b3b298827f853b41165eee2cbbc66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e6b3b298827f853b41165eee2cbbc66">&#9670;&#160;</a></span>getLocalBounds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacesf.html#aed4e58f586b2eed2621c0365d0b7554e">FloatRect</a> sf::Text::getLocalBounds </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the local bounding rectangle of the entity. </p>
+<p>The returned rectangle is in local coordinates, which means that it ignores the transformations (translation, rotation, scale, ...) that are applied to the entity. In other words, this function returns the bounds of the entity in the entity's coordinate system.</p>
+<dl class="section return"><dt>Returns</dt><dd>Local bounding rectangle of the entity </dd></dl>
+
+</div>
+</div>
+<a id="a898b33eb6513161eb5c747a072364f15" name="a898b33eb6513161eb5c747a072364f15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a898b33eb6513161eb5c747a072364f15">&#9670;&#160;</a></span>getOrigin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp; sf::Transformable::getOrigin </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get the local origin of the object </p>
+<dl class="section return"><dt>Returns</dt><dd>Current origin</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a56c67bd80aae8418d13fb96c034d25ec" title="set the local origin of the object">setOrigin</a> </dd></dl>
+
+</div>
+</div>
+<a id="ade9256ff9d43c9481fcf5f4003fe0141" name="ade9256ff9d43c9481fcf5f4003fe0141"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade9256ff9d43c9481fcf5f4003fe0141">&#9670;&#160;</a></span>getOutlineColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classsf_1_1Color.html">Color</a> &amp; sf::Text::getOutlineColor </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the outline color of the text. </p>
+<dl class="section return"><dt>Returns</dt><dd>Outline color of the text</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#aa19ec69c3b894e963602a6804ca68fe4" title="Set the outline color of the text.">setOutlineColor</a> </dd></dl>
+
+</div>
+</div>
+<a id="af6bf01c23189edf52c8b38708db6f3f6" name="af6bf01c23189edf52c8b38708db6f3f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6bf01c23189edf52c8b38708db6f3f6">&#9670;&#160;</a></span>getOutlineThickness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float sf::Text::getOutlineThickness </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the outline thickness of the text. </p>
+<dl class="section return"><dt>Returns</dt><dd>Outline thickness of the text, in pixels</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#ab0e6be3b40124557bf53737fe6a6ce77" title="Set the thickness of the text&#39;s outline.">setOutlineThickness</a> </dd></dl>
+
+</div>
+</div>
+<a id="aea8b18e91a7bf7be589851bb9dd11241" name="aea8b18e91a7bf7be589851bb9dd11241"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea8b18e91a7bf7be589851bb9dd11241">&#9670;&#160;</a></span>getPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp; sf::Transformable::getPosition </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get the position of the object </p>
+<dl class="section return"><dt>Returns</dt><dd>Current position</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a4dbfb1a7c80688b0b4c477d706550208" title="set the position of the object">setPosition</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa00b5c5d4a06ac24a94dd72c56931d3a" name="aa00b5c5d4a06ac24a94dd72c56931d3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa00b5c5d4a06ac24a94dd72c56931d3a">&#9670;&#160;</a></span>getRotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float sf::Transformable::getRotation </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get the orientation of the object </p>
+<p>The rotation is always in the range [0, 360].</p>
+<dl class="section return"><dt>Returns</dt><dd>Current rotation, in degrees</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a32baf2bf1a74699b03bf8c95030a38ed" title="set the orientation of the object">setRotation</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7bcae0e924213f2e89edd8926f2453af" name="a7bcae0e924213f2e89edd8926f2453af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bcae0e924213f2e89edd8926f2453af">&#9670;&#160;</a></span>getScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp; sf::Transformable::getScale </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get the current scale of the object </p>
+<dl class="section return"><dt>Returns</dt><dd>Current scale factors</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#aaec50b46b3f41b054763304d1e727471" title="set the scale factors of the object">setScale</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab334881845307db46ccf344191aa819c" name="ab334881845307db46ccf344191aa819c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab334881845307db46ccf344191aa819c">&#9670;&#160;</a></span>getString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classsf_1_1String.html">String</a> &amp; sf::Text::getString </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the text's string. </p>
+<p>The returned string is a <a class="el" href="classsf_1_1String.html" title="Utility string class that automatically handles conversions between types and encodings.">sf::String</a>, which can automatically be converted to standard string types. So, the following lines of code are all valid: </p><div class="fragment"><div class="line"><a class="code hl_class" href="classsf_1_1String.html">sf::String</a>   s1 = text.getString();</div>
+<div class="line">std::string  s2 = text.getString();</div>
+<div class="line">std::wstring s3 = text.getString();</div>
+<div class="ttc" id="aclasssf_1_1String_html"><div class="ttname"><a href="classsf_1_1String.html">sf::String</a></div><div class="ttdoc">Utility string class that automatically handles conversions between types and encodings.</div><div class="ttdef"><b>Definition</b> <a href="String_8hpp_source.html#l00045">String.hpp:46</a></div></div>
+</div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsf_1_1Text.html" title="Graphical text that can be drawn to a render target.">Text</a>'s string</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a7d3b3359f286fd9503d1ced25b7b6c33" title="Set the text&#39;s string.">setString</a> </dd></dl>
+
+</div>
+</div>
+<a id="a0da79b0c057f4bb51592465a205c35d7" name="a0da79b0c057f4bb51592465a205c35d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0da79b0c057f4bb51592465a205c35d7">&#9670;&#160;</a></span>getStyle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacesf.html#aa746fb1ddef4410bddf198ebb27e727c">Uint32</a> sf::Text::getStyle </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the text's style. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsf_1_1Text.html" title="Graphical text that can be drawn to a render target.">Text</a>'s style</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#ad791702bc2d1b6590a1719aa60635edf" title="Set the text&#39;s style.">setStyle</a> </dd></dl>
+
+</div>
+</div>
+<a id="a3e1b4772a451ec66ac7e6af655726154" name="a3e1b4772a451ec66ac7e6af655726154"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e1b4772a451ec66ac7e6af655726154">&#9670;&#160;</a></span>getTransform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classsf_1_1Transform.html">Transform</a> &amp; sf::Transformable::getTransform </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get the combined transform of the object </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsf_1_1Transform.html" title="Define a 3x3 transform matrix.">Transform</a> combining the position/rotation/scale/origin of the object</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#ac5e75d724436069d2268791c6b486916" title="get the inverse of the combined transform of the object">getInverseTransform</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab9ca691522f6ddc1a40406849b87c469" name="ab9ca691522f6ddc1a40406849b87c469"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9ca691522f6ddc1a40406849b87c469">&#9670;&#160;</a></span>move() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Transformable::move </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>offset</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Move the object by a given offset. </p>
+<p>This function adds to the current position of the object, unlike setPosition which overwrites it. Thus, it is equivalent to the following code: </p><div class="fragment"><div class="line"><span class="keywordtype">object</span>.setPosition(<span class="keywordtype">object</span>.<a class="code hl_function" href="classsf_1_1Transformable.html#aea8b18e91a7bf7be589851bb9dd11241">getPosition</a>() + offset);</div>
+<div class="ttc" id="aclasssf_1_1Transformable_html_aea8b18e91a7bf7be589851bb9dd11241"><div class="ttname"><a href="classsf_1_1Transformable.html#aea8b18e91a7bf7be589851bb9dd11241">sf::Transformable::getPosition</a></div><div class="ttdeci">const Vector2f &amp; getPosition() const</div><div class="ttdoc">get the position of the object</div></div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">offset</td><td>Offset</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a4dbfb1a7c80688b0b4c477d706550208" title="set the position of the object">setPosition</a> </dd></dl>
+
+</div>
+</div>
+<a id="a86b461d6a941ad390c2ad8b6a4a20391" name="a86b461d6a941ad390c2ad8b6a4a20391"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86b461d6a941ad390c2ad8b6a4a20391">&#9670;&#160;</a></span>move() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Transformable::move </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>offsetX</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>offsetY</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Move the object by a given offset. </p>
+<p>This function adds to the current position of the object, unlike setPosition which overwrites it. Thus, it is equivalent to the following code: </p><div class="fragment"><div class="line"><a class="code hl_class" href="classsf_1_1Vector2.html">sf::Vector2f</a> pos = <span class="keywordtype">object</span>.getPosition();</div>
+<div class="line"><span class="keywordtype">object</span>.setPosition(pos.<a class="code hl_variable" href="classsf_1_1Vector2.html#a1e6ad77fa155f3753bfb92699bd28141">x</a> + offsetX, pos.<a class="code hl_variable" href="classsf_1_1Vector2.html#a420f2481b015f4eb929c75f2af564299">y</a> + offsetY);</div>
+<div class="ttc" id="aclasssf_1_1Vector2_html"><div class="ttname"><a href="classsf_1_1Vector2.html">sf::Vector2&lt; float &gt;</a></div></div>
+<div class="ttc" id="aclasssf_1_1Vector2_html_a1e6ad77fa155f3753bfb92699bd28141"><div class="ttname"><a href="classsf_1_1Vector2.html#a1e6ad77fa155f3753bfb92699bd28141">sf::Vector2::x</a></div><div class="ttdeci">T x</div><div class="ttdoc">X coordinate of the vector.</div><div class="ttdef"><b>Definition</b> <a href="Vector2_8hpp_source.html#l00075">Vector2.hpp:75</a></div></div>
+<div class="ttc" id="aclasssf_1_1Vector2_html_a420f2481b015f4eb929c75f2af564299"><div class="ttname"><a href="classsf_1_1Vector2.html#a420f2481b015f4eb929c75f2af564299">sf::Vector2::y</a></div><div class="ttdeci">T y</div><div class="ttdoc">Y coordinate of the vector.</div><div class="ttdef"><b>Definition</b> <a href="Vector2_8hpp_source.html#l00076">Vector2.hpp:76</a></div></div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">offsetX</td><td>X offset </td></tr>
+    <tr><td class="paramname">offsetY</td><td>Y offset</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a4dbfb1a7c80688b0b4c477d706550208" title="set the position of the object">setPosition</a> </dd></dl>
+
+</div>
+</div>
+<a id="af8a5ffddc0d93f238fee3bf8efe1ebda" name="af8a5ffddc0d93f238fee3bf8efe1ebda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8a5ffddc0d93f238fee3bf8efe1ebda">&#9670;&#160;</a></span>rotate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Transformable::rotate </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>angle</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rotate the object. </p>
+<p>This function adds to the current rotation of the object, unlike setRotation which overwrites it. Thus, it is equivalent to the following code: </p><div class="fragment"><div class="line"><span class="keywordtype">object</span>.setRotation(<span class="keywordtype">object</span>.<a class="code hl_function" href="classsf_1_1Transformable.html#aa00b5c5d4a06ac24a94dd72c56931d3a">getRotation</a>() + angle);</div>
+<div class="ttc" id="aclasssf_1_1Transformable_html_aa00b5c5d4a06ac24a94dd72c56931d3a"><div class="ttname"><a href="classsf_1_1Transformable.html#aa00b5c5d4a06ac24a94dd72c56931d3a">sf::Transformable::getRotation</a></div><div class="ttdeci">float getRotation() const</div><div class="ttdoc">get the orientation of the object</div></div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angle</td><td>Angle of rotation, in degrees </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adecaa6c69b1f27dd5194b067d96bb694" name="adecaa6c69b1f27dd5194b067d96bb694"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adecaa6c69b1f27dd5194b067d96bb694">&#9670;&#160;</a></span>scale() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Transformable::scale </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>factor</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Scale the object. </p>
+<p>This function multiplies the current scale of the object, unlike setScale which overwrites it. Thus, it is equivalent to the following code: </p><div class="fragment"><div class="line"><a class="code hl_class" href="classsf_1_1Vector2.html">sf::Vector2f</a> <a class="code hl_function" href="classsf_1_1Transformable.html#a3de0c6d8957f3cf318092f3f60656391">scale</a> = <span class="keywordtype">object</span>.getScale();</div>
+<div class="line"><span class="keywordtype">object</span>.setScale(<a class="code hl_function" href="classsf_1_1Transformable.html#a3de0c6d8957f3cf318092f3f60656391">scale</a>.x * factor.x, <a class="code hl_function" href="classsf_1_1Transformable.html#a3de0c6d8957f3cf318092f3f60656391">scale</a>.y * factor.y);</div>
+<div class="ttc" id="aclasssf_1_1Transformable_html_a3de0c6d8957f3cf318092f3f60656391"><div class="ttname"><a href="classsf_1_1Transformable.html#a3de0c6d8957f3cf318092f3f60656391">sf::Transformable::scale</a></div><div class="ttdeci">void scale(float factorX, float factorY)</div><div class="ttdoc">Scale the object.</div></div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">factor</td><td>Scale factors</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#aaec50b46b3f41b054763304d1e727471" title="set the scale factors of the object">setScale</a> </dd></dl>
+
+</div>
+</div>
+<a id="a3de0c6d8957f3cf318092f3f60656391" name="a3de0c6d8957f3cf318092f3f60656391"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3de0c6d8957f3cf318092f3f60656391">&#9670;&#160;</a></span>scale() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Transformable::scale </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>factorX</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>factorY</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Scale the object. </p>
+<p>This function multiplies the current scale of the object, unlike setScale which overwrites it. Thus, it is equivalent to the following code: </p><div class="fragment"><div class="line"><a class="code hl_class" href="classsf_1_1Vector2.html">sf::Vector2f</a> <a class="code hl_function" href="classsf_1_1Transformable.html#a3de0c6d8957f3cf318092f3f60656391">scale</a> = <span class="keywordtype">object</span>.getScale();</div>
+<div class="line"><span class="keywordtype">object</span>.setScale(<a class="code hl_function" href="classsf_1_1Transformable.html#a3de0c6d8957f3cf318092f3f60656391">scale</a>.x * factorX, <a class="code hl_function" href="classsf_1_1Transformable.html#a3de0c6d8957f3cf318092f3f60656391">scale</a>.y * factorY);</div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">factorX</td><td>Horizontal scale factor </td></tr>
+    <tr><td class="paramname">factorY</td><td>Vertical scale factor</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#aaec50b46b3f41b054763304d1e727471" title="set the scale factors of the object">setScale</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae96f835fc1bff858f8a23c5b01eaaf7e" name="ae96f835fc1bff858f8a23c5b01eaaf7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae96f835fc1bff858f8a23c5b01eaaf7e">&#9670;&#160;</a></span>setCharacterSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Text::setCharacterSize </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>size</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the character size. </p>
+<p>The default size is 30.</p>
+<p>Note that if the used font is a bitmap font, it is not scalable, thus not all requested sizes will be available to use. This needs to be taken into consideration when setting the character size. If you need to display text of a certain size, make sure the corresponding bitmap font that supports that size is used.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>New character size, in pixels</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a46d1d7f1d513bb8d434e985a93ea5224" title="Get the character size.">getCharacterSize</a> </dd></dl>
+
+</div>
+</div>
+<a id="a6ce65272d6d63ed01118366e92c68132" name="a6ce65272d6d63ed01118366e92c68132"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ce65272d6d63ed01118366e92c68132">&#9670;&#160;</a></span>setColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="Config_8hpp.html#a9d22ae32bba2961ae9abc7e40f035fc7">SFML_DEPRECATED</a> void sf::Text::setColor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsf_1_1Color.html">Color</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>color</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the fill color of the text. </p>
+<p>By default, the text's fill color is opaque white. Setting the fill color to a transparent color with an outline will cause the outline to be displayed in the fill area of the text.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>New fill color of the text</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a10400757492ec7fa97454488314ca39b" title="Get the fill color of the text.">getFillColor</a></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000015">Deprecated</a></b></dt><dd>There is now fill and outline colors instead of a single global color. Use <a class="el" href="#ab7bb3babac5a6da1802b2c3e1a3e6dcc" title="Set the fill color of the text.">setFillColor()</a> or <a class="el" href="#aa19ec69c3b894e963602a6804ca68fe4" title="Set the outline color of the text.">setOutlineColor()</a> instead.</dd></dl>
+
+</div>
+</div>
+<a id="ab7bb3babac5a6da1802b2c3e1a3e6dcc" name="ab7bb3babac5a6da1802b2c3e1a3e6dcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7bb3babac5a6da1802b2c3e1a3e6dcc">&#9670;&#160;</a></span>setFillColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Text::setFillColor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsf_1_1Color.html">Color</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>color</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the fill color of the text. </p>
+<p>By default, the text's fill color is opaque white. Setting the fill color to a transparent color with an outline will cause the outline to be displayed in the fill area of the text.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>New fill color of the text</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a10400757492ec7fa97454488314ca39b" title="Get the fill color of the text.">getFillColor</a> </dd></dl>
+
+</div>
+</div>
+<a id="a2927805d1ae92d57f15034ea34756b81" name="a2927805d1ae92d57f15034ea34756b81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2927805d1ae92d57f15034ea34756b81">&#9670;&#160;</a></span>setFont()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Text::setFont </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsf_1_1Font.html">Font</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>font</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the text's font. </p>
+<p>The <em>font</em> argument refers to a font that must exist as long as the text uses it. Indeed, the text doesn't store its own copy of the font, but rather keeps a pointer to the one that you passed to this function. If the font is destroyed and the text tries to use it, the behavior is undefined.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">font</td><td>New font</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#ad947a43bddaddf54d008df600699599b" title="Get the text&#39;s font.">getFont</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa93a835ffbf3bee2098dfbbc695a7f05" name="aa93a835ffbf3bee2098dfbbc695a7f05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa93a835ffbf3bee2098dfbbc695a7f05">&#9670;&#160;</a></span>setOrigin() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Transformable::setOrigin </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>origin</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>set the local origin of the object </p>
+<p>The origin of an object defines the center point for all transformations (position, scale, rotation). The coordinates of this point must be relative to the top-left corner of the object, and ignore all transformations (position, scale, rotation). The default origin of a transformable object is (0, 0).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">origin</td><td>New origin</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a898b33eb6513161eb5c747a072364f15" title="get the local origin of the object">getOrigin</a> </dd></dl>
+
+</div>
+</div>
+<a id="a56c67bd80aae8418d13fb96c034d25ec" name="a56c67bd80aae8418d13fb96c034d25ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56c67bd80aae8418d13fb96c034d25ec">&#9670;&#160;</a></span>setOrigin() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Transformable::setOrigin </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>set the local origin of the object </p>
+<p>The origin of an object defines the center point for all transformations (position, scale, rotation). The coordinates of this point must be relative to the top-left corner of the object, and ignore all transformations (position, scale, rotation). The default origin of a transformable object is (0, 0).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>X coordinate of the new origin </td></tr>
+    <tr><td class="paramname">y</td><td>Y coordinate of the new origin</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a898b33eb6513161eb5c747a072364f15" title="get the local origin of the object">getOrigin</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa19ec69c3b894e963602a6804ca68fe4" name="aa19ec69c3b894e963602a6804ca68fe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa19ec69c3b894e963602a6804ca68fe4">&#9670;&#160;</a></span>setOutlineColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Text::setOutlineColor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsf_1_1Color.html">Color</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>color</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the outline color of the text. </p>
+<p>By default, the text's outline color is opaque black.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>New outline color of the text</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#ade9256ff9d43c9481fcf5f4003fe0141" title="Get the outline color of the text.">getOutlineColor</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab0e6be3b40124557bf53737fe6a6ce77" name="ab0e6be3b40124557bf53737fe6a6ce77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0e6be3b40124557bf53737fe6a6ce77">&#9670;&#160;</a></span>setOutlineThickness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Text::setOutlineThickness </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>thickness</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the thickness of the text's outline. </p>
+<p>By default, the outline thickness is 0.</p>
+<p>Be aware that using a negative value for the outline thickness will cause distorted rendering.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thickness</td><td>New outline thickness, in pixels</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#af6bf01c23189edf52c8b38708db6f3f6" title="Get the outline thickness of the text.">getOutlineThickness</a> </dd></dl>
+
+</div>
+</div>
+<a id="af1a42209ce2b5d3f07b00f917bcd8015" name="af1a42209ce2b5d3f07b00f917bcd8015"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1a42209ce2b5d3f07b00f917bcd8015">&#9670;&#160;</a></span>setPosition() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Transformable::setPosition </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>position</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>set the position of the object </p>
+<p>This function completely overwrites the previous position. See the move function to apply an offset based on the previous position instead. The default position of a transformable object is (0, 0).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>New position</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a86b461d6a941ad390c2ad8b6a4a20391" title="Move the object by a given offset.">move</a>, <a class="el" href="classsf_1_1Transformable.html#aea8b18e91a7bf7be589851bb9dd11241" title="get the position of the object">getPosition</a> </dd></dl>
+
+</div>
+</div>
+<a id="a4dbfb1a7c80688b0b4c477d706550208" name="a4dbfb1a7c80688b0b4c477d706550208"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dbfb1a7c80688b0b4c477d706550208">&#9670;&#160;</a></span>setPosition() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Transformable::setPosition </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>set the position of the object </p>
+<p>This function completely overwrites the previous position. See the move function to apply an offset based on the previous position instead. The default position of a transformable object is (0, 0).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>X coordinate of the new position </td></tr>
+    <tr><td class="paramname">y</td><td>Y coordinate of the new position</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a86b461d6a941ad390c2ad8b6a4a20391" title="Move the object by a given offset.">move</a>, <a class="el" href="classsf_1_1Transformable.html#aea8b18e91a7bf7be589851bb9dd11241" title="get the position of the object">getPosition</a> </dd></dl>
+
+</div>
+</div>
+<a id="a32baf2bf1a74699b03bf8c95030a38ed" name="a32baf2bf1a74699b03bf8c95030a38ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32baf2bf1a74699b03bf8c95030a38ed">&#9670;&#160;</a></span>setRotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Transformable::setRotation </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>angle</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>set the orientation of the object </p>
+<p>This function completely overwrites the previous rotation. See the rotate function to add an angle based on the previous rotation instead. The default rotation of a transformable object is 0.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angle</td><td>New rotation, in degrees</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#af8a5ffddc0d93f238fee3bf8efe1ebda" title="Rotate the object.">rotate</a>, <a class="el" href="classsf_1_1Transformable.html#aa00b5c5d4a06ac24a94dd72c56931d3a" title="get the orientation of the object">getRotation</a> </dd></dl>
+
+</div>
+</div>
+<a id="a4c48a87f1626047e448f9c1a68ff167e" name="a4c48a87f1626047e448f9c1a68ff167e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c48a87f1626047e448f9c1a68ff167e">&#9670;&#160;</a></span>setScale() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Transformable::setScale </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>factors</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>set the scale factors of the object </p>
+<p>This function completely overwrites the previous scale. See the scale function to add a factor based on the previous scale instead. The default scale of a transformable object is (1, 1).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">factors</td><td>New scale factors</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a3de0c6d8957f3cf318092f3f60656391" title="Scale the object.">scale</a>, <a class="el" href="classsf_1_1Transformable.html#a7bcae0e924213f2e89edd8926f2453af" title="get the current scale of the object">getScale</a> </dd></dl>
+
+</div>
+</div>
+<a id="aaec50b46b3f41b054763304d1e727471" name="aaec50b46b3f41b054763304d1e727471"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaec50b46b3f41b054763304d1e727471">&#9670;&#160;</a></span>setScale() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Transformable::setScale </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>factorX</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>factorY</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>set the scale factors of the object </p>
+<p>This function completely overwrites the previous scale. See the scale function to add a factor based on the previous scale instead. The default scale of a transformable object is (1, 1).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">factorX</td><td>New horizontal scale factor </td></tr>
+    <tr><td class="paramname">factorY</td><td>New vertical scale factor</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a3de0c6d8957f3cf318092f3f60656391" title="Scale the object.">scale</a>, <a class="el" href="classsf_1_1Transformable.html#a7bcae0e924213f2e89edd8926f2453af" title="get the current scale of the object">getScale</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7d3b3359f286fd9503d1ced25b7b6c33" name="a7d3b3359f286fd9503d1ced25b7b6c33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d3b3359f286fd9503d1ced25b7b6c33">&#9670;&#160;</a></span>setString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Text::setString </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsf_1_1String.html">String</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>string</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the text's string. </p>
+<p>The <em>string</em> argument is a <a class="el" href="classsf_1_1String.html" title="Utility string class that automatically handles conversions between types and encodings.">sf::String</a>, which can automatically be constructed from standard string types. So, the following calls are all valid: </p><div class="fragment"><div class="line">text.setString(<span class="stringliteral">&quot;hello&quot;</span>);</div>
+<div class="line">text.setString(L<span class="stringliteral">&quot;hello&quot;</span>);</div>
+<div class="line">text.setString(std::string(<span class="stringliteral">&quot;hello&quot;</span>));</div>
+<div class="line">text.setString(std::wstring(L<span class="stringliteral">&quot;hello&quot;</span>));</div>
+</div><!-- fragment --><p> A text's string is empty by default.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>New string</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#ab334881845307db46ccf344191aa819c" title="Get the text&#39;s string.">getString</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad791702bc2d1b6590a1719aa60635edf" name="ad791702bc2d1b6590a1719aa60635edf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad791702bc2d1b6590a1719aa60635edf">&#9670;&#160;</a></span>setStyle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Text::setStyle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacesf.html#aa746fb1ddef4410bddf198ebb27e727c">Uint32</a></td>          <td class="paramname"><span class="paramname"><em>style</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the text's style. </p>
+<p>You can pass a combination of one or more styles, for example <a class="el" href="#aa8add4aef484c6e6b20faff07452bd82af1b47f98fb1e10509ba930a596987171" title="Bold characters.">sf::Text::Bold</a> | <a class="el" href="#aa8add4aef484c6e6b20faff07452bd82aee249eb803848723c542c2062ebe69d8" title="Italic characters.">sf::Text::Italic</a>. The default style is <a class="el" href="#aa8add4aef484c6e6b20faff07452bd82a2af9ae5e1cda126570f744448e0caa32" title="Regular characters, no style.">sf::Text::Regular</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">style</td><td>New style</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a0da79b0c057f4bb51592465a205c35d7" title="Get the text&#39;s style.">getStyle</a> </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="Text_8hpp_source.html">Text.hpp</a></li>
+</ul>
+</div><!-- contents -->
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+                    Back to top
+                </button>
+            </main>
+            <footer class="md-footer">
+                <nav class="md-footer__inner md-grid" aria-label="Footer" hidden>
+                    <a href="/learn/" class="md-footer__link md-footer__link--next" aria-label="Next: Learn">
+                        <div class="md-footer__title">
+                            <span class="md-footer__direction"> Next </span>
+                            <div class="md-ellipsis">Learn</div>
+                        </div>
+                        <div class="md-footer__button md-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z" /></svg>
+                        </div>
+                    </a>
+                </nav>
+                <div class="md-footer-meta md-typeset">
+                    <div class="md-footer-meta__inner md-grid">
+                        <div class="md-copyright">
+                            <div class="md-copyright__highlight">Copyright &copy; <a href="mailto:laurent@sfml-dev.org">Laurent Gomila</a></div>
+                        </div>
+                        <div class="md-social">
+                            <a href="https://fosstodon.org/@sfml" target="_blank" rel="noopener me" title="SFML on Fosstodon" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com/sfmldev" target="_blank" rel="noopener" title="SFML on Twitter" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="https://discord.gg/nr4X7Fh" target="_blank" rel="noopener" title="SFML&#39;s Discord Server" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="md-dialog" data-md-component="dialog">
+            <div class="md-dialog__inner md-typeset"></div>
+        </div>
+        <script id="__config" type="application/json">
+            {
+                "base": ".",
+                "features": ["content.code.copy", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.prune", "navigation.path", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.suggest"],
+                "search": "/assets/javascripts/workers/search.b8dbb3d2.min.js",
+                "translations": {
+                    "clipboard.copied": "Copied to clipboard",
+                    "clipboard.copy": "Copy to clipboard",
+                    "search.result.more.one": "1 more on this page",
+                    "search.result.more.other": "# more on this page",
+                    "search.result.none": "No matching documents",
+                    "search.result.one": "1 matching document",
+                    "search.result.other": "# matching documents",
+                    "search.result.placeholder": "Type to start searching",
+                    "search.result.term.missing": "Missing",
+                    "select.version": "Select version"
+                }
+            }
+        </script>
+        <script src="/assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+    </body>
+</html>

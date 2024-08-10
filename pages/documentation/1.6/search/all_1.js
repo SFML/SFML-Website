@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['b_0',['B',['../namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81abe898b39d99d8dd4b94a53f6ab452d7e',1,'sf::Key']]],
+  ['b_1',['b',['../classsf_1_1Color.html#a6707aedd0609c8920e12df5d7abc53cb',1,'sf::Color']]],
+  ['back_2',['Back',['../namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81a6d180d15ded6ac9cf3bba436e4ebf539',1,'sf::Key']]],
+  ['backslash_3',['BackSlash',['../namespacesf_1_1Key.html#ad32ed01d3448273340bd25af5cdd9c81acf4972cd8cf5daaf8653f840bd48824a',1,'sf::Key']]],
+  ['badcommandsequence_4',['BadCommandSequence',['../classsf_1_1Ftp_1_1Response.html#af81738f06b6f571761696291276acb3bad0c7ab07f01c1f7af16a1852650d7c47',1,'sf::Ftp::Response']]],
+  ['badgateway_5',['BadGateway',['../classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8aad0cbad4cdaf448beb763e86bc1f747c',1,'sf::Http::Response']]],
+  ['badrequest_6',['BadRequest',['../classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a3f88a714cf5483ee22f9051e5a3c080a',1,'sf::Http::Response']]],
+  ['binary_7',['Binary',['../classsf_1_1Ftp.html#a1cd6b89ad23253f6d97e6d4ca4d558cba6f253b362639fb5e059dc292762a21ee',1,'sf::Ftp']]],
+  ['bind_8',['Bind',['../classsf_1_1Image.html#a0df87e9bf89fdce73f22e307388cb0e1',1,'sf::Image::Bind()'],['../classsf_1_1SocketUDP.html#a4a7e364fd39aa7338f0822d849323a5d',1,'sf::SocketUDP::Bind()']]],
+  ['bitsperpixel_9',['BitsPerPixel',['../classsf_1_1VideoMode.html#ac2aa4a809527fd9da6b70c9479d02c7a',1,'sf::VideoMode']]],
+  ['black_10',['Black',['../classsf_1_1Color.html#a77c688197b981338f0b19dc58bd2facd',1,'sf::Color']]],
+  ['blue_11',['Blue',['../classsf_1_1Color.html#ab03770d4817426b2614cfc33cf0e245c',1,'sf::Color']]],
+  ['bold_12',['Bold',['../classsf_1_1String.html#aeedf6f2453ae7b88ddf0f7427968a6d8a0f26252a684f5947bb7fbd58452cb3f0',1,'sf::String']]],
+  ['bottom_13',['Bottom',['../classsf_1_1Rect.html#ab234b311011892cfd8a3e831dec341a8',1,'sf::Rect']]],
+  ['button_14',['Button',['../structsf_1_1Event_1_1MouseButtonEvent.html#a2f7f7e1dfb8ffd744510ffa4540f3578',1,'sf::Event::MouseButtonEvent::Button'],['../structsf_1_1Event_1_1JoyButtonEvent.html#a03dee4c051e606562d74c29847029706',1,'sf::Event::JoyButtonEvent::Button'],['../namespacesf_1_1Mouse.html#a4fb128be433f9aafe66bc0c605daaa90',1,'sf::Mouse::Button']]],
+  ['buttoncount_15',['ButtonCount',['../namespacesf_1_1Mouse.html#a4fb128be433f9aafe66bc0c605daaa90a52a1d434289774240ddaa22496762402',1,'sf::Mouse::ButtonCount'],['../namespacesf_1_1Joy.html#abb37a72f42b3ef9841fcf8270d0ac881aa555e27e351d2052df5f4b7b6e6953bf',1,'sf::Joy::ButtonCount']]]
+];

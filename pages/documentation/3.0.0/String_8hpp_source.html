@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="Simple and Fast Multimedia Library" />
+        <link rel="canonical" href="https://www.sfml-dev.org/" />
+        <link rel="next" href="/learn/" />
+        <link rel="icon" href="/images/favicon.ico" />
+        <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.30" />
+        <title>Home - Simple and Fast Multimedia Library</title>
+        <link rel="stylesheet" href="/assets/stylesheets/main.3cba04c6.min.css" />
+        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback" />
+        <style>
+            :root {
+                --md-text-font: "Ubuntu";
+                --md-code-font: "Roboto Mono";
+            }
+        </style>
+        <link rel="stylesheet" href="/styles/extra.css" />
+        <script>
+            (__md_scope = new URL(".", location)),
+                (__md_hash = (e) => [...e].reduce((e, _) => (e << 5) - e + _.charCodeAt(0), 0)),
+                (__md_get = (e, _ = localStorage, t = __md_scope) => JSON.parse(_.getItem(t.pathname + "." + e))),
+                (__md_set = (e, _, t = localStorage, a = __md_scope) => {
+                    try {
+                        t.setItem(a.pathname + "." + e, JSON.stringify(_));
+                    } catch (e) {}
+                });
+        </script>
+        <link rel="stylesheet" type="text/css" href="doxygen.css" title="default" media="screen,print" />
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="dynsections.js"></script>
+        <script type="text/javascript" src="clipboard.js"></script>
+        <script type="text/javascript" src="cookie.js"></script>
+        <script type="text/javascript" src="resize.js"></script>
+        <link rel="stylesheet" type="text/css" href="search/search.css" />
+        <link rel="stylesheet" type="text/css" href="searchOverrides.css" />
+        <script type="text/javascript" src="search/searchdata.js"></script>
+        <script type="text/javascript" src="search/search.js"></script>
+        <script type="text/javascript">
+            /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+            $(document).ready(function () {
+                init_search();
+            });
+            /* @license-end */
+        </script>
+    </head>
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="indigo">
+        <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off" />
+        <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off" />
+        <label class="md-overlay" for="__drawer"></label>
+        <div data-md-component="skip">
+            <a href="#simple-and-fast-multimedia-library" class="md-skip"> Skip to content </a>
+        </div>
+        <div data-md-component="announce"></div>
+        <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+            <nav class="md-header__inner md-grid" aria-label="Header">
+                <a href="." title="Simple and Fast Multimedia Library" class="md-header__button md-logo" aria-label="Simple and Fast Multimedia Library" data-md-component="logo">
+                    <img src="/images/logo.png" alt="logo" />
+                </a>
+                <label class="md-header__button md-icon" for="__drawer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z" /></svg>
+                </label>
+                <div class="md-header__title" data-md-component="header-title">
+                    <div class="md-header__ellipsis">
+                        <div class="md-header__topic">
+                            <span class="md-ellipsis"> Simple and Fast Multimedia Library </span>
+                        </div>
+                        <div class="md-header__topic" data-md-component="header-topic">
+                            <span class="md-ellipsis"> Home </span>
+                        </div>
+                    </div>
+                </div>
+                <form class="md-header__option" data-md-component="palette">
+                    <input
+                        class="md-option"
+                        data-md-color-media="(prefers-color-scheme: light)"
+                        data-md-color-scheme="default"
+                        data-md-color-primary="light-green"
+                        data-md-color-accent="indigo"
+                        aria-label="Switch to dark mode"
+                        type="radio"
+                        name="__palette"
+                        id="__palette_0"
+                    />
+                    <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"
+                            />
+                        </svg>
+                    </label>
+                    <input
+                        class="md-option"
+                        data-md-color-media="(prefers-color-scheme: dark)"
+                        data-md-color-scheme="slate"
+                        data-md-color-primary="green"
+                        data-md-color-accent="indigo"
+                        aria-label="Switch to light mode"
+                        type="radio"
+                        name="__palette"
+                        id="__palette_1"
+                    />
+                    <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"
+                            />
+                        </svg>
+                    </label>
+                </form>
+                <script>
+                    var media,
+                        input,
+                        key,
+                        value,
+                        palette = __md_get("__palette");
+                    if (palette && palette.color) {
+                        "(prefers-color-scheme)" === palette.color.media &&
+                            ((media = matchMedia("(prefers-color-scheme: light)")),
+                            (input = document.querySelector(media.matches ? "[data-md-color-media='(prefers-color-scheme: light)']" : "[data-md-color-media='(prefers-color-scheme: dark)']")),
+                            (palette.color.media = input.getAttribute("data-md-color-media")),
+                            (palette.color.scheme = input.getAttribute("data-md-color-scheme")),
+                            (palette.color.primary = input.getAttribute("data-md-color-primary")),
+                            (palette.color.accent = input.getAttribute("data-md-color-accent")));
+                        for ([key, value] of Object.entries(palette.color)) document.body.setAttribute("data-md-color-" + key, value);
+                    }
+                </script>
+                <div class="md-header__option">
+                    <div class="md-select">
+                        <button class="md-header__button md-icon" aria-label="Select language">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"
+                                />
+                            </svg>
+                        </button>
+                        <div class="md-select__inner">
+                            <ul class="md-select__list">
+                                <li class="md-select__item">
+                                    <a href="/" hreflang="en" class="md-select__link"> English </a>
+                                </li>
+                                <li class="md-select__item">
+                                    <a href="/fr/" hreflang="fr" class="md-select__link"> Français </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <label class="md-header__button md-icon" for="__search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"
+                        />
+                    </svg>
+                </label>
+                <div class="md-search" data-md-component="search" role="dialog">
+                    <label class="md-search__overlay" for="__search"></label>
+                    <div class="md-search__inner" role="search">
+                        <form class="md-search__form" name="search">
+                            <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required />
+                            <label class="md-search__icon md-icon" for="__search">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"
+                                    />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z" /></svg>
+                            </label>
+                            <nav class="md-search__options" aria-label="Search">
+                                <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z" /></svg>
+                                </button>
+                            </nav>
+                            <div class="md-search__suggest" data-md-component="search-suggest"></div>
+                        </form>
+                        <div class="md-search__output">
+                            <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+                                <div class="md-search-result" data-md-component="search-result">
+                                    <div class="md-search-result__meta">Initializing search</div>
+                                    <ol class="md-search-result__list" role="presentation"></ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-header__source">
+                    <a href="https://github.com/SFML/SFML" title="Go to repository" class="md-source" data-md-component="source">
+                        <div class="md-source__icon md-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. -->
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                                />
+                            </svg>
+                        </div>
+                        <div class="md-source__repository">SFML</div>
+                    </a>
+                </div>
+            </nav>
+            <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+                <div class="md-grid">
+                    <ul class="md-tabs__list">
+                        <li class="md-tabs__item">
+                            <a href="/" class="md-tabs__link"> Home </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/learn/" class="md-tabs__link"> Learn </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/tutorials/2.6/" class="md-tabs__link"> Tutorials </a>
+                        </li>
+                        <li class="md-tabs__item md-tabs__item--active">
+                            <a href="/documentation" class="md-tabs__link"> Documentation </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/download/" class="md-tabs__link"> Download </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/community/" class="md-tabs__link"> Community </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/development/" class="md-tabs__link"> Development </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="md-container" data-md-component="container">
+            <main class="md-main" data-md-component="main">
+                <div class="md-main__inner md-grid">
+                    <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                        <div class="md-sidebar__scrollwrap">
+                            <div class="md-sidebar__inner">
+                                <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+                                    <label class="md-nav__title" for="__drawer">
+                                        <a href="." title="Simple and Fast Multimedia Library" class="md-nav__button md-logo" aria-label="Simple and Fast Multimedia Library" data-md-component="logo">
+                                            <img src="/images/logo.png" alt="logo" />
+                                        </a>
+                                        Simple and Fast Multimedia Library
+                                    </label>
+                                    <div class="md-nav__source">
+                                        <a href="https://github.com/SFML/SFML" title="Go to repository" class="md-source" data-md-component="source">
+                                            <div class="md-source__icon md-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. -->
+                                                    <path
+                                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                                                    />
+                                                </svg>
+                                            </div>
+                                            <div class="md-source__repository">SFML</div>
+                                        </a>
+                                    </div>
+                                    <ul class="md-nav__list" data-md-scrollfix>
+                                        <li class="md-nav__item">
+                                            <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc" />
+                                            <label class="md-nav__link" for="__toc">
+                                                <span class="md-ellipsis"> Home </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </label>
+                                            <a href="." class="md-nav__link">
+                                                <span class="md-ellipsis"> Home </span>
+                                            </a>
+                                            <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+                                                <label class="md-nav__title" for="__toc">
+                                                    <span class="md-nav__icon md-icon"></span>
+                                                    Table of contents
+                                                </label>
+                                                <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-media" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-media </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-platform" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-platform </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-language" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-language </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="learn/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Learn </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="tutorials/2.6/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Tutorials </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--active">
+                                            <a href="documentation" class="md-nav__link md-nav__link--active">
+                                                <span class="md-ellipsis"> Documentation </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="download/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Download </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="community/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Community </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="development/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Development </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                        <div class="md-sidebar__scrollwrap">
+                            <div class="md-sidebar__inner">
+                                <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+                                    <label class="md-nav__title" for="__toc">
+                                        <span class="md-nav__icon md-icon"></span>
+                                        Table of contents
+                                    </label>
+                                    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-media" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-media </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-platform" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-platform </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-language" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-language </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-content" data-md-component="content">
+                        <div class="contents">
+<!-- Generated by Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="topics.html"><span>Topics</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
+    </ul>
+  </div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c9d62fd513ce19bab3d7ef8db833e3f1.html">SFML</a></li><li class="navelem"><a class="el" href="dir_66c4f0b3361ff6a900e01a4b3c9d5eb7.html">include</a></li><li class="navelem"><a class="el" href="dir_b640c2c295eeac6b731646a7ed21830e.html">SFML</a></li><li class="navelem"><a class="el" href="dir_dd2e492ad64d241b969bca3fa8d4cd6d.html">System</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">String.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="String_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">//</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// SFML - Simple and Fast Multimedia Library</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// Copyright (C) 2007-2024 Laurent Gomila (laurent@sfml-dev.org)</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// This software is provided &#39;as-is&#39;, without any express or implied warranty.</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// In no event will the authors be held liable for any damages arising from the use of this software.</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">//</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// Permission is granted to anyone to use this software for any purpose,</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// including commercial applications, and to alter it and redistribute it freely,</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// subject to the following restrictions:</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">//</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// 1. The origin of this software must not be misrepresented;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">//    you must not claim that you wrote the original software.</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">//    If you use this software in a product, an acknowledgment</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">//    in the product documentation would be appreciated but is not required.</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">//</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// 2. Altered source versions must be plainly marked as such,</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">//    and must not be misrepresented as being the original software.</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">//</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// 3. This notice may not be removed or altered from any source distribution.</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">//</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">// Headers</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;<a class="code" href="System_2Export_8hpp.html">SFML/System/Export.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;<a class="code" href="Utf_8hpp.html">SFML/System/Utf.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;locale&gt;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;cstddef&gt;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacesf.html">sf</a></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>{</div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="};">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="structsf_1_1U8StringCharTraits.html">   47</a></span><span class="keyword">struct </span><a class="code hl_define" href="System_2Export_8hpp.html#a6476c9e422606477a4c23d92b1d79a1f">SFML_SYSTEM_API</a> <a class="code hl_struct" href="structsf_1_1U8StringCharTraits.html">U8StringCharTraits</a></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="comment">// NOLINTBEGIN(readability-identifier-naming)</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="structsf_1_1U8StringCharTraits.html#af3a10a2045ba53360c41586818913d3a">   50</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#af3a10a2045ba53360c41586818913d3a">char_type</a>  = std::uint8_t;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="structsf_1_1U8StringCharTraits.html#a918b5cef66ee179dd0789ee6402ed5f3">   51</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#a918b5cef66ee179dd0789ee6402ed5f3">int_type</a>   = std::char_traits&lt;char&gt;::int_type;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="structsf_1_1U8StringCharTraits.html#af049feb6c92a566a5cffc7637bf404aa">   52</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#af049feb6c92a566a5cffc7637bf404aa">off_type</a>   = std::char_traits&lt;char&gt;::off_type;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="structsf_1_1U8StringCharTraits.html#ae4015971eb1f32987cddbc984b2b8602">   53</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#ae4015971eb1f32987cddbc984b2b8602">pos_type</a>   = std::char_traits&lt;char&gt;::pos_type;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="structsf_1_1U8StringCharTraits.html#ab14f442631ee99fd9d581ce32913ee74">   54</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#ab14f442631ee99fd9d581ce32913ee74">state_type</a> = std::char_traits&lt;char&gt;::state_type;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="structsf_1_1U8StringCharTraits.html#a15829f93dc18be0c3ecf952cdab7e679">   56</a></span>    <span class="keyword">static</span> <span class="keywordtype">void</span>             <a class="code hl_function" href="structsf_1_1U8StringCharTraits.html#a15829f93dc18be0c3ecf952cdab7e679">assign</a>(<a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#af3a10a2045ba53360c41586818913d3a">char_type</a>&amp; c1, <a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#af3a10a2045ba53360c41586818913d3a">char_type</a> c2) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="structsf_1_1U8StringCharTraits.html#af21d7752dc5554fe4dcd5610b1a97fde">   57</a></span>    <span class="keyword">static</span> <a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#af3a10a2045ba53360c41586818913d3a">char_type</a>*       <a class="code hl_function" href="structsf_1_1U8StringCharTraits.html#af21d7752dc5554fe4dcd5610b1a97fde">assign</a>(<a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#af3a10a2045ba53360c41586818913d3a">char_type</a>* s, std::size_t n, <a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#af3a10a2045ba53360c41586818913d3a">char_type</a> c);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="structsf_1_1U8StringCharTraits.html#a45d48d9e1cd178eb81f606d2c4fce937">   58</a></span>    <span class="keyword">static</span> <span class="keywordtype">bool</span>             <a class="code hl_function" href="structsf_1_1U8StringCharTraits.html#a45d48d9e1cd178eb81f606d2c4fce937">eq</a>(<a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#af3a10a2045ba53360c41586818913d3a">char_type</a> c1, <a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#af3a10a2045ba53360c41586818913d3a">char_type</a> c2) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="structsf_1_1U8StringCharTraits.html#acf0c71d1a4041c793ac18647bbde9093">   59</a></span>    <span class="keyword">static</span> <span class="keywordtype">bool</span>             <a class="code hl_function" href="structsf_1_1U8StringCharTraits.html#acf0c71d1a4041c793ac18647bbde9093">lt</a>(<a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#af3a10a2045ba53360c41586818913d3a">char_type</a> c1, <a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#af3a10a2045ba53360c41586818913d3a">char_type</a> c2) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="structsf_1_1U8StringCharTraits.html#a80e5b4da555226d1c6aa080ff8a84522">   60</a></span>    <span class="keyword">static</span> <a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#af3a10a2045ba53360c41586818913d3a">char_type</a>*       <a class="code hl_function" href="structsf_1_1U8StringCharTraits.html#a80e5b4da555226d1c6aa080ff8a84522">move</a>(<a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#af3a10a2045ba53360c41586818913d3a">char_type</a>* s1, <span class="keyword">const</span> <a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#af3a10a2045ba53360c41586818913d3a">char_type</a>* s2, std::size_t n);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="structsf_1_1U8StringCharTraits.html#a1bbfb4709559c15537d285699ea433cb">   61</a></span>    <span class="keyword">static</span> <a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#af3a10a2045ba53360c41586818913d3a">char_type</a>*       <a class="code hl_function" href="structsf_1_1U8StringCharTraits.html#a1bbfb4709559c15537d285699ea433cb">copy</a>(<a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#af3a10a2045ba53360c41586818913d3a">char_type</a>* s1, <span class="keyword">const</span> <a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#af3a10a2045ba53360c41586818913d3a">char_type</a>* s2, std::size_t n);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="structsf_1_1U8StringCharTraits.html#a97bd849f37b7bd3ce18a58094bcd8e7e">   62</a></span>    <span class="keyword">static</span> <span class="keywordtype">int</span>              <a class="code hl_function" href="structsf_1_1U8StringCharTraits.html#a97bd849f37b7bd3ce18a58094bcd8e7e">compare</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#af3a10a2045ba53360c41586818913d3a">char_type</a>* s1, <span class="keyword">const</span> <a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#af3a10a2045ba53360c41586818913d3a">char_type</a>* s2, std::size_t n);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="structsf_1_1U8StringCharTraits.html#aa25878759942a79c150b8d6826356092">   63</a></span>    <span class="keyword">static</span> std::size_t      <a class="code hl_function" href="structsf_1_1U8StringCharTraits.html#aa25878759942a79c150b8d6826356092">length</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#af3a10a2045ba53360c41586818913d3a">char_type</a>* s);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="structsf_1_1U8StringCharTraits.html#aee44f3551fe9645745562bfbe0e28eec">   64</a></span>    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#af3a10a2045ba53360c41586818913d3a">char_type</a>* <a class="code hl_function" href="structsf_1_1U8StringCharTraits.html#aee44f3551fe9645745562bfbe0e28eec">find</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#af3a10a2045ba53360c41586818913d3a">char_type</a>* s, std::size_t n, <span class="keyword">const</span> <a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#af3a10a2045ba53360c41586818913d3a">char_type</a>&amp; c);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="structsf_1_1U8StringCharTraits.html#aef0b658a4bdcba6c621400bae8e894ac">   65</a></span>    <span class="keyword">static</span> <a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#af3a10a2045ba53360c41586818913d3a">char_type</a>        <a class="code hl_function" href="structsf_1_1U8StringCharTraits.html#aef0b658a4bdcba6c621400bae8e894ac">to_char_type</a>(<a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#a918b5cef66ee179dd0789ee6402ed5f3">int_type</a> i) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="structsf_1_1U8StringCharTraits.html#a5f9d3c31d649475b73723b86b71931fc">   66</a></span>    <span class="keyword">static</span> <a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#a918b5cef66ee179dd0789ee6402ed5f3">int_type</a>         <a class="code hl_function" href="structsf_1_1U8StringCharTraits.html#a5f9d3c31d649475b73723b86b71931fc">to_int_type</a>(<a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#af3a10a2045ba53360c41586818913d3a">char_type</a> c) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="structsf_1_1U8StringCharTraits.html#a148ae695341e82cba9e8cef3683cd34a">   67</a></span>    <span class="keyword">static</span> <span class="keywordtype">bool</span>             <a class="code hl_function" href="structsf_1_1U8StringCharTraits.html#a148ae695341e82cba9e8cef3683cd34a">eq_int_type</a>(<a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#a918b5cef66ee179dd0789ee6402ed5f3">int_type</a> i1, <a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#a918b5cef66ee179dd0789ee6402ed5f3">int_type</a> i2) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="structsf_1_1U8StringCharTraits.html#a612242cd2cee44b114dc05f1759f2919">   68</a></span>    <span class="keyword">static</span> <a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#a918b5cef66ee179dd0789ee6402ed5f3">int_type</a>         <a class="code hl_function" href="structsf_1_1U8StringCharTraits.html#a612242cd2cee44b114dc05f1759f2919">eof</a>() noexcept;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="structsf_1_1U8StringCharTraits.html#add0fa81b45f96d40f13ae44df39cfdca">   69</a></span>    static <a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#a918b5cef66ee179dd0789ee6402ed5f3">int_type</a>         not_eof(<a class="code hl_typedef" href="structsf_1_1U8StringCharTraits.html#a918b5cef66ee179dd0789ee6402ed5f3">int_type</a> i) noexcept;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">// NOLINTEND(readability-identifier-naming)</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>};</div>
+</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="namespacesf.html#a407496cc99eeb9bf75c2b4d0848d3fc7">   81</a></span>using <a class="code hl_typedef" href="namespacesf.html#a407496cc99eeb9bf75c2b4d0848d3fc7">U8String</a> = std::basic_string&lt;std::uint8_t, <a class="code hl_struct" href="structsf_1_1U8StringCharTraits.html">U8StringCharTraits</a>&gt;;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="foldopen" id="foldopen00088" data-start="{" data-end="};">
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="classsf_1_1String.html">   88</a></span>class <a class="code hl_define" href="System_2Export_8hpp.html#a6476c9e422606477a4c23d92b1d79a1f">SFML_SYSTEM_API</a> <a class="code hl_class" href="classsf_1_1String.html">String</a></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>{</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="comment">// Types</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#aea5ef84201f199e64a00f19d02a38c7a">   94</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classsf_1_1String.html#aea5ef84201f199e64a00f19d02a38c7a">Iterator</a>      = std::u32string::iterator;       </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#ac59fdada9f3d871d45eb1b48e488dd41">   95</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classsf_1_1String.html#ac59fdada9f3d871d45eb1b48e488dd41">ConstIterator</a> = std::u32string::const_iterator; </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="comment">// Static member data</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="comment">// NOLINTBEGIN(readability-identifier-naming)</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#abaadecaf12a6b41c54d725c75fd28527">  102</a></span>    <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">const</span> std::size_t InvalidPos{std::u32string::npos};</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="comment">// NOLINTEND(readability-identifier-naming)</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#a15f73445dc4c9ba203e090daec352434">  111</a></span>    <a class="code hl_function" href="classsf_1_1String.html#a15f73445dc4c9ba203e090daec352434">String</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#a49df0509c95eec3e715464c4a9e8f08b">  123</a></span>    <a class="code hl_function" href="classsf_1_1String.html#a49df0509c95eec3e715464c4a9e8f08b">String</a>(<span class="keywordtype">char</span> ansiChar, <span class="keyword">const</span> std::locale&amp; locale = {});</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#aefaa202d2aa5ff85b4f75a5983367e86">  131</a></span>    <a class="code hl_function" href="classsf_1_1String.html#aefaa202d2aa5ff85b4f75a5983367e86">String</a>(<span class="keywordtype">wchar_t</span> wideChar);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#aafbfb927c8f747e63736ec16cd6762cc">  139</a></span>    <a class="code hl_function" href="classsf_1_1String.html#aafbfb927c8f747e63736ec16cd6762cc">String</a>(<span class="keywordtype">char32_t</span> utf32Char);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#a80dfeec3f7a585d386fe1fc364f385af">  151</a></span>    <a class="code hl_function" href="classsf_1_1String.html#a80dfeec3f7a585d386fe1fc364f385af">String</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* ansiString, <span class="keyword">const</span> std::locale&amp; locale = {});</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#a10cd2998619996c033499751b80f2505">  163</a></span>    <a class="code hl_function" href="classsf_1_1String.html#a10cd2998619996c033499751b80f2505">String</a>(<span class="keyword">const</span> std::string&amp; ansiString, <span class="keyword">const</span> std::locale&amp; locale = {});</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#a5742d0a9b0c754f711820c2b5c40fa55">  171</a></span>    <a class="code hl_function" href="classsf_1_1String.html#a5742d0a9b0c754f711820c2b5c40fa55">String</a>(<span class="keyword">const</span> <span class="keywordtype">wchar_t</span>* wideString);</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#a5e38151340af4f9a5f74ad24c0664074">  179</a></span>    <a class="code hl_function" href="classsf_1_1String.html#a5e38151340af4f9a5f74ad24c0664074">String</a>(<span class="keyword">const</span> std::wstring&amp; wideString);</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#acd4661f257ca19be320d83beccf4c706">  187</a></span>    <a class="code hl_function" href="classsf_1_1String.html#acd4661f257ca19be320d83beccf4c706">String</a>(<span class="keyword">const</span> <span class="keywordtype">char32_t</span>* utf32String);</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#a38d69200909ad15a74ad6ef866db917a">  195</a></span>    <a class="code hl_function" href="classsf_1_1String.html#a38d69200909ad15a74ad6ef866db917a">String</a>(std::u32string utf32String);</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#aa7beb7ae5b26e63dcbbfa390e27a9e4b">  209</a></span>    [[nodiscard]] <span class="keyword">static</span> <a class="code hl_class" href="classsf_1_1String.html">String</a> <a class="code hl_function" href="classsf_1_1String.html#aa7beb7ae5b26e63dcbbfa390e27a9e4b">fromUtf8</a>(T begin, T end);</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#a81f70eecad0000a4f2e4d66f97b80300">  223</a></span>    [[nodiscard]] <span class="keyword">static</span> <a class="code hl_class" href="classsf_1_1String.html">String</a> <a class="code hl_function" href="classsf_1_1String.html#a81f70eecad0000a4f2e4d66f97b80300">fromUtf16</a>(T begin, T end);</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#ab023a4900dce37ee71ab9e29b30a23cb">  241</a></span>    [[nodiscard]] <span class="keyword">static</span> <a class="code hl_class" href="classsf_1_1String.html">String</a> <a class="code hl_function" href="classsf_1_1String.html#ab023a4900dce37ee71ab9e29b30a23cb">fromUtf32</a>(T begin, T end);</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#a884816a0f688cfd48f9324c9741dc257">  258</a></span>    <span class="keyword">operator</span> std::string() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#a6bd1444bebaca9bbf01ba203061f5076">  273</a></span>    <span class="keyword">operator</span> std::wstring() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#a12d6659486d24cf323b4cb70533e5d38">  290</a></span>    [[nodiscard]] std::string <a class="code hl_function" href="classsf_1_1String.html#a12d6659486d24cf323b4cb70533e5d38">toAnsiString</a>(<span class="keyword">const</span> std::locale&amp; locale = {}) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#a9d81aa3103e7e2062bd85d912a5aecf1">  303</a></span>    [[nodiscard]] std::wstring <a class="code hl_function" href="classsf_1_1String.html#a9d81aa3103e7e2062bd85d912a5aecf1">toWideString</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span> </div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#a2143c53e099dcc167e97ea7deeecff05">  313</a></span>    [[nodiscard]] <a class="code hl_typedef" href="namespacesf.html#a407496cc99eeb9bf75c2b4d0848d3fc7">sf::U8String</a> <a class="code hl_function" href="classsf_1_1String.html#a2143c53e099dcc167e97ea7deeecff05">toUtf8</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span> </div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#ab285f398a27d65fa60e116da99f6a39e">  323</a></span>    [[nodiscard]] std::u16string <a class="code hl_function" href="classsf_1_1String.html#ab285f398a27d65fa60e116da99f6a39e">toUtf16</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span> </div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#a5c2406161cf358a357ae95db25bddad8">  336</a></span>    [[nodiscard]] std::u32string <a class="code hl_function" href="classsf_1_1String.html#a5c2406161cf358a357ae95db25bddad8">toUtf32</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span> </div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#afdae61e813b2951a6e39015e34a143f7">  346</a></span>    <a class="code hl_class" href="classsf_1_1String.html">String</a>&amp; <a class="code hl_function" href="classsf_1_1String.html#afdae61e813b2951a6e39015e34a143f7">operator+=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classsf_1_1String.html">String</a>&amp; right);</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#a66b67d7f21d642c65c9b4e48e88e3e93">  359</a></span>    [[nodiscard]] <span class="keywordtype">char32_t</span> <a class="code hl_function" href="classsf_1_1String.html#a66b67d7f21d642c65c9b4e48e88e3e93">operator[]</a>(std::size_t index) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span> </div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#ac509d36dd836c8499a2813299dea865f">  372</a></span>    [[nodiscard]] <span class="keywordtype">char32_t</span>&amp; <a class="code hl_function" href="classsf_1_1String.html#ac509d36dd836c8499a2813299dea865f">operator[]</a>(std::size_t index);</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span> </div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#a391c1b4950cbf3d3f8040cea73af2969">  382</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classsf_1_1String.html#a391c1b4950cbf3d3f8040cea73af2969">clear</a>();</div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span> </div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#ae7aff54e178f5d3e399953adff5cad20">  392</a></span>    [[nodiscard]] std::size_t <a class="code hl_function" href="classsf_1_1String.html#ae7aff54e178f5d3e399953adff5cad20">getSize</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span> </div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#a2ba26cb6945d2bbb210b822f222aa7f6">  402</a></span>    [[nodiscard]] <span class="keywordtype">bool</span> <a class="code hl_function" href="classsf_1_1String.html#a2ba26cb6945d2bbb210b822f222aa7f6">isEmpty</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span> </div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#aaa78a0a46b3fbe200a4ccdedc326eb93">  414</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classsf_1_1String.html#aaa78a0a46b3fbe200a4ccdedc326eb93">erase</a>(std::size_t position, std::size_t count = 1);</div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span> </div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#ad0b1455deabf07af13ee79812e05fa02">  426</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classsf_1_1String.html#ad0b1455deabf07af13ee79812e05fa02">insert</a>(std::size_t position, <span class="keyword">const</span> <a class="code hl_class" href="classsf_1_1String.html">String</a>&amp; str);</div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span> </div>
+<div class="line"><a id="l00440" name="l00440"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#aa189ec8656854106ab8d2e935fd9cbcc">  440</a></span>    [[nodiscard]] std::size_t <a class="code hl_function" href="classsf_1_1String.html#aa189ec8656854106ab8d2e935fd9cbcc">find</a>(<span class="keyword">const</span> <a class="code hl_class" href="classsf_1_1String.html">String</a>&amp; str, std::size_t start = 0) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span> </div>
+<div class="line"><a id="l00454" name="l00454"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#ad460e628c287b0fa88deba2eb0b6744b">  454</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classsf_1_1String.html#ad460e628c287b0fa88deba2eb0b6744b">replace</a>(std::size_t position, std::size_t length, <span class="keyword">const</span> <a class="code hl_class" href="classsf_1_1String.html">String</a>&amp; replaceWith);</div>
+<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span> </div>
+<div class="line"><a id="l00466" name="l00466"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#a82bbfee2bf23c641e5361ad505c07921">  466</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classsf_1_1String.html#a82bbfee2bf23c641e5361ad505c07921">replace</a>(<span class="keyword">const</span> <a class="code hl_class" href="classsf_1_1String.html">String</a>&amp; searchFor, <span class="keyword">const</span> <a class="code hl_class" href="classsf_1_1String.html">String</a>&amp; replaceWith);</div>
+<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span> </div>
+<div class="line"><a id="l00483" name="l00483"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#a492645e00032455e6d92ff0e992654ce">  483</a></span>    [[nodiscard]] <a class="code hl_class" href="classsf_1_1String.html">String</a> <a class="code hl_function" href="classsf_1_1String.html#a492645e00032455e6d92ff0e992654ce">substring</a>(std::size_t position, std::size_t length = InvalidPos) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00484" name="l00484"></a><span class="lineno">  484</span> </div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#a0f6c1b6979e822a52ee5d150f1e8d4c0">  496</a></span>    [[nodiscard]] <span class="keyword">const</span> <span class="keywordtype">char32_t</span>* <a class="code hl_function" href="classsf_1_1String.html#a0f6c1b6979e822a52ee5d150f1e8d4c0">getData</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span> </div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#a8ec30ddc08e3a6bd11c99aed782f6dfe">  506</a></span>    [[nodiscard]] <a class="code hl_typedef" href="classsf_1_1String.html#aea5ef84201f199e64a00f19d02a38c7a">Iterator</a> <a class="code hl_function" href="classsf_1_1String.html#a8ec30ddc08e3a6bd11c99aed782f6dfe">begin</a>();</div>
+<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span> </div>
+<div class="line"><a id="l00516" name="l00516"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#a0e4755d6b4d51de7c3dc2e984b79f95d">  516</a></span>    [[nodiscard]] <a class="code hl_typedef" href="classsf_1_1String.html#ac59fdada9f3d871d45eb1b48e488dd41">ConstIterator</a> <a class="code hl_function" href="classsf_1_1String.html#a0e4755d6b4d51de7c3dc2e984b79f95d">begin</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span> </div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#ac823012f39cb6f61100418876e99d53b">  530</a></span>    [[nodiscard]] <a class="code hl_typedef" href="classsf_1_1String.html#aea5ef84201f199e64a00f19d02a38c7a">Iterator</a> <a class="code hl_function" href="classsf_1_1String.html#ac823012f39cb6f61100418876e99d53b">end</a>();</div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span> </div>
+<div class="line"><a id="l00544" name="l00544"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#af1ab4c82ff2bdfb6903b4b1bb78a8e5c">  544</a></span>    [[nodiscard]] <a class="code hl_typedef" href="classsf_1_1String.html#ac59fdada9f3d871d45eb1b48e488dd41">ConstIterator</a> <a class="code hl_function" href="classsf_1_1String.html#af1ab4c82ff2bdfb6903b4b1bb78a8e5c">end</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span> </div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00547" name="l00547"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#a483931724196c580552b68751fb4d837">  547</a></span>    <span class="keyword">friend</span> <a class="code hl_define" href="System_2Export_8hpp.html#a6476c9e422606477a4c23d92b1d79a1f">SFML_SYSTEM_API</a> <span class="keywordtype">bool</span> <a class="code hl_friend" href="classsf_1_1String.html#a483931724196c580552b68751fb4d837">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="classsf_1_1String.html">String</a>&amp; left, <span class="keyword">const</span> <a class="code hl_class" href="classsf_1_1String.html">String</a>&amp; right);</div>
+<div class="line"><a id="l00548" name="l00548"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#a5158a142e0966685ec7fb4e147b24ef0">  548</a></span>    <span class="keyword">friend</span> <a class="code hl_define" href="System_2Export_8hpp.html#a6476c9e422606477a4c23d92b1d79a1f">SFML_SYSTEM_API</a> <span class="keywordtype">bool</span> <a class="code hl_friend" href="classsf_1_1String.html#a5158a142e0966685ec7fb4e147b24ef0">operator&lt;</a>(<span class="keyword">const</span> <a class="code hl_class" href="classsf_1_1String.html">String</a>&amp; left, <span class="keyword">const</span> <a class="code hl_class" href="classsf_1_1String.html">String</a>&amp; right);</div>
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span> </div>
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>    <span class="comment">// Member data</span></div>
+<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>    std::u32string m_string; </div>
+<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>};</div>
+</div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span> </div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#a483931724196c580552b68751fb4d837">  566</a></span>[[nodiscard]] <a class="code hl_define" href="System_2Export_8hpp.html#a6476c9e422606477a4c23d92b1d79a1f">SFML_SYSTEM_API</a> <span class="keywordtype">bool</span> <a class="code hl_function" href="classsf_1_1String.html#a483931724196c580552b68751fb4d837">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="classsf_1_1String.html">String</a>&amp; left, <span class="keyword">const</span> <a class="code hl_class" href="classsf_1_1String.html">String</a>&amp; right);</div>
+<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span> </div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#a3bfb9217788a9978499b8d5696bb0ef2">  578</a></span>[[nodiscard]] <a class="code hl_define" href="System_2Export_8hpp.html#a6476c9e422606477a4c23d92b1d79a1f">SFML_SYSTEM_API</a> <span class="keywordtype">bool</span> <a class="code hl_function" href="classsf_1_1String.html#a3bfb9217788a9978499b8d5696bb0ef2">operator!=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classsf_1_1String.html">String</a>&amp; left, <span class="keyword">const</span> <a class="code hl_class" href="classsf_1_1String.html">String</a>&amp; right);</div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span> </div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#a5158a142e0966685ec7fb4e147b24ef0">  590</a></span>[[nodiscard]] <a class="code hl_define" href="System_2Export_8hpp.html#a6476c9e422606477a4c23d92b1d79a1f">SFML_SYSTEM_API</a> <span class="keywordtype">bool</span> <a class="code hl_function" href="classsf_1_1String.html#a5158a142e0966685ec7fb4e147b24ef0">operator&lt;</a>(<span class="keyword">const</span> <a class="code hl_class" href="classsf_1_1String.html">String</a>&amp; left, <span class="keyword">const</span> <a class="code hl_class" href="classsf_1_1String.html">String</a>&amp; right);</div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span> </div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#ac96278a8cbe282632b11f0c8c007df0c">  602</a></span>[[nodiscard]] <a class="code hl_define" href="System_2Export_8hpp.html#a6476c9e422606477a4c23d92b1d79a1f">SFML_SYSTEM_API</a> <span class="keywordtype">bool</span> <a class="code hl_function" href="classsf_1_1String.html#ac96278a8cbe282632b11f0c8c007df0c">operator&gt;</a>(<span class="keyword">const</span> <a class="code hl_class" href="classsf_1_1String.html">String</a>&amp; left, <span class="keyword">const</span> <a class="code hl_class" href="classsf_1_1String.html">String</a>&amp; right);</div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span> </div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#ac1c1bb5dcf02aad3b2c0a1bf74a11cc9">  614</a></span>[[nodiscard]] <a class="code hl_define" href="System_2Export_8hpp.html#a6476c9e422606477a4c23d92b1d79a1f">SFML_SYSTEM_API</a> <span class="keywordtype">bool</span> <a class="code hl_function" href="classsf_1_1String.html#ac1c1bb5dcf02aad3b2c0a1bf74a11cc9">operator&lt;=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classsf_1_1String.html">String</a>&amp; left, <span class="keyword">const</span> <a class="code hl_class" href="classsf_1_1String.html">String</a>&amp; right);</div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span> </div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#a112689eec28e0ca9489e8c4ec6a34493">  626</a></span>[[nodiscard]] <a class="code hl_define" href="System_2Export_8hpp.html#a6476c9e422606477a4c23d92b1d79a1f">SFML_SYSTEM_API</a> <span class="keywordtype">bool</span> <a class="code hl_function" href="classsf_1_1String.html#a112689eec28e0ca9489e8c4ec6a34493">operator&gt;=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classsf_1_1String.html">String</a>&amp; left, <span class="keyword">const</span> <a class="code hl_class" href="classsf_1_1String.html">String</a>&amp; right);</div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span> </div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno"><a class="line" href="classsf_1_1String.html#af140f992b7698cf1448677c2c8e11bf1">  638</a></span>[[nodiscard]] <a class="code hl_define" href="System_2Export_8hpp.html#a6476c9e422606477a4c23d92b1d79a1f">SFML_SYSTEM_API</a> <a class="code hl_class" href="classsf_1_1String.html">String</a> <a class="code hl_function" href="classsf_1_1String.html#af140f992b7698cf1448677c2c8e11bf1">operator+</a>(<span class="keyword">const</span> <a class="code hl_class" href="classsf_1_1String.html">String</a>&amp; left, <span class="keyword">const</span> <a class="code hl_class" href="classsf_1_1String.html">String</a>&amp; right);</div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span> </div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>} <span class="comment">// namespace sf</span></div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span> </div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span><span class="preprocessor">#include &lt;SFML/System/String.inl&gt;</span></div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span> </div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span> </div>
+<div class="ttc" id="aSystem_2Export_8hpp_html"><div class="ttname"><a href="System_2Export_8hpp.html">Export.hpp</a></div></div>
+<div class="ttc" id="aSystem_2Export_8hpp_html_a6476c9e422606477a4c23d92b1d79a1f"><div class="ttname"><a href="System_2Export_8hpp.html#a6476c9e422606477a4c23d92b1d79a1f">SFML_SYSTEM_API</a></div><div class="ttdeci">#define SFML_SYSTEM_API</div><div class="ttdef"><b>Definition</b> <a href="System_2Export_8hpp_source.html#l00042">System/Export.hpp:42</a></div></div>
+<div class="ttc" id="aUtf_8hpp_html"><div class="ttname"><a href="Utf_8hpp.html">Utf.hpp</a></div></div>
+<div class="ttc" id="aclasssf_1_1String_html"><div class="ttname"><a href="classsf_1_1String.html">sf::String</a></div><div class="ttdoc">Utility string class that automatically handles conversions between types and encodings.</div><div class="ttdef"><b>Definition</b> <a href="#l00088">String.hpp:89</a></div></div>
+<div class="ttc" id="aclasssf_1_1String_html_a0e4755d6b4d51de7c3dc2e984b79f95d"><div class="ttname"><a href="classsf_1_1String.html#a0e4755d6b4d51de7c3dc2e984b79f95d">sf::String::begin</a></div><div class="ttdeci">ConstIterator begin() const</div><div class="ttdoc">Return an iterator to the beginning of the string.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_a0f6c1b6979e822a52ee5d150f1e8d4c0"><div class="ttname"><a href="classsf_1_1String.html#a0f6c1b6979e822a52ee5d150f1e8d4c0">sf::String::getData</a></div><div class="ttdeci">const char32_t * getData() const</div><div class="ttdoc">Get a pointer to the C-style array of characters.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_a10cd2998619996c033499751b80f2505"><div class="ttname"><a href="classsf_1_1String.html#a10cd2998619996c033499751b80f2505">sf::String::String</a></div><div class="ttdeci">String(const std::string &amp;ansiString, const std::locale &amp;locale={})</div><div class="ttdoc">Construct from an ANSI string and a locale.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_a112689eec28e0ca9489e8c4ec6a34493"><div class="ttname"><a href="classsf_1_1String.html#a112689eec28e0ca9489e8c4ec6a34493">sf::String::operator&gt;=</a></div><div class="ttdeci">bool operator&gt;=(const String &amp;left, const String &amp;right)</div><div class="ttdoc">Overload of &gt;= operator to compare two UTF-32 strings.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_a12d6659486d24cf323b4cb70533e5d38"><div class="ttname"><a href="classsf_1_1String.html#a12d6659486d24cf323b4cb70533e5d38">sf::String::toAnsiString</a></div><div class="ttdeci">std::string toAnsiString(const std::locale &amp;locale={}) const</div><div class="ttdoc">Convert the Unicode string to an ANSI string.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_a15f73445dc4c9ba203e090daec352434"><div class="ttname"><a href="classsf_1_1String.html#a15f73445dc4c9ba203e090daec352434">sf::String::String</a></div><div class="ttdeci">String()=default</div><div class="ttdoc">Default constructor.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_a2143c53e099dcc167e97ea7deeecff05"><div class="ttname"><a href="classsf_1_1String.html#a2143c53e099dcc167e97ea7deeecff05">sf::String::toUtf8</a></div><div class="ttdeci">sf::U8String toUtf8() const</div><div class="ttdoc">Convert the Unicode string to a UTF-8 string.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_a2ba26cb6945d2bbb210b822f222aa7f6"><div class="ttname"><a href="classsf_1_1String.html#a2ba26cb6945d2bbb210b822f222aa7f6">sf::String::isEmpty</a></div><div class="ttdeci">bool isEmpty() const</div><div class="ttdoc">Check whether the string is empty or not.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_a38d69200909ad15a74ad6ef866db917a"><div class="ttname"><a href="classsf_1_1String.html#a38d69200909ad15a74ad6ef866db917a">sf::String::String</a></div><div class="ttdeci">String(std::u32string utf32String)</div><div class="ttdoc">Construct from an UTF-32 string.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_a391c1b4950cbf3d3f8040cea73af2969"><div class="ttname"><a href="classsf_1_1String.html#a391c1b4950cbf3d3f8040cea73af2969">sf::String::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Clear the string.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_a3bfb9217788a9978499b8d5696bb0ef2"><div class="ttname"><a href="classsf_1_1String.html#a3bfb9217788a9978499b8d5696bb0ef2">sf::String::operator!=</a></div><div class="ttdeci">bool operator!=(const String &amp;left, const String &amp;right)</div><div class="ttdoc">Overload of != operator to compare two UTF-32 strings.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_a483931724196c580552b68751fb4d837"><div class="ttname"><a href="classsf_1_1String.html#a483931724196c580552b68751fb4d837">sf::String::operator==</a></div><div class="ttdeci">friend bool operator==(const String &amp;left, const String &amp;right)</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_a492645e00032455e6d92ff0e992654ce"><div class="ttname"><a href="classsf_1_1String.html#a492645e00032455e6d92ff0e992654ce">sf::String::substring</a></div><div class="ttdeci">String substring(std::size_t position, std::size_t length=InvalidPos) const</div><div class="ttdoc">Return a part of the string.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_a49df0509c95eec3e715464c4a9e8f08b"><div class="ttname"><a href="classsf_1_1String.html#a49df0509c95eec3e715464c4a9e8f08b">sf::String::String</a></div><div class="ttdeci">String(char ansiChar, const std::locale &amp;locale={})</div><div class="ttdoc">Construct from a single ANSI character and a locale.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_a5158a142e0966685ec7fb4e147b24ef0"><div class="ttname"><a href="classsf_1_1String.html#a5158a142e0966685ec7fb4e147b24ef0">sf::String::operator&lt;</a></div><div class="ttdeci">friend bool operator&lt;(const String &amp;left, const String &amp;right)</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_a5742d0a9b0c754f711820c2b5c40fa55"><div class="ttname"><a href="classsf_1_1String.html#a5742d0a9b0c754f711820c2b5c40fa55">sf::String::String</a></div><div class="ttdeci">String(const wchar_t *wideString)</div><div class="ttdoc">Construct from null-terminated C-style wide string.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_a5c2406161cf358a357ae95db25bddad8"><div class="ttname"><a href="classsf_1_1String.html#a5c2406161cf358a357ae95db25bddad8">sf::String::toUtf32</a></div><div class="ttdeci">std::u32string toUtf32() const</div><div class="ttdoc">Convert the Unicode string to a UTF-32 string.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_a5e38151340af4f9a5f74ad24c0664074"><div class="ttname"><a href="classsf_1_1String.html#a5e38151340af4f9a5f74ad24c0664074">sf::String::String</a></div><div class="ttdeci">String(const std::wstring &amp;wideString)</div><div class="ttdoc">Construct from a wide string.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_a66b67d7f21d642c65c9b4e48e88e3e93"><div class="ttname"><a href="classsf_1_1String.html#a66b67d7f21d642c65c9b4e48e88e3e93">sf::String::operator[]</a></div><div class="ttdeci">char32_t operator[](std::size_t index) const</div><div class="ttdoc">Overload of [] operator to access a character by its position.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_a80dfeec3f7a585d386fe1fc364f385af"><div class="ttname"><a href="classsf_1_1String.html#a80dfeec3f7a585d386fe1fc364f385af">sf::String::String</a></div><div class="ttdeci">String(const char *ansiString, const std::locale &amp;locale={})</div><div class="ttdoc">Construct from a null-terminated C-style ANSI string and a locale.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_a81f70eecad0000a4f2e4d66f97b80300"><div class="ttname"><a href="classsf_1_1String.html#a81f70eecad0000a4f2e4d66f97b80300">sf::String::fromUtf16</a></div><div class="ttdeci">static String fromUtf16(T begin, T end)</div><div class="ttdoc">Create a new sf::String from a UTF-16 encoded string.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_a82bbfee2bf23c641e5361ad505c07921"><div class="ttname"><a href="classsf_1_1String.html#a82bbfee2bf23c641e5361ad505c07921">sf::String::replace</a></div><div class="ttdeci">void replace(const String &amp;searchFor, const String &amp;replaceWith)</div><div class="ttdoc">Replace all occurrences of a substring with a replacement string.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_a8ec30ddc08e3a6bd11c99aed782f6dfe"><div class="ttname"><a href="classsf_1_1String.html#a8ec30ddc08e3a6bd11c99aed782f6dfe">sf::String::begin</a></div><div class="ttdeci">Iterator begin()</div><div class="ttdoc">Return an iterator to the beginning of the string.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_a9d81aa3103e7e2062bd85d912a5aecf1"><div class="ttname"><a href="classsf_1_1String.html#a9d81aa3103e7e2062bd85d912a5aecf1">sf::String::toWideString</a></div><div class="ttdeci">std::wstring toWideString() const</div><div class="ttdoc">Convert the Unicode string to a wide string.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_aa189ec8656854106ab8d2e935fd9cbcc"><div class="ttname"><a href="classsf_1_1String.html#aa189ec8656854106ab8d2e935fd9cbcc">sf::String::find</a></div><div class="ttdeci">std::size_t find(const String &amp;str, std::size_t start=0) const</div><div class="ttdoc">Find a sequence of one or more characters in the string.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_aa7beb7ae5b26e63dcbbfa390e27a9e4b"><div class="ttname"><a href="classsf_1_1String.html#aa7beb7ae5b26e63dcbbfa390e27a9e4b">sf::String::fromUtf8</a></div><div class="ttdeci">static String fromUtf8(T begin, T end)</div><div class="ttdoc">Create a new sf::String from a UTF-8 encoded string.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_aaa78a0a46b3fbe200a4ccdedc326eb93"><div class="ttname"><a href="classsf_1_1String.html#aaa78a0a46b3fbe200a4ccdedc326eb93">sf::String::erase</a></div><div class="ttdeci">void erase(std::size_t position, std::size_t count=1)</div><div class="ttdoc">Erase one or more characters from the string.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_aafbfb927c8f747e63736ec16cd6762cc"><div class="ttname"><a href="classsf_1_1String.html#aafbfb927c8f747e63736ec16cd6762cc">sf::String::String</a></div><div class="ttdeci">String(char32_t utf32Char)</div><div class="ttdoc">Construct from single UTF-32 character.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_ab023a4900dce37ee71ab9e29b30a23cb"><div class="ttname"><a href="classsf_1_1String.html#ab023a4900dce37ee71ab9e29b30a23cb">sf::String::fromUtf32</a></div><div class="ttdeci">static String fromUtf32(T begin, T end)</div><div class="ttdoc">Create a new sf::String from a UTF-32 encoded string.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_ab285f398a27d65fa60e116da99f6a39e"><div class="ttname"><a href="classsf_1_1String.html#ab285f398a27d65fa60e116da99f6a39e">sf::String::toUtf16</a></div><div class="ttdeci">std::u16string toUtf16() const</div><div class="ttdoc">Convert the Unicode string to a UTF-16 string.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_ac1c1bb5dcf02aad3b2c0a1bf74a11cc9"><div class="ttname"><a href="classsf_1_1String.html#ac1c1bb5dcf02aad3b2c0a1bf74a11cc9">sf::String::operator&lt;=</a></div><div class="ttdeci">bool operator&lt;=(const String &amp;left, const String &amp;right)</div><div class="ttdoc">Overload of &lt;= operator to compare two UTF-32 strings.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_ac509d36dd836c8499a2813299dea865f"><div class="ttname"><a href="classsf_1_1String.html#ac509d36dd836c8499a2813299dea865f">sf::String::operator[]</a></div><div class="ttdeci">char32_t &amp; operator[](std::size_t index)</div><div class="ttdoc">Overload of [] operator to access a character by its position.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_ac59fdada9f3d871d45eb1b48e488dd41"><div class="ttname"><a href="classsf_1_1String.html#ac59fdada9f3d871d45eb1b48e488dd41">sf::String::ConstIterator</a></div><div class="ttdeci">std::u32string::const_iterator ConstIterator</div><div class="ttdoc">Read-only iterator type.</div><div class="ttdef"><b>Definition</b> <a href="#l00095">String.hpp:95</a></div></div>
+<div class="ttc" id="aclasssf_1_1String_html_ac823012f39cb6f61100418876e99d53b"><div class="ttname"><a href="classsf_1_1String.html#ac823012f39cb6f61100418876e99d53b">sf::String::end</a></div><div class="ttdeci">Iterator end()</div><div class="ttdoc">Return an iterator to the end of the string.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_ac96278a8cbe282632b11f0c8c007df0c"><div class="ttname"><a href="classsf_1_1String.html#ac96278a8cbe282632b11f0c8c007df0c">sf::String::operator&gt;</a></div><div class="ttdeci">bool operator&gt;(const String &amp;left, const String &amp;right)</div><div class="ttdoc">Overload of &gt; operator to compare two UTF-32 strings.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_acd4661f257ca19be320d83beccf4c706"><div class="ttname"><a href="classsf_1_1String.html#acd4661f257ca19be320d83beccf4c706">sf::String::String</a></div><div class="ttdeci">String(const char32_t *utf32String)</div><div class="ttdoc">Construct from a null-terminated C-style UTF-32 string.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_ad0b1455deabf07af13ee79812e05fa02"><div class="ttname"><a href="classsf_1_1String.html#ad0b1455deabf07af13ee79812e05fa02">sf::String::insert</a></div><div class="ttdeci">void insert(std::size_t position, const String &amp;str)</div><div class="ttdoc">Insert one or more characters into the string.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_ad460e628c287b0fa88deba2eb0b6744b"><div class="ttname"><a href="classsf_1_1String.html#ad460e628c287b0fa88deba2eb0b6744b">sf::String::replace</a></div><div class="ttdeci">void replace(std::size_t position, std::size_t length, const String &amp;replaceWith)</div><div class="ttdoc">Replace a substring with another string.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_ae7aff54e178f5d3e399953adff5cad20"><div class="ttname"><a href="classsf_1_1String.html#ae7aff54e178f5d3e399953adff5cad20">sf::String::getSize</a></div><div class="ttdeci">std::size_t getSize() const</div><div class="ttdoc">Get the size of the string.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_aea5ef84201f199e64a00f19d02a38c7a"><div class="ttname"><a href="classsf_1_1String.html#aea5ef84201f199e64a00f19d02a38c7a">sf::String::Iterator</a></div><div class="ttdeci">std::u32string::iterator Iterator</div><div class="ttdoc">Iterator type.</div><div class="ttdef"><b>Definition</b> <a href="#l00094">String.hpp:94</a></div></div>
+<div class="ttc" id="aclasssf_1_1String_html_aefaa202d2aa5ff85b4f75a5983367e86"><div class="ttname"><a href="classsf_1_1String.html#aefaa202d2aa5ff85b4f75a5983367e86">sf::String::String</a></div><div class="ttdeci">String(wchar_t wideChar)</div><div class="ttdoc">Construct from single wide character.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_af140f992b7698cf1448677c2c8e11bf1"><div class="ttname"><a href="classsf_1_1String.html#af140f992b7698cf1448677c2c8e11bf1">sf::String::operator+</a></div><div class="ttdeci">String operator+(const String &amp;left, const String &amp;right)</div><div class="ttdoc">Overload of binary + operator to concatenate two strings.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_af1ab4c82ff2bdfb6903b4b1bb78a8e5c"><div class="ttname"><a href="classsf_1_1String.html#af1ab4c82ff2bdfb6903b4b1bb78a8e5c">sf::String::end</a></div><div class="ttdeci">ConstIterator end() const</div><div class="ttdoc">Return an iterator to the end of the string.</div></div>
+<div class="ttc" id="aclasssf_1_1String_html_afdae61e813b2951a6e39015e34a143f7"><div class="ttname"><a href="classsf_1_1String.html#afdae61e813b2951a6e39015e34a143f7">sf::String::operator+=</a></div><div class="ttdeci">String &amp; operator+=(const String &amp;right)</div><div class="ttdoc">Overload of += operator to append an UTF-32 string.</div></div>
+<div class="ttc" id="anamespacesf_html"><div class="ttname"><a href="namespacesf.html">sf</a></div><div class="ttdef"><b>Definition</b> <a href="AudioResource_8hpp_source.html#l00035">AudioResource.hpp:36</a></div></div>
+<div class="ttc" id="anamespacesf_html_a407496cc99eeb9bf75c2b4d0848d3fc7"><div class="ttname"><a href="namespacesf.html#a407496cc99eeb9bf75c2b4d0848d3fc7">sf::U8String</a></div><div class="ttdeci">std::basic_string&lt; std::uint8_t, U8StringCharTraits &gt; U8String</div><div class="ttdoc">Portable replacement for std::basic_string&lt;std::uint8_t&gt;</div><div class="ttdef"><b>Definition</b> <a href="#l00081">String.hpp:81</a></div></div>
+<div class="ttc" id="astructsf_1_1U8StringCharTraits_html"><div class="ttname"><a href="structsf_1_1U8StringCharTraits.html">sf::U8StringCharTraits</a></div><div class="ttdoc">Character traits for std::uint8_t.</div><div class="ttdef"><b>Definition</b> <a href="#l00047">String.hpp:48</a></div></div>
+<div class="ttc" id="astructsf_1_1U8StringCharTraits_html_a148ae695341e82cba9e8cef3683cd34a"><div class="ttname"><a href="structsf_1_1U8StringCharTraits.html#a148ae695341e82cba9e8cef3683cd34a">sf::U8StringCharTraits::eq_int_type</a></div><div class="ttdeci">static bool eq_int_type(int_type i1, int_type i2) noexcept</div></div>
+<div class="ttc" id="astructsf_1_1U8StringCharTraits_html_a15829f93dc18be0c3ecf952cdab7e679"><div class="ttname"><a href="structsf_1_1U8StringCharTraits.html#a15829f93dc18be0c3ecf952cdab7e679">sf::U8StringCharTraits::assign</a></div><div class="ttdeci">static void assign(char_type &amp;c1, char_type c2) noexcept</div></div>
+<div class="ttc" id="astructsf_1_1U8StringCharTraits_html_a1bbfb4709559c15537d285699ea433cb"><div class="ttname"><a href="structsf_1_1U8StringCharTraits.html#a1bbfb4709559c15537d285699ea433cb">sf::U8StringCharTraits::copy</a></div><div class="ttdeci">static char_type * copy(char_type *s1, const char_type *s2, std::size_t n)</div></div>
+<div class="ttc" id="astructsf_1_1U8StringCharTraits_html_a45d48d9e1cd178eb81f606d2c4fce937"><div class="ttname"><a href="structsf_1_1U8StringCharTraits.html#a45d48d9e1cd178eb81f606d2c4fce937">sf::U8StringCharTraits::eq</a></div><div class="ttdeci">static bool eq(char_type c1, char_type c2) noexcept</div></div>
+<div class="ttc" id="astructsf_1_1U8StringCharTraits_html_a5f9d3c31d649475b73723b86b71931fc"><div class="ttname"><a href="structsf_1_1U8StringCharTraits.html#a5f9d3c31d649475b73723b86b71931fc">sf::U8StringCharTraits::to_int_type</a></div><div class="ttdeci">static int_type to_int_type(char_type c) noexcept</div></div>
+<div class="ttc" id="astructsf_1_1U8StringCharTraits_html_a612242cd2cee44b114dc05f1759f2919"><div class="ttname"><a href="structsf_1_1U8StringCharTraits.html#a612242cd2cee44b114dc05f1759f2919">sf::U8StringCharTraits::eof</a></div><div class="ttdeci">static int_type eof() noexcept</div></div>
+<div class="ttc" id="astructsf_1_1U8StringCharTraits_html_a80e5b4da555226d1c6aa080ff8a84522"><div class="ttname"><a href="structsf_1_1U8StringCharTraits.html#a80e5b4da555226d1c6aa080ff8a84522">sf::U8StringCharTraits::move</a></div><div class="ttdeci">static char_type * move(char_type *s1, const char_type *s2, std::size_t n)</div></div>
+<div class="ttc" id="astructsf_1_1U8StringCharTraits_html_a918b5cef66ee179dd0789ee6402ed5f3"><div class="ttname"><a href="structsf_1_1U8StringCharTraits.html#a918b5cef66ee179dd0789ee6402ed5f3">sf::U8StringCharTraits::int_type</a></div><div class="ttdeci">std::char_traits&lt; char &gt;::int_type int_type</div><div class="ttdef"><b>Definition</b> <a href="#l00051">String.hpp:51</a></div></div>
+<div class="ttc" id="astructsf_1_1U8StringCharTraits_html_a97bd849f37b7bd3ce18a58094bcd8e7e"><div class="ttname"><a href="structsf_1_1U8StringCharTraits.html#a97bd849f37b7bd3ce18a58094bcd8e7e">sf::U8StringCharTraits::compare</a></div><div class="ttdeci">static int compare(const char_type *s1, const char_type *s2, std::size_t n)</div></div>
+<div class="ttc" id="astructsf_1_1U8StringCharTraits_html_aa25878759942a79c150b8d6826356092"><div class="ttname"><a href="structsf_1_1U8StringCharTraits.html#aa25878759942a79c150b8d6826356092">sf::U8StringCharTraits::length</a></div><div class="ttdeci">static std::size_t length(const char_type *s)</div></div>
+<div class="ttc" id="astructsf_1_1U8StringCharTraits_html_ab14f442631ee99fd9d581ce32913ee74"><div class="ttname"><a href="structsf_1_1U8StringCharTraits.html#ab14f442631ee99fd9d581ce32913ee74">sf::U8StringCharTraits::state_type</a></div><div class="ttdeci">std::char_traits&lt; char &gt;::state_type state_type</div><div class="ttdef"><b>Definition</b> <a href="#l00054">String.hpp:54</a></div></div>
+<div class="ttc" id="astructsf_1_1U8StringCharTraits_html_acf0c71d1a4041c793ac18647bbde9093"><div class="ttname"><a href="structsf_1_1U8StringCharTraits.html#acf0c71d1a4041c793ac18647bbde9093">sf::U8StringCharTraits::lt</a></div><div class="ttdeci">static bool lt(char_type c1, char_type c2) noexcept</div></div>
+<div class="ttc" id="astructsf_1_1U8StringCharTraits_html_ae4015971eb1f32987cddbc984b2b8602"><div class="ttname"><a href="structsf_1_1U8StringCharTraits.html#ae4015971eb1f32987cddbc984b2b8602">sf::U8StringCharTraits::pos_type</a></div><div class="ttdeci">std::char_traits&lt; char &gt;::pos_type pos_type</div><div class="ttdef"><b>Definition</b> <a href="#l00053">String.hpp:53</a></div></div>
+<div class="ttc" id="astructsf_1_1U8StringCharTraits_html_aee44f3551fe9645745562bfbe0e28eec"><div class="ttname"><a href="structsf_1_1U8StringCharTraits.html#aee44f3551fe9645745562bfbe0e28eec">sf::U8StringCharTraits::find</a></div><div class="ttdeci">static const char_type * find(const char_type *s, std::size_t n, const char_type &amp;c)</div></div>
+<div class="ttc" id="astructsf_1_1U8StringCharTraits_html_aef0b658a4bdcba6c621400bae8e894ac"><div class="ttname"><a href="structsf_1_1U8StringCharTraits.html#aef0b658a4bdcba6c621400bae8e894ac">sf::U8StringCharTraits::to_char_type</a></div><div class="ttdeci">static char_type to_char_type(int_type i) noexcept</div></div>
+<div class="ttc" id="astructsf_1_1U8StringCharTraits_html_af049feb6c92a566a5cffc7637bf404aa"><div class="ttname"><a href="structsf_1_1U8StringCharTraits.html#af049feb6c92a566a5cffc7637bf404aa">sf::U8StringCharTraits::off_type</a></div><div class="ttdeci">std::char_traits&lt; char &gt;::off_type off_type</div><div class="ttdef"><b>Definition</b> <a href="#l00052">String.hpp:52</a></div></div>
+<div class="ttc" id="astructsf_1_1U8StringCharTraits_html_af21d7752dc5554fe4dcd5610b1a97fde"><div class="ttname"><a href="structsf_1_1U8StringCharTraits.html#af21d7752dc5554fe4dcd5610b1a97fde">sf::U8StringCharTraits::assign</a></div><div class="ttdeci">static char_type * assign(char_type *s, std::size_t n, char_type c)</div></div>
+<div class="ttc" id="astructsf_1_1U8StringCharTraits_html_af3a10a2045ba53360c41586818913d3a"><div class="ttname"><a href="structsf_1_1U8StringCharTraits.html#af3a10a2045ba53360c41586818913d3a">sf::U8StringCharTraits::char_type</a></div><div class="ttdeci">std::uint8_t char_type</div><div class="ttdef"><b>Definition</b> <a href="#l00050">String.hpp:50</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+                    Back to top
+                </button>
+            </main>
+            <footer class="md-footer">
+                <nav class="md-footer__inner md-grid" aria-label="Footer" hidden>
+                    <a href="/learn/" class="md-footer__link md-footer__link--next" aria-label="Next: Learn">
+                        <div class="md-footer__title">
+                            <span class="md-footer__direction"> Next </span>
+                            <div class="md-ellipsis">Learn</div>
+                        </div>
+                        <div class="md-footer__button md-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z" /></svg>
+                        </div>
+                    </a>
+                </nav>
+                <div class="md-footer-meta md-typeset">
+                    <div class="md-footer-meta__inner md-grid">
+                        <div class="md-copyright">
+                            <div class="md-copyright__highlight">Copyright &copy; <a href="mailto:laurent@sfml-dev.org">Laurent Gomila</a></div>
+                        </div>
+                        <div class="md-social">
+                            <a href="https://fosstodon.org/@sfml" target="_blank" rel="noopener me" title="SFML on Fosstodon" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com/sfmldev" target="_blank" rel="noopener" title="SFML on Twitter" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="https://discord.gg/nr4X7Fh" target="_blank" rel="noopener" title="SFML&#39;s Discord Server" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="md-dialog" data-md-component="dialog">
+            <div class="md-dialog__inner md-typeset"></div>
+        </div>
+        <script id="__config" type="application/json">
+            {
+                "base": ".",
+                "features": ["content.code.copy", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.prune", "navigation.path", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.suggest"],
+                "search": "/assets/javascripts/workers/search.b8dbb3d2.min.js",
+                "translations": {
+                    "clipboard.copied": "Copied to clipboard",
+                    "clipboard.copy": "Copy to clipboard",
+                    "search.result.more.one": "1 more on this page",
+                    "search.result.more.other": "# more on this page",
+                    "search.result.none": "No matching documents",
+                    "search.result.one": "1 matching document",
+                    "search.result.other": "# matching documents",
+                    "search.result.placeholder": "Type to start searching",
+                    "search.result.term.missing": "Missing",
+                    "select.version": "Select version"
+                }
+            }
+        </script>
+        <script src="/assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+    </body>
+</html>

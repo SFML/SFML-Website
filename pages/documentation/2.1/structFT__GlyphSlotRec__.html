@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="Simple and Fast Multimedia Library" />
+        <link rel="canonical" href="https://www.sfml-dev.org/" />
+        <link rel="next" href="/learn/" />
+        <link rel="icon" href="/images/favicon.ico" />
+        <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.30" />
+        <title>Home - Simple and Fast Multimedia Library</title>
+        <link rel="stylesheet" href="/assets/stylesheets/main.3cba04c6.min.css" />
+        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback" />
+        <style>
+            :root {
+                --md-text-font: "Ubuntu";
+                --md-code-font: "Roboto Mono";
+            }
+        </style>
+        <link rel="stylesheet" href="/styles/extra.css" />
+        <script>
+            (__md_scope = new URL(".", location)),
+                (__md_hash = (e) => [...e].reduce((e, _) => (e << 5) - e + _.charCodeAt(0), 0)),
+                (__md_get = (e, _ = localStorage, t = __md_scope) => JSON.parse(_.getItem(t.pathname + "." + e))),
+                (__md_set = (e, _, t = localStorage, a = __md_scope) => {
+                    try {
+                        t.setItem(a.pathname + "." + e, JSON.stringify(_));
+                    } catch (e) {}
+                });
+        </script>
+        <link rel="stylesheet" type="text/css" href="doxygen.css" title="default" media="screen,print" />
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="dynsections.js"></script>
+        <script type="text/javascript" src="clipboard.js"></script>
+        <script type="text/javascript" src="cookie.js"></script>
+        <script type="text/javascript" src="resize.js"></script>
+        <link rel="stylesheet" type="text/css" href="search/search.css" />
+        <link rel="stylesheet" type="text/css" href="searchOverrides.css" />
+        <script type="text/javascript" src="search/searchdata.js"></script>
+        <script type="text/javascript" src="search/search.js"></script>
+        <script type="text/javascript">
+            /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+            $(document).ready(function () {
+                init_search();
+            });
+            /* @license-end */
+        </script>
+    </head>
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="indigo">
+        <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off" />
+        <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off" />
+        <label class="md-overlay" for="__drawer"></label>
+        <div data-md-component="skip">
+            <a href="#simple-and-fast-multimedia-library" class="md-skip"> Skip to content </a>
+        </div>
+        <div data-md-component="announce"></div>
+        <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+            <nav class="md-header__inner md-grid" aria-label="Header">
+                <a href="." title="Simple and Fast Multimedia Library" class="md-header__button md-logo" aria-label="Simple and Fast Multimedia Library" data-md-component="logo">
+                    <img src="/images/logo.png" alt="logo" />
+                </a>
+                <label class="md-header__button md-icon" for="__drawer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z" /></svg>
+                </label>
+                <div class="md-header__title" data-md-component="header-title">
+                    <div class="md-header__ellipsis">
+                        <div class="md-header__topic">
+                            <span class="md-ellipsis"> Simple and Fast Multimedia Library </span>
+                        </div>
+                        <div class="md-header__topic" data-md-component="header-topic">
+                            <span class="md-ellipsis"> Home </span>
+                        </div>
+                    </div>
+                </div>
+                <form class="md-header__option" data-md-component="palette">
+                    <input
+                        class="md-option"
+                        data-md-color-media="(prefers-color-scheme: light)"
+                        data-md-color-scheme="default"
+                        data-md-color-primary="light-green"
+                        data-md-color-accent="indigo"
+                        aria-label="Switch to dark mode"
+                        type="radio"
+                        name="__palette"
+                        id="__palette_0"
+                    />
+                    <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"
+                            />
+                        </svg>
+                    </label>
+                    <input
+                        class="md-option"
+                        data-md-color-media="(prefers-color-scheme: dark)"
+                        data-md-color-scheme="slate"
+                        data-md-color-primary="green"
+                        data-md-color-accent="indigo"
+                        aria-label="Switch to light mode"
+                        type="radio"
+                        name="__palette"
+                        id="__palette_1"
+                    />
+                    <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"
+                            />
+                        </svg>
+                    </label>
+                </form>
+                <script>
+                    var media,
+                        input,
+                        key,
+                        value,
+                        palette = __md_get("__palette");
+                    if (palette && palette.color) {
+                        "(prefers-color-scheme)" === palette.color.media &&
+                            ((media = matchMedia("(prefers-color-scheme: light)")),
+                            (input = document.querySelector(media.matches ? "[data-md-color-media='(prefers-color-scheme: light)']" : "[data-md-color-media='(prefers-color-scheme: dark)']")),
+                            (palette.color.media = input.getAttribute("data-md-color-media")),
+                            (palette.color.scheme = input.getAttribute("data-md-color-scheme")),
+                            (palette.color.primary = input.getAttribute("data-md-color-primary")),
+                            (palette.color.accent = input.getAttribute("data-md-color-accent")));
+                        for ([key, value] of Object.entries(palette.color)) document.body.setAttribute("data-md-color-" + key, value);
+                    }
+                </script>
+                <div class="md-header__option">
+                    <div class="md-select">
+                        <button class="md-header__button md-icon" aria-label="Select language">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"
+                                />
+                            </svg>
+                        </button>
+                        <div class="md-select__inner">
+                            <ul class="md-select__list">
+                                <li class="md-select__item">
+                                    <a href="/" hreflang="en" class="md-select__link"> English </a>
+                                </li>
+                                <li class="md-select__item">
+                                    <a href="/fr/" hreflang="fr" class="md-select__link"> Français </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <label class="md-header__button md-icon" for="__search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"
+                        />
+                    </svg>
+                </label>
+                <div class="md-search" data-md-component="search" role="dialog">
+                    <label class="md-search__overlay" for="__search"></label>
+                    <div class="md-search__inner" role="search">
+                        <form class="md-search__form" name="search">
+                            <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required />
+                            <label class="md-search__icon md-icon" for="__search">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"
+                                    />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z" /></svg>
+                            </label>
+                            <nav class="md-search__options" aria-label="Search">
+                                <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z" /></svg>
+                                </button>
+                            </nav>
+                            <div class="md-search__suggest" data-md-component="search-suggest"></div>
+                        </form>
+                        <div class="md-search__output">
+                            <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+                                <div class="md-search-result" data-md-component="search-result">
+                                    <div class="md-search-result__meta">Initializing search</div>
+                                    <ol class="md-search-result__list" role="presentation"></ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-header__source">
+                    <a href="https://github.com/SFML/SFML" title="Go to repository" class="md-source" data-md-component="source">
+                        <div class="md-source__icon md-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. -->
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                                />
+                            </svg>
+                        </div>
+                        <div class="md-source__repository">SFML</div>
+                    </a>
+                </div>
+            </nav>
+            <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+                <div class="md-grid">
+                    <ul class="md-tabs__list">
+                        <li class="md-tabs__item">
+                            <a href="/" class="md-tabs__link"> Home </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/learn/" class="md-tabs__link"> Learn </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/tutorials/2.6/" class="md-tabs__link"> Tutorials </a>
+                        </li>
+                        <li class="md-tabs__item md-tabs__item--active">
+                            <a href="/documentation" class="md-tabs__link"> Documentation </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/download/" class="md-tabs__link"> Download </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/community/" class="md-tabs__link"> Community </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/development/" class="md-tabs__link"> Development </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="md-container" data-md-component="container">
+            <main class="md-main" data-md-component="main">
+                <div class="md-main__inner md-grid">
+                    <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                        <div class="md-sidebar__scrollwrap">
+                            <div class="md-sidebar__inner">
+                                <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+                                    <label class="md-nav__title" for="__drawer">
+                                        <a href="." title="Simple and Fast Multimedia Library" class="md-nav__button md-logo" aria-label="Simple and Fast Multimedia Library" data-md-component="logo">
+                                            <img src="/images/logo.png" alt="logo" />
+                                        </a>
+                                        Simple and Fast Multimedia Library
+                                    </label>
+                                    <div class="md-nav__source">
+                                        <a href="https://github.com/SFML/SFML" title="Go to repository" class="md-source" data-md-component="source">
+                                            <div class="md-source__icon md-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. -->
+                                                    <path
+                                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                                                    />
+                                                </svg>
+                                            </div>
+                                            <div class="md-source__repository">SFML</div>
+                                        </a>
+                                    </div>
+                                    <ul class="md-nav__list" data-md-scrollfix>
+                                        <li class="md-nav__item">
+                                            <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc" />
+                                            <label class="md-nav__link" for="__toc">
+                                                <span class="md-ellipsis"> Home </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </label>
+                                            <a href="." class="md-nav__link">
+                                                <span class="md-ellipsis"> Home </span>
+                                            </a>
+                                            <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+                                                <label class="md-nav__title" for="__toc">
+                                                    <span class="md-nav__icon md-icon"></span>
+                                                    Table of contents
+                                                </label>
+                                                <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-media" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-media </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-platform" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-platform </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-language" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-language </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="learn/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Learn </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="tutorials/2.6/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Tutorials </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--active">
+                                            <a href="documentation" class="md-nav__link md-nav__link--active">
+                                                <span class="md-ellipsis"> Documentation </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="download/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Download </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="community/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Community </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="development/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Development </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                        <div class="md-sidebar__scrollwrap">
+                            <div class="md-sidebar__inner">
+                                <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+                                    <label class="md-nav__title" for="__toc">
+                                        <span class="md-nav__icon md-icon"></span>
+                                        Table of contents
+                                    </label>
+                                    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-media" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-media </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-platform" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-platform </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-language" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-language </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-content" data-md-component="content">
+                        <div class="contents">
+<!-- Generated by Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="topics.html"><span>Topics</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
+    </ul>
+  </div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="structFT__GlyphSlotRec__-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">FT_GlyphSlotRec_ Struct Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="freetype_8h_source.html">freetype.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a5415bcbf70efb3aae7a6b77040e21e91" id="r_a5415bcbf70efb3aae7a6b77040e21e91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="freetype_8h.html#a92857f8bf079b7b9ef5d3ce74cf89ef5">FT_Library</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5415bcbf70efb3aae7a6b77040e21e91">library</a></td></tr>
+<tr class="separator:a5415bcbf70efb3aae7a6b77040e21e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f5dbaf7d539bf2d92ecdff740342b04" id="r_a0f5dbaf7d539bf2d92ecdff740342b04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="freetype_8h.html#a7eba045ee20968354fa1bff0f69740fa">FT_Face</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f5dbaf7d539bf2d92ecdff740342b04">face</a></td></tr>
+<tr class="separator:a0f5dbaf7d539bf2d92ecdff740342b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af339309df5ebe70dfa62a9f4f8838440" id="r_af339309df5ebe70dfa62a9f4f8838440"><td class="memItemLeft" align="right" valign="top"><a class="el" href="freetype_8h.html#a768daa0d9c3fa499e6c37034ee9f2ca3">FT_GlyphSlot</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af339309df5ebe70dfa62a9f4f8838440">next</a></td></tr>
+<tr class="separator:af339309df5ebe70dfa62a9f4f8838440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae829996584939557dfe46c4e4f2b28a8" id="r_ae829996584939557dfe46c4e4f2b28a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae829996584939557dfe46c4e4f2b28a8">reserved</a></td></tr>
+<tr class="separator:ae829996584939557dfe46c4e4f2b28a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2d04848997fba660e17bc00760ef14f" id="r_ac2d04848997fba660e17bc00760ef14f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fttypes_8h.html#a6fddceba92aa481008f68bad54cb8c0b">FT_Generic</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2d04848997fba660e17bc00760ef14f">generic</a></td></tr>
+<tr class="separator:ac2d04848997fba660e17bc00760ef14f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe1ba307281c06a232f50e34c061ce7b" id="r_abe1ba307281c06a232f50e34c061ce7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="freetype_8h.html#a07cbb98ddcb2cc8c58b5ac03e513382f">FT_Glyph_Metrics</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe1ba307281c06a232f50e34c061ce7b">metrics</a></td></tr>
+<tr class="separator:abe1ba307281c06a232f50e34c061ce7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d0ba6b09729d4f009ef380e267607c3" id="r_a9d0ba6b09729d4f009ef380e267607c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fttypes_8h.html#a5f5a679cc09f758efdd0d1c5feed3c3d">FT_Fixed</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d0ba6b09729d4f009ef380e267607c3">linearHoriAdvance</a></td></tr>
+<tr class="separator:a9d0ba6b09729d4f009ef380e267607c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc10f58c3d859e46694515956aa4a1e8" id="r_abc10f58c3d859e46694515956aa4a1e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fttypes_8h.html#a5f5a679cc09f758efdd0d1c5feed3c3d">FT_Fixed</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc10f58c3d859e46694515956aa4a1e8">linearVertAdvance</a></td></tr>
+<tr class="separator:abc10f58c3d859e46694515956aa4a1e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09779d1a4781ea029382e92c01048c6a" id="r_a09779d1a4781ea029382e92c01048c6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ftimage_8h.html#abfcb941b4b81f3a922d4ae57c620db27">FT_Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09779d1a4781ea029382e92c01048c6a">advance</a></td></tr>
+<tr class="separator:a09779d1a4781ea029382e92c01048c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcd35188ff4c3d5cbb518602d05b2807" id="r_afcd35188ff4c3d5cbb518602d05b2807"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ftimage_8h.html#ac277a6c91e1d785fae31f2aa86d60588">FT_Glyph_Format</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcd35188ff4c3d5cbb518602d05b2807">format</a></td></tr>
+<tr class="separator:afcd35188ff4c3d5cbb518602d05b2807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c50199e30b763b8e2a645af04a1f293" id="r_a8c50199e30b763b8e2a645af04a1f293"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ftimage_8h.html#a1901381e05d5dd7ad6567c85ee2076c3">FT_Bitmap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c50199e30b763b8e2a645af04a1f293">bitmap</a></td></tr>
+<tr class="separator:a8c50199e30b763b8e2a645af04a1f293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e47f0471336ac68e3c72312a3349dc4" id="r_a7e47f0471336ac68e3c72312a3349dc4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fttypes_8h.html#af90e5fb0d07e21be9fe6faa33f02484c">FT_Int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e47f0471336ac68e3c72312a3349dc4">bitmap_left</a></td></tr>
+<tr class="separator:a7e47f0471336ac68e3c72312a3349dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c150c0fb007e49fe4b9db6a69df53b7" id="r_a0c150c0fb007e49fe4b9db6a69df53b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fttypes_8h.html#af90e5fb0d07e21be9fe6faa33f02484c">FT_Int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c150c0fb007e49fe4b9db6a69df53b7">bitmap_top</a></td></tr>
+<tr class="separator:a0c150c0fb007e49fe4b9db6a69df53b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e46dd5d808079bdcba68056d6476d8d" id="r_a8e46dd5d808079bdcba68056d6476d8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ftimage_8h.html#a6b64eb35252e8829024c12c98cce37d4">FT_Outline</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e46dd5d808079bdcba68056d6476d8d">outline</a></td></tr>
+<tr class="separator:a8e46dd5d808079bdcba68056d6476d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5753b48d7165b08f106de3ad7c12bdd7" id="r_a5753b48d7165b08f106de3ad7c12bdd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5753b48d7165b08f106de3ad7c12bdd7">num_subglyphs</a></td></tr>
+<tr class="separator:a5753b48d7165b08f106de3ad7c12bdd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a295f5a3108399c4c0703e6ee2f88cc67" id="r_a295f5a3108399c4c0703e6ee2f88cc67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="freetype_8h.html#a0d03ab6cac878c81dca92e6a8c87a3a1">FT_SubGlyph</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a295f5a3108399c4c0703e6ee2f88cc67">subglyphs</a></td></tr>
+<tr class="separator:a295f5a3108399c4c0703e6ee2f88cc67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2af67814d985bcdfcffdf7e8a36ebbdf" id="r_a2af67814d985bcdfcffdf7e8a36ebbdf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="glext_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2af67814d985bcdfcffdf7e8a36ebbdf">control_data</a></td></tr>
+<tr class="separator:a2af67814d985bcdfcffdf7e8a36ebbdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a088255cb09abe42f19f650f48b6b3f" id="r_a7a088255cb09abe42f19f650f48b6b3f"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a088255cb09abe42f19f650f48b6b3f">control_len</a></td></tr>
+<tr class="separator:a7a088255cb09abe42f19f650f48b6b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d0d8c2eda28e38541e953186ecab89a" id="r_a7d0d8c2eda28e38541e953186ecab89a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ftimage_8h.html#af5f230f4b253d4c7715fd2e595614c90">FT_Pos</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d0d8c2eda28e38541e953186ecab89a">lsb_delta</a></td></tr>
+<tr class="separator:a7d0d8c2eda28e38541e953186ecab89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ca5f5e7b92df3aee4584949fa6a2a1c" id="r_a2ca5f5e7b92df3aee4584949fa6a2a1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ftimage_8h.html#af5f230f4b253d4c7715fd2e595614c90">FT_Pos</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ca5f5e7b92df3aee4584949fa6a2a1c">rsb_delta</a></td></tr>
+<tr class="separator:a2ca5f5e7b92df3aee4584949fa6a2a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0c5ab51842f178ba571bab2874f1bdb" id="r_ad0c5ab51842f178ba571bab2874f1bdb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="glext_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0c5ab51842f178ba571bab2874f1bdb">other</a></td></tr>
+<tr class="separator:ad0c5ab51842f178ba571bab2874f1bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91731fd527eeab1d1acf3e1aea4bea84" id="r_a91731fd527eeab1d1acf3e1aea4bea84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="freetype_8h.html#ab3dc238ecb4be32bc14e4953af931fdd">FT_Slot_Internal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91731fd527eeab1d1acf3e1aea4bea84">internal</a></td></tr>
+<tr class="separator:a91731fd527eeab1d1acf3e1aea4bea84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="freetype_8h_source.html#l01604">1604</a> of file <a class="el" href="freetype_8h_source.html">freetype.h</a>.</p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a09779d1a4781ea029382e92c01048c6a" name="a09779d1a4781ea029382e92c01048c6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09779d1a4781ea029382e92c01048c6a">&#9670;&#160;</a></span>advance</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ftimage_8h.html#abfcb941b4b81f3a922d4ae57c620db27">FT_Vector</a> FT_GlyphSlotRec_::advance</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="freetype_8h_source.html#l01615">1615</a> of file <a class="el" href="freetype_8h_source.html">freetype.h</a>.</p>
+
+</div>
+</div>
+<a id="a8c50199e30b763b8e2a645af04a1f293" name="a8c50199e30b763b8e2a645af04a1f293"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c50199e30b763b8e2a645af04a1f293">&#9670;&#160;</a></span>bitmap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ftimage_8h.html#a1901381e05d5dd7ad6567c85ee2076c3">FT_Bitmap</a> FT_GlyphSlotRec_::bitmap</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="freetype_8h_source.html#l01619">1619</a> of file <a class="el" href="freetype_8h_source.html">freetype.h</a>.</p>
+
+</div>
+</div>
+<a id="a7e47f0471336ac68e3c72312a3349dc4" name="a7e47f0471336ac68e3c72312a3349dc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e47f0471336ac68e3c72312a3349dc4">&#9670;&#160;</a></span>bitmap_left</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fttypes_8h.html#af90e5fb0d07e21be9fe6faa33f02484c">FT_Int</a> FT_GlyphSlotRec_::bitmap_left</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="freetype_8h_source.html#l01620">1620</a> of file <a class="el" href="freetype_8h_source.html">freetype.h</a>.</p>
+
+</div>
+</div>
+<a id="a0c150c0fb007e49fe4b9db6a69df53b7" name="a0c150c0fb007e49fe4b9db6a69df53b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c150c0fb007e49fe4b9db6a69df53b7">&#9670;&#160;</a></span>bitmap_top</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fttypes_8h.html#af90e5fb0d07e21be9fe6faa33f02484c">FT_Int</a> FT_GlyphSlotRec_::bitmap_top</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="freetype_8h_source.html#l01621">1621</a> of file <a class="el" href="freetype_8h_source.html">freetype.h</a>.</p>
+
+</div>
+</div>
+<a id="a2af67814d985bcdfcffdf7e8a36ebbdf" name="a2af67814d985bcdfcffdf7e8a36ebbdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2af67814d985bcdfcffdf7e8a36ebbdf">&#9670;&#160;</a></span>control_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="glext_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a>* FT_GlyphSlotRec_::control_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="freetype_8h_source.html#l01628">1628</a> of file <a class="el" href="freetype_8h_source.html">freetype.h</a>.</p>
+
+</div>
+</div>
+<a id="a7a088255cb09abe42f19f650f48b6b3f" name="a7a088255cb09abe42f19f650f48b6b3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a088255cb09abe42f19f650f48b6b3f">&#9670;&#160;</a></span>control_len</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long FT_GlyphSlotRec_::control_len</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="freetype_8h_source.html#l01629">1629</a> of file <a class="el" href="freetype_8h_source.html">freetype.h</a>.</p>
+
+</div>
+</div>
+<a id="a0f5dbaf7d539bf2d92ecdff740342b04" name="a0f5dbaf7d539bf2d92ecdff740342b04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f5dbaf7d539bf2d92ecdff740342b04">&#9670;&#160;</a></span>face</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="freetype_8h.html#a7eba045ee20968354fa1bff0f69740fa">FT_Face</a> FT_GlyphSlotRec_::face</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="freetype_8h_source.html#l01607">1607</a> of file <a class="el" href="freetype_8h_source.html">freetype.h</a>.</p>
+
+</div>
+</div>
+<a id="afcd35188ff4c3d5cbb518602d05b2807" name="afcd35188ff4c3d5cbb518602d05b2807"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcd35188ff4c3d5cbb518602d05b2807">&#9670;&#160;</a></span>format</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ftimage_8h.html#ac277a6c91e1d785fae31f2aa86d60588">FT_Glyph_Format</a> FT_GlyphSlotRec_::format</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="freetype_8h_source.html#l01617">1617</a> of file <a class="el" href="freetype_8h_source.html">freetype.h</a>.</p>
+
+</div>
+</div>
+<a id="ac2d04848997fba660e17bc00760ef14f" name="ac2d04848997fba660e17bc00760ef14f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2d04848997fba660e17bc00760ef14f">&#9670;&#160;</a></span>generic</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fttypes_8h.html#a6fddceba92aa481008f68bad54cb8c0b">FT_Generic</a> FT_GlyphSlotRec_::generic</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="freetype_8h_source.html#l01610">1610</a> of file <a class="el" href="freetype_8h_source.html">freetype.h</a>.</p>
+
+</div>
+</div>
+<a id="a91731fd527eeab1d1acf3e1aea4bea84" name="a91731fd527eeab1d1acf3e1aea4bea84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91731fd527eeab1d1acf3e1aea4bea84">&#9670;&#160;</a></span>internal</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="freetype_8h.html#ab3dc238ecb4be32bc14e4953af931fdd">FT_Slot_Internal</a> FT_GlyphSlotRec_::internal</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="freetype_8h_source.html#l01636">1636</a> of file <a class="el" href="freetype_8h_source.html">freetype.h</a>.</p>
+
+</div>
+</div>
+<a id="a5415bcbf70efb3aae7a6b77040e21e91" name="a5415bcbf70efb3aae7a6b77040e21e91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5415bcbf70efb3aae7a6b77040e21e91">&#9670;&#160;</a></span>library</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="freetype_8h.html#a92857f8bf079b7b9ef5d3ce74cf89ef5">FT_Library</a> FT_GlyphSlotRec_::library</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="freetype_8h_source.html#l01606">1606</a> of file <a class="el" href="freetype_8h_source.html">freetype.h</a>.</p>
+
+</div>
+</div>
+<a id="a9d0ba6b09729d4f009ef380e267607c3" name="a9d0ba6b09729d4f009ef380e267607c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d0ba6b09729d4f009ef380e267607c3">&#9670;&#160;</a></span>linearHoriAdvance</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fttypes_8h.html#a5f5a679cc09f758efdd0d1c5feed3c3d">FT_Fixed</a> FT_GlyphSlotRec_::linearHoriAdvance</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="freetype_8h_source.html#l01613">1613</a> of file <a class="el" href="freetype_8h_source.html">freetype.h</a>.</p>
+
+</div>
+</div>
+<a id="abc10f58c3d859e46694515956aa4a1e8" name="abc10f58c3d859e46694515956aa4a1e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc10f58c3d859e46694515956aa4a1e8">&#9670;&#160;</a></span>linearVertAdvance</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fttypes_8h.html#a5f5a679cc09f758efdd0d1c5feed3c3d">FT_Fixed</a> FT_GlyphSlotRec_::linearVertAdvance</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="freetype_8h_source.html#l01614">1614</a> of file <a class="el" href="freetype_8h_source.html">freetype.h</a>.</p>
+
+</div>
+</div>
+<a id="a7d0d8c2eda28e38541e953186ecab89a" name="a7d0d8c2eda28e38541e953186ecab89a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d0d8c2eda28e38541e953186ecab89a">&#9670;&#160;</a></span>lsb_delta</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ftimage_8h.html#af5f230f4b253d4c7715fd2e595614c90">FT_Pos</a> FT_GlyphSlotRec_::lsb_delta</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="freetype_8h_source.html#l01631">1631</a> of file <a class="el" href="freetype_8h_source.html">freetype.h</a>.</p>
+
+</div>
+</div>
+<a id="abe1ba307281c06a232f50e34c061ce7b" name="abe1ba307281c06a232f50e34c061ce7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe1ba307281c06a232f50e34c061ce7b">&#9670;&#160;</a></span>metrics</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="freetype_8h.html#a07cbb98ddcb2cc8c58b5ac03e513382f">FT_Glyph_Metrics</a> FT_GlyphSlotRec_::metrics</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="freetype_8h_source.html#l01612">1612</a> of file <a class="el" href="freetype_8h_source.html">freetype.h</a>.</p>
+
+</div>
+</div>
+<a id="af339309df5ebe70dfa62a9f4f8838440" name="af339309df5ebe70dfa62a9f4f8838440"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af339309df5ebe70dfa62a9f4f8838440">&#9670;&#160;</a></span>next</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="freetype_8h.html#a768daa0d9c3fa499e6c37034ee9f2ca3">FT_GlyphSlot</a> FT_GlyphSlotRec_::next</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="freetype_8h_source.html#l01608">1608</a> of file <a class="el" href="freetype_8h_source.html">freetype.h</a>.</p>
+
+</div>
+</div>
+<a id="a5753b48d7165b08f106de3ad7c12bdd7" name="a5753b48d7165b08f106de3ad7c12bdd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5753b48d7165b08f106de3ad7c12bdd7">&#9670;&#160;</a></span>num_subglyphs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> FT_GlyphSlotRec_::num_subglyphs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="freetype_8h_source.html#l01625">1625</a> of file <a class="el" href="freetype_8h_source.html">freetype.h</a>.</p>
+
+</div>
+</div>
+<a id="ad0c5ab51842f178ba571bab2874f1bdb" name="ad0c5ab51842f178ba571bab2874f1bdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0c5ab51842f178ba571bab2874f1bdb">&#9670;&#160;</a></span>other</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="glext_8h.html#a3db05964a3cc4410f35b7ea2b7eb850d">void</a>* FT_GlyphSlotRec_::other</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="freetype_8h_source.html#l01634">1634</a> of file <a class="el" href="freetype_8h_source.html">freetype.h</a>.</p>
+
+</div>
+</div>
+<a id="a8e46dd5d808079bdcba68056d6476d8d" name="a8e46dd5d808079bdcba68056d6476d8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e46dd5d808079bdcba68056d6476d8d">&#9670;&#160;</a></span>outline</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ftimage_8h.html#a6b64eb35252e8829024c12c98cce37d4">FT_Outline</a> FT_GlyphSlotRec_::outline</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="freetype_8h_source.html#l01623">1623</a> of file <a class="el" href="freetype_8h_source.html">freetype.h</a>.</p>
+
+</div>
+</div>
+<a id="ae829996584939557dfe46c4e4f2b28a8" name="ae829996584939557dfe46c4e4f2b28a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae829996584939557dfe46c4e4f2b28a8">&#9670;&#160;</a></span>reserved</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> FT_GlyphSlotRec_::reserved</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="freetype_8h_source.html#l01609">1609</a> of file <a class="el" href="freetype_8h_source.html">freetype.h</a>.</p>
+
+</div>
+</div>
+<a id="a2ca5f5e7b92df3aee4584949fa6a2a1c" name="a2ca5f5e7b92df3aee4584949fa6a2a1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ca5f5e7b92df3aee4584949fa6a2a1c">&#9670;&#160;</a></span>rsb_delta</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ftimage_8h.html#af5f230f4b253d4c7715fd2e595614c90">FT_Pos</a> FT_GlyphSlotRec_::rsb_delta</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="freetype_8h_source.html#l01632">1632</a> of file <a class="el" href="freetype_8h_source.html">freetype.h</a>.</p>
+
+</div>
+</div>
+<a id="a295f5a3108399c4c0703e6ee2f88cc67" name="a295f5a3108399c4c0703e6ee2f88cc67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a295f5a3108399c4c0703e6ee2f88cc67">&#9670;&#160;</a></span>subglyphs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="freetype_8h.html#a0d03ab6cac878c81dca92e6a8c87a3a1">FT_SubGlyph</a> FT_GlyphSlotRec_::subglyphs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="freetype_8h_source.html#l01626">1626</a> of file <a class="el" href="freetype_8h_source.html">freetype.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="freetype_8h_source.html">freetype.h</a></li>
+</ul>
+</div><!-- contents -->
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+                    Back to top
+                </button>
+            </main>
+            <footer class="md-footer">
+                <nav class="md-footer__inner md-grid" aria-label="Footer" hidden>
+                    <a href="/learn/" class="md-footer__link md-footer__link--next" aria-label="Next: Learn">
+                        <div class="md-footer__title">
+                            <span class="md-footer__direction"> Next </span>
+                            <div class="md-ellipsis">Learn</div>
+                        </div>
+                        <div class="md-footer__button md-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z" /></svg>
+                        </div>
+                    </a>
+                </nav>
+                <div class="md-footer-meta md-typeset">
+                    <div class="md-footer-meta__inner md-grid">
+                        <div class="md-copyright">
+                            <div class="md-copyright__highlight">Copyright &copy; <a href="mailto:laurent@sfml-dev.org">Laurent Gomila</a></div>
+                        </div>
+                        <div class="md-social">
+                            <a href="https://fosstodon.org/@sfml" target="_blank" rel="noopener me" title="SFML on Fosstodon" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com/sfmldev" target="_blank" rel="noopener" title="SFML on Twitter" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="https://discord.gg/nr4X7Fh" target="_blank" rel="noopener" title="SFML&#39;s Discord Server" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="md-dialog" data-md-component="dialog">
+            <div class="md-dialog__inner md-typeset"></div>
+        </div>
+        <script id="__config" type="application/json">
+            {
+                "base": ".",
+                "features": ["content.code.copy", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.prune", "navigation.path", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.suggest"],
+                "search": "/assets/javascripts/workers/search.b8dbb3d2.min.js",
+                "translations": {
+                    "clipboard.copied": "Copied to clipboard",
+                    "clipboard.copy": "Copy to clipboard",
+                    "search.result.more.one": "1 more on this page",
+                    "search.result.more.other": "# more on this page",
+                    "search.result.none": "No matching documents",
+                    "search.result.one": "1 matching document",
+                    "search.result.other": "# matching documents",
+                    "search.result.placeholder": "Type to start searching",
+                    "search.result.term.missing": "Missing",
+                    "select.version": "Select version"
+                }
+            }
+        </script>
+        <script src="/assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="Simple and Fast Multimedia Library" />
+        <link rel="canonical" href="https://www.sfml-dev.org/" />
+        <link rel="next" href="/learn/" />
+        <link rel="icon" href="/images/favicon.ico" />
+        <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.30" />
+        <title>Home - Simple and Fast Multimedia Library</title>
+        <link rel="stylesheet" href="/assets/stylesheets/main.3cba04c6.min.css" />
+        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback" />
+        <style>
+            :root {
+                --md-text-font: "Ubuntu";
+                --md-code-font: "Roboto Mono";
+            }
+        </style>
+        <link rel="stylesheet" href="/styles/extra.css" />
+        <script>
+            (__md_scope = new URL(".", location)),
+                (__md_hash = (e) => [...e].reduce((e, _) => (e << 5) - e + _.charCodeAt(0), 0)),
+                (__md_get = (e, _ = localStorage, t = __md_scope) => JSON.parse(_.getItem(t.pathname + "." + e))),
+                (__md_set = (e, _, t = localStorage, a = __md_scope) => {
+                    try {
+                        t.setItem(a.pathname + "." + e, JSON.stringify(_));
+                    } catch (e) {}
+                });
+        </script>
+        <link rel="stylesheet" type="text/css" href="doxygen.css" title="default" media="screen,print" />
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="dynsections.js"></script>
+        <script type="text/javascript" src="clipboard.js"></script>
+        <script type="text/javascript" src="cookie.js"></script>
+        <script type="text/javascript" src="resize.js"></script>
+        <link rel="stylesheet" type="text/css" href="search/search.css" />
+        <link rel="stylesheet" type="text/css" href="searchOverrides.css" />
+        <script type="text/javascript" src="search/searchdata.js"></script>
+        <script type="text/javascript" src="search/search.js"></script>
+        <script type="text/javascript">
+            /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+            $(document).ready(function () {
+                init_search();
+            });
+            /* @license-end */
+        </script>
+    </head>
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="indigo">
+        <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off" />
+        <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off" />
+        <label class="md-overlay" for="__drawer"></label>
+        <div data-md-component="skip">
+            <a href="#simple-and-fast-multimedia-library" class="md-skip"> Skip to content </a>
+        </div>
+        <div data-md-component="announce"></div>
+        <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+            <nav class="md-header__inner md-grid" aria-label="Header">
+                <a href="." title="Simple and Fast Multimedia Library" class="md-header__button md-logo" aria-label="Simple and Fast Multimedia Library" data-md-component="logo">
+                    <img src="/images/logo.png" alt="logo" />
+                </a>
+                <label class="md-header__button md-icon" for="__drawer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z" /></svg>
+                </label>
+                <div class="md-header__title" data-md-component="header-title">
+                    <div class="md-header__ellipsis">
+                        <div class="md-header__topic">
+                            <span class="md-ellipsis"> Simple and Fast Multimedia Library </span>
+                        </div>
+                        <div class="md-header__topic" data-md-component="header-topic">
+                            <span class="md-ellipsis"> Home </span>
+                        </div>
+                    </div>
+                </div>
+                <form class="md-header__option" data-md-component="palette">
+                    <input
+                        class="md-option"
+                        data-md-color-media="(prefers-color-scheme: light)"
+                        data-md-color-scheme="default"
+                        data-md-color-primary="light-green"
+                        data-md-color-accent="indigo"
+                        aria-label="Switch to dark mode"
+                        type="radio"
+                        name="__palette"
+                        id="__palette_0"
+                    />
+                    <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"
+                            />
+                        </svg>
+                    </label>
+                    <input
+                        class="md-option"
+                        data-md-color-media="(prefers-color-scheme: dark)"
+                        data-md-color-scheme="slate"
+                        data-md-color-primary="green"
+                        data-md-color-accent="indigo"
+                        aria-label="Switch to light mode"
+                        type="radio"
+                        name="__palette"
+                        id="__palette_1"
+                    />
+                    <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"
+                            />
+                        </svg>
+                    </label>
+                </form>
+                <script>
+                    var media,
+                        input,
+                        key,
+                        value,
+                        palette = __md_get("__palette");
+                    if (palette && palette.color) {
+                        "(prefers-color-scheme)" === palette.color.media &&
+                            ((media = matchMedia("(prefers-color-scheme: light)")),
+                            (input = document.querySelector(media.matches ? "[data-md-color-media='(prefers-color-scheme: light)']" : "[data-md-color-media='(prefers-color-scheme: dark)']")),
+                            (palette.color.media = input.getAttribute("data-md-color-media")),
+                            (palette.color.scheme = input.getAttribute("data-md-color-scheme")),
+                            (palette.color.primary = input.getAttribute("data-md-color-primary")),
+                            (palette.color.accent = input.getAttribute("data-md-color-accent")));
+                        for ([key, value] of Object.entries(palette.color)) document.body.setAttribute("data-md-color-" + key, value);
+                    }
+                </script>
+                <div class="md-header__option">
+                    <div class="md-select">
+                        <button class="md-header__button md-icon" aria-label="Select language">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"
+                                />
+                            </svg>
+                        </button>
+                        <div class="md-select__inner">
+                            <ul class="md-select__list">
+                                <li class="md-select__item">
+                                    <a href="/" hreflang="en" class="md-select__link"> English </a>
+                                </li>
+                                <li class="md-select__item">
+                                    <a href="/fr/" hreflang="fr" class="md-select__link"> Français </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <label class="md-header__button md-icon" for="__search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"
+                        />
+                    </svg>
+                </label>
+                <div class="md-search" data-md-component="search" role="dialog">
+                    <label class="md-search__overlay" for="__search"></label>
+                    <div class="md-search__inner" role="search">
+                        <form class="md-search__form" name="search">
+                            <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required />
+                            <label class="md-search__icon md-icon" for="__search">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"
+                                    />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z" /></svg>
+                            </label>
+                            <nav class="md-search__options" aria-label="Search">
+                                <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z" /></svg>
+                                </button>
+                            </nav>
+                            <div class="md-search__suggest" data-md-component="search-suggest"></div>
+                        </form>
+                        <div class="md-search__output">
+                            <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+                                <div class="md-search-result" data-md-component="search-result">
+                                    <div class="md-search-result__meta">Initializing search</div>
+                                    <ol class="md-search-result__list" role="presentation"></ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-header__source">
+                    <a href="https://github.com/SFML/SFML" title="Go to repository" class="md-source" data-md-component="source">
+                        <div class="md-source__icon md-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. -->
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                                />
+                            </svg>
+                        </div>
+                        <div class="md-source__repository">SFML</div>
+                    </a>
+                </div>
+            </nav>
+            <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+                <div class="md-grid">
+                    <ul class="md-tabs__list">
+                        <li class="md-tabs__item">
+                            <a href="/" class="md-tabs__link"> Home </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/learn/" class="md-tabs__link"> Learn </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/tutorials/2.6/" class="md-tabs__link"> Tutorials </a>
+                        </li>
+                        <li class="md-tabs__item md-tabs__item--active">
+                            <a href="/documentation" class="md-tabs__link"> Documentation </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/download/" class="md-tabs__link"> Download </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/community/" class="md-tabs__link"> Community </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/development/" class="md-tabs__link"> Development </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="md-container" data-md-component="container">
+            <main class="md-main" data-md-component="main">
+                <div class="md-main__inner md-grid">
+                    <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                        <div class="md-sidebar__scrollwrap">
+                            <div class="md-sidebar__inner">
+                                <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+                                    <label class="md-nav__title" for="__drawer">
+                                        <a href="." title="Simple and Fast Multimedia Library" class="md-nav__button md-logo" aria-label="Simple and Fast Multimedia Library" data-md-component="logo">
+                                            <img src="/images/logo.png" alt="logo" />
+                                        </a>
+                                        Simple and Fast Multimedia Library
+                                    </label>
+                                    <div class="md-nav__source">
+                                        <a href="https://github.com/SFML/SFML" title="Go to repository" class="md-source" data-md-component="source">
+                                            <div class="md-source__icon md-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. -->
+                                                    <path
+                                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                                                    />
+                                                </svg>
+                                            </div>
+                                            <div class="md-source__repository">SFML</div>
+                                        </a>
+                                    </div>
+                                    <ul class="md-nav__list" data-md-scrollfix>
+                                        <li class="md-nav__item">
+                                            <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc" />
+                                            <label class="md-nav__link" for="__toc">
+                                                <span class="md-ellipsis"> Home </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </label>
+                                            <a href="." class="md-nav__link">
+                                                <span class="md-ellipsis"> Home </span>
+                                            </a>
+                                            <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+                                                <label class="md-nav__title" for="__toc">
+                                                    <span class="md-nav__icon md-icon"></span>
+                                                    Table of contents
+                                                </label>
+                                                <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-media" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-media </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-platform" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-platform </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-language" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-language </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="learn/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Learn </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="tutorials/2.6/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Tutorials </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--active">
+                                            <a href="documentation" class="md-nav__link md-nav__link--active">
+                                                <span class="md-ellipsis"> Documentation </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="download/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Download </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="community/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Community </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="development/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Development </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                        <div class="md-sidebar__scrollwrap">
+                            <div class="md-sidebar__inner">
+                                <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+                                    <label class="md-nav__title" for="__toc">
+                                        <span class="md-nav__icon md-icon"></span>
+                                        Table of contents
+                                    </label>
+                                    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-media" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-media </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-platform" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-platform </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-language" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-language </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-content" data-md-component="content">
+                        <div class="contents">
+<!-- Generated by Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="topics.html"><span>Topics</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li class="current"><a href="globals.html"><span>File&#160;Members</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow3" class="tabs2">
+    <ul class="tablist">
+      <li class="current"><a href="globals.html"><span>All</span></a></li>
+      <li><a href="globals_func.html"><span>Functions</span></a></li>
+      <li><a href="globals_vars.html"><span>Variables</span></a></li>
+      <li><a href="globals_type.html"><span>Typedefs</span></a></li>
+      <li><a href="globals_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="globals_eval.html"><span>Enumerator</span></a></li>
+      <li><a href="globals_defs.html"><span>Macros</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow4" class="tabs3">
+    <ul class="tablist">
+      <li><a href="globals.html#index__5F"><span>_</span></a></li>
+      <li><a href="globals_a.html#index_a"><span>a</span></a></li>
+      <li><a href="globals_b.html#index_b"><span>b</span></a></li>
+      <li><a href="globals_c.html#index_c"><span>c</span></a></li>
+      <li><a href="globals_d.html#index_d"><span>d</span></a></li>
+      <li><a href="globals_e.html#index_e"><span>e</span></a></li>
+      <li><a href="globals_f.html#index_f"><span>f</span></a></li>
+      <li><a href="globals_g.html#index_g"><span>g</span></a></li>
+      <li><a href="globals_h.html#index_h"><span>h</span></a></li>
+      <li><a href="globals_i.html#index_i"><span>i</span></a></li>
+      <li><a href="globals_j.html#index_j"><span>j</span></a></li>
+      <li><a href="globals_k.html#index_k"><span>k</span></a></li>
+      <li><a href="globals_l.html#index_l"><span>l</span></a></li>
+      <li><a href="globals_m.html#index_m"><span>m</span></a></li>
+      <li><a href="globals_n.html#index_n"><span>n</span></a></li>
+      <li><a href="globals_o.html#index_o"><span>o</span></a></li>
+      <li><a href="globals_p.html#index_p"><span>p</span></a></li>
+      <li><a href="globals_q.html#index_q"><span>q</span></a></li>
+      <li><a href="globals_r.html#index_r"><span>r</span></a></li>
+      <li class="current"><a href="globals_s.html#index_s"><span>s</span></a></li>
+      <li><a href="globals_t.html#index_t"><span>t</span></a></li>
+      <li><a href="globals_u.html#index_u"><span>u</span></a></li>
+      <li><a href="globals_v.html#index_v"><span>v</span></a></li>
+      <li><a href="globals_w.html#index_w"><span>w</span></a></li>
+      <li><a href="globals_x.html#index_x"><span>x</span></a></li>
+      <li><a href="globals_y.html#index_y"><span>y</span></a></li>
+      <li><a href="globals_z.html#index_z"><span>z</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="doc-content">
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="contents">
+<div class="textblock">Here is a list of all file members with links to the files they belong to:</div>
+
+<h3><a id="index_s" name="index_s"></a>- s -</h3><ul>
+<li>s&#160;:&#160;<a class="el" href="glext_8h.html#ad585a1393cfa368fa9dc3d8ebff640d5">glext.h</a></li>
+<li>sampler&#160;:&#160;<a class="el" href="glext_8h.html#a4f7acaf0f814147f227f72b9065e8ed0">glext.h</a></li>
+<li>samplers&#160;:&#160;<a class="el" href="glext_8h.html#a296172595179a7da3789f85b182f184a">glext.h</a></li>
+<li>samples&#160;:&#160;<a class="el" href="glext_8h.html#aba70cd077c2c52c15358c231c6d293aa">glext.h</a></li>
+<li>scale&#160;:&#160;<a class="el" href="glext_8h.html#a281421b881aa7a1266842b73a3bc7655">glext.h</a></li>
+<li>scale_factor&#160;:&#160;<a class="el" href="jpeglib_8h.html#aaa980de6bc83dfcc49835fd1f6361ac2">jpeglib.h</a></li>
+<li>SCAN_header&#160;:&#160;<a class="el" href="stb__image_8h.html#af9bdc3014f3d54c426b6d2df10de4960a833170a40f969d501a1697ee49a48bfb">stb_image.h</a></li>
+<li>SCAN_load&#160;:&#160;<a class="el" href="stb__image_8h.html#af9bdc3014f3d54c426b6d2df10de4960a85a0b66d6fdde378fa20b491fdf24f8a">stb_image.h</a></li>
+<li>scan_number&#160;:&#160;<a class="el" href="jpeglib_8h.html#aa66f83d802d29a53bc58f203272f2a74">jpeglib.h</a></li>
+<li>SCAN_type&#160;:&#160;<a class="el" href="stb__image_8h.html#af9bdc3014f3d54c426b6d2df10de4960ab156e11a1618eb1afb3e1482ff29675e">stb_image.h</a></li>
+<li>scanlines&#160;:&#160;<a class="el" href="jpeglib_8h.html#a2b054ef2df86f637e9837e5af7280734">jpeglib.h</a></li>
+<li>sequence_num&#160;:&#160;<a class="el" href="glext_8h.html#aa0a930adf11315c827636598f52e12ea">glext.h</a></li>
+<li>severities&#160;:&#160;<a class="el" href="glext_8h.html#a178f1cda5f5e39de617f0f9933fa5272">glext.h</a></li>
+<li>severity&#160;:&#160;<a class="el" href="glext_8h.html#aa9ef9fc6186ec914a859436da4764bca">glext.h</a></li>
+<li>SF_AMBISONIC_B_FORMAT&#160;:&#160;<a class="el" href="sndfile_8h.html#adc29c2ff13d900c2f185ee95427fb06cacc10d88822766d1ff4843508443d96a8">sndfile.h</a></li>
+<li>SF_AMBISONIC_NONE&#160;:&#160;<a class="el" href="sndfile_8h.html#adc29c2ff13d900c2f185ee95427fb06cab411ae80d3ed5e8ad381d7616bcb4eb1">sndfile.h</a></li>
+<li>SF_BROADCAST_INFO_VAR&#160;:&#160;<a class="el" href="sndfile_8h.html#ac029684516383fab298a406c625a7d8d">sndfile.h</a></li>
+<li>SF_CHANNEL_MAP_AMBISONIC_B_W&#160;:&#160;<a class="el" href="sndfile_8h.html#a726ca809ffd3d67ab4b8476646f26635a0480a0ac57b329d30f7670282be35e97">sndfile.h</a></li>
+<li>SF_CHANNEL_MAP_AMBISONIC_B_X&#160;:&#160;<a class="el" href="sndfile_8h.html#a726ca809ffd3d67ab4b8476646f26635aa2b44b73d421feb7f7aeb091b67e9b56">sndfile.h</a></li>
+<li>SF_CHANNEL_MAP_AMBISONIC_B_Y&#160;:&#160;<a class="el" href="sndfile_8h.html#a726ca809ffd3d67ab4b8476646f26635aea1e3090713b08559aecec5299f4512c">sndfile.h</a></li>
+<li>SF_CHANNEL_MAP_AMBISONIC_B_Z&#160;:&#160;<a class="el" href="sndfile_8h.html#a726ca809ffd3d67ab4b8476646f26635ac597953ec1eb3df967b43e2c47bef985">sndfile.h</a></li>
+<li>SF_CHANNEL_MAP_CENTER&#160;:&#160;<a class="el" href="sndfile_8h.html#a726ca809ffd3d67ab4b8476646f26635adf588e09055d962548c1a20d8be135ea">sndfile.h</a></li>
+<li>SF_CHANNEL_MAP_FRONT_CENTER&#160;:&#160;<a class="el" href="sndfile_8h.html#a726ca809ffd3d67ab4b8476646f26635a427cc6cf371a9ff9e6dad0b9959ef8ff">sndfile.h</a></li>
+<li>SF_CHANNEL_MAP_FRONT_LEFT&#160;:&#160;<a class="el" href="sndfile_8h.html#a726ca809ffd3d67ab4b8476646f26635a7a46d90d27e75c7328cfdc6dd2dfc8a7">sndfile.h</a></li>
+<li>SF_CHANNEL_MAP_FRONT_LEFT_OF_CENTER&#160;:&#160;<a class="el" href="sndfile_8h.html#a726ca809ffd3d67ab4b8476646f26635ad44494f4f09efd04717be9e0bfed9d16">sndfile.h</a></li>
+<li>SF_CHANNEL_MAP_FRONT_RIGHT&#160;:&#160;<a class="el" href="sndfile_8h.html#a726ca809ffd3d67ab4b8476646f26635a6d50d03af887fb8a7776826e021b16f3">sndfile.h</a></li>
+<li>SF_CHANNEL_MAP_FRONT_RIGHT_OF_CENTER&#160;:&#160;<a class="el" href="sndfile_8h.html#a726ca809ffd3d67ab4b8476646f26635af23246aedf15ea2cce46a81e19fccacb">sndfile.h</a></li>
+<li>SF_CHANNEL_MAP_INVALID&#160;:&#160;<a class="el" href="sndfile_8h.html#a726ca809ffd3d67ab4b8476646f26635a3b611a74488cd023cc612ab063909ea9">sndfile.h</a></li>
+<li>SF_CHANNEL_MAP_LEFT&#160;:&#160;<a class="el" href="sndfile_8h.html#a726ca809ffd3d67ab4b8476646f26635a3a4476b3111f48a08e68b1d523925a4a">sndfile.h</a></li>
+<li>SF_CHANNEL_MAP_LFE&#160;:&#160;<a class="el" href="sndfile_8h.html#a726ca809ffd3d67ab4b8476646f26635a2ad3dbed007e229900be9c2f390f0432">sndfile.h</a></li>
+<li>SF_CHANNEL_MAP_MAX&#160;:&#160;<a class="el" href="sndfile_8h.html#a726ca809ffd3d67ab4b8476646f26635adeab09220637185d8b92a7326bbf9b6e">sndfile.h</a></li>
+<li>SF_CHANNEL_MAP_MONO&#160;:&#160;<a class="el" href="sndfile_8h.html#a726ca809ffd3d67ab4b8476646f26635ae9bb9e14ce32cd9b4018389a35faa274">sndfile.h</a></li>
+<li>SF_CHANNEL_MAP_REAR_CENTER&#160;:&#160;<a class="el" href="sndfile_8h.html#a726ca809ffd3d67ab4b8476646f26635a87f5b8149fd7848c9387289db4d19d06">sndfile.h</a></li>
+<li>SF_CHANNEL_MAP_REAR_LEFT&#160;:&#160;<a class="el" href="sndfile_8h.html#a726ca809ffd3d67ab4b8476646f26635a0216143355978ab437624ef8f1cb0475">sndfile.h</a></li>
+<li>SF_CHANNEL_MAP_REAR_RIGHT&#160;:&#160;<a class="el" href="sndfile_8h.html#a726ca809ffd3d67ab4b8476646f26635a43b2e802df8de19be3eed0d8761e181b">sndfile.h</a></li>
+<li>SF_CHANNEL_MAP_RIGHT&#160;:&#160;<a class="el" href="sndfile_8h.html#a726ca809ffd3d67ab4b8476646f26635a1b0a4914456fb91809aaa99e026f41ef">sndfile.h</a></li>
+<li>SF_CHANNEL_MAP_SIDE_LEFT&#160;:&#160;<a class="el" href="sndfile_8h.html#a726ca809ffd3d67ab4b8476646f26635abe99b66ebc96b0b88dcca5a7a405090d">sndfile.h</a></li>
+<li>SF_CHANNEL_MAP_SIDE_RIGHT&#160;:&#160;<a class="el" href="sndfile_8h.html#a726ca809ffd3d67ab4b8476646f26635a350670e2e0ecdd6b216d2b73eee0fec0">sndfile.h</a></li>
+<li>SF_CHANNEL_MAP_TOP_CENTER&#160;:&#160;<a class="el" href="sndfile_8h.html#a726ca809ffd3d67ab4b8476646f26635a34e9081329cb5d94151da79dd744ad89">sndfile.h</a></li>
+<li>SF_CHANNEL_MAP_TOP_FRONT_CENTER&#160;:&#160;<a class="el" href="sndfile_8h.html#a726ca809ffd3d67ab4b8476646f26635a0857ecdfbe20aacdf176d65ad8db7bc9">sndfile.h</a></li>
+<li>SF_CHANNEL_MAP_TOP_FRONT_LEFT&#160;:&#160;<a class="el" href="sndfile_8h.html#a726ca809ffd3d67ab4b8476646f26635a4343cd3a9336623cdefd03313ffc0f97">sndfile.h</a></li>
+<li>SF_CHANNEL_MAP_TOP_FRONT_RIGHT&#160;:&#160;<a class="el" href="sndfile_8h.html#a726ca809ffd3d67ab4b8476646f26635af7191be10079666c0f60670ac972e7f1">sndfile.h</a></li>
+<li>SF_CHANNEL_MAP_TOP_REAR_CENTER&#160;:&#160;<a class="el" href="sndfile_8h.html#a726ca809ffd3d67ab4b8476646f26635a7982bd2ca8da86d349b328941b352722">sndfile.h</a></li>
+<li>SF_CHANNEL_MAP_TOP_REAR_LEFT&#160;:&#160;<a class="el" href="sndfile_8h.html#a726ca809ffd3d67ab4b8476646f26635ae577e3122c1a061b380c8b4dedf58205">sndfile.h</a></li>
+<li>SF_CHANNEL_MAP_TOP_REAR_RIGHT&#160;:&#160;<a class="el" href="sndfile_8h.html#a726ca809ffd3d67ab4b8476646f26635a3d5d6426a24b514bf92421e6096716cd">sndfile.h</a></li>
+<li>sf_close()&#160;:&#160;<a class="el" href="sndfile_8h.html#a276b87553823c937c62492206f0ed81e">sndfile.h</a></li>
+<li>sf_command()&#160;:&#160;<a class="el" href="sndfile_8h.html#a0999a38427a413a1b0a6caa36c4c5b75">sndfile.h</a></li>
+<li>SF_COUNT_MAX&#160;:&#160;<a class="el" href="sndfile_8h.html#a2a594c90b41e9b0140f28724f80b763a">sndfile.h</a></li>
+<li>sf_count_t&#160;:&#160;<a class="el" href="sndfile_8h.html#af2b12fded74bc949f1f1f392a2af4892">sndfile.h</a></li>
+<li>SF_ENDIAN_BIG&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a0c342389e92c7a1cbbf5267cd25db357">sndfile.h</a></li>
+<li>SF_ENDIAN_CPU&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a8cb50cf8159f5eca028506e847b3357f">sndfile.h</a></li>
+<li>SF_ENDIAN_FILE&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a19c07acde7315bff90e2f4aafd91a0eb">sndfile.h</a></li>
+<li>SF_ENDIAN_LITTLE&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a5e4eee211f84815fdc7932cf26e2cda2">sndfile.h</a></li>
+<li>SF_ERR_MALFORMED_FILE&#160;:&#160;<a class="el" href="sndfile_8h.html#a61dadd085c1777f559549e05962b2c9eacbfd0f9974ddc00f7bc9cf18e0660a56">sndfile.h</a></li>
+<li>SF_ERR_NO_ERROR&#160;:&#160;<a class="el" href="sndfile_8h.html#a61dadd085c1777f559549e05962b2c9ea4c8c6c930ca43f7e6295a43ef0efb194">sndfile.h</a></li>
+<li>SF_ERR_SYSTEM&#160;:&#160;<a class="el" href="sndfile_8h.html#a61dadd085c1777f559549e05962b2c9ea5578a978e300d240636a2a2f01999da3">sndfile.h</a></li>
+<li>SF_ERR_UNRECOGNISED_FORMAT&#160;:&#160;<a class="el" href="sndfile_8h.html#a61dadd085c1777f559549e05962b2c9ea98744aae4ee24bed489fdef7d48efc08">sndfile.h</a></li>
+<li>SF_ERR_UNSUPPORTED_ENCODING&#160;:&#160;<a class="el" href="sndfile_8h.html#a61dadd085c1777f559549e05962b2c9ea1fbb82027326a3f1d3c9320c157f7eaf">sndfile.h</a></li>
+<li>sf_error()&#160;:&#160;<a class="el" href="sndfile_8h.html#ab61fee56583f21faaeec05321005bf77">sndfile.h</a></li>
+<li>sf_error_number()&#160;:&#160;<a class="el" href="sndfile_8h.html#a373c4f4b21445de3689bbdd665f4d373">sndfile.h</a></li>
+<li>sf_error_str()&#160;:&#160;<a class="el" href="sndfile_8h.html#acd8c9afefe7fa0e098451a67abb63a3d">sndfile.h</a></li>
+<li>SF_FALSE&#160;:&#160;<a class="el" href="sndfile_8h.html#adc29c2ff13d900c2f185ee95427fb06ca54acafcb68cb53a2476a673e6dad1bcb">sndfile.h</a></li>
+<li>SF_FORMAT_AIFF&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a6b3c3276356e59c65552aa8dc81c8f8b">sndfile.h</a></li>
+<li>SF_FORMAT_ALAW&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a88cd6729a685a388edbf6b971bc57d59">sndfile.h</a></li>
+<li>SF_FORMAT_AU&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7af4bf74071da31239a8bbe3a34877d511">sndfile.h</a></li>
+<li>SF_FORMAT_AVR&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7ad9e4eb2bce984e40515ba901c1e6fee6">sndfile.h</a></li>
+<li>SF_FORMAT_CAF&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7aebb9b420892e6347299efea9b1de731a">sndfile.h</a></li>
+<li>sf_format_check()&#160;:&#160;<a class="el" href="sndfile_8h.html#ab3fb05982e51bfdff48418a6fbaa404b">sndfile.h</a></li>
+<li>SF_FORMAT_DOUBLE&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a7f5de05a45409d1ce72c9a2ecbff1bd3">sndfile.h</a></li>
+<li>SF_FORMAT_DPCM_16&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a1760953aad0c96ca1c85cac5b353b919">sndfile.h</a></li>
+<li>SF_FORMAT_DPCM_8&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a8fed18695608391eec4fde4ef6aca65e">sndfile.h</a></li>
+<li>SF_FORMAT_DWVW_12&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a82f7b868e26a90aa9f35aca78dccd6cb">sndfile.h</a></li>
+<li>SF_FORMAT_DWVW_16&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7aa4e811170b266013a8e48089466b1eaa">sndfile.h</a></li>
+<li>SF_FORMAT_DWVW_24&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a0f25d45633813e4d4e9115a635d4e44c">sndfile.h</a></li>
+<li>SF_FORMAT_DWVW_N&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a90c0d2cd326ee0c8535500290ddac4c6">sndfile.h</a></li>
+<li>SF_FORMAT_ENDMASK&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a3ad64b85eba112d383ece8d58e612ced">sndfile.h</a></li>
+<li>SF_FORMAT_FLAC&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7ae7dd912842b509d648d62915b996b06f">sndfile.h</a></li>
+<li>SF_FORMAT_FLOAT&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a8b19f7e84eb0556faff33623830b489b">sndfile.h</a></li>
+<li>SF_FORMAT_G721_32&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7aac83013f62a7f7b43d9cf7738b0752da">sndfile.h</a></li>
+<li>SF_FORMAT_G723_24&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7ada2bb516d73e8f64dbde9a30e9c2fe3a">sndfile.h</a></li>
+<li>SF_FORMAT_G723_40&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7aa5c30385e6f2292e273fd4c2897bee6b">sndfile.h</a></li>
+<li>SF_FORMAT_GSM610&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7af83aeb49bdbb825a72f7e28a917b3ff8">sndfile.h</a></li>
+<li>SF_FORMAT_HTK&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7af9786f5a4824ff5c5a1f8b12e2ca1b8a">sndfile.h</a></li>
+<li>SF_FORMAT_IMA_ADPCM&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a84028970a006395da0454b107749238e">sndfile.h</a></li>
+<li>SF_FORMAT_IRCAM&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a876afc0cbbb2ef3bfce2ed0013c3a07c">sndfile.h</a></li>
+<li>SF_FORMAT_MAT4&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7ace8c193d02de42380758f1428b95603f">sndfile.h</a></li>
+<li>SF_FORMAT_MAT5&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a81a423e6776be321f518ddf39d49755d">sndfile.h</a></li>
+<li>SF_FORMAT_MPC2K&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a6f9158b93d85b1589cf0c22e3d9ed762">sndfile.h</a></li>
+<li>SF_FORMAT_MS_ADPCM&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7ae668a3aeec6b4ed1b13bf61bf826853e">sndfile.h</a></li>
+<li>SF_FORMAT_NIST&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a8905ae7f3ab72cc5b667cf43a89d378b">sndfile.h</a></li>
+<li>SF_FORMAT_OGG&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7aaaef1f7e663487eefbe4106de44ea7fd">sndfile.h</a></li>
+<li>SF_FORMAT_PAF&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a67e5cf6543280ccf166a2489658ab4ea">sndfile.h</a></li>
+<li>SF_FORMAT_PCM_16&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a63515ce839545c11d35dc8c8c4c5c261">sndfile.h</a></li>
+<li>SF_FORMAT_PCM_24&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a160bd57540f1d3d6acbf2e29ea4769f4">sndfile.h</a></li>
+<li>SF_FORMAT_PCM_32&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a741fa21e06429d59eb548d6f388d16b4">sndfile.h</a></li>
+<li>SF_FORMAT_PCM_S8&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a8c9b17bb36d115f80ef61dcae7631b26">sndfile.h</a></li>
+<li>SF_FORMAT_PCM_U8&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a3828255dad74fc3ebb02b59afb28caae">sndfile.h</a></li>
+<li>SF_FORMAT_PVF&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a339137ced07d99c95c80cea58165c2b0">sndfile.h</a></li>
+<li>SF_FORMAT_RAW&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a754f6ac6e6b293b1ffcb1d06412fa297">sndfile.h</a></li>
+<li>SF_FORMAT_RF64&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a412416b46a68961e0f3b5998a5003da4">sndfile.h</a></li>
+<li>SF_FORMAT_SD2&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a09f74ea32b2c1e5f6e8860a63fee39c7">sndfile.h</a></li>
+<li>SF_FORMAT_SDS&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7acba7b7998062f1749acf67a17ad57cf2">sndfile.h</a></li>
+<li>SF_FORMAT_SUBMASK&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7ae792e42fc6619187743f7741e7044240">sndfile.h</a></li>
+<li>SF_FORMAT_SVX&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a589143a1c82410acb51792eba617ec02">sndfile.h</a></li>
+<li>SF_FORMAT_TYPEMASK&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a4d9e4f32f119d026fdc74a88e9d41e87">sndfile.h</a></li>
+<li>SF_FORMAT_ULAW&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7ae3fd36f90782efc0ee6d00cc4a6f4060">sndfile.h</a></li>
+<li>SF_FORMAT_VOC&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7aac658149adf5858ad555460103a72e36">sndfile.h</a></li>
+<li>SF_FORMAT_VORBIS&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a029114057a7956f3c94ae18d269faf61">sndfile.h</a></li>
+<li>SF_FORMAT_VOX_ADPCM&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a313dc159c6ef2fbb2aa8a8527ae679d6">sndfile.h</a></li>
+<li>SF_FORMAT_W64&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a1550936375eaff26d88f01c5e57b679c">sndfile.h</a></li>
+<li>SF_FORMAT_WAV&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a6c1fc181944f58b4bcd23a05acd34499">sndfile.h</a></li>
+<li>SF_FORMAT_WAVEX&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7af84597ff85285cec0ef7a253ee7ee03b">sndfile.h</a></li>
+<li>SF_FORMAT_WVE&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a9fa3f8c0e1f841adbe18fff6afd9b225">sndfile.h</a></li>
+<li>SF_FORMAT_XI&#160;:&#160;<a class="el" href="sndfile_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a61cf59e2b4e7782f59f21370397e3b42">sndfile.h</a></li>
+<li>sf_get_string()&#160;:&#160;<a class="el" href="sndfile_8h.html#adf18a3d3ba26c58ed0fcd1597d3a30ed">sndfile.h</a></li>
+<li>SF_INFO&#160;:&#160;<a class="el" href="sndfile_8h.html#afa81fd72dadb06b5578575de8e760e47">sndfile.h</a></li>
+<li>SF_LOOP_ALTERNATING&#160;:&#160;<a class="el" href="sndfile_8h.html#abed82baf7f470b522273a3e37c24c600a9297325e74d2144bdac4c31b56cdb99e">sndfile.h</a></li>
+<li>SF_LOOP_BACKWARD&#160;:&#160;<a class="el" href="sndfile_8h.html#abed82baf7f470b522273a3e37c24c600adb6c28356207f8f17b228b735c24fb63">sndfile.h</a></li>
+<li>SF_LOOP_FORWARD&#160;:&#160;<a class="el" href="sndfile_8h.html#abed82baf7f470b522273a3e37c24c600a37419ea8c51c37364993090a23e76caf">sndfile.h</a></li>
+<li>SF_LOOP_NONE&#160;:&#160;<a class="el" href="sndfile_8h.html#abed82baf7f470b522273a3e37c24c600a73608cee32a1ae31354407de65476fe2">sndfile.h</a></li>
+<li>sf_open()&#160;:&#160;<a class="el" href="sndfile_8h.html#ad6cae1e171ba65ec63caced9ed28127b">sndfile.h</a></li>
+<li>sf_open_fd()&#160;:&#160;<a class="el" href="sndfile_8h.html#ab88ad419fd43f6b6e84079464651818c">sndfile.h</a></li>
+<li>sf_open_virtual()&#160;:&#160;<a class="el" href="sndfile_8h.html#ac9bd98729853e94c0498b14600c88b16">sndfile.h</a></li>
+<li>sf_perror()&#160;:&#160;<a class="el" href="sndfile_8h.html#a1a85b4ab3dbcded8d506121219680074">sndfile.h</a></li>
+<li>sf_read_double()&#160;:&#160;<a class="el" href="sndfile_8h.html#ae2be50e2f06e3811827fe45eab1542a3">sndfile.h</a></li>
+<li>sf_read_float()&#160;:&#160;<a class="el" href="sndfile_8h.html#a72d2c6becb4138064b349218238b2cc2">sndfile.h</a></li>
+<li>sf_read_int()&#160;:&#160;<a class="el" href="sndfile_8h.html#a16e1f61b47817f6212fc4263ca5f744d">sndfile.h</a></li>
+<li>sf_read_raw()&#160;:&#160;<a class="el" href="sndfile_8h.html#a938d34b68de4a3e8612bc7b571c2902b">sndfile.h</a></li>
+<li>sf_read_short()&#160;:&#160;<a class="el" href="sndfile_8h.html#aa5b31c9537f85e9217bab6594d80f701">sndfile.h</a></li>
+<li>sf_readf_double()&#160;:&#160;<a class="el" href="sndfile_8h.html#a9a34a23af2ac862cb91ada1ed7eb79c8">sndfile.h</a></li>
+<li>sf_readf_float()&#160;:&#160;<a class="el" href="sndfile_8h.html#aee45e707761d55cc2111328451ffc760">sndfile.h</a></li>
+<li>sf_readf_int()&#160;:&#160;<a class="el" href="sndfile_8h.html#a230c718b72261f7dc2de027f73c57cd1">sndfile.h</a></li>
+<li>sf_readf_short()&#160;:&#160;<a class="el" href="sndfile_8h.html#aa82f7bc9ad5058e9910c88c49a389777">sndfile.h</a></li>
+<li>sf_seek()&#160;:&#160;<a class="el" href="sndfile_8h.html#a7a3ded72351d7bafe83358c5c312d352">sndfile.h</a></li>
+<li>sf_set_string()&#160;:&#160;<a class="el" href="sndfile_8h.html#aafe48dfd246b12ee05f156030b8f87fb">sndfile.h</a></li>
+<li>SF_STR_ALBUM&#160;:&#160;<a class="el" href="sndfile_8h.html#abc6126af1d45847bc59afa0aa3216b04acf734a9551356927a5a4866ac0a6d434">sndfile.h</a></li>
+<li>SF_STR_ARTIST&#160;:&#160;<a class="el" href="sndfile_8h.html#abc6126af1d45847bc59afa0aa3216b04aa22c34098bd0d323df315e78e027ea57">sndfile.h</a></li>
+<li>SF_STR_COMMENT&#160;:&#160;<a class="el" href="sndfile_8h.html#abc6126af1d45847bc59afa0aa3216b04a83960dedfa2ca567c41bf74678842952">sndfile.h</a></li>
+<li>SF_STR_COPYRIGHT&#160;:&#160;<a class="el" href="sndfile_8h.html#abc6126af1d45847bc59afa0aa3216b04ae5237fd1a51b6b513310778f32293346">sndfile.h</a></li>
+<li>SF_STR_DATE&#160;:&#160;<a class="el" href="sndfile_8h.html#abc6126af1d45847bc59afa0aa3216b04a3f5015b5e35ec5cd9b6c41a871b1f2eb">sndfile.h</a></li>
+<li>SF_STR_FIRST&#160;:&#160;<a class="el" href="sndfile_8h.html#a4e4fb6e7419fa77d21641397c5afd702">sndfile.h</a></li>
+<li>SF_STR_GENRE&#160;:&#160;<a class="el" href="sndfile_8h.html#abc6126af1d45847bc59afa0aa3216b04a8b4856d636025a844feb8adf89af1403">sndfile.h</a></li>
+<li>SF_STR_LAST&#160;:&#160;<a class="el" href="sndfile_8h.html#a8c6c81346fe61df488dd3231d4c90110">sndfile.h</a></li>
+<li>SF_STR_LICENSE&#160;:&#160;<a class="el" href="sndfile_8h.html#abc6126af1d45847bc59afa0aa3216b04a0374c0f8282517ebf72f96732a6de00a">sndfile.h</a></li>
+<li>SF_STR_SOFTWARE&#160;:&#160;<a class="el" href="sndfile_8h.html#abc6126af1d45847bc59afa0aa3216b04a9c72b262cab1903924fad40d5d8bcee3">sndfile.h</a></li>
+<li>SF_STR_TITLE&#160;:&#160;<a class="el" href="sndfile_8h.html#abc6126af1d45847bc59afa0aa3216b04acc0345590e46aa4c2ebd284d7becde48">sndfile.h</a></li>
+<li>SF_STR_TRACKNUMBER&#160;:&#160;<a class="el" href="sndfile_8h.html#abc6126af1d45847bc59afa0aa3216b04af97622810c6cc69643e7a9dc276a0867">sndfile.h</a></li>
+<li>sf_strerror()&#160;:&#160;<a class="el" href="sndfile_8h.html#aded6ce4c06dd7c3107f3ed07513fdbb2">sndfile.h</a></li>
+<li>SF_TRUE&#160;:&#160;<a class="el" href="sndfile_8h.html#adc29c2ff13d900c2f185ee95427fb06ca74a076892285b06bce678d01893ac6f7">sndfile.h</a></li>
+<li>sf_version_string()&#160;:&#160;<a class="el" href="sndfile_8h.html#a92390d73ea96106d6f3a84080bd3443c">sndfile.h</a></li>
+<li>sf_vio_get_filelen&#160;:&#160;<a class="el" href="sndfile_8h.html#a2166198457fe4e852ef10804b2c1e8a1">sndfile.h</a></li>
+<li>sf_vio_read&#160;:&#160;<a class="el" href="sndfile_8h.html#a90c34518e3de9fbed3611b030e17dba7">sndfile.h</a></li>
+<li>sf_vio_seek&#160;:&#160;<a class="el" href="sndfile_8h.html#ad23e218718c16eae24b98d41976ac5d2">sndfile.h</a></li>
+<li>sf_vio_tell&#160;:&#160;<a class="el" href="sndfile_8h.html#a457595d4cdaf505525ff421aebe6eb5d">sndfile.h</a></li>
+<li>sf_vio_write&#160;:&#160;<a class="el" href="sndfile_8h.html#aa1b1f82878422da550bfd70f2be3ded3">sndfile.h</a></li>
+<li>SF_VIRTUAL_IO&#160;:&#160;<a class="el" href="sndfile_8h.html#a229ec113301d5afe507a38c9643fcedd">sndfile.h</a></li>
+<li>sf_write_double()&#160;:&#160;<a class="el" href="sndfile_8h.html#a0a5faabc42315c723667242b7ac0d6bd">sndfile.h</a></li>
+<li>sf_write_float()&#160;:&#160;<a class="el" href="sndfile_8h.html#ab11aeacd735a24f86e32b18711c3c22b">sndfile.h</a></li>
+<li>sf_write_int()&#160;:&#160;<a class="el" href="sndfile_8h.html#a488ffe24852b4cf712a20cd3b9f45497">sndfile.h</a></li>
+<li>sf_write_raw()&#160;:&#160;<a class="el" href="sndfile_8h.html#aaf6fa32ba7a83bde6a73923d695f75aa">sndfile.h</a></li>
+<li>sf_write_short()&#160;:&#160;<a class="el" href="sndfile_8h.html#a34926ef9b9783599e035160845ee4fce">sndfile.h</a></li>
+<li>sf_write_sync()&#160;:&#160;<a class="el" href="sndfile_8h.html#ab8ee92ffe52b75cd4f8522fa187426d9">sndfile.h</a></li>
+<li>sf_writef_double()&#160;:&#160;<a class="el" href="sndfile_8h.html#a4cca67d15cfd9283a1d64f8962ab891b">sndfile.h</a></li>
+<li>sf_writef_float()&#160;:&#160;<a class="el" href="sndfile_8h.html#abdb36359c46ccb6b87efc4a65cd8c4f7">sndfile.h</a></li>
+<li>sf_writef_int()&#160;:&#160;<a class="el" href="sndfile_8h.html#a1066cb34cf1bc1a87fc80d3c0b94b12a">sndfile.h</a></li>
+<li>sf_writef_short()&#160;:&#160;<a class="el" href="sndfile_8h.html#a17774f46507e5a2f537e7cfa8a9a926a">sndfile.h</a></li>
+<li>sfactorAlpha&#160;:&#160;<a class="el" href="glext_8h.html#a147716336d55f4ee3ec628f7bec7a6b1">glext.h</a></li>
+<li>sfail&#160;:&#160;<a class="el" href="glext_8h.html#a6114b7cdfde5ff0225f7f47480d099c6">glext.h</a></li>
+<li>SFC_CALC_MAX_ALL_CHANNELS&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5ac4ef257fda8baef09e106a7b5fae9dbe">sndfile.h</a></li>
+<li>SFC_CALC_NORM_MAX_ALL_CHANNELS&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5a66e3c98d1b9539b24cb57183177e62b1">sndfile.h</a></li>
+<li>SFC_CALC_NORM_SIGNAL_MAX&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5a2d1fa47893130e643cf703bef4c7ecf8">sndfile.h</a></li>
+<li>SFC_CALC_SIGNAL_MAX&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5a5db38095e8236c36bdccaee1e7d6e5f2">sndfile.h</a></li>
+<li>SFC_FILE_TRUNCATE&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5a8b1bbf607bc736ca1044830b5398fc87">sndfile.h</a></li>
+<li>SFC_GET_BROADCAST_INFO&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5ab5308159f9e5dc2dcff9cac9d4291def">sndfile.h</a></li>
+<li>SFC_GET_CHANNEL_MAP_INFO&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5ac1603cf9f24f6ea99e9034896b0efbe1">sndfile.h</a></li>
+<li>SFC_GET_CLIPPING&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5aa2b7d57f69ae1f905da2c02118ec1de2">sndfile.h</a></li>
+<li>SFC_GET_CURRENT_SF_INFO&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5a16002e22c4e2ea356b02dfd098b1f095">sndfile.h</a></li>
+<li>SFC_GET_DITHER_INFO&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5a7376eadffeb2e03397a851ba8bbc006d">sndfile.h</a></li>
+<li>SFC_GET_DITHER_INFO_COUNT&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5ade7687b3337306d930172f80dd566fe1">sndfile.h</a></li>
+<li>SFC_GET_EMBED_FILE_INFO&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5ac671e5664e88c21de9416045dab7e59f">sndfile.h</a></li>
+<li>SFC_GET_FORMAT_INFO&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5af9e55f87caeb9836223e2b3d406c16e3">sndfile.h</a></li>
+<li>SFC_GET_FORMAT_MAJOR&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5a419b09dc5dff072b3a7b4f801d51df42">sndfile.h</a></li>
+<li>SFC_GET_FORMAT_MAJOR_COUNT&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5a77bfdb40654cc3675ce02e4888dbeddd">sndfile.h</a></li>
+<li>SFC_GET_FORMAT_SUBTYPE&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5a0a633c553b52269e99ed2fc4a9baf74a">sndfile.h</a></li>
+<li>SFC_GET_FORMAT_SUBTYPE_COUNT&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5a7e609f53251fc32791abc93d286181ca">sndfile.h</a></li>
+<li>SFC_GET_INSTRUMENT&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5aa35001f4cf303fdc91f3b1d37f3cb5ba">sndfile.h</a></li>
+<li>SFC_GET_LIB_VERSION&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5a2b5886fd28a1e2100b8e1fcc31470365">sndfile.h</a></li>
+<li>SFC_GET_LOG_INFO&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5ac945f36fc48e7f1a9b67aa850e185acf">sndfile.h</a></li>
+<li>SFC_GET_LOOP_INFO&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5a11d647ba1daee699202f84bf89f43936">sndfile.h</a></li>
+<li>SFC_GET_MAX_ALL_CHANNELS&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5ab030b1d098af46cf27b756294602f569">sndfile.h</a></li>
+<li>SFC_GET_NORM_DOUBLE&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5a59076aa2aea243d5d620efa3317d9dc0">sndfile.h</a></li>
+<li>SFC_GET_NORM_FLOAT&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5a93ab714e82fe0a5fbb285e60791a5c95">sndfile.h</a></li>
+<li>SFC_GET_SIGNAL_MAX&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5af33a90f12408c2ffbc0726be80572d3b">sndfile.h</a></li>
+<li>SFC_GET_SIMPLE_FORMAT&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5a719feb079d692b972e32ffe1879e0c1e">sndfile.h</a></li>
+<li>SFC_GET_SIMPLE_FORMAT_COUNT&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5ac74cfd88e45e84a1b5a9ac2f7ed5130d">sndfile.h</a></li>
+<li>SFC_RAW_DATA_NEEDS_ENDSWAP&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5a4d61a01687de61bf7f6cd0cb8a7d1117">sndfile.h</a></li>
+<li>SFC_SET_ADD_DITHER_ON_READ&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5ad299d90479bf2c7821d9b0ee00ee795e">sndfile.h</a></li>
+<li>SFC_SET_ADD_DITHER_ON_WRITE&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5ae17717cf4c04fd6aa37fb35f6c5e3b27">sndfile.h</a></li>
+<li>SFC_SET_ADD_HEADER_PAD_CHUNK&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5a40248548ac84166262842336a62cd827">sndfile.h</a></li>
+<li>SFC_SET_ADD_PEAK_CHUNK&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5a77f30c9d9ecffaee82d2a8a9243d3939">sndfile.h</a></li>
+<li>SFC_SET_BROADCAST_INFO&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5aa8d1355dc261548e17f04a11da687d22">sndfile.h</a></li>
+<li>SFC_SET_CHANNEL_MAP_INFO&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5a0d45d4c5cf35743421fcefc71ac852d8">sndfile.h</a></li>
+<li>SFC_SET_CLIPPING&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5a55cf0e4c0fc4bbf6dabe4102a21d241d">sndfile.h</a></li>
+<li>SFC_SET_DITHER_ON_READ&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5a95cc3401f4cec1bf1e4b4aabf5c3c901">sndfile.h</a></li>
+<li>SFC_SET_DITHER_ON_WRITE&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5afac41fb03f88e51794cd93d43dee0754">sndfile.h</a></li>
+<li>SFC_SET_INSTRUMENT&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5a87ecd7824923abc602a3eda82496d7ca">sndfile.h</a></li>
+<li>SFC_SET_NORM_DOUBLE&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5ad09290d24baeb894df811a34f9ec729d">sndfile.h</a></li>
+<li>SFC_SET_NORM_FLOAT&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5aac2ba8fab151f643d01deed98fe8e934">sndfile.h</a></li>
+<li>SFC_SET_RAW_START_OFFSET&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5a3e0d8af7c07c36795a726a59ead32e5b">sndfile.h</a></li>
+<li>SFC_SET_SCALE_FLOAT_INT_READ&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5a43003fac607162816eb940d6f654401f">sndfile.h</a></li>
+<li>SFC_SET_SCALE_INT_FLOAT_WRITE&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5ad6141cf150ed95fad38712ec8fe08dd7">sndfile.h</a></li>
+<li>SFC_SET_UPDATE_HEADER_AUTO&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5acc3bf61105f889b8c1bdc1e872a47a99">sndfile.h</a></li>
+<li>SFC_SET_VBR_ENCODING_QUALITY&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5a4c6ada6a85c507ee77fbe541f9c28284">sndfile.h</a></li>
+<li>SFC_TEST_IEEE_FLOAT_REPLACE&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5a8d9ea3f15d99833537077678dbbe8615">sndfile.h</a></li>
+<li>SFC_UPDATE_HEADER_NOW&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5a019d90171332680984213bd5032113e8">sndfile.h</a></li>
+<li>SFC_WAVEX_GET_AMBISONIC&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5afef38100faa61f5bc5a3e04be997c235">sndfile.h</a></li>
+<li>SFC_WAVEX_SET_AMBISONIC&#160;:&#160;<a class="el" href="sndfile_8h.html#a99fb83031ce9923c84392b4e92f956b5aa27988f8e8c55e80b96c484e7fbd42f1">sndfile.h</a></li>
+<li>SFD_CUSTOM_LEVEL&#160;:&#160;<a class="el" href="sndfile_8h.html#a0411cd49bb5b71852cecd93bcbf0ca2da288d33c221d40551b22daccc1ee952d3">sndfile.h</a></li>
+<li>SFD_DEFAULT_LEVEL&#160;:&#160;<a class="el" href="sndfile_8h.html#a0411cd49bb5b71852cecd93bcbf0ca2da520709c9ca26f55cbcd844e1c6bdd04c">sndfile.h</a></li>
+<li>SFD_NO_DITHER&#160;:&#160;<a class="el" href="sndfile_8h.html#a0411cd49bb5b71852cecd93bcbf0ca2da5f93d1cdacb624116989693efc06446c">sndfile.h</a></li>
+<li>SFD_TRIANGULAR_PDF&#160;:&#160;<a class="el" href="sndfile_8h.html#a0411cd49bb5b71852cecd93bcbf0ca2da41b872a06e0746e92b3165d79fa4e1f3">sndfile.h</a></li>
+<li>SFD_WHITE&#160;:&#160;<a class="el" href="sndfile_8h.html#a0411cd49bb5b71852cecd93bcbf0ca2da7070ef4d2835a621c8498bcb7f2d9463">sndfile.h</a></li>
+<li>SFM_RDWR&#160;:&#160;<a class="el" href="sndfile_8h.html#adc29c2ff13d900c2f185ee95427fb06ca1860040e1c905b2fe2dd7dded86d2544">sndfile.h</a></li>
+<li>SFM_READ&#160;:&#160;<a class="el" href="sndfile_8h.html#adc29c2ff13d900c2f185ee95427fb06ca125531fe9c895237bccd35736370e815">sndfile.h</a></li>
+<li>SFM_WRITE&#160;:&#160;<a class="el" href="sndfile_8h.html#adc29c2ff13d900c2f185ee95427fb06ca449991ce14cb1b9715cf444ffdb9e4a0">sndfile.h</a></li>
+<li>SFML_API_EXPORT&#160;:&#160;<a class="el" href="Config_8hpp.html#ab2d9ba01221055369f9707a4d7b528c2">Config.hpp</a></li>
+<li>SFML_API_IMPORT&#160;:&#160;<a class="el" href="Config_8hpp.html#aba0bbe5791bee6633caa835c7f6a12a4">Config.hpp</a></li>
+<li>SFML_AUDIO_API&#160;:&#160;<a class="el" href="Audio_2Export_8hpp.html#a4d34c0f253824ac49bdd93545913eb89">Audio/Export.hpp</a></li>
+<li>SFML_DEBUG&#160;:&#160;<a class="el" href="Config_8hpp.html#a90cd534d01b83efcf7e6769551c2a3db">Config.hpp</a></li>
+<li>SFML_GRAPHICS_API&#160;:&#160;<a class="el" href="Graphics_2Export_8hpp.html#ab84c9f1035e146917de3bc0f98d72b35">Graphics/Export.hpp</a></li>
+<li>SFML_NETWORK_API&#160;:&#160;<a class="el" href="Network_2Export_8hpp.html#ac5d46d4ffd98e947e28c54d051b338e7">Network/Export.hpp</a></li>
+<li>SFML_SYSTEM_API&#160;:&#160;<a class="el" href="System_2Export_8hpp.html#a6476c9e422606477a4c23d92b1d79a1f">System/Export.hpp</a></li>
+<li>SFML_VERSION_MAJOR&#160;:&#160;<a class="el" href="Config_8hpp.html#ab601e78ee9806b7ef75b242681af3bf2">Config.hpp</a></li>
+<li>SFML_VERSION_MINOR&#160;:&#160;<a class="el" href="Config_8hpp.html#a91a4f1f9aeae335e13bb4cfa8f018865">Config.hpp</a></li>
+<li>SFML_WINDOW_API&#160;:&#160;<a class="el" href="Window_2Export_8hpp.html#a1ab885b7907ee088350359516d68be64">Window/Export.hpp</a></li>
+<li>shader&#160;:&#160;<a class="el" href="glext_8h.html#a57b2a96adb1d51204909a82d861e395e">glext.h</a></li>
+<li>shaders&#160;:&#160;<a class="el" href="glext_8h.html#a6d0e58b1c7cdd73ed1e467304511100e">glext.h</a></li>
+<li>shadertype&#160;:&#160;<a class="el" href="glext_8h.html#a36b14850b945d03396f1da1cbc42699d">glext.h</a></li>
+<li>shiftsigned()&#160;:&#160;<a class="el" href="stb__image_8h.html#a123ea096877fe25bd064b42ccfda41a1">stb_image.h</a></li>
+<li>sink&#160;:&#160;<a class="el" href="glext_8h.html#a98256b3410c68877f51c14b2ad0591ab">glext.h</a></li>
+<li>size&#160;:&#160;<a class="el" href="glext_8h.html#a3d1e3edfcf61ca2d831883e1afbad89e">glext.h</a></li>
+<li>size4d&#160;:&#160;<a class="el" href="glext_8h.html#a3ee638722d778306b1776526a7711d9a">glext.h</a></li>
+<li>skip()&#160;:&#160;<a class="el" href="stb__image_8h.html#a70132eb48871f2c3668bbd478eb2748c">stb_image.h</a></li>
+<li>SNDFILE&#160;:&#160;<a class="el" href="sndfile_8h.html#ac14209bc83d532b06a8cdf9ade6d544a">sndfile.h</a></li>
+<li>SNDFILE_1&#160;:&#160;<a class="el" href="sndfile_8h.html#a01907163d623742301e6475255653414">sndfile.h</a></li>
+<li>SOF&#160;:&#160;<a class="el" href="stb__image_8h.html#a9f337463bc4bedeb9bc3e51db0ba0a56">stb_image.h</a></li>
+<li>SOI&#160;:&#160;<a class="el" href="stb__image_8h.html#a96e825d5dcf3bf3f26b073c77032b96d">stb_image.h</a></li>
+<li>SOS&#160;:&#160;<a class="el" href="stb__image_8h.html#acd317d0705293360e6837fc308e2752c">stb_image.h</a></li>
+<li>source&#160;:&#160;<a class="el" href="glext_8h.html#afdd0f0e67e302eefcb4f6b23732e7ea3">glext.h</a></li>
+<li>sources&#160;:&#160;<a class="el" href="glext_8h.html#a49a2265bc056056ba289f84e4241c89d">glext.h</a></li>
+<li>span&#160;:&#160;<a class="el" href="glext_8h.html#a5c3e64bd109484c4d0b9ba6debe3e8ad">glext.h</a></li>
+<li>src&#160;:&#160;<a class="el" href="glext_8h.html#a2a98ddb6f79ec1048ff9e15cdd2422ba">glext.h</a></li>
+<li>srcAlpha&#160;:&#160;<a class="el" href="glext_8h.html#a6e7b882fa1c4588936942dcbf0992e35">glext.h</a></li>
+<li>srcLevel&#160;:&#160;<a class="el" href="glext_8h.html#aaf6df9e79dd78f07113106bf7678fce6">glext.h</a></li>
+<li>srcRGB&#160;:&#160;<a class="el" href="glext_8h.html#a4cba9e3eefbff9fb837e4ae0fcc727c4">glext.h</a></li>
+<li>srcTarget&#160;:&#160;<a class="el" href="glext_8h.html#ab53045ebb396ffa198dd7d644556bf8c">glext.h</a></li>
+<li>srcX&#160;:&#160;<a class="el" href="glext_8h.html#ae3f0313bc06be5a5b7b061636435357d">glext.h</a></li>
+<li>srcX1&#160;:&#160;<a class="el" href="glext_8h.html#ab31358d0f5e2a6f39f8a2dcfdb5e0820">glext.h</a></li>
+<li>srcY&#160;:&#160;<a class="el" href="glext_8h.html#af4b365bb510504af575e0ec6c9edb44c">glext.h</a></li>
+<li>srcY0&#160;:&#160;<a class="el" href="glext_8h.html#a274444303b2daeb586bf930200812d14">glext.h</a></li>
+<li>srcY1&#160;:&#160;<a class="el" href="glext_8h.html#a8821e9a95bf0c186ac57d2c3f35b4448">glext.h</a></li>
+<li>srcZ&#160;:&#160;<a class="el" href="glext_8h.html#a7c88b2cf5324a0d79b19a89cdf77e2f5">glext.h</a></li>
+<li>stages&#160;:&#160;<a class="el" href="glext_8h.html#a107131207bf8a6602055c9b1fd2bf618">glext.h</a></li>
+<li>start&#160;:&#160;<a class="el" href="glext_8h.html#a13be19455586e95d5a42ed8f054afad2">glext.h</a></li>
+<li>start_callbacks()&#160;:&#160;<a class="el" href="stb__image_8h.html#a5b1b92f6b086a05bbfd6c0eeef39f51d">stb_image.h</a></li>
+<li>start_file()&#160;:&#160;<a class="el" href="stb__image_8h.html#a6bd264fc500207bfd97f7e012d707963">stb_image.h</a></li>
+<li>start_mem()&#160;:&#160;<a class="el" href="stb__image_8h.html#a0332d2759b3d8231deadfa483947e1c8">stb_image.h</a></li>
+<li>stbi_bmp_info()&#160;:&#160;<a class="el" href="stb__image_8h.html#a6e282e679f27114734279983d23eee02">stb_image.h</a></li>
+<li>stbi_bmp_load()&#160;:&#160;<a class="el" href="stb__image_8h.html#a390f3a6762281663924e20f6bf9593af">stb_image.h</a></li>
+<li>stbi_bmp_test()&#160;:&#160;<a class="el" href="stb__image_8h.html#a10d805dbf41ab0ff047a7590235844d9">stb_image.h</a></li>
+<li>stbi_convert_iphone_png_to_rgb()&#160;:&#160;<a class="el" href="stb__image_8h.html#afbb4acd1b28fb72059bed9e6285a2961">stb_image.h</a></li>
+<li>stbi_de_iphone()&#160;:&#160;<a class="el" href="stb__image_8h.html#a21cf0ae50aa9eab8e20aac256697bc82">stb_image.h</a></li>
+<li>stbi_de_iphone_flag&#160;:&#160;<a class="el" href="stb__image_8h.html#a30a640cf807ddb4f6c6493e5751bf707">stb_image.h</a></li>
+<li>STBI_default&#160;:&#160;<a class="el" href="stb__image_8h.html#a6b7b47dd702d9e331586d485013fd1eaa0177ac2c5002f4f251bb766d41752029">stb_image.h</a></li>
+<li>stbi_dequantize_t&#160;:&#160;<a class="el" href="stb__image_8h.html#a2166a09746708a09ddd1f2f43bb4aec6">stb_image.h</a></li>
+<li>stbi_failure_reason()&#160;:&#160;<a class="el" href="stb__image_8h.html#a69d3ed7ef9b520b8a42f75ef479e3ede">stb_image.h</a></li>
+<li>stbi_fill_gif_background()&#160;:&#160;<a class="el" href="stb__image_8h.html#a868f31c602124c2b606f47b8019e6ea8">stb_image.h</a></li>
+<li>stbi_gif&#160;:&#160;<a class="el" href="stb__image_8h.html#a594005b9b173118d19cac788ada77df9">stb_image.h</a></li>
+<li>stbi_gif_header()&#160;:&#160;<a class="el" href="stb__image_8h.html#a1f47abab89cb2ab9d8852cfe85b0003f">stb_image.h</a></li>
+<li>stbi_gif_info()&#160;:&#160;<a class="el" href="stb__image_8h.html#a1d5c88a7e24375d200bb5c8f19bfb113">stb_image.h</a></li>
+<li>stbi_gif_info_raw()&#160;:&#160;<a class="el" href="stb__image_8h.html#af51f96d12514eb0ba0ff733027af44d6">stb_image.h</a></li>
+<li>stbi_gif_load()&#160;:&#160;<a class="el" href="stb__image_8h.html#acdc99fa47fdbb310a7e38a47240e19d2">stb_image.h</a></li>
+<li>stbi_gif_load_next()&#160;:&#160;<a class="el" href="stb__image_8h.html#a4b7957155ba031af707fc0939139b59b">stb_image.h</a></li>
+<li>stbi_gif_lzw&#160;:&#160;<a class="el" href="stb__image_8h.html#a5d3b24598f39d74a5d892af054523bfa">stb_image.h</a></li>
+<li>stbi_gif_parse_colortable()&#160;:&#160;<a class="el" href="stb__image_8h.html#a40f6ab16ff132d5c4442b6b8878d5087">stb_image.h</a></li>
+<li>stbi_gif_test()&#160;:&#160;<a class="el" href="stb__image_8h.html#ac041314f3d57ab296860c1cc16d6a15d">stb_image.h</a></li>
+<li>STBI_grey&#160;:&#160;<a class="el" href="stb__image_8h.html#a6b7b47dd702d9e331586d485013fd1eaad1eb95ca1fa7706bf732bf35a0ed40aa">stb_image.h</a></li>
+<li>STBI_grey_alpha&#160;:&#160;<a class="el" href="stb__image_8h.html#a6b7b47dd702d9e331586d485013fd1eaaf5829d16d4cca6077465c5abd346e2f8">stb_image.h</a></li>
+<li>stbi_hdr_info()&#160;:&#160;<a class="el" href="stb__image_8h.html#ae8c6eba08e06fd12ea1721660cf9f914">stb_image.h</a></li>
+<li>stbi_hdr_load()&#160;:&#160;<a class="el" href="stb__image_8h.html#a547712ad82d19b3f3c6b0754c3305040">stb_image.h</a></li>
+<li>stbi_hdr_test()&#160;:&#160;<a class="el" href="stb__image_8h.html#a6e9b8b19d7eaf58f83433e821ceedbb2">stb_image.h</a></li>
+<li>stbi_hdr_to_ldr_gamma()&#160;:&#160;<a class="el" href="stb__image_8h.html#a981084e66668ed998832b84dad50bed7">stb_image.h</a></li>
+<li>stbi_hdr_to_ldr_scale()&#160;:&#160;<a class="el" href="stb__image_8h.html#a269aa666e5df1051c04f28479add324e">stb_image.h</a></li>
+<li>stbi_image_free()&#160;:&#160;<a class="el" href="stb__image_8h.html#ad47e820c6695b0cf5cfb63a29f4452d0">stb_image.h</a></li>
+<li>stbi_info()&#160;:&#160;<a class="el" href="stb__image_8h.html#ac94b9565008cb24823826506f9e97def">stb_image.h</a></li>
+<li>stbi_info_from_callbacks()&#160;:&#160;<a class="el" href="stb__image_8h.html#adda3645c29ab5a4cd7762e758687de06">stb_image.h</a></li>
+<li>stbi_info_from_file()&#160;:&#160;<a class="el" href="stb__image_8h.html#a5560f2807ab53f12ab062235b14f3a3c">stb_image.h</a></li>
+<li>stbi_info_from_memory()&#160;:&#160;<a class="el" href="stb__image_8h.html#a8a876cda0f7ca91dcb0acb0206799ad7">stb_image.h</a></li>
+<li>stbi_info_main()&#160;:&#160;<a class="el" href="stb__image_8h.html#ab25783c87d2680ab7d5b4253f77e3782">stb_image.h</a></li>
+<li>stbi_inline&#160;:&#160;<a class="el" href="stb__image_8h.html#a952111e72ed4262552e413e5938089b8">stb_image.h</a></li>
+<li>stbi_is_hdr()&#160;:&#160;<a class="el" href="stb__image_8h.html#a828738812bd834ea9af464ce9826008a">stb_image.h</a></li>
+<li>stbi_is_hdr_from_callbacks()&#160;:&#160;<a class="el" href="stb__image_8h.html#a894f9f42a78d83fa913bfa6190b5fb8d">stb_image.h</a></li>
+<li>stbi_is_hdr_from_file()&#160;:&#160;<a class="el" href="stb__image_8h.html#a6b45e9af5f0b0f76cc33bcb5b08bb7d8">stb_image.h</a></li>
+<li>stbi_is_hdr_from_memory()&#160;:&#160;<a class="el" href="stb__image_8h.html#acd0819e90be8de94e8841d7140d4262c">stb_image.h</a></li>
+<li>stbi_jpeg_info()&#160;:&#160;<a class="el" href="stb__image_8h.html#a91dde767d9565e997597c56e82d46512">stb_image.h</a></li>
+<li>stbi_jpeg_info_raw()&#160;:&#160;<a class="el" href="stb__image_8h.html#aefdd43467455ee527aa64374f7d406ec">stb_image.h</a></li>
+<li>stbi_jpeg_load()&#160;:&#160;<a class="el" href="stb__image_8h.html#a7244b21d15ac799cae4e2170ee11640c">stb_image.h</a></li>
+<li>stbi_jpeg_test()&#160;:&#160;<a class="el" href="stb__image_8h.html#a29bb9189676787706d5e1065df3707d6">stb_image.h</a></li>
+<li>stbi_ldr_to_hdr_gamma()&#160;:&#160;<a class="el" href="stb__image_8h.html#a392b50c731d9969456006783e2a6f012">stb_image.h</a></li>
+<li>stbi_ldr_to_hdr_scale()&#160;:&#160;<a class="el" href="stb__image_8h.html#a1457f71183493d5a6100ee6a9785e744">stb_image.h</a></li>
+<li>stbi_load()&#160;:&#160;<a class="el" href="stb__image_8h.html#a6e3bfbdf11886669cd2153c1136f29db">stb_image.h</a></li>
+<li>stbi_load_from_callbacks()&#160;:&#160;<a class="el" href="stb__image_8h.html#a6096435d90834b7645f25ebd727928ae">stb_image.h</a></li>
+<li>stbi_load_from_file()&#160;:&#160;<a class="el" href="stb__image_8h.html#a1425e85e77b6ae1e630d9f5c6a764a3a">stb_image.h</a></li>
+<li>stbi_load_from_memory()&#160;:&#160;<a class="el" href="stb__image_8h.html#a2ed09e0346d59f575ebb17e1ed91cd6b">stb_image.h</a></li>
+<li>stbi_load_main()&#160;:&#160;<a class="el" href="stb__image_8h.html#adb5660224374c3fc0fb64391d96e8793">stb_image.h</a></li>
+<li>stbi_loadf()&#160;:&#160;<a class="el" href="stb__image_8h.html#a143179f0a8808a0de4eba5cb5da1ec56">stb_image.h</a></li>
+<li>stbi_loadf_from_callbacks()&#160;:&#160;<a class="el" href="stb__image_8h.html#ad9042d60dee30e533f742067abe29a79">stb_image.h</a></li>
+<li>stbi_loadf_from_file()&#160;:&#160;<a class="el" href="stb__image_8h.html#a1aeca869b8b68db1a81d6c8a5cc77e2d">stb_image.h</a></li>
+<li>stbi_loadf_from_memory()&#160;:&#160;<a class="el" href="stb__image_8h.html#aefa0aac08f604862a1bb8d8401602eca">stb_image.h</a></li>
+<li>stbi_loadf_main()&#160;:&#160;<a class="el" href="stb__image_8h.html#a555effbeeec3909801a7d6d063b0845d">stb_image.h</a></li>
+<li>stbi_lrot&#160;:&#160;<a class="el" href="stb__image_8h.html#a9fbddf96684d05016c5c72fc7d54f076">stb_image.h</a></li>
+<li>STBI_NOTUSED&#160;:&#160;<a class="el" href="stb__image_8h.html#a3970ebac9a09e8116fa5855b334ca6ab">stb_image.h</a></li>
+<li>stbi_out_gif_code()&#160;:&#160;<a class="el" href="stb__image_8h.html#a9b6228119e98d838a41a0c6ec24666ad">stb_image.h</a></li>
+<li>stbi_pic_info()&#160;:&#160;<a class="el" href="stb__image_8h.html#a113d70060d950993742fc5bcef9ed497">stb_image.h</a></li>
+<li>stbi_pic_load()&#160;:&#160;<a class="el" href="stb__image_8h.html#ac6fc33fcc2b1fac5b00b07d117970bee">stb_image.h</a></li>
+<li>stbi_pic_test()&#160;:&#160;<a class="el" href="stb__image_8h.html#ac857a83ae1a5a40071b5c7720db91ca0">stb_image.h</a></li>
+<li>stbi_png_info()&#160;:&#160;<a class="el" href="stb__image_8h.html#a16487b7dc22ebf537a7d5dd90e48b93b">stb_image.h</a></li>
+<li>stbi_png_info_raw()&#160;:&#160;<a class="el" href="stb__image_8h.html#aa71b19fbfaccaf9942a32fe04b5baab9">stb_image.h</a></li>
+<li>stbi_png_load()&#160;:&#160;<a class="el" href="stb__image_8h.html#a4af88e3e8576861a2dd6b9ba08f3dc92">stb_image.h</a></li>
+<li>stbi_png_partial&#160;:&#160;<a class="el" href="stb__image_8h.html#acec14b0fa02632f29efbe91f27ab5281">stb_image.h</a></li>
+<li>stbi_png_test()&#160;:&#160;<a class="el" href="stb__image_8h.html#acf78c20d4f9e2769cb8c8c2f45bfa90d">stb_image.h</a></li>
+<li>stbi_process_gif_raster()&#160;:&#160;<a class="el" href="stb__image_8h.html#aa6e29d58efbce4cc4bccad5084c5a4c6">stb_image.h</a></li>
+<li>stbi_psd_info()&#160;:&#160;<a class="el" href="stb__image_8h.html#aec72084ffb16e7d0aaab15add054cfdb">stb_image.h</a></li>
+<li>stbi_psd_load()&#160;:&#160;<a class="el" href="stb__image_8h.html#a23d42f38eb9233b85a08b7f6a5cb8821">stb_image.h</a></li>
+<li>stbi_psd_test()&#160;:&#160;<a class="el" href="stb__image_8h.html#a82686c4908d658b1d625868842ad7220">stb_image.h</a></li>
+<li>stbi_rewind()&#160;:&#160;<a class="el" href="stb__image_8h.html#a68ecfb7bf76eae3a09f27ba97ad0d341">stb_image.h</a></li>
+<li>STBI_rgb&#160;:&#160;<a class="el" href="stb__image_8h.html#a6b7b47dd702d9e331586d485013fd1eaaa59123e5d0af25f9b1539f5cf1facddf">stb_image.h</a></li>
+<li>STBI_rgb_alpha&#160;:&#160;<a class="el" href="stb__image_8h.html#a6b7b47dd702d9e331586d485013fd1eaaa7b1af0c9f0310c3ada2aa29a32de293">stb_image.h</a></li>
+<li>stbi_set_unpremultiply_on_load()&#160;:&#160;<a class="el" href="stb__image_8h.html#acce0a2f278f8e003648f9c76c149e42a">stb_image.h</a></li>
+<li>stbi_stdio_callbacks&#160;:&#160;<a class="el" href="stb__image_8h.html#ae3951133050828c0ae0b5efb1f71184b">stb_image.h</a></li>
+<li>stbi_tga_info()&#160;:&#160;<a class="el" href="stb__image_8h.html#a9515413610ab84b252f624da3c970339">stb_image.h</a></li>
+<li>stbi_tga_load()&#160;:&#160;<a class="el" href="stb__image_8h.html#ac8ac88fe305817527a47ede0f2d9b3f9">stb_image.h</a></li>
+<li>stbi_tga_test()&#160;:&#160;<a class="el" href="stb__image_8h.html#ac30e22b03c697ac398097c2fe48689fb">stb_image.h</a></li>
+<li>stbi_uc&#160;:&#160;<a class="el" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stb_image.h</a></li>
+<li>stbi_unpremultiply_on_load&#160;:&#160;<a class="el" href="stb__image_8h.html#a1c9b491248c1c06279a227cc8ef7a174">stb_image.h</a></li>
+<li>STBI_VERSION&#160;:&#160;<a class="el" href="stb__image_8h.html#aed6cd14a3bf678808c4c179e808866aa">stb_image.h</a></li>
+<li>stbi_write_bmp()&#160;:&#160;<a class="el" href="stb__image__write_8h.html#adb12037a58d9e12e7a58c479b8e0ab8e">stb_image_write.h</a></li>
+<li>stbi_write_png()&#160;:&#160;<a class="el" href="stb__image__write_8h.html#aace2f6525144ac808cec21600cfe4498">stb_image_write.h</a></li>
+<li>stbi_write_tga()&#160;:&#160;<a class="el" href="stb__image__write_8h.html#a3ae29b478d6da0d99705825591f6d20b">stb_image_write.h</a></li>
+<li>stbi_zlib_decode_buffer()&#160;:&#160;<a class="el" href="stb__image_8h.html#a5bb68fa61fe9bba85a1ed744e33599dc">stb_image.h</a></li>
+<li>stbi_zlib_decode_malloc()&#160;:&#160;<a class="el" href="stb__image_8h.html#a22c3096e4a8005d1376003d62f59351e">stb_image.h</a></li>
+<li>stbi_zlib_decode_malloc_guesssize()&#160;:&#160;<a class="el" href="stb__image_8h.html#ad58a5fbe941f1cc170dba564f6d2bdc3">stb_image.h</a></li>
+<li>stbi_zlib_decode_malloc_guesssize_headerflag()&#160;:&#160;<a class="el" href="stb__image_8h.html#a85453cb86c180f1478d4df4913078800">stb_image.h</a></li>
+<li>stbi_zlib_decode_noheader_buffer()&#160;:&#160;<a class="el" href="stb__image_8h.html#af84d32350b9a983570a9b28204ee62f4">stb_image.h</a></li>
+<li>stbi_zlib_decode_noheader_malloc()&#160;:&#160;<a class="el" href="stb__image_8h.html#a9ac0a7b2514e7b6069bcb79ee21ebc06">stb_image.h</a></li>
+<li>stdio_eof()&#160;:&#160;<a class="el" href="stb__image_8h.html#acb33a7321a4e0ffab469c29ea7c33bc1">stb_image.h</a></li>
+<li>stdio_read()&#160;:&#160;<a class="el" href="stb__image_8h.html#a538e487c494dbbe982b6ea1c31abc322">stb_image.h</a></li>
+<li>stdio_skip()&#160;:&#160;<a class="el" href="stb__image_8h.html#aaa4d8031aca8a422618dc526d824211a">stb_image.h</a></li>
+<li>stencil&#160;:&#160;<a class="el" href="glext_8h.html#aecd18db993a66d833647945966799ca5">glext.h</a></li>
+<li>stencilClearTag&#160;:&#160;<a class="el" href="glext_8h.html#a43fbd063ceeea1f9cf4a53cba68d2407">glext.h</a></li>
+<li>storagetype&#160;:&#160;<a class="el" href="glext_8h.html#a13d471aa004dfa78f74afa760f89d4a2">glext.h</a></li>
+<li>stream&#160;:&#160;<a class="el" href="glext_8h.html#a10d3bc96cdfc1d478f52c13d5ffd9316">glext.h</a></li>
+<li>stride&#160;:&#160;<a class="el" href="glext_8h.html#a9d21c1b0530d07b637b5b71b969d7921">glext.h</a></li>
+<li>string&#160;:&#160;<a class="el" href="glext_8h.html#a06b88fc81ad0b30d1512e9609e3d7c82">glext.h</a></li>
+<li>stringlen&#160;:&#160;<a class="el" href="glext_8h.html#a0fa7e7ab44d05aec9b9988630e42a820">glext.h</a></li>
+<li>strings&#160;:&#160;<a class="el" href="glext_8h.html#aaeb7bf48d8304978a3a62ec0201594c0">glext.h</a></li>
+<li>structsize&#160;:&#160;<a class="el" href="jpeglib_8h.html#a9885948328df3b903394d3c36c4b632a">jpeglib.h</a></li>
+<li>sumOutput&#160;:&#160;<a class="el" href="glext_8h.html#aa7ae35809d7514d06d2260d713ed45d1">glext.h</a></li>
+<li>suppress&#160;:&#160;<a class="el" href="jpeglib_8h.html#a4db3d384cc8b51bcf51055247027a8cc">jpeglib.h</a></li>
+<li>surfaces&#160;:&#160;<a class="el" href="glext_8h.html#a811e8a1a66c2eb6180acb912660e6988">glext.h</a></li>
+<li>swizzle&#160;:&#160;<a class="el" href="glext_8h.html#a320af4389dfb5556a1049053d79f8ec5">glext.h</a></li>
+</ul>
+</div><!-- contents -->
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+                    Back to top
+                </button>
+            </main>
+            <footer class="md-footer">
+                <nav class="md-footer__inner md-grid" aria-label="Footer" hidden>
+                    <a href="/learn/" class="md-footer__link md-footer__link--next" aria-label="Next: Learn">
+                        <div class="md-footer__title">
+                            <span class="md-footer__direction"> Next </span>
+                            <div class="md-ellipsis">Learn</div>
+                        </div>
+                        <div class="md-footer__button md-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z" /></svg>
+                        </div>
+                    </a>
+                </nav>
+                <div class="md-footer-meta md-typeset">
+                    <div class="md-footer-meta__inner md-grid">
+                        <div class="md-copyright">
+                            <div class="md-copyright__highlight">Copyright &copy; <a href="mailto:laurent@sfml-dev.org">Laurent Gomila</a></div>
+                        </div>
+                        <div class="md-social">
+                            <a href="https://fosstodon.org/@sfml" target="_blank" rel="noopener me" title="SFML on Fosstodon" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com/sfmldev" target="_blank" rel="noopener" title="SFML on Twitter" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="https://discord.gg/nr4X7Fh" target="_blank" rel="noopener" title="SFML&#39;s Discord Server" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="md-dialog" data-md-component="dialog">
+            <div class="md-dialog__inner md-typeset"></div>
+        </div>
+        <script id="__config" type="application/json">
+            {
+                "base": ".",
+                "features": ["content.code.copy", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.prune", "navigation.path", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.suggest"],
+                "search": "/assets/javascripts/workers/search.b8dbb3d2.min.js",
+                "translations": {
+                    "clipboard.copied": "Copied to clipboard",
+                    "clipboard.copy": "Copy to clipboard",
+                    "search.result.more.one": "1 more on this page",
+                    "search.result.more.other": "# more on this page",
+                    "search.result.none": "No matching documents",
+                    "search.result.one": "1 matching document",
+                    "search.result.other": "# matching documents",
+                    "search.result.placeholder": "Type to start searching",
+                    "search.result.term.missing": "Missing",
+                    "select.version": "Select version"
+                }
+            }
+        </script>
+        <script src="/assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+    </body>
+</html>

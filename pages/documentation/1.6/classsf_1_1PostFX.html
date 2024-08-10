@@ -1,0 +1,1973 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="Simple and Fast Multimedia Library" />
+        <link rel="canonical" href="https://www.sfml-dev.org/" />
+        <link rel="next" href="/learn/" />
+        <link rel="icon" href="/images/favicon.ico" />
+        <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.30" />
+        <title>Home - Simple and Fast Multimedia Library</title>
+        <link rel="stylesheet" href="/assets/stylesheets/main.3cba04c6.min.css" />
+        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback" />
+        <style>
+            :root {
+                --md-text-font: "Ubuntu";
+                --md-code-font: "Roboto Mono";
+            }
+        </style>
+        <link rel="stylesheet" href="/styles/extra.css" />
+        <script>
+            (__md_scope = new URL(".", location)),
+                (__md_hash = (e) => [...e].reduce((e, _) => (e << 5) - e + _.charCodeAt(0), 0)),
+                (__md_get = (e, _ = localStorage, t = __md_scope) => JSON.parse(_.getItem(t.pathname + "." + e))),
+                (__md_set = (e, _, t = localStorage, a = __md_scope) => {
+                    try {
+                        t.setItem(a.pathname + "." + e, JSON.stringify(_));
+                    } catch (e) {}
+                });
+        </script>
+        <link rel="stylesheet" type="text/css" href="doxygen.css" title="default" media="screen,print" />
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="dynsections.js"></script>
+        <script type="text/javascript" src="clipboard.js"></script>
+        <script type="text/javascript" src="cookie.js"></script>
+        <script type="text/javascript" src="resize.js"></script>
+        <link rel="stylesheet" type="text/css" href="search/search.css" />
+        <link rel="stylesheet" type="text/css" href="searchOverrides.css" />
+        <script type="text/javascript" src="search/searchdata.js"></script>
+        <script type="text/javascript" src="search/search.js"></script>
+        <script type="text/javascript">
+            /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+            $(document).ready(function () {
+                init_search();
+            });
+            /* @license-end */
+        </script>
+    </head>
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="indigo">
+        <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off" />
+        <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off" />
+        <label class="md-overlay" for="__drawer"></label>
+        <div data-md-component="skip">
+            <a href="#simple-and-fast-multimedia-library" class="md-skip"> Skip to content </a>
+        </div>
+        <div data-md-component="announce"></div>
+        <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+            <nav class="md-header__inner md-grid" aria-label="Header">
+                <a href="." title="Simple and Fast Multimedia Library" class="md-header__button md-logo" aria-label="Simple and Fast Multimedia Library" data-md-component="logo">
+                    <img src="/images/logo.png" alt="logo" />
+                </a>
+                <label class="md-header__button md-icon" for="__drawer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z" /></svg>
+                </label>
+                <div class="md-header__title" data-md-component="header-title">
+                    <div class="md-header__ellipsis">
+                        <div class="md-header__topic">
+                            <span class="md-ellipsis"> Simple and Fast Multimedia Library </span>
+                        </div>
+                        <div class="md-header__topic" data-md-component="header-topic">
+                            <span class="md-ellipsis"> Home </span>
+                        </div>
+                    </div>
+                </div>
+                <form class="md-header__option" data-md-component="palette">
+                    <input
+                        class="md-option"
+                        data-md-color-media="(prefers-color-scheme: light)"
+                        data-md-color-scheme="default"
+                        data-md-color-primary="light-green"
+                        data-md-color-accent="indigo"
+                        aria-label="Switch to dark mode"
+                        type="radio"
+                        name="__palette"
+                        id="__palette_0"
+                    />
+                    <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"
+                            />
+                        </svg>
+                    </label>
+                    <input
+                        class="md-option"
+                        data-md-color-media="(prefers-color-scheme: dark)"
+                        data-md-color-scheme="slate"
+                        data-md-color-primary="green"
+                        data-md-color-accent="indigo"
+                        aria-label="Switch to light mode"
+                        type="radio"
+                        name="__palette"
+                        id="__palette_1"
+                    />
+                    <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"
+                            />
+                        </svg>
+                    </label>
+                </form>
+                <script>
+                    var media,
+                        input,
+                        key,
+                        value,
+                        palette = __md_get("__palette");
+                    if (palette && palette.color) {
+                        "(prefers-color-scheme)" === palette.color.media &&
+                            ((media = matchMedia("(prefers-color-scheme: light)")),
+                            (input = document.querySelector(media.matches ? "[data-md-color-media='(prefers-color-scheme: light)']" : "[data-md-color-media='(prefers-color-scheme: dark)']")),
+                            (palette.color.media = input.getAttribute("data-md-color-media")),
+                            (palette.color.scheme = input.getAttribute("data-md-color-scheme")),
+                            (palette.color.primary = input.getAttribute("data-md-color-primary")),
+                            (palette.color.accent = input.getAttribute("data-md-color-accent")));
+                        for ([key, value] of Object.entries(palette.color)) document.body.setAttribute("data-md-color-" + key, value);
+                    }
+                </script>
+                <div class="md-header__option">
+                    <div class="md-select">
+                        <button class="md-header__button md-icon" aria-label="Select language">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"
+                                />
+                            </svg>
+                        </button>
+                        <div class="md-select__inner">
+                            <ul class="md-select__list">
+                                <li class="md-select__item">
+                                    <a href="/" hreflang="en" class="md-select__link"> English </a>
+                                </li>
+                                <li class="md-select__item">
+                                    <a href="/fr/" hreflang="fr" class="md-select__link"> Français </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <label class="md-header__button md-icon" for="__search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"
+                        />
+                    </svg>
+                </label>
+                <div class="md-search" data-md-component="search" role="dialog">
+                    <label class="md-search__overlay" for="__search"></label>
+                    <div class="md-search__inner" role="search">
+                        <form class="md-search__form" name="search">
+                            <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required />
+                            <label class="md-search__icon md-icon" for="__search">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"
+                                    />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z" /></svg>
+                            </label>
+                            <nav class="md-search__options" aria-label="Search">
+                                <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z" /></svg>
+                                </button>
+                            </nav>
+                            <div class="md-search__suggest" data-md-component="search-suggest"></div>
+                        </form>
+                        <div class="md-search__output">
+                            <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+                                <div class="md-search-result" data-md-component="search-result">
+                                    <div class="md-search-result__meta">Initializing search</div>
+                                    <ol class="md-search-result__list" role="presentation"></ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-header__source">
+                    <a href="https://github.com/SFML/SFML" title="Go to repository" class="md-source" data-md-component="source">
+                        <div class="md-source__icon md-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. -->
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                                />
+                            </svg>
+                        </div>
+                        <div class="md-source__repository">SFML</div>
+                    </a>
+                </div>
+            </nav>
+            <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+                <div class="md-grid">
+                    <ul class="md-tabs__list">
+                        <li class="md-tabs__item">
+                            <a href="/" class="md-tabs__link"> Home </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/learn/" class="md-tabs__link"> Learn </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/tutorials/2.6/" class="md-tabs__link"> Tutorials </a>
+                        </li>
+                        <li class="md-tabs__item md-tabs__item--active">
+                            <a href="/documentation" class="md-tabs__link"> Documentation </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/download/" class="md-tabs__link"> Download </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/community/" class="md-tabs__link"> Community </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/development/" class="md-tabs__link"> Development </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="md-container" data-md-component="container">
+            <main class="md-main" data-md-component="main">
+                <div class="md-main__inner md-grid">
+                    <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                        <div class="md-sidebar__scrollwrap">
+                            <div class="md-sidebar__inner">
+                                <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+                                    <label class="md-nav__title" for="__drawer">
+                                        <a href="." title="Simple and Fast Multimedia Library" class="md-nav__button md-logo" aria-label="Simple and Fast Multimedia Library" data-md-component="logo">
+                                            <img src="/images/logo.png" alt="logo" />
+                                        </a>
+                                        Simple and Fast Multimedia Library
+                                    </label>
+                                    <div class="md-nav__source">
+                                        <a href="https://github.com/SFML/SFML" title="Go to repository" class="md-source" data-md-component="source">
+                                            <div class="md-source__icon md-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. -->
+                                                    <path
+                                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                                                    />
+                                                </svg>
+                                            </div>
+                                            <div class="md-source__repository">SFML</div>
+                                        </a>
+                                    </div>
+                                    <ul class="md-nav__list" data-md-scrollfix>
+                                        <li class="md-nav__item">
+                                            <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc" />
+                                            <label class="md-nav__link" for="__toc">
+                                                <span class="md-ellipsis"> Home </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </label>
+                                            <a href="." class="md-nav__link">
+                                                <span class="md-ellipsis"> Home </span>
+                                            </a>
+                                            <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+                                                <label class="md-nav__title" for="__toc">
+                                                    <span class="md-nav__icon md-icon"></span>
+                                                    Table of contents
+                                                </label>
+                                                <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-media" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-media </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-platform" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-platform </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-language" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-language </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="learn/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Learn </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="tutorials/2.6/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Tutorials </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--active">
+                                            <a href="documentation" class="md-nav__link md-nav__link--active">
+                                                <span class="md-ellipsis"> Documentation </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="download/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Download </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="community/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Community </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="development/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Development </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                        <div class="md-sidebar__scrollwrap">
+                            <div class="md-sidebar__inner">
+                                <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+                                    <label class="md-nav__title" for="__toc">
+                                        <span class="md-nav__icon md-icon"></span>
+                                        Table of contents
+                                    </label>
+                                    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-media" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-media </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-platform" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-platform </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-language" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-language </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-content" data-md-component="content">
+                        <div class="contents">
+<!-- Generated by Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
+    </ul>
+  </div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacesf.html">sf</a></li><li class="navelem"><a class="el" href="classsf_1_1PostFX.html">PostFX</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="classsf_1_1PostFX-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">sf::PostFX Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="classsf_1_1PostFX.html" title="PostFX is used to apply a post effect to a window.">PostFX</a> is used to apply a post effect to a window.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="PostFX_8hpp_source.html">PostFX.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for sf::PostFX:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classsf_1_1PostFX.png" usemap="#sf::PostFX_map" alt=""/>
+  <map id="sf::PostFX_map" name="sf::PostFX_map">
+<area href="classsf_1_1Drawable.html" title="Abstract base class for every object that can be drawn into a render window." alt="sf::Drawable" shape="rect" coords="0,0,82,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a205bffbe841cf3804447e8d3e684f7eb" id="r_a205bffbe841cf3804447e8d3e684f7eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a205bffbe841cf3804447e8d3e684f7eb">PostFX</a> ()</td></tr>
+<tr class="memdesc:a205bffbe841cf3804447e8d3e684f7eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <br /></td></tr>
+<tr class="separator:a205bffbe841cf3804447e8d3e684f7eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ec47ed9e2539b589695854e2b259b47" id="r_a4ec47ed9e2539b589695854e2b259b47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ec47ed9e2539b589695854e2b259b47">PostFX</a> (const <a class="el" href="classsf_1_1PostFX.html">PostFX</a> &amp;Copy)</td></tr>
+<tr class="memdesc:a4ec47ed9e2539b589695854e2b259b47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <br /></td></tr>
+<tr class="separator:a4ec47ed9e2539b589695854e2b259b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9349387988368fe8a2c66e4b3220d63" id="r_ab9349387988368fe8a2c66e4b3220d63"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9349387988368fe8a2c66e4b3220d63">~PostFX</a> ()</td></tr>
+<tr class="memdesc:ab9349387988368fe8a2c66e4b3220d63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
+<tr class="separator:ab9349387988368fe8a2c66e4b3220d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03c9aa065a98750335780213aff2be92" id="r_a03c9aa065a98750335780213aff2be92"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03c9aa065a98750335780213aff2be92">LoadFromFile</a> (const std::string &amp;Filename)</td></tr>
+<tr class="memdesc:a03c9aa065a98750335780213aff2be92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the effect from a file.  <br /></td></tr>
+<tr class="separator:a03c9aa065a98750335780213aff2be92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53b9df4741e52bd4978d642153e492b6" id="r_a53b9df4741e52bd4978d642153e492b6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53b9df4741e52bd4978d642153e492b6">LoadFromMemory</a> (const std::string &amp;Effect)</td></tr>
+<tr class="memdesc:a53b9df4741e52bd4978d642153e492b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the effect from a text in memory.  <br /></td></tr>
+<tr class="separator:a53b9df4741e52bd4978d642153e492b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d7e11f6ecf159d09460220ecc43e45a" id="r_a4d7e11f6ecf159d09460220ecc43e45a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d7e11f6ecf159d09460220ecc43e45a">SetParameter</a> (const std::string &amp;Name, float X)</td></tr>
+<tr class="memdesc:a4d7e11f6ecf159d09460220ecc43e45a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change a parameter of the effect (1 float)  <br /></td></tr>
+<tr class="separator:a4d7e11f6ecf159d09460220ecc43e45a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa92c8a3f203a64d816c6844bdfad2393" id="r_aa92c8a3f203a64d816c6844bdfad2393"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa92c8a3f203a64d816c6844bdfad2393">SetParameter</a> (const std::string &amp;Name, float X, float Y)</td></tr>
+<tr class="memdesc:aa92c8a3f203a64d816c6844bdfad2393"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change a parameter of the effect (2 floats)  <br /></td></tr>
+<tr class="separator:aa92c8a3f203a64d816c6844bdfad2393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a031c257687c3115d6f524e7922e32d67" id="r_a031c257687c3115d6f524e7922e32d67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a031c257687c3115d6f524e7922e32d67">SetParameter</a> (const std::string &amp;Name, float X, float Y, float Z)</td></tr>
+<tr class="memdesc:a031c257687c3115d6f524e7922e32d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change a parameter of the effect (3 floats)  <br /></td></tr>
+<tr class="separator:a031c257687c3115d6f524e7922e32d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bc85737080c281148a247fccb8e06de" id="r_a3bc85737080c281148a247fccb8e06de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3bc85737080c281148a247fccb8e06de">SetParameter</a> (const std::string &amp;Name, float X, float Y, float Z, float W)</td></tr>
+<tr class="memdesc:a3bc85737080c281148a247fccb8e06de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change a parameter of the effect (4 floats)  <br /></td></tr>
+<tr class="separator:a3bc85737080c281148a247fccb8e06de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b9d05ec45df72151d0a5284cbf88fa1" id="r_a4b9d05ec45df72151d0a5284cbf88fa1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b9d05ec45df72151d0a5284cbf88fa1">SetTexture</a> (const std::string &amp;Name, <a class="el" href="classsf_1_1Image.html">Image</a> *Texture)</td></tr>
+<tr class="memdesc:a4b9d05ec45df72151d0a5284cbf88fa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a texture parameter.  <br /></td></tr>
+<tr class="separator:a4b9d05ec45df72151d0a5284cbf88fa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4f7f8c7b1b28f80a41f3e9680248eba" id="r_ae4f7f8c7b1b28f80a41f3e9680248eba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1PostFX.html">PostFX</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4f7f8c7b1b28f80a41f3e9680248eba">operator=</a> (const <a class="el" href="classsf_1_1PostFX.html">PostFX</a> &amp;Other)</td></tr>
+<tr class="memdesc:ae4f7f8c7b1b28f80a41f3e9680248eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment operator.  <br /></td></tr>
+<tr class="separator:ae4f7f8c7b1b28f80a41f3e9680248eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a419da954b1f2ad1ac2ae0b9ab6e72589" id="r_a419da954b1f2ad1ac2ae0b9ab6e72589"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.html#a419da954b1f2ad1ac2ae0b9ab6e72589">SetPosition</a> (float X, float Y)</td></tr>
+<tr class="memdesc:a419da954b1f2ad1ac2ae0b9ab6e72589"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the position of the object (take 2 values)  <br /></td></tr>
+<tr class="separator:a419da954b1f2ad1ac2ae0b9ab6e72589"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2a279f3b13abf57cc25b2b4bd3b81ae" id="r_ad2a279f3b13abf57cc25b2b4bd3b81ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.html#ad2a279f3b13abf57cc25b2b4bd3b81ae">SetPosition</a> (const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp;Position)</td></tr>
+<tr class="memdesc:ad2a279f3b13abf57cc25b2b4bd3b81ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the position of the object (take a 2D vector)  <br /></td></tr>
+<tr class="separator:ad2a279f3b13abf57cc25b2b4bd3b81ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8de7bfe092736083dcf23b0dbd22b1e" id="r_ac8de7bfe092736083dcf23b0dbd22b1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.html#ac8de7bfe092736083dcf23b0dbd22b1e">SetX</a> (float X)</td></tr>
+<tr class="memdesc:ac8de7bfe092736083dcf23b0dbd22b1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the X position of the object.  <br /></td></tr>
+<tr class="separator:ac8de7bfe092736083dcf23b0dbd22b1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83fecebe749c1aca9070eafd63e1a0c9" id="r_a83fecebe749c1aca9070eafd63e1a0c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.html#a83fecebe749c1aca9070eafd63e1a0c9">SetY</a> (float Y)</td></tr>
+<tr class="memdesc:a83fecebe749c1aca9070eafd63e1a0c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Y position of the object.  <br /></td></tr>
+<tr class="separator:a83fecebe749c1aca9070eafd63e1a0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b486c56c2bd137bac629f72fea66769" id="r_a0b486c56c2bd137bac629f72fea66769"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.html#a0b486c56c2bd137bac629f72fea66769">SetScale</a> (float ScaleX, float ScaleY)</td></tr>
+<tr class="memdesc:a0b486c56c2bd137bac629f72fea66769"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the scale of the object (take 2 values)  <br /></td></tr>
+<tr class="separator:a0b486c56c2bd137bac629f72fea66769"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84876c5ef7fa628c85c3c9e000e50aa1" id="r_a84876c5ef7fa628c85c3c9e000e50aa1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.html#a84876c5ef7fa628c85c3c9e000e50aa1">SetScale</a> (const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp;<a class="el" href="classsf_1_1Drawable.html#a2a132c9f2f3736b7d0f6ea80303caacd">Scale</a>)</td></tr>
+<tr class="memdesc:a84876c5ef7fa628c85c3c9e000e50aa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the scale of the object (take a 2D vector)  <br /></td></tr>
+<tr class="separator:a84876c5ef7fa628c85c3c9e000e50aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cafae61a1d23bddb059d64df0e1502f" id="r_a0cafae61a1d23bddb059d64df0e1502f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.html#a0cafae61a1d23bddb059d64df0e1502f">SetScaleX</a> (float FactorX)</td></tr>
+<tr class="memdesc:a0cafae61a1d23bddb059d64df0e1502f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the X scale factor of the object.  <br /></td></tr>
+<tr class="separator:a0cafae61a1d23bddb059d64df0e1502f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89e7793c74c656e5850b71d0ab34b8bf" id="r_a89e7793c74c656e5850b71d0ab34b8bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.html#a89e7793c74c656e5850b71d0ab34b8bf">SetScaleY</a> (float FactorY)</td></tr>
+<tr class="memdesc:a89e7793c74c656e5850b71d0ab34b8bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Y scale factor of the object.  <br /></td></tr>
+<tr class="separator:a89e7793c74c656e5850b71d0ab34b8bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11ba1d92bc863af6d95831d216802f61" id="r_a11ba1d92bc863af6d95831d216802f61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.html#a11ba1d92bc863af6d95831d216802f61">SetCenter</a> (float CenterX, float CenterY)</td></tr>
+<tr class="memdesc:a11ba1d92bc863af6d95831d216802f61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the center of the object, in coordinates relative to the top-left of the object (take 2 values).  <br /></td></tr>
+<tr class="separator:a11ba1d92bc863af6d95831d216802f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a235e438555d8161f4995615f24fa0b11" id="r_a235e438555d8161f4995615f24fa0b11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.html#a235e438555d8161f4995615f24fa0b11">SetCenter</a> (const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp;Center)</td></tr>
+<tr class="memdesc:a235e438555d8161f4995615f24fa0b11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the center of the object, in coordinates relative to the top-left of the object (take a 2D vector).  <br /></td></tr>
+<tr class="separator:a235e438555d8161f4995615f24fa0b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d06383770eb01ffecf3d1cae6fec0ec" id="r_a6d06383770eb01ffecf3d1cae6fec0ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.html#a6d06383770eb01ffecf3d1cae6fec0ec">SetRotation</a> (float Rotation)</td></tr>
+<tr class="memdesc:a6d06383770eb01ffecf3d1cae6fec0ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the orientation of the object.  <br /></td></tr>
+<tr class="separator:a6d06383770eb01ffecf3d1cae6fec0ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cae9f22220985e368a1b38af7644ffb" id="r_a8cae9f22220985e368a1b38af7644ffb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.html#a8cae9f22220985e368a1b38af7644ffb">SetColor</a> (const <a class="el" href="classsf_1_1Color.html">Color</a> &amp;Col)</td></tr>
+<tr class="memdesc:a8cae9f22220985e368a1b38af7644ffb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the color of the object.  <br /></td></tr>
+<tr class="separator:a8cae9f22220985e368a1b38af7644ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa6558b1ae27e29cb825028473707da5" id="r_aaa6558b1ae27e29cb825028473707da5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.html#aaa6558b1ae27e29cb825028473707da5">SetBlendMode</a> (<a class="el" href="namespacesf_1_1Blend.html#a1a2fa89de4bb0d82b2eb30399fe575ca">Blend::Mode</a> Mode)</td></tr>
+<tr class="memdesc:aaa6558b1ae27e29cb825028473707da5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the blending mode for the object.  <br /></td></tr>
+<tr class="separator:aaa6558b1ae27e29cb825028473707da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b127b99a22dcba3910d4ab1bf6c6c4b" id="r_a2b127b99a22dcba3910d4ab1bf6c6c4b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.html#a2b127b99a22dcba3910d4ab1bf6c6c4b">GetPosition</a> () const</td></tr>
+<tr class="memdesc:a2b127b99a22dcba3910d4ab1bf6c6c4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the position of the object.  <br /></td></tr>
+<tr class="separator:a2b127b99a22dcba3910d4ab1bf6c6c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dfb6d365f3c48e9676a9d93a575452b" id="r_a2dfb6d365f3c48e9676a9d93a575452b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.html#a2dfb6d365f3c48e9676a9d93a575452b">GetScale</a> () const</td></tr>
+<tr class="memdesc:a2dfb6d365f3c48e9676a9d93a575452b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current scale of the object.  <br /></td></tr>
+<tr class="separator:a2dfb6d365f3c48e9676a9d93a575452b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4f5313e81152444e0ecb5d23e9b8692" id="r_ab4f5313e81152444e0ecb5d23e9b8692"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.html#ab4f5313e81152444e0ecb5d23e9b8692">GetCenter</a> () const</td></tr>
+<tr class="memdesc:ab4f5313e81152444e0ecb5d23e9b8692"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the center of the object.  <br /></td></tr>
+<tr class="separator:ab4f5313e81152444e0ecb5d23e9b8692"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7c944ad09da28a26e3fef7d5b981c5b" id="r_ae7c944ad09da28a26e3fef7d5b981c5b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.html#ae7c944ad09da28a26e3fef7d5b981c5b">GetRotation</a> () const</td></tr>
+<tr class="memdesc:ae7c944ad09da28a26e3fef7d5b981c5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the orientation of the object.  <br /></td></tr>
+<tr class="separator:ae7c944ad09da28a26e3fef7d5b981c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a8876bdc6f9d8a8a203cca1681da367" id="r_a7a8876bdc6f9d8a8a203cca1681da367"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classsf_1_1Color.html">Color</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.html#a7a8876bdc6f9d8a8a203cca1681da367">GetColor</a> () const</td></tr>
+<tr class="memdesc:a7a8876bdc6f9d8a8a203cca1681da367"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the color of the object.  <br /></td></tr>
+<tr class="separator:a7a8876bdc6f9d8a8a203cca1681da367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a6df152a2cbb34e5291674f1a7949db" id="r_a7a6df152a2cbb34e5291674f1a7949db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacesf_1_1Blend.html#a1a2fa89de4bb0d82b2eb30399fe575ca">Blend::Mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.html#a7a6df152a2cbb34e5291674f1a7949db">GetBlendMode</a> () const</td></tr>
+<tr class="memdesc:a7a6df152a2cbb34e5291674f1a7949db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current blending mode.  <br /></td></tr>
+<tr class="separator:a7a6df152a2cbb34e5291674f1a7949db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a501df9af956362b3e3769d80381c051b" id="r_a501df9af956362b3e3769d80381c051b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.html#a501df9af956362b3e3769d80381c051b">Move</a> (float OffsetX, float OffsetY)</td></tr>
+<tr class="memdesc:a501df9af956362b3e3769d80381c051b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move the object of a given offset (take 2 values)  <br /></td></tr>
+<tr class="separator:a501df9af956362b3e3769d80381c051b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c0ac0851d6b0ebed80ae9641ff93161" id="r_a3c0ac0851d6b0ebed80ae9641ff93161"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.html#a3c0ac0851d6b0ebed80ae9641ff93161">Move</a> (const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp;Offset)</td></tr>
+<tr class="memdesc:a3c0ac0851d6b0ebed80ae9641ff93161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move the object of a given offset (take a 2D vector)  <br /></td></tr>
+<tr class="separator:a3c0ac0851d6b0ebed80ae9641ff93161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a132c9f2f3736b7d0f6ea80303caacd" id="r_a2a132c9f2f3736b7d0f6ea80303caacd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.html#a2a132c9f2f3736b7d0f6ea80303caacd">Scale</a> (float FactorX, float FactorY)</td></tr>
+<tr class="memdesc:a2a132c9f2f3736b7d0f6ea80303caacd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale the object (take 2 values)  <br /></td></tr>
+<tr class="separator:a2a132c9f2f3736b7d0f6ea80303caacd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac969d85eaf63f072de9e963bd973e91a" id="r_ac969d85eaf63f072de9e963bd973e91a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.html#ac969d85eaf63f072de9e963bd973e91a">Scale</a> (const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp;Factor)</td></tr>
+<tr class="memdesc:ac969d85eaf63f072de9e963bd973e91a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale the object (take a 2D vector)  <br /></td></tr>
+<tr class="separator:ac969d85eaf63f072de9e963bd973e91a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e7d558d0ef488485a2d3f885ff2b419" id="r_a3e7d558d0ef488485a2d3f885ff2b419"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.html#a3e7d558d0ef488485a2d3f885ff2b419">Rotate</a> (float Angle)</td></tr>
+<tr class="memdesc:a3e7d558d0ef488485a2d3f885ff2b419"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotate the object.  <br /></td></tr>
+<tr class="separator:a3e7d558d0ef488485a2d3f885ff2b419"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc9801106b500aaa19aec70f1d88b402" id="r_acc9801106b500aaa19aec70f1d88b402"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">sf::Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.html#acc9801106b500aaa19aec70f1d88b402">TransformToLocal</a> (const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">sf::Vector2f</a> &amp;Point) const</td></tr>
+<tr class="memdesc:acc9801106b500aaa19aec70f1d88b402"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform a point from global coordinates into local coordinates (ie it applies the inverse of object's center, translation, rotation and scale to the point)  <br /></td></tr>
+<tr class="separator:acc9801106b500aaa19aec70f1d88b402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ed51aa1c5eab1a8aff6c9ce57b3c9c2" id="r_a6ed51aa1c5eab1a8aff6c9ce57b3c9c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">sf::Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.html#a6ed51aa1c5eab1a8aff6c9ce57b3c9c2">TransformToGlobal</a> (const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">sf::Vector2f</a> &amp;Point) const</td></tr>
+<tr class="memdesc:a6ed51aa1c5eab1a8aff6c9ce57b3c9c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform a point from local coordinates into global coordinates (ie it applies the object's center, translation, rotation and scale to the point)  <br /></td></tr>
+<tr class="separator:a6ed51aa1c5eab1a8aff6c9ce57b3c9c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a9f6642b75c82e0e856951e71b77aa7e8" id="r_a9f6642b75c82e0e856951e71b77aa7e8"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f6642b75c82e0e856951e71b77aa7e8">CanUsePostFX</a> ()</td></tr>
+<tr class="memdesc:a9f6642b75c82e0e856951e71b77aa7e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tell whether or not the system supports post-effects.  <br /></td></tr>
+<tr class="separator:a9f6642b75c82e0e856951e71b77aa7e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a7bcedebfb26c1b607d7df550d87b8cf7" id="r_a7bcedebfb26c1b607d7df550d87b8cf7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7bcedebfb26c1b607d7df550d87b8cf7">Render</a> (<a class="el" href="classsf_1_1RenderTarget.html">RenderTarget</a> &amp;Target) const</td></tr>
+<tr class="memdesc:a7bcedebfb26c1b607d7df550d87b8cf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">/see Drawable::Render  <br /></td></tr>
+<tr class="separator:a7bcedebfb26c1b607d7df550d87b8cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2812a9154cc1d91439bb46083f555d32" id="r_a2812a9154cc1d91439bb46083f555d32"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classsf_1_1Matrix3.html">Matrix3</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.html#a2812a9154cc1d91439bb46083f555d32">GetMatrix</a> () const</td></tr>
+<tr class="memdesc:a2812a9154cc1d91439bb46083f555d32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the transform matrix of the drawable.  <br /></td></tr>
+<tr class="separator:a2812a9154cc1d91439bb46083f555d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a473071057a5243e6958d57cec9150158" id="r_a473071057a5243e6958d57cec9150158"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classsf_1_1Matrix3.html">Matrix3</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Drawable.html#a473071057a5243e6958d57cec9150158">GetInverseMatrix</a> () const</td></tr>
+<tr class="memdesc:a473071057a5243e6958d57cec9150158"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the inverse transform matrix of the drawable.  <br /></td></tr>
+<tr class="separator:a473071057a5243e6958d57cec9150158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classsf_1_1PostFX.html" title="PostFX is used to apply a post effect to a window.">PostFX</a> is used to apply a post effect to a window. </p>
+
+<p class="definition">Definition at line <a class="el" href="PostFX_8hpp_source.html#l00043">43</a> of file <a class="el" href="PostFX_8hpp_source.html">PostFX.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a205bffbe841cf3804447e8d3e684f7eb" name="a205bffbe841cf3804447e8d3e684f7eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a205bffbe841cf3804447e8d3e684f7eb">&#9670;&#160;</a></span>PostFX() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::PostFX::PostFX </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Default constructor. </p>
+
+</div>
+</div>
+<a id="a4ec47ed9e2539b589695854e2b259b47" name="a4ec47ed9e2539b589695854e2b259b47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ec47ed9e2539b589695854e2b259b47">&#9670;&#160;</a></span>PostFX() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::PostFX::PostFX </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsf_1_1PostFX.html">PostFX</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>Copy</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Copy</td><td>: Instance to copy </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab9349387988368fe8a2c66e4b3220d63" name="ab9349387988368fe8a2c66e4b3220d63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9349387988368fe8a2c66e4b3220d63">&#9670;&#160;</a></span>~PostFX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::PostFX::~PostFX </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destructor. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9f6642b75c82e0e856951e71b77aa7e8" name="a9f6642b75c82e0e856951e71b77aa7e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f6642b75c82e0e856951e71b77aa7e8">&#9670;&#160;</a></span>CanUsePostFX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool sf::PostFX::CanUsePostFX </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tell whether or not the system supports post-effects. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if the system can use post-effects </dd></dl>
+
+</div>
+</div>
+<a id="a7a6df152a2cbb34e5291674f1a7949db" name="a7a6df152a2cbb34e5291674f1a7949db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a6df152a2cbb34e5291674f1a7949db">&#9670;&#160;</a></span>GetBlendMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacesf_1_1Blend.html#a1a2fa89de4bb0d82b2eb30399fe575ca">Blend::Mode</a> sf::Drawable::GetBlendMode </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the current blending mode. </p>
+<dl class="section return"><dt>Returns</dt><dd>Current blending mode </dd></dl>
+
+</div>
+</div>
+<a id="ab4f5313e81152444e0ecb5d23e9b8692" name="ab4f5313e81152444e0ecb5d23e9b8692"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4f5313e81152444e0ecb5d23e9b8692">&#9670;&#160;</a></span>GetCenter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp; sf::Drawable::GetCenter </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the center of the object. </p>
+<dl class="section return"><dt>Returns</dt><dd>Current position of the center </dd></dl>
+
+</div>
+</div>
+<a id="a7a8876bdc6f9d8a8a203cca1681da367" name="a7a8876bdc6f9d8a8a203cca1681da367"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a8876bdc6f9d8a8a203cca1681da367">&#9670;&#160;</a></span>GetColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classsf_1_1Color.html">Color</a> &amp; sf::Drawable::GetColor </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the color of the object. </p>
+<dl class="section return"><dt>Returns</dt><dd>Current color </dd></dl>
+
+</div>
+</div>
+<a id="a473071057a5243e6958d57cec9150158" name="a473071057a5243e6958d57cec9150158"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a473071057a5243e6958d57cec9150158">&#9670;&#160;</a></span>GetInverseMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classsf_1_1Matrix3.html">Matrix3</a> &amp; sf::Drawable::GetInverseMatrix </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the inverse transform matrix of the drawable. </p>
+<dl class="section return"><dt>Returns</dt><dd>Inverse transform matrix </dd></dl>
+
+</div>
+</div>
+<a id="a2812a9154cc1d91439bb46083f555d32" name="a2812a9154cc1d91439bb46083f555d32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2812a9154cc1d91439bb46083f555d32">&#9670;&#160;</a></span>GetMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classsf_1_1Matrix3.html">Matrix3</a> &amp; sf::Drawable::GetMatrix </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the transform matrix of the drawable. </p>
+<dl class="section return"><dt>Returns</dt><dd>Transform matrix </dd></dl>
+
+</div>
+</div>
+<a id="a2b127b99a22dcba3910d4ab1bf6c6c4b" name="a2b127b99a22dcba3910d4ab1bf6c6c4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b127b99a22dcba3910d4ab1bf6c6c4b">&#9670;&#160;</a></span>GetPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp; sf::Drawable::GetPosition </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the position of the object. </p>
+<dl class="section return"><dt>Returns</dt><dd>Current position </dd></dl>
+
+</div>
+</div>
+<a id="ae7c944ad09da28a26e3fef7d5b981c5b" name="ae7c944ad09da28a26e3fef7d5b981c5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7c944ad09da28a26e3fef7d5b981c5b">&#9670;&#160;</a></span>GetRotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float sf::Drawable::GetRotation </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the orientation of the object. </p>
+<p>Rotation is always in the range [0, 360]</p>
+<dl class="section return"><dt>Returns</dt><dd>Current rotation, in degrees </dd></dl>
+
+</div>
+</div>
+<a id="a2dfb6d365f3c48e9676a9d93a575452b" name="a2dfb6d365f3c48e9676a9d93a575452b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dfb6d365f3c48e9676a9d93a575452b">&#9670;&#160;</a></span>GetScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp; sf::Drawable::GetScale </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the current scale of the object. </p>
+<dl class="section return"><dt>Returns</dt><dd>Current scale factor (always positive) </dd></dl>
+
+</div>
+</div>
+<a id="a03c9aa065a98750335780213aff2be92" name="a03c9aa065a98750335780213aff2be92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03c9aa065a98750335780213aff2be92">&#9670;&#160;</a></span>LoadFromFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sf::PostFX::LoadFromFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>Filename</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load the effect from a file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Filename</td><td>: Path of the effect file to load</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True on success </dd></dl>
+
+</div>
+</div>
+<a id="a53b9df4741e52bd4978d642153e492b6" name="a53b9df4741e52bd4978d642153e492b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53b9df4741e52bd4978d642153e492b6">&#9670;&#160;</a></span>LoadFromMemory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sf::PostFX::LoadFromMemory </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>Effect</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load the effect from a text in memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Effect</td><td>: <a class="el" href="classsf_1_1String.html" title="String defines a graphical 2D text, that can be drawn on screen.">String</a> containing the effect code</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True on success </dd></dl>
+
+</div>
+</div>
+<a id="a3c0ac0851d6b0ebed80ae9641ff93161" name="a3c0ac0851d6b0ebed80ae9641ff93161"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c0ac0851d6b0ebed80ae9641ff93161">&#9670;&#160;</a></span>Move() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Drawable::Move </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>Offset</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Move the object of a given offset (take a 2D vector) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Offset</td><td>: Amount of units to move the object of </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a501df9af956362b3e3769d80381c051b" name="a501df9af956362b3e3769d80381c051b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a501df9af956362b3e3769d80381c051b">&#9670;&#160;</a></span>Move() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Drawable::Move </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>OffsetX</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>OffsetY</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Move the object of a given offset (take 2 values) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">OffsetX</td><td>: X offset </td></tr>
+    <tr><td class="paramname">OffsetY</td><td>: Y offset </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae4f7f8c7b1b28f80a41f3e9680248eba" name="ae4f7f8c7b1b28f80a41f3e9680248eba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4f7f8c7b1b28f80a41f3e9680248eba">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsf_1_1PostFX.html">PostFX</a> &amp; sf::PostFX::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsf_1_1PostFX.html">PostFX</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>Other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Assignment operator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Other</td><td>: Instance to assign</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to the post-effect </dd></dl>
+
+</div>
+</div>
+<a id="a7bcedebfb26c1b607d7df550d87b8cf7" name="a7bcedebfb26c1b607d7df550d87b8cf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bcedebfb26c1b607d7df550d87b8cf7">&#9670;&#160;</a></span>Render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void sf::PostFX::Render </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsf_1_1RenderTarget.html">RenderTarget</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>Target</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>/see Drawable::Render </p>
+
+<p>Implements <a class="el" href="classsf_1_1Drawable.html">sf::Drawable</a>.</p>
+
+</div>
+</div>
+<a id="a3e7d558d0ef488485a2d3f885ff2b419" name="a3e7d558d0ef488485a2d3f885ff2b419"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e7d558d0ef488485a2d3f885ff2b419">&#9670;&#160;</a></span>Rotate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Drawable::Rotate </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>Angle</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rotate the object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Angle</td><td>: Angle of rotation, in degrees </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac969d85eaf63f072de9e963bd973e91a" name="ac969d85eaf63f072de9e963bd973e91a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac969d85eaf63f072de9e963bd973e91a">&#9670;&#160;</a></span>Scale() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Drawable::Scale </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>Factor</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Scale the object (take a 2D vector) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Factor</td><td>: Scaling factors (both values must be strictly positive) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2a132c9f2f3736b7d0f6ea80303caacd" name="a2a132c9f2f3736b7d0f6ea80303caacd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a132c9f2f3736b7d0f6ea80303caacd">&#9670;&#160;</a></span>Scale() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Drawable::Scale </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>FactorX</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>FactorY</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Scale the object (take 2 values) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">FactorX</td><td>: Scaling factor on X (must be strictly positive) </td></tr>
+    <tr><td class="paramname">FactorY</td><td>: Scaling factor on Y (must be strictly positive) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaa6558b1ae27e29cb825028473707da5" name="aaa6558b1ae27e29cb825028473707da5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa6558b1ae27e29cb825028473707da5">&#9670;&#160;</a></span>SetBlendMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Drawable::SetBlendMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacesf_1_1Blend.html#a1a2fa89de4bb0d82b2eb30399fe575ca">Blend::Mode</a></td>          <td class="paramname"><span class="paramname"><em>Mode</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the blending mode for the object. </p>
+<p>The default blend mode is <a class="el" href="namespacesf_1_1Blend.html#a1a2fa89de4bb0d82b2eb30399fe575caa23075ecfbf49e19b713cc18188a7661a" title="Pixel = Src * a + Dest * (1 - a)">Blend::Alpha</a></p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Mode</td><td>: New blending mode </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a235e438555d8161f4995615f24fa0b11" name="a235e438555d8161f4995615f24fa0b11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a235e438555d8161f4995615f24fa0b11">&#9670;&#160;</a></span>SetCenter() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Drawable::SetCenter </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>Center</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the center of the object, in coordinates relative to the top-left of the object (take a 2D vector). </p>
+<p>The default center is (0, 0)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Center</td><td>: New center </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a11ba1d92bc863af6d95831d216802f61" name="a11ba1d92bc863af6d95831d216802f61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11ba1d92bc863af6d95831d216802f61">&#9670;&#160;</a></span>SetCenter() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Drawable::SetCenter </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>CenterX</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>CenterY</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the center of the object, in coordinates relative to the top-left of the object (take 2 values). </p>
+<p>The default center is (0, 0)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">CenterX</td><td>: X coordinate of the center </td></tr>
+    <tr><td class="paramname">CenterY</td><td>: Y coordinate of the center </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8cae9f22220985e368a1b38af7644ffb" name="a8cae9f22220985e368a1b38af7644ffb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cae9f22220985e368a1b38af7644ffb">&#9670;&#160;</a></span>SetColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Drawable::SetColor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsf_1_1Color.html">Color</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>Col</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the color of the object. </p>
+<p>The default color is white</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Col</td><td>: New color </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4d7e11f6ecf159d09460220ecc43e45a" name="a4d7e11f6ecf159d09460220ecc43e45a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d7e11f6ecf159d09460220ecc43e45a">&#9670;&#160;</a></span>SetParameter() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::PostFX::SetParameter </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>Name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>X</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change a parameter of the effect (1 float) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Name</td><td>: Parameter name in the effect </td></tr>
+    <tr><td class="paramname">X</td><td>: Value to assign </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa92c8a3f203a64d816c6844bdfad2393" name="aa92c8a3f203a64d816c6844bdfad2393"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa92c8a3f203a64d816c6844bdfad2393">&#9670;&#160;</a></span>SetParameter() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::PostFX::SetParameter </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>Name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>X</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>Y</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change a parameter of the effect (2 floats) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Name</td><td>: Parameter name in the effect </td></tr>
+    <tr><td class="paramname">X,Y</td><td>: Values to assign </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a031c257687c3115d6f524e7922e32d67" name="a031c257687c3115d6f524e7922e32d67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a031c257687c3115d6f524e7922e32d67">&#9670;&#160;</a></span>SetParameter() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::PostFX::SetParameter </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>Name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>X</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>Y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>Z</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change a parameter of the effect (3 floats) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Name</td><td>: Parameter name in the effect </td></tr>
+    <tr><td class="paramname">X,Y,Z</td><td>: Values to assign </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3bc85737080c281148a247fccb8e06de" name="a3bc85737080c281148a247fccb8e06de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bc85737080c281148a247fccb8e06de">&#9670;&#160;</a></span>SetParameter() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::PostFX::SetParameter </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>Name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>X</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>Y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>Z</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>W</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change a parameter of the effect (4 floats) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Name</td><td>: Parameter name in the effect </td></tr>
+    <tr><td class="paramname">X,Y,Z,W</td><td>: Values to assign </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad2a279f3b13abf57cc25b2b4bd3b81ae" name="ad2a279f3b13abf57cc25b2b4bd3b81ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2a279f3b13abf57cc25b2b4bd3b81ae">&#9670;&#160;</a></span>SetPosition() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Drawable::SetPosition </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>Position</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the position of the object (take a 2D vector) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Position</td><td>: New position </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a419da954b1f2ad1ac2ae0b9ab6e72589" name="a419da954b1f2ad1ac2ae0b9ab6e72589"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a419da954b1f2ad1ac2ae0b9ab6e72589">&#9670;&#160;</a></span>SetPosition() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Drawable::SetPosition </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>X</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>Y</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the position of the object (take 2 values) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">X</td><td>: New X coordinate </td></tr>
+    <tr><td class="paramname">Y</td><td>: New Y coordinate </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6d06383770eb01ffecf3d1cae6fec0ec" name="a6d06383770eb01ffecf3d1cae6fec0ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d06383770eb01ffecf3d1cae6fec0ec">&#9670;&#160;</a></span>SetRotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Drawable::SetRotation </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>Rotation</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the orientation of the object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Rotation</td><td>: Angle of rotation, in degrees </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a84876c5ef7fa628c85c3c9e000e50aa1" name="a84876c5ef7fa628c85c3c9e000e50aa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84876c5ef7fa628c85c3c9e000e50aa1">&#9670;&#160;</a></span>SetScale() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Drawable::SetScale </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">Vector2f</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>Scale</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the scale of the object (take a 2D vector) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Scale</td><td>: New scale (both values must be strictly positive) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0b486c56c2bd137bac629f72fea66769" name="a0b486c56c2bd137bac629f72fea66769"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b486c56c2bd137bac629f72fea66769">&#9670;&#160;</a></span>SetScale() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Drawable::SetScale </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>ScaleX</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>ScaleY</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the scale of the object (take 2 values) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ScaleX</td><td>: New horizontal scale (must be strictly positive) </td></tr>
+    <tr><td class="paramname">ScaleY</td><td>: New vertical scale (must be strictly positive) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0cafae61a1d23bddb059d64df0e1502f" name="a0cafae61a1d23bddb059d64df0e1502f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cafae61a1d23bddb059d64df0e1502f">&#9670;&#160;</a></span>SetScaleX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Drawable::SetScaleX </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>FactorX</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the X scale factor of the object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">X</td><td>: New X scale factor </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a89e7793c74c656e5850b71d0ab34b8bf" name="a89e7793c74c656e5850b71d0ab34b8bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89e7793c74c656e5850b71d0ab34b8bf">&#9670;&#160;</a></span>SetScaleY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Drawable::SetScaleY </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>FactorY</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the Y scale factor of the object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Y</td><td>: New Y scale factor </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4b9d05ec45df72151d0a5284cbf88fa1" name="a4b9d05ec45df72151d0a5284cbf88fa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b9d05ec45df72151d0a5284cbf88fa1">&#9670;&#160;</a></span>SetTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::PostFX::SetTexture </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>Name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classsf_1_1Image.html">Image</a> *</td>          <td class="paramname"><span class="paramname"><em>Texture</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set a texture parameter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Name</td><td>: Texture name in the effect </td></tr>
+    <tr><td class="paramname">Texture</td><td>: <a class="el" href="classsf_1_1Image.html" title="Image is the low-level class for loading and manipulating images.">Image</a> to set (pass NULL to use content of current framebuffer) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac8de7bfe092736083dcf23b0dbd22b1e" name="ac8de7bfe092736083dcf23b0dbd22b1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8de7bfe092736083dcf23b0dbd22b1e">&#9670;&#160;</a></span>SetX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Drawable::SetX </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>X</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the X position of the object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">X</td><td>: New X coordinate </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a83fecebe749c1aca9070eafd63e1a0c9" name="a83fecebe749c1aca9070eafd63e1a0c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83fecebe749c1aca9070eafd63e1a0c9">&#9670;&#160;</a></span>SetY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sf::Drawable::SetY </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>Y</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the Y position of the object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Y</td><td>: New Y coordinate </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6ed51aa1c5eab1a8aff6c9ce57b3c9c2" name="a6ed51aa1c5eab1a8aff6c9ce57b3c9c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ed51aa1c5eab1a8aff6c9ce57b3c9c2">&#9670;&#160;</a></span>TransformToGlobal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">sf::Vector2f</a> sf::Drawable::TransformToGlobal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">sf::Vector2f</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>Point</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transform a point from local coordinates into global coordinates (ie it applies the object's center, translation, rotation and scale to the point) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Point</td><td>: Point to transform</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Transformed point </dd></dl>
+
+</div>
+</div>
+<a id="acc9801106b500aaa19aec70f1d88b402" name="acc9801106b500aaa19aec70f1d88b402"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc9801106b500aaa19aec70f1d88b402">&#9670;&#160;</a></span>TransformToLocal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">sf::Vector2f</a> sf::Drawable::TransformToLocal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacesf.html#acf03098c2577b869e2fa6836cc48f1a0">sf::Vector2f</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>Point</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transform a point from global coordinates into local coordinates (ie it applies the inverse of object's center, translation, rotation and scale to the point) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Point</td><td>: Point to transform</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Transformed point </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="PostFX_8hpp_source.html">PostFX.hpp</a></li>
+</ul>
+</div><!-- contents -->
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+                    Back to top
+                </button>
+            </main>
+            <footer class="md-footer">
+                <nav class="md-footer__inner md-grid" aria-label="Footer" hidden>
+                    <a href="/learn/" class="md-footer__link md-footer__link--next" aria-label="Next: Learn">
+                        <div class="md-footer__title">
+                            <span class="md-footer__direction"> Next </span>
+                            <div class="md-ellipsis">Learn</div>
+                        </div>
+                        <div class="md-footer__button md-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z" /></svg>
+                        </div>
+                    </a>
+                </nav>
+                <div class="md-footer-meta md-typeset">
+                    <div class="md-footer-meta__inner md-grid">
+                        <div class="md-copyright">
+                            <div class="md-copyright__highlight">Copyright &copy; <a href="mailto:laurent@sfml-dev.org">Laurent Gomila</a></div>
+                        </div>
+                        <div class="md-social">
+                            <a href="https://fosstodon.org/@sfml" target="_blank" rel="noopener me" title="SFML on Fosstodon" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com/sfmldev" target="_blank" rel="noopener" title="SFML on Twitter" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="https://discord.gg/nr4X7Fh" target="_blank" rel="noopener" title="SFML&#39;s Discord Server" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="md-dialog" data-md-component="dialog">
+            <div class="md-dialog__inner md-typeset"></div>
+        </div>
+        <script id="__config" type="application/json">
+            {
+                "base": ".",
+                "features": ["content.code.copy", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.prune", "navigation.path", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.suggest"],
+                "search": "/assets/javascripts/workers/search.b8dbb3d2.min.js",
+                "translations": {
+                    "clipboard.copied": "Copied to clipboard",
+                    "clipboard.copy": "Copy to clipboard",
+                    "search.result.more.one": "1 more on this page",
+                    "search.result.more.other": "# more on this page",
+                    "search.result.none": "No matching documents",
+                    "search.result.one": "1 matching document",
+                    "search.result.other": "# matching documents",
+                    "search.result.placeholder": "Type to start searching",
+                    "search.result.term.missing": "Missing",
+                    "select.version": "Select version"
+                }
+            }
+        </script>
+        <script src="/assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+    </body>
+</html>

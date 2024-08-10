@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="Simple and Fast Multimedia Library" />
+        <link rel="canonical" href="https://www.sfml-dev.org/" />
+        <link rel="next" href="/learn/" />
+        <link rel="icon" href="/images/favicon.ico" />
+        <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.30" />
+        <title>Home - Simple and Fast Multimedia Library</title>
+        <link rel="stylesheet" href="/assets/stylesheets/main.3cba04c6.min.css" />
+        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback" />
+        <style>
+            :root {
+                --md-text-font: "Ubuntu";
+                --md-code-font: "Roboto Mono";
+            }
+        </style>
+        <link rel="stylesheet" href="/styles/extra.css" />
+        <script>
+            (__md_scope = new URL(".", location)),
+                (__md_hash = (e) => [...e].reduce((e, _) => (e << 5) - e + _.charCodeAt(0), 0)),
+                (__md_get = (e, _ = localStorage, t = __md_scope) => JSON.parse(_.getItem(t.pathname + "." + e))),
+                (__md_set = (e, _, t = localStorage, a = __md_scope) => {
+                    try {
+                        t.setItem(a.pathname + "." + e, JSON.stringify(_));
+                    } catch (e) {}
+                });
+        </script>
+        <link rel="stylesheet" type="text/css" href="doxygen.css" title="default" media="screen,print" />
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="dynsections.js"></script>
+        <script type="text/javascript" src="clipboard.js"></script>
+        <script type="text/javascript" src="cookie.js"></script>
+        <script type="text/javascript" src="resize.js"></script>
+        <link rel="stylesheet" type="text/css" href="search/search.css" />
+        <link rel="stylesheet" type="text/css" href="searchOverrides.css" />
+        <script type="text/javascript" src="search/searchdata.js"></script>
+        <script type="text/javascript" src="search/search.js"></script>
+        <script type="text/javascript">
+            /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+            $(document).ready(function () {
+                init_search();
+            });
+            /* @license-end */
+        </script>
+    </head>
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="indigo">
+        <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off" />
+        <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off" />
+        <label class="md-overlay" for="__drawer"></label>
+        <div data-md-component="skip">
+            <a href="#simple-and-fast-multimedia-library" class="md-skip"> Skip to content </a>
+        </div>
+        <div data-md-component="announce"></div>
+        <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+            <nav class="md-header__inner md-grid" aria-label="Header">
+                <a href="." title="Simple and Fast Multimedia Library" class="md-header__button md-logo" aria-label="Simple and Fast Multimedia Library" data-md-component="logo">
+                    <img src="/images/logo.png" alt="logo" />
+                </a>
+                <label class="md-header__button md-icon" for="__drawer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z" /></svg>
+                </label>
+                <div class="md-header__title" data-md-component="header-title">
+                    <div class="md-header__ellipsis">
+                        <div class="md-header__topic">
+                            <span class="md-ellipsis"> Simple and Fast Multimedia Library </span>
+                        </div>
+                        <div class="md-header__topic" data-md-component="header-topic">
+                            <span class="md-ellipsis"> Home </span>
+                        </div>
+                    </div>
+                </div>
+                <form class="md-header__option" data-md-component="palette">
+                    <input
+                        class="md-option"
+                        data-md-color-media="(prefers-color-scheme: light)"
+                        data-md-color-scheme="default"
+                        data-md-color-primary="light-green"
+                        data-md-color-accent="indigo"
+                        aria-label="Switch to dark mode"
+                        type="radio"
+                        name="__palette"
+                        id="__palette_0"
+                    />
+                    <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"
+                            />
+                        </svg>
+                    </label>
+                    <input
+                        class="md-option"
+                        data-md-color-media="(prefers-color-scheme: dark)"
+                        data-md-color-scheme="slate"
+                        data-md-color-primary="green"
+                        data-md-color-accent="indigo"
+                        aria-label="Switch to light mode"
+                        type="radio"
+                        name="__palette"
+                        id="__palette_1"
+                    />
+                    <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"
+                            />
+                        </svg>
+                    </label>
+                </form>
+                <script>
+                    var media,
+                        input,
+                        key,
+                        value,
+                        palette = __md_get("__palette");
+                    if (palette && palette.color) {
+                        "(prefers-color-scheme)" === palette.color.media &&
+                            ((media = matchMedia("(prefers-color-scheme: light)")),
+                            (input = document.querySelector(media.matches ? "[data-md-color-media='(prefers-color-scheme: light)']" : "[data-md-color-media='(prefers-color-scheme: dark)']")),
+                            (palette.color.media = input.getAttribute("data-md-color-media")),
+                            (palette.color.scheme = input.getAttribute("data-md-color-scheme")),
+                            (palette.color.primary = input.getAttribute("data-md-color-primary")),
+                            (palette.color.accent = input.getAttribute("data-md-color-accent")));
+                        for ([key, value] of Object.entries(palette.color)) document.body.setAttribute("data-md-color-" + key, value);
+                    }
+                </script>
+                <div class="md-header__option">
+                    <div class="md-select">
+                        <button class="md-header__button md-icon" aria-label="Select language">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"
+                                />
+                            </svg>
+                        </button>
+                        <div class="md-select__inner">
+                            <ul class="md-select__list">
+                                <li class="md-select__item">
+                                    <a href="/" hreflang="en" class="md-select__link"> English </a>
+                                </li>
+                                <li class="md-select__item">
+                                    <a href="/fr/" hreflang="fr" class="md-select__link"> Français </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <label class="md-header__button md-icon" for="__search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"
+                        />
+                    </svg>
+                </label>
+                <div class="md-search" data-md-component="search" role="dialog">
+                    <label class="md-search__overlay" for="__search"></label>
+                    <div class="md-search__inner" role="search">
+                        <form class="md-search__form" name="search">
+                            <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required />
+                            <label class="md-search__icon md-icon" for="__search">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"
+                                    />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z" /></svg>
+                            </label>
+                            <nav class="md-search__options" aria-label="Search">
+                                <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z" /></svg>
+                                </button>
+                            </nav>
+                            <div class="md-search__suggest" data-md-component="search-suggest"></div>
+                        </form>
+                        <div class="md-search__output">
+                            <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+                                <div class="md-search-result" data-md-component="search-result">
+                                    <div class="md-search-result__meta">Initializing search</div>
+                                    <ol class="md-search-result__list" role="presentation"></ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-header__source">
+                    <a href="https://github.com/SFML/SFML" title="Go to repository" class="md-source" data-md-component="source">
+                        <div class="md-source__icon md-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. -->
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                                />
+                            </svg>
+                        </div>
+                        <div class="md-source__repository">SFML</div>
+                    </a>
+                </div>
+            </nav>
+            <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+                <div class="md-grid">
+                    <ul class="md-tabs__list">
+                        <li class="md-tabs__item">
+                            <a href="/" class="md-tabs__link"> Home </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/learn/" class="md-tabs__link"> Learn </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/tutorials/2.6/" class="md-tabs__link"> Tutorials </a>
+                        </li>
+                        <li class="md-tabs__item md-tabs__item--active">
+                            <a href="/documentation" class="md-tabs__link"> Documentation </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/download/" class="md-tabs__link"> Download </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/community/" class="md-tabs__link"> Community </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/development/" class="md-tabs__link"> Development </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="md-container" data-md-component="container">
+            <main class="md-main" data-md-component="main">
+                <div class="md-main__inner md-grid">
+                    <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                        <div class="md-sidebar__scrollwrap">
+                            <div class="md-sidebar__inner">
+                                <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+                                    <label class="md-nav__title" for="__drawer">
+                                        <a href="." title="Simple and Fast Multimedia Library" class="md-nav__button md-logo" aria-label="Simple and Fast Multimedia Library" data-md-component="logo">
+                                            <img src="/images/logo.png" alt="logo" />
+                                        </a>
+                                        Simple and Fast Multimedia Library
+                                    </label>
+                                    <div class="md-nav__source">
+                                        <a href="https://github.com/SFML/SFML" title="Go to repository" class="md-source" data-md-component="source">
+                                            <div class="md-source__icon md-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. -->
+                                                    <path
+                                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                                                    />
+                                                </svg>
+                                            </div>
+                                            <div class="md-source__repository">SFML</div>
+                                        </a>
+                                    </div>
+                                    <ul class="md-nav__list" data-md-scrollfix>
+                                        <li class="md-nav__item">
+                                            <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc" />
+                                            <label class="md-nav__link" for="__toc">
+                                                <span class="md-ellipsis"> Home </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </label>
+                                            <a href="." class="md-nav__link">
+                                                <span class="md-ellipsis"> Home </span>
+                                            </a>
+                                            <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+                                                <label class="md-nav__title" for="__toc">
+                                                    <span class="md-nav__icon md-icon"></span>
+                                                    Table of contents
+                                                </label>
+                                                <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-media" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-media </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-platform" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-platform </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-language" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-language </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="learn/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Learn </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="tutorials/2.6/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Tutorials </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--active">
+                                            <a href="documentation" class="md-nav__link md-nav__link--active">
+                                                <span class="md-ellipsis"> Documentation </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="download/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Download </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="community/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Community </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="development/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Development </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                        <div class="md-sidebar__scrollwrap">
+                            <div class="md-sidebar__inner">
+                                <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+                                    <label class="md-nav__title" for="__toc">
+                                        <span class="md-nav__icon md-icon"></span>
+                                        Table of contents
+                                    </label>
+                                    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-media" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-media </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-platform" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-platform </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-language" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-language </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-content" data-md-component="content">
+                        <div class="contents">
+<!-- Generated by Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="topics.html"><span>Topics</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li class="current"><a href="globals.html"><span>File&#160;Members</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow3" class="tabs2">
+    <ul class="tablist">
+      <li class="current"><a href="globals.html"><span>All</span></a></li>
+      <li><a href="globals_func.html"><span>Functions</span></a></li>
+      <li><a href="globals_vars.html"><span>Variables</span></a></li>
+      <li><a href="globals_type.html"><span>Typedefs</span></a></li>
+      <li><a href="globals_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="globals_eval.html"><span>Enumerator</span></a></li>
+      <li><a href="globals_defs.html"><span>Macros</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow4" class="tabs3">
+    <ul class="tablist">
+      <li><a href="globals.html#index__5F"><span>_</span></a></li>
+      <li><a href="globals_a.html#index_a"><span>a</span></a></li>
+      <li><a href="globals_b.html#index_b"><span>b</span></a></li>
+      <li><a href="globals_c.html#index_c"><span>c</span></a></li>
+      <li><a href="globals_d.html#index_d"><span>d</span></a></li>
+      <li><a href="globals_e.html#index_e"><span>e</span></a></li>
+      <li class="current"><a href="globals_f.html#index_f"><span>f</span></a></li>
+      <li><a href="globals_g.html#index_g"><span>g</span></a></li>
+      <li><a href="globals_h.html#index_h"><span>h</span></a></li>
+      <li><a href="globals_i.html#index_i"><span>i</span></a></li>
+      <li><a href="globals_j.html#index_j"><span>j</span></a></li>
+      <li><a href="globals_k.html#index_k"><span>k</span></a></li>
+      <li><a href="globals_l.html#index_l"><span>l</span></a></li>
+      <li><a href="globals_m.html#index_m"><span>m</span></a></li>
+      <li><a href="globals_n.html#index_n"><span>n</span></a></li>
+      <li><a href="globals_o.html#index_o"><span>o</span></a></li>
+      <li><a href="globals_p.html#index_p"><span>p</span></a></li>
+      <li><a href="globals_q.html#index_q"><span>q</span></a></li>
+      <li><a href="globals_r.html#index_r"><span>r</span></a></li>
+      <li><a href="globals_s.html#index_s"><span>s</span></a></li>
+      <li><a href="globals_t.html#index_t"><span>t</span></a></li>
+      <li><a href="globals_u.html#index_u"><span>u</span></a></li>
+      <li><a href="globals_v.html#index_v"><span>v</span></a></li>
+      <li><a href="globals_w.html#index_w"><span>w</span></a></li>
+      <li><a href="globals_x.html#index_x"><span>x</span></a></li>
+      <li><a href="globals_y.html#index_y"><span>y</span></a></li>
+      <li><a href="globals_z.html#index_z"><span>z</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="doc-content">
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="contents">
+<div class="textblock">Here is a list of all file members with links to the files they belong to:</div>
+
+<h3><a id="index_f" name="index_f"></a>- f -</h3><ul>
+<li>f&#160;:&#160;<a class="el" href="glext_8h.html#aba8ad56949f59242bc167b073dae3715">glext.h</a></li>
+<li>f2f&#160;:&#160;<a class="el" href="stb__image_8h.html#a9717131be1639d94ecfdc4792f6c2b3e">stb_image.h</a></li>
+<li>F_avg&#160;:&#160;<a class="el" href="stb__image_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a4f647a9352589e534a0d8a513d67d28e">stb_image.h</a></li>
+<li>F_avg_first&#160;:&#160;<a class="el" href="stb__image_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a4de5672ef1ab76c920893203b67a6246">stb_image.h</a></li>
+<li>F_none&#160;:&#160;<a class="el" href="stb__image_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a16f71f569e3f9321da21f1249e2773fd">stb_image.h</a></li>
+<li>F_paeth&#160;:&#160;<a class="el" href="stb__image_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a048f016fa714cc5e0f6c41e35d10fa6d">stb_image.h</a></li>
+<li>F_paeth_first&#160;:&#160;<a class="el" href="stb__image_8h.html#adb49720dc49f7d4e4cf9adbf2948e409a7310c91cd24ab3f794937b630faf4afa">stb_image.h</a></li>
+<li>F_sub&#160;:&#160;<a class="el" href="stb__image_8h.html#adb49720dc49f7d4e4cf9adbf2948e409afc14a072a264bba5ec906f64af96faeb">stb_image.h</a></li>
+<li>F_up&#160;:&#160;<a class="el" href="stb__image_8h.html#adb49720dc49f7d4e4cf9adbf2948e409aac432bb3d57c85f1f2c82019426cab42">stb_image.h</a></li>
+<li>face&#160;:&#160;<a class="el" href="glext_8h.html#a676ca580c460c0154eb58200433d2a9e">glext.h</a></li>
+<li>failure_reason&#160;:&#160;<a class="el" href="stb__image_8h.html#ae36f2d4da38cf48880191b3517a92b4b">stb_image.h</a></li>
+<li>FALSE&#160;:&#160;<a class="el" href="jmorecfg_8h.html#aa93f0eb578d23995850d61f7d61c55c1">jmorecfg.h</a></li>
+<li>FAR&#160;:&#160;<a class="el" href="jmorecfg_8h.html#aef060b3456fdcc093a7210a762d5f2ed">jmorecfg.h</a></li>
+<li>FAST_BITS&#160;:&#160;<a class="el" href="stb__image_8h.html#add78822c51f4692289f2ce174bdf82b0">stb_image.h</a></li>
+<li>fences&#160;:&#160;<a class="el" href="glext_8h.html#a91edcae3a89d999c4bdc87398fee9451">glext.h</a></li>
+<li>fill0&#160;:&#160;<a class="el" href="glext_8h.html#a357407348a122fbfe8d39a3ba91614f1">glext.h</a></li>
+<li>fill1&#160;:&#160;<a class="el" href="glext_8h.html#a7f17141a0020eb3b1a408811b16666f8">glext.h</a></li>
+<li>fill2&#160;:&#160;<a class="el" href="glext_8h.html#a78b228b984f0b0cef90e110cdac2f5d8">glext.h</a></li>
+<li>fill3&#160;:&#160;<a class="el" href="glext_8h.html#ab9b770aa7982140eb40a58695f5dcd21">glext.h</a></li>
+<li>fill_bits()&#160;:&#160;<a class="el" href="stb__image_8h.html#a304a55b32f2e788727af78e089685c23">stb_image.h</a></li>
+<li>filter&#160;:&#160;<a class="el" href="glext_8h.html#a8bed50656d87c3eeed9d8f5e539c6b3e">glext.h</a></li>
+<li>first&#160;:&#160;<a class="el" href="glext_8h.html#a970a385f6f880f2b620451db4ca4299a">glext.h</a></li>
+<li>first_row_filter&#160;:&#160;<a class="el" href="stb__image_8h.html#ad795ccea2a978de3105c01df41e385d4">stb_image.h</a></li>
+<li>fixedsamplelocations&#160;:&#160;<a class="el" href="glext_8h.html#ad4beda5d0ad5fe42bbbdc919f6983faa">glext.h</a></li>
+<li>flags&#160;:&#160;<a class="el" href="glext_8h.html#a0f11defcf8fd03368fc70485bffe71e9">glext.h</a></li>
+<li>float2fixed&#160;:&#160;<a class="el" href="stb__image_8h.html#a78857167af92ac9e8deb1f7fa7696a60">stb_image.h</a></li>
+<li>float2int&#160;:&#160;<a class="el" href="stb__image_8h.html#ab57b5a4c33f7a407498f93c6c3eb213b">stb_image.h</a></li>
+<li>force_baseline&#160;:&#160;<a class="el" href="jpeglib_8h.html#af03eb66947dfc3da8c459632e4f8fc8a">jpeglib.h</a></li>
+<li>format&#160;:&#160;<a class="el" href="glext_8h.html#a623c5b7577f9ec4174db688b61b73be7">glext.h</a></li>
+<li>frame_region&#160;:&#160;<a class="el" href="glext_8h.html#a159eccc32e84caf8ceb01f67b76a3e67">glext.h</a></li>
+<li>framebuffer&#160;:&#160;<a class="el" href="glext_8h.html#a9e7d0e14703de01d15e0861b7210b7f8">glext.h</a></li>
+<li>framebuffers&#160;:&#160;<a class="el" href="glext_8h.html#a8e03c10ccdf2060ea88469f578a9cc06">glext.h</a></li>
+<li>FREETYPE_MAJOR&#160;:&#160;<a class="el" href="freetype_8h.html#a8c43b050c90b7a146a32297f88e85a4b">freetype.h</a></li>
+<li>FREETYPE_MINOR&#160;:&#160;<a class="el" href="freetype_8h.html#a90734b9c06a745153f6dbad8f9165814">freetype.h</a></li>
+<li>FREETYPE_PATCH&#160;:&#160;<a class="el" href="freetype_8h.html#a2940bdb2102c2821f46e4fd1ba674e6e">freetype.h</a></li>
+<li>fsh&#160;:&#160;<a class="el" href="stb__image_8h.html#a375f901f1eb889847110ecafc6e9ea01">stb_image.h</a></li>
+<li>fsize&#160;:&#160;<a class="el" href="glext_8h.html#af920e4f35bb93c40a9b337d6ad5378b8">glext.h</a></li>
+<li>FT_ADVANCES_H&#160;:&#160;<a class="el" href="ftheader_8h.html#aef6e0d309c5dcd04b799266476d89e4a">ftheader.h</a></li>
+<li>FT_ALIGNMENT&#160;:&#160;<a class="el" href="ftconfig_8h.html#aac948043fea797e79c5457b532f8a3de">ftconfig.h</a></li>
+<li>FT_Alloc_Func&#160;:&#160;<a class="el" href="ftsystem_8h.html#a3022e34c346d3c076e05df3952923e7f">ftsystem.h</a></li>
+<li>ft_atol&#160;:&#160;<a class="el" href="ftstdlib_8h.html#ada9a67fca2937454caca0dee8ee5d590">ftstdlib.h</a></li>
+<li>FT_Attach_File()&#160;:&#160;<a class="el" href="freetype_8h.html#ae97b04528da5fc081e0ce9be40c5b036">freetype.h</a></li>
+<li>FT_Attach_Stream()&#160;:&#160;<a class="el" href="freetype_8h.html#aced0db97521cb20e44bed22d03ea4b6b">freetype.h</a></li>
+<li>FT_BASE&#160;:&#160;<a class="el" href="ftconfig_8h.html#ad9b0c555bd9c667187a720e265943bfc">ftconfig.h</a></li>
+<li>FT_BASE_DEF&#160;:&#160;<a class="el" href="ftconfig_8h.html#ad69754ed04101caf947cd79168f16aff">ftconfig.h</a></li>
+<li>FT_BBox&#160;:&#160;<a class="el" href="ftimage_8h.html#a1e1422cfbeb7c3992d5d7b8f85732efd">ftimage.h</a></li>
+<li>FT_BBOX_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a24dbbd7b654130c5510a0a47869f70f3">ftheader.h</a></li>
+<li>FT_BDF_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a1dbdcdc990052cf6e772f3246bb631a6">ftheader.h</a></li>
+<li>FT_BEGIN_HEADER&#160;:&#160;<a class="el" href="ftheader_8h.html#a72ee5814b3ae378ebb7fd3a8e3ddec14">ftheader.h</a></li>
+<li>FT_BEGIN_STMNT&#160;:&#160;<a class="el" href="ftconfig_8h.html#affa471c199b61ca40463017b6a6738d5">ftconfig.h</a></li>
+<li>FT_Bitmap&#160;:&#160;<a class="el" href="ftimage_8h.html#a1901381e05d5dd7ad6567c85ee2076c3">ftimage.h</a></li>
+<li>FT_Bitmap_Convert()&#160;:&#160;<a class="el" href="ftbitmap_8h.html#a68913634b7221aa1eafddeeff7c19f27">ftbitmap.h</a></li>
+<li>FT_Bitmap_Copy()&#160;:&#160;<a class="el" href="ftbitmap_8h.html#aa139914a4cf59cdb61ee4675f11ee940">ftbitmap.h</a></li>
+<li>FT_Bitmap_Done()&#160;:&#160;<a class="el" href="ftbitmap_8h.html#a78eb7860bae966f76888ebd2a1b59c66">ftbitmap.h</a></li>
+<li>FT_Bitmap_Embolden()&#160;:&#160;<a class="el" href="ftbitmap_8h.html#a90f7fa52ce51528e0beb9433d4cd4a96">ftbitmap.h</a></li>
+<li>FT_BITMAP_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a766dd3a4aeb8ed1a5e3479975b37cfaa">ftheader.h</a></li>
+<li>FT_Bitmap_New()&#160;:&#160;<a class="el" href="ftbitmap_8h.html#a1557083397a1c525fb65aa348c184f79">ftbitmap.h</a></li>
+<li>FT_Bitmap_Size&#160;:&#160;<a class="el" href="freetype_8h.html#a01cf2a1888253cb4bae3b9407101e917">freetype.h</a></li>
+<li>FT_BitmapGlyph&#160;:&#160;<a class="el" href="ftglyph_8h.html#aa6ef094e0e1b9b21ef15c47d07f6acef">ftglyph.h</a></li>
+<li>FT_BitmapGlyphRec&#160;:&#160;<a class="el" href="ftglyph_8h.html#aa43b99a9c4edb2bf09ebfa526852ea8f">ftglyph.h</a></li>
+<li>FT_BOOL&#160;:&#160;<a class="el" href="fttypes_8h.html#adf712510036d534403cbddf4f18c2083">fttypes.h</a></li>
+<li>FT_Bool&#160;:&#160;<a class="el" href="fttypes_8h.html#a1a832a256bb5a7e6e884afaa1a07f3ae">fttypes.h</a></li>
+<li>FT_Byte&#160;:&#160;<a class="el" href="fttypes_8h.html#a51f26183ca0c9f4af958939648caeccd">fttypes.h</a></li>
+<li>FT_Bytes&#160;:&#160;<a class="el" href="fttypes_8h.html#ac9cc3bb4d2035d3fc310baacd1bdd2d0">fttypes.h</a></li>
+<li>FT_CACHE_CHARMAP_H&#160;:&#160;<a class="el" href="ftheader_8h.html#aa2127b17467052e39181288c2c8856c0">ftheader.h</a></li>
+<li>FT_CACHE_H&#160;:&#160;<a class="el" href="ftheader_8h.html#aab7f91d455e89eb1881f2b88ece68168">ftheader.h</a></li>
+<li>FT_CACHE_IMAGE_H&#160;:&#160;<a class="el" href="ftheader_8h.html#af544792998420989d08137294a1f5a66">ftheader.h</a></li>
+<li>FT_CACHE_INTERNAL_CACHE_H&#160;:&#160;<a class="el" href="ftheader_8h.html#ae0ebf7636f115f066443549993cb7852">ftheader.h</a></li>
+<li>FT_CACHE_INTERNAL_GLYPH_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a7cfd80e793656abd3581a8d9101d2ec7">ftheader.h</a></li>
+<li>FT_CACHE_INTERNAL_IMAGE_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a0b8ee6912792ffa37caaf208cdf4d5c5">ftheader.h</a></li>
+<li>FT_CACHE_INTERNAL_MANAGER_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a91ad43104ce22e52a5f2b2c86cc55a85">ftheader.h</a></li>
+<li>FT_CACHE_INTERNAL_MRU_H&#160;:&#160;<a class="el" href="ftheader_8h.html#acc4bb0cfbbcb04f138589f95a12f7f1d">ftheader.h</a></li>
+<li>FT_CACHE_INTERNAL_SBITS_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a1225d34b328d3703b24c515c689ec4bb">ftheader.h</a></li>
+<li>FT_CACHE_MANAGER_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a414e6c88562c6d332d1330598e0f684b">ftheader.h</a></li>
+<li>FT_CACHE_SMALL_BITMAPS_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a82deb98496c3cf4046b4ef43345eb568">ftheader.h</a></li>
+<li>FT_CALLBACK_DEF&#160;:&#160;<a class="el" href="ftconfig_8h.html#a04749b69ac5a7fd07001364cc9f803fd">ftconfig.h</a></li>
+<li>FT_CALLBACK_TABLE&#160;:&#160;<a class="el" href="ftconfig_8h.html#ab037b0107bb83cacaf7a8437564798f6">ftconfig.h</a></li>
+<li>FT_CALLBACK_TABLE_DEF&#160;:&#160;<a class="el" href="ftconfig_8h.html#a3e7304105563eb715cae1b9c213858ed">ftconfig.h</a></li>
+<li>FT_CeilFix()&#160;:&#160;<a class="el" href="freetype_8h.html#a5b67f95bc54bcd7e615fcf107ffc731c">freetype.h</a></li>
+<li>FT_Char&#160;:&#160;<a class="el" href="fttypes_8h.html#a0f851552b050883885f0a0855771f39d">fttypes.h</a></li>
+<li>FT_CHAR_BIT&#160;:&#160;<a class="el" href="ftconfig_8h.html#aa61daaad19f86fc1aa5087a953c11263">ftconfig.h</a>, <a class="el" href="ftstdlib_8h.html#aa61daaad19f86fc1aa5087a953c11263">ftstdlib.h</a></li>
+<li>FT_CharMap&#160;:&#160;<a class="el" href="freetype_8h.html#afc4717ddfd456a38ee15ec9c88fc7dac">freetype.h</a></li>
+<li>FT_CharMapRec&#160;:&#160;<a class="el" href="freetype_8h.html#a073bdf7c4e684960bb330ff1bc64c9b5">freetype.h</a></li>
+<li>FT_CID_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a1c3215797695b6e72b1d6be5769e86f7">ftheader.h</a></li>
+<li>FT_CONFIG_CONFIG_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a6ba9fbb8d24c48453811f31b32b3df1c">ftheader.h</a></li>
+<li>FT_CONFIG_MODULES_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a890b16893db4cab2d8c3b5e942af4dd6">ftheader.h</a></li>
+<li>FT_CONFIG_OPTION_ADOBE_GLYPH_LIST&#160;:&#160;<a class="el" href="ftoption_8h.html#a773e80ccd7e9789517a1845629ee4fe4">ftoption.h</a></li>
+<li>FT_CONFIG_OPTION_GUESSING_EMBEDDED_RFORK&#160;:&#160;<a class="el" href="ftoption_8h.html#a8dc5ff54c32a2aed7717205c1ee7ca73">ftoption.h</a></li>
+<li>FT_CONFIG_OPTION_INCREMENTAL&#160;:&#160;<a class="el" href="ftoption_8h.html#a78e034e874d6dd067c5b43c2e045b984">ftoption.h</a></li>
+<li>FT_CONFIG_OPTION_INLINE_MULFIX&#160;:&#160;<a class="el" href="ftoption_8h.html#aff60cb106f04574df223bba2bb0649c3">ftoption.h</a></li>
+<li>FT_CONFIG_OPTION_MAC_FONTS&#160;:&#160;<a class="el" href="ftoption_8h.html#a3e54af71aa3835edc129ce6c0b06ca5f">ftoption.h</a></li>
+<li>FT_CONFIG_OPTION_OLD_INTERNALS&#160;:&#160;<a class="el" href="ftoption_8h.html#a329d25e011d4905436ff908abd05986a">ftoption.h</a></li>
+<li>FT_CONFIG_OPTION_POSTSCRIPT_NAMES&#160;:&#160;<a class="el" href="ftoption_8h.html#af7e8b940d6230b578e78d0084f958f50">ftoption.h</a></li>
+<li>FT_CONFIG_OPTION_USE_LZW&#160;:&#160;<a class="el" href="ftoption_8h.html#ab0a25a87fc688a7b4bdfea5a6bf5c3d5">ftoption.h</a></li>
+<li>FT_CONFIG_OPTION_USE_ZLIB&#160;:&#160;<a class="el" href="ftoption_8h.html#a6941bb1c3978346388403edcc0e89ef3">ftoption.h</a></li>
+<li>FT_CONFIG_OPTIONS_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a80ff2d8517cf5b86f40634227e94f7fc">ftheader.h</a></li>
+<li>FT_CONFIG_STANDARD_LIBRARY_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a07682ef8e0677e22e3822cb8c3e48032">ftheader.h</a></li>
+<li>FT_CURVE_TAG&#160;:&#160;<a class="el" href="ftimage_8h.html#a87ccc09e7aaa99f75a5e7f5360ad6e47">ftimage.h</a></li>
+<li>FT_CURVE_TAG_CONIC&#160;:&#160;<a class="el" href="ftimage_8h.html#a4083b94d7eb1e27dce067c38faa040ba">ftimage.h</a></li>
+<li>FT_Curve_Tag_Conic&#160;:&#160;<a class="el" href="ftimage_8h.html#a7137878cba0793e4e1e0ece434a3324e">ftimage.h</a></li>
+<li>FT_CURVE_TAG_CUBIC&#160;:&#160;<a class="el" href="ftimage_8h.html#a031f7941800d809c561e39bc10935b18">ftimage.h</a></li>
+<li>FT_Curve_Tag_Cubic&#160;:&#160;<a class="el" href="ftimage_8h.html#ab1fc759555474f5952aca97ac354bd15">ftimage.h</a></li>
+<li>FT_CURVE_TAG_HAS_SCANMODE&#160;:&#160;<a class="el" href="ftimage_8h.html#a3dd1ef72bd2a47f89b354a3c76c5720f">ftimage.h</a></li>
+<li>FT_CURVE_TAG_ON&#160;:&#160;<a class="el" href="ftimage_8h.html#a967f934e5e5e1ee1fe4291d23959aa9c">ftimage.h</a></li>
+<li>FT_Curve_Tag_On&#160;:&#160;<a class="el" href="ftimage_8h.html#a9548449bf2fae689516af3b733e13acb">ftimage.h</a></li>
+<li>FT_CURVE_TAG_TOUCH_BOTH&#160;:&#160;<a class="el" href="ftimage_8h.html#a2bdd5798976257559d1bb624e17a951b">ftimage.h</a></li>
+<li>FT_CURVE_TAG_TOUCH_X&#160;:&#160;<a class="el" href="ftimage_8h.html#a208728b27b1fa2962cdc05a4f8861476">ftimage.h</a></li>
+<li>FT_Curve_Tag_Touch_X&#160;:&#160;<a class="el" href="ftimage_8h.html#a2a73ec8dd1884906136072ba15c6ad23">ftimage.h</a></li>
+<li>FT_CURVE_TAG_TOUCH_Y&#160;:&#160;<a class="el" href="ftimage_8h.html#a2d3c478c162d051b173095198cf40eb9">ftimage.h</a></li>
+<li>FT_Curve_Tag_Touch_Y&#160;:&#160;<a class="el" href="ftimage_8h.html#a7d46e507c9ce73a609d753505e3b7da6">ftimage.h</a></li>
+<li>FT_Data&#160;:&#160;<a class="el" href="fttypes_8h.html#a86506a3d92867a5611b4493c145ab794">fttypes.h</a></li>
+<li>FT_DivFix()&#160;:&#160;<a class="el" href="freetype_8h.html#a5248df90a0d076e6543b09284face353">freetype.h</a></li>
+<li>FT_Done_Face()&#160;:&#160;<a class="el" href="freetype_8h.html#a2d1542be3d3af3d7699cee3425b2bc79">freetype.h</a></li>
+<li>FT_Done_FreeType()&#160;:&#160;<a class="el" href="freetype_8h.html#abcae5780e604026b1994f140864ffbcb">freetype.h</a></li>
+<li>FT_Done_Glyph()&#160;:&#160;<a class="el" href="ftglyph_8h.html#a5a00b3e4b1714db7e21d054481176e94">ftglyph.h</a></li>
+<li>FT_Driver&#160;:&#160;<a class="el" href="freetype_8h.html#a5503c06c138ccdfeef486f2ce87bb8ec">freetype.h</a></li>
+<li>FT_DUMMY_STMNT&#160;:&#160;<a class="el" href="ftconfig_8h.html#aac188ac67da0a0f40d9bf75d40f81073">ftconfig.h</a></li>
+<li>FT_ENC_TAG&#160;:&#160;<a class="el" href="freetype_8h.html#a9476407ca5f33affe9f33214be62afe0">freetype.h</a></li>
+<li>FT_Encoding&#160;:&#160;<a class="el" href="freetype_8h.html#a969ab19025eab22915f16dedc4a5cdeb">freetype.h</a></li>
+<li>FT_Encoding_&#160;:&#160;<a class="el" href="freetype_8h.html#a7ecfde0e602c2f4858212cc27b7f9e86">freetype.h</a></li>
+<li>ft_encoding_adobe_custom&#160;:&#160;<a class="el" href="freetype_8h.html#a48318a07fe6a5cdafdad610496adcdb4">freetype.h</a></li>
+<li>ft_encoding_adobe_expert&#160;:&#160;<a class="el" href="freetype_8h.html#a974d42e7253c2f21f1804b988c6c2204">freetype.h</a></li>
+<li>ft_encoding_adobe_standard&#160;:&#160;<a class="el" href="freetype_8h.html#a2c21eaa78f11a9b6a52f40e48a8ae7da">freetype.h</a></li>
+<li>ft_encoding_apple_roman&#160;:&#160;<a class="el" href="freetype_8h.html#ae03bbe1f922527f31547626eb119782a">freetype.h</a></li>
+<li>ft_encoding_big5&#160;:&#160;<a class="el" href="freetype_8h.html#aeb92d0cbfa4d3f1e495414a5c46838dd">freetype.h</a></li>
+<li>ft_encoding_gb2312&#160;:&#160;<a class="el" href="freetype_8h.html#a76b95e9954711c05cc9615ce35e595d2">freetype.h</a></li>
+<li>ft_encoding_johab&#160;:&#160;<a class="el" href="freetype_8h.html#a5d1cb7250fa565a375a0a678cdb4cab6">freetype.h</a></li>
+<li>ft_encoding_latin_1&#160;:&#160;<a class="el" href="freetype_8h.html#a28078e7da3e146aefd807e3506b89582">freetype.h</a></li>
+<li>ft_encoding_latin_2&#160;:&#160;<a class="el" href="freetype_8h.html#a390dd383f4c3b7b6ab695424e090ba16">freetype.h</a></li>
+<li>FT_ENCODING_MS_BIG5&#160;:&#160;<a class="el" href="freetype_8h.html#a7ecfde0e602c2f4858212cc27b7f9e86ad51794bea8ac35c0747bd107aface2b8">freetype.h</a></li>
+<li>FT_ENCODING_MS_GB2312&#160;:&#160;<a class="el" href="freetype_8h.html#a7ecfde0e602c2f4858212cc27b7f9e86afce6f29b8a9271135bb3ff8c8fbf6967">freetype.h</a></li>
+<li>FT_ENCODING_MS_JOHAB&#160;:&#160;<a class="el" href="freetype_8h.html#a7ecfde0e602c2f4858212cc27b7f9e86a05d26272b5ff66f9f56c89b59c8f0b06">freetype.h</a></li>
+<li>FT_ENCODING_MS_SJIS&#160;:&#160;<a class="el" href="freetype_8h.html#a7ecfde0e602c2f4858212cc27b7f9e86a9c38a8ad08b429168f7ea75f03f79368">freetype.h</a></li>
+<li>FT_ENCODING_MS_WANSUNG&#160;:&#160;<a class="el" href="freetype_8h.html#a7ecfde0e602c2f4858212cc27b7f9e86ab9c5373b16bb1edb477a9fd5b9cadcc7">freetype.h</a></li>
+<li>ft_encoding_none&#160;:&#160;<a class="el" href="freetype_8h.html#ab9705cb9ae6de3a1c68fec4d50f71021">freetype.h</a></li>
+<li>ft_encoding_sjis&#160;:&#160;<a class="el" href="freetype_8h.html#a1dfa848077601a9a4e7e8bb4e2abf9f6">freetype.h</a></li>
+<li>ft_encoding_symbol&#160;:&#160;<a class="el" href="freetype_8h.html#a2b525b6b5042b756daa22ad54ac0c77b">freetype.h</a></li>
+<li>ft_encoding_unicode&#160;:&#160;<a class="el" href="freetype_8h.html#a74107edf8e8dc7a808ed622790e21529">freetype.h</a></li>
+<li>ft_encoding_wansung&#160;:&#160;<a class="el" href="freetype_8h.html#ade3f3a80f45363bfde86344ecef4321f">freetype.h</a></li>
+<li>FT_END_HEADER&#160;:&#160;<a class="el" href="ftheader_8h.html#a2ebbdbbee7f9bfa8b6b86790de7e9963">ftheader.h</a></li>
+<li>FT_END_STMNT&#160;:&#160;<a class="el" href="ftconfig_8h.html#a05ebe315c717e508cbb0f5cda7f8ca23">ftconfig.h</a></li>
+<li>FT_ERR_BASE&#160;:&#160;<a class="el" href="fterrors_8h.html#a708f62d5debdcba885a5368e44bad7ed">fterrors.h</a></li>
+<li>FT_ERR_CAT&#160;:&#160;<a class="el" href="fterrors_8h.html#a68551f6a26f7a08610c35fc8f0b6b8bc">fterrors.h</a></li>
+<li>FT_ERR_PREFIX&#160;:&#160;<a class="el" href="fterrors_8h.html#af0eb185e421716db7b56371e80dfcaa1">fterrors.h</a></li>
+<li>FT_ERR_XCAT&#160;:&#160;<a class="el" href="fterrors_8h.html#ab2283544b5c90d6d47aaf2be14e81b4a">fterrors.h</a></li>
+<li>FT_Error&#160;:&#160;<a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">fttypes.h</a></li>
+<li>FT_ERROR_BASE&#160;:&#160;<a class="el" href="fttypes_8h.html#afff9449b4bfddb61e84999323e0a63cb">fttypes.h</a></li>
+<li>FT_ERROR_DEFINITIONS_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a1c463d99e21d5e0fff5774acaaf1c006">ftheader.h</a></li>
+<li>FT_ERROR_END_LIST&#160;:&#160;<a class="el" href="fterrors_8h.html#af38c09f62b94bff3bd2dd0ec17d280a0">fterrors.h</a></li>
+<li>FT_ERROR_MODULE&#160;:&#160;<a class="el" href="fttypes_8h.html#abbc7eeaf0bd79560c628796882db0979">fttypes.h</a></li>
+<li>FT_ERROR_START_LIST&#160;:&#160;<a class="el" href="fterrors_8h.html#acdd2abea75f6319f8197e3f2675358ae">fterrors.h</a></li>
+<li>FT_ERRORDEF&#160;:&#160;<a class="el" href="fterrors_8h.html#a65a03bdb331ae978e63eeae1f1922e65">fterrors.h</a></li>
+<li>FT_ERRORDEF_&#160;:&#160;<a class="el" href="fterrors_8h.html#a439ec9f420628098d7d874ef1b9cab49">fterrors.h</a>, <a class="el" href="fterrdef_8h.html#a21f8ac1df7a17719e397b542c89040bc">fterrdef.h</a></li>
+<li>FT_ERRORS_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a50822c46a0997c40529f940571315084">ftheader.h</a></li>
+<li>FT_EXPORT&#160;:&#160;<a class="el" href="ftconfig_8h.html#abb1f0cb171117bb94f204d09e6a89a6e">ftconfig.h</a></li>
+<li>FT_EXPORT_DEF&#160;:&#160;<a class="el" href="ftconfig_8h.html#ad012d49d959527854f814cfd38299aab">ftconfig.h</a></li>
+<li>FT_EXPORT_VAR&#160;:&#160;<a class="el" href="ftconfig_8h.html#a440bcc3070d3958754bd7b6b9a15ce84">ftconfig.h</a></li>
+<li>FT_F26Dot6&#160;:&#160;<a class="el" href="fttypes_8h.html#a382164b17e99c3184911d941b2586853">fttypes.h</a></li>
+<li>FT_F2Dot14&#160;:&#160;<a class="el" href="fttypes_8h.html#a430d070e946e531a607ae350e822ffca">fttypes.h</a></li>
+<li>FT_Face&#160;:&#160;<a class="el" href="freetype_8h.html#a7eba045ee20968354fa1bff0f69740fa">freetype.h</a></li>
+<li>FT_Face_CheckTrueTypePatents()&#160;:&#160;<a class="el" href="freetype_8h.html#a1882220d5778b4e3d9191f24971982c6">freetype.h</a></li>
+<li>FT_FACE_FLAG_CID_KEYED&#160;:&#160;<a class="el" href="freetype_8h.html#a5b2ee95f0e3e208db27909267641a32f">freetype.h</a></li>
+<li>FT_FACE_FLAG_EXTERNAL_STREAM&#160;:&#160;<a class="el" href="freetype_8h.html#a88935459cedd8fb94de90b54b61b5340">freetype.h</a></li>
+<li>FT_FACE_FLAG_FAST_GLYPHS&#160;:&#160;<a class="el" href="freetype_8h.html#a9e92f4144d8f464c6f76b155ed863113">freetype.h</a></li>
+<li>FT_FACE_FLAG_FIXED_SIZES&#160;:&#160;<a class="el" href="freetype_8h.html#a0d9969dc47205c3f3edaf3e62badc141">freetype.h</a></li>
+<li>FT_FACE_FLAG_FIXED_WIDTH&#160;:&#160;<a class="el" href="freetype_8h.html#a4f10651b3daf0ca4ce84865b673ac2b5">freetype.h</a></li>
+<li>FT_FACE_FLAG_GLYPH_NAMES&#160;:&#160;<a class="el" href="freetype_8h.html#a95f0bac465249784dbbb51804e5a6dad">freetype.h</a></li>
+<li>FT_FACE_FLAG_HINTER&#160;:&#160;<a class="el" href="freetype_8h.html#a346f3067d209ae72102f62758c35f2cc">freetype.h</a></li>
+<li>FT_FACE_FLAG_HORIZONTAL&#160;:&#160;<a class="el" href="freetype_8h.html#ad2853d9a242275f4b2da7781b45afc31">freetype.h</a></li>
+<li>FT_FACE_FLAG_KERNING&#160;:&#160;<a class="el" href="freetype_8h.html#a00d87193f78cdc7d56358ecf12cc48c9">freetype.h</a></li>
+<li>FT_FACE_FLAG_MULTIPLE_MASTERS&#160;:&#160;<a class="el" href="freetype_8h.html#ac08faea43c86f315b2c5ac4b73649275">freetype.h</a></li>
+<li>FT_FACE_FLAG_SCALABLE&#160;:&#160;<a class="el" href="freetype_8h.html#a298dfa9bebe66f908fa22ed824bd2523">freetype.h</a></li>
+<li>FT_FACE_FLAG_SFNT&#160;:&#160;<a class="el" href="freetype_8h.html#a034e4e9fdce10b948747f48e7ad35f7c">freetype.h</a></li>
+<li>FT_FACE_FLAG_TRICKY&#160;:&#160;<a class="el" href="freetype_8h.html#aa179924bbac1c7bd24c7ab6066706400">freetype.h</a></li>
+<li>FT_FACE_FLAG_VERTICAL&#160;:&#160;<a class="el" href="freetype_8h.html#a6d44e8fb324f5d250e172e356e1edb00">freetype.h</a></li>
+<li>FT_Face_GetCharsOfVariant()&#160;:&#160;<a class="el" href="freetype_8h.html#ae21fa4a376b1eb2d56c8a244d90dca11">freetype.h</a></li>
+<li>FT_Face_GetCharVariantIndex()&#160;:&#160;<a class="el" href="freetype_8h.html#a89c451544c779bb6cd84a7fb45a6e8a4">freetype.h</a></li>
+<li>FT_Face_GetCharVariantIsDefault()&#160;:&#160;<a class="el" href="freetype_8h.html#adf8df0c68ce60f847a1e593918118f7b">freetype.h</a></li>
+<li>FT_Face_GetVariantSelectors()&#160;:&#160;<a class="el" href="freetype_8h.html#a156a71f0dc04b2041e73c300855d9158">freetype.h</a></li>
+<li>FT_Face_GetVariantsOfChar()&#160;:&#160;<a class="el" href="freetype_8h.html#a334bc4b060ee2ced5caf00cd31df1902">freetype.h</a></li>
+<li>FT_Face_Internal&#160;:&#160;<a class="el" href="freetype_8h.html#a1b0af221e2e374269fa3dc687a1e4023">freetype.h</a></li>
+<li>FT_Face_SetUnpatentedHinting()&#160;:&#160;<a class="el" href="freetype_8h.html#a4953791d3ef193971eed7659ab1e693a">freetype.h</a></li>
+<li>FT_FaceRec&#160;:&#160;<a class="el" href="freetype_8h.html#a45c4c2194a9dfb5df09387e80cad91e1">freetype.h</a></li>
+<li>ft_fclose&#160;:&#160;<a class="el" href="ftstdlib_8h.html#a4cb8ef27d7c7a60c8639f28905b027ee">ftstdlib.h</a></li>
+<li>FT_FILE&#160;:&#160;<a class="el" href="ftstdlib_8h.html#a08c909d90dee1193a5a791b5c55e985f">ftstdlib.h</a></li>
+<li>FT_Fixed&#160;:&#160;<a class="el" href="fttypes_8h.html#a5f5a679cc09f758efdd0d1c5feed3c3d">fttypes.h</a></li>
+<li>FT_FloorFix()&#160;:&#160;<a class="el" href="freetype_8h.html#a5d461dbda5ce07cd98e3f55db054eaae">freetype.h</a></li>
+<li>ft_fopen&#160;:&#160;<a class="el" href="ftstdlib_8h.html#aa98c5db8ee888c8b0195da9c25cdf994">ftstdlib.h</a></li>
+<li>ft_fread&#160;:&#160;<a class="el" href="ftstdlib_8h.html#a6571370c8e5168889ac9a98e75b68173">ftstdlib.h</a></li>
+<li>FT_Free_Func&#160;:&#160;<a class="el" href="ftsystem_8h.html#abbf66b34e6c3a7f9564cbe3d6fa6c6fb">ftsystem.h</a></li>
+<li>FT_FREETYPE_H&#160;:&#160;<a class="el" href="ftheader_8h.html#ac7269a393b5fd8f091b70a204980e2fb">ftheader.h</a></li>
+<li>ft_fseek&#160;:&#160;<a class="el" href="ftstdlib_8h.html#a0c00ddb935ab3ba3142a80ca846215c0">ftstdlib.h</a></li>
+<li>FT_FSTYPE_BITMAP_EMBEDDING_ONLY&#160;:&#160;<a class="el" href="freetype_8h.html#acd051afec8cb7042753b4f2cc9b639ae">freetype.h</a></li>
+<li>FT_FSTYPE_EDITABLE_EMBEDDING&#160;:&#160;<a class="el" href="freetype_8h.html#ac31594a76f10efb48983313a00da3a08">freetype.h</a></li>
+<li>FT_FSTYPE_INSTALLABLE_EMBEDDING&#160;:&#160;<a class="el" href="freetype_8h.html#a614f8cd01acfb6d99e2df1e8d0970828">freetype.h</a></li>
+<li>FT_FSTYPE_NO_SUBSETTING&#160;:&#160;<a class="el" href="freetype_8h.html#a5f324a3866df9d74ea100df3ca8c44bf">freetype.h</a></li>
+<li>FT_FSTYPE_PREVIEW_AND_PRINT_EMBEDDING&#160;:&#160;<a class="el" href="freetype_8h.html#a53b7c564eccc48016f868d2f2b921afb">freetype.h</a></li>
+<li>FT_FSTYPE_RESTRICTED_LICENSE_EMBEDDING&#160;:&#160;<a class="el" href="freetype_8h.html#a26a1439f89abe6944af85787c9019198">freetype.h</a></li>
+<li>ft_ftell&#160;:&#160;<a class="el" href="ftstdlib_8h.html#a9fa578d508f0bbf238fe177221578f90">ftstdlib.h</a></li>
+<li>FT_FWord&#160;:&#160;<a class="el" href="fttypes_8h.html#a9d5217c79dbe2bd92c67d16b0d990871">fttypes.h</a></li>
+<li>FT_GASP_H&#160;:&#160;<a class="el" href="ftheader_8h.html#ab35463a6959ee73674479920ca40d030">ftheader.h</a></li>
+<li>FT_Generic&#160;:&#160;<a class="el" href="fttypes_8h.html#a6fddceba92aa481008f68bad54cb8c0b">fttypes.h</a></li>
+<li>FT_Generic_Finalizer&#160;:&#160;<a class="el" href="fttypes_8h.html#a9f7f3174a89e80b1d9eff58620121b3f">fttypes.h</a></li>
+<li>FT_Get_Char_Index()&#160;:&#160;<a class="el" href="freetype_8h.html#a529192ba5290936f21b63f257bf42bdd">freetype.h</a></li>
+<li>FT_Get_Charmap_Index()&#160;:&#160;<a class="el" href="freetype_8h.html#a91dba3ac464a579dc5149c7cfc6f02e1">freetype.h</a></li>
+<li>FT_Get_First_Char()&#160;:&#160;<a class="el" href="freetype_8h.html#a2e6870abd05ffbf08632dd5416d3093d">freetype.h</a></li>
+<li>FT_Get_FSType_Flags()&#160;:&#160;<a class="el" href="freetype_8h.html#a47cfd436cdfcd64fbe1423e9430ebe89">freetype.h</a></li>
+<li>FT_Get_Glyph()&#160;:&#160;<a class="el" href="ftglyph_8h.html#a87ba3f101920f5c3c736395dc66060c3">ftglyph.h</a></li>
+<li>FT_Get_Glyph_Name()&#160;:&#160;<a class="el" href="freetype_8h.html#aa2d5108cf55705b1e1faf4fbe9873edc">freetype.h</a></li>
+<li>FT_Get_Kerning()&#160;:&#160;<a class="el" href="freetype_8h.html#ac577d98c18789a0d558d2b2f9fadbbf1">freetype.h</a></li>
+<li>FT_Get_Name_Index()&#160;:&#160;<a class="el" href="freetype_8h.html#abfb440cce732f3c3b03ef784601dd67a">freetype.h</a></li>
+<li>FT_Get_Next_Char()&#160;:&#160;<a class="el" href="freetype_8h.html#a8c31d0c4f4497219e2de4c9946dbe791">freetype.h</a></li>
+<li>FT_Get_Postscript_Name()&#160;:&#160;<a class="el" href="freetype_8h.html#a7ba3fd81be23a7e0ca0a1c435bdaa84a">freetype.h</a></li>
+<li>FT_Get_SubGlyph_Info()&#160;:&#160;<a class="el" href="freetype_8h.html#ad9d2dcdefc29c57a6fa3efe7061bb523">freetype.h</a></li>
+<li>FT_Get_Track_Kerning()&#160;:&#160;<a class="el" href="freetype_8h.html#abeed63d063fd24dc5374039da3f745bf">freetype.h</a></li>
+<li>FT_Glyph&#160;:&#160;<a class="el" href="ftglyph_8h.html#aeb217021e2817832b003c325b185e003">ftglyph.h</a></li>
+<li>FT_GLYPH_BBOX_GRIDFIT&#160;:&#160;<a class="el" href="ftglyph_8h.html#a63cf1c261469985790ac18413991c629a283d784c8977003fbfab46d5b90abdc4">ftglyph.h</a></li>
+<li>ft_glyph_bbox_gridfit&#160;:&#160;<a class="el" href="ftglyph_8h.html#a103a05421b431e3bc36a4d1d4f112c5f">ftglyph.h</a></li>
+<li>FT_Glyph_BBox_Mode&#160;:&#160;<a class="el" href="ftglyph_8h.html#a8c61333d42cdbe5ed52a091282a817a3">ftglyph.h</a></li>
+<li>FT_Glyph_BBox_Mode_&#160;:&#160;<a class="el" href="ftglyph_8h.html#a63cf1c261469985790ac18413991c629">ftglyph.h</a></li>
+<li>FT_GLYPH_BBOX_PIXELS&#160;:&#160;<a class="el" href="ftglyph_8h.html#a63cf1c261469985790ac18413991c629a4a7e48119ab3f99c274745aac68bdd78">ftglyph.h</a></li>
+<li>ft_glyph_bbox_pixels&#160;:&#160;<a class="el" href="ftglyph_8h.html#acc5d8bcb6c56f16448003731495187de">ftglyph.h</a></li>
+<li>FT_GLYPH_BBOX_SUBPIXELS&#160;:&#160;<a class="el" href="ftglyph_8h.html#a63cf1c261469985790ac18413991c629ac4c9557fb186f94126755df724f24d5d">ftglyph.h</a></li>
+<li>ft_glyph_bbox_subpixels&#160;:&#160;<a class="el" href="ftglyph_8h.html#a647e5bd710ce5ce0213f797d8c194ae4">ftglyph.h</a></li>
+<li>FT_GLYPH_BBOX_TRUNCATE&#160;:&#160;<a class="el" href="ftglyph_8h.html#a63cf1c261469985790ac18413991c629ae525ef754b5c5d491da3e4ca34457d68">ftglyph.h</a></li>
+<li>ft_glyph_bbox_truncate&#160;:&#160;<a class="el" href="ftglyph_8h.html#a802bfb9077955ee66d0cd212d3db5674">ftglyph.h</a></li>
+<li>FT_GLYPH_BBOX_UNSCALED&#160;:&#160;<a class="el" href="ftglyph_8h.html#a63cf1c261469985790ac18413991c629a164aa3698d7e988ff88f0210ea50a362">ftglyph.h</a></li>
+<li>ft_glyph_bbox_unscaled&#160;:&#160;<a class="el" href="ftglyph_8h.html#aeeba500737768898d10be3db05dc4fa7">ftglyph.h</a></li>
+<li>FT_Glyph_Class&#160;:&#160;<a class="el" href="ftglyph_8h.html#ad05b3999d93247f41f1c4ac20ea0104b">ftglyph.h</a></li>
+<li>FT_Glyph_Copy()&#160;:&#160;<a class="el" href="ftglyph_8h.html#a8e0e732ae2b7cb43965f32821306e393">ftglyph.h</a></li>
+<li>FT_Glyph_Format&#160;:&#160;<a class="el" href="ftimage_8h.html#ac277a6c91e1d785fae31f2aa86d60588">ftimage.h</a></li>
+<li>FT_Glyph_Format_&#160;:&#160;<a class="el" href="ftimage_8h.html#a62d06240f489f4d35830e42b7297eb22">ftimage.h</a></li>
+<li>ft_glyph_format_bitmap&#160;:&#160;<a class="el" href="ftimage_8h.html#a3f74f8a5a721951381a9ec21889757d9">ftimage.h</a></li>
+<li>ft_glyph_format_composite&#160;:&#160;<a class="el" href="ftimage_8h.html#a9ffc312de5036f898e5b6d56c2034925">ftimage.h</a></li>
+<li>ft_glyph_format_none&#160;:&#160;<a class="el" href="ftimage_8h.html#a11d7e34888fb972beba499f0c71e2fa1">ftimage.h</a></li>
+<li>ft_glyph_format_outline&#160;:&#160;<a class="el" href="ftimage_8h.html#ad9d7e20f1492e8ba16fddd5c91fea832">ftimage.h</a></li>
+<li>ft_glyph_format_plotter&#160;:&#160;<a class="el" href="ftimage_8h.html#a127746d73f015c67e3a9037b9630726f">ftimage.h</a></li>
+<li>FT_Glyph_Get_CBox()&#160;:&#160;<a class="el" href="ftglyph_8h.html#aa0f41cf13ddb1522da52e67f80f3da2a">ftglyph.h</a></li>
+<li>FT_GLYPH_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a1491ced81f0291f714493d1fc4585859">ftheader.h</a></li>
+<li>FT_Glyph_Metrics&#160;:&#160;<a class="el" href="freetype_8h.html#a07cbb98ddcb2cc8c58b5ac03e513382f">freetype.h</a></li>
+<li>FT_Glyph_To_Bitmap()&#160;:&#160;<a class="el" href="ftglyph_8h.html#a669fa0a60332582cf26b5749b566a256">ftglyph.h</a></li>
+<li>FT_Glyph_Transform()&#160;:&#160;<a class="el" href="ftglyph_8h.html#adaa9caf44f6fbe0e51bbefcffc3caf0c">ftglyph.h</a></li>
+<li>FT_GlyphRec&#160;:&#160;<a class="el" href="ftglyph_8h.html#af3fa66ddc3857b4055c7f11f20ad7425">ftglyph.h</a></li>
+<li>FT_GlyphSlot&#160;:&#160;<a class="el" href="freetype_8h.html#a768daa0d9c3fa499e6c37034ee9f2ca3">freetype.h</a></li>
+<li>FT_GlyphSlot_Own_Bitmap()&#160;:&#160;<a class="el" href="ftbitmap_8h.html#a0cd7dead9518404759c2d061d90d9fde">ftbitmap.h</a></li>
+<li>FT_GlyphSlotRec&#160;:&#160;<a class="el" href="freetype_8h.html#a6cad958e1b4f05269eaeb94f4dd06cf1">freetype.h</a></li>
+<li>FT_GX_VALIDATE_H&#160;:&#160;<a class="el" href="ftheader_8h.html#ad96879d4b74d4624df77b0ce61e43eb7">ftheader.h</a></li>
+<li>FT_GZIP_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a851224edc74bc11592b0286ff453e850">ftheader.h</a></li>
+<li>FT_HAS_FAST_GLYPHS&#160;:&#160;<a class="el" href="freetype_8h.html#ae49b37f39d7b08c076757bb3c9dbeb28">freetype.h</a></li>
+<li>FT_HAS_FIXED_SIZES&#160;:&#160;<a class="el" href="freetype_8h.html#a5e7fe61c802f7cb7f8fddf929e3f50e3">freetype.h</a></li>
+<li>FT_HAS_GLYPH_NAMES&#160;:&#160;<a class="el" href="freetype_8h.html#aa98cf7f7755a226cd39aeda9eb6da44b">freetype.h</a></li>
+<li>FT_HAS_HORIZONTAL&#160;:&#160;<a class="el" href="freetype_8h.html#ae8a007c569cc0b3321aa0688db315bb0">freetype.h</a></li>
+<li>FT_HAS_KERNING&#160;:&#160;<a class="el" href="freetype_8h.html#aefbddc76b05e3e29fd51608442493e87">freetype.h</a></li>
+<li>FT_HAS_MULTIPLE_MASTERS&#160;:&#160;<a class="el" href="freetype_8h.html#a38cf787f4a617376744209a98ad96107">freetype.h</a></li>
+<li>FT_HAS_VERTICAL&#160;:&#160;<a class="el" href="freetype_8h.html#a6eab7332965c190e91df1c92b70c6ec9">freetype.h</a></li>
+<li>FT_IMAGE_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a02ad30ac824c6d47d2065cbe58bd2f4b">ftheader.h</a></li>
+<li>FT_IMAGE_TAG&#160;:&#160;<a class="el" href="ftimage_8h.html#a20f1ec5a92f85f98bcd219141b604cfb">ftimage.h</a></li>
+<li>FT_INCREMENTAL_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a61d3f230bb522230bb05521c3713f009">ftheader.h</a></li>
+<li>FT_Init_FreeType()&#160;:&#160;<a class="el" href="freetype_8h.html#af93e2afa8ab5ba5675ae8d67b84df079">freetype.h</a></li>
+<li>FT_Int&#160;:&#160;<a class="el" href="fttypes_8h.html#af90e5fb0d07e21be9fe6faa33f02484c">fttypes.h</a></li>
+<li>FT_Int16&#160;:&#160;<a class="el" href="ftconfig_8h.html#a1ac57aab738d5a73f4d02dcc6e72f5e4">ftconfig.h</a></li>
+<li>FT_INT_MAX&#160;:&#160;<a class="el" href="ftstdlib_8h.html#ae008eb221da7e475a8bdf67c067b5369">ftstdlib.h</a></li>
+<li>FT_INT_MIN&#160;:&#160;<a class="el" href="ftstdlib_8h.html#adae73f064f342e755fdf806dbbb067b0">ftstdlib.h</a></li>
+<li>FT_INTERNAL_AUTOHINT_H&#160;:&#160;<a class="el" href="internal_8h.html#a445744cd84d78f3e5dea70c52902174c">internal.h</a></li>
+<li>FT_INTERNAL_CALC_H&#160;:&#160;<a class="el" href="internal_8h.html#a3f6665a47ab81849672adc364353575c">internal.h</a></li>
+<li>FT_INTERNAL_DEBUG_H&#160;:&#160;<a class="el" href="internal_8h.html#aeea8d5353aa3fe4ce831c5634447068a">internal.h</a></li>
+<li>FT_INTERNAL_DRIVER_H&#160;:&#160;<a class="el" href="internal_8h.html#a9abe61d7325c1c31d56f0c31d7670789">internal.h</a></li>
+<li>FT_INTERNAL_GLYPH_LOADER_H&#160;:&#160;<a class="el" href="internal_8h.html#a1336afd20b2947042159be3d15983f3e">internal.h</a></li>
+<li>FT_INTERNAL_MEMORY_H&#160;:&#160;<a class="el" href="internal_8h.html#a902da8a6fca02b2d93ac8dd2055f6956">internal.h</a></li>
+<li>FT_INTERNAL_OBJECTS_H&#160;:&#160;<a class="el" href="internal_8h.html#a57d73e6404de7cba76528d78a5237a50">internal.h</a></li>
+<li>FT_INTERNAL_PIC_H&#160;:&#160;<a class="el" href="internal_8h.html#a52acc88d61207de240d712e75227c154">internal.h</a></li>
+<li>FT_INTERNAL_POSTSCRIPT_AUX_H&#160;:&#160;<a class="el" href="internal_8h.html#a3cd1b9a7a46e53400d656ffc9012c22e">internal.h</a></li>
+<li>FT_INTERNAL_POSTSCRIPT_GLOBALS_H&#160;:&#160;<a class="el" href="internal_8h.html#af3bd003fdaba5b665e19ac53cffc2030">internal.h</a></li>
+<li>FT_INTERNAL_POSTSCRIPT_HINTS_H&#160;:&#160;<a class="el" href="internal_8h.html#ab3baf3556ed07c4524fdec5fc700d181">internal.h</a></li>
+<li>FT_INTERNAL_RFORK_H&#160;:&#160;<a class="el" href="internal_8h.html#abe12f43a5380e271821b0300824c7de8">internal.h</a></li>
+<li>FT_INTERNAL_SERVICE_H&#160;:&#160;<a class="el" href="internal_8h.html#a12b8cb10bf1e2a160e589e25cdb7407c">internal.h</a></li>
+<li>FT_INTERNAL_SFNT_H&#160;:&#160;<a class="el" href="internal_8h.html#a3f2f9184a1413323c05c1fb051764a70">internal.h</a></li>
+<li>FT_INTERNAL_STREAM_H&#160;:&#160;<a class="el" href="internal_8h.html#a33e8191107caa96670f7435da4e77493">internal.h</a></li>
+<li>FT_INTERNAL_TRACE_H&#160;:&#160;<a class="el" href="internal_8h.html#a2b928fe3fec4e710b5693e3ce4eac662">internal.h</a></li>
+<li>FT_INTERNAL_TRUETYPE_TYPES_H&#160;:&#160;<a class="el" href="internal_8h.html#a8686df8ea91b47c06498a4d3e9128e61">internal.h</a></li>
+<li>FT_INTERNAL_TYPE1_TYPES_H&#160;:&#160;<a class="el" href="internal_8h.html#a71ee6efbdf9d7257f120880d5b061290">internal.h</a></li>
+<li>FT_INTERNAL_VALIDATE_H&#160;:&#160;<a class="el" href="internal_8h.html#a9c8dc1b4df75653df685797172f68ce5">internal.h</a></li>
+<li>FT_IS_CID_KEYED&#160;:&#160;<a class="el" href="freetype_8h.html#a97b1ff99d3c93eff5804574d91dda785">freetype.h</a></li>
+<li>FT_IS_EMPTY&#160;:&#160;<a class="el" href="fttypes_8h.html#a9764414c233608bcb9eadec7b0176b81">fttypes.h</a></li>
+<li>FT_IS_FIXED_WIDTH&#160;:&#160;<a class="el" href="freetype_8h.html#a73fc15ce3c2d3a83591af1f2d54cdf5b">freetype.h</a></li>
+<li>FT_IS_SCALABLE&#160;:&#160;<a class="el" href="freetype_8h.html#a6974c80eab523906685030b0298141b1">freetype.h</a></li>
+<li>FT_IS_SFNT&#160;:&#160;<a class="el" href="freetype_8h.html#a164adcb70a55ae22b5a795a6cd851be5">freetype.h</a></li>
+<li>FT_IS_TRICKY&#160;:&#160;<a class="el" href="freetype_8h.html#ac422750a96071a57625cc0429147364b">freetype.h</a></li>
+<li>ft_jmp_buf&#160;:&#160;<a class="el" href="ftstdlib_8h.html#a4c13ff957e7b63737a04c178c5b0fd86">ftstdlib.h</a></li>
+<li>FT_KERNING_DEFAULT&#160;:&#160;<a class="el" href="freetype_8h.html#acbb61a5f72b8a29ffe8cd98c715c7e4faf34fea8536e413db5053dc5be9e1957a">freetype.h</a></li>
+<li>ft_kerning_default&#160;:&#160;<a class="el" href="freetype_8h.html#a794a4720b27c80df120c321404eb6415">freetype.h</a></li>
+<li>FT_Kerning_Mode&#160;:&#160;<a class="el" href="freetype_8h.html#a9079aebc4f3404f012691271345a884d">freetype.h</a></li>
+<li>FT_Kerning_Mode_&#160;:&#160;<a class="el" href="freetype_8h.html#acbb61a5f72b8a29ffe8cd98c715c7e4f">freetype.h</a></li>
+<li>FT_KERNING_UNFITTED&#160;:&#160;<a class="el" href="freetype_8h.html#acbb61a5f72b8a29ffe8cd98c715c7e4fa11fe06da115eeae2d06cf219b01a46e6">freetype.h</a></li>
+<li>ft_kerning_unfitted&#160;:&#160;<a class="el" href="freetype_8h.html#a0884bffd23d574c726f9cd6359ba9077">freetype.h</a></li>
+<li>FT_KERNING_UNSCALED&#160;:&#160;<a class="el" href="freetype_8h.html#acbb61a5f72b8a29ffe8cd98c715c7e4fa8fbe3d85d409a9f87c1b1f829e6105b9">freetype.h</a></li>
+<li>ft_kerning_unscaled&#160;:&#160;<a class="el" href="freetype_8h.html#aaf1837bc2d15931d44e755dbb5e55eec">freetype.h</a></li>
+<li>ft_labs&#160;:&#160;<a class="el" href="ftstdlib_8h.html#a1d35c2c00370684ae4e6d75b1a5b7cc9">ftstdlib.h</a></li>
+<li>FT_LCD_FILTER_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a183bdd9f70879aebceb16a3af0dd38ac">ftheader.h</a></li>
+<li>FT_Library&#160;:&#160;<a class="el" href="freetype_8h.html#a92857f8bf079b7b9ef5d3ce74cf89ef5">freetype.h</a></li>
+<li>FT_Library_Version()&#160;:&#160;<a class="el" href="freetype_8h.html#a1f08c1971529d442c6e90ca07f79bd94">freetype.h</a></li>
+<li>FT_List&#160;:&#160;<a class="el" href="fttypes_8h.html#a9443166f293e01a3cb6346f3d499b755">fttypes.h</a></li>
+<li>FT_LIST_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a8ee8821281410ddfab3edb7dec6ea338">ftheader.h</a></li>
+<li>FT_ListNode&#160;:&#160;<a class="el" href="fttypes_8h.html#a155e4980a42c16fbc221ad40b2b59695">fttypes.h</a></li>
+<li>FT_ListNodeRec&#160;:&#160;<a class="el" href="fttypes_8h.html#a2c5d17b4ed9134b1ac00a4dfa1ef46e0">fttypes.h</a></li>
+<li>FT_ListRec&#160;:&#160;<a class="el" href="fttypes_8h.html#ac5fd26b50609e459cc828b6e5008867c">fttypes.h</a></li>
+<li>FT_LOAD_ADVANCE_ONLY&#160;:&#160;<a class="el" href="freetype_8h.html#a2b2c58cdeb87bc06ccb16e52ecd4bcba">freetype.h</a></li>
+<li>FT_Load_Char()&#160;:&#160;<a class="el" href="freetype_8h.html#aeea4c9699584228c2244e4f6d9f09380">freetype.h</a></li>
+<li>FT_LOAD_CROP_BITMAP&#160;:&#160;<a class="el" href="freetype_8h.html#aa0a798b92aad1ce180808fec5c555ca9">freetype.h</a></li>
+<li>FT_LOAD_DEFAULT&#160;:&#160;<a class="el" href="freetype_8h.html#a70e9181eeca14df104c48ec573156da8">freetype.h</a></li>
+<li>FT_LOAD_FORCE_AUTOHINT&#160;:&#160;<a class="el" href="freetype_8h.html#a63f6789f8fee0232e4b1178d22909059">freetype.h</a></li>
+<li>FT_Load_Glyph()&#160;:&#160;<a class="el" href="freetype_8h.html#a01806ddba7989d0ad132e3318301e72d">freetype.h</a></li>
+<li>FT_LOAD_IGNORE_GLOBAL_ADVANCE_WIDTH&#160;:&#160;<a class="el" href="freetype_8h.html#a96199ac2de002ab3040da8dee86d8b82">freetype.h</a></li>
+<li>FT_LOAD_IGNORE_TRANSFORM&#160;:&#160;<a class="el" href="freetype_8h.html#a17fa1a3bfac1bada36473de23a4458a1">freetype.h</a></li>
+<li>FT_LOAD_LINEAR_DESIGN&#160;:&#160;<a class="el" href="freetype_8h.html#acb21d35c27bf78255a7c23dbb48961e9">freetype.h</a></li>
+<li>FT_LOAD_MONOCHROME&#160;:&#160;<a class="el" href="freetype_8h.html#a69eec6a6db16fc011e2881e7cbb3ed48">freetype.h</a></li>
+<li>FT_LOAD_NO_AUTOHINT&#160;:&#160;<a class="el" href="freetype_8h.html#ab68e871823d2167024a92bd488941938">freetype.h</a></li>
+<li>FT_LOAD_NO_BITMAP&#160;:&#160;<a class="el" href="freetype_8h.html#a0b68fe1c2c21b9ca3be6853ad44460df">freetype.h</a></li>
+<li>FT_LOAD_NO_HINTING&#160;:&#160;<a class="el" href="freetype_8h.html#a4d3657db8d87688e93601201d0524e38">freetype.h</a></li>
+<li>FT_LOAD_NO_RECURSE&#160;:&#160;<a class="el" href="freetype_8h.html#a2a12be302a988f3412a5191db419c5e2">freetype.h</a></li>
+<li>FT_LOAD_NO_SCALE&#160;:&#160;<a class="el" href="freetype_8h.html#a1ae5e2e14c90bb98bde52e5412a8f23f">freetype.h</a></li>
+<li>FT_LOAD_PEDANTIC&#160;:&#160;<a class="el" href="freetype_8h.html#af35d65e335b1e71468b4e2c7b6ce6841">freetype.h</a></li>
+<li>FT_LOAD_RENDER&#160;:&#160;<a class="el" href="freetype_8h.html#a0151cfe710837b05d545dafe99933ba9">freetype.h</a></li>
+<li>FT_LOAD_SBITS_ONLY&#160;:&#160;<a class="el" href="freetype_8h.html#a08089e78fe58c63141461da290f369aa">freetype.h</a></li>
+<li>FT_LOAD_TARGET_&#160;:&#160;<a class="el" href="freetype_8h.html#a601e55dea4e05a3905d74bbf36c48937">freetype.h</a></li>
+<li>FT_LOAD_TARGET_LCD&#160;:&#160;<a class="el" href="freetype_8h.html#ab732a2860f81a6729c07eaf49f68f400">freetype.h</a></li>
+<li>FT_LOAD_TARGET_LCD_V&#160;:&#160;<a class="el" href="freetype_8h.html#a03834e4fe11ce5b1be2b2a13cb4665e7">freetype.h</a></li>
+<li>FT_LOAD_TARGET_LIGHT&#160;:&#160;<a class="el" href="freetype_8h.html#add9be9ada63bfe4260785ec625af4bd5">freetype.h</a></li>
+<li>FT_LOAD_TARGET_MODE&#160;:&#160;<a class="el" href="freetype_8h.html#a05f580caefdad5475992b61231f3b357">freetype.h</a></li>
+<li>FT_LOAD_TARGET_MONO&#160;:&#160;<a class="el" href="freetype_8h.html#a112e1daf3f7a36bf97eff235822012dc">freetype.h</a></li>
+<li>FT_LOAD_TARGET_NORMAL&#160;:&#160;<a class="el" href="freetype_8h.html#a1a994704771245d243b7a6744833775e">freetype.h</a></li>
+<li>FT_LOAD_VERTICAL_LAYOUT&#160;:&#160;<a class="el" href="freetype_8h.html#a01ce88a8e449ed2ef6ecf6f83c59b5c1">freetype.h</a></li>
+<li>FT_LOCAL&#160;:&#160;<a class="el" href="ftconfig_8h.html#a58a8b2fb387665ef9652a54a9ad80bd3">ftconfig.h</a></li>
+<li>FT_LOCAL_DEF&#160;:&#160;<a class="el" href="ftconfig_8h.html#a065cda933183dff5dc368794eefa7c93">ftconfig.h</a></li>
+<li>FT_Long&#160;:&#160;<a class="el" href="fttypes_8h.html#a7fa72a1f0e79fb1860c5965789024d6f">fttypes.h</a></li>
+<li>ft_longjmp&#160;:&#160;<a class="el" href="ftstdlib_8h.html#a5a5bcdc06f1f7716f5a7d11360962f3b">ftstdlib.h</a></li>
+<li>FT_LZW_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a1e655571b147cf102e33c3921fd61284">ftheader.h</a></li>
+<li>FT_MAC_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a062d6532a7bdfad3f3da41e349e748df">ftheader.h</a></li>
+<li>FT_MAKE_TAG&#160;:&#160;<a class="el" href="fttypes_8h.html#ae115fc8c5f7280f599d1b2ae713f6db0">fttypes.h</a></li>
+<li>FT_Matrix&#160;:&#160;<a class="el" href="fttypes_8h.html#aa6f56f1da1b9036f07db19fbc39c8aea">fttypes.h</a></li>
+<li>FT_Matrix_Invert()&#160;:&#160;<a class="el" href="ftglyph_8h.html#a830d14e28757debaec45f11acd06411b">ftglyph.h</a></li>
+<li>FT_Matrix_Multiply()&#160;:&#160;<a class="el" href="ftglyph_8h.html#ae6d449f762dcc2c8254399fc8243d738">ftglyph.h</a></li>
+<li>FT_MAX_CHARMAP_CACHEABLE&#160;:&#160;<a class="el" href="ftoption_8h.html#ad83d239e848a53ce9ff244ccfeb5e408">ftoption.h</a></li>
+<li>FT_MAX_MODULES&#160;:&#160;<a class="el" href="ftoption_8h.html#a2fa51a675b9b4bf8117b76f57f415592">ftoption.h</a></li>
+<li>ft_memchr&#160;:&#160;<a class="el" href="ftstdlib_8h.html#acff91338afcaae9e7531ab1a0deceb44">ftstdlib.h</a></li>
+<li>ft_memcmp&#160;:&#160;<a class="el" href="ftstdlib_8h.html#a472a9d41583c5334151534ba3d33ad21">ftstdlib.h</a></li>
+<li>ft_memcpy&#160;:&#160;<a class="el" href="ftstdlib_8h.html#a0b36ea64fb3c93ebf51e44bfac5f53cc">ftstdlib.h</a></li>
+<li>ft_memmove&#160;:&#160;<a class="el" href="ftstdlib_8h.html#a7fdd658afbbffabe132ff10f9d40bb6c">ftstdlib.h</a></li>
+<li>FT_Memory&#160;:&#160;<a class="el" href="ftsystem_8h.html#a67ec7ea35cde99a89a65e9f827a9ad3a">ftsystem.h</a></li>
+<li>ft_memset&#160;:&#160;<a class="el" href="ftstdlib_8h.html#a201df32e472007bb839e88dcf53a8240">ftstdlib.h</a></li>
+<li>FT_MODERR_END_LIST&#160;:&#160;<a class="el" href="ftmoderr_8h.html#ab433b14b7c1b023547db4efecc7b3c19">ftmoderr.h</a></li>
+<li>FT_MODERR_START_LIST&#160;:&#160;<a class="el" href="ftmoderr_8h.html#a9de162fb080369582adb64585283eb40">ftmoderr.h</a></li>
+<li>FT_MODERRDEF&#160;:&#160;<a class="el" href="ftmoderr_8h.html#acc52fa7486a1d7dcffe289833249e686">ftmoderr.h</a></li>
+<li>FT_Module&#160;:&#160;<a class="el" href="freetype_8h.html#a660c1bb333747abacdc433b7d73ca59b">freetype.h</a></li>
+<li>FT_MODULE_ERRORS_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a4adcee4da741945e32a81b2b8e44359a">ftheader.h</a></li>
+<li>FT_MODULE_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a2c9158470029bd966c79a630387a0321">ftheader.h</a></li>
+<li>FT_MulDiv()&#160;:&#160;<a class="el" href="freetype_8h.html#ae31c0f444ce1bba445af776b86beaa60">freetype.h</a></li>
+<li>FT_MulFix()&#160;:&#160;<a class="el" href="freetype_8h.html#aeb37c2858e2851e15465580de1d1d218">freetype.h</a></li>
+<li>FT_MULTIPLE_MASTERS_H&#160;:&#160;<a class="el" href="ftheader_8h.html#aabbfc056bf7c848bdca34a8d1429444c">ftheader.h</a></li>
+<li>FT_New_Face()&#160;:&#160;<a class="el" href="freetype_8h.html#a148792cfd6f1b3735d53bf3baf5d336c">freetype.h</a></li>
+<li>FT_New_Memory_Face()&#160;:&#160;<a class="el" href="freetype_8h.html#ae9bce7676556ee5611ecbaf370023a86">freetype.h</a></li>
+<li>FT_NOERRORDEF_&#160;:&#160;<a class="el" href="fterrors_8h.html#a48f44adde7c075763aeba9d6efabcbd9">fterrors.h</a>, <a class="el" href="fterrdef_8h.html#a2806dea3a6fa4bf9609b940537f86331">fterrdef.h</a></li>
+<li>FT_Offset&#160;:&#160;<a class="el" href="fttypes_8h.html#af7b5edd727ac01b0d4729ac848bd4175">fttypes.h</a></li>
+<li>FT_Open_Args&#160;:&#160;<a class="el" href="freetype_8h.html#aa1c1d4d731529d220017c71767baaccb">freetype.h</a></li>
+<li>FT_OPEN_DRIVER&#160;:&#160;<a class="el" href="freetype_8h.html#a58749d3bf1d7d908af3e17366c8e8969">freetype.h</a></li>
+<li>ft_open_driver&#160;:&#160;<a class="el" href="freetype_8h.html#a170530591318a861febbfed00015b65c">freetype.h</a></li>
+<li>FT_Open_Face()&#160;:&#160;<a class="el" href="freetype_8h.html#a3bdf12232d495ca7d4d40f47b4bc157c">freetype.h</a></li>
+<li>FT_OPEN_MEMORY&#160;:&#160;<a class="el" href="freetype_8h.html#a837da9c40d77ad29705b240d406e828c">freetype.h</a></li>
+<li>ft_open_memory&#160;:&#160;<a class="el" href="freetype_8h.html#a75f6333f7302c64651ab321c932d7cfe">freetype.h</a></li>
+<li>FT_OPEN_PARAMS&#160;:&#160;<a class="el" href="freetype_8h.html#a35c680ebd15f4bf28d5b974e47eed715">freetype.h</a></li>
+<li>ft_open_params&#160;:&#160;<a class="el" href="freetype_8h.html#a69b6023cd088a44a968450ca9257db4f">freetype.h</a></li>
+<li>FT_OPEN_PATHNAME&#160;:&#160;<a class="el" href="freetype_8h.html#a22ee89452169a0faf9f1ad797499e4bc">freetype.h</a></li>
+<li>ft_open_pathname&#160;:&#160;<a class="el" href="freetype_8h.html#ab8d8fcf7410315a095ab44ec8c6f3347">freetype.h</a></li>
+<li>FT_OPEN_STREAM&#160;:&#160;<a class="el" href="freetype_8h.html#aedfb4f733ac38dfa5859d83660f31bc2">freetype.h</a></li>
+<li>ft_open_stream&#160;:&#160;<a class="el" href="freetype_8h.html#ae0d24eb28ef4eb8cbaa29450e6b76fea">freetype.h</a></li>
+<li>FT_OPENTYPE_VALIDATE_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a50fb20d61b413bcf66c2977f26684edd">ftheader.h</a></li>
+<li>FT_Orientation&#160;:&#160;<a class="el" href="ftoutln_8h.html#a8ebcc96437212f94a62e2a3318e8fbf6">ftoutln.h</a></li>
+<li>FT_Orientation_&#160;:&#160;<a class="el" href="ftoutln_8h.html#a2dbf6e6c049d366ad388b68fb345bf07">ftoutln.h</a></li>
+<li>FT_ORIENTATION_FILL_LEFT&#160;:&#160;<a class="el" href="ftoutln_8h.html#a2dbf6e6c049d366ad388b68fb345bf07addcd09cc526d8fc58dff146a4baf8d8c">ftoutln.h</a></li>
+<li>FT_ORIENTATION_FILL_RIGHT&#160;:&#160;<a class="el" href="ftoutln_8h.html#a2dbf6e6c049d366ad388b68fb345bf07a027e7d578617eb9a4b46a453e7d657ba">ftoutln.h</a></li>
+<li>FT_ORIENTATION_NONE&#160;:&#160;<a class="el" href="ftoutln_8h.html#a2dbf6e6c049d366ad388b68fb345bf07a26c3be498477ec3c298ca687fe0bb6fc">ftoutln.h</a></li>
+<li>FT_ORIENTATION_POSTSCRIPT&#160;:&#160;<a class="el" href="ftoutln_8h.html#a2dbf6e6c049d366ad388b68fb345bf07ac177e0e0925b8f320cfbf516811eb77f">ftoutln.h</a></li>
+<li>FT_ORIENTATION_TRUETYPE&#160;:&#160;<a class="el" href="ftoutln_8h.html#a2dbf6e6c049d366ad388b68fb345bf07ae280038a0ec1527ec90cb0e9ed00590d">ftoutln.h</a></li>
+<li>FT_Outline&#160;:&#160;<a class="el" href="ftimage_8h.html#a6b64eb35252e8829024c12c98cce37d4">ftimage.h</a></li>
+<li>FT_Outline_Check()&#160;:&#160;<a class="el" href="ftoutln_8h.html#a163a3f538ff84fb340c799ccfbade5e3">ftoutln.h</a></li>
+<li>FT_Outline_ConicTo_Func&#160;:&#160;<a class="el" href="ftimage_8h.html#a95a8dd2e9f3fb3da159807606d3e46a2">ftimage.h</a></li>
+<li>FT_Outline_ConicToFunc&#160;:&#160;<a class="el" href="ftimage_8h.html#a44b83dd26e7f37eae86aee33ff3efd9b">ftimage.h</a></li>
+<li>FT_OUTLINE_CONTOURS_MAX&#160;:&#160;<a class="el" href="ftimage_8h.html#aa50d34733fea6dbd96ccf45641176261">ftimage.h</a></li>
+<li>FT_Outline_Copy()&#160;:&#160;<a class="el" href="ftoutln_8h.html#ae7297822e530e5a1c12eab0aaa5c6adf">ftoutln.h</a></li>
+<li>FT_Outline_CubicTo_Func&#160;:&#160;<a class="el" href="ftimage_8h.html#a67500fd20d9d06ae0baa123b28f4a35e">ftimage.h</a></li>
+<li>FT_Outline_CubicToFunc&#160;:&#160;<a class="el" href="ftimage_8h.html#a9c6f8d42a1660a57f55614baaa4b61b2">ftimage.h</a></li>
+<li>FT_Outline_Decompose()&#160;:&#160;<a class="el" href="ftoutln_8h.html#ad709fe2b765060ec3fcec30113d4afff">ftoutln.h</a></li>
+<li>FT_Outline_Done()&#160;:&#160;<a class="el" href="ftoutln_8h.html#add290aad8f9e33e1433d881d522b4f12">ftoutln.h</a></li>
+<li>FT_Outline_Done_Internal()&#160;:&#160;<a class="el" href="ftoutln_8h.html#a1328a798ddecc7f68b05d59907b39c72">ftoutln.h</a></li>
+<li>FT_Outline_Embolden()&#160;:&#160;<a class="el" href="ftoutln_8h.html#ac9f3da4e1a733a34323f8cdfeacecd7c">ftoutln.h</a></li>
+<li>FT_OUTLINE_EVEN_ODD_FILL&#160;:&#160;<a class="el" href="ftimage_8h.html#a4efa7b75e501ea7e8f299649336a201d">ftimage.h</a></li>
+<li>ft_outline_even_odd_fill&#160;:&#160;<a class="el" href="ftimage_8h.html#a8fab8e2a53bdfa2d25a0ce9213304d3e">ftimage.h</a></li>
+<li>FT_Outline_Funcs&#160;:&#160;<a class="el" href="ftimage_8h.html#ae5de8c9dd920eccd7ef91a7a4c0f1645">ftimage.h</a></li>
+<li>FT_Outline_Get_Bitmap()&#160;:&#160;<a class="el" href="ftoutln_8h.html#a77905f1b5cb9d52859320deab2a41211">ftoutln.h</a></li>
+<li>FT_Outline_Get_CBox()&#160;:&#160;<a class="el" href="ftoutln_8h.html#aee6c38fab9f6f3ec522caaba9e608af7">ftoutln.h</a></li>
+<li>FT_Outline_Get_Orientation()&#160;:&#160;<a class="el" href="ftoutln_8h.html#a8e9f53b714835771862aca57d00b89c9">ftoutln.h</a></li>
+<li>FT_OUTLINE_H&#160;:&#160;<a class="el" href="ftheader_8h.html#aadf5ad8e6db6cc8780eabcfe00085dee">ftheader.h</a></li>
+<li>FT_OUTLINE_HIGH_PRECISION&#160;:&#160;<a class="el" href="ftimage_8h.html#aa52794bb013ef86fc3da0eb8502024b1">ftimage.h</a></li>
+<li>ft_outline_high_precision&#160;:&#160;<a class="el" href="ftimage_8h.html#aa6ca3f2d8d6817877c159a23ed7e300f">ftimage.h</a></li>
+<li>FT_OUTLINE_IGNORE_DROPOUTS&#160;:&#160;<a class="el" href="ftimage_8h.html#a6ad8f4d36f10c26397c4fbd74b306f7a">ftimage.h</a></li>
+<li>ft_outline_ignore_dropouts&#160;:&#160;<a class="el" href="ftimage_8h.html#a42b656a9c0ecfaa210a21f9e6a759d2e">ftimage.h</a></li>
+<li>FT_OUTLINE_INCLUDE_STUBS&#160;:&#160;<a class="el" href="ftimage_8h.html#a6cc7c7324d7c0382c2e211ccdf0ababd">ftimage.h</a></li>
+<li>FT_Outline_LineTo_Func&#160;:&#160;<a class="el" href="ftimage_8h.html#a77419f525bb73211cc997081290367d0">ftimage.h</a></li>
+<li>FT_Outline_LineToFunc&#160;:&#160;<a class="el" href="ftimage_8h.html#a522526513387d998682d59515fe93ccf">ftimage.h</a></li>
+<li>FT_Outline_MoveTo_Func&#160;:&#160;<a class="el" href="ftimage_8h.html#ae5c15ee22f5ae04acc40ebc08b2c384b">ftimage.h</a></li>
+<li>FT_Outline_MoveToFunc&#160;:&#160;<a class="el" href="ftimage_8h.html#adb1c27eedf361dcd3d331fa266a466af">ftimage.h</a></li>
+<li>FT_Outline_New()&#160;:&#160;<a class="el" href="ftoutln_8h.html#a9711c08740dba0e7177acf91c4b4df9c">ftoutln.h</a></li>
+<li>FT_Outline_New_Internal()&#160;:&#160;<a class="el" href="ftoutln_8h.html#a41b4edb0e42e7d0d0942fb66fe2515e9">ftoutln.h</a></li>
+<li>FT_OUTLINE_NONE&#160;:&#160;<a class="el" href="ftimage_8h.html#a5b9770808811255f74015c64ddca54c9">ftimage.h</a></li>
+<li>ft_outline_none&#160;:&#160;<a class="el" href="ftimage_8h.html#a8206880ac83ae4a79912cebff21aa26d">ftimage.h</a></li>
+<li>FT_OUTLINE_OWNER&#160;:&#160;<a class="el" href="ftimage_8h.html#ace1302f12b2a7d5824d7fb346cdca89c">ftimage.h</a></li>
+<li>ft_outline_owner&#160;:&#160;<a class="el" href="ftimage_8h.html#a7f0f4693f1bdcfdaed206d97688b8070">ftimage.h</a></li>
+<li>FT_OUTLINE_POINTS_MAX&#160;:&#160;<a class="el" href="ftimage_8h.html#aab3403442f558892216d95af8a41075d">ftimage.h</a></li>
+<li>FT_Outline_Render()&#160;:&#160;<a class="el" href="ftoutln_8h.html#ae3b0bf0cc293b66aa56846054c3fe9e9">ftoutln.h</a></li>
+<li>FT_Outline_Reverse()&#160;:&#160;<a class="el" href="ftoutln_8h.html#a4ee5ae94ee6ac6f9cead139b653ceafd">ftoutln.h</a></li>
+<li>FT_OUTLINE_REVERSE_FILL&#160;:&#160;<a class="el" href="ftimage_8h.html#ae6eb93e2e13c7e67da3b399f1dd57045">ftimage.h</a></li>
+<li>ft_outline_reverse_fill&#160;:&#160;<a class="el" href="ftimage_8h.html#a141d4ef79000e3e959ca209cccdba2ce">ftimage.h</a></li>
+<li>FT_OUTLINE_SINGLE_PASS&#160;:&#160;<a class="el" href="ftimage_8h.html#ae7ff66a72c5702a0ab34436b02ca8662">ftimage.h</a></li>
+<li>ft_outline_single_pass&#160;:&#160;<a class="el" href="ftimage_8h.html#a4dd16821c11559df986080778a2f9267">ftimage.h</a></li>
+<li>FT_OUTLINE_SMART_DROPOUTS&#160;:&#160;<a class="el" href="ftimage_8h.html#a2d69c5b5db14cdcaccf941cfe3788204">ftimage.h</a></li>
+<li>FT_Outline_Transform()&#160;:&#160;<a class="el" href="ftoutln_8h.html#ad68e1aa2ec264b97eb1b13f24049e132">ftoutln.h</a></li>
+<li>FT_Outline_Translate()&#160;:&#160;<a class="el" href="ftoutln_8h.html#a4f1241539872e9237b7d5c6dcf9183e7">ftoutln.h</a></li>
+<li>FT_OutlineGlyph&#160;:&#160;<a class="el" href="ftglyph_8h.html#ac111c31b2896807d6831f1460c939c8a">ftglyph.h</a></li>
+<li>FT_OutlineGlyphRec&#160;:&#160;<a class="el" href="ftglyph_8h.html#a1baaa916d5f168bb3c706ba46d4c6195">ftglyph.h</a></li>
+<li>FT_Parameter&#160;:&#160;<a class="el" href="freetype_8h.html#a1647d861933dce4c11d35d33b264bcee">freetype.h</a></li>
+<li>FT_PFR_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a33987ce3b6c5b41c39cd54faeea338f8">ftheader.h</a></li>
+<li>FT_Pixel_Mode&#160;:&#160;<a class="el" href="ftimage_8h.html#ac567a2d1df18aa5cd04d09859152ff3a">ftimage.h</a></li>
+<li>FT_Pixel_Mode_&#160;:&#160;<a class="el" href="ftimage_8h.html#a4953570a0afb7abb672a6583035865a4">ftimage.h</a></li>
+<li>FT_PIXEL_MODE_GRAY&#160;:&#160;<a class="el" href="ftimage_8h.html#a4953570a0afb7abb672a6583035865a4a58a764f37700cb5258d02987a9209e2c">ftimage.h</a></li>
+<li>FT_PIXEL_MODE_GRAY2&#160;:&#160;<a class="el" href="ftimage_8h.html#a4953570a0afb7abb672a6583035865a4a15764edffc5eb2f5b55e989a1d2be93a">ftimage.h</a></li>
+<li>FT_PIXEL_MODE_GRAY4&#160;:&#160;<a class="el" href="ftimage_8h.html#a4953570a0afb7abb672a6583035865a4aed2aa6cba156a0cd9c4bf16be7a9249d">ftimage.h</a></li>
+<li>ft_pixel_mode_grays&#160;:&#160;<a class="el" href="ftimage_8h.html#a8dabde8b30dc0dc8842f7d15ae354a73">ftimage.h</a></li>
+<li>FT_PIXEL_MODE_LCD&#160;:&#160;<a class="el" href="ftimage_8h.html#a4953570a0afb7abb672a6583035865a4a7735f0c481982819c28cce353230d214">ftimage.h</a></li>
+<li>FT_PIXEL_MODE_LCD_V&#160;:&#160;<a class="el" href="ftimage_8h.html#a4953570a0afb7abb672a6583035865a4a2fe6ff91ba59130265c5c371e0fe671b">ftimage.h</a></li>
+<li>FT_PIXEL_MODE_MAX&#160;:&#160;<a class="el" href="ftimage_8h.html#a4953570a0afb7abb672a6583035865a4a650b585fbc19e71dafed4861dd71d04c">ftimage.h</a></li>
+<li>FT_PIXEL_MODE_MONO&#160;:&#160;<a class="el" href="ftimage_8h.html#a4953570a0afb7abb672a6583035865a4a3c16f8be14915a529161ff1514204fb4">ftimage.h</a></li>
+<li>ft_pixel_mode_mono&#160;:&#160;<a class="el" href="ftimage_8h.html#aef5fede71e6d6d90968255f1c728625d">ftimage.h</a></li>
+<li>FT_PIXEL_MODE_NONE&#160;:&#160;<a class="el" href="ftimage_8h.html#a4953570a0afb7abb672a6583035865a4a42b2be5eb5c8e72d81fa43b11cf942ca">ftimage.h</a></li>
+<li>ft_pixel_mode_none&#160;:&#160;<a class="el" href="ftimage_8h.html#ae37598ecb2f865765a3abe8ff3466727">ftimage.h</a></li>
+<li>ft_pixel_mode_pal2&#160;:&#160;<a class="el" href="ftimage_8h.html#a9c58ec93a6ea09a9d66ad661567f88b7">ftimage.h</a></li>
+<li>ft_pixel_mode_pal4&#160;:&#160;<a class="el" href="ftimage_8h.html#a06e0e74ada05dc865422aec86699cf6d">ftimage.h</a></li>
+<li>FT_Pointer&#160;:&#160;<a class="el" href="fttypes_8h.html#a00f9e6a0ddd7bc55f79b2f4b5b867266">fttypes.h</a></li>
+<li>FT_Pos&#160;:&#160;<a class="el" href="ftimage_8h.html#af5f230f4b253d4c7715fd2e595614c90">ftimage.h</a></li>
+<li>ft_ptrdiff_t&#160;:&#160;<a class="el" href="ftstdlib_8h.html#a63186b10caa756b947299d85c1d20155">ftstdlib.h</a></li>
+<li>FT_PtrDist&#160;:&#160;<a class="el" href="fttypes_8h.html#a2469cb02129d36e468be22f7a8bf5b33">fttypes.h</a></li>
+<li>ft_qsort&#160;:&#160;<a class="el" href="ftstdlib_8h.html#ae4644fd6563350e49d30fa19a216e665">ftstdlib.h</a></li>
+<li>FT_Raster&#160;:&#160;<a class="el" href="ftimage_8h.html#a6774d2eb4bf030daf319aa6b56347431">ftimage.h</a></li>
+<li>FT_Raster_BitSet_Func&#160;:&#160;<a class="el" href="ftimage_8h.html#a715e9f91407a9758dbefb6dd6549fe35">ftimage.h</a></li>
+<li>FT_Raster_BitTest_Func&#160;:&#160;<a class="el" href="ftimage_8h.html#a2ac5897dab423a944f4457a3131061e4">ftimage.h</a></li>
+<li>FT_Raster_Done_Func&#160;:&#160;<a class="el" href="ftimage_8h.html#af3fbba4618478eb180ed0ac2ed09e8d6">ftimage.h</a></li>
+<li>FT_Raster_DoneFunc&#160;:&#160;<a class="el" href="ftimage_8h.html#a2df7d8d26927263fc038263851b18cf6">ftimage.h</a></li>
+<li>FT_RASTER_FLAG_AA&#160;:&#160;<a class="el" href="ftimage_8h.html#a13000ad084c4cb1d878a179aba9763ee">ftimage.h</a></li>
+<li>ft_raster_flag_aa&#160;:&#160;<a class="el" href="ftimage_8h.html#a078b9acf5d8ca399833af886d8c4008a">ftimage.h</a></li>
+<li>FT_RASTER_FLAG_CLIP&#160;:&#160;<a class="el" href="ftimage_8h.html#a680cffd057eb1375459fe576791f2b7f">ftimage.h</a></li>
+<li>ft_raster_flag_clip&#160;:&#160;<a class="el" href="ftimage_8h.html#a97bd3d42e14d10a256c45546605e0beb">ftimage.h</a></li>
+<li>FT_RASTER_FLAG_DEFAULT&#160;:&#160;<a class="el" href="ftimage_8h.html#a3fc8ce328ef25aa1de7e28466d1c6009">ftimage.h</a></li>
+<li>ft_raster_flag_default&#160;:&#160;<a class="el" href="ftimage_8h.html#acea91525c5657d9e06f4cbb22938050b">ftimage.h</a></li>
+<li>FT_RASTER_FLAG_DIRECT&#160;:&#160;<a class="el" href="ftimage_8h.html#a83b26348efb1b92915c4927e8a87cb4c">ftimage.h</a></li>
+<li>ft_raster_flag_direct&#160;:&#160;<a class="el" href="ftimage_8h.html#aa87501beac782a89867a87433f0577c0">ftimage.h</a></li>
+<li>FT_Raster_Funcs&#160;:&#160;<a class="el" href="ftimage_8h.html#a738d501723224dee6667ada1e1b6eb1c">ftimage.h</a></li>
+<li>FT_Raster_New_Func&#160;:&#160;<a class="el" href="ftimage_8h.html#ab50a467c3e9e8313c31c14f1e694af34">ftimage.h</a></li>
+<li>FT_Raster_NewFunc&#160;:&#160;<a class="el" href="ftimage_8h.html#acfff989cc4f373de6211b12c97a265e8">ftimage.h</a></li>
+<li>FT_Raster_Params&#160;:&#160;<a class="el" href="ftimage_8h.html#a4f41c3fb4a05eacd520be21e4db611bc">ftimage.h</a></li>
+<li>FT_Raster_Render_Func&#160;:&#160;<a class="el" href="ftimage_8h.html#a469b1d3125d0032b8c66df3179832657">ftimage.h</a></li>
+<li>FT_Raster_RenderFunc&#160;:&#160;<a class="el" href="ftimage_8h.html#a4da783a601182e9e5b9d75584fd814ec">ftimage.h</a></li>
+<li>FT_Raster_Reset_Func&#160;:&#160;<a class="el" href="ftimage_8h.html#a7af295aa684d0354fced2dc791a4de89">ftimage.h</a></li>
+<li>FT_Raster_ResetFunc&#160;:&#160;<a class="el" href="ftimage_8h.html#a0ae680a37517fe355321f780123d12f6">ftimage.h</a></li>
+<li>FT_Raster_Set_Mode_Func&#160;:&#160;<a class="el" href="ftimage_8h.html#ad86623a6850838c7fec54f4f622c2744">ftimage.h</a></li>
+<li>FT_Raster_SetModeFunc&#160;:&#160;<a class="el" href="ftimage_8h.html#a959011dc7420bae5989460bfd0727bd1">ftimage.h</a></li>
+<li>FT_Raster_Span_Func&#160;:&#160;<a class="el" href="ftimage_8h.html#a27308127a1ced75fcb7c2af04a858a54">ftimage.h</a></li>
+<li>FT_Realloc_Func&#160;:&#160;<a class="el" href="ftsystem_8h.html#a7bce40b59dbc237d86decf6ebd81b4a2">ftsystem.h</a></li>
+<li>FT_Reference_Face()&#160;:&#160;<a class="el" href="freetype_8h.html#ae8cfe1952b7babfb7273a976c6287ae9">freetype.h</a></li>
+<li>FT_Render_Glyph()&#160;:&#160;<a class="el" href="freetype_8h.html#ab463acb65581abb6dd4a70a33b5f435f">freetype.h</a></li>
+<li>FT_RENDER_H&#160;:&#160;<a class="el" href="ftheader_8h.html#af70c5f9cb902a6dd49a10adebc111047">ftheader.h</a></li>
+<li>FT_Render_Mode&#160;:&#160;<a class="el" href="freetype_8h.html#a42c69ed4922d28c7d8cc9173237f966b">freetype.h</a></li>
+<li>FT_Render_Mode_&#160;:&#160;<a class="el" href="freetype_8h.html#ac338334d31cff69250d1e916b9f77ebb">freetype.h</a></li>
+<li>FT_RENDER_MODE_LCD&#160;:&#160;<a class="el" href="freetype_8h.html#ac338334d31cff69250d1e916b9f77ebbaecd5542530a6ea50bb5aad5294936b61">freetype.h</a></li>
+<li>FT_RENDER_MODE_LCD_V&#160;:&#160;<a class="el" href="freetype_8h.html#ac338334d31cff69250d1e916b9f77ebbadd611405f6c2933e848d299100101ade">freetype.h</a></li>
+<li>FT_RENDER_MODE_LIGHT&#160;:&#160;<a class="el" href="freetype_8h.html#ac338334d31cff69250d1e916b9f77ebba5b3b4a74eb40bff744348e7d6c69170f">freetype.h</a></li>
+<li>FT_RENDER_MODE_MAX&#160;:&#160;<a class="el" href="freetype_8h.html#ac338334d31cff69250d1e916b9f77ebbac1363bf990fff3a6c1ab0007ccc75efd">freetype.h</a></li>
+<li>FT_RENDER_MODE_MONO&#160;:&#160;<a class="el" href="freetype_8h.html#ac338334d31cff69250d1e916b9f77ebba2fad77b660130c90b38b873901f55b08">freetype.h</a></li>
+<li>ft_render_mode_mono&#160;:&#160;<a class="el" href="freetype_8h.html#a4b0aea24120e032bf0cb8ca4c39a0b11">freetype.h</a></li>
+<li>FT_RENDER_MODE_NORMAL&#160;:&#160;<a class="el" href="freetype_8h.html#ac338334d31cff69250d1e916b9f77ebba33d5620a2c09624a042f9f222b28e197">freetype.h</a></li>
+<li>ft_render_mode_normal&#160;:&#160;<a class="el" href="freetype_8h.html#aecb08a64e5f23df011fb3edb1fa1bf79">freetype.h</a></li>
+<li>FT_RENDER_POOL_SIZE&#160;:&#160;<a class="el" href="ftoption_8h.html#ae650eaa4c6ef079781b08c66d3634a98">ftoption.h</a></li>
+<li>FT_Renderer&#160;:&#160;<a class="el" href="freetype_8h.html#a0c70692baaab06a7dad20faee7a86439">freetype.h</a></li>
+<li>FT_Request_Size()&#160;:&#160;<a class="el" href="freetype_8h.html#a75025f51e4cbb8a95a9b97ab35d481e0">freetype.h</a></li>
+<li>FT_RoundFix()&#160;:&#160;<a class="el" href="freetype_8h.html#a14ac4284fe5007cd994d3c4c1339ffac">freetype.h</a></li>
+<li>ft_scalloc&#160;:&#160;<a class="el" href="ftstdlib_8h.html#ad3e9e4a465671339522ae3715d02790e">ftstdlib.h</a></li>
+<li>FT_Select_Charmap()&#160;:&#160;<a class="el" href="freetype_8h.html#a5ccc241b34958a2b8818bb8b663b393f">freetype.h</a></li>
+<li>FT_Select_Size()&#160;:&#160;<a class="el" href="freetype_8h.html#a6925921bbbf181ed073a154eddf3b2bc">freetype.h</a></li>
+<li>FT_Set_Char_Size()&#160;:&#160;<a class="el" href="freetype_8h.html#ae36c65d750a39cc04b8c67448632d5fa">freetype.h</a></li>
+<li>FT_Set_Charmap()&#160;:&#160;<a class="el" href="freetype_8h.html#a9208d1ccf0f8ad9a122fd6c9fe0c5b45">freetype.h</a></li>
+<li>FT_Set_Pixel_Sizes()&#160;:&#160;<a class="el" href="freetype_8h.html#a229ad0ad247b9952677d09378c813988">freetype.h</a></li>
+<li>FT_Set_Transform()&#160;:&#160;<a class="el" href="freetype_8h.html#a0b6b8de9867c8f91918847861d43ede8">freetype.h</a></li>
+<li>ft_setjmp&#160;:&#160;<a class="el" href="ftstdlib_8h.html#ac2967c7b589c37c120131efe1c619e32">ftstdlib.h</a></li>
+<li>FT_SFNT_NAMES_H&#160;:&#160;<a class="el" href="ftheader_8h.html#abfa5e715b76a65f23d5f839910053d2c">ftheader.h</a></li>
+<li>ft_sfree&#160;:&#160;<a class="el" href="ftstdlib_8h.html#ac7757b2c39e2f153b13c802ef4b229a5">ftstdlib.h</a></li>
+<li>FT_Short&#160;:&#160;<a class="el" href="fttypes_8h.html#aa7279be89046a2563cd3d4d6651fbdcf">fttypes.h</a></li>
+<li>FT_Size&#160;:&#160;<a class="el" href="freetype_8h.html#a791d0ff3273ca9628a523efd98d138c1">freetype.h</a></li>
+<li>FT_Size_Internal&#160;:&#160;<a class="el" href="freetype_8h.html#a59c5fa003a18285aab769cb96252499c">freetype.h</a></li>
+<li>FT_Size_Metrics&#160;:&#160;<a class="el" href="freetype_8h.html#ad885552d186adaffc5fe385cd458a4a4">freetype.h</a></li>
+<li>FT_Size_Request&#160;:&#160;<a class="el" href="freetype_8h.html#a7306d364ecf834b999a7d8462d0c8668">freetype.h</a></li>
+<li>FT_Size_Request_Type&#160;:&#160;<a class="el" href="freetype_8h.html#a028f4748bb0631e540c582f01580982a">freetype.h</a></li>
+<li>FT_Size_Request_Type_&#160;:&#160;<a class="el" href="freetype_8h.html#a19bac204cb49d1340913384d1363114f">freetype.h</a></li>
+<li>FT_SIZE_REQUEST_TYPE_BBOX&#160;:&#160;<a class="el" href="freetype_8h.html#a19bac204cb49d1340913384d1363114fa34ec6845625809803b4925c8adbebc31">freetype.h</a></li>
+<li>FT_SIZE_REQUEST_TYPE_CELL&#160;:&#160;<a class="el" href="freetype_8h.html#a19bac204cb49d1340913384d1363114fafba793a2f2216a300200a1a0813991d4">freetype.h</a></li>
+<li>FT_SIZE_REQUEST_TYPE_MAX&#160;:&#160;<a class="el" href="freetype_8h.html#a19bac204cb49d1340913384d1363114fae1cd01b1812a22ae21ebfb4baa6fd53a">freetype.h</a></li>
+<li>FT_SIZE_REQUEST_TYPE_NOMINAL&#160;:&#160;<a class="el" href="freetype_8h.html#a19bac204cb49d1340913384d1363114faa91e57e841381c980f058fa094380d1d">freetype.h</a></li>
+<li>FT_SIZE_REQUEST_TYPE_REAL_DIM&#160;:&#160;<a class="el" href="freetype_8h.html#a19bac204cb49d1340913384d1363114fac4e0cec5f4cb57232338a6bdb960b8a7">freetype.h</a></li>
+<li>FT_SIZE_REQUEST_TYPE_SCALES&#160;:&#160;<a class="el" href="freetype_8h.html#a19bac204cb49d1340913384d1363114fadb64f07387955ffe43c82b21507102d5">freetype.h</a></li>
+<li>FT_Size_RequestRec&#160;:&#160;<a class="el" href="freetype_8h.html#a0d379528c3c5b4d05d40669ffb9de0ad">freetype.h</a></li>
+<li>FT_SizeRec&#160;:&#160;<a class="el" href="freetype_8h.html#a9c3de3f9524eab77bafb4d26e8ddc898">freetype.h</a></li>
+<li>FT_SIZES_H&#160;:&#160;<a class="el" href="ftheader_8h.html#aa6095a31c99adc74c94744462d69d316">ftheader.h</a></li>
+<li>FT_Slot_Internal&#160;:&#160;<a class="el" href="freetype_8h.html#ab3dc238ecb4be32bc14e4953af931fdd">freetype.h</a></li>
+<li>ft_smalloc&#160;:&#160;<a class="el" href="ftstdlib_8h.html#a77dc6f4b550a80e5f6ed2ce5cc25bb0b">ftstdlib.h</a></li>
+<li>FT_Span&#160;:&#160;<a class="el" href="ftimage_8h.html#a6436dd00a70a85bfc3a8012bdc47b958">ftimage.h</a></li>
+<li>FT_SpanFunc&#160;:&#160;<a class="el" href="ftimage_8h.html#abae5f0d92287252b367d3e8210ec4e3a">ftimage.h</a></li>
+<li>ft_sprintf&#160;:&#160;<a class="el" href="ftstdlib_8h.html#a518accba99e70c7dfdb1c322053d8155">ftstdlib.h</a></li>
+<li>ft_srealloc&#160;:&#160;<a class="el" href="ftstdlib_8h.html#a4eec855af361b3ca8140bc520830ea3d">ftstdlib.h</a></li>
+<li>ft_strcat&#160;:&#160;<a class="el" href="ftstdlib_8h.html#aa98e411954223c0cd56c43824453f180">ftstdlib.h</a></li>
+<li>ft_strcmp&#160;:&#160;<a class="el" href="ftstdlib_8h.html#a6b4c8a4f84eee3fe618812761ae78adb">ftstdlib.h</a></li>
+<li>ft_strcpy&#160;:&#160;<a class="el" href="ftstdlib_8h.html#ae2a1654d1d0b2d97e0f0e79fbc96401d">ftstdlib.h</a></li>
+<li>FT_Stream&#160;:&#160;<a class="el" href="ftsystem_8h.html#a788b32c932932f7411a8dfa7f6c794bf">ftsystem.h</a></li>
+<li>FT_Stream_CloseFunc&#160;:&#160;<a class="el" href="ftsystem_8h.html#a9ab6151513724c69e5493d520d43135f">ftsystem.h</a></li>
+<li>FT_Stream_IoFunc&#160;:&#160;<a class="el" href="ftsystem_8h.html#a1909d9c00ba62592c047a9868e5a6b0b">ftsystem.h</a></li>
+<li>FT_StreamDesc&#160;:&#160;<a class="el" href="ftsystem_8h.html#a302b58ffa36ab8ca08cadb2629bb8e8f">ftsystem.h</a></li>
+<li>FT_StreamRec&#160;:&#160;<a class="el" href="ftsystem_8h.html#a0ac77b1942c2bf23e05e4f95976a993a">ftsystem.h</a></li>
+<li>FT_String&#160;:&#160;<a class="el" href="fttypes_8h.html#a9846214585359eb2ba6bbb0e6de30639">fttypes.h</a></li>
+<li>ft_strlen&#160;:&#160;<a class="el" href="ftstdlib_8h.html#abaff3a8b4e899bcb97943b8cfea8e409">ftstdlib.h</a></li>
+<li>ft_strncmp&#160;:&#160;<a class="el" href="ftstdlib_8h.html#a844765472a827c9185f0fd5ebfbf5903">ftstdlib.h</a></li>
+<li>ft_strncpy&#160;:&#160;<a class="el" href="ftstdlib_8h.html#a8a7f6553d4747d96dc34db4a8287d3ff">ftstdlib.h</a></li>
+<li>FT_STROKER_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a977b54e25082e708e26ff8e0ff3af032">ftheader.h</a></li>
+<li>ft_strrchr&#160;:&#160;<a class="el" href="ftstdlib_8h.html#a1f2b6e70e96d5e1e0ed22cc2c2d1ea5e">ftstdlib.h</a></li>
+<li>ft_strstr&#160;:&#160;<a class="el" href="ftstdlib_8h.html#aaaa40c081778cdd907e8b8c34dd023bd">ftstdlib.h</a></li>
+<li>FT_STYLE_FLAG_BOLD&#160;:&#160;<a class="el" href="freetype_8h.html#acab2cf85daf50ca5f1f2ee69d9addbd9">freetype.h</a></li>
+<li>FT_STYLE_FLAG_ITALIC&#160;:&#160;<a class="el" href="freetype_8h.html#a0c631a22433fcff2f4fee62a75a07051">freetype.h</a></li>
+<li>FT_SubGlyph&#160;:&#160;<a class="el" href="freetype_8h.html#a0d03ab6cac878c81dca92e6a8c87a3a1">freetype.h</a></li>
+<li>FT_SUBGLYPH_FLAG_2X2&#160;:&#160;<a class="el" href="freetype_8h.html#a5b174060ec5c81fb39fe69e6b9601cc0">freetype.h</a></li>
+<li>FT_SUBGLYPH_FLAG_ARGS_ARE_WORDS&#160;:&#160;<a class="el" href="freetype_8h.html#a3625d967f1dbb47350c1a55c83026a11">freetype.h</a></li>
+<li>FT_SUBGLYPH_FLAG_ARGS_ARE_XY_VALUES&#160;:&#160;<a class="el" href="freetype_8h.html#ab609fa06b6f57fff7bde18f6ad9a227e">freetype.h</a></li>
+<li>FT_SUBGLYPH_FLAG_ROUND_XY_TO_GRID&#160;:&#160;<a class="el" href="freetype_8h.html#ae8f56b4e77ae783eb11ae4e4abb6f25e">freetype.h</a></li>
+<li>FT_SUBGLYPH_FLAG_SCALE&#160;:&#160;<a class="el" href="freetype_8h.html#a276d29541600e9904f63a96c93e9d266">freetype.h</a></li>
+<li>FT_SUBGLYPH_FLAG_USE_MY_METRICS&#160;:&#160;<a class="el" href="freetype_8h.html#a6b205cfbdb60c347f9ed7ac54b530cb6">freetype.h</a></li>
+<li>FT_SUBGLYPH_FLAG_XY_SCALE&#160;:&#160;<a class="el" href="freetype_8h.html#a327854b0dea5f2d5e47254d2f5b877e4">freetype.h</a></li>
+<li>FT_SYNTHESIS_H&#160;:&#160;<a class="el" href="ftheader_8h.html#aa9192af3a98433c94bfcc5628f6d47a7">ftheader.h</a></li>
+<li>FT_SYSTEM_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a9b593fea835bd47d7a546bdd152834ba">ftheader.h</a></li>
+<li>FT_Tag&#160;:&#160;<a class="el" href="fttypes_8h.html#a2f5309d952d5dd1322fde413fc1c6b33">fttypes.h</a></li>
+<li>FT_TRIGONOMETRY_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a27a122ddf21d9e76730fb10966c74528">ftheader.h</a></li>
+<li>FT_TRUETYPE_IDS_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a38879722c78cb9fe11916fa9d90a372a">ftheader.h</a></li>
+<li>FT_TRUETYPE_TABLES_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a148e041885c96620615b55020f0ffbc8">ftheader.h</a></li>
+<li>FT_TRUETYPE_TAGS_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a249b5d6d7e6242379ad2a608b4f388c2">ftheader.h</a></li>
+<li>FT_TRUETYPE_UNPATENTED_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a492001688d6b012f4e9036ef3a66d91b">ftheader.h</a></li>
+<li>FT_TYPE1_TABLES_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a7414ffc5d3b86b764049620cac18018d">ftheader.h</a></li>
+<li>FT_TYPES_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a97adac92e7aa01e92eba501febaf912f">ftheader.h</a></li>
+<li>FT_UFWord&#160;:&#160;<a class="el" href="fttypes_8h.html#a9bef318099bda61f71a06401600eaf99">fttypes.h</a></li>
+<li>FT_UInt&#160;:&#160;<a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">fttypes.h</a></li>
+<li>FT_UInt16&#160;:&#160;<a class="el" href="ftconfig_8h.html#af9bfc99e3f8d44fc8d61ff6d43c7f580">ftconfig.h</a></li>
+<li>FT_UINT_MAX&#160;:&#160;<a class="el" href="ftstdlib_8h.html#ad8befffe03e650f82840ac5b5941af16">ftstdlib.h</a></li>
+<li>FT_ULong&#160;:&#160;<a class="el" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">fttypes.h</a></li>
+<li>FT_ULONG_MAX&#160;:&#160;<a class="el" href="ftstdlib_8h.html#ad00221e79d65c837db57262e97458eee">ftstdlib.h</a></li>
+<li>FT_UnitVector&#160;:&#160;<a class="el" href="fttypes_8h.html#acd8b92a121bd5d9a79ad4c6b103aa7c1">fttypes.h</a></li>
+<li>FT_UNPATENTED_HINTING_H&#160;:&#160;<a class="el" href="ftheader_8h.html#ac9bd2bcaca1dbd2722b936793ee2b7ae">ftheader.h</a></li>
+<li>FT_UNUSED&#160;:&#160;<a class="el" href="ftconfig_8h.html#a4db62b7638f149986cdc24d0c03e062f">ftconfig.h</a></li>
+<li>FT_UShort&#160;:&#160;<a class="el" href="fttypes_8h.html#a937f6c17cf5ffd09086d8610c37b9f58">fttypes.h</a></li>
+<li>FT_Vector&#160;:&#160;<a class="el" href="ftimage_8h.html#abfcb941b4b81f3a922d4ae57c620db27">ftimage.h</a></li>
+<li>FT_Vector_Transform()&#160;:&#160;<a class="el" href="freetype_8h.html#a0cc0411657caad5063e918205d7194db">freetype.h</a></li>
+<li>FT_WINFONTS_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a2c8c9428bde0277924b199dbeb50e9bc">ftheader.h</a></li>
+<li>FT_XFREE86_H&#160;:&#160;<a class="el" href="ftheader_8h.html#a09fbc4f225996ddc059858855f50e9ce">ftheader.h</a></li>
+<li>func&#160;:&#160;<a class="el" href="glext_8h.html#a18ae3ab36a07e388833b568cfdfa90c8">glext.h</a></li>
+</ul>
+</div><!-- contents -->
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+                    Back to top
+                </button>
+            </main>
+            <footer class="md-footer">
+                <nav class="md-footer__inner md-grid" aria-label="Footer" hidden>
+                    <a href="/learn/" class="md-footer__link md-footer__link--next" aria-label="Next: Learn">
+                        <div class="md-footer__title">
+                            <span class="md-footer__direction"> Next </span>
+                            <div class="md-ellipsis">Learn</div>
+                        </div>
+                        <div class="md-footer__button md-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z" /></svg>
+                        </div>
+                    </a>
+                </nav>
+                <div class="md-footer-meta md-typeset">
+                    <div class="md-footer-meta__inner md-grid">
+                        <div class="md-copyright">
+                            <div class="md-copyright__highlight">Copyright &copy; <a href="mailto:laurent@sfml-dev.org">Laurent Gomila</a></div>
+                        </div>
+                        <div class="md-social">
+                            <a href="https://fosstodon.org/@sfml" target="_blank" rel="noopener me" title="SFML on Fosstodon" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com/sfmldev" target="_blank" rel="noopener" title="SFML on Twitter" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="https://discord.gg/nr4X7Fh" target="_blank" rel="noopener" title="SFML&#39;s Discord Server" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="md-dialog" data-md-component="dialog">
+            <div class="md-dialog__inner md-typeset"></div>
+        </div>
+        <script id="__config" type="application/json">
+            {
+                "base": ".",
+                "features": ["content.code.copy", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.prune", "navigation.path", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.suggest"],
+                "search": "/assets/javascripts/workers/search.b8dbb3d2.min.js",
+                "translations": {
+                    "clipboard.copied": "Copied to clipboard",
+                    "clipboard.copy": "Copy to clipboard",
+                    "search.result.more.one": "1 more on this page",
+                    "search.result.more.other": "# more on this page",
+                    "search.result.none": "No matching documents",
+                    "search.result.one": "1 matching document",
+                    "search.result.other": "# matching documents",
+                    "search.result.placeholder": "Type to start searching",
+                    "search.result.term.missing": "Missing",
+                    "select.version": "Select version"
+                }
+            }
+        </script>
+        <script src="/assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+    </body>
+</html>

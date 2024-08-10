@@ -1,0 +1,1570 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="Simple and Fast Multimedia Library" />
+        <link rel="canonical" href="https://www.sfml-dev.org/" />
+        <link rel="next" href="/learn/" />
+        <link rel="icon" href="/images/favicon.ico" />
+        <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.30" />
+        <title>Home - Simple and Fast Multimedia Library</title>
+        <link rel="stylesheet" href="/assets/stylesheets/main.3cba04c6.min.css" />
+        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback" />
+        <style>
+            :root {
+                --md-text-font: "Ubuntu";
+                --md-code-font: "Roboto Mono";
+            }
+        </style>
+        <link rel="stylesheet" href="/styles/extra.css" />
+        <script>
+            (__md_scope = new URL(".", location)),
+                (__md_hash = (e) => [...e].reduce((e, _) => (e << 5) - e + _.charCodeAt(0), 0)),
+                (__md_get = (e, _ = localStorage, t = __md_scope) => JSON.parse(_.getItem(t.pathname + "." + e))),
+                (__md_set = (e, _, t = localStorage, a = __md_scope) => {
+                    try {
+                        t.setItem(a.pathname + "." + e, JSON.stringify(_));
+                    } catch (e) {}
+                });
+        </script>
+        <link rel="stylesheet" type="text/css" href="doxygen.css" title="default" media="screen,print" />
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="dynsections.js"></script>
+        <script type="text/javascript" src="clipboard.js"></script>
+        <script type="text/javascript" src="cookie.js"></script>
+        <script type="text/javascript" src="resize.js"></script>
+        <link rel="stylesheet" type="text/css" href="search/search.css" />
+        <link rel="stylesheet" type="text/css" href="searchOverrides.css" />
+        <script type="text/javascript" src="search/searchdata.js"></script>
+        <script type="text/javascript" src="search/search.js"></script>
+        <script type="text/javascript">
+            /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+            $(document).ready(function () {
+                init_search();
+            });
+            /* @license-end */
+        </script>
+    </head>
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="indigo">
+        <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off" />
+        <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off" />
+        <label class="md-overlay" for="__drawer"></label>
+        <div data-md-component="skip">
+            <a href="#simple-and-fast-multimedia-library" class="md-skip"> Skip to content </a>
+        </div>
+        <div data-md-component="announce"></div>
+        <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+            <nav class="md-header__inner md-grid" aria-label="Header">
+                <a href="." title="Simple and Fast Multimedia Library" class="md-header__button md-logo" aria-label="Simple and Fast Multimedia Library" data-md-component="logo">
+                    <img src="/images/logo.png" alt="logo" />
+                </a>
+                <label class="md-header__button md-icon" for="__drawer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z" /></svg>
+                </label>
+                <div class="md-header__title" data-md-component="header-title">
+                    <div class="md-header__ellipsis">
+                        <div class="md-header__topic">
+                            <span class="md-ellipsis"> Simple and Fast Multimedia Library </span>
+                        </div>
+                        <div class="md-header__topic" data-md-component="header-topic">
+                            <span class="md-ellipsis"> Home </span>
+                        </div>
+                    </div>
+                </div>
+                <form class="md-header__option" data-md-component="palette">
+                    <input
+                        class="md-option"
+                        data-md-color-media="(prefers-color-scheme: light)"
+                        data-md-color-scheme="default"
+                        data-md-color-primary="light-green"
+                        data-md-color-accent="indigo"
+                        aria-label="Switch to dark mode"
+                        type="radio"
+                        name="__palette"
+                        id="__palette_0"
+                    />
+                    <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"
+                            />
+                        </svg>
+                    </label>
+                    <input
+                        class="md-option"
+                        data-md-color-media="(prefers-color-scheme: dark)"
+                        data-md-color-scheme="slate"
+                        data-md-color-primary="green"
+                        data-md-color-accent="indigo"
+                        aria-label="Switch to light mode"
+                        type="radio"
+                        name="__palette"
+                        id="__palette_1"
+                    />
+                    <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"
+                            />
+                        </svg>
+                    </label>
+                </form>
+                <script>
+                    var media,
+                        input,
+                        key,
+                        value,
+                        palette = __md_get("__palette");
+                    if (palette && palette.color) {
+                        "(prefers-color-scheme)" === palette.color.media &&
+                            ((media = matchMedia("(prefers-color-scheme: light)")),
+                            (input = document.querySelector(media.matches ? "[data-md-color-media='(prefers-color-scheme: light)']" : "[data-md-color-media='(prefers-color-scheme: dark)']")),
+                            (palette.color.media = input.getAttribute("data-md-color-media")),
+                            (palette.color.scheme = input.getAttribute("data-md-color-scheme")),
+                            (palette.color.primary = input.getAttribute("data-md-color-primary")),
+                            (palette.color.accent = input.getAttribute("data-md-color-accent")));
+                        for ([key, value] of Object.entries(palette.color)) document.body.setAttribute("data-md-color-" + key, value);
+                    }
+                </script>
+                <div class="md-header__option">
+                    <div class="md-select">
+                        <button class="md-header__button md-icon" aria-label="Select language">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"
+                                />
+                            </svg>
+                        </button>
+                        <div class="md-select__inner">
+                            <ul class="md-select__list">
+                                <li class="md-select__item">
+                                    <a href="/" hreflang="en" class="md-select__link"> English </a>
+                                </li>
+                                <li class="md-select__item">
+                                    <a href="/fr/" hreflang="fr" class="md-select__link"> Français </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <label class="md-header__button md-icon" for="__search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"
+                        />
+                    </svg>
+                </label>
+                <div class="md-search" data-md-component="search" role="dialog">
+                    <label class="md-search__overlay" for="__search"></label>
+                    <div class="md-search__inner" role="search">
+                        <form class="md-search__form" name="search">
+                            <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required />
+                            <label class="md-search__icon md-icon" for="__search">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"
+                                    />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z" /></svg>
+                            </label>
+                            <nav class="md-search__options" aria-label="Search">
+                                <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z" /></svg>
+                                </button>
+                            </nav>
+                            <div class="md-search__suggest" data-md-component="search-suggest"></div>
+                        </form>
+                        <div class="md-search__output">
+                            <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+                                <div class="md-search-result" data-md-component="search-result">
+                                    <div class="md-search-result__meta">Initializing search</div>
+                                    <ol class="md-search-result__list" role="presentation"></ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-header__source">
+                    <a href="https://github.com/SFML/SFML" title="Go to repository" class="md-source" data-md-component="source">
+                        <div class="md-source__icon md-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. -->
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                                />
+                            </svg>
+                        </div>
+                        <div class="md-source__repository">SFML</div>
+                    </a>
+                </div>
+            </nav>
+            <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+                <div class="md-grid">
+                    <ul class="md-tabs__list">
+                        <li class="md-tabs__item">
+                            <a href="/" class="md-tabs__link"> Home </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/learn/" class="md-tabs__link"> Learn </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/tutorials/2.6/" class="md-tabs__link"> Tutorials </a>
+                        </li>
+                        <li class="md-tabs__item md-tabs__item--active">
+                            <a href="/documentation" class="md-tabs__link"> Documentation </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/download/" class="md-tabs__link"> Download </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/community/" class="md-tabs__link"> Community </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/development/" class="md-tabs__link"> Development </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="md-container" data-md-component="container">
+            <main class="md-main" data-md-component="main">
+                <div class="md-main__inner md-grid">
+                    <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                        <div class="md-sidebar__scrollwrap">
+                            <div class="md-sidebar__inner">
+                                <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+                                    <label class="md-nav__title" for="__drawer">
+                                        <a href="." title="Simple and Fast Multimedia Library" class="md-nav__button md-logo" aria-label="Simple and Fast Multimedia Library" data-md-component="logo">
+                                            <img src="/images/logo.png" alt="logo" />
+                                        </a>
+                                        Simple and Fast Multimedia Library
+                                    </label>
+                                    <div class="md-nav__source">
+                                        <a href="https://github.com/SFML/SFML" title="Go to repository" class="md-source" data-md-component="source">
+                                            <div class="md-source__icon md-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. -->
+                                                    <path
+                                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                                                    />
+                                                </svg>
+                                            </div>
+                                            <div class="md-source__repository">SFML</div>
+                                        </a>
+                                    </div>
+                                    <ul class="md-nav__list" data-md-scrollfix>
+                                        <li class="md-nav__item">
+                                            <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc" />
+                                            <label class="md-nav__link" for="__toc">
+                                                <span class="md-ellipsis"> Home </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </label>
+                                            <a href="." class="md-nav__link">
+                                                <span class="md-ellipsis"> Home </span>
+                                            </a>
+                                            <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+                                                <label class="md-nav__title" for="__toc">
+                                                    <span class="md-nav__icon md-icon"></span>
+                                                    Table of contents
+                                                </label>
+                                                <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-media" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-media </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-platform" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-platform </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="#sfml-is-multi-language" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML is multi-language </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="learn/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Learn </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="tutorials/2.6/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Tutorials </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--active">
+                                            <a href="documentation" class="md-nav__link md-nav__link--active">
+                                                <span class="md-ellipsis"> Documentation </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="download/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Download </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="community/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Community </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="development/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Development </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                        <div class="md-sidebar__scrollwrap">
+                            <div class="md-sidebar__inner">
+                                <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+                                    <label class="md-nav__title" for="__toc">
+                                        <span class="md-nav__icon md-icon"></span>
+                                        Table of contents
+                                    </label>
+                                    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-media" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-media </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-platform" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-platform </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="#sfml-is-multi-language" class="md-nav__link">
+                                                <span class="md-ellipsis"> SFML is multi-language </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-content" data-md-component="content">
+                        <div class="contents">
+<!-- Generated by Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="topics.html"><span>Topics</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
+    </ul>
+  </div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c9d62fd513ce19bab3d7ef8db833e3f1.html">SFML</a></li><li class="navelem"><a class="el" href="dir_1b418db46549f82cdaf64a4014eaf7c5.html">extlibs</a></li><li class="navelem"><a class="el" href="dir_5796c7b1b7a91bd7d14da4f5f337813d.html">headers</a></li><li class="navelem"><a class="el" href="dir_c91535e3f05b3300be3316b0a0f2b4fb.html">libfreetype</a></li><li class="navelem"><a class="el" href="dir_d1c8f021c504044a2b11d308f59c5804.html">windows</a></li><li class="navelem"><a class="el" href="dir_71be8bcd70e78eacff86e134e8bbd532.html">freetype</a></li><li class="navelem"><a class="el" href="dir_6afc6950a89f18c8ac98d3c20dde5e0d.html">config</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a>  </div>
+  <div class="headertitle"><div class="title">ftheader.h File Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="ftheader_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a72ee5814b3ae378ebb7fd3a8e3ddec14" id="r_a72ee5814b3ae378ebb7fd3a8e3ddec14"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72ee5814b3ae378ebb7fd3a8e3ddec14">FT_BEGIN_HEADER</a>&#160;&#160;&#160;/* nothing */</td></tr>
+<tr class="separator:a72ee5814b3ae378ebb7fd3a8e3ddec14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ebbdbbee7f9bfa8b6b86790de7e9963" id="r_a2ebbdbbee7f9bfa8b6b86790de7e9963"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ebbdbbee7f9bfa8b6b86790de7e9963">FT_END_HEADER</a>&#160;&#160;&#160;/* nothing */</td></tr>
+<tr class="separator:a2ebbdbbee7f9bfa8b6b86790de7e9963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ba9fbb8d24c48453811f31b32b3df1c" id="r_a6ba9fbb8d24c48453811f31b32b3df1c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ba9fbb8d24c48453811f31b32b3df1c">FT_CONFIG_CONFIG_H</a>&#160;&#160;&#160;&lt;freetype/config/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftconfig.h</a>&gt;</td></tr>
+<tr class="separator:a6ba9fbb8d24c48453811f31b32b3df1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07682ef8e0677e22e3822cb8c3e48032" id="r_a07682ef8e0677e22e3822cb8c3e48032"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07682ef8e0677e22e3822cb8c3e48032">FT_CONFIG_STANDARD_LIBRARY_H</a>&#160;&#160;&#160;&lt;freetype/config/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftstdlib.h</a>&gt;</td></tr>
+<tr class="separator:a07682ef8e0677e22e3822cb8c3e48032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80ff2d8517cf5b86f40634227e94f7fc" id="r_a80ff2d8517cf5b86f40634227e94f7fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80ff2d8517cf5b86f40634227e94f7fc">FT_CONFIG_OPTIONS_H</a>&#160;&#160;&#160;&lt;freetype/config/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftoption.h</a>&gt;</td></tr>
+<tr class="separator:a80ff2d8517cf5b86f40634227e94f7fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a890b16893db4cab2d8c3b5e942af4dd6" id="r_a890b16893db4cab2d8c3b5e942af4dd6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a890b16893db4cab2d8c3b5e942af4dd6">FT_CONFIG_MODULES_H</a>&#160;&#160;&#160;&lt;freetype/config/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftmodule.h</a>&gt;</td></tr>
+<tr class="separator:a890b16893db4cab2d8c3b5e942af4dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7269a393b5fd8f091b70a204980e2fb" id="r_ac7269a393b5fd8f091b70a204980e2fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7269a393b5fd8f091b70a204980e2fb">FT_FREETYPE_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">freetype.h</a>&gt;</td></tr>
+<tr class="separator:ac7269a393b5fd8f091b70a204980e2fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50822c46a0997c40529f940571315084" id="r_a50822c46a0997c40529f940571315084"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50822c46a0997c40529f940571315084">FT_ERRORS_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">fterrors.h</a>&gt;</td></tr>
+<tr class="separator:a50822c46a0997c40529f940571315084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4adcee4da741945e32a81b2b8e44359a" id="r_a4adcee4da741945e32a81b2b8e44359a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4adcee4da741945e32a81b2b8e44359a">FT_MODULE_ERRORS_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftmoderr.h</a>&gt;</td></tr>
+<tr class="separator:a4adcee4da741945e32a81b2b8e44359a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b593fea835bd47d7a546bdd152834ba" id="r_a9b593fea835bd47d7a546bdd152834ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b593fea835bd47d7a546bdd152834ba">FT_SYSTEM_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftsystem.h</a>&gt;</td></tr>
+<tr class="separator:a9b593fea835bd47d7a546bdd152834ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02ad30ac824c6d47d2065cbe58bd2f4b" id="r_a02ad30ac824c6d47d2065cbe58bd2f4b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02ad30ac824c6d47d2065cbe58bd2f4b">FT_IMAGE_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftimage.h</a>&gt;</td></tr>
+<tr class="separator:a02ad30ac824c6d47d2065cbe58bd2f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97adac92e7aa01e92eba501febaf912f" id="r_a97adac92e7aa01e92eba501febaf912f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97adac92e7aa01e92eba501febaf912f">FT_TYPES_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">fttypes.h</a>&gt;</td></tr>
+<tr class="separator:a97adac92e7aa01e92eba501febaf912f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ee8821281410ddfab3edb7dec6ea338" id="r_a8ee8821281410ddfab3edb7dec6ea338"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ee8821281410ddfab3edb7dec6ea338">FT_LIST_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftlist.h</a>&gt;</td></tr>
+<tr class="separator:a8ee8821281410ddfab3edb7dec6ea338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadf5ad8e6db6cc8780eabcfe00085dee" id="r_aadf5ad8e6db6cc8780eabcfe00085dee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aadf5ad8e6db6cc8780eabcfe00085dee">FT_OUTLINE_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftoutln.h</a>&gt;</td></tr>
+<tr class="separator:aadf5ad8e6db6cc8780eabcfe00085dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6095a31c99adc74c94744462d69d316" id="r_aa6095a31c99adc74c94744462d69d316"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6095a31c99adc74c94744462d69d316">FT_SIZES_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftsizes.h</a>&gt;</td></tr>
+<tr class="separator:aa6095a31c99adc74c94744462d69d316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c9158470029bd966c79a630387a0321" id="r_a2c9158470029bd966c79a630387a0321"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c9158470029bd966c79a630387a0321">FT_MODULE_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftmodapi.h</a>&gt;</td></tr>
+<tr class="separator:a2c9158470029bd966c79a630387a0321"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af70c5f9cb902a6dd49a10adebc111047" id="r_af70c5f9cb902a6dd49a10adebc111047"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af70c5f9cb902a6dd49a10adebc111047">FT_RENDER_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftrender.h</a>&gt;</td></tr>
+<tr class="separator:af70c5f9cb902a6dd49a10adebc111047"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7414ffc5d3b86b764049620cac18018d" id="r_a7414ffc5d3b86b764049620cac18018d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7414ffc5d3b86b764049620cac18018d">FT_TYPE1_TABLES_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">t1tables.h</a>&gt;</td></tr>
+<tr class="separator:a7414ffc5d3b86b764049620cac18018d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38879722c78cb9fe11916fa9d90a372a" id="r_a38879722c78cb9fe11916fa9d90a372a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38879722c78cb9fe11916fa9d90a372a">FT_TRUETYPE_IDS_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ttnameid.h</a>&gt;</td></tr>
+<tr class="separator:a38879722c78cb9fe11916fa9d90a372a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a148e041885c96620615b55020f0ffbc8" id="r_a148e041885c96620615b55020f0ffbc8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a148e041885c96620615b55020f0ffbc8">FT_TRUETYPE_TABLES_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">tttables.h</a>&gt;</td></tr>
+<tr class="separator:a148e041885c96620615b55020f0ffbc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a249b5d6d7e6242379ad2a608b4f388c2" id="r_a249b5d6d7e6242379ad2a608b4f388c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a249b5d6d7e6242379ad2a608b4f388c2">FT_TRUETYPE_TAGS_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">tttags.h</a>&gt;</td></tr>
+<tr class="separator:a249b5d6d7e6242379ad2a608b4f388c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dbdcdc990052cf6e772f3246bb631a6" id="r_a1dbdcdc990052cf6e772f3246bb631a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dbdcdc990052cf6e772f3246bb631a6">FT_BDF_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftbdf.h</a>&gt;</td></tr>
+<tr class="separator:a1dbdcdc990052cf6e772f3246bb631a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c3215797695b6e72b1d6be5769e86f7" id="r_a1c3215797695b6e72b1d6be5769e86f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c3215797695b6e72b1d6be5769e86f7">FT_CID_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftcid.h</a>&gt;</td></tr>
+<tr class="separator:a1c3215797695b6e72b1d6be5769e86f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a851224edc74bc11592b0286ff453e850" id="r_a851224edc74bc11592b0286ff453e850"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a851224edc74bc11592b0286ff453e850">FT_GZIP_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftgzip.h</a>&gt;</td></tr>
+<tr class="separator:a851224edc74bc11592b0286ff453e850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e655571b147cf102e33c3921fd61284" id="r_a1e655571b147cf102e33c3921fd61284"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e655571b147cf102e33c3921fd61284">FT_LZW_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftlzw.h</a>&gt;</td></tr>
+<tr class="separator:a1e655571b147cf102e33c3921fd61284"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c8c9428bde0277924b199dbeb50e9bc" id="r_a2c8c9428bde0277924b199dbeb50e9bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c8c9428bde0277924b199dbeb50e9bc">FT_WINFONTS_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftwinfnt.h</a>&gt;</td></tr>
+<tr class="separator:a2c8c9428bde0277924b199dbeb50e9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1491ced81f0291f714493d1fc4585859" id="r_a1491ced81f0291f714493d1fc4585859"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1491ced81f0291f714493d1fc4585859">FT_GLYPH_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftglyph.h</a>&gt;</td></tr>
+<tr class="separator:a1491ced81f0291f714493d1fc4585859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a766dd3a4aeb8ed1a5e3479975b37cfaa" id="r_a766dd3a4aeb8ed1a5e3479975b37cfaa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a766dd3a4aeb8ed1a5e3479975b37cfaa">FT_BITMAP_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftbitmap.h</a>&gt;</td></tr>
+<tr class="separator:a766dd3a4aeb8ed1a5e3479975b37cfaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24dbbd7b654130c5510a0a47869f70f3" id="r_a24dbbd7b654130c5510a0a47869f70f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24dbbd7b654130c5510a0a47869f70f3">FT_BBOX_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftbbox.h</a>&gt;</td></tr>
+<tr class="separator:a24dbbd7b654130c5510a0a47869f70f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab7f91d455e89eb1881f2b88ece68168" id="r_aab7f91d455e89eb1881f2b88ece68168"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab7f91d455e89eb1881f2b88ece68168">FT_CACHE_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftcache.h</a>&gt;</td></tr>
+<tr class="separator:aab7f91d455e89eb1881f2b88ece68168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af544792998420989d08137294a1f5a66" id="r_af544792998420989d08137294a1f5a66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af544792998420989d08137294a1f5a66">FT_CACHE_IMAGE_H</a>&#160;&#160;&#160;<a class="el" href="#aab7f91d455e89eb1881f2b88ece68168">FT_CACHE_H</a></td></tr>
+<tr class="separator:af544792998420989d08137294a1f5a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82deb98496c3cf4046b4ef43345eb568" id="r_a82deb98496c3cf4046b4ef43345eb568"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82deb98496c3cf4046b4ef43345eb568">FT_CACHE_SMALL_BITMAPS_H</a>&#160;&#160;&#160;<a class="el" href="#aab7f91d455e89eb1881f2b88ece68168">FT_CACHE_H</a></td></tr>
+<tr class="separator:a82deb98496c3cf4046b4ef43345eb568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2127b17467052e39181288c2c8856c0" id="r_aa2127b17467052e39181288c2c8856c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2127b17467052e39181288c2c8856c0">FT_CACHE_CHARMAP_H</a>&#160;&#160;&#160;<a class="el" href="#aab7f91d455e89eb1881f2b88ece68168">FT_CACHE_H</a></td></tr>
+<tr class="separator:aa2127b17467052e39181288c2c8856c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a062d6532a7bdfad3f3da41e349e748df" id="r_a062d6532a7bdfad3f3da41e349e748df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a062d6532a7bdfad3f3da41e349e748df">FT_MAC_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftmac.h</a>&gt;</td></tr>
+<tr class="separator:a062d6532a7bdfad3f3da41e349e748df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabbfc056bf7c848bdca34a8d1429444c" id="r_aabbfc056bf7c848bdca34a8d1429444c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabbfc056bf7c848bdca34a8d1429444c">FT_MULTIPLE_MASTERS_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftmm.h</a>&gt;</td></tr>
+<tr class="separator:aabbfc056bf7c848bdca34a8d1429444c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfa5e715b76a65f23d5f839910053d2c" id="r_abfa5e715b76a65f23d5f839910053d2c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfa5e715b76a65f23d5f839910053d2c">FT_SFNT_NAMES_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftsnames.h</a>&gt;</td></tr>
+<tr class="separator:abfa5e715b76a65f23d5f839910053d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50fb20d61b413bcf66c2977f26684edd" id="r_a50fb20d61b413bcf66c2977f26684edd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50fb20d61b413bcf66c2977f26684edd">FT_OPENTYPE_VALIDATE_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftotval.h</a>&gt;</td></tr>
+<tr class="separator:a50fb20d61b413bcf66c2977f26684edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad96879d4b74d4624df77b0ce61e43eb7" id="r_ad96879d4b74d4624df77b0ce61e43eb7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad96879d4b74d4624df77b0ce61e43eb7">FT_GX_VALIDATE_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftgxval.h</a>&gt;</td></tr>
+<tr class="separator:ad96879d4b74d4624df77b0ce61e43eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33987ce3b6c5b41c39cd54faeea338f8" id="r_a33987ce3b6c5b41c39cd54faeea338f8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33987ce3b6c5b41c39cd54faeea338f8">FT_PFR_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftpfr.h</a>&gt;</td></tr>
+<tr class="separator:a33987ce3b6c5b41c39cd54faeea338f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a977b54e25082e708e26ff8e0ff3af032" id="r_a977b54e25082e708e26ff8e0ff3af032"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a977b54e25082e708e26ff8e0ff3af032">FT_STROKER_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftstroke.h</a>&gt;</td></tr>
+<tr class="separator:a977b54e25082e708e26ff8e0ff3af032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9192af3a98433c94bfcc5628f6d47a7" id="r_aa9192af3a98433c94bfcc5628f6d47a7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9192af3a98433c94bfcc5628f6d47a7">FT_SYNTHESIS_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftsynth.h</a>&gt;</td></tr>
+<tr class="separator:aa9192af3a98433c94bfcc5628f6d47a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09fbc4f225996ddc059858855f50e9ce" id="r_a09fbc4f225996ddc059858855f50e9ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09fbc4f225996ddc059858855f50e9ce">FT_XFREE86_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftxf86.h</a>&gt;</td></tr>
+<tr class="separator:a09fbc4f225996ddc059858855f50e9ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27a122ddf21d9e76730fb10966c74528" id="r_a27a122ddf21d9e76730fb10966c74528"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27a122ddf21d9e76730fb10966c74528">FT_TRIGONOMETRY_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">fttrigon.h</a>&gt;</td></tr>
+<tr class="separator:a27a122ddf21d9e76730fb10966c74528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a183bdd9f70879aebceb16a3af0dd38ac" id="r_a183bdd9f70879aebceb16a3af0dd38ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a183bdd9f70879aebceb16a3af0dd38ac">FT_LCD_FILTER_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftlcdfil.h</a>&gt;</td></tr>
+<tr class="separator:a183bdd9f70879aebceb16a3af0dd38ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9bd2bcaca1dbd2722b936793ee2b7ae" id="r_ac9bd2bcaca1dbd2722b936793ee2b7ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9bd2bcaca1dbd2722b936793ee2b7ae">FT_UNPATENTED_HINTING_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ttunpat.h</a>&gt;</td></tr>
+<tr class="separator:ac9bd2bcaca1dbd2722b936793ee2b7ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61d3f230bb522230bb05521c3713f009" id="r_a61d3f230bb522230bb05521c3713f009"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61d3f230bb522230bb05521c3713f009">FT_INCREMENTAL_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftincrem.h</a>&gt;</td></tr>
+<tr class="separator:a61d3f230bb522230bb05521c3713f009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab35463a6959ee73674479920ca40d030" id="r_ab35463a6959ee73674479920ca40d030"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab35463a6959ee73674479920ca40d030">FT_GASP_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftgasp.h</a>&gt;</td></tr>
+<tr class="separator:ab35463a6959ee73674479920ca40d030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef6e0d309c5dcd04b799266476d89e4a" id="r_aef6e0d309c5dcd04b799266476d89e4a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef6e0d309c5dcd04b799266476d89e4a">FT_ADVANCES_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftadvanc.h</a>&gt;</td></tr>
+<tr class="separator:aef6e0d309c5dcd04b799266476d89e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c463d99e21d5e0fff5774acaaf1c006" id="r_a1c463d99e21d5e0fff5774acaaf1c006"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c463d99e21d5e0fff5774acaaf1c006">FT_ERROR_DEFINITIONS_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">fterrdef.h</a>&gt;</td></tr>
+<tr class="separator:a1c463d99e21d5e0fff5774acaaf1c006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a414e6c88562c6d332d1330598e0f684b" id="r_a414e6c88562c6d332d1330598e0f684b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a414e6c88562c6d332d1330598e0f684b">FT_CACHE_MANAGER_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftcache.h</a>&gt;</td></tr>
+<tr class="separator:a414e6c88562c6d332d1330598e0f684b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc4bb0cfbbcb04f138589f95a12f7f1d" id="r_acc4bb0cfbbcb04f138589f95a12f7f1d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc4bb0cfbbcb04f138589f95a12f7f1d">FT_CACHE_INTERNAL_MRU_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftcache.h</a>&gt;</td></tr>
+<tr class="separator:acc4bb0cfbbcb04f138589f95a12f7f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91ad43104ce22e52a5f2b2c86cc55a85" id="r_a91ad43104ce22e52a5f2b2c86cc55a85"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91ad43104ce22e52a5f2b2c86cc55a85">FT_CACHE_INTERNAL_MANAGER_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftcache.h</a>&gt;</td></tr>
+<tr class="separator:a91ad43104ce22e52a5f2b2c86cc55a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0ebf7636f115f066443549993cb7852" id="r_ae0ebf7636f115f066443549993cb7852"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0ebf7636f115f066443549993cb7852">FT_CACHE_INTERNAL_CACHE_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftcache.h</a>&gt;</td></tr>
+<tr class="separator:ae0ebf7636f115f066443549993cb7852"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cfd80e793656abd3581a8d9101d2ec7" id="r_a7cfd80e793656abd3581a8d9101d2ec7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cfd80e793656abd3581a8d9101d2ec7">FT_CACHE_INTERNAL_GLYPH_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftcache.h</a>&gt;</td></tr>
+<tr class="separator:a7cfd80e793656abd3581a8d9101d2ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b8ee6912792ffa37caaf208cdf4d5c5" id="r_a0b8ee6912792ffa37caaf208cdf4d5c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b8ee6912792ffa37caaf208cdf4d5c5">FT_CACHE_INTERNAL_IMAGE_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftcache.h</a>&gt;</td></tr>
+<tr class="separator:a0b8ee6912792ffa37caaf208cdf4d5c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1225d34b328d3703b24c515c689ec4bb" id="r_a1225d34b328d3703b24c515c689ec4bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1225d34b328d3703b24c515c689ec4bb">FT_CACHE_INTERNAL_SBITS_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftcache.h</a>&gt;</td></tr>
+<tr class="separator:a1225d34b328d3703b24c515c689ec4bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61d3f230bb522230bb05521c3713f009" id="r_a61d3f230bb522230bb05521c3713f009"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61d3f230bb522230bb05521c3713f009">FT_INCREMENTAL_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftincrem.h</a>&gt;</td></tr>
+<tr class="separator:a61d3f230bb522230bb05521c3713f009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a492001688d6b012f4e9036ef3a66d91b" id="r_a492001688d6b012f4e9036ef3a66d91b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a492001688d6b012f4e9036ef3a66d91b">FT_TRUETYPE_UNPATENTED_H</a>&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ttunpat.h</a>&gt;</td></tr>
+<tr class="separator:a492001688d6b012f4e9036ef3a66d91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="aef6e0d309c5dcd04b799266476d89e4a" name="aef6e0d309c5dcd04b799266476d89e4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef6e0d309c5dcd04b799266476d89e4a">&#9670;&#160;</a></span>FT_ADVANCES_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_ADVANCES_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftadvanc.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00741">741</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a24dbbd7b654130c5510a0a47869f70f3" name="a24dbbd7b654130c5510a0a47869f70f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24dbbd7b654130c5510a0a47869f70f3">&#9670;&#160;</a></span>FT_BBOX_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_BBOX_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftbbox.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00476">476</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a1dbdcdc990052cf6e772f3246bb631a6" name="a1dbdcdc990052cf6e772f3246bb631a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dbdcdc990052cf6e772f3246bb631a6">&#9670;&#160;</a></span>FT_BDF_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_BDF_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftbdf.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00384">384</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a72ee5814b3ae378ebb7fd3a8e3ddec14" name="a72ee5814b3ae378ebb7fd3a8e3ddec14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72ee5814b3ae378ebb7fd3a8e3ddec14">&#9670;&#160;</a></span>FT_BEGIN_HEADER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_BEGIN_HEADER&#160;&#160;&#160;/* nothing */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00036">36</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a766dd3a4aeb8ed1a5e3479975b37cfaa" name="a766dd3a4aeb8ed1a5e3479975b37cfaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a766dd3a4aeb8ed1a5e3479975b37cfaa">&#9670;&#160;</a></span>FT_BITMAP_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_BITMAP_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftbitmap.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00463">463</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="aa2127b17467052e39181288c2c8856c0" name="aa2127b17467052e39181288c2c8856c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2127b17467052e39181288c2c8856c0">&#9670;&#160;</a></span>FT_CACHE_CHARMAP_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_CACHE_CHARMAP_H&#160;&#160;&#160;<a class="el" href="#aab7f91d455e89eb1881f2b88ece68168">FT_CACHE_H</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00546">546</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="aab7f91d455e89eb1881f2b88ece68168" name="aab7f91d455e89eb1881f2b88ece68168"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab7f91d455e89eb1881f2b88ece68168">&#9670;&#160;</a></span>FT_CACHE_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_CACHE_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftcache.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00489">489</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="af544792998420989d08137294a1f5a66" name="af544792998420989d08137294a1f5a66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af544792998420989d08137294a1f5a66">&#9670;&#160;</a></span>FT_CACHE_IMAGE_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_CACHE_IMAGE_H&#160;&#160;&#160;<a class="el" href="#aab7f91d455e89eb1881f2b88ece68168">FT_CACHE_H</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00509">509</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="ae0ebf7636f115f066443549993cb7852" name="ae0ebf7636f115f066443549993cb7852"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0ebf7636f115f066443549993cb7852">&#9670;&#160;</a></span>FT_CACHE_INTERNAL_CACHE_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_CACHE_INTERNAL_CACHE_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftcache.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00756">756</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a7cfd80e793656abd3581a8d9101d2ec7" name="a7cfd80e793656abd3581a8d9101d2ec7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cfd80e793656abd3581a8d9101d2ec7">&#9670;&#160;</a></span>FT_CACHE_INTERNAL_GLYPH_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_CACHE_INTERNAL_GLYPH_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftcache.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00757">757</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a0b8ee6912792ffa37caaf208cdf4d5c5" name="a0b8ee6912792ffa37caaf208cdf4d5c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b8ee6912792ffa37caaf208cdf4d5c5">&#9670;&#160;</a></span>FT_CACHE_INTERNAL_IMAGE_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_CACHE_INTERNAL_IMAGE_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftcache.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00758">758</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a91ad43104ce22e52a5f2b2c86cc55a85" name="a91ad43104ce22e52a5f2b2c86cc55a85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91ad43104ce22e52a5f2b2c86cc55a85">&#9670;&#160;</a></span>FT_CACHE_INTERNAL_MANAGER_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_CACHE_INTERNAL_MANAGER_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftcache.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00755">755</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="acc4bb0cfbbcb04f138589f95a12f7f1d" name="acc4bb0cfbbcb04f138589f95a12f7f1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc4bb0cfbbcb04f138589f95a12f7f1d">&#9670;&#160;</a></span>FT_CACHE_INTERNAL_MRU_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_CACHE_INTERNAL_MRU_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftcache.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00754">754</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a1225d34b328d3703b24c515c689ec4bb" name="a1225d34b328d3703b24c515c689ec4bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1225d34b328d3703b24c515c689ec4bb">&#9670;&#160;</a></span>FT_CACHE_INTERNAL_SBITS_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_CACHE_INTERNAL_SBITS_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftcache.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00759">759</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a414e6c88562c6d332d1330598e0f684b" name="a414e6c88562c6d332d1330598e0f684b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a414e6c88562c6d332d1330598e0f684b">&#9670;&#160;</a></span>FT_CACHE_MANAGER_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_CACHE_MANAGER_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftcache.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00753">753</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a82deb98496c3cf4046b4ef43345eb568" name="a82deb98496c3cf4046b4ef43345eb568"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82deb98496c3cf4046b4ef43345eb568">&#9670;&#160;</a></span>FT_CACHE_SMALL_BITMAPS_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_CACHE_SMALL_BITMAPS_H&#160;&#160;&#160;<a class="el" href="#aab7f91d455e89eb1881f2b88ece68168">FT_CACHE_H</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00530">530</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a1c3215797695b6e72b1d6be5769e86f7" name="a1c3215797695b6e72b1d6be5769e86f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c3215797695b6e72b1d6be5769e86f7">&#9670;&#160;</a></span>FT_CID_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_CID_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftcid.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00398">398</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a6ba9fbb8d24c48453811f31b32b3df1c" name="a6ba9fbb8d24c48453811f31b32b3df1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ba9fbb8d24c48453811f31b32b3df1c">&#9670;&#160;</a></span>FT_CONFIG_CONFIG_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_CONFIG_CONFIG_H&#160;&#160;&#160;&lt;freetype/config/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftconfig.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00110">110</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a890b16893db4cab2d8c3b5e942af4dd6" name="a890b16893db4cab2d8c3b5e942af4dd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a890b16893db4cab2d8c3b5e942af4dd6">&#9670;&#160;</a></span>FT_CONFIG_MODULES_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_CONFIG_MODULES_H&#160;&#160;&#160;&lt;freetype/config/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftmodule.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00156">156</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a80ff2d8517cf5b86f40634227e94f7fc" name="a80ff2d8517cf5b86f40634227e94f7fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80ff2d8517cf5b86f40634227e94f7fc">&#9670;&#160;</a></span>FT_CONFIG_OPTIONS_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_CONFIG_OPTIONS_H&#160;&#160;&#160;&lt;freetype/config/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftoption.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00140">140</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a07682ef8e0677e22e3822cb8c3e48032" name="a07682ef8e0677e22e3822cb8c3e48032"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07682ef8e0677e22e3822cb8c3e48032">&#9670;&#160;</a></span>FT_CONFIG_STANDARD_LIBRARY_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_CONFIG_STANDARD_LIBRARY_H&#160;&#160;&#160;&lt;freetype/config/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftstdlib.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00125">125</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a2ebbdbbee7f9bfa8b6b86790de7e9963" name="a2ebbdbbee7f9bfa8b6b86790de7e9963"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ebbdbbee7f9bfa8b6b86790de7e9963">&#9670;&#160;</a></span>FT_END_HEADER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_END_HEADER&#160;&#160;&#160;/* nothing */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00054">54</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a1c463d99e21d5e0fff5774acaaf1c006" name="a1c463d99e21d5e0fff5774acaaf1c006"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c463d99e21d5e0fff5774acaaf1c006">&#9670;&#160;</a></span>FT_ERROR_DEFINITIONS_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_ERROR_DEFINITIONS_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">fterrdef.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00746">746</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a50822c46a0997c40529f940571315084" name="a50822c46a0997c40529f940571315084"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50822c46a0997c40529f940571315084">&#9670;&#160;</a></span>FT_ERRORS_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_ERRORS_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">fterrors.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00188">188</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="ac7269a393b5fd8f091b70a204980e2fb" name="ac7269a393b5fd8f091b70a204980e2fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7269a393b5fd8f091b70a204980e2fb">&#9670;&#160;</a></span>FT_FREETYPE_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_FREETYPE_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">freetype.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00173">173</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="ab35463a6959ee73674479920ca40d030" name="ab35463a6959ee73674479920ca40d030"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab35463a6959ee73674479920ca40d030">&#9670;&#160;</a></span>FT_GASP_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_GASP_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftgasp.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00729">729</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a1491ced81f0291f714493d1fc4585859" name="a1491ced81f0291f714493d1fc4585859"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1491ced81f0291f714493d1fc4585859">&#9670;&#160;</a></span>FT_GLYPH_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_GLYPH_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftglyph.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00450">450</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="ad96879d4b74d4624df77b0ce61e43eb7" name="ad96879d4b74d4624df77b0ce61e43eb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad96879d4b74d4624df77b0ce61e43eb7">&#9670;&#160;</a></span>FT_GX_VALIDATE_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_GX_VALIDATE_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftgxval.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00618">618</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a851224edc74bc11592b0286ff453e850" name="a851224edc74bc11592b0286ff453e850"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a851224edc74bc11592b0286ff453e850">&#9670;&#160;</a></span>FT_GZIP_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_GZIP_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftgzip.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00411">411</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a02ad30ac824c6d47d2065cbe58bd2f4b" name="a02ad30ac824c6d47d2065cbe58bd2f4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02ad30ac824c6d47d2065cbe58bd2f4b">&#9670;&#160;</a></span>FT_IMAGE_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_IMAGE_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftimage.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00233">233</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a61d3f230bb522230bb05521c3713f009" name="a61d3f230bb522230bb05521c3713f009"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61d3f230bb522230bb05521c3713f009">&#9670;&#160;</a></span>FT_INCREMENTAL_H <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_INCREMENTAL_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftincrem.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00717">717</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a61d3f230bb522230bb05521c3713f009" name="a61d3f230bb522230bb05521c3713f009"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61d3f230bb522230bb05521c3713f009">&#9670;&#160;</a></span>FT_INCREMENTAL_H <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_INCREMENTAL_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftincrem.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00717">717</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a183bdd9f70879aebceb16a3af0dd38ac" name="a183bdd9f70879aebceb16a3af0dd38ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a183bdd9f70879aebceb16a3af0dd38ac">&#9670;&#160;</a></span>FT_LCD_FILTER_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_LCD_FILTER_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftlcdfil.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00693">693</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a8ee8821281410ddfab3edb7dec6ea338" name="a8ee8821281410ddfab3edb7dec6ea338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ee8821281410ddfab3edb7dec6ea338">&#9670;&#160;</a></span>FT_LIST_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_LIST_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftlist.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00263">263</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a1e655571b147cf102e33c3921fd61284" name="a1e655571b147cf102e33c3921fd61284"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e655571b147cf102e33c3921fd61284">&#9670;&#160;</a></span>FT_LZW_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_LZW_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftlzw.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00424">424</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a062d6532a7bdfad3f3da41e349e748df" name="a062d6532a7bdfad3f3da41e349e748df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a062d6532a7bdfad3f3da41e349e748df">&#9670;&#160;</a></span>FT_MAC_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_MAC_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftmac.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00563">563</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a4adcee4da741945e32a81b2b8e44359a" name="a4adcee4da741945e32a81b2b8e44359a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4adcee4da741945e32a81b2b8e44359a">&#9670;&#160;</a></span>FT_MODULE_ERRORS_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_MODULE_ERRORS_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftmoderr.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00201">201</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a2c9158470029bd966c79a630387a0321" name="a2c9158470029bd966c79a630387a0321"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c9158470029bd966c79a630387a0321">&#9670;&#160;</a></span>FT_MODULE_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_MODULE_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftmodapi.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00302">302</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="aabbfc056bf7c848bdca34a8d1429444c" name="aabbfc056bf7c848bdca34a8d1429444c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabbfc056bf7c848bdca34a8d1429444c">&#9670;&#160;</a></span>FT_MULTIPLE_MASTERS_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_MULTIPLE_MASTERS_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftmm.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00576">576</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a50fb20d61b413bcf66c2977f26684edd" name="a50fb20d61b413bcf66c2977f26684edd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50fb20d61b413bcf66c2977f26684edd">&#9670;&#160;</a></span>FT_OPENTYPE_VALIDATE_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_OPENTYPE_VALIDATE_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftotval.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00604">604</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="aadf5ad8e6db6cc8780eabcfe00085dee" name="aadf5ad8e6db6cc8780eabcfe00085dee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadf5ad8e6db6cc8780eabcfe00085dee">&#9670;&#160;</a></span>FT_OUTLINE_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_OUTLINE_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftoutln.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00276">276</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a33987ce3b6c5b41c39cd54faeea338f8" name="a33987ce3b6c5b41c39cd54faeea338f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33987ce3b6c5b41c39cd54faeea338f8">&#9670;&#160;</a></span>FT_PFR_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_PFR_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftpfr.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00631">631</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="af70c5f9cb902a6dd49a10adebc111047" name="af70c5f9cb902a6dd49a10adebc111047"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af70c5f9cb902a6dd49a10adebc111047">&#9670;&#160;</a></span>FT_RENDER_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_RENDER_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftrender.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00315">315</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="abfa5e715b76a65f23d5f839910053d2c" name="abfa5e715b76a65f23d5f839910053d2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfa5e715b76a65f23d5f839910053d2c">&#9670;&#160;</a></span>FT_SFNT_NAMES_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_SFNT_NAMES_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftsnames.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00590">590</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="aa6095a31c99adc74c94744462d69d316" name="aa6095a31c99adc74c94744462d69d316"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6095a31c99adc74c94744462d69d316">&#9670;&#160;</a></span>FT_SIZES_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_SIZES_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftsizes.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00289">289</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a977b54e25082e708e26ff8e0ff3af032" name="a977b54e25082e708e26ff8e0ff3af032"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a977b54e25082e708e26ff8e0ff3af032">&#9670;&#160;</a></span>FT_STROKER_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_STROKER_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftstroke.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00643">643</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="aa9192af3a98433c94bfcc5628f6d47a7" name="aa9192af3a98433c94bfcc5628f6d47a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9192af3a98433c94bfcc5628f6d47a7">&#9670;&#160;</a></span>FT_SYNTHESIS_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_SYNTHESIS_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftsynth.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00655">655</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a9b593fea835bd47d7a546bdd152834ba" name="a9b593fea835bd47d7a546bdd152834ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b593fea835bd47d7a546bdd152834ba">&#9670;&#160;</a></span>FT_SYSTEM_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_SYSTEM_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftsystem.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00217">217</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a27a122ddf21d9e76730fb10966c74528" name="a27a122ddf21d9e76730fb10966c74528"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27a122ddf21d9e76730fb10966c74528">&#9670;&#160;</a></span>FT_TRIGONOMETRY_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_TRIGONOMETRY_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">fttrigon.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00681">681</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a38879722c78cb9fe11916fa9d90a372a" name="a38879722c78cb9fe11916fa9d90a372a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38879722c78cb9fe11916fa9d90a372a">&#9670;&#160;</a></span>FT_TRUETYPE_IDS_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_TRUETYPE_IDS_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ttnameid.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00343">343</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a148e041885c96620615b55020f0ffbc8" name="a148e041885c96620615b55020f0ffbc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a148e041885c96620615b55020f0ffbc8">&#9670;&#160;</a></span>FT_TRUETYPE_TABLES_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_TRUETYPE_TABLES_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">tttables.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00356">356</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a249b5d6d7e6242379ad2a608b4f388c2" name="a249b5d6d7e6242379ad2a608b4f388c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a249b5d6d7e6242379ad2a608b4f388c2">&#9670;&#160;</a></span>FT_TRUETYPE_TAGS_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_TRUETYPE_TAGS_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">tttags.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00370">370</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a492001688d6b012f4e9036ef3a66d91b" name="a492001688d6b012f4e9036ef3a66d91b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a492001688d6b012f4e9036ef3a66d91b">&#9670;&#160;</a></span>FT_TRUETYPE_UNPATENTED_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_TRUETYPE_UNPATENTED_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ttunpat.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00764">764</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a7414ffc5d3b86b764049620cac18018d" name="a7414ffc5d3b86b764049620cac18018d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7414ffc5d3b86b764049620cac18018d">&#9670;&#160;</a></span>FT_TYPE1_TABLES_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_TYPE1_TABLES_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">t1tables.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00328">328</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a97adac92e7aa01e92eba501febaf912f" name="a97adac92e7aa01e92eba501febaf912f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97adac92e7aa01e92eba501febaf912f">&#9670;&#160;</a></span>FT_TYPES_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_TYPES_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">fttypes.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00248">248</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="ac9bd2bcaca1dbd2722b936793ee2b7ae" name="ac9bd2bcaca1dbd2722b936793ee2b7ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9bd2bcaca1dbd2722b936793ee2b7ae">&#9670;&#160;</a></span>FT_UNPATENTED_HINTING_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_UNPATENTED_HINTING_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ttunpat.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00705">705</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a2c8c9428bde0277924b199dbeb50e9bc" name="a2c8c9428bde0277924b199dbeb50e9bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c8c9428bde0277924b199dbeb50e9bc">&#9670;&#160;</a></span>FT_WINFONTS_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_WINFONTS_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftwinfnt.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00437">437</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+<a id="a09fbc4f225996ddc059858855f50e9ce" name="a09fbc4f225996ddc059858855f50e9ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09fbc4f225996ddc059858855f50e9ce">&#9670;&#160;</a></span>FT_XFREE86_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_XFREE86_H&#160;&#160;&#160;&lt;freetype/<a class="el" href="glext_8h.html#afa0fb1b5e976920c0abeff2dca3ed774">ftxf86.h</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ftheader_8h_source.html#l00668">668</a> of file <a class="el" href="ftheader_8h_source.html">ftheader.h</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+                    Back to top
+                </button>
+            </main>
+            <footer class="md-footer">
+                <nav class="md-footer__inner md-grid" aria-label="Footer" hidden>
+                    <a href="/learn/" class="md-footer__link md-footer__link--next" aria-label="Next: Learn">
+                        <div class="md-footer__title">
+                            <span class="md-footer__direction"> Next </span>
+                            <div class="md-ellipsis">Learn</div>
+                        </div>
+                        <div class="md-footer__button md-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z" /></svg>
+                        </div>
+                    </a>
+                </nav>
+                <div class="md-footer-meta md-typeset">
+                    <div class="md-footer-meta__inner md-grid">
+                        <div class="md-copyright">
+                            <div class="md-copyright__highlight">Copyright &copy; <a href="mailto:laurent@sfml-dev.org">Laurent Gomila</a></div>
+                        </div>
+                        <div class="md-social">
+                            <a href="https://fosstodon.org/@sfml" target="_blank" rel="noopener me" title="SFML on Fosstodon" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com/sfmldev" target="_blank" rel="noopener" title="SFML on Twitter" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="https://discord.gg/nr4X7Fh" target="_blank" rel="noopener" title="SFML&#39;s Discord Server" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="md-dialog" data-md-component="dialog">
+            <div class="md-dialog__inner md-typeset"></div>
+        </div>
+        <script id="__config" type="application/json">
+            {
+                "base": ".",
+                "features": ["content.code.copy", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.prune", "navigation.path", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.suggest"],
+                "search": "/assets/javascripts/workers/search.b8dbb3d2.min.js",
+                "translations": {
+                    "clipboard.copied": "Copied to clipboard",
+                    "clipboard.copy": "Copy to clipboard",
+                    "search.result.more.one": "1 more on this page",
+                    "search.result.more.other": "# more on this page",
+                    "search.result.none": "No matching documents",
+                    "search.result.one": "1 matching document",
+                    "search.result.other": "# matching documents",
+                    "search.result.placeholder": "Type to start searching",
+                    "search.result.term.missing": "Missing",
+                    "select.version": "Select version"
+                }
+            }
+        </script>
+        <script src="/assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+    </body>
+</html>
