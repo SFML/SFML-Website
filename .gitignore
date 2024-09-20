@@ -5,3 +5,5 @@
 /piwik/*
 /progressbar-osx-values.php
 /google*.html
+.cache/*
+site/*
