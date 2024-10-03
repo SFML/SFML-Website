@@ -6,4 +6,9 @@
 /progressbar-osx-values.php
 /google*.html
 .cache/*
+
+# Transition phase
 site/*
+assets/*
+styles/extra.css
+tutorials/3.0/*
