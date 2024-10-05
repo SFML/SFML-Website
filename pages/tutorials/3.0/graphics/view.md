@@ -15,7 +15,7 @@ To summarize, views are what you need if you want to scroll, rotate or zoom your
 
 ## Defining what the view views
 
-The class which encapsulates views in SFML is [`sf::View`](https://www.sfml-dev.org/documentation/2.6.0/classsf_1_1View.php "sf::View documentation"). It can be constructed directly with a definition of the area to view:
+The class which encapsulates views in SFML is [`sf::View`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1View.php "sf::View documentation"). It can be constructed directly with a definition of the area to view:
 
 ```cpp
 // create a view with the rectangular area of the 2D world to show
@@ -127,7 +127,7 @@ minimapView.setViewport(sf::FloatRect(0.75f, 0.f, 0.25f, 0.25f));
 
 ## Using a view
 
-To draw something using a view, you must draw it after calling the `setView` function of the target to which you are drawing ([`sf::RenderWindow`](https://www.sfml-dev.org/documentation/2.6.0/classsf_1_1RenderWindow.php "sf::RenderWindow documentation") or [`sf::RenderTexture`](https://www.sfml-dev.org/documentation/2.6.0/classsf_1_1RenderTexture.php "sf::RenderTexture documentation")).
+To draw something using a view, you must draw it after calling the `setView` function of the target to which you are drawing ([`sf::RenderWindow`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1RenderWindow.php "sf::RenderWindow documentation") or [`sf::RenderTexture`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1RenderTexture.php "sf::RenderTexture documentation")).
 
 ```cpp
 // let's define a view

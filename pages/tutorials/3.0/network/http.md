@@ -15,7 +15,7 @@ For basic interaction between your program and an HTTP server, it should be enou
 
 ## [sf::Http](https://www.sfml-dev.org/tutorials/2.6/network-http.php#sfhttp)[](https://www.sfml-dev.org/tutorials/2.6/network-http.php#top "Top of the page")
 
-To communicate with an HTTP server you must use the [`sf::Http`](https://www.sfml-dev.org/documentation/2.6.0/classsf_1_1Http.php "sf::Http documentation") class.
+To communicate with an HTTP server you must use the [`sf::Http`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Http.php "sf::Http documentation") class.
 
 ```cpp
 #include <SFML/Network.hpp>
@@ -29,7 +29,7 @@ sf::Http http("http://www.some-server.org/");
 
 Note that setting the host doesn't trigger any connection. A temporary connection is created for each request.
 
-The only other function in [`sf::Http`](https://www.sfml-dev.org/documentation/2.6.0/classsf_1_1Http.php "sf::Http documentation"), sends requests. This is basically all that the class does.
+The only other function in [`sf::Http`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Http.php "sf::Http documentation"), sends requests. This is basically all that the class does.
 
 ```cpp
 sf::Http::Request request;
@@ -39,7 +39,7 @@ sf::Http::Response response = http.sendRequest(request);
 
 ## Requests
 
-An HTTP request, represented by the [`sf::Http::Request`](https://www.sfml-dev.org/documentation/2.6.0/classsf_1_1Http_1_1Request.php "sf::Http::Request documentation") class, contains the following information:
+An HTTP request, represented by the [`sf::Http::Request`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Http_1_1Request.php "sf::Http::Request documentation") class, contains the following information:
 
 - The method: POST (send content), GET (retrieve a resource), HEAD (retrieve a resource header, without its body)
 - The URI: the address of the resource (page, image, ...) to get/post, relative to the root directory
@@ -63,7 +63,7 @@ SFML automatically fills mandatory header fields, such as "Host", "Content-Lengt
 
 ## Responses
 
-If the [`sf::Http`](https://www.sfml-dev.org/documentation/2.6.0/classsf_1_1Http.php "sf::Http documentation") class could successfully connect to the host and send the request, a response is sent back and returned to the user, encapsulated in an instance of the [`sf::Http::Response`](https://www.sfml-dev.org/documentation/2.6.0/classsf_1_1Http_1_1Response.php "sf::Http::Response documentation") class. Responses contain the following members:
+If the [`sf::Http`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Http.php "sf::Http documentation") class could successfully connect to the host and send the request, a response is sent back and returned to the user, encapsulated in an instance of the [`sf::Http::Response`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Http_1_1Response.php "sf::Http::Response documentation") class. Responses contain the following members:
 
 - A status code which precisely indicates how the server processed the request (OK, redirected, not found, etc.)
 - The HTTP version of the server
