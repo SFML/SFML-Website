@@ -19,7 +19,7 @@ Ok, that was short but if you really don't understand what sprites and textures 
 
 ## Loading a texture
 
-Before creating any sprite, we need a valid texture. The class that encapsulates textures in SFML is, surprisingly, [`sf::Texture`](https://www.sfml-dev.org/documentation/2.6.0/classsf_1_1Texture.php "sf::Texture documentation"). Since the only role of a texture is to be loaded and mapped to graphical entities, almost all its functions are about loading and updating it.
+Before creating any sprite, we need a valid texture. The class that encapsulates textures in SFML is, surprisingly, [`sf::Texture`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Texture.php "sf::Texture documentation"). Since the only role of a texture is to be loaded and mapped to graphical entities, almost all its functions are about loading and updating it.
 
 The most common way of loading a texture is from an image file on disk, which is done with the `loadFromFile` function.
 
@@ -33,7 +33,7 @@ if (!texture.loadFromFile("image.png"))
 
 The `loadFromFile` function can sometimes fail with no obvious reason. First, check the error message that SFML prints to the standard output (check the console). If the message is unable to open file, make sure that the *working directory* (which is the directory that any file path will be interpreted relative to) is what you think it is: When you run the application from your desktop environment, the working directory is the executable folder. However, when you launch your program from your IDE (Visual Studio, Code::Blocks, ...) the working directory might sometimes be set to the *project* directory instead. This can usually be changed quite easily in the project settings.
 
-You can also load an image file from memory (`loadFromMemory`), from a [custom input stream](https://www.sfml-dev.org/tutorials/2.6/system-stream.php "Input streams tutorial") (`loadFromStream`), or from an image that has already been loaded (`loadFromImage`). The latter loads the texture from an [`sf::Image`](https://www.sfml-dev.org/documentation/2.6.0/classsf_1_1Image.php "sf::Image documentation"), which is a utility class that helps store and manipulate image data (modify pixels, create transparency channel, etc.). The pixels of an [`sf::Image`](https://www.sfml-dev.org/documentation/2.6.0/classsf_1_1Image.php "sf::Image documentation") stay in system memory, which ensures that operations on them will be as fast as possible, in contrast to the pixels of a texture which reside in video memory and are therefore slow to retrieve or update but very fast to draw.
+You can also load an image file from memory (`loadFromMemory`), from a [custom input stream](https://www.sfml-dev.org/tutorials/2.6/system-stream.php "Input streams tutorial") (`loadFromStream`), or from an image that has already been loaded (`loadFromImage`). The latter loads the texture from an [`sf::Image`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Image.php "sf::Image documentation"), which is a utility class that helps store and manipulate image data (modify pixels, create transparency channel, etc.). The pixels of an [`sf::Image`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Image.php "sf::Image documentation") stay in system memory, which ensures that operations on them will be as fast as possible, in contrast to the pixels of a texture which reside in video memory and are therefore slow to retrieve or update but very fast to draw.
 
 SFML supports most common image file formats. The full list is available in the API documentation.
 
@@ -47,7 +47,7 @@ if (!texture.loadFromFile("image.png", sf::IntRect(10, 10, 32, 32)))
 }
 ```
 
-The [`sf::IntRect`](https://www.sfml-dev.org/documentation/2.6.0/classsf_1_1Rect.php "sf::IntRect documentation") class is a simple utility type that represents a rectangle. Its constructor takes the coordinates of the top-left corner, and the size of the rectangle.
+The [`sf::IntRect`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Rect.php "sf::IntRect documentation") class is a simple utility type that represents a rectangle. Its constructor takes the coordinates of the top-left corner, and the size of the rectangle.
 
 If you don't want to load a texture from an image, but instead want to update it directly from an array of pixels, you can create it empty and update it later:
 
@@ -191,9 +191,9 @@ Try to keep this in mind when you create your animation sheets or your tilesets:
 
 ## [Using sf::Texture with OpenGL code](https://www.sfml-dev.org/tutorials/2.6/graphics-sprite.php#using-sftexture-with-opengl-code)[](https://www.sfml-dev.org/tutorials/2.6/graphics-sprite.php#top "Top of the page")
 
-If you're using OpenGL rather than the graphics entities of SFML, you can still use [`sf::Texture`](https://www.sfml-dev.org/documentation/2.6.0/classsf_1_1Texture.php "sf::Texture documentation") as a wrapper around an OpenGL texture object and use it along with the rest of your OpenGL code.
+If you're using OpenGL rather than the graphics entities of SFML, you can still use [`sf::Texture`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Texture.php "sf::Texture documentation") as a wrapper around an OpenGL texture object and use it along with the rest of your OpenGL code.
 
-To bind a [`sf::Texture`](https://www.sfml-dev.org/documentation/2.6.0/classsf_1_1Texture.php "sf::Texture documentation") for drawing (basically `glBindTexture`), you call the `bind` static function:
+To bind a [`sf::Texture`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Texture.php "sf::Texture documentation") for drawing (basically `glBindTexture`), you call the `bind` static function:
 
 ```cpp
 sf::Texture texture;

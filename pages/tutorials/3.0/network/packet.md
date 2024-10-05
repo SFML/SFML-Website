@@ -26,7 +26,7 @@ SFML only provides fixed-size *integer* types. Floating-point types should nor
 
 ## Packets
 
-The two other problems (endianness and message boundaries) are solved by using a specific class to pack your data: [`sf::Packet`](https://www.sfml-dev.org/documentation/2.6.0/classsf_1_1Packet.php "sf::Packet documentation"). As a bonus, it provides a much nicer interface than plain old byte arrays.
+The two other problems (endianness and message boundaries) are solved by using a specific class to pack your data: [`sf::Packet`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Packet.php "sf::Packet documentation"). As a bonus, it provides a much nicer interface than plain old byte arrays.
 
 Packets have a programming interface similar to standard streams: you can insert data with the << operator, and extract data with the >> operator.
 
@@ -62,7 +62,7 @@ else
 }
 ```
 
-Sending and receiving packets is as easy as sending/receiving an array of bytes: sockets have an overload of `send` and `receive` that directly accept a [`sf::Packet`](https://www.sfml-dev.org/documentation/2.6.0/classsf_1_1Packet.php "sf::Packet documentation").
+Sending and receiving packets is as easy as sending/receiving an array of bytes: sockets have an overload of `send` and `receive` that directly accept a [`sf::Packet`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Packet.php "sf::Packet documentation").
 
 ```cpp
 // with a TCP socket
@@ -76,11 +76,11 @@ udpSocket.send(packet, recipientAddress, recipientPort);
 udpSocket.receive(packet, senderAddress, senderPort);
 ```
 
-Packets solve the "message boundaries" problem, which means that when you send a packet on a TCP socket, you receive the exact same packet on the other end, it cannot contain less bytes, or bytes from the next packet that you send. However, it has a slight drawback: To preserve message boundaries, [`sf::Packet`](https://www.sfml-dev.org/documentation/2.6.0/classsf_1_1Packet.php "sf::Packet documentation") has to send some extra bytes along with your data, which implies that you can only receive them with a [`sf::Packet`](https://www.sfml-dev.org/documentation/2.6.0/classsf_1_1Packet.php "sf::Packet documentation") if you want them to be properly decoded. Simply put, you can't send an SFML packet to a non-SFML packet recipient, it has to use an SFML packet for receiving too. Note that this applies to TCP only, UDP is fine since the protocol itself preserves message boundaries.
+Packets solve the "message boundaries" problem, which means that when you send a packet on a TCP socket, you receive the exact same packet on the other end, it cannot contain less bytes, or bytes from the next packet that you send. However, it has a slight drawback: To preserve message boundaries, [`sf::Packet`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Packet.php "sf::Packet documentation") has to send some extra bytes along with your data, which implies that you can only receive them with a [`sf::Packet`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Packet.php "sf::Packet documentation") if you want them to be properly decoded. Simply put, you can't send an SFML packet to a non-SFML packet recipient, it has to use an SFML packet for receiving too. Note that this applies to TCP only, UDP is fine since the protocol itself preserves message boundaries.
 
 ## Extending packets to handle user types
 
-Packets have overloads of their operators for all the primitive types and the most common standard types, but what about your own classes? As with standard streams, you can make a type "compatible" with [`sf::Packet`](https://www.sfml-dev.org/documentation/2.6.0/classsf_1_1Packet.php "sf::Packet documentation") by providing an overload of the << and >> operators.
+Packets have overloads of their operators for all the primitive types and the most common standard types, but what about your own classes? As with standard streams, you can make a type "compatible" with [`sf::Packet`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Packet.php "sf::Packet documentation") by providing an overload of the << and >> operators.
 
 ```cpp
 struct Character
@@ -114,7 +114,7 @@ packet >> bob;
 
 ## Custom packets
 
-Packets provide nice features on top of your raw data, but what if you want to add your own features such as automatically compressing or encrypting the data? This can easily be done by deriving from [`sf::Packet`](https://www.sfml-dev.org/documentation/2.6.0/classsf_1_1Packet.php "sf::Packet documentation") and overriding the following functions:
+Packets provide nice features on top of your raw data, but what if you want to add your own features such as automatically compressing or encrypting the data? This can easily be done by deriving from [`sf::Packet`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Packet.php "sf::Packet documentation") and overriding the following functions:
 
 - `onSend`: called before the data is sent by the socket
 - `onReceive`: called after the data has been received by the socket
@@ -141,7 +141,7 @@ class ZipPacket : public sf::Packet
 };
 ```
 
-Such a packet class can be used exactly like [`sf::Packet`](https://www.sfml-dev.org/documentation/2.6.0/classsf_1_1Packet.php "sf::Packet documentation"). All your operator overloads will apply to them as well.
+Such a packet class can be used exactly like [`sf::Packet`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Packet.php "sf::Packet documentation"). All your operator overloads will apply to them as well.
 
 ```cpp
 ZipPacket packet;
