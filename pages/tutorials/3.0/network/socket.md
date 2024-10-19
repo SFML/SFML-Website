@@ -224,7 +224,7 @@ sf::Socket::Status receiveWithTimeout(sf::TcpSocket& socket, sf::Packet& packet,
 }
 ```
 
-## [Non-blocking sockets](https://www.sfml-dev.org/tutorials/2.6/network-socket.php#non-blocking-sockets)[](https://www.sfml-dev.org/tutorials/2.6/network-socket.php#top "Top of the page")
+## Non-blocking sockets
 
 All sockets are blocking by default, but you can change this behaviour at any time with the `setBlocking` function.
 

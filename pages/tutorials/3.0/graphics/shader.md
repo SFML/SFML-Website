@@ -189,7 +189,7 @@ This special parameter automatically sets the texture of the entity being drawn 
 
 If you want to see nice examples of shaders in action, you can have a look at the Shader example in the SFML SDK.
 
-## [Using a sf::Shader with OpenGL code](https://www.sfml-dev.org/tutorials/2.6/graphics-shader.php#using-a-sfshader-with-opengl-code)[](https://www.sfml-dev.org/tutorials/2.6/graphics-shader.php#top "Top of the page")
+## Using a sf::Shader with OpenGL code
 
 If you're using OpenGL rather than the graphics entities of SFML, you can still use [`sf::Shader`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Shader.php "sf::Shader documentation") as a wrapper around an OpenGL program object and use it within your OpenGL code.
 

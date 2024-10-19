@@ -9,7 +9,7 @@
 
 This tutorial is a detailed list of window events. It describes them, and shows how to (and how not to) use them.
 
-## [The sf::Event type](https://www.sfml-dev.org/tutorials/2.6/window-events.php#the-sfevent-type)[](https://www.sfml-dev.org/tutorials/2.6/window-events.php#top "Top of the page")
+## The sf::Event type
 
 Before dealing with events, it is important to understand what the [`sf::Event`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Event.php "sf::Event documentation") type is, and how to correctly use it. [`sf::Event`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Event.php "sf::Event documentation") is a _union_, which means that only one of its members is valid at a time (remember your C++ lesson: all the members of a union share the same memory space). The valid member is the one that matches the event type, for example `event.key` for a `KeyPressed` event. Trying to read any other member will result in an undefined behavior (most likely: random or invalid values). It is important to never try to use an event member that doesn't match its type.
 

@@ -13,7 +13,7 @@ If you need more advanced features, such as secured HTTP (HTTPS) for example, yo
 
 For basic interaction between your program and an HTTP server, it should be enough.
 
-## [sf::Http](https://www.sfml-dev.org/tutorials/2.6/network-http.php#sfhttp)[](https://www.sfml-dev.org/tutorials/2.6/network-http.php#top "Top of the page")
+## sf::Http
 
 To communicate with an HTTP server you must use the [`sf::Http`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Http.php "sf::Http documentation") class.
 
@@ -80,7 +80,7 @@ std::cout << "body: " << response.getBody() << std::endl;
 
 The status code can be used to check whether the request was successfully processed or not: codes 2xx represent success, codes 3xx represent a redirection, codes 4xx represent client errors, codes 5xx represent server errors, and codes 10xx represent SFML specific errors which are *not* part of the HTTP standard.
 
-## [Example: sending scores to an online server](https://www.sfml-dev.org/tutorials/2.6/network-http.php#example-sending-scores-to-an-online-server)[](https://www.sfml-dev.org/tutorials/2.6/network-http.php#top "Top of the page")
+## Example: sending scores to an online server
 
 Here is a short example that demonstrates how to perform a simple task: Sending a score to an online database.
 

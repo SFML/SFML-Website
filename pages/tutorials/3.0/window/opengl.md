@@ -69,7 +69,7 @@ std::cout << "version:" << settings.majorVersion << "." << settings.minorVersion
 
 OpenGL versions above 3.0 are supported by SFML (as long as your graphics driver can handle them). Support for selecting the profile of 3.2+ contexts and whether the context debug flag is set was added in SFML 2.3. The forward compatibility flag is not supported. By default, SFML creates 3.2+ contexts using the compatibility profile because the graphics module makes use of legacy OpenGL functionality. If you intend on using the graphics module, make sure to create your context without the core profile setting or the graphics module will not function correctly. On OS X, SFML supports creating OpenGL 3.2+ contexts using the core profile only. If you want to use the graphics module on OS X, you are limited to using a legacy context which implies OpenGL version 2.1.
 
-## [A typical OpenGL-with-SFML program](https://www.sfml-dev.org/tutorials/2.6/window-opengl.php#a-typical-opengl-with-sfml-program)[](https://www.sfml-dev.org/tutorials/2.6/window-opengl.php#top "Top of the page")
+## A typical OpenGL-with-SFML program
 
 Here is what a complete OpenGL program would look like with SFML:
 

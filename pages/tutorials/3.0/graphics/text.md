@@ -61,7 +61,7 @@ window.draw(text);
 
 Text can also be transformed: They have a position, an orientation and a scale. The functions involved are the same as for the [`sf::Sprite`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Sprite.php "sf::Sprite documentation") class and other SFML entities. They are explained in the [Transforming entities](https://www.sfml-dev.org/tutorials/2.6/graphics-transform.php "'Transforming entities' tutorial") tutorial.
 
-## [How to avoid problems with non-ASCII characters?](https://www.sfml-dev.org/tutorials/2.6/graphics-text.php#how-to-avoid-problems-with-non-ascii-characters)[](https://www.sfml-dev.org/tutorials/2.6/graphics-text.php#top "Top of the page")
+## How to avoid problems with non-ASCII characters?
 
 Handling non-ASCII characters (such as accented European, Arabic, or Chinese characters) correctly can be tricky. It requires a good understanding of the various encodings involved in the process of interpreting and drawing your text. To avoid having to bother with these encodings, there's a simple solution: Use _wide literal strings_.
 

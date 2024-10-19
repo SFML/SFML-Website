@@ -18,7 +18,7 @@ The third problem is specific to how the TCP protocol works. Because it doesn't 
 
 You may of course face other problems with network programming, but these are the lowest-level ones, that almost everybody will have to solve. This is the reason why SFML provides some simple tools to avoid them.
 
-## [Fixed-size primitive types](https://www.sfml-dev.org/tutorials/2.6/network-packet.php#fixed-size-primitive-types)[](https://www.sfml-dev.org/tutorials/2.6/network-packet.php#top "Top of the page")
+## Fixed-size primitive types
 
 Since primitive types cannot be exchanged reliably on a network, the solution is simple: don't use them. SFML provides fixed-size types for data exchange: `sf::Int8, sf::Uint16, sf::Int32`, etc. These types are just typedefs to primitive types, but they are mapped to the type which has the expected size according to the platform. So they can (and must!) be used safely when you want to exchange data between two computers.
 
