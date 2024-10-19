@@ -104,7 +104,7 @@ texture.setRepeated(true);
 
 This only works if your sprite is configured to show a rectangle which is larger than the texture, otherwise this property has no effect.
 
-## [Ok, can I have my sprite now?](https://www.sfml-dev.org/tutorials/2.6/graphics-sprite.php#ok-can-i-have-my-sprite-now)[](https://www.sfml-dev.org/tutorials/2.6/graphics-sprite.php#top "Top of the page")
+## Ok, can I have my sprite now?
 
 Yes, you can now create your sprite.
 
@@ -189,7 +189,7 @@ Additionally, using a single texture allows you to group static geometry into a 
 
 Try to keep this in mind when you create your animation sheets or your tilesets: Use as little textures as possible.
 
-## [Using sf::Texture with OpenGL code](https://www.sfml-dev.org/tutorials/2.6/graphics-sprite.php#using-sftexture-with-opengl-code)[](https://www.sfml-dev.org/tutorials/2.6/graphics-sprite.php#top "Top of the page")
+## Using sf::Texture with OpenGL code
 
 If you're using OpenGL rather than the graphics entities of SFML, you can still use [`sf::Texture`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Texture.php "sf::Texture documentation") as a wrapper around an OpenGL texture object and use it along with the rest of your OpenGL code.
 

@@ -200,7 +200,7 @@ The function is named `getGlobalBounds` because it returns the bounding box of
 
 There's another function that returns the bounding box of the entity in its *local* coordinate system (before its transformations are applied): `getLocalBounds`. This function can be used to get the initial size of an entity, for example, or to perform more specific calculations.
 
-## [Object hierarchies (scene graph)](https://www.sfml-dev.org/tutorials/2.6/graphics-transform.php#object-hierarchies-scene-graph)[](https://www.sfml-dev.org/tutorials/2.6/graphics-transform.php#top "Top of the page")
+## Object hierarchies (scene graph)
 
 With the custom transforms seen previously, it becomes easy to implement a hierarchy of objects in which children are transformed relative to their parent. All you have to do is pass the combined transform from parent to children when you draw them, all the way until you reach the final drawable entities (sprites, text, shapes, vertex arrays or your own drawables).
 

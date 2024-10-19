@@ -11,7 +11,7 @@ SFML provides simple classes for the most common 2D entities. And while more com
 
 To fill this gap, SFML provides a lower-level mechanism to draw things: Vertex arrays. As a matter of fact, vertex arrays are used internally by all other SFML classes. They allow for a more flexible definition of 2D entities, containing as many triangles as you need. They even allow drawing points or lines.
 
-## [What is a vertex, and why are they always in arrays?](https://www.sfml-dev.org/tutorials/2.6/graphics-vertex-array.php#what-is-a-vertex-and-why-are-they-always-in-arrays)[](https://www.sfml-dev.org/tutorials/2.6/graphics-vertex-array.php#top "Top of the page")
+## What is a vertex, and why are they always in arrays?
 
 A vertex is the smallest graphical entity that you can manipulate. In short, it is a graphical point: Naturally, it has a 2D position (x, y), but also a color, and a pair of texture coordinates. We'll go into the roles of these attributes later.
 
@@ -185,7 +185,7 @@ window.draw(vertices, states);
 
 To know more about transformations and the [`sf::Transform`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Transform.php "sf::Transform documentation") class, you can read the tutorial on [transforming entities](https://www.sfml-dev.org/tutorials/2.6/graphics-transform.php "Transforming entities tutorial").
 
-## [Creating an SFML-like entity](https://www.sfml-dev.org/tutorials/2.6/graphics-vertex-array.php#creating-an-sfml-like-entity)[](https://www.sfml-dev.org/tutorials/2.6/graphics-vertex-array.php#top "Top of the page")
+## Creating an SFML-like entity
 
 Now that you know how to define your own textured/colored/transformed entity, wouldn't it be nice to wrap it in an SFML-style class? Fortunately, SFML makes this easy for you by providing the [`sf::Drawable`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Drawable.php "sf::Drawable documentation") and [`sf::Transformable`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Transformable.php "sf::Transformable documentation") base classes. These two classes are the base of the built-in SFML entities [`sf::Sprite`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Sprite.php "sf::Sprite documentation"), [`sf::Text`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Text.php "sf::Text documentation") and [`sf::Shape`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Shape.php "sf::Shape documentation").
 
@@ -250,7 +250,7 @@ entity.setRotation(45.f);
 window.draw(entity);
 ```
 
-## [Example: tile map](https://www.sfml-dev.org/tutorials/2.6/graphics-vertex-array.php#example-tile-map)[](https://www.sfml-dev.org/tutorials/2.6/graphics-vertex-array.php#top "Top of the page")
+## Example: tile map
 
 With what we've seen above, let's create a class that encapsulates a tile map. The whole map will be contained in a single vertex array, therefore it will be super fast to draw. Note that we can apply this strategy only if the whole tile set can fit into a single texture. Otherwise, we would have to use at least one vertex array per texture.
 
@@ -373,7 +373,7 @@ int main()
 
 You can download the tileset used for this tilemap example [here](https://www.sfml-dev.org/tutorials/2.6/images/graphics-vertex-array-tilemap-tileset.png "Tilemap example tileset").
 
-## [Example: particle system](https://www.sfml-dev.org/tutorials/2.6/graphics-vertex-array.php#example-particle-system)[](https://www.sfml-dev.org/tutorials/2.6/graphics-vertex-array.php#top "Top of the page")
+## Example: particle system
 
 This second example implements another common entity: The particle system. This one is very simple, with no texture and as few parameters as possible. It demonstrates the use of the `sf::Points` primitive type with a dynamic vertex array which changes every frame.
 

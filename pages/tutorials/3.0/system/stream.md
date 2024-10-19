@@ -13,7 +13,7 @@ Sometimes you want to load files from unusual places, such as a compressed/encry
 
 In this tutorial you'll learn how to write and use your own derived input stream.
 
-## [And standard streams?](https://www.sfml-dev.org/tutorials/2.6/system-stream.php#and-standard-streams)[](https://www.sfml-dev.org/tutorials/2.6/system-stream.php#top "Top of the page")
+## And standard streams?
 
 Like many other languages, C++ already has a class for input data streams: `std::istream`. In fact it has two: `std::istream` is only the front-end, the abstract interface to the custom data is `std::streambuf`.
 

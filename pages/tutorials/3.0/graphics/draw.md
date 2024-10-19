@@ -60,7 +60,7 @@ Calling `display` is also mandatory, it takes what was drawn since the last ca
 This clear/draw/display cycle is the only good way to draw things. Don't try other strategies, such as keeping pixels from the previous frame, "erasing" pixels, or drawing once and calling display multiple times. You'll get strange results due to double-buffering.  
 Modern graphics hardware and APIs are *really* made for repeated clear/draw/display cycles where everything is completely refreshed at each iteration of the main loop. Don't be scared to draw 1000 sprites 60 times per second, you're far below the millions of triangles that your computer can handle.
 
-## [What can I draw now?](https://www.sfml-dev.org/tutorials/2.6/graphics-draw.php#what-can-i-draw-now)[](https://www.sfml-dev.org/tutorials/2.6/graphics-draw.php#top "Top of the page")
+## What can I draw now?
 
 Now that you have a main loop which is ready to draw, let's see what, and how, you can actually draw there.
 
@@ -73,7 +73,7 @@ Although they share some common properties, each of these entities come with the
 - [Shape tutorial](https://www.sfml-dev.org/tutorials/2.6/graphics-shape.php "Learn how to create and draw shapes")
 - [Vertex array tutorial](https://www.sfml-dev.org/tutorials/2.6/graphics-vertex-array.php "Learn how to create and draw vertex arrays")
 
-## [Off-screen drawing](https://www.sfml-dev.org/tutorials/2.6/graphics-draw.php#off-screen-drawing)[](https://www.sfml-dev.org/tutorials/2.6/graphics-draw.php#top "Top of the page")
+## Off-screen drawing
 
 SFML also provides a way to draw to a texture instead of directly to a window. To do so, use a [`sf::RenderTexture`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1RenderTexture.php "sf::RenderTexture documentation") instead of a [`sf::RenderWindow`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1RenderWindow.php "sf::RenderWindow documentation"). It has the same functions for drawing, inherited from their common base: [`sf::RenderTarget`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1RenderTarget.php "sf::RenderTarget documentation").
 

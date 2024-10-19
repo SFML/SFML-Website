@@ -73,7 +73,7 @@ Drawing a shape is as simple as drawing any other SFML entity:
 window.draw(shape);
 ```
 
-## [Built-in shape types](https://www.sfml-dev.org/tutorials/2.6/graphics-shape.php#built-in-shape-types)[](https://www.sfml-dev.org/tutorials/2.6/graphics-shape.php#top "Top of the page")
+## Built-in shape types
 
 ### Rectangles
 
