@@ -7,15 +7,15 @@
 
 ## What is a view?
 
-In games, it is not uncommon to have levels which are much bigger than the window itself. You only see is a small part of them. This is typically the case in RPGs, platform games, and many other genres. What developers might tend to forget is that they define entities *in a 2D world*, not directly in the window. The window is just a view, it shows a specific area of the whole world. It is perfectly fine to draw several views of the same world in parallel, or draw the world to a texture rather than to a window. The world itself remains unchanged, what changes is just the way it is seen.
+In games, it is not uncommon to have levels which are much bigger than the window itself. You only see is a small part of them. This is typically the case in RPGs, platform games, and many other genres. What developers might tend to forget is that they define entities *in a 2D world*, not directly in the window. The window is just a view, it shows a specific area of the whole world. It is perfectly fine to draw several views of the same world in parallel, or draw the world to a texture rather than to a window. The world itself remains unchanged, what changes is just the way it is seen.
 
-Since what is seen in the window is just a small part of the entire 2D world, you need a way to specify which part of the world is shown in the window. Additionally, you may also want to define where/how this area will be shown *within* the window. These are the two main features of SFML views.
+Since what is seen in the window is just a small part of the entire 2D world, you need a way to specify which part of the world is shown in the window. Additionally, you may also want to define where/how this area will be shown *within* the window. These are the two main features of SFML views.
 
 To summarize, views are what you need if you want to scroll, rotate or zoom your world. They are also the key to creating split screens and mini-maps.
 
 ## Defining what the view views
 
-The class which encapsulates views in SFML is [`sf::View`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1View.php "sf::View documentation"). It can be constructed directly with a definition of the area to view:
+The class which encapsulates views in SFML is [`sf::View`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1View.php "sf::View documentation"). It can be constructed directly with a definition of the area to view:
 
 ```cpp
 // create a view with the rectangular area of the 2D world to show
@@ -25,7 +25,7 @@ sf::View view1(sf::FloatRect(200.f, 200.f, 300.f, 200.f));
 sf::View view2(sf::Vector2f(350.f, 300.f), sf::Vector2f(300.f, 200.f));
 ```
 
-These two definitions are equivalent: Both views will show the same area of the 2D world, a 300x200 rectangle *centered* on the point (350, 300).
+These two definitions are equivalent: Both views will show the same area of the 2D world, a 300x200 rectangle *centered* on the point (350, 300).
 
 ![](https://www.sfml-dev.org/tutorials/2.6/images/graphics-view-initial.png "A view")
 
@@ -44,7 +44,7 @@ Once your view is defined, you can transform it to make it show a translated/rot
 
 ### Moving (scrolling) the view
 
-Unlike drawable entities, such as sprites or shapes whose positions are defined by their top-left corner (and can be changed to any other point), views are always manipulated by their center -- this is simply more convenient. That's why the function to change the position of a view is named `setCenter`, and not `setPosition`.
+Unlike drawable entities, such as sprites or shapes whose positions are defined by their top-left corner (and can be changed to any other point), views are always manipulated by their center -- this is simply more convenient. That's why the function to change the position of a view is named `setCenter`, and not `setPosition`.
 
 ```cpp
 // move the view at point (200, 200)
@@ -58,7 +58,7 @@ view.move(100.f, 100.f);
 
 ### Rotating the view
 
-To rotate a view, use the `setRotation` function.
+To rotate a view, use the `setRotation` function.
 
 ```cpp
 // rotate the view at 20 degrees
@@ -72,7 +72,7 @@ view.rotate(5.f);
 
 ### Zooming (scaling) the view
 
-Zooming in (or out) a view is done through to resizing it, so the function to use is `setSize`.
+Zooming in (or out) a view is done through to resizing it, so the function to use is `setSize`.
 
 ```cpp
 // resize the view to show a 1200x800 area (we see a bigger area, so this is a zoom out)
@@ -86,11 +86,11 @@ view.zoom(0.5f);
 
 ## Defining how the view is viewed
 
-Now that you've defined which part of the 2D world is seen in the window, let's define *where* it is shown. By default, the viewed contents occupy the full window. If the view has the same size as the window, everything is rendered 1:1. If the view is smaller or larger than the window, everything is scaled to fit in the window.
+Now that you've defined which part of the 2D world is seen in the window, let's define *where* it is shown. By default, the viewed contents occupy the full window. If the view has the same size as the window, everything is rendered 1:1. If the view is smaller or larger than the window, everything is scaled to fit in the window.
 
-This default behavior is suitable for most situations, but it might need to be changed sometimes. For example, to split the screen in a multiplayer game, you may want to use two views which each only occupy half of the window. You can also implement a minimap by drawing your entire world to a view which is rendered in a small area in a corner of the window. The area in which the contents of the view is shown is called the *viewport*.
+This default behavior is suitable for most situations, but it might need to be changed sometimes. For example, to split the screen in a multiplayer game, you may want to use two views which each only occupy half of the window. You can also implement a minimap by drawing your entire world to a view which is rendered in a small area in a corner of the window. The area in which the contents of the view is shown is called the *viewport*.
 
-To set the viewport of a view, you can use the `setViewport` function.
+To set the viewport of a view, you can use the `setViewport` function.
 
 ```cpp
 // define a centered viewport, with half the size of the window
@@ -127,7 +127,7 @@ minimapView.setViewport(sf::FloatRect(0.75f, 0.f, 0.25f, 0.25f));
 
 ## Using a view
 
-To draw something using a view, you must draw it after calling the `setView` function of the target to which you are drawing ([`sf::RenderWindow`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1RenderWindow.php "sf::RenderWindow documentation") or [`sf::RenderTexture`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1RenderTexture.php "sf::RenderTexture documentation")).
+To draw something using a view, you must draw it after calling the `setView` function of the target to which you are drawing ([`sf::RenderWindow`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1RenderWindow.php "sf::RenderWindow documentation") or [`sf::RenderTexture`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1RenderTexture.php "sf::RenderTexture documentation")).
 
 ```cpp
 // let's define a view
@@ -144,7 +144,7 @@ sf::View currentView = window.getView();
 ...
 ```
 
-The view remains active until you set another one. This means that there is always a view which defines what appears in the target, and where it is drawn. If you don't explicitly set any view, the render-target uses its own default view, which matches its size 1:1. You can get the default view of a render-target with the `getDefaultView` function. This can be useful if you want to define your own view based on it, or restore it to draw fixed entities (like a GUI) on top of your scene.
+The view remains active until you set another one. This means that there is always a view which defines what appears in the target, and where it is drawn. If you don't explicitly set any view, the render-target uses its own default view, which matches its size 1:1. You can get the default view of a render-target with the `getDefaultView` function. This can be useful if you want to define your own view based on it, or restore it to draw fixed entities (like a GUI) on top of your scene.
 
 ```cpp
 // create a view half the size of the default view
@@ -156,7 +156,7 @@ window.setView(view);
 window.setView(window.getDefaultView());
 ```
 
-When you call `setView`, the render-target makes a *copy* of the view, and doesn't store a pointer to the one that is passed. This means that whenever you update your view, you need to call `setView` again to apply the modifications.  
+When you call `setView`, the render-target makes a *copy* of the view, and doesn't store a pointer to the one that is passed. This means that whenever you update your view, you need to call `setView` again to apply the modifications.  
 Don't be afraid to copy views or create them on the fly, they aren't expensive objects (they just hold a few floats).
 
 ## Showing more when the window is resized
@@ -184,7 +184,7 @@ while (window.pollEvent(event))
 
 ## Coordinates conversions
 
-When you use a custom view, or when you resize the window without using the code above, pixels displayed on the target no longer match units in the 2D world. For example, clicking on pixel (10, 50) may hit the point (26.5, -84) of your world. You end up having to use a conversion function to map your pixel coordinates to world coordinates: `mapPixelToCoords`.
+When you use a custom view, or when you resize the window without using the code above, pixels displayed on the target no longer match units in the 2D world. For example, clicking on pixel (10, 50) may hit the point (26.5, -84) of your world. You end up having to use a conversion function to map your pixel coordinates to world coordinates: `mapPixelToCoords`.
 
 ```cpp
 // get the current mouse position in the window
@@ -194,6 +194,6 @@ sf::Vector2i pixelPos = sf::Mouse::getPosition(window);
 sf::Vector2f worldPos = window.mapPixelToCoords(pixelPos);
 ```
 
-By default, `mapPixelToCoords` uses the current view. If you want to convert the coordinates using view which is not the active one, you can pass it as an additional argument to the function.
+By default, `mapPixelToCoords` uses the current view. If you want to convert the coordinates using view which is not the active one, you can pass it as an additional argument to the function.
 
-The opposite, converting world coordinates to pixel coordinates, is also possible with the `mapCoordsToPixel` function.
+The opposite, converting world coordinates to pixel coordinates, is also possible with the `mapCoordsToPixel` function.

@@ -7,9 +7,9 @@
 
 ## Transforming SFML entities
 
-All SFML classes (sprites, text, shapes) use the same interface for transformations: [`sf::Transformable`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Transformable.php "sf::Transformable documentation"). This base class provides a simple API to move, rotate and scale your entities. It doesn't provide maximum flexibility, but instead defines an interface which is easy to understand and to use, and which covers 99% of all use cases -- for the remaining 1%, see the last chapters.
+All SFML classes (sprites, text, shapes) use the same interface for transformations: [`sf::Transformable`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Transformable.php "sf::Transformable documentation"). This base class provides a simple API to move, rotate and scale your entities. It doesn't provide maximum flexibility, but instead defines an interface which is easy to understand and to use, and which covers 99% of all use cases -- for the remaining 1%, see the last chapters.
 
-[`sf::Transformable`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Transformable.php "sf::Transformable documentation") (and all its derived classes) defines four properties: **position**, **rotation**, **scale** and **origin**. They all have their respective getters and setters. These transformation components are all independent of one another: If you want to change the orientation of the entity, you just have to set its rotation property, you don't have to care about the current position and scale.
+[`sf::Transformable`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Transformable.php "sf::Transformable documentation") (and all its derived classes) defines four properties: **position**, **rotation**, **scale** and **origin**. They all have their respective getters and setters. These transformation components are all independent of one another: If you want to change the orientation of the entity, you just have to set its rotation property, you don't have to care about the current position and scale.
 
 ### Position
 
@@ -34,7 +34,7 @@ By default, entities are positioned relative to their top-left corner. We'll see
 
 ### Rotation
 
-The rotation is the orientation of the entity in the 2D world. It is defined in *degrees*, in clockwise order (because the Y axis is pointing down in SFML).
+The rotation is the orientation of the entity in the 2D world. It is defined in *degrees*, in clockwise order (because the Y axis is pointing down in SFML).
 
 ```cpp
 // 'entity' can be a sf::Sprite, a sf::Text, a sf::Shape or any other transformable class
@@ -51,7 +51,7 @@ float rotation = entity.getRotation(); // = 55
 
 ![A rotated entity](https://www.sfml-dev.org/tutorials/2.6/images/graphics-transform-rotation.png)
 
-Note that SFML always returns an angle in range [0, 360) when you call `getRotation`.
+Note that SFML always returns an angle in range [0, 360) when you call `getRotation`.
 
 As with the position, the rotation is performed around the top-left corner by default, but this can be changed by setting the origin.
 
@@ -94,7 +94,7 @@ Note that changing the origin also changes where the entity is drawn on screen, 
 
 ## Transforming your own classes
 
-[`sf::Transformable`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Transformable.php "sf::Transformable documentation") is not only made for SFML classes, it can also be a base (or member) of your own classes.
+[`sf::Transformable`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Transformable.php "sf::Transformable documentation") is not only made for SFML classes, it can also be a base (or member) of your own classes.
 
 ```cpp
 class MyGraphicalEntity : public sf::Transformable
@@ -108,15 +108,15 @@ entity.setRotation(110.f);
 entity.setScale(0.5f, 0.2f);
 ```
 
-To retrieve the final transform of the entity (commonly needed when drawing it), call the `getTransform` function. This function returns a [`sf::Transform`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Transform.php "sf::Transform documentation") object. See below for an explanation about it, and how to use it to transform an SFML entity.
+To retrieve the final transform of the entity (commonly needed when drawing it), call the `getTransform` function. This function returns a [`sf::Transform`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Transform.php "sf::Transform documentation") object. See below for an explanation about it, and how to use it to transform an SFML entity.
 
-If you don't need/want the complete set of functions provided by the [`sf::Transformable`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Transformable.php "sf::Transformable documentation") interface, don't hesitate to simply use it as a member instead and provide your own functions on top of it. It is not abstract, so it is possible to instantiate it instead of only being able to use it as a base class.
+If you don't need/want the complete set of functions provided by the [`sf::Transformable`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Transformable.php "sf::Transformable documentation") interface, don't hesitate to simply use it as a member instead and provide your own functions on top of it. It is not abstract, so it is possible to instantiate it instead of only being able to use it as a base class.
 
 ## Custom transforms
 
-The [`sf::Transformable`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Transformable.php "sf::Transformable documentation") class is easy to use, but it is also limited. Some users might need more flexibility. They might need to specify a final transformation as a custom combination of individual transformations. For these users, a lower-level class is available: [`sf::Transform`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Transform.php "sf::Transform documentation"). It is nothing more than a 3x3 matrix, so it can represent any transformation in 2D space.
+The [`sf::Transformable`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Transformable.php "sf::Transformable documentation") class is easy to use, but it is also limited. Some users might need more flexibility. They might need to specify a final transformation as a custom combination of individual transformations. For these users, a lower-level class is available: [`sf::Transform`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Transform.php "sf::Transform documentation"). It is nothing more than a 3x3 matrix, so it can represent any transformation in 2D space.
 
-There are many ways to construct a [`sf::Transform`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Transform.php "sf::Transform documentation"):
+There are many ways to construct a [`sf::Transform`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Transform.php "sf::Transform documentation"):
 
 - by using the predefined functions for the most common transformations (translation, rotation, scale)
 - by combining two transforms
@@ -141,7 +141,7 @@ sf::Transform t3(2.f, 0.f, 20.f,
 sf::Transform t4 = t1 * t2 * t3;
 ```
 
-You can apply several predefined transformations to the same transform as well. They will all be combined sequentially. Note that transforming an object by combining multiple transformations is equivalent to applying each operation in reverse order. The last operation (here `scale`) is applied first, and will be affected by operations above it in code (second would be `translate(-10.f, 50.f)`, for example).
+You can apply several predefined transformations to the same transform as well. They will all be combined sequentially. Note that transforming an object by combining multiple transformations is equivalent to applying each operation in reverse order. The last operation (here `scale`) is applied first, and will be affected by operations above it in code (second would be `translate(-10.f, 50.f)`, for example).
 
 ```cpp
 sf::Transform t;
@@ -165,7 +165,7 @@ states.transform = transform;
 window.draw(entity, states);
 ```
 
-If your entity is a [`sf::Transformable`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Transformable.php "sf::Transformable documentation") (sprite, text, shape), which contains its own internal transform, both the internal and the passed transform are combined to produce the final transform.
+If your entity is a [`sf::Transformable`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Transformable.php "sf::Transformable documentation") (sprite, text, shape), which contains its own internal transform, both the internal and the passed transform are combined to produce the final transform.
 
 ## Bounding boxes
 
@@ -196,9 +196,9 @@ if (boundingBox.intersects(otherBox))
 }
 ```
 
-The function is named `getGlobalBounds` because it returns the bounding box of the entity in the global coordinate system, i.e. after all of its transformations (position, rotation, scale) have been applied.
+The function is named `getGlobalBounds` because it returns the bounding box of the entity in the global coordinate system, i.e. after all of its transformations (position, rotation, scale) have been applied.
 
-There's another function that returns the bounding box of the entity in its *local* coordinate system (before its transformations are applied): `getLocalBounds`. This function can be used to get the initial size of an entity, for example, or to perform more specific calculations.
+There's another function that returns the bounding box of the entity in its *local* coordinate system (before its transformations are applied): `getLocalBounds`. This function can be used to get the initial size of an entity, for example, or to perform more specific calculations.
 
 ## Object hierarchies (scene graph)
 

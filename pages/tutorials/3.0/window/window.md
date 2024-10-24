@@ -11,7 +11,7 @@ This tutorial only explains how to open and manage a window. Drawing stuff is be
 
 ## Opening a window
 
-Windows in SFML are defined by the [`sf::Window`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Window.php "sf::Window documentation") class. A window can be created and opened directly upon construction:
+Windows in SFML are defined by the [`sf::Window`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Window.php "sf::Window documentation") class. A window can be created and opened directly upon construction:
 
 ```cpp
 #include <SFML/Window.hpp>
@@ -26,8 +26,8 @@ int main()
 }
 ```
 
-The first argument, the *video mode*, defines the size of the window (the inner size, without the title bar and borders). Here, we create a window with a size of 800x600 pixels.  
-The [`sf::VideoMode`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1VideoMode.php "sf::VideoMode documentation") class has some interesting static functions to get the desktop resolution, or the list of valid video modes for fullscreen mode. Don't hesitate to have a look at its documentation.
+The first argument, the *video mode*, defines the size of the window (the inner size, without the title bar and borders). Here, we create a window with a size of 800x600 pixels.  
+The [`sf::VideoMode`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1VideoMode.php "sf::VideoMode documentation") class has some interesting static functions to get the desktop resolution, or the list of valid video modes for fullscreen mode. Don't hesitate to have a look at its documentation.
 
 The second argument is simply the title of the window.
 
@@ -40,11 +40,11 @@ This constructor accepts a third optional argument: a style, which allows you to
 | `sf::Style::Resize`     | The window can be resized and has a maximize button                                                                |
 | `sf::Style::Close`      | The window has a close button                                                                                      |
 | `sf::Style::Fullscreen` | The window is shown in fullscreen mode; this style cannot be combined with others, and requires a valid video mode |
-| `sf::Style::Default`    | The default style, which is a shortcut for `Titlebar \| Resize \| Close`                                           |
+| `sf::Style::Default`    | The default style, which is a shortcut for `Titlebar \| Resize \| Close`                                           |
 
-There's also a fourth optional argument, which defines OpenGL specific options which are explained in the [dedicated OpenGL tutorial](https://www.sfml-dev.org/tutorials/2.6/window-opengl.php "OpenGL tutorial").
+There's also a fourth optional argument, which defines OpenGL specific options which are explained in the [dedicated OpenGL tutorial](https://www.sfml-dev.org/tutorials/2.6/window-opengl.php "OpenGL tutorial").
 
-If you want to create the window *after* the construction of the [`sf::Window`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Window.php "sf::Window documentation") instance, or re-create it with a different video mode or title, you can use the `create` function instead. It takes the exact same arguments as the constructor.
+If you want to create the window *after* the construction of the [`sf::Window`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Window.php "sf::Window documentation") instance, or re-create it with a different video mode or title, you can use the `create` function instead. It takes the exact same arguments as the constructor.
 
 ```cpp
 #include <SFML/Window.hpp>
@@ -92,19 +92,19 @@ int main()
 
 The above code will open a window, and terminate when the user closes it. Let's see how it works in detail.
 
-First, we added a loop that ensures that the application will be refreshed/updated until the window is closed. Most (if not all) SFML programs will have this kind of loop, sometimes called the *main loop* or *game loop*.
+First, we added a loop that ensures that the application will be refreshed/updated until the window is closed. Most (if not all) SFML programs will have this kind of loop, sometimes called the *main loop* or *game loop*.
 
-Then, the first thing that we want to do inside our game loop is check for any events that occurred. Note that we use a `while` loop so that all pending events are processed in case there were several. The `pollEvent` function returns true if an event was pending, or false if there was none.
+Then, the first thing that we want to do inside our game loop is check for any events that occurred. Note that we use a `while` loop so that all pending events are processed in case there were several. The `pollEvent` function returns true if an event was pending, or false if there was none.
 
-Whenever we get an event, we must check its type (window closed? key pressed? mouse moved? joystick connected? ...), and react accordingly if we are interested in it. In this case, we only care about the `Event::Closed` event, which is triggered when the user wants to close the window. At this point, the window is still open and we have to close it explicitly with the `close` function. This enables you to do something before the window is closed, such as saving the current state of the application, or displaying a message.
+Whenever we get an event, we must check its type (window closed? key pressed? mouse moved? joystick connected? ...), and react accordingly if we are interested in it. In this case, we only care about the `Event::Closed` event, which is triggered when the user wants to close the window. At this point, the window is still open and we have to close it explicitly with the `close` function. This enables you to do something before the window is closed, such as saving the current state of the application, or displaying a message.
 
 A mistake that people often make is to forget the event loop, simply because they don't yet care about handling events (they use real-time inputs instead). Without an event loop, the window will become unresponsive. It is important to note that the event loop has two roles: in addition to providing events to the user, it gives the window a chance to process its internal events too, which is required so that it can react to move or resize user actions.
 
 After the window has been closed, the main loop exits and the program terminates.
 
-At this point, you probably noticed that we haven't talked about *drawing something* to the window yet. As stated in the introduction, this is not the job of the sfml-window module, and you'll have to jump to the sfml-graphics tutorials if you want to draw things such as sprites, text or shapes.
+At this point, you probably noticed that we haven't talked about *drawing something* to the window yet. As stated in the introduction, this is not the job of the sfml-window module, and you'll have to jump to the sfml-graphics tutorials if you want to draw things such as sprites, text or shapes.
 
-To draw stuff, you can also use OpenGL directly and totally ignore the sfml-graphics module. [`sf::Window`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Window.php "sf::Window documentation") internally creates an OpenGL context and is ready to accept your OpenGL calls. You can learn more about that in the [corresponding tutorial](https://www.sfml-dev.org/tutorials/2.6/window-opengl.php "OpenGL tutorial").
+To draw stuff, you can also use OpenGL directly and totally ignore the sfml-graphics module. [`sf::Window`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Window.php "sf::Window documentation") internally creates an OpenGL context and is ready to accept your OpenGL calls. You can learn more about that in the [corresponding tutorial](https://www.sfml-dev.org/tutorials/2.6/window-opengl.php "OpenGL tutorial").
 
 Don't expect to see something interesting in this window: you may see a uniform color (black or white), or the last contents of the previous application that used OpenGL, or... something else.
 
@@ -133,9 +133,9 @@ bool focus = window.hasFocus();
 ...
 ```
 
-You can refer to the API documentation for a complete list of [`sf::Window`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Window.php "sf::Window documentation")'s functions.
+You can refer to the API documentation for a complete list of [`sf::Window`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Window.php "sf::Window documentation")'s functions.
 
-In case you really need advanced features for your window, you can create one (or even a full GUI) with another library, and embed SFML into it. To do so, you can use the other constructor, or `create` function, of [`sf::Window`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Window.php "sf::Window documentation") which takes the OS-specific handle of an existing window. In this case, SFML will create a drawing context inside the given window and catch all its events without interfering with the parent window management.
+In case you really need advanced features for your window, you can create one (or even a full GUI) with another library, and embed SFML into it. To do so, you can use the other constructor, or `create` function, of [`sf::Window`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Window.php "sf::Window documentation") which takes the OS-specific handle of an existing window. In this case, SFML will create a drawing context inside the given window and catch all its events without interfering with the parent window management.
 
 ```cpp
 sf::WindowHandle handle = /* specific to what you're doing and the library you're using */;
@@ -156,7 +156,7 @@ Integrating SFML with other libraries requires some work and won't be described 
 ## Controlling the framerate
 
 Sometimes, when your application runs fast, you may notice visual artifacts such as tearing. The reason is that your application's refresh rate is not synchronized with the vertical frequency of the monitor, and as a result, the bottom of the previous frame is mixed with the top of the next one.  
-The solution to this problem is to activate *vertical synchronization*. It is automatically handled by the graphics card, and can easily be switched on and off with the `setVerticalSyncEnabled` function:
+The solution to this problem is to activate *vertical synchronization*. It is automatically handled by the graphics card, and can easily be switched on and off with the `setVerticalSyncEnabled` function:
 
 ```cpp
 window.setVerticalSyncEnabled(true); // call it once, after creating the window
@@ -164,17 +164,17 @@ window.setVerticalSyncEnabled(true); // call it once, after creating the window
 
 After this call, your application will run at the same frequency as the monitor's refresh rate.
 
-Sometimes `setVerticalSyncEnabled` will have no effect: this is most likely because vertical synchronization is forced to "off" in your graphics driver's settings. It should be set to "controlled by application" instead.
+Sometimes `setVerticalSyncEnabled` will have no effect: this is most likely because vertical synchronization is forced to "off" in your graphics driver's settings. It should be set to "controlled by application" instead.
 
-In other situations, you may also want your application to run at a given framerate, instead of the monitor's frequency. This can be done by calling `setFramerateLimit`:
+In other situations, you may also want your application to run at a given framerate, instead of the monitor's frequency. This can be done by calling `setFramerateLimit`:
 
 ```cpp
 window.setFramerateLimit(60); // call it once, after creating the window
 ```
 
-Unlike `setVerticalSyncEnabled`, this feature is implemented by SFML itself, using a combination of [`sf::Clock`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Clock.php "sf::Clock documentation") and `sf::sleep`. An important consequence is that it is not 100% reliable, especially for high framerates: `sf::sleep`'s resolution depends on the underlying operating system and hardware, and can be as high as 10 or 15 milliseconds. Don't rely on this feature to implement precise timing.
+Unlike `setVerticalSyncEnabled`, this feature is implemented by SFML itself, using a combination of [`sf::Clock`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Clock.php "sf::Clock documentation") and `sf::sleep`. An important consequence is that it is not 100% reliable, especially for high framerates: `sf::sleep`'s resolution depends on the underlying operating system and hardware, and can be as high as 10 or 15 milliseconds. Don't rely on this feature to implement precise timing.
 
-Never use both `setVerticalSyncEnabled` and `setFramerateLimit` at the same time! They would badly mix and make things worse.
+Never use both `setVerticalSyncEnabled` and `setFramerateLimit` at the same time! They would badly mix and make things worse.
 
 ## Things to know about windows
 
@@ -190,7 +190,7 @@ SFML doesn't explicitly manage multiple monitors. As a consequence, you won't be
 
 ### Events must be polled in the window's thread
 
-This is an important limitation of most operating systems: the event loop (more precisely, the `pollEvent` or `waitEvent` function) must be called in the same thread that created the window. This means that if you want to create a dedicated thread for event handling, you'll have to make sure that the window is created in this thread too. If you really want to split things between threads, it is more convenient to keep event handling in the main thread and move the rest (rendering, physics, logic, ...) to a separate thread instead. This configuration will also be compatible with the other limitation described below.
+This is an important limitation of most operating systems: the event loop (more precisely, the `pollEvent` or `waitEvent` function) must be called in the same thread that created the window. This means that if you want to create a dedicated thread for event handling, you'll have to make sure that the window is created in this thread too. If you really want to split things between threads, it is more convenient to keep event handling in the main thread and move the rest (rendering, physics, logic, ...) to a separate thread instead. This configuration will also be compatible with the other limitation described below.
 
 ### On macOS, windows and events must be managed in the main thread
 
@@ -198,4 +198,4 @@ Yep, that's true; macOS just won't agree if you try to create a window or handle
 
 ### On Windows, a window which is bigger than the desktop will not behave correctly
 
-For some reason, Windows doesn't like windows that are bigger than the desktop. This includes windows created with `VideoMode::getDesktopMode()`: with the window decorations (borders and titlebar) added, you end up with a window which is slightly bigger than the desktop.
+For some reason, Windows doesn't like windows that are bigger than the desktop. This includes windows created with `VideoMode::getDesktopMode()`: with the window decorations (borders and titlebar) added, you end up with a window which is slightly bigger than the desktop.

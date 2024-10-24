@@ -13,13 +13,13 @@ FTP (_File Transfer Protocol_) is a simple protocol that allows manipulation of 
 
 So what can you do with FTP, and how can it be helpful to your program? Basically, with FTP you can access existing remote file systems, or even create your own. This can be useful if you want your network game to download resources (maps, images, ...) from a server, or your program to update itself automatically when it's connected to the internet.
 
-If you want to know more about the FTP protocol, the [Wikipedia article](http://en.wikipedia.org/wiki/File_Transfer_Protocol "FTP on wikipedia") provides more detailed information than this short introduction.
+If you want to know more about the FTP protocol, the [Wikipedia article](http://en.wikipedia.org/wiki/File_Transfer_Protocol "FTP on wikipedia") provides more detailed information than this short introduction.
 
 ## The FTP client class
 
-The class provided by SFML is [`sf::Ftp`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Ftp.php "sf::Ftp documentation") (surprising, isn't it?). It's a client, which means that it can connect to an FTP server, send commands to it and upload or download files.
+The class provided by SFML is [`sf::Ftp`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Ftp.php "sf::Ftp documentation") (surprising, isn't it?). It's a client, which means that it can connect to an FTP server, send commands to it and upload or download files.
 
-Every function of the [`sf::Ftp`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Ftp.php "sf::Ftp documentation") class wraps an FTP command, and returns a standard FTP response. An FTP response contains a status code (similar to HTTP status codes but not identical), and a message that informs the user of what happened. FTP responses are encapsulated in the [`sf::Ftp::Response`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Ftp_1_1Response.php "sf::Ftp::Response documentation") class.
+Every function of the [`sf::Ftp`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Ftp.php "sf::Ftp documentation") class wraps an FTP command, and returns a standard FTP response. An FTP response contains a status code (similar to HTTP status codes but not identical), and a message that informs the user of what happened. FTP responses are encapsulated in the [`sf::Ftp::Response`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Ftp_1_1Response.php "sf::Ftp::Response documentation") class.
 
 ```cpp
 #include <SFML/Network.hpp>
@@ -32,7 +32,7 @@ std::cout << "Response status: " << response.getStatus() << std::endl;
 std::cout << "Response message: " << response.getMessage() << std::endl;
 ```
 
-The status code can be used to check whether the command was successful or failed: Codes lower than 400 represent success, all others represent errors. You can use the `isOk()` function as a shortcut to test a status code for success.
+The status code can be used to check whether the command was successful or failed: Codes lower than 400 represent success, all others represent errors. You can use the `isOk()` function as a shortcut to test a status code for success.
 
 ```cpp
 sf::Ftp::Response response = ftp.login();
@@ -72,7 +72,7 @@ sf::Ftp ftp;
 ftp.connect("ftp.myserver.org");
 ```
 
-The server address can be any valid [`sf::IpAddress`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1IpAddress.php "sf::IpAddress documentation"): A URL, an IP address, a network name, ...
+The server address can be any valid [`sf::IpAddress`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1IpAddress.php "sf::IpAddress documentation"): A URL, an IP address, a network name, ...
 
 The standard port for FTP is 21. If, for some reason, your server uses a different port, you can specify it as an additional argument:
 
@@ -100,7 +100,7 @@ ftp.login();
 
 ## FTP commands
 
-Here is a short description of all the commands available in the [`sf::Ftp`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Ftp.php "sf::Ftp documentation") class. Remember one thing: All these commands are performed relative to the *current working directory*, exactly as if you were executing file or directory commands in a console on your operating system.
+Here is a short description of all the commands available in the [`sf::Ftp`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Ftp.php "sf::Ftp documentation") class. Remember one thing: All these commands are performed relative to the *current working directory*, exactly as if you were executing file or directory commands in a console on your operating system.
 
 Getting the current working directory:
 
@@ -110,7 +110,7 @@ if (response.isOk())
     std::cout << "Current directory: " << response.getDirectory() << std::endl;
 ```
 
-[`sf::Ftp::DirectoryResponse`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Ftp_1_1DirectoryResponse.php "sf::Ftp::DirectoryResponse documentation") is a specialized [`sf::Ftp::Response`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Ftp_1_1Response.php "sf::Ftp::Response documentation") that also contains the requested directory.
+[`sf::Ftp::DirectoryResponse`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Ftp_1_1DirectoryResponse.php "sf::Ftp::DirectoryResponse documentation") is a specialized [`sf::Ftp::Response`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Ftp_1_1Response.php "sf::Ftp::Response documentation") that also contains the requested directory.
 
 Getting the list of directories and files contained in the current directory:
 
@@ -127,7 +127,7 @@ if (response.isOk())
 response = ftp.getDirectoryListing("subfolder");
 ```
 
-[`sf::Ftp::ListingResponse`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Ftp_1_1ListingResponse.php "sf::Ftp::ListingResponse documentation") is a specialized [`sf::Ftp::Response`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Ftp_1_1Response.php "sf::Ftp::Response documentation") that also contains the requested directory/file names.
+[`sf::Ftp::ListingResponse`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Ftp_1_1ListingResponse.php "sf::Ftp::ListingResponse documentation") is a specialized [`sf::Ftp::Response`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Ftp_1_1Response.php "sf::Ftp::Response documentation") that also contains the requested directory/file names.
 
 Changing the current directory:
 
@@ -187,7 +187,7 @@ ftp.keepAlive();
 
 ## Disconnecting from the FTP server
 
-You can close the connection with the server at any moment with the `disconnect` function.
+You can close the connection with the server at any moment with the `disconnect` function.
 
 ```cpp
 ftp.disconnect();

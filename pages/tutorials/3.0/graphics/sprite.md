@@ -19,9 +19,9 @@ Ok, that was short but if you really don't understand what sprites and textures 
 
 ## Loading a texture
 
-Before creating any sprite, we need a valid texture. The class that encapsulates textures in SFML is, surprisingly, [`sf::Texture`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Texture.php "sf::Texture documentation"). Since the only role of a texture is to be loaded and mapped to graphical entities, almost all its functions are about loading and updating it.
+Before creating any sprite, we need a valid texture. The class that encapsulates textures in SFML is, surprisingly, [`sf::Texture`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Texture.php "sf::Texture documentation"). Since the only role of a texture is to be loaded and mapped to graphical entities, almost all its functions are about loading and updating it.
 
-The most common way of loading a texture is from an image file on disk, which is done with the `loadFromFile` function.
+The most common way of loading a texture is from an image file on disk, which is done with the `loadFromFile` function.
 
 ```cpp
 sf::Texture texture;
@@ -31,9 +31,9 @@ if (!texture.loadFromFile("image.png"))
 }
 ```
 
-The `loadFromFile` function can sometimes fail with no obvious reason. First, check the error message that SFML prints to the standard output (check the console). If the message is unable to open file, make sure that the *working directory* (which is the directory that any file path will be interpreted relative to) is what you think it is: When you run the application from your desktop environment, the working directory is the executable folder. However, when you launch your program from your IDE (Visual Studio, Code::Blocks, ...) the working directory might sometimes be set to the *project* directory instead. This can usually be changed quite easily in the project settings.
+The `loadFromFile` function can sometimes fail with no obvious reason. First, check the error message that SFML prints to the standard output (check the console). If the message is unable to open file, make sure that the *working directory* (which is the directory that any file path will be interpreted relative to) is what you think it is: When you run the application from your desktop environment, the working directory is the executable folder. However, when you launch your program from your IDE (Visual Studio, Code::Blocks, ...) the working directory might sometimes be set to the *project* directory instead. This can usually be changed quite easily in the project settings.
 
-You can also load an image file from memory (`loadFromMemory`), from a [custom input stream](https://www.sfml-dev.org/tutorials/2.6/system-stream.php "Input streams tutorial") (`loadFromStream`), or from an image that has already been loaded (`loadFromImage`). The latter loads the texture from an [`sf::Image`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Image.php "sf::Image documentation"), which is a utility class that helps store and manipulate image data (modify pixels, create transparency channel, etc.). The pixels of an [`sf::Image`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Image.php "sf::Image documentation") stay in system memory, which ensures that operations on them will be as fast as possible, in contrast to the pixels of a texture which reside in video memory and are therefore slow to retrieve or update but very fast to draw.
+You can also load an image file from memory (`loadFromMemory`), from a [custom input stream](https://www.sfml-dev.org/tutorials/2.6/system-stream.php "Input streams tutorial") (`loadFromStream`), or from an image that has already been loaded (`loadFromImage`). The latter loads the texture from an [`sf::Image`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Image.php "sf::Image documentation"), which is a utility class that helps store and manipulate image data (modify pixels, create transparency channel, etc.). The pixels of an [`sf::Image`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Image.php "sf::Image documentation") stay in system memory, which ensures that operations on them will be as fast as possible, in contrast to the pixels of a texture which reside in video memory and are therefore slow to retrieve or update but very fast to draw.
 
 SFML supports most common image file formats. The full list is available in the API documentation.
 
@@ -47,7 +47,7 @@ if (!texture.loadFromFile("image.png", sf::IntRect(10, 10, 32, 32)))
 }
 ```
 
-The [`sf::IntRect`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Rect.php "sf::IntRect documentation") class is a simple utility type that represents a rectangle. Its constructor takes the coordinates of the top-left corner, and the size of the rectangle.
+The [`sf::IntRect`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Rect.php "sf::IntRect documentation") class is a simple utility type that represents a rectangle. Its constructor takes the coordinates of the top-left corner, and the size of the rectangle.
 
 If you don't want to load a texture from an image, but instead want to update it directly from an array of pixels, you can create it empty and update it later:
 
@@ -61,7 +61,7 @@ if (!texture.create(200, 200))
 
 Note that the contents of the texture are undefined at this point.
 
-To update the pixels of an existing texture, you have to use the `update` function. It has overloads for many kinds of data sources:
+To update the pixels of an existing texture, you have to use the `update` function. It has overloads for many kinds of data sources:
 
 ```cpp
 // update a texture from an array of pixels
@@ -153,19 +153,19 @@ sprite.setScale(sf::Vector2f(0.5f, 2.f)); // absolute scale factor
 sprite.scale(sf::Vector2f(1.5f, 3.f)); // factor relative to the current scale
 ```
 
-By default, the origin for these three transformations is the top-left corner of the sprite. If you want to set the origin to a different point (for example the center of the sprite, or another corner), you can use the `setOrigin` function.
+By default, the origin for these three transformations is the top-left corner of the sprite. If you want to set the origin to a different point (for example the center of the sprite, or another corner), you can use the `setOrigin` function.
 
 ```cpp
 sprite.setOrigin(sf::Vector2f(25.f, 25.f));
 ```
 
-Since transformation functions are common to all SFML entities, they are explained in a separate tutorial: [Transforming entities](https://www.sfml-dev.org/tutorials/2.6/graphics-transform.php "'Transforming entities' tutorial").
+Since transformation functions are common to all SFML entities, they are explained in a separate tutorial: [Transforming entities](https://www.sfml-dev.org/tutorials/2.6/graphics-transform.php "'Transforming entities' tutorial").
 
 ## The white square problem
 
 You successfully loaded a texture, constructed a sprite correctly, and... all you see on your screen now is a white square. What happened?
 
-This is a common mistake. When you set the texture of a sprite, all it does internally is store a *pointer* to the texture instance. Therefore, if the texture is destroyed or moves elsewhere in memory, the sprite ends up with an invalid texture pointer.
+This is a common mistake. When you set the texture of a sprite, all it does internally is store a *pointer* to the texture instance. Therefore, if the texture is destroyed or moves elsewhere in memory, the sprite ends up with an invalid texture pointer.
 
 This problem occurs when you write this kind of function:
 
@@ -185,15 +185,15 @@ You must correctly manage the lifetime of your textures and make sure that they 
 
 Using as few textures as possible is a good strategy, and the reason is simple: Changing the current texture is an expensive operation for the graphics card. Drawing many sprites that use the same texture will yield the best performance.
 
-Additionally, using a single texture allows you to group static geometry into a single entity (you can only use one texture per `draw` call), which will be much faster to draw than a set of many entities. Batching static geometry involves other classes and is therefore beyond the scope of this tutorial, for further details see the [vertex array](https://www.sfml-dev.org/tutorials/2.6/graphics-vertex-array.php "Vertex array tutorial") tutorial.
+Additionally, using a single texture allows you to group static geometry into a single entity (you can only use one texture per `draw` call), which will be much faster to draw than a set of many entities. Batching static geometry involves other classes and is therefore beyond the scope of this tutorial, for further details see the [vertex array](https://www.sfml-dev.org/tutorials/2.6/graphics-vertex-array.php "Vertex array tutorial") tutorial.
 
 Try to keep this in mind when you create your animation sheets or your tilesets: Use as little textures as possible.
 
 ## Using sf::Texture with OpenGL code
 
-If you're using OpenGL rather than the graphics entities of SFML, you can still use [`sf::Texture`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Texture.php "sf::Texture documentation") as a wrapper around an OpenGL texture object and use it along with the rest of your OpenGL code.
+If you're using OpenGL rather than the graphics entities of SFML, you can still use [`sf::Texture`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Texture.php "sf::Texture documentation") as a wrapper around an OpenGL texture object and use it along with the rest of your OpenGL code.
 
-To bind a [`sf::Texture`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Texture.php "sf::Texture documentation") for drawing (basically `glBindTexture`), you call the `bind` static function:
+To bind a [`sf::Texture`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Texture.php "sf::Texture documentation") for drawing (basically `glBindTexture`), you call the `bind` static function:
 
 ```cpp
 sf::Texture texture;
