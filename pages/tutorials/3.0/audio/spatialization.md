@@ -7,7 +7,7 @@
 
 ## Introduction
 
-By default, sounds and music are played at full volume in each speaker; they are not _spatialized_.
+By default, sounds and music are played at full volume in each speaker; they are not _spatialized_.
 
 If a sound is emitted by an entity which is to the right of the screen, you would probably want to hear it from the right speaker. If a music is being played behind the player, you would want to hear it from the rear speakers of your Dolby 5.1 sound system.
 
@@ -20,9 +20,9 @@ Spatialization is disabled for sounds with more channels, since they already exp
 
 ## The listener
 
-All the sounds and music in your audio environment will be heard by a single actor: the _listener_. What is output from your speakers is determined by what the listener hears.
+All the sounds and music in your audio environment will be heard by a single actor: the _listener_. What is output from your speakers is determined by what the listener hears.
 
-The class which defines the listener's properties is [`sf::Listener`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Listener.php "sf::Listener documentation"). Since the listener is unique in the environment, this class only contains static functions and is not meant to be instantiated.
+The class which defines the listener's properties is [`sf::Listener`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Listener.php "sf::Listener documentation"). Since the listener is unique in the environment, this class only contains static functions and is not meant to be instantiated.
 
 First, you can set the listener's position in the scene:
 
@@ -56,7 +56,7 @@ sf::Listener::setGlobalVolume(50.f);
 
 The value of the volume is in the range [0 .. 100], so setting it to 50 reduces it to half of the original volume.
 
-Of course, all these properties can be read with the corresponding `get` functions.
+Of course, all these properties can be read with the corresponding `get` functions.
 
 ## Audio sources
 
@@ -83,9 +83,9 @@ sound.setMinDistance(5.f);
 sound.setAttenuation(10.f);
 ```
 
-The _minimum distance_ is the distance under which the sound will be heard at its maximum volume. As an example, louder sounds such as explosions should have a higher minimum distance to ensure that they will be heard from far away. Please note that a minimum distance of 0 (the sound is inside the head of the listener!) would lead to an incorrect spatialization and result in a non-attenuated sound. 0 is an invalid value, never use it.
+The _minimum distance_ is the distance under which the sound will be heard at its maximum volume. As an example, louder sounds such as explosions should have a higher minimum distance to ensure that they will be heard from far away. Please note that a minimum distance of 0 (the sound is inside the head of the listener!) would lead to an incorrect spatialization and result in a non-attenuated sound. 0 is an invalid value, never use it.
 
-The _attenuation_ is a multiplicative factor. The greater the attenuation, the less it will be heard when the sound moves away from the listener. To get a non-attenuated sound, you can use 0. On the other hand, using a value like 100 will highly attenuate the sound, which means that it will be heard only if very close to the listener.
+The _attenuation_ is a multiplicative factor. The greater the attenuation, the less it will be heard when the sound moves away from the listener. To get a non-attenuated sound, you can use 0. On the other hand, using a value like 100 will highly attenuate the sound, which means that it will be heard only if very close to the listener.
 
 Here is the exact attenuation formula, in case you need accurate values:
 
