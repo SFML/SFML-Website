@@ -124,7 +124,7 @@ private:
         m_currentSample = static_cast<std::size_t>(timeOffset.asSeconds() * getSampleRate() * getChannelCount());
     }
 
-    std::vector<sf::Int16> m_samples;
+    std::vector<std::int16_t> m_samples;
     std::size_t m_currentSample;
 };
 

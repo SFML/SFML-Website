@@ -33,9 +33,9 @@ Similarly, a [`sf::Time`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1
 ```cpp
 sf::Time time = ...;
 
-sf::Int64 usec = time.asMicroseconds();
-sf::Int32 msec = time.asMilliseconds();
-float     sec  = time.asSeconds();
+std::int64_t usec = time.asMicroseconds();
+std::int32_t msec = time.asMilliseconds();
+float        sec  = time.asSeconds();
 ```
 
 Conversions with the C++ standard library's `std::chrono::duration` are supported in two ways.

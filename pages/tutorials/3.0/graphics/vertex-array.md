@@ -412,7 +412,7 @@ public:
 
             // update the alpha (transparency) of the particle according to its lifetime
             float ratio = p.lifetime.asSeconds() / m_lifetime.asSeconds();
-            m_vertices[i].color.a = static_cast<sf::Uint8>(ratio * 255);
+            m_vertices[i].color.a = static_cast<std::uint8_t>(ratio * 255);
         }
     }
 
