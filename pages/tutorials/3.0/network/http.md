@@ -7,7 +7,8 @@
 
 ## Introduction
 
-SFML provides a simple HTTP client class which you can use to communicate with HTTP servers. "Simple" means that it supports the most basic features of HTTP: POST, GET and HEAD request types, accessing HTTP header fields, and reading/writing the pages body.
+SFML provides a simple HTTP client class which you can use to communicate with HTTP servers.
+"Simple" means that it supports the most basic features of HTTP: POST, GET and HEAD request types, accessing HTTP header fields, and reading/writing the pages body.
 
 If you need more advanced features, such as secured HTTP (HTTPS) for example, you're better off using a true HTTP library, like libcurl or cpp-netlib.
 
@@ -27,9 +28,11 @@ http.setHost("http://www.some-server.org/");
 sf::Http http("http://www.some-server.org/");
 ```
 
-Note that setting the host doesn't trigger any connection. A temporary connection is created for each request.
+Note that setting the host doesn't trigger any connection.
+A temporary connection is created for each request.
 
-The only other function in [`sf::Http`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Http.php "sf::Http documentation"), sends requests. This is basically all that the class does.
+The only other function in [`sf::Http`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Http.php "sf::Http documentation"), sends requests.
+This is basically all that the class does.
 
 ```cpp
 sf::Http::Request request;
@@ -59,11 +62,13 @@ request.setBody("para1=value1&param2=value2");
 sf::Http::Response response = http.sendRequest(request);
 ```
 
-SFML automatically fills mandatory header fields, such as "Host", "Content-Length", etc. You can send your requests without worrying about them. SFML will do its best to make sure they are valid.
+SFML automatically fills mandatory header fields, such as "Host", "Content-Length", etc. You can send your requests without worrying about them.
+SFML will do its best to make sure they are valid.
 
 ## Responses
 
-If the [`sf::Http`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Http.php "sf::Http documentation") class could successfully connect to the host and send the request, a response is sent back and returned to the user, encapsulated in an instance of the [`sf::Http::Response`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Http_1_1Response.php "sf::Http::Response documentation") class. Responses contain the following members:
+If the [`sf::Http`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Http.php "sf::Http documentation") class could successfully connect to the host and send the request, a response is sent back and returned to the user, encapsulated in an instance of the [`sf::Http::Response`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Http_1_1Response.php "sf::Http::Response documentation") class.
+Responses contain the following members:
 
 - A status code which precisely indicates how the server processed the request (OK, redirected, not found, etc.)
 - The HTTP version of the server
@@ -91,7 +96,7 @@ Here is a short example that demonstrates how to perform a simple task: Sending 
 void sendScore(int score, const std::string& name)
 {
     // prepare the request
-    sf::Http::Request request("/send-score.php", sf::Http::Request::Post);
+    sf::Http::Request request("/send-score.php", sf::Http::Request::Method::Post);
 
     // encode the parameters in the request body
     std::ostringstream stream;
@@ -99,11 +104,11 @@ void sendScore(int score, const std::string& name)
     request.setBody(stream.str());
 
     // send the request
-    sf::Http http("http://www.myserver.com/");
+    sf::Http           http("http://www.myserver.com/");
     sf::Http::Response response = http.sendRequest(request);
 
     // check the status
-    if (response.getStatus() == sf::Http::Response::Ok)
+    if (response.getStatus() == sf::Http::Response::Status::Ok)
     {
         // check the contents of the response
         std::cout << response.getBody() << std::endl;
@@ -115,7 +120,10 @@ void sendScore(int score, const std::string& name)
 }
 ```
 
-Of course, this is a very simple way to handle online scores. There's no protection: Anybody could easily send a false score. A more robust approach would probably involve an extra parameter, like a hash code that ensures that the request was sent by the program. That is beyond the scope of this tutorial.
+Of course, this is a very simple way to handle online scores.
+There's no protection: Anybody could easily send a false score.
+A more robust approach would probably involve an extra parameter, like a hash code that ensures that the request was sent by the program.
+That is beyond the scope of this tutorial.
 
 And finally, here is a very simple example of what the PHP page on server might look like.
 
