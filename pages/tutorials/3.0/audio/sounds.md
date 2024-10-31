@@ -43,7 +43,7 @@ SFML supports the audio file formats WAV, OGG/Vorbis and FLAC. MP3 is supported 
 You can also load a sound buffer directly from an array of samples, in the case they originate from another source:
 
 ```cpp
-std::vector<sf::Int16> samples = ...;
+std::vector<std::int16_t> samples = ...;
 buffer.loadFromSamples(&samples[0], samples.size(), 2, 44100);
 ```
 

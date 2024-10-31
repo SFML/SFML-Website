@@ -56,7 +56,7 @@ With the recorded data, you can then:
 - Access the raw audio data and analyze it, transform it, etc.
     
     ```cpp
-    const sf::Int16* samples = buffer.getSamples();
+    const std::int16_t* samples = buffer.getSamples();
     std::size_t count = buffer.getSampleCount();
     doSomething(samples, count);
     ```
@@ -118,7 +118,7 @@ class MyRecorder : public sf::SoundRecorder
         return true;
     }
 
-    virtual bool onProcessSamples(const sf::Int16* samples, std::size_t sampleCount)
+    virtual bool onProcessSamples(const std::int16_t* samples, std::size_t sampleCount)
     {
         // do something useful with the new chunk of samples
         ...
