@@ -20,7 +20,7 @@ You may of course face other problems with network programming, but these are th
 
 ## Fixed-size primitive types
 
-Since primitive types cannot be exchanged reliably on a network, the solution is simple: don't use them. The C++ standard header `<cstdint>` provides fixed-size types for data exchange: `std::int8_t, std::uint16_t, std::int32_t`, etc. These types are just typedefs to primitive types, but they are mapped to the type which has the expected size according to the platform. So they can (and must!) be used safely when you want to exchange data between two computers.
+Since primitive types cannot be exchanged reliably on a network, the solution is simple: don't use them. The C++ standard header `<cstdint>` provides fixed-size types for data exchange: `std::int8_t, std::uint16_t, std::int32_t`, etc. These types can (and must!) be used safely when you want to exchange data between two computers.
 
 SFML only provides fixed-size *integer* types. Floating-point types should normally have their fixed-size equivalent too, but in practice this is not needed (at least on platforms where SFML runs), `float` and `double` types always have the same size, 32 bits and 64 bits respectively.
 
