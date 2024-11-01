@@ -11,7 +11,7 @@ Before drawing any text, you need to have an available font, just like any other
 Fonts are encapsulated in the [`sf::Font`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Font.php "sf::Font documentation") class, which provides three main features: loading a font, getting glyphs (i.e. visual characters) from it, and reading its attributes.
 In a typical program, you'll only have to make use of the first feature, loading the font, so let's focus on that first.
 
-The most common way of loading a font is from a file on disk, which is done with the `loadFromFile` function or its corresponding constructor.
+The most common way of loading a font is from a file on disk, which is done with the `openFromFile` function or its corresponding constructor.
 
 ```cpp
 sf::Font font("arial.ttf"); // Throws sf::Exception if an error occurs
@@ -19,23 +19,23 @@ sf::Font font("arial.ttf"); // Throws sf::Exception if an error occurs
 // OR
 
 sf::Font font;
-if (!font.loadFromFile("arial.ttf"))
+if (!font.openFromFile("arial.ttf"))
 {
     // error...
 }
 ```
 
-Note that SFML won't load your system fonts automatically, i.e. `font.loadFromFile("Courier New")` won't work.
+Note that SFML won't load your system fonts automatically, i.e. `font.openFromFile("Courier New")` won't work.
 Firstly, because SFML requires _file names_, not font names, and secondly because SFML doesn't have magical access to your system's font folder.
 If you want to load a font, you will need to include the font file with your application just like every other resource (images, sounds, ...).
 
-The `loadFromFile` function or the corresponding constructor can sometimes fail with no obvious reason.
+The `openFromFile` function or the corresponding constructor can sometimes fail with no obvious reason.
 First, check the error message that SFML prints to the standard output (check the console).
 If the message is unable to open file, make sure that the _working directory_ (which is the directory that any file path will be interpreted relative to) is what you think it is: When you run the application from your desktop environment, the working directory is the executable folder.
 However, when you launch your program from your IDE (Visual Studio, Code::Blocks, ...) the working directory might sometimes be set to the _project_ directory instead.
 This can usually be changed quite easily in the project settings.
 
-You can also load a font file from memory (`loadFromMemory`), or from a [custom input stream](https://www.sfml-dev.org/tutorials/2.6/system-stream.php "Input streams tutorial") (`loadFromStream`).
+You can also load a font file from memory (`openFromFile`), or from a [custom input stream](https://www.sfml-dev.org/tutorials/2.6/system-stream.php "Input streams tutorial") (`openFromStream`).
 Corresponding constructors exist with the same parameters that throw an exception upon failure.
 
 SFML supports most common font formats.
