@@ -5,6 +5,10 @@
 This tutorial is the first one you should read if you're using SFML on Linux.
 It will explain how to install SFML, and compile projects that use it.
 
+!!! note
+
+    The [CMake template](cmake.md) is the recommended way to get started with SFML.
+
 ## Installing SFML
 
 There are different approaches to the installation of SFML on Linux:

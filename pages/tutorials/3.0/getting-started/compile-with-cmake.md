@@ -16,6 +16,10 @@ You can read more about CMake on its [official website](https://www.cmake.org/ "
 
 As you might expect, this tutorial is divided into two main sections: Generating the build configuration with CMake, and building SFML with your toolchain using that build configuration.
 
+!!! note
+
+    The [CMake template](cmake.md) is the recommended way to get started with SFML.
+
 ## Installing dependencies
 
 SFML depends on a few other libraries, so before starting to configure you must have their development files installed.

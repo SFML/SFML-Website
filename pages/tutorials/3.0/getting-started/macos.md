@@ -9,6 +9,10 @@ More importantly, it will also show you how to make your applications ready "out
 You will see several external links in this document.
 They are meant for further reading on specific topics for those who are curious; reading them isn't necessary to follow this tutorial.
 
+!!! note
+
+    The [CMake template](cmake.md) is the recommended way to get started with SFML.
+
 ### System requirements
 
 All you need to create an SFML application is:
