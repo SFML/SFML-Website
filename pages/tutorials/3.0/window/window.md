@@ -179,7 +179,7 @@ The solution to this problem is to activate *vertical synchronization*.
 It is automatically handled by the graphics card, and can easily be switched on and off with the `setVerticalSyncEnabled` function:
 
 ```cpp
-window.setVerticalSyncEnabled(true); // call it once, after creating the window
+window.setVerticalSyncEnabled(true); // call it once after creating the window
 ```
 
 After this call, your application will run at the same frequency as the monitor's refresh rate.
@@ -191,7 +191,7 @@ In other situations, you may also want your application to run at a given framer
 This can be done by calling `setFramerateLimit`:
 
 ```cpp
-window.setFramerateLimit(60); // call it once, after creating the window
+window.setFramerateLimit(60); // call it once after creating the window
 ```
 
 Unlike `setVerticalSyncEnabled`, this feature is implemented by SFML itself, using a combination of [`sf::Clock`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Clock.php "sf::Clock documentation") and `sf::sleep`.
