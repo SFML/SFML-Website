@@ -67,7 +67,7 @@ shape.setTextureRect(sf::IntRect({10, 10}, {100, 100}));
 
 Note that the outline is not textured.  
 It is important to know that the texture is modulated (multiplied) with the shape's fill color.
-If its fill color is sf::Color::White, the texture will appear unmodified.  
+If its fill color is `sf::Color::White`, the texture will appear unmodified.  
 To disable texturing, call `setTexture(nullptr)`.
 
 ## Drawing a shape
