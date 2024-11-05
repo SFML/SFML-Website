@@ -9,10 +9,6 @@ It will explain how to configure your SFML projects.
 
 First, you must download the SFML SDK from the [download page](https://www.sfml-dev.org/download.php "Go to the download page").
 
-You must download the package that matches your version of Visual C++.
-Indeed, a library compiled with VC++ 10 (Visual Studio 2010) won't be compatible with VC++ 12 (Visual Studio 2013) for example.
-If there's no SFML package compiled for your version of Visual C++, you will have to [build SFML yourself](https://www.sfml-dev.org/tutorials/2.6/compile-with-cmake.php "How to compile SFML").
-
 You can then unpack the SFML archive wherever you like.
 Copying headers and libraries to your installation of Visual Studio is not recommended, it's better to keep libraries in their own separate location, especially if you intend to use several versions of the same library, or several compilers.
 
