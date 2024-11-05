@@ -119,7 +119,8 @@ int main()
 }
 ```
 
-Compile it, and if you linked to the dynamic version of SFML, don't forget to copy the SFML DLLs (they are in *<sfml-install-path/bin>*) to the directory where your compiled executable is.
+Compile it, and if you linked to the dynamic version of SFML, don't forget to copy the SFML DLLs to same directory as your compiled executable.
+They are in the bin/ directory of your SFML installation.
 Run it, and if everything works you should see this:
 
 ![Screenshot of the Hello SFML application](https://www.sfml-dev.org/tutorials/2.6/images/start-cb-app.png "Screenshot of the Hello SFML application")

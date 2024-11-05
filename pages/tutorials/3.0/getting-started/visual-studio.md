@@ -107,7 +107,8 @@ int main()
 If you chose to create a "Windows application" project, the entry point of your code has to be set to "WinMain" instead of "main".
 Since it's Windows specific, and your code would therefore not compile on Linux or macOS, SFML provides a way to keep a standard "main" entry point in this case: link your project to the sfml-main module ("sfml-main-d.lib" in Debug, "sfml-main.lib" in Release), the same way you linked sfml-graphics, sfml-window and sfml-system.
 
-Now compile the project, and if you linked to the dynamic version of SFML, don't forget to copy the SFML DLLs (they are in *<sfml-install-path/bin>*) to the directory where your compiled executable is.
+Compile it, and if you linked to the dynamic version of SFML, don't forget to copy the SFML DLLs to same directory as your compiled executable.
+They are in the bin/ directory of your SFML installation.
 Run it, and if everything works you should see this:
 
 ![Screenshot of the Hello SFML application](https://www.sfml-dev.org/tutorials/2.6/images/start-vc-app.png "Screenshot of the Hello SFML application")
