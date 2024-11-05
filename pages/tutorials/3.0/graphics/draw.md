@@ -74,10 +74,10 @@ SFML provides four kinds of drawable entities: three of them are ready to be use
 
 Although they share some common properties, each of these entities come with their own nuances and are therefore explained in dedicated tutorials:
 
-- [Sprite tutorial](https://www.sfml-dev.org/tutorials/2.6/graphics-sprite.php "Learn how to create and draw sprites")
-- [Text tutorial](https://www.sfml-dev.org/tutorials/2.6/graphics-text.php "Learn how to create and draw text")
-- [Shape tutorial](https://www.sfml-dev.org/tutorials/2.6/graphics-shape.php "Learn how to create and draw shapes")
-- [Vertex array tutorial](https://www.sfml-dev.org/tutorials/2.6/graphics-vertex-array.php "Learn how to create and draw vertex arrays")
+- [Sprite tutorial](sprite.md "Learn how to create and draw sprites")
+- [Text tutorial](text.md "Learn how to create and draw text")
+- [Shape tutorial](shape.md "Learn how to create and draw shapes")
+- [Vertex array tutorial](vertex-array.md "Learn how to create and draw vertex arrays")
 
 ## Off-screen drawing
 
@@ -153,4 +153,4 @@ int main()
 As you can see, you don't even need to bother with the activation of the window in the rendering thread, SFML does it automatically for you whenever it needs to be done.
 
 Remember to always create the window and handle its events in the main thread for maximum portability.
-This is explained in the [window tutorial](https://www.sfml-dev.org/tutorials/2.6/window-window.php "Window tutorial").
+This is explained in the [window tutorial](../window/window.md "Window tutorial").

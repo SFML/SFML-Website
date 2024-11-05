@@ -207,7 +207,7 @@ states.transform = transform;
 window.draw(vertices, states);
 ```
 
-To know more about transformations and the [`sf::Transform`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Transform.php "sf::Transform documentation") class, you can read the tutorial on [transforming entities](https://www.sfml-dev.org/tutorials/2.6/graphics-transform.php "Transforming entities tutorial").
+To know more about transformations and the [`sf::Transform`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Transform.php "sf::Transform documentation") class, you can read the tutorial on [transforming entities](transform.md "Transforming entities tutorial").
 
 ## Creating an SFML-like entity
 
@@ -235,7 +235,7 @@ This also means that if you plan on storing an array of drawable objects, you ca
 
 The other base class, [`sf::Transformable`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Transformable.php "sf::Transformable documentation"), has no virtual function.
 Inheriting from it automatically adds the same transformation functions to your class as other SFML classes (`setPosition`, `setRotation`, `move`, `scale`, ...).
-You can learn more about this class in the tutorial on [transforming entities](https://www.sfml-dev.org/tutorials/2.6/graphics-transform.php "Transforming entities tutorial").
+You can learn more about this class in the tutorial on [transforming entities](transform.md "Transforming entities tutorial").
 
 Using these two base classes and a vertex array (in this example we'll also add a texture), here is what a typical SFML-like graphical class would look like:
 

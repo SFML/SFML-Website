@@ -31,7 +31,7 @@ If the message is unable to open file, make sure that the *working directory* (w
 However, when you launch your program from your IDE (Visual Studio, Code::Blocks, ...) the working directory might sometimes be set to the *project* directory instead.
 This can usually be changed quite easily in the project settings.
 
-You can also load an image file from memory (`loadFromMemory`), from a [custom input stream](https://www.sfml-dev.org/tutorials/2.6/system-stream.php "Input streams tutorial") (`loadFromStream`), or from an image that has already been loaded (`loadFromImage`).
+You can also load an image file from memory (`loadFromMemory`), from a [custom input stream](../system/stream.md "Input streams tutorial") (`loadFromStream`), or from an image that has already been loaded (`loadFromImage`).
 Corresponding constructors exist with the same parameters that throw an exception upon failure.
 `loadFromImage` loads the texture from an [`sf::Image`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Image.php "sf::Image documentation"), which is a utility class that helps store and manipulate image data (modify pixels, create transparency channel, etc.).
 The pixels of an [`sf::Image`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Image.php "sf::Image documentation") stay in system memory, which ensures that operations on them will be as fast as possible, in contrast to the pixels of a texture which reside in video memory and are therefore slow to retrieve or update but very fast to draw.
@@ -181,7 +181,7 @@ If you want to set the origin to a different point (for example the center of th
 sprite.setOrigin({25.f, 25.f});
 ```
 
-Since transformation functions are common to all SFML entities, they are explained in a separate tutorial: [Transforming entities](https://www.sfml-dev.org/tutorials/2.6/graphics-transform.php "'Transforming entities' tutorial").
+Since transformation functions are common to all SFML entities, they are explained in a separate tutorial: [Transforming entities](transform.md "'Transforming entities' tutorial").
 
 ## The white square problem
 
@@ -213,7 +213,7 @@ Drawing many sprites that use the same texture will yield the best performance.
 
 Additionally, using a single texture allows you to group static geometry into a single entity (you can only use one texture per `draw` call), which will be much faster to draw than a set of many entities.
 Batching static geometry involves other classes and is therefore beyond the scope of this tutorial.
-For further details see the [vertex array](https://www.sfml-dev.org/tutorials/2.6/graphics-vertex-array.php "Vertex array tutorial") tutorial.
+For further details see the [vertex array](vertex-array.md "Vertex array tutorial") tutorial.
 
 Try to keep this in mind when you create your animation sheets or your tilesets: Use as few textures as possible.
 

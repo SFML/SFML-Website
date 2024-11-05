@@ -40,7 +40,7 @@ int main()
 }
 ```
 
-As with everything else, you can also load an audio file from memory (`loadFromMemory`) or from a [custom input stream](https://www.sfml-dev.org/tutorials/2.6/system-stream.php "Input streams tutorial") (`loadFromStream`) along with corresponding constructors that throw if an error occurs.
+As with everything else, you can also load an audio file from memory (`loadFromMemory`) or from a [custom input stream](../system/stream.md "Input streams tutorial") (`loadFromStream`) along with corresponding constructors that throw if an error occurs.
 
 SFML supports the audio file formats WAV, OGG/Vorbis and FLAC.
 MP3 is supported for decoding but not encoding.
@@ -162,7 +162,7 @@ If not set to loop, it will stop automatically when it's finished.
 sound.setLoop(true);
 ```
 
-More attributes are available, but they are related to spatialization and are explained in the [corresponding tutorial](https://www.sfml-dev.org/tutorials/2.6/audio-spatialization.php "Spatialization tutorial").
+More attributes are available, but they are related to spatialization and are explained in the [corresponding tutorial](spatialization.md "Spatialization tutorial").
 
 ## Common mistakes
 

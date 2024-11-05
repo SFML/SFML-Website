@@ -129,7 +129,7 @@ UDP sockets that send data don't need to do anything before sending.
 Sending and receiving data is done in the same way for both types of sockets.
 The only difference is that UDP has two extra arguments: the address and port of the sender/recipient.
 There are two different functions for each operation: the low-level one, that sends/receives a raw array of bytes, and the higher-level one, which uses the [`sf::Packet`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Packet.php "sf::Packet documentation") class.
-See the [tutorial on packets](https://www.sfml-dev.org/tutorials/2.6/network-packet.php "Tutorial on packets") for more details about this class.
+See the [tutorial on packets](packet.md "Tutorial on packets") for more details about this class.
 In this tutorial, we'll only explain the low-level functions.
 
 To send data, you must call the `send` function with a pointer to the data that you want to send, and the number of bytes to send.
@@ -155,7 +155,7 @@ if (socket.send(data.data(), data.size(), recipient, port) != sf::Socket::Status
 The `send` functions take a `void*` pointer, so you can pass the address of anything.
 However, it is generally a bad idea to send something other than an array of bytes because native types with a size larger than 1 byte are not guaranteed to be the same on every machine: Types such as int or long may have a different size, and/or a different endianness.
 Therefore, such types cannot be exchanged reliably across different systems.
-This problem is explained (and solved) in the [tutorial on packets](https://www.sfml-dev.org/tutorials/2.6/network-packet.php "Tutorial on packets").
+This problem is explained (and solved) in the [tutorial on packets](packet.md "Tutorial on packets").
 
 With UDP you can broadcast a message to an entire sub-network in a single call: to do so you can use the special address `sf::IpAddress::Broadcast`.
 
@@ -193,7 +193,7 @@ With UDP sockets, the last two arguments will contain the address and port of th
 They can be used later if you want to send a response.
 
 These functions are low-level, and you should use them only if you have a very good reason to do so.
-A more robust and flexible approach involves using [packets](https://www.sfml-dev.org/tutorials/2.6/network-packet.php "Tutorial on packets").
+A more robust and flexible approach involves using [packets](packet.md "Tutorial on packets").
 
 ## Blocking on a group of sockets
 

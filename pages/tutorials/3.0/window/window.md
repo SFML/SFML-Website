@@ -47,7 +47,7 @@ The fourth argument defines the window states which lets you pick between a floa
 | `sf::State::Windowed`   | Floating window   |
 | `sf::State::Fullscreen` | Fullscreen window |
 
-There's also a fifth optional argument, which defines OpenGL specific options which are explained in the [dedicated OpenGL tutorial](https://www.sfml-dev.org/tutorials/2.6/window-opengl.php "OpenGL tutorial").
+There's also a fifth optional argument, which defines OpenGL specific options which are explained in the [dedicated OpenGL tutorial](opengl.md "OpenGL tutorial").
 
 If you want to create the window *after* the construction of the [`sf::Window`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Window.php "sf::Window documentation") instance, or re-create it with a different video mode or title, you can use the `create` function instead.
 It takes the exact same arguments as the constructor.
@@ -119,7 +119,7 @@ As stated in the introduction, this is not the job of the sfml-window module, an
 
 To draw stuff, you can also use OpenGL directly and totally ignore the sfml-graphics module.
 [`sf::Window`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Window.php "sf::Window documentation") internally creates an OpenGL context and is ready to accept your OpenGL calls.
-You can learn more about that in the [corresponding tutorial](https://www.sfml-dev.org/tutorials/2.6/window-opengl.php "OpenGL tutorial").
+You can learn more about that in the [corresponding tutorial](opengl.md "OpenGL tutorial").
 
 Don't expect to see something interesting in this window: you may see a uniform color (black or white), or the last contents of the previous application that used OpenGL, or... something else.
 

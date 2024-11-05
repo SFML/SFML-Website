@@ -71,7 +71,7 @@ If your stream uses data that may be accessed _concurrently_ in both the caller 
 ## Using your audio stream
 
 Now that you have defined your own audio stream class, let's see how to use it.
-In fact, things are very similar to what's shown in the [tutorial about sf::Music](https://www.sfml-dev.org/tutorials/2.6/audio-sounds.php "Playing sounds and musics").
+In fact, things are very similar to what's shown in the [tutorial about `sf::Music`](sounds.md "Playing sounds and musics").
 You can control playback with the `play`, `pause`, `stop` and `setPlayingOffset` functions.
 You can also play with the sound's properties, such as the volume or the pitch.
 You can refer to the API documentation or to the other audio tutorials for more details.

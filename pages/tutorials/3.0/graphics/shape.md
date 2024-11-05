@@ -10,7 +10,7 @@ Each class then adds its own specifics: a radius property for the circle class, 
 
 ### Transformation (position, rotation, scale)
 
-These properties are common to all the SFML graphical classes, so they are explained in a separate tutorial: [Transforming entities](https://www.sfml-dev.org/tutorials/2.6/graphics-transform.php "'Transforming entities' tutorial").
+These properties are common to all the SFML graphical classes, so they are explained in a separate tutorial: [Transforming entities](transform.md "'Transforming entities' tutorial").
 
 ### Color
 
@@ -199,7 +199,7 @@ window.draw(line.data(), line.size(), sf::Lines);
 
 ![A line shape drawn as a primitive](https://www.sfml-dev.org/tutorials/2.6/images/graphics-shape-line-primitive.png)
 
-To learn more about vertices and primitives, you can read the tutorial on [vertex arrays](https://www.sfml-dev.org/tutorials/2.6/graphics-vertex-array.php "'Vertex arrays' tutorial").
+To learn more about vertices and primitives, you can read the tutorial on [vertex arrays](vertex-array.md "'Vertex arrays' tutorial").
 
 ## Custom shape types
 
