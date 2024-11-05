@@ -171,5 +171,3 @@ Since recording is done in a separate thread, it is important to know what exact
 However, `onProcessSample` and `onStop` will always be called from the internal recording thread that SFML creates.
 
 If your recorder uses data that may be accessed _concurrently_ in both the caller thread and in the recording thread, you have to protect it (with a mutex for example) in order to avoid concurrent access, which may cause undefined behavior -- corrupt data being recorded, crashes, etc.
-
-If you're not familiar enough with threading, you can refer to the [corresponding tutorial](https://www.sfml-dev.org/tutorials/2.6/system-thread.php "Threading tutorial") for more information.
