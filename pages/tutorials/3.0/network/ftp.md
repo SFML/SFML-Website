@@ -8,7 +8,8 @@ FTP (_File Transfer Protocol_) is a simple protocol that allows manipulation of 
 The protocol consists of commands such as "create directory", "delete file", "download file", etc.
 You can't send FTP commands to any remote computer, it needs to have an FTP server running which can understand and execute the commands that clients send.
 
-So what can you do with FTP, and how can it be helpful to your program? Basically, with FTP you can access existing remote file systems, or even create your own.
+So what can you do with FTP, and how can it be helpful to your program?
+Basically, with FTP you can access existing remote file systems, or even create your own.
 This can be useful if you want your network game to download resources (maps, images, ...) from a server, or your program to update itself automatically when it's connected to the internet.
 
 If you want to know more about the FTP protocol, the [Wikipedia article](http://en.wikipedia.org/wiki/File_Transfer_Protocol "FTP on wikipedia") provides more detailed information than this short introduction.

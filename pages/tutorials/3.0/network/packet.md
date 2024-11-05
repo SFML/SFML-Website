@@ -95,7 +95,8 @@ Note that this applies to TCP only, UDP is fine since the protocol itself preser
 
 ## Extending packets to handle user types
 
-Packets have overloads of their operators for all the primitive types and the most common standard types, but what about your own classes? As with standard streams, you can make a type "compatible" with [`sf::Packet`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Packet.php "sf::Packet documentation") by providing an overload of the `<<` and `>>` operators.
+Packets have overloads of their operators for all the primitive types and the most common standard types, but what about your own classes?
+As with standard streams, you can make a type "compatible" with [`sf::Packet`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Packet.php "sf::Packet documentation") by providing an overload of the `<<` and `>>` operators.
 
 ```cpp
 struct Character
@@ -129,7 +130,8 @@ packet >> bob;
 
 ## Custom packets
 
-Packets provide nice features on top of your raw data, but what if you want to add your own features such as automatically compressing or encrypting the data? This can easily be done by deriving from [`sf::Packet`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Packet.php "sf::Packet documentation") and overriding the following functions:
+Packets provide nice features on top of your raw data, but what if you want to add your own features such as automatically compressing or encrypting the data?
+This can easily be done by deriving from [`sf::Packet`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Packet.php "sf::Packet documentation") and overriding the following functions:
 
 - `onSend`: called before the data is sent by the socket
 - `onReceive`: called after the data has been received by the socket

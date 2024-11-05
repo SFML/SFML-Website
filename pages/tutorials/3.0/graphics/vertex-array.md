@@ -211,7 +211,8 @@ To know more about transformations and the [`sf::Transform`](https://www.sfml-de
 
 ## Creating an SFML-like entity
 
-Now that you know how to define your own textured/colored/transformed entity, wouldn't it be nice to wrap it in an SFML-style class? Fortunately, SFML makes this easy for you by providing the [`sf::Drawable`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Drawable.php "sf::Drawable documentation") and [`sf::Transformable`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Transformable.php "sf::Transformable documentation") base classes.
+Now that you know how to define your own textured/colored/transformed entity, wouldn't it be nice to wrap it in an SFML-style class?
+Fortunately, SFML makes this easy for you by providing the [`sf::Drawable`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Drawable.php "sf::Drawable documentation") and [`sf::Transformable`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Transformable.php "sf::Transformable documentation") base classes.
 These two classes are the base of the built-in SFML entities [`sf::Sprite`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Sprite.php "sf::Sprite documentation"), [`sf::Text`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Text.php "sf::Text documentation") and [`sf::Shape`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Shape.php "sf::Shape documentation").
 
 [`sf::Drawable`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Drawable.php "sf::Drawable documentation") is an interface: It declares a single pure virtual function and has no members nor concrete functions.

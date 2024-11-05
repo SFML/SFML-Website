@@ -171,7 +171,8 @@ t.translate({-10.f, 50.f});
 t.scale({0.5f, 0.75f});
 ```
 
-Back to the point: How can a custom transform be applied to a graphical entity? Simple: Pass it to the draw function.
+Back to the point: How can a custom transform be applied to a graphical entity?
+Simple: Pass it to the draw function.
 
 ```cpp
 window.draw(entity, transform);
