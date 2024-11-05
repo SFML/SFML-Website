@@ -39,7 +39,7 @@ Conversions with the C++ standard library's `std::chrono::duration` are supporte
 1. An implicit conversion operator to any `std::chrono::duration` specialization.
 
 ```cpp
-sf::Time time = std::chrono::milliseconds(100); // (1) Implicitly constructos from std::chrono::milliseconds
+sf::Time time = std::chrono::milliseconds(100); // (1) Implicitly constructs from std::chrono::milliseconds
 std::this_thread::sleep_for(time); // (2) Implicitly converts to std::chrono::nanoseconds
 ```
 
