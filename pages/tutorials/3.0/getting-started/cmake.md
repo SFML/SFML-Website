@@ -61,7 +61,8 @@ Without Git, CMake will fail in an unintuitive way.
 
 ## Configure and Build Your Project
 
-Now that you've made any changes you wanted to the build script, we're ready to build! CMake is by far the most popular C++ build system so any IDE you may use will have support for CMake projects.
+Now that you've made any changes you wanted to the build script, we're ready to build!
+CMake is by far the most popular C++ build system so any IDE you may use will have support for CMake projects.
 Below are some links to the documentation for setting up CMake projects with a few different popular IDEs.
 
 - [VS Code](https://code.visualstudio.com/docs/cpp/cmake-linux "VS Code CMake project documentation")
