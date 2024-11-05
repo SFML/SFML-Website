@@ -37,7 +37,7 @@ Floating point types should normally have their fixed-size equivalent too, but i
 The two other problems (endianness and message boundaries) are solved by using a specific class to pack your data: [`sf::Packet`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Packet.php "sf::Packet documentation").
 As a bonus, it provides a much nicer interface than plain old byte arrays.
 
-Packets have a programming interface similar to standard streams: you can insert data with the << operator, and extract data with the >> operator.
+Packets have a programming interface similar to standard streams: you can insert data with `operator<<` and extract data with the `operator>>`.
 
 ```cpp
 // on sending side
@@ -95,7 +95,7 @@ Note that this applies to TCP only, UDP is fine since the protocol itself preser
 
 ## Extending packets to handle user types
 
-Packets have overloads of their operators for all the primitive types and the most common standard types, but what about your own classes? As with standard streams, you can make a type "compatible" with [`sf::Packet`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Packet.php "sf::Packet documentation") by providing an overload of the << and >> operators.
+Packets have overloads of their operators for all the primitive types and the most common standard types, but what about your own classes? As with standard streams, you can make a type "compatible" with [`sf::Packet`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Packet.php "sf::Packet documentation") by providing an overload of the `<<` and `>>` operators.
 
 ```cpp
 struct Character
