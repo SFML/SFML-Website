@@ -3,8 +3,8 @@
 ## Introduction
 
 SFML has several resource classes: images, fonts, sounds, etc.
-In most programs, these resources will be loaded from files, with the help of their `{load|open}FromFile` function or corresponding constructor.
-In a few other situations, resources will be packed directly into the executable or in a big data file, and loaded from memory with `{load|open}FromMemory`.
+In most programs, these resources will be loaded from files with the help of their `{load|open}FromFile` function or corresponding constructor.
+In a few other situations, resources will be packed directly into the executable or in a big data file and loaded from memory with `{load|open}FromMemory`.
 These functions cover _almost_ all the possible use cases -- but not all.
 
 Sometimes you want to load files from unusual places, such as a compressed/encrypted archive, or a remote network location for example.
@@ -16,12 +16,14 @@ In this tutorial you'll learn how to write and use your own derived input stream
 ## And standard streams?
 
 Like many other languages, C++ already has a class for input data streams: `std::istream`.
-In fact it has two: `std::istream` is only the front-end, the abstract interface to the custom data is `std::streambuf`.
+In fact it has two.
+`std::istream` is only the front-end.
+The abstract interface to the custom data is `std::streambuf`.
 
-Unfortunately, these classes are not very user friendly, and can become very complicated if you want to implement non-trivial stuff.
+Unfortunately, these classes are not very user friendly and can become very complicated if you want to implement non-trivial stuff.
 The [Boost.Iostreams](http://www.boost.org/doc/libs/1_49_0/libs/iostreams/doc/index.html "Boost.Iostreams") library tries to provide a simpler interface to standard streams, but Boost is a big dependency and SFML cannot depend on it.
 
-That's why SFML provides its own stream interface, which is hopefully a lot more _simple and fast_.
+That's why SFML provides its own stream interface which is hopefully a lot more _simple and fast_.
 
 ## InputStream
 
@@ -81,7 +83,7 @@ And if you write a new one and feel like it could be useful to other people as w
 
 ## Common mistakes
 
-Some resource classes are not loaded completely after `loadFromStream` has been called.
+Some resource classes are not loaded completely after `openFromStream` has been called.
 Instead, they continue to read from their data source as long as they are used.
 This is the case for [`sf::Music`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Music.php "sf::Music documentation"), which streams audio samples as they are played, and for [`sf::Font`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Font.php "sf::Font documentation"), which loads glyphs on the fly depending on the text that is displayed.
 
