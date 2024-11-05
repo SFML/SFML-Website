@@ -63,10 +63,10 @@ sf::Vector2i localPosition = sf::Mouse::getPosition(window); // window is a sf::
 
 ```cpp
 // set the mouse position globally (relative to the desktop)
-sf::Mouse::setPosition(sf::Vector2i(10, 50));
+sf::Mouse::setPosition({10, 50});
 
 // set the mouse position locally (relative to a window)
-sf::Mouse::setPosition(sf::Vector2i(10, 50), window); // window is a sf::Window
+sf::Mouse::setPosition({10, 50}, window); // window is a sf::Window
 ```
 
 There is no function for reading the current state of the mouse wheel.
