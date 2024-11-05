@@ -5,6 +5,10 @@
 This tutorial is the first one you should read if you're using SFML with the Visual Studio IDE (Visual C++ compiler).
 It will explain how to configure your SFML projects.
 
+!!! note
+
+    The [CMake template](cmake.md) is the recommended way to get started with SFML.
+
 ## Installing SFML
 
 First, you must download the SFML SDK from the [download page](https://www.sfml-dev.org/download.php "Go to the download page").

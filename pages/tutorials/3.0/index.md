@@ -2,7 +2,7 @@
 
 ## Getting started
 
-- [SFML with the CMake Project Template](getting-started/cmake.md)
+- [SFML with the CMake Project Template](getting-started/cmake.md) (Recommended)
 - [SFML and Visual Studio](getting-started/visual-studio.md)
 - [SFML and Code::Blocks (MinGW)](getting-started/code-blocks.md)
 - [SFML and Linux](getting-started/linux.md)
