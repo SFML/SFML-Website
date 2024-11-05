@@ -460,11 +460,15 @@ private:
 
     void resetParticle(std::size_t index)
     {
+        // create random number generator
+        static std::random_device rd;
+        static std::mt19937       rng(rd());
+
         // give a random velocity and lifetime to the particle
-        const sf::Angle angle       = sf::degrees(std::rand() % 360);
-        const float     speed       = (std::rand() % 50) + 50.f;
+        const sf::Angle angle       = sf::degrees(std::uniform_real_distribution(0.f, 360.f)(rng));
+        const float     speed       = std::uniform_real_distribution(50.f, 100.f)(rng);
         m_particles[index].velocity = sf::Vector2f(speed, angle);
-        m_particles[index].lifetime = sf::milliseconds((std::rand() % 2000) + 1000);
+        m_particles[index].lifetime = sf::milliseconds(std::uniform_int_distribution(1000, 3000)(rng));
 
         // reset the position of the corresponding vertex
         m_vertices[index].position = m_emitter;
