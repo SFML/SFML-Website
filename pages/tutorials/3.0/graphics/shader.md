@@ -107,7 +107,7 @@ if (!shader.loadFromMemory(vertexShader, fragmentShader))
 }
 ```
 
-And finally, like all other SFML resources, shaders can also be loaded from a [custom input stream](https://www.sfml-dev.org/tutorials/2.6/system-stream.php "Input streams tutorial") with the `loadFromStream` function or the corresponding constructors.
+And finally, like all other SFML resources, shaders can also be loaded from a [custom input stream](../system/stream.md "Input streams tutorial") with the `loadFromStream` function or the corresponding constructors.
 
 If loading fails, don't forget to check the standard error output (the console) to see a detailed report from the GLSL compiler.
 

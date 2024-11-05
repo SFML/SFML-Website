@@ -175,7 +175,7 @@ Sometimes, people try to react to `KeyPressed` events directly to implement smoo
 Doing so will _not_ produce the expected effect, because when you hold a key you only get a few events (remember, the repeat delay).
 To achieve smooth movement with events, you must use a boolean that you set on `KeyPressed` and clear on `KeyReleased`; you can then move (independently of events) as long as the boolean is set.
  
-The other (easier) solution to produce smooth movement is to use real-time keyboard input with [`sf::Keyboard`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Keyboard.php "sf::Keyboard documentation") (see the [dedicated tutorial](https://www.sfml-dev.org/tutorials/2.6/window-inputs.php "Real-time inputs tutorial")).
+The other (easier) solution to produce smooth movement is to use real-time keyboard input with [`sf::Keyboard`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Keyboard.php "sf::Keyboard documentation") (see the [dedicated tutorial](inputs.md "Real-time inputs tutorial")).
 
 The data associated with these events contains the scancode and key code of the pressed/released key, as well as the current state of the modifier keys (alt, control, shift, system).
 

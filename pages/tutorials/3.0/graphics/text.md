@@ -30,7 +30,7 @@ If the message is unable to open file, make sure that the _working directory_ (w
 However, when you launch your program from your IDE (Visual Studio, Code::Blocks, ...) the working directory might sometimes be set to the _project_ directory instead.
 This can usually be changed quite easily in the project settings.
 
-You can also load a font file from memory (`openFromFile`), or from a [custom input stream](https://www.sfml-dev.org/tutorials/2.6/system-stream.php "Input streams tutorial") (`openFromStream`).
+You can also load a font file from memory (`openFromFile`), or from a [custom input stream](../system/stream.md "Input streams tutorial") (`openFromStream`).
 Corresponding constructors exist with the same parameters that throw an exception upon failure.
 
 SFML supports most common font formats.
@@ -69,7 +69,7 @@ window.draw(text);
 
 Text can also be transformed: They have a position, an orientation, and a scale.
 The functions involved are the same as for the [`sf::Sprite`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Sprite.php "sf::Sprite documentation") class and other SFML entities.
-They are explained in the [Transforming entities](https://www.sfml-dev.org/tutorials/2.6/graphics-transform.php "'Transforming entities' tutorial") tutorial.
+They are explained in the [Transforming entities](transform.md "'Transforming entities' tutorial") tutorial.
 
 ## How to avoid problems with non-ASCII characters?
 
