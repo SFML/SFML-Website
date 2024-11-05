@@ -14,7 +14,7 @@ They are meant for further reading on specific topics for those who are curious;
 All you need to create an SFML application is:
 
 - An Intel Mac with Catalina or later (10.15+) or an Apple Silicon Mac with Big Sur or later (11+)
-- [Xcode](https://developer.apple.com/xcode/ "Download Xcode") (versions 4 or above of the IDE, which is available on the _App Store_, are supported).
+- [Xcode](https://developer.apple.com/xcode/ "Download Xcode")
 - Clang and libc++ (which are shipped by default with Xcode).
 
 With recent versions of Xcode you also need to install the Command Line Tools from Xcode > Preferences > Downloads > Components.
@@ -37,13 +37,8 @@ That's why the macOS binaries on the [download page](https://www.sfml-dev.org/do
 
 ### Xcode templates
 
-SFML is provided with two templates for Xcode 4+ which allow you to create new application projects very quickly and easily: you can select which modules your application requires, whether you want to use SFML as dylib or as frameworks and whether to create an application bundle containing all its resources (making the installation process of your applications as easy as a simple drag-and-drop) or a classic binary.
+SFML is provided with two templates for Xcode which allow you to create new application projects very quickly and easily: you can select which modules your application requires, whether you want to use SFML as dylib or as frameworks and whether to create an application bundle containing all its resources (making the installation process of your applications as easy as a simple drag-and-drop) or a classic binary.
 See below for more details.
-
-Be aware that these templates are not compatible with Xcode 3.
-If you are still using this version of the IDE and you don't consider updating it, you can still create SFML applications.
-A guide on doing that is beyond the scope of this tutorial.
-Please refer to Apple's documentation about Xcode 3 and how to add a library to your project.
 
 ## Installing SFML
 
