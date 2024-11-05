@@ -87,7 +87,7 @@ You can see that the vertices' color is interpolated to fill the primitive.
 This is a nice way of creating gradients.
 
 Note that you don't have to use the [`sf::VertexArray`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1VertexArray.php "sf::VertexArray documentation") class.
-It's just defined for convenience, it's nothing more than a `std::vector<sf::Vertex>` along with a `sf::PrimitiveType`.
+It's just defined for convenience, it's nothing more than a `std::vector<sf::Vertex>` along with an `sf::PrimitiveType`.
 If you need more flexibility, or a static array, you can use your own storage.
 You must then use the overload of the `draw` function which takes a pointer to the vertices, the vertex count and the primitive type.
 

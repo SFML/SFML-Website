@@ -19,7 +19,7 @@ If you feel like your version of GCC can't work with the precompiled SFML librar
 You can then unpack the SFML archive wherever you like.
 Copying headers and libraries to your installation of MinGW is not recommended, it's better to keep libraries in their own separate location, especially if you intend to use several versions of the same library, or several compilers.
 
-## Creating and configuring a SFML project
+## Creating and configuring an SFML project
 
 The first thing to do is choose what kind of project to create.
 Code::Blocks offers a wide variety of project types, including an "SFML project".

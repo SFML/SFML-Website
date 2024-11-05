@@ -16,7 +16,7 @@ If there's no SFML package compiled for your version of Visual C++, you will hav
 You can then unpack the SFML archive wherever you like.
 Copying headers and libraries to your installation of Visual Studio is not recommended, it's better to keep libraries in their own separate location, especially if you intend to use several versions of the same library, or several compilers.
 
-## Creating and configuring a SFML project
+## Creating and configuring an SFML project
 
 The first thing to do is choose what kind of project to create.
 It is recommended to select "Empty Project".

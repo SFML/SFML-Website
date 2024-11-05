@@ -19,7 +19,7 @@
 - [Opening and managing an SFML window](window/window.md)
 - [Events explained](window/events.md)
 - [Keyboard, mouse and joysticks](window/inputs.md)
-- [Using OpenGL in a SFML window](window/opengl.md)
+- [Using OpenGL in an SFML window](window/opengl.md)
 
 ## Graphics module
 

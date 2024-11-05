@@ -289,7 +289,7 @@ Or, `accept` will return immediately, with the same status, if there's no pendin
 Non-blocking sockets are the easiest solution if you already have a main loop that runs at a constant rate.
 You can simply check if something happened on your sockets in every iteration, without having to block program execution.
 
-When using `sf::TcpSocket` in non-blocking mode, calls to `send` are not guaranteed to actually send all the data you pass to it, whether it be as a `sf::Packet` or as raw data.
+When using `sf::TcpSocket` in non-blocking mode, calls to `send` are not guaranteed to actually send all the data you pass to it, whether it be as an `sf::Packet` or as raw data.
 When sending raw data over a non-blocking `sf::TcpSocket`, always make sure to use the `send(const void* data, std::size_t size, std::size_t& sent)` overload which returns the number of bytes actually sent in the `sent` reference parameter after the function returns.
 Regardless of whether you send `sf::Packet`s or raw data, if only a part of the data was sent in the call, the return status will be `sf::Socket::Status::Partial` to indicate a partial send.
 *If `sf::Socket::Status::Partial` is returned, you must make sure to handle the partial send properly or else data corruption will occur.* When sending raw data, you must reattempt sending the raw data at the byte offset where the previous `send` call stopped.

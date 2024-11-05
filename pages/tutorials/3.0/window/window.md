@@ -1,4 +1,4 @@
-# Opening and managing a SFML window
+# Opening and managing an SFML window
 
 ## Introduction
 

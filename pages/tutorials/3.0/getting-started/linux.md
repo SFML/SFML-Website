@@ -30,7 +30,7 @@ Download the SDK from the [download page](https://www.sfml-dev.org/download.php 
 
 If you already had an older version of SFML installed, make sure that it won't conflict with the new version!
 
-## Compiling a SFML program
+## Compiling an SFML program
 
 In this tutorial we're not going to talk about IDEs such as Code::Blocks or Eclipse.
 We'll focus on the commands required to compile and link an SFML executable.

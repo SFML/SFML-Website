@@ -1,4 +1,4 @@
-# Using OpenGL in a SFML window
+# Using OpenGL in an SFML window
 
 ## Introduction
 
