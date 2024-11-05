@@ -1,8 +1,3 @@
-!!! warning
-
-    This page refers to an in-development version of SFML and as such may not have been updated yet.  
-    [Click here](https://www.sfml-dev.org/tutorials/latest/) to navigate to the latest officially released version.
-
 # SFML and Xcode (macOS)
 
 ## Introduction
