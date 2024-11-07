@@ -1,14 +1,11 @@
-# Compiling SFML with CMake
+# Building SFML from Source
 
 ## Introduction
 
-Admittedly, the title of this tutorial is a bit misleading.
-You will not *compile* SFML with CMake, because CMake is *not a compiler*.
-So, what is CMake?
-
+SFML's build process uses CMake.
 CMake is an open-source meta build system.
-Instead of building SFML, it builds what builds SFML: Visual Studio solutions, Code::Blocks projects, Linux Makefiles, XCode projects, etc.
-In fact it can generate the Makefiles or projects for any operating system and compiler of your choice.
+It will generate a build system which then does the actual compilation and linking.
+CMake generators include Visual Studio solutions, Code::Blocks projects, Ninja build files, Linux Makefiles, and XCode projects among others.
 It is similar to autoconf/automake or premake for those who are already familiar with these tools.
 
 CMake is used by many projects including well-known ones such as Minecraft: Bedrock Edition, LLVM, Blender, CLion, KDE, Ogre, and many more.

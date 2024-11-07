@@ -18,7 +18,8 @@ Make sure you select the package which corresponds to the version that you use.
 If you are unsure, check which of the libgcc_s_sjlj-1.dll or libgcc_s_dw2-1.dll files is present in your MinGW/bin folder.
 If MinGW was installed along with Code::Blocks, you probably have an SJLJ version.
 
-If you feel like your version of GCC can't work with the precompiled SFML libraries, don't hesitate to [build SFML yourself](compile-with-cmake.md "How to compile SFML"), it's not complicated.
+If you feel like your version of GCC can't work with the precompiled SFML libraries, don't hesitate to [build SFML yourself](build-from-source.md "How to build SFML").
+It's not complicated.
 
 You can then unpack the SFML archive wherever you like.
 Copying headers and libraries to your installation of MinGW is not recommended, it's better to keep libraries in their own separate location, especially if you intend to use several versions of the same library, or several compilers.
