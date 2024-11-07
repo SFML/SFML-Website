@@ -71,19 +71,19 @@ We will use the latter here but they both work similarly.
 
 First select File > New Project... then choose SFML in the left column and double-click on SFML App.
 
-![Xcode template selection](https://www.sfml-dev.org/tutorials/2.6/images/start-osx-new-project.png "Xcode template selection")
+![Xcode template selection](osx-new-project.png "Xcode template selection")
 
 Now you can fill in the required fields as shown in the following screenshot.
 When you are done click next.
 
-![Xcode template form](https://www.sfml-dev.org/tutorials/2.6/images/start-osx-new-project-settings.png "Xcode template form")
+![Xcode template form](osx-new-project-settings.png "Xcode template form")
 
 Your new project is now set to create an [application bundle ".app"](https://developer.apple.com/library/mac/#documentation/CoreFoundation/Conceptual/CFBundles/BundleTypes/BundleTypes.html "Go to Apple's documentation
 about application bundle").
 
 Now that your project is ready, let's see what is inside:
 
-![Content of the new project](https://www.sfml-dev.org/tutorials/2.6/images/start-osx-window.png "Content of the new project")
+![Content of the new project](osx-window.png "Content of the new project")
 
 As you can see, there are already a few files in the project.
 There are three important kinds:

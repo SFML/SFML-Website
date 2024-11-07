@@ -81,7 +81,7 @@ Drawing a vertex array can be done similarly to drawing any other SFML entity, b
 window.draw(triangle);
 ```
 
-![A triangle made with vertices](https://www.sfml-dev.org/tutorials/2.6/images/graphics-vertex-array-triangle.png)
+![A triangle made with vertices](vertex-array-triangle.png)
 
 You can see that the vertices' color is interpolated to fill the primitive.
 This is a nice way of creating gradients.
@@ -120,12 +120,12 @@ Let's have a look at the full list:
 
 | Primitive type                          | Description                                                                                                                                                             | Example                                                                                                                                        |
 | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| `sf::PrimitiveType::Points`             | A set of unconnected points. These points have no thickness: They will always occupy a single pixel, regardless of the current transform and view.                      | ![The sf::PrimitiveType::Points primitive type](https://www.sfml-dev.org/tutorials/2.6/images/graphics-vertex-array-points.png)                |
-| `sf::PrimitiveType::Lines`              | A set of unconnected lines. These lines have no thickness: They will always be one pixel wide, regardless of the current transform and view.                            | ![The sf::PrimitiveType::Lines primitive type](https://www.sfml-dev.org/tutorials/2.6/images/graphics-vertex-array-lines.png)                  |
-| `sf::PrimitiveType::LineStrip`          | A set of connected lines. The end vertex of one line is used as the start vertex of the next one.                                                                       | ![The sf::PrimitiveType::LineStrip primitive type](https://www.sfml-dev.org/tutorials/2.6/images/graphics-vertex-array-line-strip.png)         |
-| `sf::PrimitiveType::Triangles`          | A set of unconnected triangles.                                                                                                                                         | ![The sf::PrimitiveType::Triangles primitive type](https://www.sfml-dev.org/tutorials/2.6/images/graphics-vertex-array-triangles.png)          |
-| `sf::PrimitiveType::TriangleStrip`      | A set of connected triangles. Each triangle shares its two last vertices with the next one.                                                                             | ![The sf::PrimitiveType::TriangleStrip primitive type](https://www.sfml-dev.org/tutorials/2.6/images/graphics-vertex-array-triangle-strip.png) |
-| `sf::PrimitiveType::TriangleFan`        | A set of triangles connected to a central point. The first vertex is the center, then each new vertex defines a new triangle, using the center and the previous vertex. | ![The sf::PrimitiveType::TriangleFan primitive type](https://www.sfml-dev.org/tutorials/2.6/images/graphics-vertex-array-triangle-fan.png)     |
+| `sf::PrimitiveType::Points`             | A set of unconnected points. These points have no thickness: They will always occupy a single pixel, regardless of the current transform and view.                      | ![The sf::PrimitiveType::Points primitive type](vertex-array-points.png)                |
+| `sf::PrimitiveType::Lines`              | A set of unconnected lines. These lines have no thickness: They will always be one pixel wide, regardless of the current transform and view.                            | ![The sf::PrimitiveType::Lines primitive type](vertex-array-lines.png)                  |
+| `sf::PrimitiveType::LineStrip`          | A set of connected lines. The end vertex of one line is used as the start vertex of the next one.                                                                       | ![The sf::PrimitiveType::LineStrip primitive type](vertex-array-line-strip.png)         |
+| `sf::PrimitiveType::Triangles`          | A set of unconnected triangles.                                                                                                                                         | ![The sf::PrimitiveType::Triangles primitive type](vertex-array-triangles.png)          |
+| `sf::PrimitiveType::TriangleStrip`      | A set of connected triangles. Each triangle shares its two last vertices with the next one.                                                                             | ![The sf::PrimitiveType::TriangleStrip primitive type](vertex-array-triangle-strip.png) |
+| `sf::PrimitiveType::TriangleFan`        | A set of triangles connected to a central point. The first vertex is the center, then each new vertex defines a new triangle, using the center and the previous vertex. | ![The sf::PrimitiveType::TriangleFan primitive type](vertex-array-triangle-fan.png)     |
 
 ## Texturing
 
@@ -396,9 +396,9 @@ int main()
 }
 ```
 
-![The tilemap example](https://www.sfml-dev.org/tutorials/2.6/images/graphics-vertex-array-tilemap.png)
+![The tilemap example](vertex-array-tilemap.png)
 
-You can download the tileset used for this tilemap example [here](https://www.sfml-dev.org/tutorials/2.6/images/graphics-vertex-array-tilemap-tileset.png "Tilemap example tileset").
+You can download the tileset used for this tilemap example [here](vertex-array-tilemap-tileset.png "Tilemap example tileset").
 
 ## Example: particle system
 
@@ -522,4 +522,4 @@ int main()
 }
 ```
 
-![The particles example](https://www.sfml-dev.org/tutorials/2.6/images/graphics-vertex-array-particles.png)
+![The particles example](vertex-array-particles.png)

@@ -41,7 +41,7 @@ In the project's "Build options", "Search directories" tab, add:
 
 These paths are the same in both Debug and Release configuration, so you can set them globally for your project.
 
-![Screenshot of the dialog box for setting up the search paths](https://www.sfml-dev.org/tutorials/2.6/images/start-cb-paths.png "Screenshot of the dialog box for setting up the search paths")
+![Screenshot of the dialog box for setting up the search paths](cb-paths.png "Screenshot of the dialog box for setting up the search paths")
 
 The next step is to link your application to the SFML libraries (.a files) that your code will need.
 SFML is made of 5 modules (system, window, graphics, network and audio), and there's one library for each of them.
@@ -49,7 +49,7 @@ SFML is made of 5 modules (system, window, graphics, network and audio), and the
 Libraries must be added to the "Link libraries" list in the project's build options, under the "Linker settings" tab.
 Add all the SFML libraries that you need, for example "sfml-graphics", "sfml-window" and "sfml-system" (the "lib" prefix and the ".a" extension must be omitted).
 
-![Screenshot of the dialog box for setting up the project's libraries](https://www.sfml-dev.org/tutorials/2.6/images/start-cb-link-libs.png "Screenshot of the dialog box for setting up the project's libraries")
+![Screenshot of the dialog box for setting up the project's libraries](cb-link-libs.png "Screenshot of the dialog box for setting up the project's libraries")
 
 It is important to link to the libraries that match the configuration: "sfml-xxx-d" for Debug, and "sfml-xxx" for Release.
 A bad mix may result in crashes.
@@ -65,7 +65,7 @@ Static SFML libraries have the "-s" suffix: "sfml-xxx-s-d" for Debug, and "sfml-
 
 In this case, you'll also need to define the `SFML_STATIC` macro in the preprocessor options of your project.
 
-![Screenshot of the dialog box for defining the SFML_STATIC macro](https://www.sfml-dev.org/tutorials/2.6/images/start-cb-static.png "Screenshot of the dialog box for defining the SFML_STATIC macro")
+![Screenshot of the dialog box for defining the SFML_STATIC macro](cb-static.png "Screenshot of the dialog box for defining the SFML_STATIC macro")
 
 When static linking, you will have to link all of SFML's dependencies to your project as well.
 This means that if you are linking sfml-window-s or sfml-window-s-d for example, you will also have to link opengl32, winmm and gdi32.
@@ -128,4 +128,4 @@ Compile it, and if you linked to the dynamic version of SFML, don't forget to co
 They are in the bin/ directory of your SFML installation.
 Run it, and if everything works you should see this:
 
-![Screenshot of the Hello SFML application](https://www.sfml-dev.org/tutorials/2.6/images/start-cb-app.png "Screenshot of the Hello SFML application")
+![Screenshot of the Hello SFML application](cb-app.png "Screenshot of the Hello SFML application")

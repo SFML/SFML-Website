@@ -114,4 +114,4 @@ export LD_LIBRARY_PATH=<sfml-install-path>/lib && ./sfml-app
 
 If everything works, you should see this in a new window:
 
-![Screenshot of the Hello SFML application](https://www.sfml-dev.org/tutorials/2.6/images/start-linux-app.png "Screenshot of the Hello SFML application")
+![Screenshot of the Hello SFML application](linux-app.png "Screenshot of the Hello SFML application")

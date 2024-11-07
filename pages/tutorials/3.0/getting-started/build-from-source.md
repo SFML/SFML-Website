@@ -91,7 +91,7 @@ With the exception of the screenshots and the instructions to click buttons, eve
 
 Here is what the CMake GUI looks like:
 
-![Screenshot of the cmake-gui tool](https://www.sfml-dev.org/tutorials/2.6/images/cmake-gui-start.png "Screenshot of the cmake-gui tool")
+![Screenshot of the cmake-gui tool](cmake-gui-start.png "Screenshot of the cmake-gui tool")
 
 The first steps that need to be done are as follows (perform them in order):
 
@@ -102,7 +102,7 @@ The first steps that need to be done are as follows (perform them in order):
 If this is the first time CMake is run in this directory (or if you cleared the cache), the CMake GUI will prompt you to select a generator.
 In other words, this is where you select your compiler/IDE.
 
-![Screenshot of the generator selection dialog box](https://www.sfml-dev.org/tutorials/2.6/images/cmake-choose-generator.png "Screenshot of the generator selection dialog box")
+![Screenshot of the generator selection dialog box](cmake-choose-generator.png "Screenshot of the generator selection dialog box")
 
 For example, if you are using Visual Studio 2010, you should select "Visual Studio 10 2010" from the drop-down list.
 To generate Makefiles usable with NMake on the Visual Studio command line, select "NMake Makefiles".
@@ -121,7 +121,7 @@ If the tests succeed, it should finish with the "Configuring done" message.
 If something goes wrong, read the error(s) printed to the output log carefully.
 It might be the case that your compiler is not accessible (see above) or configured properly, or that one of SFML's external dependencies is missing.
 
-![Screenshot of the cmake-gui window after configure](https://www.sfml-dev.org/tutorials/2.6/images/cmake-configure.png "Screenshot of the cmake-gui window after configure")
+![Screenshot of the cmake-gui window after configure](cmake-configure.png "Screenshot of the cmake-gui window after configure")
 
 After configuring is done, the build options appear in the center of the window.
 CMake itself has many options, but most of them are already set to the right value by default.
@@ -152,7 +152,7 @@ After everything is configured, click the "Configure" button once again.
 There should no longer be any options highlighted in red, and the "Generate" button should be enabled.
 Click it to finally generate the chosen makefiles/projects.
 
-![Screenshot of the cmake-gui window after generate](https://www.sfml-dev.org/tutorials/2.6/images/cmake-generate.png "Screenshot of the cmake-gui window after generate")
+![Screenshot of the cmake-gui window after generate](cmake-generate.png "Screenshot of the cmake-gui window after generate")
 
 CMake creates a variable cache for every project.
 Therefore, if you decide to reconfigure something at a later time, you'll find that your settings have been saved from the previous configuration.

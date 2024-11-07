@@ -9,7 +9,7 @@ We call it "texture" because it has a very specific role: being mapped to a 2D e
 
 A sprite is nothing more than a textured rectangle.
 
-![](https://www.sfml-dev.org/tutorials/2.6/images/graphics-sprites-definition.png "Rectangular entity + texture = sprite!")
+![](sprites-definition.png "Rectangular entity + texture = sprite!")
 
 Ok, that was short but if you really don't understand what sprites and textures are, then you'll find a much better description on Wikipedia.
 
@@ -109,7 +109,7 @@ Smoothing a texture makes pixel boundaries less visible (but the image a little 
 texture.setSmooth(true);
 ```
 
-![](https://www.sfml-dev.org/tutorials/2.6/images/graphics-sprites-smooth.png "Smooth vs not smooth")
+![](sprites-smooth.png "Smooth vs not smooth")
 
 Since smoothing samples from adjacent pixels in the texture as well, it can lead to the unwanted side effect of factoring in pixels outside the selected texture area.
 This can happen when your sprite is located at non-integer coordinates.
@@ -120,7 +120,7 @@ The second property allows a texture to be repeatedly tiled within a single spri
 texture.setRepeated(true);
 ```
 
-![](https://www.sfml-dev.org/tutorials/2.6/images/graphics-sprites-repeated.png "Repeated vs not repeated")
+![](sprites-repeated.png "Repeated vs not repeated")
 
 This only works if your sprite is configured to show a rectangle which is larger than the texture, otherwise this property has no effect.
 
@@ -156,7 +156,7 @@ sprite.setColor(sf::Color(255, 255, 255, 128)); // half transparent
 
 These sprites all use the same texture, but have a different color:
 
-![](https://www.sfml-dev.org/tutorials/2.6/images/graphics-sprites-color.png "Coloring sprites")
+![](sprites-color.png "Coloring sprites")
 
 Sprites can also be transformed: They have a position, an orientation, and a scale.
 
