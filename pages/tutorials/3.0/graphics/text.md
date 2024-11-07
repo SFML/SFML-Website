@@ -3,7 +3,7 @@
 ## Loading a font
 
 Before drawing any text, you need to have an available font, just like any other program that prints text.
-Fonts are encapsulated in the [`sf::Font`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Font.php "sf::Font documentation") class, which provides three main features: loading a font, getting glyphs (i.e. visual characters) from it, and reading its attributes.
+Fonts are encapsulated in the [`sf::Font`](../../../documentation/3.0.0/classsf_1_1Font.html "sf::Font documentation") class, which provides three main features: loading a font, getting glyphs (i.e. visual characters) from it, and reading its attributes.
 In a typical program, you'll only have to make use of the first feature, loading the font, so let's focus on that first.
 
 The most common way of loading a font is from a file on disk, which is done with the `openFromFile` function or its corresponding constructor.
@@ -41,7 +41,7 @@ Once your font is loaded, you can start drawing text.
 
 ## Drawing text
 
-To draw text, you will be using the [`sf::Text`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Text.php "sf::Text documentation") class.
+To draw text, you will be using the [`sf::Text`](../../../documentation/3.0.0/classsf_1_1Text.html "sf::Text documentation") class.
 It's very simple to use:
 
 ```cpp
@@ -68,7 +68,7 @@ window.draw(text);
 ![](text-draw.png "Drawing text")
 
 Text can also be transformed: They have a position, an orientation, and a scale.
-The functions involved are the same as for the [`sf::Sprite`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Sprite.php "sf::Sprite documentation") class and other SFML entities.
+The functions involved are the same as for the [`sf::Sprite`](../../../documentation/3.0.0/classsf_1_1Sprite.html "sf::Sprite documentation") class and other SFML entities.
 They are explained in the [Transforming entities](transform.md "'Transforming entities' tutorial") tutorial.
 
 ## How to avoid problems with non-ASCII characters?
@@ -93,7 +93,7 @@ An Arabic font won't be able to display Japanese text, for example.
 
 ## Making your own text class
 
-If [`sf::Text`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Text.php "sf::Text documentation") is too limited, or if you want to do something else with pre-rendered glyphs, [`sf::Font`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Font.php "sf::Font documentation") provides everything that you need.
+If [`sf::Text`](../../../documentation/3.0.0/classsf_1_1Text.html "sf::Text documentation") is too limited, or if you want to do something else with pre-rendered glyphs, [`sf::Font`](../../../documentation/3.0.0/classsf_1_1Font.html "sf::Font documentation") provides everything that you need.
 
 You can retrieve the texture which contains all the pre-rendered glyphs of a certain size:
 
@@ -114,7 +114,7 @@ sf::Glyph glyph = font.getGlyph(character, characterSize, bold);
 `character` is the UTF-32 code of the character whose glyph that you want to get.
 You must also specify the character size, and whether you want the bold or the regular version of the glyph.
 
-The [`sf::Glyph`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Glyph.php "sf::Glyph documentation") structure contains three data members of interest.
+The [`sf::Glyph`](../../../documentation/3.0.0/structsf_1_1Glyph.html "sf::Glyph documentation") structure contains three data members of interest.
 
 - `advance` is the horizontal offset to apply to get the starting position of the next glyph in the text
 - `bounds` contains the bounding rectangle of the glyph, which helps position it relative to the baseline of the text

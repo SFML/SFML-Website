@@ -143,7 +143,7 @@ It works with all the input methods provided by the operating system, even the m
 This event is typically used to catch user input in a text field.
 
 The data associated with this event contains the Unicode value of the entered character.
-You can either put this data directly in a [`sf::String`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1String.php "sf::String documentation"), or cast it to a `char` after making sure that it is in the ASCII range (0 - 127).
+You can either put this data directly in a [`sf::String`](../../../documentation/3.0.0/classsf_1_1String.html "sf::String documentation"), or cast it to a `char` after making sure that it is in the ASCII range (0 - 127).
 
 ```cpp
 if (const auto* textEntered = event->getIf<sf::Event::TextEntered>())
@@ -175,7 +175,7 @@ Sometimes, people try to react to `KeyPressed` events directly to implement smoo
 Doing so will _not_ produce the expected effect, because when you hold a key you only get a few events (remember, the repeat delay).
 To achieve smooth movement with events, you must use a boolean that you set on `KeyPressed` and clear on `KeyReleased`; you can then move (independently of events) as long as the boolean is set.
  
-The other (easier) solution to produce smooth movement is to use real-time keyboard input with [`sf::Keyboard`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Keyboard.php "sf::Keyboard documentation") (see the [dedicated tutorial](inputs.md "Real-time inputs tutorial")).
+The other (easier) solution to produce smooth movement is to use real-time keyboard input with [`sf::Keyboard`](../../../documentation/3.0.0/namespacesf_1_1Keyboard.html "sf::Keyboard documentation") (see the [dedicated tutorial](inputs.md "Real-time inputs tutorial")).
 
 The data associated with these events contains the scancode and key code of the pressed/released key, as well as the current state of the modifier keys (alt, control, shift, system).
 
