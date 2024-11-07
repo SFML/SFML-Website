@@ -29,7 +29,7 @@ entity.move({5.f, 5.f});
 sf::Vector2f position = entity.getPosition(); // = (15, 55)
 ```
 
-![A translated entity](https://www.sfml-dev.org/tutorials/2.6/images/graphics-transform-position.png)
+![A translated entity](transform-position.png)
 
 By default, entities are positioned relative to their top-left corner.
 We'll see how to change that with the 'origin' property later.
@@ -51,7 +51,7 @@ entity.rotate(sf::degrees(10));
 sf::Angle rotation = entity.getRotation(); // = 55 degrees
 ```
 
-![A rotated entity](https://www.sfml-dev.org/tutorials/2.6/images/graphics-transform-rotation.png)
+![A rotated entity](transform-rotation.png)
 
 Note that SFML always returns an `sf::Angle` in range [0, 360) degrees or [0, 2 * pi) radian when you call `getRotation`.
 
@@ -77,7 +77,7 @@ entity.scale({0.5f, 0.5f});
 sf::Vector2f scale = entity.getScale(); // = (2.f, 0.8f)
 ```
 
-![A scaled entity](https://www.sfml-dev.org/tutorials/2.6/images/graphics-transform-scale.png)
+![A scaled entity](transform-scale.png)
 
 ### Origin
 
@@ -195,7 +195,7 @@ After transforming entities and drawing them, you might want to perform some com
 SFML entities can give you their bounding box.
 The bounding box is the minimal rectangle that contains all points belonging to the entity with sides aligned to the X and Y axes.
 
-![Bounding box of entities](https://www.sfml-dev.org/tutorials/2.6/images/graphics-transform-bounds.png)
+![Bounding box of entities](transform-bounds.png)
 
 The bounding box is very useful when implementing collision detection: Checks against a point or another axis-aligned rectangle can be done very quickly, and its area is close enough to that of the real entity to provide a good approximation.
 

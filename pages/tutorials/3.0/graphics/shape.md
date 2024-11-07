@@ -24,7 +24,7 @@ sf::CircleShape shape(50.f);
 shape.setFillColor(sf::Color(100, 250, 50));
 ```
 
-![A colored shape](https://www.sfml-dev.org/tutorials/2.6/images/graphics-shape-color.png)
+![A colored shape](shape-color.png)
 
 ### Outline
 
@@ -40,7 +40,7 @@ shape.setOutlineThickness(10.f);
 shape.setOutlineColor(sf::Color(250, 150, 100));
 ```
 
-![An outlined shape](https://www.sfml-dev.org/tutorials/2.6/images/graphics-shape-outline.png)
+![An outlined shape](shape-outline.png)
 
 By default, the outline is extruded outwards from the shape (e.g. if you have a circle with a radius of 10 and an outline thickness of 5, the total radius of the circle will be 15).
 You can make it extrude towards the center of the shape instead, by setting a negative thickness.
@@ -63,7 +63,7 @@ shape.setTexture(&texture); // texture is a sf::Texture
 shape.setTextureRect(sf::IntRect({10, 10}, {100, 100}));
 ```
 
-![A textured shape](https://www.sfml-dev.org/tutorials/2.6/images/graphics-shape-texture.png)
+![A textured shape](shape-texture.png)
 
 Note that the outline is not textured.  
 It is important to know that the texture is modulated (multiplied) with the shape's fill color.
@@ -93,7 +93,7 @@ sf::RectangleShape rectangle({120.f, 50.f});
 rectangle.setSize({100.f, 100.f});
 ```
 
-![A rectangle shape](https://www.sfml-dev.org/tutorials/2.6/images/graphics-shape-rectangle.png)
+![A rectangle shape](shape-rectangle.png)
 
 ### Circles
 
@@ -115,7 +115,7 @@ circle.setRadius(40.f);
 circle.setPointCount(100);
 ```
 
-![A circle shape](https://www.sfml-dev.org/tutorials/2.6/images/graphics-shape-circle.png)
+![A circle shape](shape-circle.png)
 
 ### Regular polygons
 
@@ -133,7 +133,7 @@ sf::CircleShape square(80.f, 4);
 sf::CircleShape octagon(80.f, 8);
 ```
 
-![Regular polygons](https://www.sfml-dev.org/tutorials/2.6/images/graphics-shape-regular.png)
+![Regular polygons](shape-regular.png)
 
 ### Convex shapes
 
@@ -162,7 +162,7 @@ The order in which you define the points is very important.
 They must *all* be defined either in clockwise or counter-clockwise order.
 If you define them in an inconsistent order, the shape will be constructed incorrectly.
 
-![A convex shape](https://www.sfml-dev.org/tutorials/2.6/images/graphics-shape-convex.png)
+![A convex shape](shape-convex.png)
 
 Although the name of [`sf::ConvexShape`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1ConvexShape.php "sf::ConvexShape documentation") implies that it should only be used to represent convex shapes, its requirements are a little more relaxed.
 In fact, the only requirement that your shape must meet is that if you went ahead and drew lines from its *center of gravity* to all of its points, these lines must be drawn in the same order.
@@ -183,7 +183,7 @@ sf::RectangleShape line({150.f, 5.f});
 line.rotate(sf::degrees(45));
 ```
 
-![A line shape drawn as a rectangle](https://www.sfml-dev.org/tutorials/2.6/images/graphics-shape-line-rectangle.png)
+![A line shape drawn as a rectangle](shape-line-rectangle.png)
 
 Line without thickness:
 
@@ -197,7 +197,7 @@ std::array line =
 window.draw(line.data(), line.size(), sf::Lines);
 ```
 
-![A line shape drawn as a primitive](https://www.sfml-dev.org/tutorials/2.6/images/graphics-shape-line-primitive.png)
+![A line shape drawn as a primitive](shape-line-primitive.png)
 
 To learn more about vertices and primitives, you can read the tutorial on [vertex arrays](vertex-array.md "'Vertex arrays' tutorial").
 
@@ -254,7 +254,7 @@ private:
 };
 ```
 
-![An ellipse shape](https://www.sfml-dev.org/tutorials/2.6/images/graphics-shape-ellipse.png)
+![An ellipse shape](shape-ellipse.png)
 
 ## Antialiased shapes
 
@@ -268,6 +268,6 @@ settings.antialiasingLevel = 8;
 sf::RenderWindow window(sf::VideoMode({800, 600}), "SFML shapes", sf::Style::Default, sf::State::Windowed, settings);
 ```
 
-![Aliased vs antialiased shape](https://www.sfml-dev.org/tutorials/2.6/images/graphics-shape-antialiasing.png)
+![Aliased vs antialiased shape](shape-antialiasing.png)
 
 Remember that anti-aliasing availability depends on the graphics card: It might not support it, or have it forced to disabled in the driver settings.

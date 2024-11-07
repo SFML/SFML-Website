@@ -65,7 +65,7 @@ text.setStyle(sf::Text::Bold | sf::Text::Underlined);
 window.draw(text);
 ```
 
-![](https://www.sfml-dev.org/tutorials/2.6/images/graphics-text-draw.png "Drawing text")
+![](text-draw.png "Drawing text")
 
 Text can also be transformed: They have a position, an orientation, and a scale.
 The functions involved are the same as for the [`sf::Sprite`](https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Sprite.php "sf::Sprite documentation") class and other SFML entities.

@@ -32,7 +32,7 @@ sf::View view2({350.f, 300.f}, {300.f, 200.f});
 
 These two definitions are equivalent: Both views will show the same area of the 2D world, a 300x200 rectangle *centered* on the point (350, 300).
 
-![](https://www.sfml-dev.org/tutorials/2.6/images/graphics-view-initial.png "A view")
+![](view-initial.png "A view")
 
 If you don't want to define the view upon construction or want to modify it later, you can use the equivalent setters:
 
@@ -60,7 +60,7 @@ view.setCenter({200.f, 200.f});
 view.move({100.f, 100.f});
 ```
 
-![](https://www.sfml-dev.org/tutorials/2.6/images/graphics-view-translated.png "A translated view")
+![](view-translated.png "A translated view")
 
 ### Rotating the view
 
@@ -74,7 +74,7 @@ view.setRotation(sf::degrees(20));
 view.rotate(sf::degrees(5));
 ```
 
-![](https://www.sfml-dev.org/tutorials/2.6/images/graphics-view-rotated.png "A rotated view")
+![](view-rotated.png "A rotated view")
 
 ### Zooming (scaling) the view
 
@@ -88,7 +88,7 @@ view.setSize({1200.f, 800.f});
 view.zoom(0.5f);
 ```
 
-![](https://www.sfml-dev.org/tutorials/2.6/images/graphics-view-scaled.png "A scaled view")
+![](view-scaled.png "A scaled view")
 
 ## Defining how the view is viewed
 
@@ -109,7 +109,7 @@ To set the viewport of a view, you can use the `setViewport` function.
 view.setViewport(sf::FloatRect({0.25f, 0.25}, {0.5f, 0.5f}));
 ```
 
-![](https://www.sfml-dev.org/tutorials/2.6/images/graphics-view-viewport.png "A viewport")
+![](view-viewport.png "A viewport")
 
 You might have noticed something very important: The viewport is not defined in pixels, but instead as a ratio of the window size.
 This is more convenient: It allows you to not have to track resize events in order to update the size of the viewport every time the size of the window changes.
@@ -125,7 +125,7 @@ player1View.setViewport(sf::FloatRect({0.f, 0.f}, {0.5f, 1.f}));
 player2View.setViewport(sf::FloatRect({0.5f, 0.f}, {0.5f, 1.f}));
 ```
 
-![](https://www.sfml-dev.org/tutorials/2.6/images/graphics-view-split-screen.png "A split screen")
+![](view-split-screen.png "A split screen")
 
 ... or a mini-map:
 
@@ -137,7 +137,7 @@ gameView.setViewport(sf::FloatRect({0.f, 0.f}, {1.f, 1.f}));
 minimapView.setViewport(sf::FloatRect({0.75f, 0.f}, {0.25f, 0.25f}));
 ```
 
-![](https://www.sfml-dev.org/tutorials/2.6/images/graphics-view-minimap.png "A minimap")
+![](view-minimap.png "A minimap")
 
 ## Using a view
 
