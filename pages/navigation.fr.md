@@ -10,6 +10,7 @@
             * tutorials/3.0/getting-started/macos*.md
             * tutorials/3.0/getting-started/compile-with-cmake*.md
         * System
+            * tutorials/3.0/system/angle*.md
             * tutorials/3.0/system/time*.md
             * tutorials/3.0/system/stream*.md
         * Window
