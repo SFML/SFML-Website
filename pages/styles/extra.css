@@ -10,3 +10,7 @@
 p:has(img) {
     text-align: center;
 }
+
+.md-main__inner {
+    margin-top: 0;
+}
