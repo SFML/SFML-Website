@@ -8,7 +8,7 @@
             * tutorials/3.0/getting-started/code-blocks*.md
             * tutorials/3.0/getting-started/linux*.md
             * tutorials/3.0/getting-started/macos*.md
-            * tutorials/3.0/getting-started/compile-with-cmake*.md
+            * tutorials/3.0/getting-started/build-from-source*.md
         * System
             * tutorials/3.0/system/angle*.md
             * tutorials/3.0/system/time*.md
