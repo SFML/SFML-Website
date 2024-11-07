@@ -2,7 +2,7 @@
 
 ## Angles in SFML
 
-[`sf::Angle`](https://www.sfml-dev.org/todo/angle.php "sf::Angle documentation") represents an angle in a unit-agnostic manner so that you can reason about angles in terms of degrees or radians.
+[`sf::Angle`](../../../documentation/3.0.0/classsf_1_1Angle.html "sf::Angle documentation") represents an angle in a unit-agnostic manner so that you can reason about angles in terms of degrees or radians.
 SFML defines angles as following the [right-hand rule](https://en.wikipedia.org/wiki/Right-hand_rule).
 This means that if the X-axis points to the right in the window and the Y-axis points down, then a positive angle rotates clockwise.
 All SFML classes that work with angles use `sf::Angle`
