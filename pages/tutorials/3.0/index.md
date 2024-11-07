@@ -7,7 +7,7 @@
 - [SFML and Code::Blocks (MinGW)](getting-started/code-blocks.md)
 - [SFML and Linux](getting-started/linux.md)
 - [SFML and Xcode (macOS)](getting-started/macos.md)
-- [Compiling SFML with CMake](getting-started/compile-with-cmake.md)
+- [Building SFML from Source](getting-started/build-from-source.md)
 
 ## System module
 
