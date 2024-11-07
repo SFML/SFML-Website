@@ -38,7 +38,7 @@ You can use any combination of the following styles:
 | `sf::Style::Resize`     | The window can be resized and has a maximize button                                                                |
 | `sf::Style::Close`      | The window has a close button                                                                                      |
 | `sf::Style::Fullscreen` | The window is shown in fullscreen mode; this style cannot be combined with others, and requires a valid video mode |
-| `sf::Style::Default`    | The default style, which is a shortcut for `Titlebar \| Resize \| Close`                                           |
+| `sf::Style::Default`    | The default style, which is a shortcut for `Titlebar | Resize | Close`                                             |
 
 The fourth argument defines the window states which lets you pick between a floating window or a fullscreen window.
 
