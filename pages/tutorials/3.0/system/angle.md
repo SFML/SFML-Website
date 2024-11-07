@@ -33,7 +33,7 @@ sf::Angle angle1 = sf::degrees(10);
 angle1 *= 2.f; // 20 degrees
 sf::Angle angle2 = angle1 + sf::radians(0.5f); // 48.6 degrees
 angle2 = -angle2; // -48.6 degrees
-angle2 /= 3.f; // 16.2 degrees
+angle2 /= 3.f; // -16.2 degrees
 
 bool equal = (angle1 == angle2); // false
 bool inequal = (angle1 != angle2); // true
@@ -42,6 +42,7 @@ bool inequal = (angle1 != angle2); // true
 `sf::Angle`s can exist outside range [-pi, pi) or [0, 2pi).
 An angle may have a value of 720 degrees, for example.
 If you would like to get a new angle wrapped to its equivalent value within a smaller range, there are two functions for doing so, `sf::Angle::wrapSigned` and `sf::Angle::wrapUnsigned`.
+
 - `wrapSigned` will return a new angle wrapped to the range [-pi, pi).
 - `wrapUnsigned` will return a new angle wrapped to the range [0, 2pi).
 
