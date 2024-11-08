@@ -215,7 +215,7 @@ selector.add(socket);
 A selector is not a socket container.
 It only references (points to) the sockets that you add, it doesn't store them.
 There is no way to retrieve or count the sockets that you put inside.
-Instead, it is up to you to have your own separate socket storage (like a `std::vector` or a `std::list`).
+Instead, it is up to you to have your own separate socket storage (like a `std::vector` or a `std::unordered_map`).
 
 Once you have filled the selector with all the sockets that you want to monitor, you must call its `wait` function to wait until any one of them has received something (or has triggered an error).
 You can also pass an optional time out value, so that the function will fail if nothing has been received after a certain period of time -- this avoids staying stuck forever if nothing happens.
