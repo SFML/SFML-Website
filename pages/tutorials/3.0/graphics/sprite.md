@@ -204,6 +204,21 @@ sf::Sprite loadSprite(const std::filesystem::path& filename)
 } // error: the texture is destroyed here
 ```
 
+Another common way to make this mistake is with containers like `std::vector` that can reallocate all of its elements when adding a new element.
+Here's an example:
+
+```cpp
+std::vector<sf::Texture> textures;
+
+auto& texture1 = textures.emplace_back("image1.png");
+sf::Sprite sprite1(texture1);
+auto& texture2 = textures.emplace_back("image2.png"); // This may reallocate!
+sf::Sprite sprite2(texture2);
+```
+
+The second call to `emplace_back` may cause the entire vector to reallocate.
+This means that `texture1` used to create `sprite1` now exists in a different location in memory and therefore `sprite1` contains an invalid texture pointer.
+
 You must correctly manage the lifetime of your textures and make sure that they live as long as they are used by any sprite.
 
 ## The importance of using as few textures as possible
