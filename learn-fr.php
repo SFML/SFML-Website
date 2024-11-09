@@ -16,7 +16,7 @@
 </div>
 
 <div class="link-box two-columns-right">
-    <a class="apidocs" href="documentation/2.6.1-fr">
+    <a class="apidocs" href="documentation/2.6.2-fr">
         <div class="title">Documentation de l'API</div>
         <div class="description">Référence</div>
     </a>
@@ -86,6 +86,7 @@
 <h2 id="old-docs"><a class="h2-link" href="#old-docs">Documentation pour les anciennes versions</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 
 <ul>
+    <li><strong>SFML 2.6.1:</strong> <a href="tutorials/2.6/index-fr.php">Tutorials</a>, <a href="documentation/2.6.1-fr">Documentation de l'API</a></li>
     <li><strong>SFML 2.6.0:</strong> <a href="tutorials/2.6/index-fr.php">Tutorials</a>, <a href="documentation/2.6.0-fr">Documentation de l'API</a></li>
     <li><strong>SFML 2.5.1:</strong> <a href="tutorials/2.5/index-fr.php">Tutorials</a>, <a href="documentation/2.5.1-fr">Documentation de l'API</a></li>
     <li><strong>SFML 2.5.0:</strong> <a href="tutorials/2.5/index-fr.php">Tutorials</a>, <a href="documentation/2.5.0-fr">Documentation de l'API</a></li>
