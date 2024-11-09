@@ -9,8 +9,8 @@
 <h1>Téléchargement</h1>
 
 <div class="link-box two-columns-left">
-    <a class="download" href="download/sfml/2.6.1/index-fr.php">
-        <div class="title">SFML 2.6.1</div>
+    <a class="download" href="download/sfml/2.6.2/index-fr.php">
+        <div class="title">SFML 2.6.2</div>
         <div class="description">Dernière version stable</div>
     </a>
 </div>
