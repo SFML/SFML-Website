@@ -10,6 +10,7 @@
 <h1>Changelog</h1>
 
 <ul>
+ <li><a href="#sfml-2.6.2">SFML 2.6.2</a></li>
  <li><a href="#sfml-2.6.1">SFML 2.6.1</a></li>
  <li><a href="#sfml-2.6.0">SFML 2.6.0</a></li>
  <li><a href="#sfml-2.5.1">SFML 2.5.1</a></li>
@@ -29,6 +30,45 @@
  <li><a href="#sfml-1.3">SFML 1.3</a></li>
  <li><a href="#sfml-1.2">SFML 1.2</a></li>
  <li><a href="#sfml-1.1">SFML 1.1</a></li>
+</ul>
+
+<h2 id="sfml-2.6.2"><a class="h2-link" href="#sfml-2.6.2">SFML 2.6.2</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
+<h3 id="2.6.2-general"><a class="h3-link" href="#2.6.2-general">General</a></h3>
+<ul>
+  <li>Ensure GNUInstallDirs cache vars are included before first used (<a href="https://github.com/SFML/SFML/pull/2778">#2778</a>, <a href="https://github.com/SFML/SFML/pull/2779">#2779</a>)</li>
+  <li>[macOS] Fix incorrect variable expansion (<a href="https://github.com/SFML/SFML/pull/2780">#2780</a>)</li>
+  <li>Replace deprecated CMake command exec_program (<a href="https://github.com/SFML/SFML/pull/2888">#2888</a>)</li>
+  <li>Fix Doxygen Generation (<a href="https://github.com/SFML/SFML/pull/2986">#2986</a>, <a href="https://github.com/SFML/SFML/pull/2812">#2812</a>, <a href="https://github.com/SFML/SFML/pull/2813">#2813</a>)</li>
+  <li>[iOS] Use built-in iOS support for CMake (<a href="https://github.com/SFML/SFML/pull/3113">#3113</a>)</li>
+  <li>[Windows] Fix SFML_USE_STATIC_STD_LIBS behavior (<a href="https://github.com/SFML/SFML/pull/3131">#3131</a>)</li>
+  <li>[Windows] Add support for UCRT MinGW (<a href="https://github.com/SFML/SFML/pull/2289">#2289</a>, <a href="https://github.com/SFML/SFML/pull/2821">#2821</a>, <a href="https://github.com/SFML/SFML/pull/3054">#3054</a>, <a href="https://github.com/SFML/SFML/pull/3115">#3115</a>)</li>
+  <li>[Windows] Add support for Windows ARM64 (<a href="https://github.com/SFML/SFML/pull/3111">#3111</a>, <a href="https://github.com/SFML/SFML/pull/3176">#3176</a>)</li>
+  <li>Fix Nix pkg-config support (<a href="https://github.com/SFML/SFML/pull/2835">#2835</a>)</li>
+</ul>
+
+<h3 id="2.6.2-window"><a class="h3-link" href="#2.6.2-window">Window</a></h3>
+<h4>Bugfixes</h4>
+<ul>
+  <li>Fix joystickButton being used for Joystick(Dis)Connected event (<a href="https://github.com/SFML/SFML/pull/2957">#2957</a>)</li>
+  <li>[Windows] Close the clipboard if we fail to empty it (<a href="https://github.com/SFML/SFML/pull/3043">#3043</a>)</li>
+  <li>[Android] Remove use of deprecated ALooper_pollAll (<a href="https://github.com/SFML/SFML/pull/3181">#3181</a>, <a href="https://github.com/SFML/SFML/pull/3189">#3189</a>)</li>
+  <li>[macOS] Fix how macOS fullscreen video modes are detected (<a href="https://github.com/SFML/SFML/pull/2300">#2300</a>, <a href="https://github.com/SFML/SFML/pull/3151">#3151</a>)</li>
+  <li>[macOS] Prevent unnecessary macOS input monitoring permission prompts (<a href="https://github.com/SFML/SFML/pull/2843">#2843</a>, <a href="https://github.com/SFML/SFML/pull/3235">#3235</a>)</li>
+  <li>[Linux] Fix DRM mode setting to use SFML window dimensions (<a href="https://github.com/SFML/SFML/pull/3136">#3136</a>)</li>
+  <li>[Android] Fix wrong fullscreen resolution (<a href="https://github.com/SFML/SFML/pull/1349">#1349</a>, <a href="https://github.com/SFML/SFML/pull/1559">#1559</a>, <a href="https://github.com/SFML/SFML/pull/2396">#2396</a>)</li>
+</ul>
+
+<h3 id="2.6.2-graphics"><a class="h3-link" href="#2.6.2-graphics">Graphics</a></h3>
+<h4>Bugfixes</h4>
+<ul>
+  <li>[Windows] Fix MSVC warning about uninitialized sf::Glyph members (<a href="https://github.com/SFML/SFML/pull/2929">#2929</a>)</li>
+  <li>Prevent crash when setting empty uniform array (<a href="https://github.com/SFML/SFML/pull/3185">#3185</a>, <a href="https://github.com/SFML/SFML/pull/3186">#3186</a>)</li>
+</ul>
+
+<h3 id="2.6.2-audio"><a class="h3-link" href="#2.6.2-audio">Audio</a></h3>
+<h4>Bugfixes</h4>
+<ul>
+  <li>Abort looping in SoundStream::streamData if an OpenAL error occurs (<a href="https://github.com/SFML/SFML/pull/1831">#1831</a>, <a href="https://github.com/SFML/SFML/pull/2781">#2781</a>)</li>
 </ul>
 
 <h2 id="sfml-2.6.1"><a class="h2-link" href="#sfml-2.6.1">SFML 2.6.1</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
