@@ -164,6 +164,20 @@ sound.setLoop(true);
 
 More attributes are available, but they are related to spatialization and are explained in the [corresponding tutorial](spatialization.md "Spatialization tutorial").
 
+## Looping music
+
+`sf::Music` provides the ability to loop a given segment of the audio.
+`sf::Music::setLoopPoints` sets the beginning and duration of the sound's looping sequence.
+Here's what that looks like:
+
+```cpp
+sf::Music music("music.wav");
+music.setLoopPoints({sf::milliseconds(500), sf::seconds(4)});
+```
+
+This code will loop a 4 second long segment of the music starting 500 milliseconds from the beginning.
+`sf::Music` may tweak this loop range to match up with the internally held samples so you can check the actual loop points with `getLoopPoints`.
+
 ## Common mistakes
 
 ### Destroyed sound buffer
