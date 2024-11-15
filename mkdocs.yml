@@ -53,6 +53,9 @@ extra:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/sfmldev
       name: SFML on Twitter
+    - icon: fontawesome/brands/bluesky
+      link: https://bsky.app/profile/sfml.bsky.social
+      name: SFML on Bluesky
     - icon: fontawesome/brands/discord
       link: https://discord.gg/nr4X7Fh
       name: SFML's Discord Server
