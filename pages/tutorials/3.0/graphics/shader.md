@@ -76,17 +76,19 @@ Shaders can also be loaded directly from strings, with the `loadFromMemory` func
 This can be useful if you want to embed the shader source directly into your program.
 
 ```cpp
-constexpr std::string_view vertexShader = \
-    "void main()" \
-    "{" \
-    "    ..." \
-    "}";
+constexpr std::string_view vertexShader = R"(
+void main()
+{
+    ... 
+}
+)";
 
-constexpr std::string_view fragmentShader = \
-    "void main()" \
-    "{" \
-    "    ..." \
-    "}";
+constexpr std::string_view fragmentShader = R"(
+void main()
+{
+    ... 
+}
+)";
 
 // load only the vertex shader
 if (!shader.loadFromMemory(vertexShader, sf::Shader::Vertex))
