@@ -212,7 +212,7 @@ if (boundingBox.contains(point))
 
 // check collision with another box (like the bounding box of another entity)
 sf::FloatRect otherBox = ...;
-if (boundingBox.intersects(otherBox))
+if (const std::optional intersection = boundingBox.findIntersection(otherBox))
 {
     // collision!
 }
