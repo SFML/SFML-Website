@@ -1,4 +1,4 @@
-* [Accueil](https://www.sfml-dev.org/index-fr.php)
+* [Accueil](index.fr.md)
 * [Apprendre](https://www.sfml-dev.org/learn-fr.php)
 * [Tutoriels](https://www.sfml-dev.org/tutorials/2.6/index-fr.php)
     * [SFML 3.0 (In Development)](tutorials/3.0/index.md)

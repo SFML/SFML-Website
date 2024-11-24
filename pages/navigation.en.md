@@ -1,4 +1,4 @@
-* [Home](https://www.sfml-dev.org/index.php)
+* [Home](index.en.md)
 * [Learn](https://www.sfml-dev.org/learn.php)
 * [Tutorials](https://www.sfml-dev.org/tutorials/)
     * [SFML 3.0 (In Development)](tutorials/3.0/index.md)

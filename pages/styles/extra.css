@@ -14,3 +14,7 @@ p:has(img) {
 .md-main__inner {
     margin-top: 0;
 }
+
+.section {
+    display: inline-block;
+}
