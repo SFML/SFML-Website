@@ -1,5 +1,23 @@
 * [Home](index.en.md)
-* [Learn](https://www.sfml-dev.org/learn.php)
+* Learn
+    * learn/*.md
+    * [Tutorials](https://www.sfml-dev.org/tutorials/)
+    * [Documentation](https://www.sfml-dev.org/documentation/)
+    * FAQ
+        * faq/index*.md
+        * faq/general*.md
+        * faq/build-use*.md
+        * faq/graphics*.md
+        * faq/audio*.md
+        * faq/network*.md
+        * faq/window*.md
+        * faq/system*.md
+        * faq/programming*.md
+        * faq/troubleshooting*.md
+        * faq/licensing*.md
+        * [Libraries for SFML](https://github.com/SFML/SFML/wiki/Community-FAQ#libraries)
+        * [Miscellaneous](https://github.com/SFML/SFML/wiki/Community-FAQ#misc)
+    * [License](license.md)
 * [Tutorials](https://www.sfml-dev.org/tutorials/)
     * [SFML 3.0 (In Development)](tutorials/3.0/index.md)
         * Getting Started
