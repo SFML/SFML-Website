@@ -39,3 +39,22 @@ RewriteRule /latest(/?)(.*) /tutorials/2.6/$2 [R=301,L]
 # Artifact redirects
 RewriteCond %{REQUEST_URI} ^/artifacts(/?)(.*)?$
 RewriteRule ^ https://artifacts.sfml-dev.org/by-branch/master/ [R=301,L]
+
+# Pre-MkDocs redirects
+RewriteCond %{REQUEST_URI} ^/index\.php$
+RewriteRule ^ / [R=301,L]
+RewriteCond %{REQUEST_URI} ^/index-fr\.php$
+RewriteRule ^ /fr/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/learn\.php$
+RewriteRule ^ /learn/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/learn-fr\.php$
+RewriteRule ^ /fr/learn/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/license\.php$
+RewriteRule ^ /license/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/license-fr\.php$
+RewriteRule ^ /fr/license/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/faq\.php$
+RewriteRule ^ /faq/ [R=301,L]
