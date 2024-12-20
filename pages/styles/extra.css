@@ -7,7 +7,7 @@
     height: 3rem;
 }
 
-p:has(.md-button--primary) {
+p:has(.md-button) {
     text-align: center;
 }
 
