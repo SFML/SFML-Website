@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['encode_0',['encode',['../classsf_1_1Utf_3_018_01_4.html#ae0cba1d71b9e68131852c0248e58dcec',1,'sf::Utf&lt; 8 &gt;::encode()'],['../classsf_1_1Utf_3_0116_01_4.html#aea266638b5ce5de8b244e59f47151eba',1,'sf::Utf&lt; 16 &gt;::encode()'],['../classsf_1_1Utf_3_0132_01_4.html#a14b4515374ac5100ab9d136715167802',1,'sf::Utf&lt; 32 &gt;::encode(std::uint32_t input, Out output, std::uint32_t replacement=0)']]],
-  ['encodeansi_1',['encodeAnsi',['../classsf_1_1Utf_3_0132_01_4.html#adc843b66b4d054989296166ab1661d71',1,'sf::Utf&lt; 32 &gt;']]],
-  ['encodewide_2',['encodeWide',['../classsf_1_1Utf_3_0132_01_4.html#a06374a22f6dbcbbc0019fa042eb1f8c8',1,'sf::Utf&lt; 32 &gt;']]],
+  ['encode_0',['encode',['../classsf_1_1Utf_3_018_01_4.html#afcb5dcdfe1e4f8c1b949c5da2d12077d',1,'sf::Utf&lt; 8 &gt;::encode()'],['../classsf_1_1Utf_3_0116_01_4.html#ad8585dc8ff7a19683de722764bc81c49',1,'sf::Utf&lt; 16 &gt;::encode()'],['../classsf_1_1Utf_3_0132_01_4.html#aaf1566efc0669c2e184045c8e9d3d610',1,'sf::Utf&lt; 32 &gt;::encode(char32_t input, Out output, char32_t replacement=0)']]],
+  ['encodeansi_1',['encodeAnsi',['../classsf_1_1Utf_3_0132_01_4.html#ab00c737cec395169b396f8c3d30d4662',1,'sf::Utf&lt; 32 &gt;']]],
+  ['encodewide_2',['encodeWide',['../classsf_1_1Utf_3_0132_01_4.html#ab367814139a1dcdb817a307c5b4604f2',1,'sf::Utf&lt; 32 &gt;']]],
   ['end_3',['end',['../classsf_1_1String.html#ac823012f39cb6f61100418876e99d53b',1,'sf::String::end()'],['../classsf_1_1String.html#af1ab4c82ff2bdfb6903b4b1bb78a8e5c',1,'sf::String::end() const']]],
   ['endofpacket_4',['endOfPacket',['../classsf_1_1Packet.html#a61e354fa670da053907c14b738839560',1,'sf::Packet']]],
   ['eof_5',['eof',['../structsf_1_1U8StringCharTraits.html#a612242cd2cee44b114dc05f1759f2919',1,'sf::U8StringCharTraits']]],

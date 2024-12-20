@@ -38,7 +38,7 @@ var searchData=
   ['getgeometriccenter_35',['getGeometricCenter',['../classsf_1_1CircleShape.html#a6ecb13116e7c4fbd0486ebda47d9e354',1,'sf::CircleShape::getGeometricCenter()'],['../classsf_1_1RectangleShape.html#aaa54f725abcdf0af9be2a499a582c670',1,'sf::RectangleShape::getGeometricCenter()'],['../classsf_1_1Shape.html#a5aa1935f3a532fbecf4a417d14247aed',1,'sf::Shape::getGeometricCenter() const']]],
   ['getglobalbounds_36',['getGlobalBounds',['../classsf_1_1Shape.html#ac0e29425d908d5442060cc44790fe4da',1,'sf::Shape::getGlobalBounds()'],['../classsf_1_1Sprite.html#aa795483096b90745b2e799532963e271',1,'sf::Sprite::getGlobalBounds()'],['../classsf_1_1Text.html#ad33ed96ce9fbe99610f7f8b6874a16b4',1,'sf::Text::getGlobalBounds()']]],
   ['getglobalvolume_37',['getGlobalVolume',['../namespacesf_1_1Listener.html#a6b0f5c3cf41e3f5f5c62349b828fb1f8',1,'sf::Listener']]],
-  ['getglyph_38',['getGlyph',['../classsf_1_1Font.html#acf07e064a3ab511212e2ef3bc1838052',1,'sf::Font']]],
+  ['getglyph_38',['getGlyph',['../classsf_1_1Font.html#a9f49163495c3c12bc188f60255d52501',1,'sf::Font']]],
   ['getgraphicsrequiredinstanceextensions_39',['getGraphicsRequiredInstanceExtensions',['../namespacesf_1_1Vulkan.html#a3f0cbedc28688be11208afef83fe1c1f',1,'sf::Vulkan']]],
   ['getidentification_40',['getIdentification',['../namespacesf_1_1Joystick.html#a0981cdfb1554be0eef5e080ee9c0bf27',1,'sf::Joystick']]],
   ['getif_41',['getIf',['../classsf_1_1Event.html#a2f7d5c82b6401ae288a252c295129a32',1,'sf::Event']]],

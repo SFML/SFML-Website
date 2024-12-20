@@ -18,8 +18,8 @@
         * [Libraries for SFML](https://github.com/SFML/SFML/wiki/Community-FAQ#libraries)
         * [Miscellaneous](https://github.com/SFML/SFML/wiki/Community-FAQ#misc)
     * [Licence](license.md)
-* [Tutoriels](https://www.sfml-dev.org/tutorials/2.6/index-fr.php)
-    * [SFML 3.0 (In Development)](tutorials/3.0/index.md)
+* Tutoriels
+    * [SFML 3.0](tutorials/3.0/index.md)
         * Getting Started
             * tutorials/3.0/getting-started/cmake*.md
             * tutorials/3.0/getting-started/visual-studio*.md
@@ -63,8 +63,8 @@
     * [SFML 2.1](https://www.sfml-dev.org/tutorials/2.1/index-fr.php)
     * [SFML 2.0](https://www.sfml-dev.org/tutorials/2.0/index-fr.php)
     * [SFML 1.6](https://www.sfml-dev.org/tutorials/1.6/index-fr.php)
-* [Documentation](https://www.sfml-dev.org/documentation/2.6.2-fr/)
-    * [SFML 3.0.0 (In Development)](documentation/3.0.0/index.html)
+* Documentation
+    * [SFML 3.0.0](documentation/3.0.0/index.html)
     * [SFML 2.6.2](https://www.sfml-dev.org/documentation/2.6.2-fr/)
     * [SFML 2.6.1](https://www.sfml-dev.org/documentation/2.6.1-fr/)
     * [SFML 2.6.0](https://www.sfml-dev.org/documentation/2.6.0-fr/)
