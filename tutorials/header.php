@@ -4,7 +4,7 @@
  * $full_version and $page.
  */
 
-  $latest = '2.6'; /* no minor version for tutorials */
+  $latest = '3.0'; /* no minor version for tutorials */
   $linklatest = '';
 
   $breadcrumbs = array(
