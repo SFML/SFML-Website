@@ -82,3 +82,23 @@ RewriteCond %{REQUEST_URI} ^/style\.php$
 RewriteRule ^ /development/style/ [R=301,L]
 RewriteCond %{REQUEST_URI} ^/workflow\.php$
 RewriteRule ^ /development/workflow/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/download\.php$
+RewriteRule ^ /download/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/download-fr\.php$
+RewriteRule ^ /fr/download/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/download/bindings\.php$
+RewriteRule ^ /download/bindings/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/download/bindings-fr\.php$
+RewriteRule ^ /fr/download/bindings/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/download/goodies/index\.php$
+RewriteRule ^ /download/goodies/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/download/goodies/index-fr\.php$
+RewriteRule ^ /fr/download/goodies/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/download/sfml/old-versions\.php$
+RewriteRule ^ /download/sfml/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/download/sfml/old-versions-fr\.php$
+RewriteRule ^ /fr/download/sfml/ [R=301,L]

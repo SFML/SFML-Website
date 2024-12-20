@@ -80,10 +80,16 @@
     * [SFML 2.1](https://www.sfml-dev.org/documentation/2.1-fr/)
     * [SFML 2.0](https://www.sfml-dev.org/documentation/2.0-fr/)
     * [SFML 1.6](https://www.sfml-dev.org/documentation/1.6-fr/)
-* [Télécharger](https://www.sfml-dev.org/download-fr.php)
+* Télécharger
+    * download/index*.md
+    * download/sfml/3.0.0*.md
+    * [SFML 2.6.2](https://www.sfml-dev.org/download/sfml/2.6.2/index-fr.php)
+    * download/sfml/index*.md
+    * download/bindings*.md
+    * download/goodies/*.md
 * [Communauté](community/index.md)
 * [Développement](https://www.sfml-dev.org/development-fr.php)
-* Development
+* Développement
     * development/index*.md
     * development/issues*.md
     * development/changelog*.md
