@@ -98,7 +98,7 @@ If the second variant doesn't work for you either, and you know that your hardwa
 
 ## My animations/movements aren't smooth or exhibit stuttering! {: #smooth-animation}
 
-The most common cause of this is because you are directly or indirectly relying on your application running at a fixed frame rate. Frame rates cannot be reliably locked to a certain value without a lot of effort and knowledge of lower level operating system aspects. The reasons for this are given [here](#window-set-framerate-limit) and [here](#system-sleep). Using vertical synchronization is out of the question because this might result in different frame rates on different systems.
+The most common cause of this is because you are directly or indirectly relying on your application running at a fixed frame rate. Frame rates cannot be reliably locked to a certain value without a lot of effort and knowledge of lower level operating system aspects. The reasons for this are given [here](window.md#set-framerate-limit) and [here](system.md#sleep). Using vertical synchronization is out of the question because this might result in different frame rates on different systems.
 
 Suppose you have a simple loop as such:
 

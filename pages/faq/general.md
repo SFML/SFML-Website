@@ -123,6 +123,6 @@ Deeper understanding, good to know to understand what is happening "behind the s
 
 First make sure you've read the tutorials and the documentation, then check whether the question has already been asked before. If after that you still have a question **regarding SFML** in the [SFML forum](https://en.sfml-dev.org/forums/).
 
-Keep in mind that using SFML is not a very suitable way to [learn the bare basics of C++ programming](#grl-learn), and as such it is recommended that any questions regarding general C++ be asked in more adequate forums where people proficient in C++ can help you better.
+Keep in mind that using SFML is not a very suitable way to [learn the bare basics of C++ programming](#learn), and as such it is recommended that any questions regarding general C++ be asked in more adequate forums where people proficient in C++ can help you better.
 
 Additionally you also find people in the [Official IRC chat or Discord server](https://www.sfml-dev.org/community.php).

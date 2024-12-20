@@ -24,7 +24,7 @@ If you've checked all of those, and SFML still refuses to work, see [I found a b
 
 ### I keep getting "undefined reference to <some strange thing that looks like an SFML function>" errors! {: #grl-undefined-ref}
 
-See [What and how do I link to use SFML?](#build-link)
+See [What and how do I link to use SFML?](build-use.md#link)
 
 If that doesn't help, see [How do I make my IDE output verbose build information?](#grl-verbose-ide)
 
