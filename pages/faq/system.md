@@ -72,7 +72,7 @@ You might be wondering how it would still be possible to store multiple threads 
 
 The `sf::NonCopyable` restrictions can only apply to instances of an `sf::Thread`. When copying pointers, the copy constructor or assignment operator of a class are not invoked. As such it is perfectly legal to copy and pass pointers around.
 
-Since working with raw pointers is something you want to avoid in modern C++, you can use [smart pointers](#prog-smart) to great extent in combination with this technique.
+Since working with raw pointers is something you want to avoid in modern C++, you can use [smart pointers](programming.md#smart) to great extent in combination with this technique.
 
 ## Why doesn't sf::sleep sleep for the amount of time I want it to? {: #sleep}
 
