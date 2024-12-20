@@ -83,3 +83,11 @@
 * [Télécharger](https://www.sfml-dev.org/download-fr.php)
 * [Communauté](community/index.md)
 * [Développement](https://www.sfml-dev.org/development-fr.php)
+* Development
+    * development/index*.md
+    * development/issues*.md
+    * development/changelog*.md
+    * development/migrate*.md
+    * development/contribute*.md
+    * development/style*.md
+    * development/workflow*.md

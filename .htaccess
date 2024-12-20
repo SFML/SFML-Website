@@ -63,3 +63,22 @@ RewriteCond %{REQUEST_URI} ^/community\.php$
 RewriteRule ^ /community/ [R=301,L]
 RewriteCond %{REQUEST_URI} ^/community-fr\.php$
 RewriteRule ^ /fr/community/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/development\.php$
+RewriteRule ^ /development/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/development-fr\.php$
+RewriteRule ^ /fr/development/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/issues\.php$
+RewriteRule ^ /development/issues/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/issues-fr\.php$
+RewriteRule ^ /fr/development/issues/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/changelog\.php$
+RewriteRule ^ /development/changelog/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/contribute\.php$
+RewriteRule ^ /development/contribute/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/style\.php$
+RewriteRule ^ /development/style/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/workflow\.php$
+RewriteRule ^ /development/workflow/ [R=301,L]
