@@ -19,10 +19,6 @@ hide:
 -   [![](../images/icons/changelog.png){ align=left } __Changelog__](changelog.md)
 
     What has changed?
-    
--   [![](../images/icons/sources.png){ align=left } __Migration Guide__](migrate.md)
-
-    Migrate from SFML 2 to SFML 3
 
 -   [![](../images/icons/contribute.png){ align=left } __Contribution Guidelines__](contribute.md)
 
