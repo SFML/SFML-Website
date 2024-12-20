@@ -7,6 +7,10 @@
     height: 3rem;
 }
 
+p:has(.md-button--primary) {
+    text-align: center;
+}
+
 p:has(img) {
     text-align: center;
 }

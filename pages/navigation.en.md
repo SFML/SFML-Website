@@ -82,4 +82,11 @@
     * [SFML 1.6](https://www.sfml-dev.org/documentation/1.6/)
 * [Download](https://www.sfml-dev.org/download.php)
 * [Community](community/index.md)
-* [Development](https://www.sfml-dev.org/development.php)
+* Development
+    * development/index*.md
+    * development/issues*.md
+    * development/changelog*.md
+    * development/migrate*.md
+    * development/contribute*.md
+    * development/style*.md
+    * development/workflow*.md
