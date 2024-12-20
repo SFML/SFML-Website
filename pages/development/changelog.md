@@ -2,7 +2,7 @@
 
 ## SFML 3.0.0
 
-For a closer look at breaking changes and how to migrate from SFML 2, check out the [migration guide](migrate.md).
+For a closer look at breaking changes and how to migrate from SFML 2, check out the [migration guide](../tutorials/3.0/getting-started/migrate.md).
 
 ### General
 

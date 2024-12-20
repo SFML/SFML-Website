@@ -2,6 +2,7 @@
 
 ## Getting started
 
+- [Migrating from SFML 2 to SFML 3](getting-started/migrate.md)
 - [SFML with the CMake Project Template](getting-started/cmake.md) (Recommended)
 - [SFML and Visual Studio](getting-started/visual-studio.md)
 - [SFML and Code::Blocks (MinGW)](getting-started/code-blocks.md)

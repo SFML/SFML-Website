@@ -20,10 +20,6 @@ hide:
 
     Quoi de neuf?
 
--   [![](../images/icons/sources.png){ align=left } __Guide de migration__ ![EN](../images/icons/flag-en.png)](migrate.md)
-
-    Migration de SFML 2 vers SFML 3
-
 -   [![](../images/icons/contribute.png){ align=left } __Guide du contributeur__ ![EN](../images/icons/flag-en.png)](contribute.md)
 
     Comment aider à développer SFML

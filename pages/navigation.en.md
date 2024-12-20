@@ -21,6 +21,7 @@
 * Tutorials
     * [SFML 3.0](tutorials/3.0/index.md)
         * Getting Started
+            * tutorials/3.0/getting-started/migrate*.md
             * tutorials/3.0/getting-started/cmake*.md
             * tutorials/3.0/getting-started/visual-studio*.md
             * tutorials/3.0/getting-started/code-blocks*.md
@@ -92,7 +93,6 @@
     * development/index*.md
     * development/issues*.md
     * development/changelog*.md
-    * development/migrate*.md
     * development/contribute*.md
     * development/style*.md
     * development/workflow*.md
