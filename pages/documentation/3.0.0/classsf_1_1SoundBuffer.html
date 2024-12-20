@@ -8,7 +8,7 @@
         <link rel="icon" href="../../images/favicon.ico" />
         <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44" />
         <title>Documentation for SFML 3.0.0 - Simple and Fast Multimedia Library</title>
-        <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css" />
+        <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css" />
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback" />
@@ -125,10 +125,10 @@
                 <div class="md-grid">
                     <ul class="md-tabs__list">
                         <li class="md-tabs__item">
-                            <a href="https://www.sfml-dev.org/index.php" class="md-tabs__link"> Home </a>
+                            <a href="https://www.sfml-dev.org/" class="md-tabs__link"> Home </a>
                         </li>
                         <li class="md-tabs__item">
-                            <a href="https://www.sfml-dev.org/learn.php" class="md-tabs__link"> Learn </a>
+                            <a href="https://www.sfml-dev.org/learn/" class="md-tabs__link"> Learn </a>
                         </li>
                         <li class="md-tabs__item">
                             <a href="https://www.sfml-dev.org/tutorials/" class="md-tabs__link"> Tutorials </a>
@@ -137,13 +137,13 @@
                             <a href="https://www.sfml-dev.org/documentation/" class="md-tabs__link"> Documentation </a>
                         </li>
                         <li class="md-tabs__item">
-                            <a href="https://www.sfml-dev.org/download.php" class="md-tabs__link"> Download </a>
+                            <a href="https://www.sfml-dev.org/download/" class="md-tabs__link"> Download </a>
                         </li>
                         <li class="md-tabs__item">
-                            <a href="https://www.sfml-dev.org/community.php" class="md-tabs__link"> Community </a>
+                            <a href="https://www.sfml-dev.org/community/" class="md-tabs__link"> Community </a>
                         </li>
                         <li class="md-tabs__item">
-                            <a href="https://www.sfml-dev.org/development.php" class="md-tabs__link"> Development </a>
+                            <a href="https://www.sfml-dev.org/development/" class="md-tabs__link"> Development </a>
                         </li>
                     </ul>
                 </div>
@@ -178,12 +178,12 @@
                                     </div>
                                     <ul class="md-nav__list">
                                         <li class="md-nav__item">
-                                            <a href="https://www.sfml-dev.org/index.php" class="md-nav__link">
+                                            <a href="https://www.sfml-dev.org/" class="md-nav__link">
                                                 <span class="md-ellipsis"> Home </span>
                                             </a>
                                         </li>
                                         <li class="md-nav__item">
-                                            <a href="https://www.sfml-dev.org/learn.php" class="md-nav__link">
+                                            <a href="https://www.sfml-dev.org/learn/" class="md-nav__link">
                                                 <span class="md-ellipsis"> Learn </span>
                                             </a>
                                         </li>
@@ -211,7 +211,7 @@
                                                 <ul class="md-nav__list">
                                                     <li class="md-nav__item">
                                                         <a href="https://www.sfml-dev.org/documentation/3.0.0/" class="md-nav__link md-nav__link--active">
-                                                            <span class="md-ellipsis"> SFML 3.0.0 (In Development) </span>
+                                                            <span class="md-ellipsis"> SFML 3.0.0 </span>
                                                         </a>
                                                     </li>
                                                     <li class="md-nav__item">
@@ -293,17 +293,17 @@
                                             </nav>
                                         </li>
                                         <li class="md-nav__item">
-                                            <a href="https://www.sfml-dev.org/download.php" class="md-nav__link">
+                                            <a href="https://www.sfml-dev.org/download/" class="md-nav__link">
                                                 <span class="md-ellipsis"> Download </span>
                                             </a>
                                         </li>
                                         <li class="md-nav__item">
-                                            <a href="https://www.sfml-dev.org/community.php" class="md-nav__link">
+                                            <a href="https://www.sfml-dev.org/community/" class="md-nav__link">
                                                 <span class="md-ellipsis"> Community </span>
                                             </a>
                                         </li>
                                         <li class="md-nav__item">
-                                            <a href="https://www.sfml-dev.org/development.php" class="md-nav__link">
+                                            <a href="https://www.sfml-dev.org/development/" class="md-nav__link">
                                                 <span class="md-ellipsis"> Development </span>
                                             </a>
                                         </li>
@@ -480,6 +480,7 @@ Friends</h2></td></tr>
 <p>A sound buffer can be loaded from a file, from memory, from a custom stream (see <code><a class="el" href="classsf_1_1InputStream.html" title="Abstract class for custom file input streams.">sf::InputStream</a></code>) or directly from an array of samples. It can also be saved back to a file.</p>
 <p><a class="el" href="classsf_1_1Sound.html" title="Regular sound that can be played in the audio environment.">Sound</a> buffers alone are not very useful: they hold the audio data but cannot be played. To do so, you need to use the <code><a class="el" href="classsf_1_1Sound.html" title="Regular sound that can be played in the audio environment.">sf::Sound</a></code> class, which provides functions to play/pause/stop the sound as well as changing the way it is outputted (volume, pitch, 3D position, ...). This separation allows more flexibility and better performances: indeed a <code><a class="el" href="classsf_1_1SoundBuffer.html" title="Storage for audio samples defining a sound.">sf::SoundBuffer</a></code> is a heavy resource, and any operation on it is slow (often too slow for real-time applications). On the other side, a <code><a class="el" href="classsf_1_1Sound.html" title="Regular sound that can be played in the audio environment.">sf::Sound</a></code> is a lightweight object, which can use the audio data of a sound buffer and change the way it is played without actually modifying that data. Note that it is also possible to bind several <code><a class="el" href="classsf_1_1Sound.html" title="Regular sound that can be played in the audio environment.">sf::Sound</a></code> instances to the same <code><a class="el" href="classsf_1_1SoundBuffer.html" title="Storage for audio samples defining a sound.">sf::SoundBuffer</a></code>.</p>
 <p>It is important to note that the <code><a class="el" href="classsf_1_1Sound.html" title="Regular sound that can be played in the audio environment.">sf::Sound</a></code> instance doesn't copy the buffer that it uses, it only keeps a reference to it. Thus, a <code><a class="el" href="classsf_1_1SoundBuffer.html" title="Storage for audio samples defining a sound.">sf::SoundBuffer</a></code> must not be destructed while it is used by a <code><a class="el" href="classsf_1_1Sound.html" title="Regular sound that can be played in the audio environment.">sf::Sound</a></code> (i.e. never write a function that uses a local <code><a class="el" href="classsf_1_1SoundBuffer.html" title="Storage for audio samples defining a sound.">sf::SoundBuffer</a></code> instance for loading a sound).</p>
+<p>When loading sound samples from an array, a channel map needs to be provided, which specifies the mapping of the position in the sample frame to the sound channel. For example when you have six samples in a frame and a 5.1 sound system, the channel map defines how each of those samples map to which speaker channel.</p>
 <p>Usage example: </p><div class="fragment"><div class="line"><span class="comment">// Load a new sound buffer from a file</span></div>
 <div class="line"><span class="keyword">const</span> <a class="code hl_class" href="classsf_1_1SoundBuffer.html">sf::SoundBuffer</a> buffer(<span class="stringliteral">&quot;sound.wav&quot;</span>);</div>
 <div class="line"> </div>
@@ -495,8 +496,28 @@ Friends</h2></td></tr>
 <div class="line"><span class="comment">// Play it with a higher pitch -- the first sound remains unchanged</span></div>
 <div class="line">sound2.setPitch(2);</div>
 <div class="line">sound2.play();</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Load samples with a channel map</span></div>
+<div class="line"><span class="keyword">auto</span> samples = std::vector&lt;std::int16_t&gt;();</div>
+<div class="line"><span class="comment">// ...</span></div>
+<div class="line"><span class="keyword">auto</span> channelMap = std::vector&lt;sf::SoundChannel&gt;{</div>
+<div class="line">    <a class="code hl_enumvalue" href="group__audio.html#gga9800c7f3d5e7a9c9310f707b2c995ff3a3a86c1ecef856c6360b14ee920abd2d4">sf::SoundChannel::FrontLeft</a>,</div>
+<div class="line">    <a class="code hl_enumvalue" href="group__audio.html#gga9800c7f3d5e7a9c9310f707b2c995ff3ad446ecb2171ed693701ea6bd61081da1">sf::SoundChannel::FrontCenter</a>,</div>
+<div class="line">    <a class="code hl_enumvalue" href="group__audio.html#gga9800c7f3d5e7a9c9310f707b2c995ff3a17a1a1897fa234ffd995f32ff31c4075">sf::SoundChannel::FrontRight</a>,</div>
+<div class="line">    <a class="code hl_enumvalue" href="group__audio.html#gga9800c7f3d5e7a9c9310f707b2c995ff3aa07ea17eb99337c60ed9ad770cf2bb55">sf::SoundChannel::BackRight</a>,</div>
+<div class="line">    <a class="code hl_enumvalue" href="group__audio.html#gga9800c7f3d5e7a9c9310f707b2c995ff3abff6f014d4c53710a1ad968e9b401ccb">sf::SoundChannel::BackLeft</a>,</div>
+<div class="line">    <a class="code hl_enumvalue" href="group__audio.html#gga9800c7f3d5e7a9c9310f707b2c995ff3aadf637c910a4d16c3ad4f03b31063215">sf::SoundChannel::LowFrequencyEffects</a></div>
+<div class="line">};</div>
+<div class="line"><span class="keyword">auto</span> soundBuffer = <a class="code hl_class" href="classsf_1_1SoundBuffer.html">sf::SoundBuffer</a>(samples.data(), samples.size(), channelMap.size(), 44100, channelMap);</div>
+<div class="line"><span class="keyword">auto</span> sound = <a class="code hl_class" href="classsf_1_1Sound.html">sf::Sound</a>(soundBuffer);</div>
 <div class="ttc" id="aclasssf_1_1SoundBuffer_html"><div class="ttname"><a href="classsf_1_1SoundBuffer.html">sf::SoundBuffer</a></div><div class="ttdoc">Storage for audio samples defining a sound.</div><div class="ttdef"><b>Definition</b> <a href="SoundBuffer_8hpp_source.html#l00054">SoundBuffer.hpp:55</a></div></div>
 <div class="ttc" id="aclasssf_1_1Sound_html"><div class="ttname"><a href="classsf_1_1Sound.html">sf::Sound</a></div><div class="ttdoc">Regular sound that can be played in the audio environment.</div><div class="ttdef"><b>Definition</b> <a href="Sound_8hpp_source.html#l00047">Sound.hpp:48</a></div></div>
+<div class="ttc" id="agroup__audio_html_gga9800c7f3d5e7a9c9310f707b2c995ff3a17a1a1897fa234ffd995f32ff31c4075"><div class="ttname"><a href="group__audio.html#gga9800c7f3d5e7a9c9310f707b2c995ff3a17a1a1897fa234ffd995f32ff31c4075">sf::SoundChannel::FrontRight</a></div><div class="ttdeci">@ FrontRight</div></div>
+<div class="ttc" id="agroup__audio_html_gga9800c7f3d5e7a9c9310f707b2c995ff3a3a86c1ecef856c6360b14ee920abd2d4"><div class="ttname"><a href="group__audio.html#gga9800c7f3d5e7a9c9310f707b2c995ff3a3a86c1ecef856c6360b14ee920abd2d4">sf::SoundChannel::FrontLeft</a></div><div class="ttdeci">@ FrontLeft</div></div>
+<div class="ttc" id="agroup__audio_html_gga9800c7f3d5e7a9c9310f707b2c995ff3aa07ea17eb99337c60ed9ad770cf2bb55"><div class="ttname"><a href="group__audio.html#gga9800c7f3d5e7a9c9310f707b2c995ff3aa07ea17eb99337c60ed9ad770cf2bb55">sf::SoundChannel::BackRight</a></div><div class="ttdeci">@ BackRight</div></div>
+<div class="ttc" id="agroup__audio_html_gga9800c7f3d5e7a9c9310f707b2c995ff3aadf637c910a4d16c3ad4f03b31063215"><div class="ttname"><a href="group__audio.html#gga9800c7f3d5e7a9c9310f707b2c995ff3aadf637c910a4d16c3ad4f03b31063215">sf::SoundChannel::LowFrequencyEffects</a></div><div class="ttdeci">@ LowFrequencyEffects</div></div>
+<div class="ttc" id="agroup__audio_html_gga9800c7f3d5e7a9c9310f707b2c995ff3abff6f014d4c53710a1ad968e9b401ccb"><div class="ttname"><a href="group__audio.html#gga9800c7f3d5e7a9c9310f707b2c995ff3abff6f014d4c53710a1ad968e9b401ccb">sf::SoundChannel::BackLeft</a></div><div class="ttdeci">@ BackLeft</div></div>
+<div class="ttc" id="agroup__audio_html_gga9800c7f3d5e7a9c9310f707b2c995ff3ad446ecb2171ed693701ea6bd61081da1"><div class="ttname"><a href="group__audio.html#gga9800c7f3d5e7a9c9310f707b2c995ff3ad446ecb2171ed693701ea6bd61081da1">sf::SoundChannel::FrontCenter</a></div><div class="ttdeci">@ FrontCenter</div></div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><code><a class="el" href="classsf_1_1Sound.html" title="Regular sound that can be played in the audio environment.">sf::Sound</a></code>, <code><a class="el" href="classsf_1_1SoundBufferRecorder.html" title="Specialized SoundRecorder which stores the captured audio data into a sound buffer.">sf::SoundBufferRecorder</a></code> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="SoundBuffer_8hpp_source.html#l00054">54</a> of file <a class="el" href="SoundBuffer_8hpp_source.html">SoundBuffer.hpp</a>.</p>
@@ -587,7 +608,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">`sf::Exception`</td><td>if loading was unsuccessful</td></tr>
+    <tr><td class="paramname"><a class="el" href="classsf_1_1Exception.html" title="Library-specific exception type.">sf::Exception</a></td><td>if loading was unsuccessful</td></tr>
   </table>
   </dd>
 </dl>
@@ -625,7 +646,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">`sf::Exception`</td><td>if loading was unsuccessful</td></tr>
+    <tr><td class="paramname"><a class="el" href="classsf_1_1Exception.html" title="Library-specific exception type.">sf::Exception</a></td><td>if loading was unsuccessful</td></tr>
   </table>
   </dd>
 </dl>
@@ -666,7 +687,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">`sf::Exception`</td><td>if loading was unsuccessful</td></tr>
+    <tr><td class="paramname"><a class="el" href="classsf_1_1Exception.html" title="Library-specific exception type.">sf::Exception</a></td><td>if loading was unsuccessful</td></tr>
   </table>
   </dd>
 </dl>
@@ -722,7 +743,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">`sf::Exception`</td><td>if loading was unsuccessful</td></tr>
+    <tr><td class="paramname"><a class="el" href="classsf_1_1Exception.html" title="Library-specific exception type.">sf::Exception</a></td><td>if loading was unsuccessful</td></tr>
   </table>
   </dd>
 </dl>
@@ -1266,6 +1287,6 @@ Friends</h2></td></tr>
                 }
             }
         </script>
-        <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+        <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
     </body>
 </html>

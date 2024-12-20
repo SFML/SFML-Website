@@ -10,7 +10,7 @@ var searchData=
   ['unbind_7',['unbind',['../classsf_1_1UdpSocket.html#a2c4abb8102a1bd31f51fcfe7f15427a3',1,'sf::UdpSocket']]],
   ['underlined_8',['Underlined',['../classsf_1_1Text.html#aa8add4aef484c6e6b20faff07452bd82a664bd143f92b6e8c709d7f788e8b20df',1,'sf::Text']]],
   ['undo_9',['Undo',['../namespacesf_1_1Keyboard.html#aed978288ff367518d29cfe0c9e3b295fa1cdc076b28f70afac5fcedadf99fa119',1,'sf::Keyboard']]],
-  ['unicode_10',['unicode',['../structsf_1_1Event_1_1TextEntered.html#ad53e58831beb9e2cda446d3bf43b1534',1,'sf::Event::TextEntered']]],
+  ['unicode_10',['unicode',['../structsf_1_1Event_1_1TextEntered.html#abde9dc42f895f727d1f1ebb41c33b780',1,'sf::Event::TextEntered']]],
   ['unknown_11',['Unknown',['../namespacesf_1_1Keyboard.html#acb4cacd7cc5802dec45724cf3314a142a88183b946cc5f0e8c96b2e66e1c74a7e',1,'sf::Keyboard::Unknown'],['../namespacesf_1_1Keyboard.html#aed978288ff367518d29cfe0c9e3b295fa88183b946cc5f0e8c96b2e66e1c74a7e',1,'sf::Keyboard::Unknown']]],
   ['unregisterreader_12',['unregisterReader',['../classsf_1_1SoundFileFactory.html#ac42f01faf678d1f410e1ce8a18e4cebb',1,'sf::SoundFileFactory']]],
   ['unregisterunsharedglobject_13',['unregisterUnsharedGlObject',['../classsf_1_1GlResource.html#abd97569347bc381cb98bbc792f2f81be',1,'sf::GlResource']]],
