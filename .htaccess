@@ -58,3 +58,8 @@ RewriteRule ^ /fr/license/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/faq\.php$
 RewriteRule ^ /faq/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/community\.php$
+RewriteRule ^ /community/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/community-fr\.php$
+RewriteRule ^ /fr/community/ [R=301,L]

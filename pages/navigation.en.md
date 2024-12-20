@@ -81,5 +81,5 @@
     * [SFML 2.0](https://www.sfml-dev.org/documentation/2.0/)
     * [SFML 1.6](https://www.sfml-dev.org/documentation/1.6/)
 * [Download](https://www.sfml-dev.org/download.php)
-* [Community](https://www.sfml-dev.org/community.php)
+* [Community](community/index.md)
 * [Development](https://www.sfml-dev.org/development.php)
