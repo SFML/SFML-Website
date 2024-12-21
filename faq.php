@@ -75,6 +75,7 @@ include('header.php');
         <li><a href="#system-mutex">How do I use sf::Mutex?</a></li>
         <li><a href="#system-thread-container">Why can't I store my sf::Thread in an STL container?</a></li>
         <li><a href="#system-sleep">Why doesn't sf::sleep sleep for the amount of time I want it to?</a></li>
+        <li><a href="#system-thread-safe">Is SFML thread-safe?</a></li>
     </ul>
 
     <p><strong><a href="#programming">Programming in General</a></strong></p>
@@ -586,6 +587,10 @@ std::size_t pos = cpp_string.find( sfml_string );</code></pre>
     <p>In recent revisions of SFML, the timer resolution is temporarily increased during a call to <code>sf::sleep()</code> to increase the likelihood of your sf::sleep call sleeping for the correct amount of time.</p>
     <p>One thing to remember is that although the operating system marks your thread as "awake" after it is done sleeping, even for exactly the correct duration, it doesn't mean it resumes execution immediately. It could have just missed the moment at which the scheduler selects which task to execute next and thus must wait for the next transition. In this case, although your thread slept for the correct amount, it will appear to you as if it slept for more. SFML doesn't allow you to sleep for 0 duration, however if you could, you would notice that it in fact takes a slight bit of time as well. This is because it is common for specifying 0 to the operating system to translate to simply yielding your execution time slice to another thread.</p>
     <p>In the end, what this means is that <code>sf::sleep()</code> is merely a guideline, and not a contract. The longer you sleep for, the more accurate it will be. The shorter you sleep for, the less accurate it will be and to a certain extent more dependent on luck it will become.</p>
+
+    <h3 id="system-thread-safe"><a class="h3-link" href="#system-thread-safe">Is SFML thread-safe?</a><a class="back-to-top" href="#top" title="Top of the page"></a></h3>
+    <p>No, SFML objects are not thread-safe by themselves. If you need thread-safety you must protect them. SFML comes with <a href="/documentation/latest/classsf_1_1Mutex.php"><code>sf::Mutex</code></a> and <a href="/documentation/latest/classsf_1_1Lock.php"><code>sf::Lock</code></a> for this purpose but you can use other tools you may have available such as C++11's <code>std::mutex</code> and <code>std::lock_guard</code> as you see fit.</p>
+    <p>For more information on how to protect you shared data, refer to the <a href="/tutorials/latest/system-thread.php#protecting-shared-data">official documentation</a>.</p>
 
     <h2 id="programming"><a class="h2-link" href="#programming">Programming in General</a><a class="back-to-top" href="#top" title="Top of the page"></a></h2>
 
