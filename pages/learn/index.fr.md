@@ -62,6 +62,7 @@ hide:
 
 ## Documentation pour les anciennes versions
 
+- **SFML 2.6.2:** [Tutoriels](https://www.sfml-dev.org/tutorials/2.6), [Documentation de l'API](https://www.sfml-dev.org/documentation/2.6.2)
 - **SFML 2.6.1:** [Tutoriels](https://www.sfml-dev.org/tutorials/2.6), [Documentation de l'API](https://www.sfml-dev.org/documentation/2.6.1)
 - **SFML 2.6.0:** [Tutoriels](https://www.sfml-dev.org/tutorials/2.6), [Documentation de l'API](https://www.sfml-dev.org/documentation/2.6.0)
 - **SFML 2.5.1:** [Tutoriels](https://www.sfml-dev.org/tutorials/2.5), [Documentation de l'API](https://www.sfml-dev.org/documentation/2.5.1)
