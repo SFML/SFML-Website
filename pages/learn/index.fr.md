@@ -7,11 +7,11 @@ hide:
 
 <div class="grid cards" markdown>
 
--   [![](../images/icons/tutorials.png){ align=left } __Tutoriels__](https://www.sfml-dev.org/tutorials/2.6/index-fr.php)
+-   [![](../images/icons/tutorials.png){ align=left } __Tutoriels__](https://www.sfml-dev.org/tutorials/3.0/)
 
     Apprenez à utiliser SFML
 
--   [![](../images/icons/address_book.png){ align=left } __Documentation de l'API__](https://www.sfml-dev.org/documentation/2.6.2-fr/)
+-   [![](../images/icons/address_book.png){ align=left } __Documentation de l'API__](https://www.sfml-dev.org/documentation/3.0.0/)
 
     Référence
 
