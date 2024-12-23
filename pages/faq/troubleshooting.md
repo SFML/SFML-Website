@@ -236,6 +236,7 @@ Replace your `int main()` or `int main(int argc, char** argv)` with this functio
 Before anything else, make sure that you've followed the [official tutorial](https://www.sfml-dev.org/tutorials/) and then check if the following packages have been installed:
 
 - libx11-dev
+- libxi-dev
 - libgl1-mesa-dev
 - libudev-dev
 - libxrandr-dev
