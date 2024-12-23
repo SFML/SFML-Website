@@ -28,6 +28,7 @@ On Linux however, nothing is provided and SFML relies on your own installation o
 - pthread
 - opengl
 - xlib
+- xi
 - udev
 - xrandr
 - xcursor
