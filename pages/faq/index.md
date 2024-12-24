@@ -78,7 +78,7 @@ hide:
 ## [Troubleshooting](troubleshooting.md)
 
 - [General](troubleshooting.md#grl)
-    - [I'm having trouble using SFML.](troubleshooting.md#grl-trouble)
+    - [I'm having trouble using SFML](troubleshooting.md#grl-trouble)
     - [How do I make my IDE output verbose build information?](troubleshooting.md#grl-verbose-ide)
     - [I keep getting "undefined reference to <some strange thing that looks like an SFML function>"!](troubleshooting.md#grl-undefined-ref)
     - [Why can't I use SFML as a 64-bit library on my 64-bit system?](troubleshooting.md#grl-64bit)
@@ -87,15 +87,15 @@ hide:
     - [What is minimal code?](troubleshooting.md#grl-minimal)
     - [And how can I easily obtain this minimal code?](troubleshooting.md#grl-obtain-minimal)
 - [Code::Blocks](troubleshooting.md#cb)
-    - [I'm getting linker errors.](troubleshooting.md#cb-linker)
+    - [I'm getting linker errors](troubleshooting.md#cb-linker)
 - [Visual Studio](troubleshooting.md#vs)
-    - [My project crashes randomly, but I don't get any compiler or linker errors.](troubleshooting.md#vs-crash)
+    - [My project crashes randomly, but I don't get any compiler or linker errors](troubleshooting.md#vs-crash)
     - [I keep getting `fatal error LNK1112: module machine type 'XYZ' conflicts with target machine type 'ZYX'`. Help!](troubleshooting.md#vs-arch)
 - [Windows](troubleshooting.md#win)
     - [Why does a console attach itself to my project?](troubleshooting.md#win-console)
 - [Linux](troubleshooting.md#lnx)
-    - [(Debian) I can't compile the source code.](troubleshooting.md#lnx-compile)
-    - [There is no titlebar visible and/or artifacts from windows are visible.](troubleshooting.md#lnx-titlebar)
+    - [(Debian) I can't compile the source code](troubleshooting.md#lnx-compile)
+    - [There is no titlebar visible and/or artifacts from windows are visible](troubleshooting.md#lnx-titlebar)
 
 ## [Licensing](licensing.md)
 
