@@ -72,14 +72,14 @@
     <tbody>
         <tr>
             <td class="os" rowspan="3">macOS</td>
-            <td><span class="description">Clang - 64-bit (macOS 10.15+, compatible with C++11 and libc++)</span> <a href="#">TBD</a></td>
+            <td><?php download_link('Clang', '64-bit (macOS 10.15+)', '7.09', '../../../files/SFML-3.0.0-macOS-clang-64-bit.tar.gz') ?></td>
         </tr>
         <tr>
-            <td><span class="description">Clang - ARM64 (macOS 11+)</span> <a href="#">TBD</a></td>
+            <td><?php download_link('Clang', 'ARM64 (macOS 11.3+)', '7.01', '../../../files/SFML-3.0.0-macOS-clang-arm64.tar.gz') ?></td>
         </tr>
         <tr>
             <td class="notice" colspan="3">
-                macOS libraries are only compatible with 64-bit and ARM64 (M1 / M2) systems.
+                macOS libraries are only compatible with 64-bit and ARM64 (M1 / M2 / M3 / M4) systems.
             </td>
         </tr>
     </tbody>

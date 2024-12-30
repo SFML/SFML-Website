@@ -79,7 +79,7 @@
         </tr>
         <tr>
             <td class="notice" colspan="3">
-                macOS libraries are only compatible with 64-bit and ARM64 (M1 / M2) systems.
+                macOS libraries are only compatible with 64-bit and ARM64 (M1 / M2 / M3 / M4) systems.
             </td>
         </tr>
     </tbody>

@@ -80,7 +80,7 @@
         </tr>
         <tr>
             <td class="notice" colspan="3">
-                Les bibliothèques macOS sont uniquement compatible avec les systèmes 64-bit et ARM64 (M1 / M2).
+                Les bibliothèques macOS sont uniquement compatible avec les systèmes 64-bit et ARM64 (M1 / M2 / M3 / M4).
             </td>
         </tr>
     </tbody>
