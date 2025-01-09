@@ -42,13 +42,13 @@ The most common way of loading a shader is from a file on disk, which is done wi
 sf::Shader shader;
 
 // load only the vertex shader
-if (!shader.loadFromFile("vertex_shader.vert", sf::Shader::Vertex))
+if (!shader.loadFromFile("vertex_shader.vert", sf::Shader::Type::Vertex))
 {
     // error...
 }
 
 // load only the fragment shader
-if (!shader.loadFromFile("fragment_shader.frag", sf::Shader::Fragment))
+if (!shader.loadFromFile("fragment_shader.frag", sf::Shader::Type::Fragment))
 {
     // error...
 }
@@ -91,13 +91,13 @@ void main()
 )";
 
 // load only the vertex shader
-if (!shader.loadFromMemory(vertexShader, sf::Shader::Vertex))
+if (!shader.loadFromMemory(vertexShader, sf::Shader::Type::Vertex))
 {
     // error...
 }
 
 // load only the fragment shader
-if (!shader.loadFromMemory(fragmentShader, sf::Shader::Fragment))
+if (!shader.loadFromMemory(fragmentShader, sf::Shader::Type::Fragment))
 {
     // error...
 }
