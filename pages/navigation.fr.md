@@ -97,3 +97,4 @@
     * development/contribute*.md
     * development/style*.md
     * development/workflow*.md
+* [Donate](donate.md)

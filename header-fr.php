@@ -93,7 +93,7 @@
                     </ul>
                     <ul id="buttons">
                         <li><a id="language-en" href="<?php echo $translated_page ?>" title="Website in english">English</a></li>
-                        <li><a id="donate" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VH4J3GW5GUXR4&lc=FR" title="Faire un don">Faire un don</a></li>
+                        <li><a id="donate" href="/donate/" title="Faire un don">Faire un don</a></li>
                     </ul>
                 </div>
             </div>
