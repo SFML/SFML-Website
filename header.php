@@ -97,7 +97,7 @@
                     </ul>
                     <ul id="buttons">
                         <li><a id="language-fr" href="<?php echo $translated_page ?>" title="Site en français">Français</a></li>
-                        <li><a id="donate" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2C8CG2AGYSBT4&lc=US" title="Make a donation">Donate</a></li>
+                        <li><a id="donate" href="/donate/" title="Make a donation">Donate</a></li>
                     </ul>
                 </div>
             </div>
