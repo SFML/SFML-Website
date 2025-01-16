@@ -54,15 +54,12 @@ Then, in order to start developing SFML applications, you have to install the fo
     Only one type of binary is required although both can be installed simultaneously on the same system.
     We recommend using the frameworks.
     - _frameworks_  
-        Copy the content of Frameworks to /Library/Frameworks.
+        Copy the content of Frameworks to `/Library/Frameworks`.
     - _dylib_  
-        Copy the content of lib to /usr/local/lib and copy the content of include to /usr/local/include.
-- **SFML dependencies**  
-    SFML depends on a few external libraries on macOS.
-    Copy the content of extlibs to /Library/Frameworks.
+        Copy the content of lib to `/usr/local/lib` and copy the content of include to `/usr/local/include`.
 - **Xcode templates**  
     This feature is optional but we strongly recommend that you install it.
-    Copy the SFML directory from templates to ~/Library/Developer/Xcode/Templates (create the folders if they don't exist yet).
+    Copy the SFML directory from templates to `~/Library/Developer/Xcode/Templates` (create the folders if they don't exist yet).
 
 ## Create your first SFML program
 

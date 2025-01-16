@@ -42,7 +42,6 @@ Here is a list of what you need to install before compiling SFML:
 - xrandr
 - xcursor
 - freetype
-- openal
 - flac
 - vorbis
 

@@ -25,12 +25,18 @@ The dialog window offers a few other options to customize the project: select "C
 For the purpose of this tutorial, you should create a `main.cpp` file and add it to the project, so that we have access to the C++ settings (otherwise Visual Studio doesn't know which language you're going to use for this project).
 We'll explain what to put inside later.
 
+First we need to configure the compiler to use the C++17 language standard as required by SFML 3.
+
+In the project's properties under "C/C++", "Language" tab, change the "C++ Language Standard" dropdown to "ISO C++ 17 Standard":
+
+![Screenshot of the dialog box for setting up the C++17 language standard](vc-standard.png "Screenshot of the dialog box for setting up the C++17 language standard")
+
 Now we need to tell the compiler where to find the SFML headers (.hpp files), and the linker where to find the SFML libraries (.lib files).
 
 In the project's properties, add:
 
-- The path to the SFML headers (_<sfml-install-path>/include_) to C/C++ > General > Additional Include Directories
-- The path to the SFML libraries (_<sfml-install-path>/lib_) to Linker > General > Additional Library Directories
+- The path to the SFML headers (`<sfml-install-path>/include`) to C/C++ > General > Additional Include Directories
+- The path to the SFML libraries (`<sfml-install-path>/lib`) to Linker > General > Additional Library Directories
 
 These paths are the same in both Debug and Release configuration, so you can set them globally for your project ("All configurations").
 
@@ -62,13 +68,13 @@ Some of these dependency libraries might already be listed under "Inherited valu
 
 Here are the dependencies of each module, append the -d as described above if you want to link the SFML debug libraries:
 
-| Module                | Dependencies                                                                                                            |
-| --------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| `sfml-graphics-s.lib` | - sfml-window-s.lib<br>- sfml-system-s.lib<br>- opengl32.lib<br>- freetype.lib                                          |
-| `sfml-window-s.lib`   | - sfml-system-s.lib<br>- opengl32.lib<br>- winmm.lib<br>- gdi32.lib                                                     |
+| Module                | Dependencies                                                                                          |
+| --------------------- | ----------------------------------------------------------------------------------------------------- |
+| `sfml-graphics-s.lib` | - sfml-window-s.lib<br>- sfml-system-s.lib<br>- opengl32.lib<br>- freetype.lib                        |
+| `sfml-window-s.lib`   | - sfml-system-s.lib<br>- opengl32.lib<br>- winmm.lib<br>- gdi32.lib                                   |
 | `sfml-audio-s.lib`    | - sfml-system-s.lib<br>- flac.lib<br>- vorbisenc.lib<br>- vorbisfile.lib<br>- vorbis.lib<br>- ogg.lib |
-| `sfml-network-s.lib`  | - sfml-system-s.lib<br>- ws2_32.lib                                                                                     |
-| `sfml-system-s.lib`   | - winmm.lib                                                                                                             |
+| `sfml-network-s.lib`  | - sfml-system-s.lib<br>- ws2_32.lib                                                                   |
+| `sfml-system-s.lib`   | - winmm.lib                                                                                           |
 
 You might have noticed from the table that SFML modules can also depend on one another, e.g. sfml-graphics-s.lib depends both on sfml-window-s.lib and sfml-system-s.lib.
 If you static link to an SFML library, make sure to link to the dependencies of the library in question, as well as the dependencies of the dependencies and so on.
