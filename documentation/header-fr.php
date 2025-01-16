@@ -6,15 +6,15 @@
     $breadcrumbs = array
     (
         'Apprendre' => 'learn-fr.php',
-        'Documentation ' . $version => 'documentation/' . $version . '-fr',
-        $pagetitle => substr($_SERVER['REQUEST_URI'], 1) // remove the starting '/'
+        'Documentation ' . $version => 'documentation/' . $version,
+        $pagetitle => str_replace('.php', '.html', substr($_SERVER['REQUEST_URI'], 1)) // replace .php with .html & remove the starting '/'
     );
 
     $expected_page = str_replace($version, $latest, '/' . $breadcrumbs[$pagetitle]);
     if (file_exists($_SERVER['DOCUMENT_ROOT'] . $expected_page))
         $redirect = $expected_page;
     else
-        $redirect = '/documentation/' . $latest . '-fr';
+        $redirect = '/documentation/' . $latest;
 
     if($version != $latest)
     {

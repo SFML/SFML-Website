@@ -7,7 +7,7 @@
     (
         'Learn' => 'learn.php',
         $version . ' Documentation'  => 'documentation/' . $version,
-        $pagetitle => substr($_SERVER['REQUEST_URI'], 1) // remove the starting '/'
+        $pagetitle => str_replace('.php', '.html', substr($_SERVER['REQUEST_URI'], 1)) // replace .php with .html & remove the starting '/'
     );
 
     $expected_page = str_replace($version, $latest, '/' . $breadcrumbs[$pagetitle]);
