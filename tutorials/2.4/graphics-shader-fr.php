@@ -1,7 +1,7 @@
 <?php
 
     $title = "Effets spéciaux avec les shaders";
-    $page = "graphics-shaders-fr.php";
+    $page = "graphics-shader-fr.php";
 
     require("header-fr.php");
 

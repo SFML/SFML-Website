@@ -1,7 +1,7 @@
 <?php
 
     $title = "Shapes";
-    $page = "graphics-shapes.php";
+    $page = "graphics-shape.php";
 
     require("header.php");
 

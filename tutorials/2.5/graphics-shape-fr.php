@@ -1,7 +1,7 @@
 <?php
 
     $title = "Dessiner des formes";
-    $page = "graphics-shapes-fr.php";
+    $page = "graphics-shape-fr.php";
 
     require("header-fr.php");
 
