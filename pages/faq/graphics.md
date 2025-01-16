@@ -10,7 +10,7 @@ hide:
 SFML can load the following file formats: bmp, dds, jpg, png, tga, psd  
 But keep in mind that not all variants of each format are supported.
 
-Also see the official [documentation](https://www.sfml-dev.org/documentation/latest/classsf_1_1Image.php#a9e4f2aa8e36d0cabde5ed5a4ef80290b).
+Also see the official [documentation](../documentation/3.0.0/classsf_1_1Image.html#a9e4f2aa8e36d0cabde5ed5a4ef80290b).
 
 ## Why do I get a white/black rectangle instead of my texture? {: #white-rect}
 
@@ -221,7 +221,7 @@ distance traveled = speed * elapsed time
 This is considered as a simplification of integration in scientific contexts.
 
 We have our speed, but how do we get the amount of time elapsed? Simple, with an `sf::Clock`.
-If you don't know how to use an `sf::Clock`, it is suggested you refer to the [SFML tutorials and documentation](https://www.sfml-dev.org/learn.php).
+If you don't know how to use an `sf::Clock`, it is suggested you refer to the [SFML tutorials and documentation](../learn/index.md).
 
 The first step of each new frame would be to determine how much time has passed since the same line of code was executed during the previous frame.
 This gives us a fairly accurate estimation of the true elapsed time which is more than enough for our intents.

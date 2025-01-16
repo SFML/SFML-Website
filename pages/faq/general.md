@@ -22,7 +22,7 @@ Since SFML 2.2, there has also been experimental support for iOS and Android, wh
 ### Which programming languages are supported by SFML? {: #languages}
 
 SFML is implemented in C++.
-That said, several [bindings](https://www.sfml-dev.org/download/bindings.php) have been created for other languages that allow SFML to be used from C, C#, C++/CLI, D, Ruby, OCaml, Java, Python and VB.NET.
+That said, several [bindings](../download/bindings.md) have been created for other languages that allow SFML to be used from C, C#, C++/CLI, D, Ruby, OCaml, Java, Python and VB.NET.
 
 ### What dependencies does SFML have? {: #dependencies}
 
@@ -79,7 +79,7 @@ The previous statement is recommendable only if you have a minimal use for 3D, a
 
 ### I want to propose a new feature! {: #request}
 
-See our [Contribution Guidelines](https://www.sfml-dev.org/contribute.php#requesting-features).
+See our [Contribution Guidelines](../development/contribute.md#requesting-features).
 
 ### Is using SFML a good way to learn to program (in C++)? {: #learn}
 
@@ -155,4 +155,4 @@ If after that you still have a question **regarding SFML** in the [SFML forum](h
 
 Keep in mind that using SFML is not a very suitable way to [learn the bare basics of C++ programming](#learn), and as such it is recommended that any questions regarding general C++ be asked in more adequate forums where people proficient in C++ can help you better.
 
-Additionally you also find people in the [Official IRC chat or Discord server](https://www.sfml-dev.org/community.php).
+Additionally you also find people in the [Official IRC chat or Discord server](../community/index.md).

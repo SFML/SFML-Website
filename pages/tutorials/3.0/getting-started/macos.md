@@ -37,7 +37,7 @@ Here is [the in-depth documentation](https://developer.apple.com/library/mac/#do
 There is only one slight difference between these two kinds of libraries that you should be aware of while developing SFML applications: if you build SFML yourself, you can get dylib in both _release_ and _debug_ configurations.
 However, frameworks are only available in the _release_ configuration.
 In either case, it shouldn't be an issue since you should be using the _release_ version of SFML when you release your application anyway.
-That's why the macOS binaries on the [download page](https://www.sfml-dev.org/download.php "Go to the download page") are only available in the _release_ configuration.
+That's why the macOS binaries on the [download page](../../../download/index.md "Go to the download page") are only available in the _release_ configuration.
 
 ### Xcode templates
 
@@ -46,7 +46,7 @@ See below for more details.
 
 ## Installing SFML
 
-First of all you need to download the SFML SDK which is available on the [download page](https://www.sfml-dev.org/download.php "Go to the download page").
+First of all you need to download the SFML SDK which is available on the [download page](../../../download/index.md "Go to the download page").
 Then, in order to start developing SFML applications, you have to install the following items:
 
 - **Header files and libraries**  

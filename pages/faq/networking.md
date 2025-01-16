@@ -97,7 +97,7 @@ Since there is no general solution to this problem, here is a list of things you
    Obviously if you want to address an endpoint that isn't part of your local network you can not use the first option.
     - By private address e.g. 192.168.1.1 (192.168._._, 10._._.* and 172.16._._ to 172.31._._ are all private networks)
     - By public address e.g. 123.123.123.123
-    - By FQDN (Fully-Qualified Domain Name) e.g. [www.sfml-dev.org](https://www.sfml-dev.org/) (www is the _hostname_ and sfml-dev.org is the _domain name_)
+    - By FQDN (Fully-Qualified Domain Name) e.g. www.sfml-dev.org (www is the _hostname_ and sfml-dev.org is the _domain name_)
 3. Make sure that data transmission is not hindered by anything in the networking infrastructure (routers, firewalls etc.), if you are not sure about this, it most likely means that the port you are trying to use is either closed or not configured to be forwarded behind a NAT.
 4. Make sure that data is really being sent and received by the hosts independent of your application.
    It might occur that you try to send data within your application, SFML doesn't report an error, but the operating system refuses to transmit it.

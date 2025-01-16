@@ -11,7 +11,7 @@ It will explain how to configure your SFML projects.
 
 ## Installing SFML
 
-First, you must download the SFML SDK from the [download page](https://www.sfml-dev.org/download.php "Go to the download page").
+First, you must download the SFML SDK from the [download page](../../../download/index.md "Go to the download page").
 
 There are multiple variants of GCC for Windows, which are incompatible with each other (different exception management, threading model, etc.).
 Make sure you select the package which corresponds to the version that you use.
@@ -92,7 +92,7 @@ If you don't follow this rule, you *will* get linker errors.
 
 If you are slightly confused, don't worry, it is perfectly normal for beginners to be overwhelmed by all this information regarding static linking.
 If something doesn't work for you the first time around, you can simply keep trying always bearing in mind what has been said above.
-If you still can't get static linking to work, you can check the [FAQ](https://www.sfml-dev.org/faq.php#build-link-static "Go to the FAQ page") and the [forum](http://en.sfml-dev.org/forums/index.php?board=4.0 "Go to the general help forum") for threads about static linking.
+If you still can't get static linking to work, you can check the [FAQ](../../../faq/build-use.md#link-static "Go to the FAQ page") and the [forum](http://en.sfml-dev.org/forums/index.php?board=4.0 "Go to the general help forum") for threads about static linking.
 
 If you don't know the differences between dynamic (also called shared) and static libraries, and don't know which one to use, you can search for more information on the internet.
 There are many good articles/blogs/posts about them.

@@ -1,8 +1,8 @@
-* [Accueil](index.fr.md)
+* [Accueil](index.md)
 * Apprendre
     * learn/*.md
-    * [Tutoriels](https://www.sfml-dev.org/tutorials/2.6/index-fr.php)
-    * [Documentation](https://www.sfml-dev.org/documentation/2.6.2-fr/)
+    * [Tutoriels](tutorials/3.0/index.md)
+    * [Documentation](documentation/3.0.0/index.html)
     * FAQ
         * faq/index*.md
         * faq/general*.md
@@ -89,7 +89,6 @@
     * download/bindings*.md
     * download/goodies/*.md
 * [Communauté](community/index.md)
-* [Développement](https://www.sfml-dev.org/development-fr.php)
 * Développement
     * development/index*.md
     * development/issues*.md

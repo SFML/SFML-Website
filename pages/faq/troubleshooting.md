@@ -9,7 +9,7 @@ hide:
 
 ### I'm having trouble using SFML {: #grl-trouble}
 
-First, make sure that you have followed the installation instructions in the [official tutorials](https://www.sfml-dev.org/tutorials/).
+First, make sure that you have followed the installation instructions in the [official tutorials](../tutorials/3.0/index.md).
 
 Have you:
 
@@ -59,15 +59,15 @@ Don't be surprised if you are immediately asked for this information.
 
 First, open up your compiler settings window.
 
-![Screenshot of the Code::Blocks compiler settings menu entry](https://www.sfml-dev.org/images/faq/cb-compiler-settings.png "Screenshot of the Code::Blocks compiler settings menu entry")
+![Screenshot of the Code::Blocks compiler settings menu entry](cb-compiler-settings.png "Screenshot of the Code::Blocks compiler settings menu entry")
 
 Go to the "Other settings" tab and change the "Compiler logging:" entry to "Full command line".
 
-![Screenshot of the Code::Blocks compiler logging setting](https://www.sfml-dev.org/images/faq/cb-compiler-logging.png "Screenshot of the Code::Blocks compiler logging setting")
+![Screenshot of the Code::Blocks compiler logging setting](cb-compiler-logging.png "Screenshot of the Code::Blocks compiler logging setting")
 
 Try to build your project and change to the "Build log" tab when it completes.
 
-![Screenshot of the Code::Blocks build log](https://www.sfml-dev.org/images/faq/cb-build-log.png "Screenshot of the Code::Blocks build log")
+![Screenshot of the Code::Blocks build log](cb-build-log.png "Screenshot of the Code::Blocks build log")
 
 Inspect the build log and see if it helps solve your problem.
 If you need further help, you can ask on the forum.
@@ -77,20 +77,20 @@ In that case copy the output and paste it in your post.
 
 First, open up your project properties window.
 
-![Screenshot of the Visual Studio project properties menu entry](https://www.sfml-dev.org/images/faq/vs-project-properties.png "Screenshot of the Visual Studio project properties menu entry")
+![Screenshot of the Visual Studio project properties menu entry](vs-project-properties.png "Screenshot of the Visual Studio project properties menu entry")
 
 Make sure you selected the configuration you are trying to build.
 Open up the C/C++ -> General pane and change the "Suppress Startup Banner" entry to "No (/nologo-)".
 
-![Screenshot of the Visual Studio compiler suppress startup banner setting](https://www.sfml-dev.org/images/faq/vs-compiler-suppress-startup-banner.png "Screenshot of the Visual Studio compiler suppress startup banner setting")
+![Screenshot of the Visual Studio compiler suppress startup banner setting](vs-compiler-suppress-startup-banner.png "Screenshot of the Visual Studio compiler suppress startup banner setting")
 
 Open up the Linker -> General pane and change the "Suppress Startup Banner" entry to "No".
 
-![Screenshot of the Visual Studio linker suppress startup banner setting](https://www.sfml-dev.org/images/faq/vs-linker-suppress-startup-banner.png "Screenshot of the Visual Studio linker suppress startup banner setting")
+![Screenshot of the Visual Studio linker suppress startup banner setting](vs-linker-suppress-startup-banner.png "Screenshot of the Visual Studio linker suppress startup banner setting")
 
 Try to build your project.
 
-![Screenshot of the Visual Studio build log](https://www.sfml-dev.org/images/faq/vs-build-log.png "Screenshot of the Visual Studio build log")
+![Screenshot of the Visual Studio build log](vs-build-log.png "Screenshot of the Visual Studio build log")
 
 Inspect the build log and see if it helps solve your problem.
 If you need further help, you can ask on the forum.
@@ -324,7 +324,7 @@ Replace your `int main()` or `int main(int argc, char** argv)` with this functio
 
 ### (Debian) I can't compile the source code {: #lnx-compile}
 
-Before anything else, make sure that you've followed the [official tutorial](https://www.sfml-dev.org/tutorials/) and then check if the following packages have been installed:
+Before anything else, make sure that you've followed the [official tutorial](../tutorials/3.0/index.md) and then check if the following packages have been installed:
 
 - libx11-dev
 - libxi-dev

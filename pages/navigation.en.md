@@ -1,8 +1,8 @@
 * [Home](index.en.md)
 * Learn
     * learn/*.md
-    * [Tutorials](https://www.sfml-dev.org/tutorials/)
-    * [Documentation](https://www.sfml-dev.org/documentation/)
+    * [Tutorials](tutorials/3.0/index.md)
+    * [Documentation](documentation/3.0.0/index.html)
     * FAQ
         * faq/index*.md
         * faq/general*.md

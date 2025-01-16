@@ -41,7 +41,7 @@ The workflow is as follows:
 5. Let others review and test it.
 6. If okay it will be merged into [`master`](https://github.com/SFML/SFML/tree/master).
 7. Delete `bugfix/window_shrinking`.
-8. If this is a critical bug which leads to a bugfix release, backport the commit(s) (see [Backporting](https://www.sfml-dev.org/workflow.php#backporting)). Let's say we have versions 2.x.0 (latest release of SFML 2) and 3.1.1, where the latter is a bugfix release. The changes in 3.1.1 are then backported to 2.x.1.
+8. If this is a critical bug which leads to a bugfix release, backport the commit(s) (see [Backporting](#backporting)). Let's say we have versions 2.x.0 (latest release of SFML 2) and 3.1.1, where the latter is a bugfix release. The changes in 3.1.1 are then backported to 2.x.1.
 
 ### Release
 

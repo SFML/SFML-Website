@@ -30,7 +30,7 @@ This will result in a package which is tailored to your system.
 If you want to go this way, there's a dedicated tutorial on [building SFML yourself](build-from-source.md "How to build SFML").
 
 Finally, option 3 is a good choice for quick installation if SFML is not available as an official package.
-Download the SDK from the [download page](https://www.sfml-dev.org/download.php "Go to the download page"), unpack it and copy the files to your preferred location: either a separate path in your personal folder (like */home/me/sfml*), or a standard path (like */usr/local*).
+Download the SDK from the [download page](../../../download/index.md "Go to the download page"), unpack it and copy the files to your preferred location: either a separate path in your personal folder (like */home/me/sfml*), or a standard path (like */usr/local*).
 
 If you already had an older version of SFML installed, make sure that it won't conflict with the new version!
 

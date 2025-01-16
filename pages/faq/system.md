@@ -19,7 +19,7 @@ sf::String sfml_string( cpp_string );
 ```
 
 There are enough constructors that take care of implicit conversion from all standard C++ string types.
-If you want to see what these look like, take a look in the [`sf::String` documentation](https://www.sfml-dev.org/documentation/latest/classsf_1_1String.php).
+If you want to see what these look like, take a look in the [`sf::String` documentation](../documentation/3.0.0/classsf_1_1String.html).
 If you want to convert from a non-C++ string to `sf::String`, it is recommended to first convert to a C++ string and then to an `sf::String`.
 Since any library using custom string types should provide support for this, this shouldn't be problematic.
 

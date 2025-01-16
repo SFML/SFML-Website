@@ -12,7 +12,7 @@ hide:
 
 ## [Forum](https://fr.sfml-dev.org/forums/)
 
-Que vous ayez une question concernant l'[API](https://www.sfml-dev.org/fr/learn/ "Aller à la page des tutoriels et de la documentation"), que vous rencontriez des comportements étranges avec SFML ou que vous ayez une suggestion de nouvelle fonctionnalité, vous trouverez de l'aide, des réponses et des conseils sur le forum.
+Que vous ayez une question concernant l'[API](../learn/index.md "Aller à la page des tutoriels et de la documentation"), que vous rencontriez des comportements étranges avec SFML ou que vous ayez une suggestion de nouvelle fonctionnalité, vous trouverez de l'aide, des réponses et des conseils sur le forum.
 
 Dans le sous-forum [Projets SFML](https://fr.sfml-dev.org/forums/index.php?board=24.0 "Aller au sous-forum 'Projets SFML'") vous trouvez de nombreux projets existant.
 </div>

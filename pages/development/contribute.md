@@ -48,9 +48,9 @@ SFML has been developed under the following considerations, keep them in mind wh
 
 ### Reporting bugs
 
-1. Make sure it is really a bug and not a misunderstanding of what SFML is supposed to do. Check the [documentation](https://www.sfml-dev.org/documentation/latest/) again to be sure.
+1. Make sure it is really a bug and not a misunderstanding of what SFML is supposed to do. Check the [documentation](../documentation/3.0.0/index.html) again to be sure.
 2. Make sure the bug has not already been reported. Check [the GitHub issues](https://github.com/SFML/SFML/issues?q=) and [the forum](http://en.sfml-dev.org/forums/index.php?action=search).
-3. Use the [latest revision](https://github.com/SFML/SFML) from GitHub and check if the bug has not already been fixed. Refer to the [official tutorial](https://www.sfml-dev.org/tutorials/latest/compile-with-cmake.php) for information on how to build SFML yourself.
+3. Use the [latest revision](https://github.com/SFML/SFML) from GitHub and check if the bug has not already been fixed. Refer to the [official tutorial](../tutorials/3.0/getting-started/build-from-source.md) for information on how to build SFML yourself.
 4. Open a new thread on the [forum](http://en.sfml-dev.org/forums/) in the appropriate help board and give the following information:
     - [A minimal and complete code example](http://en.sfml-dev.org/forums/index.php?topic=5559.msg36368#msg36368) that reproduces the bug as you are experiencing it.
     - Instructions for reproducing the bug if it isn't obvious when running the example.
@@ -78,7 +78,7 @@ Patches are accepted through GitHub pull requests. These are the steps required 
 
 1. [Fork SFML](https://github.com/SFML/SFML/fork).
 2. Commit your changes and push them to your forked repository.
-3. Create a [pull request](https://help.github.com/articles/creating-a-pull-request) that targets the _master_ branch.
+3. Create a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) that targets the _master_ branch.
 
 In the pull request, provide the following information:
 
