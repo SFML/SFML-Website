@@ -29,6 +29,8 @@ Here is a list of what you need to install before building SFML:
 - freetype
 - x11
 - xrandr
+- xcursor
+- xi
 - udev
 - opengl
 - flac
@@ -83,7 +85,7 @@ In fact there are two different ways to run it:
 - **cmake**  
    This is the direct call to CMake.
    If you use this, you must specify all the option names and their values as command line parameters.
-To print out a list of all options, run cmake -L.
+To print out a list of all options, run `cmake -L`.
 
 In this tutorial we will be using cmake-gui, as this is what most beginners are likely to use.
 We assume that people who use the command line variants can refer to the CMake documentation for their usage.

@@ -41,6 +41,7 @@ A similar process will be required for non-Debian Linux distributions like Fedor
 sudo apt update sudo apt install \
      libxrandr-dev \
      libxcursor-dev \
+     libxi-dev \
      libudev-dev \
      libflac-dev \
      libvorbis-dev \ 

@@ -32,12 +32,18 @@ Code::Blocks offers a wide variety of project types, including an "SFML project"
 Instead, create an Empty project.
 If you want to get rid of the console, in the project properties, go to the "Build targets" tab and select "GUI application" in the combo box instead of "Console application".
 
+First we need to configure the compiler to use the C++17 language standard as required by SFML 3.
+
+In the project's "Build options", "Compiler settings", "Compiler flags" tab, tick the checkbox for the "C++17 ISO C++ language standard":
+
+![Screenshot of the dialog box for setting up the C++17 language standard](cb-standard.png "Screenshot of the dialog box for setting up the C++17 language standard")
+
 Now we need to tell the compiler where to find the SFML headers (.hpp files), and the linker where to find the SFML libraries (.a files).
 
 In the project's "Build options", "Search directories" tab, add:
 
-- The path to the SFML headers (_<sfml-install-path>/include_) to the Compiler search directories
-- The path to the SFML libraries (_<sfml-install-path>/lib_) to the Linker search directories
+- The path to the SFML headers (`<sfml-install-path>/include`) to the Compiler search directories
+- The path to the SFML libraries (`<sfml-install-path>/lib`) to the Linker search directories
 
 These paths are the same in both Debug and Release configuration, so you can set them globally for your project.
 
@@ -73,13 +79,13 @@ Some of these dependency libraries might already be listed under "Inherited valu
 
 Here are the dependencies of each module, append the -d as described above if you want to link the SFML debug libraries:
 
-| Module            | Dependencies                                                                                |
-| ----------------- | ------------------------------------------------------------------------------------------- |
-| `sfml-graphics-s` | - sfml-window-s<br>- sfml-system-s<br>- opengl32<br>- freetype                              |
-| `sfml-window-s`   | - sfml-system-s<br>- opengl32<br>- winmm<br>- gdi32                                         |
+| Module            | Dependencies                                                                  |
+| ----------------- | ----------------------------------------------------------------------------- |
+| `sfml-graphics-s` | - sfml-window-s<br>- sfml-system-s<br>- opengl32<br>- freetype                |
+| `sfml-window-s`   | - sfml-system-s<br>- opengl32<br>- winmm<br>- gdi32                           |
 | `sfml-audio-s`    | - sfml-system-s<br>- flac<br>- vorbisenc<br>- vorbisfile<br>- vorbis<br>- ogg |
-| `sfml-network-s`  | - sfml-system-s<br>- ws2_32                                                                 |
-| `sfml-system-s`   | - winmm                                                                                     |
+| `sfml-network-s`  | - sfml-system-s<br>- ws2_32                                                   |
+| `sfml-system-s`   | - winmm                                                                       |
 
 You might have noticed from the table that SFML modules can also depend on one another, e.g.
 sfml-graphics-s depends both on sfml-window-s and sfml-system-s.

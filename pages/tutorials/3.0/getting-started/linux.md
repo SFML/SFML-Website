@@ -83,7 +83,7 @@ In case you installed SFML to a non-standard path, you'll need to tell the compi
 g++ -c main.cpp -I<sfml-install-path>/include
 ```
 
-Here, `<sfml-install-path>` is the directory where you copied SFML, for example */home/me/sfml*.
+Here, `<sfml-install-path>` is the directory where you copied SFML, for example `/home/me/sfml`.
 
 You must then link the compiled file to the SFML libraries in order to get the final executable.
 SFML is made of 5 modules (system, window, graphics, network and audio), and there's one library for each of them.
