@@ -7,7 +7,7 @@ var searchData=
   ['needpassword_4',['NeedPassword',['../classsf_1_1Ftp_1_1Response.html#af81738f06b6f571761696291276acb3ba6cc610dcae244b511d24cd39d2509b14',1,'sf::Ftp::Response']]],
   ['never_5',['Never',['../namespacesf.html#a5a1510ae19d01cf19178b8f3ef92a2a1a6e7b34fa59e1bd229b207892956dc41c',1,'sf']]],
   ['nocontent_6',['NoContent',['../classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8acd447f1ec89f564ebac583d60087df12',1,'sf::Http::Response']]],
-  ['none_7',['None',['../group__window.html#gga5e7da6549090361249790ccb464158cca8c35a9c8507559e455387fc4a83ce422',1,'sf::Style']]],
+  ['none_7',['None',['../group__window.html#gga0ec8d4c76ad4eef1781fe3d24b832ccba8c35a9c8507559e455387fc4a83ce422',1,'sf::Style']]],
   ['nonusbackslash_8',['NonUsBackslash',['../namespacesf_1_1Keyboard.html#aed978288ff367518d29cfe0c9e3b295fac35a3006a1d15c7517c1a9127d7e7ed7',1,'sf::Keyboard']]],
   ['normalized_9',['Normalized',['../group__graphics.html#gga3279cc83ec99c60693c4fe6d0d3fb98ba66b28fcf83c9f24cd5b4d7bdc8f8ba0e',1,'sf']]],
   ['notallowed_10',['NotAllowed',['../classsf_1_1Cursor.html#ab9ab152aec1f8a4955e34ccae08f930aafa89fcc81e9dcfd52671c968fe4e6ddf',1,'sf::Cursor']]],

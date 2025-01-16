@@ -2,7 +2,7 @@ var searchData=
 [
   ['c_0',['C',['../namespacesf_1_1Keyboard.html#acb4cacd7cc5802dec45724cf3314a142a0d61f8370cad1d412f80b84d143e1257',1,'sf::Keyboard::C'],['../namespacesf_1_1Keyboard.html#aed978288ff367518d29cfe0c9e3b295fa0d61f8370cad1d412f80b84d143e1257',1,'sf::Keyboard::C']]],
   ['capslock_1',['CapsLock',['../namespacesf_1_1Keyboard.html#aed978288ff367518d29cfe0c9e3b295fa8d0f4171170104d094d8b6d4f8bf49e6',1,'sf::Keyboard']]],
-  ['close_2',['Close',['../group__window.html#gga5e7da6549090361249790ccb464158ccae07a7d411d5acf28f4a9a4b76a3a9493',1,'sf::Style']]],
+  ['close_2',['Close',['../group__window.html#gga0ec8d4c76ad4eef1781fe3d24b832ccbae07a7d411d5acf28f4a9a4b76a3a9493',1,'sf::Style']]],
   ['closingconnection_3',['ClosingConnection',['../classsf_1_1Ftp_1_1Response.html#af81738f06b6f571761696291276acb3ba2465f163ac38bfe7c1930b33aa05679b',1,'sf::Ftp::Response']]],
   ['closingdataconnection_4',['ClosingDataConnection',['../classsf_1_1Ftp_1_1Response.html#af81738f06b6f571761696291276acb3baaf83fd439861065d31334292d3f8a4c3',1,'sf::Ftp::Response']]],
   ['comma_5',['Comma',['../namespacesf_1_1Keyboard.html#acb4cacd7cc5802dec45724cf3314a142a58be47db9455679e6a44df2eff9c9fa6',1,'sf::Keyboard::Comma'],['../namespacesf_1_1Keyboard.html#aed978288ff367518d29cfe0c9e3b295fa58be47db9455679e6a44df2eff9c9fa6',1,'sf::Keyboard::Comma']]],

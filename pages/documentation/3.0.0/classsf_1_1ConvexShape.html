@@ -125,25 +125,28 @@
                 <div class="md-grid">
                     <ul class="md-tabs__list">
                         <li class="md-tabs__item">
-                            <a href="https://www.sfml-dev.org/" class="md-tabs__link"> Home </a>
+                            <a href="/" class="md-tabs__link"> Home </a>
                         </li>
                         <li class="md-tabs__item">
-                            <a href="https://www.sfml-dev.org/learn/" class="md-tabs__link"> Learn </a>
+                            <a href="/learn/" class="md-tabs__link"> Learn </a>
                         </li>
                         <li class="md-tabs__item">
-                            <a href="https://www.sfml-dev.org/tutorials/" class="md-tabs__link"> Tutorials </a>
+                            <a href="/tutorials/3.0/" class="md-tabs__link"> Tutorials </a>
                         </li>
                         <li class="md-tabs__item md-tabs__item--active">
-                            <a href="https://www.sfml-dev.org/documentation/" class="md-tabs__link"> Documentation </a>
+                            <a href="/documentation/3.0.0/" class="md-tabs__link"> Documentation </a>
                         </li>
                         <li class="md-tabs__item">
-                            <a href="https://www.sfml-dev.org/download/" class="md-tabs__link"> Download </a>
+                            <a href="/download/" class="md-tabs__link"> Download </a>
                         </li>
                         <li class="md-tabs__item">
-                            <a href="https://www.sfml-dev.org/community/" class="md-tabs__link"> Community </a>
+                            <a href="/community/" class="md-tabs__link"> Community </a>
                         </li>
                         <li class="md-tabs__item">
-                            <a href="https://www.sfml-dev.org/development/" class="md-tabs__link"> Development </a>
+                            <a href="/development/" class="md-tabs__link"> Development </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/donate/" class="md-tabs__link"> Donate </a>
                         </li>
                     </ul>
                 </div>
@@ -178,17 +181,17 @@
                                     </div>
                                     <ul class="md-nav__list">
                                         <li class="md-nav__item">
-                                            <a href="https://www.sfml-dev.org/" class="md-nav__link">
+                                            <a href="/" class="md-nav__link">
                                                 <span class="md-ellipsis"> Home </span>
                                             </a>
                                         </li>
                                         <li class="md-nav__item">
-                                            <a href="https://www.sfml-dev.org/learn/" class="md-nav__link">
+                                            <a href="/learn/" class="md-nav__link">
                                                 <span class="md-ellipsis"> Learn </span>
                                             </a>
                                         </li>
                                         <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-                                            <a href="https://www.sfml-dev.org/tutorials/" class="md-nav__link">
+                                            <a href="/tutorials/3.0/" class="md-nav__link">
                                                 <span class="md-ellipsis"> Tutorials </span>
                                                 <span class="md-nav__icon md-icon"></span>
                                             </a>
@@ -210,7 +213,7 @@
                                                 </label>
                                                 <ul class="md-nav__list">
                                                     <li class="md-nav__item">
-                                                        <a href="https://www.sfml-dev.org/documentation/3.0.0/" class="md-nav__link md-nav__link--active">
+                                                        <a href="/documentation/3.0.0/" class="md-nav__link md-nav__link--active">
                                                             <span class="md-ellipsis"> SFML 3.0.0 </span>
                                                         </a>
                                                     </li>
@@ -293,17 +296,17 @@
                                             </nav>
                                         </li>
                                         <li class="md-nav__item">
-                                            <a href="https://www.sfml-dev.org/download/" class="md-nav__link">
+                                            <a href="/download/" class="md-nav__link">
                                                 <span class="md-ellipsis"> Download </span>
                                             </a>
                                         </li>
                                         <li class="md-nav__item">
-                                            <a href="https://www.sfml-dev.org/community/" class="md-nav__link">
+                                            <a href="/community/" class="md-nav__link">
                                                 <span class="md-ellipsis"> Community </span>
                                             </a>
                                         </li>
                                         <li class="md-nav__item">
-                                            <a href="https://www.sfml-dev.org/development/" class="md-nav__link">
+                                            <a href="/development/" class="md-nav__link">
                                                 <span class="md-ellipsis"> Development </span>
                                             </a>
                                         </li>
@@ -321,7 +324,7 @@
                     </div>
                     <div class="md-content contents">
                         <div><!-- top -->
-<!-- Generated by Doxygen 1.12.0 -->
+<!-- Generated by Doxygen 1.13.2 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search/",'.html');
@@ -527,9 +530,9 @@ Protected Member Functions</h2></td></tr>
 <p>It is important to keep in mind that a convex shape must always be... convex, otherwise it may not be drawn correctly. Moreover, the points must be defined in order; using a random order would result in an incorrect shape.</p>
 <p>Usage example: </p><div class="fragment"><div class="line"><a class="code hl_class" href="classsf_1_1ConvexShape.html">sf::ConvexShape</a> polygon;</div>
 <div class="line">polygon.<a class="code hl_function" href="#a56e6e79ade6dd651cc1a0e39cb68deae">setPointCount</a>(3);</div>
-<div class="line">polygon.<a class="code hl_function" href="#a24eccc14ac5589e05f9f7cdbc6decf2c">setPoint</a>(0, <a class="code hl_class" href="classsf_1_1Vector2.html">sf::Vector2f</a>(0, 0));</div>
-<div class="line">polygon.<a class="code hl_function" href="#a24eccc14ac5589e05f9f7cdbc6decf2c">setPoint</a>(1, <a class="code hl_class" href="classsf_1_1Vector2.html">sf::Vector2f</a>(0, 10));</div>
-<div class="line">polygon.<a class="code hl_function" href="#a24eccc14ac5589e05f9f7cdbc6decf2c">setPoint</a>(2, <a class="code hl_class" href="classsf_1_1Vector2.html">sf::Vector2f</a>(25, 5));</div>
+<div class="line">polygon.<a class="code hl_function" href="#a24eccc14ac5589e05f9f7cdbc6decf2c">setPoint</a>(0, <a class="code hl_typedef" href="namespacesf.html#af14b40e82368dd601a7ef8037214804d">sf::Vector2f</a>(0, 0));</div>
+<div class="line">polygon.<a class="code hl_function" href="#a24eccc14ac5589e05f9f7cdbc6decf2c">setPoint</a>(1, <a class="code hl_typedef" href="namespacesf.html#af14b40e82368dd601a7ef8037214804d">sf::Vector2f</a>(0, 10));</div>
+<div class="line">polygon.<a class="code hl_function" href="#a24eccc14ac5589e05f9f7cdbc6decf2c">setPoint</a>(2, <a class="code hl_typedef" href="namespacesf.html#af14b40e82368dd601a7ef8037214804d">sf::Vector2f</a>(25, 5));</div>
 <div class="line">polygon.<a class="code hl_function" href="classsf_1_1Shape.html#a7dbbed35b7544a9e592acd3908713256">setOutlineColor</a>(<a class="code hl_variable" href="classsf_1_1Color.html#a127dbf55db9c07d0fa8f4bfcbb97594a">sf::Color::Red</a>);</div>
 <div class="line">polygon.<a class="code hl_function" href="classsf_1_1Shape.html#a5ad336ad74fc1f567fce3b7e44cf87dc">setOutlineThickness</a>(5);</div>
 <div class="line">polygon.<a class="code hl_function" href="classsf_1_1Transformable.html#a47c1375b57cbb0e513286e8d11f6dd4d">setPosition</a>({10, 20});</div>
@@ -539,10 +542,10 @@ Protected Member Functions</h2></td></tr>
 <div class="ttc" id="aclasssf_1_1ConvexShape_html"><div class="ttname"><a href="classsf_1_1ConvexShape.html">sf::ConvexShape</a></div><div class="ttdoc">Specialized shape representing a convex polygon.</div><div class="ttdef"><b>Definition</b> <a href="ConvexShape_8hpp_source.html#l00045">ConvexShape.hpp:46</a></div></div>
 <div class="ttc" id="aclasssf_1_1ConvexShape_html_a24eccc14ac5589e05f9f7cdbc6decf2c"><div class="ttname"><a href="#a24eccc14ac5589e05f9f7cdbc6decf2c">sf::ConvexShape::setPoint</a></div><div class="ttdeci">void setPoint(std::size_t index, Vector2f point)</div><div class="ttdoc">Set the position of a point.</div></div>
 <div class="ttc" id="aclasssf_1_1ConvexShape_html_a56e6e79ade6dd651cc1a0e39cb68deae"><div class="ttname"><a href="#a56e6e79ade6dd651cc1a0e39cb68deae">sf::ConvexShape::setPointCount</a></div><div class="ttdeci">void setPointCount(std::size_t count)</div><div class="ttdoc">Set the number of points of the polygon.</div></div>
-<div class="ttc" id="aclasssf_1_1Shape_html_a5ad336ad74fc1f567fce3b7e44cf87dc"><div class="ttname"><a href="classsf_1_1Shape.html#a5ad336ad74fc1f567fce3b7e44cf87dc">sf::Shape::setOutlineThickness</a></div><div class="ttdeci">void setOutlineThickness(float thickness)</div><div class="ttdoc">Set the thickness of the shape's outline.</div></div>
+<div class="ttc" id="aclasssf_1_1Shape_html_a5ad336ad74fc1f567fce3b7e44cf87dc"><div class="ttname"><a href="classsf_1_1Shape.html#a5ad336ad74fc1f567fce3b7e44cf87dc">sf::Shape::setOutlineThickness</a></div><div class="ttdeci">void setOutlineThickness(float thickness)</div><div class="ttdoc">Set the thickness of the shape&#39;s outline.</div></div>
 <div class="ttc" id="aclasssf_1_1Shape_html_a7dbbed35b7544a9e592acd3908713256"><div class="ttname"><a href="classsf_1_1Shape.html#a7dbbed35b7544a9e592acd3908713256">sf::Shape::setOutlineColor</a></div><div class="ttdeci">void setOutlineColor(Color color)</div><div class="ttdoc">Set the outline color of the shape.</div></div>
 <div class="ttc" id="aclasssf_1_1Transformable_html_a47c1375b57cbb0e513286e8d11f6dd4d"><div class="ttname"><a href="classsf_1_1Transformable.html#a47c1375b57cbb0e513286e8d11f6dd4d">sf::Transformable::setPosition</a></div><div class="ttdeci">void setPosition(Vector2f position)</div><div class="ttdoc">set the position of the object</div></div>
-<div class="ttc" id="aclasssf_1_1Vector2_html"><div class="ttname"><a href="classsf_1_1Vector2.html">sf::Vector2&lt; float &gt;</a></div></div>
+<div class="ttc" id="anamespacesf_html_af14b40e82368dd601a7ef8037214804d"><div class="ttname"><a href="namespacesf.html#af14b40e82368dd601a7ef8037214804d">sf::Vector2f</a></div><div class="ttdeci">Vector2&lt; float &gt; Vector2f</div><div class="ttdef"><b>Definition</b> <a href="Vector2_8hpp_source.html#l00210">Vector2.hpp:210</a></div></div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><code><a class="el" href="classsf_1_1Shape.html" title="Base class for textured shapes with outline.">sf::Shape</a></code>, <code><a class="el" href="classsf_1_1RectangleShape.html" title="Specialized shape representing a rectangle.">sf::RectangleShape</a></code>, <code><a class="el" href="classsf_1_1CircleShape.html" title="Specialized shape representing a circle.">sf::CircleShape</a></code> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="ConvexShape_8hpp_source.html#l00045">45</a> of file <a class="el" href="ConvexShape_8hpp_source.html">ConvexShape.hpp</a>.</p>
@@ -565,7 +568,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -599,7 +602,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel inherited">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -628,7 +631,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel virtual">virtual</span><span class="mlabel inherited">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -659,7 +662,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel inherited">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -689,7 +692,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel inherited">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -718,7 +721,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel inherited">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -747,7 +750,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel inherited">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -776,7 +779,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel inherited">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -805,7 +808,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel inherited">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -834,7 +837,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -872,7 +875,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -903,7 +906,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel inherited">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -932,7 +935,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel inherited">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -962,7 +965,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel inherited">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -991,7 +994,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel inherited">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1021,7 +1024,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel inherited">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1050,7 +1053,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel inherited">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1079,7 +1082,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1115,7 +1118,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1150,13 +1153,13 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Scale the object. </p>
-<p>This function multiplies the current scale of the object, unlike <code>setScale</code> which overwrites it. Thus, it is equivalent to the following code: </p><div class="fragment"><div class="line"><a class="code hl_class" href="classsf_1_1Vector2.html">sf::Vector2f</a> <a class="code hl_function" href="classsf_1_1Transformable.html#a24060d4216813d6f39698cf1cc82be98">scale</a> = <span class="keywordtype">object</span>.getScale();</div>
+<p>This function multiplies the current scale of the object, unlike <code>setScale</code> which overwrites it. Thus, it is equivalent to the following code: </p><div class="fragment"><div class="line"><a class="code hl_typedef" href="namespacesf.html#af14b40e82368dd601a7ef8037214804d">sf::Vector2f</a> <a class="code hl_function" href="classsf_1_1Transformable.html#a24060d4216813d6f39698cf1cc82be98">scale</a> = <span class="keywordtype">object</span>.getScale();</div>
 <div class="line"><span class="keywordtype">object</span>.setScale(<a class="code hl_function" href="classsf_1_1Transformable.html#a24060d4216813d6f39698cf1cc82be98">scale</a>.x * factor.x, <a class="code hl_function" href="classsf_1_1Transformable.html#a24060d4216813d6f39698cf1cc82be98">scale</a>.y * factor.y);</div>
 <div class="ttc" id="aclasssf_1_1Transformable_html_a24060d4216813d6f39698cf1cc82be98"><div class="ttname"><a href="classsf_1_1Transformable.html#a24060d4216813d6f39698cf1cc82be98">sf::Transformable::scale</a></div><div class="ttdeci">void scale(Vector2f factor)</div><div class="ttdoc">Scale the object.</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
@@ -1187,7 +1190,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1222,7 +1225,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1257,7 +1260,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1292,7 +1295,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1387,7 +1390,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1422,7 +1425,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1457,7 +1460,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1496,7 +1499,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1532,7 +1535,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1567,7 +1570,7 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel inherited">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

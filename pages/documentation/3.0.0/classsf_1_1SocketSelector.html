@@ -125,25 +125,28 @@
                 <div class="md-grid">
                     <ul class="md-tabs__list">
                         <li class="md-tabs__item">
-                            <a href="https://www.sfml-dev.org/" class="md-tabs__link"> Home </a>
+                            <a href="/" class="md-tabs__link"> Home </a>
                         </li>
                         <li class="md-tabs__item">
-                            <a href="https://www.sfml-dev.org/learn/" class="md-tabs__link"> Learn </a>
+                            <a href="/learn/" class="md-tabs__link"> Learn </a>
                         </li>
                         <li class="md-tabs__item">
-                            <a href="https://www.sfml-dev.org/tutorials/" class="md-tabs__link"> Tutorials </a>
+                            <a href="/tutorials/3.0/" class="md-tabs__link"> Tutorials </a>
                         </li>
                         <li class="md-tabs__item md-tabs__item--active">
-                            <a href="https://www.sfml-dev.org/documentation/" class="md-tabs__link"> Documentation </a>
+                            <a href="/documentation/3.0.0/" class="md-tabs__link"> Documentation </a>
                         </li>
                         <li class="md-tabs__item">
-                            <a href="https://www.sfml-dev.org/download/" class="md-tabs__link"> Download </a>
+                            <a href="/download/" class="md-tabs__link"> Download </a>
                         </li>
                         <li class="md-tabs__item">
-                            <a href="https://www.sfml-dev.org/community/" class="md-tabs__link"> Community </a>
+                            <a href="/community/" class="md-tabs__link"> Community </a>
                         </li>
                         <li class="md-tabs__item">
-                            <a href="https://www.sfml-dev.org/development/" class="md-tabs__link"> Development </a>
+                            <a href="/development/" class="md-tabs__link"> Development </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/donate/" class="md-tabs__link"> Donate </a>
                         </li>
                     </ul>
                 </div>
@@ -178,17 +181,17 @@
                                     </div>
                                     <ul class="md-nav__list">
                                         <li class="md-nav__item">
-                                            <a href="https://www.sfml-dev.org/" class="md-nav__link">
+                                            <a href="/" class="md-nav__link">
                                                 <span class="md-ellipsis"> Home </span>
                                             </a>
                                         </li>
                                         <li class="md-nav__item">
-                                            <a href="https://www.sfml-dev.org/learn/" class="md-nav__link">
+                                            <a href="/learn/" class="md-nav__link">
                                                 <span class="md-ellipsis"> Learn </span>
                                             </a>
                                         </li>
                                         <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-                                            <a href="https://www.sfml-dev.org/tutorials/" class="md-nav__link">
+                                            <a href="/tutorials/3.0/" class="md-nav__link">
                                                 <span class="md-ellipsis"> Tutorials </span>
                                                 <span class="md-nav__icon md-icon"></span>
                                             </a>
@@ -210,7 +213,7 @@
                                                 </label>
                                                 <ul class="md-nav__list">
                                                     <li class="md-nav__item">
-                                                        <a href="https://www.sfml-dev.org/documentation/3.0.0/" class="md-nav__link md-nav__link--active">
+                                                        <a href="/documentation/3.0.0/" class="md-nav__link md-nav__link--active">
                                                             <span class="md-ellipsis"> SFML 3.0.0 </span>
                                                         </a>
                                                     </li>
@@ -293,17 +296,17 @@
                                             </nav>
                                         </li>
                                         <li class="md-nav__item">
-                                            <a href="https://www.sfml-dev.org/download/" class="md-nav__link">
+                                            <a href="/download/" class="md-nav__link">
                                                 <span class="md-ellipsis"> Download </span>
                                             </a>
                                         </li>
                                         <li class="md-nav__item">
-                                            <a href="https://www.sfml-dev.org/community/" class="md-nav__link">
+                                            <a href="/community/" class="md-nav__link">
                                                 <span class="md-ellipsis"> Community </span>
                                             </a>
                                         </li>
                                         <li class="md-nav__item">
-                                            <a href="https://www.sfml-dev.org/development/" class="md-nav__link">
+                                            <a href="/development/" class="md-nav__link">
                                                 <span class="md-ellipsis"> Development </span>
                                             </a>
                                         </li>
@@ -321,7 +324,7 @@
                     </div>
                     <div class="md-content contents">
                         <div><!-- top -->
-<!-- Generated by Doxygen 1.12.0 -->
+<!-- Generated by Doxygen 1.13.2 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search/",'.html');
@@ -502,12 +505,12 @@ Public Member Functions</h2></td></tr>
 <div class="line">        <span class="keywordflow">else</span></div>
 <div class="line">        {</div>
 <div class="line">            <span class="comment">// The listener socket is not ready, test all other sockets (the clients)</span></div>
-<div class="line">            <span class="keywordflow">for</span> (<a class="code hl_class" href="classsf_1_1TcpSocket.html">sf::TcpSocket</a>&amp; client : clients)</div>
+<div class="line">            <span class="keywordflow">for</span> (sf::TcpSocket&amp; client : clients)</div>
 <div class="line">            {</div>
 <div class="line">                <span class="keywordflow">if</span> (selector.<a class="code hl_function" href="#a917a4bac708290a6782e6686fd3bf889">isReady</a>(client))</div>
 <div class="line">                {</div>
 <div class="line">                    <span class="comment">// The client has sent some data, we can receive it</span></div>
-<div class="line">                    <a class="code hl_class" href="classsf_1_1Packet.html">sf::Packet</a> packet;</div>
+<div class="line">                    sf::Packet packet;</div>
 <div class="line">                    <span class="keywordflow">if</span> (client.<a class="code hl_function" href="classsf_1_1TcpSocket.html#a90ce50811ea61d4f00efc62bb99ae1af">receive</a>(packet) == <a class="code hl_enumvalue" href="classsf_1_1Socket.html#a51bf0fd51057b98a10fbb866246176dcaf92965e2c8a7afb3c1b9a5c09a263636">sf::Socket::Status::Done</a>)</div>
 <div class="line">                    {</div>
 <div class="line">                        ...</div>
@@ -517,12 +520,11 @@ Public Member Functions</h2></td></tr>
 <div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line">}</div>
-<div class="ttc" id="aclasssf_1_1Packet_html"><div class="ttname"><a href="classsf_1_1Packet.html">sf::Packet</a></div><div class="ttdoc">Utility class to build blocks of data to transfer over the network.</div><div class="ttdef"><b>Definition</b> <a href="Packet_8hpp_source.html#l00048">Packet.hpp:49</a></div></div>
 <div class="ttc" id="aclasssf_1_1SocketSelector_html"><div class="ttname"><a href="classsf_1_1SocketSelector.html">sf::SocketSelector</a></div><div class="ttdoc">Multiplexer that allows to read from multiple sockets.</div><div class="ttdef"><b>Definition</b> <a href="SocketSelector_8hpp_source.html#l00045">SocketSelector.hpp:46</a></div></div>
 <div class="ttc" id="aclasssf_1_1SocketSelector_html_a917a4bac708290a6782e6686fd3bf889"><div class="ttname"><a href="#a917a4bac708290a6782e6686fd3bf889">sf::SocketSelector::isReady</a></div><div class="ttdeci">bool isReady(Socket &amp;socket) const</div><div class="ttdoc">Test a socket to know if it is ready to receive data.</div></div>
 <div class="ttc" id="aclasssf_1_1SocketSelector_html_a9cfda5475f17925e65889394d70af702"><div class="ttname"><a href="#a9cfda5475f17925e65889394d70af702">sf::SocketSelector::wait</a></div><div class="ttdeci">bool wait(Time timeout=Time::Zero)</div><div class="ttdoc">Wait until one or more sockets are ready to receive.</div></div>
 <div class="ttc" id="aclasssf_1_1SocketSelector_html_ade952013232802ff7b9b33668f8d2096"><div class="ttname"><a href="#ade952013232802ff7b9b33668f8d2096">sf::SocketSelector::add</a></div><div class="ttdeci">void add(Socket &amp;socket)</div><div class="ttdoc">Add a new socket to the selector.</div></div>
-<div class="ttc" id="aclasssf_1_1Socket_html_a51bf0fd51057b98a10fbb866246176dcaf92965e2c8a7afb3c1b9a5c09a263636"><div class="ttname"><a href="classsf_1_1Socket.html#a51bf0fd51057b98a10fbb866246176dcaf92965e2c8a7afb3c1b9a5c09a263636">sf::Socket::Status::Done</a></div><div class="ttdeci">@ Done</div><div class="ttdoc">The socket has sent / received the data.</div></div>
+<div class="ttc" id="aclasssf_1_1Socket_html_a51bf0fd51057b98a10fbb866246176dcaf92965e2c8a7afb3c1b9a5c09a263636"><div class="ttname"><a href="classsf_1_1Socket.html#a51bf0fd51057b98a10fbb866246176dcaf92965e2c8a7afb3c1b9a5c09a263636">sf::Socket::Status::Done</a></div><div class="ttdeci">@ Done</div><div class="ttdoc">The socket has sent / received the data.</div><div class="ttdef"><b>Definition</b> <a href="Socket_8hpp_source.html#l00050">Socket.hpp:50</a></div></div>
 <div class="ttc" id="aclasssf_1_1TcpListener_html"><div class="ttname"><a href="classsf_1_1TcpListener.html">sf::TcpListener</a></div><div class="ttdoc">Socket that listens to new TCP connections.</div><div class="ttdef"><b>Definition</b> <a href="TcpListener_8hpp_source.html#l00044">TcpListener.hpp:45</a></div></div>
 <div class="ttc" id="aclasssf_1_1TcpListener_html_a4e1610356eb74ff5c699b673e550ea82"><div class="ttname"><a href="classsf_1_1TcpListener.html#a4e1610356eb74ff5c699b673e550ea82">sf::TcpListener::listen</a></div><div class="ttdeci">Status listen(unsigned short port, IpAddress address=IpAddress::Any)</div><div class="ttdoc">Start listening for incoming connection attempts.</div></div>
 <div class="ttc" id="aclasssf_1_1TcpListener_html_ae2c83ce5a64d50b68180c46bef0a7346"><div class="ttname"><a href="classsf_1_1TcpListener.html#ae2c83ce5a64d50b68180c46bef0a7346">sf::TcpListener::accept</a></div><div class="ttdeci">Status accept(TcpSocket &amp;socket)</div><div class="ttdoc">Accept a new connection.</div></div>
@@ -613,7 +615,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -689,7 +691,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -751,7 +753,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -805,7 +807,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

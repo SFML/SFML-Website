@@ -10,7 +10,7 @@ var searchData=
   ['regular_7',['Regular',['../classsf_1_1Text.html#aa8add4aef484c6e6b20faff07452bd82a2af9ae5e1cda126570f744448e0caa32',1,'sf::Text']]],
   ['replace_8',['Replace',['../namespacesf.html#accf495a19b2f6b4f8d9cff3dac777bfda0ebe6df8a3ac338e0512acc741823fdb',1,'sf']]],
   ['resetcontent_9',['ResetContent',['../classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a4e9202c31896211f63be5b7345a897ed',1,'sf::Http::Response']]],
-  ['resize_10',['Resize',['../group__window.html#gga5e7da6549090361249790ccb464158ccaccff967648ebcd5db2007eff7352b50f',1,'sf::Style']]],
+  ['resize_10',['Resize',['../group__window.html#gga0ec8d4c76ad4eef1781fe3d24b832ccbaccff967648ebcd5db2007eff7352b50f',1,'sf::Style']]],
   ['restartmarkerreply_11',['RestartMarkerReply',['../classsf_1_1Ftp_1_1Response.html#af81738f06b6f571761696291276acb3bac0b42b170282ed195d27160a83a79f2e',1,'sf::Ftp::Response']]],
   ['reversesubtract_12',['ReverseSubtract',['../structsf_1_1BlendMode.html#a7bce470e2e384c4f9c8d9595faef7c32abd5458190996e76988cb2f27a820c685',1,'sf::BlendMode']]],
   ['right_13',['Right',['../namespacesf_1_1Keyboard.html#acb4cacd7cc5802dec45724cf3314a142a92b09c7c48c520c3c55e497875da437c',1,'sf::Keyboard::Right'],['../namespacesf_1_1Keyboard.html#aed978288ff367518d29cfe0c9e3b295fa92b09c7c48c520c3c55e497875da437c',1,'sf::Keyboard::Right'],['../namespacesf_1_1Mouse.html#a4fb128be433f9aafe66bc0c605daaa90a92b09c7c48c520c3c55e497875da437c',1,'sf::Mouse::Right']]],

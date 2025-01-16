@@ -15,9 +15,10 @@ var searchData=
   ['soundsource_12',['SoundSource',['../classsf_1_1SoundSource.html',1,'sf']]],
   ['soundstream_13',['SoundStream',['../classsf_1_1SoundStream.html',1,'sf']]],
   ['span_14',['Span',['../structsf_1_1Music_1_1Span.html',1,'sf::Music']]],
-  ['sprite_15',['Sprite',['../classsf_1_1Sprite.html',1,'sf']]],
-  ['stencilmode_16',['StencilMode',['../structsf_1_1StencilMode.html',1,'sf']]],
-  ['stencilvalue_17',['StencilValue',['../structsf_1_1StencilValue.html',1,'sf']]],
-  ['string_18',['String',['../classsf_1_1String.html',1,'sf']]],
-  ['suspendawareclock_19',['SuspendAwareClock',['../structsf_1_1SuspendAwareClock.html',1,'sf']]]
+  ['span_3c_20time_20_3e_15',['Span&lt; Time &gt;',['../structsf_1_1Music_1_1Span.html',1,'sf::Music']]],
+  ['sprite_16',['Sprite',['../classsf_1_1Sprite.html',1,'sf']]],
+  ['stencilmode_17',['StencilMode',['../structsf_1_1StencilMode.html',1,'sf']]],
+  ['stencilvalue_18',['StencilValue',['../structsf_1_1StencilValue.html',1,'sf']]],
+  ['string_19',['String',['../classsf_1_1String.html',1,'sf']]],
+  ['suspendawareclock_20',['SuspendAwareClock',['../structsf_1_1SuspendAwareClock.html',1,'sf']]]
 ];

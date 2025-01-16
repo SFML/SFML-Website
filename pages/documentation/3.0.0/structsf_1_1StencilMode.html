@@ -125,25 +125,28 @@
                 <div class="md-grid">
                     <ul class="md-tabs__list">
                         <li class="md-tabs__item">
-                            <a href="https://www.sfml-dev.org/" class="md-tabs__link"> Home </a>
+                            <a href="/" class="md-tabs__link"> Home </a>
                         </li>
                         <li class="md-tabs__item">
-                            <a href="https://www.sfml-dev.org/learn/" class="md-tabs__link"> Learn </a>
+                            <a href="/learn/" class="md-tabs__link"> Learn </a>
                         </li>
                         <li class="md-tabs__item">
-                            <a href="https://www.sfml-dev.org/tutorials/" class="md-tabs__link"> Tutorials </a>
+                            <a href="/tutorials/3.0/" class="md-tabs__link"> Tutorials </a>
                         </li>
                         <li class="md-tabs__item md-tabs__item--active">
-                            <a href="https://www.sfml-dev.org/documentation/" class="md-tabs__link"> Documentation </a>
+                            <a href="/documentation/3.0.0/" class="md-tabs__link"> Documentation </a>
                         </li>
                         <li class="md-tabs__item">
-                            <a href="https://www.sfml-dev.org/download/" class="md-tabs__link"> Download </a>
+                            <a href="/download/" class="md-tabs__link"> Download </a>
                         </li>
                         <li class="md-tabs__item">
-                            <a href="https://www.sfml-dev.org/community/" class="md-tabs__link"> Community </a>
+                            <a href="/community/" class="md-tabs__link"> Community </a>
                         </li>
                         <li class="md-tabs__item">
-                            <a href="https://www.sfml-dev.org/development/" class="md-tabs__link"> Development </a>
+                            <a href="/development/" class="md-tabs__link"> Development </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/donate/" class="md-tabs__link"> Donate </a>
                         </li>
                     </ul>
                 </div>
@@ -178,17 +181,17 @@
                                     </div>
                                     <ul class="md-nav__list">
                                         <li class="md-nav__item">
-                                            <a href="https://www.sfml-dev.org/" class="md-nav__link">
+                                            <a href="/" class="md-nav__link">
                                                 <span class="md-ellipsis"> Home </span>
                                             </a>
                                         </li>
                                         <li class="md-nav__item">
-                                            <a href="https://www.sfml-dev.org/learn/" class="md-nav__link">
+                                            <a href="/learn/" class="md-nav__link">
                                                 <span class="md-ellipsis"> Learn </span>
                                             </a>
                                         </li>
                                         <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-                                            <a href="https://www.sfml-dev.org/tutorials/" class="md-nav__link">
+                                            <a href="/tutorials/3.0/" class="md-nav__link">
                                                 <span class="md-ellipsis"> Tutorials </span>
                                                 <span class="md-nav__icon md-icon"></span>
                                             </a>
@@ -210,7 +213,7 @@
                                                 </label>
                                                 <ul class="md-nav__list">
                                                     <li class="md-nav__item">
-                                                        <a href="https://www.sfml-dev.org/documentation/3.0.0/" class="md-nav__link md-nav__link--active">
+                                                        <a href="/documentation/3.0.0/" class="md-nav__link md-nav__link--active">
                                                             <span class="md-ellipsis"> SFML 3.0.0 </span>
                                                         </a>
                                                     </li>
@@ -293,17 +296,17 @@
                                             </nav>
                                         </li>
                                         <li class="md-nav__item">
-                                            <a href="https://www.sfml-dev.org/download/" class="md-nav__link">
+                                            <a href="/download/" class="md-nav__link">
                                                 <span class="md-ellipsis"> Download </span>
                                             </a>
                                         </li>
                                         <li class="md-nav__item">
-                                            <a href="https://www.sfml-dev.org/community/" class="md-nav__link">
+                                            <a href="/community/" class="md-nav__link">
                                                 <span class="md-ellipsis"> Community </span>
                                             </a>
                                         </li>
                                         <li class="md-nav__item">
-                                            <a href="https://www.sfml-dev.org/development/" class="md-nav__link">
+                                            <a href="/development/" class="md-nav__link">
                                                 <span class="md-ellipsis"> Development </span>
                                             </a>
                                         </li>
@@ -321,7 +324,7 @@
                     </div>
                     <div class="md-content contents">
                         <div><!-- top -->
-<!-- Generated by Doxygen 1.12.0 -->
+<!-- Generated by Doxygen 1.13.2 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search/",'.html');
@@ -457,7 +460,7 @@ Related Symbols</h2></td></tr>
 <p>In certain situations, it might make sense to only write to the stencil buffer and not the color buffer during a draw. The written stencil buffer value can then be used in subsequent draws as a masking region.</p>
 <p>In SFML, a stencil mode can be specified every time you draw a <code><a class="el" href="classsf_1_1Drawable.html" title="Abstract base class for objects that can be drawn to a render target.">sf::Drawable</a></code> object to a render target. It is part of the <code><a class="el" href="structsf_1_1RenderStates.html" title="Define the states used for drawing to a RenderTarget">sf::RenderStates</a></code> compound that is passed to the member function <code><a class="el" href="classsf_1_1RenderTarget.html#a12417a3bcc245c41d957b29583556f39" title="Draw a drawable object to the render target.">sf::RenderTarget::draw()</a></code>.</p>
 <p>Usage example: </p><div class="fragment"><div class="line"><span class="comment">// Make sure we create a RenderTarget with a stencil buffer by specifying it via the context settings</span></div>
-<div class="line"><a class="code hl_class" href="classsf_1_1RenderWindow.html">sf::RenderWindow</a> window(<a class="code hl_class" href="classsf_1_1VideoMode.html">sf::VideoMode</a>({250, 200}), <span class="stringliteral">&quot;Stencil Window&quot;</span>, <a class="code hl_enumvalue" href="group__window.html#gga5e7da6549090361249790ccb464158cca5597cd420fc461807e4a201c92adea37">sf::Style::Default</a>, <a class="code hl_class" href="structsf_1_1ContextSettings.html">sf::ContextSettings</a>{0, 8});</div>
+<div class="line"><a class="code hl_class" href="classsf_1_1RenderWindow.html">sf::RenderWindow</a> window(<a class="code hl_class" href="classsf_1_1VideoMode.html">sf::VideoMode</a>({250, 200}), <span class="stringliteral">&quot;Stencil Window&quot;</span>, <a class="code hl_enumvalue" href="group__window.html#gga0ec8d4c76ad4eef1781fe3d24b832ccba5597cd420fc461807e4a201c92adea37">sf::Style::Default</a>, <a class="code hl_class" href="structsf_1_1ContextSettings.html">sf::ContextSettings</a>{0, 8});</div>
 <div class="line"> </div>
 <div class="line">...</div>
 <div class="line"> </div>
@@ -467,12 +470,12 @@ Related Symbols</h2></td></tr>
 <div class="line">left.setPosition({0, 0});</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Middle circle</span></div>
-<div class="line"><a class="code hl_class" href="classsf_1_1CircleShape.html">sf::CircleShape</a> middle(100.f);</div>
+<div class="line">sf::CircleShape middle(100.f);</div>
 <div class="line">middle.setFillColor(<a class="code hl_variable" href="classsf_1_1Color.html#af8896b5f56650935f5b9d72d528802c7">sf::Color::Yellow</a>);</div>
 <div class="line">middle.setPosition({25, 0});</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Right circle</span></div>
-<div class="line"><a class="code hl_class" href="classsf_1_1CircleShape.html">sf::CircleShape</a> right(100.f);</div>
+<div class="line">sf::CircleShape right(100.f);</div>
 <div class="line">right.setFillColor(<a class="code hl_variable" href="classsf_1_1Color.html#a127dbf55db9c07d0fa8f4bfcbb97594a">sf::Color::Red</a>);</div>
 <div class="line">right.setPosition({50, 0});</div>
 <div class="line"> </div>
@@ -485,14 +488,13 @@ Related Symbols</h2></td></tr>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Draw the middle circle in a stencil-only pass and write the value 1</span></div>
 <div class="line"><span class="comment">// to the stencil buffer for every pixel the circle would have affected</span></div>
-<div class="line">window.draw(middle, <a class="code hl_class" href="structsf_1_1StencilMode.html">sf::StencilMode</a>{<a class="code hl_enumvalue" href="namespacesf.html#a5a1510ae19d01cf19178b8f3ef92a2a1a68eec46437c384d8dad18d5464ebc35c">sf::StencilComparison::Always</a>, <a class="code hl_enumvalue" href="namespacesf.html#accf495a19b2f6b4f8d9cff3dac777bfda0ebe6df8a3ac338e0512acc741823fdb">sf::StencilUpdateOperation::Replace</a>, 1, 0xFF, <span class="keyword">true</span>});</div>
+<div class="line">window.draw(middle, sf::StencilMode{<a class="code hl_enumvalue" href="namespacesf.html#a5a1510ae19d01cf19178b8f3ef92a2a1a68eec46437c384d8dad18d5464ebc35c">sf::StencilComparison::Always</a>, <a class="code hl_enumvalue" href="namespacesf.html#accf495a19b2f6b4f8d9cff3dac777bfda0ebe6df8a3ac338e0512acc741823fdb">sf::StencilUpdateOperation::Replace</a>, 1, 0xFF, <span class="keyword">true</span>});</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Draw the left and right circles</span></div>
 <div class="line"><span class="comment">// Only allow rendering to pixels whose stencil value is not</span></div>
 <div class="line"><span class="comment">// equal to 1 i.e. weren&#39;t written when drawing the middle circle</span></div>
-<div class="line">window.<a class="code hl_function" href="classsf_1_1RenderTarget.html#a12417a3bcc245c41d957b29583556f39">draw</a>(left, <a class="code hl_class" href="structsf_1_1StencilMode.html">sf::StencilMode</a>{<a class="code hl_enumvalue" href="namespacesf.html#a5a1510ae19d01cf19178b8f3ef92a2a1a19bb0af2c3c530538cb41aff7f235b96">sf::StencilComparison::NotEqual</a>, <a class="code hl_enumvalue" href="namespacesf.html#accf495a19b2f6b4f8d9cff3dac777bfda02bce93bff905887ad2233110bf9c49e">sf::StencilUpdateOperation::Keep</a>, 1, 0xFF, <span class="keyword">false</span>});</div>
-<div class="line">window.<a class="code hl_function" href="classsf_1_1RenderTarget.html#a12417a3bcc245c41d957b29583556f39">draw</a>(right, <a class="code hl_class" href="structsf_1_1StencilMode.html">sf::StencilMode</a>{<a class="code hl_enumvalue" href="namespacesf.html#a5a1510ae19d01cf19178b8f3ef92a2a1a19bb0af2c3c530538cb41aff7f235b96">sf::StencilComparison::NotEqual</a>, <a class="code hl_enumvalue" href="namespacesf.html#accf495a19b2f6b4f8d9cff3dac777bfda02bce93bff905887ad2233110bf9c49e">sf::StencilUpdateOperation::Keep</a>, 1, 0xFF, <span class="keyword">false</span>});</div>
-<div class="ttc" id="aclasssf_1_1CircleShape_html"><div class="ttname"><a href="classsf_1_1CircleShape.html">sf::CircleShape</a></div><div class="ttdoc">Specialized shape representing a circle.</div><div class="ttdef"><b>Definition</b> <a href="CircleShape_8hpp_source.html#l00045">CircleShape.hpp:46</a></div></div>
+<div class="line">window.<a class="code hl_function" href="classsf_1_1RenderTarget.html#a12417a3bcc245c41d957b29583556f39">draw</a>(left, sf::StencilMode{<a class="code hl_enumvalue" href="namespacesf.html#a5a1510ae19d01cf19178b8f3ef92a2a1a19bb0af2c3c530538cb41aff7f235b96">sf::StencilComparison::NotEqual</a>, <a class="code hl_enumvalue" href="namespacesf.html#accf495a19b2f6b4f8d9cff3dac777bfda02bce93bff905887ad2233110bf9c49e">sf::StencilUpdateOperation::Keep</a>, 1, 0xFF, <span class="keyword">false</span>});</div>
+<div class="line">window.<a class="code hl_function" href="classsf_1_1RenderTarget.html#a12417a3bcc245c41d957b29583556f39">draw</a>(right, sf::StencilMode{<a class="code hl_enumvalue" href="namespacesf.html#a5a1510ae19d01cf19178b8f3ef92a2a1a19bb0af2c3c530538cb41aff7f235b96">sf::StencilComparison::NotEqual</a>, <a class="code hl_enumvalue" href="namespacesf.html#accf495a19b2f6b4f8d9cff3dac777bfda02bce93bff905887ad2233110bf9c49e">sf::StencilUpdateOperation::Keep</a>, 1, 0xFF, <span class="keyword">false</span>});</div>
 <div class="ttc" id="aclasssf_1_1Color_html_a127dbf55db9c07d0fa8f4bfcbb97594a"><div class="ttname"><a href="classsf_1_1Color.html#a127dbf55db9c07d0fa8f4bfcbb97594a">sf::Color::Red</a></div><div class="ttdeci">static const Color Red</div><div class="ttdoc">Red predefined color.</div><div class="ttdef"><b>Definition</b> <a href="Color_8hpp_source.html#l00084">Color.hpp:84</a></div></div>
 <div class="ttc" id="aclasssf_1_1Color_html_a77c688197b981338f0b19dc58bd2facd"><div class="ttname"><a href="classsf_1_1Color.html#a77c688197b981338f0b19dc58bd2facd">sf::Color::Black</a></div><div class="ttdeci">static const Color Black</div><div class="ttdoc">Black predefined color.</div><div class="ttdef"><b>Definition</b> <a href="Color_8hpp_source.html#l00082">Color.hpp:82</a></div></div>
 <div class="ttc" id="aclasssf_1_1Color_html_a95629b30de8c6856aa7d3afed12eb865"><div class="ttname"><a href="classsf_1_1Color.html#a95629b30de8c6856aa7d3afed12eb865">sf::Color::Green</a></div><div class="ttdeci">static const Color Green</div><div class="ttdoc">Green predefined color.</div><div class="ttdef"><b>Definition</b> <a href="Color_8hpp_source.html#l00085">Color.hpp:85</a></div></div>
@@ -500,13 +502,12 @@ Related Symbols</h2></td></tr>
 <div class="ttc" id="aclasssf_1_1RenderTarget_html_a12417a3bcc245c41d957b29583556f39"><div class="ttname"><a href="classsf_1_1RenderTarget.html#a12417a3bcc245c41d957b29583556f39">sf::RenderTarget::draw</a></div><div class="ttdeci">void draw(const Drawable &amp;drawable, const RenderStates &amp;states=RenderStates::Default)</div><div class="ttdoc">Draw a drawable object to the render target.</div></div>
 <div class="ttc" id="aclasssf_1_1RenderWindow_html"><div class="ttname"><a href="classsf_1_1RenderWindow.html">sf::RenderWindow</a></div><div class="ttdoc">Window that can serve as a target for 2D drawing.</div><div class="ttdef"><b>Definition</b> <a href="RenderWindow_8hpp_source.html#l00054">RenderWindow.hpp:55</a></div></div>
 <div class="ttc" id="aclasssf_1_1VideoMode_html"><div class="ttname"><a href="classsf_1_1VideoMode.html">sf::VideoMode</a></div><div class="ttdoc">VideoMode defines a video mode (size, bpp)</div><div class="ttdef"><b>Definition</b> <a href="VideoMode_8hpp_source.html#l00043">VideoMode.hpp:44</a></div></div>
-<div class="ttc" id="agroup__window_html_gga5e7da6549090361249790ccb464158cca5597cd420fc461807e4a201c92adea37"><div class="ttname"><a href="group__window.html#gga5e7da6549090361249790ccb464158cca5597cd420fc461807e4a201c92adea37">sf::Style::Default</a></div><div class="ttdeci">@ Default</div><div class="ttdoc">Default window style.</div><div class="ttdef"><b>Definition</b> <a href="WindowEnums_8hpp_source.html#l00045">WindowEnums.hpp:44</a></div></div>
-<div class="ttc" id="anamespacesf_html_a5a1510ae19d01cf19178b8f3ef92a2a1a19bb0af2c3c530538cb41aff7f235b96"><div class="ttname"><a href="namespacesf.html#a5a1510ae19d01cf19178b8f3ef92a2a1a19bb0af2c3c530538cb41aff7f235b96">sf::StencilComparison::NotEqual</a></div><div class="ttdeci">@ NotEqual</div><div class="ttdoc">The stencil test passes if the new value is strictly unequal to the value in the stencil buffer.</div></div>
-<div class="ttc" id="anamespacesf_html_a5a1510ae19d01cf19178b8f3ef92a2a1a68eec46437c384d8dad18d5464ebc35c"><div class="ttname"><a href="namespacesf.html#a5a1510ae19d01cf19178b8f3ef92a2a1a68eec46437c384d8dad18d5464ebc35c">sf::StencilComparison::Always</a></div><div class="ttdeci">@ Always</div><div class="ttdoc">The stencil test always passes.</div></div>
-<div class="ttc" id="anamespacesf_html_accf495a19b2f6b4f8d9cff3dac777bfda02bce93bff905887ad2233110bf9c49e"><div class="ttname"><a href="namespacesf.html#accf495a19b2f6b4f8d9cff3dac777bfda02bce93bff905887ad2233110bf9c49e">sf::StencilUpdateOperation::Keep</a></div><div class="ttdeci">@ Keep</div><div class="ttdoc">If the stencil test passes, the value in the stencil buffer is not modified.</div></div>
-<div class="ttc" id="anamespacesf_html_accf495a19b2f6b4f8d9cff3dac777bfda0ebe6df8a3ac338e0512acc741823fdb"><div class="ttname"><a href="namespacesf.html#accf495a19b2f6b4f8d9cff3dac777bfda0ebe6df8a3ac338e0512acc741823fdb">sf::StencilUpdateOperation::Replace</a></div><div class="ttdeci">@ Replace</div><div class="ttdoc">If the stencil test passes, the value in the stencil buffer is set to the new value.</div></div>
+<div class="ttc" id="agroup__window_html_gga0ec8d4c76ad4eef1781fe3d24b832ccba5597cd420fc461807e4a201c92adea37"><div class="ttname"><a href="group__window.html#gga0ec8d4c76ad4eef1781fe3d24b832ccba5597cd420fc461807e4a201c92adea37">sf::Style::Default</a></div><div class="ttdeci">@ Default</div><div class="ttdoc">Default window style.</div><div class="ttdef"><b>Definition</b> <a href="WindowEnums_8hpp_source.html#l00044">WindowEnums.hpp:44</a></div></div>
+<div class="ttc" id="anamespacesf_html_a5a1510ae19d01cf19178b8f3ef92a2a1a19bb0af2c3c530538cb41aff7f235b96"><div class="ttname"><a href="namespacesf.html#a5a1510ae19d01cf19178b8f3ef92a2a1a19bb0af2c3c530538cb41aff7f235b96">sf::StencilComparison::NotEqual</a></div><div class="ttdeci">@ NotEqual</div><div class="ttdoc">The stencil test passes if the new value is strictly unequal to the value in the stencil buffer.</div><div class="ttdef"><b>Definition</b> <a href="StencilMode_8hpp_source.html#l00050">StencilMode.hpp:50</a></div></div>
+<div class="ttc" id="anamespacesf_html_a5a1510ae19d01cf19178b8f3ef92a2a1a68eec46437c384d8dad18d5464ebc35c"><div class="ttname"><a href="namespacesf.html#a5a1510ae19d01cf19178b8f3ef92a2a1a68eec46437c384d8dad18d5464ebc35c">sf::StencilComparison::Always</a></div><div class="ttdeci">@ Always</div><div class="ttdoc">The stencil test always passes.</div><div class="ttdef"><b>Definition</b> <a href="StencilMode_8hpp_source.html#l00051">StencilMode.hpp:51</a></div></div>
+<div class="ttc" id="anamespacesf_html_accf495a19b2f6b4f8d9cff3dac777bfda02bce93bff905887ad2233110bf9c49e"><div class="ttname"><a href="namespacesf.html#accf495a19b2f6b4f8d9cff3dac777bfda02bce93bff905887ad2233110bf9c49e">sf::StencilUpdateOperation::Keep</a></div><div class="ttdeci">@ Keep</div><div class="ttdoc">If the stencil test passes, the value in the stencil buffer is not modified.</div><div class="ttdef"><b>Definition</b> <a href="StencilMode_8hpp_source.html#l00062">StencilMode.hpp:62</a></div></div>
+<div class="ttc" id="anamespacesf_html_accf495a19b2f6b4f8d9cff3dac777bfda0ebe6df8a3ac338e0512acc741823fdb"><div class="ttname"><a href="namespacesf.html#accf495a19b2f6b4f8d9cff3dac777bfda0ebe6df8a3ac338e0512acc741823fdb">sf::StencilUpdateOperation::Replace</a></div><div class="ttdeci">@ Replace</div><div class="ttdoc">If the stencil test passes, the value in the stencil buffer is set to the new value.</div><div class="ttdef"><b>Definition</b> <a href="StencilMode_8hpp_source.html#l00064">StencilMode.hpp:64</a></div></div>
 <div class="ttc" id="astructsf_1_1ContextSettings_html"><div class="ttname"><a href="structsf_1_1ContextSettings.html">sf::ContextSettings</a></div><div class="ttdoc">Structure defining the settings of the OpenGL context attached to a window.</div><div class="ttdef"><b>Definition</b> <a href="ContextSettings_8hpp_source.html#l00038">ContextSettings.hpp:39</a></div></div>
-<div class="ttc" id="astructsf_1_1StencilMode_html"><div class="ttname"><a href="structsf_1_1StencilMode.html">sf::StencilMode</a></div><div class="ttdoc">Stencil modes for drawing.</div><div class="ttdef"><b>Definition</b> <a href="StencilMode_8hpp_source.html#l00106">StencilMode.hpp:107</a></div></div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><code><a class="el" href="structsf_1_1RenderStates.html" title="Define the states used for drawing to a RenderTarget">sf::RenderStates</a></code>, <code><a class="el" href="classsf_1_1RenderTarget.html" title="Base class for all render targets (window, texture, ...)">sf::RenderTarget</a></code> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="StencilMode_8hpp_source.html#l00106">106</a> of file <a class="el" href="StencilMode_8hpp_source.html">StencilMode.hpp</a>.</p>
@@ -533,7 +534,7 @@ Related Symbols</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+<span class="mlabels"><span class="mlabel related">related</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -572,7 +573,7 @@ Related Symbols</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+<span class="mlabels"><span class="mlabel related">related</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

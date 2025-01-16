@@ -125,25 +125,28 @@
                 <div class="md-grid">
                     <ul class="md-tabs__list">
                         <li class="md-tabs__item">
-                            <a href="https://www.sfml-dev.org/" class="md-tabs__link"> Home </a>
+                            <a href="/" class="md-tabs__link"> Home </a>
                         </li>
                         <li class="md-tabs__item">
-                            <a href="https://www.sfml-dev.org/learn/" class="md-tabs__link"> Learn </a>
+                            <a href="/learn/" class="md-tabs__link"> Learn </a>
                         </li>
                         <li class="md-tabs__item">
-                            <a href="https://www.sfml-dev.org/tutorials/" class="md-tabs__link"> Tutorials </a>
+                            <a href="/tutorials/3.0/" class="md-tabs__link"> Tutorials </a>
                         </li>
                         <li class="md-tabs__item md-tabs__item--active">
-                            <a href="https://www.sfml-dev.org/documentation/" class="md-tabs__link"> Documentation </a>
+                            <a href="/documentation/3.0.0/" class="md-tabs__link"> Documentation </a>
                         </li>
                         <li class="md-tabs__item">
-                            <a href="https://www.sfml-dev.org/download/" class="md-tabs__link"> Download </a>
+                            <a href="/download/" class="md-tabs__link"> Download </a>
                         </li>
                         <li class="md-tabs__item">
-                            <a href="https://www.sfml-dev.org/community/" class="md-tabs__link"> Community </a>
+                            <a href="/community/" class="md-tabs__link"> Community </a>
                         </li>
                         <li class="md-tabs__item">
-                            <a href="https://www.sfml-dev.org/development/" class="md-tabs__link"> Development </a>
+                            <a href="/development/" class="md-tabs__link"> Development </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/donate/" class="md-tabs__link"> Donate </a>
                         </li>
                     </ul>
                 </div>
@@ -178,17 +181,17 @@
                                     </div>
                                     <ul class="md-nav__list">
                                         <li class="md-nav__item">
-                                            <a href="https://www.sfml-dev.org/" class="md-nav__link">
+                                            <a href="/" class="md-nav__link">
                                                 <span class="md-ellipsis"> Home </span>
                                             </a>
                                         </li>
                                         <li class="md-nav__item">
-                                            <a href="https://www.sfml-dev.org/learn/" class="md-nav__link">
+                                            <a href="/learn/" class="md-nav__link">
                                                 <span class="md-ellipsis"> Learn </span>
                                             </a>
                                         </li>
                                         <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-                                            <a href="https://www.sfml-dev.org/tutorials/" class="md-nav__link">
+                                            <a href="/tutorials/3.0/" class="md-nav__link">
                                                 <span class="md-ellipsis"> Tutorials </span>
                                                 <span class="md-nav__icon md-icon"></span>
                                             </a>
@@ -210,7 +213,7 @@
                                                 </label>
                                                 <ul class="md-nav__list">
                                                     <li class="md-nav__item">
-                                                        <a href="https://www.sfml-dev.org/documentation/3.0.0/" class="md-nav__link md-nav__link--active">
+                                                        <a href="/documentation/3.0.0/" class="md-nav__link md-nav__link--active">
                                                             <span class="md-ellipsis"> SFML 3.0.0 </span>
                                                         </a>
                                                     </li>
@@ -293,17 +296,17 @@
                                             </nav>
                                         </li>
                                         <li class="md-nav__item">
-                                            <a href="https://www.sfml-dev.org/download/" class="md-nav__link">
+                                            <a href="/download/" class="md-nav__link">
                                                 <span class="md-ellipsis"> Download </span>
                                             </a>
                                         </li>
                                         <li class="md-nav__item">
-                                            <a href="https://www.sfml-dev.org/community/" class="md-nav__link">
+                                            <a href="/community/" class="md-nav__link">
                                                 <span class="md-ellipsis"> Community </span>
                                             </a>
                                         </li>
                                         <li class="md-nav__item">
-                                            <a href="https://www.sfml-dev.org/development/" class="md-nav__link">
+                                            <a href="/development/" class="md-nav__link">
                                                 <span class="md-ellipsis"> Development </span>
                                             </a>
                                         </li>
@@ -321,7 +324,7 @@
                     </div>
                     <div class="md-content contents">
                         <div><!-- top -->
-<!-- Generated by Doxygen 1.12.0 -->
+<!-- Generated by Doxygen 1.13.2 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search/",'.html');
@@ -690,7 +693,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -721,7 +724,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -770,7 +773,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Construct the texture from a sub-rectangle of a file on disk. </p>
-<p>The <code>area</code> argument can be used to load only a sub-rectangle of the whole image. If you want the entire image then leave the default value (which is an empty <code>IntRect</code>). If the <code>area</code> rectangle crosses the bounds of the image, it is adjusted to fit the image size.</p>
+<p>The <code>area</code> argument can be used to load only a sub-rectangle of the whole image. If you want the entire image then leave the default value (which is an empty <code><a class="el" href="namespacesf.html#add1cf75a734c8414680b0424145c30b1">IntRect</a></code>). If the <code>area</code> rectangle crosses the bounds of the image, it is adjusted to fit the image size.</p>
 <p>The maximum size for a texture depends on the graphics driver and can be retrieved with the <code>getMaximumSize</code> function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -864,7 +867,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Construct the texture from a sub-rectangle of a file in memory. </p>
-<p>The <code>area</code> argument can be used to load only a sub-rectangle of the whole image. If you want the entire image then leave the default value (which is an empty <code>IntRect</code>). If the <code>area</code> rectangle crosses the bounds of the image, it is adjusted to fit the image size.</p>
+<p>The <code>area</code> argument can be used to load only a sub-rectangle of the whole image. If you want the entire image then leave the default value (which is an empty <code><a class="el" href="namespacesf.html#add1cf75a734c8414680b0424145c30b1">IntRect</a></code>). If the <code>area</code> rectangle crosses the bounds of the image, it is adjusted to fit the image size.</p>
 <p>The maximum size for a texture depends on the graphics driver and can be retrieved with the <code>getMaximumSize</code> function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -907,7 +910,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -956,7 +959,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Construct the texture from a sub-rectangle of a custom stream. </p>
-<p>The <code>area</code> argument can be used to load only a sub-rectangle of the whole image. If you want the entire image then leave the default value (which is an empty <code>IntRect</code>). If the <code>area</code> rectangle crosses the bounds of the image, it is adjusted to fit the image size.</p>
+<p>The <code>area</code> argument can be used to load only a sub-rectangle of the whole image. If you want the entire image then leave the default value (which is an empty <code><a class="el" href="namespacesf.html#add1cf75a734c8414680b0424145c30b1">IntRect</a></code>). If the <code>area</code> rectangle crosses the bounds of the image, it is adjusted to fit the image size.</p>
 <p>The maximum size for a texture depends on the graphics driver and can be retrieved with the <code>getMaximumSize</code> function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -998,7 +1001,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1089,7 +1092,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1134,7 +1137,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1178,7 +1181,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1208,7 +1211,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1238,7 +1241,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">nodiscard</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel nodiscard">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1267,7 +1270,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1296,7 +1299,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1324,7 +1327,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1353,7 +1356,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1382,7 +1385,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1420,13 +1423,13 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Load the texture from a file on disk. </p>
-<p>The <code>area</code> argument can be used to load only a sub-rectangle of the whole image. If you want the entire image then leave the default value (which is an empty <code>IntRect</code>). If the <code>area</code> rectangle crosses the bounds of the image, it is adjusted to fit the image size.</p>
+<p>The <code>area</code> argument can be used to load only a sub-rectangle of the whole image. If you want the entire image then leave the default value (which is an empty <code><a class="el" href="namespacesf.html#add1cf75a734c8414680b0424145c30b1">IntRect</a></code>). If the <code>area</code> rectangle crosses the bounds of the image, it is adjusted to fit the image size.</p>
 <p>The maximum size for a texture depends on the graphics driver and can be retrieved with the <code>getMaximumSize</code> function.</p>
 <p>If this function fails, the texture is left unchanged.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1469,13 +1472,13 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Load the texture from an image. </p>
-<p>The <code>area</code> argument can be used to load only a sub-rectangle of the whole image. If you want the entire image then leave the default value (which is an empty <code>IntRect</code>). If the <code>area</code> rectangle crosses the bounds of the image, it is adjusted to fit the image size.</p>
+<p>The <code>area</code> argument can be used to load only a sub-rectangle of the whole image. If you want the entire image then leave the default value (which is an empty <code><a class="el" href="namespacesf.html#add1cf75a734c8414680b0424145c30b1">IntRect</a></code>). If the <code>area</code> rectangle crosses the bounds of the image, it is adjusted to fit the image size.</p>
 <p>The maximum size for a texture depends on the graphics driver and can be retrieved with the <code>getMaximumSize</code> function.</p>
 <p>If this function fails, the texture is left unchanged.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1523,13 +1526,13 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Load the texture from a file in memory. </p>
-<p>The <code>area</code> argument can be used to load only a sub-rectangle of the whole image. If you want the entire image then leave the default value (which is an empty <code>IntRect</code>). If the <code>area</code> rectangle crosses the bounds of the image, it is adjusted to fit the image size.</p>
+<p>The <code>area</code> argument can be used to load only a sub-rectangle of the whole image. If you want the entire image then leave the default value (which is an empty <code><a class="el" href="namespacesf.html#add1cf75a734c8414680b0424145c30b1">IntRect</a></code>). If the <code>area</code> rectangle crosses the bounds of the image, it is adjusted to fit the image size.</p>
 <p>The maximum size for a texture depends on the graphics driver and can be retrieved with the <code>getMaximumSize</code> function.</p>
 <p>If this function fails, the texture is left unchanged.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1573,13 +1576,13 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Load the texture from a custom stream. </p>
-<p>The <code>area</code> argument can be used to load only a sub-rectangle of the whole image. If you want the entire image then leave the default value (which is an empty <code>IntRect</code>). If the <code>area</code> rectangle crosses the bounds of the image, it is adjusted to fit the image size.</p>
+<p>The <code>area</code> argument can be used to load only a sub-rectangle of the whole image. If you want the entire image then leave the default value (which is an empty <code><a class="el" href="namespacesf.html#add1cf75a734c8414680b0424145c30b1">IntRect</a></code>). If the <code>area</code> rectangle crosses the bounds of the image, it is adjusted to fit the image size.</p>
 <p>The maximum size for a texture depends on the graphics driver and can be retrieved with the <code>getMaximumSize</code> function.</p>
 <p>If this function fails, the texture is left unchanged.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1632,7 +1635,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1663,7 +1666,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1753,7 +1756,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2031,7 +2034,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+<span class="mlabels"><span class="mlabel friend">friend</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2055,7 +2058,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+<span class="mlabels"><span class="mlabel friend">friend</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2079,7 +2082,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+<span class="mlabels"><span class="mlabel friend">friend</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

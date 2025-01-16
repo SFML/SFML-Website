@@ -4,7 +4,7 @@ var searchData=
   ['tab_1',['Tab',['../namespacesf_1_1Keyboard.html#acb4cacd7cc5802dec45724cf3314a142a5c6ba25104401c9ee0650230fc6ba413',1,'sf::Keyboard::Tab'],['../namespacesf_1_1Keyboard.html#aed978288ff367518d29cfe0c9e3b295fa5c6ba25104401c9ee0650230fc6ba413',1,'sf::Keyboard::Tab']]],
   ['tcp_2',['Tcp',['../classsf_1_1Socket.html#a5d3ff44e56e68f02816bb0fabc34adf8a30b7fdeebc36988717d0e274cc2e7520',1,'sf::Socket']]],
   ['text_3',['Text',['../classsf_1_1Cursor.html#ab9ab152aec1f8a4955e34ccae08f930aa9dffbf69ffba8bc38bc4e01abf4b1675',1,'sf::Cursor']]],
-  ['titlebar_4',['Titlebar',['../group__window.html#gga5e7da6549090361249790ccb464158ccab4c8b32b05ed715928513787cb1e85b6',1,'sf::Style']]],
+  ['titlebar_4',['Titlebar',['../group__window.html#gga0ec8d4c76ad4eef1781fe3d24b832ccbab4c8b32b05ed715928513787cb1e85b6',1,'sf::Style']]],
   ['topbackcenter_5',['TopBackCenter',['../group__audio.html#gga9800c7f3d5e7a9c9310f707b2c995ff3a523c261e94e92bcd0ed3276f42388790',1,'sf']]],
   ['topbackleft_6',['TopBackLeft',['../group__audio.html#gga9800c7f3d5e7a9c9310f707b2c995ff3adb41be9e166e3f77a49becccef7a57f9',1,'sf']]],
   ['topbackright_7',['TopBackRight',['../group__audio.html#gga9800c7f3d5e7a9c9310f707b2c995ff3a8731dd6d25eb4078d246edb9404e1684',1,'sf']]],

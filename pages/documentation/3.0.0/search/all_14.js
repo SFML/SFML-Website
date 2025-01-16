@@ -4,7 +4,7 @@ var searchData=
   ['u8string_1',['U8String',['../namespacesf.html#a407496cc99eeb9bf75c2b4d0848d3fc7',1,'sf']]],
   ['u8stringchartraits_2',['U8StringCharTraits',['../structsf_1_1U8StringCharTraits.html',1,'sf']]],
   ['udp_3',['Udp',['../classsf_1_1Socket.html#a5d3ff44e56e68f02816bb0fabc34adf8a81baba40274ccb30f9fdfa2c73cf0482',1,'sf::Socket']]],
-  ['udpsocket_4',['UdpSocket',['../classsf_1_1UdpSocket.html',1,'sf::UdpSocket'],['../classsf_1_1Packet.html#ae128c6687ced82c6157c5f865f8dec5c',1,'sf::Packet::UdpSocket'],['../classsf_1_1UdpSocket.html#abb10725e26dee9d3a8165fe87ffb71bb',1,'sf::UdpSocket::UdpSocket()']]],
+  ['udpsocket_4',['UdpSocket',['../classsf_1_1UdpSocket.html',1,'sf::UdpSocket'],['../classsf_1_1Packet.html#ae128c6687ced82c6157c5f865f8dec5c',1,'sf::Packet::UdpSocket()'],['../classsf_1_1UdpSocket.html#abb10725e26dee9d3a8165fe87ffb71bb',1,'sf::UdpSocket::UdpSocket()']]],
   ['udpsocket_2ehpp_5',['UdpSocket.hpp',['../UdpSocket_8hpp.html',1,'']]],
   ['unauthorized_6',['Unauthorized',['../classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8ae06d1ba70f1331e9f9a113cc2f887d3f',1,'sf::Http::Response']]],
   ['unbind_7',['unbind',['../classsf_1_1UdpSocket.html#a2c4abb8102a1bd31f51fcfe7f15427a3',1,'sf::UdpSocket']]],
@@ -25,8 +25,5 @@ var searchData=
   ['utf_2ehpp_22',['Utf.hpp',['../Utf_8hpp.html',1,'']]],
   ['utf16_23',['Utf16',['../namespacesf.html#a99b0ac57adecd5594ce6dda56bfe6f70',1,'sf']]],
   ['utf32_24',['Utf32',['../namespacesf.html#a3f2bd4822b2d2563557e3d1d400f6cb8',1,'sf']]],
-  ['utf8_25',['Utf8',['../namespacesf.html#af8632a98df098830707aa50ab82029b8',1,'sf']]],
-  ['utf_3c_2016_20_3e_26',['Utf&lt; 16 &gt;',['../classsf_1_1Utf_3_0116_01_4.html',1,'sf']]],
-  ['utf_3c_2032_20_3e_27',['Utf&lt; 32 &gt;',['../classsf_1_1Utf_3_0132_01_4.html',1,'sf']]],
-  ['utf_3c_208_20_3e_28',['Utf&lt; 8 &gt;',['../classsf_1_1Utf_3_018_01_4.html',1,'sf']]]
+  ['utf8_25',['Utf8',['../namespacesf.html#af8632a98df098830707aa50ab82029b8',1,'sf']]]
 ];
