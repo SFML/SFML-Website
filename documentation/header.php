@@ -11,7 +11,7 @@
     );
 
     $expected_page = str_replace($version, $latest, '/' . $breadcrumbs[$pagetitle]);
-    $expected_page = str_replace('.php', '.html', $expected_page)
+    $expected_page = str_replace('.php', '.html', $expected_page);
     if (file_exists($_SERVER['DOCUMENT_ROOT'] . $expected_page))
         $redirect = $expected_page;
     else
