@@ -7,11 +7,12 @@
     (
         'Apprendre' => 'learn-fr.php',
         'Documentation ' . $version => 'documentation/' . $version . '-fr',
-        $pagetitle => str_replace('.php', '.html', substr($_SERVER['REQUEST_URI'], 1)) // replace .php with .html & remove the starting '/'
+        $pagetitle => substr($_SERVER['REQUEST_URI'], 1) // remove the starting '/'
     );
 
     $expected_page = str_replace($version, $latest, '/' . $breadcrumbs[$pagetitle]);
     $expected_page = str_replace('-fr', '', $expected_page);
+    $expected_page = str_replace('.php', '.html', $expected_page);
     if (file_exists($_SERVER['DOCUMENT_ROOT'] . $expected_page))
         $redirect = $expected_page;
     else
