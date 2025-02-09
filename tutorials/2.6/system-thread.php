@@ -222,6 +222,9 @@ thread.wait();
     since threads run in parallel, it means that a variable or function might be used concurrently from several threads at the same time.
     If the operation is not <em>thread-safe</em>, it can lead to undefined behavior (ie. it might crash or corrupt data).
 </p>
+<p class="important">
+    SFML objects are usually not thread-safe. You must protect them to use them in multiple threads at the same time!
+</p>
 <p>
     Several programming tools exist to help you protect shared data and make your code thread-safe, these are called synchronization primitives. Common ones
     are mutexes, semaphores, condition variables and spin locks. They are all variants of the same concept: they protect a piece of code by allowing only
