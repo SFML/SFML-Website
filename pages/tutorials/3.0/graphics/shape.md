@@ -194,7 +194,7 @@ std::array line =
     sf::Vertex{sf::Vector2f(150.f, 150.f)}
 };
 
-window.draw(line.data(), line.size(), sf::Lines);
+window.draw(line.data(), line.size(), sf::PrimitiveType::Lines);
 ```
 
 ![A line shape drawn as a primitive](shape-line-primitive.png)
