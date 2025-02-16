@@ -38,13 +38,13 @@ On Ubuntu or other Debian-based OSes, that can be done with the commands below.
 A similar process will be required for non-Debian Linux distributions like Fedora.
 
 ```
-sudo apt update sudo apt install \
+sudo apt update && sudo apt install \
      libxrandr-dev \
      libxcursor-dev \
      libxi-dev \
      libudev-dev \
      libflac-dev \
-     libvorbis-dev \ 
+     libvorbis-dev \
      libgl1-mesa-dev \
      libegl1-mesa-dev \
      libdrm-dev \
