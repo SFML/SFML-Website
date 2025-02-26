@@ -22,3 +22,9 @@ p:has(img) {
 .section {
     display: inline-block;
 }
+
+@media screen and (min-width: 76.25em) {
+    .md-header--lifted~.md-container .md-typeset :target {
+        --md-scroll-margin: 8rem;
+    }
+}

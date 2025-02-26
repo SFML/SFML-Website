@@ -1250,6 +1250,18 @@ div.contents a, #content a {
     color: rgb(70, 100, 30);
 }
 
+@media screen and (min-width: 76.25em) {
+    div.contents a {
+        scroll-margin-top: 6.5rem;
+    }
+}
+
+@media screen and (max-width: 76.25em) {
+    div.contents a {
+        scroll-margin-top: 2rem;
+    }
+}
+
 div.contents a:hover, #content a:hover {
     text-decoration: underline;
 }
