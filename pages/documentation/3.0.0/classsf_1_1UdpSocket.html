@@ -519,7 +519,7 @@ Protected Member Functions</h2></td></tr>
 <div class="line">socket.<a class="code hl_function" href="#a1bd7b273613665d5ef4dcecf5767ed75">bind</a>(55001);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Send a message to 192.168.1.50 on port 55002</span></div>
-<div class="line">std::string message = <span class="stringliteral">&quot;Hi, I am &quot;</span> + <a class="code hl_function" href="classsf_1_1IpAddress.html#a3076aa9ae952698930cb886d1ab0a1cc">sf::IpAddress::getLocalAddress</a>().toString();</div>
+<div class="line">std::string message = <span class="stringliteral">&quot;Hi, I am &quot;</span> + <a class="code hl_function" href="classsf_1_1IpAddress.html#a3076aa9ae952698930cb886d1ab0a1cc">sf::IpAddress::getLocalAddress</a>()->toString();</div>
 <div class="line">socket.<a class="code hl_function" href="#a78b46f2a2345284339367bb44bab78cf">send</a>(message.c_str(), message.size() + 1, <span class="stringliteral">&quot;192.168.1.50&quot;</span>, 55002);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Receive an answer (most likely from 192.168.1.50, but could be anyone else)</span></div>
