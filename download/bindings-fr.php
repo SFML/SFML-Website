@@ -173,6 +173,12 @@
             <td><a href="mailto:letang.jeremy@gmail.com">Jérémy Letang</a></td>
         </tr>
         <tr>
+            <th rowspan="1">Vala</th>
+            <td><a href="https://gitlab.com/nda-cunh/sfml-vala-binding" class="website"><img src="../images/bindings/sfml-vala.png" alt="SFML-vala"/></a></td>
+            <td>2.6</td>
+            <td><a href="mailto:nathan.dacunha.nd@gmail.com">Da Cunha Nathan</a></td>
+        </tr>
+        <tr>
             <th rowspan="1">Zig</th>
             <td><a href="https://github.com/Guigui220D/zig-sfml-wrapper" class="website">zig-sfml-wrapper</a></td>
             <td>2.5.1</td>
