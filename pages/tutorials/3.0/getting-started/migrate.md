@@ -63,7 +63,7 @@ target_link_libraries(my_app PRIVATE SFML::Graphics SFML::Audio SFML::Network)
 ## Linux Dependencies
 
 When using X11 as the backend on Linux, as opposed to DRM, `libxi-dev` is a newly required dependency.
-This was introduces with the [raw mouse input support](../../../documentation/3.0.0/structsf_1_1Event_1_1MouseMovedRaw.html).
+This was introduced with the [raw mouse input support](../../../documentation/3.0.0/structsf_1_1Event_1_1MouseMovedRaw.html).
 
 ## `sf::Vector2<T>` Parameters
 
@@ -231,6 +231,13 @@ Here is a complete list of all enumerations which have undergone this change:
 `sf::Rect<T>` has been refactored from the four scalar values `top`, `left`, `width`, and `height` into two `sf::Vector2<T>`s named `position` and `size`.
 This means that `sf::Rect<T>::getPosition()` and `sf::Rect<T>::getSize()` have been removed in favor of directly accessing the `position` and `size` data members.
 The 4-parameter constructor was also removed in favor of the constructor which takes two `sf::Vector2<T>`s.
+
+| v2        | v3            |
+| --------- | ------------- |
+| `.left`   | `.position.x` |
+| `.top`    | `.position.y` |
+| `.width`  | `.size.x`     |
+| `.height` | `.size.y`     |
 
 v2:
 ```cpp
