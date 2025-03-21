@@ -7,11 +7,46 @@ For longer discussions however one should still use the [dedicated sub-forum](ht
 
 ## Development
 
-The website is mostly HTML with a bit of PHP sprinkled on top, and styled using LESS.
+As we're slowly migrating the old HTML + PHP based site over to Markdown + MkDocs, you can currently find both old and new world in this repository.
 
-To view the website in your browser for development, you can essentially pick any web server, that can call PHP.
+All primary pages and SFML 3 tutorials & documentation live in the `pages/` directory, while all the old parts like SFML 2 tutorials are in the root directory.
 
-### Pre-Requisite
+### MkDocs - Pre-Requisite
+
+As [MkDocs](https://www.mkdocs.org/) is Python based, make sure you have [Python 3.x](https://www.python.org/downloads/) installed on your OS, which should also come with `pip`.
+
+> [!NOTE]
+> You may want to set up a [virtual environment](https://docs.python.org/3/library/venv.html) as to not contaminate the rest of your system.
+
+Use the following command to install all the necessary packages including MkDocs:
+
+```bash
+pip install -r ./requirements.txt --upgrade
+```
+
+### Host & Build
+
+For local development you usually want to directly serve the site, which MkDocs supports out of the box, including hot-reload:
+
+```bash
+mkdocs serve
+```
+
+This can take a few seconds.
+Once ready, you should see a localhost link in the terminal pointing you to website.
+
+If you just want the output of the site, you can also just build site:
+
+```bash
+mkdocs build
+```
+
+Which puts all the generated HTML into the `site/` directory.
+
+### PHP - Pre-Requisite
+
+> [!WARNING]
+> We don't really want to continue maintaining the PHP base site, so it's recommended to not make any changes to those sites.
 
 #### Windows
 
