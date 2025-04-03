@@ -63,18 +63,29 @@ This is especially important when you have several compilers installed, or multi
 
 On Windows, if you want to use GCC (MinGW), you can temporarily add the MinGW\bin directory to the PATH and then run CMake from the command shell:
 
-```
-> set PATH=%PATH%;your_mingw_folder\bin
-> cmake -G"MinGW Makefiles" ./build
-```
+=== "PowerShell"
 
-With Visual C++, you can either run CMake from the "Visual Studio command prompt" available from the start menu, or run the vcvars32.bat batch file of your Visual Studio installation in the console you have open.
+    ```powershell
+    $env:PATH="$env:PATH;C:\<your_mingw_folder>\bin"
+    cmake -G"MinGW Makefiles" -B ./build
+    ```
+
+=== "CMD"
+
+    ```batch
+    set PATH=%PATH%;C:\<your_mingw_folder>\bin
+    cmake -G"MinGW Makefiles" -B ./build
+    ```
+
+With MSVC, you can either run CMake from the "Visual Studio command prompt" available from the start menu, or run the `vcvars32.bat` / `vcvars64.bat` batch file of your Visual Studio installation in the console you have open.
 The batch file will set all the necessary environment variables in that console window for you.
 
-```
-> your_visual_studio_folder\VC\bin\vcvars32.bat
-> cmake -G"NMake Makefiles" ./build
-```
+=== "CMD"
+
+    ```batch
+    <your_visual_studio_folder>\VC\bin\vcvars32.bat
+    cmake -G"NMake Makefiles" -B ./build
+    ```
 
 Now you are ready to run CMake.
 In fact there are two different ways to run it:
@@ -97,7 +108,7 @@ Here is what the CMake GUI looks like:
 
 The first steps that need to be done are as follows (perform them in order):
 
-1. Tell CMake where the source code of SFML is (this must be the root folder of the SFML folder hierarchy, basically where the top level CMakeLists.txt file is).
+1. Tell CMake where the source code of SFML is (this must be the root folder of the SFML folder hierarchy, basically where the top level `CMakeLists.txt` file is).
 2. Choose where you want the projects/makefiles to be generated (if the directory doesn't exist, CMake will create it).
 3. Click the "Configure" button.
 
@@ -106,7 +117,7 @@ In other words, this is where you select your compiler/IDE.
 
 ![Screenshot of the generator selection dialog box](cmake-choose-generator.png "Screenshot of the generator selection dialog box")
 
-For example, if you are using Visual Studio 2010, you should select "Visual Studio 10 2010" from the drop-down list.
+For example, if you are using Visual Studio 2022, you should select "Visual Studio 17 2022" from the drop-down list.
 To generate Makefiles usable with NMake on the Visual Studio command line, select "NMake Makefiles".
 To create Makefiles usable with MinGW (GCC), select "MinGW Makefiles".
 It is generally easier to build SFML using Makefiles rather than IDE projects: you can build the entire library with a single command, or even batch together multiple builds in a single script.
