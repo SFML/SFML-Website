@@ -6,7 +6,7 @@
         <meta name="description" content="Simple and Fast Multimedia Library" />
         <link rel="canonical" href="https://www.sfml-dev.org/documentation/3.0.0/" />
         <link rel="icon" href="../../images/favicon.ico" />
-        <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.50" />
+        <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.50">
         <title>Documentation for SFML 3.0.0 - Simple and Fast Multimedia Library</title>
         <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css" />
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css" />
@@ -134,7 +134,7 @@
                             <a href="/tutorials/3.0/" class="md-tabs__link"> Tutorials </a>
                         </li>
                         <li class="md-tabs__item md-tabs__item--active">
-                            <a href="/documentation/3.0.0/" class="md-tabs__link"> Documentation </a>
+                            <a href="/documentation/3.0.1/" class="md-tabs__link"> Documentation </a>
                         </li>
                         <li class="md-tabs__item">
                             <a href="/download/" class="md-tabs__link"> Download </a>
@@ -199,7 +199,7 @@
                                         <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
                                             <input class="md-nav__toggle md-toggle" type="checkbox" id="__nav_4" checked="" />
                                             <div class="md-nav__link md-nav__container">
-                                                <a href="./" class="md-nav__link md-nav__link--active">
+                                                <a href="/documentation/3.0.1/" class="md-nav__link md-nav__link--active">
                                                     <span class="md-ellipsis"> Documentation </span>
                                                 </a>
                                                 <label class="md-nav__link md-nav__link--active" for="__nav_4" id="__nav_4_label" tabindex="">
@@ -212,6 +212,11 @@
                                                     Documentation
                                                 </label>
                                                 <ul class="md-nav__list">
+                                                    <li class="md-nav__item">
+                                                        <a href="/documentation/3.0.1/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 3.0.1 </span>
+                                                        </a>
+                                                    </li>
                                                     <li class="md-nav__item">
                                                         <a href="/documentation/3.0.0/" class="md-nav__link md-nav__link--active">
                                                             <span class="md-ellipsis"> SFML 3.0.0 </span>
@@ -454,7 +459,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span></div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="classsf_1_1Window.html#a264a604e7ad85e93f5177e81f101876e">   88</a></span>    <a class="code hl_function" href="classsf_1_1Window.html#a264a604e7ad85e93f5177e81f101876e">Window</a>(<a class="code hl_class" href="classsf_1_1VideoMode.html">VideoMode</a>              mode,</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>           <span class="keyword">const</span> <a class="code hl_class" href="classsf_1_1String.html">String</a>&amp;          title,</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>           std::uint32_t          style    = <a class="code hl_enumvalue" href="group__window.html#gga0ec8d4c76ad4eef1781fe3d24b832ccba5597cd420fc461807e4a201c92adea37">Style::Default</a>,</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>           std::uint32_t          style    = <a class="code hl_enumvalue" href="group__window.html#ggaf4ff4f60dec5967fb35b419750b17688a5597cd420fc461807e4a201c92adea37">Style::Default</a>,</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>           <a class="code hl_enumeration" href="group__window.html#ga504e2cd8fc6a852463f8d049db1151e5">State</a>                  state    = <a class="code hl_enumvalue" href="group__window.html#gga504e2cd8fc6a852463f8d049db1151e5ab13311ab51c4c34757f67f26580018dd">State::Windowed</a>,</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>           <span class="keyword">const</span> <a class="code hl_class" href="structsf_1_1ContextSettings.html">ContextSettings</a>&amp; settings = {});</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span></div>
@@ -540,8 +545,8 @@ $(function(){ initResizable(false); });
 <div class="ttc" id="aclasssf_1_1Window_html_af4322d315baf93405bf0d5087ad5e784"><div class="ttname"><a href="classsf_1_1Window.html#af4322d315baf93405bf0d5087ad5e784">sf::Window::setFramerateLimit</a></div><div class="ttdeci">void setFramerateLimit(unsigned int limit)</div><div class="ttdoc">Limit the framerate to a maximum fixed frequency.</div></div>
 <div class="ttc" id="agroup__window_html_ga504e2cd8fc6a852463f8d049db1151e5"><div class="ttname"><a href="group__window.html#ga504e2cd8fc6a852463f8d049db1151e5">sf::State</a></div><div class="ttdeci">State</div><div class="ttdoc">Enumeration of the window states.</div><div class="ttdef"><b>Definition</b> <a href="WindowEnums_8hpp_source.html#l00054">WindowEnums.hpp:55</a></div></div>
 <div class="ttc" id="agroup__window_html_ga9858f04701033cd01859037d8dafd289"><div class="ttname"><a href="group__window.html#ga9858f04701033cd01859037d8dafd289">sf::WindowHandle</a></div><div class="ttdeci">&quot;platform-specific&quot; WindowHandle</div><div class="ttdoc">Low-level window handle type, specific to each platform.</div><div class="ttdef"><b>Definition</b> <a href="WindowHandle_8hpp_source.html#l00068">WindowHandle.hpp:68</a></div></div>
-<div class="ttc" id="agroup__window_html_gga0ec8d4c76ad4eef1781fe3d24b832ccba5597cd420fc461807e4a201c92adea37"><div class="ttname"><a href="group__window.html#gga0ec8d4c76ad4eef1781fe3d24b832ccba5597cd420fc461807e4a201c92adea37">sf::Style::Default</a></div><div class="ttdeci">@ Default</div><div class="ttdoc">Default window style.</div><div class="ttdef"><b>Definition</b> <a href="WindowEnums_8hpp_source.html#l00044">WindowEnums.hpp:44</a></div></div>
 <div class="ttc" id="agroup__window_html_gga504e2cd8fc6a852463f8d049db1151e5ab13311ab51c4c34757f67f26580018dd"><div class="ttname"><a href="group__window.html#gga504e2cd8fc6a852463f8d049db1151e5ab13311ab51c4c34757f67f26580018dd">sf::State::Windowed</a></div><div class="ttdeci">@ Windowed</div><div class="ttdoc">Floating window.</div><div class="ttdef"><b>Definition</b> <a href="WindowEnums_8hpp_source.html#l00056">WindowEnums.hpp:56</a></div></div>
+<div class="ttc" id="agroup__window_html_ggaf4ff4f60dec5967fb35b419750b17688a5597cd420fc461807e4a201c92adea37"><div class="ttname"><a href="group__window.html#ggaf4ff4f60dec5967fb35b419750b17688a5597cd420fc461807e4a201c92adea37">sf::Style::Default</a></div><div class="ttdeci">@ Default</div><div class="ttdoc">Default window style.</div><div class="ttdef"><b>Definition</b> <a href="WindowEnums_8hpp_source.html#l00044">WindowEnums.hpp:44</a></div></div>
 <div class="ttc" id="anamespacesf_1_1Style_html"><div class="ttname"><a href="namespacesf_1_1Style.html">sf::Style</a></div><div class="ttdef"><b>Definition</b> <a href="WindowEnums_8hpp_source.html#l00030">WindowEnums.hpp:31</a></div></div>
 <div class="ttc" id="anamespacesf_html"><div class="ttname"><a href="namespacesf.html">sf</a></div><div class="ttdef"><b>Definition</b> <a href="AudioResource_8hpp_source.html#l00035">AudioResource.hpp:36</a></div></div>
 <div class="ttc" id="astructsf_1_1ContextSettings_html"><div class="ttname"><a href="structsf_1_1ContextSettings.html">sf::ContextSettings</a></div><div class="ttdoc">Structure defining the settings of the OpenGL context attached to a window.</div><div class="ttdef"><b>Definition</b> <a href="ContextSettings_8hpp_source.html#l00038">ContextSettings.hpp:39</a></div></div>

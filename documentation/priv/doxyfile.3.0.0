@@ -199,7 +199,7 @@ STRIP_FROM_PATH        =
 # specify the list of include paths that are normally passed to the compiler
 # using the -I flag.
 
-STRIP_FROM_INC_PATH    = "D:/Programming/C++/Contrib/SFML/include"
+STRIP_FROM_INC_PATH    = "C:/Private/Dev/SFML/SFML/include"
 
 # If the SHORT_NAMES tag is set to YES, Doxygen will generate much shorter (but
 # less readable) file names. This can be useful if your file system doesn't
@@ -992,8 +992,8 @@ WARN_LOGFILE           =
 # spaces. See also FILE_PATTERNS and EXTENSION_MAPPING
 # Note: If this tag is empty the current directory is searched.
 
-INPUT                  = D:/Programming/C++/Contrib/SFML \
-                         D:/Programming/C++/Contrib/SFML/doc/mainpage.hpp
+INPUT                  = C:/Private/Dev/SFML/SFML \
+                         C:/Private/Dev/SFML/SFML/doc/mainpage.hpp
 
 # This tag can be used to specify the character encoding of the source files
 # that Doxygen parses. Internally Doxygen uses the UTF-8 encoding. Doxygen uses
@@ -1376,7 +1376,7 @@ HTML_FILE_EXTENSION    = .html
 # of the possible markers and block names see the documentation.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_HEADER            = doxyheader.html
+HTML_HEADER            = doxyheader-3.0.0.html
 
 # The HTML_FOOTER tag can be used to specify a user-defined HTML footer for each
 # generated HTML page. If the tag is left blank Doxygen will generate a standard

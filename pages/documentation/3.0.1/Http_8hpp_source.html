@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="Simple and Fast Multimedia Library" />
+        <link rel="canonical" href="https://www.sfml-dev.org/documentation/3.0.0/" />
+        <link rel="icon" href="../../images/favicon.ico" />
+        <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.50">
+        <title>Documentation for SFML 3.0.0 - Simple and Fast Multimedia Library</title>
+        <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css" />
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback" />
+        <style>
+            :root {
+                --md-text-font: "Ubuntu";
+                --md-code-font: "Roboto Mono";
+            }
+        </style>
+        <link rel="stylesheet" href="../../styles/extra.css" />
+        <script>
+            (__md_scope = new URL("../..", location)),
+                (__md_hash = (e) => [...e].reduce((e, _) => (e << 5) - e + _.charCodeAt(0), 0)),
+                (__md_get = (e, _ = localStorage, t = __md_scope) => JSON.parse(_.getItem(t.pathname + "." + e))),
+                (__md_set = (e, _, t = localStorage, a = __md_scope) => {
+                    try {
+                        t.setItem(a.pathname + "." + e, JSON.stringify(_));
+                    } catch (e) {}
+                });
+        </script>
+        <!-- Doxygen Overrides -->
+        <link rel="stylesheet" type="text/css" href="doxystyle.css" title="default" media="screen,print" />
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="dynsections.js"></script>
+        <script type="text/javascript" src="clipboard.js"></script>
+        <script type="text/javascript" src="cookie.js"></script>
+        <script type="text/javascript" src="resize.js"></script>
+        <link rel="stylesheet" type="text/css" href="search/search.css" />
+        <link rel="stylesheet" type="text/css" href="searchOverrides.css" />
+        <script type="text/javascript" src="search/searchdata.js"></script>
+        <script type="text/javascript" src="search/search.js"></script>
+        <script type="text/javascript">
+            /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+            $(document).ready(function () {
+                init_search();
+            });
+            /* @license-end */
+        </script>
+        <!-- Doxygen Overrides -->
+    </head>
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="indigo">
+        <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off" />
+        <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off" />
+        <label class="md-overlay" for="__drawer"></label>
+        <div data-md-component="announce"></div>
+        <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+            <nav class="md-header__inner md-grid" aria-label="Header">
+                <a href="../.." title="Simple and Fast Multimedia Library" class="md-header__button md-logo" aria-label="Simple and Fast Multimedia Library" data-md-component="logo">
+                    <img src="../../images/logo.png" alt="logo" />
+                </a>
+                <label class="md-header__button md-icon" for="__drawer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z" /></svg>
+                </label>
+                <div class="md-header__title" data-md-component="header-title">
+                    <div class="md-header__ellipsis">
+                        <div class="md-header__topic">
+                            <span class="md-ellipsis"> Simple and Fast Multimedia Library </span>
+                        </div>
+                        <div class="md-header__topic" data-md-component="header-topic">
+                            <span class="md-ellipsis"> Documentation for SFML 3.0.0 </span>
+                        </div>
+                    </div>
+                </div>
+                <label class="md-header__button md-icon" for="__search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5" />
+                    </svg>
+                </label>
+                <div class="md-search" data-md-component="search" role="dialog">
+                    <label class="md-search__overlay" for="__search"></label>
+                    <div class="md-search__inner" role="search">
+                        <form class="md-search__form" name="search">
+                            <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required />
+                            <label class="md-search__icon md-icon" for="__search">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"
+                                    />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z" /></svg>
+                            </label>
+                            <nav class="md-search__options" aria-label="Search">
+                                <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" /></svg>
+                                </button>
+                            </nav>
+                            <div class="md-search__suggest" data-md-component="search-suggest"></div>
+                        </form>
+                        <div class="md-search__output">
+                            <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+                                <div class="md-search-result" data-md-component="search-result">
+                                    <div class="md-search-result__meta">Initializing search</div>
+                                    <ol class="md-search-result__list" role="presentation"></ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-header__source">
+                    <a href="https://github.com/SFML/SFML" title="Go to repository" class="md-source" data-md-component="source">
+                        <div class="md-source__icon md-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"
+                                />
+                            </svg>
+                        </div>
+                        <div class="md-source__repository">SFML</div>
+                    </a>
+                </div>
+            </nav>
+            <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+                <div class="md-grid">
+                    <ul class="md-tabs__list">
+                        <li class="md-tabs__item">
+                            <a href="/" class="md-tabs__link"> Home </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/learn/" class="md-tabs__link"> Learn </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/tutorials/3.0/" class="md-tabs__link"> Tutorials </a>
+                        </li>
+                        <li class="md-tabs__item md-tabs__item--active">
+                            <a href="/documentation/3.0.1/" class="md-tabs__link"> Documentation </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/download/" class="md-tabs__link"> Download </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/community/" class="md-tabs__link"> Community </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/development/" class="md-tabs__link"> Development </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/donate/" class="md-tabs__link"> Donate </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="md-container" data-md-component="container">
+            <main class="md-main" data-md-component="main">
+                <div class="md-main__inner md-grid">
+                    <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                        <div class="md-sidebar__scrollwrap" style="height: 832px">
+                            <div class="md-sidebar__inner">
+                                <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+                                    <label class="md-nav__title" for="__drawer">
+                                        <a href="../.." title="Simple and Fast Multimedia Library" class="md-nav__button md-logo" aria-label="Simple and Fast Multimedia Library" data-md-component="logo">
+                                            <img src="../../images/logo.png" alt="logo" />
+                                        </a>
+                                        Simple and Fast Multimedia Library
+                                    </label>
+                                    <div class="md-nav__source">
+                                        <a href="https://github.com/SFML/SFML" title="Go to repository" class="md-source" data-md-component="source">
+                                            <div class="md-source__icon md-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                                    <path
+                                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                            <div class="md-source__repository md-source__repository--active">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <ul class="md-nav__list">
+                                        <li class="md-nav__item">
+                                            <a href="/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Home </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="/learn/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Learn </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="/tutorials/3.0/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Tutorials </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+                                            <input class="md-nav__toggle md-toggle" type="checkbox" id="__nav_4" checked="" />
+                                            <div class="md-nav__link md-nav__container">
+                                                <a href="/documentation/3.0.1/" class="md-nav__link md-nav__link--active">
+                                                    <span class="md-ellipsis"> Documentation </span>
+                                                </a>
+                                                <label class="md-nav__link md-nav__link--active" for="__nav_4" id="__nav_4_label" tabindex="">
+                                                    <span class="md-nav__icon md-icon"></span>
+                                                </label>
+                                            </div>
+                                            <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+                                                <label class="md-nav__title" for="__nav_4">
+                                                    <span class="md-nav__icon md-icon"></span>
+                                                    Documentation
+                                                </label>
+                                                <ul class="md-nav__list">
+                                                    <li class="md-nav__item">
+                                                        <a href="/documentation/3.0.1/" class="md-nav__link md-nav__link--active">
+                                                            <span class="md-ellipsis"> SFML 3.0.1 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="/documentation/3.0.0/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 3.0.0 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.6.2/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.6.2 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.6.1/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.6.1 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.6.0/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.6.0 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.5.1/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.5.1 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.5.0/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.5.0 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.4.2/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.4.2 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.4.1/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.4.1 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.4.0/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.4.0 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.3.2/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.3.2 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.3.1/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.3.1 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.3/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.3 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.2/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.2 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.1/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.1 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.0/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.0 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/1.6/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 1.6 </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="/download/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Download </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="/community/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Community </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="/development/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Development </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" style="top: 158px">
+                        <div class="md-sidebar__scrollwrap" style="height: 832px">
+                            <div class="md-sidebar__inner">
+                                <nav class="md-nav md-nav--secondary" aria-label="Table of contents"></nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-content contents">
+                        <div><!-- top -->
+<!-- Generated by Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="topics.html"><span>Topics</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
+    </ul>
+  </div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c9d62fd513ce19bab3d7ef8db833e3f1.html">SFML</a></li><li class="navelem"><a class="el" href="dir_66c4f0b3361ff6a900e01a4b3c9d5eb7.html">include</a></li><li class="navelem"><a class="el" href="dir_b640c2c295eeac6b731646a7ed21830e.html">SFML</a></li><li class="navelem"><a class="el" href="dir_5c1116cdc74b8c7983261a15f16adc17.html">Network</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">Http.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="Http_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">//</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// SFML - Simple and Fast Multimedia Library</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// Copyright (C) 2007-2025 Laurent Gomila (laurent@sfml-dev.org)</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// This software is provided &#39;as-is&#39;, without any express or implied warranty.</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// In no event will the authors be held liable for any damages arising from the use of this software.</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">//</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// Permission is granted to anyone to use this software for any purpose,</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// including commercial applications, and to alter it and redistribute it freely,</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// subject to the following restrictions:</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">//</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// 1. The origin of this software must not be misrepresented;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">//    you must not claim that you wrote the original software.</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">//    If you use this software in a product, an acknowledgment</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">//    in the product documentation would be appreciated but is not required.</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">//</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// 2. Altered source versions must be plainly marked as such,</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">//    and must not be misrepresented as being the original software.</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">//</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// 3. This notice may not be removed or altered from any source distribution.</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">//</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">// Headers</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;<a class="code" href="Network_2Export_8hpp.html">SFML/Network/Export.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;<a class="code" href="IpAddress_8hpp.html">SFML/Network/IpAddress.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;<a class="code" href="TcpSocket_8hpp.html">SFML/Network/TcpSocket.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;<a class="code" href="Time_8hpp.html">SFML/System/Time.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;iosfwd&gt;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &lt;optional&gt;</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacesf.html">sf</a></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{</div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="};">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classsf_1_1Http.html">   49</a></span><span class="keyword">class </span><a class="code hl_define" href="Network_2Export_8hpp.html#ac5d46d4ffd98e947e28c54d051b338e7">SFML_NETWORK_API</a> <a class="code hl_function" href="classsf_1_1Http.html#ae08a48d8c0951a76229b8979ac8c1ce1">Http</a></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00056" data-start="{" data-end="};">
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Request.html">   56</a></span>    <span class="keyword">class </span><a class="code hl_define" href="Network_2Export_8hpp.html#ac5d46d4ffd98e947e28c54d051b338e7">SFML_NETWORK_API</a> <a class="code hl_function" href="classsf_1_1Http_1_1Request.html#ac99217bf71027d0358c7ac8aee2bc963">Request</a></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00063" data-start="{" data-end="};">
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Request.html#a620f8bff6f43e1378f321bf53fbf5598">   63</a></span>        <span class="keyword">enum class</span> <a class="code hl_enumeration" href="classsf_1_1Http_1_1Request.html#a620f8bff6f43e1378f321bf53fbf5598">Method</a></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Request.html#a620f8bff6f43e1378f321bf53fbf5598ac55582518cba2c464f29f5bae1c68def">   65</a></span>            <a class="code hl_enumvalue" href="classsf_1_1Http_1_1Request.html#a620f8bff6f43e1378f321bf53fbf5598ac55582518cba2c464f29f5bae1c68def">Get</a>,   </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Request.html#a620f8bff6f43e1378f321bf53fbf5598a03d947a2158373c3b9d74325850cb8b9">   66</a></span>            <a class="code hl_enumvalue" href="classsf_1_1Http_1_1Request.html#a620f8bff6f43e1378f321bf53fbf5598a03d947a2158373c3b9d74325850cb8b9">Post</a>,  </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Request.html#a620f8bff6f43e1378f321bf53fbf5598a98921133d10fbdb0fb6dbb7b2648befe">   67</a></span>            <a class="code hl_enumvalue" href="classsf_1_1Http_1_1Request.html#a620f8bff6f43e1378f321bf53fbf5598a98921133d10fbdb0fb6dbb7b2648befe">Head</a>,  </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Request.html#a620f8bff6f43e1378f321bf53fbf5598ad0bf1810982e9728fcf3ac444a015373">   68</a></span>            <a class="code hl_enumvalue" href="classsf_1_1Http_1_1Request.html#a620f8bff6f43e1378f321bf53fbf5598ad0bf1810982e9728fcf3ac444a015373">Put</a>,   </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Request.html#a620f8bff6f43e1378f321bf53fbf5598af2a6c498fb90ee345d997f888fce3b18">   69</a></span>            <a class="code hl_enumvalue" href="classsf_1_1Http_1_1Request.html#a620f8bff6f43e1378f321bf53fbf5598af2a6c498fb90ee345d997f888fce3b18">Delete</a> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        };</div>
+</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Request.html#ac99217bf71027d0358c7ac8aee2bc963">   83</a></span>        <a class="code hl_function" href="classsf_1_1Http_1_1Request.html#ac99217bf71027d0358c7ac8aee2bc963">Request</a>(<span class="keyword">const</span> std::string&amp; uri = <span class="stringliteral">&quot;/&quot;</span>, <a class="code hl_enumeration" href="classsf_1_1Http_1_1Request.html#a620f8bff6f43e1378f321bf53fbf5598">Method</a> method = <a class="code hl_enumvalue" href="classsf_1_1Http_1_1Request.html#a620f8bff6f43e1378f321bf53fbf5598ac55582518cba2c464f29f5bae1c68def">Method::Get</a>, <span class="keyword">const</span> std::string&amp; body = <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Request.html#aea672fae5dd089f4b6b3745ed46210d2">   98</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classsf_1_1Http_1_1Request.html#aea672fae5dd089f4b6b3745ed46210d2">setField</a>(<span class="keyword">const</span> std::string&amp; field, <span class="keyword">const</span> std::string&amp; value);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Request.html#abab148554e873e80d2e41376fde1cb62">  110</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classsf_1_1Http_1_1Request.html#abab148554e873e80d2e41376fde1cb62">setMethod</a>(<a class="code hl_enumeration" href="classsf_1_1Http_1_1Request.html#a620f8bff6f43e1378f321bf53fbf5598">Method</a> method);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Request.html#a3723de4b4f1a14b744477841c4ac22e6">  122</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classsf_1_1Http_1_1Request.html#a3723de4b4f1a14b744477841c4ac22e6">setUri</a>(<span class="keyword">const</span> std::string&amp; uri);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Request.html#aa683b607b737a6224a91387b4108d3c7">  133</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classsf_1_1Http_1_1Request.html#aa683b607b737a6224a91387b4108d3c7">setHttpVersion</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> major, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> minor);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Request.html#ae9f61ec3fa1639c70e9b5780cb35578e">  145</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classsf_1_1Http_1_1Request.html#ae9f61ec3fa1639c70e9b5780cb35578e">setBody</a>(<span class="keyword">const</span> std::string&amp; body);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Request.html#aba95e2a7762bb5df986048b05d03a22e">  148</a></span>        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_friend" href="classsf_1_1Http_1_1Request.html#aba95e2a7762bb5df986048b05d03a22e">Http</a>;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        [[nodiscard]] std::string prepare() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        [[nodiscard]] <span class="keywordtype">bool</span> hasField(<span class="keyword">const</span> std::string&amp; field) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        <span class="comment">// Types</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        <span class="keyword">using </span>FieldTable = std::map&lt;std::string, std::string&gt;; <span class="comment">// Use an ordered map for predictable payloads</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        <span class="comment">// Member data</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        FieldTable   m_fields;          </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        <a class="code hl_enumeration" href="classsf_1_1Http_1_1Request.html#a620f8bff6f43e1378f321bf53fbf5598">Method</a>       m_method;          </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        std::string  m_uri;             </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> m_majorVersion{1}; </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> m_minorVersion{};  </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        std::string  m_body;            </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    };</div>
+</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span></div>
+<div class="foldopen" id="foldopen00193" data-start="{" data-end="};">
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Response.html">  193</a></span>    <span class="keyword">class </span><a class="code hl_define" href="Network_2Export_8hpp.html#ac5d46d4ffd98e947e28c54d051b338e7">SFML_NETWORK_API</a> <a class="code hl_class" href="classsf_1_1Http_1_1Response.html">Response</a></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    {</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    <span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00200" data-start="{" data-end="};">
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8">  200</a></span>        <span class="keyword">enum class</span> <a class="code hl_enumeration" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8">Status</a></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        {</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>            <span class="comment">// 2xx: success</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8aa60852f204ed8028c1c58808b746d115">  203</a></span>            <a class="code hl_enumvalue" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8aa60852f204ed8028c1c58808b746d115">Ok</a>        = 200, </div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a0eceeb45861f9585dd7a97a3e36f85c6">  204</a></span>            <a class="code hl_enumvalue" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a0eceeb45861f9585dd7a97a3e36f85c6">Created</a>   = 201, </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a382ab522931673c11e398ead1b7b1678">  205</a></span>            <a class="code hl_enumvalue" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a382ab522931673c11e398ead1b7b1678">Accepted</a>  = 202, </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8acd447f1ec89f564ebac583d60087df12">  206</a></span>            <a class="code hl_enumvalue" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8acd447f1ec89f564ebac583d60087df12">NoContent</a> = 204, </div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a4e9202c31896211f63be5b7345a897ed">  207</a></span>            <a class="code hl_enumvalue" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a4e9202c31896211f63be5b7345a897ed">ResetContent</a> = 205, </div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a750de7eda10d780b3bbaefb57128c24b">  208</a></span>            <a class="code hl_enumvalue" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a750de7eda10d780b3bbaefb57128c24b">PartialContent</a> = 206, </div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            <span class="comment">// 3xx: redirection</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8aa589749d075c3423333bdc93e3b4e774">  211</a></span>            <a class="code hl_enumvalue" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8aa589749d075c3423333bdc93e3b4e774">MultipleChoices</a>  = 300, </div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a32638c25f4c913fce6214c2c4afff9dc">  212</a></span>            <a class="code hl_enumvalue" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a32638c25f4c913fce6214c2c4afff9dc">MovedPermanently</a> = 301, </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a9f435b66870d2ee1ac8bd7e912cd16b0">  213</a></span>            <a class="code hl_enumvalue" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a9f435b66870d2ee1ac8bd7e912cd16b0">MovedTemporarily</a> = 302, </div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8ac169e6d9a1b9442001384de8dcf49ab9">  214</a></span>            <a class="code hl_enumvalue" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8ac169e6d9a1b9442001384de8dcf49ab9">NotModified</a> = 304, </div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>            <span class="comment">// 4xx: client error</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a9edf8fbf00a57d95a0af4923c9a1ec6f">  217</a></span>            <a class="code hl_enumvalue" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a9edf8fbf00a57d95a0af4923c9a1ec6f">BadRequest</a>   = 400,        </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8ae06d1ba70f1331e9f9a113cc2f887d3f">  218</a></span>            <a class="code hl_enumvalue" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8ae06d1ba70f1331e9f9a113cc2f887d3f">Unauthorized</a> = 401,        </div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a722969577a96ca3953e84e3d949dee81">  219</a></span>            <a class="code hl_enumvalue" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a722969577a96ca3953e84e3d949dee81">Forbidden</a>    = 403,        </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a38c300f4fc9ce8a77aad4a30de05cad8">  220</a></span>            <a class="code hl_enumvalue" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a38c300f4fc9ce8a77aad4a30de05cad8">NotFound</a>     = 404,        </div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a9283ef01c36e7e4793b3e1395d764dfe">  221</a></span>            <a class="code hl_enumvalue" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a9283ef01c36e7e4793b3e1395d764dfe">RangeNotSatisfiable</a> = 407, </div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>            <span class="comment">// 5xx: server error</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8aecbf01325f1c744e9d7bb586ac2eb5ed">  224</a></span>            <a class="code hl_enumvalue" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8aecbf01325f1c744e9d7bb586ac2eb5ed">InternalServerError</a> = 500, </div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a997ca4ce119685f40f03a9a8a6c5346e">  225</a></span>            <a class="code hl_enumvalue" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a997ca4ce119685f40f03a9a8a6c5346e">NotImplemented</a>      = 501, </div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a0e7c9ad08be0653518bf456c9994ace5">  226</a></span>            <a class="code hl_enumvalue" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a0e7c9ad08be0653518bf456c9994ace5">BadGateway</a>          = 502, </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a235bfc2933fb3f929cee883b642be632">  227</a></span>            <a class="code hl_enumvalue" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a235bfc2933fb3f929cee883b642be632">ServiceNotAvailable</a> = 503, </div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8ada405cbc74723dfdda615e3f679ef2be">  228</a></span>            <a class="code hl_enumvalue" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8ada405cbc74723dfdda615e3f679ef2be">GatewayTimeout</a>      = 504, </div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8acf5b5f39afef6631b6830254885d2bb1">  229</a></span>            <a class="code hl_enumvalue" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8acf5b5f39afef6631b6830254885d2bb1">VersionNotSupported</a> = 505, </div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>            <span class="comment">// 10xx: SFML custom codes</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a33f317695948b584444f4b7525da594e">  232</a></span>            <a class="code hl_enumvalue" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a33f317695948b584444f4b7525da594e">InvalidResponse</a>  = 1000, </div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8aaf98071f760be899f4fcf1d53a29ba17">  233</a></span>            <a class="code hl_enumvalue" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8aaf98071f760be899f4fcf1d53a29ba17">ConnectionFailed</a> = 1001  </div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        };</div>
+</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span></div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Response.html#ae16458c4e969206381b78587aa47c8dc">  248</a></span>        [[nodiscard]] <span class="keyword">const</span> std::string&amp; <a class="code hl_function" href="classsf_1_1Http_1_1Response.html#ae16458c4e969206381b78587aa47c8dc">getField</a>(<span class="keyword">const</span> std::string&amp; field) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Response.html#a4271651703764fd9a7d2c0315aff20de">  261</a></span>        [[nodiscard]] <a class="code hl_enumeration" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8">Status</a> <a class="code hl_function" href="classsf_1_1Http_1_1Response.html#a4271651703764fd9a7d2c0315aff20de">getStatus</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span></div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Response.html#ab1c6948f6444fad34d0537e206e398b8">  271</a></span>        [[nodiscard]] <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classsf_1_1Http_1_1Response.html#ab1c6948f6444fad34d0537e206e398b8">getMajorHttpVersion</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span></div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Response.html#af3c649568d2e291e71c3a7da546bb392">  281</a></span>        [[nodiscard]] <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classsf_1_1Http_1_1Response.html#af3c649568d2e291e71c3a7da546bb392">getMinorHttpVersion</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span></div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Response.html#ac59e2b11cae4b6232c737547a3ca9850">  295</a></span>        [[nodiscard]] <span class="keyword">const</span> std::string&amp; <a class="code hl_function" href="classsf_1_1Http_1_1Response.html#ac59e2b11cae4b6232c737547a3ca9850">getBody</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> </div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno"><a class="line" href="classsf_1_1Http_1_1Response.html#aba95e2a7762bb5df986048b05d03a22e">  298</a></span>        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_friend" href="classsf_1_1Http_1_1Response.html#aba95e2a7762bb5df986048b05d03a22e">Http</a>;</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span></div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>        <span class="keywordtype">void</span> parse(<span class="keyword">const</span> std::string&amp; data);</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span> </div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span></div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>        <span class="keywordtype">void</span> parseFields(std::istream&amp; in);</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span></div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>        <span class="comment">// Types</span></div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>        <span class="keyword">using </span>FieldTable = std::map&lt;std::string, std::string&gt;; <span class="comment">// Use an ordered map for predictable payloads</span></div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span></div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>        <span class="comment">// Member data</span></div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>        FieldTable   m_fields;                           </div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>        <a class="code hl_enumeration" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8">Status</a>       m_status{<a class="code hl_enumvalue" href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8aaf98071f760be899f4fcf1d53a29ba17">Status::ConnectionFailed</a>}; </div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> m_majorVersion{};                   </div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> m_minorVersion{};                   </div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>        std::string  m_body;                             </div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>    };</div>
+</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span></div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno"><a class="line" href="classsf_1_1Http.html#ae08a48d8c0951a76229b8979ac8c1ce1">  342</a></span>    <a class="code hl_function" href="classsf_1_1Http.html#ae08a48d8c0951a76229b8979ac8c1ce1">Http</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span></div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno"><a class="line" href="classsf_1_1Http.html#a79efd844a735f083fcce0edbf1092385">  358</a></span>    <a class="code hl_function" href="classsf_1_1Http.html#a79efd844a735f083fcce0edbf1092385">Http</a>(<span class="keyword">const</span> std::string&amp; host, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> port = 0);</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span></div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno"><a class="line" href="classsf_1_1Http.html#a2d3319d73fbb11f6cd83cc6714057807">  364</a></span>    <a class="code hl_function" href="classsf_1_1Http.html#a2d3319d73fbb11f6cd83cc6714057807">Http</a>(<span class="keyword">const</span> <a class="code hl_function" href="classsf_1_1Http.html#ae08a48d8c0951a76229b8979ac8c1ce1">Http</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span></div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno"><a class="line" href="classsf_1_1Http.html#a6520f1898410657f1884f3ed7aad39ac">  370</a></span>    <a class="code hl_function" href="classsf_1_1Http.html#ae08a48d8c0951a76229b8979ac8c1ce1">Http</a>&amp; <a class="code hl_function" href="classsf_1_1Http.html#a6520f1898410657f1884f3ed7aad39ac">operator=</a>(<span class="keyword">const</span> <a class="code hl_function" href="classsf_1_1Http.html#ae08a48d8c0951a76229b8979ac8c1ce1">Http</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span></div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno"><a class="line" href="classsf_1_1Http.html#a55121d543b61c41cf20b885a97b04e65">  387</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classsf_1_1Http.html#a55121d543b61c41cf20b885a97b04e65">setHost</a>(<span class="keyword">const</span> std::string&amp; host, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> port = 0);</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span></div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno"><a class="line" href="classsf_1_1Http.html#aaf09ebfb5e00dcc82e0d494d5c6a9e2a">  407</a></span>    [[nodiscard]] <a class="code hl_class" href="classsf_1_1Http_1_1Response.html">Response</a> <a class="code hl_function" href="classsf_1_1Http.html#aaf09ebfb5e00dcc82e0d494d5c6a9e2a">sendRequest</a>(<span class="keyword">const</span> <a class="code hl_class" href="classsf_1_1Http_1_1Request.html">Request</a>&amp; request, <a class="code hl_class" href="classsf_1_1Time.html">Time</a> timeout = <a class="code hl_variable" href="classsf_1_1Time.html#a8db127b632fa8da21550e7282af11fa0">Time::Zero</a>);</div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span> </div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>    <span class="comment">// Member data</span></div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>    <a class="code hl_class" href="classsf_1_1TcpSocket.html">TcpSocket</a>                m_connection; </div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>    std::optional&lt;IpAddress&gt; m_host;       </div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>    std::string              m_hostName;   </div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span>           m_port{};     </div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>};</div>
+</div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span> </div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>} <span class="comment">// namespace sf</span></div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span> </div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span></div>
+<div class="ttc" id="aIpAddress_8hpp_html"><div class="ttname"><a href="IpAddress_8hpp.html">IpAddress.hpp</a></div></div>
+<div class="ttc" id="aNetwork_2Export_8hpp_html"><div class="ttname"><a href="Network_2Export_8hpp.html">Export.hpp</a></div></div>
+<div class="ttc" id="aNetwork_2Export_8hpp_html_ac5d46d4ffd98e947e28c54d051b338e7"><div class="ttname"><a href="Network_2Export_8hpp.html#ac5d46d4ffd98e947e28c54d051b338e7">SFML_NETWORK_API</a></div><div class="ttdeci">#define SFML_NETWORK_API</div><div class="ttdef"><b>Definition</b> <a href="Network_2Export_8hpp_source.html#l00042">Network/Export.hpp:42</a></div></div>
+<div class="ttc" id="aTcpSocket_8hpp_html"><div class="ttname"><a href="TcpSocket_8hpp.html">TcpSocket.hpp</a></div></div>
+<div class="ttc" id="aTime_8hpp_html"><div class="ttname"><a href="Time_8hpp.html">Time.hpp</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Request_html"><div class="ttname"><a href="classsf_1_1Http_1_1Request.html">sf::Http::Request</a></div><div class="ttdoc">HTTP request.</div><div class="ttdef"><b>Definition</b> <a href="#l00056">Http.hpp:57</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Request_html_a3723de4b4f1a14b744477841c4ac22e6"><div class="ttname"><a href="classsf_1_1Http_1_1Request.html#a3723de4b4f1a14b744477841c4ac22e6">sf::Http::Request::setUri</a></div><div class="ttdeci">void setUri(const std::string &amp;uri)</div><div class="ttdoc">Set the requested URI.</div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Request_html_a620f8bff6f43e1378f321bf53fbf5598"><div class="ttname"><a href="classsf_1_1Http_1_1Request.html#a620f8bff6f43e1378f321bf53fbf5598">sf::Http::Request::Method</a></div><div class="ttdeci">Method</div><div class="ttdoc">Enumerate the available HTTP methods for a request.</div><div class="ttdef"><b>Definition</b> <a href="#l00063">Http.hpp:64</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Request_html_a620f8bff6f43e1378f321bf53fbf5598a03d947a2158373c3b9d74325850cb8b9"><div class="ttname"><a href="classsf_1_1Http_1_1Request.html#a620f8bff6f43e1378f321bf53fbf5598a03d947a2158373c3b9d74325850cb8b9">sf::Http::Request::Method::Post</a></div><div class="ttdeci">@ Post</div><div class="ttdoc">Request in post mode, usually to send data to a page.</div><div class="ttdef"><b>Definition</b> <a href="#l00066">Http.hpp:66</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Request_html_a620f8bff6f43e1378f321bf53fbf5598a98921133d10fbdb0fb6dbb7b2648befe"><div class="ttname"><a href="classsf_1_1Http_1_1Request.html#a620f8bff6f43e1378f321bf53fbf5598a98921133d10fbdb0fb6dbb7b2648befe">sf::Http::Request::Method::Head</a></div><div class="ttdeci">@ Head</div><div class="ttdoc">Request a page&#39;s header only.</div><div class="ttdef"><b>Definition</b> <a href="#l00067">Http.hpp:67</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Request_html_a620f8bff6f43e1378f321bf53fbf5598ac55582518cba2c464f29f5bae1c68def"><div class="ttname"><a href="classsf_1_1Http_1_1Request.html#a620f8bff6f43e1378f321bf53fbf5598ac55582518cba2c464f29f5bae1c68def">sf::Http::Request::Method::Get</a></div><div class="ttdeci">@ Get</div><div class="ttdoc">Request in get mode, standard method to retrieve a page.</div><div class="ttdef"><b>Definition</b> <a href="#l00065">Http.hpp:65</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Request_html_a620f8bff6f43e1378f321bf53fbf5598ad0bf1810982e9728fcf3ac444a015373"><div class="ttname"><a href="classsf_1_1Http_1_1Request.html#a620f8bff6f43e1378f321bf53fbf5598ad0bf1810982e9728fcf3ac444a015373">sf::Http::Request::Method::Put</a></div><div class="ttdeci">@ Put</div><div class="ttdoc">Request in put mode, useful for a REST API.</div><div class="ttdef"><b>Definition</b> <a href="#l00068">Http.hpp:68</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Request_html_a620f8bff6f43e1378f321bf53fbf5598af2a6c498fb90ee345d997f888fce3b18"><div class="ttname"><a href="classsf_1_1Http_1_1Request.html#a620f8bff6f43e1378f321bf53fbf5598af2a6c498fb90ee345d997f888fce3b18">sf::Http::Request::Method::Delete</a></div><div class="ttdeci">@ Delete</div><div class="ttdoc">Request in delete mode, useful for a REST API.</div><div class="ttdef"><b>Definition</b> <a href="#l00069">Http.hpp:69</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Request_html_aa683b607b737a6224a91387b4108d3c7"><div class="ttname"><a href="classsf_1_1Http_1_1Request.html#aa683b607b737a6224a91387b4108d3c7">sf::Http::Request::setHttpVersion</a></div><div class="ttdeci">void setHttpVersion(unsigned int major, unsigned int minor)</div><div class="ttdoc">Set the HTTP version for the request.</div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Request_html_aba95e2a7762bb5df986048b05d03a22e"><div class="ttname"><a href="classsf_1_1Http_1_1Request.html#aba95e2a7762bb5df986048b05d03a22e">sf::Http::Request::Http</a></div><div class="ttdeci">friend class Http</div><div class="ttdef"><b>Definition</b> <a href="#l00148">Http.hpp:148</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Request_html_abab148554e873e80d2e41376fde1cb62"><div class="ttname"><a href="classsf_1_1Http_1_1Request.html#abab148554e873e80d2e41376fde1cb62">sf::Http::Request::setMethod</a></div><div class="ttdeci">void setMethod(Method method)</div><div class="ttdoc">Set the request method.</div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Request_html_ac99217bf71027d0358c7ac8aee2bc963"><div class="ttname"><a href="classsf_1_1Http_1_1Request.html#ac99217bf71027d0358c7ac8aee2bc963">sf::Http::Request::Request</a></div><div class="ttdeci">Request(const std::string &amp;uri=&quot;/&quot;, Method method=Method::Get, const std::string &amp;body=&quot;&quot;)</div><div class="ttdoc">Default constructor.</div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Request_html_ae9f61ec3fa1639c70e9b5780cb35578e"><div class="ttname"><a href="classsf_1_1Http_1_1Request.html#ae9f61ec3fa1639c70e9b5780cb35578e">sf::Http::Request::setBody</a></div><div class="ttdeci">void setBody(const std::string &amp;body)</div><div class="ttdoc">Set the body of the request.</div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Request_html_aea672fae5dd089f4b6b3745ed46210d2"><div class="ttname"><a href="classsf_1_1Http_1_1Request.html#aea672fae5dd089f4b6b3745ed46210d2">sf::Http::Request::setField</a></div><div class="ttdeci">void setField(const std::string &amp;field, const std::string &amp;value)</div><div class="ttdoc">Set the value of a field.</div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Response_html"><div class="ttname"><a href="classsf_1_1Http_1_1Response.html">sf::Http::Response</a></div><div class="ttdoc">HTTP response.</div><div class="ttdef"><b>Definition</b> <a href="#l00193">Http.hpp:194</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Response_html_a4271651703764fd9a7d2c0315aff20de"><div class="ttname"><a href="classsf_1_1Http_1_1Response.html#a4271651703764fd9a7d2c0315aff20de">sf::Http::Response::getStatus</a></div><div class="ttdeci">Status getStatus() const</div><div class="ttdoc">Get the response status code.</div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Response_html_a663e071978e30fbbeb20ed045be874d8"><div class="ttname"><a href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8">sf::Http::Response::Status</a></div><div class="ttdeci">Status</div><div class="ttdoc">Enumerate all the valid status codes for a response.</div><div class="ttdef"><b>Definition</b> <a href="#l00200">Http.hpp:201</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Response_html_a663e071978e30fbbeb20ed045be874d8a0e7c9ad08be0653518bf456c9994ace5"><div class="ttname"><a href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a0e7c9ad08be0653518bf456c9994ace5">sf::Http::Response::Status::BadGateway</a></div><div class="ttdeci">@ BadGateway</div><div class="ttdoc">The gateway server has received an error from the source server.</div><div class="ttdef"><b>Definition</b> <a href="#l00226">Http.hpp:226</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Response_html_a663e071978e30fbbeb20ed045be874d8a0eceeb45861f9585dd7a97a3e36f85c6"><div class="ttname"><a href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a0eceeb45861f9585dd7a97a3e36f85c6">sf::Http::Response::Status::Created</a></div><div class="ttdeci">@ Created</div><div class="ttdoc">The resource has successfully been created.</div><div class="ttdef"><b>Definition</b> <a href="#l00204">Http.hpp:204</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Response_html_a663e071978e30fbbeb20ed045be874d8a235bfc2933fb3f929cee883b642be632"><div class="ttname"><a href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a235bfc2933fb3f929cee883b642be632">sf::Http::Response::Status::ServiceNotAvailable</a></div><div class="ttdeci">@ ServiceNotAvailable</div><div class="ttdoc">The server is temporarily unavailable (overloaded, in maintenance, ...)</div><div class="ttdef"><b>Definition</b> <a href="#l00227">Http.hpp:227</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Response_html_a663e071978e30fbbeb20ed045be874d8a32638c25f4c913fce6214c2c4afff9dc"><div class="ttname"><a href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a32638c25f4c913fce6214c2c4afff9dc">sf::Http::Response::Status::MovedPermanently</a></div><div class="ttdeci">@ MovedPermanently</div><div class="ttdoc">The requested page has permanently moved to a new location.</div><div class="ttdef"><b>Definition</b> <a href="#l00212">Http.hpp:212</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Response_html_a663e071978e30fbbeb20ed045be874d8a33f317695948b584444f4b7525da594e"><div class="ttname"><a href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a33f317695948b584444f4b7525da594e">sf::Http::Response::Status::InvalidResponse</a></div><div class="ttdeci">@ InvalidResponse</div><div class="ttdoc">Response is not a valid HTTP one.</div><div class="ttdef"><b>Definition</b> <a href="#l00232">Http.hpp:232</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Response_html_a663e071978e30fbbeb20ed045be874d8a382ab522931673c11e398ead1b7b1678"><div class="ttname"><a href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a382ab522931673c11e398ead1b7b1678">sf::Http::Response::Status::Accepted</a></div><div class="ttdeci">@ Accepted</div><div class="ttdoc">The request has been accepted, but will be processed later by the server.</div><div class="ttdef"><b>Definition</b> <a href="#l00205">Http.hpp:205</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Response_html_a663e071978e30fbbeb20ed045be874d8a38c300f4fc9ce8a77aad4a30de05cad8"><div class="ttname"><a href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a38c300f4fc9ce8a77aad4a30de05cad8">sf::Http::Response::Status::NotFound</a></div><div class="ttdeci">@ NotFound</div><div class="ttdoc">The requested page doesn&#39;t exist.</div><div class="ttdef"><b>Definition</b> <a href="#l00220">Http.hpp:220</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Response_html_a663e071978e30fbbeb20ed045be874d8a4e9202c31896211f63be5b7345a897ed"><div class="ttname"><a href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a4e9202c31896211f63be5b7345a897ed">sf::Http::Response::Status::ResetContent</a></div><div class="ttdeci">@ ResetContent</div><div class="ttdoc">The server informs the client that it should clear the view (form) that caused the request to be sent...</div><div class="ttdef"><b>Definition</b> <a href="#l00207">Http.hpp:207</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Response_html_a663e071978e30fbbeb20ed045be874d8a722969577a96ca3953e84e3d949dee81"><div class="ttname"><a href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a722969577a96ca3953e84e3d949dee81">sf::Http::Response::Status::Forbidden</a></div><div class="ttdeci">@ Forbidden</div><div class="ttdoc">The requested page cannot be accessed at all, even with authentication.</div><div class="ttdef"><b>Definition</b> <a href="#l00219">Http.hpp:219</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Response_html_a663e071978e30fbbeb20ed045be874d8a750de7eda10d780b3bbaefb57128c24b"><div class="ttname"><a href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a750de7eda10d780b3bbaefb57128c24b">sf::Http::Response::Status::PartialContent</a></div><div class="ttdeci">@ PartialContent</div><div class="ttdoc">The server has sent a part of the resource, as a response to a partial GET request.</div><div class="ttdef"><b>Definition</b> <a href="#l00208">Http.hpp:208</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Response_html_a663e071978e30fbbeb20ed045be874d8a9283ef01c36e7e4793b3e1395d764dfe"><div class="ttname"><a href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a9283ef01c36e7e4793b3e1395d764dfe">sf::Http::Response::Status::RangeNotSatisfiable</a></div><div class="ttdeci">@ RangeNotSatisfiable</div><div class="ttdoc">The server can&#39;t satisfy the partial GET request (with a &quot;Range&quot; header field)</div><div class="ttdef"><b>Definition</b> <a href="#l00221">Http.hpp:221</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Response_html_a663e071978e30fbbeb20ed045be874d8a997ca4ce119685f40f03a9a8a6c5346e"><div class="ttname"><a href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a997ca4ce119685f40f03a9a8a6c5346e">sf::Http::Response::Status::NotImplemented</a></div><div class="ttdeci">@ NotImplemented</div><div class="ttdoc">The server doesn&#39;t implement a requested feature.</div><div class="ttdef"><b>Definition</b> <a href="#l00225">Http.hpp:225</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Response_html_a663e071978e30fbbeb20ed045be874d8a9edf8fbf00a57d95a0af4923c9a1ec6f"><div class="ttname"><a href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a9edf8fbf00a57d95a0af4923c9a1ec6f">sf::Http::Response::Status::BadRequest</a></div><div class="ttdeci">@ BadRequest</div><div class="ttdoc">The server couldn&#39;t understand the request (syntax error)</div><div class="ttdef"><b>Definition</b> <a href="#l00217">Http.hpp:217</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Response_html_a663e071978e30fbbeb20ed045be874d8a9f435b66870d2ee1ac8bd7e912cd16b0"><div class="ttname"><a href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a9f435b66870d2ee1ac8bd7e912cd16b0">sf::Http::Response::Status::MovedTemporarily</a></div><div class="ttdeci">@ MovedTemporarily</div><div class="ttdoc">The requested page has temporarily moved to a new location.</div><div class="ttdef"><b>Definition</b> <a href="#l00213">Http.hpp:213</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Response_html_a663e071978e30fbbeb20ed045be874d8aa589749d075c3423333bdc93e3b4e774"><div class="ttname"><a href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8aa589749d075c3423333bdc93e3b4e774">sf::Http::Response::Status::MultipleChoices</a></div><div class="ttdeci">@ MultipleChoices</div><div class="ttdoc">The requested page can be accessed from several locations.</div><div class="ttdef"><b>Definition</b> <a href="#l00211">Http.hpp:211</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Response_html_a663e071978e30fbbeb20ed045be874d8aa60852f204ed8028c1c58808b746d115"><div class="ttname"><a href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8aa60852f204ed8028c1c58808b746d115">sf::Http::Response::Status::Ok</a></div><div class="ttdeci">@ Ok</div><div class="ttdoc">Most common code returned when operation was successful.</div><div class="ttdef"><b>Definition</b> <a href="#l00203">Http.hpp:203</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Response_html_a663e071978e30fbbeb20ed045be874d8aaf98071f760be899f4fcf1d53a29ba17"><div class="ttname"><a href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8aaf98071f760be899f4fcf1d53a29ba17">sf::Http::Response::Status::ConnectionFailed</a></div><div class="ttdeci">@ ConnectionFailed</div><div class="ttdoc">Connection with server failed.</div><div class="ttdef"><b>Definition</b> <a href="#l00233">Http.hpp:233</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Response_html_a663e071978e30fbbeb20ed045be874d8ac169e6d9a1b9442001384de8dcf49ab9"><div class="ttname"><a href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8ac169e6d9a1b9442001384de8dcf49ab9">sf::Http::Response::Status::NotModified</a></div><div class="ttdeci">@ NotModified</div><div class="ttdoc">For conditional requests, means the requested page hasn&#39;t changed and doesn&#39;t need to be refreshed.</div><div class="ttdef"><b>Definition</b> <a href="#l00214">Http.hpp:214</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Response_html_a663e071978e30fbbeb20ed045be874d8acd447f1ec89f564ebac583d60087df12"><div class="ttname"><a href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8acd447f1ec89f564ebac583d60087df12">sf::Http::Response::Status::NoContent</a></div><div class="ttdeci">@ NoContent</div><div class="ttdoc">The server didn&#39;t send any data in return.</div><div class="ttdef"><b>Definition</b> <a href="#l00206">Http.hpp:206</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Response_html_a663e071978e30fbbeb20ed045be874d8acf5b5f39afef6631b6830254885d2bb1"><div class="ttname"><a href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8acf5b5f39afef6631b6830254885d2bb1">sf::Http::Response::Status::VersionNotSupported</a></div><div class="ttdeci">@ VersionNotSupported</div><div class="ttdoc">The server doesn&#39;t support the requested HTTP version.</div><div class="ttdef"><b>Definition</b> <a href="#l00229">Http.hpp:229</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Response_html_a663e071978e30fbbeb20ed045be874d8ada405cbc74723dfdda615e3f679ef2be"><div class="ttname"><a href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8ada405cbc74723dfdda615e3f679ef2be">sf::Http::Response::Status::GatewayTimeout</a></div><div class="ttdeci">@ GatewayTimeout</div><div class="ttdoc">The gateway server couldn&#39;t receive a response from the source server.</div><div class="ttdef"><b>Definition</b> <a href="#l00228">Http.hpp:228</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Response_html_a663e071978e30fbbeb20ed045be874d8ae06d1ba70f1331e9f9a113cc2f887d3f"><div class="ttname"><a href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8ae06d1ba70f1331e9f9a113cc2f887d3f">sf::Http::Response::Status::Unauthorized</a></div><div class="ttdeci">@ Unauthorized</div><div class="ttdoc">The requested page needs an authentication to be accessed.</div><div class="ttdef"><b>Definition</b> <a href="#l00218">Http.hpp:218</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Response_html_a663e071978e30fbbeb20ed045be874d8aecbf01325f1c744e9d7bb586ac2eb5ed"><div class="ttname"><a href="classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8aecbf01325f1c744e9d7bb586ac2eb5ed">sf::Http::Response::Status::InternalServerError</a></div><div class="ttdeci">@ InternalServerError</div><div class="ttdoc">The server encountered an unexpected error.</div><div class="ttdef"><b>Definition</b> <a href="#l00224">Http.hpp:224</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Response_html_ab1c6948f6444fad34d0537e206e398b8"><div class="ttname"><a href="classsf_1_1Http_1_1Response.html#ab1c6948f6444fad34d0537e206e398b8">sf::Http::Response::getMajorHttpVersion</a></div><div class="ttdeci">unsigned int getMajorHttpVersion() const</div><div class="ttdoc">Get the major HTTP version number of the response.</div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Response_html_aba95e2a7762bb5df986048b05d03a22e"><div class="ttname"><a href="classsf_1_1Http_1_1Response.html#aba95e2a7762bb5df986048b05d03a22e">sf::Http::Response::Http</a></div><div class="ttdeci">friend class Http</div><div class="ttdef"><b>Definition</b> <a href="#l00298">Http.hpp:298</a></div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Response_html_ac59e2b11cae4b6232c737547a3ca9850"><div class="ttname"><a href="classsf_1_1Http_1_1Response.html#ac59e2b11cae4b6232c737547a3ca9850">sf::Http::Response::getBody</a></div><div class="ttdeci">const std::string &amp; getBody() const</div><div class="ttdoc">Get the body of the response.</div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Response_html_ae16458c4e969206381b78587aa47c8dc"><div class="ttname"><a href="classsf_1_1Http_1_1Response.html#ae16458c4e969206381b78587aa47c8dc">sf::Http::Response::getField</a></div><div class="ttdeci">const std::string &amp; getField(const std::string &amp;field) const</div><div class="ttdoc">Get the value of a field.</div></div>
+<div class="ttc" id="aclasssf_1_1Http_1_1Response_html_af3c649568d2e291e71c3a7da546bb392"><div class="ttname"><a href="classsf_1_1Http_1_1Response.html#af3c649568d2e291e71c3a7da546bb392">sf::Http::Response::getMinorHttpVersion</a></div><div class="ttdeci">unsigned int getMinorHttpVersion() const</div><div class="ttdoc">Get the minor HTTP version number of the response.</div></div>
+<div class="ttc" id="aclasssf_1_1Http_html_a2d3319d73fbb11f6cd83cc6714057807"><div class="ttname"><a href="classsf_1_1Http.html#a2d3319d73fbb11f6cd83cc6714057807">sf::Http::Http</a></div><div class="ttdeci">Http(const Http &amp;)=delete</div><div class="ttdoc">Deleted copy constructor.</div></div>
+<div class="ttc" id="aclasssf_1_1Http_html_a55121d543b61c41cf20b885a97b04e65"><div class="ttname"><a href="classsf_1_1Http.html#a55121d543b61c41cf20b885a97b04e65">sf::Http::setHost</a></div><div class="ttdeci">void setHost(const std::string &amp;host, unsigned short port=0)</div><div class="ttdoc">Set the target host.</div></div>
+<div class="ttc" id="aclasssf_1_1Http_html_a6520f1898410657f1884f3ed7aad39ac"><div class="ttname"><a href="classsf_1_1Http.html#a6520f1898410657f1884f3ed7aad39ac">sf::Http::operator=</a></div><div class="ttdeci">Http &amp; operator=(const Http &amp;)=delete</div><div class="ttdoc">Deleted copy assignment.</div></div>
+<div class="ttc" id="aclasssf_1_1Http_html_a79efd844a735f083fcce0edbf1092385"><div class="ttname"><a href="classsf_1_1Http.html#a79efd844a735f083fcce0edbf1092385">sf::Http::Http</a></div><div class="ttdeci">Http(const std::string &amp;host, unsigned short port=0)</div><div class="ttdoc">Construct the HTTP client with the target host.</div></div>
+<div class="ttc" id="aclasssf_1_1Http_html_aaf09ebfb5e00dcc82e0d494d5c6a9e2a"><div class="ttname"><a href="classsf_1_1Http.html#aaf09ebfb5e00dcc82e0d494d5c6a9e2a">sf::Http::sendRequest</a></div><div class="ttdeci">Response sendRequest(const Request &amp;request, Time timeout=Time::Zero)</div><div class="ttdoc">Send a HTTP request and return the server&#39;s response.</div></div>
+<div class="ttc" id="aclasssf_1_1Http_html_ae08a48d8c0951a76229b8979ac8c1ce1"><div class="ttname"><a href="classsf_1_1Http.html#ae08a48d8c0951a76229b8979ac8c1ce1">sf::Http::Http</a></div><div class="ttdeci">Http()=default</div><div class="ttdoc">Default constructor.</div></div>
+<div class="ttc" id="aclasssf_1_1TcpSocket_html"><div class="ttname"><a href="classsf_1_1TcpSocket.html">sf::TcpSocket</a></div><div class="ttdoc">Specialized socket using the TCP protocol.</div><div class="ttdef"><b>Definition</b> <a href="TcpSocket_8hpp_source.html#l00053">TcpSocket.hpp:54</a></div></div>
+<div class="ttc" id="aclasssf_1_1Time_html"><div class="ttname"><a href="classsf_1_1Time.html">sf::Time</a></div><div class="ttdoc">Represents a time value.</div><div class="ttdef"><b>Definition</b> <a href="Time_8hpp_source.html#l00041">Time.hpp:42</a></div></div>
+<div class="ttc" id="aclasssf_1_1Time_html_a8db127b632fa8da21550e7282af11fa0"><div class="ttname"><a href="classsf_1_1Time.html#a8db127b632fa8da21550e7282af11fa0">sf::Time::Zero</a></div><div class="ttdeci">static const Time Zero</div><div class="ttdoc">Predefined &quot;zero&quot; time value.</div><div class="ttdef"><b>Definition</b> <a href="Time_8hpp_source.html#l00110">Time.hpp:110</a></div></div>
+<div class="ttc" id="anamespacesf_html"><div class="ttname"><a href="namespacesf.html">sf</a></div><div class="ttdef"><b>Definition</b> <a href="AudioResource_8hpp_source.html#l00035">AudioResource.hpp:36</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z" /></svg>
+                    Back to top
+                </button>
+            </main>
+            <footer class="md-footer">
+                <div class="md-footer-meta md-typeset">
+                    <div class="md-footer-meta__inner md-grid">
+                        <div class="md-copyright">
+                            <div class="md-copyright__highlight">Copyright &copy; <a href="mailto:laurent@sfml-dev.org">Laurent Gomila</a></div>
+                        </div>
+                        <div class="md-social">
+                            <a href="https://fosstodon.org/@sfml" target="_blank" rel="noopener me" title="SFML on Fosstodon" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.5 102.5 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5m-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com/sfmldev" target="_blank" rel="noopener" title="SFML on Twitter" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="https://bsky.app/profile/sfml.bsky.social" target="_blank" rel="noopener" title="SFML on Bluesky" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M407.8 294.7c-3.3-.4-6.7-.8-10-1.3 3.4.4 6.7.9 10 1.3M288 227.1c-26.1-50.7-97.1-145.2-163.1-191.8C61.6-9.4 37.5-1.7 21.6 5.5 3.3 13.8 0 41.9 0 58.4S9.1 194 15 213.9c19.5 65.7 89.1 87.9 153.2 80.7 3.3-.5 6.6-.9 10-1.4-3.3.5-6.6 1-10 1.4-93.9 14-177.3 48.2-67.9 169.9C220.6 589.1 265.1 437.8 288 361.1c22.9 76.7 49.2 222.5 185.6 103.4 102.4-103.4 28.1-156-65.8-169.9-3.3-.4-6.7-.8-10-1.3 3.4.4 6.7.9 10 1.3 64.1 7.1 133.6-15.1 153.2-80.7C566.9 194 576 75 576 58.4s-3.3-44.7-21.6-52.9c-15.8-7.1-40-14.9-103.2 29.8C385.1 81.9 314.1 176.4 288 227.1"
+                                    ></path>
+                                </svg>
+                            </a>
+                            <a href="https://discord.gg/nr4X7Fh" target="_blank" rel="noopener" title="SFML&#39;s Discord Server" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485 485 0 0 0 404.081 32.03a1.82 1.82 0 0 0-1.923.91 338 338 0 0 0-14.9 30.6 447.9 447.9 0 0 0-134.426 0 310 310 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.7 483.7 0 0 0-119.688 37.107 1.7 1.7 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.02 2.02 0 0 0 .765 1.375 487.7 487.7 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348 348 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321 321 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251 251 0 0 0 9.109-7.137 1.82 1.82 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.81 1.81 0 0 1 1.924.233 235 235 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.4 301.4 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391 391 0 0 0 30.014 48.815 1.86 1.86 0 0 0 2.063.7A486 486 0 0 0 610.7 405.729a1.88 1.88 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541M222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241m195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="md-dialog" data-md-component="dialog">
+            <div class="md-dialog__inner md-typeset"></div>
+        </div>
+        <script id="__config" type="application/json">
+            {
+                "base": "../..",
+                "features": ["content.code.copy", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.prune", "navigation.path", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.suggest"],
+                "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js",
+                "translations": {
+                    "clipboard.copied": "Copied to clipboard",
+                    "clipboard.copy": "Copy to clipboard",
+                    "search.result.more.one": "1 more on this page",
+                    "search.result.more.other": "# more on this page",
+                    "search.result.none": "No matching documents",
+                    "search.result.one": "1 matching document",
+                    "search.result.other": "# matching documents",
+                    "search.result.placeholder": "Type to start searching",
+                    "search.result.term.missing": "Missing",
+                    "select.version": "Select version"
+                }
+            }
+        </script>
+        <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+    </body>
+</html>

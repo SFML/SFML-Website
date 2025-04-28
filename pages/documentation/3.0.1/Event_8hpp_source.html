@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="Simple and Fast Multimedia Library" />
+        <link rel="canonical" href="https://www.sfml-dev.org/documentation/3.0.0/" />
+        <link rel="icon" href="../../images/favicon.ico" />
+        <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.50">
+        <title>Documentation for SFML 3.0.0 - Simple and Fast Multimedia Library</title>
+        <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css" />
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback" />
+        <style>
+            :root {
+                --md-text-font: "Ubuntu";
+                --md-code-font: "Roboto Mono";
+            }
+        </style>
+        <link rel="stylesheet" href="../../styles/extra.css" />
+        <script>
+            (__md_scope = new URL("../..", location)),
+                (__md_hash = (e) => [...e].reduce((e, _) => (e << 5) - e + _.charCodeAt(0), 0)),
+                (__md_get = (e, _ = localStorage, t = __md_scope) => JSON.parse(_.getItem(t.pathname + "." + e))),
+                (__md_set = (e, _, t = localStorage, a = __md_scope) => {
+                    try {
+                        t.setItem(a.pathname + "." + e, JSON.stringify(_));
+                    } catch (e) {}
+                });
+        </script>
+        <!-- Doxygen Overrides -->
+        <link rel="stylesheet" type="text/css" href="doxystyle.css" title="default" media="screen,print" />
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="dynsections.js"></script>
+        <script type="text/javascript" src="clipboard.js"></script>
+        <script type="text/javascript" src="cookie.js"></script>
+        <script type="text/javascript" src="resize.js"></script>
+        <link rel="stylesheet" type="text/css" href="search/search.css" />
+        <link rel="stylesheet" type="text/css" href="searchOverrides.css" />
+        <script type="text/javascript" src="search/searchdata.js"></script>
+        <script type="text/javascript" src="search/search.js"></script>
+        <script type="text/javascript">
+            /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+            $(document).ready(function () {
+                init_search();
+            });
+            /* @license-end */
+        </script>
+        <!-- Doxygen Overrides -->
+    </head>
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="indigo">
+        <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off" />
+        <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off" />
+        <label class="md-overlay" for="__drawer"></label>
+        <div data-md-component="announce"></div>
+        <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+            <nav class="md-header__inner md-grid" aria-label="Header">
+                <a href="../.." title="Simple and Fast Multimedia Library" class="md-header__button md-logo" aria-label="Simple and Fast Multimedia Library" data-md-component="logo">
+                    <img src="../../images/logo.png" alt="logo" />
+                </a>
+                <label class="md-header__button md-icon" for="__drawer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z" /></svg>
+                </label>
+                <div class="md-header__title" data-md-component="header-title">
+                    <div class="md-header__ellipsis">
+                        <div class="md-header__topic">
+                            <span class="md-ellipsis"> Simple and Fast Multimedia Library </span>
+                        </div>
+                        <div class="md-header__topic" data-md-component="header-topic">
+                            <span class="md-ellipsis"> Documentation for SFML 3.0.0 </span>
+                        </div>
+                    </div>
+                </div>
+                <label class="md-header__button md-icon" for="__search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5" />
+                    </svg>
+                </label>
+                <div class="md-search" data-md-component="search" role="dialog">
+                    <label class="md-search__overlay" for="__search"></label>
+                    <div class="md-search__inner" role="search">
+                        <form class="md-search__form" name="search">
+                            <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required />
+                            <label class="md-search__icon md-icon" for="__search">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"
+                                    />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z" /></svg>
+                            </label>
+                            <nav class="md-search__options" aria-label="Search">
+                                <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" /></svg>
+                                </button>
+                            </nav>
+                            <div class="md-search__suggest" data-md-component="search-suggest"></div>
+                        </form>
+                        <div class="md-search__output">
+                            <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+                                <div class="md-search-result" data-md-component="search-result">
+                                    <div class="md-search-result__meta">Initializing search</div>
+                                    <ol class="md-search-result__list" role="presentation"></ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-header__source">
+                    <a href="https://github.com/SFML/SFML" title="Go to repository" class="md-source" data-md-component="source">
+                        <div class="md-source__icon md-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"
+                                />
+                            </svg>
+                        </div>
+                        <div class="md-source__repository">SFML</div>
+                    </a>
+                </div>
+            </nav>
+            <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+                <div class="md-grid">
+                    <ul class="md-tabs__list">
+                        <li class="md-tabs__item">
+                            <a href="/" class="md-tabs__link"> Home </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/learn/" class="md-tabs__link"> Learn </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/tutorials/3.0/" class="md-tabs__link"> Tutorials </a>
+                        </li>
+                        <li class="md-tabs__item md-tabs__item--active">
+                            <a href="/documentation/3.0.1/" class="md-tabs__link"> Documentation </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/download/" class="md-tabs__link"> Download </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/community/" class="md-tabs__link"> Community </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/development/" class="md-tabs__link"> Development </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/donate/" class="md-tabs__link"> Donate </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="md-container" data-md-component="container">
+            <main class="md-main" data-md-component="main">
+                <div class="md-main__inner md-grid">
+                    <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                        <div class="md-sidebar__scrollwrap" style="height: 832px">
+                            <div class="md-sidebar__inner">
+                                <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+                                    <label class="md-nav__title" for="__drawer">
+                                        <a href="../.." title="Simple and Fast Multimedia Library" class="md-nav__button md-logo" aria-label="Simple and Fast Multimedia Library" data-md-component="logo">
+                                            <img src="../../images/logo.png" alt="logo" />
+                                        </a>
+                                        Simple and Fast Multimedia Library
+                                    </label>
+                                    <div class="md-nav__source">
+                                        <a href="https://github.com/SFML/SFML" title="Go to repository" class="md-source" data-md-component="source">
+                                            <div class="md-source__icon md-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                                    <path
+                                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                            <div class="md-source__repository md-source__repository--active">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <ul class="md-nav__list">
+                                        <li class="md-nav__item">
+                                            <a href="/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Home </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="/learn/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Learn </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="/tutorials/3.0/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Tutorials </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+                                            <input class="md-nav__toggle md-toggle" type="checkbox" id="__nav_4" checked="" />
+                                            <div class="md-nav__link md-nav__container">
+                                                <a href="/documentation/3.0.1/" class="md-nav__link md-nav__link--active">
+                                                    <span class="md-ellipsis"> Documentation </span>
+                                                </a>
+                                                <label class="md-nav__link md-nav__link--active" for="__nav_4" id="__nav_4_label" tabindex="">
+                                                    <span class="md-nav__icon md-icon"></span>
+                                                </label>
+                                            </div>
+                                            <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+                                                <label class="md-nav__title" for="__nav_4">
+                                                    <span class="md-nav__icon md-icon"></span>
+                                                    Documentation
+                                                </label>
+                                                <ul class="md-nav__list">
+                                                    <li class="md-nav__item">
+                                                        <a href="/documentation/3.0.1/" class="md-nav__link md-nav__link--active">
+                                                            <span class="md-ellipsis"> SFML 3.0.1 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="/documentation/3.0.0/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 3.0.0 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.6.2/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.6.2 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.6.1/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.6.1 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.6.0/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.6.0 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.5.1/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.5.1 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.5.0/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.5.0 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.4.2/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.4.2 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.4.1/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.4.1 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.4.0/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.4.0 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.3.2/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.3.2 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.3.1/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.3.1 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.3/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.3 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.2/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.2 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.1/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.1 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.0/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.0 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/1.6/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 1.6 </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="/download/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Download </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="/community/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Community </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="/development/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Development </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" style="top: 158px">
+                        <div class="md-sidebar__scrollwrap" style="height: 832px">
+                            <div class="md-sidebar__inner">
+                                <nav class="md-nav md-nav--secondary" aria-label="Table of contents"></nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-content contents">
+                        <div><!-- top -->
+<!-- Generated by Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="topics.html"><span>Topics</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
+    </ul>
+  </div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c9d62fd513ce19bab3d7ef8db833e3f1.html">SFML</a></li><li class="navelem"><a class="el" href="dir_66c4f0b3361ff6a900e01a4b3c9d5eb7.html">include</a></li><li class="navelem"><a class="el" href="dir_b640c2c295eeac6b731646a7ed21830e.html">SFML</a></li><li class="navelem"><a class="el" href="dir_9aeeb18f6197238fd33123535246e540.html">Window</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">Event.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="Event_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">//</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// SFML - Simple and Fast Multimedia Library</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// Copyright (C) 2007-2025 Laurent Gomila (laurent@sfml-dev.org)</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// This software is provided &#39;as-is&#39;, without any express or implied warranty.</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// In no event will the authors be held liable for any damages arising from the use of this software.</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">//</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// Permission is granted to anyone to use this software for any purpose,</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// including commercial applications, and to alter it and redistribute it freely,</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// subject to the following restrictions:</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">//</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// 1. The origin of this software must not be misrepresented;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">//    you must not claim that you wrote the original software.</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">//    If you use this software in a product, an acknowledgment</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">//    in the product documentation would be appreciated but is not required.</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">//</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// 2. Altered source versions must be plainly marked as such,</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">//    and must not be misrepresented as being the original software.</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">//</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// 3. This notice may not be removed or altered from any source distribution.</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">//</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">// Headers</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;<a class="code" href="Joystick_8hpp.html">SFML/Window/Joystick.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;<a class="code" href="Keyboard_8hpp.html">SFML/Window/Keyboard.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;<a class="code" href="Mouse_8hpp.html">SFML/Window/Mouse.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;<a class="code" href="Sensor_8hpp.html">SFML/Window/Sensor.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;<a class="code" href="Vector2_8hpp.html">SFML/System/Vector2.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;type_traits&gt;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &lt;variant&gt;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacesf.html">sf</a></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>{</div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="};">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html">   47</a></span><span class="keyword">class </span><a class="code hl_function" href="classsf_1_1Event.html#a9972ec2d645cb27f66948760d867c169">Event</a></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00054" data-start="{" data-end="};">
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1Closed.html">   54</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structsf_1_1Event_1_1Closed.html">Closed</a></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    };</div>
+</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span></div>
+<div class="foldopen" id="foldopen00062" data-start="{" data-end="};">
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1Resized.html">   62</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structsf_1_1Event_1_1Resized.html">Resized</a></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1Resized.html#a23159621438eda3eb8b1c75ec8117336">   64</a></span>        <a class="code hl_typedef" href="namespacesf.html#adc674b5f5c13a6734954a18e01a73b42">Vector2u</a> <a class="code hl_variable" href="structsf_1_1Event_1_1Resized.html#a23159621438eda3eb8b1c75ec8117336">size</a>; </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    };</div>
+</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span></div>
+<div class="foldopen" id="foldopen00071" data-start="{" data-end="};">
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1FocusLost.html">   71</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structsf_1_1Event_1_1FocusLost.html">FocusLost</a></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    };</div>
+</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span></div>
+<div class="foldopen" id="foldopen00079" data-start="{" data-end="};">
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1FocusGained.html">   79</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structsf_1_1Event_1_1FocusGained.html">FocusGained</a></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    };</div>
+</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span></div>
+<div class="foldopen" id="foldopen00087" data-start="{" data-end="};">
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1TextEntered.html">   87</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structsf_1_1Event_1_1TextEntered.html">TextEntered</a></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1TextEntered.html#abde9dc42f895f727d1f1ebb41c33b780">   89</a></span>        <span class="keywordtype">char32_t</span> <a class="code hl_variable" href="structsf_1_1Event_1_1TextEntered.html#abde9dc42f895f727d1f1ebb41c33b780">unicode</a>{}; </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    };</div>
+</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span></div>
+<div class="foldopen" id="foldopen00096" data-start="{" data-end="};">
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1KeyPressed.html">   96</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structsf_1_1Event_1_1KeyPressed.html">KeyPressed</a></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1KeyPressed.html#a8d0e09b379708f01b22f390810994613">   98</a></span>        <a class="code hl_enumeration" href="namespacesf_1_1Keyboard.html#acb4cacd7cc5802dec45724cf3314a142">Keyboard::Key</a>      <a class="code hl_variable" href="structsf_1_1Event_1_1KeyPressed.html#a8d0e09b379708f01b22f390810994613">code</a>{};     </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1KeyPressed.html#ada98a5d7f8ccc5a2cbdb1c76d9441ea0">   99</a></span>        <a class="code hl_typedef" href="namespacesf_1_1Keyboard.html#a51f3be2ef1d778bd470c35f0ed39b0ba">Keyboard::Scancode</a> <a class="code hl_variable" href="structsf_1_1Event_1_1KeyPressed.html#ada98a5d7f8ccc5a2cbdb1c76d9441ea0">scancode</a>{}; </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1KeyPressed.html#a593c73fc3009844773ef1aea1bfebd3c">  100</a></span>        <span class="keywordtype">bool</span>               <a class="code hl_variable" href="structsf_1_1Event_1_1KeyPressed.html#a593c73fc3009844773ef1aea1bfebd3c">alt</a>{};      </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1KeyPressed.html#a2f9bd39699a4d7a21ee13dfe00219fe3">  101</a></span>        <span class="keywordtype">bool</span>               <a class="code hl_variable" href="structsf_1_1Event_1_1KeyPressed.html#a2f9bd39699a4d7a21ee13dfe00219fe3">control</a>{};  </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1KeyPressed.html#a339d98e26c0d9d48b4821b0e3bc3651b">  102</a></span>        <span class="keywordtype">bool</span>               <a class="code hl_variable" href="structsf_1_1Event_1_1KeyPressed.html#a339d98e26c0d9d48b4821b0e3bc3651b">shift</a>{};    </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1KeyPressed.html#a07abad6ab8c1abc565853091a2df3b6f">  103</a></span>        <span class="keywordtype">bool</span>               <a class="code hl_variable" href="structsf_1_1Event_1_1KeyPressed.html#a07abad6ab8c1abc565853091a2df3b6f">system</a>{};   </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    };</div>
+</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span></div>
+<div class="foldopen" id="foldopen00110" data-start="{" data-end="};">
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1KeyReleased.html">  110</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structsf_1_1Event_1_1KeyReleased.html">KeyReleased</a></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    {</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1KeyReleased.html#aa6db1f2d21cbfcfc33902f444a1ee027">  112</a></span>        <a class="code hl_enumeration" href="namespacesf_1_1Keyboard.html#acb4cacd7cc5802dec45724cf3314a142">Keyboard::Key</a>      <a class="code hl_variable" href="structsf_1_1Event_1_1KeyReleased.html#aa6db1f2d21cbfcfc33902f444a1ee027">code</a>{};     </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1KeyReleased.html#ae3bedd5b0b0c97bb1a0d7a86775d4c8a">  113</a></span>        <a class="code hl_typedef" href="namespacesf_1_1Keyboard.html#a51f3be2ef1d778bd470c35f0ed39b0ba">Keyboard::Scancode</a> <a class="code hl_variable" href="structsf_1_1Event_1_1KeyReleased.html#ae3bedd5b0b0c97bb1a0d7a86775d4c8a">scancode</a>{}; </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1KeyReleased.html#a61c09330d00d283ac7d043f14609c666">  114</a></span>        <span class="keywordtype">bool</span>               <a class="code hl_variable" href="structsf_1_1Event_1_1KeyReleased.html#a61c09330d00d283ac7d043f14609c666">alt</a>{};      </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1KeyReleased.html#a779d36144c9ecafc3e32fbc652fd1a2a">  115</a></span>        <span class="keywordtype">bool</span>               <a class="code hl_variable" href="structsf_1_1Event_1_1KeyReleased.html#a779d36144c9ecafc3e32fbc652fd1a2a">control</a>{};  </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1KeyReleased.html#a8593f74ee7e43ec525002c0cbee40075">  116</a></span>        <span class="keywordtype">bool</span>               <a class="code hl_variable" href="structsf_1_1Event_1_1KeyReleased.html#a8593f74ee7e43ec525002c0cbee40075">shift</a>{};    </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1KeyReleased.html#a89422254b7f0968cba83bc219a9e68f1">  117</a></span>        <span class="keywordtype">bool</span>               <a class="code hl_variable" href="structsf_1_1Event_1_1KeyReleased.html#a89422254b7f0968cba83bc219a9e68f1">system</a>{};   </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    };</div>
+</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span></div>
+<div class="foldopen" id="foldopen00124" data-start="{" data-end="};">
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1MouseWheelScrolled.html">  124</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structsf_1_1Event_1_1MouseWheelScrolled.html">MouseWheelScrolled</a></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    {</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1MouseWheelScrolled.html#a02d581d6baf283dcbf6ea38a6e1f8d04">  126</a></span>        <a class="code hl_enumeration" href="namespacesf_1_1Mouse.html#a60dd479a43f26f200e7957aa11803ff4">Mouse::Wheel</a> <a class="code hl_variable" href="structsf_1_1Event_1_1MouseWheelScrolled.html#a02d581d6baf283dcbf6ea38a6e1f8d04">wheel</a>{}; </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1MouseWheelScrolled.html#a7c78e2320d061bafa10af92055c69172">  127</a></span>        <span class="keywordtype">float</span> <a class="code hl_variable" href="structsf_1_1Event_1_1MouseWheelScrolled.html#a7c78e2320d061bafa10af92055c69172">delta</a>{}; </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1MouseWheelScrolled.html#a50ebfbc800ccba96defa6d3a1f54feda">  128</a></span>        <a class="code hl_typedef" href="namespacesf.html#af0ffe1b157a56931ee3a9a1a771a827a">Vector2i</a> <a class="code hl_variable" href="structsf_1_1Event_1_1MouseWheelScrolled.html#a50ebfbc800ccba96defa6d3a1f54feda">position</a>; </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    };</div>
+</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span></div>
+<div class="foldopen" id="foldopen00135" data-start="{" data-end="};">
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1MouseButtonPressed.html">  135</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structsf_1_1Event_1_1MouseButtonPressed.html">MouseButtonPressed</a></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    {</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1MouseButtonPressed.html#ade09e3382f11ae8d4c0ab7bf850c10e0">  137</a></span>        <a class="code hl_enumeration" href="namespacesf_1_1Mouse.html#a4fb128be433f9aafe66bc0c605daaa90">Mouse::Button</a> <a class="code hl_variable" href="structsf_1_1Event_1_1MouseButtonPressed.html#ade09e3382f11ae8d4c0ab7bf850c10e0">button</a>{}; </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1MouseButtonPressed.html#a9752a69c84a75425f5c3ccd0b4557b46">  138</a></span>        <a class="code hl_typedef" href="namespacesf.html#af0ffe1b157a56931ee3a9a1a771a827a">Vector2i</a>      <a class="code hl_variable" href="structsf_1_1Event_1_1MouseButtonPressed.html#a9752a69c84a75425f5c3ccd0b4557b46">position</a>; </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    };</div>
+</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span></div>
+<div class="foldopen" id="foldopen00145" data-start="{" data-end="};">
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1MouseButtonReleased.html">  145</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structsf_1_1Event_1_1MouseButtonReleased.html">MouseButtonReleased</a></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    {</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1MouseButtonReleased.html#a9fc43d99fc8e905a4aec0ea1579a4f99">  147</a></span>        <a class="code hl_enumeration" href="namespacesf_1_1Mouse.html#a4fb128be433f9aafe66bc0c605daaa90">Mouse::Button</a> <a class="code hl_variable" href="structsf_1_1Event_1_1MouseButtonReleased.html#a9fc43d99fc8e905a4aec0ea1579a4f99">button</a>{}; </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1MouseButtonReleased.html#a4471a4643d7b7e3d7286eed0390b5d04">  148</a></span>        <a class="code hl_typedef" href="namespacesf.html#af0ffe1b157a56931ee3a9a1a771a827a">Vector2i</a>      <a class="code hl_variable" href="structsf_1_1Event_1_1MouseButtonReleased.html#a4471a4643d7b7e3d7286eed0390b5d04">position</a>; </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    };</div>
+</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span></div>
+<div class="foldopen" id="foldopen00155" data-start="{" data-end="};">
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1MouseMoved.html">  155</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structsf_1_1Event_1_1MouseMoved.html">MouseMoved</a></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    {</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1MouseMoved.html#ad28578ff7dc681f819dbbf629662ee32">  157</a></span>        <a class="code hl_typedef" href="namespacesf.html#af0ffe1b157a56931ee3a9a1a771a827a">Vector2i</a> <a class="code hl_variable" href="structsf_1_1Event_1_1MouseMoved.html#ad28578ff7dc681f819dbbf629662ee32">position</a>; </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    };</div>
+</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span></div>
+<div class="foldopen" id="foldopen00188" data-start="{" data-end="};">
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1MouseMovedRaw.html">  188</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structsf_1_1Event_1_1MouseMovedRaw.html">MouseMovedRaw</a></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    {</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1MouseMovedRaw.html#acdf6da3297c13359b5b1cb0a8af29359">  190</a></span>        <a class="code hl_typedef" href="namespacesf.html#af0ffe1b157a56931ee3a9a1a771a827a">Vector2i</a> <a class="code hl_variable" href="structsf_1_1Event_1_1MouseMovedRaw.html#acdf6da3297c13359b5b1cb0a8af29359">delta</a>; </div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    };</div>
+</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span></div>
+<div class="foldopen" id="foldopen00197" data-start="{" data-end="};">
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1MouseEntered.html">  197</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structsf_1_1Event_1_1MouseEntered.html">MouseEntered</a></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    {</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    };</div>
+</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span></div>
+<div class="foldopen" id="foldopen00205" data-start="{" data-end="};">
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1MouseLeft.html">  205</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structsf_1_1Event_1_1MouseLeft.html">MouseLeft</a></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    {</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    };</div>
+</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span></div>
+<div class="foldopen" id="foldopen00213" data-start="{" data-end="};">
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1JoystickButtonPressed.html">  213</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structsf_1_1Event_1_1JoystickButtonPressed.html">JoystickButtonPressed</a></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    {</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1JoystickButtonPressed.html#a628d89c9b5ae5bd99d7dd74ce9a15bff">  215</a></span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="structsf_1_1Event_1_1JoystickButtonPressed.html#a628d89c9b5ae5bd99d7dd74ce9a15bff">joystickId</a>{}; </div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1JoystickButtonPressed.html#a2258d3416bec2b63485d65d0b842571f">  216</a></span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="structsf_1_1Event_1_1JoystickButtonPressed.html#a2258d3416bec2b63485d65d0b842571f">button</a>{}; </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    };</div>
+</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span></div>
+<div class="foldopen" id="foldopen00223" data-start="{" data-end="};">
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1JoystickButtonReleased.html">  223</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structsf_1_1Event_1_1JoystickButtonReleased.html">JoystickButtonReleased</a></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    {</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1JoystickButtonReleased.html#aafd3630358ed9e00ac74ff6b76803609">  225</a></span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="structsf_1_1Event_1_1JoystickButtonReleased.html#aafd3630358ed9e00ac74ff6b76803609">joystickId</a>{}; </div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1JoystickButtonReleased.html#a99de976352240b1c3cdcbbaf1a824ccc">  226</a></span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="structsf_1_1Event_1_1JoystickButtonReleased.html#a99de976352240b1c3cdcbbaf1a824ccc">button</a>{}; </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    };</div>
+</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span></div>
+<div class="foldopen" id="foldopen00233" data-start="{" data-end="};">
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1JoystickMoved.html">  233</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structsf_1_1Event_1_1JoystickMoved.html">JoystickMoved</a></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    {</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1JoystickMoved.html#a1f0dc41a3f7f3ced3e08e7daac917396">  235</a></span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>   <a class="code hl_variable" href="structsf_1_1Event_1_1JoystickMoved.html#a1f0dc41a3f7f3ced3e08e7daac917396">joystickId</a>{}; </div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1JoystickMoved.html#a60f21fbcb7697e4685f997b9b5dc8c48">  236</a></span>        <a class="code hl_enumeration" href="namespacesf_1_1Joystick.html#a48db337092c2e263774f94de6d50baa7">Joystick::Axis</a> <a class="code hl_variable" href="structsf_1_1Event_1_1JoystickMoved.html#a60f21fbcb7697e4685f997b9b5dc8c48">axis</a>{};       </div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1JoystickMoved.html#aa0ced59d8ddc52442ae5bb71360527fb">  237</a></span>        <span class="keywordtype">float</span>          <a class="code hl_variable" href="structsf_1_1Event_1_1JoystickMoved.html#aa0ced59d8ddc52442ae5bb71360527fb">position</a>{};   </div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    };</div>
+</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span></div>
+<div class="foldopen" id="foldopen00244" data-start="{" data-end="};">
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1JoystickConnected.html">  244</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structsf_1_1Event_1_1JoystickConnected.html">JoystickConnected</a></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    {</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1JoystickConnected.html#a0ff751ccabb36225f040d5c60d1eb38b">  246</a></span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="structsf_1_1Event_1_1JoystickConnected.html#a0ff751ccabb36225f040d5c60d1eb38b">joystickId</a>{}; </div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    };</div>
+</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span></div>
+<div class="foldopen" id="foldopen00253" data-start="{" data-end="};">
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1JoystickDisconnected.html">  253</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structsf_1_1Event_1_1JoystickDisconnected.html">JoystickDisconnected</a></div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    {</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1JoystickDisconnected.html#a7b96e66218e4ae84aedec4e8c7f0d49f">  255</a></span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="structsf_1_1Event_1_1JoystickDisconnected.html#a7b96e66218e4ae84aedec4e8c7f0d49f">joystickId</a>{}; </div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    };</div>
+</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span></div>
+<div class="foldopen" id="foldopen00262" data-start="{" data-end="};">
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1TouchBegan.html">  262</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structsf_1_1Event_1_1TouchBegan.html">TouchBegan</a></div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    {</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1TouchBegan.html#acfdcf51fabda85a32ac76c7772ec9814">  264</a></span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="structsf_1_1Event_1_1TouchBegan.html#acfdcf51fabda85a32ac76c7772ec9814">finger</a>{}; </div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1TouchBegan.html#a514712f9b5bffddc9422efa6321ddc5f">  265</a></span>        <a class="code hl_typedef" href="namespacesf.html#af0ffe1b157a56931ee3a9a1a771a827a">Vector2i</a>     <a class="code hl_variable" href="structsf_1_1Event_1_1TouchBegan.html#a514712f9b5bffddc9422efa6321ddc5f">position</a>; </div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    };</div>
+</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span></div>
+<div class="foldopen" id="foldopen00272" data-start="{" data-end="};">
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1TouchMoved.html">  272</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structsf_1_1Event_1_1TouchMoved.html">TouchMoved</a></div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    {</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1TouchMoved.html#aa6856eab50d6ee8573c8c8257fa681b1">  274</a></span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="structsf_1_1Event_1_1TouchMoved.html#aa6856eab50d6ee8573c8c8257fa681b1">finger</a>{}; </div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1TouchMoved.html#a163a5db3ac0250bc7600b6d1c365af60">  275</a></span>        <a class="code hl_typedef" href="namespacesf.html#af0ffe1b157a56931ee3a9a1a771a827a">Vector2i</a>     <a class="code hl_variable" href="structsf_1_1Event_1_1TouchMoved.html#a163a5db3ac0250bc7600b6d1c365af60">position</a>; </div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    };</div>
+</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span></div>
+<div class="foldopen" id="foldopen00282" data-start="{" data-end="};">
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1TouchEnded.html">  282</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structsf_1_1Event_1_1TouchEnded.html">TouchEnded</a></div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    {</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1TouchEnded.html#ae875e9ca00ddf52f101197a6f3a3775f">  284</a></span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="structsf_1_1Event_1_1TouchEnded.html#ae875e9ca00ddf52f101197a6f3a3775f">finger</a>{}; </div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1TouchEnded.html#ae6997d678a68380dddb5c3995abf3858">  285</a></span>        <a class="code hl_typedef" href="namespacesf.html#af0ffe1b157a56931ee3a9a1a771a827a">Vector2i</a>     <a class="code hl_variable" href="structsf_1_1Event_1_1TouchEnded.html#ae6997d678a68380dddb5c3995abf3858">position</a>; </div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    };</div>
+</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span></div>
+<div class="foldopen" id="foldopen00292" data-start="{" data-end="};">
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1SensorChanged.html">  292</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structsf_1_1Event_1_1SensorChanged.html">SensorChanged</a></div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    {</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1SensorChanged.html#a312d00af6eb10094508d0861368cd57f">  294</a></span>        <a class="code hl_enumeration" href="namespacesf_1_1Sensor.html#a687375af3ab77b818fca73735bcaea84">Sensor::Type</a> <a class="code hl_variable" href="structsf_1_1Event_1_1SensorChanged.html#a312d00af6eb10094508d0861368cd57f">type</a>{}; </div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno"><a class="line" href="structsf_1_1Event_1_1SensorChanged.html#a46dc2e8291b183572021194761b342d2">  295</a></span>        <a class="code hl_typedef" href="namespacesf.html#aabc495912efba35400b484ea842664d0">Vector3f</a>     <a class="code hl_variable" href="structsf_1_1Event_1_1SensorChanged.html#a46dc2e8291b183572021194761b342d2">value</a>;  </div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>    };</div>
+</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span></div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TEventSubtype&gt;</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#a9972ec2d645cb27f66948760d867c169">  307</a></span>    <a class="code hl_function" href="classsf_1_1Event.html#a9972ec2d645cb27f66948760d867c169">Event</a>(<span class="keyword">const</span> TEventSubtype&amp; eventSubtype);</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span></div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TEventSubtype&gt;</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#a40df10cc639742089960c7dbe9144343">  318</a></span>    [[nodiscard]] <span class="keywordtype">bool</span> <a class="code hl_function" href="classsf_1_1Event.html#a40df10cc639742089960c7dbe9144343">is</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span></div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TEventSubtype&gt;</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#a2f7d5c82b6401ae288a252c295129a32">  329</a></span>    [[nodiscard]] <span class="keyword">const</span> TEventSubtype* <a class="code hl_function" href="classsf_1_1Event.html#a2f7d5c82b6401ae288a252c295129a32">getIf</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span></div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Visitor&gt;</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#aa7927cb759a070d1c9c7e6c0403db919">  340</a></span>    <span class="keyword">decltype</span>(<span class="keyword">auto</span>) <a class="code hl_function" href="classsf_1_1Event.html#aa7927cb759a070d1c9c7e6c0403db919">visit</a>(Visitor&amp;&amp; visitor) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span> </div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>    <span class="comment">// Member data</span></div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>    std::variant&lt;<a class="code hl_struct" href="structsf_1_1Event_1_1Closed.html">Closed</a>,</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>                 <a class="code hl_struct" href="structsf_1_1Event_1_1Resized.html">Resized</a>,</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>                 <a class="code hl_struct" href="structsf_1_1Event_1_1FocusLost.html">FocusLost</a>,</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>                 <a class="code hl_struct" href="structsf_1_1Event_1_1FocusGained.html">FocusGained</a>,</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>                 <a class="code hl_struct" href="structsf_1_1Event_1_1TextEntered.html">TextEntered</a>,</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>                 <a class="code hl_struct" href="structsf_1_1Event_1_1KeyPressed.html">KeyPressed</a>,</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>                 <a class="code hl_struct" href="structsf_1_1Event_1_1KeyReleased.html">KeyReleased</a>,</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>                 <a class="code hl_struct" href="structsf_1_1Event_1_1MouseWheelScrolled.html">MouseWheelScrolled</a>,</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>                 <a class="code hl_struct" href="structsf_1_1Event_1_1MouseButtonPressed.html">MouseButtonPressed</a>,</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>                 <a class="code hl_struct" href="structsf_1_1Event_1_1MouseButtonReleased.html">MouseButtonReleased</a>,</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>                 <a class="code hl_struct" href="structsf_1_1Event_1_1MouseMoved.html">MouseMoved</a>,</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>                 <a class="code hl_struct" href="structsf_1_1Event_1_1MouseMovedRaw.html">MouseMovedRaw</a>,</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>                 <a class="code hl_struct" href="structsf_1_1Event_1_1MouseEntered.html">MouseEntered</a>,</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>                 <a class="code hl_struct" href="structsf_1_1Event_1_1MouseLeft.html">MouseLeft</a>,</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>                 <a class="code hl_struct" href="structsf_1_1Event_1_1JoystickButtonPressed.html">JoystickButtonPressed</a>,</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>                 <a class="code hl_struct" href="structsf_1_1Event_1_1JoystickButtonReleased.html">JoystickButtonReleased</a>,</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>                 <a class="code hl_struct" href="structsf_1_1Event_1_1JoystickMoved.html">JoystickMoved</a>,</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>                 <a class="code hl_struct" href="structsf_1_1Event_1_1JoystickConnected.html">JoystickConnected</a>,</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>                 <a class="code hl_struct" href="structsf_1_1Event_1_1JoystickDisconnected.html">JoystickDisconnected</a>,</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>                 <a class="code hl_struct" href="structsf_1_1Event_1_1TouchBegan.html">TouchBegan</a>,</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>                 <a class="code hl_struct" href="structsf_1_1Event_1_1TouchMoved.html">TouchMoved</a>,</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>                 <a class="code hl_struct" href="structsf_1_1Event_1_1TouchEnded.html">TouchEnded</a>,</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>                 <a class="code hl_struct" href="structsf_1_1Event_1_1SensorChanged.html">SensorChanged</a>&gt;</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>        m_data; </div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span></div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>    <span class="comment">// Helper functions</span></div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>    [[nodiscard]] <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> isInParameterPack(<span class="keyword">const</span> std::variant&lt;Ts...&gt;*)</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>    {</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>        <span class="keywordflow">return</span> std::disjunction_v&lt;std::is_same&lt;T, Ts&gt;...&gt;;</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    }</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span> </div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> isEventSubtype = isInParameterPack&lt;T&gt;(<span class="keyword">decltype</span> (&amp;m_data)(<span class="keyword">nullptr</span>));</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span> </div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno"><a class="line" href="classsf_1_1Event.html#a041a37646cfea08c96a1a656c37e84f4">  383</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_friend" href="classsf_1_1Event.html#a041a37646cfea08c96a1a656c37e84f4">WindowBase</a>;</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span> </div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Handler, <span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>    [[nodiscard]] <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> isInvocableWithEventSubtype(<span class="keyword">const</span> std::variant&lt;Ts...&gt;*)</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    {</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>        <span class="keywordflow">return</span> std::disjunction_v&lt;std::is_invocable&lt;Handler&amp;, Ts&amp;&gt;...&gt;;</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    }</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span> </div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Handler&gt;</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> isEventHandler = isInvocableWithEventSubtype&lt;Handler&gt;(<span class="keyword">decltype</span> (&amp;m_data)(<span class="keyword">nullptr</span>));</div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>};</div>
+</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span> </div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>} <span class="comment">// namespace sf</span></div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span> </div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span><span class="preprocessor">#include &lt;SFML/Window/Event.inl&gt;</span></div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span> </div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span></div>
+<div class="ttc" id="aJoystick_8hpp_html"><div class="ttname"><a href="Joystick_8hpp.html">Joystick.hpp</a></div></div>
+<div class="ttc" id="aKeyboard_8hpp_html"><div class="ttname"><a href="Keyboard_8hpp.html">Keyboard.hpp</a></div></div>
+<div class="ttc" id="aMouse_8hpp_html"><div class="ttname"><a href="Mouse_8hpp.html">Mouse.hpp</a></div></div>
+<div class="ttc" id="aSensor_8hpp_html"><div class="ttname"><a href="Sensor_8hpp.html">Sensor.hpp</a></div></div>
+<div class="ttc" id="aVector2_8hpp_html"><div class="ttname"><a href="Vector2_8hpp.html">Vector2.hpp</a></div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_a041a37646cfea08c96a1a656c37e84f4"><div class="ttname"><a href="classsf_1_1Event.html#a041a37646cfea08c96a1a656c37e84f4">sf::Event::WindowBase</a></div><div class="ttdeci">friend class WindowBase</div><div class="ttdef"><b>Definition</b> <a href="#l00383">Event.hpp:383</a></div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_a2f7d5c82b6401ae288a252c295129a32"><div class="ttname"><a href="classsf_1_1Event.html#a2f7d5c82b6401ae288a252c295129a32">sf::Event::getIf</a></div><div class="ttdeci">const TEventSubtype * getIf() const</div><div class="ttdoc">Attempt to get specified event subtype.</div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_a40df10cc639742089960c7dbe9144343"><div class="ttname"><a href="classsf_1_1Event.html#a40df10cc639742089960c7dbe9144343">sf::Event::is</a></div><div class="ttdeci">bool is() const</div><div class="ttdoc">Check current event subtype.</div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_a9972ec2d645cb27f66948760d867c169"><div class="ttname"><a href="classsf_1_1Event.html#a9972ec2d645cb27f66948760d867c169">sf::Event::Event</a></div><div class="ttdeci">Event(const TEventSubtype &amp;eventSubtype)</div><div class="ttdoc">Construct from a given sf::Event subtype.</div></div>
+<div class="ttc" id="aclasssf_1_1Event_html_aa7927cb759a070d1c9c7e6c0403db919"><div class="ttname"><a href="classsf_1_1Event.html#aa7927cb759a070d1c9c7e6c0403db919">sf::Event::visit</a></div><div class="ttdeci">decltype(auto) visit(Visitor &amp;&amp;visitor) const</div><div class="ttdoc">Apply a visitor to the event.</div></div>
+<div class="ttc" id="anamespacesf_1_1Joystick_html_a48db337092c2e263774f94de6d50baa7"><div class="ttname"><a href="namespacesf_1_1Joystick.html#a48db337092c2e263774f94de6d50baa7">sf::Joystick::Axis</a></div><div class="ttdeci">Axis</div><div class="ttdoc">Axes supported by SFML joysticks.</div><div class="ttdef"><b>Definition</b> <a href="Joystick_8hpp_source.html#l00054">Joystick.hpp:55</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Keyboard_html_a51f3be2ef1d778bd470c35f0ed39b0ba"><div class="ttname"><a href="namespacesf_1_1Keyboard.html#a51f3be2ef1d778bd470c35f0ed39b0ba">sf::Keyboard::Scancode</a></div><div class="ttdeci">Scan Scancode</div><div class="ttdef"><b>Definition</b> <a href="Keyboard_8hpp_source.html#l00329">Keyboard.hpp:329</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Keyboard_html_acb4cacd7cc5802dec45724cf3314a142"><div class="ttname"><a href="namespacesf_1_1Keyboard.html#acb4cacd7cc5802dec45724cf3314a142">sf::Keyboard::Key</a></div><div class="ttdeci">Key</div><div class="ttdoc">Key codes.</div><div class="ttdef"><b>Definition</b> <a href="Keyboard_8hpp_source.html#l00051">Keyboard.hpp:52</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Mouse_html_a4fb128be433f9aafe66bc0c605daaa90"><div class="ttname"><a href="namespacesf_1_1Mouse.html#a4fb128be433f9aafe66bc0c605daaa90">sf::Mouse::Button</a></div><div class="ttdeci">Button</div><div class="ttdoc">Mouse buttons.</div><div class="ttdef"><b>Definition</b> <a href="Mouse_8hpp_source.html#l00049">Mouse.hpp:50</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Mouse_html_a60dd479a43f26f200e7957aa11803ff4"><div class="ttname"><a href="namespacesf_1_1Mouse.html#a60dd479a43f26f200e7957aa11803ff4">sf::Mouse::Wheel</a></div><div class="ttdeci">Wheel</div><div class="ttdoc">Mouse wheels.</div><div class="ttdef"><b>Definition</b> <a href="Mouse_8hpp_source.html#l00065">Mouse.hpp:66</a></div></div>
+<div class="ttc" id="anamespacesf_1_1Sensor_html_a687375af3ab77b818fca73735bcaea84"><div class="ttname"><a href="namespacesf_1_1Sensor.html#a687375af3ab77b818fca73735bcaea84">sf::Sensor::Type</a></div><div class="ttdeci">Type</div><div class="ttdoc">Sensor type.</div><div class="ttdef"><b>Definition</b> <a href="Sensor_8hpp_source.html#l00044">Sensor.hpp:45</a></div></div>
+<div class="ttc" id="anamespacesf_html"><div class="ttname"><a href="namespacesf.html">sf</a></div><div class="ttdef"><b>Definition</b> <a href="AudioResource_8hpp_source.html#l00035">AudioResource.hpp:36</a></div></div>
+<div class="ttc" id="anamespacesf_html_aabc495912efba35400b484ea842664d0"><div class="ttname"><a href="namespacesf.html#aabc495912efba35400b484ea842664d0">sf::Vector3f</a></div><div class="ttdeci">Vector3&lt; float &gt; Vector3f</div><div class="ttdef"><b>Definition</b> <a href="Vector3_8hpp_source.html#l00306">Vector3.hpp:306</a></div></div>
+<div class="ttc" id="anamespacesf_html_adc674b5f5c13a6734954a18e01a73b42"><div class="ttname"><a href="namespacesf.html#adc674b5f5c13a6734954a18e01a73b42">sf::Vector2u</a></div><div class="ttdeci">Vector2&lt; unsigned int &gt; Vector2u</div><div class="ttdef"><b>Definition</b> <a href="Vector2_8hpp_source.html#l00209">Vector2.hpp:209</a></div></div>
+<div class="ttc" id="anamespacesf_html_af0ffe1b157a56931ee3a9a1a771a827a"><div class="ttname"><a href="namespacesf.html#af0ffe1b157a56931ee3a9a1a771a827a">sf::Vector2i</a></div><div class="ttdeci">Vector2&lt; int &gt; Vector2i</div><div class="ttdef"><b>Definition</b> <a href="Vector2_8hpp_source.html#l00208">Vector2.hpp:208</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1Closed_html"><div class="ttname"><a href="structsf_1_1Event_1_1Closed.html">sf::Event::Closed</a></div><div class="ttdoc">Closed event subtype.</div><div class="ttdef"><b>Definition</b> <a href="#l00054">Event.hpp:55</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1FocusGained_html"><div class="ttname"><a href="structsf_1_1Event_1_1FocusGained.html">sf::Event::FocusGained</a></div><div class="ttdoc">Gained focus event subtype.</div><div class="ttdef"><b>Definition</b> <a href="#l00079">Event.hpp:80</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1FocusLost_html"><div class="ttname"><a href="structsf_1_1Event_1_1FocusLost.html">sf::Event::FocusLost</a></div><div class="ttdoc">Lost focus event subtype.</div><div class="ttdef"><b>Definition</b> <a href="#l00071">Event.hpp:72</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1JoystickButtonPressed_html"><div class="ttname"><a href="structsf_1_1Event_1_1JoystickButtonPressed.html">sf::Event::JoystickButtonPressed</a></div><div class="ttdoc">Joystick button pressed event subtype.</div><div class="ttdef"><b>Definition</b> <a href="#l00213">Event.hpp:214</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1JoystickButtonPressed_html_a2258d3416bec2b63485d65d0b842571f"><div class="ttname"><a href="structsf_1_1Event_1_1JoystickButtonPressed.html#a2258d3416bec2b63485d65d0b842571f">sf::Event::JoystickButtonPressed::button</a></div><div class="ttdeci">unsigned int button</div><div class="ttdoc">Index of the button that has been pressed (in range [0 .. Joystick::ButtonCount - 1])</div><div class="ttdef"><b>Definition</b> <a href="#l00216">Event.hpp:216</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1JoystickButtonPressed_html_a628d89c9b5ae5bd99d7dd74ce9a15bff"><div class="ttname"><a href="structsf_1_1Event_1_1JoystickButtonPressed.html#a628d89c9b5ae5bd99d7dd74ce9a15bff">sf::Event::JoystickButtonPressed::joystickId</a></div><div class="ttdeci">unsigned int joystickId</div><div class="ttdoc">Index of the joystick (in range [0 .. Joystick::Count - 1])</div><div class="ttdef"><b>Definition</b> <a href="#l00215">Event.hpp:215</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1JoystickButtonReleased_html"><div class="ttname"><a href="structsf_1_1Event_1_1JoystickButtonReleased.html">sf::Event::JoystickButtonReleased</a></div><div class="ttdoc">Joystick button released event subtype.</div><div class="ttdef"><b>Definition</b> <a href="#l00223">Event.hpp:224</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1JoystickButtonReleased_html_a99de976352240b1c3cdcbbaf1a824ccc"><div class="ttname"><a href="structsf_1_1Event_1_1JoystickButtonReleased.html#a99de976352240b1c3cdcbbaf1a824ccc">sf::Event::JoystickButtonReleased::button</a></div><div class="ttdeci">unsigned int button</div><div class="ttdoc">Index of the button that has been released (in range [0 .. Joystick::ButtonCount - 1])</div><div class="ttdef"><b>Definition</b> <a href="#l00226">Event.hpp:226</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1JoystickButtonReleased_html_aafd3630358ed9e00ac74ff6b76803609"><div class="ttname"><a href="structsf_1_1Event_1_1JoystickButtonReleased.html#aafd3630358ed9e00ac74ff6b76803609">sf::Event::JoystickButtonReleased::joystickId</a></div><div class="ttdeci">unsigned int joystickId</div><div class="ttdoc">Index of the joystick (in range [0 .. Joystick::Count - 1])</div><div class="ttdef"><b>Definition</b> <a href="#l00225">Event.hpp:225</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1JoystickConnected_html"><div class="ttname"><a href="structsf_1_1Event_1_1JoystickConnected.html">sf::Event::JoystickConnected</a></div><div class="ttdoc">Joystick connected event subtype.</div><div class="ttdef"><b>Definition</b> <a href="#l00244">Event.hpp:245</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1JoystickConnected_html_a0ff751ccabb36225f040d5c60d1eb38b"><div class="ttname"><a href="structsf_1_1Event_1_1JoystickConnected.html#a0ff751ccabb36225f040d5c60d1eb38b">sf::Event::JoystickConnected::joystickId</a></div><div class="ttdeci">unsigned int joystickId</div><div class="ttdoc">Index of the joystick (in range [0 .. Joystick::Count - 1])</div><div class="ttdef"><b>Definition</b> <a href="#l00246">Event.hpp:246</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1JoystickDisconnected_html"><div class="ttname"><a href="structsf_1_1Event_1_1JoystickDisconnected.html">sf::Event::JoystickDisconnected</a></div><div class="ttdoc">Joystick disconnected event subtype.</div><div class="ttdef"><b>Definition</b> <a href="#l00253">Event.hpp:254</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1JoystickDisconnected_html_a7b96e66218e4ae84aedec4e8c7f0d49f"><div class="ttname"><a href="structsf_1_1Event_1_1JoystickDisconnected.html#a7b96e66218e4ae84aedec4e8c7f0d49f">sf::Event::JoystickDisconnected::joystickId</a></div><div class="ttdeci">unsigned int joystickId</div><div class="ttdoc">Index of the joystick (in range [0 .. Joystick::Count - 1])</div><div class="ttdef"><b>Definition</b> <a href="#l00255">Event.hpp:255</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1JoystickMoved_html"><div class="ttname"><a href="structsf_1_1Event_1_1JoystickMoved.html">sf::Event::JoystickMoved</a></div><div class="ttdoc">Joystick axis move event subtype.</div><div class="ttdef"><b>Definition</b> <a href="#l00233">Event.hpp:234</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1JoystickMoved_html_a1f0dc41a3f7f3ced3e08e7daac917396"><div class="ttname"><a href="structsf_1_1Event_1_1JoystickMoved.html#a1f0dc41a3f7f3ced3e08e7daac917396">sf::Event::JoystickMoved::joystickId</a></div><div class="ttdeci">unsigned int joystickId</div><div class="ttdoc">Index of the joystick (in range [0 .. Joystick::Count - 1])</div><div class="ttdef"><b>Definition</b> <a href="#l00235">Event.hpp:235</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1JoystickMoved_html_a60f21fbcb7697e4685f997b9b5dc8c48"><div class="ttname"><a href="structsf_1_1Event_1_1JoystickMoved.html#a60f21fbcb7697e4685f997b9b5dc8c48">sf::Event::JoystickMoved::axis</a></div><div class="ttdeci">Joystick::Axis axis</div><div class="ttdoc">Axis on which the joystick moved.</div><div class="ttdef"><b>Definition</b> <a href="#l00236">Event.hpp:236</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1JoystickMoved_html_aa0ced59d8ddc52442ae5bb71360527fb"><div class="ttname"><a href="structsf_1_1Event_1_1JoystickMoved.html#aa0ced59d8ddc52442ae5bb71360527fb">sf::Event::JoystickMoved::position</a></div><div class="ttdeci">float position</div><div class="ttdoc">New position on the axis (in range [-100 .. 100])</div><div class="ttdef"><b>Definition</b> <a href="#l00237">Event.hpp:237</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1KeyPressed_html"><div class="ttname"><a href="structsf_1_1Event_1_1KeyPressed.html">sf::Event::KeyPressed</a></div><div class="ttdoc">Key pressed event subtype.</div><div class="ttdef"><b>Definition</b> <a href="#l00096">Event.hpp:97</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1KeyPressed_html_a07abad6ab8c1abc565853091a2df3b6f"><div class="ttname"><a href="structsf_1_1Event_1_1KeyPressed.html#a07abad6ab8c1abc565853091a2df3b6f">sf::Event::KeyPressed::system</a></div><div class="ttdeci">bool system</div><div class="ttdoc">Is the System key pressed?</div><div class="ttdef"><b>Definition</b> <a href="#l00103">Event.hpp:103</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1KeyPressed_html_a2f9bd39699a4d7a21ee13dfe00219fe3"><div class="ttname"><a href="structsf_1_1Event_1_1KeyPressed.html#a2f9bd39699a4d7a21ee13dfe00219fe3">sf::Event::KeyPressed::control</a></div><div class="ttdeci">bool control</div><div class="ttdoc">Is the Control key pressed?</div><div class="ttdef"><b>Definition</b> <a href="#l00101">Event.hpp:101</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1KeyPressed_html_a339d98e26c0d9d48b4821b0e3bc3651b"><div class="ttname"><a href="structsf_1_1Event_1_1KeyPressed.html#a339d98e26c0d9d48b4821b0e3bc3651b">sf::Event::KeyPressed::shift</a></div><div class="ttdeci">bool shift</div><div class="ttdoc">Is the Shift key pressed?</div><div class="ttdef"><b>Definition</b> <a href="#l00102">Event.hpp:102</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1KeyPressed_html_a593c73fc3009844773ef1aea1bfebd3c"><div class="ttname"><a href="structsf_1_1Event_1_1KeyPressed.html#a593c73fc3009844773ef1aea1bfebd3c">sf::Event::KeyPressed::alt</a></div><div class="ttdeci">bool alt</div><div class="ttdoc">Is the Alt key pressed?</div><div class="ttdef"><b>Definition</b> <a href="#l00100">Event.hpp:100</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1KeyPressed_html_a8d0e09b379708f01b22f390810994613"><div class="ttname"><a href="structsf_1_1Event_1_1KeyPressed.html#a8d0e09b379708f01b22f390810994613">sf::Event::KeyPressed::code</a></div><div class="ttdeci">Keyboard::Key code</div><div class="ttdoc">Code of the key that has been pressed.</div><div class="ttdef"><b>Definition</b> <a href="#l00098">Event.hpp:98</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1KeyPressed_html_ada98a5d7f8ccc5a2cbdb1c76d9441ea0"><div class="ttname"><a href="structsf_1_1Event_1_1KeyPressed.html#ada98a5d7f8ccc5a2cbdb1c76d9441ea0">sf::Event::KeyPressed::scancode</a></div><div class="ttdeci">Keyboard::Scancode scancode</div><div class="ttdoc">Physical code of the key that has been pressed.</div><div class="ttdef"><b>Definition</b> <a href="#l00099">Event.hpp:99</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1KeyReleased_html"><div class="ttname"><a href="structsf_1_1Event_1_1KeyReleased.html">sf::Event::KeyReleased</a></div><div class="ttdoc">Key released event subtype.</div><div class="ttdef"><b>Definition</b> <a href="#l00110">Event.hpp:111</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1KeyReleased_html_a61c09330d00d283ac7d043f14609c666"><div class="ttname"><a href="structsf_1_1Event_1_1KeyReleased.html#a61c09330d00d283ac7d043f14609c666">sf::Event::KeyReleased::alt</a></div><div class="ttdeci">bool alt</div><div class="ttdoc">Is the Alt key pressed?</div><div class="ttdef"><b>Definition</b> <a href="#l00114">Event.hpp:114</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1KeyReleased_html_a779d36144c9ecafc3e32fbc652fd1a2a"><div class="ttname"><a href="structsf_1_1Event_1_1KeyReleased.html#a779d36144c9ecafc3e32fbc652fd1a2a">sf::Event::KeyReleased::control</a></div><div class="ttdeci">bool control</div><div class="ttdoc">Is the Control key pressed?</div><div class="ttdef"><b>Definition</b> <a href="#l00115">Event.hpp:115</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1KeyReleased_html_a8593f74ee7e43ec525002c0cbee40075"><div class="ttname"><a href="structsf_1_1Event_1_1KeyReleased.html#a8593f74ee7e43ec525002c0cbee40075">sf::Event::KeyReleased::shift</a></div><div class="ttdeci">bool shift</div><div class="ttdoc">Is the Shift key pressed?</div><div class="ttdef"><b>Definition</b> <a href="#l00116">Event.hpp:116</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1KeyReleased_html_a89422254b7f0968cba83bc219a9e68f1"><div class="ttname"><a href="structsf_1_1Event_1_1KeyReleased.html#a89422254b7f0968cba83bc219a9e68f1">sf::Event::KeyReleased::system</a></div><div class="ttdeci">bool system</div><div class="ttdoc">Is the System key pressed?</div><div class="ttdef"><b>Definition</b> <a href="#l00117">Event.hpp:117</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1KeyReleased_html_aa6db1f2d21cbfcfc33902f444a1ee027"><div class="ttname"><a href="structsf_1_1Event_1_1KeyReleased.html#aa6db1f2d21cbfcfc33902f444a1ee027">sf::Event::KeyReleased::code</a></div><div class="ttdeci">Keyboard::Key code</div><div class="ttdoc">Code of the key that has been released.</div><div class="ttdef"><b>Definition</b> <a href="#l00112">Event.hpp:112</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1KeyReleased_html_ae3bedd5b0b0c97bb1a0d7a86775d4c8a"><div class="ttname"><a href="structsf_1_1Event_1_1KeyReleased.html#ae3bedd5b0b0c97bb1a0d7a86775d4c8a">sf::Event::KeyReleased::scancode</a></div><div class="ttdeci">Keyboard::Scancode scancode</div><div class="ttdoc">Physical code of the key that has been released.</div><div class="ttdef"><b>Definition</b> <a href="#l00113">Event.hpp:113</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1MouseButtonPressed_html"><div class="ttname"><a href="structsf_1_1Event_1_1MouseButtonPressed.html">sf::Event::MouseButtonPressed</a></div><div class="ttdoc">Mouse button pressed event subtype.</div><div class="ttdef"><b>Definition</b> <a href="#l00135">Event.hpp:136</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1MouseButtonPressed_html_a9752a69c84a75425f5c3ccd0b4557b46"><div class="ttname"><a href="structsf_1_1Event_1_1MouseButtonPressed.html#a9752a69c84a75425f5c3ccd0b4557b46">sf::Event::MouseButtonPressed::position</a></div><div class="ttdeci">Vector2i position</div><div class="ttdoc">Position of the mouse pointer, relative to the top left of the owner window.</div><div class="ttdef"><b>Definition</b> <a href="#l00138">Event.hpp:138</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1MouseButtonPressed_html_ade09e3382f11ae8d4c0ab7bf850c10e0"><div class="ttname"><a href="structsf_1_1Event_1_1MouseButtonPressed.html#ade09e3382f11ae8d4c0ab7bf850c10e0">sf::Event::MouseButtonPressed::button</a></div><div class="ttdeci">Mouse::Button button</div><div class="ttdoc">Code of the button that has been pressed.</div><div class="ttdef"><b>Definition</b> <a href="#l00137">Event.hpp:137</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1MouseButtonReleased_html"><div class="ttname"><a href="structsf_1_1Event_1_1MouseButtonReleased.html">sf::Event::MouseButtonReleased</a></div><div class="ttdoc">Mouse button released event subtype.</div><div class="ttdef"><b>Definition</b> <a href="#l00145">Event.hpp:146</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1MouseButtonReleased_html_a4471a4643d7b7e3d7286eed0390b5d04"><div class="ttname"><a href="structsf_1_1Event_1_1MouseButtonReleased.html#a4471a4643d7b7e3d7286eed0390b5d04">sf::Event::MouseButtonReleased::position</a></div><div class="ttdeci">Vector2i position</div><div class="ttdoc">Position of the mouse pointer, relative to the top left of the owner window.</div><div class="ttdef"><b>Definition</b> <a href="#l00148">Event.hpp:148</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1MouseButtonReleased_html_a9fc43d99fc8e905a4aec0ea1579a4f99"><div class="ttname"><a href="structsf_1_1Event_1_1MouseButtonReleased.html#a9fc43d99fc8e905a4aec0ea1579a4f99">sf::Event::MouseButtonReleased::button</a></div><div class="ttdeci">Mouse::Button button</div><div class="ttdoc">Code of the button that has been released.</div><div class="ttdef"><b>Definition</b> <a href="#l00147">Event.hpp:147</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1MouseEntered_html"><div class="ttname"><a href="structsf_1_1Event_1_1MouseEntered.html">sf::Event::MouseEntered</a></div><div class="ttdoc">Mouse entered event subtype.</div><div class="ttdef"><b>Definition</b> <a href="#l00197">Event.hpp:198</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1MouseLeft_html"><div class="ttname"><a href="structsf_1_1Event_1_1MouseLeft.html">sf::Event::MouseLeft</a></div><div class="ttdoc">Mouse left event subtype.</div><div class="ttdef"><b>Definition</b> <a href="#l00205">Event.hpp:206</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1MouseMovedRaw_html"><div class="ttname"><a href="structsf_1_1Event_1_1MouseMovedRaw.html">sf::Event::MouseMovedRaw</a></div><div class="ttdoc">Mouse move raw event subtype.</div><div class="ttdef"><b>Definition</b> <a href="#l00188">Event.hpp:189</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1MouseMovedRaw_html_acdf6da3297c13359b5b1cb0a8af29359"><div class="ttname"><a href="structsf_1_1Event_1_1MouseMovedRaw.html#acdf6da3297c13359b5b1cb0a8af29359">sf::Event::MouseMovedRaw::delta</a></div><div class="ttdeci">Vector2i delta</div><div class="ttdoc">Delta movement of the mouse since the last event.</div><div class="ttdef"><b>Definition</b> <a href="#l00190">Event.hpp:190</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1MouseMoved_html"><div class="ttname"><a href="structsf_1_1Event_1_1MouseMoved.html">sf::Event::MouseMoved</a></div><div class="ttdoc">Mouse move event subtype.</div><div class="ttdef"><b>Definition</b> <a href="#l00155">Event.hpp:156</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1MouseMoved_html_ad28578ff7dc681f819dbbf629662ee32"><div class="ttname"><a href="structsf_1_1Event_1_1MouseMoved.html#ad28578ff7dc681f819dbbf629662ee32">sf::Event::MouseMoved::position</a></div><div class="ttdeci">Vector2i position</div><div class="ttdoc">Position of the mouse pointer, relative to the top left of the owner window.</div><div class="ttdef"><b>Definition</b> <a href="#l00157">Event.hpp:157</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1MouseWheelScrolled_html"><div class="ttname"><a href="structsf_1_1Event_1_1MouseWheelScrolled.html">sf::Event::MouseWheelScrolled</a></div><div class="ttdoc">Mouse wheel scrolled event subtype.</div><div class="ttdef"><b>Definition</b> <a href="#l00124">Event.hpp:125</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1MouseWheelScrolled_html_a02d581d6baf283dcbf6ea38a6e1f8d04"><div class="ttname"><a href="structsf_1_1Event_1_1MouseWheelScrolled.html#a02d581d6baf283dcbf6ea38a6e1f8d04">sf::Event::MouseWheelScrolled::wheel</a></div><div class="ttdeci">Mouse::Wheel wheel</div><div class="ttdoc">Which wheel (for mice with multiple ones)</div><div class="ttdef"><b>Definition</b> <a href="#l00126">Event.hpp:126</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1MouseWheelScrolled_html_a50ebfbc800ccba96defa6d3a1f54feda"><div class="ttname"><a href="structsf_1_1Event_1_1MouseWheelScrolled.html#a50ebfbc800ccba96defa6d3a1f54feda">sf::Event::MouseWheelScrolled::position</a></div><div class="ttdeci">Vector2i position</div><div class="ttdoc">Position of the mouse pointer, relative to the top left of the owner window.</div><div class="ttdef"><b>Definition</b> <a href="#l00128">Event.hpp:128</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1MouseWheelScrolled_html_a7c78e2320d061bafa10af92055c69172"><div class="ttname"><a href="structsf_1_1Event_1_1MouseWheelScrolled.html#a7c78e2320d061bafa10af92055c69172">sf::Event::MouseWheelScrolled::delta</a></div><div class="ttdeci">float delta</div><div class="ttdoc">Wheel offset (positive is up/left, negative is down/right). High-precision mice may use non-integral ...</div><div class="ttdef"><b>Definition</b> <a href="#l00127">Event.hpp:127</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1Resized_html"><div class="ttname"><a href="structsf_1_1Event_1_1Resized.html">sf::Event::Resized</a></div><div class="ttdoc">Resized event subtype.</div><div class="ttdef"><b>Definition</b> <a href="#l00062">Event.hpp:63</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1Resized_html_a23159621438eda3eb8b1c75ec8117336"><div class="ttname"><a href="structsf_1_1Event_1_1Resized.html#a23159621438eda3eb8b1c75ec8117336">sf::Event::Resized::size</a></div><div class="ttdeci">Vector2u size</div><div class="ttdoc">New size, in pixels.</div><div class="ttdef"><b>Definition</b> <a href="#l00064">Event.hpp:64</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1SensorChanged_html"><div class="ttname"><a href="structsf_1_1Event_1_1SensorChanged.html">sf::Event::SensorChanged</a></div><div class="ttdoc">Sensor event subtype.</div><div class="ttdef"><b>Definition</b> <a href="#l00292">Event.hpp:293</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1SensorChanged_html_a312d00af6eb10094508d0861368cd57f"><div class="ttname"><a href="structsf_1_1Event_1_1SensorChanged.html#a312d00af6eb10094508d0861368cd57f">sf::Event::SensorChanged::type</a></div><div class="ttdeci">Sensor::Type type</div><div class="ttdoc">Type of the sensor.</div><div class="ttdef"><b>Definition</b> <a href="#l00294">Event.hpp:294</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1SensorChanged_html_a46dc2e8291b183572021194761b342d2"><div class="ttname"><a href="structsf_1_1Event_1_1SensorChanged.html#a46dc2e8291b183572021194761b342d2">sf::Event::SensorChanged::value</a></div><div class="ttdeci">Vector3f value</div><div class="ttdoc">Current value of the sensor on the X, Y, and Z axes.</div><div class="ttdef"><b>Definition</b> <a href="#l00295">Event.hpp:295</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1TextEntered_html"><div class="ttname"><a href="structsf_1_1Event_1_1TextEntered.html">sf::Event::TextEntered</a></div><div class="ttdoc">Text event subtype.</div><div class="ttdef"><b>Definition</b> <a href="#l00087">Event.hpp:88</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1TextEntered_html_abde9dc42f895f727d1f1ebb41c33b780"><div class="ttname"><a href="structsf_1_1Event_1_1TextEntered.html#abde9dc42f895f727d1f1ebb41c33b780">sf::Event::TextEntered::unicode</a></div><div class="ttdeci">char32_t unicode</div><div class="ttdoc">UTF-32 Unicode value of the character.</div><div class="ttdef"><b>Definition</b> <a href="#l00089">Event.hpp:89</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1TouchBegan_html"><div class="ttname"><a href="structsf_1_1Event_1_1TouchBegan.html">sf::Event::TouchBegan</a></div><div class="ttdoc">Touch began event subtype.</div><div class="ttdef"><b>Definition</b> <a href="#l00262">Event.hpp:263</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1TouchBegan_html_a514712f9b5bffddc9422efa6321ddc5f"><div class="ttname"><a href="structsf_1_1Event_1_1TouchBegan.html#a514712f9b5bffddc9422efa6321ddc5f">sf::Event::TouchBegan::position</a></div><div class="ttdeci">Vector2i position</div><div class="ttdoc">Start position of the touch, relative to the top left of the owner window.</div><div class="ttdef"><b>Definition</b> <a href="#l00265">Event.hpp:265</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1TouchBegan_html_acfdcf51fabda85a32ac76c7772ec9814"><div class="ttname"><a href="structsf_1_1Event_1_1TouchBegan.html#acfdcf51fabda85a32ac76c7772ec9814">sf::Event::TouchBegan::finger</a></div><div class="ttdeci">unsigned int finger</div><div class="ttdoc">Index of the finger in case of multi-touch events.</div><div class="ttdef"><b>Definition</b> <a href="#l00264">Event.hpp:264</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1TouchEnded_html"><div class="ttname"><a href="structsf_1_1Event_1_1TouchEnded.html">sf::Event::TouchEnded</a></div><div class="ttdoc">Touch ended event subtype.</div><div class="ttdef"><b>Definition</b> <a href="#l00282">Event.hpp:283</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1TouchEnded_html_ae6997d678a68380dddb5c3995abf3858"><div class="ttname"><a href="structsf_1_1Event_1_1TouchEnded.html#ae6997d678a68380dddb5c3995abf3858">sf::Event::TouchEnded::position</a></div><div class="ttdeci">Vector2i position</div><div class="ttdoc">Final position of the touch, relative to the top left of the owner window.</div><div class="ttdef"><b>Definition</b> <a href="#l00285">Event.hpp:285</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1TouchEnded_html_ae875e9ca00ddf52f101197a6f3a3775f"><div class="ttname"><a href="structsf_1_1Event_1_1TouchEnded.html#ae875e9ca00ddf52f101197a6f3a3775f">sf::Event::TouchEnded::finger</a></div><div class="ttdeci">unsigned int finger</div><div class="ttdoc">Index of the finger in case of multi-touch events.</div><div class="ttdef"><b>Definition</b> <a href="#l00284">Event.hpp:284</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1TouchMoved_html"><div class="ttname"><a href="structsf_1_1Event_1_1TouchMoved.html">sf::Event::TouchMoved</a></div><div class="ttdoc">Touch moved event subtype.</div><div class="ttdef"><b>Definition</b> <a href="#l00272">Event.hpp:273</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1TouchMoved_html_a163a5db3ac0250bc7600b6d1c365af60"><div class="ttname"><a href="structsf_1_1Event_1_1TouchMoved.html#a163a5db3ac0250bc7600b6d1c365af60">sf::Event::TouchMoved::position</a></div><div class="ttdeci">Vector2i position</div><div class="ttdoc">Current position of the touch, relative to the top left of the owner window.</div><div class="ttdef"><b>Definition</b> <a href="#l00275">Event.hpp:275</a></div></div>
+<div class="ttc" id="astructsf_1_1Event_1_1TouchMoved_html_aa6856eab50d6ee8573c8c8257fa681b1"><div class="ttname"><a href="structsf_1_1Event_1_1TouchMoved.html#aa6856eab50d6ee8573c8c8257fa681b1">sf::Event::TouchMoved::finger</a></div><div class="ttdeci">unsigned int finger</div><div class="ttdoc">Index of the finger in case of multi-touch events.</div><div class="ttdef"><b>Definition</b> <a href="#l00274">Event.hpp:274</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z" /></svg>
+                    Back to top
+                </button>
+            </main>
+            <footer class="md-footer">
+                <div class="md-footer-meta md-typeset">
+                    <div class="md-footer-meta__inner md-grid">
+                        <div class="md-copyright">
+                            <div class="md-copyright__highlight">Copyright &copy; <a href="mailto:laurent@sfml-dev.org">Laurent Gomila</a></div>
+                        </div>
+                        <div class="md-social">
+                            <a href="https://fosstodon.org/@sfml" target="_blank" rel="noopener me" title="SFML on Fosstodon" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.5 102.5 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5m-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com/sfmldev" target="_blank" rel="noopener" title="SFML on Twitter" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="https://bsky.app/profile/sfml.bsky.social" target="_blank" rel="noopener" title="SFML on Bluesky" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M407.8 294.7c-3.3-.4-6.7-.8-10-1.3 3.4.4 6.7.9 10 1.3M288 227.1c-26.1-50.7-97.1-145.2-163.1-191.8C61.6-9.4 37.5-1.7 21.6 5.5 3.3 13.8 0 41.9 0 58.4S9.1 194 15 213.9c19.5 65.7 89.1 87.9 153.2 80.7 3.3-.5 6.6-.9 10-1.4-3.3.5-6.6 1-10 1.4-93.9 14-177.3 48.2-67.9 169.9C220.6 589.1 265.1 437.8 288 361.1c22.9 76.7 49.2 222.5 185.6 103.4 102.4-103.4 28.1-156-65.8-169.9-3.3-.4-6.7-.8-10-1.3 3.4.4 6.7.9 10 1.3 64.1 7.1 133.6-15.1 153.2-80.7C566.9 194 576 75 576 58.4s-3.3-44.7-21.6-52.9c-15.8-7.1-40-14.9-103.2 29.8C385.1 81.9 314.1 176.4 288 227.1"
+                                    ></path>
+                                </svg>
+                            </a>
+                            <a href="https://discord.gg/nr4X7Fh" target="_blank" rel="noopener" title="SFML&#39;s Discord Server" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485 485 0 0 0 404.081 32.03a1.82 1.82 0 0 0-1.923.91 338 338 0 0 0-14.9 30.6 447.9 447.9 0 0 0-134.426 0 310 310 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.7 483.7 0 0 0-119.688 37.107 1.7 1.7 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.02 2.02 0 0 0 .765 1.375 487.7 487.7 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348 348 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321 321 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251 251 0 0 0 9.109-7.137 1.82 1.82 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.81 1.81 0 0 1 1.924.233 235 235 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.4 301.4 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391 391 0 0 0 30.014 48.815 1.86 1.86 0 0 0 2.063.7A486 486 0 0 0 610.7 405.729a1.88 1.88 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541M222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241m195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="md-dialog" data-md-component="dialog">
+            <div class="md-dialog__inner md-typeset"></div>
+        </div>
+        <script id="__config" type="application/json">
+            {
+                "base": "../..",
+                "features": ["content.code.copy", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.prune", "navigation.path", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.suggest"],
+                "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js",
+                "translations": {
+                    "clipboard.copied": "Copied to clipboard",
+                    "clipboard.copy": "Copy to clipboard",
+                    "search.result.more.one": "1 more on this page",
+                    "search.result.more.other": "# more on this page",
+                    "search.result.none": "No matching documents",
+                    "search.result.one": "1 matching document",
+                    "search.result.other": "# matching documents",
+                    "search.result.placeholder": "Type to start searching",
+                    "search.result.term.missing": "Missing",
+                    "select.version": "Select version"
+                }
+            }
+        </script>
+        <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+    </body>
+</html>
