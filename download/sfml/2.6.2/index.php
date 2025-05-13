@@ -72,10 +72,10 @@
     <tbody>
         <tr>
             <td class="os" rowspan="3">macOS</td>
-            <td><?php download_link('Clang', '64-bit (macOS 10.15+)', '7.09', '../../../files/SFML-3.0.0-macOS-clang-64-bit.tar.gz') ?></td>
+            <td><?php download_link('Clang', '64-bit (macOS 10.15+)', '7.09', '../../../files/SFML-2.6.2-macOS-clang-64-bit.tar.gz') ?></td>
         </tr>
         <tr>
-            <td><?php download_link('Clang', 'ARM64 (macOS 11.3+)', '7.01', '../../../files/SFML-3.0.0-macOS-clang-arm64.tar.gz') ?></td>
+            <td><?php download_link('Clang', 'ARM64 (macOS 11.3+)', '7.01', '../../../files/SFML-2.6.2-macOS-clang-arm64.tar.gz') ?></td>
         </tr>
         <tr>
             <td class="notice" colspan="3">
