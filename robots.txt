@@ -1,4 +1,4 @@
-User-agent: Amazonbot # Amazon's user agent
+User-agent: Amazonbot
 Disallow: /forum/*
 
 User-agent: * 
