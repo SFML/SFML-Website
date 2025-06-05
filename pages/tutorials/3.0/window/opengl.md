@@ -58,7 +58,7 @@ settings.antialiasingLevel = 4;
 settings.majorVersion = 3;
 settings.minorVersion = 0;
 
-sf::Window window(sf::VideoMode({800, 600}), "OpenGL", sf::Style::Default, settings);
+sf::Window window(sf::VideoMode({800, 600}), "OpenGL", sf::Style::Default, sf::State::Windowed, settings);
 ```
 
 If any of these settings is not supported by the graphics card, SFML tries to find the closest valid match.
@@ -93,7 +93,7 @@ Here is what a complete OpenGL program would look like with SFML:
 int main()
 {
     // create the window
-    sf::Window window(sf::VideoMode({800, 600}), "OpenGL", sf::Style::Default, sf::ContextSettings(32));
+    sf::Window window(sf::VideoMode({800, 600}), "OpenGL", sf::Style::Default, sf::State::Windowed, sf::ContextSettings(32));
     window.setVerticalSyncEnabled(true);
 
     // activate the window
