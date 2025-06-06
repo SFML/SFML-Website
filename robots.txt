@@ -1,11 +1,23 @@
 User-agent: Amazonbot
-Disallow: /forum/*
+Disallow: /forums/
+
+User-agent: meta-externalagent
+Disallow: /forums/
+
+User-agent: SemrushBot
+Disallow: /forums/
+
+User-agent: AhrefsBot
+Disallow: /forums/
+
+User-agent: Bytespider
+Disallow: /forums/
 
 User-agent: * 
-Disallow: /forum/*PHPSESSID
-Disallow: /forum/*wap
-Disallow: /forum/*wap2
-Disallow: /forum/*board=*wap
-Disallow: /forum/*board=*wap2
-Disallow: /forum/*topic=*wap
-Disallow: /forum/*topic=*wap2
+Disallow: /forums/*PHPSESSID
+Disallow: /forums/*wap
+Disallow: /forums/*wap2
+Disallow: /forums/*board=*wap
+Disallow: /forums/*board=*wap2
+Disallow: /forums/*topic=*wap
+Disallow: /forums/*topic=*wap2
