@@ -4,13 +4,13 @@ Disallow: /forums/
 User-agent: meta-externalagent
 Disallow: /forums/
 
+User-agent: Bytespider
+Disallow: /forums/
+
 User-agent: SemrushBot
 Disallow: /forums/
 
 User-agent: AhrefsBot
-Disallow: /forums/
-
-User-agent: Bytespider
 Disallow: /forums/
 
 User-agent: * 
