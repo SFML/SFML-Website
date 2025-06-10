@@ -6,6 +6,7 @@ User-agent: AhrefsBot
 User-agent: AwarioRssBot
 User-agent: AwarioSmartBot
 User-Agent: trendictionbot
+User-agent: dotbot
 Disallow: /forums/
 
 User-agent: * 
