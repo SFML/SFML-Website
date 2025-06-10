@@ -1,16 +1,11 @@
 User-agent: Amazonbot
-Disallow: /forums/
-
 User-agent: meta-externalagent
-Disallow: /forums/
-
 User-agent: Bytespider
-Disallow: /forums/
-
 User-agent: SemrushBot
-Disallow: /forums/
-
 User-agent: AhrefsBot
+User-agent: AwarioRssBot
+User-agent: AwarioSmartBot
+User-Agent: trendictionbot
 Disallow: /forums/
 
 User-agent: * 
