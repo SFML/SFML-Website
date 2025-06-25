@@ -11,7 +11,7 @@ For basic interaction between your program and an HTTP server, it should be enou
 
 ## sf::Http
 
-To communicate with an HTTP server you must use the [`sf::Http`](../../../documentation/3.0.0/classsf_1_1Http.html "sf::Http documentation") class.
+To communicate with an HTTP server you must use the [`sf::Http`](../../../documentation/3.0.1/classsf_1_1Http.html "sf::Http documentation") class.
 
 ```cpp
 #include <SFML/Network.hpp>
@@ -26,7 +26,7 @@ sf::Http http("http://www.some-server.org/");
 Note that setting the host doesn't trigger any connection.
 A temporary connection is created for each request.
 
-The only other function in [`sf::Http`](../../../documentation/3.0.0/classsf_1_1Http.html "sf::Http documentation"), sends requests.
+The only other function in [`sf::Http`](../../../documentation/3.0.1/classsf_1_1Http.html "sf::Http documentation"), sends requests.
 This is basically all that the class does.
 
 ```cpp
@@ -37,7 +37,7 @@ sf::Http::Response response = http.sendRequest(request);
 
 ## Requests
 
-An HTTP request, represented by the [`sf::Http::Request`](../../../documentation/3.0.0/classsf_1_1Http_1_1Request.html "sf::Http::Request documentation") class, contains the following information:
+An HTTP request, represented by the [`sf::Http::Request`](../../../documentation/3.0.1/classsf_1_1Http_1_1Request.html "sf::Http::Request documentation") class, contains the following information:
 
 - The method: POST (send content), GET (retrieve a resource), HEAD (retrieve a resource header, without its body)
 - The URI: the address of the resource (page, image, ...) to get/post, relative to the root directory
@@ -62,7 +62,7 @@ SFML will do its best to make sure they are valid.
 
 ## Responses
 
-If the [`sf::Http`](../../../documentation/3.0.0/classsf_1_1Http.html "sf::Http documentation") class could successfully connect to the host and send the request, a response is sent back and returned to the user, encapsulated in an instance of the [`sf::Http::Response`](../../../documentation/3.0.0/classsf_1_1Http_1_1Response.html "sf::Http::Response documentation") class.
+If the [`sf::Http`](../../../documentation/3.0.1/classsf_1_1Http.html "sf::Http documentation") class could successfully connect to the host and send the request, a response is sent back and returned to the user, encapsulated in an instance of the [`sf::Http::Response`](../../../documentation/3.0.1/classsf_1_1Http_1_1Response.html "sf::Http::Response documentation") class.
 Responses contain the following members:
 
 - A status code which precisely indicates how the server processed the request (OK, redirected, not found, etc.)

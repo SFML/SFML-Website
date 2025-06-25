@@ -82,7 +82,7 @@ window.draw(shape);
 
 ### Rectangles
 
-To draw rectangles, you can use the [`sf::RectangleShape`](../../../documentation/3.0.0/classsf_1_1RectangleShape.html "sf::RectangleShape documentation") class.
+To draw rectangles, you can use the [`sf::RectangleShape`](../../../documentation/3.0.1/classsf_1_1RectangleShape.html "sf::RectangleShape documentation") class.
 It has a single attribute: The size of the rectangle.
 
 ```cpp
@@ -97,7 +97,7 @@ rectangle.setSize({100.f, 100.f});
 
 ### Circles
 
-Circles are represented by the [`sf::CircleShape`](../../../documentation/3.0.0/classsf_1_1CircleShape.html "sf::CircleShape documentation") class.
+Circles are represented by the [`sf::CircleShape`](../../../documentation/3.0.1/classsf_1_1CircleShape.html "sf::CircleShape documentation") class.
 It has two attributes: The radius and the number of sides.
 The number of sides is an optional attribute.
 It allows you to adjust the "quality" of the circle: Circles have to be approximated by polygons with many sides (the graphics card is unable to draw a perfect circle directly), and this attribute defines how many sides your circle approximation will have.
@@ -119,8 +119,8 @@ circle.setPointCount(100);
 
 ### Regular polygons
 
-There's no dedicated class for regular polygons, in fact you can represent a regular polygon with any number of sides using the [`sf::CircleShape`](../../../documentation/3.0.0/classsf_1_1CircleShape.html "sf::CircleShape documentation") class: Since circles are approximated by polygons with many sides, you just have to play with the number of sides to get the desired polygons.
-A [`sf::CircleShape`](../../../documentation/3.0.0/classsf_1_1CircleShape.html "sf::CircleShape documentation") with 3 points is a triangle, with 4 points it's a square, etc.
+There's no dedicated class for regular polygons, in fact you can represent a regular polygon with any number of sides using the [`sf::CircleShape`](../../../documentation/3.0.1/classsf_1_1CircleShape.html "sf::CircleShape documentation") class: Since circles are approximated by polygons with many sides, you just have to play with the number of sides to get the desired polygons.
+A [`sf::CircleShape`](../../../documentation/3.0.1/classsf_1_1CircleShape.html "sf::CircleShape documentation") with 3 points is a triangle, with 4 points it's a square, etc.
 
 ```cpp
 // define a triangle
@@ -137,7 +137,7 @@ sf::CircleShape octagon(80.f, 8);
 
 ### Convex shapes
 
-The [`sf::ConvexShape`](../../../documentation/3.0.0/classsf_1_1ConvexShape.html "sf::ConvexShape documentation") class is the ultimate shape class: It allows you to define any *convex* shape.
+The [`sf::ConvexShape`](../../../documentation/3.0.1/classsf_1_1ConvexShape.html "sf::ConvexShape documentation") class is the ultimate shape class: It allows you to define any *convex* shape.
 SFML is unable to draw concave shapes.
 If you need to draw a concave shape, you'll have to split it into multiple convex polygons.
 
@@ -164,11 +164,11 @@ If you define them in an inconsistent order, the shape will be constructed incor
 
 ![A convex shape](shape-convex.png)
 
-Although the name of [`sf::ConvexShape`](../../../documentation/3.0.0/classsf_1_1ConvexShape.html "sf::ConvexShape documentation") implies that it should only be used to represent convex shapes, its requirements are a little more relaxed.
+Although the name of [`sf::ConvexShape`](../../../documentation/3.0.1/classsf_1_1ConvexShape.html "sf::ConvexShape documentation") implies that it should only be used to represent convex shapes, its requirements are a little more relaxed.
 In fact, the only requirement that your shape must meet is that if you went ahead and drew lines from its *center of gravity* to all of its points, these lines must be drawn in the same order.
 You are not allowed to "jump behind a previous line".
-Internally, convex shapes are automatically constructed using [triangle fans](http://en.wikipedia.org/wiki/Triangle_fan "Go to Wikipedia's article about triangle fans"), so if your shape is representable by a triangle fan, you can use [`sf::ConvexShape`](../../../documentation/3.0.0/classsf_1_1ConvexShape.html "sf::ConvexShape documentation").
-With this relaxed definition, you can draw stars using [`sf::ConvexShape`](../../../documentation/3.0.0/classsf_1_1ConvexShape.html "sf::ConvexShape documentation") for example.
+Internally, convex shapes are automatically constructed using [triangle fans](http://en.wikipedia.org/wiki/Triangle_fan "Go to Wikipedia's article about triangle fans"), so if your shape is representable by a triangle fan, you can use [`sf::ConvexShape`](../../../documentation/3.0.1/classsf_1_1ConvexShape.html "sf::ConvexShape documentation").
+With this relaxed definition, you can draw stars using [`sf::ConvexShape`](../../../documentation/3.0.1/classsf_1_1ConvexShape.html "sf::ConvexShape documentation") for example.
 
 ### Lines
 
@@ -204,7 +204,7 @@ To learn more about vertices and primitives, you can read the tutorial on [verte
 ## Custom shape types
 
 You can extend the set of shape classes with your own shape types.
-To do so, you must derive from [`sf::Shape`](../../../documentation/3.0.0/classsf_1_1Shape.html "sf::Shape documentation") and override two functions:
+To do so, you must derive from [`sf::Shape`](../../../documentation/3.0.1/classsf_1_1Shape.html "sf::Shape documentation") and override two functions:
 
 - `getPointCount`: return the number of points in the shape
 - `getPoint`: return a point of the shape
@@ -259,7 +259,7 @@ private:
 ## Antialiased shapes
 
 There's no option to anti-alias a single shape.
-To get anti-aliased shapes (i.e. shapes with smoothed edges), you have to enable anti-aliasing globally when you create the window or the render texture, with the corresponding attribute of the [`sf::ContextSettings`](../../../documentation/3.0.0/structsf_1_1ContextSettings.html "sf::ContextSettings documentation") structure.
+To get anti-aliased shapes (i.e. shapes with smoothed edges), you have to enable anti-aliasing globally when you create the window or the render texture, with the corresponding attribute of the [`sf::ContextSettings`](../../../documentation/3.0.1/structsf_1_1ContextSettings.html "sf::ContextSettings documentation") structure.
 
 ```cpp
 sf::ContextSettings settings;

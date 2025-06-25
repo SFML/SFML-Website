@@ -2,9 +2,9 @@
 
 ## Recording to a sound buffer
 
-The most common use for captured audio data is for it to be saved to a sound buffer ([`sf::SoundBuffer`](../../../documentation/3.0.0/classsf_1_1SoundBuffer.html "sf::SoundBuffer documentation")) so that it can either be played or saved to a file.
+The most common use for captured audio data is for it to be saved to a sound buffer ([`sf::SoundBuffer`](../../../documentation/3.0.1/classsf_1_1SoundBuffer.html "sf::SoundBuffer documentation")) so that it can either be played or saved to a file.
 
-This can be achieved with the very simple interface of the [`sf::SoundBufferRecorder`](../../../documentation/3.0.0/classsf_1_1SoundBufferRecorder.html "sf::SoundBufferRecorder documentation") class:
+This can be achieved with the very simple interface of the [`sf::SoundBufferRecorder`](../../../documentation/3.0.1/classsf_1_1SoundBufferRecorder.html "sf::SoundBufferRecorder documentation") class:
 
 ```cpp
 // first check if an input audio device is available on the system
@@ -30,7 +30,7 @@ const sf::SoundBuffer& buffer = recorder.getBuffer();
 ```
 
 The `SoundBufferRecorder::isAvailable` static function checks if audio recording is supported by the system.
-It if returns `false`, you won't be able to use the [`sf::SoundBufferRecorder`](../../../documentation/3.0.0/classsf_1_1SoundBufferRecorder.html "sf::SoundBufferRecorder documentation") class at all.
+It if returns `false`, you won't be able to use the [`sf::SoundBufferRecorder`](../../../documentation/3.0.1/classsf_1_1SoundBufferRecorder.html "sf::SoundBufferRecorder documentation") class at all.
 
 The `start` and `stop` functions are self-explanatory.
 The capture runs in its own thread, which means that you can do whatever you want between start and stop.
@@ -102,8 +102,8 @@ If storing the captured data in a sound buffer is not what you want, you can wri
 Doing so will allow you to process the audio data while it is captured, (almost) directly from the recording device.
 This way you can, for example, stream the captured audio over the network, perform real-time analysis on it, etc.
 
-To write your own recorder, you must inherit from the [`sf::SoundRecorder`](../../../documentation/3.0.0/classsf_1_1SoundRecorder.html "sf::SoundRecorder documentation") abstract base class.
-In fact, [`sf::SoundBufferRecorder`](../../../documentation/3.0.0/classsf_1_1SoundBufferRecorder.html "sf::SoundBufferRecorder documentation") is just a built-in specialization of this class.
+To write your own recorder, you must inherit from the [`sf::SoundRecorder`](../../../documentation/3.0.1/classsf_1_1SoundRecorder.html "sf::SoundRecorder documentation") abstract base class.
+In fact, [`sf::SoundBufferRecorder`](../../../documentation/3.0.1/classsf_1_1SoundBufferRecorder.html "sf::SoundBufferRecorder documentation") is just a built-in specialization of this class.
 
 You only have a single virtual function to override in your derived class: `onProcessSamples`.
 It is called every time a new chunk of audio samples is captured, so this is where you implement your specific stuff.
@@ -148,8 +148,8 @@ class MyRecorder : public sf::SoundRecorder
 };
 ```
 
-The `isAvailable`/`start`/`stop` functions are defined in the [`sf::SoundRecorder`](../../../documentation/3.0.0/classsf_1_1SoundRecorder.html "sf::SoundRecorder documentation") base, and thus inherited in every derived classes.
-This means that you can use any recorder class exactly the same way as the [`sf::SoundBufferRecorder`](../../../documentation/3.0.0/classsf_1_1SoundBufferRecorder.html "sf::SoundBufferRecorder documentation") class above.
+The `isAvailable`/`start`/`stop` functions are defined in the [`sf::SoundRecorder`](../../../documentation/3.0.1/classsf_1_1SoundRecorder.html "sf::SoundRecorder documentation") base, and thus inherited in every derived classes.
+This means that you can use any recorder class exactly the same way as the [`sf::SoundBufferRecorder`](../../../documentation/3.0.1/classsf_1_1SoundBufferRecorder.html "sf::SoundBufferRecorder documentation") class above.
 
 ```cpp
 if (!MyRecorder::isAvailable())

@@ -8,7 +8,7 @@ Real-time input allows you to query the global state of keyboard, mouse and joys
 
 ## Keyboard
 
-The namespace that provides access to the keyboard state is [`sf::Keyboard`](../../../documentation/3.0.0/namespacesf_1_1Keyboard.html "sf::Keyboard documentation").
+The namespace that provides access to the keyboard state is [`sf::Keyboard`](../../../documentation/3.0.1/namespacesf_1_1Keyboard.html "sf::Keyboard documentation").
 It contains two overloads of the same function, `isKeyPressed`, which checks the current state of a key (pressed or released).
 
 This function directly reads the keyboard state, ignoring the focus state of your window.
@@ -36,7 +36,7 @@ Scancodes are defined in the `sf::Keyboard::Scancode` enum.
 
 ## Mouse
 
-The namespace that provides access to the mouse state is [`sf::Mouse`](../../../documentation/3.0.0/namespacesf_1_1Mouse.html "sf::Mouse documentation").
+The namespace that provides access to the mouse state is [`sf::Mouse`](../../../documentation/3.0.1/namespacesf_1_1Mouse.html "sf::Mouse documentation").
 
 You can check if buttons are pressed:
 
@@ -80,10 +80,10 @@ For more information on how to use events, see the [events tutorial](events.md).
 
 ## Joystick
 
-The namespace that provides access to the joysticks' states is [`sf::Joystick`](../../../documentation/3.0.0/namespacesf_1_1Joystick.html "sf::Joystick documentation").
+The namespace that provides access to the joysticks' states is [`sf::Joystick`](../../../documentation/3.0.1/namespacesf_1_1Joystick.html "sf::Joystick documentation").
 
 Joysticks are identified by their index (0 to 7, since SFML supports up to 8 joysticks).
-Therefore, the first argument of every function of [`sf::Joystick`](../../../documentation/3.0.0/namespacesf_1_1Joystick.html "sf::Joystick documentation") is the index of the joystick that you want to query.
+Therefore, the first argument of every function of [`sf::Joystick`](../../../documentation/3.0.1/namespacesf_1_1Joystick.html "sf::Joystick documentation") is the index of the joystick that you want to query.
 
 You can check whether a joystick is connected or not:
 
