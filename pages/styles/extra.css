@@ -23,6 +23,13 @@ p:has(img) {
     display: inline-block;
 }
 
+@media (max-width: 45em) {
+    .section img {
+        float: none;
+        margin: auto;
+    }
+}
+
 @media screen and (min-width: 76.25em) {
     .md-header--lifted~.md-container .md-typeset :target {
         --md-scroll-margin: 8rem;
