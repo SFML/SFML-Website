@@ -34,11 +34,11 @@ These two definitions are equivalent: Both views will show the same area of the 
 
 ![](view-initial.png "A view")
 
-If you don't want to define the view upon construction or want to modify it later, you can use the equivalent setters:
+If you don't want to define the view upon construction or want to modify it later, you can assign to it or use the equivalent setters:
 
 ```cpp
 sf::View view1;
-view1.reset(sf::FloatRect({200.f, 200.f}, {300.f, 200.f}));
+view1 = sf::View(sf::FloatRect({200.f, 200.f}, {300.f, 200.f}));
 
 sf::View view2;
 view2.setCenter({350.f, 300.f});
