@@ -22,6 +22,17 @@ Have you:
 
 If you've checked all of those, and SFML still refuses to work, see [I found a bug!](#grl-i-found-a-bug).
 
+### SFML requires a newer CMake version than my OS provides! {: #grl-cmake-version}
+
+SFML generally tracks the versions distributed with Debian and/or Ubuntu, as they're among the most popular distros, yet are the slowest to update.
+
+Check the [CMakeLists.txt](https://github.com/SFML/SFML/blob/master/CMakeLists.txt) which CMake version SFML requires.
+To update CMake, Kitware offers three options:
+
+- On Ubuntu / Debian, use the provided [Kitware APT Repository](https://apt.kitware.com/)
+- Use the provided binaries on the [CMake download page](https://cmake.org/download/)
+- Build CMake from source
+
 ### I keep getting "undefined reference to <some strange thing that looks like an SFML function>" errors! {: #grl-undefined-ref}
 
 See [What and how do I link to use SFML?](build-use.md#link)
@@ -333,7 +344,6 @@ Before anything else, make sure that you've followed the [official tutorial](../
 - libxrandr-dev
 - libxcursor-dev
 - libfreetype6-dev
-- libopenal-dev
 - libflac-dev
 - libvorbis-dev
 

@@ -56,6 +56,10 @@ In order to use the Graphics module, you must link with Graphics, Window, and Sy
 Go for the latest SFML version, because you'll get a stable release with the latest features and bugfixes.
 As such it will save you a lot of headaches because other versions such as 1.6 are not maintained anymore, contain quite a few critical bugs and lack a lot of useful features.
 
+### Is there a complete list with all the changes from SFML 2.x to SFML 3.0? {: #changes-3-0}
+
+See the [official migration guide](../tutorials/3.0/getting-started/migrate.md) to get your code base updated to SFML 3.
+
 ### Is there a complete list with all the changes from SFML 1.6 to SFML 2.x? {: #changes}
 
 This non-exhaustive list can be used as a starting point: [SFML Forum](https://en.sfml-dev.org/forums/index.php?topic=5343.0)  
@@ -149,9 +153,9 @@ Deeper understanding, good to know to understand what is happening "behind the s
 
 ### Where can I ask questions? {: #questions}
 
-First make sure you've read the tutorials and the documentation, then check whether the question has already been asked before.
-If after that you still have a question **regarding SFML** in the [SFML forum](https://en.sfml-dev.org/forums/).
+First make sure you've read [the tutorials and the documentation](../learn/index.md), then check whether the question has already been asked before.
+If after that you still have a question **regarding SFML**, ask on the [SFML forum](https://en.sfml-dev.org/forums/index.php#c3).
+
+Additionally you can find people on the [official Discord or IRC server](../community/index.md).
 
 Keep in mind that using SFML is not a very suitable way to [learn the bare basics of C++ programming](#learn), and as such it is recommended that any questions regarding general C++ be asked in more adequate forums where people proficient in C++ can help you better.
-
-Additionally you also find people in the [Official IRC chat or Discord server](../community/index.md).

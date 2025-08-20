@@ -12,6 +12,7 @@ hide:
 - [Which programming languages are supported by SFML?](general.md#languages)
 - [What dependencies does SFML have?](general.md#dependencies)
 - [What version of SFML should I use?](general.md#version)
+- [Is there a complete list with all the changes from SFML 2.x to SFML 3.0?](general.md#changes-3-0)
 - [Is there a complete list with all the changes from SFML 1.6 to SFML 2.x?](general.md#changes)
 - [Will/does SFML support 3D?](general.md#3d)
 - [I want to propose a new feature!](general.md#request)
@@ -79,6 +80,7 @@ hide:
 
 - [General](troubleshooting.md#grl)
     - [I'm having trouble using SFML](troubleshooting.md#grl-trouble)
+    - [SFML requires a newer CMake version than my OS provides!](troubleshooting.md#grl-cmake-version)
     - [How do I make my IDE output verbose build information?](troubleshooting.md#grl-verbose-ide)
     - [I keep getting "undefined reference to <some strange thing that looks like an SFML function>"!](troubleshooting.md#grl-undefined-ref)
     - [Why can't I use SFML as a 64-bit library on my 64-bit system?](troubleshooting.md#grl-64bit)
