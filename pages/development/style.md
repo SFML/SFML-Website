@@ -1,39 +1,92 @@
 # Code Style Guide
 
+## ClangFormat
+
+SFML makes heavy use of [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) and enforces its usage in the continuous integration pipeline.
+
+The specific formatting rules can be found in the [.clang-format file](https://github.com/SFML/SFML/blob/master/.clang-format) in the root of the SFML repositories, though it's not necessary to understand all or any of them.
+The primary goal of clang-format is to automate the code formatting, so users don't need to tediously format their code by hand.
+
+### Installation
+
+ClangFormat is integrated or has an integration for most popular editors and can also be run as standalone command line tool, which is shipped as part of the LLVM distribution.
+
+- [Download LLVM](https://releases.llvm.org/download.html)
+- Visual Studio has built-in support
+- [Visual Studio Code Extension](https://marketplace.visualstudio.com/items?itemName=xaver.clang-format)
+- CLion has built-in support
+
+### Usage
+
+Usually the easiest approach is to utilize your IDE's formatting capability combined with ClangFormat.
+
+Alternatively, you can use the standalone clang-format command line tool:
+
+```bash
+
+```
+
 ## General
 
-C++ source code must be C++03-compliant.
+C++ source code must be C++17-compliant.
 
 ## Header Files
 
 C++ header files have the extension `.hpp` and are structured as follows:
 
 1. License block
-2. Opening include guard
+2. `#pragma onc`e include guard
 3. Included headers
+    - SFML Config header (if needed)
+    - SFML Export header (if needed)
+    - SFML headers
+    - Third-party headers (for non-public headers)
+    - C++ STL headers
+    - C runtime headers
 4. Opening namespace `sf`
 5. One or more of the following:
     - Class and type definitions
     - Global function declarations
     - Nested namespaces
 6. Closing namespace `sf`
-7. Closing include guard
-8. Extended comment on the class
+7. Extended comment on the class
 
 ```cpp
 ////////////////////////////////////////////////////////////
 //
-// License text...
+// SFML - Simple and Fast Multimedia Library
+// Copyright (C) 2007-2025 Laurent Gomila (laurent@sfml-dev.org)
+//
+// This software is provided 'as-is', without any express or implied warranty.
+// In no event will the authors be held liable for any damages arising from the use of this software.
+//
+// Permission is granted to anyone to use this software for any purpose,
+// including commercial applications, and to alter it and redistribute it freely,
+// subject to the following restrictions:
+//
+// 1. The origin of this software must not be misrepresented;
+//    you must not claim that you wrote the original software.
+//    If you use this software in a product, an acknowledgment
+//    in the product documentation would be appreciated but is not required.
+//
+// 2. Altered source versions must be plainly marked as such,
+//    and must not be misrepresented as being the original software.
+//
+// 3. This notice may not be removed or altered from any source distribution.
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_FILENAME_HPP
-#define SFML_FILENAME_HPP
+#pragma once
 
-////////////////////////////////////////////////////////////
-// Headers
-////////////////////////////////////////////////////////////
-#include <...>
+#include <SFML/Config.hpp>
+
+#include <SFML/.../Export.hpp>
+
+#include <thridparty.h>
+
+#include <algorithm>
+
+#include <cmath>
 
 namespace sf
 {
@@ -66,8 +119,6 @@ class SFML_..._API PublicClass
 SFML_..._API void doSomething();
 
 } // namespace sf
-
-#endif // SFML_FILENAME_HPP
 
 ////////////////////////////////////////////////////////////
 //
