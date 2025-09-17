@@ -11,7 +11,7 @@ hide:
 
     Apprenez à utiliser SFML
 
--   [![](../images/icons/address_book.png){ align=left } __Documentation de l'API__](../documentation/3.0.1/index.html)
+-   [![](../images/icons/address_book.png){ align=left } __Documentation de l'API__](../documentation/3.0.2/index.html)
 
     Référence
 
@@ -62,6 +62,7 @@ hide:
 
 ## Documentation pour les anciennes versions
 
+- **SFML 3.0.1:** [Tutoriels](../tutorials/3.0/index.md), [Documentation de l'API](../documentation/3.0.1/index.html)
 - **SFML 3.0.0:** [Tutoriels](../tutorials/3.0/index.md), [Documentation de l'API](../documentation/3.0.0/index.html)
 - **SFML 2.6.2:** [Tutoriels](https://www.sfml-dev.org/tutorials/2.6), [Documentation de l'API](https://www.sfml-dev.org/documentation/2.6.2)
 - **SFML 2.6.1:** [Tutoriels](https://www.sfml-dev.org/tutorials/2.6), [Documentation de l'API](https://www.sfml-dev.org/documentation/2.6.1)

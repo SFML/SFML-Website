@@ -2,7 +2,7 @@
 * Apprendre
     * learn/*.md
     * [Tutoriels](tutorials/3.0/index.md)
-    * [Documentation](documentation/3.0.1/index.html)
+    * [Documentation](documentation/3.0.2/index.html)
     * FAQ
         * faq/index*.md
         * faq/general*.md
