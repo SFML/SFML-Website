@@ -84,6 +84,7 @@
     * [SFML 1.6](https://www.sfml-dev.org/documentation/1.6/)
 * Download
     * download/index*.md
+    * download/sfml/3.0.2*.md
     * download/sfml/3.0.1*.md
     * download/sfml/3.0.0*.md
     * [SFML 2.6.2](https://www.sfml-dev.org/download/sfml/2.6.2/)

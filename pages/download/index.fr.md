@@ -8,7 +8,7 @@ hide:
 
 <div class="grid cards" markdown>
 
--   [![](../images/icons/download.png){ align=left } __SFML 3.0.1__](sfml/3.0.1.md)
+-   [![](../images/icons/download.png){ align=left } __SFML 3.0.2__](sfml/3.0.2.md)
 
     Dernière version stable
 
