@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sfml_20documentation_0',['SFML Documentation',['../index.html',1,'']]]
+  ['example_0',['Short example',['../index.html#example',1,'']]]
 ];

@@ -65,6 +65,7 @@
     * [SFML 2.0](https://www.sfml-dev.org/tutorials/2.0/index-fr.php)
     * [SFML 1.6](https://www.sfml-dev.org/tutorials/1.6/index-fr.php)
 * Documentation
+    * [SFML 3.0.2](documentation/3.0.2/index.html)
     * [SFML 3.0.1](documentation/3.0.1/index.html)
     * [SFML 3.0.0](documentation/3.0.0/index.html)
     * [SFML 2.6.2](https://www.sfml-dev.org/documentation/2.6.2-fr/)

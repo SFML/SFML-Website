@@ -21,8 +21,8 @@ This tutorial will only focus on the SFML specific part: Loading and applying yo
 
 ## Loading shaders
 
-In SFML, shaders are represented by the [`sf::Shader`](../../../documentation/3.0.1/classsf_1_1Shader.html "sf::Shader documentation") class.
-It handles both the vertex and fragment shaders: A [`sf::Shader`](../../../documentation/3.0.1/classsf_1_1Shader.html "sf::Shader documentation") object is a combination of both (or only one, if the other is not provided).
+In SFML, shaders are represented by the [`sf::Shader`](../../../documentation/3.0.2/classsf_1_1Shader.html "sf::Shader documentation") class.
+It handles both the vertex and fragment shaders: A [`sf::Shader`](../../../documentation/3.0.2/classsf_1_1Shader.html "sf::Shader documentation") object is a combination of both (or only one, if the other is not provided).
  
 Even though shaders have become commonplace, there are still old graphics cards that might not support them.
 The first thing you shoulddo in your program is check if shaders are available on the system:
@@ -34,7 +34,7 @@ if (!sf::Shader::isAvailable())
 }
 ```
 
-Any attempt to use the [`sf::Shader`](../../../documentation/3.0.1/classsf_1_1Shader.html "sf::Shader documentation") class will fail if `sf::Shader::isAvailable()` returns `false`.
+Any attempt to use the [`sf::Shader`](../../../documentation/3.0.2/classsf_1_1Shader.html "sf::Shader documentation") class will fail if `sf::Shader::isAvailable()` returns `false`.
 
 The most common way of loading a shader is from a file on disk, which is done with the `loadFromFile` function or the corresponding constructors.
 
@@ -136,7 +136,7 @@ void main()
 }
 ```
 
-Uniforms can be set by the C++ program using the various overloads of the `setUniform` function in the [`sf::Shader`](../../../documentation/3.0.1/classsf_1_1Shader.html "sf::Shader documentation") class.
+Uniforms can be set by the C++ program using the various overloads of the `setUniform` function in the [`sf::Shader`](../../../documentation/3.0.2/classsf_1_1Shader.html "sf::Shader documentation") class.
 
 ```cpp
 shader.setUniform("myvar", 5.f);
@@ -161,7 +161,7 @@ You won't learn how to write GLSL shaders here, but it is essential that you kno
 
 ### Vertex shader
 
-SFML has a fixed vertex format which is described by the [`sf::Vertex`](../../../documentation/3.0.1/structsf_1_1Vertex.html "sf::Vertex documentation") structure.
+SFML has a fixed vertex format which is described by the [`sf::Vertex`](../../../documentation/3.0.2/structsf_1_1Vertex.html "sf::Vertex documentation") structure.
 An SFML vertex contains a 2D position, a color, and 2D texture coordinates.
 This is the exact input that you will get in the vertex shader, stored in the built-in `gl_Vertex`, `gl_Color` and `gl_MultiTexCoord0` variables (you don't need to declare them).
 
@@ -220,9 +220,9 @@ If you want to see nice examples of shaders in action, you can have a look at th
 
 ## Using a sf::Shader with OpenGL code
 
-If you're using OpenGL rather than the graphics entities of SFML, you can still use [`sf::Shader`](../../../documentation/3.0.1/classsf_1_1Shader.html "sf::Shader documentation") as a wrapper around an OpenGL program object and use it within your OpenGL code.
+If you're using OpenGL rather than the graphics entities of SFML, you can still use [`sf::Shader`](../../../documentation/3.0.2/classsf_1_1Shader.html "sf::Shader documentation") as a wrapper around an OpenGL program object and use it within your OpenGL code.
 
-To activate a [`sf::Shader`](../../../documentation/3.0.1/classsf_1_1Shader.html "sf::Shader documentation") for drawing (the equivalent of `glUseProgram`), you have to call the `bind` static function:
+To activate a [`sf::Shader`](../../../documentation/3.0.2/classsf_1_1Shader.html "sf::Shader documentation") for drawing (the equivalent of `glUseProgram`), you have to call the `bind` static function:
 
 ```cpp
 sf::Shader shader;

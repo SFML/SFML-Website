@@ -19,7 +19,7 @@ They are also the key to creating split screens and mini-maps.
 
 ## Defining what the view views
 
-The class which encapsulates views in SFML is [`sf::View`](../../../documentation/3.0.1/classsf_1_1View.html "sf::View documentation").
+The class which encapsulates views in SFML is [`sf::View`](../../../documentation/3.0.2/classsf_1_1View.html "sf::View documentation").
 It can be constructed directly with a definition of the area to view:
 
 ```cpp
@@ -141,7 +141,7 @@ minimapView.setViewport(sf::FloatRect({0.75f, 0.f}, {0.25f, 0.25f}));
 
 ## Using a view
 
-To draw something using a view, you must draw it after calling the `setView` function of the target to which you are drawing ([`sf::RenderWindow`](../../../documentation/3.0.1/classsf_1_1RenderWindow.html "sf::RenderWindow documentation") or [`sf::RenderTexture`](../../../documentation/3.0.1/classsf_1_1RenderTexture.html "sf::RenderTexture documentation")).
+To draw something using a view, you must draw it after calling the `setView` function of the target to which you are drawing ([`sf::RenderWindow`](../../../documentation/3.0.2/classsf_1_1RenderWindow.html "sf::RenderWindow documentation") or [`sf::RenderTexture`](../../../documentation/3.0.2/classsf_1_1RenderTexture.html "sf::RenderTexture documentation")).
 
 ```cpp
 // let's define a view

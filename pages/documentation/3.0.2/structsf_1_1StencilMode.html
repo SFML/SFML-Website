@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="Simple and Fast Multimedia Library" />
+        <link rel="canonical" href="https://www.sfml-dev.org/documentation/3.0.2/" />
+        <link rel="icon" href="../../images/favicon.ico" />
+        <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.50">
+        <title>Documentation for SFML 3.0.2 - Simple and Fast Multimedia Library</title>
+        <link rel="stylesheet" href="../../styles/bundle.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback" />
+        <style>
+            :root {
+                --md-text-font: "Ubuntu";
+                --md-code-font: "Roboto Mono";
+            }
+        </style>
+        <link rel="stylesheet" href="../../styles/extra.css" />
+        <script>
+            (__md_scope = new URL("../..", location)),
+                (__md_hash = (e) => [...e].reduce((e, _) => (e << 5) - e + _.charCodeAt(0), 0)),
+                (__md_get = (e, _ = localStorage, t = __md_scope) => JSON.parse(_.getItem(t.pathname + "." + e))),
+                (__md_set = (e, _, t = localStorage, a = __md_scope) => {
+                    try {
+                        t.setItem(a.pathname + "." + e, JSON.stringify(_));
+                    } catch (e) {}
+                });
+        </script>
+        <!-- Doxygen Overrides -->
+        <link rel="stylesheet" type="text/css" href="doxystyle.css" title="default" media="screen,print" />
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="dynsections.js"></script>
+        <script type="text/javascript" src="clipboard.js"></script>
+        <script type="text/javascript" src="cookie.js"></script>
+        <script type="text/javascript" src="resize.js"></script>
+        <link rel="stylesheet" type="text/css" href="search/search.css" />
+        <link rel="stylesheet" type="text/css" href="searchOverrides.css" />
+        <script type="text/javascript" src="search/searchdata.js"></script>
+        <script type="text/javascript" src="search/search.js"></script>
+        <script type="text/javascript">
+            /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+            $(document).ready(function () {
+                init_search();
+            });
+            /* @license-end */
+        </script>
+        <!-- Doxygen Overrides -->
+    </head>
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="indigo">
+        <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off" />
+        <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off" />
+        <label class="md-overlay" for="__drawer"></label>
+        <div data-md-component="announce"></div>
+        <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+            <nav class="md-header__inner md-grid" aria-label="Header">
+                <a href="../.." title="Simple and Fast Multimedia Library" class="md-header__button md-logo" aria-label="Simple and Fast Multimedia Library" data-md-component="logo">
+                    <img src="../../images/logo.png" alt="logo" />
+                </a>
+                <label class="md-header__button md-icon" for="__drawer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z" /></svg>
+                </label>
+                <div class="md-header__title" data-md-component="header-title">
+                    <div class="md-header__ellipsis">
+                        <div class="md-header__topic">
+                            <span class="md-ellipsis"> Simple and Fast Multimedia Library </span>
+                        </div>
+                        <div class="md-header__topic" data-md-component="header-topic">
+                            <span class="md-ellipsis"> Documentation for SFML 3.0.2 </span>
+                        </div>
+                    </div>
+                </div>
+                <label class="md-header__button md-icon" for="__search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5" />
+                    </svg>
+                </label>
+                <div class="md-search" data-md-component="search" role="dialog">
+                    <label class="md-search__overlay" for="__search"></label>
+                    <div class="md-search__inner" role="search">
+                        <form class="md-search__form" name="search">
+                            <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required />
+                            <label class="md-search__icon md-icon" for="__search">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"
+                                    />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z" /></svg>
+                            </label>
+                            <nav class="md-search__options" aria-label="Search">
+                                <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" /></svg>
+                                </button>
+                            </nav>
+                            <div class="md-search__suggest" data-md-component="search-suggest"></div>
+                        </form>
+                        <div class="md-search__output">
+                            <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+                                <div class="md-search-result" data-md-component="search-result">
+                                    <div class="md-search-result__meta">Initializing search</div>
+                                    <ol class="md-search-result__list" role="presentation"></ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-header__source">
+                    <a href="https://github.com/SFML/SFML" title="Go to repository" class="md-source" data-md-component="source">
+                        <div class="md-source__icon md-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"
+                                />
+                            </svg>
+                        </div>
+                        <div class="md-source__repository">SFML</div>
+                    </a>
+                </div>
+            </nav>
+            <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+                <div class="md-grid">
+                    <ul class="md-tabs__list">
+                        <li class="md-tabs__item">
+                            <a href="/" class="md-tabs__link"> Home </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/learn/" class="md-tabs__link"> Learn </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/tutorials/3.0/" class="md-tabs__link"> Tutorials </a>
+                        </li>
+                        <li class="md-tabs__item md-tabs__item--active">
+                            <a href="/documentation/3.0.2/" class="md-tabs__link"> Documentation </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/download/" class="md-tabs__link"> Download </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/community/" class="md-tabs__link"> Community </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/development/" class="md-tabs__link"> Development </a>
+                        </li>
+                        <li class="md-tabs__item">
+                            <a href="/donate/" class="md-tabs__link"> Donate </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="md-container" data-md-component="container">
+            <main class="md-main" data-md-component="main">
+                <div class="md-main__inner md-grid">
+                    <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                        <div class="md-sidebar__scrollwrap" style="height: 832px">
+                            <div class="md-sidebar__inner">
+                                <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+                                    <label class="md-nav__title" for="__drawer">
+                                        <a href="../.." title="Simple and Fast Multimedia Library" class="md-nav__button md-logo" aria-label="Simple and Fast Multimedia Library" data-md-component="logo">
+                                            <img src="../../images/logo.png" alt="logo" />
+                                        </a>
+                                        Simple and Fast Multimedia Library
+                                    </label>
+                                    <div class="md-nav__source">
+                                        <a href="https://github.com/SFML/SFML" title="Go to repository" class="md-source" data-md-component="source">
+                                            <div class="md-source__icon md-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                                    <path
+                                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                            <div class="md-source__repository md-source__repository--active">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <ul class="md-nav__list">
+                                        <li class="md-nav__item">
+                                            <a href="/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Home </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="/learn/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Learn </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+                                            <a href="/tutorials/3.0/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Tutorials </span>
+                                                <span class="md-nav__icon md-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+                                            <input class="md-nav__toggle md-toggle" type="checkbox" id="__nav_4" checked="" />
+                                            <div class="md-nav__link md-nav__container">
+                                                <a href="/documentation/3.0.2/" class="md-nav__link md-nav__link--active">
+                                                    <span class="md-ellipsis"> Documentation </span>
+                                                </a>
+                                                <label class="md-nav__link md-nav__link--active" for="__nav_4" id="__nav_4_label" tabindex="">
+                                                    <span class="md-nav__icon md-icon"></span>
+                                                </label>
+                                            </div>
+                                            <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+                                                <label class="md-nav__title" for="__nav_4">
+                                                    <span class="md-nav__icon md-icon"></span>
+                                                    Documentation
+                                                </label>
+                                                <ul class="md-nav__list">
+                                                    <li class="md-nav__item">
+                                                        <a href="/documentation/3.0.2/" class="md-nav__link md-nav__link--active">
+                                                            <span class="md-ellipsis"> SFML 3.0.2 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="/documentation/3.0.1/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 3.0.1 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="/documentation/3.0.0/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 3.0.0 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.6.2/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.6.2 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.6.1/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.6.1 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.6.0/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.6.0 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.5.1/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.5.1 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.5.0/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.5.0 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.4.2/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.4.2 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.4.1/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.4.1 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.4.0/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.4.0 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.3.2/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.3.2 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.3.1/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.3.1 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.3/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.3 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.2/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.2 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.1/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.1 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/2.0/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 2.0 </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="md-nav__item">
+                                                        <a href="https://www.sfml-dev.org/documentation/1.6/" class="md-nav__link">
+                                                            <span class="md-ellipsis"> SFML 1.6 </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="/download/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Download </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="/community/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Community </span>
+                                            </a>
+                                        </li>
+                                        <li class="md-nav__item">
+                                            <a href="/development/" class="md-nav__link">
+                                                <span class="md-ellipsis"> Development </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" style="top: 158px">
+                        <div class="md-sidebar__scrollwrap" style="height: 832px">
+                            <div class="md-sidebar__inner">
+                                <nav class="md-nav md-nav--secondary" aria-label="Table of contents"></nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-content contents">
+                        <div><!-- top -->
+<!-- Generated by Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<div id="main-nav">
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="topics.html"><span>Topics</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
+    </ul>
+  </div>
+</div><!-- main-nav -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a href="namespacesf.html">sf</a></li><li class="navelem"><a href="structsf_1_1StencilMode.html">StencilMode</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#related">Related Symbols</a> &#124;
+<a href="structsf_1_1StencilMode-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">sf::StencilMode Class Reference<div class="ingroups"><a class="el" href="group__graphics.html">Graphics module</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Stencil modes for drawing.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="StencilMode_8hpp_source.html">SFML/Graphics/StencilMode.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ad1b247f2844eb8dae366c4c8d8977ed2" id="r_ad1b247f2844eb8dae366c4c8d8977ed2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacesf.html#a5a1510ae19d01cf19178b8f3ef92a2a1">StencilComparison</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1b247f2844eb8dae366c4c8d8977ed2">stencilComparison</a> {<a class="el" href="namespacesf.html#a5a1510ae19d01cf19178b8f3ef92a2a1a68eec46437c384d8dad18d5464ebc35c">StencilComparison::Always</a>}</td></tr>
+<tr class="memdesc:ad1b247f2844eb8dae366c4c8d8977ed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The comparison we're performing the stencil test with.  <br /></td></tr>
+<tr class="memitem:a4685ec755a0e33523c3f046636670011" id="r_a4685ec755a0e33523c3f046636670011"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacesf.html#accf495a19b2f6b4f8d9cff3dac777bfd">StencilUpdateOperation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4685ec755a0e33523c3f046636670011">stencilUpdateOperation</a></td></tr>
+<tr class="memdesc:a4685ec755a0e33523c3f046636670011"><td class="mdescLeft">&#160;</td><td class="mdescRight">The update operation to perform if the stencil test passes.  <br /></td></tr>
+<tr class="memitem:a4e39c228d32fce4822b4c0fce708b15a" id="r_a4e39c228d32fce4822b4c0fce708b15a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsf_1_1StencilValue.html">StencilValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e39c228d32fce4822b4c0fce708b15a">stencilReference</a> {0}</td></tr>
+<tr class="memdesc:a4e39c228d32fce4822b4c0fce708b15a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The reference value we're performing the stencil test with.  <br /></td></tr>
+<tr class="memitem:ae36b6ff4d2a4abcd5d50e21e1a7dbd00" id="r_ae36b6ff4d2a4abcd5d50e21e1a7dbd00"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsf_1_1StencilValue.html">StencilValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae36b6ff4d2a4abcd5d50e21e1a7dbd00">stencilMask</a> {~0u}</td></tr>
+<tr class="memdesc:ae36b6ff4d2a4abcd5d50e21e1a7dbd00"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mask to apply to both the reference value and the value in the stencil buffer.  <br /></td></tr>
+<tr class="memitem:a85ea4a3427e49de1e788a3d0a5969d51" id="r_a85ea4a3427e49de1e788a3d0a5969d51"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85ea4a3427e49de1e788a3d0a5969d51">stencilOnly</a> {}</td></tr>
+<tr class="memdesc:a85ea4a3427e49de1e788a3d0a5969d51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether we should update the color buffer in addition to the stencil buffer.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-related" class="groupheader"><a id="related" name="related"></a>
+Related Symbols</h2></td></tr>
+<tr><td class="ititle" colspan="2"><p>(Note that these are not member symbols.) </p>
+</td></tr>
+<tr class="memitem:a51fba8b31d810e1a958c3feb2da1447e" id="r_a51fba8b31d810e1a958c3feb2da1447e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51fba8b31d810e1a958c3feb2da1447e">operator==</a> (const <a class="el" href="structsf_1_1StencilMode.html">StencilMode</a> &amp;left, const <a class="el" href="structsf_1_1StencilMode.html">StencilMode</a> &amp;right)</td></tr>
+<tr class="memdesc:a51fba8b31d810e1a958c3feb2da1447e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of the <span class="tt">operator==</span>  <br /></td></tr>
+<tr class="memitem:ad8233e8089756c2f13ecb37a721224a6" id="r_ad8233e8089756c2f13ecb37a721224a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8233e8089756c2f13ecb37a721224a6">operator!=</a> (const <a class="el" href="structsf_1_1StencilMode.html">StencilMode</a> &amp;left, const <a class="el" href="structsf_1_1StencilMode.html">StencilMode</a> &amp;right)</td></tr>
+<tr class="memdesc:ad8233e8089756c2f13ecb37a721224a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of the <span class="tt">operator!=</span>  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Stencil modes for drawing. </p>
+<p><span class="tt"><a class="el" href="structsf_1_1StencilMode.html" title="Stencil modes for drawing.">sf::StencilMode</a></span> is a class that controls stencil testing.</p>
+<p>In addition to drawing to the visible portion of a render target, there is the possibility to "draw" to a so-called stencil buffer. The stencil buffer is a special non-visible buffer that can contain a single value per pixel that is drawn. This can be thought of as a fifth value in addition to red, green, blue and alpha values. The maximum value that can be represented depends on what is supported by the system. Typically support for a 8-bit stencil buffer should always be available. This will also have to be requested when creating a render target via the <span class="tt"><a class="el" href="structsf_1_1ContextSettings.html" title="Structure defining the settings of the OpenGL context attached to a window.">sf::ContextSettings</a></span> that is passed during creation. Stencil testing will not work if there is no stencil buffer available in the target that is being drawn to.</p>
+<p>Initially, just like with the visible color buffer, the stencil value of each pixel is set to an undefined value. Calling <span class="tt"><a class="el" href="classsf_1_1RenderTarget.html#aee353fc2cd35edf0747e710301af3e4c" title="Clear the entire target with a single color.">sf::RenderTarget::clear</a></span> will set each pixel's stencil value to 0. <span class="tt"><a class="el" href="classsf_1_1RenderTarget.html#aee353fc2cd35edf0747e710301af3e4c" title="Clear the entire target with a single color.">sf::RenderTarget::clear</a></span> can be called at any time to reset the stencil values back to 0.</p>
+<p>When drawing an object, before each pixel of the color buffer is updated with its new color value, the stencil test is performed. During this test 2 values are compared with each other: the reference value that is passed via <span class="tt"><a class="el" href="structsf_1_1StencilMode.html" title="Stencil modes for drawing.">sf::StencilMode</a></span> and the value that is currently in the stencil buffer. The arithmetic comparison that is performed on the 2 values can also be controlled via <span class="tt"><a class="el" href="structsf_1_1StencilMode.html" title="Stencil modes for drawing.">sf::StencilMode</a></span>. Depending on whether the test passes i.e. the comparison yields <span class="tt">true</span>, the color buffer is updated with its new RGBA value and if set in <span class="tt"><a class="el" href="structsf_1_1StencilMode.html" title="Stencil modes for drawing.">sf::StencilMode</a></span> the stencil buffer is updated accordingly. The new stencil value will be used during stencil testing the next time the pixel is drawn to.</p>
+<p>The class is composed of 5 components, each of which has its own public member variable: </p><ul>
+<li>Stencil Comparison (<a class="el" href="#ad1b247f2844eb8dae366c4c8d8977ed2">stencilComparison</a>) </li>
+<li>Stencil Update Operation (<a class="el" href="#a4685ec755a0e33523c3f046636670011">stencilUpdateOperation</a>) </li>
+<li>Stencil Reference Value (<a class="el" href="#a4e39c228d32fce4822b4c0fce708b15a">stencilReference</a>) </li>
+<li>Stencil Mask Value (<a class="el" href="#ae36b6ff4d2a4abcd5d50e21e1a7dbd00">stencilMask</a>) </li>
+<li>Stencil Only Update (<a class="el" href="#a85ea4a3427e49de1e788a3d0a5969d51">stencilOnly</a>)</li>
+</ul>
+<p>The stencil comparison specifies the comparison that is performed between the reference value of the currently active <span class="tt"><a class="el" href="structsf_1_1StencilMode.html" title="Stencil modes for drawing.">sf::StencilMode</a></span> and the value that is currently in the stencil buffer. This comparison determines whether the stencil test passes or fails.</p>
+<p>The stencil update operation specifies how the stencil buffer is updated if the stencil test passes. If the stencil test fails, neither the color or stencil buffers will be modified. If incrementing or decrementing the stencil value, the new value will be clamped to the range from 0 to the maximum representable value given the bit width of the stencil buffer e.g. 255 if an 8-bit stencil buffer is being used.</p>
+<p>The reference value is used both during the comparison with the current stencil buffer value and as the new value to be written when the operation is set to Replace.</p>
+<p>The mask value is used to mask the bits of both the reference value and the value in the stencil buffer during the comparison and when updating. The mask can be used to e.g. segment the stencil value bits into separate regions that are used for different purposes.</p>
+<p>In certain situations, it might make sense to only write to the stencil buffer and not the color buffer during a draw. The written stencil buffer value can then be used in subsequent draws as a masking region.</p>
+<p>In SFML, a stencil mode can be specified every time you draw a <span class="tt"><a class="el" href="classsf_1_1Drawable.html" title="Abstract base class for objects that can be drawn to a render target.">sf::Drawable</a></span> object to a render target. It is part of the <span class="tt"><a class="el" href="structsf_1_1RenderStates.html" title="Define the states used for drawing to a RenderTarget">sf::RenderStates</a></span> compound that is passed to the member function <span class="tt"><a class="el" href="classsf_1_1RenderTarget.html#a12417a3bcc245c41d957b29583556f39" title="Draw a drawable object to the render target.">sf::RenderTarget::draw()</a></span>.</p>
+<p>Usage example: </p><div class="fragment"><div class="line"><span class="comment">// Make sure we create a RenderTarget with a stencil buffer by specifying it via the context settings</span></div>
+<div class="line"><a class="code hl_class" href="classsf_1_1RenderWindow.html">sf::RenderWindow</a> window(<a class="code hl_class" href="classsf_1_1VideoMode.html">sf::VideoMode</a>({250, 200}), <span class="stringliteral">&quot;Stencil Window&quot;</span>, <a class="code hl_enumvalue" href="group__window.html#ggaf4ff4f60dec5967fb35b419750b17688a5597cd420fc461807e4a201c92adea37">sf::Style::Default</a>, <a class="code hl_class" href="structsf_1_1ContextSettings.html">sf::ContextSettings</a>{0, 8});</div>
+<div class="line"> </div>
+<div class="line">...</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Left circle</span></div>
+<div class="line">sf::CircleShape left(100.f);</div>
+<div class="line">left.setFillColor(<a class="code hl_variable" href="classsf_1_1Color.html#a95629b30de8c6856aa7d3afed12eb865">sf::Color::Green</a>);</div>
+<div class="line">left.setPosition({0, 0});</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Middle circle</span></div>
+<div class="line">sf::CircleShape middle(100.f);</div>
+<div class="line">middle.setFillColor(<a class="code hl_variable" href="classsf_1_1Color.html#af8896b5f56650935f5b9d72d528802c7">sf::Color::Yellow</a>);</div>
+<div class="line">middle.setPosition({25, 0});</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Right circle</span></div>
+<div class="line">sf::CircleShape right(100.f);</div>
+<div class="line">right.setFillColor(<a class="code hl_variable" href="classsf_1_1Color.html#a127dbf55db9c07d0fa8f4bfcbb97594a">sf::Color::Red</a>);</div>
+<div class="line">right.setPosition({50, 0});</div>
+<div class="line"> </div>
+<div class="line">...</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Clear the stencil buffer to 0 at the start of every frame</span></div>
+<div class="line">window.clear(<a class="code hl_variable" href="classsf_1_1Color.html#a77c688197b981338f0b19dc58bd2facd">sf::Color::Black</a>, 0);</div>
+<div class="line"> </div>
+<div class="line">...</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Draw the middle circle in a stencil-only pass and write the value 1</span></div>
+<div class="line"><span class="comment">// to the stencil buffer for every pixel the circle would have affected</span></div>
+<div class="line">window.draw(middle, sf::StencilMode{<a class="code hl_enumvalue" href="namespacesf.html#a5a1510ae19d01cf19178b8f3ef92a2a1a68eec46437c384d8dad18d5464ebc35c">sf::StencilComparison::Always</a>, <a class="code hl_enumvalue" href="namespacesf.html#accf495a19b2f6b4f8d9cff3dac777bfda0ebe6df8a3ac338e0512acc741823fdb">sf::StencilUpdateOperation::Replace</a>, 1, 0xFF, <span class="keyword">true</span>});</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Draw the left and right circles</span></div>
+<div class="line"><span class="comment">// Only allow rendering to pixels whose stencil value is not</span></div>
+<div class="line"><span class="comment">// equal to 1 i.e. weren&#39;t written when drawing the middle circle</span></div>
+<div class="line">window.<a class="code hl_function" href="classsf_1_1RenderTarget.html#a12417a3bcc245c41d957b29583556f39">draw</a>(left, sf::StencilMode{<a class="code hl_enumvalue" href="namespacesf.html#a5a1510ae19d01cf19178b8f3ef92a2a1a19bb0af2c3c530538cb41aff7f235b96">sf::StencilComparison::NotEqual</a>, <a class="code hl_enumvalue" href="namespacesf.html#accf495a19b2f6b4f8d9cff3dac777bfda02bce93bff905887ad2233110bf9c49e">sf::StencilUpdateOperation::Keep</a>, 1, 0xFF, <span class="keyword">false</span>});</div>
+<div class="line">window.<a class="code hl_function" href="classsf_1_1RenderTarget.html#a12417a3bcc245c41d957b29583556f39">draw</a>(right, sf::StencilMode{<a class="code hl_enumvalue" href="namespacesf.html#a5a1510ae19d01cf19178b8f3ef92a2a1a19bb0af2c3c530538cb41aff7f235b96">sf::StencilComparison::NotEqual</a>, <a class="code hl_enumvalue" href="namespacesf.html#accf495a19b2f6b4f8d9cff3dac777bfda02bce93bff905887ad2233110bf9c49e">sf::StencilUpdateOperation::Keep</a>, 1, 0xFF, <span class="keyword">false</span>});</div>
+<div class="ttc" id="aclasssf_1_1Color_html_a127dbf55db9c07d0fa8f4bfcbb97594a"><div class="ttname"><a href="classsf_1_1Color.html#a127dbf55db9c07d0fa8f4bfcbb97594a">sf::Color::Red</a></div><div class="ttdeci">static const Color Red</div><div class="ttdoc">Red predefined color.</div><div class="ttdef"><b>Definition</b> <a href="Color_8hpp_source.html#l00084">Color.hpp:84</a></div></div>
+<div class="ttc" id="aclasssf_1_1Color_html_a77c688197b981338f0b19dc58bd2facd"><div class="ttname"><a href="classsf_1_1Color.html#a77c688197b981338f0b19dc58bd2facd">sf::Color::Black</a></div><div class="ttdeci">static const Color Black</div><div class="ttdoc">Black predefined color.</div><div class="ttdef"><b>Definition</b> <a href="Color_8hpp_source.html#l00082">Color.hpp:82</a></div></div>
+<div class="ttc" id="aclasssf_1_1Color_html_a95629b30de8c6856aa7d3afed12eb865"><div class="ttname"><a href="classsf_1_1Color.html#a95629b30de8c6856aa7d3afed12eb865">sf::Color::Green</a></div><div class="ttdeci">static const Color Green</div><div class="ttdoc">Green predefined color.</div><div class="ttdef"><b>Definition</b> <a href="Color_8hpp_source.html#l00085">Color.hpp:85</a></div></div>
+<div class="ttc" id="aclasssf_1_1Color_html_af8896b5f56650935f5b9d72d528802c7"><div class="ttname"><a href="classsf_1_1Color.html#af8896b5f56650935f5b9d72d528802c7">sf::Color::Yellow</a></div><div class="ttdeci">static const Color Yellow</div><div class="ttdoc">Yellow predefined color.</div><div class="ttdef"><b>Definition</b> <a href="Color_8hpp_source.html#l00087">Color.hpp:87</a></div></div>
+<div class="ttc" id="aclasssf_1_1RenderTarget_html_a12417a3bcc245c41d957b29583556f39"><div class="ttname"><a href="classsf_1_1RenderTarget.html#a12417a3bcc245c41d957b29583556f39">sf::RenderTarget::draw</a></div><div class="ttdeci">void draw(const Drawable &amp;drawable, const RenderStates &amp;states=RenderStates::Default)</div><div class="ttdoc">Draw a drawable object to the render target.</div></div>
+<div class="ttc" id="aclasssf_1_1RenderWindow_html"><div class="ttname"><a href="classsf_1_1RenderWindow.html">sf::RenderWindow</a></div><div class="ttdoc">Window that can serve as a target for 2D drawing.</div><div class="ttdef"><b>Definition</b> <a href="RenderWindow_8hpp_source.html#l00054">RenderWindow.hpp:55</a></div></div>
+<div class="ttc" id="aclasssf_1_1VideoMode_html"><div class="ttname"><a href="classsf_1_1VideoMode.html">sf::VideoMode</a></div><div class="ttdoc">VideoMode defines a video mode (size, bpp)</div><div class="ttdef"><b>Definition</b> <a href="VideoMode_8hpp_source.html#l00043">VideoMode.hpp:44</a></div></div>
+<div class="ttc" id="agroup__window_html_ggaf4ff4f60dec5967fb35b419750b17688a5597cd420fc461807e4a201c92adea37"><div class="ttname"><a href="group__window.html#ggaf4ff4f60dec5967fb35b419750b17688a5597cd420fc461807e4a201c92adea37">sf::Style::Default</a></div><div class="ttdeci">@ Default</div><div class="ttdoc">Default window style.</div><div class="ttdef"><b>Definition</b> <a href="WindowEnums_8hpp_source.html#l00044">WindowEnums.hpp:44</a></div></div>
+<div class="ttc" id="anamespacesf_html_a5a1510ae19d01cf19178b8f3ef92a2a1a19bb0af2c3c530538cb41aff7f235b96"><div class="ttname"><a href="namespacesf.html#a5a1510ae19d01cf19178b8f3ef92a2a1a19bb0af2c3c530538cb41aff7f235b96">sf::StencilComparison::NotEqual</a></div><div class="ttdeci">@ NotEqual</div><div class="ttdoc">The stencil test passes if the new value is strictly unequal to the value in the stencil buffer.</div><div class="ttdef"><b>Definition</b> <a href="StencilMode_8hpp_source.html#l00050">StencilMode.hpp:50</a></div></div>
+<div class="ttc" id="anamespacesf_html_a5a1510ae19d01cf19178b8f3ef92a2a1a68eec46437c384d8dad18d5464ebc35c"><div class="ttname"><a href="namespacesf.html#a5a1510ae19d01cf19178b8f3ef92a2a1a68eec46437c384d8dad18d5464ebc35c">sf::StencilComparison::Always</a></div><div class="ttdeci">@ Always</div><div class="ttdoc">The stencil test always passes.</div><div class="ttdef"><b>Definition</b> <a href="StencilMode_8hpp_source.html#l00051">StencilMode.hpp:51</a></div></div>
+<div class="ttc" id="anamespacesf_html_accf495a19b2f6b4f8d9cff3dac777bfda02bce93bff905887ad2233110bf9c49e"><div class="ttname"><a href="namespacesf.html#accf495a19b2f6b4f8d9cff3dac777bfda02bce93bff905887ad2233110bf9c49e">sf::StencilUpdateOperation::Keep</a></div><div class="ttdeci">@ Keep</div><div class="ttdoc">If the stencil test passes, the value in the stencil buffer is not modified.</div><div class="ttdef"><b>Definition</b> <a href="StencilMode_8hpp_source.html#l00062">StencilMode.hpp:62</a></div></div>
+<div class="ttc" id="anamespacesf_html_accf495a19b2f6b4f8d9cff3dac777bfda0ebe6df8a3ac338e0512acc741823fdb"><div class="ttname"><a href="namespacesf.html#accf495a19b2f6b4f8d9cff3dac777bfda0ebe6df8a3ac338e0512acc741823fdb">sf::StencilUpdateOperation::Replace</a></div><div class="ttdeci">@ Replace</div><div class="ttdoc">If the stencil test passes, the value in the stencil buffer is set to the new value.</div><div class="ttdef"><b>Definition</b> <a href="StencilMode_8hpp_source.html#l00064">StencilMode.hpp:64</a></div></div>
+<div class="ttc" id="astructsf_1_1ContextSettings_html"><div class="ttname"><a href="structsf_1_1ContextSettings.html">sf::ContextSettings</a></div><div class="ttdoc">Structure defining the settings of the OpenGL context attached to a window.</div><div class="ttdef"><b>Definition</b> <a href="ContextSettings_8hpp_source.html#l00038">ContextSettings.hpp:39</a></div></div>
+</div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><span class="tt"><a class="el" href="structsf_1_1RenderStates.html" title="Define the states used for drawing to a RenderTarget">sf::RenderStates</a></span>, <span class="tt"><a class="el" href="classsf_1_1RenderTarget.html" title="Base class for all render targets (window, texture, ...)">sf::RenderTarget</a></span> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="StencilMode_8hpp_source.html#l00106">106</a> of file <a class="el" href="StencilMode_8hpp_source.html">StencilMode.hpp</a>.</p>
+</div><a name="doc-related-members" id="doc-related-members"></a><h2 id="header-doc-related-members" class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="ad8233e8089756c2f13ecb37a721224a6" name="ad8233e8089756c2f13ecb37a721224a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8233e8089756c2f13ecb37a721224a6">&#9670;&#160;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structsf_1_1StencilMode.html">StencilMode</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>left</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structsf_1_1StencilMode.html">StencilMode</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>right</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel related">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Overload of the <span class="tt">operator!=</span> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">left</td><td>Left operand </td></tr>
+    <tr><td class="paramname">right</td><td>Right operand</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><span class="tt">true</span> if stencil modes are different, <span class="tt">false</span> if they are equal </dd></dl>
+
+</div>
+</div>
+<a id="a51fba8b31d810e1a958c3feb2da1447e" name="a51fba8b31d810e1a958c3feb2da1447e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51fba8b31d810e1a958c3feb2da1447e">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structsf_1_1StencilMode.html">StencilMode</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>left</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structsf_1_1StencilMode.html">StencilMode</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>right</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel related">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Overload of the <span class="tt">operator==</span> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">left</td><td>Left operand </td></tr>
+    <tr><td class="paramname">right</td><td>Right operand</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><span class="tt">true</span> if stencil modes are equal, <span class="tt">false</span> if they are different </dd></dl>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="ad1b247f2844eb8dae366c4c8d8977ed2" name="ad1b247f2844eb8dae366c4c8d8977ed2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1b247f2844eb8dae366c4c8d8977ed2">&#9670;&#160;</a></span>stencilComparison</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacesf.html#a5a1510ae19d01cf19178b8f3ef92a2a1">StencilComparison</a> sf::StencilMode::stencilComparison {<a class="el" href="namespacesf.html#a5a1510ae19d01cf19178b8f3ef92a2a1a68eec46437c384d8dad18d5464ebc35c">StencilComparison::Always</a>}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The comparison we're performing the stencil test with. </p>
+
+<p class="definition">Definition at line <a class="el" href="StencilMode_8hpp_source.html#l00108">108</a> of file <a class="el" href="StencilMode_8hpp_source.html">StencilMode.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ae36b6ff4d2a4abcd5d50e21e1a7dbd00" name="ae36b6ff4d2a4abcd5d50e21e1a7dbd00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae36b6ff4d2a4abcd5d50e21e1a7dbd00">&#9670;&#160;</a></span>stencilMask</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structsf_1_1StencilValue.html">StencilValue</a> sf::StencilMode::stencilMask {~0u}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The mask to apply to both the reference value and the value in the stencil buffer. </p>
+
+<p class="definition">Definition at line <a class="el" href="StencilMode_8hpp_source.html#l00112">112</a> of file <a class="el" href="StencilMode_8hpp_source.html">StencilMode.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a85ea4a3427e49de1e788a3d0a5969d51" name="a85ea4a3427e49de1e788a3d0a5969d51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85ea4a3427e49de1e788a3d0a5969d51">&#9670;&#160;</a></span>stencilOnly</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sf::StencilMode::stencilOnly {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether we should update the color buffer in addition to the stencil buffer. </p>
+
+<p class="definition">Definition at line <a class="el" href="StencilMode_8hpp_source.html#l00113">113</a> of file <a class="el" href="StencilMode_8hpp_source.html">StencilMode.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a4e39c228d32fce4822b4c0fce708b15a" name="a4e39c228d32fce4822b4c0fce708b15a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e39c228d32fce4822b4c0fce708b15a">&#9670;&#160;</a></span>stencilReference</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structsf_1_1StencilValue.html">StencilValue</a> sf::StencilMode::stencilReference {0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The reference value we're performing the stencil test with. </p>
+
+<p class="definition">Definition at line <a class="el" href="StencilMode_8hpp_source.html#l00111">111</a> of file <a class="el" href="StencilMode_8hpp_source.html">StencilMode.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a4685ec755a0e33523c3f046636670011" name="a4685ec755a0e33523c3f046636670011"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4685ec755a0e33523c3f046636670011">&#9670;&#160;</a></span>stencilUpdateOperation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacesf.html#accf495a19b2f6b4f8d9cff3dac777bfd">StencilUpdateOperation</a> sf::StencilMode::stencilUpdateOperation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">        <a class="code hl_enumvalue" href="namespacesf.html#accf495a19b2f6b4f8d9cff3dac777bfda02bce93bff905887ad2233110bf9c49e">StencilUpdateOperation::Keep</a>}</div>
+</div><!-- fragment -->
+<p>The update operation to perform if the stencil test passes. </p>
+
+<p class="definition">Definition at line <a class="el" href="StencilMode_8hpp_source.html#l00109">109</a> of file <a class="el" href="StencilMode_8hpp_source.html">StencilMode.hpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="StencilMode_8hpp_source.html">StencilMode.hpp</a></li>
+</ul>
+</div><!-- contents -->
+
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z" /></svg>
+                    Back to top
+                </button>
+            </main>
+            <footer class="md-footer">
+                <div class="md-footer-meta md-typeset">
+                    <div class="md-footer-meta__inner md-grid">
+                        <div class="md-copyright">
+                            <div class="md-copyright__highlight">Copyright &copy; <a href="mailto:laurent@sfml-dev.org">Laurent Gomila</a></div>
+                        </div>
+                        <div class="md-social">
+                            <a href="https://fosstodon.org/@sfml" target="_blank" rel="noopener me" title="SFML on Fosstodon" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.5 102.5 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5m-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com/sfmldev" target="_blank" rel="noopener" title="SFML on Twitter" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="https://bsky.app/profile/sfml.bsky.social" target="_blank" rel="noopener" title="SFML on Bluesky" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M407.8 294.7c-3.3-.4-6.7-.8-10-1.3 3.4.4 6.7.9 10 1.3M288 227.1c-26.1-50.7-97.1-145.2-163.1-191.8C61.6-9.4 37.5-1.7 21.6 5.5 3.3 13.8 0 41.9 0 58.4S9.1 194 15 213.9c19.5 65.7 89.1 87.9 153.2 80.7 3.3-.5 6.6-.9 10-1.4-3.3.5-6.6 1-10 1.4-93.9 14-177.3 48.2-67.9 169.9C220.6 589.1 265.1 437.8 288 361.1c22.9 76.7 49.2 222.5 185.6 103.4 102.4-103.4 28.1-156-65.8-169.9-3.3-.4-6.7-.8-10-1.3 3.4.4 6.7.9 10 1.3 64.1 7.1 133.6-15.1 153.2-80.7C566.9 194 576 75 576 58.4s-3.3-44.7-21.6-52.9c-15.8-7.1-40-14.9-103.2 29.8C385.1 81.9 314.1 176.4 288 227.1"
+                                    ></path>
+                                </svg>
+                            </a>
+                            <a href="https://discord.gg/nr4X7Fh" target="_blank" rel="noopener" title="SFML&#39;s Discord Server" class="md-social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                    <!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485 485 0 0 0 404.081 32.03a1.82 1.82 0 0 0-1.923.91 338 338 0 0 0-14.9 30.6 447.9 447.9 0 0 0-134.426 0 310 310 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.7 483.7 0 0 0-119.688 37.107 1.7 1.7 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.02 2.02 0 0 0 .765 1.375 487.7 487.7 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348 348 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321 321 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251 251 0 0 0 9.109-7.137 1.82 1.82 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.81 1.81 0 0 1 1.924.233 235 235 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.4 301.4 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391 391 0 0 0 30.014 48.815 1.86 1.86 0 0 0 2.063.7A486 486 0 0 0 610.7 405.729a1.88 1.88 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541M222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241m195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="md-dialog" data-md-component="dialog">
+            <div class="md-dialog__inner md-typeset"></div>
+        </div>
+        <script id="__config" type="application/json">
+            {
+                "base": "../..",
+                "features": ["content.code.copy", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.prune", "navigation.path", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "search.suggest"],
+                "search": "../../../assets/javascripts/workers/search.973d3a69.min.js",
+                "translations": {
+                    "clipboard.copied": "Copied to clipboard",
+                    "clipboard.copy": "Copy to clipboard",
+                    "search.result.more.one": "1 more on this page",
+                    "search.result.more.other": "# more on this page",
+                    "search.result.none": "No matching documents",
+                    "search.result.one": "1 matching document",
+                    "search.result.other": "# matching documents",
+                    "search.result.placeholder": "Type to start searching",
+                    "search.result.term.missing": "Missing",
+                    "select.version": "Select version"
+                }
+            }
+        </script>
+        <script src="../../javascripts/bundle.js"></script>
+    </body>
+</html>

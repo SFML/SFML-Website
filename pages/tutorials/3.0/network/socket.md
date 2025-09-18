@@ -40,7 +40,7 @@ The one-to-one communication of TCP sockets doesn't allow that.
 As you can guess, this part is specific to TCP sockets.
 There are two sides to a connection: the one that waits for the incoming connection (let's call it the server), and the one that triggers it (let's call it the client).
 
-On client side, things are simple: the user just needs to have a [`sf::TcpSocket`](../../../documentation/3.0.1/classsf_1_1TcpSocket.html "sf::TcpSocket documentation") and call its `connect` function to start the connection attempt.
+On client side, things are simple: the user just needs to have a [`sf::TcpSocket`](../../../documentation/3.0.2/classsf_1_1TcpSocket.html "sf::TcpSocket documentation") and call its `connect` function to start the connection attempt.
 
 ```cpp
 #include <SFML/Network.hpp>
@@ -54,7 +54,7 @@ if (status != sf::Socket::Status::Done)
 ```
 
 The first argument is the address of the host to connect to.
-It is an [`sf::IpAddress`](../../../documentation/3.0.1/classsf_1_1IpAddress.html "sf::IpAddress documentation"), which can represent any valid address: a URL, an IP address, or a network host name.
+It is an [`sf::IpAddress`](../../../documentation/3.0.2/classsf_1_1IpAddress.html "sf::IpAddress documentation"), which can represent any valid address: a URL, an IP address, or a network host name.
 See its documentation for more details.
 
 The second argument is the port to connect to on the remote machine.
@@ -75,7 +75,7 @@ See the next chapters for more details.
 On the server side, a few more things have to be done.
 Multiple sockets are required: One that listens for incoming connections, and one for each connected client.
 
-To listen for connections, you must use the special [`sf::TcpListener`](../../../documentation/3.0.1/classsf_1_1TcpListener.html "sf::TcpListener documentation") class.
+To listen for connections, you must use the special [`sf::TcpListener`](../../../documentation/3.0.2/classsf_1_1TcpListener.html "sf::TcpListener documentation") class.
 Its only role is to wait for incoming connection attempts on a given port, it can't send or receive data.
 
 ```cpp
@@ -128,7 +128,7 @@ UDP sockets that send data don't need to do anything before sending.
 
 Sending and receiving data is done in the same way for both types of sockets.
 The only difference is that UDP has two extra arguments: the address and port of the sender/recipient.
-There are two different functions for each operation: the low-level one, that sends/receives a raw array of bytes, and the higher-level one, which uses the [`sf::Packet`](../../../documentation/3.0.1/classsf_1_1Packet.html "sf::Packet documentation") class.
+There are two different functions for each operation: the low-level one, that sends/receives a raw array of bytes, and the higher-level one, which uses the [`sf::Packet`](../../../documentation/3.0.2/classsf_1_1Packet.html "sf::Packet documentation") class.
 See the [tutorial on packets](packet.md "Tutorial on packets") for more details about this class.
 In this tutorial, we'll only explain the low-level functions.
 
@@ -200,9 +200,9 @@ A more robust and flexible approach involves using [packets](packet.md "Tutorial
 Blocking on a single socket can quickly become annoying, because you will most likely have to handle more than one client.
 You most likely don't want socket A to block your program while socket B has received something that could be processed.
 What you would like is to block on multiple sockets at once, i.e. waiting until *any of them* has received something.
-This is possible with socket selectors, represented by the [`sf::SocketSelector`](../../../documentation/3.0.1/classsf_1_1SocketSelector.html "sf::SocketSelector documentation") class.
+This is possible with socket selectors, represented by the [`sf::SocketSelector`](../../../documentation/3.0.2/classsf_1_1SocketSelector.html "sf::SocketSelector documentation") class.
 
-A selector can monitor all types of sockets: [`sf::TcpSocket`](../../../documentation/3.0.1/classsf_1_1TcpSocket.html "sf::TcpSocket documentation"), [`sf::UdpSocket`](../../../documentation/3.0.1/classsf_1_1UdpSocket.html "sf::UdpSocket documentation"), and [`sf::TcpListener`](../../../documentation/3.0.1/classsf_1_1TcpListener.html "sf::TcpListener documentation").
+A selector can monitor all types of sockets: [`sf::TcpSocket`](../../../documentation/3.0.2/classsf_1_1TcpSocket.html "sf::TcpSocket documentation"), [`sf::UdpSocket`](../../../documentation/3.0.2/classsf_1_1UdpSocket.html "sf::UdpSocket documentation"), and [`sf::TcpListener`](../../../documentation/3.0.2/classsf_1_1TcpListener.html "sf::TcpListener documentation").
 To add a socket to a selector, use its `add` function:
 
 ```cpp
@@ -232,7 +232,7 @@ else
 ```
 
 If the `wait` function returns `true`, it means that one or more socket(s) have received something, and you can safely call `receive` on the socket(s) with pending data without having them block.
-If the socket is a [`sf::TcpListener`](../../../documentation/3.0.1/classsf_1_1TcpListener.html "sf::TcpListener documentation"), it means that an incoming connection is ready to be accepted and that you can call its `accept` function without having it block.
+If the socket is a [`sf::TcpListener`](../../../documentation/3.0.2/classsf_1_1TcpListener.html "sf::TcpListener documentation"), it means that an incoming connection is ready to be accepted and that you can call its `accept` function without having it block.
 
 Since the selector is not a socket container, it cannot return the sockets that are ready to receive.
 Instead, you must test each candidate socket with the `isReady` function:
@@ -251,7 +251,7 @@ if (selector.wait(sf::seconds(10.f)))
 }
 ```
 
-You can have a look at the API documentation of the [`sf::SocketSelector`](../../../documentation/3.0.1/classsf_1_1SocketSelector.html "sf::SocketSelector documentation") class for a working example of how to use a selector to handle connections and messages from multiple clients.
+You can have a look at the API documentation of the [`sf::SocketSelector`](../../../documentation/3.0.2/classsf_1_1SocketSelector.html "sf::SocketSelector documentation") class for a working example of how to use a selector to handle connections and messages from multiple clients.
 
 As a bonus, the time out capability of `Selector::wait` allows you to implement a receive-with-timeout function, which is not directly available in the socket classes, very easily:
 

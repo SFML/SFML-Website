@@ -9,7 +9,7 @@ These functions cover _almost_ all the possible use cases -- but not all.
 
 Sometimes you want to load files from unusual places, such as a compressed/encrypted archive, or a remote network location for example.
 For these special situations, SFML provides a third loading option: `loadFromStream` or `openFromStream`.
-This function reads data using an abstract [`sf::InputStream`](../../../documentation/3.0.1/classsf_1_1InputStream.html "sf::InputStream documentation") interface, which allows you to provide your own implementation of a stream class that works with SFML.
+This function reads data using an abstract [`sf::InputStream`](../../../documentation/3.0.2/classsf_1_1InputStream.html "sf::InputStream documentation") interface, which allows you to provide your own implementation of a stream class that works with SFML.
 
 In this tutorial you'll learn how to write and use your own derived input stream.
 
@@ -27,7 +27,7 @@ That's why SFML provides its own stream interface which is hopefully a lot more 
 
 ## InputStream
 
-The [`sf::InputStream`](../../../documentation/3.0.1/classsf_1_1InputStream.html "sf::InputStream documentation") class declares four virtual functions:
+The [`sf::InputStream`](../../../documentation/3.0.2/classsf_1_1InputStream.html "sf::InputStream documentation") class declares four virtual functions:
 
 ```cpp
 class InputStream
@@ -78,14 +78,14 @@ sf::Texture texture(stream);
 If you need a demonstration that helps you focus on how the code works, and not get lost in implementation details, you could take a look at the implementation of `sf::FileInputStream` or `sf::MemoryInputStream`.
 
 Don't forget to check the forum and wiki.
-Chances are that another user already wrote a [`sf::InputStream`](../../../documentation/3.0.1/classsf_1_1InputStream.html "sf::InputStream documentation") class that suits your needs.
+Chances are that another user already wrote a [`sf::InputStream`](../../../documentation/3.0.2/classsf_1_1InputStream.html "sf::InputStream documentation") class that suits your needs.
 And if you write a new one and feel like it could be useful to other people as well, don't hesitate to share!
 
 ## Common mistakes
 
 Some resource classes are not loaded completely after `openFromStream` has been called.
 Instead, they continue to read from their data source as long as they are used.
-This is the case for [`sf::Music`](../../../documentation/3.0.1/classsf_1_1Music.html "sf::Music documentation"), which streams audio samples as they are played, and for [`sf::Font`](../../../documentation/3.0.1/classsf_1_1Font.html "sf::Font documentation"), which loads glyphs on the fly depending on the text that is displayed.
+This is the case for [`sf::Music`](../../../documentation/3.0.2/classsf_1_1Music.html "sf::Music documentation"), which streams audio samples as they are played, and for [`sf::Font`](../../../documentation/3.0.2/classsf_1_1Font.html "sf::Font documentation"), which loads glyphs on the fly depending on the text that is displayed.
 
 As a consequence, the stream instance that you used to load a music or a font, as well as its data source, must remain alive as long as the resource uses it.
 If it is destroyed while still being used, it results in undefined behavior (can be a crash, corrupt data, or nothing visible).

@@ -20,7 +20,7 @@ This is very important to keep in mind.
 All the sounds and music in your audio environment will be heard by a single actor: the _listener_.
 What is output from your speakers is determined by what the listener hears.
 
-The namespace which defines the listener's properties is [`sf::Listener`](../../../documentation/3.0.1/namespacesf_1_1Listener.html "sf::Listener documentation").
+The namespace which defines the listener's properties is [`sf::Listener`](../../../documentation/3.0.2/namespacesf_1_1Listener.html "sf::Listener documentation").
 
 First, you can set the listener's position in the scene:
 

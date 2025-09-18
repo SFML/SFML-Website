@@ -12,7 +12,7 @@ var indexSectionsWithContent =
   9: "dhorstuw",
   10: "s",
   11: "agmnsw",
-  12: "ds"
+  12: "desw"
 };
 
 var indexSectionNames =

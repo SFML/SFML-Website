@@ -2,23 +2,23 @@
 
 ## Sound or music?
 
-SFML provides two classes for playing audio: [`sf::Sound`](../../../documentation/3.0.1/classsf_1_1Sound.html "sf::Sound documentation") and [`sf::Music`](../../../documentation/3.0.1/classsf_1_1Music.html "sf::Music documentation").
+SFML provides two classes for playing audio: [`sf::Sound`](../../../documentation/3.0.2/classsf_1_1Sound.html "sf::Sound documentation") and [`sf::Music`](../../../documentation/3.0.2/classsf_1_1Music.html "sf::Music documentation").
 They both provide more or less the same features, the main difference is how they work.
 
-[`sf::Sound`](../../../documentation/3.0.1/classsf_1_1Sound.html "sf::Sound documentation") is a lightweight object that plays loaded audio data from an [`sf::SoundBuffer`](../../../documentation/3.0.1/classsf_1_1SoundBuffer.html "sf::SoundBuffer documentation").
+[`sf::Sound`](../../../documentation/3.0.2/classsf_1_1Sound.html "sf::Sound documentation") is a lightweight object that plays loaded audio data from an [`sf::SoundBuffer`](../../../documentation/3.0.2/classsf_1_1SoundBuffer.html "sf::SoundBuffer documentation").
 It should be used for small sounds that can fit in memory and should suffer no lag when they are played.
 Examples are gun shots, foot steps, etc.
 
-[`sf::Music`](../../../documentation/3.0.1/classsf_1_1Music.html "sf::Music documentation") doesn't load all the audio data into memory, instead it streams it on the fly from the source file.
+[`sf::Music`](../../../documentation/3.0.2/classsf_1_1Music.html "sf::Music documentation") doesn't load all the audio data into memory, instead it streams it on the fly from the source file.
 It is typically used to play compressed music that lasts several minutes, and would otherwise take many seconds to load and eat hundreds of MB in memory.
 
 ## Loading and playing a sound
 
-As mentioned above, the sound data is not stored directly in [`sf::Sound`](../../../documentation/3.0.1/classsf_1_1Sound.html "sf::Sound documentation") but in a separate class named [`sf::SoundBuffer`](../../../documentation/3.0.1/classsf_1_1SoundBuffer.html "sf::SoundBuffer documentation").
+As mentioned above, the sound data is not stored directly in [`sf::Sound`](../../../documentation/3.0.2/classsf_1_1Sound.html "sf::Sound documentation") but in a separate class named [`sf::SoundBuffer`](../../../documentation/3.0.2/classsf_1_1SoundBuffer.html "sf::SoundBuffer documentation").
 This class encapsulates the audio data, which is basically an array of 16-bit signed integers called "audio samples".
 A sample is the amplitude of the sound signal at a given point in time, and an array of samples therefore represents a full sound.
 
-In fact, the [`sf::Sound`](../../../documentation/3.0.1/classsf_1_1Sound.html "sf::Sound documentation")/[`sf::SoundBuffer`](../../../documentation/3.0.1/classsf_1_1SoundBuffer.html "sf::SoundBuffer documentation") classes work the same way as [`sf::Sprite`](../../../documentation/3.0.1/classsf_1_1Sprite.html "sf::Sprite documentation")/[`sf::Texture`](../../../documentation/3.0.1/classsf_1_1Texture.html "sf::Texture documentation") from the graphics module.
+In fact, the [`sf::Sound`](../../../documentation/3.0.2/classsf_1_1Sound.html "sf::Sound documentation")/[`sf::SoundBuffer`](../../../documentation/3.0.2/classsf_1_1SoundBuffer.html "sf::SoundBuffer documentation") classes work the same way as [`sf::Sprite`](../../../documentation/3.0.2/classsf_1_1Sprite.html "sf::Sprite documentation")/[`sf::Texture`](../../../documentation/3.0.2/classsf_1_1Texture.html "sf::Texture documentation") from the graphics module.
 So if you understand how sprites and textures work together, you can apply the same concept to sounds and sound buffers.
 
 You can load a sound buffer from a file on disk with its `loadFromFile` function or its corresponding constructor:
@@ -63,7 +63,7 @@ Since `loadFromSamples` and its corresponding constructor loads a raw array of s
 The first one (third argument) is the number of channels; 1 channel defines a mono sound, 2 channels define a stereo sound, etc.
 The second additional attribute (fourth argument) is the sample rate; it defines how many samples must be played per second in order to reconstruct the original sound.
 
-Now that the audio data is loaded, we can play it with an [`sf::Sound`](../../../documentation/3.0.1/classsf_1_1Sound.html "sf::Sound documentation") instance.
+Now that the audio data is loaded, we can play it with an [`sf::Sound`](../../../documentation/3.0.2/classsf_1_1Sound.html "sf::Sound documentation") instance.
 
 ```cpp
 sf::SoundBuffer buffer;
@@ -81,7 +81,7 @@ This means that you are free to do whatever you want after calling `play()` (exc
 
 ## Playing a music
 
-Unlike [`sf::Sound`](../../../documentation/3.0.1/classsf_1_1Sound.html "sf::Sound documentation"), [`sf::Music`](../../../documentation/3.0.1/classsf_1_1Music.html "sf::Music documentation") doesn't pre-load the audio data.
+Unlike [`sf::Sound`](../../../documentation/3.0.2/classsf_1_1Sound.html "sf::Sound documentation"), [`sf::Music`](../../../documentation/3.0.2/classsf_1_1Music.html "sf::Music documentation") doesn't pre-load the audio data.
 Instead it streams the data directly from the source.
 The initialization of music is thus more direct:
 
@@ -103,7 +103,7 @@ This function merely opens it.
 The data is only loaded later when the music is played.
 It also helps to keep in mind that the audio file has to remain available as long as it is played.
  
-The other loading functions of [`sf::Music`](../../../documentation/3.0.1/classsf_1_1Music.html "sf::Music documentation") follow the same convention: `openFromMemory`, `openFromStream`.
+The other loading functions of [`sf::Music`](../../../documentation/3.0.2/classsf_1_1Music.html "sf::Music documentation") follow the same convention: `openFromMemory`, `openFromStream`.
 
 ## What's next?
 
@@ -220,7 +220,7 @@ fileData.clear();
 
 ### sf::Music is not copyable
 
-The final "mistake" is a reminder: the [`sf::Music`](../../../documentation/3.0.1/classsf_1_1Music.html "sf::Music documentation") class is *not copyable*, so you won't be allowed to do that:
+The final "mistake" is a reminder: the [`sf::Music`](../../../documentation/3.0.2/classsf_1_1Music.html "sf::Music documentation") class is *not copyable*, so you won't be allowed to do that:
 
 ```cpp
 sf::Music music;

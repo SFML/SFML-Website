@@ -34,7 +34,7 @@ Floating point types should normally have their fixed-size equivalent too, but i
 
 ## Packets
 
-The two other problems (endianness and message boundaries) are solved by using a specific class to pack your data: [`sf::Packet`](../../../documentation/3.0.1/classsf_1_1Packet.html "sf::Packet documentation").
+The two other problems (endianness and message boundaries) are solved by using a specific class to pack your data: [`sf::Packet`](../../../documentation/3.0.2/classsf_1_1Packet.html "sf::Packet documentation").
 As a bonus, it provides a much nicer interface than plain old byte arrays.
 
 Packets have a programming interface similar to standard streams: you can insert data with `operator<<` and extract data with the `operator>>`.
@@ -73,7 +73,7 @@ else
 }
 ```
 
-Sending and receiving packets is as easy as sending/receiving an array of bytes: sockets have an overload of `send` and `receive` that directly accept a [`sf::Packet`](../../../documentation/3.0.1/classsf_1_1Packet.html "sf::Packet documentation").
+Sending and receiving packets is as easy as sending/receiving an array of bytes: sockets have an overload of `send` and `receive` that directly accept a [`sf::Packet`](../../../documentation/3.0.2/classsf_1_1Packet.html "sf::Packet documentation").
 
 ```cpp
 // with a TCP socket
@@ -89,14 +89,14 @@ udpSocket.receive(packet, senderAddress, senderPort);
 
 Packets solve the "message boundaries" problem, which means that when you send a packet on a TCP socket, you receive the exact same packet on the other end.
 It cannot contain fewer bytes or bytes from the next packet that you send.
-However, it has a slight drawback: To preserve message boundaries, [`sf::Packet`](../../../documentation/3.0.1/classsf_1_1Packet.html "sf::Packet documentation") has to send some extra bytes along with your data, which implies that you can only receive them with a [`sf::Packet`](../../../documentation/3.0.1/classsf_1_1Packet.html "sf::Packet documentation") if you want them to be properly decoded.
+However, it has a slight drawback: To preserve message boundaries, [`sf::Packet`](../../../documentation/3.0.2/classsf_1_1Packet.html "sf::Packet documentation") has to send some extra bytes along with your data, which implies that you can only receive them with a [`sf::Packet`](../../../documentation/3.0.2/classsf_1_1Packet.html "sf::Packet documentation") if you want them to be properly decoded.
 Simply put, you can't send an SFML packet to a non-SFML packet recipient, it has to use an SFML packet for receiving too.
 Note that this applies to TCP only, UDP is fine since the protocol itself preserves message boundaries.
 
 ## Extending packets to handle user types
 
 Packets have overloads of their operators for all the primitive types and the most common standard types, but what about your own classes?
-As with standard streams, you can make a type "compatible" with [`sf::Packet`](../../../documentation/3.0.1/classsf_1_1Packet.html "sf::Packet documentation") by providing an overload of the `<<` and `>>` operators.
+As with standard streams, you can make a type "compatible" with [`sf::Packet`](../../../documentation/3.0.2/classsf_1_1Packet.html "sf::Packet documentation") by providing an overload of the `<<` and `>>` operators.
 
 ```cpp
 struct Character
@@ -131,7 +131,7 @@ packet >> bob;
 ## Custom packets
 
 Packets provide nice features on top of your raw data, but what if you want to add your own features such as automatically compressing or encrypting the data?
-This can easily be done by deriving from [`sf::Packet`](../../../documentation/3.0.1/classsf_1_1Packet.html "sf::Packet documentation") and overriding the following functions:
+This can easily be done by deriving from [`sf::Packet`](../../../documentation/3.0.2/classsf_1_1Packet.html "sf::Packet documentation") and overriding the following functions:
 
 - `onSend`: called before the data is sent by the socket
 - `onReceive`: called after the data has been received by the socket
@@ -159,7 +159,7 @@ class ZipPacket : public sf::Packet
 };
 ```
 
-Such a packet class can be used exactly like [`sf::Packet`](../../../documentation/3.0.1/classsf_1_1Packet.html "sf::Packet documentation").
+Such a packet class can be used exactly like [`sf::Packet`](../../../documentation/3.0.2/classsf_1_1Packet.html "sf::Packet documentation").
 All your operator overloads will apply to them as well.
 
 ```cpp

@@ -9,11 +9,11 @@ Fortunately, SFML provides a graphics module which will help you draw 2D entitie
 
 ## The drawing window
 
-To draw the entities provided by the graphics module, you must use a specialized window class: [`sf::RenderWindow`](../../../documentation/3.0.1/classsf_1_1RenderWindow.html "sf::RenderWindow documentation").
-This class is derived from [`sf::Window`](../../../documentation/3.0.1/classsf_1_1Window.html "sf::Window documentation"), and inherits all its functions.
-Everything that you've learnt about [`sf::Window`](../../../documentation/3.0.1/classsf_1_1Window.html "sf::Window documentation") (creation, event handling, controlling the framerate, mixing with OpenGL, etc.) is applicable to [`sf::RenderWindow`](../../../documentation/3.0.1/classsf_1_1RenderWindow.html "sf::RenderWindow documentation") as well.
+To draw the entities provided by the graphics module, you must use a specialized window class: [`sf::RenderWindow`](../../../documentation/3.0.2/classsf_1_1RenderWindow.html "sf::RenderWindow documentation").
+This class is derived from [`sf::Window`](../../../documentation/3.0.2/classsf_1_1Window.html "sf::Window documentation"), and inherits all its functions.
+Everything that you've learnt about [`sf::Window`](../../../documentation/3.0.2/classsf_1_1Window.html "sf::Window documentation") (creation, event handling, controlling the framerate, mixing with OpenGL, etc.) is applicable to [`sf::RenderWindow`](../../../documentation/3.0.2/classsf_1_1RenderWindow.html "sf::RenderWindow documentation") as well.
 
-On top of that, [`sf::RenderWindow`](../../../documentation/3.0.1/classsf_1_1RenderWindow.html "sf::RenderWindow documentation") adds high-level functions to help you draw things easily.
+On top of that, [`sf::RenderWindow`](../../../documentation/3.0.2/classsf_1_1RenderWindow.html "sf::RenderWindow documentation") adds high-level functions to help you draw things easily.
 In this tutorial we'll focus on two of these functions: `clear` and `draw`.
 They are as simple as their name implies: `clear` clears the whole window with the chosen color, and `draw` draws whatever object you pass to it.
 
@@ -82,8 +82,8 @@ Although they share some common properties, each of these entities come with the
 ## Off-screen drawing
 
 SFML also provides a way to draw to a texture instead of directly to a window.
-To do so, use a [`sf::RenderTexture`](../../../documentation/3.0.1/classsf_1_1RenderTexture.html "sf::RenderTexture documentation") instead of a [`sf::RenderWindow`](../../../documentation/3.0.1/classsf_1_1RenderWindow.html "sf::RenderWindow documentation").
-It has the same functions for drawing, inherited from their common base: [`sf::RenderTarget`](../../../documentation/3.0.1/classsf_1_1RenderTarget.html "sf::RenderTarget documentation").
+To do so, use a [`sf::RenderTexture`](../../../documentation/3.0.2/classsf_1_1RenderTexture.html "sf::RenderTexture documentation") instead of a [`sf::RenderWindow`](../../../documentation/3.0.2/classsf_1_1RenderWindow.html "sf::RenderWindow documentation").
+It has the same functions for drawing, inherited from their common base: [`sf::RenderTarget`](../../../documentation/3.0.2/classsf_1_1RenderTarget.html "sf::RenderTarget documentation").
 
 ```cpp
 // create a 500x500 render-texture
@@ -103,9 +103,9 @@ window.draw(sprite);
 ```
 
 The `getTexture` function returns a read-only texture, which means that you can only use it, not modify it.
-If you need to modify it before using it, you can copy it to your own [`sf::Texture`](../../../documentation/3.0.1/classsf_1_1Texture.html "sf::Texture documentation") instance and modify that instead.
+If you need to modify it before using it, you can copy it to your own [`sf::Texture`](../../../documentation/3.0.2/classsf_1_1Texture.html "sf::Texture documentation") instance and modify that instead.
 
-[`sf::RenderTexture`](../../../documentation/3.0.1/classsf_1_1RenderTexture.html "sf::RenderTexture documentation") also has the same functions as [`sf::RenderWindow`](../../../documentation/3.0.1/classsf_1_1RenderWindow.html "sf::RenderWindow documentation") for handling views and OpenGL (see the corresponding tutorials for more details).
+[`sf::RenderTexture`](../../../documentation/3.0.2/classsf_1_1RenderTexture.html "sf::RenderTexture documentation") also has the same functions as [`sf::RenderWindow`](../../../documentation/3.0.2/classsf_1_1RenderWindow.html "sf::RenderWindow documentation") for handling views and OpenGL (see the corresponding tutorials for more details).
 
 ## Drawing from threads
 

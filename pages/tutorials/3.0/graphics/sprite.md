@@ -16,7 +16,7 @@ Ok, that was short but if you really don't understand what sprites and textures 
 ## Loading a texture
 
 Before creating any sprite, we need a valid texture.
-The class that encapsulates textures in SFML is, surprisingly, [`sf::Texture`](../../../documentation/3.0.1/classsf_1_1Texture.html "sf::Texture documentation").
+The class that encapsulates textures in SFML is, surprisingly, [`sf::Texture`](../../../documentation/3.0.2/classsf_1_1Texture.html "sf::Texture documentation").
 Since the only role of a texture is to be loaded and mapped to graphical entities, almost all its functions are about loading and updating it.
 
 The most common way of loading a texture is from an image file on disk, which is done with either the `loadFromFile` function or the corresponding constructor.
@@ -33,8 +33,8 @@ This can usually be changed quite easily in the project settings.
 
 You can also load an image file from memory (`loadFromMemory`), from a [custom input stream](../system/stream.md "Input streams tutorial") (`loadFromStream`), or from an image that has already been loaded (`loadFromImage`).
 Corresponding constructors exist with the same parameters that throw an exception upon failure.
-`loadFromImage` loads the texture from an [`sf::Image`](../../../documentation/3.0.1/classsf_1_1Image.html "sf::Image documentation"), which is a utility class that helps store and manipulate image data (modify pixels, create transparency channel, etc.).
-The pixels of an [`sf::Image`](../../../documentation/3.0.1/classsf_1_1Image.html "sf::Image documentation") stay in system memory, which ensures that operations on them will be as fast as possible, in contrast to the pixels of a texture which reside in video memory and are therefore slow to retrieve or update but very fast to draw.
+`loadFromImage` loads the texture from an [`sf::Image`](../../../documentation/3.0.2/classsf_1_1Image.html "sf::Image documentation"), which is a utility class that helps store and manipulate image data (modify pixels, create transparency channel, etc.).
+The pixels of an [`sf::Image`](../../../documentation/3.0.2/classsf_1_1Image.html "sf::Image documentation") stay in system memory, which ensures that operations on them will be as fast as possible, in contrast to the pixels of a texture which reside in video memory and are therefore slow to retrieve or update but very fast to draw.
 
 SFML supports most common image file formats.
 The full list is available in the API documentation.
@@ -54,7 +54,7 @@ if (!texture.loadFromFile("image.png", false, sf::IntRect({10, 10}, {32, 32})))
 }
 ```
 
-The [`sf::IntRect`](../../../documentation/3.0.1/classsf_1_1Rect.html "sf::IntRect documentation") class is a simple utility type that represents a rectangle.
+The [`sf::IntRect`](../../../documentation/3.0.2/classsf_1_1Rect.html "sf::IntRect documentation") class is a simple utility type that represents a rectangle.
 Its constructor takes the coordinates of the top-left corner, and the size of the rectangle.
 
 If you don't want to load a texture from an image, but instead want to update it directly from an array of pixels, you can create it empty and update it later:
@@ -234,9 +234,9 @@ Try to keep this in mind when you create your animation sheets or your tilesets:
 
 ## Using sf::Texture with OpenGL code
 
-If you're using OpenGL rather than the graphics entities of SFML, you can still use [`sf::Texture`](../../../documentation/3.0.1/classsf_1_1Texture.html "sf::Texture documentation") as a wrapper around an OpenGL texture object and use it along with the rest of your OpenGL code.
+If you're using OpenGL rather than the graphics entities of SFML, you can still use [`sf::Texture`](../../../documentation/3.0.2/classsf_1_1Texture.html "sf::Texture documentation") as a wrapper around an OpenGL texture object and use it along with the rest of your OpenGL code.
 
-To bind a [`sf::Texture`](../../../documentation/3.0.1/classsf_1_1Texture.html "sf::Texture documentation") for drawing (basically `glBindTexture`), you call the `bind` static function:
+To bind a [`sf::Texture`](../../../documentation/3.0.2/classsf_1_1Texture.html "sf::Texture documentation") for drawing (basically `glBindTexture`), you call the `bind` static function:
 
 ```cpp
 sf::Texture texture;
