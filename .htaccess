@@ -27,7 +27,7 @@ RewriteCond %{REQUEST_URI} ^/documentation(/?)(\.php)?$
 RewriteRule ^ /documentation/latest/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/documentation/latest(/?)(.*)$
-RewriteRule /latest(/?)(.*) /documentation/3.0.0/$2 [R=301,L]
+RewriteRule /latest(/?)(.*) /documentation/3.0.2/$2 [R=301,L]
 
 # Tutorial redirects
 RewriteCond %{REQUEST_URI} ^/tutorials(/?)(\.php)?$

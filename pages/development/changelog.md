@@ -15,7 +15,7 @@
 
 -   Add explicit cast for charN_t conversion for Clang 21 ([#3571](https://github.com/SFML/SFML/pull/3571))
 
-### Windows
+### Window
 
 **Bugfixes**
 
