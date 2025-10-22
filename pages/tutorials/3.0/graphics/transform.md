@@ -42,7 +42,7 @@ The rotation is the orientation of the entity in the 2D world clockwise from the
 // 'entity' can be a sf::Sprite, a sf::Text, a sf::Shape or any other transformable class
 
 // set the absolute rotation of the entity
-entity.setRotation(sf::degrees(45);
+entity.setRotation(sf::degrees(45));
 
 // rotate the entity relatively to its current orientation
 entity.rotate(sf::degrees(10));
