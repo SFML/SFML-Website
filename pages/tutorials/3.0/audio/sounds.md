@@ -159,7 +159,7 @@ If it loops, it will restart playing from the beginning when it's finished, agai
 If not set to loop, it will stop automatically when it's finished.
 
 ```cpp
-sound.setLoop(true);
+sound.setLooping(true);
 ```
 
 More attributes are available, but they are related to spatialization and are explained in the [corresponding tutorial](spatialization.md "Spatialization tutorial").
