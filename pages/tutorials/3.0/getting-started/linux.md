@@ -102,6 +102,11 @@ g++ main.o -o sfml-app -L<sfml-install-path>/lib -lsfml-graphics -lsfml-window -
 If you want to have SFML directly integrated into your executable, you must link to the static version. Static SFML libraries have the "-s" suffix, for example: "sfml-xxxx-s".
 You will also need to link the dependancies of each sfml module.
 
+!!! note
+
+     This is a very beginner-hostile workflow and not the recommended way to start learning SFML.
+
+
 | Module          | Dependencies |
 |-----------------|--------------|
 | sfml-graphics-s |<ol><li>sfml-window-s<li>freetype<li>sfml-system-s</li></ol>|
@@ -110,9 +115,9 @@ You will also need to link the dependancies of each sfml module.
 | sfml-network-s  |<ol><li>sfml-system-s</li></ol>|
 | sfml-audio-s    |<ol><li>sfml-system-s<li>FLAC<li>vorbisenc<li>vorbisfile<li>vorbis<li>ogg</li></ol>|
 
-Example with sfml-window and sfml-system.
+Example with sfml-window and sfml-system. You will also need to define SFML_STATIC as a macro either in the script or in the compiler flags.
 ```
-g++ main.o -o sfml-app -lsfml-window-s -lsfml-system-s -lXi -lX11 -lXrandr -lXcursor -ludev
+g++ main.o -o sfml-app -lsfml-window-s -lsfml-system-s -lXi -lX11 -lXrandr -lXcursor -ludev -DSFML_STATIC
 ```
 
 We are now ready to execute the compiled program:
