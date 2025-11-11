@@ -1,4 +1,4 @@
-mkdocs-material==9.6.*
+mkdocs-material==9.7.*
 mkdocs-literate-nav==0.6.*
-mkdocs-macros-plugin==1.0.*
-mkdocs-static-i18n==1.2.*
+mkdocs-macros-plugin==1.4.*
+mkdocs-static-i18n==1.3.*
