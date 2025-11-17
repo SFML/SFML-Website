@@ -1518,9 +1518,37 @@ div.contents ul li {
     margin-top: -11px;
 }
 .arrow {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     cursor: pointer;
+    font-size: 80%;
+    display: inline-block;
+    width: 16px;
+    height: 14px;
+    transition: opacity 0.3s ease;
 }
-
+span.arrowhead {
+    position: relative;
+    padding: 0;
+    margin: 0 0 0 2px;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-right: 2px solid #8cc445;
+    border-bottom: 2px solid #8cc445;
+    transform: rotate(-45deg);
+    transition: transform 0.3s ease;
+}
+span.arrowhead.opened {
+    transform: rotate(45deg);
+}
+.selected span.arrowhead {
+    border-right: 2px solid #B4CE90;
+    border-bottom: 2px solid #B4CE90;
+}
 
 /* Mobile CSS */
 /* Portrait and Landscape */
