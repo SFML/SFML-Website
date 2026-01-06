@@ -21,11 +21,10 @@ All you need to create an SFML application is:
 
 ## Installing SFML
 
-First of all you need to download the SFML SDK for your architecture which is available on the [download page](../../../download/index.md "Go to the download page"). You can then unpack this installation wherever you like and make a note of the path to use during the following setup (indicated by `<sfml-install-path>`)
+First of all you need to download the SFML SDK for your architecture which is available on the [download page](../../../download/index.md "Go to the download page"). 
+You can then unpack this installation wherever you like and make a note of the path to use during the following setup (indicated by `<sfml-install-path>`).
 
-You can also install SFML from [brew](https://brew.sh) by running `brew install sfml`
-
-Then, in order to start developing SFML applications, you have to install the following items:
+You can also install SFML from [brew](https://brew.sh) by running `brew install sfml`.
 
 ## Create your first SFML program
 
@@ -38,7 +37,8 @@ When you are done click next and choose a folder location for your project.
 
 ![Xcode template form](osx-new-project-settings.png "Xcode template form")
 
-Now you have a basic project with a `main.cpp` file for your code. You can replace the contents with this SFML code to draw a green circle:
+Now you have a basic project with a `main.cpp` file for your code. 
+You can replace the contents with this SFML code to draw a green circle:
 
 ```cpp
 #include <SFML/Graphics.hpp>
@@ -64,25 +64,25 @@ int main()
 }
 ```
 
-But currently it will not build, as we need to configure Xcode so it can find SFML's headers and libraries
+But currently it will not build, as we need to configure Xcode so it can find SFML's headers and libraries.
 
-For header paths, select your project on the sidebar, go to the build settings tab and set the Header Search paths (filter can help find the setting) to the `include` folder in your unpacked SFML folder (or brew include folder if using brew, e.g. `/opt/homebrew/include`)
+For header paths, select your project on the sidebar, go to the build settings tab and set the Header Search paths (filter can help find the setting) to the `include` folder in your unpacked SFML folder, e.g. `<sfml-install-path>/include` (or brew include folder if using brew, e.g. `/opt/homebrew/include`).
 
 ![Xcode header settings](osx-header-paths.png "Xcode header search path settings")
 
-For library paths, do the same for the Library Search path setting, using the `lib` folder in your unpacked SFML folder (or brew lib folder if using brew, e.g. `/opt/homebrew/lib`)
+For library paths, do the same for the Library Search path setting, using the `lib` folder in your unpacked SFML folder, .e.g `<sfml-install-path>/lib` (or brew lib folder if using brew, e.g. `/opt/homebrew/lib`).
 
 ![Xcode lib settings](osx-library-paths.png "Xcode library search path settings")
 
-Now the configuration is different whether you decide to use the dynamic or static libraries
+Now the configuration is different whether you decide to use the dynamic or static libraries.
 
 ### Dynamic libraries
 
-To link libraries, Navigate to the "Build Phases" tab in your project settings, and under "Link Binary With Libraries" add SFML's libraries via `Add Other... -> Files`. For dynamic linking you want to select the files with the `dylib` extension
+To link libraries, Navigate to the "Build Phases" tab in your project settings, and under "Link Binary With Libraries" add SFML's libraries via `Add Other... -> Files`. For dynamic linking you want to select the files with the `dylib` extension.
 
 ![Xcode dynamic link settings](osx-dynamic-link.png "Xcode dynamic link settings")
 
-Your project should now build successfully, but will fail at runtime as it can't load the libraries. To fix this you need to provide the lib folder in the runpath search paths setting
+Your project should now build successfully, but will fail at runtime as it can't load the libraries. To fix this you need to provide the lib folder in the runpath search paths setting.
 
 ![Xcode runpath settings](osx-runpath.png "Xcode runpath settings")
 
@@ -92,13 +92,13 @@ To use the static libraries, Navigate to the "Build Phases" tab in your project 
 
 ![Xcode static link settings](osx-static-link.png "Xcode static link settings")
 
-Finally, as SFML utilises Objective-C classes you must add the `-ObjC` flag to ensure they are linked correctly, that goes in the build settings under "Other Linker flags"
+Finally, as SFML utilises Objective-C classes you must add the `-ObjC` flag to ensure they are linked correctly, that goes in the build settings under "Other Linker flags".
 
 ![Xcode objc flag](osx-objc-flag.png "Xcode objc flag settings")
 
 ## Running your program
 
-You should now be able to build and run your program via the button near the top left, or the `⌘ + R` shortcut
+You should now be able to build and run your program via the button near the top left, or the `⌘ + R` shortcut.
 
 ![Xcode result](osx-result.png "Xcode running program")
 
