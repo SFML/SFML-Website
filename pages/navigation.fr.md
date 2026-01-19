@@ -93,6 +93,7 @@
     * Bindings
         * download/bindings/index*.md
         * download/csfml/index*.md
+        * download/sfml.net/index*.md
     * download/goodies/*.md
 * [Communauté](community/index.md)
 * Développement
