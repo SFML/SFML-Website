@@ -16,7 +16,7 @@ hide:
 
     In development versions
 
--   [![](../images/icons/bindings.png){ align=left } __Bindings__](bindings.md)
+-   [![](../images/icons/bindings.png){ align=left } __Bindings__](bindings/index.md)
 
     SFML in other languages
 

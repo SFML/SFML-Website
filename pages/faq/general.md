@@ -22,7 +22,7 @@ Since SFML 2.2, there has also been experimental support for iOS and Android, wh
 ### Which programming languages are supported by SFML? {: #languages}
 
 SFML is implemented in C++.
-That said, several [bindings](../download/bindings.md) have been created for other languages that allow SFML to be used from C, C#, C++/CLI, D, Ruby, OCaml, Java, Python and VB.NET.
+That said, several [bindings](../download/bindings/index.md) have been created for other languages that allow SFML to be used from C, C#, C++/CLI, D, Ruby, OCaml, Java, Python and VB.NET.
 
 ### What dependencies does SFML have? {: #dependencies}
 

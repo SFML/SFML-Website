@@ -35,5 +35,5 @@ Pre-compiled SDKs for your favorite OS are available on the [download page](dow
 
 SFML has official bindings for the C and .Net languages. And thanks to its active community, it is also available in many other languages such as Java, Ruby, Python, Go, and more.
 
-Learn more about them on the [bindings page](download/bindings.md "Go to the bindings page").
+Learn more about them on the [bindings page](download/bindings/index.md "Go to the bindings page").
 </div>
