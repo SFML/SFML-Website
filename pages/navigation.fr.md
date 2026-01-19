@@ -90,7 +90,9 @@
     * download/sfml/3.0.0*.md
     * [SFML 2.6.2](https://www.sfml-dev.org/download/sfml/2.6.2/index-fr.php)
     * download/sfml/index*.md
-    * download/bindings*.md
+    * Bindings
+        * download/bindings/index*.md
+        * download/csfml/index*.md
     * download/goodies/*.md
 * [Communauté](community/index.md)
 * Développement
