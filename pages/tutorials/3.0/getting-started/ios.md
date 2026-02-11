@@ -22,7 +22,9 @@ It will give you the option to add iOS support and/or simulators on first launch
 
 ## Compiling and running an SFML app
 
-CMake has first-class support for cross-compiling to iOS on your mac. You simply set the system name when configuring projects. Make sure to use the Xcode generator unless you are comfortable handling the packaging, installing, launching and debugging of the app yourself
+CMake has first-class support for cross-compiling to iOS on your mac.
+You simply set the system name when configuring projects.
+Make sure to use the Xcode generator unless you are comfortable handling the packaging, installing, launching and debugging of the app yourself.
 
 `cmake -B build/ios -DCMAKE_SYSTEM_NAME=iOS -GXcode`
 
