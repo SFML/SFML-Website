@@ -6,7 +6,7 @@ This tutorial is the first one you should read if you want to build for iOS with
 
 !!! note
 
-    The [CMake template](cmake.md) is the recommended way to get started with SFMLL, use the `mobile` branch to support iOS
+    The [CMake template](cmake.md) is the recommended way to get started with SFML, use the `mobile` branch to support iOS.
 
 ## Setup
 
