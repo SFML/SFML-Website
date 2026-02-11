@@ -28,16 +28,17 @@ Make sure to use the Xcode generator unless you are comfortable handling the pac
 
 `cmake -B build/ios -DCMAKE_SYSTEM_NAME=iOS -GXcode`
 
-This will generate the xcode project file (`xcodeproj` extension) in the `build/ios` folder which you can open in xcode
+This will generate the Xcode project file (`xcodeproj` extension) in the `build/ios` folder which you can open in Xcode.
 
-If it isn't already, select your main executable (main in the screenshot below) from the target dropdown at the top, and also select which device you want to build/run on (an iPhone 17 Pro simulator here)
+If it isn't already, select your main executable (main in the screenshot below) from the target dropdown at the top, and also select which device you want to build/run on (an iPhone 17 Pro simulator here).
 
 ![Xcode toolbar](xcode-ios-toolbar.png)
 
-At this point you should be able to build and run your app on an iOS simulator
+At this point you should be able to build and run your app on an iOS simulator.
 
 ## Building and running for a real device
-Real devices require some bundle properties to be set, which can be easily done via CMake
+
+Real devices require some bundle properties to be set, which can be easily done via CMake.
 
 ```cmake
 set_target_properties(main PROPERTIES
@@ -46,6 +47,7 @@ set_target_properties(main PROPERTIES
     MACOSX_BUNDLE_GUI_IDENTIFIER "com.me.my-project")
 ```
 
-It will also require signing by a development team requiring an apple developer account if you wish to run on a real device. Once you have signed into your developer account in the xcode preferences you can select a development team on the "Signing and Capabilities" tab in the build settings
+It will also require signing by a development team requiring an apple developer account if you wish to run on a real device.
+Once you have signed into your developer account in the Xcode preferences you can select a development team on the "Signing and Capabilities" tab in the build settings
 
 ![iOS signing settings](ios-signing.png)
