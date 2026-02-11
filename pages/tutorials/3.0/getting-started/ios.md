@@ -10,7 +10,7 @@ This tutorial is the first one you should read if you want to build for iOS with
 
 ## Setup
 
-If you want to manually set up an xcode project for iOS and use SFML with it, the process is almost identical to the setup for [macOS](macos.md), however you will need to build the SFML binaries yourself as SFML does not currently offer them for download.
+If you want to manually set up an Xcode project for iOS and use SFML with it, the process is almost identical to the setup for [macOS](macos.md), however you will need to build the SFML binaries yourself as SFML does not currently offer them for download.
 
 By far the easiest way to build for iOS is if you have an existing cmake project using SFML, or have started with the [CMake template project](cmake.md) (Make sure to use the `mobile` branch) So that is what this tutorial will cover
 
