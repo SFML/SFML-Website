@@ -6,6 +6,7 @@
 /progressbar-osx-values.php
 /google*.html
 .cache/*
+.DS_Store
 
 # Transition phase
 site/*
