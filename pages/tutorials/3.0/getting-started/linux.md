@@ -100,7 +100,7 @@ If you installed SFML to a non-standard path, you'll need to tell the linker whe
 g++ main.o -o sfml-app -L<sfml-install-path>/lib -lsfml-graphics -lsfml-window -lsfml-system
 ```
 If you want to have SFML directly integrated into your executable, you must link to the static version. Static SFML libraries have the "-s" suffix, for example: "sfml-xxxx-s".
-You will also need to link the dependancies of each sfml module.
+You will also need to link the dependencies of each sfml module.
 
 
 | Module          | Dependencies |
