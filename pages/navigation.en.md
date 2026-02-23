@@ -1,8 +1,8 @@
 * [Home](index.en.md)
 * Learn
     * learn/*.md
-    * [Tutorials](tutorials/3.0/index.md)
-    * [Documentation](documentation/3.0.2/index.html)
+    * [Tutorials](tutorials/3.1/index.md)
+    * [Documentation](documentation/3.1.0/index.html)
     * FAQ
         * faq/index*.md
         * faq/general*.md
@@ -19,6 +19,44 @@
         * [Miscellaneous](https://github.com/SFML/SFML/wiki/Community-FAQ#misc)
     * [License](license.md)
 * Tutorials
+    * [SFML 3.1](tutorials/3.1/index.md)
+        * Getting Started
+            * tutorials/3.1/getting-started/migrate*.md
+            * tutorials/3.1/getting-started/cmake*.md
+            * tutorials/3.1/getting-started/visual-studio*.md
+            * tutorials/3.1/getting-started/code-blocks*.md
+            * tutorials/3.1/getting-started/linux*.md
+            * tutorials/3.1/getting-started/macos*.md
+            * tutorials/3.1/getting-started/ios*.md
+            * tutorials/3.1/getting-started/build-from-source*.md
+        * System
+            * tutorials/3.1/system/angle*.md
+            * tutorials/3.1/system/time*.md
+            * tutorials/3.1/system/stream*.md
+        * Window
+            * tutorials/3.1/window/window*.md
+            * tutorials/3.1/window/events*.md
+            * tutorials/3.1/window/inputs*.md
+            * tutorials/3.1/window/opengl*.md
+        * Graphics
+            * tutorials/3.1/graphics/draw*.md
+            * tutorials/3.1/graphics/sprite*.md
+            * tutorials/3.1/graphics/text*.md
+            * tutorials/3.1/graphics/shape*.md
+            * tutorials/3.1/graphics/vertex-array*.md
+            * tutorials/3.1/graphics/transform*.md
+            * tutorials/3.1/graphics/shader*.md
+            * tutorials/3.1/graphics/view*.md
+        * Audio
+            * tutorials/3.1/audio/sounds*.md
+            * tutorials/3.1/audio/recording*.md
+            * tutorials/3.1/audio/streams*.md
+            * tutorials/3.1/audio/spatialization*.md
+        * Network
+            * tutorials/3.1/network/socket*.md
+            * tutorials/3.1/network/packet*.md
+            * tutorials/3.1/network/http*.md
+            * tutorials/3.1/network/ftp*.md
     * [SFML 3.0](tutorials/3.0/index.md)
         * Getting Started
             * tutorials/3.0/getting-started/migrate*.md
@@ -66,6 +104,7 @@
     * [SFML 2.0](https://www.sfml-dev.org/tutorials/2.0)
     * [SFML 1.6](https://www.sfml-dev.org/tutorials/1.6)
 * Documentation
+    * [SFML 3.1.0](documentation/3.1.0/index.html)
     * [SFML 3.0.2](documentation/3.0.2/index.html)
     * [SFML 3.0.1](documentation/3.0.1/index.html)
     * [SFML 3.0.0](documentation/3.0.0/index.html)
@@ -86,6 +125,7 @@
     * [SFML 1.6](https://www.sfml-dev.org/documentation/1.6/)
 * Download
     * download/index*.md
+    * download/sfml/3.1.0*.md
     * download/sfml/3.0.2*.md
     * download/sfml/3.0.1*.md
     * download/sfml/3.0.0*.md

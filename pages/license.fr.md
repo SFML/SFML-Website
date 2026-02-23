@@ -35,11 +35,15 @@ Pour résumer, SFML est libre pour toute utilisation (commerciale ou personnelle
 
 ## Bibliothèques externes utilisées par SFML
 
-- **[freetype](http://www.freetype.org/ "Site de FreeType")** est distribuée sous [licence FTL](http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT "Termes de la licence FTL") ou [licence GPL](http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/GPLv2.TXT "Termes de la licence GPL")
-- **[libjpeg](http://www.ijg.org/ "Site de libjpeg")** est dans le domaine public
-- **[stb_image](http://nothings.org/stb_image.c "Site de stb_image")** est dans le domaine public
-- **[OpenAL Soft](http://kcat.strangesoft.net/openal.html "Site de OpenAL Soft")** est distribuée sous [licence LGPL](http://www.gnu.org/copyleft/lesser.html "Termes de la licence LGPL")
-- **[libogg](http://www.vorbis.com/ "Vorbis website")** est distribuée sous [licence BSD 3](http://opensource.org/licenses/BSD-3-Clause "Termes de la licence BSD 3")
-- **[libvorbis](http://www.vorbis.com/ "Vorbis website")** est distribuée sous [licence BSD 3](http://opensource.org/licenses/BSD-3-Clause "Termes de la licence BSD 3")
-- **[libflac](https://xiph.org/flac/ "FLAC website")** est distribuée sous [licence BSD 3](http://opensource.org/licenses/BSD-3-Clause "Termes de la licence BSD 3")
-- **[minimp3](https://github.com/lieff/minimp3 "minimp3 repository")** est distribuée sous [CC0 license](https://creativecommons.org/public-domain/cc0/ "Termes de la licence CC0")
+- **[stb\_image et stb\_image\_write](https://github.com/nothings/stb)** sont dans le [domaine public](https://github.com/nothings/stb/blob/master/LICENSE)
+- **[freetype](https://gitlab.freedesktop.org/freetype/freetype)** est sous la [licence FreeType ou la licence GPL](https://gitlab.freedesktop.org/freetype/freetype/-/blob/master/LICENSE.TXT)
+- **[libogg](https://gitlab.xiph.org/xiph/ogg)** est sous la [licence BSD](https://gitlab.xiph.org/xiph/ogg/-/blob/master/COPYING)
+- **[libvorbis](https://gitlab.xiph.org/xiph/vorbis)** est sous la [licence BSD](https://gitlab.xiph.org/xiph/vorbis/-/blob/master/COPYING)
+- **[libflac](https://gitlab.xiph.org/xiph/flac)** est sous la [licence BSD](https://gitlab.xiph.org/xiph/flac/-/blob/master/COPYING.Xiph)
+- **[dr\_mp3](https://github.com/mackron/dr_libs)** est dans le [domaine public ou sous la licence MIT Sans Attribution](https://github.com/mackron/dr_libs/blob/master/LICENSE)
+- **[miniaudio](https://github.com/mackron/miniaudio)** est dans le [domaine public ou sous la licence MIT Sans Attribution](https://github.com/mackron/miniaudio/blob/master/LICENSE)
+- **[cpp-unicodelib](https://github.com/yhirose/cpp-unicodelib)** est sous la [licence MIT](https://github.com/yhirose/cpp-unicodelib/blob/master/LICENSE)
+- **[HarfBuzz](https://github.com/harfbuzz/harfbuzz)** est sous l'[ancienne licence MIT](https://github.com/harfbuzz/harfbuzz/blob/main/COPYING)
+- **[SheenBidi](https://github.com/Tehreer/SheenBidi)** est sous la [licence Apache](https://github.com/Tehreer/SheenBidi/blob/master/LICENSE)
+- **[qoi](https://github.com/phoboslab/qoi)** est sous la [licence MIT](https://github.com/phoboslab/qoi/blob/master/LICENSE)
+- **[Mbed TLS](https://github.com/Mbed-TLS/mbedtls)** est sous la [licence Apache ou la licence GPL](https://github.com/Mbed-TLS/mbedtls/blob/main/LICENSE)

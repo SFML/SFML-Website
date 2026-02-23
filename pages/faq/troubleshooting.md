@@ -9,7 +9,7 @@ hide:
 
 ### I'm having trouble using SFML {: #grl-trouble}
 
-First, make sure that you have followed the installation instructions in the [official tutorials](../tutorials/3.0/index.md).
+First, make sure that you have followed the installation instructions in the [official tutorials](../tutorials/3.1/index.md).
 
 Have you:
 
@@ -335,7 +335,7 @@ Replace your `int main()` or `int main(int argc, char** argv)` with this functio
 
 ### (Debian) I can't compile the source code {: #lnx-compile}
 
-Before anything else, make sure that you've followed the [official tutorial](../tutorials/3.0/index.md) and then check if the following packages have been installed:
+Before anything else, make sure that you've followed the [official tutorial](../tutorials/3.1/index.md) and then check if the following packages have been installed:
 
 - libx11-dev
 - libxi-dev
