@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['b_0',['B',['../namespacesf_1_1Keyboard.html#acb4cacd7cc5802dec45724cf3314a142a9d5ed678fe57bcca610140957afab571',1,'sf::Keyboard::B'],['../namespacesf_1_1Keyboard.html#aed978288ff367518d29cfe0c9e3b295fa9d5ed678fe57bcca610140957afab571',1,'sf::Keyboard::B']]],
+  ['back_1',['Back',['../namespacesf_1_1Keyboard.html#aed978288ff367518d29cfe0c9e3b295fa0557fa923dcee4d0f86b1409f5c2167f',1,'sf::Keyboard']]],
+  ['backcenter_2',['BackCenter',['../group__audio.html#gga9800c7f3d5e7a9c9310f707b2c995ff3a28ce21f1909d32aa33998608a7d22438',1,'sf']]],
+  ['backleft_3',['BackLeft',['../group__audio.html#gga9800c7f3d5e7a9c9310f707b2c995ff3abff6f014d4c53710a1ad968e9b401ccb',1,'sf']]],
+  ['backright_4',['BackRight',['../group__audio.html#gga9800c7f3d5e7a9c9310f707b2c995ff3aa07ea17eb99337c60ed9ad770cf2bb55',1,'sf']]],
+  ['backslash_5',['Backslash',['../namespacesf_1_1Keyboard.html#acb4cacd7cc5802dec45724cf3314a142af6c6379402dce27659f7cffee6bc1f00',1,'sf::Keyboard::Backslash'],['../namespacesf_1_1Keyboard.html#aed978288ff367518d29cfe0c9e3b295faf6c6379402dce27659f7cffee6bc1f00',1,'sf::Keyboard::Backslash']]],
+  ['backspace_6',['Backspace',['../namespacesf_1_1Keyboard.html#acb4cacd7cc5802dec45724cf3314a142acd7d13ceea728b08555f7c818cfb13ef',1,'sf::Keyboard::Backspace'],['../namespacesf_1_1Keyboard.html#aed978288ff367518d29cfe0c9e3b295facd7d13ceea728b08555f7c818cfb13ef',1,'sf::Keyboard::Backspace']]],
+  ['badcommandsequence_7',['BadCommandSequence',['../classsf_1_1Ftp_1_1Response.html#af81738f06b6f571761696291276acb3baad20df740a4a87c2b5e77375ec408b52',1,'sf::Ftp::Response']]],
+  ['badgateway_8',['BadGateway',['../classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a0e7c9ad08be0653518bf456c9994ace5',1,'sf::Http::Response']]],
+  ['badmessage_9',['BadMessage',['../classsf_1_1Sftp_1_1Result.html#acd6085c64ba1862db71e62a2606cc810a0f9752db88f2bd5039095236e8a79917',1,'sf::Sftp::Result']]],
+  ['badrequest_10',['BadRequest',['../classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a9edf8fbf00a57d95a0af4923c9a1ec6f',1,'sf::Http::Response']]],
+  ['badsocket_11',['BadSocket',['../classsf_1_1Sftp_1_1Result.html#acd6085c64ba1862db71e62a2606cc810ad4c5b0dea20009de0f541cb14ccbc896',1,'sf::Sftp::Result']]],
+  ['baduse_12',['BadUse',['../classsf_1_1Sftp_1_1Result.html#acd6085c64ba1862db71e62a2606cc810a99ec472d1fad0aba57432a4a7ed9f4d5',1,'sf::Sftp::Result']]],
+  ['bannerreceive_13',['BannerReceive',['../classsf_1_1Sftp_1_1Result.html#acd6085c64ba1862db71e62a2606cc810accb9cf131421a5ad20811fa63f178659',1,'sf::Sftp::Result']]],
+  ['bannersend_14',['BannerSend',['../classsf_1_1Sftp_1_1Result.html#acd6085c64ba1862db71e62a2606cc810a2341270c8cb7baf1031cf708c8491a08',1,'sf::Sftp::Result']]],
+  ['binary_15',['Binary',['../classsf_1_1Ftp.html#a1cd6b89ad23253f6d97e6d4ca4d558cba6ce976e8f061b2b5cfe4d0c50c3405dd',1,'sf::Ftp']]],
+  ['bold_16',['Bold',['../classsf_1_1Text.html#aa8add4aef484c6e6b20faff07452bd82af1b47f98fb1e10509ba930a596987171',1,'sf::Text']]],
+  ['bottomtotop_17',['BottomToTop',['../classsf_1_1Text.html#a9f7b85c38db7b5dc9e1878f8d3b79a5aa63dc349be51108dcfd197c7ab02b486a',1,'sf::Text::BottomToTop'],['../classsf_1_1Text.html#a92c085763266834a1e73d0ea469387cda63dc349be51108dcfd197c7ab02b486a',1,'sf::Text::BottomToTop']]],
+  ['buffertoosmall_18',['BufferTooSmall',['../classsf_1_1Sftp_1_1Result.html#acd6085c64ba1862db71e62a2606cc810ab801c4d44abd4738b7f69c4e390ed61d',1,'sf::Sftp::Result']]]
+];

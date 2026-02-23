@@ -7,7 +7,7 @@ hide:
 
 ### How do I build SFML? {: #build}
 
-Tutorials for each version of SFML can be found [here](../tutorials/3.0/index.md).
+Tutorials for each version of SFML can be found [here](../tutorials/3.1/index.md).
 The first part of these tutorials is aimed at getting started, which includes building SFML with CMake and your build tool of choice, as well as setting up your IDE (if you use one) for use with SFML.
 
 ### Are there any "nightly builds"? {: #nightly}
@@ -21,7 +21,7 @@ You can find them either by commit hash or branch name.
 
 This is covered quite thoroughly in the tutorials section for some of the most popular IDEs.
 
-Check out the Getting Started sections of the [tutorials](../tutorials/3.0/index.md#getting-started).
+Check out the Getting Started sections of the [tutorials](../tutorials/3.1/index.md#getting-started).
 
 ### What and how do I link to use SFML? {: #link}
 
