@@ -1,0 +1,11 @@
+var searchData=
+[
+  ['patch_0',['patch',['../structsf_1_1Version.html#aa0c190f532c5695549b1d65077acff3e',1,'sf::Version']]],
+  ['path_1',['path',['../structsf_1_1Sftp_1_1Attributes.html#a3e3b24b9e0efc265bcdc0bd05fafc1d0',1,'sf::Sftp::Attributes']]],
+  ['permissions_2',['permissions',['../structsf_1_1Sftp_1_1Attributes.html#ac9e3b2af1343d132615ca0a635dd0fb1',1,'sf::Sftp::Attributes']]],
+  ['port_3',['port',['../structsf_1_1Dns_1_1SrvRecord.html#a148d4c3d4db4e46006fc2d826861c889',1,'sf::Dns::SrvRecord']]],
+  ['position_4',['position',['../classsf_1_1Rect.html#a561ce610acfafc975647c19db1c76bce',1,'sf::Rect::position'],['../structsf_1_1Text_1_1ShapedGlyph.html#a5a436e21199c4393aa9f8e1aa42a460c',1,'sf::Text::ShapedGlyph::position'],['../structsf_1_1Vertex.html#a8a4e0f4dfa7f1eb215c92e93d04f0ac0',1,'sf::Vertex::position'],['../structsf_1_1Event_1_1MouseWheelScrolled.html#a50ebfbc800ccba96defa6d3a1f54feda',1,'sf::Event::MouseWheelScrolled::position'],['../structsf_1_1Event_1_1MouseButtonPressed.html#a9752a69c84a75425f5c3ccd0b4557b46',1,'sf::Event::MouseButtonPressed::position'],['../structsf_1_1Event_1_1MouseButtonReleased.html#a4471a4643d7b7e3d7286eed0390b5d04',1,'sf::Event::MouseButtonReleased::position'],['../structsf_1_1Event_1_1MouseMoved.html#ad28578ff7dc681f819dbbf629662ee32',1,'sf::Event::MouseMoved::position'],['../structsf_1_1Event_1_1JoystickMoved.html#aa0ced59d8ddc52442ae5bb71360527fb',1,'sf::Event::JoystickMoved::position'],['../structsf_1_1Event_1_1TouchBegan.html#a514712f9b5bffddc9422efa6321ddc5f',1,'sf::Event::TouchBegan::position'],['../structsf_1_1Event_1_1TouchMoved.html#a163a5db3ac0250bc7600b6d1c365af60',1,'sf::Event::TouchMoved::position'],['../structsf_1_1Event_1_1TouchEnded.html#ae6997d678a68380dddb5c3995abf3858',1,'sf::Event::TouchEnded::position']]],
+  ['preference_5',['preference',['../structsf_1_1Dns_1_1MxRecord.html#a6f88e0932047dbc1f7e98e066a983588',1,'sf::Dns::MxRecord']]],
+  ['priority_6',['priority',['../structsf_1_1Dns_1_1SrvRecord.html#ab18e52d1e7f104a1e0d89fc32d43ddb5',1,'sf::Dns::SrvRecord']]],
+  ['productid_7',['productId',['../structsf_1_1Joystick_1_1Identification.html#a18c21317789f51f9a5f132677727ff77',1,'sf::Joystick::Identification']]]
+];

@@ -40,7 +40,7 @@ var searchData=
   ['reset_37',['reset',['../classsf_1_1Clock.html#a564522bc9caf98b412aa0c6f39a81d75',1,'sf::Clock']]],
   ['resetcontent_38',['ResetContent',['../classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a4e9202c31896211f63be5b7345a897ed',1,'sf::Http::Response']]],
   ['resetglstates_39',['resetGLStates',['../classsf_1_1RenderTarget.html#aac7504990d27dada4bfe3c7866920765',1,'sf::RenderTarget']]],
-  ['resize_40',['Resize',['../group__window.html#ggaf4ff4f60dec5967fb35b419750b17688accff967648ebcd5db2007eff7352b50f',1,'sf::Style']]],
+  ['resize_40',['Resize',['../group__window.html#ggade0f672ea80ed23e6cf0db4214ff6e59accff967648ebcd5db2007eff7352b50f',1,'sf::Style']]],
   ['resize_41',['resize',['../classsf_1_1Image.html#afff96ca305f83a4ee76e13cf0a846347',1,'sf::Image::resize(Vector2u size, Color color=Color::Black)'],['../classsf_1_1Image.html#a95997001f36f3b3ae53966e8f140986f',1,'sf::Image::resize(Vector2u size, const std::uint8_t *pixels)'],['../classsf_1_1RenderTexture.html#acaa6b97ea84ce82289f6925d1d198035',1,'sf::RenderTexture::resize()'],['../classsf_1_1Texture.html#afdb3948ab1e12217ba8e8d88c2c17da2',1,'sf::Texture::resize()'],['../classsf_1_1VertexArray.html#a0c0fe239e8f9a54e64d3bbc96bf548c0',1,'sf::VertexArray::resize()']]],
   ['resized_42',['Resized',['../structsf_1_1Event_1_1Resized.html',1,'sf::Event']]],
   ['resolve_43',['resolve',['../classsf_1_1IpAddress.html#a4a78be2d092625c1216820037c2920c0',1,'sf::IpAddress']]],
