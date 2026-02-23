@@ -10,7 +10,7 @@ hide:
 SFML can load the following file formats: bmp, dds, jpg, png, tga, psd  
 But keep in mind that not all variants of each format are supported.
 
-Also see the official [documentation](../documentation/3.0.0/classsf_1_1Image.html#a9e4f2aa8e36d0cabde5ed5a4ef80290b).
+Also see the official [documentation](../documentation/3.1.0/classsf_1_1Image.html#a9e4f2aa8e36d0cabde5ed5a4ef80290b).
 
 ## Why do I get a white/black rectangle instead of my texture? {: #white-rect}
 
