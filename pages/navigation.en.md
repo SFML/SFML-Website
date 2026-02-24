@@ -27,6 +27,7 @@
             * tutorials/3.1/getting-started/code-blocks*.md
             * tutorials/3.1/getting-started/linux*.md
             * tutorials/3.1/getting-started/macos*.md
+            * tutorials/3.0/getting-started/android*.md
             * tutorials/3.1/getting-started/ios*.md
             * tutorials/3.1/getting-started/build-from-source*.md
         * System
