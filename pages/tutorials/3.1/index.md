@@ -8,6 +8,7 @@
 - [SFML and Code::Blocks (MinGW)](getting-started/code-blocks.md)
 - [SFML and Linux](getting-started/linux.md)
 - [SFML and Xcode (macOS)](getting-started/macos.md)
+- [SFML and Android](getting-started/android.md)
 - [SFML and iOS](getting-started/ios.md)
 - [Building SFML from Source](getting-started/build-from-source.md)
 
