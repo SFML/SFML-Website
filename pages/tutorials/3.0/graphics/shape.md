@@ -263,7 +263,7 @@ To get anti-aliased shapes (i.e. shapes with smoothed edges), you have to enable
 
 ```cpp
 sf::ContextSettings settings;
-settings.antialiasingLevel = 8;
+settings.antiAliasingLevel = 8;
 
 sf::RenderWindow window(sf::VideoMode({800, 600}), "SFML shapes", sf::Style::Default, sf::State::Windowed, settings);
 ```

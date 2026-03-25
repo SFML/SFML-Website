@@ -47,14 +47,14 @@ This argument is an instance of the [`sf::ContextSettings`](../../../documentati
 
 - `depthBits` is the number of bits per pixel to use for the depth buffer (0 to disable it)
 - `stencilBits` is the number of bits per pixel to use for the stencil buffer (0 to disable it)
-- `antialiasingLevel` is the multisampling level
+- `antiAliasingLevel` is the multisampling level
 - `majorVersion` and `minorVersion` comprise the requested version of OpenGL
 
 ```cpp
 sf::ContextSettings settings;
 settings.depthBits = 24;
 settings.stencilBits = 8;
-settings.antialiasingLevel = 4;
+settings.antiAliasingLevel = 4;
 settings.majorVersion = 3;
 settings.minorVersion = 0;
 
@@ -70,7 +70,7 @@ sf::ContextSettings settings = window.getSettings();
 
 std::cout << "depth bits:" << settings.depthBits << std::endl;
 std::cout << "stencil bits:" << settings.stencilBits << std::endl;
-std::cout << "antialiasing level:" << settings.antialiasingLevel << std::endl;
+std::cout << "antialiasing level:" << settings.antiAliasingLevel << std::endl;
 std::cout << "version:" << settings.majorVersion << "." << settings.minorVersion << std::endl;
 ```
 
