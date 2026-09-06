@@ -108,6 +108,11 @@
             <td><a href="mailto:pdinklag@gmail.com">Patrick Dinklage</a></td>
         </tr>
         <tr>
+            <th rowspan="1">Java</th>
+            <td><a href="https://codeberg.org/glowiak/jsfml-java6" class="website">website</a></td>
+            <td>2.1</td>
+            <td>Originally by <a href="mailto:pdinklag@gmail.com">Patrick Dinklage</a>, forked and improved by <a href="https://codeberg.org/glowiak">glowiak</a>.</td>
+        <tr>
             <th rowspan="1">Julia</th>
             <td><a href="https://github.com/zyedidia/SFML.jl" class="website"><img src="../images/bindings/sfml.jl.png" alt="SFML.jl"/></a></td>
             <td>2.2</td>
