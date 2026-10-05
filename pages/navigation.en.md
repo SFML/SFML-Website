@@ -98,7 +98,19 @@
             * tutorials/3.0/network/packet*.md
             * tutorials/3.0/network/http*.md
             * tutorials/3.0/network/ftp*.md
-    * [SFML 2.6](https://www.sfml-dev.org/tutorials/2.6)
+    * [SFML 2.6](tutorials/2.6/index.md)
+        * Getting Started
+            * tutorials/2.6/getting-started/*.md
+        * System
+            * tutorials/2.6/system/*.md
+        * Window
+            * tutorials/2.6/window/*.md
+        * Graphics
+            * tutorials/2.6/graphics/*.md
+        * Audio
+            * tutorials/2.6/audio/*.md
+        * Network
+            * tutorials/2.6/network/*.md
     * [SFML 2.5](https://www.sfml-dev.org/tutorials/2.5)
     * [SFML 2.4](https://www.sfml-dev.org/tutorials/2.4)
     * [SFML 2.3](https://www.sfml-dev.org/tutorials/2.3)
