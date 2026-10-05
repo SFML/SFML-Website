@@ -11,14 +11,15 @@ As we're slowly migrating the old HTML + PHP based site over to Markdown + MkDoc
 
 All primary pages and SFML 3 tutorials & documentation live in the `pages/` directory, while all the old parts like SFML 2 tutorials are in the root directory.
 
-### MkDocs - Pre-Requisite
+### ProperDocs - Pre-Requisite
 
-As [MkDocs](https://www.mkdocs.org/) is Python based, make sure you have [Python 3.x](https://www.python.org/downloads/) installed on your OS, which should also come with `pip`.
+The site is built with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) on top of [ProperDocs](https://properdocs.org/), the maintained fork of MkDocs 1.x.
+As ProperDocs is Python based, make sure you have [Python 3.x](https://www.python.org/downloads/) installed on your OS, which should also come with `pip`.
 
 > [!NOTE]
 > You may want to set up a [virtual environment](https://docs.python.org/3/library/venv.html) as to not contaminate the rest of your system.
 
-Use the following command to install all the necessary packages including MkDocs:
+Use the following command to install all the necessary packages including ProperDocs:
 
 ```bash
 pip install -r ./requirements.txt --upgrade
@@ -26,10 +27,10 @@ pip install -r ./requirements.txt --upgrade
 
 ### Host & Build
 
-For local development you usually want to directly serve the site, which MkDocs supports out of the box, including hot-reload:
+For local development you usually want to directly serve the site, which ProperDocs supports out of the box, including hot-reload:
 
 ```bash
-mkdocs serve
+properdocs serve
 ```
 
 This can take a few seconds.
@@ -38,7 +39,7 @@ Once ready, you should see a localhost link in the terminal pointing you to webs
 If you just want the output of the site, you can also just build site:
 
 ```bash
-mkdocs build
+properdocs build
 ```
 
 Which puts all the generated HTML into the `site/` directory.
