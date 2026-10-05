@@ -20,7 +20,7 @@ var searchData=
   ['time_2ehpp_17',['Time.hpp',['../Time_8hpp.html',1,'']]],
   ['time_5fpoint_18',['time_point',['../structsf_1_1SuspendAwareClock.html#a4a86b0b99e92f831f29a50f8e6caaf0f',1,'sf::SuspendAwareClock']]],
   ['timespan_19',['TimeSpan',['../classsf_1_1Music.html#a8f92f34d1714edb7178ba2a8a5a845e8',1,'sf::Music']]],
-  ['titlebar_20',['Titlebar',['../group__window.html#ggade0f672ea80ed23e6cf0db4214ff6e59ab4c8b32b05ed715928513787cb1e85b6',1,'sf::Style']]],
+  ['titlebar_20',['Titlebar',['../group__window.html#gga080dd0c344be7221d9ecab9403aff448ab4c8b32b05ed715928513787cb1e85b6',1,'sf::Style']]],
   ['to_5fchar_5ftype_21',['to_char_type',['../structsf_1_1U8StringCharTraits.html#aef0b658a4bdcba6c621400bae8e894ac',1,'sf::U8StringCharTraits']]],
   ['to_5fint_5ftype_22',['to_int_type',['../structsf_1_1U8StringCharTraits.html#a5f9d3c31d649475b73723b86b71931fc',1,'sf::U8StringCharTraits']]],
   ['toansi_23',['toAnsi',['../classsf_1_1Utf_3_018_01_4.html#a0184477f67318221e11312a5fac6a981',1,'sf::Utf&lt; 8 &gt;::toAnsi()'],['../classsf_1_1Utf_3_0116_01_4.html#a8230fd0c8082cfe63b0bfdf13f2ad60f',1,'sf::Utf&lt; 16 &gt;::toAnsi()'],['../classsf_1_1Utf_3_0132_01_4.html#aa3e82892a204b4b8b404c263d222deba',1,'sf::Utf&lt; 32 &gt;::toAnsi()']]],

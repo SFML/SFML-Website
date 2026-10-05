@@ -28,7 +28,7 @@ var searchData=
   ['clipboard_2ehpp_25',['Clipboard.hpp',['../Clipboard_8hpp.html',1,'']]],
   ['clock_26',['Clock',['../classsf_1_1Clock.html',1,'sf']]],
   ['clock_2ehpp_27',['Clock.hpp',['../Clock_8hpp.html',1,'']]],
-  ['close_28',['Close',['../group__window.html#ggabb6e29d0a625cc7076955660e47c432eae07a7d411d5acf28f4a9a4b76a3a9493',1,'sf::Style']]],
+  ['close_28',['Close',['../group__window.html#gga080dd0c344be7221d9ecab9403aff448ae07a7d411d5acf28f4a9a4b76a3a9493',1,'sf::Style']]],
   ['close_29',['close',['../classsf_1_1InputSoundFile.html#ad28182aea9dc9f7d0dfc7f78691825b4',1,'sf::InputSoundFile::close()'],['../classsf_1_1OutputSoundFile.html#ad20c867d7e565d533da029f31ea5a337',1,'sf::OutputSoundFile::close()'],['../classsf_1_1Socket.html#a71f2f5c2aa99e01cafe824fee4c573be',1,'sf::Socket::close()'],['../classsf_1_1TcpListener.html#a3a00a850506bd0f9f48867a0fe59556b',1,'sf::TcpListener::close()'],['../classsf_1_1Window.html#ab1d808a3682db8d113d67354bcbd717d',1,'sf::Window::close()'],['../classsf_1_1WindowBase.html#a9a5ea0ba0ab584dbd11bbfea233b457f',1,'sf::WindowBase::close()']]],
   ['closed_30',['Closed',['../structsf_1_1Event_1_1Closed.html',1,'sf::Event']]],
   ['closingconnection_31',['ClosingConnection',['../classsf_1_1Ftp_1_1Response.html#af81738f06b6f571761696291276acb3ba2465f163ac38bfe7c1930b33aa05679b',1,'sf::Ftp::Response']]],

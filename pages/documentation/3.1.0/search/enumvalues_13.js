@@ -5,7 +5,7 @@ var searchData=
   ['tcp_2',['Tcp',['../classsf_1_1Socket.html#a5d3ff44e56e68f02816bb0fabc34adf8a30b7fdeebc36988717d0e274cc2e7520',1,'sf::Socket']]],
   ['text_3',['Text',['../classsf_1_1Cursor.html#ab9ab152aec1f8a4955e34ccae08f930aa9dffbf69ffba8bc38bc4e01abf4b1675',1,'sf::Cursor']]],
   ['timeout_4',['Timeout',['../classsf_1_1Sftp_1_1Result.html#acd6085c64ba1862db71e62a2606cc810ac85a251cc457840f1e032f1b733e9398',1,'sf::Sftp::Result']]],
-  ['titlebar_5',['Titlebar',['../group__window.html#ggabb6e29d0a625cc7076955660e47c432eab4c8b32b05ed715928513787cb1e85b6',1,'sf::Style']]],
+  ['titlebar_5',['Titlebar',['../group__window.html#gga080dd0c344be7221d9ecab9403aff448ab4c8b32b05ed715928513787cb1e85b6',1,'sf::Style']]],
   ['topbackcenter_6',['TopBackCenter',['../group__audio.html#gga9800c7f3d5e7a9c9310f707b2c995ff3a523c261e94e92bcd0ed3276f42388790',1,'sf']]],
   ['topbackleft_7',['TopBackLeft',['../group__audio.html#gga9800c7f3d5e7a9c9310f707b2c995ff3adb41be9e166e3f77a49becccef7a57f9',1,'sf']]],
   ['topbackright_8',['TopBackRight',['../group__audio.html#gga9800c7f3d5e7a9c9310f707b2c995ff3a8731dd6d25eb4078d246edb9404e1684',1,'sf']]],

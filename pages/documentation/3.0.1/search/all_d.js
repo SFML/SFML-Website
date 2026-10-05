@@ -13,7 +13,7 @@ var searchData=
   ['never_10',['Never',['../namespacesf.html#a5a1510ae19d01cf19178b8f3ef92a2a1a6e7b34fa59e1bd229b207892956dc41c',1,'sf']]],
   ['next_11',['next',['../classsf_1_1Utf_3_018_01_4.html#a0365a0b38700baa161843563d083edf6',1,'sf::Utf&lt; 8 &gt;::next()'],['../classsf_1_1Utf_3_0116_01_4.html#ab899108d77ce088eb001588e84d91525',1,'sf::Utf&lt; 16 &gt;::next()'],['../classsf_1_1Utf_3_0132_01_4.html#a788b4ebc728dde2aaba38f3605d4867c',1,'sf::Utf&lt; 32 &gt;::next()']]],
   ['nocontent_12',['NoContent',['../classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8acd447f1ec89f564ebac583d60087df12',1,'sf::Http::Response']]],
-  ['none_13',['None',['../group__window.html#ggade0f672ea80ed23e6cf0db4214ff6e59a8c35a9c8507559e455387fc4a83ce422',1,'sf::Style']]],
+  ['none_13',['None',['../group__window.html#gga080dd0c344be7221d9ecab9403aff448a8c35a9c8507559e455387fc4a83ce422',1,'sf::Style']]],
   ['nonusbackslash_14',['NonUsBackslash',['../namespacesf_1_1Keyboard.html#aed978288ff367518d29cfe0c9e3b295fac35a3006a1d15c7517c1a9127d7e7ed7',1,'sf::Keyboard']]],
   ['normalized_15',['Normalized',['../group__graphics.html#gga3279cc83ec99c60693c4fe6d0d3fb98ba66b28fcf83c9f24cd5b4d7bdc8f8ba0e',1,'sf']]],
   ['normalized_16',['normalized',['../classsf_1_1Vector2.html#ac8f9bb721feff232f8e2faddef407311',1,'sf::Vector2::normalized()'],['../classsf_1_1Vector3.html#ad029fdaaa394b3cc40a6231eb34c44cf',1,'sf::Vector3::normalized()']]],

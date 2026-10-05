@@ -6,7 +6,7 @@ var searchData=
   ['search_3',['Search',['../namespacesf_1_1Keyboard.html#aed978288ff367518d29cfe0c9e3b295fa13348442cc6a27032d2b4aa28b75a5d3',1,'sf::Keyboard']]],
   ['select_4',['Select',['../namespacesf_1_1Keyboard.html#aed978288ff367518d29cfe0c9e3b295fae0626222614bdee31951d84c64e5e9ff',1,'sf::Keyboard']]],
   ['semicolon_5',['Semicolon',['../namespacesf_1_1Keyboard.html#acb4cacd7cc5802dec45724cf3314a142a9806fa37a3ecd39bf637c203aa011ed0',1,'sf::Keyboard::Semicolon'],['../namespacesf_1_1Keyboard.html#aed978288ff367518d29cfe0c9e3b295fa9806fa37a3ecd39bf637c203aa011ed0',1,'sf::Keyboard::Semicolon']]],
-  ['send_6',['Send',['../classsf_1_1SocketSelector.html#a5a9ff8c0f3ccd0048d2b8bc4c5416309a4e2260e7259808f3e8ee56dfcf03a1a4',1,'sf::SocketSelector']]],
+  ['send_6',['Send',['../classsf_1_1SocketSelector.html#a0b7a9e12d485cef2025241e9ddc34299a4e2260e7259808f3e8ee56dfcf03a1a4',1,'sf::SocketSelector']]],
   ['servicenotavailable_7',['ServiceNotAvailable',['../classsf_1_1Http_1_1Response.html#a663e071978e30fbbeb20ed045be874d8a235bfc2933fb3f929cee883b642be632',1,'sf::Http::Response']]],
   ['serviceready_8',['ServiceReady',['../classsf_1_1Ftp_1_1Response.html#af81738f06b6f571761696291276acb3bac9a5248c2aa6a434ce1a4da00750feb3',1,'sf::Ftp::Response']]],
   ['servicereadysoon_9',['ServiceReadySoon',['../classsf_1_1Ftp_1_1Response.html#af81738f06b6f571761696291276acb3ba3268bd93693ac38c4f6086aea8be4db4',1,'sf::Ftp::Response']]],
