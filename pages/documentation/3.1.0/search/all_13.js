@@ -27,7 +27,7 @@ var searchData=
   ['timeoutwithpredicate_24',['TimeoutWithPredicate',['../classsf_1_1TimeoutWithPredicate.html',1,'sf::TimeoutWithPredicate'],['../classsf_1_1TimeoutWithPredicate.html#ac545a67828be7dc889ecb54c53fee0af',1,'sf::TimeoutWithPredicate::TimeoutWithPredicate(Time timeout)'],['../classsf_1_1TimeoutWithPredicate.html#a4ce4411ee654bd4bc8c1a4e6daf0a0b5',1,'sf::TimeoutWithPredicate::TimeoutWithPredicate(std::function&lt; bool()&gt; predicate, Time period=milliseconds(1))']]],
   ['timeoutwithpredicate_2ehpp_25',['TimeoutWithPredicate.hpp',['../TimeoutWithPredicate_8hpp.html',1,'']]],
   ['timespan_26',['TimeSpan',['../classsf_1_1Music.html#a8f92f34d1714edb7178ba2a8a5a845e8',1,'sf::Music']]],
-  ['titlebar_27',['Titlebar',['../group__window.html#ggabb6e29d0a625cc7076955660e47c432eab4c8b32b05ed715928513787cb1e85b6',1,'sf::Style']]],
+  ['titlebar_27',['Titlebar',['../group__window.html#gga080dd0c344be7221d9ecab9403aff448ab4c8b32b05ed715928513787cb1e85b6',1,'sf::Style']]],
   ['tlsstatus_28',['TlsStatus',['../classsf_1_1TcpSocket.html#a9a86e52dd790031dbb71fdec9ee49f7c',1,'sf::TcpSocket']]],
   ['to_5fchar_5ftype_29',['to_char_type',['../structsf_1_1U8StringCharTraits.html#aef0b658a4bdcba6c621400bae8e894ac',1,'sf::U8StringCharTraits']]],
   ['to_5fint_5ftype_30',['to_int_type',['../structsf_1_1U8StringCharTraits.html#a5f9d3c31d649475b73723b86b71931fc',1,'sf::U8StringCharTraits']]],

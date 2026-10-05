@@ -13,7 +13,7 @@ var searchData=
   ['channelwindowexceeded_10',['ChannelWindowExceeded',['../classsf_1_1Sftp_1_1Result.html#acd6085c64ba1862db71e62a2606cc810a1edb35318eacf0927f32ee011c4fa5a7',1,'sf::Sftp::Result']]],
   ['channelwindowfull_11',['ChannelWindowFull',['../classsf_1_1Sftp_1_1Result.html#acd6085c64ba1862db71e62a2606cc810a34be954c88abf1c3a8ae8e1db2b81fd7',1,'sf::Sftp::Result']]],
   ['character_12',['Character',['../classsf_1_1Text.html#afd620fce953357d8587f550390561a3ea76a40e4f974fd895a0a2598c1cee28b4',1,'sf::Text']]],
-  ['close_13',['Close',['../group__window.html#ggabb6e29d0a625cc7076955660e47c432eae07a7d411d5acf28f4a9a4b76a3a9493',1,'sf::Style']]],
+  ['close_13',['Close',['../group__window.html#gga080dd0c344be7221d9ecab9403aff448ae07a7d411d5acf28f4a9a4b76a3a9493',1,'sf::Style']]],
   ['closingconnection_14',['ClosingConnection',['../classsf_1_1Ftp_1_1Response.html#af81738f06b6f571761696291276acb3ba2465f163ac38bfe7c1930b33aa05679b',1,'sf::Ftp::Response']]],
   ['closingdataconnection_15',['ClosingDataConnection',['../classsf_1_1Ftp_1_1Response.html#af81738f06b6f571761696291276acb3baaf83fd439861065d31334292d3f8a4c3',1,'sf::Ftp::Response']]],
   ['comma_16',['Comma',['../namespacesf_1_1Keyboard.html#acb4cacd7cc5802dec45724cf3314a142a58be47db9455679e6a44df2eff9c9fa6',1,'sf::Keyboard::Comma'],['../namespacesf_1_1Keyboard.html#aed978288ff367518d29cfe0c9e3b295fa58be47db9455679e6a44df2eff9c9fa6',1,'sf::Keyboard::Comma']]],
