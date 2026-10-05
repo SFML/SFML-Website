@@ -102,3 +102,78 @@ RewriteCond %{REQUEST_URI} ^/download/sfml/old-versions\.php$
 RewriteRule ^ /download/sfml/ [R=301,L]
 RewriteCond %{REQUEST_URI} ^/download/sfml/old-versions-fr\.php$
 RewriteRule ^ /fr/download/sfml/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/download/sfml/1\.6(/index\.php)?$
+RewriteRule ^ /download/sfml/1.6/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/download/sfml/1\.6/index-fr\.php$
+RewriteRule ^ /fr/download/sfml/1.6/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/download/sfml/2\.0(/index\.php)?$
+RewriteRule ^ /download/sfml/2.0/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/download/sfml/2\.0/index-fr\.php$
+RewriteRule ^ /fr/download/sfml/2.0/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/download/sfml/2\.1(/index\.php)?$
+RewriteRule ^ /download/sfml/2.1/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/download/sfml/2\.1/index-fr\.php$
+RewriteRule ^ /fr/download/sfml/2.1/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/download/sfml/2\.2(/index\.php)?$
+RewriteRule ^ /download/sfml/2.2/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/download/sfml/2\.2/index-fr\.php$
+RewriteRule ^ /fr/download/sfml/2.2/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/download/sfml/2\.3(/index\.php)?$
+RewriteRule ^ /download/sfml/2.3/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/download/sfml/2\.3/index-fr\.php$
+RewriteRule ^ /fr/download/sfml/2.3/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/download/sfml/2\.3\.1(/index\.php)?$
+RewriteRule ^ /download/sfml/2.3.1/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/download/sfml/2\.3\.1/index-fr\.php$
+RewriteRule ^ /fr/download/sfml/2.3.1/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/download/sfml/2\.3\.2(/index\.php)?$
+RewriteRule ^ /download/sfml/2.3.2/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/download/sfml/2\.3\.2/index-fr\.php$
+RewriteRule ^ /fr/download/sfml/2.3.2/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/download/sfml/2\.4\.0(/index\.php)?$
+RewriteRule ^ /download/sfml/2.4.0/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/download/sfml/2\.4\.0/index-fr\.php$
+RewriteRule ^ /fr/download/sfml/2.4.0/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/download/sfml/2\.4\.1(/index\.php)?$
+RewriteRule ^ /download/sfml/2.4.1/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/download/sfml/2\.4\.1/index-fr\.php$
+RewriteRule ^ /fr/download/sfml/2.4.1/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/download/sfml/2\.4\.2(/index\.php)?$
+RewriteRule ^ /download/sfml/2.4.2/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/download/sfml/2\.4\.2/index-fr\.php$
+RewriteRule ^ /fr/download/sfml/2.4.2/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/download/sfml/2\.5\.0(/index\.php)?$
+RewriteRule ^ /download/sfml/2.5.0/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/download/sfml/2\.5\.0/index-fr\.php$
+RewriteRule ^ /fr/download/sfml/2.5.0/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/download/sfml/2\.5\.1(/index\.php)?$
+RewriteRule ^ /download/sfml/2.5.1/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/download/sfml/2\.5\.1/index-fr\.php$
+RewriteRule ^ /fr/download/sfml/2.5.1/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/download/sfml/2\.6\.0(/index\.php)?$
+RewriteRule ^ /download/sfml/2.6.0/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/download/sfml/2\.6\.0/index-fr\.php$
+RewriteRule ^ /fr/download/sfml/2.6.0/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/download/sfml/2\.6\.1(/index\.php)?$
+RewriteRule ^ /download/sfml/2.6.1/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/download/sfml/2\.6\.1/index-fr\.php$
+RewriteRule ^ /fr/download/sfml/2.6.1/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/download/sfml/2\.6\.2(/index\.php)?$
+RewriteRule ^ /download/sfml/2.6.2/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/download/sfml/2\.6\.2/index-fr\.php$
+RewriteRule ^ /fr/download/sfml/2.6.2/ [R=301,L]

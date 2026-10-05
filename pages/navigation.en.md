@@ -132,8 +132,23 @@
     * download/sfml/3.0.2*.md
     * download/sfml/3.0.1*.md
     * download/sfml/3.0.0*.md
-    * [SFML 2.6.2](https://www.sfml-dev.org/download/sfml/2.6.2/)
-    * download/sfml/index*.md
+    * download/sfml/2.6.2*.md
+    * Older Versions
+        * download/sfml/index*.md
+        * download/sfml/2.6.1*.md
+        * download/sfml/2.6.0*.md
+        * download/sfml/2.5.1*.md
+        * download/sfml/2.5.0*.md
+        * download/sfml/2.4.2*.md
+        * download/sfml/2.4.1*.md
+        * download/sfml/2.4.0*.md
+        * download/sfml/2.3.2*.md
+        * download/sfml/2.3.1*.md
+        * download/sfml/2.3*.md
+        * download/sfml/2.2*.md
+        * download/sfml/2.1*.md
+        * download/sfml/2.0*.md
+        * download/sfml/1.6*.md
     * Bindings
         * download/bindings/index*.md
         * download/csfml/index*.md
