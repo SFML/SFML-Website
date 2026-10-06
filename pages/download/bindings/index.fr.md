@@ -8,7 +8,7 @@ hide:
 
 Voici une liste de tous les bindings SFML connus. Notez bien que, excepté CSFML et SFML.Net, ils ne sont pas officiels : ils sont développés par des utilisateurs de SFML, et certains peuvent ne pas être à jour, voire abandonnés.
 
-N'hésitez pas à [me contacter](mailto:webmaster@sfml-dev.org "Contacter le webmaster") si vous souhaitez mettre à jour, ajouter ou retirer des informations concernant un binding SFML.
+Si vous souhaitez ajouter, mettre à jour ou retirer un binding SFML, ouvrez une pull request sur le [dépôt SFML-Website](https://github.com/SFML/SFML-Website) qui modifie à la fois la page [anglaise](https://github.com/SFML/SFML-Website/blob/master/pages/download/bindings/index.en.md) et la page [française](https://github.com/SFML/SFML-Website/blob/master/pages/download/bindings/index.fr.md).
 
 | Langage                      | Nom                                                                                                                 | SFML        | Auteur                                                                                                |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------- | ----------- | ----------------------------------------------------------------------------------------------------- |
