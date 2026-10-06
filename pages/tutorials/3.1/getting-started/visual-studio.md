@@ -68,13 +68,13 @@ Some of these dependency libraries might already be listed under "Inherited valu
 
 Here are the dependencies of each module, append the -d as described above if you want to link the SFML debug libraries:
 
-| Module                | Dependencies                                                                                          |
-| --------------------- | ----------------------------------------------------------------------------------------------------- |
-| `sfml-graphics-s.lib` | - sfml-window-s.lib<br>- sfml-system-s.lib<br>- opengl32.lib<br>- freetype.lib                        |
-| `sfml-window-s.lib`   | - sfml-system-s.lib<br>- opengl32.lib<br>- winmm.lib<br>- gdi32.lib                                   |
-| `sfml-audio-s.lib`    | - sfml-system-s.lib<br>- flac.lib<br>- vorbisenc.lib<br>- vorbisfile.lib<br>- vorbis.lib<br>- ogg.lib |
-| `sfml-network-s.lib`  | - sfml-system-s.lib<br>- ws2_32.lib                                                                   |
-| `sfml-system-s.lib`   | - winmm.lib                                                                                           |
+| Module                | Dependencies                                                                                                                                                 |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `sfml-graphics-s.lib` | - sfml-window-s.lib<br>- sfml-system-s.lib<br>- opengl32.lib<br>- harfbuzz.lib<br>- freetype.lib                                                             |
+| `sfml-window-s.lib`   | - sfml-system-s.lib<br>- opengl32.lib<br>- winmm.lib<br>- gdi32.lib                                                                                          |
+| `sfml-audio-s.lib`    | - sfml-system-s.lib<br>- flac.lib<br>- vorbisenc.lib<br>- vorbisfile.lib<br>- vorbis.lib<br>- ogg.lib                                                        |
+| `sfml-network-s.lib`  | - sfml-system-s.lib<br>- libssh2.lib<br>- mbedtls.lib<br>- mbedx509.lib<br>- mbedcrypto.lib<br>- ws2_32.lib<br>- crypt32.lib<br>- dnsapi.lib<br>- bcrypt.lib |
+| `sfml-system-s.lib`   | - winmm.lib                                                                                                                                                  |
 
 You might have noticed from the table that SFML modules can also depend on one another, e.g. sfml-graphics-s.lib depends both on sfml-window-s.lib and sfml-system-s.lib.
 If you static link to an SFML library, make sure to link to the dependencies of the library in question, as well as the dependencies of the dependencies and so on.

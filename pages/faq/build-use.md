@@ -71,23 +71,23 @@ Next, you'll need to add `SFML_STATIC` to the preprocessor option and, as always
 In the past, SFML included on Windows all its dependencies into the SFML libraries.
 However, this was changed to eliminate multiple issues and get a commonly expected behavior ([full discussion](https://en.sfml-dev.org/forums/index.php?topic=9362.0)).
 Now, SFML behaves the same on Linux as well as on Windows, which however means, that you need to link SFML's dependencies on your own when linking statically.
-Since the dependencies aren't obvious to everyone, here's a listing:
+Since the dependencies aren't obvious to everyone, here's a listing for SFML 3.1:
 
 **Windows**
 
+- sfml-graphics
+    - sfml-window
+    - sfml-system
+    - opengl32
+    - harfbuzz
+    - freetype
 - sfml-window
     - sfml-system
     - opengl32
     - winmm
     - gdi32
-- sfml-graphics
-    - sfml-system
-    - sfml-window
-    - opengl32
-    - freetype
 - sfml-audio
     - sfml-system
-    - openal32
     - flac
     - vorbisenc
     - vorbisfile
@@ -95,7 +95,14 @@ Since the dependencies aren't obvious to everyone, here's a listing:
     - ogg
 - sfml-network
     - sfml-system
+    - libssh2
+    - mbedtls
+    - mbedx509
+    - mbedcrypto
     - ws2_32
+    - crypt32
+    - dnsapi
+    - bcrypt
 - sfml-system
     - winmm
 

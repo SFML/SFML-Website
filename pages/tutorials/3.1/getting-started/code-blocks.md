@@ -79,13 +79,13 @@ Some of these dependency libraries might already be listed under "Inherited valu
 
 Here are the dependencies of each module, append the -d as described above if you want to link the SFML debug libraries:
 
-| Module            | Dependencies                                                                  |
-| ----------------- | ----------------------------------------------------------------------------- |
-| `sfml-graphics-s` | - sfml-window-s<br>- sfml-system-s<br>- opengl32<br>- freetype                |
-| `sfml-window-s`   | - sfml-system-s<br>- opengl32<br>- winmm<br>- gdi32                           |
-| `sfml-audio-s`    | - sfml-system-s<br>- flac<br>- vorbisenc<br>- vorbisfile<br>- vorbis<br>- ogg |
-| `sfml-network-s`  | - sfml-system-s<br>- ws2_32                                                   |
-| `sfml-system-s`   | - winmm                                                                       |
+| Module            | Dependencies                                                                                                          |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------- |
+| `sfml-graphics-s` | - sfml-window-s<br>- sfml-system-s<br>- opengl32<br>- harfbuzz<br>- freetype                                          |
+| `sfml-window-s`   | - sfml-system-s<br>- opengl32<br>- winmm<br>- gdi32                                                                   |
+| `sfml-audio-s`    | - sfml-system-s<br>- flac<br>- vorbisenc<br>- vorbisfile<br>- vorbis<br>- ogg                                         |
+| `sfml-network-s`  | - sfml-system-s<br>- ssh2<br>- mbedtls<br>- mbedx509<br>- mbedcrypto<br>- ws2_32<br>- crypt32<br>- dnsapi<br>- bcrypt |
+| `sfml-system-s`   | - winmm                                                                                                               |
 
 You might have noticed from the table that SFML modules can also depend on one another, e.g.
 sfml-graphics-s depends both on sfml-window-s and sfml-system-s.
