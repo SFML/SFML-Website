@@ -13,3 +13,6 @@ site/*
 assets/*
 styles/extra.css
 tutorials/3.0/*
+
+# Python virtual environment
+.venv/
