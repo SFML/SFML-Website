@@ -40,17 +40,21 @@ A similar process will be required for non-Debian Linux distributions like Fedor
 ```
 sudo apt update
 sudo apt install \
+    libx11-dev \
     libxrandr-dev \
     libxcursor-dev \
     libxi-dev \
     libudev-dev \
+    libgl1-mesa-dev \
     libfreetype-dev \
+    libharfbuzz-dev \
     libflac-dev \
     libvorbis-dev \
-    libgl1-mesa-dev \
-    libegl1-mesa-dev \
-    libfreetype-dev
+    libmbedtls-dev \
+    libssh2-1-dev
 ```
+
+See the [dependencies tutorial](dependencies.md) for what each of these packages is needed for, and how to let SFML build them from source instead.
 
 The CMake template requires having CMake installed.
 Your system's package manager is the best way to get CMake.

@@ -19,17 +19,16 @@ As you might expect, this tutorial is divided into two main sections: Generating
 
 ## Installing dependencies
 
-SFML depends on a few other libraries, which will be automatically built as part of the SFML project unless otherwise specified by the `SFML_USE_SYSTEM_DEPS` option (see below).
-On Linux, however, this option is disabled by default, so either enable it, or ensure the following packages are installed on your system:
+SFML depends on a few other libraries, which will be automatically built as part of the SFML project unless the `SFML_USE_SYSTEM_DEPS` option is enabled.
+On Linux and the BSDs, this option is enabled by default, so either disable it, or ensure the following packages are installed on your system:
 
 - freetype
 - harfbuzz
 - flac
 - ogg
 - vorbis
-- vorbisenc
-- vorbisfile
 - mbedtls
+- libssh2
 
 On Linux there are also other system dependencies that must be installed in all cases:
 
@@ -43,6 +42,8 @@ On Linux there are also other system dependencies that must be installed in all 
 
 The exact name of the packages may vary from distribution to distribution.
 Once those packages are installed, don't forget to install their *development headers* as well.
+
+The [dependencies tutorial](dependencies.md) lists what each module needs, the Debian and Ubuntu package names, and explains the `SFML_USE_SYSTEM_DEPS` option in more detail.
 
 ## Configuring your SFML build
 

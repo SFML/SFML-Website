@@ -31,22 +31,8 @@ SFML depends on a few other libraries, so before starting to compile you must ha
 On Windows and macOS, all the needed dependencies are provided directly with SFML, so you don't have to download/install anything.
 Compilation will work out of the box.
 
-On Linux however, nothing is provided and SFML relies on your own installation of the libraries it depends on.
-Here is a list of what you need to install before compiling SFML:
-
-- pthread
-- opengl
-- xlib
-- xi
-- udev
-- xrandr
-- xcursor
-- freetype
-- flac
-- vorbis
-
-The exact name of the packages depend on each distribution.
-And don't forget to install the development version of these packages.
+On Linux however, SFML uses the libraries installed on your system by default, so you need to install their development packages before compiling SFML.
+The [dependencies tutorial](../tutorials/3.1/getting-started/dependencies.md) lists them per module, together with the Debian and Ubuntu package names.
 
 SFML has also internal dependencies: Audio and Window depend on System, while Graphics depends on System and Window.
 In order to use the Graphics module, you must link with Graphics, Window, and System (the order of linkage matters with GCC).

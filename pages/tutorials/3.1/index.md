@@ -15,6 +15,7 @@
 - [SFML and Android](getting-started/android.md)
 - [SFML and iOS](getting-started/ios.md)
 - [Building SFML from Source](getting-started/build-from-source.md)
+- [SFML's Dependencies](getting-started/dependencies.md)
 
 ## System module
 

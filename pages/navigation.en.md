@@ -32,6 +32,7 @@
             * tutorials/3.1/getting-started/android*.md
             * tutorials/3.1/getting-started/ios*.md
             * tutorials/3.1/getting-started/build-from-source*.md
+            * tutorials/3.1/getting-started/dependencies*.md
         * System
             * tutorials/3.1/system/angle*.md
             * tutorials/3.1/system/time*.md
