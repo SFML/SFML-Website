@@ -63,7 +63,7 @@ Text can also be transformed: They have a position, an orientation and a scale. 
 Handling non-ASCII characters (such as accented European, Arabic, or Chinese characters) correctly can be tricky. It requires a good understanding of the various encodings involved in the process of interpreting and drawing your text. To avoid having to bother with these encodings, there's a simple solution: Use *wide literal strings*.
 
 ```cpp
-text.setString(L"יטאח");
+text.setString(L"éèàç");
 ```
 
 It is this simple "L" prefix in front of the string that makes it work by telling the compiler to produce a wide string. Wide strings are a strange beast in C++: the standard doesn't say anything about their size (16-bit? 32-bit?), nor about the encoding that they use (UTF-16? UTF-32?). However we know that on most platforms, if not all, they'll produce Unicode strings, and SFML knows how to handle them correctly.

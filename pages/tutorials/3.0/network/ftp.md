@@ -72,18 +72,26 @@ Now that you understand how the class works, let's have a look at what it can do
 The first thing to do is connect to an FTP server.
 
 ```cpp
+const std::optional<sf::IpAddress> address = sf::IpAddress::resolve("ftp.myserver.org");
+if (!address)
+{
+    // error...
+}
+
 sf::Ftp ftp;
-ftp.connect("ftp.myserver.org");
+ftp.connect(*address);
 ```
 
-The server address can be any valid [`sf::IpAddress`](../../../documentation/3.0.2/classsf_1_1IpAddress.html "sf::IpAddress documentation"): A URL, an IP address, a network name, ...
+The server address is an [`sf::IpAddress`](../../../documentation/3.0.2/classsf_1_1IpAddress.html "sf::IpAddress documentation").
+If you only have a host name, like in the example above, you first have to resolve it with `sf::IpAddress::resolve`, which returns an empty `std::optional` if the name couldn't be resolved.
+If you already know the IP address, you can construct it directly instead, e.g. `sf::IpAddress(192, 168, 0, 5)`.
 
 The standard port for FTP is 21.
 If, for some reason, your server uses a different port, you can specify it as an additional argument:
 
 ```cpp
 sf::Ftp ftp;
-ftp.connect("ftp.myserver.org", 45000);
+ftp.connect(*address, 45000);
 ```
 
 You can also pass a third parameter, which is a time out value.
@@ -91,7 +99,7 @@ This prevents you from having to wait forever (or at least a very long time) if 
 
 ```cpp
 sf::Ftp ftp;
-ftp.connect("ftp.myserver.org", 21, sf::seconds(5));
+ftp.connect(*address, 21, sf::seconds(5));
 ```
 
 Once you're connected to the server, the next step is to authenticate yourself:
