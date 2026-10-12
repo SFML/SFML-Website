@@ -164,7 +164,41 @@
             * tutorials/2.5/network/packet*.md
             * tutorials/2.5/network/http*.md
             * tutorials/2.5/network/ftp*.md
-    * [SFML 2.4](https://www.sfml-dev.org/tutorials/2.4/index-fr.php)
+    * [SFML 2.4](tutorials/2.4/index.md)
+        * Getting Started
+            * tutorials/2.4/getting-started/visual-studio*.md
+            * tutorials/2.4/getting-started/code-blocks*.md
+            * tutorials/2.4/getting-started/linux*.md
+            * tutorials/2.4/getting-started/macos*.md
+            * tutorials/2.4/getting-started/build-from-source*.md
+        * System
+            * tutorials/2.4/system/time*.md
+            * tutorials/2.4/system/thread*.md
+            * tutorials/2.4/system/stream*.md
+        * Window
+            * tutorials/2.4/window/window*.md
+            * tutorials/2.4/window/events*.md
+            * tutorials/2.4/window/inputs*.md
+            * tutorials/2.4/window/opengl*.md
+        * Graphics
+            * tutorials/2.4/graphics/draw*.md
+            * tutorials/2.4/graphics/sprite*.md
+            * tutorials/2.4/graphics/text*.md
+            * tutorials/2.4/graphics/shape*.md
+            * tutorials/2.4/graphics/vertex-array*.md
+            * tutorials/2.4/graphics/transform*.md
+            * tutorials/2.4/graphics/shader*.md
+            * tutorials/2.4/graphics/view*.md
+        * Audio
+            * tutorials/2.4/audio/sounds*.md
+            * tutorials/2.4/audio/recording*.md
+            * tutorials/2.4/audio/streams*.md
+            * tutorials/2.4/audio/spatialization*.md
+        * Network
+            * tutorials/2.4/network/socket*.md
+            * tutorials/2.4/network/packet*.md
+            * tutorials/2.4/network/http*.md
+            * tutorials/2.4/network/ftp*.md
     * [SFML 2.3](https://www.sfml-dev.org/tutorials/2.3/index-fr.php)
     * [SFML 2.2](https://www.sfml-dev.org/tutorials/2.2/index-fr.php)
     * [SFML 2.1](https://www.sfml-dev.org/tutorials/2.1/index-fr.php)
