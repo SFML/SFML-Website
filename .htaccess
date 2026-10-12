@@ -61,11 +61,18 @@ RewriteRule ^ /fr/license/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/faq\.php$
 RewriteRule ^ /faq/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/faq-fr\.php$
+RewriteRule ^ /fr/faq/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/community\.php$
 RewriteRule ^ /community/ [R=301,L]
 RewriteCond %{REQUEST_URI} ^/community-fr\.php$
 RewriteRule ^ /fr/community/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/donation-(ok|cancel)\.php$
+RewriteRule ^ /donate/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/donation-(ok|cancel)-fr\.php$
+RewriteRule ^ /fr/donate/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/development\.php$
 RewriteRule ^ /development/ [R=301,L]
@@ -79,12 +86,20 @@ RewriteRule ^ /fr/development/issues/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/changelog\.php$
 RewriteRule ^ /development/changelog/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/changelog-fr\.php$
+RewriteRule ^ /fr/development/changelog/ [R=301,L]
 RewriteCond %{REQUEST_URI} ^/contribute\.php$
 RewriteRule ^ /development/contribute/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/contribute-fr\.php$
+RewriteRule ^ /fr/development/contribute/ [R=301,L]
 RewriteCond %{REQUEST_URI} ^/style\.php$
 RewriteRule ^ /development/style/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/style-fr\.php$
+RewriteRule ^ /fr/development/style/ [R=301,L]
 RewriteCond %{REQUEST_URI} ^/workflow\.php$
 RewriteRule ^ /development/workflow/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/workflow-fr\.php$
+RewriteRule ^ /fr/development/workflow/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/download\.php$
 RewriteRule ^ /download/ [R=301,L]
@@ -100,6 +115,16 @@ RewriteCond %{REQUEST_URI} ^/download/goodies/index\.php$
 RewriteRule ^ /download/goodies/ [R=301,L]
 RewriteCond %{REQUEST_URI} ^/download/goodies/index-fr\.php$
 RewriteRule ^ /fr/download/goodies/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/download/csfml/index\.php$
+RewriteRule ^ /download/csfml/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/download/csfml/index-fr\.php$
+RewriteRule ^ /fr/download/csfml/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/download/sfml\.net/index\.php$
+RewriteRule ^ /download/sfml.net/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/download/sfml\.net/index-fr\.php$
+RewriteRule ^ /fr/download/sfml.net/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/download/sfml/old-versions\.php$
 RewriteRule ^ /download/sfml/ [R=301,L]
