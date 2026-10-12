@@ -1062,87 +1062,145 @@ RewriteRule ^ /fr/tutorials/2.1/network/ftp/ [R=301,L]
 # SFML 2.0 tutorial redirects
 RewriteCond %{REQUEST_URI} ^/tutorials/2\.0(/index\.php)?$
 RewriteRule ^ /tutorials/2.0/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/index-fr\.php$
+RewriteRule ^ /fr/tutorials/2.0/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/start-vc\.php$
 RewriteRule ^ /tutorials/2.0/getting-started/visual-studio/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/start-vc-fr\.php$
+RewriteRule ^ /fr/tutorials/2.0/getting-started/visual-studio/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/start-cb\.php$
 RewriteRule ^ /tutorials/2.0/getting-started/code-blocks/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/start-cb-fr\.php$
+RewriteRule ^ /fr/tutorials/2.0/getting-started/code-blocks/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/start-linux\.php$
 RewriteRule ^ /tutorials/2.0/getting-started/linux/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/start-linux-fr\.php$
+RewriteRule ^ /fr/tutorials/2.0/getting-started/linux/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/start-osx\.php$
 RewriteRule ^ /tutorials/2.0/getting-started/macos/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/start-osx-fr\.php$
+RewriteRule ^ /fr/tutorials/2.0/getting-started/macos/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/compile-with-cmake\.php$
 RewriteRule ^ /tutorials/2.0/getting-started/build-from-source/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/compile-with-cmake-fr\.php$
+RewriteRule ^ /fr/tutorials/2.0/getting-started/build-from-source/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/system-time\.php$
 RewriteRule ^ /tutorials/2.0/system/time/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/system-time-fr\.php$
+RewriteRule ^ /fr/tutorials/2.0/system/time/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/system-thread\.php$
 RewriteRule ^ /tutorials/2.0/system/thread/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/system-thread-fr\.php$
+RewriteRule ^ /fr/tutorials/2.0/system/thread/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/system-stream\.php$
 RewriteRule ^ /tutorials/2.0/system/stream/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/system-stream-fr\.php$
+RewriteRule ^ /fr/tutorials/2.0/system/stream/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/window-window\.php$
 RewriteRule ^ /tutorials/2.0/window/window/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/window-window-fr\.php$
+RewriteRule ^ /fr/tutorials/2.0/window/window/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/window-events\.php$
 RewriteRule ^ /tutorials/2.0/window/events/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/window-events-fr\.php$
+RewriteRule ^ /fr/tutorials/2.0/window/events/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/window-inputs\.php$
 RewriteRule ^ /tutorials/2.0/window/inputs/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/window-inputs-fr\.php$
+RewriteRule ^ /fr/tutorials/2.0/window/inputs/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/window-opengl\.php$
 RewriteRule ^ /tutorials/2.0/window/opengl/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/window-opengl-fr\.php$
+RewriteRule ^ /fr/tutorials/2.0/window/opengl/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/graphics-draw\.php$
 RewriteRule ^ /tutorials/2.0/graphics/draw/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/graphics-draw-fr\.php$
+RewriteRule ^ /fr/tutorials/2.0/graphics/draw/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/graphics-sprite\.php$
 RewriteRule ^ /tutorials/2.0/graphics/sprite/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/graphics-sprite-fr\.php$
+RewriteRule ^ /fr/tutorials/2.0/graphics/sprite/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/graphics-text\.php$
 RewriteRule ^ /tutorials/2.0/graphics/text/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/graphics-text-fr\.php$
+RewriteRule ^ /fr/tutorials/2.0/graphics/text/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/graphics-shape\.php$
 RewriteRule ^ /tutorials/2.0/graphics/shape/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/graphics-shape-fr\.php$
+RewriteRule ^ /fr/tutorials/2.0/graphics/shape/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/graphics-vertex-array\.php$
 RewriteRule ^ /tutorials/2.0/graphics/vertex-array/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/graphics-vertex-array-fr\.php$
+RewriteRule ^ /fr/tutorials/2.0/graphics/vertex-array/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/graphics-transform\.php$
 RewriteRule ^ /tutorials/2.0/graphics/transform/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/graphics-transform-fr\.php$
+RewriteRule ^ /fr/tutorials/2.0/graphics/transform/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/graphics-shader\.php$
 RewriteRule ^ /tutorials/2.0/graphics/shader/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/graphics-shader-fr\.php$
+RewriteRule ^ /fr/tutorials/2.0/graphics/shader/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/graphics-view\.php$
 RewriteRule ^ /tutorials/2.0/graphics/view/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/graphics-view-fr\.php$
+RewriteRule ^ /fr/tutorials/2.0/graphics/view/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/audio-sounds\.php$
 RewriteRule ^ /tutorials/2.0/audio/sounds/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/audio-sounds-fr\.php$
+RewriteRule ^ /fr/tutorials/2.0/audio/sounds/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/audio-recording\.php$
 RewriteRule ^ /tutorials/2.0/audio/recording/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/audio-recording-fr\.php$
+RewriteRule ^ /fr/tutorials/2.0/audio/recording/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/audio-streams\.php$
 RewriteRule ^ /tutorials/2.0/audio/streams/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/audio-streams-fr\.php$
+RewriteRule ^ /fr/tutorials/2.0/audio/streams/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/audio-spatialization\.php$
 RewriteRule ^ /tutorials/2.0/audio/spatialization/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/audio-spatialization-fr\.php$
+RewriteRule ^ /fr/tutorials/2.0/audio/spatialization/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/network-socket\.php$
 RewriteRule ^ /tutorials/2.0/network/socket/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/network-socket-fr\.php$
+RewriteRule ^ /fr/tutorials/2.0/network/socket/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/network-packet\.php$
 RewriteRule ^ /tutorials/2.0/network/packet/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/network-packet-fr\.php$
+RewriteRule ^ /fr/tutorials/2.0/network/packet/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/network-http\.php$
 RewriteRule ^ /tutorials/2.0/network/http/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/network-http-fr\.php$
+RewriteRule ^ /fr/tutorials/2.0/network/http/ [R=301,L]
 
 RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/network-ftp\.php$
 RewriteRule ^ /tutorials/2.0/network/ftp/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^/tutorials/2\.0/network-ftp-fr\.php$
+RewriteRule ^ /fr/tutorials/2.0/network/ftp/ [R=301,L]
