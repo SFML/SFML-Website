@@ -339,7 +339,45 @@
             * tutorials/2.0/network/packet*.md
             * tutorials/2.0/network/http*.md
             * tutorials/2.0/network/ftp*.md
-    * [SFML 1.6](https://www.sfml-dev.org/tutorials/1.6)
+    * [SFML 1.6](tutorials/1.6/index.md)
+        * Getting Started
+            * tutorials/1.6/getting-started/visual-studio*.md
+            * tutorials/1.6/getting-started/code-blocks*.md
+            * tutorials/1.6/getting-started/linux*.md
+            * tutorials/1.6/getting-started/macos*.md
+            * tutorials/1.6/getting-started/ruby*.md
+            * tutorials/1.6/getting-started/python*.md
+        * System
+            * tutorials/1.6/system/threads*.md
+            * tutorials/1.6/system/random*.md
+        * Window
+            * tutorials/1.6/window/window*.md
+            * tutorials/1.6/window/events*.md
+            * tutorials/1.6/window/time*.md
+            * tutorials/1.6/window/opengl*.md
+        * Graphics
+            * tutorials/1.6/graphics/window*.md
+            * tutorials/1.6/graphics/sprite*.md
+            * tutorials/1.6/graphics/shape*.md
+            * tutorials/1.6/graphics/views*.md
+            * tutorials/1.6/graphics/fonts*.md
+            * tutorials/1.6/graphics/postfx*.md
+            * tutorials/1.6/graphics/win32*.md
+            * tutorials/1.6/graphics/x11*.md
+            * tutorials/1.6/graphics/qt*.md
+            * tutorials/1.6/graphics/wxwidgets*.md
+        * Audio
+            * tutorials/1.6/audio/sound*.md
+            * tutorials/1.6/audio/music*.md
+            * tutorials/1.6/audio/streams*.md
+            * tutorials/1.6/audio/capture*.md
+            * tutorials/1.6/audio/spatialization*.md
+        * Network
+            * tutorials/1.6/network/sockets*.md
+            * tutorials/1.6/network/packets*.md
+            * tutorials/1.6/network/selector*.md
+            * tutorials/1.6/network/http*.md
+            * tutorials/1.6/network/ftp*.md
 * Documentation
     * [SFML 3.1.0](documentation/3.1.0/index.html)
     * [SFML 3.0.2](documentation/3.0.2/index.html)
