@@ -1,5 +1,10 @@
 # Designing your own entities with vertex arrays
 
+!!! advanced "Advanced topic"
+
+    Vertex arrays are lower-level than sprites and shapes, as you define every single point yourself.
+    They're the way to go for efficiently drawing lots of similar things, such as tile maps or particle systems, but you don't need them for your first projects.
+
 ## Introduction
 
 SFML provides simple classes for the most common 2D entities. And while more complex entities can easily be created from these building blocks, it isn't always the most efficient solution. For example, you'll reach the limits of your graphics card very quickly if you draw a large number of sprites. The reason is that performance depends in large part on the number of calls to the `draw` function. Indeed, each call involves setting a set of OpenGL states, resetting matrices, changing textures, etc. All of this is required even when simply drawing two triangles (a sprite). This is far from optimal for your graphics card: Today's GPUs are designed to process large batches of triangles, typically several thousand to millions.

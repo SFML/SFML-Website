@@ -1,5 +1,10 @@
 # Custom audio streams
 
+!!! advanced "Advanced topic"
+
+    Custom audio streams require deriving from `sf::SoundStream` and handling data requests that come from another thread.
+    To play music files, `sf::Music` already does all of that for you, so you only need a custom stream when you generate or receive the audio data yourself.
+
 ## Audio stream? What's that?
 
 An audio stream is similar to music (remember the [`sf::Music`](../../../documentation/3.1.0/classsf_1_1Music.html "sf::Music documentation") class?).

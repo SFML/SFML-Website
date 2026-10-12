@@ -87,7 +87,45 @@ sf::Vector2f origin = entity.getOrigin(); // = (10, 20)
 
 Note that changing the origin also changes where the entity is drawn on screen, even though its position property hasn't changed. If you don't understand why, read this tutorial one more time!
 
+## Bounding boxes
+
+After transforming entities and drawing them, you might want to perform some computations using them e.g. checking for collisions.
+
+SFML entities can give you their bounding box. The bounding box is the minimal rectangle that contains all points belonging to the entity, with sides aligned to the X and Y axes.
+
+![Bounding box of entities](transform-bounds.png)
+
+The bounding box is very useful when implementing collision detection: Checks against a point or another axis-aligned rectangle can be done very quickly, and its area is close enough to that of the real entity to provide a good approximation.
+
+```cpp
+// get the bounding box of the entity
+sf::FloatRect boundingBox = entity.getGlobalBounds();
+
+// check collision with a point
+sf::Vector2f point = ...;
+if (boundingBox.contains(point))
+{
+    // collision!
+}
+
+// check collision with another box (like the bounding box of another entity)
+sf::FloatRect otherBox = ...;
+if (boundingBox.intersects(otherBox))
+{
+    // collision!
+}
+```
+
+The function is named `getGlobalBounds` because it returns the bounding box of the entity in the global coordinate system, i.e. after all of its transformations (position, rotation, scale) have been applied.
+
+There's another function that returns the bounding box of the entity in its *local* coordinate system (before its transformations are applied): `getLocalBounds`. This function can be used to get the initial size of an entity, for example, or to perform more specific calculations.
+
 ## Transforming your own classes
+
+!!! advanced "Advanced topic"
+
+    The rest of this tutorial covers transforming your own classes, building transforms by hand and object hierarchies.
+    You'll need them once you write your own drawable classes, until then you can skip ahead to the next tutorial.
 
 [`sf::Transformable`](https://www.sfml-dev.org/documentation/2.6.2/classsf_1_1Transformable.html "sf::Transformable documentation") is not only made for SFML classes, it can also be a base (or member) of your own classes.
 
@@ -161,39 +199,6 @@ window.draw(entity, states);
 ```
 
 If your entity is a [`sf::Transformable`](https://www.sfml-dev.org/documentation/2.6.2/classsf_1_1Transformable.html "sf::Transformable documentation") (sprite, text, shape), which contains its own internal transform, both the internal and the passed transform are combined to produce the final transform.
-
-## Bounding boxes
-
-After transforming entities and drawing them, you might want to perform some computations using them e.g. checking for collisions.
-
-SFML entities can give you their bounding box. The bounding box is the minimal rectangle that contains all points belonging to the entity, with sides aligned to the X and Y axes.
-
-![Bounding box of entities](transform-bounds.png)
-
-The bounding box is very useful when implementing collision detection: Checks against a point or another axis-aligned rectangle can be done very quickly, and its area is close enough to that of the real entity to provide a good approximation.
-
-```cpp
-// get the bounding box of the entity
-sf::FloatRect boundingBox = entity.getGlobalBounds();
-
-// check collision with a point
-sf::Vector2f point = ...;
-if (boundingBox.contains(point))
-{
-    // collision!
-}
-
-// check collision with another box (like the bounding box of another entity)
-sf::FloatRect otherBox = ...;
-if (boundingBox.intersects(otherBox))
-{
-    // collision!
-}
-```
-
-The function is named `getGlobalBounds` because it returns the bounding box of the entity in the global coordinate system, i.e. after all of its transformations (position, rotation, scale) have been applied.
-
-There's another function that returns the bounding box of the entity in its *local* coordinate system (before its transformations are applied): `getLocalBounds`. This function can be used to get the initial size of an entity, for example, or to perform more specific calculations.
 
 ## Object hierarchies (scene graph)
 

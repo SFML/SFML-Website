@@ -105,6 +105,11 @@ renderTexture.create(500, 500, true); // enable depth buffer
 
 ## Drawing from threads
 
+!!! advanced "Advanced topic"
+
+    The rest of this tutorial is about drawing from multiple threads.
+    Most programs only draw from the main thread, so you can skip it unless you know that you need it.
+
 SFML supports multi-threaded drawing, and you don't even have to do anything to make it work. The only thing to remember is to deactivate a window before using it in another thread. That's because a window (more precisely its OpenGL context) cannot be active in more than one thread at the same time.
 
 ```cpp

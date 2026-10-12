@@ -1,5 +1,10 @@
 # Using OpenGL in an SFML window
 
+!!! advanced "Advanced topic"
+
+    This tutorial is about using OpenGL directly and assumes you already know OpenGL.
+    If you want to draw sprites, shapes and text, the graphics module does that for you and you can skip this tutorial.
+
 ## Introduction
 
 This tutorial is not about OpenGL itself, but rather how to use SFML as an environment for OpenGL, and how to mix them together.

@@ -1,5 +1,10 @@
 # User data streams
 
+!!! advanced "Advanced topic"
+
+    This tutorial requires some familiarity with inheritance and virtual functions.
+    SFML can already load resources from files and from memory. You only need a custom stream if your data comes from somewhere else, such as a ZIP archive, an encrypted file or the network, so feel free to skip this tutorial for now.
+
 ## Introduction
 
 SFML has several resource classes: images, fonts, sounds, etc.
