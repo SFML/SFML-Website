@@ -1,5 +1,9 @@
 # Spatialization: Sounds in 3D
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 2.4. Check out the [latest version of this tutorial](/tutorials/latest/audio/spatialization/).
+
 ## Introduction
 
 By default, sounds and music are played at full volume in each speaker; they are not *spatialized*.

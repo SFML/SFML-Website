@@ -1,5 +1,9 @@
 # Handling time
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 2.2. Check out the [latest version of this tutorial](/tutorials/latest/system/time/).
+
 ## Time in SFML
 
 Unlike many other libraries where time is a uint32 number of milliseconds, or a float number of seconds, SFML doesn't impose any specific unit or type for time values. Instead it leaves this choice to the user through a flexible class: [`sf::Time`](https://www.sfml-dev.org/documentation/2.2/classsf_1_1Time.php "sf::Time documentation"). All SFML classes and functions that manipulate time values use this class.

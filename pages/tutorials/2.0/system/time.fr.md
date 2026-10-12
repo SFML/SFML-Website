@@ -1,5 +1,9 @@
 # Gérer le temps
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 2.0. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/system/time/).
+
 ## Le temps dans SFML
 
 Contrairement à de nombreuses autres bibliothèques qui définissent le temps comme étant des millisecondes en uint32, ou des secondes en float, SFML n'impose aucune unité et aucun type pour les variables de temps. Au lieu de cela, SFML laisse ce choix à l'utilisateur à travers une classe flexible : [`sf::Time`](https://www.sfml-dev.org/documentation/2.0-fr/classsf_1_1Time.php "sf::Time documentation"). Toutes les classes et fonctions SFML qui manipulent du temps utilisent cette classe.

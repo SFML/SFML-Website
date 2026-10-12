@@ -1,5 +1,9 @@
 # Effets spéciaux avec les shaders
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 2.3. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/graphics/shader/).
+
 ## Introduction
 
 Un shader est un petit programme qui s'exécute directement sur la carte graphique, et qui permet au programmeur de décrire les étapes de rendu de manière plus simple et surtout plus flexible que d'utiliser les états et opérations figés qu'OpenGL fournit. Cette flexibilité permet aux shaders d'implémenter des effets qui seraient compliqués, sinon impossibles, à décrire avec les fonctions OpenGL standards : éclairage par pixel, ombres, etc. Les cartes graphiques actuelles, ainsi que les dernières versions d'OpenGL, sont même complètement basées sur les shaders, et les vieux états et fonctions (ce qu'on appelle le "*fixed pipeline*") que vous avez l'habitude d'utiliser sont voués à disparaître.

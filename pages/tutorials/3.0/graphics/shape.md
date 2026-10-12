@@ -1,5 +1,9 @@
 # Shapes
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 3.0. Check out the [latest version of this tutorial](/tutorials/latest/graphics/shape/).
+
 ## Introduction
 
 SFML provides a set of classes that represent simple shape entities.

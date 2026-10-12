@@ -1,5 +1,9 @@
 # Jouer des sons et des musiques
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 2.4. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/audio/sounds/).
+
 ## Son ou musique
 
 SFML fournit deux classes pour jouer de l'audio : [`sf::Sound`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1Sound.php "sf::Sound documentation") et [`sf::Music`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1Music.php "sf::Music documentation"). Elles offrent toutes deux plus ou moins les mêmes fonctionnalités, la principale différence est la manière dont elles fonctionnent.

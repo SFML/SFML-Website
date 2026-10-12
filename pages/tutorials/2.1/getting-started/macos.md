@@ -1,5 +1,9 @@
 # SFML and Xcode (Mac OS X)
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 2.1. Check out the [latest version of this tutorial](/tutorials/latest/getting-started/macos/).
+
 ## Introduction
 
 This is the first tutorial you should read if you're using SFML with Xcode -- and more generally if you are developing applications for Mac OS X. It will show you how to install SFML, set up your IDE and compile a basic SFML program. More importantly, it will also show you how to make your applications ready "out of the box" for the end users.

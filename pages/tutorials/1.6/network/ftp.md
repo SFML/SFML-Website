@@ -1,5 +1,9 @@
 # Using FTP
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 1.6. Check out the [latest version of this tutorial](/tutorials/latest/network/ftp/).
+
 ## Introduction
 
 FTP (File Transfer Protocol) is a widely used protocol for transfering and accessing files over the internet, or any other network. It consists of a client-server architecture which is basically very simple: the client sends a command to the server, which executes it and sends a response back to the client to inform him about the success or failure of the operation.

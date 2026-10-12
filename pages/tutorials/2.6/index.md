@@ -1,5 +1,9 @@
 # Tutorials for SFML 2.6
 
+!!! warning ""
+
+    These are the tutorials for SFML 2.6. Check out the [latest tutorials](/tutorials/latest/).
+
 If you're new to SFML, start with the getting started tutorial for your platform, then work through the window and graphics tutorials in order.
 Each module first lists the tutorials you'll need for most projects, followed by the ones that go further.
 Tutorials and sections that cover more complex topics are marked as advanced, so you can decide whether to read them now or come back later.

@@ -1,5 +1,9 @@
 # Using sockets
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 1.6. Check out the [latest version of this tutorial](/tutorials/latest/network/socket/).
+
 ## Introduction
 
 In this tutorial you will learn the basics of network programming with sockets, and you will be able to exchange data between two distant computers.

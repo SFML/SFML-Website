@@ -1,5 +1,9 @@
 # Jouer une musique
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 1.6. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/audio/sounds/).
+
 ## Introduction
 
 Vous vous demandez peut-être, "mais quelle est la différence entre une musique et un son ?". Et bien, une musique est simplement un son plus long. Mais cela fait une énorme différence en programmation audio. La même différence qui fait que vous devez compresser vos musiques en MP3 ou en OGG. Comme nous l'avons vu dans le tutoriel précédent, les données sonores non compressées sont composées d'échantillons, qui sont (dans la SFML) des entiers signés de 16 bits. Prenez le taux d'échantillonnage standard pour une qualité CD (44100 échantillons par seconde), deux canaux, et vous finissez avec 50 Mo en mémoire pour pas plus de 5 minutes de musique.

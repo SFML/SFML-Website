@@ -1,5 +1,9 @@
 # Adding special effects with shaders
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 2.6. Check out the [latest version of this tutorial](/tutorials/latest/graphics/shader/).
+
 !!! advanced "Advanced topic"
 
     Shaders are small programs written in GLSL, a separate language that runs on the graphics card.

@@ -1,5 +1,9 @@
 # Shapes
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 2.6. Check out the [latest version of this tutorial](/tutorials/latest/graphics/shape/).
+
 ## Introduction
 
 SFML provides a set of classes that represent simple shape entities. Each type of shape is a separate class, but they all derive from the same base class so that they have access to the same subset of common features. Each class then adds its own specifics: a radius property for the circle class, a size for the rectangle class, points for the polygon class, etc.

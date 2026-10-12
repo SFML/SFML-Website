@@ -1,5 +1,9 @@
 # Using and extending packets
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 1.6. Check out the [latest version of this tutorial](/tutorials/latest/network/packet/).
+
 ## Introduction
 
 Data exchange through a network can be more complicated than it seems. Everything may look cool when you test your application with your own computer as both the client and the server, but when you deal with internet and different platforms, several issues can arise.

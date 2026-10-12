@@ -1,5 +1,9 @@
 # Using threads and mutexes
 
+!!! warning ""
+
+    You're reading a tutorial for SFML 1.6, which doesn't exist anymore in the latest version. Check out the [latest tutorials](/tutorials/latest/).
+
 ## Introduction
 
 First, I must say that this tutorial is not the most important one. In fact you can start learning and using SFML without threads and mutexes. But as the system package is the base for every other package, it is important to know what features it can provide you.

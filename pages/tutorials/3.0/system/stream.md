@@ -1,5 +1,9 @@
 # User data streams
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 3.0. Check out the [latest version of this tutorial](/tutorials/latest/system/stream/).
+
 !!! advanced "Advanced topic"
 
     This tutorial requires some familiarity with inheritance and virtual functions.

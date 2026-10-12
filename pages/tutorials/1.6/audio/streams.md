@@ -1,5 +1,9 @@
 # Using streams
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 1.6. Check out the [latest version of this tutorial](/tutorials/latest/audio/streams/).
+
 ## Introduction
 
 Sometimes, audio data cannot be integrally loaded in memory. For example, the sound can be aquired from the network, or on the fly from a file that is too big. In such cases, you must be able to play the sound while you load it, and still give the illusion that you play it in one block. This is what is called "streaming".

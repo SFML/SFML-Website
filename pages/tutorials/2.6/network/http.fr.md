@@ -1,5 +1,9 @@
 # Requêtes web avec HTTP
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 2.6. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/network/http/).
+
 ## Introduction
 
 SFML fournit une classe de client HTTP simple, pour vous permettre de communiquer avec des serveurs web. "Simple" signifie qu'elle supporte uniquement les fonctionnalités les plus basiques de HTTP : les requêtes POST, GET et HEAD, l'accès aux champs d'en-tête, et la lecture/écriture du corps des pages.

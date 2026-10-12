@@ -1,5 +1,9 @@
 # Utiliser les sockets
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 1.6. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/network/socket/).
+
 ## Introduction
 
 Dans ce tutoriel vous allez apprendre les rudiments de la programmation réseau à l'aide des sockets, et vous serez capables d'échanger des données entre deux ordinateurs distants.

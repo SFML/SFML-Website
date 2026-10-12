@@ -1,5 +1,9 @@
 # SFML with the CMake Project Template
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 3.0. Check out the [latest version of this tutorial](/tutorials/latest/getting-started/cmake/).
+
 ## Introduction
 
 This tutorial will work on any OS, with any IDE, and with any compiler.

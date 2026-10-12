@@ -1,5 +1,9 @@
 # Controlling the 2D camera with views
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 3.0. Check out the [latest version of this tutorial](/tutorials/latest/graphics/view/).
+
 ## What is a view?
 
 In games, it is not uncommon to have levels which are much bigger than the window itself.

@@ -1,5 +1,9 @@
 # Using OpenGL in a SFML window
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 2.0. Check out the [latest version of this tutorial](/tutorials/latest/window/opengl/).
+
 ## Introduction
 
 This tutorial is not about OpenGL itself, but rather how to use SFML as an environment for OpenGL, and how to mix them together.

@@ -1,5 +1,9 @@
 # Utiliser un sélecteur
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 1.6. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/network/socket/).
+
 ## Introduction
 
 Comme vous avez pu le voir dans le tutoriel précédent, certaines fonctions des sockets (`Accept`, `Receive`) sont bloquantes, ce qui signifie qu'elles vont stopper l'exécution du programme tout entier si elles sont utilisées. Cela signifie également que vous ne pourrez jamais attendre sur deux sockets en même temps. Une bonne solution est d'utiliser un thread : placez les appels bloquants dans un nouveau thread, et votre programme sera toujours capable de tourner pendant que les sockets sont en attente. Mais utiliser des threads n'est pas simple : cela requiert une bonne synchronisation, peut être difficile à déboguer, et peut dégrader les performances si vous utilisez beaucoup de threads.

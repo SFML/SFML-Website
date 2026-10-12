@@ -1,5 +1,9 @@
 # Adding post-effects
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 1.6. Check out the [latest version of this tutorial](/tutorials/latest/graphics/shader/).
+
 ## Introduction
 
 With the evolution of graphics cards, shaders have become a common thing in graphics applications. They allow easy and full customization of vertex and pixel output. As the SFML graphics package mainly aims at 2D graphics, we'll focus on pixel shaders, and on what we call post-effects.

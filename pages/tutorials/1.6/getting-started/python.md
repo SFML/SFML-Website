@@ -1,5 +1,9 @@
 # SFML and Python
 
+!!! warning ""
+
+    You're reading a tutorial for SFML 1.6, which doesn't exist anymore in the latest version. Check out the [latest tutorials](/tutorials/latest/).
+
 ## Introduction
 
 The purpose of this tutorial is to explain you how to compile / install / use the Python binding of SFML (which is called **PySFML**).

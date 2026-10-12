@@ -1,5 +1,9 @@
 # Designing your own entities with vertex arrays
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 2.3. Check out the [latest version of this tutorial](/tutorials/latest/graphics/vertex-array/).
+
 ## Introduction
 
 SFML provides simple classes for the most common 2D entities. And while more complex entities can easily be created from these building blocks, it isn't always the most efficient solution. For example, you'll reach the limits of your graphics card very quickly if you draw a large number of sprites. The reason is that performance depends in large part on the number of calls to the `draw` function. Indeed, each call involves setting a set of OpenGL states, resetting matrices, changing textures, etc. All of this is required even when simply drawing two triangles (a sprite). This is far from optimal for your graphics card: Today's GPUs are designed to process large batches of triangles, typically several thousand to millions.

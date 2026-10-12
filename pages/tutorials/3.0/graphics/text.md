@@ -1,5 +1,9 @@
 # Text and fonts
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 3.0. Check out the [latest version of this tutorial](/tutorials/latest/graphics/text/).
+
 ## Loading a font
 
 Before drawing any text, you need to have an available font, just like any other program that prints text.

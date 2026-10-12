@@ -1,5 +1,9 @@
 # Ajouter des post-effects
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 1.6. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/graphics/shader/).
+
 ## Introduction
 
 Avec l'évolution des cartes graphiques, l'utilisation des shaders est devenue incontournable dans les applications graphiques. Ils permettent de personnaliser facilement et complétement les transformations des sommets et des pixels. Etant donné que le module graphique de la SFML traite principalement de graphisme en 2D, nous ne nous intéresserons qu'aux pixel shaders, et à ce qu'on appelle les *post-effects*.

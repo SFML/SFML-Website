@@ -1,5 +1,9 @@
 # Sprites and textures
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 2.0. Check out the [latest version of this tutorial](/tutorials/latest/graphics/sprite/).
+
 ## Vocabulary
 
 Most (if not all) of you are already familiar with these two very common objects, so let's define them very briefly.

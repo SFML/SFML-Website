@@ -1,5 +1,9 @@
 # Using OpenGL in a SFML window
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 2.6. Check out the [latest version of this tutorial](/tutorials/latest/window/opengl/).
+
 !!! advanced "Advanced topic"
 
     This tutorial is about using OpenGL directly and assumes you already know OpenGL.

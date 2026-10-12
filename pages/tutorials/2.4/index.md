@@ -1,5 +1,9 @@
 # Tutorials for SFML 2.4
 
+!!! warning ""
+
+    These are the tutorials for SFML 2.4. Check out the [latest tutorials](/tutorials/latest/).
+
 ## Getting started
 
 - [SFML and Visual Studio](getting-started/visual-studio.md)

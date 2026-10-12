@@ -1,5 +1,9 @@
 # SFML and Visual Studio
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 1.6. Check out the [latest version of this tutorial](/tutorials/latest/getting-started/visual-studio/).
+
 ## Introduction
 
 This tutorial is the first one you should read if you're using SFML with the Visual C++ compiler. It will explain how to install SFML, setup your IDE, and compile a SFML program.  

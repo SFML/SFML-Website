@@ -1,5 +1,9 @@
 # Playing a sound
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 1.6. Check out the [latest version of this tutorial](/tutorials/latest/audio/sounds/).
+
 ## Introduction
 
 Playing a sound is the easiest task of the SFML audio package. However it involves two entities : the sound data, and the sound instance. In fact it acts exactly like images and sprites in the graphics package.

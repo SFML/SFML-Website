@@ -1,5 +1,9 @@
 # Flux audio personnalisés
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 2.4. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/audio/streams/).
+
 ## Un flux audio ? C'est quoi ça ?
 
 Un flux (en anglais *stream*) audio est similaire à une musique (vous vous souvenez de la classe [`sf::Music`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1Music.php "sf::Music documentation") ?). Il a pratiquement les mêmes fonctions et se comporte de la même manière. La seule différence est qu'un flux audio ne jouera pas un fichier audio : il va jouer une source audio perso que *vous* vous chargerez de fournir. En d'autres termes, définir votre propre flux audio vous permet de jouer n'importe quoi d'autre qu'un fichier : un flux internet, une musique générée par votre programme, un format non supporté par SFML, etc.

@@ -1,5 +1,9 @@
 # Drawing simple shapes
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 1.6. Check out the [latest version of this tutorial](/tutorials/latest/graphics/shape/).
+
 ## Introduction
 
 This new tutorial will teach you how to draw simple 2D shapes, such as lines, rectangles, circles or polygons with SFML.

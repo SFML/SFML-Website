@@ -1,5 +1,9 @@
 # Générer des nombres aléatoires
 
+!!! warning ""
+
+    Vous lisez un tutoriel pour SFML 1.6, qui n'existe plus dans la dernière version. Consultez les [derniers tutoriels](/fr/tutorials/latest/).
+
 ## Introduction
 
 Générer des nombres pseudo-aléatoires n'est pas difficile, particulièrement avec les fonctions `rand` et `srand` de la bibliothèque standard. Mais on finit toujours par écrire des fonctions intermédiaires, par exemple pour obtenir un nombre aléatoire dans un intervalle spécifique, ou encore pour générer des nombres décimaux. C'est pourquoi la SFML fournit une classe utilitaire, [`sf::Randomizer`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Randomizer.php "sf::Randomizer documentation"), qui définit quelques fonctions pour vous aider.

@@ -1,5 +1,9 @@
 # Threads
 
+!!! warning ""
+
+    You're reading a tutorial for SFML 2.6, which doesn't exist anymore in the latest version. Check out the [latest tutorials](/tutorials/latest/).
+
 !!! advanced "Advanced topic"
 
     Multi-threading is hard to get right, as threads accessing the same data need to be synchronized carefully.

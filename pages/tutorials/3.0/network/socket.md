@@ -1,5 +1,9 @@
 # Communicating with sockets
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 3.0. Check out the [latest version of this tutorial](/tutorials/latest/network/socket/).
+
 ## Sockets
 
 A socket is the interface between your application and the outside world: through a socket, you can send and receive data.

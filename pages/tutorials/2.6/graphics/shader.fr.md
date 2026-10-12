@@ -1,5 +1,9 @@
 # Effets spéciaux avec les shaders
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 2.6. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/graphics/shader/).
+
 !!! advanced "Sujet avancé"
 
     Les shaders sont de petits programmes écrits en GLSL, un langage à part qui s'exécute sur la carte graphique.

@@ -1,5 +1,9 @@
 # Transferts de fichiers avec FTP
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 2.2. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/network/ftp/).
+
 ## FTP pour les nuls
 
 Si vous savez ce qu'est FTP, et que vous souhaitez juste savoir comment utiliser la classe FTP fournie par SFML, vous pouvez sauter ce chapitre.

@@ -1,5 +1,9 @@
 # Flux audio personnalisés
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 2.6. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/audio/streams/).
+
 !!! advanced "Sujet avancé"
 
     Les flux audio personnalisés nécessitent de dériver de `sf::SoundStream` et de répondre à des demandes de données qui arrivent depuis un autre thread.

@@ -1,5 +1,9 @@
 # Utiliser les threads et les mutexs
 
+!!! warning ""
+
+    Vous lisez un tutoriel pour SFML 1.6, qui n'existe plus dans la dernière version. Consultez les [derniers tutoriels](/fr/tutorials/latest/).
+
 ## Introduction
 
 Tout d'abord, il faut dire que ce tutoriel, bien qu'étant le premier, n'est pas le plus important. En fait vous pouvez très bien commencer à apprendre et à utiliser la SFML sans thread ni mutex. Mais en tant que module de base pour tous les autres modules, il est important de savoir quelles fonctionnalités il peut offrir.

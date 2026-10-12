@@ -1,5 +1,9 @@
 # Using and extending packets
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 3.0. Check out the [latest version of this tutorial](/tutorials/latest/network/packet/).
+
 ## Problems that need to be solved
 
 Exchanging data on a network is more tricky than it seems.

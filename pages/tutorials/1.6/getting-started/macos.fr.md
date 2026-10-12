@@ -1,5 +1,9 @@
 # SFML et Xcode (Mac OS X)
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 1.6. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/getting-started/macos/).
+
 ## Introduction
 
 Ce tutoriel est le premier que vous devriez lire si vous utilisez SFML avec l'EDI Xcode et le compilateur GCC (celui par défaut). Il va vous expliquer comment installer SFML, paramétrer votre EDI, et compiler un programme SFML. La compilation des bibliothèques SFML est également expliquée, pour les utilisateurs plus expérimentés.

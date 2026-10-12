@@ -1,5 +1,9 @@
 # SFML and Code::Blocks (MinGW)
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 2.4. Check out the [latest version of this tutorial](/tutorials/latest/getting-started/code-blocks/).
+
 ## Introduction
 
 This tutorial is the first one you should read if you're using SFML with the Code::Blocks IDE, and the GCC compiler (this is the default one). It will explain how to configure your SFML projects.

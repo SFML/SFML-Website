@@ -1,5 +1,9 @@
 # Threads
 
+!!! warning ""
+
+    You're reading a tutorial for SFML 2.4, which doesn't exist anymore in the latest version. Check out the [latest tutorials](/tutorials/latest/).
+
 ## What is a thread?
 
 Most of you should already know what a thread is, however here is a little explanation for those who are really new to this concept.

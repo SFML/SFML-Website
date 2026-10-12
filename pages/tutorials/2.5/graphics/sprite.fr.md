@@ -1,5 +1,9 @@
 # Sprites et textures
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 2.5. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/graphics/sprite/).
+
 ## Vocabulaire
 
 La plupart d'entre vous sont déjà familiers avec ces deux entités très communes, allons donc à l'essentiel.

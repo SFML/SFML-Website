@@ -1,5 +1,9 @@
 # Gérer les évènements
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 1.6. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/window/events/).
+
 ## Introduction
 
 Dans le tutoriel précédent, nous avons appris à ouvrir une fenêtre mais nous n'avions aucun moyen de stopper l'application. Ici, nous allons apprendre à intercepter les évènements d'une fenêtre et à les gérer correctement.

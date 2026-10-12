@@ -1,5 +1,9 @@
 # Utiliser et étendre les paquets
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 2.1. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/network/packet/).
+
 ## Les problèmes à résoudre
 
 Echanger des données sur un réseau peut être plus difficile qu'il n'y paraît. La raison : des machines différentes, avec des systèmes d'exploitation et des processeurs différents, sont mis en communication directe. Et des problèmes insoupçonnés peuvent apparaître lorsque vous voulez échanger des données de manière fiable entre ces machines.

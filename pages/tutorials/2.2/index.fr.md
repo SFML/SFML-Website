@@ -1,5 +1,9 @@
 # Tutoriels pour SFML 2.2
 
+!!! warning ""
+
+    Ce sont les tutoriels pour SFML 2.2. Consultez les [derniers tutoriels](/fr/tutorials/latest/).
+
 ## Démarrer
 
 - [SFML et Visual Studio](getting-started/visual-studio.md)

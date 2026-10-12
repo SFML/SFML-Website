@@ -1,5 +1,9 @@
 # Texte et polices
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 2.5. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/graphics/text/).
+
 ## Charger une police
 
 Avant de dessiner du texte, vous avez besoin d'une police de caractères -- tout comme n'importe quel autre programme qui affiche du texte. Les polices sont encapsulées dans la classe [`sf::Font`](https://www.sfml-dev.org/documentation/2.5.1-fr/classsf_1_1Font.php "sf::Font documentation"), qui fournit trois fonctionnalités principales : charger une police, récupérer ses glyphes (i.e. les caractères graphiques), et lire ses divers attributs. Il est très probable que la plupart du temps vous n'ayiez qu'à vous préoccuper de la première, à savoir charger des polices. C'est donc par celle-ci que nous allons commencer.

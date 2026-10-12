@@ -1,5 +1,9 @@
 # Les threads
 
+!!! warning ""
+
+    Vous lisez un tutoriel pour SFML 2.6, qui n'existe plus dans la dernière version. Consultez les [derniers tutoriels](/fr/tutorials/latest/).
+
 !!! advanced "Sujet avancé"
 
     Le multi-threading est difficile à maîtriser, car les threads qui accèdent aux mêmes données doivent être synchronisés avec soin.

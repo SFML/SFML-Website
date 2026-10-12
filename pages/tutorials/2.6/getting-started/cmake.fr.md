@@ -1,5 +1,9 @@
 # SFML avec le modèle de projet CMake
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 2.6. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/getting-started/cmake/).
+
 ## Introduction
 
 Ce tutoriel fonctionnera sur n'importe quel système d'exploitation, avec n'importe quel environnement de développement intégré (IDE) et n'importe quel compilateur. Il expliquera comment créer un projet pouvant être utilisé avec n'importe quelle version, branche ou commit Git de SFML. Cette approche est unique en ce sens qu'elle élimine la possibilité d'erreurs de liaison et facilite autant que possible la mise à niveau de votre version de SFML à l'avenir. Elle inclut même un pipeline d'intégration continue (CI) pour vérifier automatiquement que votre projet continue de se compiler sur Windows, Linux et macOS.

@@ -1,5 +1,9 @@
 # Web requests with HTTP
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 2.6. Check out the [latest version of this tutorial](/tutorials/latest/network/http/).
+
 ## Introduction
 
 SFML provides a simple HTTP client class which you can use to communicate with HTTP servers. "Simple" means that it supports the most basic features of HTTP: POST, GET and HEAD request types, accessing HTTP header fields, and reading/writing the pages body.

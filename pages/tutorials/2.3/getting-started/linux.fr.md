@@ -1,5 +1,9 @@
 # SFML et Linux
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 2.3. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/getting-started/linux/).
+
 ## Introduction
 
 Ce tutoriel est le premier que vous devriez lire si vous utilisez SFML sous Linux. Il va vous expliquer comment installer SFML, et comment compiler des projets qui l'utilisent.

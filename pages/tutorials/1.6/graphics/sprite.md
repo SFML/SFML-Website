@@ -1,5 +1,9 @@
 # Displaying a sprite
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 1.6. Check out the [latest version of this tutorial](/tutorials/latest/graphics/sprite/).
+
 ## Introduction
 
 Displaying sprites is maybe the most important part of a 2D API. Because, basically, everything is a sprite. Let's have a look at what they look like in SFML.

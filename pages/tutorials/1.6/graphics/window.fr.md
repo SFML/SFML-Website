@@ -1,5 +1,9 @@
 # Utiliser les fenêtres de rendu
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 1.6. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/graphics/draw/).
+
 ## Introduction
 
 Le module de fenêtrage fournit un système complet pour gérer les fenêtres et les évènements, et peut s'interfacer avec OpenGL. Mais que se passe-t-il si nous ne voulons pas utiliser OpenGL ? SFML fournit un module dédié à l'affichage de graphiques en 2D, le module graphique.

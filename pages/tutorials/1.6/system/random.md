@@ -1,5 +1,9 @@
 # Generating random numbers
 
+!!! warning ""
+
+    You're reading a tutorial for SFML 1.6, which doesn't exist anymore in the latest version. Check out the [latest tutorials](/tutorials/latest/).
+
 ## Introduction
 
 Generating pseudo-random numbers is not hard, especially with the `rand` and `srand` functions from the standard library. But you always end up writing helper functions, for getting a random number in a specific range, getting a float random number, etc. That's why SFML provides a helper class, [`sf::Randomizer`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Randomizer.php "sf::Randomizer documentation"), that defines some helper functions.
