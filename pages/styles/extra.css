@@ -57,3 +57,39 @@ p:has(img) {
     -webkit-mask-image: var(--md-admonition-icon--advanced);
     mask-image: var(--md-admonition-icon--advanced);
 }
+
+/* SFML green, replacing the theme's palette including its default indigo accent */
+:root,
+[data-md-color-primary=custom] {
+    --md-primary-fg-color: #8cc445;
+    --md-primary-fg-color--light: #98ce55;
+    --md-primary-fg-color--dark: #72a630;
+    --md-primary-bg-color: #fff;
+    --md-primary-bg-color--light: #ffffffb3;
+    --md-typeset-a-color: #72a630;
+}
+
+:root,
+[data-md-color-accent=custom] {
+    --md-accent-fg-color: #567e25;
+    --md-accent-fg-color--transparent: #567e251a;
+    --md-accent-bg-color: #fff;
+    --md-accent-bg-color--light: #ffffffb3;
+}
+
+[data-md-color-scheme=slate][data-md-color-primary=custom] {
+    --md-primary-fg-color: #72a630;
+    --md-primary-fg-color--light: #8cc445;
+    --md-primary-fg-color--dark: #567e25;
+    --md-typeset-a-color: #8cc445;
+}
+
+[data-md-color-scheme=slate][data-md-color-accent=custom] {
+    --md-accent-fg-color: #b4dc85;
+    --md-accent-fg-color--transparent: #b4dc851a;
+}
+
+/* The theme dims inactive tabs to 70%, which is hard to read on the green */
+.md-tabs__link {
+    opacity: 0.85;
+}
