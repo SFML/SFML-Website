@@ -1,5 +1,9 @@
 # Using views
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 1.6. Check out the [latest version of this tutorial](/tutorials/latest/graphics/view/).
+
 ## Introduction
 
 In this tutorial, you'll learn how to use SFML 2D views. Views are like 2D cameras, which allow you to move, zoom or scroll without having to move or resize the whole scene.

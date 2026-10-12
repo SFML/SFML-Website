@@ -1,5 +1,9 @@
 # User data streams
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 2.0. Check out the [latest version of this tutorial](/tutorials/latest/system/stream/).
+
 ## Introduction
 
 SFML has several resource classes: images, fonts, sounds, etc. In most programs, these resources will be loaded from files, with the help of their `loadFromFile` function. In a few other situations, resources will be packed directly into the executable or in a big data file, and loaded from memory with `loadFromMemory`. These functions cover *almost* all the possible use cases -- but not all.

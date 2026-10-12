@@ -1,5 +1,9 @@
 # Afficher un sprite
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 1.6. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/graphics/sprite/).
+
 ## Introduction
 
 Afficher des sprites est sans doute la partie la plus importante d'une API 2D. Parce que, basiquement, tout est un sprite. Regardons à quoi ils ressemblent dans la SFML.

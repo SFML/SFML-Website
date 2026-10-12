@@ -1,6 +1,10 @@
 
 # Position, rotation, scale: Transforming entities
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 3.0. Check out the [latest version of this tutorial](/tutorials/latest/graphics/transform/).
+
 ## Transforming SFML entities
 
 All SFML classes (sprites, text, shapes) use the same interface for transformations: [`sf::Transformable`](../../../documentation/3.0.2/classsf_1_1Transformable.html "sf::Transformable documentation").

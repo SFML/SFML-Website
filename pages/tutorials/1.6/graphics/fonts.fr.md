@@ -1,5 +1,9 @@
 # Afficher du texte
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 1.6. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/graphics/text/).
+
 ## Introduction
 
 Dans ce tutoriel, nous allons couvrir le rendu de texte à l'aide des classes [`sf::Font`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Font.php "sf::Font documentation") et [`sf::String`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1String.php "sf::String documentation").

@@ -1,5 +1,9 @@
 # Integrating to a wxWidgets interface
 
+!!! warning ""
+
+    You're reading a tutorial for SFML 1.6, which doesn't exist anymore in the latest version. Check out the [latest tutorials](/tutorials/latest/).
+
 ## Introduction
 
 The best way to integrate some SFML graphics to a wxWidgets interface is to create a specialized type of control. In this tutorial, we'll define a `wxSFMLCanvas` class that will be a base class for creating your custom rendering controls.

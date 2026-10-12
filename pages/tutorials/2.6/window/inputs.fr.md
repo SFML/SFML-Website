@@ -1,5 +1,9 @@
 # Clavier, souris et joysticks
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 2.6. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/window/inputs/).
+
 ## Introduction
 
 Ce tutoriel explique comment accéder aux entrées globales : clavier, souris et joysticks. Ces fonctionnalités ne sont en aucun cas à confondre avec les évènements : les entrées temps-réel vous permettent de vérifier l'état courant du clavier, de la souris et des joysticks à n'importe quel moment ("*est-ce que ce bouton est actuellement pressé ?*", "*où se trouve la souris ?*"), alors que les évènements vous préviennent lorsque quelque chose change ("*ce bouton a été pressé*", "*la souris a bougé*").

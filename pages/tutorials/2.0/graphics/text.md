@@ -1,5 +1,9 @@
 # Text and fonts
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 2.0. Check out the [latest version of this tutorial](/tutorials/latest/graphics/text/).
+
 ## Loading a font
 
 Before drawing any text, you need to have an available font, just like any other program that prints text. Fonts are encapsulated in the [`sf::Font`](https://www.sfml-dev.org/documentation/2.0/classsf_1_1Font.php "sf::Font documentation") class, which provides three main features: loading a font, getting glyphs (i.e. visual characters) from it, and reading its attributes. In a typical program, you'll only have to make use of the first feature, loading the font, so let's focus on that first.

@@ -1,5 +1,9 @@
 # Migration Guide
 
+!!! warning ""
+
+    You're reading a tutorial for SFML 3.0, which doesn't exist anymore in the latest version. Check out the [latest tutorials](/tutorials/latest/).
+
 Welcome to SFML 3!
 The SFML Team has put a lot of effort into delivering a library that is both familiar to existing users while also making significant improvements.
 This document will walk you through how to upgrade your SFML 2 application to SFML 3.

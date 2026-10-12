@@ -1,5 +1,9 @@
 # Compiling SFML with CMake
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 2.0. Check out the [latest version of this tutorial](/tutorials/latest/getting-started/build-from-source/).
+
 ## Introduction
 
 Admittedly, the title of this tutorial is a bit misleading. You will not *compile* SFML with CMake, because CMake is *not a compiler*. So... what is CMake?

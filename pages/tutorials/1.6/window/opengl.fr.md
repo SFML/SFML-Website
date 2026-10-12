@@ -1,5 +1,9 @@
 # Utiliser OpenGL
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 1.6. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/window/opengl/).
+
 ## Introduction
 
 Ce tutoriel ne traite pas d'OpenGL en lui-même, mais seulement de la manière d'utiliser le module de fenêtrage pour s'interfacer avec OpenGL. Comme vous le savez sans doute, l'une des fonctionnalités les plus importantes d'OpenGL est la portabilité. Cependant, pour fonctionner OpenGL requiert que vous ayiez créé un contexte de rendu en premier lieu. Et les contextes de rendu sont tout sauf portables ; chaque système d'exploitation possède son propre moyen de les créer. C'est pourquoi les gens utilisent habituellement une bibliothèque portable afin d'obtenir un système de fenêtrage et d'évènements portable capable de faire tourner OpenGL quelque soit le système. Les bibliothèques les plus connues pour le faire sont SDL et GLUT, mais elles sont écrites en C et pas toujours pratiques à utiliser en C++, particulièrement si vous avez une approche orientée objet. Elles souffrent également de certains manques essentiels, comme être utilisables dans plusieurs fenêtres simultanées ou dans des interfaces existantes.

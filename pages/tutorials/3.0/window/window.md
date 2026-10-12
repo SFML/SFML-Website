@@ -1,5 +1,9 @@
 # Opening and managing an SFML window
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 3.0. Check out the [latest version of this tutorial](/tutorials/latest/window/window/).
+
 ## Introduction
 
 This tutorial only explains how to open and manage a window.

@@ -1,5 +1,9 @@
 # Utiliser OpenGL dans une fenêtre SFML
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 2.5. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/window/opengl/).
+
 ## Introduction
 
 Ce tutoriel ne parle pas d'OpenGL, mais plutôt de la manière d'utiliser SFML comme interface à OpenGL, ainsi que la façon de les mélanger.

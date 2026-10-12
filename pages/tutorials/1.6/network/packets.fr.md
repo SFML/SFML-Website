@@ -1,5 +1,9 @@
 # Utiliser et étendre les paquets
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 1.6. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/network/packet/).
+
 ## Introduction
 
 L'échange de données par le réseau peut être plus compliqué qu'il n'y paraît. Tout peut sembler facile tant que vous testez votre application avec votre propre ordinateur en tant que client et serveur, mais lorsque vous commencez à transiter par internet et sur différentes plateformes, beaucoup de problèmes peuvent apparaître.

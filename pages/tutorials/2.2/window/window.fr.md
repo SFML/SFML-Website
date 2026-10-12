@@ -1,5 +1,9 @@
 # Ouvrir et gérer une fenêtre SFML
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 2.2. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/window/window/).
+
 ## Introduction
 
 Ce tutoriel explique uniquement comment ouvrir et gérer une fenêtre avec SFML. Dessiner des choses sort déjà du cadre du module sfml-window : c'est en effet géré par le module sfml-graphics. Cependant, la gestion de la fenêtre reste exactement la même, la lecture de ce tutoriel est donc indispensable dans tous les cas.

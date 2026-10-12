@@ -1,5 +1,9 @@
 # Les évènements expliqués
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 2.4. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/window/events/).
+
 ## Introduction
 
 Ce tutoriel fournit une liste détaillée des évènements des fenêtres. Il les décrit, et montre comment (et comment ne pas) les utiliser.

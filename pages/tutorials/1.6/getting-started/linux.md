@@ -1,5 +1,9 @@
 # SFML and gcc (Linux)
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 1.6. Check out the [latest version of this tutorial](/tutorials/latest/getting-started/linux/).
+
 ## Introduction
 
 This tutorial is the first one you should read if you're using SFML under Linux with the GCC compiler. It will explain how to install SFML, setup your compiler, and compile a SFML program.  

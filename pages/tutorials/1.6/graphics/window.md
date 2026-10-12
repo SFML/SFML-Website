@@ -1,5 +1,9 @@
 # Using render windows
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 1.6. Check out the [latest version of this tutorial](/tutorials/latest/graphics/draw/).
+
 ## Introduction
 
 Window package provides a complete system for handling windows and events, an can interface with OpenGL. But what if we don't want to use OpenGL ? SFML provides a package dedicated to 2D graphics, the graphics package.

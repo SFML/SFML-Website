@@ -1,5 +1,9 @@
 # Displaying text
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 1.6. Check out the [latest version of this tutorial](/tutorials/latest/graphics/text/).
+
 ## Introduction
 
 In this tutorial, we will cover text rendering with the [`sf::Font`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Font.php "sf::Font documentation") and [`sf::String`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1String.php "sf::String documentation") classes.

@@ -1,5 +1,9 @@
 # Position, rotation, échelle : transformer des entités
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 2.5. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/graphics/transform/).
+
 ## Transformer des entités SFML
 
 Toutes les classes de SFML (sprites, texte, formes) utilisent la même interface pour les transformations : [`sf::Transformable`](https://www.sfml-dev.org/documentation/2.5.1-fr/classsf_1_1Transformable.php "sf::Transformable documentation"). Cette classe de base définit une API simple pour positionner, tourner et redimensionner vos entités. Elle n'offre pas une flexibilité maximale, mais définit plutôt une interface qui soit facile à comprendre et à utiliser, et qui couvre 99% des cas d'utilisation -- pour les 1% restant, voyez les derniers chapitres.

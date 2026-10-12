@@ -1,5 +1,9 @@
 # Opening and managing a SFML window
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 2.1. Check out the [latest version of this tutorial](/tutorials/latest/window/window/).
+
 ## Introduction
 
 This tutorial only explains how to open and manage a window. Drawing stuff is beyond the scope of the sfml-window module: it is handled by the sfml-graphics module. However, the window management remains exactly the same so reading this tutorial is important in any case.

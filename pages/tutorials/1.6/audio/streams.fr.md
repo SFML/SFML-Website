@@ -1,5 +1,9 @@
 # Utiliser les flux
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 1.6. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/audio/streams/).
+
 ## Introduction
 
 Parfois, il arrive que les données audio ne puissent pas être chargées intégralement en mémoire. Par exemple, un son peut être transmis par le réseau, ou lu à la volée à partir d'un fichier volumineux. Dans de tels cas, vous devez être capables de jouer le son tout en le chargeant au fur et à mesure, et toujours donner l'illusion que vous le jouez en un bloc. C'est ce que l'on appelle la lecture en flux, ou lecture en continu (*streaming*).

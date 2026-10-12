@@ -1,5 +1,9 @@
 # Dessiner des formes simples
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 1.6. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/graphics/shape/).
+
 ## Introduction
 
 Ce nouveau tutoriel va vous apprendre à dessiner des formes 2D simples telles que des lignes, des rectangles, des cercles ou encore des polygones avec SFML.

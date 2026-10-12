@@ -1,5 +1,9 @@
 # Events explained
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 2.5. Check out the [latest version of this tutorial](/tutorials/latest/window/events/).
+
 ## Introduction
 
 This tutorial is a detailed list of window events. It describes them, and shows how to (and how not to) use them.

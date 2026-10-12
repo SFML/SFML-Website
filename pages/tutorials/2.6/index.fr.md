@@ -1,5 +1,9 @@
 # Tutoriels pour SFML 2.6
 
+!!! warning ""
+
+    Ce sont les tutoriels pour SFML 2.6. Consultez les [derniers tutoriels](/fr/tutorials/latest/).
+
 Si vous débutez avec SFML, commencez par le tutoriel de démarrage pour votre plateforme, puis suivez dans l'ordre les tutoriels sur le fenêtrage et les graphiques.
 Chaque module liste d'abord les tutoriels dont vous aurez besoin dans la plupart des projets, puis ceux qui vont plus loin.
 Les tutoriels et les sections qui abordent des sujets plus complexes sont marqués comme avancés, pour que vous puissiez décider de les lire maintenant ou d'y revenir plus tard.

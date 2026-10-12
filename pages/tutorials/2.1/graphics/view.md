@@ -1,5 +1,9 @@
 # Controlling the 2D camera with views
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 2.1. Check out the [latest version of this tutorial](/tutorials/latest/graphics/view/).
+
 ## What is a view?
 
 In games, it is not uncommon to have levels which are much bigger than the window itself. You only see is a small part of them. This is typically the case in RPGs, platform games, and many other genres. What developers might tend to forget is that they define entities *in a 2D world*, not directly in the window. The window is just a view, it shows a specific area of the whole world. It is perfectly fine to draw several views of the same world in parallel, or draw the world to a texture rather than to a window. The world itself remains unchanged, what changes is just the way it is seen.

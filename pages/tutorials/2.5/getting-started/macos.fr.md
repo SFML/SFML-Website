@@ -1,5 +1,9 @@
 # SFML et Xcode (macOS)
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 2.5. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/getting-started/macos/).
+
 ## Introduction
 
 Ceci est le premier tutoriel que vous devriez lire si vous utilisez SFML avec Xcode -- et de manière plus générale, si vous développez des applications pour macOS. Ce tutoriel vous montrera comment installer SFML, configurer votre EDI et compiler un programme SFML simple. Mais aussi, plus important, comment créer des applications qui soient prêtes à être utilisées "*out of the box*" pour l'utilisateur final.

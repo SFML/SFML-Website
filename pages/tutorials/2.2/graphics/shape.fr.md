@@ -1,5 +1,9 @@
 # Dessiner des formes
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 2.2. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/graphics/shape/).
+
 ## Introduction
 
 SFML fournit un ensemble de classes représentant des formes simples. Chaque forme possède sa propre classe, mais toutes dérivent de la même classe de base de sorte qu'elles partagent un ensemble de fonctionnalités communes. Chaque classe ajoute ensuite ses propres spécificités : un rayon pour la classe de cercles, une taille pour la classe de rectangles, des points pour la classe des polygones, etc.

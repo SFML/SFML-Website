@@ -1,5 +1,9 @@
 # Dessiner avec SFML
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 2.1. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/graphics/draw/).
+
 ## Introduction
 
 Comme vous l'avez vu dans les tutoriels précédents, le module de fenêtrage de SFML fournit tout ce qu'il faut pour créer une fenêtre OpenGL et gérer ses évènements, mais n'est d'aucune aide pour dessiner quoique ce soit. La seule option qu'il vous offre est d'utiliser OpenGL, qui est certes très puissante mais tout aussi complexe.

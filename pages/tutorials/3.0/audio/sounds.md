@@ -1,5 +1,9 @@
 # Playing sounds and music
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 3.0. Check out the [latest version of this tutorial](/tutorials/latest/audio/sounds/).
+
 ## Sound or music?
 
 SFML provides two classes for playing audio: [`sf::Sound`](../../../documentation/3.0.2/classsf_1_1Sound.html "sf::Sound documentation") and [`sf::Music`](../../../documentation/3.0.2/classsf_1_1Music.html "sf::Music documentation").

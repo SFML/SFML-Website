@@ -1,5 +1,9 @@
 # Jouer avec la spatialisation des sons
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 1.6. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/audio/spatialization/).
+
 ## Introduction
 
 Jouer des sons et des musiques est sympa, mais pour que ceux-ci soient parfaitement intégrés à votre environnement 2D ou 3D, il peut être encore plus sympa d'ajouter un peu de spatialisation. Jettons un oeil à quelques fonctions SFML simples pour cela.

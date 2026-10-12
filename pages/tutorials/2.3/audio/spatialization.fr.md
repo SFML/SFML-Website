@@ -1,5 +1,9 @@
 # Spatialisation : les sons en 3D
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 2.3. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/audio/spatialization/).
+
 ## Introduction
 
 Par défaut, les sons et les musiques sont joués à plein volume dans chaque haut-parleur ; ils ne sont pas *spatialisés*.

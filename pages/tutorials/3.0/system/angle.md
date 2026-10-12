@@ -1,5 +1,9 @@
 # Handling Angles
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 3.0. Check out the [latest version of this tutorial](/tutorials/latest/system/angle/).
+
 ## Angles in SFML
 
 [`sf::Angle`](../../../documentation/3.0.2/classsf_1_1Angle.html "sf::Angle documentation") represents an angle in a unit-agnostic manner so that you can reason about angles in terms of degrees or radians.

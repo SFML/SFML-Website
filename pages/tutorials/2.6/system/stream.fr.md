@@ -1,5 +1,9 @@
 # Les flux de données (*input streams*)
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 2.6. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/system/stream/).
+
 !!! advanced "Sujet avancé"
 
     Ce tutoriel demande une certaine familiarité avec l'héritage et les fonctions virtuelles.

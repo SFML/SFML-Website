@@ -1,5 +1,9 @@
 # Jouer un son
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 1.6. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/audio/sounds/).
+
 ## Introduction
 
 Jouer un son est la tâche la plus facile du module audio de la SFML. Cependant, elle met en jeu deux entités : les données du son, et l'instance du son dans la scène. En fait c'est exactement le même principe que les images et les sprites du module graphique.

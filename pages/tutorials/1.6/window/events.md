@@ -1,5 +1,9 @@
 # Handling events
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 1.6. Check out the [latest version of this tutorial](/tutorials/latest/window/events/).
+
 ## Introduction
 
 In the previous tutorial, we learned how to open a window but we had no way to stop the application. Here, we'll learn how to catch window events and handle them properly.

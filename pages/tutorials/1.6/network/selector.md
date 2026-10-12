@@ -1,5 +1,9 @@
 # Using a selector
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 1.6. Check out the [latest version of this tutorial](/tutorials/latest/network/socket/).
+
 ## Introduction
 
 As you've seen in the previous tutorial, some socket functions (`Accept`, `Receive`) are blocking, meaning that they will stop the whole program if they are used. Also meaning that you will never be able to wait for two different sockets at the same time. One good solution is to use threads : put the blocking socket calls into a separate thread, and your program will still be able to run while the sockets are waiting. But using threads is not easy : it requires good synchronization, can be hard to debug, and can add some overhead if you run a lot of threads.

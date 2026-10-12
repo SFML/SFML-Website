@@ -1,5 +1,9 @@
 # Opening a window
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 1.6. Check out the [latest version of this tutorial](/tutorials/latest/window/window/).
+
 ## Introduction
 
 In this tutorial, we will learn how to use SFML window package as a minimal windowing system, like SDL or GLUT.

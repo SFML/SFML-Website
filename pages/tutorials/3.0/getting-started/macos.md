@@ -1,5 +1,9 @@
 # SFML and Xcode (macOS)
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 3.0. Check out the [latest version of this tutorial](/tutorials/latest/getting-started/macos/).
+
 ## Introduction
 
 !!! note

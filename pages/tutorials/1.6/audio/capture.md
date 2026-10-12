@@ -1,5 +1,9 @@
 # Capturing audio data
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 1.6. Check out the [latest version of this tutorial](/tutorials/latest/audio/recording/).
+
 ## Introduction
 
 This tutorial will show how to easily capture audio data from your microphone, and apply custom processing to it like saving it to a sound buffer, or sending it through the network.

@@ -1,5 +1,9 @@
 # Gérer le temps
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 1.6. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/system/time/).
+
 ## Introduction
 
 Le temps n'est habituellement pas un gros sujet en soi, mais dans une application temps réel, il est important de le gérer correctement, comme nous allons le voir dans ce nouveau tutoriel.

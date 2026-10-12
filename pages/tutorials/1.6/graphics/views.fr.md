@@ -1,5 +1,9 @@
 # Utiliser les vues
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 1.6. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/graphics/view/).
+
 ## Introduction
 
 Dans ce tutoriel, vous allez apprendre à utiliser les vues 2D de SFML. Les vues sont comme des caméras 2D, qui permettent de se déplacer, zoomer ou faire défiler sans avoir à bouger ou redimensionner tous les objets de la scène.

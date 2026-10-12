@@ -1,5 +1,9 @@
 # Contrôler la caméra 2D avec les vues
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 2.2. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/graphics/view/).
+
 ## Qu'est-ce qu'une vue ?
 
 Dans un jeu, il n'est pas rare qu'un niveau soit bien plus grand que la fenêtre, et que tout ce que l'on voit ne soit qu'une petite partie de celui-ci. C'est notamment le cas pour les RPGs, les jeux de plateforme, et bien d'autres. Ce que les développeurs tendent à oublier est qu'ils définissent des entités dans un *monde 2D*, et non directement dans une fenêtre. La fenêtre n'est qu'une vue, elle montre une zone particulière de la scène. Vous pourriez tout aussi bien dessiner plusieurs vues du même monde 2D en parallèle, ou encore dessiner la scène dans une texture plutôt que dans une fenêtre ; le monde 2D quant à lui est toujours le même, ce qui change n'est que la manière dont il est vu.

@@ -1,5 +1,9 @@
 # Tutorials for SFML 1.6
 
+!!! warning ""
+
+    These are the tutorials for SFML 1.6. Check out the [latest tutorials](/tutorials/latest/).
+
 ## Getting started
 
 - [SFML and Visual Studio](getting-started/visual-studio.md)

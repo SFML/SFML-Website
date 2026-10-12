@@ -1,5 +1,9 @@
 # SFML et Code::Blocks
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 1.6. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/getting-started/code-blocks/).
+
 ## Introduction
 
 Ce tutoriel est le premier que vous devriez lire si vous utilisez SFML avec l'EDI Code::Blocks et le compilateur GCC (c'est celui par défaut). Il va vous expliquer comme installer SFML, paramétrer votre EDI, et compiler un programme SFML.  

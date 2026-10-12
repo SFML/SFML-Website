@@ -1,5 +1,9 @@
 # Les threads
 
+!!! warning ""
+
+    Vous lisez un tutoriel pour SFML 2.1, qui n'existe plus dans la dernière version. Consultez les [derniers tutoriels](/fr/tutorials/latest/).
+
 ## Qu'est-ce qu'un thread ?
 
 La plupart d'entre vous savent déjà ce qu'est un thread, mais voici toutefois une petite explication pour ceux qui abordent ce concept pour la toute première fois.

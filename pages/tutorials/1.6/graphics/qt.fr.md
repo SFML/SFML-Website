@@ -1,5 +1,9 @@
 # Intégrer à une interface Qt
 
+!!! warning ""
+
+    Vous lisez un tutoriel pour SFML 1.6, qui n'existe plus dans la dernière version. Consultez les [derniers tutoriels](/fr/tutorials/latest/).
+
 ## Introduction
 
 Dans ce tutoriel, nous allons voir comment intégrer une vue SFML à une interface Qt. La façon habituelle d'ajouter une nouvelle fonctionnalité à une interface Qt est d'écrire un widget (composant) personnalisé ; c'est ce que nous allons faire ici.

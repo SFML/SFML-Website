@@ -1,5 +1,9 @@
 # Using HTTP
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 1.6. Check out the [latest version of this tutorial](/tutorials/latest/network/http/).
+
 ## Introduction
 
 HTTP (HyperText Transfer Protocol) is the protocol which is used to transfer files through internet: web pages, images, etc. It consists of a client-server architecture where the client sends requests, and the server sends back responses containing the requested resources.

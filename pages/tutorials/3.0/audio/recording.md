@@ -1,5 +1,9 @@
 # Recording audio
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 3.0. Check out the [latest version of this tutorial](/tutorials/latest/audio/recording/).
+
 ## Recording to a sound buffer
 
 The most common use for captured audio data is for it to be saved to a sound buffer ([`sf::SoundBuffer`](../../../documentation/3.0.2/classsf_1_1SoundBuffer.html "sf::SoundBuffer documentation")) so that it can either be played or saved to a file.

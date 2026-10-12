@@ -1,5 +1,9 @@
 # Concevoir ses entités avec les tableaux de vertex
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 2.6. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/graphics/vertex-array/).
+
 !!! advanced "Sujet avancé"
 
     Les tableaux de vertex sont de plus bas niveau que les sprites et les formes, car vous définissez vous-même chaque point.

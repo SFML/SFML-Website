@@ -1,5 +1,9 @@
 # SFML et Visual studio
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 2.2. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/getting-started/visual-studio/).
+
 ## Introduction
 
 Ce tutoriel est le premier que vous devriez lire si vous utiliser SFML avec l'EDI Visual Studio (compilateur Visual C++). Il va vous expliquer comment configurer vos projets SFML.

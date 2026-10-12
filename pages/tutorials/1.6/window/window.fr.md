@@ -1,5 +1,9 @@
 # Ouvrir une fenêtre
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 1.6. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/window/window/).
+
 ## Introduction
 
 Dans ce tutoriel, nous allons apprendre à utiliser le module de fenêtrage de la SFML afin d'obtenir un système de fenêtrage minimal, comme SDL ou GLUT permettent de le faire.

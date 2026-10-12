@@ -1,5 +1,9 @@
 # Integrating to a Win32 interface
 
+!!! warning ""
+
+    You're reading a tutorial for SFML 1.6, which doesn't exist anymore in the latest version. Check out the [latest tutorials](/tutorials/latest/).
+
 ## Introduction
 
 In this new tutorial, we'll have a look at how SFML integrates into a Win32 interface. If you are not familiar to Win32 interfaces you can first read a tutorial about it, as we won't explain Win32 programming in this tutorial, only the way to put SFML into Win32 controls.

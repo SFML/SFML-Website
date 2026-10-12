@@ -1,5 +1,9 @@
 # Building SFML from Source
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 3.0. Check out the [latest version of this tutorial](/tutorials/latest/getting-started/build-from-source/).
+
 ## Introduction
 
 SFML's build process uses CMake.

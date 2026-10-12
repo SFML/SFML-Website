@@ -1,5 +1,9 @@
 # Custom audio streams
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 2.6. Check out the [latest version of this tutorial](/tutorials/latest/audio/streams/).
+
 !!! advanced "Advanced topic"
 
     Custom audio streams require deriving from `sf::SoundStream` and handling data requests that come from another thread.

@@ -1,5 +1,9 @@
 # Drawing 2D stuff
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 2.0. Check out the [latest version of this tutorial](/tutorials/latest/graphics/draw/).
+
 ## Introduction
 
 As you learnt in the previous tutorials, SFML's window module provides an easy way to open an OpenGL window and handle its events, but it doesn't help when it comes to drawing something. The only option which is left to you is to use the powerful, yet complex and low level OpenGL API.

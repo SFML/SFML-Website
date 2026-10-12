@@ -1,5 +1,9 @@
 # Keyboard, mouse and joystick
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 3.0. Check out the [latest version of this tutorial](/tutorials/latest/window/inputs/).
+
 ## Introduction
 
 This tutorial explains how to access global input devices: keyboard, mouse and joysticks.

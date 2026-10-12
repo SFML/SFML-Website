@@ -1,5 +1,9 @@
 # SFML and Linux
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 2.6. Check out the [latest version of this tutorial](/tutorials/latest/getting-started/linux/).
+
 ## Introduction
 
 This tutorial is the first one you should read if you're using SFML on Linux. It will explain how to install SFML, and compile projects that use it.

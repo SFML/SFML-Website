@@ -1,5 +1,9 @@
 # Communiquer avec les sockets
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 2.0. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/network/socket/).
+
 ## Les sockets
 
 Une socket est une porte entre votre application et le monde extérieur : à travers une socket, vous pouvez envoyer et recevoir des données. Ainsi, à peu près tout programme réseau aura affaire à des sockets, elles sont l'élément central de la communication réseau.

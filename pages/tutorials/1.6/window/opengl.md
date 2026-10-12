@@ -1,5 +1,9 @@
 # Using OpenGL
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 1.6. Check out the [latest version of this tutorial](/tutorials/latest/window/opengl/).
+
 ## Introduction
 
 This tutorial is not about OpenGL, but only the way to use SFML window package to interface with OpenGL. As you know, one of the most important feature of OpenGL is portability. However, OpenGL requires you to create a rendering context first. And rendering context is all but portable ; each operating system as its own way to create it. That's why people usually use a portable library to get a portable windowing / event system that will be able to run OpenGL under every system. Most famous libraries for doing so are SDL and GLUT, but they are written in C and not always convenient to use in C++, especially if you have an object-oriented approach. They also lack essential features, like being usable in multiple windows or in existing interfaces.

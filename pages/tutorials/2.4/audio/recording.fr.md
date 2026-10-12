@@ -1,5 +1,9 @@
 # Effectuer des captures audio
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 2.4. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/audio/recording/).
+
 ## Effectuer une capture dans un buffer
 
 Le destin le plus probable pour des données audio capturées, est d'être sauvegardées dans un buffer ([`sf::SoundBuffer`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1SoundBuffer.php "sf::SoundBuffer documentation")) de sorte qu'elles puissent être jouées ou bien sauvegardées dans un fichier.

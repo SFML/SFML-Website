@@ -1,5 +1,9 @@
 # Capturer des données audio
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 1.6. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/audio/recording/).
+
 ## Introduction
 
 Ce tutoriel va vous montrer comment capturer facilement des données audio en provenance de votre microphone, et leur appliquer des traitements personnalisés, comme par exemple les sauver dans un tampon sonore, ou les envoyer directement sur le réseau.

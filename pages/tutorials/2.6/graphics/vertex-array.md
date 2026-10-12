@@ -1,5 +1,9 @@
 # Designing your own entities with vertex arrays
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 2.6. Check out the [latest version of this tutorial](/tutorials/latest/graphics/vertex-array/).
+
 !!! advanced "Advanced topic"
 
     Vertex arrays are lower-level than sprites and shapes, as you define every single point yourself.

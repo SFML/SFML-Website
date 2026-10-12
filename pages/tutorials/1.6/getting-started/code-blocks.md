@@ -1,5 +1,9 @@
 # SFML and Code::Blocks (MinGW)
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 1.6. Check out the [latest version of this tutorial](/tutorials/latest/getting-started/code-blocks/).
+
 ## Introduction
 
 This tutorial is the first one you should read if you're using SFML with the Code::Blocks EDI, and the GCC compiler (this is the default one). It will explain how to install SFML, setup your IDE, and compile a SFML program.  

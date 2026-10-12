@@ -1,5 +1,9 @@
 # SFML et Code::Blocks (MinGW)
 
+!!! warning ""
+
+    Vous lisez le tutoriel pour SFML 2.5. Consultez la [dernière version de ce tutoriel](/fr/tutorials/latest/getting-started/code-blocks/).
+
 ## Introduction
 
 Ce tutoriel est le premier que vous devriez lire si vous utilisez SFML avec l'EDI Code::Blocks et le compilateur GCC (celui qui est livré avec par défaut). Il va vous expliquer comment configurer vos projets SFML.

@@ -1,5 +1,9 @@
 # Handling time
 
+!!! warning ""
+
+    You're reading the tutorial for SFML 1.6. Check out the [latest version of this tutorial](/tutorials/latest/system/time/).
+
 ## Introduction
 
 Time is usually not a big thing, but in a real-time application, it is important to handle it properly, as we will see in this new tutorial.
