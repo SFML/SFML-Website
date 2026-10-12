@@ -54,7 +54,8 @@ if (status != sf::Socket::Status::Done)
 ```
 
 The first argument is the address of the host to connect to.
-It is an [`sf::IpAddress`](../../../documentation/3.0.2/classsf_1_1IpAddress.html "sf::IpAddress documentation"), which can represent any valid address: a URL, an IP address, or a network host name.
+It is an [`sf::IpAddress`](../../../documentation/3.0.2/classsf_1_1IpAddress.html "sf::IpAddress documentation"), here constructed from the four bytes of an IPv4 address.
+If you want to connect to a host name such as "example.org" instead, you first have to resolve it to an address with `sf::IpAddress::resolve`.
 See its documentation for more details.
 
 The second argument is the port to connect to on the remote machine.
@@ -176,13 +177,13 @@ if (socket.receive(data.data(), data.size(), received) != sf::Socket::Status::Do
 std::cout << "Received " << received << " bytes" << std::endl;
 
 // UDP socket:
-sf::IpAddress sender;
+std::optional<sf::IpAddress> sender;
 unsigned short port;
 if (socket.receive(data.data(), data.size(), received, sender, port) != sf::Socket::Status::Done)
 {
     // error...
 }
-std::cout << "Received " << received << " bytes from " << sender << " on port " << port << std::endl;
+std::cout << "Received " << received << " bytes from " << *sender << " on port " << port << std::endl;
 ```
 
 It is important to keep in mind that if the socket is in blocking mode, `receive` will wait until something is received, blocking the thread that called it (and thus possibly the whole program).
@@ -190,6 +191,7 @@ It is important to keep in mind that if the socket is in blocking mode, `receive
 The first two arguments specify the buffer to which the received bytes are to be copied, along with its maximum size.
 The third argument is a variable that will contain the actual number of bytes received after the function returns.  
 With UDP sockets, the last two arguments will contain the address and port of the sender after the function returns.
+The address is a `std::optional`, because there's no sender to report if nothing was received.
 They can be used later if you want to send a response.
 
 These functions are low-level, and you should use them only if you have a very good reason to do so.

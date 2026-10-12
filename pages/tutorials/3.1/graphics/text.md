@@ -30,7 +30,7 @@ If the message is unable to open file, make sure that the _working directory_ (w
 However, when you launch your program from your IDE (Visual Studio, Code::Blocks, ...) the working directory might sometimes be set to the _project_ directory instead.
 This can usually be changed quite easily in the project settings.
 
-You can also load a font file from memory (`openFromFile`), or from a [custom input stream](../system/stream.md "Input streams tutorial") (`openFromStream`).
+You can also load a font file from memory (`openFromMemory`), or from a [custom input stream](../system/stream.md "Input streams tutorial") (`openFromStream`).
 Corresponding constructors exist with the same parameters that throw an exception upon failure.
 
 SFML supports most common font formats.
@@ -78,7 +78,7 @@ It requires a good understanding of the various encodings involved in the proces
 To avoid having to bother with these encodings, there's a simple solution: Use _wide literal strings_.
 
 ```cpp
-text.setString(L"יטאח");
+text.setString(L"éèàç");
 ```
 
 It is this simple "L" prefix in front of the string that makes it work by telling the compiler to produce a wide string.
