@@ -93,6 +93,11 @@ An Arabic font won't be able to display Japanese text, for example.
 
 ## Making your own text class
 
+!!! advanced "Advanced topic"
+
+    The rest of this tutorial is about rendering text yourself with the glyphs of a font.
+    `sf::Text` covers most needs, so you can skip it.
+
 If [`sf::Text`](../../../documentation/3.1.0/classsf_1_1Text.html "sf::Text documentation") is too limited, or if you want to do something else with pre-rendered glyphs, [`sf::Font`](../../../documentation/3.1.0/classsf_1_1Font.html "sf::Font documentation") provides everything that you need.
 
 You can retrieve the texture which contains all the pre-rendered glyphs of a certain size:

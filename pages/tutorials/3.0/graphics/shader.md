@@ -1,5 +1,11 @@
 # Adding special effects with shaders
 
+!!! advanced "Advanced topic"
+
+    Shaders are small programs written in GLSL, a separate language that runs on the graphics card.
+    This tutorial explains how to use them with SFML, but doesn't teach GLSL itself.
+    You don't need shaders to make a game, so feel free to skip this tutorial until you want special effects.
+
 ## Introduction
 
 A shader is a small program that is executed on the graphics card.

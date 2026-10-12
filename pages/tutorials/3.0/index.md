@@ -1,5 +1,9 @@
 # Tutorials for SFML 3.0
 
+If you're new to SFML, start with the getting started tutorial for your platform, then work through the window and graphics tutorials in order.
+Each module first lists the tutorials you'll need for most projects, followed by the ones that go further.
+Tutorials and sections that cover more complex topics are marked as advanced, so you can decide whether to read them now or come back later.
+
 ## Getting started
 
 - [Migrating from SFML 2 to SFML 3](getting-started/migrate.md)
@@ -13,8 +17,11 @@
 
 ## System module
 
-- [Handling angles](system/angle.md)
 - [Handling time](system/time.md)
+- [Handling angles](system/angle.md)
+
+Going further:
+
 - [User data streams](system/stream.md)
 
 ## Window module
@@ -22,25 +29,34 @@
 - [Opening and managing an SFML window](window/window.md)
 - [Events explained](window/events.md)
 - [Keyboard, mouse and joysticks](window/inputs.md)
+
+Going further:
+
 - [Using OpenGL in an SFML window](window/opengl.md)
 
 ## Graphics module
 
 - [Drawing 2D stuff](graphics/draw.md)
 - [Sprites and textures](graphics/sprite.md)
-- [Text and fonts](graphics/text.md)
 - [Shapes](graphics/shape.md)
-- [Designing your own entities with vertex arrays](graphics/vertex-array.md)
+- [Text and fonts](graphics/text.md)
 - [Position, rotation, scale: transforming entities](graphics/transform.md)
-- [Adding special effects with shaders](graphics/shader.md)
 - [Controlling the 2D camera with views](graphics/view.md)
+
+Going further:
+
+- [Designing your own entities with vertex arrays](graphics/vertex-array.md)
+- [Adding special effects with shaders](graphics/shader.md)
 
 ## Audio module
 
 - [Playing sounds and music](audio/sounds.md)
 - [Recording audio](audio/recording.md)
-- [Custom audio streams](audio/streams.md)
+
+Going further:
+
 - [Spatialization: Sounds in 3D](audio/spatialization.md)
+- [Custom audio streams](audio/streams.md)
 
 ## Network module
 

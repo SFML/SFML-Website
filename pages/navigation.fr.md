@@ -33,8 +33,8 @@
             * tutorials/3.1/getting-started/ios*.md
             * tutorials/3.1/getting-started/build-from-source*.md
         * System
-            * tutorials/3.1/system/angle*.md
             * tutorials/3.1/system/time*.md
+            * tutorials/3.1/system/angle*.md
             * tutorials/3.1/system/stream*.md
         * Window
             * tutorials/3.1/window/window*.md
@@ -44,17 +44,17 @@
         * Graphics
             * tutorials/3.1/graphics/draw*.md
             * tutorials/3.1/graphics/sprite*.md
-            * tutorials/3.1/graphics/text*.md
             * tutorials/3.1/graphics/shape*.md
-            * tutorials/3.1/graphics/vertex-array*.md
+            * tutorials/3.1/graphics/text*.md
             * tutorials/3.1/graphics/transform*.md
-            * tutorials/3.1/graphics/shader*.md
             * tutorials/3.1/graphics/view*.md
+            * tutorials/3.1/graphics/vertex-array*.md
+            * tutorials/3.1/graphics/shader*.md
         * Audio
             * tutorials/3.1/audio/sounds*.md
             * tutorials/3.1/audio/recording*.md
-            * tutorials/3.1/audio/streams*.md
             * tutorials/3.1/audio/spatialization*.md
+            * tutorials/3.1/audio/streams*.md
         * Network
             * tutorials/3.1/network/socket*.md
             * tutorials/3.1/network/packet*.md
@@ -71,8 +71,8 @@
             * tutorials/3.0/getting-started/ios*.md
             * tutorials/3.0/getting-started/build-from-source*.md
         * System
-            * tutorials/3.0/system/angle*.md
             * tutorials/3.0/system/time*.md
+            * tutorials/3.0/system/angle*.md
             * tutorials/3.0/system/stream*.md
         * Window
             * tutorials/3.0/window/window*.md
@@ -82,17 +82,17 @@
         * Graphics
             * tutorials/3.0/graphics/draw*.md
             * tutorials/3.0/graphics/sprite*.md
-            * tutorials/3.0/graphics/text*.md
             * tutorials/3.0/graphics/shape*.md
-            * tutorials/3.0/graphics/vertex-array*.md
+            * tutorials/3.0/graphics/text*.md
             * tutorials/3.0/graphics/transform*.md
-            * tutorials/3.0/graphics/shader*.md
             * tutorials/3.0/graphics/view*.md
+            * tutorials/3.0/graphics/vertex-array*.md
+            * tutorials/3.0/graphics/shader*.md
         * Audio
             * tutorials/3.0/audio/sounds*.md
             * tutorials/3.0/audio/recording*.md
-            * tutorials/3.0/audio/streams*.md
             * tutorials/3.0/audio/spatialization*.md
+            * tutorials/3.0/audio/streams*.md
         * Network
             * tutorials/3.0/network/socket*.md
             * tutorials/3.0/network/packet*.md

@@ -35,3 +35,25 @@ p:has(img) {
         --md-scroll-margin: 8rem;
     }
 }
+
+/* Tutorial pages and sections covering more complex topics */
+:root {
+    --md-admonition-icon--advanced: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 6h7v3h-4v4h-4v4h-4v4H3v-3h4v-4h4v-4h4zm-4.83.66-5.51 5.51-1.83-1.83 5.51-5.51L6.5 3H12v5.5z"/></svg>');
+}
+
+.md-typeset .admonition.advanced,
+.md-typeset details.advanced {
+    border-color: #7c4dff;
+}
+
+.md-typeset .advanced > .admonition-title,
+.md-typeset .advanced > summary {
+    background-color: rgba(124, 77, 255, 0.1);
+}
+
+.md-typeset .advanced > .admonition-title::before,
+.md-typeset .advanced > summary::before {
+    background-color: #7c4dff;
+    -webkit-mask-image: var(--md-admonition-icon--advanced);
+    mask-image: var(--md-admonition-icon--advanced);
+}

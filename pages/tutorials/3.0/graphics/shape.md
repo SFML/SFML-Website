@@ -201,7 +201,28 @@ window.draw(line.data(), line.size(), sf::PrimitiveType::Lines);
 
 To learn more about vertices and primitives, you can read the tutorial on [vertex arrays](vertex-array.md "'Vertex arrays' tutorial").
 
+## Antialiased shapes
+
+There's no option to anti-alias a single shape.
+To get anti-aliased shapes (i.e. shapes with smoothed edges), you have to enable anti-aliasing globally when you create the window or the render texture, with the corresponding attribute of the [`sf::ContextSettings`](../../../documentation/3.0.2/structsf_1_1ContextSettings.html "sf::ContextSettings documentation") structure.
+
+```cpp
+sf::ContextSettings settings;
+settings.antiAliasingLevel = 8;
+
+sf::RenderWindow window(sf::VideoMode({800, 600}), "SFML shapes", sf::Style::Default, sf::State::Windowed, settings);
+```
+
+![Aliased vs antialiased shape](shape-antialiasing.png)
+
+Remember that anti-aliasing availability depends on the graphics card: It might not support it, or have it forced to disabled in the driver settings.
+
 ## Custom shape types
+
+!!! advanced "Advanced topic"
+
+    The rest of this tutorial shows how to create your own shape types by deriving from `sf::Shape`.
+    The built-in shapes are enough for most needs, so you can skip it for now.
 
 You can extend the set of shape classes with your own shape types.
 To do so, you must derive from [`sf::Shape`](../../../documentation/3.0.2/classsf_1_1Shape.html "sf::Shape documentation") and override two functions:
@@ -255,19 +276,3 @@ private:
 ```
 
 ![An ellipse shape](shape-ellipse.png)
-
-## Antialiased shapes
-
-There's no option to anti-alias a single shape.
-To get anti-aliased shapes (i.e. shapes with smoothed edges), you have to enable anti-aliasing globally when you create the window or the render texture, with the corresponding attribute of the [`sf::ContextSettings`](../../../documentation/3.0.2/structsf_1_1ContextSettings.html "sf::ContextSettings documentation") structure.
-
-```cpp
-sf::ContextSettings settings;
-settings.antiAliasingLevel = 8;
-
-sf::RenderWindow window(sf::VideoMode({800, 600}), "SFML shapes", sf::Style::Default, sf::State::Windowed, settings);
-```
-
-![Aliased vs antialiased shape](shape-antialiasing.png)
-
-Remember that anti-aliasing availability depends on the graphics card: It might not support it, or have it forced to disabled in the driver settings.

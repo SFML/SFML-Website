@@ -1,5 +1,10 @@
 # Threads
 
+!!! advanced "Advanced topic"
+
+    Multi-threading is hard to get right, as threads accessing the same data need to be synchronized carefully.
+    Most programs don't need any threads, so feel free to skip this tutorial for now.
+
 ## What is a thread?
 
 Most of you should already know what a thread is, however here is a little explanation for those who are really new to this concept.

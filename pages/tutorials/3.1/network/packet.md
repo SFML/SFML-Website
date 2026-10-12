@@ -130,6 +130,11 @@ packet >> bob;
 
 ## Custom packets
 
+!!! advanced "Advanced topic"
+
+    The last section covers deriving your own packet class, e.g. to compress or encrypt the data.
+    You don't need it for regular use of packets.
+
 Packets provide nice features on top of your raw data, but what if you want to add your own features such as automatically compressing or encrypting the data?
 This can easily be done by deriving from [`sf::Packet`](../../../documentation/3.1.0/classsf_1_1Packet.html "sf::Packet documentation") and overriding the following functions:
 

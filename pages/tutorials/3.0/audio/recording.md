@@ -98,6 +98,11 @@ if (!recorder.setDevice(inputDevice))
 
 ## Custom recording
 
+!!! advanced "Advanced topic"
+
+    The rest of this tutorial covers writing your own recorder, which involves inheritance and code running on a separate thread.
+    If recording into a sound buffer is all you need, you can stop here.
+
 If storing the captured data in a sound buffer is not what you want, you can write your own recorder.
 Doing so will allow you to process the audio data while it is captured, (almost) directly from the recording device.
 This way you can, for example, stream the captured audio over the network, perform real-time analysis on it, etc.

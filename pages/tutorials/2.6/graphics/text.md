@@ -74,6 +74,11 @@ It may seem obvious, but you also have to make sure that the font that you use c
 
 ## Making your own text class
 
+!!! advanced "Advanced topic"
+
+    The rest of this tutorial is about rendering text yourself with the glyphs of a font.
+    `sf::Text` covers most needs, so you can skip it.
+
 If [`sf::Text`](https://www.sfml-dev.org/documentation/2.6.2/classsf_1_1Text.html "sf::Text documentation") is too limited, or if you want to do something else with pre-rendered glyphs, [`sf::Font`](https://www.sfml-dev.org/documentation/2.6.2/classsf_1_1Font.html "sf::Font documentation") provides everything that you need.
 
 You can retrieve the texture which contains all the pre-rendered glyphs of a certain size:

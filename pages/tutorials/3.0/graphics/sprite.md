@@ -234,6 +234,10 @@ Try to keep this in mind when you create your animation sheets or your tilesets:
 
 ## Using sf::Texture with OpenGL code
 
+!!! advanced "Advanced topic"
+
+    The last section is only relevant if you mix SFML with your own OpenGL code.
+
 If you're using OpenGL rather than the graphics entities of SFML, you can still use [`sf::Texture`](../../../documentation/3.0.2/classsf_1_1Texture.html "sf::Texture documentation") as a wrapper around an OpenGL texture object and use it along with the rest of your OpenGL code.
 
 To bind a [`sf::Texture`](../../../documentation/3.0.2/classsf_1_1Texture.html "sf::Texture documentation") for drawing (basically `glBindTexture`), you call the `bind` static function:
