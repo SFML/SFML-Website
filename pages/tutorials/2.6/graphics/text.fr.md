@@ -74,6 +74,11 @@ Cela peut paraître évident, mais il est toujours bon de le rappeler : une poli
 
 ## Fabriquer sa propre classe de texte
 
+!!! advanced "Sujet avancé"
+
+    La suite de ce tutoriel explique comment afficher du texte vous-même à partir des glyphes d'une police.
+    `sf::Text` couvre la plupart des besoins, vous pouvez donc la passer.
+
 Si [`sf::Text`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Text.php "sf::Text documentation") est trop limitée, ou si vous voulez faire autre chose avec les glyphes pré-rendus, [`sf::Font`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Font.php "sf::Font documentation") fournit tout ce qu'il vous faut pour exploiter la police autrement.
 
 Premièrement, vous devez récupérer la texture qui contient tous les glyphes pré-rendus pour une taille donnée de caractère :

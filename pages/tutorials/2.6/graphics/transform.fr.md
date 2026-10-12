@@ -87,7 +87,45 @@ sf::Vector2f origin = entity.getOrigin(); // = (10, 20)
 
 Notez que le fait de changer l'origine modifie également la position de l'entité à l'écran, bien que sa propriété 'position' soit toujours la même. Si vous ne comprenez pas pourquoi, relisez ce tutoriel !
 
+## Boîtes englobantes
+
+Après avoir transformé et dessiné vos entités, vous voudrez certainement effectuer certains calculs avec elles, comme par exemple détecter les collisions.
+
+Les entités SFML peuvent vous donner leur boîte englobante. La boîte englobante est le rectangle minimal qui contient l'entité, et dont les côtés sont alignés sur les axes X et Y.
+
+![Boîte englobante d'entités](transform-bounds.png)
+
+La boîte englobante est très pratique pour implémenter la détection de collisions : elle peut être rapidement testée avec un point ou avec une autre boîte englobante, et elle représente une assez bonne approximation de l'entité réelle.
+
+```cpp
+// récupération de la boîte englobante de l'entité
+sf::FloatRect boundingBox = entity.getGlobalBounds();
+
+// test de collision avec un point
+sf::Vector2f point = ...;
+if (boundingBox.contains(point))
+{
+    // collision!
+}
+
+// test de collision avec un autre rectangle (comme par exemple la boîte englobante d'une autre entité)
+sf::FloatRect otherBox = ...;
+if (boundingBox.intersects(otherBox))
+{
+    // collision!
+}
+```
+
+La fonction est nommée `getGlobalBounds` car elle renvoie la boîte englobante de l'entité dans le système de coordonnées global, c'est-à-dire avec toutes ses transformations (position, rotation, échelle) appliquées.
+
+Il existe une autre fonction, qui renvoie la boîte englobante de l'entité dans son système de coordonnées *local* (sans les transformations) : `getLocalBounds`. Cette fonction peut être utilisée pour récupérer la taille initiale de l'entité, par exemple, ou bien pour effectuer des calculs plus spécifiques.
+
 ## Transformez vos propres classes
+
+!!! advanced "Sujet avancé"
+
+    La suite de ce tutoriel traite de la transformation de vos propres classes, de la construction manuelle de transformations et des hiérarchies d'objets.
+    Vous en aurez besoin dès que vous écrirez vos propres classes dessinables, d'ici là vous pouvez passer directement au tutoriel suivant.
 
 [`sf::Transformable`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Transformable.php "sf::Transformable documentation") n'est pas seulement faite pour les classes SFML, elle peut aussi servir de base (ou de membre) à vos propres classes.
 
@@ -161,39 +199,6 @@ window.draw(entity, states);
 ```
 
 Si votre entité est un [`sf::Transformable`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Transformable.php "sf::Transformable documentation") (sprite, texte, forme), avec sa propre transformation interne, alors les deux sont combinées pour produire la transformation finale.
-
-## Boîtes englobantes
-
-Après avoir transformé et dessiné vos entités, vous voudrez certainement effectuer certains calculs avec elles, comme par exemple détecter les collisions.
-
-Les entités SFML peuvent vous donner leur boîte englobante. La boîte englobante est le rectangle minimal qui contient l'entité, et dont les côtés sont alignés sur les axes X et Y.
-
-![Boîte englobante d'entités](transform-bounds.png)
-
-La boîte englobante est très pratique pour implémenter la détection de collisions : elle peut être rapidement testée avec un point ou avec une autre boîte englobante, et elle représente une assez bonne approximation de l'entité réelle.
-
-```cpp
-// récupération de la boîte englobante de l'entité
-sf::FloatRect boundingBox = entity.getGlobalBounds();
-
-// test de collision avec un point
-sf::Vector2f point = ...;
-if (boundingBox.contains(point))
-{
-    // collision!
-}
-
-// test de collision avec un autre rectangle (comme par exemple la boîte englobante d'une autre entité)
-sf::FloatRect otherBox = ...;
-if (boundingBox.intersects(otherBox))
-{
-    // collision!
-}
-```
-
-La fonction est nommée `getGlobalBounds` car elle renvoie la boîte englobante de l'entité dans le système de coordonnées global, c'est-à-dire avec toutes ses transformations (position, rotation, échelle) appliquées.
-
-Il existe une autre fonction, qui renvoie la boîte englobante de l'entité dans son système de coordonnées *local* (sans les transformations) : `getLocalBounds`. Cette fonction peut être utilisée pour récupérer la taille initiale de l'entité, par exemple, ou bien pour effectuer des calculs plus spécifiques.
 
 ## Les hiérarchies d'objets (scenegraph)
 

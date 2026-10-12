@@ -176,7 +176,27 @@ window.draw(line, 2, sf::Lines);
 
 Pour en savoir plus sur les vertex et les primitives, vous pouvez lire le tutoriel sur les [tableaux de vertex](vertex-array.md "Tutoriel sur les tableaux de vertex").
 
+## Formes anticrénelées
+
+Il n'y a pas d'option pour activer l'anticrénelage pour une forme en particulier. Si vous voulez des formes anticrénelées (ie. avec des bords lissés), vous devez activer l'anticrénelage de manière globale lorsque vous créez la fenêtre, avec l'attribut correspondant de la structure [`sf::ContextSettings`](https://www.sfml-dev.org/documentation/2.6.2-fr/structsf_1_1ContextSettings.php "sf::ContextSettings documentation").
+
+```cpp
+sf::ContextSettings settings;
+settings.antialiasingLevel = 8;
+
+sf::RenderWindow window(sf::VideoMode(800, 600), "SFML shapes", sf::Style::Default, settings);
+```
+
+![Crénelé vs anticrénelé](shape-antialiasing.png)
+
+Souvenez-vous que l'anticrénelage dépend de la carte graphique : elle peut ne pas le supporter, ou forcer sa désactivation dans les paramètres du pilote graphique.
+
 ## Formes personnalisées
+
+!!! advanced "Sujet avancé"
+
+    La suite de ce tutoriel montre comment créer vos propres types de formes en dérivant de `sf::Shape`.
+    Les formes prédéfinies suffisent dans la plupart des cas, vous pouvez donc la passer pour l'instant.
 
 Vous pouvez étendre l'ensemble des classes de formes avec vos propres types de formes. Pour ce faire, vous devez dériver de [`sf::Shape`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Shape.php "sf::Shape documentation") et redéfinir deux fonctions :
 
@@ -232,18 +252,3 @@ private :
 ```
 
 ![Une ellipse](shape-ellipse.png)
-
-## Formes anticrénelées
-
-Il n'y a pas d'option pour activer l'anticrénelage pour une forme en particulier. Si vous voulez des formes anticrénelées (ie. avec des bords lissés), vous devez activer l'anticrénelage de manière globale lorsque vous créez la fenêtre, avec l'attribut correspondant de la structure [`sf::ContextSettings`](https://www.sfml-dev.org/documentation/2.6.2-fr/structsf_1_1ContextSettings.php "sf::ContextSettings documentation").
-
-```cpp
-sf::ContextSettings settings;
-settings.antialiasingLevel = 8;
-
-sf::RenderWindow window(sf::VideoMode(800, 600), "SFML shapes", sf::Style::Default, settings);
-```
-
-![Crénelé vs anticrénelé](shape-antialiasing.png)
-
-Souvenez-vous que l'anticrénelage dépend de la carte graphique : elle peut ne pas le supporter, ou forcer sa désactivation dans les paramètres du pilote graphique.

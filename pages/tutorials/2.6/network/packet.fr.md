@@ -109,6 +109,11 @@ packet >> bob;
 
 ## Les paquets personnalisés
 
+!!! advanced "Sujet avancé"
+
+    La dernière section explique comment dériver votre propre classe de paquet, par exemple pour compresser ou chiffrer les données.
+    Vous n'en avez pas besoin pour une utilisation normale des paquets.
+
 Les paquets offrent des fonctionnalités sympas par dessus vos données brutes, mais peut-on aller plus loin et ajouter vos propres fonctionnalités, comme par exemple compresser ou chiffrer automatiquement les données lors de l'envoi ? Cela peut être fait très facilement, en créant une classe dérivée de [`sf::Packet`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Packet.php "sf::Packet documentation") et en redéfinissant les fonctions suivantes :
 
 - `onSend`: appelée juste avant que la socket envoie les données
