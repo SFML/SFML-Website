@@ -183,7 +183,7 @@ if (socket.receive(data.data(), data.size(), received, sender, port) != sf::Sock
 {
     // error...
 }
-std::cout << "Received " << received << " bytes from " << *sender << " on port " << port << std::endl;
+std::cout << "Received " << received << " bytes from " << sender.value() << " on port " << port << std::endl;
 ```
 
 It is important to keep in mind that if the socket is in blocking mode, `receive` will wait until something is received, blocking the thread that called it (and thus possibly the whole program).

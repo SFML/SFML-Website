@@ -73,13 +73,13 @@ The first thing to do is connect to an FTP server.
 
 ```cpp
 const std::optional<std::vector<sf::IpAddress>> addresses = sf::Dns::resolve("ftp.myserver.org");
-if (!addresses || addresses->empty())
+if (!addresses || addresses.value().empty())
 {
     // error...
 }
 
 sf::Ftp ftp;
-ftp.connect(addresses->front());
+ftp.connect(addresses.value().front());
 ```
 
 The server address is an [`sf::IpAddress`](../../../documentation/3.1.0/classsf_1_1IpAddress.html "sf::IpAddress documentation").
@@ -91,7 +91,7 @@ If, for some reason, your server uses a different port, you can specify it as an
 
 ```cpp
 sf::Ftp ftp;
-ftp.connect(addresses->front(), 45000);
+ftp.connect(addresses.value().front(), 45000);
 ```
 
 You can also pass a third parameter, which is a time out value.
@@ -99,7 +99,7 @@ This prevents you from having to wait forever (or at least a very long time) if 
 
 ```cpp
 sf::Ftp ftp;
-ftp.connect(addresses->front(), 21, sf::seconds(5));
+ftp.connect(addresses.value().front(), 21, sf::seconds(5));
 ```
 
 Once you're connected to the server, the next step is to authenticate yourself:
