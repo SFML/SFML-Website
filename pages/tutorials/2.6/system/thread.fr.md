@@ -1,5 +1,10 @@
 # Les threads
 
+!!! advanced "Sujet avancé"
+
+    Le multi-threading est difficile à maîtriser, car les threads qui accèdent aux mêmes données doivent être synchronisés avec soin.
+    La plupart des programmes n'ont besoin d'aucun thread, vous pouvez donc passer ce tutoriel pour l'instant.
+
 ## Qu'est-ce qu'un thread ?
 
 La plupart d'entre vous savent déjà ce qu'est un thread, mais voici toutefois une petite explication pour ceux qui abordent ce concept pour la toute première fois.

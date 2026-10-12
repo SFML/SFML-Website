@@ -1,5 +1,10 @@
 # Flux audio personnalisés
 
+!!! advanced "Sujet avancé"
+
+    Les flux audio personnalisés nécessitent de dériver de `sf::SoundStream` et de répondre à des demandes de données qui arrivent depuis un autre thread.
+    Pour jouer des fichiers de musique, `sf::Music` fait déjà tout cela pour vous, vous n'avez donc besoin d'un flux personnalisé que si vous générez ou recevez vous-même les données audio.
+
 ## Un flux audio ? C'est quoi ça ?
 
 Un flux (en anglais *stream*) audio est similaire à une musique (vous vous souvenez de la classe [`sf::Music`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Music.php "sf::Music documentation") ?). Il a pratiquement les mêmes fonctions et se comporte de la même manière. La seule différence est qu'un flux audio ne jouera pas un fichier audio : il va jouer une source audio perso que *vous* vous chargerez de fournir. En d'autres termes, définir votre propre flux audio vous permet de jouer n'importe quoi d'autre qu'un fichier : un flux internet, une musique générée par votre programme, un format non supporté par SFML, etc.

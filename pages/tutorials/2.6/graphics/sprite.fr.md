@@ -190,6 +190,10 @@ Gardez bien cela en tête lorsque vous créez vos textures d'animation ou de tui
 
 ## Utiliser sf::Texture dans du code OpenGL
 
+!!! advanced "Sujet avancé"
+
+    La dernière section ne concerne que ceux qui mélangent SFML avec leur propre code OpenGL.
+
 Si vous utilisez OpenGL plutôt que les entités graphiques de SFML, vous pouvez toujours utiliser [`sf::Texture`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Texture.php "sf::Texture documentation") comme encapsulation d'une texture OpenGL, et la faire intéragir avec vos entités OpenGL.
 
 Afin d'activer une [`sf::Texture`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Texture.php "sf::Texture documentation") pour le rendu (l'équivalent de `glBindTexture`), vous devez appeler la fonction statique `bind` :

@@ -105,6 +105,11 @@ renderTexture.create(500, 500, true); // activation du tampon de profondeur
 
 ## Dessiner depuis un thread
 
+!!! advanced "Sujet avancé"
+
+    La suite de ce tutoriel traite du dessin depuis plusieurs threads.
+    La plupart des programmes ne dessinent que depuis le thread principal, vous pouvez donc la passer à moins de savoir que vous en avez besoin.
+
 SFML supporte le rendu multi-threadé, et vous n'avez même pas besoin de faire quoique ce soit pour que cela fonctionne. La seule chose à se rappeler est de désactiver une fenêtre avant de l'utiliser dans un autre thread ; une fenêtre (plus précisément son contexte OpenGL) ne peut en effet pas être active dans plusieurs threads en même temps.
 
 ```cpp

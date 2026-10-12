@@ -1,5 +1,11 @@
 # Effets spéciaux avec les shaders
 
+!!! advanced "Sujet avancé"
+
+    Les shaders sont de petits programmes écrits en GLSL, un langage à part qui s'exécute sur la carte graphique.
+    Ce tutoriel explique comment les utiliser avec SFML, mais n'enseigne pas le GLSL lui-même.
+    Vous n'avez pas besoin de shaders pour faire un jeu, vous pouvez donc passer ce tutoriel jusqu'à ce que vous vouliez des effets spéciaux.
+
 ## Introduction
 
 Un shader est un petit programme qui s'exécute directement sur la carte graphique, et qui permet au programmeur de décrire les étapes de rendu de manière plus simple et surtout plus flexible que d'utiliser les états et opérations figés qu'OpenGL fournit. Cette flexibilité permet aux shaders d'implémenter des effets qui seraient compliqués, sinon impossibles, à décrire avec les fonctions OpenGL standards : éclairage par pixel, ombres, etc. Les cartes graphiques actuelles, ainsi que les dernières versions d'OpenGL, sont même complètement basées sur les shaders, et les vieux états et fonctions (ce qu'on appelle le "*fixed pipeline*") que vous avez l'habitude d'utiliser sont voués à disparaître.

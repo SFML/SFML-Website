@@ -1,5 +1,10 @@
 # Les flux de données (*input streams*)
 
+!!! advanced "Sujet avancé"
+
+    Ce tutoriel demande une certaine familiarité avec l'héritage et les fonctions virtuelles.
+    SFML sait déjà charger des ressources depuis des fichiers et depuis la mémoire. Vous n'avez besoin d'un flux personnalisé que si vos données viennent d'ailleurs, par exemple d'une archive ZIP, d'un fichier chiffré ou du réseau, vous pouvez donc passer ce tutoriel pour l'instant.
+
 ## Introduction
 
 SFML possède de nombreuses classes de ressources : images, polices, sons, etc. Dans la plupart des programmes, ces ressources vont être chargées depuis des fichiers, à l'aide de leur fonction `loadFromFile`. Dans quelques autres cas, les ressources seront directement intégrées à l'exécutable ou bien dans un gros fichier de données, et chargées depuis la mémoire avec `loadFromMemory`. Ces fonctions couvrent *pratiquement* toutes les situations imaginables -- mais pas toutes.

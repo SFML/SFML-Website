@@ -90,6 +90,11 @@ if (!recorder.setDevice(inputDevice))
 
 ## Enregistrement personnalisé
 
+!!! advanced "Sujet avancé"
+
+    La suite de ce tutoriel explique comment écrire votre propre classe de capture, ce qui implique de l'héritage et du code qui s'exécute dans un thread séparé.
+    Si la capture dans un buffer de son vous suffit, vous pouvez vous arrêter ici.
+
 Si stocker les données enregistrées dans un buffer audio n'est pas ce que vous voulez, vous pouvez tout aussi bien écrire votre propre enregistreur. Cela vous permettra de traiter les données audio pendant qu'elles sont en train d'être capturées, (presque) directement dès qu'elles arrivent du périphérique d'enregistrement. De cette façon vous pouvez, par exemple, *streamer* les données capturées sur le réseau, en effectuer une analyse temps-réel, etc.
 
 Pour écrire votre propre enregistreur, vous devez hériter de la classe abstraite [`sf::SoundRecorder`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1SoundRecorder.php "sf::SoundRecorder documentation"). En fait, [`sf::SoundBufferRecorder`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1SoundBufferRecorder.php "sf::SoundBufferRecorder documentation") est juste une spécialisation de cette classe, directement intégrée à SFML.

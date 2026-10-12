@@ -1,5 +1,10 @@
 # Concevoir ses entités avec les tableaux de vertex
 
+!!! advanced "Sujet avancé"
+
+    Les tableaux de vertex sont de plus bas niveau que les sprites et les formes, car vous définissez vous-même chaque point.
+    Ils sont la bonne solution pour dessiner efficacement beaucoup d'éléments similaires, comme des tile maps ou des systèmes de particules, mais vous n'en avez pas besoin pour vos premiers projets.
+
 ## Introduction
 
 SFML fournit des classes simples pour les entités 2D les plus utilisées. Et, bien qu'il soit toujours possible de construire les entités plus complexes à partir de ces briques de bases, ce n'est pas toujours la solution la plus efficace. Par exemple, vous atteindrez très rapidement les limites de votre carte graphique si vous dessinez un grand nombre de sprites. La raison est la suivante : les performances sont directement liées au nombre d'appels à la fonction `draw`. En effet, chaque appel implique de changer tout un tas d'états OpenGL, de mettre en place des matrices, de changer de texture courante, etc. Et tout ce processus uniquement pour dessiner deux triangles (un sprite). Ce n'est pas vraiment ce que votre carte graphique attend : les cartes graphiques modernes sont plutôt conçues pour traiter les triangles par lots de plusieurs milliers, voire millions.

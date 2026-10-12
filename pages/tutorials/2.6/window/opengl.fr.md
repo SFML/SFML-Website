@@ -1,5 +1,10 @@
 # Utiliser OpenGL dans une fenêtre SFML
 
+!!! advanced "Sujet avancé"
+
+    Ce tutoriel traite de l'utilisation directe d'OpenGL et suppose que vous connaissez déjà OpenGL.
+    Si vous voulez dessiner des sprites, des formes et du texte, le module graphique s'en charge pour vous et vous pouvez passer ce tutoriel.
+
 ## Introduction
 
 Ce tutoriel ne parle pas d'OpenGL, mais plutôt de la manière d'utiliser SFML comme interface à OpenGL, ainsi que la façon de les mélanger.
