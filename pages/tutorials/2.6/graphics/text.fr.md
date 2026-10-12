@@ -97,7 +97,7 @@ sf::Glyph glyph = font.getGlyph(character, characterSize, bold);
 
 `character` est le code UTF-32 du glyphe que vous voulez récupérer. Vous devez aussi spécifier la taille de caractère, et en dernier paramètre, si vous voulez la version grasse ou normale du glyphe.
 
-La structure [`sf::Glyph`](https://www.sfml-dev.org/documentation/2.6.2-fr/structsf_1_1Glyph.php "sf::Glyph documentation") contient trois membres :
+La structure [`sf::Glyph`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Glyph.php "sf::Glyph documentation") contient trois membres :
 
 - `textureRect` contient les coordonnées de textures du glyphe dans la texture
 - `bounds` est le rectangle englobant du glyphe, qui est à le positionner relativement à la ligne de base du texte
