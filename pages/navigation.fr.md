@@ -98,7 +98,37 @@
             * tutorials/3.0/network/packet*.md
             * tutorials/3.0/network/http*.md
             * tutorials/3.0/network/ftp*.md
-    * [SFML 2.6](https://www.sfml-dev.org/tutorials/2.6/index-fr.php)
+    * [SFML 2.6](tutorials/2.6/index.md)
+        * Getting Started
+            * tutorials/2.6/getting-started/*.md
+        * System
+            * tutorials/2.6/system/time*.md
+            * tutorials/2.6/system/thread*.md
+            * tutorials/2.6/system/stream*.md
+        * Window
+            * tutorials/2.6/window/window*.md
+            * tutorials/2.6/window/events*.md
+            * tutorials/2.6/window/inputs*.md
+            * tutorials/2.6/window/opengl*.md
+        * Graphics
+            * tutorials/2.6/graphics/draw*.md
+            * tutorials/2.6/graphics/sprite*.md
+            * tutorials/2.6/graphics/shape*.md
+            * tutorials/2.6/graphics/text*.md
+            * tutorials/2.6/graphics/transform*.md
+            * tutorials/2.6/graphics/view*.md
+            * tutorials/2.6/graphics/vertex-array*.md
+            * tutorials/2.6/graphics/shader*.md
+        * Audio
+            * tutorials/2.6/audio/sounds*.md
+            * tutorials/2.6/audio/recording*.md
+            * tutorials/2.6/audio/spatialization*.md
+            * tutorials/2.6/audio/streams*.md
+        * Network
+            * tutorials/2.6/network/socket*.md
+            * tutorials/2.6/network/packet*.md
+            * tutorials/2.6/network/http*.md
+            * tutorials/2.6/network/ftp*.md
     * [SFML 2.5](https://www.sfml-dev.org/tutorials/2.5/index-fr.php)
     * [SFML 2.4](https://www.sfml-dev.org/tutorials/2.4/index-fr.php)
     * [SFML 2.3](https://www.sfml-dev.org/tutorials/2.3/index-fr.php)
