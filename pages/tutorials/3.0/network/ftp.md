@@ -79,7 +79,7 @@ if (!address)
 }
 
 sf::Ftp ftp;
-ftp.connect(*address);
+ftp.connect(address.value());
 ```
 
 The server address is an [`sf::IpAddress`](../../../documentation/3.0.2/classsf_1_1IpAddress.html "sf::IpAddress documentation").
@@ -91,7 +91,7 @@ If, for some reason, your server uses a different port, you can specify it as an
 
 ```cpp
 sf::Ftp ftp;
-ftp.connect(*address, 45000);
+ftp.connect(address.value(), 45000);
 ```
 
 You can also pass a third parameter, which is a time out value.
@@ -99,7 +99,7 @@ This prevents you from having to wait forever (or at least a very long time) if 
 
 ```cpp
 sf::Ftp ftp;
-ftp.connect(*address, 21, sf::seconds(5));
+ftp.connect(address.value(), 21, sf::seconds(5));
 ```
 
 Once you're connected to the server, the next step is to authenticate yourself:
