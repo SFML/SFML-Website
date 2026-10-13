@@ -61,36 +61,11 @@ What you want to avoid are:
 Concurrent reads to the same memory location are generally unproblematic.
 
 In order to protect against the above scenarios, you will need to make use of mutex objects.
-SFML provides a cross-platform mutex implementation.
-See [below](#mutex) for how to use them.
 
 Even after you have protected against concurrent access, you still need to be wary of the order in which statements are executed.
 Once you venture into threading, there is no longer an execution ordering guarantee, and it is ultimately up to you to make sure things are done in the right order across different threads.
 
 Good system designs often make threading optional and provide an option to disable them, whether for debugging or other purposes.
-
-## How do I use sf::Mutex? {: #mutex}
-
-`sf::Mutex` is used to lock (acquire) a resource for exclusive access and unlock (release) a resource when exclusive access is no longer necessary.
-If you try to lock a mutex that has already been locked by another thread, you will have no choice but to wait for the locking thread to release the lock in order for execution to proceed.
-
-It is good practice to not lock/unlock an `sf::Mutex` directly, but to rely on RAII `sf::Lock` objects to automatically unlock their owned mutex on destruction.
-
-For more information on `sf::Mutex` and `sf::Lock`, refer to the [official documentation](https://www.sfml-dev.org/tutorials/latest/system-thread.php#protecting-shared-data).
-
-## Why can't I store my sf::Thread in an STL container? {: #thread-container}
-
-`sf::Thread` inherits from `sf::NonCopyable` meaning you cannot copy or assign an `sf::Thread`.
-This is however a requirement to use a data type with an STL container.
-
-You might be wondering how it would still be possible to store multiple threads in an STL container if you are trying to implement some sort of thread pool.
-The answer is simple: instead of storing instances, store pointers to the `sf::Threads`.
-
-The `sf::NonCopyable` restrictions can only apply to instances of an `sf::Thread`.
-When copying pointers, the copy constructor or assignment operator of a class are not invoked.
-As such it is perfectly legal to copy and pass pointers around.
-
-Since working with raw pointers is something you want to avoid in modern C++, you can use [smart pointers](programming.md#smart) to great extent in combination with this technique.
 
 ## Why doesn't sf::sleep sleep for the amount of time I want it to? {: #sleep}
 
