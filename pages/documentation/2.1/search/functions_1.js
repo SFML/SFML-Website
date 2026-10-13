@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['begin_0',['begin',['../classsf_1_1String.html#a8ec30ddc08e3a6bd11c99aed782f6dfe',1,'sf::String::begin()'],['../classsf_1_1String.html#a0e4755d6b4d51de7c3dc2e984b79f95d',1,'sf::String::begin() const']]],
+  ['bind_1',['bind',['../classsf_1_1Shader.html#a09778f78afcbeb854d608c8dacd8ea30',1,'sf::Shader::bind()'],['../classsf_1_1Texture.html#ae9a4274e7b95ebf7244d09c7445833b0',1,'sf::Texture::bind()'],['../classsf_1_1UdpSocket.html#ab0bf8d32849836f92beb2fd734565481',1,'sf::UdpSocket::bind()']]]
+];
