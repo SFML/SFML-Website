@@ -23,6 +23,7 @@ Yes, you can link SFML statically.
 This can be done in any operating system, although in Linux and macOS it is recommended to only link dynamically unless you have special requirements.
 
 When linking statically, do not forget to specify the `SFML_STATIC` define on your command line.
+If you use CMake, setting `SFML_STATIC_LIBRARIES` to `ON` takes care of it.
 
 ## Can I use the code from the example directory? {: #examples}
 

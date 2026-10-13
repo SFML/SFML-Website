@@ -79,7 +79,7 @@ hide:
     - [SFML requires a newer CMake version than my OS provides!](troubleshooting.md#grl-cmake-version)
     - [How do I make my IDE output verbose build information?](troubleshooting.md#grl-verbose-ide)
     - [I keep getting "undefined reference to <some strange thing that looks like an SFML function>"!](troubleshooting.md#grl-undefined-ref)
-    - [Why can't I use SFML as a 64-bit library on my 64-bit system?](troubleshooting.md#grl-64bit)
+    - [Why do I get errors when mixing 32-bit and 64-bit libraries?](troubleshooting.md#grl-64bit)
     - [My computer crashes when I run my SFML program!](troubleshooting.md#grl-crash)
     - [I found a bug!](troubleshooting.md#grl-i-found-a-bug)
     - [What is minimal code?](troubleshooting.md#grl-minimal)

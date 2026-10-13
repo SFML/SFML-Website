@@ -14,11 +14,11 @@ First, make sure that you have followed the installation instructions in the [of
 Have you:
 
 - Provided the path to the SFML headers to your compiler?
-- Provided your text editor with the path to the SFML library?
-- Included the headers for the packages you're using? (“SFML/[capitalized name of module].hpp”)
-- Linked with the packages you're using? (See the dependencies section of this document)
-- (Windows only) Copied the openal32.dll file (you can find it in the complete SDK) into the folder for executable, along with the DLLs for the packages you're using (and all of their dependencies)?
-- (Linux only) Installed the libraries (sudo make install in the SFML folder)?
+- Provided the path to the SFML libraries to your linker?
+- Included the headers for the modules you're using? (`SFML/[capitalized name of module].hpp`)
+- Linked with the modules you're using? (See [What and how do I link to use SFML?](build-use.md#link))
+- (Windows only) Copied the DLLs of the modules you're using, e.g. `sfml-graphics-3.dll`, next to your executable?
+- (Linux only) Installed SFML, either through your package manager or with `cmake --install`?
 
 If you've checked all of those, and SFML still refuses to work, see [I found a bug!](#grl-i-found-a-bug).
 
@@ -84,7 +84,9 @@ Inspect the build log and see if it helps solve your problem.
 If you need further help, you can ask on the forum.
 In that case copy the output and paste it in your post.
 
-#### Microsoft Visual Studio - 2008, 2010, 2012 and 2013, Microsoft Windows
+#### Microsoft Visual Studio
+
+The screenshots are from an older Visual Studio version, but the settings are still in the same place.
 
 First, open up your project properties window.
 
@@ -112,52 +114,14 @@ In that case copy the output and paste it in your post.
 When posting on the forum, it is helpful to paste your log in `[code][/code]` tags to enable people to handle it easier.
 Not only does it avoid line-breaks, it is also displayed in a monospace font which makes it easier to read if it spans multiple lines.
 
-### Why can't I use SFML as a 64-bit library on my 64-bit system? {: #grl-64bit}
+### Why do I get errors when mixing 32-bit and 64-bit libraries? {: #grl-64bit}
 
-First of all, you have to ask yourself: Do I really need to use SFML as a 64-bit library? There are some benefits to building 64-bit applications, but it is recommended that beginners do not try this until they are confident with the compile and linking process
+Every library you link has been built for a specific architecture, such as x86 (32-bit), x64 (64-bit) or ARM64, and all of them have to match the architecture your compiler is targeting.
+Running a 64-bit operating system doesn't mean that your compiler automatically builds 64-bit executables.
+For example, a 32-bit MinGW only builds 32-bit executables, and in Visual Studio the platform is selected per project configuration.
+SFML doesn't add the architecture to its library file names, so you have to keep track of which package you downloaded or built.
 
-Most of the confusion stems from the fact that with Windows, although modern versions make use of 64-bit processor instruction sets, they are able to run 32-bit applications as well.
-By default, most "standard" installations build 32-bit executables.
-The fact that you are running a 64-bit operating system doesn't mean that you automatically build 64-bit executables.
-When in doubt, download/build 32-bit executables.
-
-Let's start with the basics.
-The processors that you use everyday execute instructions which is what programs are essentially made of.
-The set of instructions that a processor understands and is able to execute properly is known as its _instruction set_.
-Because Intel released a family of very popular processors quite a while ago that supported at first 16-bit registers and eventually 32-bit registers whose model numbers ended with 86, the instruction set that they provided came to be known as the x86 instruction set.
-Nowadays, x86 is synonymous with 32-bit, and any time you see an architecture marked as x86 you should immediately tell that it is a 32-bit architecture.
-Because of how addresses have to be stored in registers, eventually 32-bit registers were no longer sufficient (could only address up to 4GiB of RAM) and processors had to start providing 64-bit registers.
-This marked the start of the x64 era.
-This time around, AMD was the first to come up with the instruction set for 64-bit architectures, and thus you will hear of the term AMD64 a lot.
-x64, x86-64 and AMD64 all tend to refer to 64-bit architectures and are often used interchangeably.
-
-When you compile your code, the compiler ends up translating your syntactically legal code into machine instructions to be executed on the _target CPU_.
-The compiler will always produce code that can run on a _specific architecture_.
-Because x64 architectures are fully backwards-compatible with x86 instructions (it is merely a superset), they can run executables compiled for x86 systems as well, however, the operating system kernel has to support this and allow it.
-
-Some systems such as Linux and OS X choose to trade executable portability for performance.
-You will not be able to transfer binary files between systems of different architectures, but for that they will be optimized more for their target architecture.
-Saying that you want to "compile for 64-bit" on these systems doesn't make much sense since you will have to do so automatically anyway.
-There are ways of forcing compilation for 32-bit systems in order to build _somewhat_ portable binaries, but that is beyond the scope of this FAQ.
-Just understand that on these systems, you will almost never have to worry about choosing an architecture type.
-
-Windows, as mentioned earlier, chose to go down a different route.
-They favored portability over potential performance gains.
-Because Microsoft couldn't easily stop supporting legacy applications (most of them being proprietary and barely maintained) on their newer operating systems, they had to make it possible to run 32-bit applications side by side with native 64-bit applications.
-This technology is called _Windows on Windows_ or _Windows 32-bit on Windows 64-bit_, WoW64 in short.
-Every 64-bit Windows installation has a second copy of the operating system files installed as well, the 32-bit version.
-When running programs, the executable loader checks for the executable's architecture and loads the corresponding dynamic libraries that it needs to function.
-Because this information is embedded into the executable itself, it is hard to tell what architecture an executable was built for without inspecting it closer.
-It is perfectly normal to build for 32-bit Windows systems even though you know that all your users will be on 64-bit systems, it will simply work.
-
-This is one of the main reasons why confusion arises when building software using libraries as well.
-Unless the target architecture is explicitly noted in the file name, you will not know whether the library file is compatible with the architecture type your compiler is targeting.
-SFML does not explicitly append an architecture type to its library files, so you will simply have to remember this after building SFML or downloading a pre-built library from somewhere.
-
-When building with Microsoft Visual Studio, the linker checks the machine types (architectures) of all modules that are to be linked with each other.
-If it finds a mismatch, it will abort with an error.
-
-The error commonly looks like this:
+When building with Visual Studio, the linker checks the architectures of all modules that are linked together and aborts with an error if they don't match:
 
 ```
 fatal error LNK1112: module machine type 'X86' conflicts with target machine type 'x64'
@@ -165,16 +129,12 @@ fatal error LNK1112: module machine type 'X86' conflicts with target machine typ
 
 It is possible that X86 and x64 are exchanged.
 
-To resolve this error, simply make sure that no conflicts arise.
-If you are targeting x64 with your executable, make sure you are only using x64 libraries as well.
-The same applies for x86.
+The linkers of GCC and Clang are less helpful.
+They skip libraries with a mismatching architecture, which results in a large number of undefined references, and if you're lucky a "skipping incompatible" message.
 
-If you are compiling using GCC or clang, it is less obvious when architecture conflicts arise.
-Instead of having explicit checks as with Visual Studio, the linkers in these toolchains merely ignore all symbols with mismatching architectures.
-It will look like the linker accepted the library files, but in fact it didn't process any of them at all, leading to a large number of undefined references during linking.
-This is especially annoying because these errors can stem from many other causes as well.
-It is recommended to not build for x64 on Windows if using any of these toolchains.
-If you really must build for x64 on Windows, use Visual Studio instead.
+To resolve this, make sure that everything matches.
+If you are targeting x64 with your executable, make sure you are only using x64 libraries as well, and the same applies for x86 and ARM64.
+Nowadays, 64-bit is the sensible default on all desktop platforms.
 
 ### My computer crashes when I run my SFML program! {: #grl-crash}
 
@@ -211,7 +171,7 @@ A lot of strange behavior is a result of misconfigured/faulty software/drivers.
     The source of the problem does not lie within the responsibility of the SFML developers and as such they can't do much to fix it themselves.
 
 When you are sure that the bug is a result of SFML internals and is platform independent, you can go ahead and post in the forum of the package in question, and don't forget to provide a precise description of your problem, the version of SFML you're using, your system configuration, and the compilable code, and if the situation requires, the logs of your compiler and/or linker.
-Also make sure that the bug hasn't already been reported (use the [search function](https://en.sfml-dev.org/forums/index.php?action=search)), confirmed (look on the [issue tracker](https://github.com/SFML/SFML/issues?q=is%3Aopen)) or even resolved in the latest source (check also the [closed issues](hhttps://github.com/SFML/SFML/issues?q=is%3Aclosed)).
+Also make sure that the bug hasn't already been reported (use the [search function](https://en.sfml-dev.org/forums/index.php?action=search)), confirmed (look on the [issue tracker](https://github.com/SFML/SFML/issues?q=is%3Aopen)) or even resolved in the latest source (check also the [closed issues](https://github.com/SFML/SFML/issues?q=is%3Aclosed)).
 
 ### What is a minimal code? {: #grl-minimal}
 
@@ -228,27 +188,27 @@ Such an example should never have to be longer than 40 lines of code (including 
 An example of minimal code:
 
 ```cpp
-#include 
+#include <SFML/Graphics.hpp>
 
-int main() {
-    sf::RenderWindow window( sf::VideoMode(640, 480, 32), "Bug" );
+int main()
+{
+    sf::RenderWindow window(sf::VideoMode({640, 480}), "Bug");
 
     // Some bug specific code here...
 
-    while( window.isOpen() ) {
-        sf::Event event;
-        while( window.pollEvent( event ) ) {
-            if( event.type == sf::Event::Closed ) {
+    while (window.isOpen())
+    {
+        while (const std::optional event = window.pollEvent())
+        {
+            if (event->is<sf::Event::Closed>())
                 window.close();
-            }
         }
 
         // ... and here.
 
+        window.clear();
         window.display();
     }
-
-    return EXIT_SUCCESS;
 }
 ```
 
@@ -272,19 +232,19 @@ Make sure that you're linking against the correct version of the libraries for y
 If you're compiling in Debug mode, you must link with the Debug versions of SFML, and vice-versa for Release mode.
 To recall, the naming conventions for SFML are:
 
-- sfml-[module].lib for the Release DLL
-- sfml-[module]-d.lib for the Debug DLL
-- sfml-[module]-s.lib for the static Release DLL
-- sfml-[module]-s-d.lib for the static Debug DLL.
+- `sfml-[module].lib` for the Release DLL
+- `sfml-[module]-d.lib` for the Debug DLL
+- `sfml-[module]-s.lib` for the static Release library
+- `sfml-[module]-s-d.lib` for the static Debug library
 
 If you link with the DLL versions, you must copy the required DLLs beside your executable:
 
-- sfml-[module].dll for the Release DLL
-- sfml-[module]-d.dll for the Debug DLL
+- `sfml-[module]-3.dll` for Release
+- `sfml-[module]-d-3.dll` for Debug
 
 ### I keep getting `fatal error LNK1112: module machine type 'XYZ' conflicts with target machine type 'ZYX'`. Help! {: #vs-arch}
 
-See [Why can't I use SFML as a 64-bit library on my 64-bit system?](#grl-64bit).
+See [Why do I get errors when mixing 32-bit and 64-bit libraries?](#grl-64bit).
 
 ## Windows {: #win}
 
@@ -306,8 +266,8 @@ Select "System" from the sub-tree, and in the SubSystem field on the right side 
 - With CMake, add the WIN32 flag to your executable (`add_executable(name WIN32 ...)`).
 This will do the same as the steps above.
 
-To maintain a portable entry point (`int main()` function), you can link your program against the sfml-main.lib library in the case of Visual Studio or libsfml-main.a in the case of Code::Blocks/MinGW.
-Using CMake, you can just make an if statement checking for WIN32 and add `sfml-main` to your linked libraries.
+To maintain a portable entry point (`int main()` function), you can link your program against `sfml-main.lib` in the case of Visual Studio or `libsfml-main.a` in the case of MinGW.
+Using CMake, you can just make an if statement checking for WIN32 and add `SFML::Main` to your linked libraries.
 
 Alternatively to hide the console, you can also define your own Windows entry point for graphical applications.
 
@@ -324,13 +284,16 @@ Replace your `int main()` or `int main(int argc, char** argv)` with this functio
 Before anything else, make sure that you've followed the [official tutorial](../tutorials/3.1/index.md) and then check if the following packages have been installed:
 
 - libx11-dev
-- libxi-dev
-- libgl1-mesa-dev
-- libudev-dev
 - libxrandr-dev
 - libxcursor-dev
-- libfreetype6-dev
+- libxi-dev
+- libudev-dev
+- libgl1-mesa-dev
+- libfreetype-dev
+- libharfbuzz-dev
 - libflac-dev
 - libvorbis-dev
+- libmbedtls-dev
+- libssh2-1-dev
 
 Though the library names might vary, especially regarding the version number.

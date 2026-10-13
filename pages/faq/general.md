@@ -14,57 +14,42 @@ You can use SFML as a minimalist window system in order to use OpenGL, or as a c
 
 ### On which platforms is SFML currently available? {: #platforms}
 
-The latest version of SFML is currently available and fully functional on Windows (10, 8, 7, Vista, XP), Linux and macOS.
-SFML works on both 32 and 64 bit systems.
-If older Windows versions need to be supported, it should be possible to use SFML 2.0 instead (see [the commit](https://github.com/SFML/SFML/commit/cd68d662043c2305990d1b6b559b0138bd77af14) for removal of Windows 9x and similar).
-Since SFML 2.2, there has also been experimental support for iOS and Android, which have taken great shape over the years and should be working quite stable.
+SFML is available on Windows (7 and newer), Linux and macOS, as well as on Android and iOS.
+On Windows, SFML works on both 32-bit and 64-bit systems, on macOS both Intel and Apple Silicon (ARM64) Macs are supported.
+The [download page](../download/index.md) lists the prebuilt packages for each platform.
 
 ### Which programming languages are supported by SFML? {: #languages}
 
 SFML is implemented in C++.
-That said, several [bindings](../download/bindings/index.md) have been created for other languages that allow SFML to be used from C, C#, C++/CLI, D, Ruby, OCaml, Java, Python and VB.NET.
+That said, the SFML Team maintains bindings for [C](../download/csfml/index.md) and [.NET](../download/sfml.net/index.md), and the community has created [bindings](../download/bindings/index.md) for many other languages, such as Python, Rust, Go, Ruby, Java, D or Zig.
 
 ### What dependencies does SFML have? {: #dependencies}
 
-SFML depends on a few other libraries, so before starting to compile you must have their development files installed.
+SFML depends on a few other libraries, such as FreeType and HarfBuzz for text, FLAC and Vorbis for audio, and MbedTLS and libssh2 for the network module.
 
-On Windows and macOS, all the needed dependencies are provided directly with SFML, so you don't have to download/install anything.
-Compilation will work out of the box.
+When building SFML with CMake, these dependencies are downloaded and built as part of SFML, unless the `SFML_USE_SYSTEM_DEPS` option is enabled.
+On Windows, macOS, Android and iOS, the option is disabled by default, so compilation works out of the box.
+On Linux, the option is enabled by default and SFML uses the libraries installed on your system instead.
+Additionally, the windowing and system libraries (X11, Xrandr, Xcursor, Xi, udev, OpenGL) always have to be installed on Linux.
+See the [build from source tutorial](../tutorials/3.1/getting-started/build-from-source.md#installing-dependencies) for the full list, and don't forget to install the development version of these packages.
 
-On Linux however, nothing is provided and SFML relies on your own installation of the libraries it depends on.
-Here is a list of what you need to install before compiling SFML:
-
-- pthread
-- opengl
-- xlib
-- xi
-- udev
-- xrandr
-- xcursor
-- freetype
-- flac
-- vorbis
-
-The exact name of the packages depend on each distribution.
-And don't forget to install the development version of these packages.
-
-SFML has also internal dependencies: Audio and Window depend on System, while Graphics depends on System and Window.
-In order to use the Graphics module, you must link with Graphics, Window, and System (the order of linkage matters with GCC).
+SFML also has internal dependencies: Audio, Network and Window depend on System, while Graphics depends on Window and System.
+See [What and how do I link to use SFML?](build-use.md#link) for what this means for your project.
 
 ### What version of SFML should I use? {: #version}
 
-Go for the latest SFML version, because you'll get a stable release with the latest features and bugfixes.
-As such it will save you a lot of headaches because other versions such as 1.6 are not maintained anymore, contain quite a few critical bugs and lack a lot of useful features.
+Go for the latest SFML 3 version, because you'll get a stable release with the latest features and bugfixes.
+SFML 3 requires a C++17 compiler.
+Only stay on SFML 2.6 if you maintain an existing project that hasn't been migrated yet, older versions such as 1.6 are not maintained anymore, contain quite a few critical bugs and lack a lot of useful features.
 
 ### Is there a complete list with all the changes from SFML 2.x to SFML 3.0? {: #changes-3-0}
 
-See the [official migration guide](../tutorials/3.0/getting-started/migrate.md) to get your code base updated to SFML 3.
+See the [official migration guide](../tutorials/3.1/migration/sfml-2.md) to get your code base updated to SFML 3.
 
 ### Will/does SFML support 3D? {: #3d}
 
 No, and the SFML Team has decided to keep the library as a way to handle 2D graphics with ease and hardware acceleration, so in short there won't be support for 3D in the future either.
-However you can use libraries such as Irrlicht with SFML as a window creator.
-You could also use raw OpenGL to implement 3D and have it alongside your 2D rendering in SFML without problems.
+However you can use SFML to create the window and OpenGL context, and use raw OpenGL to implement 3D and have it alongside your 2D rendering in SFML without problems.
 
 The previous statement is recommendable only if you have a minimal use for 3D, as it becomes very hard and tedious to manage full 3D functionality through graphics pipeline only.
 
@@ -87,7 +72,7 @@ However it is recommended to always take examples/tutorials available on the int
 They might contain bad habits of the writer which are not apparent to a newcomer.
 The safest way to learn to program is probably accompanied by a book written by a reputable author who is actively involved in the development of the language (see [this list](https://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list)).
 This ensures that they grasp the important aspects of the language and can teach you to program effectively as well.
-Contrary to what many newcomers believe, C++ is still evolving and has done so even more over the last years with the standardization of C++11, C++14 and C++17.
+Contrary to what many newcomers believe, C++ is still evolving and gets a new standard every three years since C++11.
 Learning from an older book or internet source might therefore not teach you all the aspects of the language there are and worse teach you old practices, which are no longer recommended.
 It is therefore recommended that you actively seek to learn about these new features on your own after you have grasped the basics.
 
