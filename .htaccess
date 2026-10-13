@@ -29,6 +29,10 @@ RewriteRule ^ /documentation/latest/ [R=301,L]
 RewriteCond %{REQUEST_URI} ^/documentation/latest(/?)(.*)$
 RewriteRule /latest(/?)(.*) /documentation/3.1.0/$2 [R=301,L]
 
+# SFML 1.6 and 2.x documentation moved from PHP to HTML, the French copies were the same API documentation
+RewriteRule ^documentation/(1\.6|2\.[0-9.]+?)(-fr)?/(.+)\.php$ /documentation/$1/$3.html [R=301,L]
+RewriteRule ^documentation/(1\.6|2\.[0-9.]+?)-fr(/?)$ /documentation/$1/ [R=301,L]
+
 # Tutorial redirects
 RewriteCond %{REQUEST_URI} ^/tutorials(/?)(\.php)?$
 RewriteRule ^ /tutorials/latest/ [R=301,L]
