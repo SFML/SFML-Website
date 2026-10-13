@@ -195,9 +195,6 @@ If this is the case you should contact your retailer/card manufacturer as this i
 Most of the time any unexpected behavior is a result of misunderstanding how to use SFML.
 Out of many bug reports only few of them turn out to be real bugs **which are caused by SFML itself and nothing else**.
 
-If you think you have found a bug and are still using SFML 1.6, note that support for 1.6 had ceased long ago.
-It is highly recommended to upgrade to the latest SFML version.
-Any bug reports made for SFML 1.6 will be ignored unless they were carried over to the latest SFML version as well, however this is very unlikely.
 If you are using the latest SFML version, try building the latest master revision available on [GitHub](https://github.com/SFML/SFML/).
 There are many things that might have already been fixed between the release which is available on the site and the latest development version.
 
@@ -266,17 +263,6 @@ Easy :
 - One by one delete all lines which are not relevant to the actual problem and try to compile after every deletion to see if the problem still persists
 
 Side note: This technique will often help you troubleshoot the problem on your own.
-
-## Code::Blocks {: #cb}
-
-### I'm getting linker errors {: #cb-linker}
-
-With GCC based compilers such as MinGW you must link the libraries in a precise order: if libX depends on libY, libX MUST be linked before libY.
-For example, if you use the Graphics and Audio modules, the correct linking order would be the following: sfml-audio, sfml-graphics, sfml-window, sfml-system.
-
-If you use the dynamic versions of the SFML 1.6 libraries, you must also define the SFML_DYNAMIC symbol in the options for your project.
-If you use the static version of the SFML 2.3 libraries, you must also define the SFML_STATIC symbol in the options for your project.
-**Defining SFML_DYNAMIC no longer has any effect since SFML 2.0.** For more details, see the installation tutorial for Code::Blocks.
 
 ## Visual Studio {: #vs}
 
@@ -348,19 +334,3 @@ Before anything else, make sure that you've followed the [official tutorial](../
 - libvorbis-dev
 
 Though the library names might vary, especially regarding the version number.
-
-### There is no titlebar visible and/or artifacts from windows are visible {: #lnx-titlebar}
-
-If you're running compiz, then turn it off, because compiz interfere with other OpenGL applications.
-
-You can use this simple script to toggle compiz on and off, if you're using metacity as your window manager:
-
-```sh
-    #!/bin/bash
-    pid=`ps --no-heading -C compiz.real | cut -d "?" -f1`;
-    if [ -n "$pid" ]; then
-      metacity --replace &
-    else
-      compiz --replace &
-    fi
-```

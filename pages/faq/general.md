@@ -60,18 +60,6 @@ As such it will save you a lot of headaches because other versions such as 1.6 a
 
 See the [official migration guide](../tutorials/3.0/getting-started/migrate.md) to get your code base updated to SFML 3.
 
-### Is there a complete list with all the changes from SFML 1.6 to SFML 2.x? {: #changes}
-
-This non-exhaustive list can be used as a starting point: [SFML Forum](https://en.sfml-dev.org/forums/index.php?topic=5343.0)  
-It however does not contain all changes made between 1.6 and 2.0.
-It was written more than a year ago and since then a few major changes have been made including:
-
-- Rewrite of the graphics API
-- New `sf::Time` API
-- Removal of the default built-in Arial font
-- Replaced `getWidth()` and `getHeight()` with `getSize()`
-- Naming convention change (further details and rationale [here](https://en.sfml-dev.org/forums/index.php?topic=6709.0))
-
 ### Will/does SFML support 3D? {: #3d}
 
 No, and the SFML Team has decided to keep the library as a way to handle 2D graphics with ease and hardware acceleration, so in short there won't be support for 3D in the future either.

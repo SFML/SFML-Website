@@ -13,7 +13,6 @@ hide:
 - [What dependencies does SFML have?](general.md#dependencies)
 - [What version of SFML should I use?](general.md#version)
 - [Is there a complete list with all the changes from SFML 2.x to SFML 3.0?](general.md#changes-3-0)
-- [Is there a complete list with all the changes from SFML 1.6 to SFML 2.x?](general.md#changes)
 - [Will/does SFML support 3D?](general.md#3d)
 - [I want to propose a new feature!](general.md#request)
 - [Is using SFML a good way to learn to program (in C++)?](general.md#learn)
@@ -55,7 +54,6 @@ hide:
 ## [SFML Window](window.md)
 
 - [How do I make my window transparent?](window.md#transparent-window)
-- [What happened to getFrameTime()?](window.md#get-frame-time)
 - [Why doesn't setFramerateLimit() always set the frame rate to the specified limit?](window.md#set-framerate-limit)
 
 ## [SFML System](system.md)
@@ -63,8 +61,6 @@ hide:
 - [Does SFML support Unicode?](system.md#unicode)
 - [How do I convert from sf::String to <type> and vice-versa?](system.md#string-convert)
 - [My program keeps crashing when I use threads!](system.md#threads-crash)
-- [How do I use sf::Mutex?](system.md#mutex)
-- [Why can't I store my sf::Thread in an STL container?](system.md#thread-container)
 - [Why doesn't sf::sleep sleep for the amount of time I want it to?](system.md#sleep)
 
 ## [Programming in General](programming.md)
@@ -88,8 +84,6 @@ hide:
     - [I found a bug!](troubleshooting.md#grl-i-found-a-bug)
     - [What is minimal code?](troubleshooting.md#grl-minimal)
     - [And how can I easily obtain this minimal code?](troubleshooting.md#grl-obtain-minimal)
-- [Code::Blocks](troubleshooting.md#cb)
-    - [I'm getting linker errors](troubleshooting.md#cb-linker)
 - [Visual Studio](troubleshooting.md#vs)
     - [My project crashes randomly, but I don't get any compiler or linker errors](troubleshooting.md#vs-crash)
     - [I keep getting `fatal error LNK1112: module machine type 'XYZ' conflicts with target machine type 'ZYX'`. Help!](troubleshooting.md#vs-arch)
@@ -97,7 +91,6 @@ hide:
     - [Why does a console attach itself to my project?](troubleshooting.md#win-console)
 - [Linux](troubleshooting.md#lnx)
     - [(Debian) I can't compile the source code](troubleshooting.md#lnx-compile)
-    - [There is no titlebar visible and/or artifacts from windows are visible](troubleshooting.md#lnx-titlebar)
 
 ## [Licensing](licensing.md)
 
