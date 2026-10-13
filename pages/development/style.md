@@ -1,48 +1,136 @@
 # Code Style Guide
 
+This guide describes the code style of SFML 3. Most of the formatting is handled by [clang-format](#clang-format) and many of the semantic rules are checked by [clang-tidy](#clang-tidy), both run in the continuous integration pipeline, so a pull request that doesn't follow them won't pass the checks.
+
+For everything not covered here, have a look at the existing SFML source code and follow what the surrounding code does.
+
+## clang-format
+
+SFML uses [clang-format](https://clang.llvm.org/docs/ClangFormat.html) to format all its code and the continuous integration pipeline fails if a file isn't formatted.
+
+The formatting rules can be found in the [`.clang-format` file](https://github.com/SFML/SFML/blob/master/.clang-format) in the root of the SFML repository, though it's not necessary to understand all or any of them.
+The goal of clang-format is to automate the formatting, so you don't need to tediously format your code by hand.
+
+!!! warning "clang-format 17"
+
+    SFML requires clang-format **17**. Other versions format some constructs differently, which then fails the check in the pipeline, even if your editor formatted the code.
+
+### Installation
+
+clang-format is shipped as part of LLVM and integrated in or available as extension for most popular editors.
+
+- [Download LLVM 17](https://github.com/llvm/llvm-project/releases/tag/llvmorg-17.0.6), on Linux most distributions provide a `clang-format-17` package
+- Alternatively, [download only the clang-format 17 binary](https://github.com/SFML/clang-tools/releases/tag/llvmorg-17.0.6) from [SFML/clang-tools](https://github.com/SFML/clang-tools), which republishes `clang-format` and `clang-tidy` from the official LLVM releases, without the 1-2 GB LLVM archive
+- Visual Studio has built-in support, set the path to clang-format 17 under _Tools > Options > Text Editor > C/C++ > Code Style > Formatting_
+- [Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=xaver.clang-format)
+- CLion has built-in support
+
+### Usage
+
+Usually the easiest approach is to use your editor's formatting with clang-format, ideally on save.
+
+Alternatively, you can format all files with the `format` target of the SFML build, which calls clang-format on the `examples`, `include`, `src`, `test` and `tools` directories:
+
+```bash
+cmake --build build --target format
+```
+
+If `clang-format` in your `PATH` isn't version 17, point CMake to the right executable when configuring, e.g. `-DCLANG_FORMAT_EXECUTABLE=clang-format-17`.
+
+The same script can also be run without configuring a build, from the root of the SFML repository:
+
+```bash
+cmake -DCLANG_FORMAT_EXECUTABLE=clang-format-17 -P cmake/Format.cmake
+```
+
+## clang-tidy
+
+[clang-tidy](https://clang.llvm.org/extra/clang-tidy/) checks the code for bugs, readability and modern C++ usage. The enabled checks can be found in the [`.clang-tidy` file](https://github.com/SFML/SFML/blob/master/.clang-tidy) in the root of the SFML repository. Every warning is treated as an error.
+
+To run it locally, configure SFML with the `dev` preset, which generates the compile commands clang-tidy needs, and build the `tidy` target:
+
+```bash
+cmake --preset dev
+cmake --build build --target tidy
+```
+
+This requires `clang-tidy` and `run-clang-tidy` in your `PATH`, or point CMake to them with `-DCLANG_TIDY_EXECUTABLE=...`.
+
+Keep in mind, that clang-tidy only checks the code that gets compiled on your platform. Platform-specific code for other operating systems is checked by the pipeline.
+
 ## General
 
-C++ source code must be C++03-compliant.
+C++ source code must be C++17-compliant.
 
-## Header Files
+## Files
 
-C++ header files have the extension `.hpp` and are structured as follows:
+### Header Files
+
+C++ header files have the extension `.hpp`, template implementations go into an `.inl` file with the same name, and source files have the extension `.cpp`. Objective-C++ source files on macOS and iOS have the extension `.mm`.
+
+A header file is structured as follows:
 
 1. License block
-2. Opening include guard
+2. `#pragma once`
 3. Included headers
 4. Opening namespace `sf`
 5. One or more of the following:
+    - Forward declarations
     - Class and type definitions
     - Global function declarations
     - Nested namespaces
 6. Closing namespace `sf`
-7. Closing include guard
-8. Extended comment on the class
+7. Detailed documentation of the class
 
 ```cpp
 ////////////////////////////////////////////////////////////
 //
-// License text...
+// SFML - Simple and Fast Multimedia Library
+// Copyright (C) 2007-2026 Laurent Gomila (laurent@sfml-dev.org)
+//
+// This software is provided 'as-is', without any express or implied warranty.
+// In no event will the authors be held liable for any damages arising from the use of this software.
+//
+// Permission is granted to anyone to use this software for any purpose,
+// including commercial applications, and to alter it and redistribute it freely,
+// subject to the following restrictions:
+//
+// 1. The origin of this software must not be misrepresented;
+//    you must not claim that you wrote the original software.
+//    If you use this software in a product, an acknowledgment
+//    in the product documentation would be appreciated but is not required.
+//
+// 2. Altered source versions must be plainly marked as such,
+//    and must not be misrepresented as being the original software.
+//
+// 3. This notice may not be removed or altered from any source distribution.
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_FILENAME_HPP
-#define SFML_FILENAME_HPP
+#pragma once
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <...>
+#include <SFML/Graphics/Export.hpp>
+
+#include <SFML/Graphics/Rect.hpp>
+
+#include <SFML/System/Vector2.hpp>
+
+#include <vector>
+
+#include <cstddef>
+
 
 namespace sf
 {
-class ForwardDeclarations;
+class Texture;
 
 namespace priv
 {
 ////////////////////////////////////////////////////////////
-/// \brief Short description...
+/// \brief Short description
 ///
 ////////////////////////////////////////////////////////////
 class PrivateClass
@@ -52,100 +140,119 @@ class PrivateClass
 } // namespace priv
 
 ////////////////////////////////////////////////////////////
-/// \brief Short description...
+/// \brief Short description
 ///
 ////////////////////////////////////////////////////////////
-class SFML_..._API PublicClass
+class SFML_GRAPHICS_API PublicClass
 {
 };
 
 ////////////////////////////////////////////////////////////
-/// \brief Short description...
+/// \brief Short description
 ///
 ////////////////////////////////////////////////////////////
-SFML_..._API void doSomething();
+SFML_GRAPHICS_API void doSomething();
 
 } // namespace sf
 
-#endif // SFML_FILENAME_HPP
 
 ////////////////////////////////////////////////////////////
-//
-// Extensive Doxygen documentation...
-//
+/// \class sf::PublicClass
+/// \ingroup graphics
+///
+/// Detailed documentation...
+///
 ////////////////////////////////////////////////////////////
 ```
 
-### Include Guards
+Every header uses `#pragma once` instead of include guards.
 
-Every header file has a unique include guard. Usually it is based on the filename unless the identifier is already used by another file (with the same name).
+**macOS and iOS implementation:** There's a difference between `.hpp` and `.h` files. The `.hpp` extension is used for C++ headers, which use `#pragma once`. The `.h` files are Objective-C headers and must not be included in a C++ source file. They're `#import`ed and thus don't need `#pragma once`.
 
-**OS X implementation:** There's a difference between `*.hpp` and `*.h` files. The `hpp` extension is used for C++ files and has include guards. The `h` files are Objective-C header files and should not be included in a C++ source file. Those files are "`#import`ed" and thus don't require include guards.
+### Source Files
 
-#### Example
-
-For the file `Time.hpp`, the include guard would look like this:
-
-```cpp
-#ifndef SFML_TIME_HPP
-#define SFML_TIME_HPP
-// Code...
-#endif // SFML_TIME_HPP
-```
-
-### Includes
-
-The inclusion order is as follows:
-
-1. SFML headers
-    - Public headers, sorted alphabetically.
-    - Private headers, sorted alphabetically.
-2. Dependency headers, sorted alphabetically.
-3. Standard library headers, sorted alphabetically.
-
-Before the includes, a comment with the label _Headers_ is added.
-
-**OS X implementation:** `#import`s come last. This block of inclusion is separated by an empty line and follows the same three rules.
-
-#### Example
+A source file starts with the same license block, followed by the included headers and the definitions inside namespace `sf`. Every function definition is preceded by a delimiting line of 60 slashes, and definitions are separated by two empty lines.
 
 ```cpp
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Graphics.hpp>
-#include "Private.hpp"
-#include <X11/Xlib-xcb.h>
-#include <vector>
+#include <SFML/Graphics/RenderTarget.hpp>
+#include <SFML/Graphics/Sprite.hpp>
+#include <SFML/Graphics/Texture.hpp>
+
+#include <cmath>
+
+
+namespace sf
+{
+////////////////////////////////////////////////////////////
+void Sprite::setTexture(const Texture& texture, bool resetRect)
+{
+    // Recompute the texture area if requested
+    if (resetRect)
+        setTextureRect(IntRect({0, 0}, Vector2i(texture.getSize())));
+
+    // Assign the new texture
+    m_texture = &texture;
+}
+
+
+////////////////////////////////////////////////////////////
+const Texture& Sprite::getTexture() const
+{
+    return *m_texture;
+}
+
+} // namespace sf
 ```
+
+### Includes
+
+Headers are always included with angle brackets and their full path, including SFML's private headers, e.g. `#include <SFML/Window/Win32/WindowImplWin32.hpp>`.
+
+The includes are preceded by a _Headers_ block comment and grouped in the following order, with an empty line between the groups:
+
+1. `<SFML/Config.hpp>`
+2. The module's `Export.hpp`
+3. SFML headers per module, in the order Graphics, Audio, Network, Window, System
+4. Third-party headers (e.g. glad, X11, miniaudio)
+5. C++ standard library headers
+6. C standard library headers (`<cstdint>`, `<cmath>`, ...)
+
+Within a group, headers are sorted alphabetically. You don't have to do this by hand, clang-format sorts and groups the includes.
+
+Include what you use and prefer forward declarations in headers where possible.
+
+**macOS and iOS implementation:** `#import`s are sorted together with the `#include`s of the same group.
 
 ### Class Definitions
 
-In a class, the public interface comes first (usually with constructors and special member functions at the top), followed by protected members and then private data. In a given access-modifier group, static members are grouped together.
+In a class, the public interface comes first (usually with constructors and special member functions at the top), followed by protected members and then private functions and data. In a given access-modifier group, static members are grouped together. Member variables come last and are preceded by a _Member data_ block comment.
 
-### Comments and Documentation
+## Comments and Documentation
 
-- Doxygen documentation is used with the backslash style (e.g. `\param`).
-- Everything in the public API should be documented properly.
+- Doxygen documentation uses the backslash style (e.g. `\param`).
+- Everything in the public API is documented.
 - The brief documentation phrase doesn't end with a dot.
 - Documentation tags are grouped together by kind, and groups are separated by an empty line.
-- An example below illustrates how the brief and full descriptions, parameters and return values are placed inside a documentation block.
-- Single line commenting style only (i.e. `// comment`), i.e. no `/* comment */`.
-- Important block comments (e.g. doc) have delimiting lines before and after, each composed of 60 slashes.
+- Code, identifiers and values in the documentation are put in backticks, e.g. `` `true` `` or `` \see `setTexture` ``.
+- Single line comments only (i.e. `// comment`), no `/* comment */`.
+- Important block comments (e.g. documentation) have delimiting lines before and after, each composed of 60 slashes.
 - Documentation comments use triple slashes `/// comment` and have an empty line at the end.
-- Documentation for attributes or enumeration values use the form `///< comment`. These comments are vertically aligned.
-- Header inclusions are preceded by a "Headers" block comment, attributes by "Member data" and typedefs by "Types"
-- Class documentation is split into two parts: a first `\brief` comment is placed right before the class definition and more elaborated documentation is placed at the bottom of the header file. The elaborated documentation block is optional for classes which are not exposed to the user (e.g. classes inside the `sf::priv` namespace).
+- Documentation for member variables and enumerators uses the form `//!< comment`. These comments are vertically aligned.
+- Header inclusions are preceded by a _Headers_ block comment and member variables by _Member data_.
+- Class documentation is split into two parts: a `\brief` comment is placed right before the class definition and the detailed documentation is placed at the bottom of the header file. The detailed documentation is optional for classes which are not exposed to the user (e.g. classes inside the `sf::priv` namespace).
 
-#### Block Comments
+### Block Comments
 
 ```cpp
 ////////////////////////////////////////////////////////////
-// Define the SFML version
+// Member data
 ////////////////////////////////////////////////////////////
 ```
 
-#### Documentation Blocks for Functions
+### Documentation Blocks for Functions
 
 ```cpp
 ////////////////////////////////////////////////////////////
@@ -155,86 +262,115 @@ In a class, the public interface comes first (usually with constructors and spec
 ///
 /// \param field Name of the field to test
 ///
-/// \return True if the field exists, false otherwise
+/// \return `true` if the field exists, `false` otherwise
 ///
 ////////////////////////////////////////////////////////////
+[[nodiscard]] bool hasField(const std::string& field) const;
 ```
 
-#### Documentation Blocks for Classes
+### Documentation Blocks for Classes
 
 ```cpp
 ////////////////////////////////////////////////////////////
-/// \brief Short description of the class
+/// \brief Drawable representation of a texture, with its
+///        own transformations, color, etc.
 ///
 ////////////////////////////////////////////////////////////
-class Sprite
+class SFML_GRAPHICS_API Sprite : public Drawable, public Transformable
 {
     ...
 };
 
+} // namespace sf
+
+
 ////////////////////////////////////////////////////////////
-/// \class Sprite
+/// \class sf::Sprite
 /// \ingroup graphics
 ///
 /// Detailed description, possibly with code snippets
 /// explaining usage
+///
+/// Usage example:
+/// \code
+/// const sf::Texture texture("texture.png");
+/// sf::Sprite sprite(texture);
+/// \endcode
+///
+/// \see `sf::Texture`, `sf::Transformable`
+///
 ////////////////////////////////////////////////////////////
 ```
 
-#### Documentation for Enumerations or Attributes
+### Documentation for Enumerations and Member Variables
 
 ```cpp
-Ok       = 200, ///< Most common code returned when operation was successful
-Created  = 201, ///< The resource has successfully been created
-Accepted = 202, ///< The request has been accepted, but will be processed later by the server
+enum class Status
+{
+    Ok       = 200, //!< Most common code returned when operation was successful
+    Created  = 201, //!< The resource has successfully been created
+    Accepted = 202, //!< The request has been accepted, but will be processed later by the server
+};
+```
+
+```cpp
+////////////////////////////////////////////////////////////
+// Member data
+////////////////////////////////////////////////////////////
+std::array<Vertex, 4> m_vertices;    //!< Vertices defining the sprite's geometry
+const Texture*        m_texture;     //!< Texture of the sprite
+IntRect               m_textureRect; //!< Rectangle defining the area of the source texture to display
 ```
 
 ## Syntactical Conventions
 
 ### Naming Conventions
 
-The following naming conventions are (usually) used:
+The following naming conventions are used:
 
 |Type|Convention|
 |---|---|
 |file name|PascalCase.hpp, PascalCase.cpp, PascalCase.inl (templates)|
 |namespace|PascalCase (except `sf` and `sf::priv`)|
-|type (struct, class, union, enum, typedef)|PascalCase|
+|type (struct, class, union, enum, type alias)|PascalCase|
 |function, method|camelCase|
-|local, static and global variable|camelCase|
-|member variable|m_camelCase|
-|enum constant, static const attribute|PascalCase|
-|template parameter|PascalCase (preferable single letter like T or N)|
+|local, static and global variable, parameter|camelCase|
+|private and protected member variable|m_camelCase|
+|public member variable (e.g. in structs)|camelCase|
+|enumerator, static constant|PascalCase|
+|template parameter|PascalCase (preferably a single letter like `T` or `N`)|
 |function-style macro (`glCheck`)|camelCase|
 |object-style macro (`SFML_STATIC`)|SFML_UPPER_CASE (prefixed with SFML)|
 
-Note: with `PascalCase`, acronyms like `HTTP` are written `Http`.
+Note that with PascalCase, acronyms like `HTTP` are written `Http`.
 
-### Indentation, Space, Parenthesis and Quarks
+### Indentation and Line Length
 
-#### Tabs vs. Spaces
+Tabs are not used in SFML code. Indentation is done with 4 spaces.
 
-Tabs should not be used in SFML code. Indentation is produced by spaces only. A tabulator is equal to 4 spaces.
+Lines are at most 120 characters long. Longer lines are broken up by clang-format.
 
-#### Spaces
+The content of namespaces is not indented.
+
+### Spaces
 
 The rules are as follows:
 
-1. A space precedes an opening parenthesis.
-2. A space follows a closing parenthesis.
-3. Rules 1. and 2. are not applied for function calls or declarations.
-4. A space precedes and follows binary operators and assignment operators.
-5. A space follows a comma.
-6. There is no space between a type and its reference `&` or pointer `*` specifier.
-7. A space follows the `operator` keyword.
-8. When colon is used for inheritance or with an access modifier it is surrounded by a space on both sides.
+1. A space separates a control statement keyword (`if`, `for`, `while`, `switch`, ...) from its opening parenthesis.
+2. There is no space between a function name and its parenthesis, in calls as well as declarations.
+3. A space precedes and follows binary operators and assignment operators.
+4. A space follows a comma.
+5. There is no space between a type and its reference `&` or pointer `*` specifier.
+6. There is no space between the `operator` keyword and the operator, e.g. `operator+`.
+7. A space follows the `template` keyword, e.g. `template <typename T>`.
+8. When a colon is used for inheritance or a constructor initializer list, it is surrounded by a space on both sides.
 9. There are no extra spaces at the end of lines.
 
-**OS X implementation**: messages are declared without unnecessary spaces; e.g. `-(void)setIconTo:(unsigned int)width by:(unsigned int)height with:(const sf::Uint8*)pixels;`.
+**macOS and iOS implementation:** Messages are declared without unnecessary spaces, e.g. `- (void)setIconTo:(unsigned int)width by:(unsigned int)height with:(const std::uint8_t*)pixels;`.
 
-#### Declarations
+### Declarations
 
-`const` is placed before the type whenever possible. Reference `&` or pointer `*` are glued to the type (no extra space).
+`const` is placed before the type. Reference `&` or pointer `*` are glued to the type (no extra space). Qualifiers are written in the order `static inline constexpr const volatile`.
 
 ```cpp
       T        obj;
@@ -246,23 +382,31 @@ const T*       cptr;
       T* const ptrc;
 ```
 
-#### Lines
+Consecutive declarations and assignments are aligned.
 
-1. An extra empty line ends every file.
-2. There is only one instruction per line, except for readability in some `switch`es.
+### Lines
+
+1. Every file ends with a newline.
+2. There is only one statement per line.
 3. Every definition (`class`, functions, ...) is followed by an empty line.
 4. Braces are placed on new lines by themselves, except for `do ... while` loops.
-5. `template` parameters and the rest of the function signature are on two different lines.
-6. Every member constructed in the initializer list is on a new line.
-7. If a line is too long it is intelligently broken up into a multi-line statement; e.g.:
+5. `template` parameters and the rest of the declaration are on two different lines.
+6. The constructor initializer list is either on the same line as the constructor, or every member is on its own line.
+7. If a line is too long, clang-format breaks it up into a multi-line statement, e.g.:
 
 ```cpp
-Color operator +(const Color& left, const Color& right)
+constexpr Color operator+(Color left, Color right)
 {
-    return Color(Uint8(std::min(int(left.r) + right.r, 255)),
-                 Uint8(std::min(int(left.g) + right.g, 255)),
-                 Uint8(std::min(int(left.b) + right.b, 255)),
-                 Uint8(std::min(int(left.a) + right.a, 255)));
+    const auto clampedAdd = [](std::uint8_t lhs, std::uint8_t rhs)
+    {
+        const int intResult = int{lhs} + int{rhs};
+        return static_cast<std::uint8_t>(intResult < 255 ? intResult : 255);
+    };
+
+    return {clampedAdd(left.r, right.r),
+            clampedAdd(left.g, right.g),
+            clampedAdd(left.b, right.b),
+            clampedAdd(left.a, right.a)};
 }
 ```
 
@@ -270,26 +414,26 @@ Color operator +(const Color& left, const Color& right)
 
 #### Blocks
 
-Blocks are always indented by one extra level, except for namespaces when there is only one used in the file.
+Blocks are always indented by one extra level, except for namespaces.
 
 #### `if/else/while` Statements
 
-There are two forms of `if/else` statements: single-line or multi-line body. For an `if` statement that has only one instruction no braces are used. In any case a space always separates the keyword from the parenthesis. Every Brace is alone on the line – even if the `while` body is empty. E.g.:
+There are two forms of `if/else` statements: single-line or multi-line body. For an `if` statement that has only one instruction no braces are used. Every brace is alone on its line, even if the `while` body is empty. E.g.:
 
 ```cpp
-if (audioContext)
-    alcDestroyContext(audioContext);
+if (!loadFromFile(filename))
+    throw Exception("Failed to open sound buffer from file");
 ```
 
 ```cpp
-if (audioContext)
+if (file.openFromFile(filename))
 {
-    // Set the context as the current one (we'll only need one)
-    alcMakeContextCurrent(audioContext);
+    return initialize(file);
 }
 else
 {
-    err() << "Failed to create the audio context" << std::endl;
+    err() << "Failed to open sound buffer from file" << std::endl;
+    return false;
 }
 ```
 
@@ -312,30 +456,31 @@ func() && (x < y)  // function call not parenthesized
 
 #### Binary Operators
 
-If different binary operators are combined in the same statement, parenthesis are added _even if not necessary_ to disambiguate the reading; e.g.:
+If different binary operators are combined in the same statement, parenthesis are added _even if not necessary_ to disambiguate the reading, e.g.:
 
 ```cpp
-output = static_cast<Uint32>(((first - 0xD800) << 10) + (second - 0xDC00) + 0x0010000);
+output = ((first - 0xD800u) << 10) + (second - 0xDC00) + 0x0010000;
 ```
 
 ## Semantics and Idioms
 
 ### Use of Pointers and References
 
-Pointers are used if any of the following conditions are true. In all other situations, references are used.
+References are used by default. Pointers are used if any of the following conditions are true:
 
-- `NULL` is a valid value
 - the indirection is changed during its lifetime (i.e. the pointer points to something else)
-- the pointer refers to manually allocated memory (`new` or other low-level resource)
 - an indirection is stored as a member variable
+- `nullptr` is a valid value and `std::optional` doesn't fit
 
-Null pointers are represented with the macro `NULL`.
+Null pointers are represented with `nullptr`, never with `NULL` or `0`.
 
-Pointers that own their memory and require manual memory management (`new` and `delete`) should be avoided, or at least encapsulated. Prefer the use of objects and RAII.
+Optional values are represented with `std::optional`, e.g. a function that can fail to produce a result returns `std::optional<T>`.
+
+Raw pointers never own memory. Owned objects are held by value or, if needed, by `std::unique_ptr`. Manual `new` and `delete` should be avoided, prefer RAII.
 
 ### Type Conversions
 
-Any explicit type conversion is done using the C++ cast operators `static_cast`, `const_cast`, `reinterpret_cast` and `dynamic_cast`. No C-style casts `(int)value` or function-style casts `int(value)` are used.
+Any explicit type conversion is done using the C++ cast operators `static_cast`, `const_cast` and `reinterpret_cast`. No C-style casts `(int)value` or function-style casts `int(value)` are used. Widening conversions that can't lose information can use brace initialization, e.g. `int{lhs}`.
 
 Booleans and pointers are never explicitly checked against literals.
 
@@ -348,7 +493,7 @@ if (ptr)
 if (b)
 
 // bad:
-if (ptr != NULL)
+if (ptr != nullptr)
 if (b == true)
 ```
 
@@ -358,22 +503,41 @@ Conversions from numeric types to `bool` happen explicitly (not by casting, but 
 
 ```cpp
 // good:
-bool x = var & FLAG;
+bool x = var & flag;
 
 // bad:
-bool x = (var & FLAG) != 0;
+bool x = (var & flag) != 0;
 ```
+
+### Types
+
+- Fixed-width integers come from `<cstdint>` and are written with the `std` prefix, e.g. `std::uint8_t` or `std::int64_t`. The same goes for `std::size_t`.
+- Enumerations are scoped, i.e. `enum class`.
+- Prefer `constexpr` over `const` for compile-time constants, and mark functions `constexpr` where possible.
+- `auto` is used where the type is obvious from the right side or irrelevant, e.g. with iterators, lambdas and `std::make_unique`.
+
+### Functions
+
+- Functions that return a value which shouldn't be ignored, such as getters, are marked `[[nodiscard]]`.
+- Overridden virtual functions are marked `override` and don't repeat `virtual`.
+- Move constructors and move assignment operators are `noexcept`.
+- Special member functions that should not be generated are `= delete`d, the ones that are explicitly defaulted are `= default`ed.
+- Single-argument constructors are `explicit`, unless an implicit conversion is intended.
+
+### Error Handling
+
+Functions that can fail report errors through `sf::err()` and return `false` or an empty `std::optional`. Constructors that load a resource throw an `sf::Exception` if loading fails.
 
 ### Namespaces
 
 The public API lives in the `sf` namespace. The `sf::priv` namespace is reserved for implementation details.
 
-Anonymous namespaces are used when global variables are required, or for functions local to the current translation unit, in order to restrict their access to the translation unit.
+Anonymous namespaces are used for functions and variables local to the current translation unit, in order to restrict their access to that translation unit. They're used instead of `static` free functions.
 
-No `using` directive should be used. Instead the full name is used everywhere.
+No `using` directive is used, except for literal namespaces like `std::string_view_literals`. Instead, the full name is used everywhere.
 
 ### Structures and Classes
 
-`struct`s are used to wrap up one or more variables together but do not use encapsulation; they are generally used by `class`es that do protect their members with `protected` or `private` modifiers. `struct`s can have constructors but should not have methods. They do not use access specifiers or inheritance.
+`struct`s are used to group variables together without encapsulation, their members are public and named without `m_` prefix. `struct`s can have constructors and simple helper functions, but no access specifiers.
 
-In a class, the public interface comes first (usually with constructors at the top), followed by protected members and then private data. In a given access-modifier group `static` members are grouped together.
+`class`es protect their data with `private` (or if needed `protected`) members and expose functions to work with them.
