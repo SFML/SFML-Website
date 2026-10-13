@@ -1314,6 +1314,12 @@ div.contents ul li {
     display: inline-block;
 }
 
+/* One level of indentation in the class, file and hierarchy trees, as wide as the icon, so children line up under the name of their parent */
+.spacer {
+    width: 24px;
+    display: inline-block;
+}
+
 .iconfopen {
     width: 24px;
     height: 18px;
