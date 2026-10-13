@@ -33,6 +33,7 @@ theme:
         name: Switch to light mode
   features:
     - content.code.copy
+    - content.tabs.link
     - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
@@ -76,6 +77,9 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - pymdownx.snippets:
       base_path: documentation
   - admonition
