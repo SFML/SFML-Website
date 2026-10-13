@@ -18,6 +18,16 @@ SFML is available on Windows (7 and newer), Linux and macOS, as well as on Andro
 On Windows, SFML works on both 32-bit and 64-bit systems, on macOS both Intel and Apple Silicon (ARM64) Macs are supported.
 The [download page](../download/index.md) lists the prebuilt packages for each platform.
 
+## Does SFML run in the browser? {: #web}
+
+Not at the moment.
+SFML has no Emscripten/WebAssembly backend, so SFML applications can't be built for the browser.
+
+## Does SFML support Wayland? {: #wayland}
+
+SFML doesn't have a native Wayland backend yet.
+On Wayland desktops, SFML applications run through XWayland, which most Wayland desktops provide, and work without any changes to your code.
+
 ## Which programming languages are supported by SFML? {: #languages}
 
 SFML is implemented in C++.

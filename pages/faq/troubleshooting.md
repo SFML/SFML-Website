@@ -30,6 +30,30 @@ If that doesn't help, see [How do I make my IDE output verbose build information
 
 If that also doesn't help, feel free to ask for assistance on the forum.
 
+### The prebuilt libraries don't work with my compiler {: #compiler-mismatch}
+
+The prebuilt Windows packages on the [download page](../download/index.md) only work with the compiler they were built with.
+
+For Visual Studio, the package for Visual C++ 17 (2022) works with Visual Studio 2022 and newer.
+
+For MinGW, it isn't enough that the GCC versions seemingly match, you have to use the exact MinGW build that's linked on the download page.
+Different MinGW builds use different exception models and runtimes, which leads to undefined references when linking, or to crashes and "procedure entry point could not be located" errors when starting your application.
+
+If your compiler doesn't match, either install the matching compiler, or build SFML with your compiler, the easiest way being the [CMake project template](build-use.md#template).
+
+### My application can't find the SFML DLLs {: #missing-dll}
+
+On Windows, if you link SFML dynamically, the DLLs have to be found when your application starts.
+If they aren't, you get an error like "The code execution cannot proceed because sfml-graphics-3.dll was not found".
+
+Copy the DLLs of the modules you use next to your executable, e.g. `sfml-graphics-3.dll`, `sfml-window-3.dll` and `sfml-system-3.dll`, and the `-d` variants for debug builds (see [the naming conventions](#vs-crash)).
+With MinGW, the runtime DLLs of your compiler, e.g. `libstdc++-6.dll`, have to be found as well.
+
+If the error says that a "procedure entry point" could not be located, a DLL with the same name, but from a different SFML version or compiler was found first, e.g. through your `PATH`.
+Make sure the DLLs next to your executable match the libraries you linked against.
+
+Alternatively, you can [link SFML statically](build-use.md#link-static) and won't need the SFML DLLs at all.
+
 ### How do I make my IDE output verbose build information? {: #grl-verbose-ide}
 
 Often times, compiling/linking your project might fail for some reason.
@@ -202,6 +226,14 @@ Though the library names might vary, especially regarding the version number.
 
 ## Runtime Problems {: #runtime}
 
+### My files can't be found when I run my application {: #working-directory}
+
+Relative paths, as in `sf::Texture texture("player.png")`, are resolved from the working directory of your application, which isn't necessarily the directory of your executable.
+IDEs often use the project or build directory as working directory, and starting the application from a shortcut or a terminal can use yet another one.
+
+When loading fails, SFML prints the provided path as well as the absolute path it tried to load, which tells you where it looked.
+Either put your assets where your working directory points to, change the working directory in the debug settings of your IDE, or build your paths from a known location.
+
 ### Why do I get a white/black rectangle instead of my texture? {: #white-rect}
 
 This is due to a premature destruction of the `sf::Texture`.
@@ -212,6 +244,13 @@ A common mistake is to load the texture in a function and let it go out of scope
 The same happens when your texture is moved to another memory location, for example when it is stored in a `std::vector` that grows.
 You then have to inform your sprite of this using its `setTexture()` function, or better yet, manage your textures in a way that doesn't move them, e.g. with a `std::map` or `std::unique_ptr`.
 
+### Why isn't my text showing up? {: #text-font}
+
+SFML doesn't come with a default font, so you have to open a `sf::Font` yourself, e.g. with `openFromFile()`, and pass it to the `sf::Text`.
+Just like a sprite with its texture, the `sf::Text` only keeps a reference to the font, so the font has to stay alive as long as the text uses it, see [above](#white-rect).
+
+If the font is fine, check that the text is positioned inside the view, that its color differs from the background, and that the font contains glyphs for the characters you want to display.
+
 ### Why can't I hear any sound? {: #sound-problem}
 
 If everything compiles and seems to work correctly, but yet no sound is coming out of your speakers you should check the obvious.
@@ -219,6 +258,11 @@ Ensure your speakers are plugged in and working correctly before assuming someth
 You can do this by opening one of your audio assets in another audio player such as Windows Media Player or [VLC](https://www.videolan.org/).
 If audio fails to play correctly there, then check that your PC audio is not muted and that the volume control on your speakers is turned up.
 Once it plays correctly in an external player then the problem may be with SFML.
+
+If other audio plays fine, check the lifetime of your sound objects.
+An `sf::Sound` only keeps a reference to its `sf::SoundBuffer`, so the buffer has to stay alive as long as the sound uses it, just like a [texture for a sprite](#white-rect).
+The `sf::Sound` itself has to stay alive while it plays as well, a sound created as local variable in a function stops as soon as the function returns.
+The same applies to `sf::Music`.
 
 ### RenderTextures don't work on my computer! {: #broken-rendertexture}
 

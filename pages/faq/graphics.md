@@ -272,3 +272,7 @@ If you don't match these up, you will get effects much more prominent or subtle 
 
 This is just one way out of many to deal with this issue.
 It was presented here because it is the simplest to implement and explain in this FAQ.
+
+For physics or anything else that has to behave the same at every frame rate, a fixed time step is usually the better choice.
+You accumulate the elapsed time and advance your simulation in steps of a fixed duration, e.g. 1/60 of a second, as often as the accumulated time allows.
+The article [Fix Your Timestep!](https://gafferongames.com/post/fix_your_timestep/) explains the technique in detail.

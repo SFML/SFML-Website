@@ -112,3 +112,10 @@ Since there is no general solution to this problem, here is a list of things you
    If this is really the case, you are as good as out of luck and should just try again at another time or be prepared to make a lot of phone calls with a lot of uninterested people.
 8. If the ISP assures you that there is nothing wrong with their network, you must always take this with a pinch of salt because unless they contractually bind themselves to what they say, it might have been just to make you end the call.
 9. When all else fails, you can always come to the SFML forum and ask for help there.
+
+## Does SFML support HTTPS and SFTP? {: #https}
+
+Yes, since SFML 3.1.
+`sf::Http` supports HTTPS, just use `https://` in the host, e.g. `http.setHost("https://www.sfml-dev.org")`, and the server certificate is verified by default.
+
+`sf::Sftp` provides file transfers over SSH and replaces `sf::Ftp`, which is deprecated since SFML 3.1.
