@@ -5,7 +5,7 @@ hide:
 
 # Troubleshooting
 
-## General {: #grl}
+## Build and Link Errors {: #build-errors}
 
 ### I'm having trouble using SFML {: #grl-trouble}
 
@@ -20,18 +20,7 @@ Have you:
 - (Windows only) Copied the DLLs of the modules you're using, e.g. `sfml-graphics-3.dll`, next to your executable?
 - (Linux only) Installed SFML, either through your package manager or with `cmake --install`?
 
-If you've checked all of those, and SFML still refuses to work, see [I found a bug!](#grl-i-found-a-bug).
-
-### SFML requires a newer CMake version than my OS provides! {: #grl-cmake-version}
-
-SFML generally tracks the versions distributed with Debian and/or Ubuntu, as they're among the most popular distros, yet are the slowest to update.
-
-Check the [CMakeLists.txt](https://github.com/SFML/SFML/blob/master/CMakeLists.txt) which CMake version SFML requires.
-To update CMake, Kitware offers three options:
-
-- On Ubuntu / Debian, use the provided [Kitware APT Repository](https://apt.kitware.com/)
-- Use the provided binaries on the [CMake download page](https://cmake.org/download/)
-- Build CMake from source
+If you've checked all of those, and SFML still refuses to work, see [I found a bug!](help.md#grl-i-found-a-bug).
 
 ### I keep getting "undefined reference to <some strange thing that looks like an SFML function>" errors! {: #grl-undefined-ref}
 
@@ -136,96 +125,6 @@ To resolve this, make sure that everything matches.
 If you are targeting x64 with your executable, make sure you are only using x64 libraries as well, and the same applies for x86 and ARM64.
 Nowadays, 64-bit is the sensible default on all desktop platforms.
 
-### My computer crashes when I run my SFML program! {: #grl-crash}
-
-SFML was designed in a way that should not cause your computer to crash/freeze/hang/BSOD in any way.
-If it does exhibit such behavior specifically when running your SFML program, it might be only indirectly because of SFML.
-
-If you are using unstable drivers (still in beta or off a development branch in your package manager) chances are that they are the root cause of the problem.
-The reason why they cause more problems with SFML than with other programs/games is mainly because OpenGL related bugs in drivers are given low priority over DirectX related bugs simply because the latter affect more games.
-You'll just have to be patient and wait for the relevant bug to get fixed or revert to an older, more stable driver.
-
-If you are not using unstable drivers, crashing might still be caused by over-clocking (either self-performed or automatic) of your hardware.
-Try running everything at standard performance settings and see if that fixes the problem.
-If your hardware comes over-clocked by default, search around the internet for other people who might be experiencing the same problems.
-If this is the case you should contact your retailer/card manufacturer as this is a hardware related issue and you won't be able to do much on your own.
-
-### I found a bug! {: #grl-i-found-a-bug}
-
-Most of the time any unexpected behavior is a result of misunderstanding how to use SFML.
-Out of many bug reports only few of them turn out to be real bugs **which are caused by SFML itself and nothing else**.
-
-If you are using the latest SFML version, try building the latest master revision available on [GitHub](https://github.com/SFML/SFML/).
-There are many things that might have already been fixed between the release which is available on the site and the latest development version.
-
-If the bug is still present in the latest master version, try to produce a [minimal compilable code example](#grl-minimal) that displays the bug and nothing else.
-That way the developers and others can focus on why it is occurring.
-
-If you can reproduce what you think is a bug, if you have another computer at your disposal, try to run it there as well.
-If the bug does not occur there, try to reconfigure the corresponding hardware/software settings on the first PC.
-A lot of strange behavior is a result of misconfigured/faulty software/drivers.
-
-!!! Warning
-
-    Trying to report a bug that is a result of the usage of beta drivers is not a good idea.
-    The source of the problem does not lie within the responsibility of the SFML developers and as such they can't do much to fix it themselves.
-
-When you are sure that the bug is a result of SFML internals and is platform independent, you can go ahead and post in the forum of the package in question, and don't forget to provide a precise description of your problem, the version of SFML you're using, your system configuration, and the compilable code, and if the situation requires, the logs of your compiler and/or linker.
-Also make sure that the bug hasn't already been reported (use the [search function](https://en.sfml-dev.org/forums/index.php?action=search)), confirmed (look on the [issue tracker](https://github.com/SFML/SFML/issues?q=is%3Aopen)) or even resolved in the latest source (check also the [closed issues](https://github.com/SFML/SFML/issues?q=is%3Aclosed)).
-
-### What is a minimal code? {: #grl-minimal}
-
-A minimal code example is a snippet of source code that is compilable with very little effort.
-
-This implies that:
-
-- it consists of a single file (no extra .h, .hpp or .cpp files)
-- there are no special compiler/linker options that need to be set
-- the provided code is specific to the matter at hand and does not do more than it needs to
-
-Such an example should never have to be longer than 40 lines of code (including the header include lines which of course have to be provided as well) unless it only happens in very specific cases.
-
-An example of minimal code:
-
-```cpp
-#include <SFML/Graphics.hpp>
-
-int main()
-{
-    sf::RenderWindow window(sf::VideoMode({640, 480}), "Bug");
-
-    // Some bug specific code here...
-
-    while (window.isOpen())
-    {
-        while (const std::optional event = window.pollEvent())
-        {
-            if (event->is<sf::Event::Closed>())
-                window.close();
-        }
-
-        // ... and here.
-
-        window.clear();
-        window.display();
-    }
-}
-```
-
-See also [the rules](https://en.sfml-dev.org/forums/index.php?topic=5559.msg36368#msg36368) for further details.
-
-### And how can I easily obtain this minimal code? {: #grl-obtain-minimal}
-
-Easy :
-
-- Create a separate sandbox project with a single file consisting of a `main()` function
-- Copy and paste your code into the body of the `main()` in such a way that it can compile
-- One by one delete all lines which are not relevant to the actual problem and try to compile after every deletion to see if the problem still persists
-
-Side note: This technique will often help you troubleshoot the problem on your own.
-
-## Visual Studio {: #vs}
-
 ### My project crashes randomly, but I don't get any compiler or linker errors {: #vs-crash}
 
 Make sure that you're linking against the correct version of the libraries for your project.
@@ -241,12 +140,6 @@ If you link with the DLL versions, you must copy the required DLLs beside your e
 
 - `sfml-[module]-3.dll` for Release
 - `sfml-[module]-d-3.dll` for Debug
-
-### I keep getting `fatal error LNK1112: module machine type 'XYZ' conflicts with target machine type 'ZYX'`. Help! {: #vs-arch}
-
-See [Why do I get errors when mixing 32-bit and 64-bit libraries?](#grl-64bit).
-
-## Windows {: #win}
 
 ### Why does a console attach itself to my project? {: #win-console}
 
@@ -277,7 +170,16 @@ int WINAPI WinMain(HINSTANCE hThisInstance, HINSTANCE hPrevInstance, LPSTR lpszA
 
 Replace your `int main()` or `int main(int argc, char** argv)` with this function and it will be called by the operating system when your program is executed just like the classical `int main()` function.
 
-## Linux {: #lnx}
+### SFML requires a newer CMake version than my OS provides! {: #grl-cmake-version}
+
+SFML generally tracks the versions distributed with Debian and/or Ubuntu, as they're among the most popular distros, yet are the slowest to update.
+
+Check the [CMakeLists.txt](https://github.com/SFML/SFML/blob/master/CMakeLists.txt) which CMake version SFML requires.
+To update CMake, Kitware offers three options:
+
+- On Ubuntu / Debian, use the provided [Kitware APT Repository](https://apt.kitware.com/)
+- Use the provided binaries on the [CMake download page](https://cmake.org/download/)
+- Build CMake from source
 
 ### (Debian) I can't compile the source code {: #lnx-compile}
 
@@ -297,3 +199,52 @@ Before anything else, make sure that you've followed the [official tutorial](../
 - libssh2-1-dev
 
 Though the library names might vary, especially regarding the version number.
+
+## Runtime Problems {: #runtime}
+
+### Why do I get a white/black rectangle instead of my texture? {: #white-rect}
+
+This is due to a premature destruction of the `sf::Texture`.
+An `sf::Sprite` only holds a reference to the `sf::Texture` bound to it.
+You have to keep the `sf::Texture` "alive" as long as the sprite uses it.
+A common mistake is to load the texture in a function and let it go out of scope at the end of the function.
+
+The same happens when your texture is moved to another memory location, for example when it is stored in a `std::vector` that grows.
+You then have to inform your sprite of this using its `setTexture()` function, or better yet, manage your textures in a way that doesn't move them, e.g. with a `std::map` or `std::unique_ptr`.
+
+### Why can't I hear any sound? {: #sound-problem}
+
+If everything compiles and seems to work correctly, but yet no sound is coming out of your speakers you should check the obvious.
+Ensure your speakers are plugged in and working correctly before assuming something is wrong with SFML.
+You can do this by opening one of your audio assets in another audio player such as Windows Media Player or [VLC](https://www.videolan.org/).
+If audio fails to play correctly there, then check that your PC audio is not muted and that the volume control on your speakers is turned up.
+Once it plays correctly in an external player then the problem may be with SFML.
+
+### RenderTextures don't work on my computer! {: #broken-rendertexture}
+
+First of all, as with everything else sfml-graphics related, check if you have drivers installed that expose the hardware functionality that SFML uses.
+If you have a system that came with pre-installed drivers, that still doesn't mean that they were bug-free or even supported everything that the hardware would be capable of.
+There is never an excuse not to at least check for updated drivers and try to install them.
+This might not always be possible, but for the majority of cases (and almost all the time for desktop computers) it is possible.
+
+Once you are sure that your drivers are up-to-date, check if your graphics hardware supports OpenGL Framebuffer Objects (GL_EXT_framebuffer_object extension).
+If you are sure it does and RenderTextures still don't work, open a thread on the forum with the information you have gathered and almost all the time, you will be assisted promptly.
+
+If your graphics hardware doesn't support OpenGL Framebuffer objects, fear not, because SFML has a fallback implementation which uses an auxiliary context's framebuffer to render to.
+The performance ranges from marginally slower than the native implementation to much slower e.g. in software renderers.
+
+If the second variant doesn't work for you either, and you know that your hardware is somewhat capable, open a thread on the forum with the information you have gathered and a solution will be worked out most of the time.
+
+### My computer crashes when I run my SFML program! {: #grl-crash}
+
+SFML was designed in a way that should not cause your computer to crash/freeze/hang/BSOD in any way.
+If it does exhibit such behavior specifically when running your SFML program, it might be only indirectly because of SFML.
+
+If you are using unstable drivers (still in beta or off a development branch in your package manager) chances are that they are the root cause of the problem.
+The reason why they cause more problems with SFML than with other programs/games is mainly because OpenGL related bugs in drivers are given low priority over DirectX related bugs simply because the latter affect more games.
+You'll just have to be patient and wait for the relevant bug to get fixed or revert to an older, more stable driver.
+
+If you are not using unstable drivers, crashing might still be caused by over-clocking (either self-performed or automatic) of your hardware.
+Try running everything at standard performance settings and see if that fixes the problem.
+If your hardware comes over-clocked by default, search around the internet for other people who might be experiencing the same problems.
+If this is the case you should contact your retailer/card manufacturer as this is a hardware related issue and you won't be able to do much on your own.

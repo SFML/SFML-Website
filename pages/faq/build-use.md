@@ -3,27 +3,40 @@ hide:
   - footer
 ---
 
-# Building and Using SFML
+# Getting and Using SFML
 
-### How do I build SFML? {: #build}
+## How do I build SFML? {: #build}
 
 Tutorials for each version of SFML can be found [here](../tutorials/3.1/index.md).
 The first part of these tutorials is aimed at getting started, which includes building SFML with CMake and your build tool of choice, as well as setting up your IDE (if you use one) for use with SFML.
 
-### Are there any "nightly builds"? {: #nightly}
+## Are there any "nightly builds"? {: #nightly}
 
 Our CI (continuous integration) system is building every commit on the master branch and saving the built binaries as artifacts, ready to be downloaded.
 You can find them either by commit hash or branch name.
 
 [Link to the artifacts](https://www.sfml-dev.org/artifacts/)
 
-### How do I setup my development environment to work with SFML? {: #environment}
+## How do I setup my development environment to work with SFML? {: #environment}
 
 This is covered quite thoroughly in the tutorials section for some of the most popular IDEs.
 
 Check out the Getting Started sections of the [tutorials](../tutorials/3.1/index.md#getting-started).
 
-### What and how do I link to use SFML? {: #link}
+## What dependencies does SFML have? {: #dependencies}
+
+SFML depends on a few other libraries, such as FreeType and HarfBuzz for text, FLAC and Vorbis for audio, and MbedTLS and libssh2 for the network module.
+
+When building SFML with CMake, these dependencies are downloaded and built as part of SFML, unless the `SFML_USE_SYSTEM_DEPS` option is enabled.
+On Windows, macOS, Android and iOS, the option is disabled by default, so compilation works out of the box.
+On Linux, the option is enabled by default and SFML uses the libraries installed on your system instead.
+Additionally, the windowing and system libraries (X11, Xrandr, Xcursor, Xi, udev, OpenGL) always have to be installed on Linux.
+See the [build from source tutorial](../tutorials/3.1/getting-started/build-from-source.md#installing-dependencies) for the full list, and don't forget to install the development version of these packages.
+
+SFML also has internal dependencies: Audio, Network and Window depend on System, while Graphics depends on Window and System.
+See [What and how do I link to use SFML?](#link) for what this means for your project.
+
+## What and how do I link to use SFML? {: #link}
 
 When you want to use SFML, you need to link to the library files that provide the functionality you make use of in your application.
 
@@ -71,7 +84,7 @@ This is explained as well in [this forum post](https://en.sfml-dev.org/forums/in
 
 In Code::Blocks for example you would have to make sure the dependees come after the dependers in the list of libraries to link against.
 
-### How do I link SFML statically? {: #link-static}
+## How do I link SFML statically? {: #link-static}
 
 If you use CMake, set `SFML_STATIC_LIBRARIES` to `ON` before calling `find_package(SFML ...)`, and CMake takes care of the defines and the dependencies.
 
@@ -132,3 +145,7 @@ Here's a diagram showing how the static linking should look like.
          v v v v v
         example.exe
 ```
+
+## Is there a complete list with all the changes from SFML 2.x to SFML 3.0? {: #changes-3-0}
+
+See the [official migration guide](../tutorials/3.1/migration/sfml-2.md) to get your code base updated to SFML 3.

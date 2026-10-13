@@ -3,61 +3,44 @@ hide:
   - footer
 ---
 
-# General
+# About SFML
 
-### What is SFML? {: #whatis}
+## What is SFML? {: #whatis}
 
 SFML is a simple to use and portable API written in C++.
 You can think of it as an object oriented SDL.
 SFML is made of modules in order to be as useful as possible for everyone.
 You can use SFML as a minimalist window system in order to use OpenGL, or as a complete multimedia library full of features to build video games or multimedia softwares.
 
-### On which platforms is SFML currently available? {: #platforms}
+## On which platforms is SFML currently available? {: #platforms}
 
 SFML is available on Windows (7 and newer), Linux and macOS, as well as on Android and iOS.
 On Windows, SFML works on both 32-bit and 64-bit systems, on macOS both Intel and Apple Silicon (ARM64) Macs are supported.
 The [download page](../download/index.md) lists the prebuilt packages for each platform.
 
-### Which programming languages are supported by SFML? {: #languages}
+## Which programming languages are supported by SFML? {: #languages}
 
 SFML is implemented in C++.
 That said, the SFML Team maintains bindings for [C](../download/csfml/index.md) and [.NET](../download/sfml.net/index.md), and the community has created [bindings](../download/bindings/index.md) for many other languages, such as Python, Rust, Go, Ruby, Java, D or Zig.
 
-### What dependencies does SFML have? {: #dependencies}
-
-SFML depends on a few other libraries, such as FreeType and HarfBuzz for text, FLAC and Vorbis for audio, and MbedTLS and libssh2 for the network module.
-
-When building SFML with CMake, these dependencies are downloaded and built as part of SFML, unless the `SFML_USE_SYSTEM_DEPS` option is enabled.
-On Windows, macOS, Android and iOS, the option is disabled by default, so compilation works out of the box.
-On Linux, the option is enabled by default and SFML uses the libraries installed on your system instead.
-Additionally, the windowing and system libraries (X11, Xrandr, Xcursor, Xi, udev, OpenGL) always have to be installed on Linux.
-See the [build from source tutorial](../tutorials/3.1/getting-started/build-from-source.md#installing-dependencies) for the full list, and don't forget to install the development version of these packages.
-
-SFML also has internal dependencies: Audio, Network and Window depend on System, while Graphics depends on Window and System.
-See [What and how do I link to use SFML?](build-use.md#link) for what this means for your project.
-
-### What version of SFML should I use? {: #version}
+## What version of SFML should I use? {: #version}
 
 Go for the latest SFML 3 version, because you'll get a stable release with the latest features and bugfixes.
 SFML 3 requires a C++17 compiler.
 Only stay on SFML 2.6 if you maintain an existing project that hasn't been migrated yet, older versions such as 1.6 are not maintained anymore, contain quite a few critical bugs and lack a lot of useful features.
 
-### Is there a complete list with all the changes from SFML 2.x to SFML 3.0? {: #changes-3-0}
-
-See the [official migration guide](../tutorials/3.1/migration/sfml-2.md) to get your code base updated to SFML 3.
-
-### Will/does SFML support 3D? {: #3d}
+## Will/does SFML support 3D? {: #3d}
 
 No, and the SFML Team has decided to keep the library as a way to handle 2D graphics with ease and hardware acceleration, so in short there won't be support for 3D in the future either.
 However you can use SFML to create the window and OpenGL context, and use raw OpenGL to implement 3D and have it alongside your 2D rendering in SFML without problems.
 
 The previous statement is recommendable only if you have a minimal use for 3D, as it becomes very hard and tedious to manage full 3D functionality through graphics pipeline only.
 
-### I want to propose a new feature! {: #request}
+## I want to propose a new feature! {: #request}
 
 See our [Contribution Guidelines](../development/contribute.md#requesting-features).
 
-### Is using SFML a good way to learn to program (in C++)? {: #learn}
+## Is using SFML a good way to learn to program (in C++)? {: #learn}
 
 In general, you can learn to program any way you want.
 The question is: what is the most **effective** way to learn to program? The unanimous answer to this question is, don't start with SFML if you are trying to grasp the basic language features of C++.
@@ -123,12 +106,3 @@ Deeper understanding, good to know to understand what is happening "behind the s
 - Audio knowledge, sample rate, attenuation, wave characteristics
 - Operating system knowledge (not only for a single operating system)
 - Computer hardware: CPU, instructions and pipelining, RAM, caching, paging
-
-### Where can I ask questions? {: #questions}
-
-First make sure you've read [the tutorials and the documentation](../learn/index.md), then check whether the question has already been asked before.
-If after that you still have a question **regarding SFML**, ask on the [SFML forum](https://en.sfml-dev.org/forums/index.php#c3).
-
-Additionally you can find people on the [official Discord or IRC server](../community/index.md).
-
-Keep in mind that using SFML is not a very suitable way to [learn the bare basics of C++ programming](#learn), and as such it is recommended that any questions regarding general C++ be asked in more adequate forums where people proficient in C++ can help you better.

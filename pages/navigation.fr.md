@@ -7,13 +7,14 @@
         * faq/index*.md
         * faq/general*.md
         * faq/build-use*.md
+        * faq/troubleshooting*.md
         * faq/graphics*.md
+        * faq/window*.md
         * faq/audio*.md
         * faq/network*.md
-        * faq/window*.md
         * faq/system*.md
         * faq/programming*.md
-        * faq/troubleshooting*.md
+        * faq/help*.md
         * faq/licensing*.md
         * [Libraries for SFML](https://github.com/SFML/SFML/wiki/Community-FAQ#libraries)
         * [Miscellaneous](https://github.com/SFML/SFML/wiki/Community-FAQ#misc)
