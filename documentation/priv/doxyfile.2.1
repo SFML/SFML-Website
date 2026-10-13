@@ -1,4 +1,4 @@
-# Doxyfile 1.12.0
+# Doxyfile 1.14.0
 
 # This file describes the settings to be used by the documentation system
 # Doxygen (www.doxygen.org) for a project.
@@ -51,7 +51,7 @@ PROJECT_NAME           = SFML
 PROJECT_NUMBER         = 2.1
 
 # Using the PROJECT_BRIEF tag one can provide an optional one line description
-# for a project that appears at the top of each page and should give viewer a
+# for a project that appears at the top of each page and should give viewers a
 # quick idea about the purpose of the project. Keep the description short.
 
 PROJECT_BRIEF          =
@@ -74,13 +74,13 @@ PROJECT_ICON           =
 # entered, it will be relative to the location where Doxygen was started. If
 # left blank the current directory will be used.
 
-OUTPUT_DIRECTORY       =
+OUTPUT_DIRECTORY       = ..
 
 # If the CREATE_SUBDIRS tag is set to YES then Doxygen will create up to 4096
 # sub-directories (in 2 levels) under the output directory of each output format
 # and will distribute the generated files over these directories. Enabling this
 # option can be useful when feeding Doxygen a huge amount of source files, where
-# putting all generated files in the same directory would otherwise causes
+# putting all generated files in the same directory would otherwise cause
 # performance problems for the file system. Adapt CREATE_SUBDIRS_LEVEL to
 # control the number of sub-directories.
 # The default value is: NO.
@@ -199,20 +199,20 @@ STRIP_FROM_PATH        =
 # specify the list of include paths that are normally passed to the compiler
 # using the -I flag.
 
-STRIP_FROM_INC_PATH    =
+STRIP_FROM_INC_PATH    = D:/Programming/SFML/SFML/include
 
 # If the SHORT_NAMES tag is set to YES, Doxygen will generate much shorter (but
-# less readable) file names. This can be useful is your file systems doesn't
+# less readable) file names. This can be useful if your file system doesn't
 # support long names like on DOS, Mac, or CD-ROM.
 # The default value is: NO.
 
 SHORT_NAMES            = NO
 
 # If the JAVADOC_AUTOBRIEF tag is set to YES then Doxygen will interpret the
-# first line (until the first dot) of a Javadoc-style comment as the brief
-# description. If set to NO, the Javadoc-style will behave just like regular Qt-
-# style comments (thus requiring an explicit @brief command for a brief
-# description.)
+# first line (until the first dot, question mark or exclamation mark) of a
+# Javadoc-style comment as the brief description. If set to NO, the Javadoc-
+# style will behave just like regular Qt-style comments (thus requiring an
+# explicit @brief command for a brief description.)
 # The default value is: NO.
 
 JAVADOC_AUTOBRIEF      = YES
@@ -228,9 +228,10 @@ JAVADOC_AUTOBRIEF      = YES
 JAVADOC_BANNER         = NO
 
 # If the QT_AUTOBRIEF tag is set to YES then Doxygen will interpret the first
-# line (until the first dot) of a Qt-style comment as the brief description. If
-# set to NO, the Qt-style will behave just like regular Qt-style comments (thus
-# requiring an explicit \brief command for a brief description.)
+# line (until the first dot, question mark or exclamation mark) of a Qt-style
+# comment as the brief description. If set to NO, the Qt-style will behave just
+# like regular Qt-style comments (thus requiring an explicit \brief command for
+# a brief description.)
 # The default value is: NO.
 
 QT_AUTOBRIEF           = NO
@@ -289,7 +290,8 @@ TAB_SIZE               = 4
 # with the commands \{ and \} for these it is advised to use the version @{ and
 # @} or use a double escape (\\{ and \\})
 
-ALIASES                =
+ALIASES                = "sfplatform{1}=<dl class=\"attention\"><dt>Platform Limitation</dt><dd><b>This is only available on \1.</b></dd></dl>" \
+                         "sfplatform{2}=<dl class=\"attention\"><dt>Platform Limitation</dt><dd><b>This is only available on \1</b> and to use it, you'll have to specifically include \2 in your code.</dd></dl>"
 
 # Set the OPTIMIZE_OUTPUT_FOR_C tag to YES if your project consists of C sources
 # only. Doxygen will then generate output that is more tailored for C. For
@@ -367,7 +369,7 @@ MARKDOWN_SUPPORT       = YES
 # Minimum value: 0, maximum value: 99, default value: 6.
 # This tag requires that the tag MARKDOWN_SUPPORT is set to YES.
 
-TOC_INCLUDE_HEADINGS   = 6
+TOC_INCLUDE_HEADINGS   = 0
 
 # The MARKDOWN_ID_STYLE tag can be used to specify the algorithm used to
 # generate identifiers for the Markdown headings. Note: Every identifier is
@@ -383,10 +385,19 @@ MARKDOWN_ID_STYLE      = DOXYGEN
 # When enabled Doxygen tries to link words that correspond to documented
 # classes, or namespaces to their corresponding documentation. Such a link can
 # be prevented in individual cases by putting a % sign in front of the word or
-# globally by setting AUTOLINK_SUPPORT to NO.
+# globally by setting AUTOLINK_SUPPORT to NO. Words listed in the
+# AUTOLINK_IGNORE_WORDS tag are excluded from automatic linking.
 # The default value is: YES.
 
 AUTOLINK_SUPPORT       = YES
+
+# This tag specifies a list of words that, when matching the start of a word in
+# the documentation, will suppress auto links generation, if it is enabled via
+# AUTOLINK_SUPPORT. This list does not affect links explicitly created using \#
+# or the \link or commands.
+# This tag requires that the tag AUTOLINK_SUPPORT is set to YES.
+
+AUTOLINK_IGNORE_WORDS  =
 
 # If you use STL classes (i.e. std::string, std::vector, etc.) but do not want
 # to include (a tag file for) the STL sources as input, then you should set this
@@ -598,6 +609,14 @@ HIDE_UNDOC_MEMBERS     = NO
 # The default value is: NO.
 
 HIDE_UNDOC_CLASSES     = NO
+
+# If the HIDE_UNDOC_NAMESPACES tag is set to YES, Doxygen will hide all
+# undocumented namespaces that are normally visible in the namespace hierarchy.
+# If set to NO, these namespaces will be included in the various overviews. This
+# option has no effect if EXTRACT_ALL is enabled.
+# The default value is: YES.
+
+HIDE_UNDOC_NAMESPACES  = YES
 
 # If the HIDE_FRIEND_COMPOUNDS tag is set to YES, Doxygen will hide all friend
 # declarations. If set to NO, these declarations will be included in the
@@ -909,6 +928,14 @@ WARN_NO_PARAMDOC       = YES
 
 WARN_IF_UNDOC_ENUM_VAL = NO
 
+# If WARN_LAYOUT_FILE option is set to YES, Doxygen will warn about issues found
+# while parsing the user defined layout file, such as missing or wrong elements.
+# See also LAYOUT_FILE for details. If set to NO, problems with the layout file
+# will be suppressed.
+# The default value is: YES.
+
+WARN_LAYOUT_FILE       = YES
+
 # If the WARN_AS_ERROR tag is set to YES then Doxygen will immediately stop when
 # a warning is encountered. If the WARN_AS_ERROR tag is set to FAIL_ON_WARNINGS
 # then Doxygen will continue running as if WARN_AS_ERROR tag is set to NO, but
@@ -965,8 +992,8 @@ WARN_LOGFILE           =
 # spaces. See also FILE_PATTERNS and EXTENSION_MAPPING
 # Note: If this tag is empty the current directory is searched.
 
-INPUT                  = D:/developpement/sfml/sfml/include/SFML \
-                         D:/developpement/sfml/sfml/doc/mainpage.hpp
+INPUT                  = D:/Programming/SFML/SFML \
+                         D:/Programming/SFML/SFML/doc/mainpage.hpp
 
 # This tag can be used to specify the character encoding of the source files
 # that Doxygen parses. Internally Doxygen uses the UTF-8 encoding. Doxygen uses
@@ -979,10 +1006,10 @@ INPUT                  = D:/developpement/sfml/sfml/include/SFML \
 INPUT_ENCODING         = UTF-8
 
 # This tag can be used to specify the character encoding of the source files
-# that Doxygen parses The INPUT_FILE_ENCODING tag can be used to specify
+# that Doxygen parses. The INPUT_FILE_ENCODING tag can be used to specify
 # character encoding on a per file pattern basis. Doxygen will compare the file
 # name with each pattern and apply the encoding instead of the default
-# INPUT_ENCODING) if there is a match. The character encodings are a list of the
+# INPUT_ENCODING if there is a match. The character encodings are a list of the
 # form: pattern=encoding (like *.php=ISO-8859-1).
 # See also: INPUT_ENCODING for further information on supported encodings.
 
@@ -1001,13 +1028,12 @@ INPUT_FILE_ENCODING    =
 #
 # If left blank the following patterns are tested:*.c, *.cc, *.cxx, *.cxxm,
 # *.cpp, *.cppm, *.ccm, *.c++, *.c++m, *.java, *.ii, *.ixx, *.ipp, *.i++, *.inl,
-# *.idl, *.ddl, *.odl, *.h, *.hh, *.hxx, *.hpp, *.h++, *.ixx, *.l, *.cs, *.d,
-# *.php, *.php4, *.php5, *.phtml, *.inc, *.m, *.markdown, *.md, *.mm, *.dox (to
-# be provided as Doxygen C comment), *.py, *.pyw, *.f90, *.f95, *.f03, *.f08,
+# *.idl, *.ddl, *.odl, *.h, *.hh, *.hxx, *.hpp, *.h++, *.l, *.cs, *.d, *.php,
+# *.php4, *.php5, *.phtml, *.inc, *.m, *.markdown, *.md, *.mm, *.dox (to be
+# provided as Doxygen C comment), *.py, *.pyw, *.f90, *.f95, *.f03, *.f08,
 # *.f18, *.f, *.for, *.vhd, *.vhdl, *.ucf, *.qsf and *.ice.
 
-FILE_PATTERNS          = *.h \
-                         *.hpp
+FILE_PATTERNS          = *.hpp
 
 # The RECURSIVE tag can be used to specify whether or not subdirectories should
 # be searched for input files as well.
@@ -1038,10 +1064,15 @@ EXCLUDE_SYMLINKS       = NO
 # Note that the wildcards are matched against the file with absolute path, so to
 # exclude all test directories for example use the pattern */test/*
 
-EXCLUDE_PATTERNS       = .svn \
-                         Linux \
-                         Unix \
-                         OSX*
+EXCLUDE_PATTERNS       = .* \
+                         extlibs \
+                         src \
+                         examples \
+                         install \
+                         build \
+                         tools \
+                         cmake \
+                         test
 
 # The EXCLUDE_SYMBOLS tag can be used to specify one or more symbol names
 # (namespaces, classes, functions, etc.) that should be excluded from the
@@ -1114,7 +1145,7 @@ INPUT_FILTER           =
 # need to set EXTENSION_MAPPING for the extension otherwise the files are not
 # properly processed by Doxygen.
 
-FILTER_PATTERNS        =
+FILTER_PATTERNS        = "*/Event.hpp=python -I unnamed-union-filter.py"
 
 # If the FILTER_SOURCE_FILES tag is set to YES, the input filter (if set using
 # INPUT_FILTER) will also be used to filter the input files that are used for
@@ -1137,6 +1168,15 @@ FILTER_SOURCE_PATTERNS =
 # and want to reuse the introduction page also for the Doxygen output.
 
 USE_MDFILE_AS_MAINPAGE =
+
+# If the IMPLICIT_DIR_DOCS tag is set to YES, any README.md file found in sub-
+# directories of the project's root, is used as the documentation for that sub-
+# directory, except when the README.md starts with a \dir, \page or \mainpage
+# command. If set to NO, the README.md file needs to start with an explicit \dir
+# command in order to be used as directory documentation.
+# The default value is: YES.
+
+IMPLICIT_DIR_DOCS      = YES
 
 # The Fortran standard specifies that for fixed formatted Fortran code all
 # characters from position 72 are to be considered as comment. A common
@@ -1309,14 +1349,14 @@ GENERATE_HTML          = YES
 # The default directory is: html.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_OUTPUT            = ../2.1
+HTML_OUTPUT            = ../pages/documentation/2.1
 
 # The HTML_FILE_EXTENSION tag can be used to specify the file extension for each
 # generated HTML page (for example: .htm, .php, .asp).
 # The default value is: .html.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_FILE_EXTENSION    = .php
+HTML_FILE_EXTENSION    = .html
 
 # The HTML_HEADER tag can be used to specify a user-defined HTML header file for
 # each generated HTML page. If the tag is left blank Doxygen will generate a
@@ -1336,7 +1376,7 @@ HTML_FILE_EXTENSION    = .php
 # of the possible markers and block names see the documentation.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_HEADER            = ./doxyheader.php
+HTML_HEADER            = doxyheader-2.1.html
 
 # The HTML_FOOTER tag can be used to specify a user-defined HTML footer for each
 # generated HTML page. If the tag is left blank Doxygen will generate a standard
@@ -1346,7 +1386,7 @@ HTML_HEADER            = ./doxyheader.php
 # that Doxygen normally uses.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_FOOTER            = ./doxyfooter.php
+HTML_FOOTER            = doxyfooter.html
 
 # The HTML_STYLESHEET tag can be used to specify a user-defined cascading style
 # sheet that is used by each HTML page. It can be used to fine-tune the look of
@@ -1358,7 +1398,7 @@ HTML_FOOTER            = ./doxyfooter.php
 # obsolete.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_STYLESHEET        =
+HTML_STYLESHEET        = doxystyle.css
 
 # The HTML_EXTRA_STYLESHEET tag can be used to specify additional user-defined
 # cascading style sheets that are included after the standard style sheets
@@ -1386,7 +1426,7 @@ HTML_EXTRA_STYLESHEET  =
 # files will be copied as-is; there are no commands or markers available.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_EXTRA_FILES       =
+HTML_EXTRA_FILES       = searchOverrides.css
 
 # The HTML_COLORSTYLE tag can be used to specify if the generated HTML output
 # should be rendered with a dark or light theme.
@@ -1440,7 +1480,7 @@ HTML_COLORSTYLE_GAMMA  = 80
 # The default value is: YES.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_DYNAMIC_MENUS     = YES
+HTML_DYNAMIC_MENUS     = NO
 
 # If the HTML_DYNAMIC_SECTIONS tag is set to YES then the generated HTML
 # documentation will contain sections that can be hidden and shown after the
@@ -1511,7 +1551,7 @@ GENERATE_DOCSET        = NO
 # The default value is: Doxygen generated docs.
 # This tag requires that the tag GENERATE_DOCSET is set to YES.
 
-DOCSET_FEEDNAME        = "Doxygen generated docs"
+DOCSET_FEEDNAME        = "SFML Documentation"
 
 # This tag determines the URL of the docset feed. A documentation feed provides
 # an umbrella under which multiple documentation sets from a single provider
@@ -1526,7 +1566,7 @@ DOCSET_FEEDURL         =
 # The default value is: org.doxygen.Project.
 # This tag requires that the tag GENERATE_DOCSET is set to YES.
 
-DOCSET_BUNDLE_ID       = org.doxygen.Project
+DOCSET_BUNDLE_ID       = org.sfml-dev.SFML
 
 # The DOCSET_PUBLISHER_ID tag specifies a string that should uniquely identify
 # the documentation publisher. This should be a reverse domain-name style
@@ -1534,21 +1574,21 @@ DOCSET_BUNDLE_ID       = org.doxygen.Project
 # The default value is: org.doxygen.Publisher.
 # This tag requires that the tag GENERATE_DOCSET is set to YES.
 
-DOCSET_PUBLISHER_ID    = org.doxygen.Publisher
+DOCSET_PUBLISHER_ID    = org.sfml-dev.SFML
 
 # The DOCSET_PUBLISHER_NAME tag identifies the documentation publisher.
 # The default value is: Publisher.
 # This tag requires that the tag GENERATE_DOCSET is set to YES.
 
-DOCSET_PUBLISHER_NAME  = Publisher
+DOCSET_PUBLISHER_NAME  = SFML
 
 # If the GENERATE_HTMLHELP tag is set to YES then Doxygen generates three
 # additional HTML index files: index.hhp, index.hhc, and index.hhk. The
 # index.hhp is a project file that can be read by Microsoft's HTML Help Workshop
 # on Windows. In the beginning of 2021 Microsoft took the original page, with
-# a.o. the download links, offline the HTML help workshop was already many years
-# in maintenance mode). You can download the HTML help workshop from the web
-# archives at Installation executable (see:
+# a.o. the download links, offline (the HTML help workshop was already many
+# years in maintenance mode). You can download the HTML help workshop from the
+# web archives at Installation executable (see:
 # http://web.archive.org/web/20160201063255/http://download.microsoft.com/downlo
 # ad/0/A/9/0A939EF6-E31C-430F-A3DF-DFAE7960D564/htmlhelp.exe).
 #
@@ -1569,7 +1609,7 @@ GENERATE_HTMLHELP      = NO
 # written to the html output directory.
 # This tag requires that the tag GENERATE_HTMLHELP is set to YES.
 
-CHM_FILE               =
+CHM_FILE               = ../SFML.chm
 
 # The HHC_LOCATION tag can be used to specify the location (absolute path
 # including file name) of the HTML help compiler (hhc.exe). If non-empty,
@@ -1722,20 +1762,29 @@ DISABLE_INDEX          = NO
 # further fine tune the look of the index (see "Fine-tuning the output"). As an
 # example, the default style sheet generated by Doxygen has an example that
 # shows how to put an image at the root of the tree instead of the PROJECT_NAME.
-# Since the tree basically has the same information as the tab index, you could
-# consider setting DISABLE_INDEX to YES when enabling this option.
-# The default value is: NO.
+# Since the tree basically has more details information than the tab index, you
+# could consider setting DISABLE_INDEX to YES when enabling this option.
+# The default value is: YES.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
 GENERATE_TREEVIEW      = NO
 
-# When both GENERATE_TREEVIEW and DISABLE_INDEX are set to YES, then the
-# FULL_SIDEBAR option determines if the side bar is limited to only the treeview
-# area (value NO) or if it should extend to the full height of the window (value
-# YES). Setting this to YES gives a layout similar to
-# https://docs.readthedocs.io with more room for contents, but less room for the
-# project logo, title, and description. If either GENERATE_TREEVIEW or
-# DISABLE_INDEX is set to NO, this option has no effect.
+# When GENERATE_TREEVIEW is set to YES, the PAGE_OUTLINE_PANEL option determines
+# if an additional navigation panel is shown at the right hand side of the
+# screen, displaying an outline of the contents of the main page, similar to
+# e.g. https://developer.android.com/reference If GENERATE_TREEVIEW is set to
+# NO, this option has no effect.
+# The default value is: YES.
+# This tag requires that the tag GENERATE_HTML is set to YES.
+
+PAGE_OUTLINE_PANEL     = YES
+
+# When GENERATE_TREEVIEW is set to YES, the FULL_SIDEBAR option determines if
+# the side bar is limited to only the treeview area (value NO) or if it should
+# extend to the full height of the window (value YES). Setting this to YES gives
+# a layout similar to e.g. https://docs.readthedocs.io with more room for
+# contents, but less room for the project logo, title, and description. If
+# GENERATE_TREEVIEW is set to NO, this option has no effect.
 # The default value is: NO.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
@@ -1749,7 +1798,7 @@ FULL_SIDEBAR           = NO
 # Minimum value: 0, maximum value: 20, default value: 4.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-ENUM_VALUES_PER_LINE   = 1
+ENUM_VALUES_PER_LINE   = 4
 
 # When the SHOW_ENUM_VALUES tag is set doxygen will show the specified
 # enumeration values besides the enumeration mnemonics.
@@ -1855,7 +1904,7 @@ MATHJAX_FORMAT         = HTML-CSS
 # - in case of MathJax version 3: https://cdn.jsdelivr.net/npm/mathjax@3
 # This tag requires that the tag USE_MATHJAX is set to YES.
 
-MATHJAX_RELPATH        = http://www.mathjax.org/mathjax
+MATHJAX_RELPATH        = https://cdn.mathjax.org/mathjax/latest
 
 # The MATHJAX_EXTENSIONS tag can be used to specify one or more MathJax
 # extension names that should be enabled during MathJax rendering. For example
@@ -2030,7 +2079,7 @@ COMPACT_LATEX          = NO
 # The default value is: a4.
 # This tag requires that the tag GENERATE_LATEX is set to YES.
 
-PAPER_TYPE             = a4wide
+PAPER_TYPE             = a4
 
 # The EXTRA_PACKAGES tag can be used to specify one or more LaTeX package names
 # that should be included in the LaTeX output. The package can be specified just
@@ -2099,7 +2148,7 @@ LATEX_EXTRA_FILES      =
 # The default value is: YES.
 # This tag requires that the tag GENERATE_LATEX is set to YES.
 
-PDF_HYPERLINKS         = NO
+PDF_HYPERLINKS         = YES
 
 # If the USE_PDFLATEX tag is set to YES, Doxygen will use the engine as
 # specified with LATEX_CMD_NAME to generate the PDF file directly from the LaTeX
@@ -2109,7 +2158,7 @@ PDF_HYPERLINKS         = NO
 # The default value is: YES.
 # This tag requires that the tag GENERATE_LATEX is set to YES.
 
-USE_PDFLATEX           = NO
+USE_PDFLATEX           = YES
 
 # The LATEX_BATCHMODE tag signals the behavior of LaTeX in case of an error.
 # Possible values are: NO same as ERROR_STOP, YES same as BATCH, BATCH In batch
@@ -2136,7 +2185,7 @@ LATEX_HIDE_INDICES     = NO
 # The LATEX_BIB_STYLE tag can be used to specify the style to use for the
 # bibliography, e.g. plainnat, or ieeetr. See
 # https://en.wikipedia.org/wiki/BibTeX and \cite for more info.
-# The default value is: plain.
+# The default value is: plainnat.
 # This tag requires that the tag GENERATE_LATEX is set to YES.
 
 LATEX_BIB_STYLE        = plain
@@ -2447,7 +2496,9 @@ PREDEFINED             = SFML_SYSTEM_API \
                          SFML_NETWORK_API \
                          SFML_WINDOW_API \
                          SFML_AUDIO_API \
-                         SFML_GRAPHICS_API
+                         SFML_GRAPHICS_API \
+                         SFML_DEPRECATED \
+                         SFML_DOXYGEN
 
 # If the MACRO_EXPANSION and EXPAND_ONLY_PREDEF tags are set to YES then this
 # tag can be used to specify a list of macro names that should be expanded. The
@@ -2554,7 +2605,7 @@ DOT_NUM_THREADS        = 0
 # The default value is: fontname=Helvetica,fontsize=10.
 # This tag requires that the tag HAVE_DOT is set to YES.
 
-DOT_COMMON_ATTR        = "fontname=FreeSans,fontsize=10"
+DOT_COMMON_ATTR        = "fontname=Helvetica,fontsize=10"
 
 # DOT_EDGE_ATTR is concatenated with DOT_COMMON_ATTR. For elegant style you can
 # add 'arrowhead=open, arrowtail=open, arrowsize=0.5'. <a
@@ -2563,7 +2614,7 @@ DOT_COMMON_ATTR        = "fontname=FreeSans,fontsize=10"
 # The default value is: labelfontname=Helvetica,labelfontsize=10.
 # This tag requires that the tag HAVE_DOT is set to YES.
 
-DOT_EDGE_ATTR          = "labelfontname=FreeSans,labelfontsize=10"
+DOT_EDGE_ATTR          = "labelfontname=Helvetica,labelfontsize=10"
 
 # DOT_NODE_ATTR is concatenated with DOT_COMMON_ATTR. For view without boxes
 # around nodes set 'shape=plain' or 'shape=plaintext' <a
@@ -2639,6 +2690,15 @@ UML_LOOK               = NO
 # This tag requires that the tag UML_LOOK is set to YES.
 
 UML_LIMIT_NUM_FIELDS   = 10
+
+# If the UML_LOOK tag is enabled, field labels are shown along the edge between
+# two class nodes. If there are many fields and many nodes the graph may become
+# too cluttered. The UML_MAX_EDGE_LABELS threshold limits the number of items to
+# make the size more manageable. Set this to 0 for no limit.
+# Minimum value: 0, maximum value: 100, default value: 10.
+# This tag requires that the tag UML_LOOK is set to YES.
+
+UML_MAX_EDGE_LABELS    = 10
 
 # If the DOT_UML_DETAILS tag is set to NO, Doxygen will show attributes and
 # methods without types and arguments in the UML graphs. If the DOT_UML_DETAILS
@@ -2747,24 +2807,29 @@ DIR_GRAPH_MAX_DEPTH    = 1
 # generated by dot. For an explanation of the image formats see the section
 # output formats in the documentation of the dot tool (Graphviz (see:
 # https://www.graphviz.org/)).
-# Note: If you choose svg you need to set HTML_FILE_EXTENSION to xhtml in order
-# to make the SVG files visible in IE 9+ (other browsers do not have this
-# requirement).
+#
+# Note the formats svg:cairo and svg:cairo:cairo cannot be used in combination
+# with INTERACTIVE_SVG (the INTERACTIVE_SVG will be set to NO).
 # Possible values are: png, jpg, gif, svg, png:gd, png:gd:gd, png:cairo,
-# png:cairo:gd, png:cairo:cairo, png:cairo:gdiplus, png:gdiplus and
-# png:gdiplus:gdiplus.
+# png:cairo:gd, png:cairo:cairo, png:cairo:gdiplus, png:gdiplus,
+# png:gdiplus:gdiplus, svg:cairo, svg:cairo:cairo, svg:svg, svg:svg:core,
+# gif:cairo, gif:cairo:gd, gif:cairo:gdiplus, gif:gdiplus, gif:gdiplus:gdiplus,
+# gif:gd, gif:gd:gd, jpg:cairo, jpg:cairo:gd, jpg:cairo:gdiplus, jpg:gd,
+# jpg:gd:gd, jpg:gdiplus and jpg:gdiplus:gdiplus.
 # The default value is: png.
 # This tag requires that the tag HAVE_DOT is set to YES.
 
 DOT_IMAGE_FORMAT       = png
 
-# If DOT_IMAGE_FORMAT is set to svg, then this option can be set to YES to
-# enable generation of interactive SVG images that allow zooming and panning.
+# If DOT_IMAGE_FORMAT is set to svg or svg:svg or svg:svg:core, then this option
+# can be set to YES to enable generation of interactive SVG images that allow
+# zooming and panning.
 #
 # Note that this requires a modern browser other than Internet Explorer. Tested
 # and working are Firefox, Chrome, Safari, and Opera.
-# Note: For IE 9+ you need to set HTML_FILE_EXTENSION to xhtml in order to make
-# the SVG files visible. Older versions of IE do not have SVG support.
+#
+# Note This option will be automatically disabled when DOT_IMAGE_FORMAT is set
+# to svg:cairo or svg:cairo:cairo.
 # The default value is: NO.
 # This tag requires that the tag HAVE_DOT is set to YES.
 
@@ -2813,6 +2878,12 @@ PLANTUML_CFG_FILE      =
 # the !include statement in a PlantUML block.
 
 PLANTUML_INCLUDE_PATH  =
+
+# The PLANTUMLFILE_DIRS tag can be used to specify one or more directories that
+# contain PlantUml files that are included in the documentation (see the
+# \plantumlfile command).
+
+PLANTUMLFILE_DIRS      =
 
 # The DOT_GRAPH_MAX_NODES tag can be used to set the maximum number of nodes
 # that will be shown in the graph. If the number of nodes in a graph becomes
