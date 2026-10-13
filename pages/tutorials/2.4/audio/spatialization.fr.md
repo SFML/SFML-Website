@@ -23,7 +23,7 @@ Alors... comment faire ?
 
 Tous les sons et musiques de votre environnement audio seront entendus par un acteur unique : l'*écouteur*. Ce qui est restitué à travers vos haut-parleurs, c'est ce que l'écouteur entend.
 
-La classe qui définit les propriétés de l'écouteur est [`sf::Listener`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1Listener.php "sf::Listener documentation"). Comme l'écouteur est unique dans l'environnement, cette classe ne contient que des fonctions statiques et ne doit pas être instanciée.
+La classe qui définit les propriétés de l'écouteur est [`sf::Listener`](../../../documentation/2.4.2/classsf_1_1Listener.html "sf::Listener documentation"). Comme l'écouteur est unique dans l'environnement, cette classe ne contient que des fonctions statiques et ne doit pas être instanciée.
 
 Tout d'abord, vous pouvez modifier la position de l'écouteur dans la scène :
 

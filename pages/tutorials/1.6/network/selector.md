@@ -12,7 +12,7 @@ The other solution is to use selectors. Selectors allow multiplexing on a set of
 
 ## Handling multiple clients
 
-There are two types of selectors in SFML : [`sf::SelectorTCP`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Selector.php "sf::SelectorTCP documentation") (for TCP sockets) and [`sf::SelectorUDP`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Selector.php "sf::SelectorUDP documentation") (for UDP sockets). However only the type of socket is different, the functions and behavior are exactly the same for both classes.
+There are two types of selectors in SFML : [`sf::SelectorTCP`](../../../documentation/1.6/classsf_1_1Selector.html "sf::SelectorTCP documentation") (for TCP sockets) and [`sf::SelectorUDP`](../../../documentation/1.6/classsf_1_1Selector.html "sf::SelectorUDP documentation") (for UDP sockets). However only the type of socket is different, the functions and behavior are exactly the same for both classes.
 
 So, let's try to use a TCP selector. Here we'll build a server that will be able to handle several clients at the same time, without using any thread.
 

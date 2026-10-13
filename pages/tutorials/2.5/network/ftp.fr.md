@@ -16,9 +16,9 @@ Si vous souhaitez en savoir plus sur le protocole FTP, la [page Wikipedia](http:
 
 ## La classe de client FTP
 
-La classe fournie par SFML est [`sf::Ftp`](https://www.sfml-dev.org/documentation/2.5.1-fr/classsf_1_1Ftp.php "sf::Ftp documentation") (surprenant n'est-ce pas ?). Elle implémente un client, ce qui signifie qu'elle peut se connecter à un serveur FTP, lui envoyer des commandes et télécharger ou envoyer des fichiers.
+La classe fournie par SFML est [`sf::Ftp`](../../../documentation/2.5.1/classsf_1_1Ftp.html "sf::Ftp documentation") (surprenant n'est-ce pas ?). Elle implémente un client, ce qui signifie qu'elle peut se connecter à un serveur FTP, lui envoyer des commandes et télécharger ou envoyer des fichiers.
 
-Chaque fonction de la classe [`sf::Ftp`](https://www.sfml-dev.org/documentation/2.5.1-fr/classsf_1_1Ftp.php "sf::Ftp documentation") encapsule une commande FTP, et renvoie une réponse FTP standard. Une réponse FTP contient un code de statut (similaire aux codes de statut HTTP -- mais pas les mêmes), ainsi qu'un message qui informe l'utilisateur de ce qui s'est passé. Les réponses FTP sont encapsulées dans la classe [`sf::Ftp::Response`](https://www.sfml-dev.org/documentation/2.5.1-fr/classsf_1_1Ftp_1_1Response.php "sf::Ftp::Response documentation").
+Chaque fonction de la classe [`sf::Ftp`](../../../documentation/2.5.1/classsf_1_1Ftp.html "sf::Ftp documentation") encapsule une commande FTP, et renvoie une réponse FTP standard. Une réponse FTP contient un code de statut (similaire aux codes de statut HTTP -- mais pas les mêmes), ainsi qu'un message qui informe l'utilisateur de ce qui s'est passé. Les réponses FTP sont encapsulées dans la classe [`sf::Ftp::Response`](../../../documentation/2.5.1/classsf_1_1Ftp_1_1Response.html "sf::Ftp::Response documentation").
 
 ```cpp
 #include <SFML/Network.hpp>
@@ -71,7 +71,7 @@ sf::Ftp ftp;
 ftp.connect("ftp.myserver.org");
 ```
 
-L'adresse du serveur peut être n'importe quelle [`sf::IpAddress`](https://www.sfml-dev.org/documentation/2.5.1-fr/classsf_1_1IpAddress.php "sf::IpAddress documentation") valide : une URL, une adresse IP, un nom d'hôte réseau, ...
+L'adresse du serveur peut être n'importe quelle [`sf::IpAddress`](../../../documentation/2.5.1/classsf_1_1IpAddress.html "sf::IpAddress documentation") valide : une URL, une adresse IP, un nom d'hôte réseau, ...
 
 Le port standard pour le protocole FTP est le port 21. Cependant, si pour une raison particulière votre serveur utilise un port différent, vous pouvez le donner avec un paramètre supplémentaire :
 
@@ -99,7 +99,7 @@ ftp.login();
 
 ## Les commandes FTP
 
-Voici une brève description de chaque commande disponible dans la classe [`sf::Ftp`](https://www.sfml-dev.org/documentation/2.5.1-fr/classsf_1_1Ftp.php "sf::Ftp documentation"). Souvenez-vous d'une chose : toutes ces commandes sont effectuées relativement au *répertoire de travail*, exactement comme si vous exécutiez des commandes de fichier ou de répertoire dans une console de votre OS.
+Voici une brève description de chaque commande disponible dans la classe [`sf::Ftp`](../../../documentation/2.5.1/classsf_1_1Ftp.html "sf::Ftp documentation"). Souvenez-vous d'une chose : toutes ces commandes sont effectuées relativement au *répertoire de travail*, exactement comme si vous exécutiez des commandes de fichier ou de répertoire dans une console de votre OS.
 
 Récupérer le répertoire de travail :
 
@@ -109,7 +109,7 @@ if (response.isOk())
     std::cout << "Current directory: " << response.getDirectory() << std::endl;
 ```
 
-[`sf::Ftp::DirectoryResponse`](https://www.sfml-dev.org/documentation/2.5.1-fr/classsf_1_1Ftp_1_1DirectoryResponse.php "sf::Ftp::DirectoryResponse documentation") est une [`sf::Ftp::Response`](https://www.sfml-dev.org/documentation/2.5.1-fr/classsf_1_1Ftp_1_1Response.php "sf::Ftp::Response documentation") spécialisée, qui contient en plus le répertoire demandé.
+[`sf::Ftp::DirectoryResponse`](../../../documentation/2.5.1/classsf_1_1Ftp_1_1DirectoryResponse.html "sf::Ftp::DirectoryResponse documentation") est une [`sf::Ftp::Response`](../../../documentation/2.5.1/classsf_1_1Ftp_1_1Response.html "sf::Ftp::Response documentation") spécialisée, qui contient en plus le répertoire demandé.
 
 Recupérer la liste des répertoires et fichiers contenus dans le répertoire de travail :
 
@@ -126,7 +126,7 @@ if (response.isOk())
 response = ftp.getDirectoryListing("subfolder");
 ```
 
-[`sf::Ftp::ListingResponse`](https://www.sfml-dev.org/documentation/2.5.1-fr/classsf_1_1Ftp_1_1ListingResponse.php "sf::Ftp::ListingResponse documentation") est une [`sf::Ftp::Response`](https://www.sfml-dev.org/documentation/2.5.1-fr/classsf_1_1Ftp_1_1Response.php "sf::Ftp::Response documentation") spécialisée, qui contient en plus la liste des répertoires/fichiers demandés.
+[`sf::Ftp::ListingResponse`](../../../documentation/2.5.1/classsf_1_1Ftp_1_1ListingResponse.html "sf::Ftp::ListingResponse documentation") est une [`sf::Ftp::Response`](../../../documentation/2.5.1/classsf_1_1Ftp_1_1Response.html "sf::Ftp::Response documentation") spécialisée, qui contient en plus la liste des répertoires/fichiers demandés.
 
 Changer le répertoire de travail :
 

@@ -10,7 +10,7 @@ In this tutorial, we'll see how we can integrate a SFML view into a Qt interface
 
 ## Creating the SFML custom widget
 
-To create a custom Qt widget, we need to inherit from the `QWidget` base class. And as we want our widget to be an SFML rendering window too, we'll inherit from [`sf::RenderWindow`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1RenderWindow.php "sf::RenderWindow documentation").
+To create a custom Qt widget, we need to inherit from the `QWidget` base class. And as we want our widget to be an SFML rendering window too, we'll inherit from [`sf::RenderWindow`](../../../documentation/1.6/classsf_1_1RenderWindow.html "sf::RenderWindow documentation").
 
 ```cpp
 #include <SFML/Graphics.hpp>

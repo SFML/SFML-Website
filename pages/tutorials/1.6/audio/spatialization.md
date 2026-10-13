@@ -12,7 +12,7 @@ Playing sounds and musics is great, but for it to be perfectly integrated into y
 
 Whatever the number of sounds and musics you put in your scene, they all will be listened by a single "actor" in your scene : the listener. What the listener will hear, is what will be outputed to your speakers.
 
-SFML defines an interface for setting the listener's properties : [`sf::Listener`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Listener.php "sf::Listener documentation"). As the listener is unique in the scene, this class contains only static functions and doesn't need to be instanciated.
+SFML defines an interface for setting the listener's properties : [`sf::Listener`](../../../documentation/1.6/classsf_1_1Listener.html "sf::Listener documentation"). As the listener is unique in the scene, this class contains only static functions and doesn't need to be instanciated.
 
 First, you can set the listener's position in the scene :
 

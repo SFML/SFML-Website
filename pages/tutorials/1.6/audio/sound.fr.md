@@ -20,7 +20,7 @@ Avant d'utiliser une quelconque classe du module audio de la SFML, vous devez in
 
 Comme d'habitude, il va inclure tous les en-têtes des classes audio, tout comme les en-têtes des modules desquels il dépend.
 
-Dans la SFML, la classe qui contient les échantillons sonores est [`sf::SoundBuffer`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1SoundBuffer.php "sf::SoundBuffer documentation"). Vous pouvez le remplir à partir d'échantillons en mémoire :
+Dans la SFML, la classe qui contient les échantillons sonores est [`sf::SoundBuffer`](../../../documentation/1.6/classsf_1_1SoundBuffer.html "sf::SoundBuffer documentation"). Vous pouvez le remplir à partir d'échantillons en mémoire :
 
 ```cpp
 sf::SoundBuffer Buffer;
@@ -78,7 +78,7 @@ Voilà tout ce que vous avez à savoir à propos des tampons sonores. La plupart
 
 ## L'instance du son
 
-Une fois que vous avez chargé un tampon sonore, vous pouvez utiliser [`sf::Sound`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Sound.php "sf::Sound documentation") pour le jouer. Une instance de [`sf::Sound`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Sound.php "sf::Sound documentation") est un moyen de jouer un tampon sonore dans la "scène", avec des paramètres supplémentaires tels que le pitch, le volume, la position, ... Vous pouvez donc avoir plusieurs instances de [`sf::Sound`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Sound.php "sf::Sound documentation") jouant le même [`sf::SoundBuffer`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1SoundBuffer.php "sf::SoundBuffer documentation") au même moment, avec différents paramètres.
+Une fois que vous avez chargé un tampon sonore, vous pouvez utiliser [`sf::Sound`](../../../documentation/1.6/classsf_1_1Sound.html "sf::Sound documentation") pour le jouer. Une instance de [`sf::Sound`](../../../documentation/1.6/classsf_1_1Sound.html "sf::Sound documentation") est un moyen de jouer un tampon sonore dans la "scène", avec des paramètres supplémentaires tels que le pitch, le volume, la position, ... Vous pouvez donc avoir plusieurs instances de [`sf::Sound`](../../../documentation/1.6/classsf_1_1Sound.html "sf::Sound documentation") jouant le même [`sf::SoundBuffer`](../../../documentation/1.6/classsf_1_1SoundBuffer.html "sf::SoundBuffer documentation") au même moment, avec différents paramètres.
 
 Pour lier un tampon à un son, il suffit d'appeler sa fonction `SetBuffer` :
 
@@ -132,7 +132,7 @@ Et comme d'habitude, aucune destruction n'est nécessaire : toutes les classes a
 
 ## Gestion des tampons et des sons
 
-Vous devez être particulièrement prudent lorsque vous manipulez des tampons sonores. Une instance de [`sf::SoundBuffer`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1SoundBuffer.php "sf::SoundBuffer documentation") est une ressource qui est lente à charger, lourde à copier et qui utilise beaucoup de mémoire.
+Vous devez être particulièrement prudent lorsque vous manipulez des tampons sonores. Une instance de [`sf::SoundBuffer`](../../../documentation/1.6/classsf_1_1SoundBuffer.html "sf::SoundBuffer documentation") est une ressource qui est lente à charger, lourde à copier et qui utilise beaucoup de mémoire.
 
 Pour une bonne discussion à propos de la gestion des ressources, je vous renvoie au paragraphe **"Gestion des images et des sprites"** du [tutoriel sur les sprites](../graphics/sprite.md "Tutoriel sur les sprites"), en remplaçant simplement le mot "Image" par "Tampon" et "Sprite" par "Son".
 

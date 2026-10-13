@@ -14,7 +14,7 @@ Pour résumer, les vues sont les outils dont vous avez besoin si vous voulez fai
 
 ## Définir ce que voit la vue
 
-La classe qui encapsule les vues SFML est [`sf::View`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1View.php "sf::View documentation"). Une vue peut être construite directement avec une définition de la zone à visionner :
+La classe qui encapsule les vues SFML est [`sf::View`](../../../documentation/2.6.2/classsf_1_1View.html "sf::View documentation"). Une vue peut être construite directement avec une définition de la zone à visionner :
 
 ```cpp
 // création d'une vue à partir de la zone rectangulaire du monde 2D à voir
@@ -126,7 +126,7 @@ minimapView.setViewport(sf::FloatRect(0.75f, 0.f, 0.25f, 0.25f));
 
 ## Utiliser une vue
 
-Pour dessiner quelque chose via une vue, vous devez le dessiner après avoir appelé la fonction `setView` sur la cible dans laquelle vous dessinez ([`sf::RenderWindow`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1RenderWindow.php "sf::RenderWindow documentation") ou [`sf::RenderTexture`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1RenderTexture.php "sf::RenderTexture documentation")).
+Pour dessiner quelque chose via une vue, vous devez le dessiner après avoir appelé la fonction `setView` sur la cible dans laquelle vous dessinez ([`sf::RenderWindow`](../../../documentation/2.6.2/classsf_1_1RenderWindow.html "sf::RenderWindow documentation") ou [`sf::RenderTexture`](../../../documentation/2.6.2/classsf_1_1RenderTexture.html "sf::RenderTexture documentation")).
 
 ```cpp
 // on crée une vue

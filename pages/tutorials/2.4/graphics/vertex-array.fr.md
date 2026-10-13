@@ -20,7 +20,7 @@ Vous comprenez maintenant pourquoi on parle toujours de tableaux de vertex, et n
 
 ## Un tableau de vertex simple
 
-Tout d'abord, jettons un oeil à la classe [`sf::Vertex`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1Vertex.php "sf::Vertex documentation"). C'est un type simple qui contient trois membres publics, et aucune fonction excepté ses constructeurs. Ces derniers permettent de créer des vertex avec uniquement les attributs dont vous avez besoin -- vous ne voudrez pas toujours colorer ou texturer votre entité.
+Tout d'abord, jettons un oeil à la classe [`sf::Vertex`](../../../documentation/2.4.2/classsf_1_1Vertex.html "sf::Vertex documentation"). C'est un type simple qui contient trois membres publics, et aucune fonction excepté ses constructeurs. Ces derniers permettent de créer des vertex avec uniquement les attributs dont vous avez besoin -- vous ne voudrez pas toujours colorer ou texturer votre entité.
 
 ```cpp
 // création d'un nouveau vertex
@@ -42,7 +42,7 @@ vertex.texCoords = sf::Vector2f(100, 100);
 sf::Vertex vertex(sf::Vector2f(10, 50), sf::Color::Red, sf::Vector2f(100, 100));
 ```
 
-Maintenant, définissons une primitive. Rappelez-vous, une primitive est faite de plusieurs vertex, il nous faudra donc un tableau de vertex. SFML fournit une encapsulation simple d'utilisation pour ces derniers : [`sf::VertexArray`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1VertexArray.php "sf::VertexArray documentation"). Cette classe a la même sémantique qu'un tableau (similaire à `std::vector` par exemple), et elle stocke également le type de primitives directement.
+Maintenant, définissons une primitive. Rappelez-vous, une primitive est faite de plusieurs vertex, il nous faudra donc un tableau de vertex. SFML fournit une encapsulation simple d'utilisation pour ces derniers : [`sf::VertexArray`](../../../documentation/2.4.2/classsf_1_1VertexArray.html "sf::VertexArray documentation"). Cette classe a la même sémantique qu'un tableau (similaire à `std::vector` par exemple), et elle stocke également le type de primitives directement.
 
 ```cpp
 // création d'un tableau de 3 vertex définissant un triangle
@@ -71,7 +71,7 @@ window.draw(triangle);
 
 Vous pouvez remarquer que la couleur des vertex est interpolée pour remplir la primitive ; c'est un moyen sympa de créer des dégradés.
 
-Notez que vous n'êtes pas forcés d'utiliser la classe [`sf::VertexArray`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1VertexArray.php "sf::VertexArray documentation"). Elle existe pour vous simplifier la vie, elle n'est rien d'autre qu'un `std::vector<sf::Vertex>` avec un `sf::PrimitiveType`. Si vous voulez plus de flexibilité, ou bien un tableau non-dynamique, vous pouvez utiliser votre propre conteneur à vertex. Vous devrez ensuite utiliser la surcharge de la fonction `draw` qui prend en paramètre un pointeur vers les vertex, leur nombre et le type de primitive.
+Notez que vous n'êtes pas forcés d'utiliser la classe [`sf::VertexArray`](../../../documentation/2.4.2/classsf_1_1VertexArray.html "sf::VertexArray documentation"). Elle existe pour vous simplifier la vie, elle n'est rien d'autre qu'un `std::vector<sf::Vertex>` avec un `sf::PrimitiveType`. Si vous voulez plus de flexibilité, ou bien un tableau non-dynamique, vous pouvez utiliser votre propre conteneur à vertex. Vous devrez ensuite utiliser la surcharge de la fonction `draw` qui prend en paramètre un pointeur vers les vertex, leur nombre et le type de primitive.
 
 ```cpp
 std::vector<sf::Vertex> vertices;
@@ -143,7 +143,7 @@ sf::Texture texture;
 window.draw(vertices, &texture);
 ```
 
-Ceci est la version raccourcie, si vous devez passer d'autres états de rendu que la texture (comme un *blend mode* ou une transformation) vous pouvez utiliser la version explicite qui utilise une instance de [`sf::RenderStates`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1RenderStates.php "sf::RenderStates documentation") :
+Ceci est la version raccourcie, si vous devez passer d'autres états de rendu que la texture (comme un *blend mode* ou une transformation) vous pouvez utiliser la version explicite qui utilise une instance de [`sf::RenderStates`](../../../documentation/2.4.2/classsf_1_1RenderStates.html "sf::RenderStates documentation") :
 
 ```cpp
 sf::VertexArray vertices;
@@ -184,13 +184,13 @@ states.transform = transform;
 window.draw(vertices, states);
 ```
 
-Pour en apprendre plus sur les transformations et la classe [`sf::Transform`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1Transform.php "sf::Transform documentation"), vous pouvez lire le tutoriel [Transformer des entités](transform.md "Tutoriel 'Transformer des entités'").
+Pour en apprendre plus sur les transformations et la classe [`sf::Transform`](../../../documentation/2.4.2/classsf_1_1Transform.html "sf::Transform documentation"), vous pouvez lire le tutoriel [Transformer des entités](transform.md "Tutoriel 'Transformer des entités'").
 
 ## Créer une entité SFML-like
 
-Maintenant que vous savez comment définir votre propre entité colorée/texturée/transformée, est-ce que ce ne serait pas sympa de pouvoir l'encapsuler dans une classe similaire aux entités SFML ? Heureusement, SFML fournit tout ce qu'il faut pour faire ça simplement, avec les classes de base [`sf::Drawable`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1Drawable.php "sf::Drawable documentation") et [`sf::Transformable`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1Transformable.php "sf::Transformable documentation"). Ces deux classes sont les bases des entités SFML -- [`sf::Sprite`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1Sprite.php "sf::Sprite documentation"), [`sf::Text`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1Text.php "sf::Text documentation") et [`sf::Shape`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1Shape.php "sf::Shape documentation").
+Maintenant que vous savez comment définir votre propre entité colorée/texturée/transformée, est-ce que ce ne serait pas sympa de pouvoir l'encapsuler dans une classe similaire aux entités SFML ? Heureusement, SFML fournit tout ce qu'il faut pour faire ça simplement, avec les classes de base [`sf::Drawable`](../../../documentation/2.4.2/classsf_1_1Drawable.html "sf::Drawable documentation") et [`sf::Transformable`](../../../documentation/2.4.2/classsf_1_1Transformable.html "sf::Transformable documentation"). Ces deux classes sont les bases des entités SFML -- [`sf::Sprite`](../../../documentation/2.4.2/classsf_1_1Sprite.html "sf::Sprite documentation"), [`sf::Text`](../../../documentation/2.4.2/classsf_1_1Text.html "sf::Text documentation") et [`sf::Shape`](../../../documentation/2.4.2/classsf_1_1Shape.html "sf::Shape documentation").
 
-[`sf::Drawable`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1Drawable.php "sf::Drawable documentation") est une interface : elle déclare une unique fonction virtuelle pure ; aucun membre ou fonction concrète. Hériter de [`sf::Drawable`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1Drawable.php "sf::Drawable documentation") permet de dessiner des instances de votre classe de la même manière que les classes SFML :
+[`sf::Drawable`](../../../documentation/2.4.2/classsf_1_1Drawable.html "sf::Drawable documentation") est une interface : elle déclare une unique fonction virtuelle pure ; aucun membre ou fonction concrète. Hériter de [`sf::Drawable`](../../../documentation/2.4.2/classsf_1_1Drawable.html "sf::Drawable documentation") permet de dessiner des instances de votre classe de la même manière que les classes SFML :
 
 ```cpp
 class MyEntity : public sf::Drawable
@@ -204,9 +204,9 @@ MyEntity entity;
 window.draw(entity); // appelle entity.draw en interne
 ```
 
-Notez que ce n'est pas obligatoire, vous pourriez tout aussi bien avoir une fonction `draw` similaire dans votre classe, et l'appeler avec `entity.draw(window)`. Mais l'autre manière, avec [`sf::Drawable`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1Drawable.php "sf::Drawable documentation") comme classe de base, est plus élégante et cohérente. Et si jamais vous devez un jour stocker un tableau d'objets dessinables, vous pourrez le faire sans effort supplémentaire puisque tous les objets dessinables (les vôtres et ceux de SFML) dérivent de la même classe.
+Notez que ce n'est pas obligatoire, vous pourriez tout aussi bien avoir une fonction `draw` similaire dans votre classe, et l'appeler avec `entity.draw(window)`. Mais l'autre manière, avec [`sf::Drawable`](../../../documentation/2.4.2/classsf_1_1Drawable.html "sf::Drawable documentation") comme classe de base, est plus élégante et cohérente. Et si jamais vous devez un jour stocker un tableau d'objets dessinables, vous pourrez le faire sans effort supplémentaire puisque tous les objets dessinables (les vôtres et ceux de SFML) dérivent de la même classe.
 
-L'autre classe de base, [`sf::Transformable`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1Transformable.php "sf::Transformable documentation"), n'a pas de fonction virtuelle. En dériver ajoute automatiquement à votre classe les mêmes fonctions de transformation que les autres classes SFML (`setPosition`, `setRotation`, `move`, `scale`, ...). Vous pouvez en apprendre plus sur cette classe dans le tutoriel [Transformer des entités](transform.md "Tutoriel 'Transformer des entités'").
+L'autre classe de base, [`sf::Transformable`](../../../documentation/2.4.2/classsf_1_1Transformable.html "sf::Transformable documentation"), n'a pas de fonction virtuelle. En dériver ajoute automatiquement à votre classe les mêmes fonctions de transformation que les autres classes SFML (`setPosition`, `setRotation`, `move`, `scale`, ...). Vous pouvez en apprendre plus sur cette classe dans le tutoriel [Transformer des entités](transform.md "Tutoriel 'Transformer des entités'").
 
 Donc, en utilisant ces deux classes de base et un tableau de vertex (et dans cet exemple nous allons aussi ajouter une texture), voici à quoi pourrait ressembler une classe SFML-like typique :
 

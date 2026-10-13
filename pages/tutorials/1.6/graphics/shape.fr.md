@@ -10,7 +10,7 @@ Ce nouveau tutoriel va vous apprendre à dessiner des formes 2D simples telles q
 
 ## Construire des formes quelconque
 
-Pour construire une forme persos avec SFML, vous devez utiliser la classe [`sf::Shape`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Shape.php "sf::Shape documentation").  
+Pour construire une forme persos avec SFML, vous devez utiliser la classe [`sf::Shape`](../../../documentation/1.6/classsf_1_1Shape.html "sf::Shape documentation").  
 Une forme est basiquement un polygone convexe, dans lequel chaque point a sa propre position et couleur. Il est également possible d'ajouter une bordure automatique à une forme, chaque point pouvant avoir sa propre couleur de bordure. Il est très important de définir les points d'une forme dans l'ordre (sens des aiguilles d'une montre ou inverse, peu importe), sans quoi la forme pourrait être mal-formée. Il est également important de garder la forme convexe, sinon elle pourrait ne pas être rendue correctement. Si vous devez afficher des formes concaves, essayez de les découper en plusieurs sous-formes convexes.
 
 Pour ajouter un point à une forme, utilisez la fonction `AddPoint` :
@@ -25,7 +25,7 @@ Polygon.AddPoint(-50, 50, sf::Color(255, 170, 170), sf::Color(0, 128, 128));
 Polygon.AddPoint(-50, 0,  sf::Color(255, 85, 85),   sf::Color(0, 128, 128));
 ```
 
-Les paramètres sont les coordonnées X et Y du point, sa couleur et une couleur optionnelle pour la bordure. Notez que vous pouvez également passer un [`sf::Vector2f`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Vector2.php "sf::Vector2f documentation") plutôt que deux floats pour la position du point.
+Les paramètres sont les coordonnées X et Y du point, sa couleur et une couleur optionnelle pour la bordure. Notez que vous pouvez également passer un [`sf::Vector2f`](../../../documentation/1.6/classsf_1_1Vector2.html "sf::Vector2f documentation") plutôt que deux floats pour la position du point.
 
 Une fois ajoutés à la forme, les attributs des points (position, couleur et bordure) peuvent être récupérées ou changées individuellement à l'aide des accesseurs suivants :
 

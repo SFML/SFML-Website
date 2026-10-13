@@ -6,11 +6,11 @@
 
 ## Introduction
 
-In this tutorial, we will cover text rendering with the [`sf::Font`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Font.php "sf::Font documentation") and [`sf::String`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1String.php "sf::String documentation") classes.
+In this tutorial, we will cover text rendering with the [`sf::Font`](../../../documentation/1.6/classsf_1_1Font.html "sf::Font documentation") and [`sf::String`](../../../documentation/1.6/classsf_1_1String.html "sf::String documentation") classes.
 
 ## Loading a font
 
-Before rendering text, you need a character font to write it. A font in SFML is defined by the [`sf::Font`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Font.php "sf::Font documentation") class. As there's usually not much to do with fonts except loading and using them, this class actually only defines two important functions, `LoadFromFile` and `LoadFromMemory`.
+Before rendering text, you need a character font to write it. A font in SFML is defined by the [`sf::Font`](../../../documentation/1.6/classsf_1_1Font.html "sf::Font documentation") class. As there's usually not much to do with fonts except loading and using them, this class actually only defines two important functions, `LoadFromFile` and `LoadFromMemory`.
 
 ```cpp
 sf::Font MyFont;
@@ -46,14 +46,14 @@ if (!MyFont.LoadFromFile("arial.ttf", 50, MyCharset))
 }
 ```
 
-[`sf::Font`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Font.php "sf::Font documentation") can load several types of font files, from standard TTF to X11 PCF. You can refer to the [FreeType projects's features](http://www.freetype.org/freetype2/index.html#features "FreeType's features page") to get the complete list (it's the library used internally by SFML).
+[`sf::Font`](../../../documentation/1.6/classsf_1_1Font.html "sf::Font documentation") can load several types of font files, from standard TTF to X11 PCF. You can refer to the [FreeType projects's features](http://www.freetype.org/freetype2/index.html#features "FreeType's features page") to get the complete list (it's the library used internally by SFML).
 
-[`sf::Font`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Font.php "sf::Font documentation") also gives access to the rendered glyphs (a glyph is a visual character), but you won't need to use these functions unless you're doing very specific stuff.
+[`sf::Font`](../../../documentation/1.6/classsf_1_1Font.html "sf::Font documentation") also gives access to the rendered glyphs (a glyph is a visual character), but you won't need to use these functions unless you're doing very specific stuff.
 
 ## Creating a string
 
-To create a string that you can draw on screen, you basically need to create an instance of [`sf::String`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1String.php "sf::String documentation"). Such an instance has three parameters : the text to display, the font used, and the character size.  
-Please note that [`sf::String`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1String.php "sf::String documentation") is not a string class in the sense of `std::string`, *ie* it doesn't provide any function related to string manipulation, like *find*, *append*, *substring*, etc. It focuses only on the graphics part, and leave the string manipulation to `std::string` (or whatever class you prefer).
+To create a string that you can draw on screen, you basically need to create an instance of [`sf::String`](../../../documentation/1.6/classsf_1_1String.html "sf::String documentation"). Such an instance has three parameters : the text to display, the font used, and the character size.  
+Please note that [`sf::String`](../../../documentation/1.6/classsf_1_1String.html "sf::String documentation") is not a string class in the sense of `std::string`, *ie* it doesn't provide any function related to string manipulation, like *find*, *append*, *substring*, etc. It focuses only on the graphics part, and leave the string manipulation to `std::string` (or whatever class you prefer).
 
 So, here is how you would define a string containing the text "Hello", using the font "arial.ttf", and with a characters size of 50 :
 
@@ -101,7 +101,7 @@ Text.SetStyle(sf::String::Regular);
 
 ## Displaying a string
 
-[`sf::String`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1String.php "sf::String documentation") is a standard drawable class, meaning that it inherits from [`sf::Drawable`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Drawable.php "sf::Drawable documentation") and gets all its attributes and functions, just like [`sf::Sprite`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Sprite.php "sf::Sprite documentation").  
+[`sf::String`](../../../documentation/1.6/classsf_1_1String.html "sf::String documentation") is a standard drawable class, meaning that it inherits from [`sf::Drawable`](../../../documentation/1.6/classsf_1_1Drawable.html "sf::Drawable documentation") and gets all its attributes and functions, just like [`sf::Sprite`](../../../documentation/1.6/classsf_1_1Sprite.html "sf::Sprite documentation").  
 So you can change the string's position, scale, orientation, color, etc. :
 
 ```cpp
@@ -121,7 +121,7 @@ Window.Draw(Text);
 
 ## What about single character's positions?
 
-In case you need to deal with a string's characters individually, like for displaying a cursor after the n-th character of whatever, [`sf::String`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1String.php "sf::String documentation") provides a utility function to get the position of any character in the string.
+In case you need to deal with a string's characters individually, like for displaying a cursor after the n-th character of whatever, [`sf::String`](../../../documentation/1.6/classsf_1_1String.html "sf::String documentation") provides a utility function to get the position of any character in the string.
 
 ```cpp
 sf::Vector2f Position = Text.GetCharacterPos(4);
@@ -131,7 +131,7 @@ The returned position is defined in local coordinates, so you'll need to call `T
 
 ## Fonts and strings management
 
-You have to be particularly careful when manipulating fonts. A [`sf::Font`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Font.php "sf::Font documentation") instance is a resource which is slow to load, heavy to copy and uses a lot of memory.
+You have to be particularly careful when manipulating fonts. A [`sf::Font`](../../../documentation/1.6/classsf_1_1Font.html "sf::Font documentation") instance is a resource which is slow to load, heavy to copy and uses a lot of memory.
 
 For a good discussion about resource management, I suggest you read the **"Images and sprites management"** part of the [sprites tutorial](sprite.md "Sprites tutorial"), just replacing the word "Image" with "Font" and "Sprite" with "String".
 

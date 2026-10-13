@@ -6,9 +6,9 @@
 
 ## Transformer des entités SFML
 
-Toutes les classes de SFML (sprites, texte, formes) utilisent la même interface pour les transformations : [`sf::Transformable`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Transformable.php "sf::Transformable documentation"). Cette classe de base définit une API simple pour positionner, tourner et redimensionner vos entités. Elle n'offre pas une flexibilité maximale, mais définit plutôt une interface qui soit facile à comprendre et à utiliser, et qui couvre 99% des cas d'utilisation -- pour les 1% restant, voyez les derniers chapitres.
+Toutes les classes de SFML (sprites, texte, formes) utilisent la même interface pour les transformations : [`sf::Transformable`](../../../documentation/2.3.2/classsf_1_1Transformable.html "sf::Transformable documentation"). Cette classe de base définit une API simple pour positionner, tourner et redimensionner vos entités. Elle n'offre pas une flexibilité maximale, mais définit plutôt une interface qui soit facile à comprendre et à utiliser, et qui couvre 99% des cas d'utilisation -- pour les 1% restant, voyez les derniers chapitres.
 
-[`sf::Transformable`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Transformable.php "sf::Transformable documentation") (et toutes ses classes dérivées) définit quatre propriétés : **position**, **rotation**, **échelle** et **origine** ; elles ont toutes leur *getter* et leur *setter*. Ces composantes de transformation sont toutes indépendantes les unes des autres : si vous voulez modifier l'orientation de l'entité, vous avez juste à changer sa propriété 'rotation' sans vous préoccuper de la position ou de l'échelle courante.
+[`sf::Transformable`](../../../documentation/2.3.2/classsf_1_1Transformable.html "sf::Transformable documentation") (et toutes ses classes dérivées) définit quatre propriétés : **position**, **rotation**, **échelle** et **origine** ; elles ont toutes leur *getter* et leur *setter*. Ces composantes de transformation sont toutes indépendantes les unes des autres : si vous voulez modifier l'orientation de l'entité, vous avez juste à changer sa propriété 'rotation' sans vous préoccuper de la position ou de l'échelle courante.
 
 ### Position
 
@@ -93,7 +93,7 @@ Notez que le fait de changer l'origine modifie également la position de l'entit
 
 ## Transformez vos propres classes
 
-[`sf::Transformable`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Transformable.php "sf::Transformable documentation") n'est pas seulement faite pour les classes SFML, elle peut aussi servir de base (ou de membre) à vos propres classes.
+[`sf::Transformable`](../../../documentation/2.3.2/classsf_1_1Transformable.html "sf::Transformable documentation") n'est pas seulement faite pour les classes SFML, elle peut aussi servir de base (ou de membre) à vos propres classes.
 
 ```cpp
 class MyGraphicalEntity : public sf::Transformable
@@ -107,18 +107,18 @@ entity.setRotation(110);
 entity.setScale(0.5f, 0.2f);
 ```
 
-Pour utiliser la transformation finale de l'entité (par exemple pour la dessiner), il faut appeler la fonction `getTransform`. Celle-ci renvoie un [`sf::Transform`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Transform.php "sf::Transform documentation") ; voyez le prochain chapitre pour plus d'explications concernant cette classe, et comment l'utiliser pour transformer une entité SFML.
+Pour utiliser la transformation finale de l'entité (par exemple pour la dessiner), il faut appeler la fonction `getTransform`. Celle-ci renvoie un [`sf::Transform`](../../../documentation/2.3.2/classsf_1_1Transform.html "sf::Transform documentation") ; voyez le prochain chapitre pour plus d'explications concernant cette classe, et comment l'utiliser pour transformer une entité SFML.
 
-Si vous n'avez pas besoin de la totalité des fonctions fournies par [`sf::Transformable`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Transformable.php "sf::Transformable documentation"), ou bien n'en voulez pas pour fournir votre propre interface publique, n'hésitez pas à l'utiliser en tant que membre, et à fournir vos propres fonctions par dessus les siennes. Elle n'est pas abstraite donc il n'y a aucun problème à l'instancier plutôt que de l'utiliser en tant que classe de base.
+Si vous n'avez pas besoin de la totalité des fonctions fournies par [`sf::Transformable`](../../../documentation/2.3.2/classsf_1_1Transformable.html "sf::Transformable documentation"), ou bien n'en voulez pas pour fournir votre propre interface publique, n'hésitez pas à l'utiliser en tant que membre, et à fournir vos propres fonctions par dessus les siennes. Elle n'est pas abstraite donc il n'y a aucun problème à l'instancier plutôt que de l'utiliser en tant que classe de base.
 
 ## Les transformations quelconques
 
-La classe [`sf::Transformable`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Transformable.php "sf::Transformable documentation") est facile à utiliser, mais elle est également limitée. Certains utilisateurs auront besoin de plus de flexibilité, ils voudront définir une transformation finale comme étant une combinaison quelconque de transformations de base. Pour cette catégorie d'utilisateurs, une classe de plus bas niveau est disponible : [`sf::Transform`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Transform.php "sf::Transform documentation"). Elle n'est rien de plus qu'une matrice 3x3 encapsulée, elle peut donc représenter n'importe quelle transformation 2D.
+La classe [`sf::Transformable`](../../../documentation/2.3.2/classsf_1_1Transformable.html "sf::Transformable documentation") est facile à utiliser, mais elle est également limitée. Certains utilisateurs auront besoin de plus de flexibilité, ils voudront définir une transformation finale comme étant une combinaison quelconque de transformations de base. Pour cette catégorie d'utilisateurs, une classe de plus bas niveau est disponible : [`sf::Transform`](../../../documentation/2.3.2/classsf_1_1Transform.html "sf::Transform documentation"). Elle n'est rien de plus qu'une matrice 3x3 encapsulée, elle peut donc représenter n'importe quelle transformation 2D.
 
-Il y a plusieurs façons de construire un [`sf::Transform`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Transform.php "sf::Transform documentation") :
+Il y a plusieurs façons de construire un [`sf::Transform`](../../../documentation/2.3.2/classsf_1_1Transform.html "sf::Transform documentation") :
 
 - en utilisant les fonctions prédéfinies pour les transformations les plus communes (translation, rotation, échelle)
-- en combinant deux [`sf::Transform`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Transform.php "sf::Transform documentation")
+- en combinant deux [`sf::Transform`](../../../documentation/2.3.2/classsf_1_1Transform.html "sf::Transform documentation")
 - en donnant ses 9 composantes directement
 
 Voici quelques exemples :
@@ -140,7 +140,7 @@ sf::Transform t3(2, 0, 20,
 sf::Transform t4 = t1 * t2 * t3;
 ```
 
-Vous pouvez bien entendu appliquer plusieurs transformations de base au même [`sf::Transform`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Transform.php "sf::Transform documentation"), celles-ci seront toutes combinées séquentiellement :
+Vous pouvez bien entendu appliquer plusieurs transformations de base au même [`sf::Transform`](../../../documentation/2.3.2/classsf_1_1Transform.html "sf::Transform documentation"), celles-ci seront toutes combinées séquentiellement :
 
 ```cpp
 sf::Transform t;
@@ -164,7 +164,7 @@ states.transform = transform;
 window.draw(entity, states);
 ```
 
-Si votre entité est un [`sf::Transformable`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Transformable.php "sf::Transformable documentation") (sprite, texte, forme), avec sa propre transformation interne, alors les deux sont combinées pour produire la transformation finale.
+Si votre entité est un [`sf::Transformable`](../../../documentation/2.3.2/classsf_1_1Transformable.html "sf::Transformable documentation") (sprite, texte, forme), avec sa propre transformation interne, alors les deux sont combinées pour produire la transformation finale.
 
 ## Boîtes englobantes
 

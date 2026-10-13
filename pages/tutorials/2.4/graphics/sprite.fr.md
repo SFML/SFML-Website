@@ -18,7 +18,7 @@ Ok, c'était plutôt court mais si vous ne comprenez vraiment pas ce que sont le
 
 ## Charger une texture
 
-Ainsi donc, avant de créer le moindre sprite, il faut une texture valide. La classe qui encapsule les textures dans SFML est, ô surprise, [`sf::Texture`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1Texture.php "sf::Texture documentation"). Comme le (seul) rôle d'une texture est d'être chargée puis plaquée sur des entités graphiques, presque toutes ses fonctions servent à la charger ou mettre à jour son contenu.
+Ainsi donc, avant de créer le moindre sprite, il faut une texture valide. La classe qui encapsule les textures dans SFML est, ô surprise, [`sf::Texture`](../../../documentation/2.4.2/classsf_1_1Texture.html "sf::Texture documentation"). Comme le (seul) rôle d'une texture est d'être chargée puis plaquée sur des entités graphiques, presque toutes ses fonctions servent à la charger ou mettre à jour son contenu.
 
 La façon la plus commune de charger une texture est depuis une image sur le disque dur, ce qui se fait avec la fonction `loadFromFile`.
 
@@ -34,7 +34,7 @@ if (!texture.loadFromFile("image.png"))
 
     La fonction `loadFromFile` échoue parfois sans raison apparente. Première chose à faire, vérifiez le message d'erreur affiché par SFML dans la sortie standard (la console). Si le message est "unable to open file", assurez-vous que le *répertoire de travail* (qui est le répertoire relativement auquel tout fichier sera interprété) est celui auquel vous vous attendez : lorsque vous lancez votre application depuis l'explorateur de fichiers, le répertoire de travail est le répertoire de l'exécutable, pas de problème généralement dans ce cas ; mais si vous lancez votre programme depuis votre EDI (Visual Studio, Code::Blocks, ...) alors le répertoire de travail est parfois le répertoire du *projet*. Pas de panique : cela peut normalement être modifié directement dans les options de votre projet.
 
-Vous pouvez aussi charger une image depuis un fichier en mémoire (`loadFromMemory`), depuis un [flux d'entrée](../system/stream.md "Tutoriels sur les flux d'entrée") (`loadFromStream`), ou encore depuis une image déjà chargée (`loadFromImage`). Cette dernière fonction charge la texture depuis un [`sf::Image`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1Image.php "sf::Image documentation"), qui est une classe utilitaire pour manipuler des images (modifier des pixels, créer un masque de transparence, etc.) Les pixels d'un [`sf::Image`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1Image.php "sf::Image documentation") restent en mémoire système, afin que les opérations sur ceux-ci soient le plus rapide possible, alors que les pixels d'une texture sont stockés en mémoire graphique et sont donc très lents à récupérer ou à mettre à jour -- mais extrêmement rapides à dessiner.
+Vous pouvez aussi charger une image depuis un fichier en mémoire (`loadFromMemory`), depuis un [flux d'entrée](../system/stream.md "Tutoriels sur les flux d'entrée") (`loadFromStream`), ou encore depuis une image déjà chargée (`loadFromImage`). Cette dernière fonction charge la texture depuis un [`sf::Image`](../../../documentation/2.4.2/classsf_1_1Image.html "sf::Image documentation"), qui est une classe utilitaire pour manipuler des images (modifier des pixels, créer un masque de transparence, etc.) Les pixels d'un [`sf::Image`](../../../documentation/2.4.2/classsf_1_1Image.html "sf::Image documentation") restent en mémoire système, afin que les opérations sur ceux-ci soient le plus rapide possible, alors que les pixels d'une texture sont stockés en mémoire graphique et sont donc très lents à récupérer ou à mettre à jour -- mais extrêmement rapides à dessiner.
 
 SFML supporte les formats de fichiers les plus communs. La liste complète est disponible dans la documentation de l'API.
 
@@ -48,7 +48,7 @@ if (!texture.loadFromFile("image.png", sf::IntRect(10, 10, 32, 32)))
 }
 ```
 
-[`sf::IntRect`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1Rect.php "sf::IntRect documentation") est une classe utilitaire qui représente un rectangle. Son constructeur prend les coordonnées du coin haut-gauche ainsi que la taille du rectangle.
+[`sf::IntRect`](../../../documentation/2.4.2/classsf_1_1Rect.html "sf::IntRect documentation") est une classe utilitaire qui représente un rectangle. Son constructeur prend les coordonnées du coin haut-gauche ainsi que la taille du rectangle.
 
 Si vous ne voulez pas charger une texture depuis une image, mais plutôt la mettre à jour directement à partir d'un tableau de pixels, vous pouvez la créer vide puis la remplir plus tard :
 
@@ -194,9 +194,9 @@ Gardez bien cela en tête lorsque vous créez vos textures d'animation ou de tui
 
 ## Utiliser sf::Texture dans du code OpenGL
 
-Si vous utilisez OpenGL plutôt que les entités graphiques de SFML, vous pouvez toujours utiliser [`sf::Texture`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1Texture.php "sf::Texture documentation") comme encapsulation d'une texture OpenGL, et la faire intéragir avec vos entités OpenGL.
+Si vous utilisez OpenGL plutôt que les entités graphiques de SFML, vous pouvez toujours utiliser [`sf::Texture`](../../../documentation/2.4.2/classsf_1_1Texture.html "sf::Texture documentation") comme encapsulation d'une texture OpenGL, et la faire intéragir avec vos entités OpenGL.
 
-Afin d'activer une [`sf::Texture`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1Texture.php "sf::Texture documentation") pour le rendu (l'équivalent de `glBindTexture`), vous devez appeler la fonction statique `bind` :
+Afin d'activer une [`sf::Texture`](../../../documentation/2.4.2/classsf_1_1Texture.html "sf::Texture documentation") pour le rendu (l'équivalent de `glBindTexture`), vous devez appeler la fonction statique `bind` :
 
 ```cpp
 sf::Texture texture;

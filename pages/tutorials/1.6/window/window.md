@@ -40,7 +40,7 @@ Under Windows operating systems, you may have created a "Windows Application" pr
 
 ## Opening the window
 
-The next step is to open a window. Windows in SFML are defined by the [`sf::Window`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Window.php "sf::Window documentation") class. This class provides some useful constructors to create directly our window. The interesting one here is the following :
+The next step is to open a window. Windows in SFML are defined by the [`sf::Window`](../../../documentation/1.6/classsf_1_1Window.html "sf::Window documentation") class. This class provides some useful constructors to create directly our window. The interesting one here is the following :
 
 ```cpp
 sf::Window App(sf::VideoMode(800, 600, 32), "SFML Window");
@@ -48,7 +48,7 @@ sf::Window App(sf::VideoMode(800, 600, 32), "SFML Window");
 
 Here we create a new variable named `App`, that will represent our new window. Let's explain the parameters :
 
-- The first parameter is a [`sf::VideoMode`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1VideoMode.php "sf::VideoMode documentation"), which represents the chosen video mode for the window. Here, size is 800x600 pixels, with a depth of 32 bits per pixel. Note that the specified size will be the internal area of the window, excluding the titlebar and the borders.
+- The first parameter is a [`sf::VideoMode`](../../../documentation/1.6/classsf_1_1VideoMode.html "sf::VideoMode documentation"), which represents the chosen video mode for the window. Here, size is 800x600 pixels, with a depth of 32 bits per pixel. Note that the specified size will be the internal area of the window, excluding the titlebar and the borders.
 - The second parameter is the window title, of type `std::string`
 
 If you want to create your window later, or recreate it with different parameters, you can use its `Create` function :
@@ -67,7 +67,7 @@ App.Create(sf::VideoMode(800, 600, 32), "SFML Window", sf::Style::Fullscreen);
 
 ## Video modes
 
-In the example above, we don't care about the video mode because we run in windowed mode ; any size will be ok. But if we'd like to run in fullscreen mode, only a few modes would be allowed. [`sf::VideoMode`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1VideoMode.php "sf::VideoMode documentation") provides an interface for getting all supported video modes, with the two static functions `GetModesCount` and `GetMode` :
+In the example above, we don't care about the video mode because we run in windowed mode ; any size will be ok. But if we'd like to run in fullscreen mode, only a few modes would be allowed. [`sf::VideoMode`](../../../documentation/1.6/classsf_1_1VideoMode.html "sf::VideoMode documentation") provides an interface for getting all supported video modes, with the two static functions `GetModesCount` and `GetMode` :
 
 ```cpp
 unsigned int VideoModesCount = sf::VideoMode::GetModesCount();

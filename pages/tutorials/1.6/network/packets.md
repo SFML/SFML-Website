@@ -15,17 +15,17 @@ Another problem is primitive types sizes. Different platforms can have different
 
 The third problem is more network related. Data transfers through TCP and UDP protocols must follow some rules defined by the lower levels of implementation. In particular, a chunk of data can be split and received in several parts ; the receiver must then find a way to recompose the chunk and return data as if it was received in once.
 
-These are the most common problems involved in network programming, but there are a lot more do deal with if you want to build robust programs. To help you with these low-level tasks, SFML provides a class for manipulating network data through packets : [`sf::Packet`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Packet.php "sf::Packet documentation").
+These are the most common problems involved in network programming, but there are a lot more do deal with if you want to build robust programs. To help you with these low-level tasks, SFML provides a class for manipulating network data through packets : [`sf::Packet`](../../../documentation/1.6/classsf_1_1Packet.html "sf::Packet documentation").
 
 ## Primitive types
 
-Like I just said earlier, primitive C++ types such as `unsigned int`, `long`, etc. have a size which is not fixed and may vary depending on the platform. As a consequence, it's inappropriate to use them for sending data over the network, as there's no control on what size will be sent and received. Unfortunately, [`sf::Packet`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Packet.php "sf::Packet documentation") can't solve this issue automatically, there's still a moment where you must explicitely tell the expected size of a primitive type. To do so, the best solution is to use SFML's fixed size types : `sf::Int8`, `sf::Uint16`, `sf::Int32`, etc. Those types are guaranteed to have the intended size on any platform.
+Like I just said earlier, primitive C++ types such as `unsigned int`, `long`, etc. have a size which is not fixed and may vary depending on the platform. As a consequence, it's inappropriate to use them for sending data over the network, as there's no control on what size will be sent and received. Unfortunately, [`sf::Packet`](../../../documentation/1.6/classsf_1_1Packet.html "sf::Packet documentation") can't solve this issue automatically, there's still a moment where you must explicitely tell the expected size of a primitive type. To do so, the best solution is to use SFML's fixed size types : `sf::Int8`, `sf::Uint16`, `sf::Int32`, etc. Those types are guaranteed to have the intended size on any platform.
 
 So this is one thing you should never forget : always use fixed size types for structures you want to send over the network, either directly or via a cast just before sending / after receiving.
 
 ## Basic usage
 
-Just like standard I/O, [`sf::Packet`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Packet.php "sf::Packet documentation") allow easy insertion and extraction through the << and >> operators. You can build a packet of data just like you write things to the console with `std::cout`, [`sf::Packet`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Packet.php "sf::Packet documentation") will take care of endianess and other details for you.
+Just like standard I/O, [`sf::Packet`](../../../documentation/1.6/classsf_1_1Packet.html "sf::Packet documentation") allow easy insertion and extraction through the << and >> operators. You can build a packet of data just like you write things to the console with `std::cout`, [`sf::Packet`](../../../documentation/1.6/classsf_1_1Packet.html "sf::Packet documentation") will take care of endianess and other details for you.
 
 ```cpp
 // Insertion
@@ -85,7 +85,7 @@ Socket.Receive(Packet, Address);
 
 ## Packets and custom classes
 
-As with standard streams, it is possible to extend packets to handle your custom classes. To allow insertion and extraction of an instance of a custom class into a [`sf::Packet`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Packet.php "sf::Packet documentation"), define the right versions of the << and >> operators :
+As with standard streams, it is possible to extend packets to handle your custom classes. To allow insertion and extraction of an instance of a custom class into a [`sf::Packet`](../../../documentation/1.6/classsf_1_1Packet.html "sf::Packet documentation"), define the right versions of the << and >> operators :
 
 ```cpp
 struct Character
@@ -120,7 +120,7 @@ Packet >> Bob;
 
 ## Customized packets
 
-To allow even more customization, [`sf::Packet`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Packet.php "sf::Packet documentation") is extensible. This means that you can build your own classes of packets, and customize the data that will be sent and received. To allow this, [`sf::Packet`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Packet.php "sf::Packet documentation") defines two virtual functions :
+To allow even more customization, [`sf::Packet`](../../../documentation/1.6/classsf_1_1Packet.html "sf::Packet documentation") is extensible. This means that you can build your own classes of packets, and customize the data that will be sent and received. To allow this, [`sf::Packet`](../../../documentation/1.6/classsf_1_1Packet.html "sf::Packet documentation") defines two virtual functions :
 
 - `OnSend`, that will be called to retrieve the data to send
 - `OnReceive`, that will be called to fill the packet with received data
@@ -169,7 +169,7 @@ Custom packets can be useful in many situations : encryption, compression, addin
 
 ## Conclusion
 
-The [`sf::Packet`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Packet.php "sf::Packet documentation") class wraps a lot of low-level network issues, and provides an easy way to transfer data with sockets. I encourage you to extend packets to your needs, by overloading << and >> operators, and deriving your own packets classes if necessary.
+The [`sf::Packet`](../../../documentation/1.6/classsf_1_1Packet.html "sf::Packet documentation") class wraps a lot of low-level network issues, and provides an easy way to transfer data with sockets. I encourage you to extend packets to your needs, by overloading << and >> operators, and deriving your own packets classes if necessary.
 
 It is important to remember that SFML packets use their own endianess and structure, so you cannot use them to communicate with servers that are not using them. To send raw data, HTTP / FTP requests, or whatever not built with SFML, use arrays of bytes instead of SFML packets.
 

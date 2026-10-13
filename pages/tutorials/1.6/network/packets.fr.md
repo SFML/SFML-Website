@@ -15,17 +15,17 @@ Un autre problème est la taille des types primitifs. Différentes plateformes p
 
 Le troisième problème est plus lié au réseau. Les transferts de données via les protocoles TCP et UDP doivent suivre des règles définies par les niveau plus bas d'implémentation. En particulier, un morceau de données peut être découpé et reçu en plusieurs fois ; le recepteur doit trouver un moyen de recomposer le morceau et de renvoyer les données comme s'il les avait reçues en une fois.
 
-Ce sont les problèmes les plus communs impliqués dans la programmation réseau, mais il en a tout un tas d'autres à gérer si vous voulez construire des programmes robustes. Afin de vous aider avec ces tâches bas niveau, la SFML fournit une classe pour manipuler les données réseau via des paquets : [`sf::Packet`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Packet.php "sf::Packet documentation").
+Ce sont les problèmes les plus communs impliqués dans la programmation réseau, mais il en a tout un tas d'autres à gérer si vous voulez construire des programmes robustes. Afin de vous aider avec ces tâches bas niveau, la SFML fournit une classe pour manipuler les données réseau via des paquets : [`sf::Packet`](../../../documentation/1.6/classsf_1_1Packet.html "sf::Packet documentation").
 
 ## Types primitifs
 
-Comme nous venons de le voir, les types primitifs du C++ tels que `unsigned int`, `long`, etc. ont une taille indeterminée et qui peut varier d'une plateforme à une autre. En conséquence, il est inapproprié de les utiliser pour échanger des données via le réseau, il n'y a aucun contrôle sur la taille de ce qui est envoyé et reçu. Malheureusement, [`sf::Packet`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Packet.php "sf::Packet documentation") ne peut résoudre ce problème automatiquement, il y a toujours un moment où vous devez fixer explicitement une taille pour les types primitifs que vous envoyez. Pour ce faire, la meilleure solution est d'utiliser les types à taille fixe de SFML : `sf::Int8`, `sf::Uint16`, `sf::Int32`, etc. Ces types sont garantis d'avoir la même taille sur n'importe quelle plateforme.
+Comme nous venons de le voir, les types primitifs du C++ tels que `unsigned int`, `long`, etc. ont une taille indeterminée et qui peut varier d'une plateforme à une autre. En conséquence, il est inapproprié de les utiliser pour échanger des données via le réseau, il n'y a aucun contrôle sur la taille de ce qui est envoyé et reçu. Malheureusement, [`sf::Packet`](../../../documentation/1.6/classsf_1_1Packet.html "sf::Packet documentation") ne peut résoudre ce problème automatiquement, il y a toujours un moment où vous devez fixer explicitement une taille pour les types primitifs que vous envoyez. Pour ce faire, la meilleure solution est d'utiliser les types à taille fixe de SFML : `sf::Int8`, `sf::Uint16`, `sf::Int32`, etc. Ces types sont garantis d'avoir la même taille sur n'importe quelle plateforme.
 
 Ceci est donc une chose à ne jamais oublier : utilisez toujours des types à taille fixe pour les structures que vous souhaitez envoyer via le réseau, soit directement soit via un transtypage juste avant l'envoi / après la réception.
 
 ## Utilisation basique
 
-Tout comme les entrées / sorties standards, [`sf::Packet`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Packet.php "sf::Packet documentation") permet d'insérer et d'extraire très facilement des données de tout type via les opérateurs << et >>. Vous pouvez construire un paquet de données tout comme vous écririez ces données sur la console avec `std::cout`, [`sf::Packet`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Packet.php "sf::Packet documentation") se chargera des problèmes de boutisme et d'autres détails pour vous.
+Tout comme les entrées / sorties standards, [`sf::Packet`](../../../documentation/1.6/classsf_1_1Packet.html "sf::Packet documentation") permet d'insérer et d'extraire très facilement des données de tout type via les opérateurs << et >>. Vous pouvez construire un paquet de données tout comme vous écririez ces données sur la console avec `std::cout`, [`sf::Packet`](../../../documentation/1.6/classsf_1_1Packet.html "sf::Packet documentation") se chargera des problèmes de boutisme et d'autres détails pour vous.
 
 ```cpp
 // Insertion
@@ -85,7 +85,7 @@ Socket.Receive(Packet, Address);
 
 ## Les paquets et les classes persos
 
-Tout comme avec les flux standards, il est possible d'étendre les paquets afin de leur permettre de manipuler vos classes persos. Pour permettre l'insertion et l'extraction d'instances d'une classe perso dans un [`sf::Packet`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Packet.php "sf::Packet documentation"), définissez la bonne version des opérateurs << et >> :
+Tout comme avec les flux standards, il est possible d'étendre les paquets afin de leur permettre de manipuler vos classes persos. Pour permettre l'insertion et l'extraction d'instances d'une classe perso dans un [`sf::Packet`](../../../documentation/1.6/classsf_1_1Packet.html "sf::Packet documentation"), définissez la bonne version des opérateurs << et >> :
 
 ```cpp
 struct Character
@@ -120,7 +120,7 @@ Packet >> Bob;
 
 ## Paquets personnalisés
 
-Afin de permettre encore plus de personnalisation, [`sf::Packet`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Packet.php "sf::Packet documentation") est extensible. Cela signifie que vous pouvez construire vos propres classes de paquets, et personnaliser les données qui vont être envoyées et reçues. Pour se faire, [`sf::Packet`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Packet.php "sf::Packet documentation") définit deux fonctions virtuelles :
+Afin de permettre encore plus de personnalisation, [`sf::Packet`](../../../documentation/1.6/classsf_1_1Packet.html "sf::Packet documentation") est extensible. Cela signifie que vous pouvez construire vos propres classes de paquets, et personnaliser les données qui vont être envoyées et reçues. Pour se faire, [`sf::Packet`](../../../documentation/1.6/classsf_1_1Packet.html "sf::Packet documentation") définit deux fonctions virtuelles :
 
 - `OnSend`, qui sera appelée pour récupérer les données à envoyer
 - `OnReceive`, qui sera appelée pour remplir le paquet avec les données reçues
@@ -169,7 +169,7 @@ Les paquets personnalisés peuvent se révéler utiles dans de nombreuses utilis
 
 ## Conclusion
 
-La classe [`sf::Packet`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Packet.php "sf::Packet documentation") gère beaucoup de problèmes réseau de bas niveau, et fournit un moyen facile de transférer des données avec les sockets. Je vous encourage à étendre les paquets à vos besoins, en surchargeant les opérateurs << et >>, et en dérivant vos propres classes de paquets si nécessaire.
+La classe [`sf::Packet`](../../../documentation/1.6/classsf_1_1Packet.html "sf::Packet documentation") gère beaucoup de problèmes réseau de bas niveau, et fournit un moyen facile de transférer des données avec les sockets. Je vous encourage à étendre les paquets à vos besoins, en surchargeant les opérateurs << et >>, et en dérivant vos propres classes de paquets si nécessaire.
 
 Il est important de garder en tête que les paquets SFML utilisent leur propre boutisme et structure, vous ne pouvez donc pas les utiliser pour communiquer avec des serveurs qui ne les utilisent pas. Pour envoyer des données brutes, des requêtes HTTP / FTP, ou n'importe quoi d'autre n'utilisant pas la SFML, utilisez des tableaux d'octets plutôt que des paquets SFML.
 

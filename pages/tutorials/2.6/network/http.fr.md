@@ -14,7 +14,7 @@ Mais pour une interaction simple entre un programme et un serveur web, ce sera l
 
 ## sf::Http
 
-Pour communiquer avec un serveur HTTP, il faut utiliser la classe [`sf::Http`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Http.php "sf::Http documentation").
+Pour communiquer avec un serveur HTTP, il faut utiliser la classe [`sf::Http`](../../../documentation/2.6.2/classsf_1_1Http.html "sf::Http documentation").
 
 ```cpp
 #include <SFML/Network.hpp>
@@ -28,7 +28,7 @@ sf::Http http("http://www.some-server.org/");
 
 Notez bien que le fait de renseigner l'hôte ne déclenche pas de connection : une connection temporaire avec le serveur sera faite plus tard pour chaque requête.
 
-Il n'y a plus qu'une autre fonction à voir dans la classe [`sf::Http`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Http.php "sf::Http documentation"), et c'est la plus importante car elle envoie les requêtes. Et... c'est en gros tout ce que contient cette classe.
+Il n'y a plus qu'une autre fonction à voir dans la classe [`sf::Http`](../../../documentation/2.6.2/classsf_1_1Http.html "sf::Http documentation"), et c'est la plus importante car elle envoie les requêtes. Et... c'est en gros tout ce que contient cette classe.
 
 ```cpp
 sf::Http::Request request;
@@ -38,7 +38,7 @@ sf::Http::Response response = http.sendRequest(request);
 
 ## Les requêtes
 
-Une requête HTTP, représentée par la classe [`sf::Http::Request`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Http_1_1Request.php "sf::Http::Request documentation"), contient les information suivantes :
+Une requête HTTP, représentée par la classe [`sf::Http::Request`](../../../documentation/2.6.2/classsf_1_1Http_1_1Request.html "sf::Http::Request documentation"), contient les information suivantes :
 
 - La méthode : POST (envoyer du contenu), GET (récupérer une ressource), HEAD (récupérer l'en-tête d'une ressource, sans son corps)
 - L'URI : l'adresse de la ressource (page, image, ...) à récupérer/envoyer, relative à l'adresse de l'hôte
@@ -62,7 +62,7 @@ SFML définit automatiquement les champs d'en-tête obligatoires, comme par exem
 
 ## Les réponses
 
-Si la classe [`sf::Http`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Http.php "sf::Http documentation") a pu se connecter à l'hôte et envoyer la requête, alors une réponse est renvoyée par le serveur et retournée à l'utilisateur, encapsulée dans une instance de [`sf::Http::Response`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Http_1_1Response.php "sf::Http::Response documentation"). Les réponses contiennent les membres suivants :
+Si la classe [`sf::Http`](../../../documentation/2.6.2/classsf_1_1Http.html "sf::Http documentation") a pu se connecter à l'hôte et envoyer la requête, alors une réponse est renvoyée par le serveur et retournée à l'utilisateur, encapsulée dans une instance de [`sf::Http::Response`](../../../documentation/2.6.2/classsf_1_1Http_1_1Response.html "sf::Http::Response documentation"). Les réponses contiennent les membres suivants :
 
 - Un code de statut, qui indique précisément comment le serveur a traité la requête (ok, redirigé, non trouvé, etc.)
 - La version HTTP du serveur

@@ -18,7 +18,7 @@ Ce tutoriel va uniquement se concentrer sur les parties spécifiques à SFML : c
 
 ## Charger des shaders
 
-Dans SFML, les shaders sont représentés par la classe [`sf::Shader`](https://www.sfml-dev.org/documentation/2.0-fr/classsf_1_1Shader.php "sf::Shader documentation"). Elle gère à la fois les vertex et fragment shaders : un [`sf::Shader`](https://www.sfml-dev.org/documentation/2.0-fr/classsf_1_1Shader.php "sf::Shader documentation") est une combinaison des deux (ou bien un seul, si l'autre n'est pas nécessaire).
+Dans SFML, les shaders sont représentés par la classe [`sf::Shader`](../../../documentation/2.0/classsf_1_1Shader.html "sf::Shader documentation"). Elle gère à la fois les vertex et fragment shaders : un [`sf::Shader`](../../../documentation/2.0/classsf_1_1Shader.html "sf::Shader documentation") est une combinaison des deux (ou bien un seul, si l'autre n'est pas nécessaire).
 
 Même si les shaders sont maintenant très répandus, il existe toujours des cartes graphiques suffisamment vieilles qui ne les supportent pas. La première chose à faire dans votre programme est donc de vérifier si les shaders sont disponibles :
 
@@ -29,7 +29,7 @@ if (!sf::Shader::isAvailable())
 }
 ```
 
-Toute tentative d'utiliser la classe [`sf::Shader`](https://www.sfml-dev.org/documentation/2.0-fr/classsf_1_1Shader.php "sf::Shader documentation") échouera si la fonction `sf::Shader::isAvailable()` renvoie `false`.
+Toute tentative d'utiliser la classe [`sf::Shader`](../../../documentation/2.0/classsf_1_1Shader.html "sf::Shader documentation") échouera si la fonction `sf::Shader::isAvailable()` renvoie `false`.
 
 Le moyen le plus commun de charger un shader est depuis un fichier sur le disque, ce qui s'effectue avec la fonction `loadFromFile`.
 
@@ -120,7 +120,7 @@ void main()
 }
 ```
 
-Les variables uniformes peuvent être modifiées depuis le programme C++, en utilisant les diverses surcharges de la fonction `setParameter` de la classe [`sf::Shader`](https://www.sfml-dev.org/documentation/2.0-fr/classsf_1_1Shader.php "sf::Shader documentation").
+Les variables uniformes peuvent être modifiées depuis le programme C++, en utilisant les diverses surcharges de la fonction `setParameter` de la classe [`sf::Shader`](../../../documentation/2.0/classsf_1_1Shader.html "sf::Shader documentation").
 
 ```cpp
 shader.setParameter("myvar", 5.f);
@@ -146,7 +146,7 @@ Vous n'apprendrez pas ici à écrire des shaders GLSL, mais vous devez au moins 
 
 ### Vertex shader
 
-SFML définit un format figé de vertex, décrit par la structure [`sf::Vertex`](https://www.sfml-dev.org/documentation/2.0-fr/classsf_1_1Vertex.php "sf::Vertex documentation"). Un vertex SFML possède une position 2D, une couleur, et des coordonnées de texture 2D. Et c'est exactement ce qu'un vertex shader va recevoir en entrée, respectivement dans les variables prédéfinies `gl_Vertex`, `gl_Color` et `gl_MultiTexCoord0` (vous n'avez pas besoin de les déclarer).
+SFML définit un format figé de vertex, décrit par la structure [`sf::Vertex`](../../../documentation/2.0/classsf_1_1Vertex.html "sf::Vertex documentation"). Un vertex SFML possède une position 2D, une couleur, et des coordonnées de texture 2D. Et c'est exactement ce qu'un vertex shader va recevoir en entrée, respectivement dans les variables prédéfinies `gl_Vertex`, `gl_Color` et `gl_MultiTexCoord0` (vous n'avez pas besoin de les déclarer).
 
 ```glsl
 void main()
@@ -194,9 +194,9 @@ Si vous voulez voir des shaders sympas en action, vous pouvez regarder l'exemple
 
 ## Utiliser sf::Shader avec du code OpenGL
 
-Si vous utilisez OpenGL plutôt que les entités graphiques de SFML, vous pouvez toujours utiliser la classe [`sf::Shader`](https://www.sfml-dev.org/documentation/2.0-fr/classsf_1_1Shader.php "sf::Shader documentation") comme wrapper de shader OpenGL, et la faire intéragir avec vos entités OpenGL.
+Si vous utilisez OpenGL plutôt que les entités graphiques de SFML, vous pouvez toujours utiliser la classe [`sf::Shader`](../../../documentation/2.0/classsf_1_1Shader.html "sf::Shader documentation") comme wrapper de shader OpenGL, et la faire intéragir avec vos entités OpenGL.
 
-Pour activer un [`sf::Shader`](https://www.sfml-dev.org/documentation/2.0-fr/classsf_1_1Shader.php "sf::Shader documentation") (l'équivalent de `glUseProgram`), vous devez appeler la fonction statique `bind` :
+Pour activer un [`sf::Shader`](../../../documentation/2.0/classsf_1_1Shader.html "sf::Shader documentation") (l'équivalent de `glUseProgram`), vous devez appeler la fonction statique `bind` :
 
 ```cpp
 sf::Shader shader;

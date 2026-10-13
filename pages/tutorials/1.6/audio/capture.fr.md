@@ -10,9 +10,9 @@ Ce tutoriel va vous montrer comment capturer facilement des données audio en pr
 
 ## Créer un enregistreur personnalisé
 
-La classe qui définit l'interface de capture dans la SFML est [`sf::SoundRecorder`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1SoundRecorder.php "sf::SoundRecorder documentation"). Etant donné qu'elle ne sait pas quoi faire des échantillons audio capturés (et elle n'a pas à le savoir), ce n'est qu'une classe de base pour votre propres enregistreurs persos. [`sf::SoundRecorder`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1SoundRecorder.php "sf::SoundRecorder documentation") vous fournit les échantillons enregistrés, tout ce que vous avez ensuite à faire est... ce que vous voulez : les envoyer via le réseau, les copier dans un tampon sonore, etc.
+La classe qui définit l'interface de capture dans la SFML est [`sf::SoundRecorder`](../../../documentation/1.6/classsf_1_1SoundRecorder.html "sf::SoundRecorder documentation"). Etant donné qu'elle ne sait pas quoi faire des échantillons audio capturés (et elle n'a pas à le savoir), ce n'est qu'une classe de base pour votre propres enregistreurs persos. [`sf::SoundRecorder`](../../../documentation/1.6/classsf_1_1SoundRecorder.html "sf::SoundRecorder documentation") vous fournit les échantillons enregistrés, tout ce que vous avez ensuite à faire est... ce que vous voulez : les envoyer via le réseau, les copier dans un tampon sonore, etc.
 
-Voici les fonctions à redéfinir dans un enregistreur dérivé de [`sf::SoundRecorder`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1SoundRecorder.php "sf::SoundRecorder documentation") :
+Voici les fonctions à redéfinir dans un enregistreur dérivé de [`sf::SoundRecorder`](../../../documentation/1.6/classsf_1_1SoundRecorder.html "sf::SoundRecorder documentation") :
 
 ```cpp
 class MyCustomSoundRecorder : public sf::SoundRecorder
@@ -47,7 +47,7 @@ Le paramètre `Samples` est un pointeur vers le tableau des échantillons sonore
 
 ## Utilisation
 
-L'interface de [`sf::SoundRecorder`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1SoundRecorder.php "sf::SoundRecorder documentation") est assez simple. Tout d'abord, vous devez vérifier que votre système supporte bien la capture audio. Cela peut être fait via la fonction statique `CanCapture` :
+L'interface de [`sf::SoundRecorder`](../../../documentation/1.6/classsf_1_1SoundRecorder.html "sf::SoundRecorder documentation") est assez simple. Tout d'abord, vous devez vérifier que votre système supporte bien la capture audio. Cela peut être fait via la fonction statique `CanCapture` :
 
 ```cpp
 if (!sf::SoundRecorder::CanCapture())
@@ -56,7 +56,7 @@ if (!sf::SoundRecorder::CanCapture())
 }
 ```
 
-Pour bien faire, vous devriez le vérifier avant chaque utilisation de [`sf::SoundRecorder`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1SoundRecorder.php "sf::SoundRecorder documentation").
+Pour bien faire, vous devriez le vérifier avant chaque utilisation de [`sf::SoundRecorder`](../../../documentation/1.6/classsf_1_1SoundRecorder.html "sf::SoundRecorder documentation").
 
 Puis, pour démarrer la capture appelez `Start`, et pour la stopper appelez `Stop`.
 
@@ -78,7 +78,7 @@ unsigned int SampleRate = Recorder.GetSampleRate();
 
 ## Enregistrer des données dans un tampon sonore
 
-L'utilisation la plus fréquente est probablement de sauvegarder les données audio dans un tampon sonore, de manière à pouvoir les sauvegarder dans un fichier ou encore les lire immédiatement. La SFML possède une spécialisation de [`sf::SoundRecorder`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1SoundRecorder.php "sf::SoundRecorder documentation") prédéfinie pour cela : [`sf::SoundBufferRecorder`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1SoundBufferRecorder.php "sf::SoundBufferRecorder documentation"). Elle copie les échantillons audio capturés dans un [`sf::SoundBuffer`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1SoundBuffer.php "sf::SoundBuffer documentation"), que vous pouvez récupérer via la fonction `GetBuffer` :
+L'utilisation la plus fréquente est probablement de sauvegarder les données audio dans un tampon sonore, de manière à pouvoir les sauvegarder dans un fichier ou encore les lire immédiatement. La SFML possède une spécialisation de [`sf::SoundRecorder`](../../../documentation/1.6/classsf_1_1SoundRecorder.html "sf::SoundRecorder documentation") prédéfinie pour cela : [`sf::SoundBufferRecorder`](../../../documentation/1.6/classsf_1_1SoundBufferRecorder.html "sf::SoundBufferRecorder documentation"). Elle copie les échantillons audio capturés dans un [`sf::SoundBuffer`](../../../documentation/1.6/classsf_1_1SoundBuffer.html "sf::SoundBuffer documentation"), que vous pouvez récupérer via la fonction `GetBuffer` :
 
 ```cpp
 sf::SoundBufferRecorder Recorder;
@@ -94,7 +94,7 @@ sf::SoundBuffer Buffer = Recorder.GetBuffer();
 
 ## Multi-threading
 
-Pour les mêmes raisons que [`sf::SoundStream`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1SoundStream.php "sf::SoundStream documentation"), [`sf::SoundRecorder`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1SoundRecorder.php "sf::SoundRecorder documentation") exécute la capture dans un nouveau thread, ainsi le thread principal n'est pas bloqué. Ainsi, une fois de plus, vous devez faire attention aux éventuels problèmes de synchronisation qui peuvent survenir si vous partagez des données entre les deux threads.  
+Pour les mêmes raisons que [`sf::SoundStream`](../../../documentation/1.6/classsf_1_1SoundStream.html "sf::SoundStream documentation"), [`sf::SoundRecorder`](../../../documentation/1.6/classsf_1_1SoundRecorder.html "sf::SoundRecorder documentation") exécute la capture dans un nouveau thread, ainsi le thread principal n'est pas bloqué. Ainsi, une fois de plus, vous devez faire attention aux éventuels problèmes de synchronisation qui peuvent survenir si vous partagez des données entre les deux threads.  
 Pour des explications plus détaillées, vous pouvez jeter un oeil, si ce n'est déjà fait, au [tutoriel sur les flux](streams.md "Aller au tutoriel sur les flux").
 
 ## Conclusion

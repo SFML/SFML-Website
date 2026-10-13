@@ -10,7 +10,7 @@ Ce tutoriel explique uniquement comment ouvrir et gérer une fenêtre avec SFML.
 
 ## Ouvrir une fenêtre
 
-Les fenêtre SFML sont définies par la classe [`sf::Window`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Window.php "sf::Window documentation"). Une fenêtre peut être créée et ouverte directement dès sa construction :
+Les fenêtre SFML sont définies par la classe [`sf::Window`](../../../documentation/2.6.2/classsf_1_1Window.html "sf::Window documentation"). Une fenêtre peut être créée et ouverte directement dès sa construction :
 
 ```cpp
 #include <SFML/Window.hpp>
@@ -26,7 +26,7 @@ int main()
 ```
 
 Le premier paramètre, le *mode vidéo*, définit la taille de la fenêtre (la taille interne, sans la barre de titre ni les bordures). Ici, nous créons une fenêtre de 800x600 pixels.  
-La classe [`sf::VideoMode`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1VideoMode.php "sf::VideoMode documentation") a quelques fonctions statiques intéressantes pour récupérer la résolution du bureau, ou encore la liste des modes vidéo valides pour le mode plein écran. N'hésitez pas à consulter la documentation pour voir tout ce que vous pouvez en tirer.
+La classe [`sf::VideoMode`](../../../documentation/2.6.2/classsf_1_1VideoMode.html "sf::VideoMode documentation") a quelques fonctions statiques intéressantes pour récupérer la résolution du bureau, ou encore la liste des modes vidéo valides pour le mode plein écran. N'hésitez pas à consulter la documentation pour voir tout ce que vous pouvez en tirer.
 
 Le deuxième paramètre est simplement le titre de la fenêtre.
 
@@ -43,7 +43,7 @@ Ce constructeur accepte un troisième paramètre optionnel : un style, qui perme
 
 Il existe également un quatrième paramètre optionnel, qui définit des options spécifiques à OpenGL ; cet aspect est détaillé dans le [tutoriel dédié](opengl.md "Tutoriel OpenGL").
 
-Si vous voulez créer la fenêtre *après* la construction de l'instance de [`sf::Window`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Window.php "sf::Window documentation"), ou bien la re-créer avec des paramètres différents, vous pouvez plutôt utiliser la fonction `create` ; elle prend exactement les mêmes paramètres que le constructeur.
+Si vous voulez créer la fenêtre *après* la construction de l'instance de [`sf::Window`](../../../documentation/2.6.2/classsf_1_1Window.html "sf::Window documentation"), ou bien la re-créer avec des paramètres différents, vous pouvez plutôt utiliser la fonction `create` ; elle prend exactement les mêmes paramètres que le constructeur.
 
 ```cpp
 #include <SFML/Window.hpp>
@@ -105,7 +105,7 @@ Après que la fenêtre a été fermée, la boucle principale s'arrête et le pro
 
 Vous avez probablement remarqué que nous n'avons pas encore parlé de *dessiner quelque chose* dans cette fenêtre. Comme indiqué dans l'introduction, ce n'est pas le boulot du module sfml-window, et vous devrez aller voir directement les tutoriels du module sfml-graphics si vous voulez dessiner des choses intéressantes telles que des sprites, du texte ou des formes.
 
-Pour dessiner, vous pouvez aussi utiliser OpenGL directement et complètement ignorer le module sfml-graphics. [`sf::Window`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Window.php "sf::Window documentation") crée en interne un contexte OpenGL, de sorte qu'elle est naturellement prête à recevoir vos propres appels OpenGL. Vous pourrez en savoir plus à ce sujet dans le [tutoriel correspondant](opengl.md "Tutoriel OpenGL").
+Pour dessiner, vous pouvez aussi utiliser OpenGL directement et complètement ignorer le module sfml-graphics. [`sf::Window`](../../../documentation/2.6.2/classsf_1_1Window.html "sf::Window documentation") crée en interne un contexte OpenGL, de sorte qu'elle est naturellement prête à recevoir vos propres appels OpenGL. Vous pourrez en savoir plus à ce sujet dans le [tutoriel correspondant](opengl.md "Tutoriel OpenGL").
 
 Bref, ne vous attendez pas à voir quelque chose d'intéressant dans cette fenêtre : vous verrez très certainement une couleur uniforme (noir ou blanc), ou bien le dernier contenu du programme OpenGL exécuté précédemment, ou... n'importe quoi d'autre.
 
@@ -134,9 +134,9 @@ bool focus = window.hasFocus();
 ...
 ```
 
-Vous pouvez consulter la documentation de l'API pour une liste complète des fonctions de [`sf::Window`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Window.php "sf::Window documentation").
+Vous pouvez consulter la documentation de l'API pour une liste complète des fonctions de [`sf::Window`](../../../documentation/2.6.2/classsf_1_1Window.html "sf::Window documentation").
 
-Si vous avez réellement besoin de fonctionnalités plus avancées pour votre fenêtre, vous pouvez la créer (ou même une GUI complète) avec une autre bibliothèque, et intégrer SFML dedans. Pour ce faire, vous pouvez utiliser l'autre constructeur, ou fonction `create`, de [`sf::Window`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Window.php "sf::Window documentation") qui prend en paramètre le handle natif (spécifique à l'OS) d'une fenêtre existante. Dans ce cas, SFML crée un contexte OpenGL dans la fenêtre et récupère tous ses évènements, sans perturber sa gestion initiale.
+Si vous avez réellement besoin de fonctionnalités plus avancées pour votre fenêtre, vous pouvez la créer (ou même une GUI complète) avec une autre bibliothèque, et intégrer SFML dedans. Pour ce faire, vous pouvez utiliser l'autre constructeur, ou fonction `create`, de [`sf::Window`](../../../documentation/2.6.2/classsf_1_1Window.html "sf::Window documentation") qui prend en paramètre le handle natif (spécifique à l'OS) d'une fenêtre existante. Dans ce cas, SFML crée un contexte OpenGL dans la fenêtre et récupère tous ses évènements, sans perturber sa gestion initiale.
 
 ```cpp
 sf::WindowHandle handle = /* specifique à ce que vous faites et à la bibliothèque que vous utilisez */;
@@ -175,7 +175,7 @@ Dans d'autres situations, vous voudrez peut-être que votre application tourne �
 window.setFramerateLimit(30); // un appel suffit, après la création de la fenêtre
 ```
 
-Contrairement à `setVerticalSyncEnabled`, cette fonctionnalité est implémentée par SFML, avec une combinaison de [`sf::Clock`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Clock.php "sf::Clock documentation") et de `sf::sleep`. Une conséquence importante de cela est qu'elle n'est pas fiable à 100%, en particulier pour des valeurs élevées : la résolution de `sf::sleep` dépend de l'OS, et peut être aussi faible que 10 ou 15 millisecondes. Ne comptez donc pas sur cette fonction pour implémenter des timings ultra-précis.
+Contrairement à `setVerticalSyncEnabled`, cette fonctionnalité est implémentée par SFML, avec une combinaison de [`sf::Clock`](../../../documentation/2.6.2/classsf_1_1Clock.html "sf::Clock documentation") et de `sf::sleep`. Une conséquence importante de cela est qu'elle n'est pas fiable à 100%, en particulier pour des valeurs élevées : la résolution de `sf::sleep` dépend de l'OS, et peut être aussi faible que 10 ou 15 millisecondes. Ne comptez donc pas sur cette fonction pour implémenter des timings ultra-précis.
 
 !!! warning
 

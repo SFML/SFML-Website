@@ -6,7 +6,7 @@
 
 ## Charger une police
 
-Avant de dessiner du texte, vous avez besoin d'une police de caractères -- tout comme n'importe quel autre programme qui affiche du texte. Les polices sont encapsulées dans la classe [`sf::Font`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Font.php "sf::Font documentation"), qui fournit trois fonctionnalités principales : charger une police, récupérer ses glyphes (i.e. les caractères graphiques), et lire ses divers attributs. Il est très probable que la plupart du temps vous n'ayiez qu'à vous préoccuper de la première, à savoir charger des polices. C'est donc par celle-ci que nous allons commencer.
+Avant de dessiner du texte, vous avez besoin d'une police de caractères -- tout comme n'importe quel autre programme qui affiche du texte. Les polices sont encapsulées dans la classe [`sf::Font`](../../../documentation/2.6.2/classsf_1_1Font.html "sf::Font documentation"), qui fournit trois fonctionnalités principales : charger une police, récupérer ses glyphes (i.e. les caractères graphiques), et lire ses divers attributs. Il est très probable que la plupart du temps vous n'ayiez qu'à vous préoccuper de la première, à savoir charger des polices. C'est donc par celle-ci que nous allons commencer.
 
 La façon la plus commune de charger une police est depuis un fichier sur le disque dur, ce qui est fait avec la fonction `loadFromFile`.
 
@@ -32,7 +32,7 @@ Voilà. Une fois votre police chargée, vous pouvez commencer à dessiner du tex
 
 ## Dessiner du texte
 
-Pour dessiner du texte, il faut utiliser la classe [`sf::Text`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Text.php "sf::Text documentation"). Elle est très simple à utiliser :
+Pour dessiner du texte, il faut utiliser la classe [`sf::Text`](../../../documentation/2.6.2/classsf_1_1Text.html "sf::Text documentation"). Elle est très simple à utiliser :
 
 ```cpp
 sf::Text text;
@@ -60,7 +60,7 @@ window.draw(text);
 
 ![Dessiner du texte](text-draw.png)
 
-Les textes peuvent aussi être transformés : ils ont une position, une orientation et une échelle. Les fonctions impliquées sont les mêmes que pour la classe [`sf::Sprite`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Sprite.php "sf::Sprite documentation") ainsi que les autres entités SFML, et sont détaillées dans le tutoriel [Transformer des entités](transform.md "Tutoriel 'Transformer des entités'").
+Les textes peuvent aussi être transformés : ils ont une position, une orientation et une échelle. Les fonctions impliquées sont les mêmes que pour la classe [`sf::Sprite`](../../../documentation/2.6.2/classsf_1_1Sprite.html "sf::Sprite documentation") ainsi que les autres entités SFML, et sont détaillées dans le tutoriel [Transformer des entités](transform.md "Tutoriel 'Transformer des entités'").
 
 ## Comment éviter les embrouilles avec les caractères non-ASCII ?
 
@@ -83,7 +83,7 @@ Cela peut paraître évident, mais il est toujours bon de le rappeler : une poli
     La suite de ce tutoriel explique comment afficher du texte vous-même à partir des glyphes d'une police.
     `sf::Text` couvre la plupart des besoins, vous pouvez donc la passer.
 
-Si [`sf::Text`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Text.php "sf::Text documentation") est trop limitée, ou si vous voulez faire autre chose avec les glyphes pré-rendus, [`sf::Font`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Font.php "sf::Font documentation") fournit tout ce qu'il vous faut pour exploiter la police autrement.
+Si [`sf::Text`](../../../documentation/2.6.2/classsf_1_1Text.html "sf::Text documentation") est trop limitée, ou si vous voulez faire autre chose avec les glyphes pré-rendus, [`sf::Font`](../../../documentation/2.6.2/classsf_1_1Font.html "sf::Font documentation") fournit tout ce qu'il vous faut pour exploiter la police autrement.
 
 Premièrement, vous devez récupérer la texture qui contient tous les glyphes pré-rendus pour une taille donnée de caractère :
 
@@ -101,7 +101,7 @@ sf::Glyph glyph = font.getGlyph(character, characterSize, bold);
 
 `character` est le code UTF-32 du glyphe que vous voulez récupérer. Vous devez aussi spécifier la taille de caractère, et en dernier paramètre, si vous voulez la version grasse ou normale du glyphe.
 
-La structure [`sf::Glyph`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Glyph.php "sf::Glyph documentation") contient trois membres :
+La structure [`sf::Glyph`](../../../documentation/2.6.2/classsf_1_1Glyph.html "sf::Glyph documentation") contient trois membres :
 
 - `textureRect` contient les coordonnées de textures du glyphe dans la texture
 - `bounds` est le rectangle englobant du glyphe, qui est à le positionner relativement à la ligne de base du texte

@@ -10,7 +10,7 @@ Avec l'évolution des cartes graphiques, l'utilisation des shaders est devenue i
 
 Les post-effects sont des effets de pixels appliqués à l'écran tout entier, après que vous ayiez affiché tous vos objet graphiques. Les post-effects bien connus sont par exemple noir-et-blanc, *glow* (ajout de lueur), HDRL (*high dynamic range lighting*), etc.
 
-SFML définit une classe pour créer et appliquer facilement des effets : [`sf::PostFX`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1PostFX.php "sf::PostFX documentation"). Regardons comment créer un post-effect, et comment le manipuler dans un programme.
+SFML définit une classe pour créer et appliquer facilement des effets : [`sf::PostFX`](../../../documentation/1.6/classsf_1_1PostFX.html "sf::PostFX documentation"). Regardons comment créer un post-effect, et comment le manipuler dans un programme.
 
 ## Ecrire un post-effect
 
@@ -100,7 +100,7 @@ Effect.SetTexture("framebuffer", NULL);
 Effect.SetParameter("color", 1.f, 1.f, 1.f);
 ```
 
-La fonction `SetTexture` est utilisée pour associer une image à une texture de l'effet. Le premier paramètre est le nom de la texture dans l'effet, le second est un pointeur vers l'image, sous forme de [`sf::Image`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Image.php "sf::Image documentation"). Passer `NULL` signifie que vous voulez utiliser le contenu de l'écran.
+La fonction `SetTexture` est utilisée pour associer une image à une texture de l'effet. Le premier paramètre est le nom de la texture dans l'effet, le second est un pointeur vers l'image, sous forme de [`sf::Image`](../../../documentation/1.6/classsf_1_1Image.html "sf::Image documentation"). Passer `NULL` signifie que vous voulez utiliser le contenu de l'écran.
 
 Pour initialiser tout autre type de paramètre, vous pouvez utiliser les fonctions `SetParameter`. Le premier paramètre est le nom du paramètre dans l'effet, puis, selon le type du paramètre, vous pouvez passer 1, 2, 3 ou 4 flottants. Ici nous avons une variable `vec3`, nous passons donc 3 valeurs. Les valeurs pour les couleurs sont dans l'intervalle [0, 1], ici nous avons donc défini une couleur blanche.
 

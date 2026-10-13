@@ -8,7 +8,7 @@
 
 SFML possède de nombreuses classes de ressources : images, polices, sons, etc. Dans la plupart des programmes, ces ressources vont être chargées depuis des fichiers, à l'aide de leur fonction `loadFromFile`. Dans quelques autres cas, les ressources seront directement intégrées à l'exécutable ou bien dans un gros fichier de données, et chargées depuis la mémoire avec `loadFromMemory`. Ces fonctions couvrent *pratiquement* toutes les situations imaginables -- mais pas toutes.
 
-Parfois vous avez besoin de charger des fichiers depuis des endroits inhabituels, tels qu'une archive compressée/chiffrée, ou un emplacement réseau distant par exemple. Pour ces situations spéciales, SFML fournit une troisième fonction de chargement : `loadFromStream`. Cette fonction lit les données depuis une classe abstraite [`sf::InputStream`](https://www.sfml-dev.org/documentation/2.1-fr/classsf_1_1InputStream.php "sf::InputStream documentation"), qui vous permet de définir vos propres implémentations.
+Parfois vous avez besoin de charger des fichiers depuis des endroits inhabituels, tels qu'une archive compressée/chiffrée, ou un emplacement réseau distant par exemple. Pour ces situations spéciales, SFML fournit une troisième fonction de chargement : `loadFromStream`. Cette fonction lit les données depuis une classe abstraite [`sf::InputStream`](../../../documentation/2.1/classsf_1_1InputStream.html "sf::InputStream documentation"), qui vous permet de définir vos propres implémentations.
 
 Dans ce tutoriel, vous apprendrez à écrire et utiliser votre propre flux de données.
 
@@ -22,7 +22,7 @@ C'est pourquoi SFML fournit sa propre interface de flux de données, qui est je 
 
 ## InputStream
 
-La classe [`sf::InputStream`](https://www.sfml-dev.org/documentation/2.1-fr/classsf_1_1InputStream.php "sf::InputStream documentation") déclare quatre fonctions virtuelles :
+La classe [`sf::InputStream`](../../../documentation/2.1/classsf_1_1InputStream.html "sf::InputStream documentation") déclare quatre fonctions virtuelles :
 
 ```cpp
 class InputStream
@@ -160,7 +160,7 @@ sf::Int64 FileStream::getSize()
 
 Notez que, comme expliqué ci-dessus, toutes les fonctions renvoient -1 si une erreur s'est produite.
 
-N'oubliez pas de consulter le forum et le wiki, il y a de fortes chances pour qu'un autre utilisateur ait déjà écrit un [`sf::InputStream`](https://www.sfml-dev.org/documentation/2.1-fr/classsf_1_1InputStream.php "sf::InputStream documentation") qui corresponde à ce que vous cherchez à faire. Et si vous écrivez une nouvelle implémentation et pensez qu'elle pourrait être utile en dehors de votre projet, n'hésitez pas à la partager !
+N'oubliez pas de consulter le forum et le wiki, il y a de fortes chances pour qu'un autre utilisateur ait déjà écrit un [`sf::InputStream`](../../../documentation/2.1/classsf_1_1InputStream.html "sf::InputStream documentation") qui corresponde à ce que vous cherchez à faire. Et si vous écrivez une nouvelle implémentation et pensez qu'elle pourrait être utile en dehors de votre projet, n'hésitez pas à la partager !
 
 ## Utilisation du flux
 
@@ -176,7 +176,7 @@ texture.loadFromStream(stream);
 
 ## Les erreurs à éviter
 
-Certaines classes de ressources ne sont pas chargées complètement après que `loadFromStream` a été appelé. Au lieu de cela, elles continuent à utiliser leur source de données aussi longtemps qu'elles sont utilisées. C'est le cas pour [`sf::Music`](https://www.sfml-dev.org/documentation/2.1-fr/classsf_1_1Music.php "sf::Music documentation"), qui lit les échantillons audio au fur et à mesure qu'ils sont joués, et pour [`sf::Font`](https://www.sfml-dev.org/documentation/2.1-fr/classsf_1_1Font.php "sf::Font documentation"), qui charge les glyphes à la volée en fonction du contenu des textes.
+Certaines classes de ressources ne sont pas chargées complètement après que `loadFromStream` a été appelé. Au lieu de cela, elles continuent à utiliser leur source de données aussi longtemps qu'elles sont utilisées. C'est le cas pour [`sf::Music`](../../../documentation/2.1/classsf_1_1Music.html "sf::Music documentation"), qui lit les échantillons audio au fur et à mesure qu'ils sont joués, et pour [`sf::Font`](../../../documentation/2.1/classsf_1_1Font.html "sf::Font documentation"), qui charge les glyphes à la volée en fonction du contenu des textes.
 
 En conséquence, le flux qui est utilisé pour charger une musique ou une police, ainsi que sa source de données, doit rester en vie aussi longtemps que la ressource l'utilise. S'il est détruit alors qu'il est toujours utilisé, le comportement sera indéterminé (cela pourra causer un plantage, une corruption de données, ou rien de visible).
 
