@@ -7,43 +7,33 @@ hide:
 
 ## Does SFML support Unicode? {: #unicode}
 
-SFML supports the input and display of international characters, via the UTF-16 encoding.
-Input is provided via `sf::Event::TextEntered` as `sf::String` and can be display with `sf::Text`.
+Yes. `sf::String` stores text as UTF-32 and can convert from and to UTF-8, UTF-16 and UTF-32.
+Text input is provided via the `sf::Event::TextEntered` event as a UTF-32 `char32_t` and can be displayed with `sf::Text`, as long as the font you use contains the glyphs.
+
+Keep in mind that `std::string` and `const char*` are interpreted with the current locale when converted to `sf::String`.
+For UTF-8 text, use `sf::String::fromUtf8()` or write the literal as a UTF-32 literal, e.g. `U"Grüezi"`.
 
 ## How do I convert from sf::String to <type> and vice-versa? {: #string-convert}
 
-For conversions to `sf::String`, you can just construct the `sf::String` directly from whatever object you already have.
+For conversions to `sf::String`, you can just construct the `sf::String` directly from whatever string you already have.
 
-```
-sf::String sfml_string( cpp_string );
+```cpp
+sf::String sfmlString(cppString);
 ```
 
-There are enough constructors that take care of implicit conversion from all standard C++ string types.
+There are constructors for `std::string`, `std::wstring` and `std::u32string`, as well as the corresponding C strings and characters.
 If you want to see what these look like, take a look in the [`sf::String` documentation](../documentation/3.1.0/classsf_1_1String.html).
-If you want to convert from a non-C++ string to `sf::String`, it is recommended to first convert to a C++ string and then to an `sf::String`.
-Since any library using custom string types should provide support for this, this shouldn't be problematic.
+For UTF-8 or UTF-16 input, use `sf::String::fromUtf8()` and `sf::String::fromUtf16()`.
 
-For conversions from `sf::String` to any other custom string type, it is also recommended to first convert to a C++ string then from C++ string to that type.
+For conversions from `sf::String`, use the explicit functions:
 
-`sf::String` supports implicit conversion to `std::string` and `std::wstring`, so things like
+- `toAnsiString()` for `std::string`, using the current locale
+- `toWideString()` for `std::wstring`
+- `toUtf8()`, `toUtf16()` and `toUtf32()` for the encoded variants, `toUtf32()` returns a `std::u32string`, which is a lossless copy
 
-```
-std::cout << sfml_string << std::endl;
-cpp_string += sfml_string;
-std::size_t pos = cpp_string.find( sfml_string );
-```
+The implicit conversions to `std::string` and `std::wstring` still exist, but are deprecated since SFML 3.1.
 
-are all valid.
-Additionally, if implicit conversion isn't something that comforts you, you can explicitly call `.toAnsiString()` or `.toWideString()` to convert to the corresponding types.
-
-Because internally `sf::String` stores its data in a `std::basic_string<sf::Uint32>`, conversions to this type (which is a C++ string type) are lossless.
-Ironically however, conversion to this type is not supported directly by `sf::String` and one has to perform it via iterators as such:
-
-```
-std::basic_string basic_uint32_string( sfml_string.begin(), sfml_string.end() );
-```
-
-Once you have a `std::basic_string<sf::Uint32>` you can use all of the same functionality as `std::string`, since `std::string` is just a typedef for `std::basic_string<char>`.
+If you want to convert from or to any other custom string type, it is recommended to first convert to a standard C++ string and from there to `sf::String` or that type.
 
 ## My program keeps crashing when I use threads! {: #threads-crash}
 
@@ -60,7 +50,8 @@ What you want to avoid are:
 
 Concurrent reads to the same memory location are generally unproblematic.
 
-In order to protect against the above scenarios, you will need to make use of mutex objects.
+In order to protect against the above scenarios, you will need to make use of mutexes, e.g. `std::mutex` together with `std::scoped_lock`.
+SFML 3 removed its own threading classes, so use `std::thread` and the other facilities of the standard library instead.
 
 Even after you have protected against concurrent access, you still need to be wary of the order in which statements are executed.
 Once you venture into threading, there is no longer an execution ordering guarantee, and it is ultimately up to you to make sure things are done in the right order across different threads.

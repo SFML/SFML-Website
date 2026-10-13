@@ -12,7 +12,7 @@ It is a programming idiom/technique that is used extensively in C++ and can be u
 
 The origin of this idiom lies in the way of how exceptions work in C++.
 When an exception is thrown in a code block, execution is diverted to the relevant handlers and the program flow continues on from there.
-If the programmer has to rely on ALL his code in a block being executed to perform the necessary clean up of resources, this can be a problem in the case an exception is thrown because it is not guaranteed that the clean up code will be executed and resources will not be destroyed properly.
+If the programmer has to rely on ALL their code in a block being executed to perform the necessary clean up of resources, this can be a problem in the case an exception is thrown because it is not guaranteed that the clean up code will be executed and resources will not be destroyed properly.
 
 To address this issue, RAII takes care of the fact that although not all code is executed when an exception is thrown, the destructors of an object are guaranteed to be called because all objects have to be destroyed when the corresponding scope is left.
 
@@ -22,8 +22,8 @@ No matter what happens, if the `sf::Texture` object gets destroyed because it go
 
 From the example just mentioned, it should be apparent that the same can be said of dynamically allocated memory.
 It is also a resource that we need to free when we are done with it.
-Because of this, to promote RAII in modern C++, smart pointer facilities have made their way into the language, either as an extension or in C++11 as a part of the STL.
-Any memory governed by them is guaranteed to be released when they go out of scope (in the case of non-shared ownership e.g. scoped_ptr) due to RAII.
+Because of this, to promote RAII in modern C++, the standard library provides smart pointers since C++11.
+Any memory governed by them is guaranteed to be released when they go out of scope (in the case of non-shared ownership, i.e. `std::unique_ptr`) due to RAII.
 This makes it much easier to use dynamically allocated objects, as you do not have to worry too much about memory management anymore.
 
 For a more in-depth description with examples, read [this article](https://bromeon.ch/articles/raii.html).
@@ -34,8 +34,9 @@ Nobody forces you to use automatic memory management, however in practice, the l
 Generally it is a good idea to use automatic memory management because it frees you to dedicate more time to more important parts of your project.
 Not only that, it will be easier to debug and leaks will be nearly impossible.
 
-C++ has come a long way and in its latest incarnation, C++11, many new memory management facilities made it into the C++ STL.
+C++ has come a long way and since C++11, the standard library provides smart pointers, and containers such as `std::vector` manage their memory on their own.
 This lets you use these constructs without the need for external or self-written libraries.
+In practice, you should rarely have to write `new` or `delete` yourself.
 
 ## What are smart pointers? {: #smart}
 
@@ -45,8 +46,10 @@ Unless you do something with those values, nothing is going to happen with the o
 
 Smart pointers on the other hand, do things with the values that they contain.
 They are no longer just values but objects that govern the memory they point to.
-This can help you to track how many pointers exist that point to a certain block of memory (shared_ptr) or to prevent you from having multiple pointers point at the same block of memory at the same time (unique_ptr).
+This can help you to track how many pointers exist that point to a certain block of memory (`std::shared_ptr`) or to prevent you from having multiple pointers point at the same block of memory at the same time (`std::unique_ptr`).
 The best part is, if you let these smart pointers manage your memory for you, they will also take care of freeing it when they think it isn't used any more.
+
+Create them with `std::make_unique()` and `std::make_shared()` instead of `new`, and prefer `std::unique_ptr`, unless you really need shared ownership.
 
 ## Why shouldn't I use global variables? {: #global}
 
@@ -84,10 +87,10 @@ Don't use `static` to "optimize" the construction of function-local variables.
 
 You should try to confine variables to the scope(s) where they are used.
 Construct and hold them in the object which is supposed to own them as well as manage their lifetime and pass them to other objects/functions using references/pointers.
-Avoid passing by value.
-Often you cannot copy objects and are thus not allowed to pass by value, other times copying the object can take much more time because temporary memory has to be allocated just for the call and freed after the function returns.
+Some objects, like `sf::RenderWindow`, can't be copied at all, others like `sf::Texture` are expensive to copy, so pass them by reference.
 
-If you happen to use a C++11 compliant compiler then you can be sure that many Standard Library objects you pass around will have move constructors defined which makes it less painful to "pass by value" since if certain conditions are met, the compiler will use the Rvalue reference version of certain functions to speed up execution by a substantial amount.
+Small types, such as `sf::Vector2f` or `sf::Color`, are cheap to copy and can be passed by value.
+The same goes for when the function keeps a copy anyway, in which case you can pass by value and move it into place with `std::move`.
 
 ## Why is the singleton pattern not a good one? {: #singleton}
 

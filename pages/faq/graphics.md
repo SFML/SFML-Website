@@ -7,8 +7,8 @@ hide:
 
 ## What image formats does SFML support? {: #image-formats}
 
-SFML can load the following file formats: bmp, dds, jpg, png, tga, psd  
-But keep in mind that not all variants of each format are supported.
+SFML can load the following file formats: bmp, png, tga, jpg, gif, psd, hdr, pic and pnm.  
+But keep in mind that not all variants of each format are supported, e.g. jpeg with arithmetic coding or ASCII pnm.
 
 Also see the official [documentation](../documentation/3.1.0/classsf_1_1Image.html#a9e4f2aa8e36d0cabde5ed5a4ef80290b).
 
@@ -17,9 +17,10 @@ Also see the official [documentation](../documentation/3.1.0/classsf_1_1Image.ht
 This is due to a premature destruction of the `sf::Texture`.
 An `sf::Sprite` only holds a reference to the `sf::Texture` bound to it.
 You have to keep the `sf::Texture` "alive" as long as the sprite uses it.
-It can also be that you never bound a texture to the sprite, hence you need to call `setTexture()` with the initial texture it is to use.
+A common mistake is to load the texture in a function and let it go out of scope at the end of the function.
 
-When your texture is relocated from one memory location to another you have to inform your sprite of this using its `setTexture()` function as well or better yet by managing your textures in a way that won't
+The same happens when your texture is moved to another memory location, for example when it is stored in a `std::vector` that grows.
+You then have to inform your sprite of this using its `setTexture()` function, or better yet, manage your textures in a way that doesn't move them, e.g. with a `std::map` or `std::unique_ptr`.
 
 ## What is the difference between sf::Image and sf::Texture? {: #image-texture}
 
@@ -64,7 +65,6 @@ In an ideal scenario, the monitor would be sent a new set of data exactly once e
 This would mean that the GPU is synchronized with the monitor, as it delays updating the framebuffer until the beams are at the starting position.
 If the framebuffer would be changed while the beams are mid-way through the screen, you would see half of the old image and half of the new one.
 This is known as **tearing** and is the primary purpose why vertical synchronization was necessary and still exists today.
-In the future however, it will become less and less of an issue and at some point, vertical synchronization will no longer be necessary and support probably removed from newer hardware.
 
 VSync is typically implemented as a blocking call in the buffer swap in the driver, which is the only reason why it is viable and mistakenly used instead of the framerate limiter.
 The driver simply isn't allowed to discard frames in order to synchronize, so if the application produces them too fast, it will have to be throttled through blocking.

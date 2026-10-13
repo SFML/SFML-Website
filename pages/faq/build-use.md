@@ -27,6 +27,15 @@ Check out the Getting Started sections of the [tutorials](../tutorials/3.1/index
 
 When you want to use SFML, you need to link to the library files that provide the functionality you make use of in your application.
 
+If you use CMake, which is the recommended way, link the SFML targets of the modules you use and CMake takes care of the rest, including the dependencies and their order:
+
+```cmake
+find_package(SFML 3 REQUIRED COMPONENTS Graphics Audio)
+target_link_libraries(my-app PRIVATE SFML::Graphics SFML::Audio)
+```
+
+If you set up your build manually, keep reading.
+
 SFML is divided into 5 modules:
 
 - **System** _provided by sfml-system_
@@ -64,9 +73,11 @@ In Code::Blocks for example you would have to make sure the dependees come after
 
 ### How do I link SFML statically? {: #link-static}
 
-In order to link SFML statically, you'll need to setup your build environment to link against the static libraries of SFML.
+If you use CMake, set `SFML_STATIC_LIBRARIES` to `ON` before calling `find_package(SFML ...)`, and CMake takes care of the defines and the dependencies.
+
+Otherwise, you'll need to setup your build environment to link against the static libraries of SFML.
 Static libraries are the ones with a `-s` suffix, for example `sfml-graphics-s`.
-Next, you'll need to add `SFML_STATIC` to the preprocessor option and, as always, you'll need to make sure to link the debug libraries (`-d` suffix) in debug mode and the release libraries (no `-d` suffix) in release mode.
+Next, you'll need to add `SFML_STATIC` to the preprocessor option and, as always, you'll need to make sure to link the debug libraries (`-s-d` suffix) in debug mode and the release libraries (no `-d` suffix) in release mode.
 
 In the past, SFML included on Windows all its dependencies into the SFML libraries.
 However, this was changed to eliminate multiple issues and get a commonly expected behavior ([full discussion](https://en.sfml-dev.org/forums/index.php?topic=9362.0)).
