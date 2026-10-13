@@ -93,3 +93,17 @@ p:has(img) {
 .md-tabs__link {
     opacity: 0.85;
 }
+
+/* Download tables, full width so the tables of all tabs line up */
+.md-typeset__table:has(.md-button) {
+    width: 100%;
+}
+
+.md-typeset__table:has(.md-button) table {
+    display: table;
+    width: 100%;
+}
+
+.md-typeset__table:has(.md-button) td {
+    vertical-align: middle;
+}
