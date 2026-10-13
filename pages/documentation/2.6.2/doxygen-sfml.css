@@ -1,5 +1,49 @@
 /* SFML look for the Doxygen pages, loaded after Doxygen's own stylesheet (HTML_EXTRA_STYLESHEET) */
 
+/* Colors */
+
+:root {
+    --sfml-text-color: #333;
+    --sfml-strong-text-color: #000;
+    --sfml-link-color: rgb(70, 100, 30);
+    --sfml-param-color: #602020;
+    --sfml-border-color: #999;
+    --sfml-border-light-color: #bbb;
+    --sfml-panel-color: #EAF5DB;
+    --sfml-row-color: #FBFCF9;
+    --sfml-code-background-color: #f5f5f5;
+}
+
+/* Dark mode follows Material's palette switch: the header sets html.dark-mode for Doxygen's own dark
+   colors (HTML_COLORSTYLE = TOGGLE) whenever <body> has the slate scheme. Doxygen's dark backgrounds
+   are near black, so they're replaced with the slate shades of the rest of the site. These have to be
+   set on <body>, Material only defines its slate variables there */
+[data-md-color-scheme=slate] {
+    --sfml-text-color: var(--md-typeset-color);
+    --sfml-strong-text-color: var(--md-default-fg-color);
+    --sfml-link-color: var(--md-typeset-a-color);
+    --sfml-param-color: #D28757;
+    --sfml-border-color: var(--md-default-fg-color--lighter);
+    --sfml-border-light-color: var(--md-default-fg-color--lightest);
+    --sfml-panel-color: var(--md-code-bg-color);
+    --sfml-row-color: var(--md-code-bg-color);
+    --sfml-code-background-color: var(--md-code-bg-color);
+
+    --page-background-color: var(--md-default-bg-color);
+    --page-foreground-color: var(--md-typeset-color);
+    --index-even-item-bg-color: var(--md-default-bg-color);
+    --index-odd-item-bg-color: var(--md-code-bg-color);
+    --header-background-color: var(--md-code-bg-color);
+    --title-background-color: var(--md-code-bg-color);
+    --memdecl-background-color: var(--md-code-bg-color);
+    --memdef-proto-background-color: var(--md-code-bg-color);
+    --fragment-background-color: var(--md-code-bg-color);
+    --fragment-lineno-background-color: var(--md-code-bg-color);
+    --search-background-color: var(--md-default-bg-color);
+    --search-results-background-color: var(--md-default-bg-color);
+    --nav-menu-background-color: var(--md-default-bg-color);
+}
+
 /* Doxygen sets the font of every div, table and paragraph, which breaks the inheritance from
    div.contents and changes the fonts of the MkDocs header and navigation */
 
@@ -23,10 +67,10 @@ body {
     width: 100%;
     z-index: 101;
     font-size: 11pt;
-    background-color: #EAF5DB;
-    border-left: 1px solid #999;
-    border-right: 1px solid #999;
-    border-bottom: 1px solid #999;
+    background-color: var(--sfml-panel-color);
+    border-left: 1px solid var(--sfml-border-color);
+    border-right: 1px solid var(--sfml-border-color);
+    border-bottom: 1px solid var(--sfml-border-color);
     padding: 0;
     margin: 0;
 }
@@ -61,7 +105,7 @@ body {
 }
 
 #navrow1 {
-    border-top: 1px solid #999;
+    border-top: 1px solid var(--sfml-border-color);
     margin-top: 2em;
 }
 
@@ -69,7 +113,7 @@ body {
     display: block;
     margin: 8px 0;
     padding: 0 8px;
-    border-right: 1px solid #bbb;
+    border-right: 1px solid var(--sfml-border-light-color);
 }
 
 .tablist li.current a {
@@ -90,7 +134,7 @@ div.header {
     max-width: 950px;
     margin: 2em auto;
     background-color: transparent;
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid var(--sfml-border-color);
 }
 
 div.headertitle {
@@ -125,11 +169,11 @@ div.contents .textblock h1 {
     font-size: 20pt;
     margin-top: 1.5em;
     padding: 0 0 0.4em 0;
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid var(--sfml-border-color);
 }
 
 div.contents h1 {
-    color: #333;
+    color: var(--sfml-text-color);
     padding: 0.5em 0;
     margin-top: 30px;
     margin-bottom: 0;
@@ -143,7 +187,7 @@ div.contents h2 {
     font-weight: normal;
     margin-top: 1.5em;
     padding-bottom: 0.4em;
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid var(--sfml-border-color);
 }
 
 div.contents h3 {
@@ -164,19 +208,19 @@ h2.groupheader {
 hr {
     height: 0;
     margin: 0.5em auto;
-    border-top: 1px solid #999;
+    border-top: 1px solid var(--sfml-border-color);
     box-shadow: none;
 }
 
 div.contents p {
-    color: #333;
+    color: var(--sfml-text-color);
     text-align: justify;
 }
 
 div.contents a {
     padding: 1px;
     text-decoration: none;
-    color: rgb(70, 100, 30);
+    color: var(--sfml-link-color);
 }
 
 /* Keep anchors clear of the sticky MkDocs header */
@@ -215,7 +259,7 @@ div.contents ul {
 }
 
 div.contents ul li {
-    color: #333;
+    color: var(--sfml-text-color);
     margin: 0 0 0.3em 0;
 }
 
@@ -240,7 +284,7 @@ a.el {
 /* Same background as the member above, so a member and its description read as one row */
 .mdescLeft, .mdescRight {
     padding: 0 8px 4px 8px;
-    background-color: #FBFCF9;
+    background-color: var(--sfml-row-color);
 }
 
 .memberdecls tr[class^='memitem'] {
@@ -300,7 +344,7 @@ td h2.groupheader, div.groupHeader {
 }
 
 .memproto {
-    color: #000;
+    color: var(--sfml-strong-text-color);
     border-top-left-radius: 4px;
 }
 
@@ -311,7 +355,7 @@ td h2.groupheader, div.groupHeader {
 }
 
 .paramname {
-    color: #602020;
+    color: var(--sfml-param-color);
 }
 
 td.paramtype, td.paramname {
@@ -352,8 +396,8 @@ div.fragment {
     font-family: Consolas, "Liberation Mono", Courier, monospace;
     font-size: 10pt;
     padding: 0.5em 1em;
-    background-color: #f5f5f5;
-    border: 1px solid #bbb;
+    background-color: var(--sfml-code-background-color);
+    border: 1px solid var(--sfml-border-light-color);
     border-radius: 5px;
 }
 
@@ -396,7 +440,7 @@ span.tt {
 }
 
 div.directory {
-    border-top: 1px solid #bbb;
+    border-top: 1px solid var(--sfml-border-light-color);
 }
 
 .directory td.entry {
@@ -411,7 +455,7 @@ div.directory {
     border-radius: 0;
     box-shadow: none;
     border-width: 1px;
-    border-color: #BBB;
+    border-color: var(--sfml-border-light-color);
     border-style: solid;
     z-index: 0;
 }
@@ -422,16 +466,16 @@ div.directory {
 }
 
 #MSearchResultsWindow {
-    background-color: #EAF5DB;
-    border-color: #999;
+    background-color: var(--sfml-panel-color);
+    border-color: var(--sfml-border-color);
 }
 
 #MSearchResults > .SRPage {
-    background-color: #EAF5DB;
+    background-color: var(--sfml-panel-color);
 }
 
 a.SRSymbol, a.SRScope {
-    color: rgb(70, 100, 30);
+    color: var(--sfml-link-color);
 }
 
 a.SRSymbol:hover, a.SRScope:hover {
@@ -439,11 +483,11 @@ a.SRSymbol:hover, a.SRScope:hover {
 }
 
 #MSearchSelectWindow {
-    background-color: #EAF5DB;
+    background-color: var(--sfml-panel-color);
 }
 
 #MSearchSelectWindow > a.SelectItem {
-    color: #333;
+    color: var(--sfml-text-color);
     text-decoration: none;
 }
 
