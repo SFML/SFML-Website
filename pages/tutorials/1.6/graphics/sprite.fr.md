@@ -10,7 +10,7 @@ Afficher des sprites est sans doute la partie la plus importante d'une API 2D. P
 
 ## Charger une image
 
-Habituellement, les sprites sont chargés à partir de fichiers sur le disque dur. Pour charger une image à partir d'un fichier avec la SFML, vous devez utiliser la classe [`sf::Image`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Image.php "sf::Image documentation") et sa fonction `LoadFromFile` :
+Habituellement, les sprites sont chargés à partir de fichiers sur le disque dur. Pour charger une image à partir d'un fichier avec la SFML, vous devez utiliser la classe [`sf::Image`](../../../documentation/1.6/classsf_1_1Image.html "sf::Image documentation") et sa fonction `LoadFromFile` :
 
 ```cpp
 sf::Image Image;
@@ -60,7 +60,7 @@ Ok, nous pouvons maintenant créer / charger / modifier une image. Mais ce n'est
 - Cela vous permet d'utiliser une même image pour plusieurs sprites, sans dupliquer les pixels en mémoire, et sans avoir à écrire un gestionnaire d'images
 - Parfois vous ne voulez pas manipuler les images en tant que sprites. Par exemple vous voulez pouvoir charger des images, leur appliquer un certain effet, puis les sauvegarder dans des fichiers
 
-Revenons aux sprites. Dans la SFML, un sprite est une instance de la classe [`sf::Sprite`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Sprite.php "sf::Sprite documentation"). Cette classe dérive de [`sf::Drawable`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Drawable.php "sf::Drawable documentation"), qui est la base de tout objet affichable (sprites, chaînes de caractères, post-fx, ...). [`sf::Drawable`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Drawable.php "sf::Drawable documentation") définit tout un tas de fonctions pour changer / récupérer l'apparence de l'objet affichable. Voici un exemple avec un sprite, mais ces fonctions sont communes à tous les objets affichables, donc ne les oubliez pas.
+Revenons aux sprites. Dans la SFML, un sprite est une instance de la classe [`sf::Sprite`](../../../documentation/1.6/classsf_1_1Sprite.html "sf::Sprite documentation"). Cette classe dérive de [`sf::Drawable`](../../../documentation/1.6/classsf_1_1Drawable.html "sf::Drawable documentation"), qui est la base de tout objet affichable (sprites, chaînes de caractères, post-fx, ...). [`sf::Drawable`](../../../documentation/1.6/classsf_1_1Drawable.html "sf::Drawable documentation") définit tout un tas de fonctions pour changer / récupérer l'apparence de l'objet affichable. Voici un exemple avec un sprite, mais ces fonctions sont communes à tous les objets affichables, donc ne les oubliez pas.
 
 ```cpp
 sf::Sprite Sprite;
@@ -80,7 +80,7 @@ Sprite.Rotate(90);
 Sprite.Scale(1.5f, 1.5f);
 ```
 
-Notez que toutes les fonctions prenant deux floats en paramètre, peuvent également prendre une instance de [`sf::Vector2f`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Vector2.php "sf::Vector2f documentation"). Les fonctions GetXxx correspondant aux SetXxx prenant un vecteur, renvoient également un [`sf::Vector2f`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Vector2.php "sf::Vector2f documentation").
+Notez que toutes les fonctions prenant deux floats en paramètre, peuvent également prendre une instance de [`sf::Vector2f`](../../../documentation/1.6/classsf_1_1Vector2.html "sf::Vector2f documentation"). Les fonctions GetXxx correspondant aux SetXxx prenant un vecteur, renvoient également un [`sf::Vector2f`](../../../documentation/1.6/classsf_1_1Vector2.html "sf::Vector2f documentation").
 
 Vous pouvez bien sûr changer ces valeurs à n'importe quel moment de l'exécution, les sprites sont complétement dynamiques.
 
@@ -90,7 +90,7 @@ Remarquez que la couleur a une composante alpha à 128, ce qui signifie que notr
 
 Il n'y a pas grand chose à dire sur les autres variables, excepté que la rotation est un angle exprimé en degrés.
 
-Une fois que vous avez appliqué toutes ces transformations à votre sprite, il peut devenir difficile d'obtenir le rectangle résultant, et de manière générale la position finale de tout point local. C'est pourquoi [`sf::Sprite`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Sprite.php "sf::Sprite documentation") et toutes les classes dérivées de [`sf::Drawable`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Drawable.php "sf::Drawable documentation") définissent deux fonctions de conversion :
+Une fois que vous avez appliqué toutes ces transformations à votre sprite, il peut devenir difficile d'obtenir le rectangle résultant, et de manière générale la position finale de tout point local. C'est pourquoi [`sf::Sprite`](../../../documentation/1.6/classsf_1_1Sprite.html "sf::Sprite documentation") et toutes les classes dérivées de [`sf::Drawable`](../../../documentation/1.6/classsf_1_1Drawable.html "sf::Drawable documentation") définissent deux fonctions de conversion :
 
 ```cpp
 // Convertit un point local en coordonnées globales
@@ -100,7 +100,7 @@ sf::Vector2f Global = Sprite.TransformToGlobal(sf::Vector2f(10, 25));
 sf::Vector2f Local = Sprite.TransformToLocal(sf::Vector2f(425, 120));
 ```
 
-Par dessus cela, [`sf::Sprite`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Sprite.php "sf::Sprite documentation") fournit des fonctions plus spécifiques :
+Par dessus cela, [`sf::Sprite`](../../../documentation/1.6/classsf_1_1Sprite.html "sf::Sprite documentation") fournit des fonctions plus spécifiques :
 
 ```cpp
 // On change l'image (texture) source du sprite
@@ -158,13 +158,13 @@ Sprite.SetSubRect(sf::IntRect(10, 10, 20, 20));
 
 Ici nous n'afficherons qu'un sous-rectangle de l'image allant du pixel (10, 10) au pixel (20, 20).
 
-[`sf::IntRect`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Rect.php "sf::IntRect documentation") est juste une classe utilitaire pour manipuler les rectangles. Pour les rectangles à coordonnées flottantes, il y a également la classe [`sf::FloatRect`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Rect.php "sf::FloatRect documentation") (en fait elles sont toutes deux des instanciations de la classe template [`sf::Rect`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Rect.php "sf::Rect documentation")).
+[`sf::IntRect`](../../../documentation/1.6/classsf_1_1Rect.html "sf::IntRect documentation") est juste une classe utilitaire pour manipuler les rectangles. Pour les rectangles à coordonnées flottantes, il y a également la classe [`sf::FloatRect`](../../../documentation/1.6/classsf_1_1Rect.html "sf::FloatRect documentation") (en fait elles sont toutes deux des instanciations de la classe template [`sf::Rect`](../../../documentation/1.6/classsf_1_1Rect.html "sf::Rect documentation")).
 
 ## Gestion des images et des sprites
 
-Vous devez être particulièrement prudent lorsque vous manipulez des images. Une instance de [`sf::Image`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Image.php "sf::Image documentation") est une ressource qui est lente à charger, lourde à copier et qui utilise beaucoup de mémoire.
+Vous devez être particulièrement prudent lorsque vous manipulez des images. Une instance de [`sf::Image`](../../../documentation/1.6/classsf_1_1Image.html "sf::Image documentation") est une ressource qui est lente à charger, lourde à copier et qui utilise beaucoup de mémoire.
 
-Beaucoup de gens, particulièrement les débutants, seront tentés d'utiliser simplement une instance de [`sf::Image`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Image.php "sf::Image documentation") à chaque endroit où ils auront une instance de [`sf::Sprite`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Sprite.php "sf::Sprite documentation"), car cela peut paraître le moyen le plus simple de dessiner quelque chose. Le fait est que c'est généralement une mauvaise idée. Le problème le plus évident survient lorsque l'on copie de tels objets (le simple fait de les placer dans un tableau peut générer des copies) : les sprites apparaîtront très probablement blancs. La raison est la suivante : un sprite ne fait que pointer vers une image, il n'en possède pas d'instance, ainsi lorsque l'image est copiée, le sprite doit être mis à jour afin de pointer vers la nouvelle copie de l'image. C'est très simple à gérer, vous devez juste définir correctement le constructeur par copie de telles classes possédant (ou dérivant de) un sprite et une image :
+Beaucoup de gens, particulièrement les débutants, seront tentés d'utiliser simplement une instance de [`sf::Image`](../../../documentation/1.6/classsf_1_1Image.html "sf::Image documentation") à chaque endroit où ils auront une instance de [`sf::Sprite`](../../../documentation/1.6/classsf_1_1Sprite.html "sf::Sprite documentation"), car cela peut paraître le moyen le plus simple de dessiner quelque chose. Le fait est que c'est généralement une mauvaise idée. Le problème le plus évident survient lorsque l'on copie de tels objets (le simple fait de les placer dans un tableau peut générer des copies) : les sprites apparaîtront très probablement blancs. La raison est la suivante : un sprite ne fait que pointer vers une image, il n'en possède pas d'instance, ainsi lorsque l'image est copiée, le sprite doit être mis à jour afin de pointer vers la nouvelle copie de l'image. C'est très simple à gérer, vous devez juste définir correctement le constructeur par copie de telles classes possédant (ou dérivant de) un sprite et une image :
 
 ```cpp
 class MyPicture
@@ -188,7 +188,7 @@ private :
 };
 ```
 
-Mais ceci est un cas plutôt particulier, et en général vous voudrez très probablement partager une même image pour plusieurs sprites. En fait, il ne devrait jamais exister plus d'une instance de [`sf::Image`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Image.php "sf::Image documentation") par image que vous chargez (après tout, pourquoi avoir le même tableau de pixels plusieurs fois en mémoire ?). C'est la raison pour laquelle les concepts de sprites et d'images ont été séparés dans la SFML : les images sont lourdes et coûteuses, alors que les sprites sont légers à manipuler, ils ne sont qu'une représentation visuelle particulière d'une image.
+Mais ceci est un cas plutôt particulier, et en général vous voudrez très probablement partager une même image pour plusieurs sprites. En fait, il ne devrait jamais exister plus d'une instance de [`sf::Image`](../../../documentation/1.6/classsf_1_1Image.html "sf::Image documentation") par image que vous chargez (après tout, pourquoi avoir le même tableau de pixels plusieurs fois en mémoire ?). C'est la raison pour laquelle les concepts de sprites et d'images ont été séparés dans la SFML : les images sont lourdes et coûteuses, alors que les sprites sont légers à manipuler, ils ne sont qu'une représentation visuelle particulière d'une image.
 
 Il existe de nombreuses implémentations qui peuvent s'occuper de la gestion correcte des images. Par exemple, si vous écrivez une classe dont toutes les instances vont utiliser la même image, alors vous pouvez simplement faire ceci :
 

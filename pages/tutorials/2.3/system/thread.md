@@ -20,7 +20,7 @@ If you work with compilers that support the new standard and its `<thread>` head
 
 ## Creating a thread with SFML
 
-Enough talk, let's see some code. The class that makes it possible to create threads in SFML is [`sf::Thread`](https://www.sfml-dev.org/documentation/2.3.2/classsf_1_1Thread.php "sf::Thread documentation"), and here is what it looks like in action:
+Enough talk, let's see some code. The class that makes it possible to create threads in SFML is [`sf::Thread`](../../../documentation/2.3.2/classsf_1_1Thread.html "sf::Thread documentation"), and here is what it looks like in action:
 
 ```cpp
 #include <SFML/System.hpp>
@@ -55,7 +55,7 @@ In this code, both `main` and `func` run in parallel after `thread.launch()` has
 
 ![Screenshot of the program output](thread-mixed.png)
 
-The entry point of the thread, ie. the function that will be run when the thread is started, must be passed to the constructor of [`sf::Thread`](https://www.sfml-dev.org/documentation/2.3.2/classsf_1_1Thread.php "sf::Thread documentation"). [`sf::Thread`](https://www.sfml-dev.org/documentation/2.3.2/classsf_1_1Thread.php "sf::Thread documentation") tries to be flexible and accept a wide variety of entry points: non-member or member functions, with or without arguments, functors, etc. The example above shows how to use a non-member function, here are a few other examples.
+The entry point of the thread, ie. the function that will be run when the thread is started, must be passed to the constructor of [`sf::Thread`](../../../documentation/2.3.2/classsf_1_1Thread.html "sf::Thread documentation"). [`sf::Thread`](../../../documentation/2.3.2/classsf_1_1Thread.html "sf::Thread documentation") tries to be flexible and accept a wide variety of entry points: non-member or member functions, with or without arguments, functors, etc. The example above shows how to use a non-member function, here are a few other examples.
 
 - Non-member function with one argument:
 
@@ -96,7 +96,7 @@ struct MyFunctor
 sf::Thread thread(MyFunctor());
 ```
 
-The last example, which uses functors, is the most powerful one since it can accept any type of functor and therefore makes [`sf::Thread`](https://www.sfml-dev.org/documentation/2.3.2/classsf_1_1Thread.php "sf::Thread documentation") compatible with many types of functions that are not directly supported. This feature is especially interesting with C++11 lambdas or `std::bind`.
+The last example, which uses functors, is the most powerful one since it can accept any type of functor and therefore makes [`sf::Thread`](../../../documentation/2.3.2/classsf_1_1Thread.html "sf::Thread documentation") compatible with many types of functions that are not directly supported. This feature is especially interesting with C++11 lambdas or `std::bind`.
 
 ```cpp
 // with lambdas
@@ -114,7 +114,7 @@ void func(std::string, int, double)
 sf::Thread thread(std::bind(&func, "hello", 24, 0.5));
 ```
 
-If you want to use a [`sf::Thread`](https://www.sfml-dev.org/documentation/2.3.2/classsf_1_1Thread.php "sf::Thread documentation") inside a class, don't forget that it doesn't have a default constructor. Therefore, you have to initialize it directly in the constructor's *initialization list*:
+If you want to use a [`sf::Thread`](../../../documentation/2.3.2/classsf_1_1Thread.html "sf::Thread documentation") inside a class, don't forget that it doesn't have a default constructor. Therefore, you have to initialize it directly in the constructor's *initialization list*:
 
 ```cpp
 class ClassWithThread
@@ -137,11 +137,11 @@ private:
 };
 ```
 
-If you really need to construct your [`sf::Thread`](https://www.sfml-dev.org/documentation/2.3.2/classsf_1_1Thread.php "sf::Thread documentation") instance *after* the construction of the owner object, you can also delay its construction by dynamically allocating it on the heap.
+If you really need to construct your [`sf::Thread`](../../../documentation/2.3.2/classsf_1_1Thread.html "sf::Thread documentation") instance *after* the construction of the owner object, you can also delay its construction by dynamically allocating it on the heap.
 
 ## Starting threads
 
-Once you've created a [`sf::Thread`](https://www.sfml-dev.org/documentation/2.3.2/classsf_1_1Thread.php "sf::Thread documentation") instance, you must start it with the `launch` function.
+Once you've created a [`sf::Thread`](../../../documentation/2.3.2/classsf_1_1Thread.html "sf::Thread documentation") instance, you must start it with the `launch` function.
 
 ```cpp
 sf::Thread thread(&func);
@@ -166,11 +166,11 @@ thread.launch();
 thread.wait();
 ```
 
-The `wait` function is also implicitly called by the destructor of [`sf::Thread`](https://www.sfml-dev.org/documentation/2.3.2/classsf_1_1Thread.php "sf::Thread documentation"), so that a thread cannot remain alive (and out of control) after its owner [`sf::Thread`](https://www.sfml-dev.org/documentation/2.3.2/classsf_1_1Thread.php "sf::Thread documentation") instance is destroyed. Keep this in mind when you manage your threads (see the last section of this tutorial).
+The `wait` function is also implicitly called by the destructor of [`sf::Thread`](../../../documentation/2.3.2/classsf_1_1Thread.html "sf::Thread documentation"), so that a thread cannot remain alive (and out of control) after its owner [`sf::Thread`](../../../documentation/2.3.2/classsf_1_1Thread.html "sf::Thread documentation") instance is destroyed. Keep this in mind when you manage your threads (see the last section of this tutorial).
 
 ## Pausing threads
 
-There's no function in [`sf::Thread`](https://www.sfml-dev.org/documentation/2.3.2/classsf_1_1Thread.php "sf::Thread documentation") that allows another thread to pause it, the only way to pause a thread is to do it from the code that it runs. In other words, you can only pause the current thread. To do so, you can call the `sf::sleep` function:
+There's no function in [`sf::Thread`](../../../documentation/2.3.2/classsf_1_1Thread.html "sf::Thread documentation") that allows another thread to pause it, the only way to pause a thread is to do it from the code that it runs. In other words, you can only pause the current thread. To do so, you can call the `sf::sleep` function:
 
 ```cpp
 void func()
@@ -238,7 +238,7 @@ Mutexes are not the only primitive that you can use to protect your shared varia
 
 Don't worry: mutexes are already thread-safe, there's no need to protect them. But they are not exception-safe! What happens if an exception is thrown while a mutex is locked? It never gets a chance to be unlocked and remains locked forever. All threads that try to lock it in the future will block forever, and in some cases, your whole application could freeze. Pretty bad result.
 
-To make sure that mutexes are always unlocked in an environment where exceptions can be thrown, SFML provides an RAII class to wrap them: [`sf::Lock`](https://www.sfml-dev.org/documentation/2.3.2/classsf_1_1Lock.php "sf::Lock documentation"). It locks a mutex in its constructor, and unlocks it in its destructor. Simple and efficient.
+To make sure that mutexes are always unlocked in an environment where exceptions can be thrown, SFML provides an RAII class to wrap them: [`sf::Lock`](../../../documentation/2.3.2/classsf_1_1Lock.html "sf::Lock documentation"). It locks a mutex in its constructor, and unlocks it in its destructor. Simple and efficient.
 
 ```cpp
 sf::Mutex mutex;
@@ -252,7 +252,7 @@ void func()
 } // mutex.unlock()
 ```
 
-Note that [`sf::Lock`](https://www.sfml-dev.org/documentation/2.3.2/classsf_1_1Lock.php "sf::Lock documentation") can also be useful in a function that has multiple `return` statements.
+Note that [`sf::Lock`](../../../documentation/2.3.2/classsf_1_1Lock.html "sf::Lock documentation") can also be useful in a function that has multiple `return` statements.
 
 ```cpp
 sf::Mutex mutex;
@@ -276,7 +276,7 @@ bool func()
 
 ## Common mistakes
 
-One thing that is often overlooked by programmers is that a thread cannot live without its corresponding [`sf::Thread`](https://www.sfml-dev.org/documentation/2.3.2/classsf_1_1Thread.php "sf::Thread documentation") instance.  
+One thing that is often overlooked by programmers is that a thread cannot live without its corresponding [`sf::Thread`](../../../documentation/2.3.2/classsf_1_1Thread.html "sf::Thread documentation") instance.  
 The following code is often seen on the forums:
 
 ```cpp
@@ -296,6 +296,6 @@ int main()
 
 Programers who write this kind of code expect the `startThread()` function to start a thread that will live on its own and be destroyed when the threaded function ends. This is not what happens. The threaded function appears to block the main thread, as if the thread wasn't working.
 
-What is the cause of this? The [`sf::Thread`](https://www.sfml-dev.org/documentation/2.3.2/classsf_1_1Thread.php "sf::Thread documentation") instance is local to the `startThread()` function and is therefore immediately destroyed, when the function returns. The destructor of [`sf::Thread`](https://www.sfml-dev.org/documentation/2.3.2/classsf_1_1Thread.php "sf::Thread documentation") is invoked, which calls `wait()` as we've learned above, and the result is that the main thread blocks and waits for the threaded function to be finished instead of continuing to run in parallel.
+What is the cause of this? The [`sf::Thread`](../../../documentation/2.3.2/classsf_1_1Thread.html "sf::Thread documentation") instance is local to the `startThread()` function and is therefore immediately destroyed, when the function returns. The destructor of [`sf::Thread`](../../../documentation/2.3.2/classsf_1_1Thread.html "sf::Thread documentation") is invoked, which calls `wait()` as we've learned above, and the result is that the main thread blocks and waits for the threaded function to be finished instead of continuing to run in parallel.
 
-So don't forget: You must manage your [`sf::Thread`](https://www.sfml-dev.org/documentation/2.3.2/classsf_1_1Thread.php "sf::Thread documentation") instance so that it lives as long as the threaded function is supposed to run.
+So don't forget: You must manage your [`sf::Thread`](../../../documentation/2.3.2/classsf_1_1Thread.html "sf::Thread documentation") instance so that it lives as long as the threaded function is supposed to run.

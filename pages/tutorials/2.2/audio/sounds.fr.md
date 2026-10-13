@@ -6,21 +6,21 @@
 
 ## Son ou musique
 
-SFML fournit deux classes pour jouer de l'audio : [`sf::Sound`](https://www.sfml-dev.org/documentation/2.2-fr/classsf_1_1Sound.php "sf::Sound documentation") et [`sf::Music`](https://www.sfml-dev.org/documentation/2.2-fr/classsf_1_1Music.php "sf::Music documentation"). Elles offrent toutes deux plus ou moins les mêmes fonctionnalités, la principale différence est la manière dont elles fonctionnent.
+SFML fournit deux classes pour jouer de l'audio : [`sf::Sound`](../../../documentation/2.2/classsf_1_1Sound.html "sf::Sound documentation") et [`sf::Music`](../../../documentation/2.2/classsf_1_1Music.html "sf::Music documentation"). Elles offrent toutes deux plus ou moins les mêmes fonctionnalités, la principale différence est la manière dont elles fonctionnent.
 
-[`sf::Sound`](https://www.sfml-dev.org/documentation/2.2-fr/classsf_1_1Sound.php "sf::Sound documentation") est une classe légère qui joue des données audio chargées au préalable dans un [`sf::SoundBuffer`](https://www.sfml-dev.org/documentation/2.2-fr/classsf_1_1SoundBuffer.php "sf::SoundBuffer documentation"). Il faut l'utiliser pour des sons relativement courts qui peuvent tenir sans problème en mémoire, et qui ne doivent souffrir d'aucun lag lorsqu'ils sont joués. Par exemple : des coups de feu, des bruits de pas, etc.
+[`sf::Sound`](../../../documentation/2.2/classsf_1_1Sound.html "sf::Sound documentation") est une classe légère qui joue des données audio chargées au préalable dans un [`sf::SoundBuffer`](../../../documentation/2.2/classsf_1_1SoundBuffer.html "sf::SoundBuffer documentation"). Il faut l'utiliser pour des sons relativement courts qui peuvent tenir sans problème en mémoire, et qui ne doivent souffrir d'aucun lag lorsqu'ils sont joués. Par exemple : des coups de feu, des bruits de pas, etc.
 
-[`sf::Music`](https://www.sfml-dev.org/documentation/2.2-fr/classsf_1_1Music.php "sf::Music documentation") ne charge pas toutes les données audio en mémoire, à la place elle les lit en flux (elle les "*stream*") à la volée directement à partir du fichier d'origine. Cette classe est utilisée typiquement pour jouer des musiques compressées qui durent plusieurs minutes, et qui prendraient plusieurs secondes à charger et consommeraient des centaines de Mo en mémoire si elles étaient intégralement pré-chargées.
+[`sf::Music`](../../../documentation/2.2/classsf_1_1Music.html "sf::Music documentation") ne charge pas toutes les données audio en mémoire, à la place elle les lit en flux (elle les "*stream*") à la volée directement à partir du fichier d'origine. Cette classe est utilisée typiquement pour jouer des musiques compressées qui durent plusieurs minutes, et qui prendraient plusieurs secondes à charger et consommeraient des centaines de Mo en mémoire si elles étaient intégralement pré-chargées.
 
 ## Charger et jouer un son
 
-Comme vous l'avez vu ci-dessus, les données du son ne sont pas stockées directement dans [`sf::Sound`](https://www.sfml-dev.org/documentation/2.2-fr/classsf_1_1Sound.php "sf::Sound documentation") mais dans une classe à part nommée [`sf::SoundBuffer`](https://www.sfml-dev.org/documentation/2.2-fr/classsf_1_1SoundBuffer.php "sf::SoundBuffer documentation"). Cette classe encapsule les données audio, qui ne sont ni plus ni moins qu'un tableau d'entiers 16 bits (ceux-ci étant appelés "échantillons audio"). Un échantillon représente, en gros, l'amplitude du signal audio à un instant donné, et un tableau d'échantillons représente donc un son complet.
+Comme vous l'avez vu ci-dessus, les données du son ne sont pas stockées directement dans [`sf::Sound`](../../../documentation/2.2/classsf_1_1Sound.html "sf::Sound documentation") mais dans une classe à part nommée [`sf::SoundBuffer`](../../../documentation/2.2/classsf_1_1SoundBuffer.html "sf::SoundBuffer documentation"). Cette classe encapsule les données audio, qui ne sont ni plus ni moins qu'un tableau d'entiers 16 bits (ceux-ci étant appelés "échantillons audio"). Un échantillon représente, en gros, l'amplitude du signal audio à un instant donné, et un tableau d'échantillons représente donc un son complet.
 
 !!! warning
 
-    En fait, les classes [`sf::Sound`](https://www.sfml-dev.org/documentation/2.2-fr/classsf_1_1Sound.php "sf::Sound documentation")/[`sf::SoundBuffer`](https://www.sfml-dev.org/documentation/2.2-fr/classsf_1_1SoundBuffer.php "sf::SoundBuffer documentation") fonctionnent exactement de la même manière que le couple [`sf::Sprite`](https://www.sfml-dev.org/documentation/2.2-fr/classsf_1_1Sprite.php "sf::Sprite documentation")/[`sf::Texture`](https://www.sfml-dev.org/documentation/2.2-fr/classsf_1_1Texture.php "sf::Texture documentation") du module graphique. Donc si vous comprenez comment les sprites et les textures travaillent main dans la main, vous pouvez appliquer le même concept aux sons et aux buffers.
+    En fait, les classes [`sf::Sound`](../../../documentation/2.2/classsf_1_1Sound.html "sf::Sound documentation")/[`sf::SoundBuffer`](../../../documentation/2.2/classsf_1_1SoundBuffer.html "sf::SoundBuffer documentation") fonctionnent exactement de la même manière que le couple [`sf::Sprite`](../../../documentation/2.2/classsf_1_1Sprite.html "sf::Sprite documentation")/[`sf::Texture`](../../../documentation/2.2/classsf_1_1Texture.html "sf::Texture documentation") du module graphique. Donc si vous comprenez comment les sprites et les textures travaillent main dans la main, vous pouvez appliquer le même concept aux sons et aux buffers.
 
-Vous pouvez charger un [`sf::SoundBuffer`](https://www.sfml-dev.org/documentation/2.2-fr/classsf_1_1SoundBuffer.php "sf::SoundBuffer documentation") depuis un fichier avec sa fonction `loadFromFile` :
+Vous pouvez charger un [`sf::SoundBuffer`](../../../documentation/2.2/classsf_1_1SoundBuffer.html "sf::SoundBuffer documentation") depuis un fichier avec sa fonction `loadFromFile` :
 
 ```cpp
 #include <SFML/Audio.hpp>
@@ -50,7 +50,7 @@ buffer.loadFromSamples(&samples[0], samples.size(), 2, 44100);
 
 Etant donné que `loadFromSamples` charge un tableau d'échantillons bruts plutôt qu'un fichier audio, il faut lui passer quelques paramètres supplémentaires afin que la description du son soit complète. Le premier (troisième paramètre de la fonction) est le nombre de canaux : 1 canal définit un son mono, 2 canaux définissent un son stéréo, etc. Le second paramètre additionnel (quatrième de la fonction) est le taux d'échantillonnage; il définit combien d'échantillons doivent être joués par seconde afin de restituer le son d'origine.
 
-Maintenant que les données audio sont chargées en mémoire, il ne reste plus qu'à les jouer avec une instance de [`sf::Sound`](https://www.sfml-dev.org/documentation/2.2-fr/classsf_1_1Sound.php "sf::Sound documentation").
+Maintenant que les données audio sont chargées en mémoire, il ne reste plus qu'à les jouer avec une instance de [`sf::Sound`](../../../documentation/2.2/classsf_1_1Sound.html "sf::Sound documentation").
 
 ```cpp
 sf::SoundBuffer buffer;
@@ -69,7 +69,7 @@ Le truc cool, c'est que vous pouvez affecter le même buffer à plusieurs sons s
 
 ## Jouer une musique
 
-Contrairement à [`sf::Sound`](https://www.sfml-dev.org/documentation/2.2-fr/classsf_1_1Sound.php "sf::Sound documentation"), [`sf::Music`](https://www.sfml-dev.org/documentation/2.2-fr/classsf_1_1Music.php "sf::Music documentation") ne précharge pas les données audio, elle les lit à la demande directement depuis la source. L'initialisation d'une musique est donc plus directe :
+Contrairement à [`sf::Sound`](../../../documentation/2.2/classsf_1_1Sound.html "sf::Sound documentation"), [`sf::Music`](../../../documentation/2.2/classsf_1_1Music.html "sf::Music documentation") ne précharge pas les données audio, elle les lit à la demande directement depuis la source. L'initialisation d'une musique est donc plus directe :
 
 ```cpp
 sf::Music music;
@@ -79,7 +79,7 @@ music.play();
 ```
 
 Il est important de noter que, contrairement aux autres classes de ressource de SFML, la fonction de chargement est nommée `openFromFile` et non `loadFromFile`. C'est parce que la musique n'est pas réellement chargée, tout ce que fait cette fonction c'est ouvrir le fichier. Les données ne sont lues que plus tard, lorsque la musique est jouée. Cela aide aussi à garder en tête que le fichier audio doit rester disponible aussi longtemps qu'il est joué.  
-Les autres fonctions de chargement de [`sf::Music`](https://www.sfml-dev.org/documentation/2.2-fr/classsf_1_1Music.php "sf::Music documentation") suivent la même convention : `openFromMemory`, `openFromStream`.
+Les autres fonctions de chargement de [`sf::Music`](../../../documentation/2.2/classsf_1_1Music.html "sf::Music documentation") suivent la même convention : `openFromMemory`, `openFromStream`.
 
 ## Et ensuite ?
 
@@ -157,7 +157,7 @@ Souvenez-vous qu'un son ne garde qu'un *pointeur* vers le buffer que vous lui af
 
 ### Trop de sons
 
-Une autre source d'erreur est d'essayer de créer un nombre important de sons. SFML possède une limite interne ; celle-ci peut varier en fonction de l'OS, mais vous ne devriez jamais aller au-delà de 256. Cette limite est le nombre d'instances de [`sf::Sound`](https://www.sfml-dev.org/documentation/2.2-fr/classsf_1_1Sound.php "sf::Sound documentation") et [`sf::Music`](https://www.sfml-dev.org/documentation/2.2-fr/classsf_1_1Music.php "sf::Music documentation") qui peuvent exister simultanément. Une bonne façon de ne jamais la dépasser est de détruire (ou de recycler) les sons inutilisés, plutôt que de les garder en vie pour rien. Ce paragraphe n'a d'importance que si vous devez vraiment gérer un nombre important de sons et de musiques, bien entendu.
+Une autre source d'erreur est d'essayer de créer un nombre important de sons. SFML possède une limite interne ; celle-ci peut varier en fonction de l'OS, mais vous ne devriez jamais aller au-delà de 256. Cette limite est le nombre d'instances de [`sf::Sound`](../../../documentation/2.2/classsf_1_1Sound.html "sf::Sound documentation") et [`sf::Music`](../../../documentation/2.2/classsf_1_1Music.html "sf::Music documentation") qui peuvent exister simultanément. Une bonne façon de ne jamais la dépasser est de détruire (ou de recycler) les sons inutilisés, plutôt que de les garder en vie pour rien. Ce paragraphe n'a d'importance que si vous devez vraiment gérer un nombre important de sons et de musiques, bien entendu.
 
 ### Source d'une musique détruite avant qu'elle ne soit finie
 
@@ -180,7 +180,7 @@ fileData.clear();
 
 ### sf::Music n'est pas copiable
 
-Et pour terminer, un petit rappel : la classe [`sf::Music`](https://www.sfml-dev.org/documentation/2.2-fr/classsf_1_1Music.php "sf::Music documentation") n'est *pas copiable*, donc le compilateur ne vous laissera pas faire ceci :
+Et pour terminer, un petit rappel : la classe [`sf::Music`](../../../documentation/2.2/classsf_1_1Music.html "sf::Music documentation") n'est *pas copiable*, donc le compilateur ne vous laissera pas faire ceci :
 
 ```cpp
 sf::Music music;

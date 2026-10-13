@@ -10,7 +10,7 @@ Le temps n'est habituellement pas un gros sujet en soi, mais dans une applicatio
 
 ## Mesurer le temps
 
-Dans la SFML, vous mesurez le temps avec la classe [`sf::Clock`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Clock.php "sf::Clock documentation"). Elle définit deux fonctions : `Reset()`, pour remettre à zéro l'horloge, et `GetElapsedTime()`, pour récupérer le temps écoulé depuis le dernier appel à `Reset()`. Le temps est défini en secondes, comme toutes les durées que vous trouverez dans la SFML.  
+Dans la SFML, vous mesurez le temps avec la classe [`sf::Clock`](../../../documentation/1.6/classsf_1_1Clock.html "sf::Clock documentation"). Elle définit deux fonctions : `Reset()`, pour remettre à zéro l'horloge, et `GetElapsedTime()`, pour récupérer le temps écoulé depuis le dernier appel à `Reset()`. Le temps est défini en secondes, comme toutes les durées que vous trouverez dans la SFML.  
 Comme vous le voyez, cette classe est loin d'être compliquée.
 
 ```cpp
@@ -65,7 +65,7 @@ while (App.IsOpened())
 }
 ```
 
-La plupart du temps, vous aurez à mesurer le temps écoulé depuis le dernier rafraîchissement. La classe [`sf::Window`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Window.php "sf::Window documentation") fournit une fonction utile pour récupérer ce temps sans avoir à gérer une horloge : `GetFrameTime()`. Ainsi nous pourrions ré-écrire notre code de la manière suivante :
+La plupart du temps, vous aurez à mesurer le temps écoulé depuis le dernier rafraîchissement. La classe [`sf::Window`](../../../documentation/1.6/classsf_1_1Window.html "sf::Window documentation") fournit une fonction utile pour récupérer ce temps sans avoir à gérer une horloge : `GetFrameTime()`. Ainsi nous pourrions ré-écrire notre code de la manière suivante :
 
 ```cpp
 const float Speed = 50.f;

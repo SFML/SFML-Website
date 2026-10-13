@@ -8,7 +8,7 @@
 
 You may ask, "what's the difference between a music and a sound ?". Well, a music is just a longer sound. But it makes a big difference in audio programming. The same difference that requires MP3 or OGG compression for your musics. As we've learnt in the previous tutorial, uncompressed sound data is made of samples, which are (in SFML) 16-bit signed integers. Take the standard sampling rate for CD quality (44100 samples per second), two channels, and you end up with 50 Mb in memory for no more than 5 minutes of music.
 
-As a consequence, musics cannot be loaded in memory like sounds. That's why musics have their own class in SFML : [`sf::Music`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Music.php "sf::Music documentation").
+As a consequence, musics cannot be loaded in memory like sounds. That's why musics have their own class in SFML : [`sf::Music`](../../../documentation/1.6/classsf_1_1Music.html "sf::Music documentation").
 
 ## Using sf::Music
 
@@ -42,7 +42,7 @@ Don't forget to always check the returned value, which is `false` if the music c
 
 The call to `OpenFromFile` or `OpenFromMemory` actually doesn't start the music, only a call to `Play` does.
 
-[`sf::Music`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Music.php "sf::Music documentation") differs from [`sf::Sound`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Sound.php "sf::Sound documentation") in its behavior, but it still represents a sound. So it defines the same accessors as both [`sf::Sound`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Sound.php "sf::Sound documentation") and [`sf::SoundBuffer`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1SoundBuffer.php "sf::SoundBuffer documentation") :
+[`sf::Music`](../../../documentation/1.6/classsf_1_1Music.html "sf::Music documentation") differs from [`sf::Sound`](../../../documentation/1.6/classsf_1_1Sound.html "sf::Sound documentation") in its behavior, but it still represents a sound. So it defines the same accessors as both [`sf::Sound`](../../../documentation/1.6/classsf_1_1Sound.html "sf::Sound documentation") and [`sf::SoundBuffer`](../../../documentation/1.6/classsf_1_1SoundBuffer.html "sf::SoundBuffer documentation") :
 
 ```cpp
 unsigned int      SampleRate    = Music.GetSampleRate();
@@ -55,7 +55,7 @@ float             Duration      = Music.GetDuration();
 float             Offset        = Music.GetPlayingOffset();
 ```
 
-Only the samples array cannot be accessed, because it is never loaded completely in memory (but you can still load it with a [`sf::SoundBuffer`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1SoundBuffer.php "sf::SoundBuffer documentation") if you really need it).
+Only the samples array cannot be accessed, because it is never loaded completely in memory (but you can still load it with a [`sf::SoundBuffer`](../../../documentation/1.6/classsf_1_1SoundBuffer.html "sf::SoundBuffer documentation") if you really need it).
 
 Finally, you can still play / pause / stop a music :
 
@@ -67,6 +67,6 @@ Music.Stop();
 
 ## Conclusion
 
-[`sf::Music`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Music.php "sf::Music documentation") doesn't differ much from [`sf::Sound`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Sound.php "sf::Sound documentation"). The key here is to make a difference between short punctual sounds (like footsteps or gun shots) and longer ones (background musics), and use the appropriate class in each case.
+[`sf::Music`](../../../documentation/1.6/classsf_1_1Music.html "sf::Music documentation") doesn't differ much from [`sf::Sound`](../../../documentation/1.6/classsf_1_1Sound.html "sf::Sound documentation"). The key here is to make a difference between short punctual sounds (like footsteps or gun shots) and longer ones (background musics), and use the appropriate class in each case.
 
-In the next tutorial, we'll learn how to [use audio streams](streams.md "Aller au tutoriel suivant") to play audio data from the network, from big files (this is actually what [`sf::Music`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Music.php "sf::Music documentation") does), or any source that cannot be loaded completely in memory.
+In the next tutorial, we'll learn how to [use audio streams](streams.md "Aller au tutoriel suivant") to play audio data from the network, from big files (this is actually what [`sf::Music`](../../../documentation/1.6/classsf_1_1Music.html "sf::Music documentation") does), or any source that cannot be loaded completely in memory.

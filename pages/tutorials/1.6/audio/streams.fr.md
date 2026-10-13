@@ -8,15 +8,15 @@
 
 Parfois, il arrive que les données audio ne puissent pas être chargées intégralement en mémoire. Par exemple, un son peut être transmis par le réseau, ou lu à la volée à partir d'un fichier volumineux. Dans de tels cas, vous devez être capables de jouer le son tout en le chargeant au fur et à mesure, et toujours donner l'illusion que vous le jouez en un bloc. C'est ce que l'on appelle la lecture en flux, ou lecture en continu (*streaming*).
 
-La SFML fournit une classe de base pour implémenter la lecture en continu à partir de sources quelconques : [`sf::SoundStream`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1SoundStream.php "sf::SoundStream documentation"). Celle-ci gère tout, la seule tâche qu'il vous reste à effectuer est de fournir de nouvelles données audio lorsqu'elle en a besoin.
+La SFML fournit une classe de base pour implémenter la lecture en continu à partir de sources quelconques : [`sf::SoundStream`](../../../documentation/1.6/classsf_1_1SoundStream.html "sf::SoundStream documentation"). Celle-ci gère tout, la seule tâche qu'il vous reste à effectuer est de fournir de nouvelles données audio lorsqu'elle en a besoin.
 
 ## Utilisation de base
 
-[`sf::SoundStream`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1SoundStream.php "sf::SoundStream documentation"), tout comme [`sf::Sound`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Sound.php "sf::Sound documentation") et [`sf::Music`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Music.php "sf::Music documentation"), est toujours un son ; ainsi elle définit les accesseurs habituels pour le volume, le pitch, le taux d'échantillonnage, etc. Elle définit également les trois fonctions de contrôle : jouer (`Play`), mettre en pause (`Pause`) et stopper (`Stop`). Il y a par contre quelques fonctionnalités qu'un flux ne peut fournir par rapport à un son ou une musique : il ne peut pas vous donner la durée totale (qui n'est connue que lorsque le son a été entièrement joué), il ne peut pas boucler tout seul, et ne peut pas vous donner la position de lecture courante. Par contre, si votre source le permet, rien ne vous empêche d'ajouter ces fonctionnalités manquantes dans votre spécialisation de [`sf::SoundStream`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1SoundStream.php "sf::SoundStream documentation").
+[`sf::SoundStream`](../../../documentation/1.6/classsf_1_1SoundStream.html "sf::SoundStream documentation"), tout comme [`sf::Sound`](../../../documentation/1.6/classsf_1_1Sound.html "sf::Sound documentation") et [`sf::Music`](../../../documentation/1.6/classsf_1_1Music.html "sf::Music documentation"), est toujours un son ; ainsi elle définit les accesseurs habituels pour le volume, le pitch, le taux d'échantillonnage, etc. Elle définit également les trois fonctions de contrôle : jouer (`Play`), mettre en pause (`Pause`) et stopper (`Stop`). Il y a par contre quelques fonctionnalités qu'un flux ne peut fournir par rapport à un son ou une musique : il ne peut pas vous donner la durée totale (qui n'est connue que lorsque le son a été entièrement joué), il ne peut pas boucler tout seul, et ne peut pas vous donner la position de lecture courante. Par contre, si votre source le permet, rien ne vous empêche d'ajouter ces fonctionnalités manquantes dans votre spécialisation de [`sf::SoundStream`](../../../documentation/1.6/classsf_1_1SoundStream.html "sf::SoundStream documentation").
 
 ## Définir un flux personnalisé
 
-[`sf::SoundStream`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1SoundStream.php "sf::SoundStream documentation") est conçue pour être utilisée en tant que classe de base abstraite. Ainsi, pour créer vos propres flux, vous devez tout d'abord créer une classe dérivée :
+[`sf::SoundStream`](../../../documentation/1.6/classsf_1_1SoundStream.html "sf::SoundStream documentation") est conçue pour être utilisée en tant que classe de base abstraite. Ainsi, pour créer vos propres flux, vous devez tout d'abord créer une classe dérivée :
 
 ```cpp
 class MyCustomStream : public sf::SoundStream
@@ -75,7 +75,7 @@ public :
 
 A partir du moment où la fonction `Initialize` a été appelée, le flux est prêt à être lu.
 
-Voici un exemple qui illustre l'utilisation de [`sf::SoundStream`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1SoundStream.php "sf::SoundStream documentation") : une classe personnalisée qui effectue une lecture en continu depuis un tampon sonore chargé à partir d'un fichier. Oui, c'est complétement inutile, mais cela vous donnera une vue plus claire de la classe [`sf::SoundStream`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1SoundStream.php "sf::SoundStream documentation").
+Voici un exemple qui illustre l'utilisation de [`sf::SoundStream`](../../../documentation/1.6/classsf_1_1SoundStream.html "sf::SoundStream documentation") : une classe personnalisée qui effectue une lecture en continu depuis un tampon sonore chargé à partir d'un fichier. Oui, c'est complétement inutile, mais cela vous donnera une vue plus claire de la classe [`sf::SoundStream`](../../../documentation/1.6/classsf_1_1SoundStream.html "sf::SoundStream documentation").
 
 ```cpp
 class MyCustomStream : public sf::SoundStream
@@ -167,6 +167,6 @@ Pour en savoir plus à propos des threads et des mutexs, vous pouvez jeter un oe
 
 ## Conclusion
 
-[`sf::SoundStream`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1SoundStream.php "sf::SoundStream documentation") fournit une interface simple pour réaliser des lectures en continu à partir de n'importe quelles sources. Gardez toujours en tête qu'un flux tournera dans un nouveau thread, et préoccupez-vous des problèmes de synchronisation.
+[`sf::SoundStream`](../../../documentation/1.6/classsf_1_1SoundStream.html "sf::SoundStream documentation") fournit une interface simple pour réaliser des lectures en continu à partir de n'importe quelles sources. Gardez toujours en tête qu'un flux tournera dans un nouveau thread, et préoccupez-vous des problèmes de synchronisation.
 
 Le prochain tutoriel vous montrera comment [réaliser des captures audio](capture.md "Aller au tutoriel suivant").

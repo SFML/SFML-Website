@@ -35,7 +35,7 @@ Once you have downloaded and extracted the files to your hard drive, you have to
 
 ## Compiling your first SFML program
 
-Create a new "Win32 console application" project, and write a SFML program. For example, you can try the [`sf::Clock`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Clock.php "sf::Clock documentation") class of the System package :
+Create a new "Win32 console application" project, and write a SFML program. For example, you can try the [`sf::Clock`](../../../documentation/1.6/classsf_1_1Clock.html "sf::Clock documentation") class of the System package :
 
 ```cpp
 #include <SFML/System.hpp>

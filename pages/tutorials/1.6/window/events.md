@@ -15,7 +15,7 @@ Basically, there are two ways of receiving events in a windowing system :
 - You can ask the window for waiting events at each loop ; this is called "polling"
 - You can give to the window a pointer to a function and then wait for the window to call it when it receives an event ; this is called, hum... "using callback functions"
 
-SFML uses a polling system for getting events. That is, you must ask events to the window at each loop. The function to use is `GetEvent`, which fills an instance of [`sf::Event`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Event.php "sf::Event documentation") and returns `true` if there was an event waiting, or returns `false` if events stack was empty.
+SFML uses a polling system for getting events. That is, you must ask events to the window at each loop. The function to use is `GetEvent`, which fills an instance of [`sf::Event`](../../../documentation/1.6/classsf_1_1Event.html "sf::Event documentation") and returns `true` if there was an event waiting, or returns `false` if events stack was empty.
 
 ```cpp
 // Remember that App is an instance of sf::Window
@@ -56,7 +56,7 @@ while (Running)
 
 ## Processing events
 
-The first thing to do when you get an event is to check its type, in its `Type` member. SFML defines the following types of events, all in the scope of the [`sf::Event`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Event.php "sf::Event documentation") structure :
+The first thing to do when you get an event is to check its type, in its `Type` member. SFML defines the following types of events, all in the scope of the [`sf::Event`](../../../documentation/1.6/classsf_1_1Event.html "sf::Event documentation") structure :
 
 - `Closed`
 - `Resized`
@@ -128,7 +128,7 @@ while (App.GetEvent(Event))
 
 ## Closing a window
 
-If you have played around a bit with SFML windows, you have probably noticed that clicking the close box will generate a `Closed` event, but won't destroy the window. This is to allow users to add custom code before doing it (asking for save, etc.), or cancel it. To actually close a window, you must either destroy the [`sf::Window`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Window.php "sf::Window documentation") instance or call its `Close()` function.  
+If you have played around a bit with SFML windows, you have probably noticed that clicking the close box will generate a `Closed` event, but won't destroy the window. This is to allow users to add custom code before doing it (asking for save, etc.), or cancel it. To actually close a window, you must either destroy the [`sf::Window`](../../../documentation/1.6/classsf_1_1Window.html "sf::Window documentation") instance or call its `Close()` function.  
 To know if a window is opened (ie. has been created), you can call the `IsOpened()` function.
 
 Now, our main loop can look much better :
@@ -154,15 +154,15 @@ while (App.IsOpened())
 
 This event system is good enough for reacting to events like window closing, or a single key press. But if you want to handle, for example, the continous motion of a character when you press an arrow key, then you will soon see that there is a problem : there will be a delay between each movement, the delay defined by the operating system when you keep on pressing a key.
 
-A better strategy for this is to set a boolean variable to `true` when the key is pressed, and clear it when the key is released. Then at each loop, if the boolean is set, you move your character. However it can become annoying to use extra variables for this, especially when you have a lot of them. That's why SFML provides easy access to real-time input, with the [`sf::Input`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Input.php "sf::Input documentation") class.
+A better strategy for this is to set a boolean variable to `true` when the key is pressed, and clear it when the key is released. Then at each loop, if the boolean is set, you move your character. However it can become annoying to use extra variables for this, especially when you have a lot of them. That's why SFML provides easy access to real-time input, with the [`sf::Input`](../../../documentation/1.6/classsf_1_1Input.html "sf::Input documentation") class.
 
-[`sf::Input`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Input.php "sf::Input documentation") instances cannot live by themselves, they must be attached to a window. In fact, each [`sf::Window`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Window.php "sf::Window documentation") manages its own [`sf::Input`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Input.php "sf::Input documentation") instance, and you just have to get it when you want. Getting a reference to the input associated to a window is done by the function `GetInput` :
+[`sf::Input`](../../../documentation/1.6/classsf_1_1Input.html "sf::Input documentation") instances cannot live by themselves, they must be attached to a window. In fact, each [`sf::Window`](../../../documentation/1.6/classsf_1_1Window.html "sf::Window documentation") manages its own [`sf::Input`](../../../documentation/1.6/classsf_1_1Input.html "sf::Input documentation") instance, and you just have to get it when you want. Getting a reference to the input associated to a window is done by the function `GetInput` :
 
 ```cpp
 const sf::Input& Input = App.GetInput();
 ```
 
-Then, you can use the [`sf::Input`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Input.php "sf::Input documentation") instance to get mouse, keyboard and joysticks state at any time :
+Then, you can use the [`sf::Input`](../../../documentation/1.6/classsf_1_1Input.html "sf::Input documentation") instance to get mouse, keyboard and joysticks state at any time :
 
 ```cpp
 bool         LeftKeyDown     = Input.IsKeyDown(sf::Key::Left);

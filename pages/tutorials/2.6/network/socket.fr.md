@@ -31,7 +31,7 @@ Oh, et une dernière chose : puisqu'UDP n'est pas connecté, il permet de diffus
 
 Comme vous pouvez le deviner, cette partie concerne uniquement les sockets TCP. Il y a deux facettes à une connexion : d'un côté, celui qui attend la connexion entrante (appelons-le le serveur), et de l'autre, celui qui initie la connexion (appelons-le le client).
 
-Côté client, les choses sont relativement simples : l'utilisateur doit just avoir un [`sf::TcpSocket`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1TcpSocket.php "sf::TcpSocket documentation") et appeler sa fonction `connect` afin de déclencher la connexion.
+Côté client, les choses sont relativement simples : l'utilisateur doit just avoir un [`sf::TcpSocket`](../../../documentation/2.6.2/classsf_1_1TcpSocket.html "sf::TcpSocket documentation") et appeler sa fonction `connect` afin de déclencher la connexion.
 
 ```cpp
 #include <SFML/Network.hpp>
@@ -44,7 +44,7 @@ if (status != sf::Socket::Done)
 }
 ```
 
-Le premier paramètre est l'adresse de l'hôte auquel se connecter. C'est un paramètre de type [`sf::IpAddress`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1IpAddress.php "sf::IpAddress documentation"), qui peut représenter tout type d'adresse : une URL, une adresse IP, ou un nom d'hôte réseau. Vous pouvez jeter un oeil à la documentation pour plus de détails concernant cette classe.
+Le premier paramètre est l'adresse de l'hôte auquel se connecter. C'est un paramètre de type [`sf::IpAddress`](../../../documentation/2.6.2/classsf_1_1IpAddress.html "sf::IpAddress documentation"), qui peut représenter tout type d'adresse : une URL, une adresse IP, ou un nom d'hôte réseau. Vous pouvez jeter un oeil à la documentation pour plus de détails concernant cette classe.
 
 Le deuxième paramètre est le port auquel se connecter sur la machine distante. La connection ne pourra fonctionner que si le serveur est en train d'attendre une connexion sur ce port.
 
@@ -59,7 +59,7 @@ Une fois connecté, vous pouvez récupérer l'adresse et le port de la machine d
 
 Côté serveur, il y a un peu plus de choses à faire. Plusieurs sockets sont nécessaires : une qui écoute les connections entrantes, puis une pour chaque client connecté.
 
-Pour écouter les connexions, vous devez utiliser la classe spéciale [`sf::TcpListener`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1TcpListener.php "sf::TcpListener documentation"). Son unique but est d'attendre des connexions sur un port donné, elle ne peut pas envoyer ou recevoir de données.
+Pour écouter les connexions, vous devez utiliser la classe spéciale [`sf::TcpListener`](../../../documentation/2.6.2/classsf_1_1TcpListener.html "sf::TcpListener documentation"). Son unique but est d'attendre des connexions sur un port donné, elle ne peut pas envoyer ou recevoir de données.
 
 ```cpp
 sf::TcpListener listener;
@@ -105,7 +105,7 @@ Les sockets UDP qui envoient des données n'ont rien besoin de faire de particul
 
 ## Envoyer et recevoir des données
 
-L'envoi et la réception de données est similaire pour les deux types de sockets. La seule différence est que UDP aura deux paramètres supplémentaires : l'adresse et le port de l'expéditeur / du destinataire. Il existe deux functions distinctes pour chacune de ces opérations : la fonction "bas-niveau", qui envoient/reçoivent un tableau brut d'octets, et la fonction plus haut-niveau, qui utilise la classe [`sf::Packet`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Packet.php "sf::Packet documentation"). Vous pouvez aller jeter un oeil au [tutoriel sur les paquets](packet.md "Tutoriel sur les paquets") pour plus de détails concernant cette classe ; ici nous ne détaillerons donc que les fonctions bas-niveau.
+L'envoi et la réception de données est similaire pour les deux types de sockets. La seule différence est que UDP aura deux paramètres supplémentaires : l'adresse et le port de l'expéditeur / du destinataire. Il existe deux functions distinctes pour chacune de ces opérations : la fonction "bas-niveau", qui envoient/reçoivent un tableau brut d'octets, et la fonction plus haut-niveau, qui utilise la classe [`sf::Packet`](../../../documentation/2.6.2/classsf_1_1Packet.html "sf::Packet documentation"). Vous pouvez aller jeter un oeil au [tutoriel sur les paquets](packet.md "Tutoriel sur les paquets") pour plus de détails concernant cette classe ; ici nous ne détaillerons donc que les fonctions bas-niveau.
 
 Pour envoyer des données, vous devez appeler la fonction `send` avec un pointeur sur les données, et le nombre d'octets à envoyer.
 
@@ -165,9 +165,9 @@ Ces fonctions sont assez bas niveau, et vous ne devriez les utiliser que si vous
 
 ## Bloquer sur un groupe de sockets
 
-Bloquer sur chaque socket peut rapidement devenir un problème, car à terme, vous aurez très certainement à gérer plus d'un client à la fois. Et vous ne voulez pas que la socket A bloque votre programme alors que la socket B vient de recevoir des données qui pourraient être traitées. Ce que vous aimeriez, c'est bloquer sur tout un groupe de sockets en même temps, c'est-à-dire attendre jusqu'à ce que *n'importe laquelle d'entre elles* ait reçu quelque chose. Ceci est possible avec les sélecteurs, représentés par la classe [`sf::SocketSelector`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1SocketSelector.php "sf::SocketSelector documentation").
+Bloquer sur chaque socket peut rapidement devenir un problème, car à terme, vous aurez très certainement à gérer plus d'un client à la fois. Et vous ne voulez pas que la socket A bloque votre programme alors que la socket B vient de recevoir des données qui pourraient être traitées. Ce que vous aimeriez, c'est bloquer sur tout un groupe de sockets en même temps, c'est-à-dire attendre jusqu'à ce que *n'importe laquelle d'entre elles* ait reçu quelque chose. Ceci est possible avec les sélecteurs, représentés par la classe [`sf::SocketSelector`](../../../documentation/2.6.2/classsf_1_1SocketSelector.html "sf::SocketSelector documentation").
 
-Un sélecteur peut surveiller tout type de socket : [`sf::TcpSocket`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1TcpSocket.php "sf::TcpSocket documentation"), [`sf::UdpSocket`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1UdpSocket.php "sf::UdpSocket documentation"), et [`sf::TcpListener`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1TcpListener.php "sf::TcpListener documentation"). Pour ajouter une socket à un sélecteur, utilisez sa fonction `add` :
+Un sélecteur peut surveiller tout type de socket : [`sf::TcpSocket`](../../../documentation/2.6.2/classsf_1_1TcpSocket.html "sf::TcpSocket documentation"), [`sf::UdpSocket`](../../../documentation/2.6.2/classsf_1_1UdpSocket.html "sf::UdpSocket documentation"), et [`sf::TcpListener`](../../../documentation/2.6.2/classsf_1_1TcpListener.html "sf::TcpListener documentation"). Pour ajouter une socket à un sélecteur, utilisez sa fonction `add` :
 
 ```cpp
 sf::TcpSocket socket;
@@ -193,7 +193,7 @@ else
 }
 ```
 
-Si la fonction `wait` renvoie `true`, cela signifie qu'une ou plusieurs socket(s) ont reçu quelque chose, et que vous pouvez appeler `receive` sur ces sockets : vous êtes assuré qu'elles ne bloqueront pas. Si la socket est un [`sf::TcpListener`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1TcpListener.php "sf::TcpListener documentation"), cela signifie qu'une connexion entrante est en attente, et que vous pouvez appeler sa fonction `accept`.
+Si la fonction `wait` renvoie `true`, cela signifie qu'une ou plusieurs socket(s) ont reçu quelque chose, et que vous pouvez appeler `receive` sur ces sockets : vous êtes assuré qu'elles ne bloqueront pas. Si la socket est un [`sf::TcpListener`](../../../documentation/2.6.2/classsf_1_1TcpListener.html "sf::TcpListener documentation"), cela signifie qu'une connexion entrante est en attente, et que vous pouvez appeler sa fonction `accept`.
 
 Etant donné que le sélecteur n'est pas un conteneur de sockets, il ne peut pas directement vous retourner les sockets qui sont prêtes à recevoir. Au lieu de cela, vous devez tester les candidates une par une avec la fonction `isReady` :
 
@@ -211,7 +211,7 @@ if (selector.wait(sf::seconds(10.f)))
 }
 ```
 
-Vous pouvez jeter un oeil à la documentation de l'API de la classe [`sf::SocketSelector`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1SocketSelector.php "sf::SocketSelector documentation") si vous voulez un exemple complet et fonctionnel de l'utilisation d'un sélecteur pour gérer les connections et messages de plusieurs clients.
+Vous pouvez jeter un oeil à la documentation de l'API de la classe [`sf::SocketSelector`](../../../documentation/2.6.2/classsf_1_1SocketSelector.html "sf::SocketSelector documentation") si vous voulez un exemple complet et fonctionnel de l'utilisation d'un sélecteur pour gérer les connections et messages de plusieurs clients.
 
 Petit bonus : le fait que `Selector::wait` sache gérer un timeout permet d'écrire très facilement une fonction de réception avec timeout, chose qui n'est pas directement disponible dans les classes de sockets.
 

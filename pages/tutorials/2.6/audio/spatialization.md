@@ -23,7 +23,7 @@ How can this be achieved?
 
 All the sounds and music in your audio environment will be heard by a single actor: the *listener*. What is output from your speakers is determined by what the listener hears.
 
-The class which defines the listener's properties is [`sf::Listener`](https://www.sfml-dev.org/documentation/2.6.2/classsf_1_1Listener.php "sf::Listener documentation"). Since the listener is unique in the environment, this class only contains static functions and is not meant to be instantiated.
+The class which defines the listener's properties is [`sf::Listener`](../../../documentation/2.6.2/classsf_1_1Listener.html "sf::Listener documentation"). Since the listener is unique in the environment, this class only contains static functions and is not meant to be instantiated.
 
 First, you can set the listener's position in the scene:
 

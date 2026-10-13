@@ -10,7 +10,7 @@ The best way to integrate some SFML graphics to a wxWidgets interface is to crea
 
 ## Creating a custom control
 
-Let's have a look at what we need to define a wx/SFML control. To create a custom wxWidgets control, we must inherit from the base class `wxControl`. And, to allow our control to be a SFML view, we also inherit from [`sf::RenderWindow`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1RenderWindow.php "sf::RenderWindow documentation").
+Let's have a look at what we need to define a wx/SFML control. To create a custom wxWidgets control, we must inherit from the base class `wxControl`. And, to allow our control to be a SFML view, we also inherit from [`sf::RenderWindow`](../../../documentation/1.6/classsf_1_1RenderWindow.html "sf::RenderWindow documentation").
 
 ```cpp
 #include <SFML/Graphics.hpp>
@@ -22,7 +22,7 @@ class wxSFMLCanvas : public wxControl, public sf::RenderWindow
 };
 ```
 
-What are we going to put into this class ? Well, nothing much in the public interface, as all the useful functions will be brought by both `wxControl` and [`sf::RenderWindow`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1RenderWindow.php "sf::RenderWindow documentation"). In fact, from wxWidgets' point of view `wxSFMLCanvas` will be like any other control, and from SFML's point of view it will be like any other rendering window. That's the power of inheritance.
+What are we going to put into this class ? Well, nothing much in the public interface, as all the useful functions will be brought by both `wxControl` and [`sf::RenderWindow`](../../../documentation/1.6/classsf_1_1RenderWindow.html "sf::RenderWindow documentation"). In fact, from wxWidgets' point of view `wxSFMLCanvas` will be like any other control, and from SFML's point of view it will be like any other rendering window. That's the power of inheritance.
 
 So, in the public interface we only need a standard constructor, which will take the usual parameters that define a wxWidgets control (parent, identifier, position, size, style), and a destructor which will be empty but needs to be virtual, as `wxSFMLCanvas` will be used as a base class.
 

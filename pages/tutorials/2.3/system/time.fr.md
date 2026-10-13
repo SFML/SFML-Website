@@ -6,13 +6,13 @@
 
 ## Le temps dans SFML
 
-Contrairement à de nombreuses autres bibliothèques qui définissent le temps comme étant des millisecondes en uint32, ou des secondes en float, SFML n'impose aucune unité et aucun type pour les variables de temps. Au lieu de cela, SFML laisse ce choix à l'utilisateur à travers une classe flexible : [`sf::Time`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Time.php "sf::Time documentation"). Toutes les classes et fonctions SFML qui manipulent du temps utilisent cette classe.
+Contrairement à de nombreuses autres bibliothèques qui définissent le temps comme étant des millisecondes en uint32, ou des secondes en float, SFML n'impose aucune unité et aucun type pour les variables de temps. Au lieu de cela, SFML laisse ce choix à l'utilisateur à travers une classe flexible : [`sf::Time`](../../../documentation/2.3.2/classsf_1_1Time.html "sf::Time documentation"). Toutes les classes et fonctions SFML qui manipulent du temps utilisent cette classe.
 
-[`sf::Time`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Time.php "sf::Time documentation") encapsule une valeur de temps (en d'autres termes, un laps de temps). Ce n'est *pas* une classe de date, qui représenterait l'année/mois/jour/heure/minute/seconde courante, c'est juste une valeur qui représente une certaine quantité de temps, et la manière de l'interpréter dépend de son contexte d'utilisation.
+[`sf::Time`](../../../documentation/2.3.2/classsf_1_1Time.html "sf::Time documentation") encapsule une valeur de temps (en d'autres termes, un laps de temps). Ce n'est *pas* une classe de date, qui représenterait l'année/mois/jour/heure/minute/seconde courante, c'est juste une valeur qui représente une certaine quantité de temps, et la manière de l'interpréter dépend de son contexte d'utilisation.
 
 ## Conversion de temps
 
-Une variable de type [`sf::Time`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Time.php "sf::Time documentation") peut être construite à partir de différentes unités : secondes, millisecondes et microsecondes. Il existe dans SFML une fonction (non-membre) pour convertir chacune d'elles en [`sf::Time`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Time.php "sf::Time documentation") :
+Une variable de type [`sf::Time`](../../../documentation/2.3.2/classsf_1_1Time.html "sf::Time documentation") peut être construite à partir de différentes unités : secondes, millisecondes et microsecondes. Il existe dans SFML une fonction (non-membre) pour convertir chacune d'elles en [`sf::Time`](../../../documentation/2.3.2/classsf_1_1Time.html "sf::Time documentation") :
 
 ```cpp
 sf::Time t1 = sf::microseconds(10000);
@@ -22,7 +22,7 @@ sf::Time t3 = sf::seconds(0.01f);
 
 Notez que ces trois variables sont toutes égales.
 
-De la même manière, une variable [`sf::Time`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Time.php "sf::Time documentation") peut être convertie en secondes, en millisecondes ou en microsecondes :
+De la même manière, une variable [`sf::Time`](../../../documentation/2.3.2/classsf_1_1Time.html "sf::Time documentation") peut être convertie en secondes, en millisecondes ou en microsecondes :
 
 ```cpp
 sf::Time time = ...;
@@ -34,7 +34,7 @@ float     sec  = time.asSeconds();
 
 ## Jouer avec les valeurs de temps
 
-La classe [`sf::Time`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Time.php "sf::Time documentation") représentant simplement une quantité de temps, elle supporte les opérations arithmétiques telles que l'addition, la soustraction, les comparaisons, etc. Les temps peuvent aussi être négatifs.
+La classe [`sf::Time`](../../../documentation/2.3.2/classsf_1_1Time.html "sf::Time documentation") représentant simplement une quantité de temps, elle supporte les opérations arithmétiques telles que l'addition, la soustraction, les comparaisons, etc. Les temps peuvent aussi être négatifs.
 
 ```cpp
 sf::Time t1 = ...;
@@ -50,7 +50,7 @@ bool b2 = (t3 > t4);
 
 Maintenant que nous avons vu comment manipuler les variables de temps avec SFML, voyons comment faire quelque chose dont à peu près tous les programmes ont besoin : mesurer le temps écoulé.
 
-SFML a une classe très simple pour mesurer le temps : [`sf::Clock`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Clock.php "sf::Clock documentation"). Elle ne possède que deux fonctions : `getElapsedTime`, pour récupérer le temps écoulé depuis son démarrage, et `restart`, pour la redémarrer.
+SFML a une classe très simple pour mesurer le temps : [`sf::Clock`](../../../documentation/2.3.2/classsf_1_1Clock.html "sf::Clock documentation"). Elle ne possède que deux fonctions : `getElapsedTime`, pour récupérer le temps écoulé depuis son démarrage, et `restart`, pour la redémarrer.
 
 ```cpp
 sf::Clock clock; // démarre le chrono

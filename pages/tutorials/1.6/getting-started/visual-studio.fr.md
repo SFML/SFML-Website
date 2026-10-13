@@ -35,7 +35,7 @@ Une fois que vous avez téléchargé et extrait les fichiers sur votre disque du
 
 ## Compiler votre premier programme SFML
 
-Créez un nouveau projet "Win32 console application", et écrivez un programme SFML. Par exemple, vous pouvez essayer la classe [`sf::Clock`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Clock.php "sf::Clock documentation") du module système :
+Créez un nouveau projet "Win32 console application", et écrivez un programme SFML. Par exemple, vous pouvez essayer la classe [`sf::Clock`](../../../documentation/1.6/classsf_1_1Clock.html "sf::Clock documentation") du module système :
 
 ```cpp
 #include <SFML/System.hpp>

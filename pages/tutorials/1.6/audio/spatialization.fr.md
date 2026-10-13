@@ -12,7 +12,7 @@ Jouer des sons et des musiques est sympa, mais pour que ceux-ci soient parfaitem
 
 Peu importe le nombre de sons et de musiques que vous placez dans votre scène, ils seront tous entendus par un "acteur" unique : l'écouteur (*listener*). Ce que l'écouteur entendra, est ce qui sortira de vos hauts-parleurs.
 
-SFML définit une interface pour modifier et récupérer les propriétés de l'écouteur : [`sf::Listener`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Listener.php "sf::Listener documentation"). Comme l'écouteur est unique dans la scène, cette classe ne contient que des fonctions statiques et n'a pas besoin d'être instanciée.
+SFML définit une interface pour modifier et récupérer les propriétés de l'écouteur : [`sf::Listener`](../../../documentation/1.6/classsf_1_1Listener.html "sf::Listener documentation"). Comme l'écouteur est unique dans la scène, cette classe ne contient que des fonctions statiques et n'a pas besoin d'être instanciée.
 
 Pour commencer, vous pouvez modifier la position de l'écouteur dans la scène :
 

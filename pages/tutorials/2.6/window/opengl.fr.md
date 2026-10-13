@@ -43,7 +43,7 @@ glEnable(GL_TEXTURE_2D);
 ...
 ```
 
-Si vous pensez que c'est *trop* automatique, rassurez-vous : le constructeur de [`sf::Window`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Window.php "sf::Window documentation") accepte un paramètre supplémentaire qui vous permet de changer les options du contexte OpenGL de la fenêtre. Ce paramètre est une instance de la structure [`sf::ContextSettings`](https://www.sfml-dev.org/documentation/2.6.2-fr/structsf_1_1ContextSettings.php "sf::ContextSettings documentation"), qui définit les champs suivants :
+Si vous pensez que c'est *trop* automatique, rassurez-vous : le constructeur de [`sf::Window`](../../../documentation/2.6.2/classsf_1_1Window.html "sf::Window documentation") accepte un paramètre supplémentaire qui vous permet de changer les options du contexte OpenGL de la fenêtre. Ce paramètre est une instance de la structure [`sf::ContextSettings`](../../../documentation/2.6.2/structsf_1_1ContextSettings.html "sf::ContextSettings documentation"), qui définit les champs suivants :
 
 - `depthBits` est le nombre de bits par pixel pour le *depth buffer* (0 pour ne pas en créer)
 - `stencilBits` est le nombre de bits par pixel pour le *stencil buffer* (0 pour ne pas en créer)
@@ -191,7 +191,7 @@ Une autre chose à savoir est que tous les contextes OpenGL créés par SFML par
 
 ## OpenGL sans fenêtre
 
-Il est parfois nécessaire d'appeler des fonctions OpenGL alors qu'il n'y a aucune fenêtre, et donc aucun contexte OpenGL. Par exemple, lorsque vous chargez des textures depuis un thread, ou bien simplement avant que la première fenêtre ne soit créée. SFML vous permet de créer des contextes sans fenêtre avec la classe [`sf::Context`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Context.php "sf::Context documentation"). Tout ce que vous avez à faire est de l'instancier pour obtenir un contexte valide.
+Il est parfois nécessaire d'appeler des fonctions OpenGL alors qu'il n'y a aucune fenêtre, et donc aucun contexte OpenGL. Par exemple, lorsque vous chargez des textures depuis un thread, ou bien simplement avant que la première fenêtre ne soit créée. SFML vous permet de créer des contextes sans fenêtre avec la classe [`sf::Context`](../../../documentation/2.6.2/classsf_1_1Context.html "sf::Context documentation"). Tout ce que vous avez à faire est de l'instancier pour obtenir un contexte valide.
 
 ```cpp
 int main()
@@ -254,7 +254,7 @@ int main()
 
 Pour l'instant ce tutoriel a parlé de l'utilisation d'OpenGL avec sfml-window, ce qui est relativement simple étant donné que c'est le seul but de ce module. Mixer OpenGL avec le module graphique est un tout petit peu plus compliqué : sfml-graphics utilise aussi OpenGL, il faut donc prendre certaines précautions de sorte que les états OpenGL de l'utilisateur et ceux de SFML n'entrent pas en conflit.
 
-Si vous ne connaissez pas encore le module graphique, tout ce que vous avez à savoir c'est que la classe [`sf::Window`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Window.php "sf::Window documentation") est remplacée par [`sf::RenderWindow`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1RenderWindow.php "sf::RenderWindow documentation"), qui hérite de toutes ses fonctions et en ajoute quelques autres qui servent à dessiner des entités SFML.
+Si vous ne connaissez pas encore le module graphique, tout ce que vous avez à savoir c'est que la classe [`sf::Window`](../../../documentation/2.6.2/classsf_1_1Window.html "sf::Window documentation") est remplacée par [`sf::RenderWindow`](../../../documentation/2.6.2/classsf_1_1RenderWindow.html "sf::RenderWindow documentation"), qui hérite de toutes ses fonctions et en ajoute quelques autres qui servent à dessiner des entités SFML.
 
 Le seul moyen d'éviter les conflits entre SFML et vos propres états OpenGL, est de les sauvegarder/restaurer à chaque fois que vous passez d'OpenGL à SFML.
 

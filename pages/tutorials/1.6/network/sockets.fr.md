@@ -25,7 +25,7 @@ Pour résumer, les sockets TCP sont plus sûrs mais plus lents. Il n'y a que tr�
 
 ## Manipuler les adresses réseau
 
-Avant de commencer à utiliser les sockets, intéressons nous à une classe utilitaire du module réseau : [`sf::IPAddress`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1IPAddress.php "sf::IPAddress documentation"). Elle encapsule les adresses IP (v4) et fournit des fonctions très utiles pour l'initialisation, la comparaison, etc. Etant donné que la programmation réseau implique des communications avec des ordinateurs distants, vous aurez besoin de cette classe à chaque fois que vous voudrez vous connecter / envoyer / recevoir.
+Avant de commencer à utiliser les sockets, intéressons nous à une classe utilitaire du module réseau : [`sf::IPAddress`](../../../documentation/1.6/classsf_1_1IPAddress.html "sf::IPAddress documentation"). Elle encapsule les adresses IP (v4) et fournit des fonctions très utiles pour l'initialisation, la comparaison, etc. Etant donné que la programmation réseau implique des communications avec des ordinateurs distants, vous aurez besoin de cette classe à chaque fois que vous voudrez vous connecter / envoyer / recevoir.
 
 Première chose à faire : inclure le fichier en-tête pour le module réseau. Comme d'habitude, il va inclure pour vous tous les en-têtes nécessaires à l'utilisation du module réseau.
 
@@ -33,7 +33,7 @@ Première chose à faire : inclure le fichier en-tête pour le module réseau. C
 #include <SFML/Network.hpp>
 ```
 
-Vous pouvez initialiser une instance de [`sf::IPAddress`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1IPAddress.php "sf::IPAddress documentation") à partir de différentes sources :
+Vous pouvez initialiser une instance de [`sf::IPAddress`](../../../documentation/1.6/classsf_1_1IPAddress.html "sf::IPAddress documentation") à partir de différentes sources :
 
 ```cpp
 sf::IPAddress Address1;                  // Par défaut : adresse invalide
@@ -92,7 +92,7 @@ if (Socket.Send(Buffer, sizeof(Buffer), "192.168.0.2", 4567) != sf::Socket::Done
 }
 ```
 
-Ici, nous envoyons un tableau d'octets (contenant "Hi guys !") à l'ordinateur dont l'adresse IP est 192.168.0.2 sur le port 4567. Le troisième paramètre est un [`sf::IPAddress`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1IPAddress.php "sf::IPAddress documentation"), vous pouvez donc tout aussi bien utiliser un nom d'hôte, une adresse de broadcast ou n'importe quel type d'adresse valide.  
+Ici, nous envoyons un tableau d'octets (contenant "Hi guys !") à l'ordinateur dont l'adresse IP est 192.168.0.2 sur le port 4567. Le troisième paramètre est un [`sf::IPAddress`](../../../documentation/1.6/classsf_1_1IPAddress.html "sf::IPAddress documentation"), vous pouvez donc tout aussi bien utiliser un nom d'hôte, une adresse de broadcast ou n'importe quel type d'adresse valide.  
 Si vous ne voulez pas utiliser un port spécifique, vous pouvez simplement prendre n'importe quel numéro de port libre entre 1024 et 65535 (les ports inférieurs à 1024 sont réservés). Et bien sûr, assurez-vous que votre pare-feu ne bloque pas ce port !
 
 La fonction `Send`, tout comme les autres fonctions qui peuvent bloquer, renvoie un état de socket (voir `sf::Socket::Status`) qui peut être :
@@ -167,7 +167,7 @@ if (Listener.Accept(Client, &ClientAddress) != sf::Socket::Done)
 }
 ```
 
-La fonction `Accept` va attendre jusqu'à ce qu'une connexion arrive, puis renvoyer un nouveau socket qui sera utilisé pour échanger les données avec l'ordinateur connecté. Si vous passez une instance de [`sf::IPAddress`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1IPAddress.php "sf::IPAddress documentation") à la fonction, celle-ci sera initialisée avec l'adresse du client (pratique pour savoir qui vient de se connecter).  
+La fonction `Accept` va attendre jusqu'à ce qu'une connexion arrive, puis renvoyer un nouveau socket qui sera utilisé pour échanger les données avec l'ordinateur connecté. Si vous passez une instance de [`sf::IPAddress`](../../../documentation/1.6/classsf_1_1IPAddress.html "sf::IPAddress documentation") à la fonction, celle-ci sera initialisée avec l'adresse du client (pratique pour savoir qui vient de se connecter).  
 Si la socket est en mode non-bloquant, cette fonction rendra la main immédiatement si aucune connexion n'est en attente, et renverra le code `sf::Socket::NotReady`.
 
 Regardons maintenant comment ça se passe du côté du client. Tout ce que vous avez à faire est créer un socket puis le connecter au serveur sur le port que ce dernier écoute.

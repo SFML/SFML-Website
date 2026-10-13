@@ -10,7 +10,7 @@ La meilleure façon d'intégrer des graphismes SFML à une interface wxWidgets e
 
 ## Création d'un contrôle personnalisé
 
-De quoi avons-nous besoin pour définir un contrôle wx/SFML ? Afin de créer un contrôle wxWidgets personnalisé, nous devons dériver de la classe de base `wxControl`. Et, pour permettre à notre contrôle d'être une vue SFML, nous dérivons également de [`sf::RenderWindow`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1RenderWindow.php "sf::RenderWindow documentation").
+De quoi avons-nous besoin pour définir un contrôle wx/SFML ? Afin de créer un contrôle wxWidgets personnalisé, nous devons dériver de la classe de base `wxControl`. Et, pour permettre à notre contrôle d'être une vue SFML, nous dérivons également de [`sf::RenderWindow`](../../../documentation/1.6/classsf_1_1RenderWindow.html "sf::RenderWindow documentation").
 
 ```cpp
 #include <SFML/Graphics.hpp>
@@ -22,7 +22,7 @@ class wxSFMLCanvas : public wxControl, public sf::RenderWindow
 };
 ```
 
-Qu'allons-nous mettre dans cette classe ? Et bien, pas grand chose au niveau de l'interface publique, étant donné que toutes les fonctions utiles seront fournies par `wxControl` et [`sf::RenderWindow`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1RenderWindow.php "sf::RenderWindow documentation"). En fait, du point de vue de wxWidgets `wxSFMLCanvas` sera comme n'importe quel contrôle, et du point de vue de la SFML il sera considéré comme n'importe quelle autre fenêtre de rendu. C'est ça la puissance de l'héritage.
+Qu'allons-nous mettre dans cette classe ? Et bien, pas grand chose au niveau de l'interface publique, étant donné que toutes les fonctions utiles seront fournies par `wxControl` et [`sf::RenderWindow`](../../../documentation/1.6/classsf_1_1RenderWindow.html "sf::RenderWindow documentation"). En fait, du point de vue de wxWidgets `wxSFMLCanvas` sera comme n'importe quel contrôle, et du point de vue de la SFML il sera considéré comme n'importe quelle autre fenêtre de rendu. C'est ça la puissance de l'héritage.
 
 Donc, dans l'interface publique nous avons simplement besoin d'un constructeur standard, qui prendra les paramètres habituels qui définissent un contrôle wxWidgets (parent, identificateur, position, taille, style), et un destructeur qui sera vide mais qui doit être virtuel, car `wxSFMLCanvas` sera utilisée en tant que classe de base.
 

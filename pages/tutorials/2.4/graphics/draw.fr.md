@@ -12,9 +12,9 @@ Heureusement, SFML fournit un module graphique avec plein d'entités 2D, beaucou
 
 ## La fenêtre de dessin
 
-Afin de dessiner les entités fournies par le module graphique, vous devez utiliser une classe de fenêtre spécialisée : [`sf::RenderWindow`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1RenderWindow.php "sf::RenderWindow documentation"). Celle-ci dérive de [`sf::Window`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1Window.php "sf::Window documentation") et hérite de toutes ses fonctions. Tout ce que vous avez appris à propos de [`sf::Window`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1Window.php "sf::Window documentation") (création, gestion des évènements, contrôle du rafraîchissement, mélange avec OpenGL, etc.) est toujours valable avec [`sf::RenderWindow`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1RenderWindow.php "sf::RenderWindow documentation").
+Afin de dessiner les entités fournies par le module graphique, vous devez utiliser une classe de fenêtre spécialisée : [`sf::RenderWindow`](../../../documentation/2.4.2/classsf_1_1RenderWindow.html "sf::RenderWindow documentation"). Celle-ci dérive de [`sf::Window`](../../../documentation/2.4.2/classsf_1_1Window.html "sf::Window documentation") et hérite de toutes ses fonctions. Tout ce que vous avez appris à propos de [`sf::Window`](../../../documentation/2.4.2/classsf_1_1Window.html "sf::Window documentation") (création, gestion des évènements, contrôle du rafraîchissement, mélange avec OpenGL, etc.) est toujours valable avec [`sf::RenderWindow`](../../../documentation/2.4.2/classsf_1_1RenderWindow.html "sf::RenderWindow documentation").
 
-Par dessus cela, [`sf::RenderWindow`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1RenderWindow.php "sf::RenderWindow documentation") ajoute des fonctions de plus haut-niveau pour vous aider à dessiner plus facilement. Ce tutoriel se concentre sur deux de ces fonctions : `clear` et `draw`. Elles sont aussi simples que leur nom le suggère : `clear` efface la fenêtre toute entière avec la couleur choisie, et `draw` y dessine l'objet que vous lui passez en paramètre.
+Par dessus cela, [`sf::RenderWindow`](../../../documentation/2.4.2/classsf_1_1RenderWindow.html "sf::RenderWindow documentation") ajoute des fonctions de plus haut-niveau pour vous aider à dessiner plus facilement. Ce tutoriel se concentre sur deux de ces fonctions : `clear` et `draw`. Elles sont aussi simples que leur nom le suggère : `clear` efface la fenêtre toute entière avec la couleur choisie, et `draw` y dessine l'objet que vous lui passez en paramètre.
 
 Voici une boucle principale typique avec une fenêtre de dessin :
 
@@ -76,7 +76,7 @@ Bien que ces entités partagent pas mal d'attributs communs, elles ont chacune l
 
 ## Dessin hors-écran
 
-SFML fournit aussi un moyen de dessiner sur une texture plutôt que directement sur la fenêtre. Pour ce faire, il faut utiliser la classe [`sf::RenderTexture`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1RenderTexture.php "sf::RenderTexture documentation") au lieu de [`sf::RenderWindow`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1RenderWindow.php "sf::RenderWindow documentation"). Elle possède les mêmes fonctions de dessin, héritées de leur base commune [`sf::RenderTarget`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1RenderTarget.php "sf::RenderTarget documentation").
+SFML fournit aussi un moyen de dessiner sur une texture plutôt que directement sur la fenêtre. Pour ce faire, il faut utiliser la classe [`sf::RenderTexture`](../../../documentation/2.4.2/classsf_1_1RenderTexture.html "sf::RenderTexture documentation") au lieu de [`sf::RenderWindow`](../../../documentation/2.4.2/classsf_1_1RenderWindow.html "sf::RenderWindow documentation"). Elle possède les mêmes fonctions de dessin, héritées de leur base commune [`sf::RenderTarget`](../../../documentation/2.4.2/classsf_1_1RenderTarget.html "sf::RenderTarget documentation").
 
 ```cpp
 // on crée une texture de dessin de 500x500
@@ -99,9 +99,9 @@ sf::Sprite sprite(texture);
 window.draw(sprite);
 ```
 
-La fonction `getTexture` renvoie une texture en lecture seule, ce qui signifie que vous ne pouvez que l'utiliser, pas la modifier. Si vous avez besoin de la manipuler avant de l'utiliser, vous pouvez la copier dans votre propre instance de [`sf::Texture`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1Texture.php "sf::Texture documentation").
+La fonction `getTexture` renvoie une texture en lecture seule, ce qui signifie que vous ne pouvez que l'utiliser, pas la modifier. Si vous avez besoin de la manipuler avant de l'utiliser, vous pouvez la copier dans votre propre instance de [`sf::Texture`](../../../documentation/2.4.2/classsf_1_1Texture.html "sf::Texture documentation").
 
-[`sf::RenderTexture`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1RenderTexture.php "sf::RenderTexture documentation") déclare les mêmes fonctions que [`sf::RenderWindow`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1RenderWindow.php "sf::RenderWindow documentation") pour gérer les vues et OpenGL (voir les tutoriels correspondant pour plus de détails). Si vous utilisez OpenGL pour dessiner sur une texture, vous pouvez activer un tampon de profondeur (*depth buffer*) en utilisant le troisième paramètre optionnel de la fonction `create`.
+[`sf::RenderTexture`](../../../documentation/2.4.2/classsf_1_1RenderTexture.html "sf::RenderTexture documentation") déclare les mêmes fonctions que [`sf::RenderWindow`](../../../documentation/2.4.2/classsf_1_1RenderWindow.html "sf::RenderWindow documentation") pour gérer les vues et OpenGL (voir les tutoriels correspondant pour plus de détails). Si vous utilisez OpenGL pour dessiner sur une texture, vous pouvez activer un tampon de profondeur (*depth buffer*) en utilisant le troisième paramètre optionnel de la fonction `create`.
 
 ```cpp
 renderTexture.create(500, 500, true); // activation du tampon de profondeur

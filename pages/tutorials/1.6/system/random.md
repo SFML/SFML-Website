@@ -6,9 +6,9 @@
 
 ## Introduction
 
-Generating pseudo-random numbers is not hard, especially with the `rand` and `srand` functions from the standard library. But you always end up writing helper functions, for getting a random number in a specific range, getting a float random number, etc. That's why SFML provides a helper class, [`sf::Randomizer`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Randomizer.php "sf::Randomizer documentation"), that defines some helper functions.
+Generating pseudo-random numbers is not hard, especially with the `rand` and `srand` functions from the standard library. But you always end up writing helper functions, for getting a random number in a specific range, getting a float random number, etc. That's why SFML provides a helper class, [`sf::Randomizer`](../../../documentation/1.6/classsf_1_1Randomizer.html "sf::Randomizer documentation"), that defines some helper functions.
 
-This document is more a reference than a real tutorial, all it does is showing you the [`sf::Randomizer`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Randomizer.php "sf::Randomizer documentation") functions.
+This document is more a reference than a real tutorial, all it does is showing you the [`sf::Randomizer`](../../../documentation/1.6/classsf_1_1Randomizer.html "sf::Randomizer documentation") functions.
 
 ## Setting the seed
 
@@ -29,7 +29,7 @@ unsigned int Seed = sf::Randomizer::GetSeed();
 
 ## Generating random numbers whithin specific ranges
 
-[`sf::Randomizer`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Randomizer.php "sf::Randomizer documentation") provides two functions for generating random numbers in specific ranges.
+[`sf::Randomizer`](../../../documentation/1.6/classsf_1_1Randomizer.html "sf::Randomizer documentation") provides two functions for generating random numbers in specific ranges.
 
 The first one generates integers :
 

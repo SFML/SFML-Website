@@ -10,9 +10,9 @@ This tutorial is a detailed list of window events. It describes them, and shows 
 
 ## The sf::Event type
 
-Before dealing with events, it is important to understand what the [`sf::Event`](https://www.sfml-dev.org/documentation/2.2/classsf_1_1Event.php "sf::Event documentation") type is, and how to correctly use it. [`sf::Event`](https://www.sfml-dev.org/documentation/2.2/classsf_1_1Event.php "sf::Event documentation") is a *union*, which means that only one of its members is valid at a time (remember your C++ lesson: all the members of a union share the same memory space). The valid member is the one that matches the event type, for example `event.key` for a `KeyPressed` event. Trying to read any other member will result in an undefined behavior (most likely: random or invalid values). It is important to never try to use an event member that doesn't match its type.
+Before dealing with events, it is important to understand what the [`sf::Event`](../../../documentation/2.2/classsf_1_1Event.html "sf::Event documentation") type is, and how to correctly use it. [`sf::Event`](../../../documentation/2.2/classsf_1_1Event.html "sf::Event documentation") is a *union*, which means that only one of its members is valid at a time (remember your C++ lesson: all the members of a union share the same memory space). The valid member is the one that matches the event type, for example `event.key` for a `KeyPressed` event. Trying to read any other member will result in an undefined behavior (most likely: random or invalid values). It is important to never try to use an event member that doesn't match its type.
 
-[`sf::Event`](https://www.sfml-dev.org/documentation/2.2/classsf_1_1Event.php "sf::Event documentation") instances are filled by the `pollEvent` (or `waitEvent`) function of the [`sf::Window`](https://www.sfml-dev.org/documentation/2.2/classsf_1_1Window.php "sf::Window documentation") class. Only these two functions can produce valid events, any attempt to use an [`sf::Event`](https://www.sfml-dev.org/documentation/2.2/classsf_1_1Event.php "sf::Event documentation") which was not returned by successful call to `pollEvent` (or `waitEvent`) will result in the same undefined behavior that was mentioned above.
+[`sf::Event`](../../../documentation/2.2/classsf_1_1Event.html "sf::Event documentation") instances are filled by the `pollEvent` (or `waitEvent`) function of the [`sf::Window`](../../../documentation/2.2/classsf_1_1Window.html "sf::Window documentation") class. Only these two functions can produce valid events, any attempt to use an [`sf::Event`](../../../documentation/2.2/classsf_1_1Event.html "sf::Event documentation") which was not returned by successful call to `pollEvent` (or `waitEvent`) will result in the same undefined behavior that was mentioned above.
 
 To be clear, here is what a typical event loop looks like:
 
@@ -44,7 +44,7 @@ while (window.pollEvent(event))
 
 !!! warning
 
-    Read the above paragraph once again and make sure that you fully understand it, the [`sf::Event`](https://www.sfml-dev.org/documentation/2.2/classsf_1_1Event.php "sf::Event documentation") union is the cause of many problems for inexperienced programmers.
+    Read the above paragraph once again and make sure that you fully understand it, the [`sf::Event`](../../../documentation/2.2/classsf_1_1Event.html "sf::Event documentation") union is the cause of many problems for inexperienced programmers.
 
 Alright, now we can see what events SFML supports, what they mean and how to use them properly.
 
@@ -54,7 +54,7 @@ The `sf::Event::Closed` event is triggered when the user wants to close the wind
 
 Typical code will just call `window.close()` in reaction to this event, to actually close the window. However, you may also want to do something else first, like saving the current application state or asking the user what to do. If you don't do anything, the window remains open.
 
-There's no member associated with this event in the [`sf::Event`](https://www.sfml-dev.org/documentation/2.2/classsf_1_1Event.php "sf::Event documentation") union.
+There's no member associated with this event in the [`sf::Event`](../../../documentation/2.2/classsf_1_1Event.html "sf::Event documentation") union.
 
 ```cpp
 if (event.type == sf::Event::Closed)
@@ -83,7 +83,7 @@ The `sf::Event::LostFocus` and `sf::Event::GainedFocus` events are triggered whe
 
 This event can be used e.g. if you want to pause your game when the window is inactive.
 
-There's no member associated with these events in the [`sf::Event`](https://www.sfml-dev.org/documentation/2.2/classsf_1_1Event.php "sf::Event documentation") union.
+There's no member associated with these events in the [`sf::Event`](../../../documentation/2.2/classsf_1_1Event.html "sf::Event documentation") union.
 
 ```cpp
 if (event.type == sf::Event::LostFocus)
@@ -99,7 +99,7 @@ The `sf::Event::TextEntered` event is triggered when a character is typed. This 
 
 This event is typically used to catch user input in a text field.
 
-The member associated with this event is `event.text`, it contains the Unicode value of the entered character. You can either put it directly in a [`sf::String`](https://www.sfml-dev.org/documentation/2.2/classsf_1_1String.php "sf::String documentation"), or cast it to a `char` after making sure that it is in the ASCII range (0 - 127).
+The member associated with this event is `event.text`, it contains the Unicode value of the entered character. You can either put it directly in a [`sf::String`](../../../documentation/2.2/classsf_1_1String.html "sf::String documentation"), or cast it to a `char` after making sure that it is in the ASCII range (0 - 127).
 
 ```cpp
 if (event.type == sf::Event::TextEntered)
@@ -126,7 +126,7 @@ This event is the one to use if you want to trigger an action exactly once when 
 !!! warning
 
     Sometimes, people try to react to `KeyPressed` events directly to implement smooth movement. Doing so will *not* produce the expected effect, because when you hold a key you only get a few events (remember, the repeat delay). To achieve smooth movement with events, you must use a boolean that you set on `KeyPressed` and clear on `KeyReleased`; you can then move (independently of events) as long as the boolean is set.  
-    The other (easier) solution to produce smooth movement is to use real-time keyboard input with [`sf::Keyboard`](https://www.sfml-dev.org/documentation/2.2/classsf_1_1Keyboard.php "sf::Keyboard documentation") (see the [dedicated tutorial](inputs.md "Real-time inputs tutorial")).
+    The other (easier) solution to produce smooth movement is to use real-time keyboard input with [`sf::Keyboard`](../../../documentation/2.2/classsf_1_1Keyboard.html "sf::Keyboard documentation") (see the [dedicated tutorial](inputs.md "Real-time inputs tutorial")).
 
 The member associated with these events is `event.key`, it contains the code of the pressed/released key, as well as the current state of the modifier keys (alt, control, shift, system).
 
@@ -201,7 +201,7 @@ if (event.type == sf::Event::MouseMoved)
 
 The `sf::Event::MouseEntered` and `sf::Event::MouseLeft` events are triggered when the mouse cursor enters/leaves the window.
 
-There's no member associated with these events in the [`sf::Event`](https://www.sfml-dev.org/documentation/2.2/classsf_1_1Event.php "sf::Event documentation") union.
+There's no member associated with these events in the [`sf::Event`](../../../documentation/2.2/classsf_1_1Event.html "sf::Event documentation") union.
 
 ```cpp
 if (event.type == sf::Event::MouseEntered)
