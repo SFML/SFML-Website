@@ -20,7 +20,7 @@ As you might expect, this tutorial is divided into two main sections: Generating
 ## Installing dependencies
 
 SFML depends on a few other libraries, which will be automatically built as part of the SFML project unless otherwise specified by the `SFML_USE_SYSTEM_DEPS` option (see below).
-On Linux, however, this option is disabled by default, so either enable it, or ensure the following packages are installed on your system:
+On Linux, however, this option is enabled by default, so either disable it, or ensure the following packages are installed on your system:
 
 - freetype
 - harfbuzz
@@ -30,6 +30,7 @@ On Linux, however, this option is disabled by default, so either enable it, or e
 - vorbisenc
 - vorbisfile
 - mbedtls
+- libssh2
 
 On Linux there are also other system dependencies that must be installed in all cases:
 
