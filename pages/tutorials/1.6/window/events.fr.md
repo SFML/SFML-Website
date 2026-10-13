@@ -15,7 +15,7 @@ Typiquement, il existe deux façons de récupérer les évènements dans un syst
 - Vous pouvez demander à la fenêtre de vous donner les évènements en attente à chaque boucle ; c'est ce qu'on appelle le *polling*
 - Vous pouvez transmettre à la fenêtre un pointeur de fonction, et attendre que la fenêtre appelle votre fonction lorsqu'elle génère un évènement ; c'est ce qu'on appelle les fonctions de rappel ("callbacks")
 
-SFML utilise un système de *polling* pour récupérer les évènements. Ainsi, vous devez récupérer les évènements en attente à chaque boucle. La fonction à utiliser est `GetEvent`, qui remplira une instance de [`sf::Event`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Event.php "sf::Event documentation") et renverra `true` s'il y avait un évènement en attente, ou renverra `false` si la pile d'évènements était vide.
+SFML utilise un système de *polling* pour récupérer les évènements. Ainsi, vous devez récupérer les évènements en attente à chaque boucle. La fonction à utiliser est `GetEvent`, qui remplira une instance de [`sf::Event`](../../../documentation/1.6/classsf_1_1Event.html "sf::Event documentation") et renverra `true` s'il y avait un évènement en attente, ou renverra `false` si la pile d'évènements était vide.
 
 ```cpp
 // Rappelez-vous que App est une instance de sf::Window
@@ -56,7 +56,7 @@ while (Running)
 
 ## Traitement des évènements
 
-La première chose à faire lorsque vous recevez un évènement est d'interroger son type, stocké dans sa variable membre `Type`. SFML définit les types d'évènements suivant, tous dans la portée de la structure [`sf::Event`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Event.php "sf::Event documentation") :
+La première chose à faire lorsque vous recevez un évènement est d'interroger son type, stocké dans sa variable membre `Type`. SFML définit les types d'évènements suivant, tous dans la portée de la structure [`sf::Event`](../../../documentation/1.6/classsf_1_1Event.html "sf::Event documentation") :
 
 - `Closed`
 - `Resized`
@@ -128,7 +128,7 @@ while (App.GetEvent(Event))
 
 ## Fermer une fenêtre
 
-Si vous avez joué un peu avec les fenêtres SFML, vous avez probablement remarqué que cliquer sur le bouton de fermeture générait un évènement `Closed`, mais ne détruisait pas la fenêtre. C'est pour laisser l'occasion à l'utilisateur d'ajouter des traitements avant la femeture (demander de sauvegarder), ou bien carrément d'annuler celle-ci. Pour fermer effectivement une fenêtre, vous devrez soit détruire l'instance de [`sf::Window`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Window.php "sf::Window documentation"), soit appeler sa fonction `Close()`.  
+Si vous avez joué un peu avec les fenêtres SFML, vous avez probablement remarqué que cliquer sur le bouton de fermeture générait un évènement `Closed`, mais ne détruisait pas la fenêtre. C'est pour laisser l'occasion à l'utilisateur d'ajouter des traitements avant la femeture (demander de sauvegarder), ou bien carrément d'annuler celle-ci. Pour fermer effectivement une fenêtre, vous devrez soit détruire l'instance de [`sf::Window`](../../../documentation/1.6/classsf_1_1Window.html "sf::Window documentation"), soit appeler sa fonction `Close()`.  
 Pour savoir si une fenêtre est ouverte (ie. a été créée), vous pouvez appeler la fonction `IsOpened()`.
 
 Maintenant, notre boucle principale a l'air vachement plus sympa :
@@ -154,15 +154,15 @@ while (App.IsOpened())
 
 Ce système d'évènements est suffisant pour réagir à des évènements comme la fermeture de fenêtre, ou une pression simple sur une touche. Mais si vous voulez gérer, par exemple, le mouvement continu d'un personnage lorsque vous maintenez une flèche enfoncée, alors vous allez vite vous rendre compte qu'il y a un problème : un délai sera introduit entre chaque mouvement, le délai défini par le système d'exploitation lorsque vous maintenez une touche enfoncée.
 
-Une meilleure stratégie pour cela est de marquer une variable booléene à `true` lorsque la touche est enfoncée, et la remettre à zéro lorsque la touche est relâchée. Puis à chaque tour de boucle, si le booléen est marqué, vous déplacez votre personnage. Cependant l'usage de variables supplémentaires pour ça peut devenir fastidieux, particulièrement lorsque vous en avez beaucoup. C'est pourquoi SFML fournit un accès facilité aux entrées temps-réel, avec la classe [`sf::Input`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Input.php "sf::Input documentation").
+Une meilleure stratégie pour cela est de marquer une variable booléene à `true` lorsque la touche est enfoncée, et la remettre à zéro lorsque la touche est relâchée. Puis à chaque tour de boucle, si le booléen est marqué, vous déplacez votre personnage. Cependant l'usage de variables supplémentaires pour ça peut devenir fastidieux, particulièrement lorsque vous en avez beaucoup. C'est pourquoi SFML fournit un accès facilité aux entrées temps-réel, avec la classe [`sf::Input`](../../../documentation/1.6/classsf_1_1Input.html "sf::Input documentation").
 
-Les instances de [`sf::Input`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Input.php "sf::Input documentation") ne peuvent pas vivre seules, elles doivent être attachées à une fenêtre. En fait, chaque [`sf::Window`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Window.php "sf::Window documentation") gère sa propre instance de [`sf::Input`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Input.php "sf::Input documentation"), que vous n'avez plus qu'à récupérer lorsque vous le souhaitez. Obtenir une référence vers l'entrée associée à une fenêtre s'effectue par la fonction `GetInput` :
+Les instances de [`sf::Input`](../../../documentation/1.6/classsf_1_1Input.html "sf::Input documentation") ne peuvent pas vivre seules, elles doivent être attachées à une fenêtre. En fait, chaque [`sf::Window`](../../../documentation/1.6/classsf_1_1Window.html "sf::Window documentation") gère sa propre instance de [`sf::Input`](../../../documentation/1.6/classsf_1_1Input.html "sf::Input documentation"), que vous n'avez plus qu'à récupérer lorsque vous le souhaitez. Obtenir une référence vers l'entrée associée à une fenêtre s'effectue par la fonction `GetInput` :
 
 ```cpp
 const sf::Input& Input = App.GetInput();
 ```
 
-Ensuite, vous pouvez utiliser l'instance de [`sf::Input`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Input.php "sf::Input documentation") pour récupérer l'état du clavier, de la souris et des joysticks à n'importe quel moment :
+Ensuite, vous pouvez utiliser l'instance de [`sf::Input`](../../../documentation/1.6/classsf_1_1Input.html "sf::Input documentation") pour récupérer l'état du clavier, de la souris et des joysticks à n'importe quel moment :
 
 ```cpp
 bool         LeftKeyDown     = Input.IsKeyDown(sf::Key::Left);

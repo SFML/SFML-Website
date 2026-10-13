@@ -8,11 +8,11 @@
 
 HTTP (*HyperText Transfer Protocol*) est le protocole utilisé pour transférer des fichiers sur internet : pages web, images, etc. Il consiste en une architecture client-serveur où le client envoie des requêtes, et le serveur renvoie des réponses contenant les ressources demandées par le client.
 
-SFML fournit une class qui implémente un client HTTP : [`sf::Http`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Http.php "sf::Http documentation").
+SFML fournit une class qui implémente un client HTTP : [`sf::Http`](../../../documentation/1.6/classsf_1_1Http.html "sf::Http documentation").
 
 ## Requêtes
 
-Une requête HTTP dans SFML est représentée par la classe [`sf::Http::Request`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Http_1_1Request.php "sf::Http::Request documentation"). Celle-ci contient cinq membres :
+Une requête HTTP dans SFML est représentée par la classe [`sf::Http::Request`](../../../documentation/1.6/classsf_1_1Http_1_1Request.html "sf::Http::Request documentation"). Celle-ci contient cinq membres :
 
 - Une méthode, qui est l'action à exécuter; elle peut être l'une des valeurs suivantes:
     - `sf::Http::Request::Get`: récupère la ressource demandée (page, image, etc.)
@@ -23,7 +23,7 @@ Une requête HTTP dans SFML est représentée par la classe [`sf::Http::Request`
 - Une version HTTP, qui est utilisée par le serveur pour identifier quelle version du protocole le client utiliser; cette version est 1.0 si vous ne la spécifiez pas explicitement (ce qui fonctionnera dans la plupart des situations)
 - Une liste de paires &lt;nom, valeur>, qui sont des options à passer au serveur; certaines de ces options sont obligatoires (comme par exemple "Host", "From", ou "Content-Length") mais SFML s'occupe de les remplir correctement si vous ne le faites pas
 
-Chacun de ces cinq membres peut être modifié via les accesseurs de la classe [`sf::Http::Request`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Http_1_1Request.php "sf::Http::Request documentation"):
+Chacun de ces cinq membres peut être modifié via les accesseurs de la classe [`sf::Http::Request`](../../../documentation/1.6/classsf_1_1Http_1_1Request.html "sf::Http::Request documentation"):
 
 ```cpp
 sf::Http::Request Request;
@@ -44,7 +44,7 @@ Request.SetURI("/");
 
 ## Réponses
 
-Après avoir envoyé une requête (ce que nous verrons dans le chapitre suivant), vous recevez une réponse du serveur. Cette réponse est représentée par la classe [`sf::Http::Response`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Http_1_1Response.php "sf::Http::Response documentation").
+Après avoir envoyé une requête (ce que nous verrons dans le chapitre suivant), vous recevez une réponse du serveur. Cette réponse est représentée par la classe [`sf::Http::Response`](../../../documentation/1.6/classsf_1_1Http_1_1Response.html "sf::Http::Response documentation").
 
 Une réponse consiste en quatre membres :
 
@@ -53,7 +53,7 @@ Une réponse consiste en quatre membres :
 - Une version HTTP, qui est celle utilisée par le serveur
 - Une liste de paires &lt;nom, valeur>, qui représente diverses informations sur le serveur qui sont transmises au client
 
-Tous ces membres peuvent être lus via les accesseurs de la classe [`sf::Http::Response`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Http_1_1Response.php "sf::Http::Response documentation") :
+Tous ces membres peuvent être lus via les accesseurs de la classe [`sf::Http::Response`](../../../documentation/1.6/classsf_1_1Http_1_1Response.html "sf::Http::Response documentation") :
 
 ```cpp
 sf::Http::Response Response;
@@ -88,11 +88,11 @@ Une fois le serveur défini, vous pouvez envoyer des requêtes avec la fonction 
 sf::Http::Response Response = Http.SendRequest(Request);
 ```
 
-Cette fonction prend en paramètre un [`sf::Http::Request`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Http_1_1Request.php "sf::Http::Request documentation"), et retourne une instance de [`sf::Http::Response`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Http_1_1Response.php "sf::Http::Response documentation").
+Cette fonction prend en paramètre un [`sf::Http::Request`](../../../documentation/1.6/classsf_1_1Http_1_1Request.html "sf::Http::Request documentation"), et retourne une instance de [`sf::Http::Response`](../../../documentation/1.6/classsf_1_1Http_1_1Response.html "sf::Http::Response documentation").
 
-C'est tout pour ce qui est de l'interface de la classe [`sf::Http`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Http.php "sf::Http documentation"), seulement deux fonctions ! Il n'y a même pas besoin de se déconnecter du serveur, étant donné que c'est fait automatiquement après chaque appel à `SendRequest`.
+C'est tout pour ce qui est de l'interface de la classe [`sf::Http`](../../../documentation/1.6/classsf_1_1Http.html "sf::Http documentation"), seulement deux fonctions ! Il n'y a même pas besoin de se déconnecter du serveur, étant donné que c'est fait automatiquement après chaque appel à `SendRequest`.
 
 ## Conclusion
 
-La classe [`sf::Http`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Http.php "sf::Http documentation") est un outil puissant pour manipuler le protocole HTTP, et accéder à des pages web ou à des fichiers via internet.  
+La classe [`sf::Http`](../../../documentation/1.6/classsf_1_1Http.html "sf::Http documentation") est un outil puissant pour manipuler le protocole HTTP, et accéder à des pages web ou à des fichiers via internet.  
 Jetons maintenant un oeil à son frère, le [protocole FTP](ftp.md "Aller au tutoriel suivant").

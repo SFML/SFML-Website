@@ -57,7 +57,7 @@ LRESULT CALLBACK OnEvent(HWND Handle, UINT Message, WPARAM WParam, LPARAM LParam
 
 ## Defining SFML views
 
-Once all interface components are created, we can define our SFML views. To do so, we just construct our [`sf::RenderWindow`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1RenderWindow.php "sf::RenderWindow documentation") instances with the controls handles :
+Once all interface components are created, we can define our SFML views. To do so, we just construct our [`sf::RenderWindow`](../../../documentation/1.6/classsf_1_1RenderWindow.html "sf::RenderWindow documentation") instances with the controls handles :
 
 ```cpp
 sf::RenderWindow SFMLView1(View1);

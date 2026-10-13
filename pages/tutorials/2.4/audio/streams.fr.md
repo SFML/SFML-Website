@@ -6,15 +6,15 @@
 
 ## Un flux audio ? C'est quoi ça ?
 
-Un flux (en anglais *stream*) audio est similaire à une musique (vous vous souvenez de la classe [`sf::Music`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1Music.php "sf::Music documentation") ?). Il a pratiquement les mêmes fonctions et se comporte de la même manière. La seule différence est qu'un flux audio ne jouera pas un fichier audio : il va jouer une source audio perso que *vous* vous chargerez de fournir. En d'autres termes, définir votre propre flux audio vous permet de jouer n'importe quoi d'autre qu'un fichier : un flux internet, une musique générée par votre programme, un format non supporté par SFML, etc.
+Un flux (en anglais *stream*) audio est similaire à une musique (vous vous souvenez de la classe [`sf::Music`](../../../documentation/2.4.2/classsf_1_1Music.html "sf::Music documentation") ?). Il a pratiquement les mêmes fonctions et se comporte de la même manière. La seule différence est qu'un flux audio ne jouera pas un fichier audio : il va jouer une source audio perso que *vous* vous chargerez de fournir. En d'autres termes, définir votre propre flux audio vous permet de jouer n'importe quoi d'autre qu'un fichier : un flux internet, une musique générée par votre programme, un format non supporté par SFML, etc.
 
-En fait, la classe [`sf::Music`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1Music.php "sf::Music documentation") est simplement un type particulier de flux audio, spécialisé dans la lecture de fichiers.
+En fait, la classe [`sf::Music`](../../../documentation/2.4.2/classsf_1_1Music.html "sf::Music documentation") est simplement un type particulier de flux audio, spécialisé dans la lecture de fichiers.
 
-Comme nous parlons ici de *flux*, nous aurons affaire à des données audio qui ne peuvent pas être complètement chargées en mémoire, mais qui seront plutôt chargées au fur et à mesure qu'elles sont jouées. Si votre son peut être intégralement chargé et tenir en mémoire sans problème, alors oubliez les flux audio : chargez le simplement dans un [`sf::SoundBuffer`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1SoundBuffer.php "sf::SoundBuffer documentation") et utilisez un [`sf::Sound`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1Sound.php "sf::Sound documentation") pour le jouer.
+Comme nous parlons ici de *flux*, nous aurons affaire à des données audio qui ne peuvent pas être complètement chargées en mémoire, mais qui seront plutôt chargées au fur et à mesure qu'elles sont jouées. Si votre son peut être intégralement chargé et tenir en mémoire sans problème, alors oubliez les flux audio : chargez le simplement dans un [`sf::SoundBuffer`](../../../documentation/2.4.2/classsf_1_1SoundBuffer.html "sf::SoundBuffer documentation") et utilisez un [`sf::Sound`](../../../documentation/2.4.2/classsf_1_1Sound.html "sf::Sound documentation") pour le jouer.
 
 ## sf::SoundStream
 
-Pour définir votre propre flux audio, vous devez hériter de la classe de base abstraite [`sf::SoundStream`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1SoundStream.php "sf::SoundStream documentation"). Celle-ci possède deux fonctions virtuelles que vous devrez redéfinir : `onGetData` et `onSeek`.
+Pour définir votre propre flux audio, vous devez hériter de la classe de base abstraite [`sf::SoundStream`](../../../documentation/2.4.2/classsf_1_1SoundStream.html "sf::SoundStream documentation"). Celle-ci possède deux fonctions virtuelles que vous devrez redéfinir : `onGetData` et `onSeek`.
 
 ```cpp
 class MyAudioStream : public sf::SoundStream
@@ -42,7 +42,7 @@ SFML crée une copie interne des échantillons audio dès que `onGetData` a fini
 
 `onSeek` est exécutée lorsque la fonction publique `setPlayingOffset` est appelée. Son but est de changer la position de lecture courante dans la source de données. Le paramètre est une valeur de temps représentant la nouvelle position, relativement au début du son (et non à la position courante). Cette fonction est parfois impossible à implémenter, par rapport au type du flux ; dans ce cas laissez-la vide et indiquez aux utilisateurs de votre classe que changer la position de lecture n'est pas supporté.
 
-Désormais votre classe est quasiment prête à fonctionner. La seule chose que [`sf::SoundStream`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1SoundStream.php "sf::SoundStream documentation") doit encore savoir, est le nombre de canaux ainsi que le taux d'échantillonnage du flux, afin de pouvoir le restituer correctement. Pour transmettre ces paramètres à la classe de base, vous devez appeler la fonction protégée `initialize` dès que ceux-ci sont connus (donc très probablement lorsque le flux est chargé/initialisé).
+Désormais votre classe est quasiment prête à fonctionner. La seule chose que [`sf::SoundStream`](../../../documentation/2.4.2/classsf_1_1SoundStream.html "sf::SoundStream documentation") doit encore savoir, est le nombre de canaux ainsi que le taux d'échantillonnage du flux, afin de pouvoir le restituer correctement. Pour transmettre ces paramètres à la classe de base, vous devez appeler la fonction protégée `initialize` dès que ceux-ci sont connus (donc très probablement lorsque le flux est chargé/initialisé).
 
 ```cpp
 // l'endroit où ceci est fait, dépend complètement de comment votre classe est conçue

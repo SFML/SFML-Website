@@ -10,7 +10,7 @@ Dans ce tutoriel, vous allez apprendre à utiliser les vues 2D de SFML. Les vues
 
 ## Définir une nouvelle vue
 
-Les vues sont définies par la classe [`sf::View`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1View.php "sf::View documentation"), qui n'est basiquement qu'un rectangle 2D enrobé dans une interface style caméra.
+Les vues sont définies par la classe [`sf::View`](../../../documentation/1.6/classsf_1_1View.html "sf::View documentation"), qui n'est basiquement qu'un rectangle 2D enrobé dans une interface style caméra.
 
 Une vue peut être créée soit à partir d'un centre et d'une demi-taille, soit directement à partir d'un rectangle englobant :
 
@@ -52,7 +52,7 @@ Comme vous pouvez le voir il n'y a rien de compliqué ici, seulement quelques fo
 
 ## Utiliser une vue
 
-Afin d'utiliser une vue, vous devez appeler la fonction `SetView` de la classe [`sf::RenderWindow`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1RenderWindow.php "sf::RenderWindow documentation") :
+Afin d'utiliser une vue, vous devez appeler la fonction `SetView` de la classe [`sf::RenderWindow`](../../../documentation/1.6/classsf_1_1RenderWindow.html "sf::RenderWindow documentation") :
 
 ```cpp
 // Utilise notre vue perso

@@ -20,7 +20,7 @@ Si vous travaillez avec des compilateurs qui supportent le nouveau standard et s
 
 ## Créer un thread avec SFML
 
-Assez de blabla, voyons un peu de code. La classe qui permet de créer des threads avec SFML est [`sf::Thread`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Thread.php "sf::Thread documentation"), et voici à quoi elle ressemble en action :
+Assez de blabla, voyons un peu de code. La classe qui permet de créer des threads avec SFML est [`sf::Thread`](../../../documentation/2.3.2/classsf_1_1Thread.html "sf::Thread documentation"), et voici à quoi elle ressemble en action :
 
 ```cpp
 #include <SFML/System.hpp>
@@ -55,7 +55,7 @@ Dans ce code, `main` et `func` tournent toutes deux en parallèle, après que `t
 
 ![Capture d'écran de la sortie du programme](thread-mixed.png)
 
-Le point d'entrée du thread, c'est-à-dire la fonction qui est appelée dans le thread, doit être passée au constructeur de [`sf::Thread`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Thread.php "sf::Thread documentation"). [`sf::Thread`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Thread.php "sf::Thread documentation") essaye d'être flexible et d'accepter un large choix de types de points d'entrée : functions membres ou non-membres, avec ou sans paramètres, foncteurs, etc. L'example ci-dessus illustre l'utilisation d'une fonction non-membre, voici quelques autres exemples.
+Le point d'entrée du thread, c'est-à-dire la fonction qui est appelée dans le thread, doit être passée au constructeur de [`sf::Thread`](../../../documentation/2.3.2/classsf_1_1Thread.html "sf::Thread documentation"). [`sf::Thread`](../../../documentation/2.3.2/classsf_1_1Thread.html "sf::Thread documentation") essaye d'être flexible et d'accepter un large choix de types de points d'entrée : functions membres ou non-membres, avec ou sans paramètres, foncteurs, etc. L'example ci-dessus illustre l'utilisation d'une fonction non-membre, voici quelques autres exemples.
 
 - Fonctions non-membre avec un paramètre :
 
@@ -96,7 +96,7 @@ struct MyFunctor
 sf::Thread thread(MyFunctor());
 ```
 
-Le dernier exemple, qui utilise les foncteurs, est le plus puissant car il peut accepter n'importe quel type de foncteur et rend ainsi [`sf::Thread`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Thread.php "sf::Thread documentation") compatible avec beaucoup de types de fonctions qui ne sont pas directement supportées. Cette fonctionnalité est particulièrement intéressante combinée aux lambdas ou `std::bind`, présents dans la nouvelle mouture 2011 du C++.
+Le dernier exemple, qui utilise les foncteurs, est le plus puissant car il peut accepter n'importe quel type de foncteur et rend ainsi [`sf::Thread`](../../../documentation/2.3.2/classsf_1_1Thread.html "sf::Thread documentation") compatible avec beaucoup de types de fonctions qui ne sont pas directement supportées. Cette fonctionnalité est particulièrement intéressante combinée aux lambdas ou `std::bind`, présents dans la nouvelle mouture 2011 du C++.
 
 ```cpp
 // avec les lambdas
@@ -114,7 +114,7 @@ void func(std::string, int, double)
 sf::Thread thread(std::bind(&func, "hello", 24, 0.5));
 ```
 
-Si vous voulez utiliser un [`sf::Thread`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Thread.php "sf::Thread documentation") dans une classe, n'oubliez pas qu'il n'a pas de constructeur par défaut. Ainsi, vous devrez l'initialiser directement dans la *liste d'initialisation* du constructeur de la classe parent :
+Si vous voulez utiliser un [`sf::Thread`](../../../documentation/2.3.2/classsf_1_1Thread.html "sf::Thread documentation") dans une classe, n'oubliez pas qu'il n'a pas de constructeur par défaut. Ainsi, vous devrez l'initialiser directement dans la *liste d'initialisation* du constructeur de la classe parent :
 
 ```cpp
 class ClassWithThread
@@ -137,11 +137,11 @@ private:
 };
 ```
 
-Si vous avez vraiment besoin de construire votre instance de [`sf::Thread`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Thread.php "sf::Thread documentation") *après* la construction de l'objet parent, vous pouvez également retarder sa construction en l'allouant dynamiquement avec `new`.
+Si vous avez vraiment besoin de construire votre instance de [`sf::Thread`](../../../documentation/2.3.2/classsf_1_1Thread.html "sf::Thread documentation") *après* la construction de l'objet parent, vous pouvez également retarder sa construction en l'allouant dynamiquement avec `new`.
 
 ## Démarrer les threads
 
-Une fois que vous avez créé un [`sf::Thread`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Thread.php "sf::Thread documentation"), vous devez le démarrer avec sa fonction `launch`.
+Une fois que vous avez créé un [`sf::Thread`](../../../documentation/2.3.2/classsf_1_1Thread.html "sf::Thread documentation"), vous devez le démarrer avec sa fonction `launch`.
 
 ```cpp
 sf::Thread thread(&func);
@@ -166,11 +166,11 @@ thread.launch();
 thread.wait();
 ```
 
-La fonction `wait` est également implicitement appelée par le destructeur de [`sf::Thread`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Thread.php "sf::Thread documentation"), de façon à ce qu'un thread ne puisse pas continuer à tourner (et être hors de contrôle) après que l'instance de [`sf::Thread`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Thread.php "sf::Thread documentation") qui l'a créé ait été détruite. Gardez bien cela en tête lorsque vous gérez vos threads (cf. la dernière partie de ce tutoriel).
+La fonction `wait` est également implicitement appelée par le destructeur de [`sf::Thread`](../../../documentation/2.3.2/classsf_1_1Thread.html "sf::Thread documentation"), de façon à ce qu'un thread ne puisse pas continuer à tourner (et être hors de contrôle) après que l'instance de [`sf::Thread`](../../../documentation/2.3.2/classsf_1_1Thread.html "sf::Thread documentation") qui l'a créé ait été détruite. Gardez bien cela en tête lorsque vous gérez vos threads (cf. la dernière partie de ce tutoriel).
 
 ## Mettre en pause les threads
 
-Il n'existe aucune fonction dans [`sf::Thread`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Thread.php "sf::Thread documentation") qui permette de mettre en pause un thread depuis un autre, la seule façon est de le faire directement depuis le code qui tourne dans le thread. En d'autres termes, on ne peut mettre en pause que le thread courant. Pour ce faire, vous pouvez appeler la fonction `sf::sleep` :
+Il n'existe aucune fonction dans [`sf::Thread`](../../../documentation/2.3.2/classsf_1_1Thread.html "sf::Thread documentation") qui permette de mettre en pause un thread depuis un autre, la seule façon est de le faire directement depuis le code qui tourne dans le thread. En d'autres termes, on ne peut mettre en pause que le thread courant. Pour ce faire, vous pouvez appeler la fonction `sf::sleep` :
 
 ```cpp
 void func()
@@ -238,7 +238,7 @@ Le mutex n'est pas la seule primitive que vous pouvez utiliser pour protéger vo
 
 Pas de panique : les mutexs sont déjà thread-safe, il n'y a pas besoin de les protéger. Mais ils ne sont pas exception-safe ! Que se passe-t-il si une exception est lancée pendant qu'un mutex est verrouillé ? Il ne peut pas atteindre la ligne qui le déverrouille, et reste verrouillé pour toujours. Et tous les threads qui essayeront ensuite de le verrouiller seront bloqués pour toujours à leur tour ; votre application toute entière pourrait se retrouver bloquée. Pas cool.
 
-Pour s'assurer que les mutexs sont toujours déverrouillés dans un environnement où des exceptions peuvent être lancées, SFML fournit une classe RAII pour les encapsuler : [`sf::Lock`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Lock.php "sf::Lock documentation"). Elle verrouille le mutex dans son constructeur, et le déverrouille dans son destructeur. Simple et efficace.
+Pour s'assurer que les mutexs sont toujours déverrouillés dans un environnement où des exceptions peuvent être lancées, SFML fournit une classe RAII pour les encapsuler : [`sf::Lock`](../../../documentation/2.3.2/classsf_1_1Lock.html "sf::Lock documentation"). Elle verrouille le mutex dans son constructeur, et le déverrouille dans son destructeur. Simple et efficace.
 
 ```cpp
 sf::Mutex mutex;
@@ -252,7 +252,7 @@ void func()
 } // mutex.unlock()
 ```
 
-Notez que [`sf::Lock`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Lock.php "sf::Lock documentation") peut aussi se révéler utile dans une fonction qui a plusieurs instructions `return`.
+Notez que [`sf::Lock`](../../../documentation/2.3.2/classsf_1_1Lock.html "sf::Lock documentation") peut aussi se révéler utile dans une fonction qui a plusieurs instructions `return`.
 
 ```cpp
 sf::Mutex mutex;
@@ -276,7 +276,7 @@ bool func()
 
 ## Erreurs classiques
 
-Il y a une chose que les programmeurs oublient souvent : un thread ne peut pas vivre sans son instance de [`sf::Thread`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Thread.php "sf::Thread documentation").  
+Il y a une chose que les programmeurs oublient souvent : un thread ne peut pas vivre sans son instance de [`sf::Thread`](../../../documentation/2.3.2/classsf_1_1Thread.html "sf::Thread documentation").  
 On voit souvent ce genre de code sur les forums :
 
 ```cpp
@@ -296,6 +296,6 @@ int main()
 
 Les gens qui écrivent ce genre de code s'attendent à ce que la fonction `startThread()` démarre un thread qui va faire sa vie dans son coin et sera détruit lorsque sa fonction se termine. Mais ce n'est pas ce qui se passe en réalité : la fonction threadée semble bloquer le thread principal, comme si les threads ne fonctionnaient pas.
 
-La raison ? L'instance de [`sf::Thread`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Thread.php "sf::Thread documentation") est locale à la fonction `startThread()` et est donc immédiatement détruite, quand la fonction se termine. Le destructeur de [`sf::Thread`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Thread.php "sf::Thread documentation") est appelé automatiquement, et celui-ci appelle à son tour `wait()` comme nous l'avons vu précédemment, et le résultat est que le thread principal bloque et attend que la fonction threadée se termine au lieu de continuer à tourner en parallèle.
+La raison ? L'instance de [`sf::Thread`](../../../documentation/2.3.2/classsf_1_1Thread.html "sf::Thread documentation") est locale à la fonction `startThread()` et est donc immédiatement détruite, quand la fonction se termine. Le destructeur de [`sf::Thread`](../../../documentation/2.3.2/classsf_1_1Thread.html "sf::Thread documentation") est appelé automatiquement, et celui-ci appelle à son tour `wait()` comme nous l'avons vu précédemment, et le résultat est que le thread principal bloque et attend que la fonction threadée se termine au lieu de continuer à tourner en parallèle.
 
-Donc n'oubliez jamais ceci : vous devez gérer vos instances de [`sf::Thread`](https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Thread.php "sf::Thread documentation") de manière à ce qu'elles vivent aussi longtemps que le thread et sa fonction tournent.
+Donc n'oubliez jamais ceci : vous devez gérer vos instances de [`sf::Thread`](../../../documentation/2.3.2/classsf_1_1Thread.html "sf::Thread documentation") de manière à ce qu'elles vivent aussi longtemps que le thread et sa fonction tournent.

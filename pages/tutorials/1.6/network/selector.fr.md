@@ -12,7 +12,7 @@ L'autre solution est d'utiliser des sélecteurs. Les sélecteurs permettent de m
 
 ## Gérer plusieurs clients
 
-Il existe deux types de sélecteurs dans la SFML : [`sf::SelectorTCP`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Selector.php "sf::SelectorTCP documentation") (pour les sockets TCP) et [`sf::SelectorUDP`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Selector.php "sf::SelectorUDP documentation") (pour les sockets UDP). Cependant seul le type de socket diffère, les fonctions et le comportement sont exactement les mêmes pour les deux classes.
+Il existe deux types de sélecteurs dans la SFML : [`sf::SelectorTCP`](../../../documentation/1.6/classsf_1_1Selector.html "sf::SelectorTCP documentation") (pour les sockets TCP) et [`sf::SelectorUDP`](../../../documentation/1.6/classsf_1_1Selector.html "sf::SelectorUDP documentation") (pour les sockets UDP). Cependant seul le type de socket diffère, les fonctions et le comportement sont exactement les mêmes pour les deux classes.
 
 Donc, tentons d'utiliser un sélecteur TCP. Ici nous allons construire un serveur qui sera capable de gérer plusieurs clients à la fois, sans utiliser le moindre thread.
 

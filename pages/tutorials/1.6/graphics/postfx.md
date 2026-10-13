@@ -10,7 +10,7 @@ With the evolution of graphics cards, shaders have become a common thing in grap
 
 Post-effects are custom pixel effects that are applied to the whole screen, after you have rendered everything. Common post-effects are black-and-white, glow, HDRL (high dynamic range lighting), etc.
 
-SFML defines a class to easily create and apply post-effects : [`sf::PostFX`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1PostFX.php "sf::PostFX documentation"). Let's see how to create a post-effect, and how to manipulate it in your program.
+SFML defines a class to easily create and apply post-effects : [`sf::PostFX`](../../../documentation/1.6/classsf_1_1PostFX.html "sf::PostFX documentation"). Let's see how to create a post-effect, and how to manipulate it in your program.
 
 ## Writing a post-effect
 
@@ -99,7 +99,7 @@ Effect.SetTexture("framebuffer", NULL);
 Effect.SetParameter("color", 1.f, 1.f, 1.f);
 ```
 
-The `SetTexture` function is used to bind a texture. The first parameter is the texture name in the effect, the second one is a pointer to the texture, defined as a [`sf::Image`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Image.php "sf::Image documentation"). Passing `NULL` means you want to use the contents of the screen.
+The `SetTexture` function is used to bind a texture. The first parameter is the texture name in the effect, the second one is a pointer to the texture, defined as a [`sf::Image`](../../../documentation/1.6/classsf_1_1Image.html "sf::Image documentation"). Passing `NULL` means you want to use the contents of the screen.
 
 To set any other type of parameter, you can use the `SetParameter` set of functions. The first parameter is the parameter name in the effect, and then, depending on the parameter's type, you can pass 1, 2, 3 or 4 floats. Here we have a `vec3` variable, so we pass 3 values. Values for colors range from 0 to 1, so here we have defined a white color.
 

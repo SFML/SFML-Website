@@ -15,11 +15,11 @@ Avant d'entrer dans le vif du sujet, qu'est-ce qu'un thread ? Dans quel cas doit
 Basiquement, un thread est un moyen d'exécuter un ensemble d'instructions indépendamment du thread principal (tout programme tourne dans un thread : il s'agit de programmes *monothreaded* ; lorsque vous ajoutez un ou plusieurs threads, il s'agit alors de programmes *multithreaded*). Démarrer un thread, c'est un peu comme exécuter un nouveau processus, excepté que c'est beaucoup plus léger -- les threads sont aussi appelés processus légers. Tous les threads partagent les données de leur processus parent. Ainsi, vous pouvez avoir deux ou plusieurs ensembles d'instructions s'exécutant en parallèle au sein de votre programme.  
 Ok, alors quand faut-il utiliser les threads ? En gros, lorsque vous devez exécuter quelque chose demandant beaucoup de temps (un calcul complexe, attente d'un évènement, ...) tout en évitant de bloquer l'exécution du programme. Par exemple, vous pourriez vouloir afficher une interface graphique pendant que vous chargez les ressources de votre jeu (ce qui prend habituellement pas mal de temps), ainsi vous pouvez placer le code de chargement dans un thread séparé du reste. Les threads sont également largement utilisés dans la programmation réseau, afin d'attendre que des données soient réceptionnées tout en continuant l'exécution du programme.
 
-Dans la SFML, les threads sont définis par la classe [`sf::Thread`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Thread.php "sf::Thread documentation"). Il existe deux façons de l'utiliser, selon vos besoins.
+Dans la SFML, les threads sont définis par la classe [`sf::Thread`](../../../documentation/1.6/classsf_1_1Thread.html "sf::Thread documentation"). Il existe deux façons de l'utiliser, selon vos besoins.
 
 ## Utilisation de sf::Thread avec une fonction de rappel (callback)
 
-La première manière d'utiliser [`sf::Thread`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Thread.php "sf::Thread documentation") est de lui fournir une fonction à exécuter. Lorsque vous démarrez le thread, cette fonction sera appelée en tant que point d'entrée du thread. Celui-ci prendra fin automatiquement lorsque la fonction se terminera.
+La première manière d'utiliser [`sf::Thread`](../../../documentation/1.6/classsf_1_1Thread.html "sf::Thread documentation") est de lui fournir une fonction à exécuter. Lorsque vous démarrez le thread, cette fonction sera appelée en tant que point d'entrée du thread. Celui-ci prendra fin automatiquement lorsque la fonction se terminera.
 
 Voici un exemple simple :
 
@@ -52,9 +52,9 @@ int main()
 
 Lorsque `Thread.Launch()` est appelé, l'exécution est séparée en deux flots indépendants : pendant que `ThreadFunction()` s'exécute, `main()` est en train de se terminer. Ainsi le texte des deux threads sera affiché en même temps.
 
-Soyez vigilants : ici la fonction `main()` peut très bien se terminer avant la fin de `ThreadFunction()`, terminant ainsi le programme alors que le thread est toujours actif. Cependant ce n'est pas le cas : le destructeur de [`sf::Thread`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Thread.php "sf::Thread documentation") va attendre que le thread se termine, et ainsi s'assurer que le thread ne vivra pas plus longtemps que l'instance de [`sf::Thread`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Thread.php "sf::Thread documentation") qui le possède.
+Soyez vigilants : ici la fonction `main()` peut très bien se terminer avant la fin de `ThreadFunction()`, terminant ainsi le programme alors que le thread est toujours actif. Cependant ce n'est pas le cas : le destructeur de [`sf::Thread`](../../../documentation/1.6/classsf_1_1Thread.html "sf::Thread documentation") va attendre que le thread se termine, et ainsi s'assurer que le thread ne vivra pas plus longtemps que l'instance de [`sf::Thread`](../../../documentation/1.6/classsf_1_1Thread.html "sf::Thread documentation") qui le possède.
 
-Si vous avez des données à passer au thread, vous pouvez les passer au constructeur de [`sf::Thread`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Thread.php "sf::Thread documentation") :
+Si vous avez des données à passer au thread, vous pouvez les passer au constructeur de [`sf::Thread`](../../../documentation/1.6/classsf_1_1Thread.html "sf::Thread documentation") :
 
 ```cpp
 MyClass Object;
@@ -77,7 +77,7 @@ Attention, assurez-vous que les données que vous passez ne seront pas détruite
 
 L'utilisation d'une fonction callback en tant que thread est simple, et peut être utile dans certains cas, mais ne se révèle pas très flexible. En effet, que se passe-t-il si vous voulez utiliser un thread au sein d'une classe ? Ou si vous voulez partager plus de variables entre votre thread et le thread principal ?
 
-Afin de permettre plus de flexibilité, [`sf::Thread`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Thread.php "sf::Thread documentation") peut également être utilisée en tant que classe de base. Au lieu de lui passer une fonction callback à la construction, vous pouvez en dériver et redéfinir la fonction virtuelle `Run()`. Voici le même exemple que ci-dessus, écrit avec une classe dérivée au lieu de la fonction callback :
+Afin de permettre plus de flexibilité, [`sf::Thread`](../../../documentation/1.6/classsf_1_1Thread.html "sf::Thread documentation") peut également être utilisée en tant que classe de base. Au lieu de lui passer une fonction callback à la construction, vous pouvez en dériver et redéfinir la fonction virtuelle `Run()`. Voici le même exemple que ci-dessus, écrit avec une classe dérivée au lieu de la fonction callback :
 
 ```cpp
 #include <SFML/System.hpp>
@@ -220,7 +220,7 @@ Comme toute durée manipulée par la SFML, le paramètre est un flottant défini
 
 Ok, commençons par définir ce qu'est un mutex. Un mutex (*MUTual EXclusion*) est une primitive de synchronisation. Ce n'est pas la seule : il existe les sémaphores, les sections critiques, les conditions, etc. Mais la plus importante est le mutex. En gros, vous l'utilisez pour verrouiller un morceau de code spécifique qui ne doit pas être interrompu, pour empêcher les autres threads d'y accéder. Lorsqu'un mutex est verrouillé, tout autre thread tentant de le verrouiller à son tour sera mis en attente jusqu'à ce que le thread qui l'a verrouillé le premier le déverrouille. Typiquement, les mutexs sont utilisés pour contrôler l'accès aux variables qui sont partagées entre plusieurs threads.
 
-Si vous exécutez les exemples de code donnés au début de ce tutoriel, vous verrez que le résultat n'est peut-être pas ce à quoi vous vous attendiez : les textes des threads sont complétement mélangés. Ceci est dû au fait que les threads accèdent à la même ressource en même temps (ici la sortie standard). Pour éviter ceci, on peut utiliser un [`sf::Mutex`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Mutex.php "sf::Mutex documentation") :
+Si vous exécutez les exemples de code donnés au début de ce tutoriel, vous verrez que le résultat n'est peut-être pas ce à quoi vous vous attendiez : les textes des threads sont complétement mélangés. Ceci est dû au fait que les threads accèdent à la même ressource en même temps (ici la sortie standard). Pour éviter ceci, on peut utiliser un [`sf::Mutex`](../../../documentation/1.6/classsf_1_1Mutex.html "sf::Mutex documentation") :
 
 ```cpp
 #include <SFML/System.hpp>
@@ -277,7 +277,7 @@ Si vous vous demandez pourquoi nous n'utilisons pas de mutex pour accéder à la
 
 Soyez vigilants lorsque vous utilisez un mutex ou toute autre primitive de synchronisation : si vous ne les utilisez pas avec précaution, ils peuvent mener à des interblocages (*deadlocks* -- plusieurs threads verrouillés qui attendent les uns sur les autres indéfiniment).
 
-Mais il reste un problème : que se passe-t-il si une exception est levée alors qu'un mutex est verrouillé ? Le thread n'aura aucun moyen de le déverrouiller, ce qui causera probablement un interblocage et gèlera votre programme. Afin de gérer ce problème correctement sans avoir à écrire des tonnes de code supplémentaire, la SFML fournit une classe [`sf::Lock`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Lock.php "sf::Lock documentation").
+Mais il reste un problème : que se passe-t-il si une exception est levée alors qu'un mutex est verrouillé ? Le thread n'aura aucun moyen de le déverrouiller, ce qui causera probablement un interblocage et gèlera votre programme. Afin de gérer ce problème correctement sans avoir à écrire des tonnes de code supplémentaire, la SFML fournit une classe [`sf::Lock`](../../../documentation/1.6/classsf_1_1Lock.html "sf::Lock documentation").
 
 Une version plus sûre du code ci-dessus serait donc la suivante :
 
@@ -294,7 +294,7 @@ Une version plus sûre du code ci-dessus serait donc la suivante :
 }// Le mutex est déverrouillé automatiquement lorsque l'objet sf::Lock est détruit
 ```
 
-Le mutex est déverrouillé dans le destructeur de [`sf::Lock`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Lock.php "sf::Lock documentation"), qui sera appelé même si une exception est levée.
+Le mutex est déverrouillé dans le destructeur de [`sf::Lock`](../../../documentation/1.6/classsf_1_1Lock.html "sf::Lock documentation"), qui sera appelé même si une exception est levée.
 
 ## Conclusion
 

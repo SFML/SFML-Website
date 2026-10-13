@@ -8,11 +8,11 @@
 
 FTP (File Transfer Protocol) is a widely used protocol for transfering and accessing files over the internet, or any other network. It consists of a client-server architecture which is basically very simple: the client sends a command to the server, which executes it and sends a response back to the client to inform him about the success or failure of the operation.
 
-SFML provides a simple class which implements a FTP client and all the commands it can send to a FTP server: [`sf::Ftp`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Ftp.php "sf::Ftp documentation").
+SFML provides a simple class which implements a FTP client and all the commands it can send to a FTP server: [`sf::Ftp`](../../../documentation/1.6/classsf_1_1Ftp.html "sf::Ftp documentation").
 
 ## FTP responses
 
-Before using our FTP class, let's explain the concept of responses. Every FTP action is internally a command that is executed by the server, and which returns a response containing a status code and a message. Thus, every call to a [`sf::Ftp`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Ftp.php "sf::Ftp documentation") function returns such a response, wrapped in the [`sf::Ftp::Response`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Ftp_1_1Response.php "sf::Ftp::Response documentation") class. This class is a straight-forward wrapper around FTP responses, and contains the returned status code and message from the server.
+Before using our FTP class, let's explain the concept of responses. Every FTP action is internally a command that is executed by the server, and which returns a response containing a status code and a message. Thus, every call to a [`sf::Ftp`](../../../documentation/1.6/classsf_1_1Ftp.html "sf::Ftp documentation") function returns such a response, wrapped in the [`sf::Ftp::Response`](../../../documentation/1.6/classsf_1_1Ftp_1_1Response.html "sf::Ftp::Response documentation") class. This class is a straight-forward wrapper around FTP responses, and contains the returned status code and message from the server.
 
 ```cpp
 sf::Ftp Server;
@@ -53,7 +53,7 @@ if (Server.Connect("ftp.myserver.com").IsOk())
 }
 ```
 
-The server address can be any valid [`sf::IPAddress`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1IPAddress.php "sf::IPAddress documentation"): an URL, an IP address, a network name, etc.
+The server address can be any valid [`sf::IPAddress`](../../../documentation/1.6/classsf_1_1IPAddress.html "sf::IPAddress documentation"): an URL, an IP address, a network name, etc.
 
 The `Connect` function can accept two more optional parameters: a network port and a timeout value.  
 The default port for FTP is 21, but some applications may need to use another one.  
@@ -92,9 +92,9 @@ You're now connected and identified on the server, let's see what you can do wit
 
 Because the FTP protocol aims at accessing files, it can basically be seen as a remote filesystem. Thus, the command it defines are similar to those you can find on your favorite OS: browsing directories, displaying content, copying files, etc.
 
-Here is a list of the FTP commands implemented in [`sf::Ftp`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Ftp.php "sf::Ftp documentation").
+Here is a list of the FTP commands implemented in [`sf::Ftp`](../../../documentation/1.6/classsf_1_1Ftp.html "sf::Ftp documentation").
 
-`GetWorkingDirectory` retrieves the current working directory. It returns a specialized response of type [`sf::Ftp::DirectoryResponse`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Ftp_1_1DirectoryResponse.php "sf::Ftp::DirectoryResponse documentation") which contains the directory as an additional member.
+`GetWorkingDirectory` retrieves the current working directory. It returns a specialized response of type [`sf::Ftp::DirectoryResponse`](../../../documentation/1.6/classsf_1_1Ftp_1_1DirectoryResponse.html "sf::Ftp::DirectoryResponse documentation") which contains the directory as an additional member.
 
 ```cpp
 sf::Ftp::DirectoryResponse Resp = Server.GetWorkingDirectory();
@@ -104,7 +104,7 @@ if (Resp.IsOk())
 }
 ```
 
-`GetDirectoryListing` retrieves the contents of the given directory, relative to the current working directory. It returns a specialized response of type [`sf::Ftp::ListingResponse`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Ftp_1_1ListingResponse.php "sf::Ftp::ListingResponse documentation") which contains the listing as an additional member.
+`GetDirectoryListing` retrieves the contents of the given directory, relative to the current working directory. It returns a specialized response of type [`sf::Ftp::ListingResponse`](../../../documentation/1.6/classsf_1_1Ftp_1_1ListingResponse.html "sf::Ftp::ListingResponse documentation") which contains the listing as an additional member.
 
 ```cpp
 sf::Ftp::ListingResponse Resp = Server.GetDirectoryListing("some_directory");
@@ -173,7 +173,7 @@ Note: the `Download` and `Upload` function may take time to complete, depending 
 Server.KeepAlive();
 ```
 
-`Disconnect` disconnects the client from the server. Calling it is not mandatory (but recommended), as it is done when the [`sf::Ftp`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Ftp.php "sf::Ftp documentation") instance gets destructed.
+`Disconnect` disconnects the client from the server. Calling it is not mandatory (but recommended), as it is done when the [`sf::Ftp`](../../../documentation/1.6/classsf_1_1Ftp.html "sf::Ftp documentation") instance gets destructed.
 
 ```cpp
 Server.Disconnect();

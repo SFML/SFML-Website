@@ -10,7 +10,7 @@ In this tutorial, you'll learn how to use SFML 2D views. Views are like 2D camer
 
 ## Defining a new view
 
-Views are defined by the [`sf::View`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1View.php "sf::View documentation") class, which is basically a 2D rectangle nicely wrapped in a camera-like interface.
+Views are defined by the [`sf::View`](../../../documentation/1.6/classsf_1_1View.html "sf::View documentation") class, which is basically a 2D rectangle nicely wrapped in a camera-like interface.
 
 A view can be created either with a center point and a half-size, or directly from a bounding rectangle :
 
@@ -52,7 +52,7 @@ As you can see there's nothing complicated here, only a few functions to control
 
 ## Using a view
 
-To use a view, you need to call the `SetView` function of the [`sf::RenderWindow`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1RenderWindow.php "sf::RenderWindow documentation") class :
+To use a view, you need to call the `SetView` function of the [`sf::RenderWindow`](../../../documentation/1.6/classsf_1_1RenderWindow.html "sf::RenderWindow documentation") class :
 
 ```cpp
 // Use our custom view

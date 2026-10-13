@@ -10,7 +10,7 @@ This tutorial explains how to access global input devices: keyboard, mouse and j
 
 ## Keyboard
 
-The class that provides access to the keyboard state is [`sf::Keyboard`](https://www.sfml-dev.org/documentation/2.1/classsf_1_1Keyboard.php "sf::Keyboard documentation"). It only contains one function, `isKeyPressed`, which checks the current state of a key (pressed or released). It is a static function, so you don't need to instanciate [`sf::Keyboard`](https://www.sfml-dev.org/documentation/2.1/classsf_1_1Keyboard.php "sf::Keyboard documentation") to use it.
+The class that provides access to the keyboard state is [`sf::Keyboard`](../../../documentation/2.1/classsf_1_1Keyboard.html "sf::Keyboard documentation"). It only contains one function, `isKeyPressed`, which checks the current state of a key (pressed or released). It is a static function, so you don't need to instanciate [`sf::Keyboard`](../../../documentation/2.1/classsf_1_1Keyboard.html "sf::Keyboard documentation") to use it.
 
 This function directly reads the keyboard state, ignoring the focus state of your window. This means that `isKeyPressed` may return true even if your window is inactive.
 
@@ -30,7 +30,7 @@ Key codes are defined in the `sf::Keyboard::Key` enum.
 
 ## Mouse
 
-The class that provides access to the mouse state is [`sf::Mouse`](https://www.sfml-dev.org/documentation/2.1/classsf_1_1Mouse.php "sf::Mouse documentation"). Like its friend [`sf::Keyboard`](https://www.sfml-dev.org/documentation/2.1/classsf_1_1Keyboard.php "sf::Keyboard documentation"), [`sf::Mouse`](https://www.sfml-dev.org/documentation/2.1/classsf_1_1Mouse.php "sf::Mouse documentation") only contains static functions and is not meant to be instanciated (SFML only handles a single mouse for the time being).
+The class that provides access to the mouse state is [`sf::Mouse`](../../../documentation/2.1/classsf_1_1Mouse.html "sf::Mouse documentation"). Like its friend [`sf::Keyboard`](../../../documentation/2.1/classsf_1_1Keyboard.html "sf::Keyboard documentation"), [`sf::Mouse`](../../../documentation/2.1/classsf_1_1Mouse.html "sf::Mouse documentation") only contains static functions and is not meant to be instanciated (SFML only handles a single mouse for the time being).
 
 You can check if buttons are pressed:
 
@@ -66,9 +66,9 @@ There is no function for reading the current state of the mouse wheel. Since the
 
 ## Joystick
 
-The class that provides access to the joysticks' states is [`sf::Joystick`](https://www.sfml-dev.org/documentation/2.1/classsf_1_1Joystick.php "sf::Joystick documentation"). Like the other classes in this tutorial, it only contains static functions.
+The class that provides access to the joysticks' states is [`sf::Joystick`](../../../documentation/2.1/classsf_1_1Joystick.html "sf::Joystick documentation"). Like the other classes in this tutorial, it only contains static functions.
 
-Joysticks are identified by their index (0 to 7, since SFML supports up to 8 joysticks). Therefore, the first argument of every function of [`sf::Joystick`](https://www.sfml-dev.org/documentation/2.1/classsf_1_1Joystick.php "sf::Joystick documentation") is the index of the joystick that you want to query.
+Joysticks are identified by their index (0 to 7, since SFML supports up to 8 joysticks). Therefore, the first argument of every function of [`sf::Joystick`](../../../documentation/2.1/classsf_1_1Joystick.html "sf::Joystick documentation") is the index of the joystick that you want to query.
 
 You can check whether a joystick is connected or not:
 

@@ -25,7 +25,7 @@ To sum up, TCP sockets are safer but slower. There are only a few cases that req
 
 ## Handling network addresses
 
-Before starting using sockets, let's explain one useful utility classe included in the network package : [`sf::IPAddress`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1IPAddress.php "sf::IPAddress documentation"). It wraps an IP address (v4) and provides useful functions for initialization, comparison, etc. As network programming involves communications with other computers, you'll need this class each time you connect / send / receive.
+Before starting using sockets, let's explain one useful utility classe included in the network package : [`sf::IPAddress`](../../../documentation/1.6/classsf_1_1IPAddress.html "sf::IPAddress documentation"). It wraps an IP address (v4) and provides useful functions for initialization, comparison, etc. As network programming involves communications with other computers, you'll need this class each time you connect / send / receive.
 
 First of all, you have to include the header for the network package. As usual, it will include all the headers needed to use the network classes.
 
@@ -33,7 +33,7 @@ First of all, you have to include the header for the network package. As usual, 
 #include <SFML/Network.hpp>
 ```
 
-You can initialize a [`sf::IPAddress`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1IPAddress.php "sf::IPAddress documentation") from different sources :
+You can initialize a [`sf::IPAddress`](../../../documentation/1.6/classsf_1_1IPAddress.html "sf::IPAddress documentation") from different sources :
 
 ```cpp
 sf::IPAddress Address1;                  // By default : invalid address
@@ -92,7 +92,7 @@ if (Socket.Send(Buffer, sizeof(Buffer), "192.168.0.2", 4567) != sf::Socket::Done
 }
 ```
 
-Here, we send our byte array (containing "Hi guys !") to the computer which IP address is 192.168.0.2, on port 4567. The second parameter is a [`sf::IPAddress`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1IPAddress.php "sf::IPAddress documentation"), so you could as well use a network name, a broadcast address or whatever type of address.  
+Here, we send our byte array (containing "Hi guys !") to the computer which IP address is 192.168.0.2, on port 4567. The second parameter is a [`sf::IPAddress`](../../../documentation/1.6/classsf_1_1IPAddress.html "sf::IPAddress documentation"), so you could as well use a network name, a broadcast address or whatever type of address.  
 If you don't want to use a specific port, you can just take any free port number between 1024 and 65535 (ports less than 1024 are reserved). And of course, make sure that your firewall is not blocking this port !
 
 The `Send` function, as well as all other functions that can block, returns a socket status (see `sf::Socket::Status`) which can be :
@@ -167,7 +167,7 @@ if (Listener.Accept(Client, &ClientAddress) != sf::Socket::Done)
 }
 ```
 
-The `Accept` function will wait until an incoming connection arrives, and return a new socket that will be used to exchange data with the connected computer. If you pass a [`sf::IPAddress`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1IPAddress.php "sf::IPAddress documentation") to the function, it will be filled with the client's address (so you can know who is connected).  
+The `Accept` function will wait until an incoming connection arrives, and return a new socket that will be used to exchange data with the connected computer. If you pass a [`sf::IPAddress`](../../../documentation/1.6/classsf_1_1IPAddress.html "sf::IPAddress documentation") to the function, it will be filled with the client's address (so you can know who is connected).  
 If the socket is in non-blocking mode, the function will return immediatly if there's no connection arriving, with the status `sf::Socket::NotReady`.
 
 Let's now have a look at the client's code. All you have to do is creating a socket and connect to the server on the port that he's listening to.

@@ -10,7 +10,7 @@ This tutorial will show how to easily capture audio data from your microphone, a
 
 ## Creating a custom recorder
 
-The class that defines the capture interface in SFML is [`sf::SoundRecorder`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1SoundRecorder.php "sf::SoundRecorder documentation"). As it doesn't know what to do with the captured samples (and it doesn't have to), it is only a base class for your own custom recorder(s). [`sf::SoundRecorder`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1SoundRecorder.php "sf::SoundRecorder documentation") provides you with the captured audio samples, all you have to do is... whatever you want : send them through the network, copy them into a sound buffer, etc.
+The class that defines the capture interface in SFML is [`sf::SoundRecorder`](../../../documentation/1.6/classsf_1_1SoundRecorder.html "sf::SoundRecorder documentation"). As it doesn't know what to do with the captured samples (and it doesn't have to), it is only a base class for your own custom recorder(s). [`sf::SoundRecorder`](../../../documentation/1.6/classsf_1_1SoundRecorder.html "sf::SoundRecorder documentation") provides you with the captured audio samples, all you have to do is... whatever you want : send them through the network, copy them into a sound buffer, etc.
 
 Here are the functions to override by your derived recorder:
 
@@ -47,7 +47,7 @@ The `Samples` parameter is a pointer to the array of captured audio samples, and
 
 ## Usage
 
-The [`sf::SoundRecorder`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1SoundRecorder.php "sf::SoundRecorder documentation") interface is quite simple. First, you must check that your system supports audio capture. This can be done with the static function `CanCapture` :
+The [`sf::SoundRecorder`](../../../documentation/1.6/classsf_1_1SoundRecorder.html "sf::SoundRecorder documentation") interface is quite simple. First, you must check that your system supports audio capture. This can be done with the static function `CanCapture` :
 
 ```cpp
 if (!sf::SoundRecorder::CanCapture())
@@ -56,7 +56,7 @@ if (!sf::SoundRecorder::CanCapture())
 }
 ```
 
-This should be checked before any use of [`sf::SoundRecorder`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1SoundRecorder.php "sf::SoundRecorder documentation").
+This should be checked before any use of [`sf::SoundRecorder`](../../../documentation/1.6/classsf_1_1SoundRecorder.html "sf::SoundRecorder documentation").
 
 Then, to start the capture you call `Start`, and to stop it you call `Stop`.
 
@@ -78,7 +78,7 @@ unsigned int SampleRate = Recorder.GetSampleRate();
 
 ## Recording data into a sound buffer
 
-The most common use is probably to save audio data to a sound buffer, so that you can save it to a file or play it immediately. SFML has a built-in specialization of [`sf::SoundRecorder`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1SoundRecorder.php "sf::SoundRecorder documentation") for this : [`sf::SoundBufferRecorder`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1SoundBufferRecorder.php "sf::SoundBufferRecorder documentation"). It copies the captured audio samples to a [`sf::SoundBuffer`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1SoundBuffer.php "sf::SoundBuffer documentation"), that you can access through the `GetBuffer` function :
+The most common use is probably to save audio data to a sound buffer, so that you can save it to a file or play it immediately. SFML has a built-in specialization of [`sf::SoundRecorder`](../../../documentation/1.6/classsf_1_1SoundRecorder.html "sf::SoundRecorder documentation") for this : [`sf::SoundBufferRecorder`](../../../documentation/1.6/classsf_1_1SoundBufferRecorder.html "sf::SoundBufferRecorder documentation"). It copies the captured audio samples to a [`sf::SoundBuffer`](../../../documentation/1.6/classsf_1_1SoundBuffer.html "sf::SoundBuffer documentation"), that you can access through the `GetBuffer` function :
 
 ```cpp
 sf::SoundBufferRecorder Recorder;
@@ -94,7 +94,7 @@ sf::SoundBuffer Buffer = Recorder.GetBuffer();
 
 ## Multi-threading
 
-For the same reasons as [`sf::SoundStream`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1SoundStream.php "sf::SoundStream documentation"), [`sf::SoundRecorder`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1SoundRecorder.php "sf::SoundRecorder documentation") runs the capture in a new thread, so that the main thread is not blocked. So, once again, you have to take care of synchronization issues that can arise if you share data between both threads.  
+For the same reasons as [`sf::SoundStream`](../../../documentation/1.6/classsf_1_1SoundStream.html "sf::SoundStream documentation"), [`sf::SoundRecorder`](../../../documentation/1.6/classsf_1_1SoundRecorder.html "sf::SoundRecorder documentation") runs the capture in a new thread, so that the main thread is not blocked. So, once again, you have to take care of synchronization issues that can arise if you share data between both threads.  
 For more detailed explanations, you can have a look at the [SoundStream tutorial](streams.md "Go to the streams tutorial").
 
 ## Conclusion

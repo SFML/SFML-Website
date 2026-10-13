@@ -40,7 +40,7 @@ Sous Windows, vous avez peut-être créé un projet "Application Windows", parti
 
 ## Créer la fenêtre
 
-L'étape suivante est d'ouvrir une fenêtre. Les fenêtres SFML sont définies par la classe [`sf::Window`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Window.php "sf::Window documentation"). Cette classe fournit plusieurs constructeurs utiles pour créer directement votre fenêtre. Celui qui nous intéresse ici est le suivant :
+L'étape suivante est d'ouvrir une fenêtre. Les fenêtres SFML sont définies par la classe [`sf::Window`](../../../documentation/1.6/classsf_1_1Window.html "sf::Window documentation"). Cette classe fournit plusieurs constructeurs utiles pour créer directement votre fenêtre. Celui qui nous intéresse ici est le suivant :
 
 ```cpp
 sf::Window App(sf::VideoMode(800, 600, 32), "SFML Window");
@@ -48,7 +48,7 @@ sf::Window App(sf::VideoMode(800, 600, 32), "SFML Window");
 
 Ici nous créons une nouvelle variable nommée `App`, qui va représenter notre nouvelle fenêtre. Passons en revue les paramètres :
 
-- Le premier paramètre est un [`sf::VideoMode`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1VideoMode.php "sf::VideoMode documentation"), qui représente le mode vidéo choisi pour la fenêtre. Ici, il définit une taille de 800x600 pixels et une profondeur de 32 bits par pixel. Notez bien que la taille spécifiée sera la taille interne de la fenêtre, sans compter donc la barre de titre et les bordures.
+- Le premier paramètre est un [`sf::VideoMode`](../../../documentation/1.6/classsf_1_1VideoMode.html "sf::VideoMode documentation"), qui représente le mode vidéo choisi pour la fenêtre. Ici, il définit une taille de 800x600 pixels et une profondeur de 32 bits par pixel. Notez bien que la taille spécifiée sera la taille interne de la fenêtre, sans compter donc la barre de titre et les bordures.
 - Le second paramètre est le titre de la fenêtre, de type `std::string`
 
 Si vous voulez créer votre fenêtre plus tard ou bien la recréer avec des paramètres différents, vous pouvez utiliser sa fonction `Create` :
@@ -67,7 +67,7 @@ App.Create(sf::VideoMode(800, 600, 32), "SFML Window", sf::Style::Fullscreen);
 
 ## Les modes vidéo
 
-Dans l'exemple ci-dessus, nous ne nous préoccupons pas du mode vidéo parce que notre application s'exécute en mode fenêtré ; n'importe quelle taille fait l'affaire. Mais si nous voulions tourner en plein écran, seuls quelques modes seraient disponibles. [`sf::VideoMode`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1VideoMode.php "sf::VideoMode documentation") fournit une interface pour récupérer tous les modes vidéo supportés, avec les deux fonctions statiques `GetModesCount` et `GetMode` :
+Dans l'exemple ci-dessus, nous ne nous préoccupons pas du mode vidéo parce que notre application s'exécute en mode fenêtré ; n'importe quelle taille fait l'affaire. Mais si nous voulions tourner en plein écran, seuls quelques modes seraient disponibles. [`sf::VideoMode`](../../../documentation/1.6/classsf_1_1VideoMode.html "sf::VideoMode documentation") fournit une interface pour récupérer tous les modes vidéo supportés, avec les deux fonctions statiques `GetModesCount` et `GetMode` :
 
 ```cpp
 unsigned int VideoModesCount = sf::VideoMode::GetModesCount();

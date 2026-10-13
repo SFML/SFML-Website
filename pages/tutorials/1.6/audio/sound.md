@@ -20,7 +20,7 @@ Before using any class of the SFML audio package, you have to include its header
 
 As usual, it includes all the headers of the audio classes, as well as the headers of the other modules it needs.
 
-In SFML, the class that holds audio samples is [`sf::SoundBuffer`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1SoundBuffer.php "sf::SoundBuffer documentation"). You can fill it with samples in memory :
+In SFML, the class that holds audio samples is [`sf::SoundBuffer`](../../../documentation/1.6/classsf_1_1SoundBuffer.html "sf::SoundBuffer documentation"). You can fill it with samples in memory :
 
 ```cpp
 sf::SoundBuffer Buffer;
@@ -78,7 +78,7 @@ That's all you need to know about sound buffers. Most of the time, you will only
 
 ## The sound instance
 
-Once you have loaded a sound buffer, you can use [`sf::Sound`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Sound.php "sf::Sound documentation") to play it. An [`sf::Sound`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Sound.php "sf::Sound documentation") instance is a way to play a sound buffer in the "scene", with additionnal settings like the pitch, the volume, the position, ... So you can have several [`sf::Sound`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Sound.php "sf::Sound documentation") instances that play the same [`sf::SoundBuffer`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1SoundBuffer.php "sf::SoundBuffer documentation") at the same time, with different parameters.
+Once you have loaded a sound buffer, you can use [`sf::Sound`](../../../documentation/1.6/classsf_1_1Sound.html "sf::Sound documentation") to play it. An [`sf::Sound`](../../../documentation/1.6/classsf_1_1Sound.html "sf::Sound documentation") instance is a way to play a sound buffer in the "scene", with additionnal settings like the pitch, the volume, the position, ... So you can have several [`sf::Sound`](../../../documentation/1.6/classsf_1_1Sound.html "sf::Sound documentation") instances that play the same [`sf::SoundBuffer`](../../../documentation/1.6/classsf_1_1SoundBuffer.html "sf::SoundBuffer documentation") at the same time, with different parameters.
 
 To bind a buffer to a sound, just call its `SetBuffer` function :
 
@@ -132,7 +132,7 @@ As usual, no cleanup is needed : all audio classes will free their resources aut
 
 ## Sound buffers and sounds management
 
-You have to be particularly careful when manipulating sound buffers. A [`sf::SoundBuffer`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1SoundBuffer.php "sf::SoundBuffer documentation") instance is a resource which is slow to load, heavy to copy and uses a lot of memory.
+You have to be particularly careful when manipulating sound buffers. A [`sf::SoundBuffer`](../../../documentation/1.6/classsf_1_1SoundBuffer.html "sf::SoundBuffer documentation") instance is a resource which is slow to load, heavy to copy and uses a lot of memory.
 
 For a good discussion about resource management, I suggest you read the **"Images and sprites management"** part of the [sprites tutorial](../graphics/sprite.md "Sprites tutorial"), just replacing the word "Image" with "SoundBuffer" and "Sprite" with "Sound".
 

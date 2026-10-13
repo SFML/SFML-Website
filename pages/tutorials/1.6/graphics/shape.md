@@ -10,7 +10,7 @@ This new tutorial will teach you how to draw simple 2D shapes, such as lines, re
 
 ## Building custom shapes
 
-To build a custom shape with SFML, you have to use the [`sf::Shape`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Shape.php "sf::Shape documentation") class.  
+To build a custom shape with SFML, you have to use the [`sf::Shape`](../../../documentation/1.6/classsf_1_1Shape.html "sf::Shape documentation") class.  
 A shape is basically a convex polygon, in which each point can have its own position and color. You can also add an automatic outline to a shape, each point having the ability to define its own color for the outline.  
 It is important to define the points of a shape in order (clockwise or counter-clockwise), otherwise the shape may be ill-formed. It is also important to keep the shape convex, otherwise it won't be rendered properly. It you want to draw concave shapes, try to split them into several convex sub-shapes.
 
@@ -26,7 +26,7 @@ Polygon.AddPoint(-50, 50, sf::Color(255, 170, 170), sf::Color(0, 128, 128));
 Polygon.AddPoint(-50, 0,  sf::Color(255, 85, 85),   sf::Color(0, 128, 128));
 ```
 
-The parameters are the X and Y coordinates of the point, its color, and an optional color for outline. Note that you can also pass a [`sf::Vector2f`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Vector2.php "sf::Vector2f documentation") instead of two floats for the position of the point.
+The parameters are the X and Y coordinates of the point, its color, and an optional color for outline. Note that you can also pass a [`sf::Vector2f`](../../../documentation/1.6/classsf_1_1Vector2.html "sf::Vector2f documentation") instead of two floats for the position of the point.
 
 Once added to the shape, the points' attributes (position, color and outline) can be read or written individually with these accessors :
 

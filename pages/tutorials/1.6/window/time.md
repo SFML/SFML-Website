@@ -10,7 +10,7 @@ Time is usually not a big thing, but in a real-time application, it is important
 
 ## Measuring time
 
-In SFML, you measure time with [`sf::Clock`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Clock.php "sf::Clock documentation") class. It defines two functions : `Reset()`, to restart the clock, and `GetElapsedTime()`, to get the time elapsed since the last call to `Reset()`. Time is defined in seconds, as all durations that you will find in SFML.  
+In SFML, you measure time with [`sf::Clock`](../../../documentation/1.6/classsf_1_1Clock.html "sf::Clock documentation") class. It defines two functions : `Reset()`, to restart the clock, and `GetElapsedTime()`, to get the time elapsed since the last call to `Reset()`. Time is defined in seconds, as all durations that you will find in SFML.  
 As you can see, this class is far from being complicated.
 
 ```cpp
@@ -65,7 +65,7 @@ while (App.IsOpened())
 }
 ```
 
-Most of time, you will have to measure the time elapsed since last frame. [`sf::Window`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Window.php "sf::Window documentation") provides a useful function for getting this time without having to manage a clock : `GetFrameTime()`. So we could rewrite our code like this :
+Most of time, you will have to measure the time elapsed since last frame. [`sf::Window`](../../../documentation/1.6/classsf_1_1Window.html "sf::Window documentation") provides a useful function for getting this time without having to manage a clock : `GetFrameTime()`. So we could rewrite our code like this :
 
 ```cpp
 const float Speed = 50.f;

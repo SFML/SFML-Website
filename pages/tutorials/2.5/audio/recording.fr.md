@@ -6,9 +6,9 @@
 
 ## Effectuer une capture dans un buffer
 
-Le destin le plus probable pour des données audio capturées, est d'être sauvegardées dans un buffer ([`sf::SoundBuffer`](https://www.sfml-dev.org/documentation/2.5.1-fr/classsf_1_1SoundBuffer.php "sf::SoundBuffer documentation")) de sorte qu'elles puissent être jouées ou bien sauvegardées dans un fichier.
+Le destin le plus probable pour des données audio capturées, est d'être sauvegardées dans un buffer ([`sf::SoundBuffer`](../../../documentation/2.5.1/classsf_1_1SoundBuffer.html "sf::SoundBuffer documentation")) de sorte qu'elles puissent être jouées ou bien sauvegardées dans un fichier.
 
-Ce type de capture peut être effectué via l'interface très simple de la classe [`sf::SoundBufferRecorder`](https://www.sfml-dev.org/documentation/2.5.1-fr/classsf_1_1SoundBufferRecorder.php "sf::SoundBufferRecorder documentation") :
+Ce type de capture peut être effectué via l'interface très simple de la classe [`sf::SoundBufferRecorder`](../../../documentation/2.5.1/classsf_1_1SoundBufferRecorder.html "sf::SoundBufferRecorder documentation") :
 
 ```cpp
 // tout d'abord on vérifie si la capture est supportée par le système
@@ -33,7 +33,7 @@ recorder.stop();
 const sf::SoundBuffer& buffer = recorder.getBuffer();
 ```
 
-La fonction statique `SoundBufferRecorder::isAvailable` vérifie si la capture audio est supportée par le système. Si elle renvoie `false`, vous ne pourrez pas utiliser la classe [`sf::SoundBufferRecorder`](https://www.sfml-dev.org/documentation/2.5.1-fr/classsf_1_1SoundBufferRecorder.php "sf::SoundBufferRecorder documentation").
+La fonction statique `SoundBufferRecorder::isAvailable` vérifie si la capture audio est supportée par le système. Si elle renvoie `false`, vous ne pourrez pas utiliser la classe [`sf::SoundBufferRecorder`](../../../documentation/2.5.1/classsf_1_1SoundBufferRecorder.html "sf::SoundBufferRecorder documentation").
 
 Les fonctions `start` et `stop` sont assez explicites. La capture tourne dans son propre thread, ce qui signifie que vous pouvez faire tout ce qui vous chante entre le début et la fin de l'enregistrement. Après la fin de la capture, les données audio sont disponibles dans un buffer que vous pouvez récupérer avec la fonction `getBuffer`.
 
@@ -96,7 +96,7 @@ if (!recorder.setDevice(inputDevice))
 
 Si stocker les données enregistrées dans un buffer audio n'est pas ce que vous voulez, vous pouvez tout aussi bien écrire votre propre enregistreur. Cela vous permettra de traiter les données audio pendant qu'elles sont en train d'être capturées, (presque) directement dès qu'elles arrivent du périphérique d'enregistrement. De cette façon vous pouvez, par exemple, *streamer* les données capturées sur le réseau, en effectuer une analyse temps-réel, etc.
 
-Pour écrire votre propre enregistreur, vous devez hériter de la classe abstraite [`sf::SoundRecorder`](https://www.sfml-dev.org/documentation/2.5.1-fr/classsf_1_1SoundRecorder.php "sf::SoundRecorder documentation"). En fait, [`sf::SoundBufferRecorder`](https://www.sfml-dev.org/documentation/2.5.1-fr/classsf_1_1SoundBufferRecorder.php "sf::SoundBufferRecorder documentation") est juste une spécialisation de cette classe, directement intégrée à SFML.
+Pour écrire votre propre enregistreur, vous devez hériter de la classe abstraite [`sf::SoundRecorder`](../../../documentation/2.5.1/classsf_1_1SoundRecorder.html "sf::SoundRecorder documentation"). En fait, [`sf::SoundBufferRecorder`](../../../documentation/2.5.1/classsf_1_1SoundBufferRecorder.html "sf::SoundBufferRecorder documentation") est juste une spécialisation de cette classe, directement intégrée à SFML.
 
 Vous n'avez qu'une fonction virtuelle à redéfinir dans votre classe dérivée : `onProcessSamples`. Elle est appelée à chaque fois qu'un nouveau lot d'échantillons audio ont été capturés, c'est donc là que vous devez implémenter votre traitement perso.
 
@@ -135,7 +135,7 @@ class MyRecorder : public sf::SoundRecorder
 }
 ```
 
-Les fonctions `isAvailable`/`start`/`stop` sont définies dans la classe de base, [`sf::SoundRecorder`](https://www.sfml-dev.org/documentation/2.5.1-fr/classsf_1_1SoundRecorder.php "sf::SoundRecorder documentation"), et donc par conséquent dans toutes les classes dérivées. Cela signifie que vous pouvez utiliser n'importe quelle enregistreur exactement de la même manière que la classe [`sf::SoundBufferRecorder`](https://www.sfml-dev.org/documentation/2.5.1-fr/classsf_1_1SoundBufferRecorder.php "sf::SoundBufferRecorder documentation") ci-dessus.
+Les fonctions `isAvailable`/`start`/`stop` sont définies dans la classe de base, [`sf::SoundRecorder`](../../../documentation/2.5.1/classsf_1_1SoundRecorder.html "sf::SoundRecorder documentation"), et donc par conséquent dans toutes les classes dérivées. Cela signifie que vous pouvez utiliser n'importe quelle enregistreur exactement de la même manière que la classe [`sf::SoundBufferRecorder`](../../../documentation/2.5.1/classsf_1_1SoundBufferRecorder.html "sf::SoundBufferRecorder documentation") ci-dessus.
 
 ```cpp
 if (!MyRecorder::isAvailable())

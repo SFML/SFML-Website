@@ -10,7 +10,7 @@ Dans ce tutoriel, nous allons voir comment intégrer une vue SFML à une interfa
 
 ## Création du composant SFML personnalisé
 
-Afin de créer notre widget SFML perso, nous devons dériver de la classe de base `QWidget`. Et comme nous voulons que notre widget soit également une fenêtre de rendu SFML, nous héritons également de [`sf::RenderWindow`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1RenderWindow.php "sf::RenderWindow documentation").
+Afin de créer notre widget SFML perso, nous devons dériver de la classe de base `QWidget`. Et comme nous voulons que notre widget soit également une fenêtre de rendu SFML, nous héritons également de [`sf::RenderWindow`](../../../documentation/1.6/classsf_1_1RenderWindow.html "sf::RenderWindow documentation").
 
 ```cpp
 #include <SFML/Graphics.hpp>

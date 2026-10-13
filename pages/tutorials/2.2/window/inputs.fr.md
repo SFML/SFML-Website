@@ -10,7 +10,7 @@ Ce tutoriel explique comment accéder aux entrées globales : clavier, souris et
 
 ## Le clavier
 
-La classe qui donne accès à l'état du clavier est [`sf::Keyboard`](https://www.sfml-dev.org/documentation/2.2-fr/classsf_1_1Keyboard.php "sf::Keyboard documentation"). Elle contient une unique fonction, `isKeyPressed`, qui donne l'état courant d'une touche (appuyée ou relâchée). C'est une fonction statique, vous n'avez pas besoin d'instancier [`sf::Keyboard`](https://www.sfml-dev.org/documentation/2.2-fr/classsf_1_1Keyboard.php "sf::Keyboard documentation") pour l'utiliser.
+La classe qui donne accès à l'état du clavier est [`sf::Keyboard`](../../../documentation/2.2/classsf_1_1Keyboard.html "sf::Keyboard documentation"). Elle contient une unique fonction, `isKeyPressed`, qui donne l'état courant d'une touche (appuyée ou relâchée). C'est une fonction statique, vous n'avez pas besoin d'instancier [`sf::Keyboard`](../../../documentation/2.2/classsf_1_1Keyboard.html "sf::Keyboard documentation") pour l'utiliser.
 
 Cette fonction lit directement l'état du clavier, sans chercher à savoir si votre fenêtre a le focus ou non. Cela signifie que `isKeyPressed` peut renvoyer `true` même si votre fenêtre est inactive.
 
@@ -30,7 +30,7 @@ Les codes de touches sont définis dans l'enum `sf::Keyboard::Key`.
 
 ## La souris
 
-La classe qui donne accès à l'état de la souris est [`sf::Mouse`](https://www.sfml-dev.org/documentation/2.2-fr/classsf_1_1Mouse.php "sf::Mouse documentation"). Comme son copain [`sf::Keyboard`](https://www.sfml-dev.org/documentation/2.2-fr/classsf_1_1Keyboard.php "sf::Keyboard documentation"), elle ne contient que des fonctions statiques et n'est pas censée être instanciée (SFML gère une souris unique pour le moment).
+La classe qui donne accès à l'état de la souris est [`sf::Mouse`](../../../documentation/2.2/classsf_1_1Mouse.html "sf::Mouse documentation"). Comme son copain [`sf::Keyboard`](../../../documentation/2.2/classsf_1_1Keyboard.html "sf::Keyboard documentation"), elle ne contient que des fonctions statiques et n'est pas censée être instanciée (SFML gère une souris unique pour le moment).
 
 Vous pouvez vérifier si un bouton est pressé :
 
@@ -66,9 +66,9 @@ Il n'y a pas de fonction pour récupérer l'état de la molette. En effet, celle
 
 ## Les joysticks
 
-La classe qui donne accès à l'état des joysticks est [`sf::Joystick`](https://www.sfml-dev.org/documentation/2.2-fr/classsf_1_1Joystick.php "sf::Joystick documentation"). Comme les autres classes de ce tutoriel, elle ne contient que des fonctions statiques.
+La classe qui donne accès à l'état des joysticks est [`sf::Joystick`](../../../documentation/2.2/classsf_1_1Joystick.html "sf::Joystick documentation"). Comme les autres classes de ce tutoriel, elle ne contient que des fonctions statiques.
 
-Les joysticks sont identifiés par leur numéro (de 0 à 7, puisque SFML supporte jusqu'à 8 joysticks). Ainsi, le premier paramètre de toutes les fonctions de [`sf::Joystick`](https://www.sfml-dev.org/documentation/2.2-fr/classsf_1_1Joystick.php "sf::Joystick documentation") est le numéro du joystick dont vous voulez lire l'état.
+Les joysticks sont identifiés par leur numéro (de 0 à 7, puisque SFML supporte jusqu'à 8 joysticks). Ainsi, le premier paramètre de toutes les fonctions de [`sf::Joystick`](../../../documentation/2.2/classsf_1_1Joystick.html "sf::Joystick documentation") est le numéro du joystick dont vous voulez lire l'état.
 
 Vous pouvez vérifier si un joystick est connecté ou non :
 

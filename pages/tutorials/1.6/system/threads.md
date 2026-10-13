@@ -15,11 +15,11 @@ First, what is a thread ? What should you use it for ?
 Basically, a thread is a way to run a set of instructions independently of the main thread (every program runs in a thread : it is a monothreaded program ; when you add one or more threads, it is called a multithreaded program). It is just like running another process, except that it is much lighter -- threads are also called lightweight processes. All threads share the same datas as their parent process. As a result, you can have two or more sets of instructions running in parallel within your program.  
 Ok, so when should you use threads ? Basically, when you have to run something that would take long (complex calculations, waiting for something, ...), and you still want to do something else at the same time. For example, you may want to be able to display a graphical interface while you load your game resources (that takes usually a long time), so you can put all the loading code into a separate thread. It is also widely used in network programming, to wait for network data to be received while continuing running the program.
 
-In SFML, threads is defined by the [`sf::Thread`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Thread.php "sf::Thread documentation") class. There are two ways of using it, depending on your needs.
+In SFML, threads is defined by the [`sf::Thread`](../../../documentation/1.6/classsf_1_1Thread.html "sf::Thread documentation") class. There are two ways of using it, depending on your needs.
 
 ## Using sf::Thread with a callback function
 
-The first way of using [`sf::Thread`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Thread.php "sf::Thread documentation") is to provide it a function to run. When you start the thread, the provided function will be called as the entry point of the thread. The thread will finish automatically when the function reaches its end.
+The first way of using [`sf::Thread`](../../../documentation/1.6/classsf_1_1Thread.html "sf::Thread documentation") is to provide it a function to run. When you start the thread, the provided function will be called as the entry point of the thread. The thread will finish automatically when the function reaches its end.
 
 Here is a simple example :
 
@@ -52,9 +52,9 @@ int main()
 
 When `Thread.Launch()` is called, the execution is split into two parallel flows, meaning that `ThreadFunction()` will execute while `main()` is finishing. So the text from both threads will be displayed at the same time.
 
-Be careful : here the `main()` function can finish before `ThreadFunction()`, ending the program while the thread is still running. However this is not the case : the destructor of [`sf::Thread`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Thread.php "sf::Thread documentation") will wait for the thread to finish, to make sure the internal thread doesn't live longer than the [`sf::Thread`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Thread.php "sf::Thread documentation") instance that owns it.
+Be careful : here the `main()` function can finish before `ThreadFunction()`, ending the program while the thread is still running. However this is not the case : the destructor of [`sf::Thread`](../../../documentation/1.6/classsf_1_1Thread.html "sf::Thread documentation") will wait for the thread to finish, to make sure the internal thread doesn't live longer than the [`sf::Thread`](../../../documentation/1.6/classsf_1_1Thread.html "sf::Thread documentation") instance that owns it.
 
-If you have some datas to pass to the thread function, you can pass it to the [`sf::Thread`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Thread.php "sf::Thread documentation") constructor :
+If you have some datas to pass to the thread function, you can pass it to the [`sf::Thread`](../../../documentation/1.6/classsf_1_1Thread.html "sf::Thread documentation") constructor :
 
 ```cpp
 MyClass Object;
@@ -77,7 +77,7 @@ Make sure the data you pass is valid as long as the thread function needs it !
 
 Using a callback function as a thread is easy, and can be useful in some cases, but is not very flexible. What if you want to use a thread in a class ? What if you have to share more variables between your thread and the main one ?
 
-To allow more flexibility, [`sf::Thread`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Thread.php "sf::Thread documentation") can also be used as a base class. Instead of passing it a callback function to call, just inherit from it and override the virtual function `Run()`. Here is the same example as above, written with a derived class instead of a callback function :
+To allow more flexibility, [`sf::Thread`](../../../documentation/1.6/classsf_1_1Thread.html "sf::Thread documentation") can also be used as a base class. Instead of passing it a callback function to call, just inherit from it and override the virtual function `Run()`. Here is the same example as above, written with a derived class instead of a callback function :
 
 ```cpp
 #include <SFML/System.hpp>
@@ -220,7 +220,7 @@ As every duration in SFML, the parameter is a floating value defining the pause 
 
 Ok, let's first quickly define what a mutex is. A mutex (which stands for *MUTual EXclusion*) is a synchronization primitive. It is not the only one : there are semaphores, critical sections, conditions, etc. But the most useful one is the mutex. Basically, you use it to lock a specific set of instructions that cannot be interrupted, to prevent other threads from accessing it. While a mutex is locked, any other thread trying to lock it will be paused until the owner thread unlocks the mutex. Typically it is used to access a variable shared between two or more threads.
 
-If you run the examples above, you will see that the output is maybe not what you expected : texts from both threads are blended together. This is because the threads are accessing the same resource at the same time (in this case, the standard output). To avoid this, we can use a [`sf::Mutex`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Mutex.php "sf::Mutex documentation") :
+If you run the examples above, you will see that the output is maybe not what you expected : texts from both threads are blended together. This is because the threads are accessing the same resource at the same time (in this case, the standard output). To avoid this, we can use a [`sf::Mutex`](../../../documentation/1.6/classsf_1_1Mutex.html "sf::Mutex documentation") :
 
 ```cpp
 #include <SFML/System.hpp>
@@ -275,7 +275,7 @@ If you wonder why we don't use a mutex to access the `ThreadRunning` shared vari
 
 Be careful when using a mutex or any other synchronization primitive : if not used with caution, they can lead to deadlocks (two or more locked threads waiting for each other indefinitely).
 
-But there is still one problem : what happens if an exception is thrown while a mutex is locked ? The thread will never have a chance to unlock it, probably causing a deadlock and freezing your program. To handle this without having to write tons of extra code, SFML provides a [`sf::Lock`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Lock.php "sf::Lock documentation").
+But there is still one problem : what happens if an exception is thrown while a mutex is locked ? The thread will never have a chance to unlock it, probably causing a deadlock and freezing your program. To handle this without having to write tons of extra code, SFML provides a [`sf::Lock`](../../../documentation/1.6/classsf_1_1Lock.html "sf::Lock documentation").
 
 A safer version of the example above would be :
 
@@ -291,7 +291,7 @@ A safer version of the example above would be :
 }// The mutex is unlocked automatically when the sf::Lock object is destroyed
 ```
 
-The mutex is unlocked in the [`sf::Lock`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Lock.php "sf::Lock documentation") destructor, which will be called even if an exception is thrown.
+The mutex is unlocked in the [`sf::Lock`](../../../documentation/1.6/classsf_1_1Lock.html "sf::Lock documentation") destructor, which will be called even if an exception is thrown.
 
 ## Conclusion
 

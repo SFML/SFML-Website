@@ -25,7 +25,7 @@ SFML ne fournit que des types *entiers* à taille fixe. Les types flottants devr
 
 ## Les paquets
 
-Les deux autres problème (endianness et limites des messages) sont résolus en utilisant une classe particulière pour sérialiser vos données : [`sf::Packet`](https://www.sfml-dev.org/documentation/2.5.1-fr/classsf_1_1Packet.php "sf::Packet documentation"). En bonus, elle fournit une interface bien plus sympathique que ce bon vieux tableau d'octets.
+Les deux autres problème (endianness et limites des messages) sont résolus en utilisant une classe particulière pour sérialiser vos données : [`sf::Packet`](../../../documentation/2.5.1/classsf_1_1Packet.html "sf::Packet documentation"). En bonus, elle fournit une interface bien plus sympathique que ce bon vieux tableau d'octets.
 
 Les paquets offrent une interface de programmation similaire à celle des flux standards : vous pouvez insérer des données avec l'opérateur <<, et les extraire avec l'opérateur >>.
 
@@ -61,7 +61,7 @@ else
 }
 ```
 
-Envoyer et recevoir des paquets est aussi facile que d'envoyer/recevoir un tableau d'octets : les sockets ont une surcharge de `send` et `receive` qui prennent directement un [`sf::Packet`](https://www.sfml-dev.org/documentation/2.5.1-fr/classsf_1_1Packet.php "sf::Packet documentation") en paramètre.
+Envoyer et recevoir des paquets est aussi facile que d'envoyer/recevoir un tableau d'octets : les sockets ont une surcharge de `send` et `receive` qui prennent directement un [`sf::Packet`](../../../documentation/2.5.1/classsf_1_1Packet.html "sf::Packet documentation") en paramètre.
 
 ```cpp
 // avec une socket TCP
@@ -75,11 +75,11 @@ udpSocket.send(packet, recipientAddress, recipientPort);
 udpSocket.receive(packet, senderAddress, senderPort);
 ```
 
-Les paquets résolvent le problème des limites de messages, ce qui signifie que lorsque vous envoyez un paquet sur une socket TCP, vous recevez exactement le même paquet de l'autre côté ; il ne peut pas contenir moins d'octets, ni des octets du paquet suivant. Cepepdant cette approche possède un inconvénient : afin de préserver les limites des messages, [`sf::Packet`](https://www.sfml-dev.org/documentation/2.5.1-fr/classsf_1_1Packet.php "sf::Packet documentation") doit ajouter quelques octets à vos données, ce qui implique que vous ne pouvez les recevoir qu'avec un [`sf::Packet`](https://www.sfml-dev.org/documentation/2.5.1-fr/classsf_1_1Packet.php "sf::Packet documentation") si vous voulez qu'elles soient décodées correctement après réception. En d'autres termes, vous ne pouvez pas envoyer un paquet SFML à un destinataire quelconque, il doit lui aussi utiliser un paquet SFML. Notez bien que cela ne s'applique qu'à TCP, UDP quant à lui n'a pas ce problème car les limites des messages sont déjà garanties par le protocole lui-même.
+Les paquets résolvent le problème des limites de messages, ce qui signifie que lorsque vous envoyez un paquet sur une socket TCP, vous recevez exactement le même paquet de l'autre côté ; il ne peut pas contenir moins d'octets, ni des octets du paquet suivant. Cepepdant cette approche possède un inconvénient : afin de préserver les limites des messages, [`sf::Packet`](../../../documentation/2.5.1/classsf_1_1Packet.html "sf::Packet documentation") doit ajouter quelques octets à vos données, ce qui implique que vous ne pouvez les recevoir qu'avec un [`sf::Packet`](../../../documentation/2.5.1/classsf_1_1Packet.html "sf::Packet documentation") si vous voulez qu'elles soient décodées correctement après réception. En d'autres termes, vous ne pouvez pas envoyer un paquet SFML à un destinataire quelconque, il doit lui aussi utiliser un paquet SFML. Notez bien que cela ne s'applique qu'à TCP, UDP quant à lui n'a pas ce problème car les limites des messages sont déjà garanties par le protocole lui-même.
 
 ## Etendre les paquets pour qu'ils gèrent vos types persos
 
-Les paquets ont des surcharges de leurs opérateurs pour tous les types primitifs, ainsi que pour les types standards les plus utilisés, mais qu'en est-il de vos propres classes ? Tout comme avec les flux standards, vous pouvez rendre un type "compatible" avec [`sf::Packet`](https://www.sfml-dev.org/documentation/2.5.1-fr/classsf_1_1Packet.php "sf::Packet documentation") en créant une surcharge des opérateurs << et >>.
+Les paquets ont des surcharges de leurs opérateurs pour tous les types primitifs, ainsi que pour les types standards les plus utilisés, mais qu'en est-il de vos propres classes ? Tout comme avec les flux standards, vous pouvez rendre un type "compatible" avec [`sf::Packet`](../../../documentation/2.5.1/classsf_1_1Packet.html "sf::Packet documentation") en créant une surcharge des opérateurs << et >>.
 
 ```cpp
 struct Character
@@ -113,7 +113,7 @@ packet >> bob;
 
 ## Les paquets personnalisés
 
-Les paquets offrent des fonctionnalités sympas par dessus vos données brutes, mais peut-on aller plus loin et ajouter vos propres fonctionnalités, comme par exemple compresser ou chiffrer automatiquement les données lors de l'envoi ? Cela peut être fait très facilement, en créant une classe dérivée de [`sf::Packet`](https://www.sfml-dev.org/documentation/2.5.1-fr/classsf_1_1Packet.php "sf::Packet documentation") et en redéfinissant les fonctions suivantes :
+Les paquets offrent des fonctionnalités sympas par dessus vos données brutes, mais peut-on aller plus loin et ajouter vos propres fonctionnalités, comme par exemple compresser ou chiffrer automatiquement les données lors de l'envoi ? Cela peut être fait très facilement, en créant une classe dérivée de [`sf::Packet`](../../../documentation/2.5.1/classsf_1_1Packet.html "sf::Packet documentation") et en redéfinissant les fonctions suivantes :
 
 - `onSend`: appelée juste avant que la socket envoie les données
 - `onReceive`: appelée juste après que la socket a reçu les données
@@ -140,7 +140,7 @@ class ZipPacket : public sf::Packet
 };
 ```
 
-Un tel paquet peut être utilisé exactement comme [`sf::Packet`](https://www.sfml-dev.org/documentation/2.5.1-fr/classsf_1_1Packet.php "sf::Packet documentation"). Et les surcharges d'opérateurs pour vos types persos s'appliquent toujours.
+Un tel paquet peut être utilisé exactement comme [`sf::Packet`](../../../documentation/2.5.1/classsf_1_1Packet.html "sf::Packet documentation"). Et les surcharges d'opérateurs pour vos types persos s'appliquent toujours.
 
 ```cpp
 ZipPacket packet;

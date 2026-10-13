@@ -8,15 +8,15 @@
 
 Sometimes, audio data cannot be integrally loaded in memory. For example, the sound can be aquired from the network, or on the fly from a file that is too big. In such cases, you must be able to play the sound while you load it, and still give the illusion that you play it in one block. This is what is called "streaming".
 
-SFML provides a base class for implementing streaming from custom sources : [`sf::SoundStream`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1SoundStream.php "sf::SoundStream documentation"). It handles everything, the only task left to you is to provide it with new sound data when needed.
+SFML provides a base class for implementing streaming from custom sources : [`sf::SoundStream`](../../../documentation/1.6/classsf_1_1SoundStream.html "sf::SoundStream documentation"). It handles everything, the only task left to you is to provide it with new sound data when needed.
 
 ## Basic usage
 
-[`sf::SoundStream`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1SoundStream.php "sf::SoundStream documentation"), like [`sf::Sound`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Sound.php "sf::Sound documentation") and [`sf::Music`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1Music.php "sf::Music documentation"), is still a sound ; so it defines the usual accessors for the volume, the pitch, the sample rate, etc. It also defines the three control functions : play, pause and stop. There are just a few things that a stream cannot handle compared to a sound or a music : it cannot give you the duration (which cannot be known until the sound stops), it cannot loop, and you cannot get the current playing offset. But, if it can be added easily, you can add those missing features into your custom [`sf::SoundStream`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1SoundStream.php "sf::SoundStream documentation") class.
+[`sf::SoundStream`](../../../documentation/1.6/classsf_1_1SoundStream.html "sf::SoundStream documentation"), like [`sf::Sound`](../../../documentation/1.6/classsf_1_1Sound.html "sf::Sound documentation") and [`sf::Music`](../../../documentation/1.6/classsf_1_1Music.html "sf::Music documentation"), is still a sound ; so it defines the usual accessors for the volume, the pitch, the sample rate, etc. It also defines the three control functions : play, pause and stop. There are just a few things that a stream cannot handle compared to a sound or a music : it cannot give you the duration (which cannot be known until the sound stops), it cannot loop, and you cannot get the current playing offset. But, if it can be added easily, you can add those missing features into your custom [`sf::SoundStream`](../../../documentation/1.6/classsf_1_1SoundStream.html "sf::SoundStream documentation") class.
 
 ## Defining a custom stream
 
-[`sf::SoundStream`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1SoundStream.php "sf::SoundStream documentation") is meant to be used as an abstract base class. So to create your own stream objects, you first have to create a child class :
+[`sf::SoundStream`](../../../documentation/1.6/classsf_1_1SoundStream.html "sf::SoundStream documentation") is meant to be used as an abstract base class. So to create your own stream objects, you first have to create a child class :
 
 ```cpp
 class MyCustomStream : public sf::SoundStream
@@ -75,7 +75,7 @@ public :
 
 As soon as `Initialize` has been called, your stream is ready to be played.
 
-Here is an example to illustrate the use of [`sf::SoundStream`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1SoundStream.php "sf::SoundStream documentation") : a custom class that streams audio data from a sound buffer loaded in memory. Yes, this is completely useless, but it will give you a clearer view of the [`sf::SoundStream`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1SoundStream.php "sf::SoundStream documentation") class.
+Here is an example to illustrate the use of [`sf::SoundStream`](../../../documentation/1.6/classsf_1_1SoundStream.html "sf::SoundStream documentation") : a custom class that streams audio data from a sound buffer loaded in memory. Yes, this is completely useless, but it will give you a clearer view of the [`sf::SoundStream`](../../../documentation/1.6/classsf_1_1SoundStream.html "sf::SoundStream documentation") class.
 
 ```cpp
 class MyCustomStream : public sf::SoundStream
@@ -167,6 +167,6 @@ To know more about threads and mutexes, you can have a look at the [correspondin
 
 ## Conclusion
 
-[`sf::SoundStream`](https://www.sfml-dev.org/documentation/1.6/classsf_1_1SoundStream.php "sf::SoundStream documentation") provides a simple interface for streaming audio data from any source. Always keep in mind that it runs in a secondary thread, and take care of synchronization issues.
+[`sf::SoundStream`](../../../documentation/1.6/classsf_1_1SoundStream.html "sf::SoundStream documentation") provides a simple interface for streaming audio data from any source. Always keep in mind that it runs in a secondary thread, and take care of synchronization issues.
 
 The next tutorial will show you how to [capture audio data](capture.md "Go to the next tutorial").

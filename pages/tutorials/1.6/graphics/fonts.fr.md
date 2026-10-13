@@ -6,11 +6,11 @@
 
 ## Introduction
 
-Dans ce tutoriel, nous allons couvrir le rendu de texte à l'aide des classes [`sf::Font`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Font.php "sf::Font documentation") et [`sf::String`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1String.php "sf::String documentation").
+Dans ce tutoriel, nous allons couvrir le rendu de texte à l'aide des classes [`sf::Font`](../../../documentation/1.6/classsf_1_1Font.html "sf::Font documentation") et [`sf::String`](../../../documentation/1.6/classsf_1_1String.html "sf::String documentation").
 
 ## Charger une police
 
-Avant d'afficher du texte, il faut tout d'abord une police de caractères pour écrire celui-ci. Une police, dans SFML, est définie par la classe [`sf::Font`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Font.php "sf::Font documentation"). Etant donné qu'il n'y a habituellement rien d'autre à faire avec une police que la charger et l'utiliser, cette classe ne définit en fait que deux fonctions importantes, `LoadFromFile` et `LoadFromMemory`.
+Avant d'afficher du texte, il faut tout d'abord une police de caractères pour écrire celui-ci. Une police, dans SFML, est définie par la classe [`sf::Font`](../../../documentation/1.6/classsf_1_1Font.html "sf::Font documentation"). Etant donné qu'il n'y a habituellement rien d'autre à faire avec une police que la charger et l'utiliser, cette classe ne définit en fait que deux fonctions importantes, `LoadFromFile` et `LoadFromMemory`.
 
 ```cpp
 sf::Font MyFont;
@@ -46,13 +46,13 @@ if (!MyFont.LoadFromFile("arial.ttf", 50, MyCharset))
 }
 ```
 
-[`sf::Font`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Font.php "sf::Font documentation") peut charger de nombreux types de fichiers de polices, des TTF standards aux PCF de X11. Vous pouvez vous référer à la [Page des fonctionnalités du projet FreeType](http://www.freetype.org/freetype2/index.html#features "Page des fonctionnalités de FreeType's") pour avoir la liste complète (il s'agit de la bibliothèque utilisée en interne par SFML).
+[`sf::Font`](../../../documentation/1.6/classsf_1_1Font.html "sf::Font documentation") peut charger de nombreux types de fichiers de polices, des TTF standards aux PCF de X11. Vous pouvez vous référer à la [Page des fonctionnalités du projet FreeType](http://www.freetype.org/freetype2/index.html#features "Page des fonctionnalités de FreeType's") pour avoir la liste complète (il s'agit de la bibliothèque utilisée en interne par SFML).
 
-[`sf::Font`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Font.php "sf::Font documentation") donne également accès aux glyphes pré-rendues (une glyphe est un caractère visuel), mais vous n'aurez pas besoin d'utiliser ces fonctions à moins que vous n'ayiez des besoins très spécifiques.
+[`sf::Font`](../../../documentation/1.6/classsf_1_1Font.html "sf::Font documentation") donne également accès aux glyphes pré-rendues (une glyphe est un caractère visuel), mais vous n'aurez pas besoin d'utiliser ces fonctions à moins que vous n'ayiez des besoins très spécifiques.
 
 ## Créer une chaîne
 
-Pour créer une chaîne affichable à l'écran, vous devez créer une instance de le classe [`sf::String`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1String.php "sf::String documentation"). Une telle instance possède trois paramètres : le texte à afficher, la police de caractères utilisée, et la taille des caractères. Notez bien que [`sf::String`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1String.php "sf::String documentation") n'est pas une classe de chaînes de caractères dans le sens de `std::string`, c'est-à-dire qu'elle ne fournit aucune fonction ayant un rapport avec la manipulation de la chaîne en elle-même comme par exemple *find*, *append*, *substring*, etc. Elle focalise uniquement sur la partie graphique, et laisse la manipulation de la chaîne à `std::string` (ou n'importe quelle autre classe que vous préférez utiliser).
+Pour créer une chaîne affichable à l'écran, vous devez créer une instance de le classe [`sf::String`](../../../documentation/1.6/classsf_1_1String.html "sf::String documentation"). Une telle instance possède trois paramètres : le texte à afficher, la police de caractères utilisée, et la taille des caractères. Notez bien que [`sf::String`](../../../documentation/1.6/classsf_1_1String.html "sf::String documentation") n'est pas une classe de chaînes de caractères dans le sens de `std::string`, c'est-à-dire qu'elle ne fournit aucune fonction ayant un rapport avec la manipulation de la chaîne en elle-même comme par exemple *find*, *append*, *substring*, etc. Elle focalise uniquement sur la partie graphique, et laisse la manipulation de la chaîne à `std::string` (ou n'importe quelle autre classe que vous préférez utiliser).
 
 Donc, voici comme nous définirions une chaîne contenant le texte "Hello", utilisant la police "arial.ttf", et avec une taille de caractères de 50 :
 
@@ -100,7 +100,7 @@ Text.SetStyle(sf::String::Regular);
 
 ## Afficher une chaîne
 
-[`sf::String`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1String.php "sf::String documentation") est une classe affichable standard, ce qui signifie qu'elle hérite de [`sf::Drawable`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Drawable.php "sf::Drawable documentation") et reçoit tous des attributs et fonctions, tout comme [`sf::Sprite`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Sprite.php "sf::Sprite documentation").  
+[`sf::String`](../../../documentation/1.6/classsf_1_1String.html "sf::String documentation") est une classe affichable standard, ce qui signifie qu'elle hérite de [`sf::Drawable`](../../../documentation/1.6/classsf_1_1Drawable.html "sf::Drawable documentation") et reçoit tous des attributs et fonctions, tout comme [`sf::Sprite`](../../../documentation/1.6/classsf_1_1Sprite.html "sf::Sprite documentation").  
 Ainsi vous pouvez modifier sa position, sa taille, son orientation, sa couleur, etc. :
 
 ```cpp
@@ -120,7 +120,7 @@ Window.Draw(Text);
 
 ## Et les positions des caractères dans tout ça ?
 
-Au cas où vous auriez besoin de traiter avec les caractères d'une chaîne individuellement, comme par exemple pour afficher un curseur après le n-ème caractère, [`sf::String`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1String.php "sf::String documentation") fournit une fonction pour obtenir la position de n'importe quel caractère dans la chaîne.
+Au cas où vous auriez besoin de traiter avec les caractères d'une chaîne individuellement, comme par exemple pour afficher un curseur après le n-ème caractère, [`sf::String`](../../../documentation/1.6/classsf_1_1String.html "sf::String documentation") fournit une fonction pour obtenir la position de n'importe quel caractère dans la chaîne.
 
 ```cpp
 sf::Vector2f Position = Text.GetCharacterPos(4);
@@ -130,7 +130,7 @@ La position renvoyée est définie en coordonnées locales, vous aurez donc beso
 
 ## Gestion des polices et des chaînes
 
-Vous devez être particulièrement prudent lorsque vous manipulez des polices de caractères. Une instance de [`sf::Font`](https://www.sfml-dev.org/documentation/1.6-fr/classsf_1_1Font.php "sf::Font documentation") est une ressource qui est lente à charger, lourde à copier et qui utilise beaucoup de mémoire.
+Vous devez être particulièrement prudent lorsque vous manipulez des polices de caractères. Une instance de [`sf::Font`](../../../documentation/1.6/classsf_1_1Font.html "sf::Font documentation") est une ressource qui est lente à charger, lourde à copier et qui utilise beaucoup de mémoire.
 
 Pour une bonne discussion à propos de la gestion des ressources, je vous renvoie au paragraphe **"Gestion des images et des sprites"** du [tutoriel sur les sprites](sprite.md "Tutoriel sur les sprites"), en remplaçant simplement le mot "Image" par "Police" et "Sprite" par "Chaîne".
 

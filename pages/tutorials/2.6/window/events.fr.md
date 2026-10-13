@@ -10,9 +10,9 @@ Ce tutoriel fournit une liste détaillée des évènements des fenêtres. Il les
 
 ## Le type sf::Event
 
-Avant de s'intéresser aux évènements, il est important de comprendre ce qu'est le type [`sf::Event`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Event.php "sf::Event documentation"), et comment l'utiliser correctement. [`sf::Event`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Event.php "sf::Event documentation") est une *union*, ce qui signifie qu'un seul de ses membres est valide à tout moment (souvenez-vous de vos cours de C++ : tous les membres d'une union partagent le même espace mémoire). Le membre valide est celui qui correspond au type de l'évènement, par exemple `event.key` pour un évènement de type `KeyPressed`. Essayer de lire n'importe quel autre membre provoquera un comportement indéterminé (probablement des valeurs aléatoires ou invalides). Donc, n'essayez jamais d'utiliser un membre d'évènement qui ne correspond pas à son type.
+Avant de s'intéresser aux évènements, il est important de comprendre ce qu'est le type [`sf::Event`](../../../documentation/2.6.2/classsf_1_1Event.html "sf::Event documentation"), et comment l'utiliser correctement. [`sf::Event`](../../../documentation/2.6.2/classsf_1_1Event.html "sf::Event documentation") est une *union*, ce qui signifie qu'un seul de ses membres est valide à tout moment (souvenez-vous de vos cours de C++ : tous les membres d'une union partagent le même espace mémoire). Le membre valide est celui qui correspond au type de l'évènement, par exemple `event.key` pour un évènement de type `KeyPressed`. Essayer de lire n'importe quel autre membre provoquera un comportement indéterminé (probablement des valeurs aléatoires ou invalides). Donc, n'essayez jamais d'utiliser un membre d'évènement qui ne correspond pas à son type.
 
-Les instances de [`sf::Event`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Event.php "sf::Event documentation") sont remplies par la fonction `pollEvent` (ou `waitEvent`) de la classe [`sf::Window`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Window.php "sf::Window documentation"). Il n'y a que ces fonctions qui peuvent produire des évènements valides, toute tentative d'utiliser un [`sf::Event`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Event.php "sf::Event documentation") sans qu'il provienne d'un appel valide à `pollEvent` (ou `waitEvent`) produira le même genre de comportement indéterminé qu'expliqué plus haut.
+Les instances de [`sf::Event`](../../../documentation/2.6.2/classsf_1_1Event.html "sf::Event documentation") sont remplies par la fonction `pollEvent` (ou `waitEvent`) de la classe [`sf::Window`](../../../documentation/2.6.2/classsf_1_1Window.html "sf::Window documentation"). Il n'y a que ces fonctions qui peuvent produire des évènements valides, toute tentative d'utiliser un [`sf::Event`](../../../documentation/2.6.2/classsf_1_1Event.html "sf::Event documentation") sans qu'il provienne d'un appel valide à `pollEvent` (ou `waitEvent`) produira le même genre de comportement indéterminé qu'expliqué plus haut.
 
 En clair, voici à quoi ressemble une boucle d'évènements typique :
 
@@ -44,7 +44,7 @@ while (window.pollEvent(event))
 
 !!! warning
 
-    Relisez bien les paragraphes ci-dessus et assurez-vous que ça reste bien gravé dans votre tête, l'union [`sf::Event`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Event.php "sf::Event documentation") cause de trop nombreux problèmes aux programmeurs inattentifs.
+    Relisez bien les paragraphes ci-dessus et assurez-vous que ça reste bien gravé dans votre tête, l'union [`sf::Event`](../../../documentation/2.6.2/classsf_1_1Event.html "sf::Event documentation") cause de trop nombreux problèmes aux programmeurs inattentifs.
 
 Ok, maintenant nous pouvons voir quels évènements SFML supporte, ce qu'ils signifient et comment les utiliser comme il faut.
 
@@ -54,7 +54,7 @@ L'évènement `sf::Event::Closed` est déclenché lorsque l'utilisateur veut fer
 
 Un code typique va simplement appeler `window.close()` en réaction à cet évènement, afin de réellement fermer la fenêtre. Mais parfois vous voudrez peut-être faire quelque chose avant, comme sauvegarder l'état actuel de l'application ou bien demander à l'utilisateur quoi faire. Si vous ne faites rien du tout, la fenêtre reste ouverte.
 
-Il n'y a aucun membre associé à cet évènement dans l'union [`sf::Event`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Event.php "sf::Event documentation").
+Il n'y a aucun membre associé à cet évènement dans l'union [`sf::Event`](../../../documentation/2.6.2/classsf_1_1Event.html "sf::Event documentation").
 
 ```cpp
 if (event.type == sf::Event::Closed)
@@ -83,7 +83,7 @@ Les évènements `sf::Event::LostFocus` et `sf::Event::GainedFocus` sont déclen
 
 Cet évènement peut être utilisé si vous voulez mettre en pause le jeu lorsque la fenêtre est inactive, par exemple.
 
-Il n'y a aucun membre associé à ces évènements dans l'union [`sf::Event`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Event.php "sf::Event documentation").
+Il n'y a aucun membre associé à ces évènements dans l'union [`sf::Event`](../../../documentation/2.6.2/classsf_1_1Event.html "sf::Event documentation").
 
 ```cpp
 if (event.type == sf::Event::LostFocus)
@@ -99,7 +99,7 @@ L'évènement `sf::Event::TextEntered` est déclenché lorsqu'un caractère est 
 
 Cet évènement est typiquement utilisé pour chopper les entrées utilisateur dans un champ de texte.
 
-Le membre associé à cet évènement est `event.text`, il contient la valeur Unicode du caractère entré. Vous pouvez soit l'ajouter directement à un [`sf::String`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1String.php "sf::String documentation"), ou bien le convertir en `char` après vous être assuré qu'il est bien dans la plage ASCII (0 - 127).
+Le membre associé à cet évènement est `event.text`, il contient la valeur Unicode du caractère entré. Vous pouvez soit l'ajouter directement à un [`sf::String`](../../../documentation/2.6.2/classsf_1_1String.html "sf::String documentation"), ou bien le convertir en `char` après vous être assuré qu'il est bien dans la plage ASCII (0 - 127).
 
 ```cpp
 if (event.type == sf::Event::TextEntered)
@@ -126,7 +126,7 @@ Cet évènement est celui qu'il faut utiliser si vous voulez déclencher une act
 !!! warning
 
     Parfois, les gens essayent de réagir directement à l'évènement `KeyPressed` pour créer des mouvements continus. Or, cela ne produira pas des mouvements continus mais plutôt *saccadés* : lorsque vous maintenez une touche vous n'obtenez en effet que quelques évènements (souvenez-vous du délai de répétition). Afin d'obtenir des mouvements fluides avec les évènements, vous devez utiliser un booléen mis à `true` lors de l'évènement `KeyPressed` et à `false` lors de l'évènement `KeyReleased` ; vous pouvez ensuite effectuer des déplacements (indépendamment des évènements) tant que le booléen est à `true`.  
-    L'autre solution (plus simple) pour produire des mouvements continus est d'utiliser les entrées temps réel avec [`sf::Keyboard`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Keyboard.php "sf::Keyboard documentation") (voir le [tutoriel dédié](inputs.md "Tutoriel sur les entrées temps-réel")).
+    L'autre solution (plus simple) pour produire des mouvements continus est d'utiliser les entrées temps réel avec [`sf::Keyboard`](../../../documentation/2.6.2/classsf_1_1Keyboard.html "sf::Keyboard documentation") (voir le [tutoriel dédié](inputs.md "Tutoriel sur les entrées temps-réel")).
 
 Le membre associé à ces évènements est `event.key`, il contient le scancode et le code de touche de la touche pressée/relâchée, ainsi que l'état des touches spéciales (alt, control, shift, system) au moment de l'appui.
 
@@ -220,7 +220,7 @@ if (event.type == sf::Event::MouseMoved)
 
 Les évènements `sf::Event::MouseEntered` et `sf::Event::MouseLeft` sont déclenchés lorsque la souris entre ou quitte la fenêtre.
 
-Il n'y a pas de membre associé à ces évènements dans l'union [`sf::Event`](https://www.sfml-dev.org/documentation/2.6.2-fr/classsf_1_1Event.php "sf::Event documentation").
+Il n'y a pas de membre associé à ces évènements dans l'union [`sf::Event`](../../../documentation/2.6.2/classsf_1_1Event.html "sf::Event documentation").
 
 ```cpp
 if (event.type == sf::Event::MouseEntered)

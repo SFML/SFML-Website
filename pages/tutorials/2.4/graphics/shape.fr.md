@@ -76,7 +76,7 @@ window.draw(shape);
 
 ### Rectangles
 
-Pour dessiner des rectangles, vous devez utiliser la classe [`sf::RectangleShape`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1RectangleShape.php "sf::RectangleShape documentation"). Celle-ci ne possède qu'un attribut : la taille du rectangle.
+Pour dessiner des rectangles, vous devez utiliser la classe [`sf::RectangleShape`](../../../documentation/2.4.2/classsf_1_1RectangleShape.html "sf::RectangleShape documentation"). Celle-ci ne possède qu'un attribut : la taille du rectangle.
 
 ```cpp
 // définit un rectangle de 120x50
@@ -90,7 +90,7 @@ rectangle.setSize(sf::Vector2f(100, 100));
 
 ### Cercles
 
-Les cercles sont représentés par la classe [`sf::CircleShape`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1CircleShape.php "sf::CircleShape documentation"). Elle possède deux attributs : le rayon et le nombre de côtés. Le nombre de côtés est un attribut optionnel, qui permet d'ajuster la "qualité" du cercle : les cercles doivent en effet être simulés par des polygones avec beaucoup de côtés (la carte graphique est incapable de dessiner des cercles parfaits directement), et cet attribut définit combien de côtés le cercle possède. Si vous dessinez de petits cercles, vous n'aurez probablement pas besoin de beaucoup de côtés. Si au contraire vous dessinez de gros cercles, ou bien zoomez sur des cercles, vous devrez utiliser plus de côtés si vous voulez que ceux-ci restent imperceptibles.
+Les cercles sont représentés par la classe [`sf::CircleShape`](../../../documentation/2.4.2/classsf_1_1CircleShape.html "sf::CircleShape documentation"). Elle possède deux attributs : le rayon et le nombre de côtés. Le nombre de côtés est un attribut optionnel, qui permet d'ajuster la "qualité" du cercle : les cercles doivent en effet être simulés par des polygones avec beaucoup de côtés (la carte graphique est incapable de dessiner des cercles parfaits directement), et cet attribut définit combien de côtés le cercle possède. Si vous dessinez de petits cercles, vous n'aurez probablement pas besoin de beaucoup de côtés. Si au contraire vous dessinez de gros cercles, ou bien zoomez sur des cercles, vous devrez utiliser plus de côtés si vous voulez que ceux-ci restent imperceptibles.
 
 ```cpp
 // définit un cercle de rayon 200
@@ -107,7 +107,7 @@ circle.setPointCount(100);
 
 ### Polygones réguliers
 
-Il n'y a pas de classe dédiée pour les polygones réguliers. En fait vous pouvez obtenir un polygone régulier de n'importe quel nombre de côtés avec la classe [`sf::CircleShape`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1CircleShape.php "sf::CircleShape documentation") : en effet, puisque les cercles sont simulés par des polygones avec beaucoup de côtés, vous avez juste à jouer sur le nombre de côtés pour obtenir le polygone voulu. Un [`sf::CircleShape`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1CircleShape.php "sf::CircleShape documentation") avec 3 points est un triangle, avec 4 points c'est un carré, etc.
+Il n'y a pas de classe dédiée pour les polygones réguliers. En fait vous pouvez obtenir un polygone régulier de n'importe quel nombre de côtés avec la classe [`sf::CircleShape`](../../../documentation/2.4.2/classsf_1_1CircleShape.html "sf::CircleShape documentation") : en effet, puisque les cercles sont simulés par des polygones avec beaucoup de côtés, vous avez juste à jouer sur le nombre de côtés pour obtenir le polygone voulu. Un [`sf::CircleShape`](../../../documentation/2.4.2/classsf_1_1CircleShape.html "sf::CircleShape documentation") avec 3 points est un triangle, avec 4 points c'est un carré, etc.
 
 ```cpp
 // définit un triangle
@@ -124,7 +124,7 @@ sf::CircleShape octagon(80, 8);
 
 ### Formes convexes
 
-La classe [`sf::ConvexShape`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1ConvexShape.php "sf::ConvexShape documentation") est la classe de forme ultime : elle permet de définir une forme quelconque, pour peu qu'elle reste convexe. En effet, SFML ne peut pas dessiner de formes concaves ; si vous devez vraiment en dessiner, vous devrez la découper en plusieurs formes convexes (si possible).
+La classe [`sf::ConvexShape`](../../../documentation/2.4.2/classsf_1_1ConvexShape.html "sf::ConvexShape documentation") est la classe de forme ultime : elle permet de définir une forme quelconque, pour peu qu'elle reste convexe. En effet, SFML ne peut pas dessiner de formes concaves ; si vous devez vraiment en dessiner, vous devrez la découper en plusieurs formes convexes (si possible).
 
 Pour créer une forme convexe, vous devez tout d'abord définir le nombre total de points, puis définir ceux-ci.
 
@@ -149,7 +149,7 @@ convex.setPoint(4, sf::Vector2f(0, 50));
 
 ![Une forme convexe](shape-convex.png)
 
-Officiellement, [`sf::ConvexShape`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1ConvexShape.php "sf::ConvexShape documentation") peut seulement créer des formes convexes. Mais en réalité cette contrainte est légèrement exagérée. En fait, d'un point de vue strictement technique, la contrainte exacte que votre forme doit suivre est que si vous tracez un segment allant de son *centre de gravité* à n'importe lequel de ses points, vous ne devez croiser aucun côté. Avec cette définition un peu plus flexible, vous pouvez par exemple dessiner des étoiles.
+Officiellement, [`sf::ConvexShape`](../../../documentation/2.4.2/classsf_1_1ConvexShape.html "sf::ConvexShape documentation") peut seulement créer des formes convexes. Mais en réalité cette contrainte est légèrement exagérée. En fait, d'un point de vue strictement technique, la contrainte exacte que votre forme doit suivre est que si vous tracez un segment allant de son *centre de gravité* à n'importe lequel de ses points, vous ne devez croiser aucun côté. Avec cette définition un peu plus flexible, vous pouvez par exemple dessiner des étoiles.
 
 ### Lignes
 
@@ -180,7 +180,7 @@ window.draw(line, 2, sf::Lines);
 
 ## Formes personnalisées
 
-Vous pouvez étendre l'ensemble des classes de formes avec vos propres types de formes. Pour ce faire, vous devez dériver de [`sf::Shape`](https://www.sfml-dev.org/documentation/2.4.2-fr/classsf_1_1Shape.php "sf::Shape documentation") et redéfinir deux fonctions :
+Vous pouvez étendre l'ensemble des classes de formes avec vos propres types de formes. Pour ce faire, vous devez dériver de [`sf::Shape`](../../../documentation/2.4.2/classsf_1_1Shape.html "sf::Shape documentation") et redéfinir deux fonctions :
 
 - `getPointCount`: renvoie le nombre de points de la forme
 - `getPoint`: renvoie un point de la forme
@@ -237,7 +237,7 @@ private :
 
 ## Formes anticrénelées
 
-Il n'y a pas d'option pour activer l'anticrénelage pour une forme en particulier. Si vous voulez des formes anticrénelées (ie. avec des bords lissés), vous devez activer l'anticrénelage de manière globale lorsque vous créez la fenêtre, avec l'attribut correspondant de la structure [`sf::ContextSettings`](https://www.sfml-dev.org/documentation/2.4.2-fr/structsf_1_1ContextSettings.php "sf::ContextSettings documentation").
+Il n'y a pas d'option pour activer l'anticrénelage pour une forme en particulier. Si vous voulez des formes anticrénelées (ie. avec des bords lissés), vous devez activer l'anticrénelage de manière globale lorsque vous créez la fenêtre, avec l'attribut correspondant de la structure [`sf::ContextSettings`](../../../documentation/2.4.2/structsf_1_1ContextSettings.html "sf::ContextSettings documentation").
 
 ```cpp
 sf::ContextSettings settings;
