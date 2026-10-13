@@ -5,6 +5,41 @@ hide:
 
 # Getting and Using SFML
 
+## What do I need to use SFML 3? {: #requirements}
+
+SFML 3 requires a compiler with C++17 support.
+The minimum versions are:
+
+| Compiler   | Version      |
+| ---------- | ------------ |
+| MSVC       | 16 (VS 2019) |
+| GCC        | 9            |
+| Clang      | 9            |
+| AppleClang | 12           |
+
+If you build SFML from source, you also need CMake 3.28 or newer, see [SFML requires a newer CMake version than my OS provides!](troubleshooting.md#grl-cmake-version) if your system doesn't provide it.
+
+If you use the prebuilt packages from the [download page](../download/index.md), your compiler has to match the one they were built with, see [The prebuilt libraries don't work with my compiler](troubleshooting.md#compiler-mismatch).
+
+## What's the easiest way to start a new SFML project? {: #template}
+
+Use the [CMake project template](https://github.com/SFML/cmake-sfml-project).
+It downloads and builds SFML as part of your project, so you don't have to download, build or install SFML yourself, and it works the same with every compiler and IDE that supports CMake.
+
+See the [CMake template tutorial](../tutorials/3.1/getting-started/cmake.md) for the details.
+
+## Can I install SFML with a package manager? {: #package-managers}
+
+Yes, SFML is available from several package managers, for example:
+
+- [vcpkg](https://vcpkg.io/) on Windows, Linux and macOS
+- [Homebrew](https://brew.sh/) on macOS (`brew install sfml`)
+- [MSYS2](https://www.msys2.org/) on Windows for MinGW
+- The package repositories of most Linux distributions
+
+These packages aren't maintained by the SFML Team and may lag behind the latest SFML release, especially on Linux distributions with long release cycles.
+Check which version you get before following a tutorial, as SFML 2 and SFML 3 aren't API compatible.
+
 ## How do I build SFML? {: #build}
 
 Tutorials for each version of SFML can be found [here](../tutorials/3.1/index.md).

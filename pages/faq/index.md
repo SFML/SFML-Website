@@ -9,6 +9,8 @@ hide:
 
 - [What is SFML?](general.md#whatis)
 - [On which platforms is SFML currently available?](general.md#platforms)
+- [Does SFML run in the browser?](general.md#web)
+- [Does SFML support Wayland?](general.md#wayland)
 - [Which programming languages are supported by SFML?](general.md#languages)
 - [What version of SFML should I use?](general.md#version)
 - [Will/does SFML support 3D?](general.md#3d)
@@ -17,6 +19,9 @@ hide:
 
 ## [Getting and Using SFML](build-use.md)
 
+- [What do I need to use SFML 3?](build-use.md#requirements)
+- [What's the easiest way to start a new SFML project?](build-use.md#template)
+- [Can I install SFML with a package manager?](build-use.md#package-managers)
 - [How do I build SFML?](build-use.md#build)
 - [Are there any "nightly builds"?](build-use.md#nightly)
 - [How do I setup my development environment to work with SFML?](build-use.md#environment)
@@ -30,6 +35,8 @@ hide:
 - [Build and Link Errors](troubleshooting.md#build-errors)
     - [I'm having trouble using SFML](troubleshooting.md#grl-trouble)
     - [I keep getting "undefined reference to <some strange thing that looks like an SFML function>" errors!](troubleshooting.md#grl-undefined-ref)
+    - [The prebuilt libraries don't work with my compiler](troubleshooting.md#compiler-mismatch)
+    - [My application can't find the SFML DLLs](troubleshooting.md#missing-dll)
     - [How do I make my IDE output verbose build information?](troubleshooting.md#grl-verbose-ide)
     - [Why do I get errors when mixing 32-bit and 64-bit libraries?](troubleshooting.md#grl-64bit)
     - [My project crashes randomly, but I don't get any compiler or linker errors](troubleshooting.md#vs-crash)
@@ -38,7 +45,9 @@ hide:
     - [(Debian) I can't compile the source code](troubleshooting.md#lnx-compile)
 
 - [Runtime Problems](troubleshooting.md#runtime)
+    - [My files can't be found when I run my application](troubleshooting.md#working-directory)
     - [Why do I get a white/black rectangle instead of my texture?](troubleshooting.md#white-rect)
+    - [Why isn't my text showing up?](troubleshooting.md#text-font)
     - [Why can't I hear any sound?](troubleshooting.md#sound-problem)
     - [RenderTextures don't work on my computer!](troubleshooting.md#broken-rendertexture)
     - [My computer crashes when I run my SFML program!](troubleshooting.md#grl-crash)
@@ -59,6 +68,9 @@ hide:
 ## [Window](window.md)
 
 - [How do I make my window transparent?](window.md#transparent-window)
+- [Can I use OpenGL together with SFML?](window.md#opengl)
+- [Can I draw from another thread?](window.md#threads-opengl)
+- [How does SFML handle high DPI displays?](window.md#high-dpi)
 
 ## [Audio](audio.md)
 
@@ -70,6 +82,7 @@ hide:
 - [Should I use TCP or UDP sockets?](networking.md#tcp-vs-udp)
 - [Should I use blocking or non-blocking sockets? And how do selectors work?](networking.md#blocking-non-blocking-selectors)
 - [I can't connect to the other computer over the internet!](networking.md#internet-network)
+- [Does SFML support HTTPS and SFTP?](networking.md#https)
 
 ## [System](system.md)
 
