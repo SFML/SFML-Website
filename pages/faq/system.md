@@ -57,34 +57,3 @@ Even after you have protected against concurrent access, you still need to be wa
 Once you venture into threading, there is no longer an execution ordering guarantee, and it is ultimately up to you to make sure things are done in the right order across different threads.
 
 Good system designs often make threading optional and provide an option to disable them, whether for debugging or other purposes.
-
-## Why doesn't sf::sleep sleep for the amount of time I want it to? {: #sleep}
-
-When calling `sf::sleep()` you are requesting that the operating system halts execution of the current thread and yields the time slot allocated to it by the task scheduler to another task, a task being anything requiring execution time, from processes to threads and fibers if they are supported.
-
-Because the CPU doesn't actually sleep in a multi-tasking environment, this has to be realized by an entry into an operating system specific lookup table.
-This lookup table informs the scheduler to skip the sleeping thread when selecting the next task to execute for a given time slice.
-Depending on the implementation of the operating system's sleep facility, keeping track of how long the thread has slept for and when to wake it up again is performed differently.
-
-There are multiple possible reasons `sf::sleep()` might return prematurely, and even overdue.
-It is entirely dependent on what the operating system chooses to do and a bit of luck.
-
-As described above, the operating system has to keep track of the amount of time slept and when to wake the thread up.
-Because high resolution timers might not be available on all systems, the default resolution may be set very low.
-If as an example, the system timers have a resolution of 10ms and you request to sleep for 11ms, the operating system will be forced to round up in most cases and make your thread sleep for 20ms instead because it is a multiple of the base resolution.
-In this case `sf::sleep` sleeps longer than it should.
-
-If however, you requested to sleep for 5ms and that request was made right before the internal operating system timer ticks, it will count as "10ms has passed" to the operating system and it will wake your thread up again although the 5ms have not fully passed.
-In this case, `sf::sleep()` would sleep for shorter than it should.
-
-In recent revisions of SFML, the timer resolution is temporarily increased during a call to `sf::sleep()` to increase the likelihood of your sf::sleep call sleeping for the correct amount of time.
-
-One thing to remember is that although the operating system marks your thread as "awake" after it is done sleeping, even for exactly the correct duration, it doesn't mean it resumes execution immediately.
-It could have just missed the moment at which the scheduler selects which task to execute next and thus must wait for the next transition.
-In this case, although your thread slept for the correct amount, it will appear to you as if it slept for more.
-SFML doesn't allow you to sleep for 0 duration, however if you could, you would notice that it in fact takes a slight bit of time as well.
-This is because it is common for specifying 0 to the operating system to translate to simply yielding your execution time slice to another thread.
-
-In the end, what this means is that `sf::sleep()` is merely a guideline, and not a contract.
-The longer you sleep for, the more accurate it will be.
-The shorter you sleep for, the less accurate it will be and to a certain extent more dependent on luck it will become.

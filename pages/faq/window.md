@@ -13,8 +13,3 @@ Because of this SFML cannot provide a uniform interface for controlling the repr
 
 SFML does however provide `sf::Window::getNativeHandle()`.
 Using the handle you can do a bit of research and find out how to manipulate the window representation yourself using the functions of your window manager.
-
-## Why doesn't setFramerateLimit() always set the frame rate to the specified limit? {: #set-framerate-limit}
-
-`setFramerateLimit()` is implemented using a call to `sf::sleep()` every frame.
-The intricacies of `sf::sleep` are explained [here](system.md#sleep).
