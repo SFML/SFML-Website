@@ -1,0 +1,454 @@
+/* SFML look for the Doxygen pages, loaded after Doxygen's own stylesheet (HTML_EXTRA_STYLESHEET) */
+
+/* Doxygen sets the font of every div, table and paragraph, which breaks the inheritance from
+   div.contents and changes the fonts of the MkDocs header and navigation */
+
+table, div, p, dl {
+    font: inherit;
+}
+
+/* MkDocs sizes its header and navigation relative to the body font */
+body {
+    font-family: 'Ubuntu', 'Arial', sans-serif;
+    font-size: .5rem;
+    font-weight: normal;
+    line-height: normal;
+    margin: 0 0 2em 0;
+    padding: 0;
+}
+
+/* Tabs */
+
+.tabs, .tabs2, .tabs3 {
+    width: 100%;
+    z-index: 101;
+    font-size: 11pt;
+    background-color: #EAF5DB;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    border-bottom: 1px solid #999;
+    padding: 0;
+    margin: 0;
+}
+
+.tabs2 {
+    font-size: 10pt;
+}
+
+.tabs3 {
+    font-size: 9pt;
+}
+
+#navrow1 .tablist, #navrow2 .tablist, #navrow3 .tablist, #navrow4 .tablist {
+    margin: 0;
+    padding: 0;
+    display: table;
+}
+
+.tablist {
+    width: 100%;
+}
+
+.tablist li {
+    float: left;
+    display: table-cell;
+    list-style: none;
+    margin-bottom: 0 !important;
+}
+
+#navrow1 .tablist li:last-child {
+    float: right;
+}
+
+#navrow1 {
+    border-top: 1px solid #999;
+    margin-top: 2em;
+}
+
+#navrow1 .tablist a:not(#MSearchClose), #navrow2 .tablist a, #navrow3 .tablist a, #navrow4 .tablist a {
+    display: block;
+    margin: 8px 0;
+    padding: 0 8px;
+    border-right: 1px solid #bbb;
+}
+
+.tablist li.current a {
+    font-weight: bold;
+}
+
+/* Page title, without Doxygen's breadcrumb bar and title box */
+
+#main-nav {
+    border-bottom: none;
+}
+
+#nav-path {
+    display: none;
+}
+
+div.header {
+    max-width: 950px;
+    margin: 2em auto;
+    background-color: transparent;
+    border-bottom: 1px solid #999;
+}
+
+div.headertitle {
+    padding: 0;
+}
+
+.title {
+    font-family: inherit;
+    font-size: 20pt;
+    font-weight: normal;
+    line-height: normal;
+    margin: 10px 2px;
+}
+
+div.summary {
+    float: none;
+    width: auto;
+    text-align: left;
+}
+
+/* Content */
+
+div.contents {
+    max-width: 950px;
+    margin: 0 auto 1rem;
+    padding: 0;
+    font-size: 11pt;
+}
+
+div.contents .textblock h1 {
+    text-align: left;
+    font-size: 20pt;
+    margin-top: 1.5em;
+    padding: 0 0 0.4em 0;
+    border-bottom: 1px solid #999;
+}
+
+div.contents h1 {
+    color: #333;
+    padding: 0.5em 0;
+    margin-top: 30px;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 26pt;
+    font-weight: normal;
+}
+
+div.contents h2 {
+    font-size: 20pt;
+    font-weight: normal;
+    margin-top: 1.5em;
+    padding-bottom: 0.4em;
+    border-bottom: 1px solid #999;
+}
+
+div.contents h3 {
+    font-size: 16pt;
+    font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-right: 0;
+}
+
+h2.groupheader {
+    color: inherit;
+    padding-top: 0;
+    box-shadow: none;
+}
+
+hr {
+    height: 0;
+    margin: 0.5em auto;
+    border-top: 1px solid #999;
+    box-shadow: none;
+}
+
+div.contents p {
+    color: #333;
+    text-align: justify;
+}
+
+div.contents a {
+    padding: 1px;
+    text-decoration: none;
+    color: rgb(70, 100, 30);
+}
+
+/* Keep anchors clear of the sticky MkDocs header */
+@media screen and (min-width: 76.25em) {
+    div.contents a {
+        scroll-margin-top: 6.5rem;
+    }
+}
+
+@media screen and (max-width: 76.25em) {
+    div.contents a {
+        scroll-margin-top: 2rem;
+    }
+}
+
+div.contents a:hover {
+    text-decoration: underline;
+}
+
+div.contents code {
+    display: inline;
+    vertical-align: baseline;
+    font-size: 11pt;
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+dl {
+    padding: 0 0 0 10px;
+}
+
+div.contents ul {
+    list-style-type: square;
+    list-style-position: outside;
+    margin: 0.5em 0 0 1.5em;
+    padding: 0;
+}
+
+div.contents ul li {
+    color: #333;
+    margin: 0 0 0.3em 0;
+}
+
+/* Links: Doxygen colors every link, the MkDocs navigation keeps its own colors, and
+   Doxygen's bold class links don't match the rest of the site */
+
+:where(.md-header, .md-tabs, .md-sidebar, .md-footer) a {
+    color: inherit;
+}
+
+a.el {
+    font-weight: inherit;
+}
+
+/* Member lists: flat rows without borders */
+
+.memItemLeft, .memItemRight, .mdescLeft, .mdescRight {
+    border: none;
+    padding: 1px 0 0 8px;
+}
+
+/* Same background as the member above, so a member and its description read as one row */
+.mdescLeft, .mdescRight {
+    padding: 0 8px 4px 8px;
+    background-color: #FBFCF9;
+}
+
+.memberdecls tr[class^='memitem'] {
+    font-family: inherit;
+}
+
+tr[class^='memdesc'] {
+    box-shadow: none;
+}
+
+.memItemLeft {
+    text-align: left;
+}
+
+.memItemRight {
+    vertical-align: top;
+}
+
+tr.heading + tr[class^='memitem'] td.memItemLeft, tr.groupHeader + tr[class^='memitem'] td.memItemLeft, tr.inherit_header + tr[class^='memitem'] td.memItemLeft,
+tr.heading + tr[class^='memitem'] td.memItemRight, tr.groupHeader + tr[class^='memitem'] td.memItemRight, tr.inherit_header + tr[class^='memitem'] td.memItemRight,
+tr.heading + tr[class^='memitem'] td.memTemplParams, tr.groupHeader + tr[class^='memitem'] td.memTemplParams, tr.inherit_header + tr[class^='memitem'] td.memTemplParams,
+tr.heading + tr td.ititle, tr.groupHeader + tr td.ititle {
+    border-top: none;
+}
+
+tr.heading h2 {
+    margin-bottom: 4px;
+}
+
+.memTemplParams {
+    padding: 1px;
+    border: none;
+}
+
+div.groupHeader {
+    color: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    margin: 12px 0 0 16px;
+    padding-top: 0;
+}
+
+td h2.groupheader, div.groupHeader {
+    box-shadow: none;
+}
+
+/* Member documentation: no title boxes above the members, proportional font for the prototypes */
+
+.memtitle {
+    display: none;
+}
+
+.memitem {
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.memproto {
+    color: #000;
+    border-top-left-radius: 4px;
+}
+
+.memname {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+}
+
+.paramname {
+    color: #602020;
+}
+
+td.paramtype, td.paramname {
+    padding: 1px;
+}
+
+.paramname .paramdefval {
+    font-family: inherit;
+}
+
+/* Tables of enum values and fields */
+
+table.fieldtable {
+    width: 100%;
+    box-shadow: none;
+}
+
+.fieldtable td.fielddoc {
+    width: 100%;
+}
+
+.fieldtable td.fielddoc p:first-child {
+    margin-top: revert;
+}
+
+.fieldtable td.fielddoc p:last-child {
+    margin-bottom: revert;
+}
+
+div.dyncontent {
+    margin-top: 0.5em;
+}
+
+/* Code */
+
+div.fragment {
+    margin: 0;
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    font-size: 10pt;
+    padding: 0.5em 1em;
+    background-color: #f5f5f5;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+div.line {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: normal;
+    word-break: normal;
+    text-indent: -53px;
+    padding-left: 53px;
+}
+
+span.lineno {
+    border-right: none;
+    margin-right: 0;
+}
+
+span.lineno a, span.lineno a:visited, span.lineno a:hover {
+    background-color: transparent;
+}
+
+span.tt {
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+/* Class and file trees */
+
+.icon {
+    font-family: Arial, Helvetica;
+    background-color: #8cc445;
+    color: white;
+    border-radius: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
+    line-height: normal;
+}
+
+.spacer {
+    width: 24px;
+}
+
+div.directory {
+    border-top: 1px solid #bbb;
+}
+
+.directory td.entry {
+    padding: 5px 5px 5px 0;
+}
+
+/* Search box, Doxygen's search.css places it for its own header */
+
+#MSearchBox {
+    position: relative;
+    display: block;
+    border-radius: 0;
+    box-shadow: none;
+    border-width: 1px;
+    border-color: #BBB;
+    border-style: solid;
+    z-index: 0;
+}
+
+.right #MSearchClose {
+    margin: 0;
+    right: auto;
+}
+
+#MSearchResultsWindow {
+    background-color: #EAF5DB;
+    border-color: #999;
+}
+
+#MSearchResults > .SRPage {
+    background-color: #EAF5DB;
+}
+
+a.SRSymbol, a.SRScope {
+    color: rgb(70, 100, 30);
+}
+
+a.SRSymbol:hover, a.SRScope:hover {
+    text-decoration: underline;
+}
+
+#MSearchSelectWindow {
+    background-color: #EAF5DB;
+}
+
+#MSearchSelectWindow > a.SelectItem {
+    color: #333;
+    text-decoration: none;
+}
+
+#MSearchSelectWindow > a.SelectItem:hover {
+    color: white;
+    background-color: #8CC841;
+    text-decoration: none;
+}
