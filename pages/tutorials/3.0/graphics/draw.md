@@ -125,9 +125,6 @@ That's because a window (more precisely its OpenGL context) cannot be active in 
 ```cpp
 void renderingThread(sf::RenderWindow* window)
 {
-    // activate the window's context
-    window->setActive(true);
-
     // the rendering loop
     while (window->isOpen())
     {
