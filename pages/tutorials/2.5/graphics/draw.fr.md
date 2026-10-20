@@ -114,9 +114,6 @@ SFML supporte le rendu multi-threadé, et vous n'avez même pas besoin de faire 
 ```cpp
 void renderingThread(sf::RenderWindow* window)
 {
-    // activation du contexte de la fenêtre
-    window->setActive(true);
-
     // la boucle de rendu
     while (window->isOpen())
     {
