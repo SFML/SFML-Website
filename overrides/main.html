@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block site_meta %}
+  {% if page and page.file.src_path in ("error-403.md", "error-404.md") %}
+    {# Apache serves the error document while the browser keeps the original URL.
+       Set a base so relative assets resolve correctly for 404s in nested folders. #}
+    <base href="{{ page.abs_url }}">
+  {% endif %}
+  {{ super() }}
+{% endblock %}

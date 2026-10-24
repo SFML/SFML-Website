@@ -9,6 +9,7 @@ repo_name: SFML
 
 theme:
   name: material
+  custom_dir: overrides
   language: en
   icon:
     repo: fontawesome/brands/github
