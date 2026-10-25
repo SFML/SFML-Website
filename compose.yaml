@@ -1,0 +1,15 @@
+services:
+  apache:
+    build:
+      context: .
+      dockerfile: Containerfile
+    ports:
+      - "8080:80"
+      - "8443:443"
+    volumes:
+      - ./site:/var/www/html:ro
+      - ./certs:/etc/apache2/certs:ro
+      - ./.htaccess:/var/www/html/.htaccess:ro
+      - ./apple-touch-icon-precomposed.png:/var/www/html/apple-touch-icon-precomposed.png:ro
+      - ./ip-provider.php:/var/www/html/ip-provider.php:ro
+      - ./robots.txt:/var/www/html/robots.txt:ro

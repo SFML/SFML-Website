@@ -9,6 +9,11 @@ repo_name: SFML
 
 theme:
   name: material
+  custom_dir: overrides
+  extra_templates:
+    - 403.html
+  static_templates:
+    - 403.html
   language: en
   icon:
     repo: fontawesome/brands/github
@@ -90,6 +95,9 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - attr_list
   - md_in_html
+
+hooks:
+  - skip_static_templates.py
 
 plugins:
   - i18n:
