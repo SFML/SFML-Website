@@ -52,8 +52,7 @@ while (window.isOpen())
 }
 ```
 
-C++ lets you deduce the template parameter which is why you can write `const std::optional event` instead of `const std::optional<sf::Event> event`.
-`const auto event` is another valid choice if you prefer a shorter expression.
+Since C++17, which SFML 3 requires, the compiler can deduce a class template’s arguments from its initializer (class template argument deduction, or CTAD). `pollEvent()` returns a `std::optional<sf::Event>`, so `const std::optional event` is deduced as `const std::optional<sf::Event>`. `const auto event` works too, if you prefer something shorter.
 
 ### `sf::WindowBase::handleEvents`
 
