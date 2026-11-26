@@ -46,6 +46,7 @@ hide:
 
 - [Runtime Problems](troubleshooting.md#runtime)
     - [My files can't be found when I run my application](troubleshooting.md#working-directory)
+    - [Why are the provided and absolute paths empty when loading fails?](troubleshooting.md#empty-path)
     - [Why do I get a white/black rectangle instead of my texture?](troubleshooting.md#white-rect)
     - [Why isn't my text showing up?](troubleshooting.md#text-font)
     - [Why can't I hear any sound?](troubleshooting.md#sound-problem)
