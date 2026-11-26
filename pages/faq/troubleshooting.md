@@ -234,6 +234,30 @@ IDEs often use the project or build directory as working directory, and starting
 When loading fails, SFML prints the provided path as well as the absolute path it tried to load, which tells you where it looked.
 Either put your assets where your working directory points to, change the working directory in the debug settings of your IDE, or build your paths from a known location.
 
+### Why are the provided and absolute paths empty when loading fails? {: #empty-path}
+
+If SFML can't load a file and both paths in the error are empty or contain garbage characters, e.g.
+
+```
+Failed to load image
+    Provided path:
+    Absolute path:
+Reason: No such file or directory
+```
+
+you're mixing Debug and Release builds.
+Changing the working directory or moving your files won't help here.
+
+With Visual Studio, the Debug and Release versions of the standard library use a different memory layout for types such as `std::string` and `std::filesystem::path`.
+As such, when your application is built in Debug mode and links the Release libraries of SFML, or vice versa, SFML reads the path you passed in with the wrong layout and ends up with an empty or broken path.
+The same can happen if SFML was built with a different compiler or compiler version than your application.
+
+Make sure that everything matches:
+
+- Link the Debug libraries (`-d` suffix) in Debug mode and the Release libraries in Release mode, see [the naming conventions](#vs-crash)
+- Copy the matching DLLs next to your executable
+- Check that no other SFML DLLs are found first, e.g. through your `PATH`
+
 ### Why do I get a white/black rectangle instead of my texture? {: #white-rect}
 
 This is due to a premature destruction of the `sf::Texture`.
