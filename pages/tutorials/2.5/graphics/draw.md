@@ -114,9 +114,6 @@ SFML supports multi-threaded drawing, and you don't even have to do anything to 
 ```cpp
 void renderingThread(sf::RenderWindow* window)
 {
-    // activate the window's context
-    window->setActive(true);
-
     // the rendering loop
     while (window->isOpen())
     {
