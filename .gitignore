@@ -5,6 +5,7 @@
 /piwik/*
 /progressbar-osx-values.php
 /google*.html
+/certs/
 .cache/*
 .DS_Store
 .venv/

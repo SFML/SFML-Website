@@ -7,13 +7,17 @@ For longer discussions however one should still use the [dedicated sub-forum](ht
 
 ## Development
 
-As we're slowly migrating the old HTML + PHP based site over to Markdown + MkDocs, you can currently find both old and new world in this repository.
+The site is written in Markdown and built with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) on top of [ProperDocs](https://properdocs.org/), the maintained fork of MkDocs 1.x.
 
-All primary pages and SFML 3 tutorials & documentation live in the `pages/` directory, while all the old parts like SFML 2 tutorials are in the root directory.
+A small number of features still rely on PHP and Apache, in particular `ip-provider.php`, redirects, and custom error pages.
+
+There are two ways to work locally:
+
+1. Use ProperDocs directly for a preview of the generated site, including hot-reload.
+2. Build the site and serve it with Apache and PHP in a container when you need to test `ip-provider.php`, redirects, or custom error documents.
 
 ### ProperDocs - Pre-Requisite
 
-The site is built with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) on top of [ProperDocs](https://properdocs.org/), the maintained fork of MkDocs 1.x.
 As ProperDocs is Python based, make sure you have [Python 3.x](https://www.python.org/downloads/) installed on your OS, which should also come with `pip`.
 
 > [!NOTE]
@@ -25,145 +29,73 @@ Use the following command to install all the necessary packages including Proper
 pip install -r ./requirements.txt --upgrade
 ```
 
-### Host & Build
+### Option 1: Preview with ProperDocs
 
-For local development you usually want to directly serve the site, which ProperDocs supports out of the box, including hot-reload:
+Run the local development server:
 
 ```bash
 properdocs serve
 ```
 
 This can take a few seconds.
-Once ready, you should see a localhost link in the terminal pointing you to website.
+Once ready, you should see a localhost link in the terminal pointing you to the website.
 
-If you just want the output of the site, you can also just build site:
+ProperDocs is sufficient for inspecting the generated pages, but it does not apply the `.htaccess` rules, nor serves `ip-provider.php`.
+
+### Option 2: Serve the built site with Apache and PHP
+
+To be able to run the web-server container, install either:
+
+- Docker with the Docker Compose plugin, or
+- Podman with a Compose provider
+
+You will also need [mkcert](https://github.com/FiloSottile/mkcert) to create a locally trusted certificate for `sfml.localhost`.
+The certificate and key are mounted into the web-server container. Do not commit them.
+
+```bash
+mkcert -install
+mkdir -p certs
+mkcert -cert-file certs/sfml.localhost.pem \
+       -key-file certs/sfml.localhost-key.pem \
+       sfml.localhost www.sfml.localhost
+```
+
+Build the site:
 
 ```bash
 properdocs build
 ```
 
-Which puts all the generated HTML into the `site/` directory.
+The generated files will be in `site/`.
+The Apache container mounts that directory, along with root-level files such as `.htaccess` and `ip-provider.php`, into the document root.
 
-### PHP - Pre-Requisite
-
-> [!WARNING]
-> We don't really want to continue maintaining the PHP base site, so it's recommended to not make any changes to those sites.
-
-#### Windows
-
-It's highly recommended to use [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install), as setting up Apache or Nginx is a lot more straight forward on a Linux subsystem.  
-If you don't want to do this, there are common packages such as [XAMPP](https://www.apachefriends.org/), [WampServer](https://www.wampserver.com/en/), or [AMPPS](https://www.ampps.com/).
-
-After WSL2 has been installed and you opened an Linux shell in the Windows Terminal, follow the Linux steps below.
-
-#### macOS
-
-Ensure [`brew`](https://brew.sh/) is installed.
+Start the container:
 
 ```bash
-brew install php
-
-brew install nginx
-# OR
-brew install httpd
+docker compose up --build
 ```
 
-**Additional References:**
-
--   https://pimylifeup.com/install-nginx-on-macos/
--   https://pimylifeup.com/install-php-on-macos/
-
-#### Linux
-
-On Linux, we'll provide commands for Debian/Ubuntu-like package managers. If you use a different distro, you'll have to look up the equivalent commands.
+or
 
 ```bash
-sudo apt install php8.1-fpm
-
-sudo apt install nginx
-# OR
-sudo apt install apache2
+podman compose up --build
 ```
 
-In case `php8.1-fpm` doesn't exist, add the PPA:
+Open the site at https://www.sfml.localhost:8443/.  
+There is also one HTTP page at http://www.sfml.localhost:8080/ip-provider.php.
+
+After changing the Markdown content, run `properdocs build` again and refresh the browser.
+
+When you’re finished, stop the container with the matching command:
 
 ```bash
-sudo apt install software-properties-common
-sudo add-apt-repository ppa:ondrej/php
-sudo apt update
+docker compose down
 ```
 
-### Configurations
+or
 
-**General Notes:**
-
--   In case port `80` is already in use, change the port to something else. If you for example pick `1337`, the website will then be accessible at `http://sfml.localhost:1337`
--   On Windows, `*.localhost` DNS are automatically mapped to `127.0.0.1`. If you want to use another custom domain, make sure to put a resolving DNS entry in your `hosts` file.
--   On Windows with WSL2, you can use `/mnt/c/...` to access the `C:\` drive.
-
-#### Nginx
-
--   On Linux:
-    -   Create a new config file at `/etc/nginx/sites-available`
-    -   Create a link to the `sites-enabled` directory, to enable the new config: `sudo ln -s /etc/nginx/sites-available/sfml /etc/nginx/sites-enabled/sfml`
-    -   Test the Nginx config: `sudo /sbin/nginx -t`
-    -   Reload the config: `sudo service nginx reload` or `sudo systemctl reload nginx`
--   On macOS:
-    -   Start Nginx: `brew services start nginx`
-    -   Start php as service for Nginx: `brew services start php`
-    -   Edit: `/usr/local/etc/nginx/nginx.conf` or `/opt/homebrew/etc/nginx/nginx.conf`
-    -   Test the Nginx config: `nginx -t`
-    -   Reload the config: `brew services reload nginx`
-
-```nginx
-server {
-        listen 80;
-        listen [::]:80;
-
-        server_name sfml.localhost;
-        root /path/to/the/cloned/SFML-website/repository;
-
-        index index.php index.html;
-
-        location / {
-                try_files $uri $uri/ /index.php$is_args$args;
-        }
-
-        location ~* \.php$ {
-                try_files $uri =404;
-                fastcgi_split_path_info ^(.+\.php)(/.+)$;
-
-                # Uncomment for Linux
-                #fastcgi_pass unix:/run/php/php8.1-fpm.sock;
-
-                # Uncomment for macOS
-                #fastcgi_pass 127.0.0.1:9000;
-
-                fastcgi_index index.php;
-                fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-                include fastcgi_params;
-        }
-}
-```
-
-#### Apache
-
--   On Linux:
-    -   Create a new config file at `/etc/apache2/sites-available`
-    -   Create a link to the `sites-enabled` directory, to enable the new config: `sudo ln -s /etc/apache2/sites-available/sfml /etc/apache2/sites-enabled/sfml`
-    -   Test the Nginx config: `sudo /sbin/apache2 -t`
-    -   Reload the config: `sudo service apache2 reload` or `sudo systemctl reload apache2`
--   On macOS:
-    -   Edit: `/usr/local/etc/httpd/httpd.conf` or `/opt/homebrew/etc/httpd/httpd.conf`
-    -   Reload the config: `brew services reload httpd`
-
-```apache
-<VirtualHost *:80>
-        ServerName sfml.localhost
-
-        DocumentRoot /path/to/the/cloned/SFML-website/repository
-        DirectoryIndex index.php index.html
-</VirtualHost>
+```bash
+podman compose down
 ```
 
 ## License
